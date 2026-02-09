@@ -1,0 +1,42 @@
+# Module 2: Speech-to-Text + Content Summarization Configuration
+
+model:
+  name: "LectureSentenceClassifier"
+  base_model: "bert-base-uncased"
+  num_labels: 2  # Important vs Not Important
+  dropout: 0.1
+
+whisper:
+  model_size: "base"  # tiny, base, small, medium, large
+  language: "en"
+  device: "cuda"
+
+training:
+  batch_size: 16
+  num_epochs: 10
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  warmup_steps: 500
+  optimizer: "adamw"
+  max_grad_norm: 1.0
+
+data:
+  max_sequence_length: 512
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+
+summarization:
+  summary_ratio: 0.3  # 30% of original length
+  min_sentence_length: 10
+  max_sentence_length: 200
+
+paths:
+  data_dir: "./data/datasets/module2"
+  model_save_dir: "./models/module2"
+  log_dir: "./outputs/logs/module2"
+
+logging:
+  use_wandb: true
+  log_interval: 10
+  save_interval: 2
