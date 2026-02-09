@@ -1,0 +1,50 @@
+# Pipeline Configuration - End-to-End Lecture Video Summarization
+
+pipeline:
+  target_duration: 600  # 10 minutes in seconds
+  compression_ratio: 6  # 60 min -> 10 min
+  
+modules:
+  module1:
+    enabled: true
+    weight: 0.4  # importance weight in final score
+    config: "./configs/module1_config.yaml"
+    
+  module2:
+    enabled: true
+    weight: 0.3
+    config: "./configs/module2_config.yaml"
+    
+  module3:
+    enabled: true
+    weight: 0.2
+    config: "./configs/module3_config.yaml"
+    
+  module4:
+    enabled: true
+    weight: 0.1
+    config: "./configs/module4_config.yaml"
+
+segment_selection:
+  strategy: "greedy"  # greedy, dynamic_programming, reinforcement
+  min_segment_duration: 5  # seconds
+  max_segment_duration: 60  # seconds
+  diversity_penalty: 0.1  # penalize selecting similar segments
+  
+video_processing:
+  input_resolution: [1280, 720]  # width, height
+  output_resolution: [1280, 720]
+  fps: 24
+  codec: "libx264"
+  quality: "high"  # low, medium, high
+  
+output:
+  save_metadata: true
+  save_intermediate: false  # save outputs from each module
+  output_dir: "./outputs/summaries"
+  
+logging:
+  level: "INFO"
+  log_file: "./outputs/logs/pipeline.log"
+  use_wandb: true
+  wandb_project: "lecture-video-summarization"
