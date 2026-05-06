@@ -1,49 +1,107 @@
-# Automated Lecture Video Summarization
+# INTEGRA — Automated Lecture Video Summarization with Condensed Video Output
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Transform 60-minute lecture videos into concise 10-minute summaries using deep learning
+> Transform 60-minute IT theory lectures into coherent 10-minute condensed videos using deep learning — with zero manual steps.
 
 ## 🎯 Project Overview
 
-This research project develops an end-to-end system that automatically summarizes lecture videos by:
-- Detecting important visual moments and scene changes
-- Extracting and summarizing speech content
-- Identifying critical slides and diagrams
-- Synthesizing a coherent condensed video with smooth transitions
+This research project develops a four-module deep learning pipeline that automatically produces a duration-controlled, semantically meaningful condensed video from a full-length IT theory lecture. The system generates two output formats:
 
-**Input**: 60-minute lecture video  
-**Output**: 10-minute summarized video containing key segments
+- **Pipeline A** — Real lecture highlight reel with original audio, transitions, and subtitles
+- **Pipeline B** — Fully synthetic narrated slideshow using AI-rendered slides and TTS voiceover
+
+**Input**: 60-minute IT theory lecture video  
+**Output**: 10-minute condensed MP4 video
+
+**Supervisor**: Dr. Chaman Wijesiriwardana
 
 ## 🏗️ Architecture
 
-The system consists of 4 trainable modules:
+The system consists of 4 modules with a weighted score fusion:
+
+```
+Input Video (60 min)
+    │
+    ├──→ Module 1: Keyframe Detection & Importance Scoring ──→ score_V
+    │         (ResNet-50 + BiLSTM)
+    │
+    ├──→ Module 2: Speech-to-Text & Content Summarization ──→ importance_ratio_T
+    │         (Whisper large-v3 + Fine-tuned BERT-base)
+    │
+    ├──→ Module 3: Visual Content Understanding & Slide Extraction ──→ label (→ score_L)
+    │         (ViT-base + TrOCR)
+    │
+    └──→ Module 4: Video Synthesis & Integration
+              │
+              ├──→ Score Fusion: S = w1·V + w2·T + w3·L
+              │
+              ├──→ Pipeline A: highlight.mp4 (MoviePy + FFmpeg)
+              └──→ Pipeline B: slideshow.mp4 (GPT-4o + edge-tts + Pillow)
+```
 
 ### Module 1: Keyframe Detection & Importance Scoring
-- **Owner**: Member 1
-- **Model**: ResNet50 + LSTM
-- **Task**: Score video segments by importance using visual and temporal features
-- **Output**: Timestamp ranges with importance scores
+- **Owner**: Rashmi (214093E)
+- **Model**: ResNet-50 + BiLSTM
+- **Task**: Score 10-second video segments by instructional importance
+- **Output**: `{ segment_id, timestamp_start, timestamp_end, score_V }`
+- **References**: Rahman et al. 2020, Zhang et al. 2016, Lin et al. 2022
 
-### Module 2: Speech-to-Text + Content Summarization
-- **Owner**: Member 2
-- **Model**: Whisper + Fine-tuned BERT
-- **Task**: Transcribe speech and identify key sentences
-- **Output**: Text summary aligned with timestamps
+### Module 2: Speech-to-Text & Content Summarization
+- **Owner**: Ravindu (214095L)
+- **Model**: OpenAI Whisper (large-v3) + Fine-tuned BERT-base
+- **Task**: Transcribe speech and classify sentences as important/not important
+- **Output**: `{ sentence, timestamp_start, timestamp_end, is_important, importance_ratio_T }`
+- **References**: Radford et al. 2023, Gonzalez et al. 2023
 
 ### Module 3: Visual Content Understanding & Slide Extraction
-- **Owner**: Member 3
-- **Model**: Vision Transformer (ViT)
-- **Task**: Extract and classify slides by importance
-- **Output**: Key visual frames with metadata
+- **Owner**: Fazly (214008C)
+- **Model**: ViT-base + TrOCR
+- **Task**: Classify slide frames (Critical/Important/Skip) and extract text
+- **Output**: `{ frame_time, label, ocr_text }`
+- **References**: Biswas et al. 2025, Li et al. 2023
 
-### Module 4: Video Synthesis & Intelligent Editing
-- **Owner**: Member 4
-- **Model**: 3D CNN for transition quality
-- **Task**: Combine segments into coherent video
-- **Output**: Final summarized video with transitions
+### Module 4: Video Synthesis & Integration
+- **Owner**: Lathisana (214116F)
+- **Technologies**: MoviePy, FFmpeg, GPT-4o, edge-tts (AriaNeural), Pillow
+- **Task**: Fuse scores and produce two output videos (Pipeline A & B)
+- **Output**: `highlight.mp4` and `slideshow.mp4`
+- **References**: Gonzalez et al. 2023, Ahmed et al. 2025
+
+## 📋 Shared JSON Schema
+
+**Agreed Week 1 — Frozen after Week 5 integration meeting.**
+
+```json
+// Module 1 Output
+{
+  "segment_id": "seg_001",
+  "timestamp_start": 12.0,
+  "timestamp_end": 22.0,
+  "score_V": 0.82
+}
+
+// Module 2 Output
+{
+  "sentence": "A binary search tree is a data structure...",
+  "timestamp_start": 12.0,
+  "timestamp_end": 15.5,
+  "is_important": true,
+  "importance_ratio_T": 0.75
+}
+
+// Module 3 Output
+{
+  "frame_time": 14.5,
+  "label": "Critical",
+  "ocr_text": "Binary Search Tree: O(log n) average case"
+}
+```
+
+**Fusion Formula**: `S = w1·V + w2·T + w3·L`  
+Starting weights: `w1=0.33, w2=0.33, w3=0.34` (tuned via grid search in Week 7)
 
 ## 📁 Repository Structure
 
@@ -52,140 +110,94 @@ lecture-video-summarizer/
 ├── README.md                          # This file
 ├── LICENSE                            # MIT License
 ├── requirements.txt                   # Python dependencies
-├── setup.py                          # Package installation
-├── .gitignore                        # Git ignore rules
-├── .env.example                      # Environment variables template
+├── setup.py                           # Package installation
+├── .gitignore                         # Git ignore rules
+├── .env.example                       # Environment variables template
 │
-├── docs/                             # Documentation
-│   ├── architecture.md               # System architecture
-│   ├── installation.md               # Setup instructions
-│   ├── usage.md                      # Usage guide
-│   ├── api.md                        # API documentation
-│   └── papers/                       # Research papers (PDFs)
+├── configs/                           # Configuration files
+│   ├── pipeline_config.yaml           # Pipeline & fusion settings
+│   ├── module1_config.yaml            # Module 1: ResNet-50 + BiLSTM
+│   ├── module2_config.yaml            # Module 2: Whisper + BERT
+│   ├── module3_config.yaml            # Module 3: ViT + TrOCR
+│   └── module4_config.yaml            # Module 4: Pipeline A & B
 │
-├── data/                             # Data directory (gitignored)
-│   ├── raw/                          # Raw lecture videos
-│   ├── processed/                    # Processed data
-│   ├── annotations/                  # Manual annotations
-│   │   ├── module1/                  # Segment importance scores
-│   │   ├── module2/                  # Sentence labels
-│   │   ├── module3/                  # Slide importance labels
-│   │   └── module4/                  # Transition quality ratings
-│   └── datasets/                     # Training datasets
+├── src/                               # Source code
+│   ├── module1_importance/            # Keyframe Detection (Rashmi)
+│   │   ├── model.py                   # VideoImportanceScorer (ResNet-50 + BiLSTM)
+│   │   ├── feature_extractor.py       # ResNet-50 feature extraction
+│   │   ├── train.py                   # Training script
+│   │   └── inference.py               # Inference script
+│   │
+│   ├── module2_summarization/         # Content Summarization (Ravindu)
+│   │   ├── model.py                   # LectureSentenceClassifier (BERT-base)
+│   │   ├── transcriber.py             # Whisper transcription
+│   │   ├── train.py                   # Fine-tuning script
+│   │   └── inference.py               # Inference script
+│   │
+│   ├── module3_visual/                # Visual Understanding (Fazly)
+│   │   ├── model.py                   # SlideImportanceClassifier (ViT-base)
+│   │   ├── slide_extractor.py         # OpenCV slide detection
+│   │   ├── ocr.py                     # TrOCR text extraction
+│   │   ├── train.py                   # Fine-tuning script
+│   │   └── inference.py               # Inference script
+│   │
+│   ├── module4_synthesis/             # Video Synthesis (Lathisana)
+│   │   ├── fusion.py                  # Score fusion (S = w1·V + w2·T + w3·L)
+│   │   ├── pipeline_a.py             # Highlight video generator
+│   │   └── pipeline_b.py             # Synthetic slideshow generator
+│   │
+│   ├── pipeline/                      # Integration pipeline
+│   │   ├── summarizer.py             # Main LectureVideoSummarizer
+│   │   └── config.py                 # Pipeline configuration
+│   │
+│   ├── evaluation/                    # Evaluation metrics
+│   │   ├── metrics.py                # ROUGE-L, Precision/Recall, WER, F1
+│   │   └── user_study.py            # User study tools
+│   │
+│   ├── data/                          # Data processing utilities
+│   │   ├── video_loader.py           # Video loading
+│   │   └── preprocessing.py         # Data preprocessing
+│   │
+│   └── utils/                         # Shared utilities
+│       ├── json_schema.py            # Inter-module JSON schema & validators
+│       ├── logger.py                 # Logging configuration
+│       └── config.py                 # Global configuration
+│
+├── data/                              # Data directory (gitignored)
+│   ├── raw/                           # Original lecture videos
+│   ├── processed/                     # Processed data (transcripts, slides)
+│   ├── annotations/                   # Manual annotations
+│   │   ├── module1/                   # Segment importance scores (0-10)
+│   │   ├── module2/                   # Sentence importance labels
+│   │   └── module3/                   # Slide labels (Critical/Important/Skip)
+│   └── datasets/                      # Training datasets
 │       ├── train/
 │       ├── val/
 │       └── test/
 │
-├── models/                           # Trained models (gitignored)
-│   ├── module1/                      # Importance scoring models
-│   ├── module2/                      # Summarization models
-│   ├── module3/                      # Slide classification models
-│   └── module4/                      # Transition quality models
+├── models/                            # Trained models (gitignored)
+│   ├── module1/                       # ResNet-50 + BiLSTM checkpoints
+│   ├── module2/                       # BERT-base fine-tuned
+│   └── module3/                       # ViT-base fine-tuned
 │
-├── src/                              # Source code
-│   ├── __init__.py
-│   │
-│   ├── module1_importance/           # Module 1: Keyframe Detection
-│   │   ├── __init__.py
-│   │   ├── model.py                  # VideoImportanceScorer
-│   │   ├── train.py                  # Training script
-│   │   ├── inference.py              # Inference script
-│   │   ├── feature_extractor.py      # ResNet feature extraction
-│   │   └── utils.py                  # Helper functions
-│   │
-│   ├── module2_summarization/        # Module 2: Content Summarization
-│   │   ├── __init__.py
-│   │   ├── model.py                  # LectureSentenceClassifier
-│   │   ├── train.py                  # Training script
-│   │   ├── inference.py              # Inference script
-│   │   ├── transcriber.py            # Whisper integration
-│   │   └── utils.py                  # Helper functions
-│   │
-│   ├── module3_visual/               # Module 3: Visual Understanding
-│   │   ├── __init__.py
-│   │   ├── model.py                  # SlideImportanceClassifier
-│   │   ├── train.py                  # Training script
-│   │   ├── inference.py              # Inference script
-│   │   ├── slide_extractor.py        # Slide detection
-│   │   ├── ocr.py                    # OCR processing
-│   │   └── utils.py                  # Helper functions
-│   │
-│   ├── module4_synthesis/            # Module 4: Video Synthesis
-│   │   ├── __init__.py
-│   │   ├── model.py                  # TransitionQualityPredictor
-│   │   ├── train.py                  # Training script
-│   │   ├── inference.py              # Inference script
-│   │   ├── video_editor.py           # MoviePy integration
-│   │   └── utils.py                  # Helper functions
-│   │
-│   ├── pipeline/                     # Integration pipeline
-│   │   ├── __init__.py
-│   │   ├── summarizer.py             # Main LectureVideoSummarizer
-│   │   ├── segment_selector.py       # Segment selection logic
-│   │   └── config.py                 # Pipeline configuration
-│   │
-│   ├── data/                         # Data processing
-│   │   ├── __init__.py
-│   │   ├── video_loader.py           # Video loading utilities
-│   │   ├── preprocessing.py          # Data preprocessing
-│   │   └── dataset.py                # PyTorch datasets
-│   │
-│   ├── evaluation/                   # Evaluation metrics
-│   │   ├── __init__.py
-│   │   ├── metrics.py                # Quantitative metrics
-│   │   ├── user_study.py             # User study tools
-│   │   └── visualize.py              # Visualization tools
-│   │
-│   └── utils/                        # Shared utilities
-│       ├── __init__.py
-│       ├── logger.py                 # Logging configuration
-│       ├── config.py                 # Global configuration
-│       └── helpers.py                # Common helper functions
-│
-├── scripts/                          # Utility scripts
+├── scripts/                           # Utility scripts
 │   ├── download_videos.py            # Download lecture videos
-│   ├── setup_environment.sh          # Environment setup
-│   ├── train_all_modules.sh          # Train all modules
 │   └── run_pipeline.py               # Run full pipeline
 │
-├── notebooks/                        # Jupyter notebooks
-│   ├── 01_data_exploration.ipynb     # Data analysis
-│   ├── 02_module1_prototype.ipynb    # Module 1 experiments
-│   ├── 03_module2_prototype.ipynb    # Module 2 experiments
-│   ├── 04_module3_prototype.ipynb    # Module 3 experiments
-│   ├── 05_module4_prototype.ipynb    # Module 4 experiments
-│   └── 06_integration_demo.ipynb     # Full pipeline demo
+├── notebooks/                         # Jupyter notebooks for prototyping
+├── tools/                             # Annotation tools
+├── tests/                             # Unit tests
+├── outputs/                           # Generated outputs (gitignored)
+│   ├── summaries/                     # Output videos
+│   ├── logs/                          # Training & pipeline logs
+│   └── results/                       # Evaluation results
 │
-├── tools/                            # Annotation tools
-│   ├── annotate_segments.py          # Segment importance annotation
-│   ├── annotate_sentences.py         # Sentence importance annotation
-│   ├── annotate_slides.py            # Slide importance annotation
-│   └── annotate_transitions.py       # Transition quality annotation
+├── docs/                              # Documentation
+│   ├── architecture.md               # System architecture
+│   └── installation.md               # Setup instructions
 │
-├── tests/                            # Unit tests
-│   ├── __init__.py
-│   ├── test_module1.py
-│   ├── test_module2.py
-│   ├── test_module3.py
-│   ├── test_module4.py
-│   └── test_pipeline.py
-│
-├── configs/                          # Configuration files
-│   ├── module1_config.yaml           # Module 1 settings
-│   ├── module2_config.yaml           # Module 2 settings
-│   ├── module3_config.yaml           # Module 3 settings
-│   ├── module4_config.yaml           # Module 4 settings
-│   └── pipeline_config.yaml          # Pipeline settings
-│
-├── outputs/                          # Generated outputs (gitignored)
-│   ├── summaries/                    # Generated summary videos
-│   ├── logs/                         # Training logs
-│   └── results/                      # Evaluation results
-│
-└── research/                         # Research materials
-    ├── literature_review.md          # Paper summaries
-    ├── experiment_log.md             # Experiment tracking
-    └── meeting_notes/                # Team meeting notes
+└── research/                          # Research materials
+    └── meeting_notes/                 # Team meeting notes
 ```
 
 ## 🚀 Quick Start
@@ -193,9 +205,10 @@ lecture-video-summarizer/
 ### Prerequisites
 
 - Python 3.10+
-- CUDA-capable GPU (RTX 3060 or better recommended)
+- CUDA-capable GPU (RTX 3060 12GB or better recommended)
 - 32GB RAM
-- 100GB+ free disk space
+- FFmpeg installed and in PATH
+- OpenAI API key (for Module 4 Pipeline B)
 
 ### Installation
 
@@ -205,18 +218,19 @@ git clone https://github.com/rashmiJayawardhana/lecture-video-summarizer.git
 cd lecture-video-summarizer
 
 # Create virtual environment
-conda create -n lecture-summarizer python=3.10
-conda activate lecture-summarizer
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+# source .venv/bin/activate  # Linux/Mac
+
+# Install PyTorch with CUDA
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Install FFmpeg (required for video processing)
-# Ubuntu/Debian:
-sudo apt-get install ffmpeg
-# macOS:
-brew install ffmpeg
-# Windows: Download from https://ffmpeg.org/download.html
+# Set up environment variables
+copy .env.example .env
+# Edit .env — add your OPENAI_API_KEY
 
 # Verify GPU access
 python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
@@ -242,81 +256,77 @@ print(f"Summary created: {metadata['compression_ratio']:.1f}x compression")
 ## 📊 Dataset
 
 ### Data Collection
-- **Source**: MIT OpenCourseWare, Khan Academy, Coursera
-- **Size**: 50 lecture videos (30-90 minutes each)
-- **Subjects**: Computer Science, Mathematics, Physics
+- **Source**: MIT OpenCourseWare, YouTube, Coursera, AVLectures, LVVO dataset
+- **Size**: 50 IT theory lecture videos (45–90 minutes each)
+- **Content**: Algorithms, networking, databases, software engineering
 
 ### Annotation Requirements
 
-| Module | Data Type | Quantity | Time Estimate |
-|--------|-----------|----------|---------------|
-| Module 1 | Segment scores | 50 videos | 60-80 hours |
-| Module 2 | Sentence labels | 40 transcripts | 50-70 hours |
-| Module 3 | Slide labels | 800-1000 slides | 40-50 hours |
-| Module 4 | Transition ratings | 500 pairs | 30-40 hours |
+| Module | Data Type | Total | Train | Val | Test |
+|--------|-----------|-------|-------|-----|------|
+| Module 1 | Segment scores (0-10) | 50 videos | 35 | 5 | 10 |
+| Module 2 | Sentence labels | 50 transcripts | 35 | 5 | 10 |
+| Module 3 | Slide labels (Critical/Important/Skip) | 800-1000 slides | 600 | 100 | 100-300 |
 
 ## 🎓 Training
 
 ### Train Individual Modules
 
 ```bash
-# Module 1: Importance Scoring
+# Module 1: Importance Scoring (ResNet-50 + BiLSTM)
 python src/module1_importance/train.py --config configs/module1_config.yaml
 
-# Module 2: Content Summarization
+# Module 2: Content Summarization (BERT-base)
 python src/module2_summarization/train.py --config configs/module2_config.yaml
 
-# Module 3: Visual Understanding
+# Module 3: Visual Understanding (ViT-base)
 python src/module3_visual/train.py --config configs/module3_config.yaml
-
-# Module 4: Video Synthesis
-python src/module4_synthesis/train.py --config configs/module4_config.yaml
 ```
 
-### Train All Modules
+## 📈 Evaluation Targets
 
-```bash
-bash scripts/train_all_modules.sh
-```
+| Metric | Target | Measured With |
+|--------|--------|---------------|
+| ROUGE-L Score | > 0.40 | `rouge-score` library |
+| Segment Precision | > 0.75 | Custom (10 test videos) |
+| Segment Recall | > 0.75 | Custom (10 test videos) |
+| ViT Classification Accuracy | > 75% | 100-300 test slides |
+| BERT F1 Score | > 0.70 | 10 test transcripts |
+| ASR Word Error Rate | < 15% | `jiwer` library |
+| Knowledge Retention (User Study) | > 70% | 20 IT undergraduates |
+| Video Duration | ≤ 10 min | Enforced programmatically |
 
-## 📈 Evaluation Metrics
+## 🗓️ Project Timeline (8 Weeks)
 
-### Quantitative Metrics
-- **Compression Ratio**: 6:1 (60 min → 10 min)
-- **Content Coverage**: ROUGE-L > 0.40
-- **Segment Precision/Recall**: > 0.75
-- **Transition Smoothness**: > 7/10
-- **Processing Time**: < 45 min per 1-hour lecture
-
-### User Study Metrics
-- **Comprehension**: Quiz score > 70% of full-video watchers
-- **Satisfaction**: > 8/10 rating
-- **Usefulness**: > 80% would use for study
-
-## 🗓️ Project Timeline
-
-- **Month 1**: Setup + Data Collection + Literature Review
-- **Month 2**: Data Annotation + Baseline Implementation
-- **Month 3**: Model Development & Training
-- **Month 4**: Integration + Pipeline Development
-- **Month 5**: Evaluation + User Studies
-- **Month 6**: Refinement + Documentation + Presentation
+| Week | Phase | Goal |
+|------|-------|------|
+| 1-2 | Setup & Annotation | Environment ready, 50 videos downloaded, annotation 50% complete |
+| 3-4 | First Model Training | All modules train first models, sample JSON delivered mid-Week 3 |
+| 5-6 | Integration & Pipeline | First full pipeline run, Pipeline A polished, Pipeline B started |
+| 7 | Tuning & Pipeline B | Weights tuned via grid search, both pipelines producing clean output |
+| 8 | Evaluation & Submission | User study, all metrics computed, final report, GitHub submitted |
 
 ## 👥 Team
 
-| Member | Module | Responsibility |
-|--------|--------|----------------|
-| Member 1 | Module 1 | Keyframe Detection & Importance Scoring |
-| Member 2 | Module 2 | Speech-to-Text + Content Summarization |
-| Member 3 | Module 3 | Visual Content Understanding |
-| Member 4 | Module 4 | Video Synthesis & Editing |
+| Index | Name | Module | Responsibility |
+|-------|------|--------|----------------|
+| 214093E | Rashmi | Module 1 | Keyframe Detection & Importance Scoring |
+| 214095L | Ravindu | Module 2 | Speech-to-Text & Content Summarization |
+| 214008C | Fazly | Module 3 | Visual Content Understanding & Slide Extraction |
+| 214116F | Lathisana | Module 4 | Video Synthesis & Integration |
 
 ## 📚 References
 
-1. Rahman et al. (2020) - Visual Summarization of Lecture Video Segments
-2. IEEE T4E (2018) - Automated Summarization of Lecture Videos
-3. ACL BEA (2023) - Automatically Generated Summaries of Video Lectures
-4. [Full bibliography in docs/papers/](docs/papers/)
+1. Rahman et al. (2020) — Visual Summarization of Lecture Video Segments
+2. Zhang et al. (2016) — Video Summarization with LSTM
+3. Lin et al. (2022) — Lecture Video Keyframe Detection
+4. Radford et al. (2023) — Robust Speech Recognition (Whisper)
+5. Gonzalez et al. (2023) — Automatically Generated Summaries of Video Lectures
+6. Biswas et al. (2025) — Visual Content Detection with Transfer Learning
+7. Li et al. (2023) — TrOCR: Transformer-based OCR
+8. Kaur & Ragha (2024) — Optimized Deep Learning Lecture Summarization
+9. Ahmed et al. (2025) — Multimodal Video Summarization
+10. Benedetto et al. (2024) — Abstractive Video Lecture Summarization
 
 ## License
 
@@ -326,15 +336,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - MIT OpenCourseWare for lecture videos
 - OpenAI Whisper for speech recognition
-- Hugging Face for transformer models
+- Hugging Face for transformer models (BERT, ViT, TrOCR)
 - MoviePy for video editing capabilities
+- OpenAI GPT-4o for narration generation
+- Microsoft edge-tts for neural speech synthesis
 
 ## Contact
 
-For questions or collaboration:
 - Project Repository: [GitHub](https://github.com/rashmiJayawardhana/lecture-video-summarizer)
 - Issues: [GitHub Issues](https://github.com/rashmiJayawardhana/lecture-video-summarizer/issues)
 
 ---
 
-**Status**: In Development | **Version**: 0.1.0 | **Last Updated**: February 2026
+**Status**: In Development | **Version**: 0.1.0 | **Last Updated**: May 2026

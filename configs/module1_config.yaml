@@ -1,11 +1,16 @@
 # Module 1: Keyframe Detection & Importance Scoring Configuration
+# Owner: Rashmi (214093E)
+# Architecture: ResNet-50 + BiLSTM (Rahman et al. 2020, Zhang et al. 2016, Lin et al. 2022)
 
 model:
   name: "VideoImportanceScorer"
+  backbone: "resnet50"
+  backbone_pretrained: true
+  backbone_feature_dim: 2048  # ResNet-50 output dimension
   hidden_size: 512
   num_lstm_layers: 2
+  bidirectional: true  # BiLSTM as specified in the plan
   dropout: 0.3
-  pretrained_backbone: true
 
 training:
   batch_size: 8
@@ -14,30 +19,48 @@ training:
   weight_decay: 0.0001
   optimizer: "adam"
   scheduler: "cosine"
-  
+  early_stopping_patience: 10
+
 data:
-  segment_duration: 10  # seconds
-  frame_sample_rate: 30  # sample every 30 frames (1 fps at 30fps video)
-  sequence_length: 10  # number of frames per segment
+  segment_duration: 10  # seconds — each segment is a scoring unit
+  sequence_length: 30   # 30-frame sequences as specified in plan
+  frame_sample_rate: 1  # 1 fps extraction
   image_size: 224
-  train_split: 0.8
-  val_split: 0.1
-  test_split: 0.1
+  # Dataset split: 50 annotated IT lecture videos
+  num_videos: 50
+  train_videos: 35
+  val_videos: 5
+  test_videos: 10
+  # Annotation: 10-second segments rated 0-10 for instructional importance
+  score_range: [0, 10]
 
 augmentation:
+  enabled: true
+  # Week 5 augmentations: brightness jitter, random crop, temporal shift
+  brightness_jitter: true
   random_crop: true
-  random_flip: true
-  color_jitter: true
+  temporal_shift: true
   normalize:
-    mean: [0.485, 0.456, 0.406]
+    mean: [0.485, 0.456, 0.406]  # ImageNet normalization
     std: [0.229, 0.224, 0.225]
+
+# JSON Output Schema (frozen after Week 5):
+# {
+#   "segment_id": "seg_001",
+#   "timestamp_start": 12.0,
+#   "timestamp_end": 22.0,
+#   "score_V": 0.82
+# }
+output:
+  json_key: "score_V"
+  score_normalize: true  # Normalize 0-10 annotations to 0-1 for fusion
 
 paths:
   data_dir: "./data/datasets/module1"
+  annotations_dir: "./data/annotations/module1"
   model_save_dir: "./models/module1"
   log_dir: "./outputs/logs/module1"
 
 logging:
-  use_wandb: true
   log_interval: 10  # log every 10 batches
   save_interval: 5  # save checkpoint every 5 epochs

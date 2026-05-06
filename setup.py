@@ -1,6 +1,6 @@
 """
-Automated Lecture Video Summarization
-A research project for condensing 60-minute lecture videos into 10-minute summaries.
+INTEGRA — Automated Lecture Video Summarization
+A research project for condensing 60-minute IT theory lectures into 10-minute summaries.
 """
 
 from setuptools import setup, find_packages
@@ -15,7 +15,7 @@ setup(
     name="lecture-video-summarizer",
     version="0.1.0",
     author="Integra",
-    author_email="your.email@university.edu",
+    author_email="integra@uom.lk",
     description="Automated lecture video summarization using deep learning",
     long_description=long_description,
     long_description_content_type="text/markdown",

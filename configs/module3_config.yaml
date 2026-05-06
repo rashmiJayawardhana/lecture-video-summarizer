@@ -1,20 +1,26 @@
 # Module 3: Visual Content Understanding & Slide Extraction Configuration
+# Owner: Fazly (214008C)
+# Architecture: ViT-base + TrOCR (Biswas et al. 2025, Li et al. 2023)
 
 model:
   name: "SlideImportanceClassifier"
-  base_model: "google/vit-base-patch16-224"
+  base_model: "google/vit-base-patch16-224"  # ViT-base from Hugging Face
   num_labels: 3  # Critical, Important, Skip
   dropout: 0.1
+  # Fallback: If ViT accuracy < 70%, switch to ResNet-50 + linear head
+  fallback_model: "resnet50"
 
 slide_extraction:
-  similarity_threshold: 0.95  # SSIM threshold for detecting new slides
-  sample_rate: 30  # check every 30 frames (1 second at 30fps)
-  min_slide_duration: 2  # minimum seconds a slide must be shown
+  similarity_threshold: 0.95  # SSIM threshold for detecting new/unique slides
+  sample_rate: 30  # Check every 30 frames (1 second at 30fps)
+  min_slide_duration: 2  # Minimum seconds a slide must be shown
 
 ocr:
-  engine: "tesseract"
-  language: "eng"
-  confidence_threshold: 60
+  engine: "trocr"  # TrOCR (Transformer-based OCR) — NOT Tesseract
+  model_name: "microsoft/trocr-base-printed"  # Hugging Face model
+  # TrOCR confirmed for OCR by Li et al. 2023
+  # Run on Critical and Important frames only (Skip frames excluded)
+  confidence_threshold: 0.6
 
 training:
   batch_size: 32
@@ -25,24 +31,44 @@ training:
 
 data:
   image_size: 224
-  train_split: 0.8
-  val_split: 0.1
-  test_split: 0.1
+  # Dataset: 800-1000 annotated slide images from 50 IT lecture videos
+  total_slides: 800  # Minimum viable: 500
+  train_slides: 600
+  val_slides: 100
+  test_slides: 100  # Can extend to 300
+
+# Classification Labels:
+# 1. Critical — Key diagrams, important formulas, summary slides
+# 2. Important — Definitions, step explanations, worked examples
+# 3. Skip — Title slides, duplicates, blank frames
 
 augmentation:
   random_crop: true
   random_rotation: 5  # degrees
   color_jitter: true
   normalize:
-    mean: [0.5, 0.5, 0.5]
+    mean: [0.5, 0.5, 0.5]  # ViT normalization
     std: [0.5, 0.5, 0.5]
+
+# JSON Output Schema (frozen after Week 5):
+# {
+#   "frame_time": 14.5,
+#   "label": "Critical",
+#   "ocr_text": "Binary Search Tree: O(log n) average case..."
+# }
+
+evaluation:
+  metrics:
+    - "classification_accuracy"  # Target: > 75%
+    - "ocr_quality"
 
 paths:
   data_dir: "./data/datasets/module3"
+  annotations_dir: "./data/annotations/module3"
+  slides_dir: "./data/processed/slides"
   model_save_dir: "./models/module3"
   log_dir: "./outputs/logs/module3"
 
 logging:
-  use_wandb: true
   log_interval: 10
   save_interval: 5
