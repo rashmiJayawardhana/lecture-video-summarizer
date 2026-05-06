@@ -1,39 +1,72 @@
-# Module 4: Video Synthesis & Intelligent Editing Configuration
+# Module 4: Video Synthesis & Integration Configuration
+# Owner: Lathisana (214116F)
+# Technologies: MoviePy, FFmpeg, GPT-4o, edge-tts, Pillow
+# NOTE: Module 4 is an ENGINEERING module — no trainable DL model.
+# It consumes fusion scores from Modules 1, 2, 3 and produces output videos.
 
-model:
-  name: "TransitionQualityPredictor"
-  architecture: "3d_cnn"  # 3d_cnn or i3d
-  num_frames: 16  # frames per clip
-  dropout: 0.3
+# ─── Pipeline A: Highlight Video (highlight.mp4) ───────────────────────
+pipeline_a:
+  description: "Real lecture highlight video with original audio"
+  output_filename: "highlight.mp4"
+  max_duration: 300  # 5 minutes (extend to 600 if quality sufficient)
+  transition:
+    type: "crossfade"          # FadeIn/FadeOut between clips
+    duration: 0.5              # seconds per transition
+  chapter_banners:
+    enabled: true
+    duration: 1.5              # seconds per chapter break banner
+    resolution: [1920, 1080]
+    font_size: 48
+  title_card:
+    enabled: true
+    duration: 3.0              # seconds
+  outro_card:
+    enabled: true
+    duration: 5.0              # seconds — shows key takeaways
+  subtitles:
+    enabled: true              # Overlay BERT key sentences + TrOCR text
+    font_size: 24
+    position: "bottom"
 
-training:
-  batch_size: 4  # smaller due to 3D convolutions
-  num_epochs: 30
-  learning_rate: 0.0001
-  weight_decay: 0.0001
-  optimizer: "adam"
+# ─── Pipeline B: Synthetic Slideshow (slideshow.mp4) ───────────────────
+pipeline_b:
+  description: "AI-rendered narrated slideshow — no raw footage needed"
+  output_filename: "slideshow.mp4"
+  slide_rendering:
+    resolution: [1920, 1080]
+    format: "PNG"
+    engine: "pillow"           # Pillow renders slides
+  narration:
+    model: "gpt-4o"            # GPT-4o — NOT gpt-4.0
+    max_tokens_per_slide: 100  # Cap to control API costs
+    batch_mode: true           # Pre-generate all scripts in one call
+    estimated_cost_per_lecture: 0.50  # USD
+  tts:
+    engine: "edge-tts"
+    voice: "en-US-AriaNeural"  # AriaNeural voice as specified
+    output_format: "mp3"
+  slide_clip:
+    min_duration: 3.0          # seconds — hold slide for max(audio_duration, 3s)
+    sync_to_audio: true
 
-data:
-  clip_duration: 1  # seconds
-  frame_size: [112, 112]  # height, width
-  train_split: 0.8
-  val_split: 0.1
-  test_split: 0.1
+# ─── Score Fusion (consumed from pipeline_config.yaml) ─────────────────
+fusion:
+  formula: "S = w1*V + w2*T + w3*L"
+  min_score_threshold: 0.3    # Exclude segments below this score
 
-video_editing:
-  transition_duration: 0.5  # seconds
-  transition_type: "crossfade"  # crossfade, fade, cut
+# ─── Video Encoding ───────────────────────────────────────────────────
+encoding:
+  codec: "libx264"            # H.264 MP4
   fps: 24
-  codec: "libx264"
-  bitrate: "5000k"
   audio_codec: "aac"
+  bitrate: "5000k"
+  pixel_format: "yuv420p"
 
 paths:
-  data_dir: "./data/datasets/module4"
-  model_save_dir: "./models/module4"
+  input_json_dir: "./outputs/module_outputs"  # JSON from Modules 1, 2, 3
+  output_dir: "./outputs/summaries"
+  temp_dir: "./outputs/temp"
   log_dir: "./outputs/logs/module4"
 
 logging:
-  use_wandb: true
   log_interval: 5
-  save_interval: 5

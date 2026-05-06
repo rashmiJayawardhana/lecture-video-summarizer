@@ -1,15 +1,19 @@
-# Module 2: Speech-to-Text + Content Summarization Configuration
+# Module 2: Speech-to-Text & Content Summarization Configuration
+# Owner: Ravindu (214095L)
+# Architecture: OpenAI Whisper + Fine-tuned BERT-base (Radford et al. 2023, Gonzalez et al. 2023)
+
+whisper:
+  model_size: "large-v3"  # Preferred model as per plan; fallback: "base"
+  language: "en"
+  device: "cuda"
+  word_timestamps: true  # Required for sentence-level timestamp alignment
+  # Fallback: If WER > 20%, switch to large-v3 or use custom IT vocabulary post-correction
 
 model:
   name: "LectureSentenceClassifier"
   base_model: "bert-base-uncased"
-  num_labels: 2  # Important vs Not Important
+  num_labels: 2  # Important (1) vs Not Important (0)
   dropout: 0.1
-
-whisper:
-  model_size: "base"  # tiny, base, small, medium, large
-  language: "en"
-  device: "cuda"
 
 training:
   batch_size: 16
@@ -19,24 +23,49 @@ training:
   warmup_steps: 500
   optimizer: "adamw"
   max_grad_norm: 1.0
+  # Fallback: If F1 < 0.65, apply class weighting
+  class_weight_balanced: false  # Set to true if F1 < 0.65
 
 data:
   max_sequence_length: 512
-  train_split: 0.8
-  val_split: 0.1
-  test_split: 0.1
-
-summarization:
-  summary_ratio: 0.3  # 30% of original length
+  # Dataset split: 50 labeled lecture transcripts
+  num_transcripts: 50
+  train_transcripts: 35
+  val_transcripts: 5
+  test_transcripts: 10
+  # Classification criteria (3 types of important sentences):
+  # 1. Concept introduction
+  # 2. Term definition
+  # 3. Key explanation
   min_sentence_length: 10
   max_sentence_length: 200
 
+summarization:
+  summary_ratio: 0.3  # 30% of original content retained
+  importance_ratio_key: "importance_ratio_T"  # Key name in output JSON
+
+# JSON Output Schema (frozen after Week 5):
+# {
+#   "sentence": "A binary search tree maintains...",
+#   "timestamp_start": 12.0,
+#   "timestamp_end": 15.5,
+#   "is_important": true,
+#   "importance_ratio_T": 0.75
+# }
+
+evaluation:
+  metrics:
+    - "f1_score"       # Target: > 0.70
+    - "word_error_rate" # Target: < 15% (measured with jiwer)
+    - "rouge_l"        # Target: > 0.40
+
 paths:
   data_dir: "./data/datasets/module2"
+  annotations_dir: "./data/annotations/module2"
+  transcripts_dir: "./data/processed/transcripts"
   model_save_dir: "./models/module2"
   log_dir: "./outputs/logs/module2"
 
 logging:
-  use_wandb: true
   log_interval: 10
   save_interval: 2

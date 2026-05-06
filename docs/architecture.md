@@ -1,293 +1,213 @@
-# Project Structure Documentation
+# INTEGRA — System Architecture
 
-This document explains the organization of the lecture-video-summarizer repository.
+This document explains the organization and architecture of the lecture-video-summarizer repository.
 
-## Directory Overview
+## High-Level Pipeline
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                     Input: 60-min IT Lecture Video                     │
+└───────────────┬─────────────────────┬─────────────────┬───────────────┘
+                │                     │                 │
+                ▼                     ▼                 ▼
+┌───────────────────┐  ┌──────────────────────┐  ┌──────────────────────┐
+│  Module 1         │  │  Module 2            │  │  Module 3            │
+│  Keyframe Det.    │  │  Speech-to-Text &    │  │  Visual Content &    │
+│  & Importance     │  │  Content Summary     │  │  Slide Extraction    │
+│                   │  │                      │  │                      │
+│  ResNet-50        │  │  Whisper (large-v3)  │  │  ViT-base            │
+│  + BiLSTM         │  │  + BERT-base         │  │  + TrOCR             │
+│                   │  │                      │  │                      │
+│  Output: score_V  │  │  Output:             │  │  Output: label,      │
+│  per 10s segment  │  │  importance_ratio_T  │  │  ocr_text per frame  │
+└───────┬───────────┘  └──────────┬───────────┘  └──────────┬───────────┘
+        │                        │                          │
+        └────────────┬───────────┴──────────────┬───────────┘
+                     │                          │
+                     ▼                          │
+        ┌────────────────────────┐              │
+        │  Score Fusion          │              │
+        │  S = w1·V + w2·T      │◄─────────────┘
+        │      + w3·L           │
+        │  Threshold: S >= 0.3  │
+        └───────┬────────┬──────┘
+                │        │
+                ▼        ▼
+    ┌───────────────┐  ┌───────────────────┐
+    │  Pipeline A   │  │  Pipeline B       │
+    │  Highlight    │  │  Synthetic        │
+    │  Video        │  │  Slideshow        │
+    │               │  │                   │
+    │  MoviePy +    │  │  GPT-4o +         │
+    │  FFmpeg       │  │  edge-tts +       │
+    │               │  │  Pillow           │
+    └───────┬───────┘  └─────────┬─────────┘
+            │                    │
+            ▼                    ▼
+    ┌───────────────┐  ┌───────────────────┐
+    │ highlight.mp4 │  │ slideshow.mp4     │
+    │ (≤ 10 min)    │  │ (≤ 10 min)        │
+    └───────────────┘  └───────────────────┘
+```
+
+## Module Details
+
+### Module 1: Keyframe Detection & Importance Scoring
+- **Owner**: Rashmi (214093E)
+- **Architecture**: ResNet-50 (frozen early layers) → BiLSTM (2 layers, 512 hidden) → Linear classifier
+- **Input**: 30-frame sequences extracted at 1fps from 10-second segments
+- **Output**: Importance score (0–1) per segment → `score_V`
+- **Training**: 50 annotated IT lecture videos (35 train / 5 val / 10 test)
+- **Key Files**:
+  - `src/module1_importance/model.py` — `VideoImportanceScorer` class
+  - `src/module1_importance/feature_extractor.py` — ResNet-50 feature extraction
+  - `configs/module1_config.yaml` — Hyperparameters
+
+### Module 2: Speech-to-Text & Content Summarization
+- **Owner**: Ravindu (214095L)
+- **Architecture**: Whisper large-v3 (ASR) → BERT-base fine-tuned (binary classifier)
+- **Classification Criteria**: Concept introduction, term definition, key explanation
+- **Output**: Per sentence → `{ sentence, is_important, importance_ratio_T }`
+- **Training**: 50 labeled lecture transcripts (35 train / 5 val / 10 test)
+- **Key Files**:
+  - `src/module2_summarization/model.py` — `LectureSentenceClassifier` class
+  - `src/module2_summarization/transcriber.py` — Whisper integration
+  - `configs/module2_config.yaml` — Hyperparameters
+
+### Module 3: Visual Content Understanding & Slide Extraction
+- **Owner**: Fazly (214008C)
+- **Architecture**: ViT-base-patch16-224 (3-class classifier) + TrOCR (text extraction)
+- **Labels**: Critical (diagrams, formulas) / Important (definitions, examples) / Skip (title, blank)
+- **Output**: Per frame → `{ frame_time, label, ocr_text }`
+- **Training**: 800–1000 annotated slide images (600 train / 100 val / 100–300 test)
+- **Fallback**: ResNet-50 + linear head if ViT accuracy < 70%
+- **Key Files**:
+  - `src/module3_visual/model.py` — `SlideImportanceClassifier` + fallback
+  - `src/module3_visual/slide_extractor.py` — OpenCV SSIM-based extraction
+  - `src/module3_visual/ocr.py` — TrOCR integration (NOT Tesseract)
+  - `configs/module3_config.yaml` — Hyperparameters
+
+### Module 4: Video Synthesis & Integration
+- **Owner**: Lathisana (214116F)
+- **Type**: Engineering module — **NO trainable DL model**
+- **Fusion**: `S = w1·V + w2·T + w3·L` with `min_threshold = 0.3`
+- **Pipeline A**: highlight.mp4 — Real clips + transitions + subtitles + chapter banners
+- **Pipeline B**: slideshow.mp4 — AI slides + GPT-4o narration + AriaNeural TTS
+- **Key Files**:
+  - `src/module4_synthesis/fusion.py` — Weighted score fusion & segment selection
+  - `src/module4_synthesis/pipeline_a.py` — Highlight video generator
+  - `src/module4_synthesis/pipeline_b.py` — Synthetic slideshow generator
+  - `configs/module4_config.yaml` — Pipeline A & B settings
+
+## Shared JSON Schema
+
+**Agreed Week 1. Frozen after Week 5.**
+
+Defined and validated in `src/utils/json_schema.py`.
+
+```json
+// Module 1 → Module 4
+{ "segment_id": "seg_001", "timestamp_start": 12.0, "timestamp_end": 22.0, "score_V": 0.82 }
+
+// Module 2 → Module 4
+{ "sentence": "...", "timestamp_start": 12.0, "timestamp_end": 15.5, "is_important": true, "importance_ratio_T": 0.75 }
+
+// Module 3 → Module 4
+{ "frame_time": 14.5, "label": "Critical", "ocr_text": "..." }
+```
+
+## Directory Structure
 
 ```
 lecture-video-summarizer/
-├── src/                    # Source code (main implementation)
-├── data/                   # Data storage (gitignored)
-├── models/                 # Trained models (gitignored)
-├── configs/                # Configuration files
-├── docs/                   # Documentation
-├── scripts/                # Utility scripts
-├── tools/                  # Annotation tools
-├── notebooks/              # Jupyter notebooks
-├── tests/                  # Unit tests
-├── outputs/                # Generated outputs (gitignored)
-└── research/               # Research materials
+├── src/                          # Source code
+│   ├── module1_importance/       # Rashmi — ResNet-50 + BiLSTM
+│   ├── module2_summarization/    # Ravindu — Whisper + BERT
+│   ├── module3_visual/           # Fazly — ViT + TrOCR
+│   ├── module4_synthesis/        # Lathisana — Fusion + Pipelines A/B
+│   ├── pipeline/                 # End-to-end orchestration
+│   ├── evaluation/               # Metrics (ROUGE-L, F1, WER, etc.)
+│   ├── data/                     # Data loading utilities
+│   └── utils/                    # JSON schema, logging, config
+│
+├── configs/                      # YAML configuration files
+├── data/                         # Raw videos, annotations, datasets
+├── models/                       # Trained checkpoints (Modules 1-3 only)
+├── scripts/                      # Download, training, pipeline scripts
+├── notebooks/                    # Jupyter experiments
+├── tools/                        # Annotation interfaces
+├── tests/                        # Unit tests
+├── outputs/                      # Generated videos, logs, results
+├── docs/                         # Documentation
+└── research/                     # Literature, meeting notes
 ```
-
-## Source Code (`src/`)
-
-### Module Structure
-
-Each module follows the same structure:
-
-```
-src/module{N}_{name}/
-├── __init__.py            # Module initialization
-├── model.py               # Neural network model
-├── train.py               # Training script
-├── inference.py           # Inference script
-└── utils.py               # Helper functions
-```
-
-### Module 1: `module1_importance/`
-- **Purpose**: Keyframe detection and importance scoring
-- **Model**: ResNet50 + LSTM
-- **Owner**: Member 1
-- **Key Files**:
-  - `model.py`: VideoImportanceScorer class
-  - `feature_extractor.py`: ResNet feature extraction
-  - `train.py`: Training loop
-  - `inference.py`: Score video segments
-
-### Module 2: `module2_summarization/`
-- **Purpose**: Speech-to-text and content summarization
-- **Model**: Whisper + BERT
-- **Owner**: Member 2
-- **Key Files**:
-  - `model.py`: LectureSentenceClassifier
-  - `transcriber.py`: Whisper integration
-  - `train.py`: Fine-tune BERT
-  - `inference.py`: Generate summaries
-
-### Module 3: `module3_visual/`
-- **Purpose**: Visual content understanding and slide extraction
-- **Model**: Vision Transformer (ViT)
-- **Owner**: Member 3
-- **Key Files**:
-  - `model.py`: SlideImportanceClassifier
-  - `slide_extractor.py`: Slide detection
-  - `ocr.py`: Tesseract OCR integration
-  - `train.py`: Train ViT classifier
-
-### Module 4: `module4_synthesis/`
-- **Purpose**: Video synthesis and intelligent editing
-- **Model**: 3D CNN for transitions
-- **Owner**: Member 4
-- **Key Files**:
-  - `model.py`: TransitionQualityPredictor
-  - `video_editor.py`: MoviePy integration
-  - `train.py`: Train transition model
-  - `inference.py`: Create final video
-
-### Pipeline (`pipeline/`)
-- **Purpose**: Integrate all modules
-- **Key Files**:
-  - `summarizer.py`: Main LectureVideoSummarizer class
-  - `segment_selector.py`: Segment selection algorithms
-  - `config.py`: Pipeline configuration
-
-### Shared Utilities
-
-#### `data/`
-- `video_loader.py`: Load and preprocess videos
-- `preprocessing.py`: Data augmentation
-- `dataset.py`: PyTorch Dataset classes
-
-#### `evaluation/`
-- `metrics.py`: ROUGE, precision, recall, etc.
-- `user_study.py`: User study tools
-- `visualize.py`: Result visualization
-
-#### `utils/`
-- `logger.py`: Logging configuration
-- `config.py`: Configuration management
-- `helpers.py`: Common utilities
-
-## Data Directory (`data/`)
-
-```
-data/
-├── raw/                   # Original lecture videos
-├── processed/             # Preprocessed data
-├── annotations/           # Manual annotations
-│   ├── module1/          # Segment importance scores
-│   ├── module2/          # Sentence labels
-│   ├── module3/          # Slide importance labels
-│   └── module4/          # Transition quality ratings
-└── datasets/             # Training datasets
-    ├── train/
-    ├── val/
-    └── test/
-```
-
-## Models Directory (`models/`)
-
-```
-models/
-├── module1/              # Importance scoring models
-│   ├── best_model.pth
-│   └── checkpoints/
-├── module2/              # Summarization models
-├── module3/              # Slide classification models
-└── module4/              # Transition quality models
-```
-
-## Configuration Files (`configs/`)
-
-- `module1_config.yaml`: Module 1 hyperparameters
-- `module2_config.yaml`: Module 2 hyperparameters
-- `module3_config.yaml`: Module 3 hyperparameters
-- `module4_config.yaml`: Module 4 hyperparameters
-- `pipeline_config.yaml`: End-to-end pipeline settings
-
-## Scripts (`scripts/`)
-
-Utility scripts for common tasks:
-- `download_videos.py`: Download lecture videos
-- `setup_environment.sh`: Environment setup
-- `train_all_modules.sh`: Train all modules sequentially
-- `run_pipeline.py`: Run full summarization pipeline
-
-## Tools (`tools/`)
-
-Annotation interfaces:
-- `annotate_segments.py`: Gradio UI for segment annotation
-- `annotate_sentences.py`: Sentence importance labeling
-- `annotate_slides.py`: Slide importance labeling
-- `annotate_transitions.py`: Transition quality rating
-
-## Notebooks (`notebooks/`)
-
-Jupyter notebooks for exploration and prototyping:
-1. `01_data_exploration.ipynb`: Explore video datasets
-2. `02_module1_prototype.ipynb`: Module 1 experiments
-3. `03_module2_prototype.ipynb`: Module 2 experiments
-4. `04_module3_prototype.ipynb`: Module 3 experiments
-5. `05_module4_prototype.ipynb`: Module 4 experiments
-6. `06_integration_demo.ipynb`: Full pipeline demo
-
-## Tests (`tests/`)
-
-Unit tests for each module:
-- `test_module1.py`: Test importance scoring
-- `test_module2.py`: Test summarization
-- `test_module3.py`: Test slide extraction
-- `test_module4.py`: Test video synthesis
-- `test_pipeline.py`: Test end-to-end pipeline
-
-Run tests:
-```bash
-pytest tests/
-```
-
-## Outputs (`outputs/`)
-
-```
-outputs/
-├── summaries/            # Generated summary videos
-├── logs/                 # Training logs
-│   ├── module1/
-│   ├── module2/
-│   ├── module3/
-│   └── module4/
-└── results/              # Evaluation results
-```
-
-## Research Materials (`research/`)
-
-- `literature_review.md`: Summary of research papers
-- `experiment_log.md`: Track experiments and results
-- `meeting_notes/`: Team meeting notes
-
-## File Naming Conventions
-
-### Python Files
-- Classes: `PascalCase` (e.g., `VideoImportanceScorer`)
-- Functions: `snake_case` (e.g., `extract_features`)
-- Constants: `UPPER_SNAKE_CASE` (e.g., `MAX_SEQUENCE_LENGTH`)
-
-### Data Files
-- Videos: `lecture_XXX.mp4` (e.g., `lecture_001.mp4`)
-- Annotations: `lecture_XXX_annotations.json`
-- Models: `module{N}_epoch{E}.pth` (e.g., `module1_epoch50.pth`)
-
-### Configuration Files
-- YAML format: `{module}_config.yaml`
-- Environment: `.env` (not committed)
 
 ## Git Workflow
 
 ### Branches
-- `main`: Stable code
-- `develop`: Integration branch
-- `feature/module{N}-{feature}`: Feature branches
-- `fix/{issue}`: Bug fixes
+- `main` — Stable, tested code
+- `module-1` — Rashmi's keyframe detection work
+- `module-2` — Ravindu's transcription & classification work
+- `module-3` — Fazly's slide extraction & classification work
+- `module-4` — Lathisana's video synthesis work
 
 ### Commit Messages
 ```
 [Module{N}] Brief description
 
-Detailed explanation if needed
+Detailed explanation if needed.
 ```
 
 Example:
 ```
-[Module1] Add ResNet feature extraction
+[Module1] Add BiLSTM temporal modeling
 
-Implemented feature extraction using pre-trained ResNet50.
-Added caching to speed up repeated extractions.
+Implemented bidirectional LSTM on top of ResNet-50 features.
+Trained with 30-frame sequences on 35 annotated IT lecture videos.
 ```
 
-## Development Workflow
+### Code Review Process
+1. Create feature branch from your module branch
+2. Make changes and test locally
+3. Push and create a Pull Request
+4. At least one team member reviews before merging
+5. Weekly integration meeting merges module branches into `main`
 
-1. **Create feature branch**
-   ```bash
-   git checkout -b feature/module1-training
-   ```
+## Technology Stack
 
-2. **Make changes and test**
-   ```bash
-   pytest tests/test_module1.py
-   ```
+| Module | Technologies | Literature Reference |
+|--------|-------------|---------------------|
+| Module 1 | ResNet-50, BiLSTM, OpenCV, PyTorch | Rahman et al. 2020, Zhang et al. 2016 |
+| Module 2 | Whisper (large-v3), BERT-base, Hugging Face Trainer, jiwer | Radford et al. 2023, Gonzalez et al. 2023 |
+| Module 3 | ViT-base, TrOCR, OpenCV, Hugging Face | Biswas et al. 2025, Li et al. 2023 |
+| Module 4 | MoviePy, FFmpeg, Pillow, GPT-4o, edge-tts, scikit-learn | Gonzalez et al. 2023, Ahmed et al. 2025 |
+| Evaluation | rouge-score, jiwer, scikit-learn | Benedetto et al. 2024, Kaur & Ragha 2024 |
 
-3. **Commit changes**
-   ```bash
-   git add .
-   git commit -m "[Module1] Implement training loop"
-   ```
+## Evaluation Targets
 
-4. **Push and create PR**
-   ```bash
-   git push origin feature/module1-training
-   ```
-
-5. **Code review and merge**
-
-## Best Practices
-
-### Code Organization
-- Keep modules independent
-- Use configuration files for hyperparameters
-- Write docstrings for all functions/classes
-- Add type hints where possible
-
-### Data Management
-- Never commit large files (videos, models)
-- Use `.gitignore` properly
-- Document data sources
-- Version datasets
-
-### Collaboration
-- Regular team meetings
-- Code reviews for all PRs
-- Update documentation
-- Track experiments in `experiment_log.md`
+| Metric | Target | Module |
+|--------|--------|--------|
+| ROUGE-L Score | > 0.40 | All |
+| Segment Precision | > 0.75 | Module 1 + 4 |
+| Segment Recall | > 0.75 | Module 1 + 4 |
+| ViT Classification Accuracy | > 75% | Module 3 |
+| BERT F1 Score | > 0.70 | Module 2 |
+| ASR Word Error Rate | < 15% | Module 2 |
+| Knowledge Retention | > 70% | User Study |
+| Video Duration | ≤ 600s | Module 4 |
 
 ## Quick Reference
 
 ### Run Training
 ```bash
 python src/module1_importance/train.py --config configs/module1_config.yaml
+python src/module2_summarization/train.py --config configs/module2_config.yaml
+python src/module3_visual/train.py --config configs/module3_config.yaml
 ```
 
-### Run Inference
+### Run Full Pipeline
 ```bash
-python src/pipeline/summarizer.py --input data/raw/lecture_001.mp4 --output outputs/summaries/
+python scripts/run_pipeline.py --input data/raw/lecture_001.mp4 --output outputs/summaries/
 ```
 
 ### Run Tests
@@ -295,7 +215,7 @@ python src/pipeline/summarizer.py --input data/raw/lecture_001.mp4 --output outp
 pytest tests/ -v
 ```
 
-### View Logs
+### Validate JSON Schema
 ```bash
-tensorboard --logdir outputs/logs/
+python src/utils/json_schema.py
 ```
