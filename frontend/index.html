@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INTEGRA — Automated Lecture Video Summarization</title>
+  <meta name="description" content="Transform 60-minute IT theory lectures into coherent 10-minute condensed videos using deep learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <!-- ═══ Particle Background Canvas ═══ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav id="main-nav" class="glass-nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">INTEGRA</span>
+      </a>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#upload" class="nav-link">Upload</a>
+        <a href="#pipeline" class="nav-link">Pipeline</a>
+        <a href="#results" class="nav-link">Results</a>
+        <a href="#team" class="nav-link">Team</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
+          <svg id="theme-icon-sun" class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="theme-icon-moon" class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <span id="status-indicator" class="status-badge status-idle">
+          <span class="status-dot"></span>
+          <span class="status-text">Idle</span>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ SECTION 1: Hero ═══ -->
+  <section id="hero" class="section hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line">Automated Lecture</span>
+        <span class="title-line gradient-text">Video Summarization</span>
+        <span class="title-line">with Condensed Output</span>
+      </h1>
+      <p class="hero-subtitle">
+        Transform 60-minute IT theory lectures into coherent 10-minute condensed videos
+        using a four-module deep learning pipeline with zero manual steps.
+      </p>
+      <div class="hero-stats">
+        <div class="stat-card glass-card">
+          <span class="stat-value">6×</span>
+          <span class="stat-label">Compression</span>
+        </div>
+        <div class="stat-card glass-card">
+          <span class="stat-value">4</span>
+          <span class="stat-label">DL Modules</span>
+        </div>
+        <div class="stat-card glass-card">
+          <span class="stat-value">2</span>
+          <span class="stat-label">Output Formats</span>
+        </div>
+        <div class="stat-card glass-card">
+          <span class="stat-value">0</span>
+          <span class="stat-label">Manual Steps</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#upload" class="btn btn-primary btn-glow">
+          <span class="btn-icon">▶</span> Start Summarizing
+        </a>
+        <a href="#pipeline" class="btn btn-outline">
+          <span class="btn-icon">◎</span> View Pipeline
+        </a>
+      </div>
+    </div>
+
+    <!-- Architecture Diagram -->
+    <div class="hero-diagram">
+      <div class="arch-flow">
+        <div class="arch-node arch-input">
+          <div class="arch-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/><line x1="17" y1="17" x2="22" y2="17"/></svg></div>
+          <div class="arch-label">Input Video</div>
+          <div class="arch-detail">60 min</div>
+        </div>
+        <div class="arch-connector"><div class="connector-line"></div></div>
+        <div class="arch-modules">
+          <div class="arch-node arch-module" data-module="1">
+            <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="arch-label">Module 1</div>
+            <div class="arch-detail">ResNet + BiLSTM</div>
+          </div>
+          <div class="arch-node arch-module" data-module="2">
+            <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
+            <div class="arch-label">Module 2</div>
+            <div class="arch-detail">Whisper + BERT</div>
+          </div>
+          <div class="arch-node arch-module" data-module="3">
+            <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+            <div class="arch-label">Module 3</div>
+            <div class="arch-detail">ViT + TrOCR</div>
+          </div>
+        </div>
+        <div class="arch-connector"><div class="connector-line"></div></div>
+        <div class="arch-node arch-fusion">
+          <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div class="arch-label">Module 4</div>
+          <div class="arch-detail">Score Fusion</div>
+        </div>
+        <div class="arch-connector"><div class="connector-line"></div></div>
+        <div class="arch-outputs">
+          <div class="arch-node arch-output">
+            <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+            <div class="arch-label">Pipeline A</div>
+            <div class="arch-detail">Highlights</div>
+          </div>
+          <div class="arch-node arch-output">
+            <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M2 12h2M20 12h2M12 2v2M12 20v2"/></svg></div>
+            <div class="arch-label">Pipeline B</div>
+            <div class="arch-detail">Slideshow</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 2: Upload ═══ -->
+  <section id="upload" class="section upload-section">
+    <div class="section-header">
+      <span class="section-tag">Step 1</span>
+      <h2 class="section-title">Upload Lecture Video</h2>
+      <p class="section-desc">Drop your lecture video below to begin the summarization pipeline.</p>
+    </div>
+
+    <div class="upload-container">
+      <div id="drop-zone" class="drop-zone glass-card">
+        <div class="drop-zone-content">
+          <div class="drop-icon">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <p class="drop-title">Drag & drop your lecture video here</p>
+          <p class="drop-subtitle">or click to browse files</p>
+          <p class="drop-formats">Supports MP4, AVI, MKV, MOV • Max 4GB</p>
+        </div>
+        <input type="file" id="file-input" accept="video/*" hidden />
+      </div>
+
+      <!-- File Preview -->
+      <div id="file-preview" class="file-preview glass-card" style="display:none;">
+        <div class="preview-video-container">
+          <video id="preview-video" controls></video>
+        </div>
+        <div class="preview-info">
+          <div class="preview-name" id="preview-name"></div>
+          <div class="preview-meta">
+            <span id="preview-size" class="meta-chip"></span>
+            <span id="preview-type" class="meta-chip"></span>
+          </div>
+          <button id="remove-file-btn" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Remove</button>
+        </div>
+      </div>
+
+      <!-- Config Panel -->
+      <div class="config-panel glass-card">
+        <div class="config-header">
+          <h3 class="config-title">Pipeline Configuration</h3>
+          <button id="toggle-advanced-btn" class="btn btn-ghost btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Advanced
+          </button>
+        </div>
+        <div class="config-grid">
+          <div class="config-group" style="grid-column: 1 / -1;">
+            <label class="config-label">Desired Output Length</label>
+            <select id="config-duration" class="config-input">
+              <option value="300">5 Minutes (Brief)</option>
+              <option value="600" selected>10 Minutes (Standard Summary)</option>
+              <option value="900">15 Minutes (Detailed Summary)</option>
+              <option value="1200">20 Minutes (Extended)</option>
+            </select>
+          </div>
+        </div>
+        <div id="advanced-settings" class="advanced-settings" style="display: none;">
+          <div class="config-grid">
+            <div class="config-group">
+              <label class="config-label">w₁ — Visual Weight</label>
+              <input type="range" id="config-w1" class="config-slider" min="0" max="100" value="33" />
+              <span id="config-w1-val" class="config-val">0.33</span>
+            </div>
+            <div class="config-group">
+              <label class="config-label">w₂ — Text Weight</label>
+              <input type="range" id="config-w2" class="config-slider" min="0" max="100" value="33" />
+              <span id="config-w2-val" class="config-val">0.33</span>
+            </div>
+            <div class="config-group">
+              <label class="config-label">w₃ — Slide Weight</label>
+              <input type="range" id="config-w3" class="config-slider" min="0" max="100" value="34" />
+              <span id="config-w3-val" class="config-val">0.34</span>
+            </div>
+            <div class="config-group">
+              <label class="config-label">Min Score Threshold</label>
+              <input type="number" id="config-threshold" class="config-input" value="0.3" min="0" max="1" step="0.05" />
+            </div>
+          </div>
+        </div>
+        <button id="start-pipeline-btn" class="btn btn-primary btn-glow btn-full" disabled>
+          <span class="btn-icon">▶</span> Run Pipeline
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 3: Pipeline Progress ═══ -->
+  <section id="pipeline" class="section pipeline-section">
+    <div class="section-header">
+      <span class="section-tag">Step 2</span>
+      <h2 class="section-title">Pipeline Progress</h2>
+      <p class="section-desc">Real-time processing status across all four deep learning modules.</p>
+    </div>
+
+    <div class="pipeline-tracker">
+      <div class="pipeline-stages">
+        <div class="stage glass-card" id="stage-1" data-status="idle">
+          <div class="stage-indicator"><span class="stage-num">1</span></div>
+          <div class="stage-info">
+            <h4 class="stage-name">Keyframe Detection</h4>
+            <p class="stage-model">ResNet-50 + BiLSTM</p>
+
+          </div>
+          <div class="stage-progress">
+            <div class="progress-bar"><div class="progress-fill" id="progress-1"></div></div>
+            <span class="progress-pct" id="pct-1">0%</span>
+          </div>
+        </div>
+        <div class="stage-connector"><div class="stage-conn-line"></div></div>
+
+        <div class="stage glass-card" id="stage-2" data-status="idle">
+          <div class="stage-indicator"><span class="stage-num">2</span></div>
+          <div class="stage-info">
+            <h4 class="stage-name">Content Summarization</h4>
+            <p class="stage-model">Whisper + BERT</p>
+
+          </div>
+          <div class="stage-progress">
+            <div class="progress-bar"><div class="progress-fill" id="progress-2"></div></div>
+            <span class="progress-pct" id="pct-2">0%</span>
+          </div>
+        </div>
+        <div class="stage-connector"><div class="stage-conn-line"></div></div>
+
+        <div class="stage glass-card" id="stage-3" data-status="idle">
+          <div class="stage-indicator"><span class="stage-num">3</span></div>
+          <div class="stage-info">
+            <h4 class="stage-name">Visual Understanding</h4>
+            <p class="stage-model">ViT + TrOCR</p>
+
+          </div>
+          <div class="stage-progress">
+            <div class="progress-bar"><div class="progress-fill" id="progress-3"></div></div>
+            <span class="progress-pct" id="pct-3">0%</span>
+          </div>
+        </div>
+        <div class="stage-connector"><div class="stage-conn-line"></div></div>
+
+        <div class="stage glass-card" id="stage-4" data-status="idle">
+          <div class="stage-indicator"><span class="stage-num">4</span></div>
+          <div class="stage-info">
+            <h4 class="stage-name">Video Synthesis</h4>
+            <p class="stage-model">Fusion + MoviePy</p>
+
+          </div>
+          <div class="stage-progress">
+            <div class="progress-bar"><div class="progress-fill" id="progress-4"></div></div>
+            <span class="progress-pct" id="pct-4">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Log -->
+    <div class="log-panel glass-card">
+      <div class="log-header">
+        <span class="log-title">Pipeline Log</span>
+        <button id="clear-log-btn" class="btn btn-ghost btn-sm">Clear</button>
+      </div>
+      <div id="log-output" class="log-output">
+        <p class="log-line log-info">INTEGRA Pipeline v0.1.0 — Awaiting input…</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 4: Results ═══ -->
+  <section id="results" class="section results-section">
+    <div class="section-header">
+      <span class="section-tag">Step 3</span>
+      <h2 class="section-title">Results & Analysis</h2>
+      <p class="section-desc">Module outputs, fused scores, and generated summary videos.</p>
+    </div>
+
+    <!-- Module Tabs -->
+    <div class="results-tabs">
+      <button class="tab-btn active" data-tab="tab-overview">Overview</button>
+      <button class="tab-btn" data-tab="tab-m1">Module 1</button>
+      <button class="tab-btn" data-tab="tab-m2">Module 2</button>
+      <button class="tab-btn" data-tab="tab-m3">Module 3</button>
+      <button class="tab-btn" data-tab="tab-fusion">Fusion</button>
+      <button class="tab-btn" data-tab="tab-video">Videos</button>
+    </div>
+
+    <!-- Tab: Overview -->
+    <div class="tab-panel active" id="tab-overview">
+      <div class="metrics-grid">
+        <div class="metric-card glass-card">
+          <div class="metric-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <div class="metric-value" id="metric-rouge">—</div>
+          <div class="metric-label">ROUGE-L Score</div>
+          <div class="metric-target">Target: &gt; 0.40</div>
+        </div>
+        <div class="metric-card glass-card">
+          <div class="metric-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <div class="metric-value" id="metric-precision">—</div>
+          <div class="metric-label">Segment Precision</div>
+          <div class="metric-target">Target: &gt; 0.75</div>
+        </div>
+        <div class="metric-card glass-card">
+          <div class="metric-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div class="metric-value" id="metric-recall">—</div>
+          <div class="metric-label">Segment Recall</div>
+          <div class="metric-target">Target: &gt; 0.75</div>
+        </div>
+        <div class="metric-card glass-card">
+          <div class="metric-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg></div>
+          <div class="metric-value" id="metric-wer">—</div>
+          <div class="metric-label">Word Error Rate</div>
+          <div class="metric-target">Target: &lt; 15%</div>
+        </div>
+        <div class="metric-card glass-card">
+          <div class="metric-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div class="metric-value" id="metric-f1">—</div>
+          <div class="metric-label">BERT F1 Score</div>
+          <div class="metric-target">Target: &gt; 0.70</div>
+        </div>
+        <div class="metric-card glass-card">
+          <div class="metric-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="metric-value" id="metric-duration">—</div>
+          <div class="metric-label">Output Duration</div>
+          <div class="metric-target">Target: ≤ 10 min</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Module 1 -->
+    <div class="tab-panel" id="tab-m1">
+      <div class="module-result glass-card">
+        <h3>Segment Importance Scores</h3>
+        <p class="result-desc">Each bar represents a 10-second segment. Height = visual importance score (score_V).</p>
+        <div class="heatmap-container">
+          <canvas id="heatmap-canvas" height="200"></canvas>
+        </div>
+        <div id="m1-table-container" class="result-table-container">
+          <p class="placeholder-text">Run the pipeline to see Module 1 results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Module 2 -->
+    <div class="tab-panel" id="tab-m2">
+      <div class="module-result glass-card">
+        <h3>Transcript with Importance Highlights</h3>
+        <p class="result-desc">Important sentences are highlighted. Hover for importance ratio.</p>
+        <div id="transcript-container" class="transcript-container">
+          <p class="placeholder-text">Run the pipeline to see Module 2 results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Module 3 -->
+    <div class="tab-panel" id="tab-m3">
+      <div class="module-result glass-card">
+        <h3>Slide Classification Grid</h3>
+        <p class="result-desc">Slides classified as Critical, Important, or Skip by ViT.</p>
+        <div id="slides-grid" class="slides-grid">
+          <p class="placeholder-text">Run the pipeline to see Module 3 results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Fusion -->
+    <div class="tab-panel" id="tab-fusion">
+      <div class="module-result glass-card">
+        <h3>Score Fusion Breakdown</h3>
+        <p class="result-desc">Fused score S = w₁·V + w₂·T + w₃·L for each segment.</p>
+        <div class="fusion-formula">
+          S = <span class="fw">w₁</span>·<span class="fv">V</span> +
+          <span class="fw">w₂</span>·<span class="ft">T</span> +
+          <span class="fw">w₃</span>·<span class="fl">L</span>
+        </div>
+        <div id="fusion-chart-container" class="fusion-chart-container">
+          <canvas id="fusion-canvas" height="300"></canvas>
+        </div>
+        <div id="fusion-table-container" class="result-table-container">
+          <p class="placeholder-text">Run the pipeline to see fusion results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Videos -->
+    <div class="tab-panel" id="tab-video">
+      <div class="video-comparison">
+        <div class="video-card glass-card">
+          <h3>Pipeline A — Highlight Reel</h3>
+          <div class="video-player-container">
+            <video id="video-pipeline-a" controls class="result-video">
+              <source src="" type="video/mp4" />
+            </video>
+          </div>
+          <p class="video-desc">Real lecture segments with original audio, transitions, and subtitles.</p>
+        </div>
+        <div class="video-card glass-card">
+          <h3>Pipeline B — AI Slideshow</h3>
+          <div class="video-player-container">
+            <video id="video-pipeline-b" controls class="result-video">
+              <source src="" type="video/mp4" />
+            </video>
+          </div>
+          <p class="video-desc">Synthetic narrated slideshow with AI-rendered slides and TTS voiceover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 5: Team ═══ -->
+  <section id="team" class="section team-section">
+    <div class="section-header">
+      <span class="section-tag">Architecture</span>
+      <h2 class="section-title">Pipeline Modules</h2>
+      <p class="section-desc">Four deep learning modules working in concert</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card glass-card">
+        <div class="team-avatar" style="--accent: #3b82f6;">M1</div>
+        <h4 class="team-name">Keyframe Detection</h4>
+        <p class="team-role">Importance Scoring</p>
+        <span class="team-tech">ResNet-50 + BiLSTM</span>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar" style="--accent: #8b5cf6;">M2</div>
+        <h4 class="team-name">Content Summarization</h4>
+        <p class="team-role">Speech-to-Text</p>
+        <span class="team-tech">Whisper + BERT</span>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar" style="--accent: #06b6d4;">M3</div>
+        <h4 class="team-name">Visual Understanding</h4>
+        <p class="team-role">Slide Extraction</p>
+        <span class="team-tech">ViT + TrOCR</span>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar" style="--accent: #f59e0b;">M4</div>
+        <h4 class="team-name">Video Synthesis</h4>
+        <p class="team-role">Score Fusion & Integration</p>
+        <span class="team-tech">MoviePy + GPT-4o</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>INTEGRA · University of Moratuwa · MIT License · 2026</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

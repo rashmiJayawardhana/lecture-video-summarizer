@@ -1,0 +1,141 @@
+/* ═══════════════════════════════════════════════════════════
+   INTEGRA Design System — CSS Custom Properties
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Dark Theme (Default) ── */
+:root {
+  /* ── Color Palette ── */
+  --bg-primary: #0f1117;
+  --bg-secondary: #161922;
+  --bg-tertiary: #1e2230;
+  --bg-card: rgba(22, 25, 34, 0.8);
+  --bg-card-hover: rgba(30, 34, 48, 0.85);
+
+  --text-primary: #e8eaed;
+  --text-secondary: #9aa0b0;
+  --text-muted: #6b7280;
+  --text-accent: #6b8afd;
+
+  --accent: #4f6ef7;
+  --accent-hover: #6b8afd;
+  --accent-subtle: rgba(79, 110, 247, 0.1);
+  --accent-border: rgba(79, 110, 247, 0.25);
+
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+  --color-info: #60a5fa;
+
+  /* Module accent colors */
+  --module-1: #4f6ef7;
+  --module-2: #8b5cf6;
+  --module-3: #06b6d4;
+  --module-4: #f59e0b;
+
+  /* ── Glass Effect ── */
+  --glass-bg: rgba(22, 25, 34, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-blur: 16px;
+
+  /* ── Borders & Shadows ── */
+  --border-subtle: 1px solid rgba(255, 255, 255, 0.06);
+  --border-accent: 1px solid var(--accent-border);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  /* ── Nav ── */
+  --nav-bg: rgba(15, 17, 23, 0.8);
+  --nav-bg-scrolled: rgba(15, 17, 23, 0.95);
+
+  /* ── Particle Color ── */
+  --particle-r: 79;
+  --particle-g: 110;
+  --particle-b: 247;
+
+  /* ── Spacing ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* ── Typography ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 2.5rem;
+  --fs-5xl: 3.5rem;
+
+  /* ── Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Z-index ── */
+  --z-base: 1;
+  --z-nav: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f6f8;
+  --bg-tertiary: #ebedf2;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-card-hover: rgba(255, 255, 255, 1);
+
+  --text-primary: #1a1d2e;
+  --text-secondary: #5a6178;
+  --text-muted: #8b91a3;
+  --text-accent: #3d5af1;
+
+  --accent: #3d5af1;
+  --accent-hover: #2d4ae1;
+  --accent-subtle: rgba(61, 90, 241, 0.06);
+  --accent-border: rgba(61, 90, 241, 0.18);
+
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #2563eb;
+
+  --module-1: #3d5af1;
+  --module-2: #7c3aed;
+  --module-3: #0891b2;
+  --module-4: #d97706;
+
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-blur: 20px;
+
+  --border-subtle: 1px solid rgba(0, 0, 0, 0.08);
+  --border-accent: 1px solid var(--accent-border);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08);
+
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-bg-scrolled: rgba(255, 255, 255, 0.96);
+
+  --particle-r: 61;
+  --particle-g: 90;
+  --particle-b: 241;
+}
