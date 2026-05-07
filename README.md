@@ -119,6 +119,13 @@ lecture-video-summarizer/
 │   ├── module3_config.yaml            # Module 3: ViT + TrOCR
 │   └── module4_config.yaml            # Module 4: Pipeline A & B
 │
+├── frontend/                          # Web interface
+│   ├── index.html                     # Main entry point
+│   ├── css/                           # Stylesheets
+│   ├── js/                            # JavaScript logic
+│   ├── package.json                   # Frontend dependencies
+│   └── vite.config.js                 # Vite configuration
+│
 ├── src/                               # Source code
 │   ├── module1_importance/            # Keyframe Detection 
 │   │   ├── model.py                   # VideoImportanceScorer (ResNet-50 + BiLSTM)
@@ -232,6 +239,19 @@ copy .env.example .env
 
 # Verify GPU access
 python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
+```
+
+### Frontend Setup
+
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
 ```
 
 ### Basic Usage
