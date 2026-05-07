@@ -1,0 +1,111 @@
+/* ═══════════════════════════════════════════════════════════
+   INTEGRA — Base Reset & Global Styles
+   ═══════════════════════════════════════════════════════════ */
+@import './variables.css';
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+a { color: var(--text-accent); text-decoration: none; transition: color var(--transition-fast); }
+a:hover { color: var(--accent-hover); }
+
+img, video { max-width: 100%; height: auto; display: block; }
+
+h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; color: var(--text-primary); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: rgba(128,128,128,0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(128,128,128,0.4); }
+
+/* ── Particles Canvas ── */
+#particles-canvas {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0; pointer-events: none; opacity: 0.3;
+}
+[data-theme="light"] #particles-canvas { opacity: 0.15; }
+
+/* ── Glass Card ── */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base),
+              border-color var(--transition-base), background var(--transition-base);
+}
+.glass-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex; align-items: center; gap: var(--space-sm);
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-sans); font-size: var(--fs-sm); font-weight: 600;
+  border: none; border-radius: var(--radius-md); cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none; position: relative; overflow: hidden;
+}
+.btn-icon { font-size: 1.1em; }
+.btn-primary {
+  background: var(--accent); color: #fff;
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79,110,247,0.25);
+}
+.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
+[data-theme="light"] .btn-primary:hover {
+  box-shadow: 0 4px 12px rgba(61,90,241,0.2);
+}
+.btn-outline {
+  background: transparent; color: var(--text-primary);
+  border: 1px solid var(--glass-border);
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+.btn-ghost { background: transparent; color: var(--text-secondary); padding: 0.5rem 0.75rem; }
+.btn-ghost:hover { color: var(--text-primary); }
+.btn-sm { padding: 0.4rem 0.8rem; font-size: var(--fs-xs); }
+.btn-full { width: 100%; justify-content: center; padding: 1rem; font-size: var(--fs-base); }
+
+/* ── Sections ── */
+.section {
+  position: relative; z-index: var(--z-base);
+  padding: var(--space-3xl) var(--space-xl);
+  max-width: 1200px; margin: 0 auto;
+}
+.section-header { text-align: center; margin-bottom: var(--space-3xl); }
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: var(--fs-xs); font-weight: 600;
+  color: var(--accent); text-transform: uppercase; letter-spacing: 0.15em;
+  padding: 0.3rem 0.8rem; border-radius: var(--radius-full);
+  border: 1px solid var(--accent-border);
+  background: var(--accent-subtle);
+  margin-bottom: var(--space-md);
+}
+.section-title { font-size: var(--fs-3xl); margin-bottom: var(--space-sm); }
+.section-desc { font-size: var(--fs-lg); color: var(--text-secondary); max-width: 600px; margin: 0 auto; }

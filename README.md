@@ -16,8 +16,6 @@ This research project develops a four-module deep learning pipeline that automat
 **Input**: 60-minute IT theory lecture video  
 **Output**: 10-minute condensed MP4 video
 
-**Supervisor**: Dr. Chaman Wijesiriwardana
-
 ## 🏗️ Architecture
 
 The system consists of 4 modules with a weighted score fusion:
@@ -43,28 +41,28 @@ Input Video (60 min)
 ```
 
 ### Module 1: Keyframe Detection & Importance Scoring
-- **Owner**: Rashmi (214093E)
+- **Owner**: Jayawardhana G.G.R.M. (214093E)
 - **Model**: ResNet-50 + BiLSTM
 - **Task**: Score 10-second video segments by instructional importance
 - **Output**: `{ segment_id, timestamp_start, timestamp_end, score_V }`
 - **References**: Rahman et al. 2020, Zhang et al. 2016, Lin et al. 2022
 
 ### Module 2: Speech-to-Text & Content Summarization
-- **Owner**: Ravindu (214095L)
+- **Owner**: Jayaweera B.R.D. (214095L)
 - **Model**: OpenAI Whisper (large-v3) + Fine-tuned BERT-base
 - **Task**: Transcribe speech and classify sentences as important/not important
 - **Output**: `{ sentence, timestamp_start, timestamp_end, is_important, importance_ratio_T }`
 - **References**: Radford et al. 2023, Gonzalez et al. 2023
 
 ### Module 3: Visual Content Understanding & Slide Extraction
-- **Owner**: Fazly (214008C)
+- **Owner**: Ahamed M.F.F. (214008C)
 - **Model**: ViT-base + TrOCR
 - **Task**: Classify slide frames (Critical/Important/Skip) and extract text
 - **Output**: `{ frame_time, label, ocr_text }`
 - **References**: Biswas et al. 2025, Li et al. 2023
 
 ### Module 4: Video Synthesis & Integration
-- **Owner**: Lathisana (214116F)
+- **Owner**: Lathisana T. (214116F)
 - **Technologies**: MoviePy, FFmpeg, GPT-4o, edge-tts (AriaNeural), Pillow
 - **Task**: Fuse scores and produce two output videos (Pipeline A & B)
 - **Output**: `highlight.mp4` and `slideshow.mp4`
