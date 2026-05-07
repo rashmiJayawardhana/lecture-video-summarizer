@@ -247,3 +247,7 @@ outputs/temp/
 
 # Gemini
 .gemini/
+
+# Node
+**/node_modules/
+frontend/dist/
