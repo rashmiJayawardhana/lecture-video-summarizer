@@ -181,13 +181,13 @@
         </div>
         <div class="config-grid">
           <div class="config-group" style="grid-column: 1 / -1;">
-            <label class="config-label">Desired Output Length</label>
+            <label class="config-label">Output Duration (Research Target)</label>
             <select id="config-duration" class="config-input">
-              <option value="300">5 Minutes (Brief)</option>
-              <option value="600" selected>10 Minutes (Standard Summary)</option>
-              <option value="900">15 Minutes (Detailed Summary)</option>
-              <option value="1200">20 Minutes (Extended)</option>
+              <option value="600" selected>10 Minutes (Optimized for 60m Lecture)</option>
             </select>
+            <p class="config-help-text" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">
+              The pipeline is specifically tuned to produce a 10-minute summary to achieve the target 6x compression ratio.
+            </p>
           </div>
         </div>
         <div id="advanced-settings" class="advanced-settings" style="display: none;">
