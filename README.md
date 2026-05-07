@@ -99,7 +99,7 @@ Input Video (60 min)
 ```
 
 **Fusion Formula**: `S = w1·V + w2·T + w3·L`  
-Starting weights: `w1=0.33, w2=0.33, w3=0.34` (tuned via grid search in Week 7)
+Starting weights: `w1=0.33, w2=0.33, w3=0.34` (tuned via grid search)
 
 ## 📁 Repository Structure
 
@@ -120,26 +120,26 @@ lecture-video-summarizer/
 │   └── module4_config.yaml            # Module 4: Pipeline A & B
 │
 ├── src/                               # Source code
-│   ├── module1_importance/            # Keyframe Detection (Rashmi)
+│   ├── module1_importance/            # Keyframe Detection 
 │   │   ├── model.py                   # VideoImportanceScorer (ResNet-50 + BiLSTM)
 │   │   ├── feature_extractor.py       # ResNet-50 feature extraction
 │   │   ├── train.py                   # Training script
 │   │   └── inference.py               # Inference script
 │   │
-│   ├── module2_summarization/         # Content Summarization (Ravindu)
+│   ├── module2_summarization/         # Content Summarization 
 │   │   ├── model.py                   # LectureSentenceClassifier (BERT-base)
 │   │   ├── transcriber.py             # Whisper transcription
 │   │   ├── train.py                   # Fine-tuning script
 │   │   └── inference.py               # Inference script
 │   │
-│   ├── module3_visual/                # Visual Understanding (Fazly)
+│   ├── module3_visual/                # Visual Understanding 
 │   │   ├── model.py                   # SlideImportanceClassifier (ViT-base)
 │   │   ├── slide_extractor.py         # OpenCV slide detection
 │   │   ├── ocr.py                     # TrOCR text extraction
 │   │   ├── train.py                   # Fine-tuning script
 │   │   └── inference.py               # Inference script
 │   │
-│   ├── module4_synthesis/             # Video Synthesis (Lathisana)
+│   ├── module4_synthesis/             # Video Synthesis 
 │   │   ├── fusion.py                  # Score fusion (S = w1·V + w2·T + w3·L)
 │   │   ├── pipeline_a.py             # Highlight video generator
 │   │   └── pipeline_b.py             # Synthetic slideshow generator
@@ -294,25 +294,6 @@ python src/module3_visual/train.py --config configs/module3_config.yaml
 | Knowledge Retention (User Study) | > 70% | 20 IT undergraduates |
 | Video Duration | ≤ 10 min | Enforced programmatically |
 
-## 🗓️ Project Timeline (8 Weeks)
-
-| Week | Phase | Goal |
-|------|-------|------|
-| 1-2 | Setup & Annotation | Environment ready, 50 videos downloaded, annotation 50% complete |
-| 3-4 | First Model Training | All modules train first models, sample JSON delivered mid-Week 3 |
-| 5-6 | Integration & Pipeline | First full pipeline run, Pipeline A polished, Pipeline B started |
-| 7 | Tuning & Pipeline B | Weights tuned via grid search, both pipelines producing clean output |
-| 8 | Evaluation & Submission | User study, all metrics computed, final report, GitHub submitted |
-
-## 👥 Team
-
-| Index | Name | Module | Responsibility |
-|-------|------|--------|----------------|
-| 214093E | Rashmi | Module 1 | Keyframe Detection & Importance Scoring |
-| 214095L | Ravindu | Module 2 | Speech-to-Text & Content Summarization |
-| 214008C | Fazly | Module 3 | Visual Content Understanding & Slide Extraction |
-| 214116F | Lathisana | Module 4 | Video Synthesis & Integration |
-
 ## 📚 References
 
 1. Rahman et al. (2020) — Visual Summarization of Lecture Video Segments
@@ -344,6 +325,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Project Repository: [GitHub](https://github.com/rashmiJayawardhana/lecture-video-summarizer)
 - Issues: [GitHub Issues](https://github.com/rashmiJayawardhana/lecture-video-summarizer/issues)
 
----
 
-**Status**: In Development | **Version**: 0.1.0 | **Last Updated**: May 2026
+
