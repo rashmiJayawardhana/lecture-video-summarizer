@@ -1,4 +1,4 @@
-# 🗺️ INTEGRA Codebase Guide — For Beginners
+# 🗺️ INTEGRA Codebase Guide 
 
 > Open this file in VS Code preview (Ctrl+Shift+V) for best reading experience.
 
@@ -54,8 +54,8 @@
 ## Your Files — What to Read First
 
 ### If you are Rashmi (Module 1):
-1. Read `src/module1_importance/model.py` — has BEGINNER comments
-2. Read `configs/module1_config.yaml` — your settings
+1. Read `src/module1_importance/model.py` — BEGINNER comments
+2. Read `configs/module1_config.yaml` — settings
 3. Read `src/module1_importance/feature_extractor.py` — how frames become numbers
 4. **Write next**: `train.py` and `inference.py`
 
@@ -106,7 +106,7 @@
 
 ---
 
-## Day 1 Commands (Copy-Paste Ready)
+## Day 1 Commands 
 
 ```bash
 # 1. Clone

@@ -151,20 +151,6 @@ lecture-video-summarizer/
 - `module-3` — Fazly's slide extraction & classification work
 - `module-4` — Lathisana's video synthesis work
 
-### Commit Messages
-```
-[Module{N}] Brief description
-
-Detailed explanation if needed.
-```
-
-Example:
-```
-[Module1] Add BiLSTM temporal modeling
-
-Implemented bidirectional LSTM on top of ResNet-50 features.
-Trained with 30-frame sequences on 35 annotated IT lecture videos.
-```
 
 ### Code Review Process
 1. Create feature branch from your module branch
