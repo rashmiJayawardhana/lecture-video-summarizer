@@ -1,7 +1,11 @@
 import os
+import sys
 import torch
 import numpy as np
 from pathlib import Path
+
+# Add project root to sys.path so 'src' can be found
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.module1_importance.feature_extractor import FrameFeatureExtractor
 
 # Initialize extractor
