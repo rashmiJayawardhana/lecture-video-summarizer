@@ -96,6 +96,9 @@ class FrameFeatureExtractor:
         timestamps = []
         frame_idx = 0
         
+        total_video_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        expected_features = total_video_frames // frame_interval if total_video_frames > 0 else "?"
+        
         while True:
             ret, frame = cap.read()
             if not ret:
@@ -105,6 +108,11 @@ class FrameFeatureExtractor:
                 feat = self.extract_from_frame(frame)
                 features_list.append(feat)
                 timestamps.append(frame_idx / video_fps)
+                
+                # Print progress every 100 extracted frames
+                extracted_count = len(features_list)
+                if extracted_count % 100 == 0:
+                    print(f"    ... extracted {extracted_count}/{expected_features} features ({extracted_count/expected_features*100:.1f}%)")
                 
                 if max_frames and len(features_list) >= max_frames:
                     break
