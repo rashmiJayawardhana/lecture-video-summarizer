@@ -1,0 +1,28 @@
+{
+  "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0000": {
+    "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
+    "segment_index": 0,
+    "segment_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0000",
+    "timestamp_start": 0.0,
+    "timestamp_end": 10.0,
+    "middle_frame_time": 5.0,
+    "raw_score": null,
+    "normalized_score": null,
+    "skipped": true,
+    "annotator": "rashmi",
+    "annotated_at": "2026-05-27T10:05:59"
+  },
+  "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0001": {
+    "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
+    "segment_index": 1,
+    "segment_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0001",
+    "timestamp_start": 10.0,
+    "timestamp_end": 20.0,
+    "middle_frame_time": 15.0,
+    "raw_score": null,
+    "normalized_score": null,
+    "skipped": true,
+    "annotator": "rashmi",
+    "annotated_at": "2026-05-27T10:06:05"
+  }
+}
