@@ -152,7 +152,7 @@ def build_segments(video_path):
     return segments
  
  
-def make_canvas(main_frame, thumbs, seg, done, total, prev_score, last_action=""):
+def make_canvas(main_frame, thumbs, seg, done, total, prev_score, last_action="", active_thumb_idx=1):
     """
     Build a highly polished, modern, color-coded annotation canvas that fits on screen.
     """
@@ -183,48 +183,39 @@ def make_canvas(main_frame, thumbs, seg, done, total, prev_score, last_action=""
 
     # ── Dynamic Sizing ─────────────────────────────────────────────────
     if H_MAX < 550:
-        # Compact heights to fit small or scaled screens perfectly
         HDR_H     = 28
         THUMB_H   = 55
         LABEL_H   = 14
         STRIP_H   = THUMB_H + LABEL_H + 4
         BAR_H     = 18
-        SIG_H     = 18
-        GUIDE_H   = 34
-        KB_H      = 20
+        L_W       = 140
+        R_W       = 140
         font_scale_f = 0.36
         font_scale_s = 0.8
     else:
-        # Standard heights for larger screens
         HDR_H     = 36
         THUMB_H   = 80
         LABEL_H   = 18
         STRIP_H   = THUMB_H + LABEL_H + 6
         BAR_H     = 24
-        SIG_H     = 24
-        GUIDE_H   = 48
-        KB_H      = 28
+        L_W       = 160
+        R_W       = 160
         font_scale_f = 0.42
         font_scale_s = 0.95
 
-    PANELS_H  = HDR_H + STRIP_H + BAR_H + SIG_H + GUIDE_H + KB_H
-    MAX_MAIN_H = H_MAX - PANELS_H
+    C_W = W - L_W - R_W
+    COL_H = H_MAX - HDR_H
 
-    parts = []
-
-    # ── 1. HEADER BAR ─────────────────────────────────────────────────
+    # ── 1. HEADER BAR (Full Width) ────────────────────────────────────
     hdr = np.full((HDR_H, W, 3), BG, dtype=np.uint8)
-    # Sleek left edge indicator
     cv2.rectangle(hdr, (0, 0), (5, HDR_H), ACCENT, -1)
     cv2.line(hdr, (0, HDR_H - 1), (W, HDR_H - 1), BORDER_COLOR, 1)
 
     vid_label = seg["video_id"]
-    if len(vid_label) > 55:
-        vid_label = vid_label[:52] + "..."
-    
+    if len(vid_label) > 40:
+        vid_label = vid_label[:37] + "..."
     cv2.putText(hdr, vid_label, (12, HDR_H - int(HDR_H * 0.32)), FONT, font_scale_f + 0.05, WHITE, 1, cv2.LINE_AA)
 
-    # Dynamic center action status (using ASCII separator to avoid ?? bug)
     if last_action:
         act_text = f"|  {last_action}"
         cv2.putText(hdr, act_text, (W // 2 - 40, HDR_H - int(HDR_H * 0.32)), FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
@@ -236,120 +227,171 @@ def make_canvas(main_frame, thumbs, seg, done, total, prev_score, last_action=""
     ts_sz = cv2.getTextSize(ts_label, FONT, font_scale_f, 1)[0]
     cv2.putText(hdr, ts_label, (W - ts_sz[0] - 12, HDR_H - int(HDR_H * 0.32)), FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
 
-    parts.append(hdr)
+    if prev_score == "-":
+        badge_text, badge_bg, badge_fg = "UNRATED", (42, 38, 38), MUTED
+    elif prev_score is None:
+        badge_text, badge_bg, badge_fg = "SKIPPED", (20, 50, 60), ACCENT
+    else:
+        badge_text, badge_bg, badge_fg = f"SCORE: {prev_score}", (20, 60, 20), GREEN_LIGHT
 
-    # ── 2. MAIN FRAME (scaled to fit remaining height) ─────────────────
-    main = resize_keep_aspect(main_frame, W, max_height=MAX_MAIN_H)
-    if main.shape[1] < W:
-        pad_left = (W - main.shape[1]) // 2
-        pad_right = W - main.shape[1] - pad_left
-        main = cv2.copyMakeBorder(main, 0, 0, pad_left, pad_right,
-                                  cv2.BORDER_CONSTANT, value=BG)
+    badge_sz = cv2.getTextSize(badge_text, FONT, font_scale_f - 0.05, 1)[0]
+    badge_w = badge_sz[0] + 16
+    badge_h = int(HDR_H * 0.7)
+    bx = W - ts_sz[0] - 12 - badge_w - 15
+    by = (HDR_H - badge_h) // 2
     
-    # Sleek bottom border
-    cv2.line(main, (0, main.shape[0] - 1), (W, main.shape[0] - 1), BORDER_COLOR, 1)
-    parts.append(main)
+    cv2.rectangle(hdr, (bx, by), (bx + badge_w, by + badge_h), badge_bg, -1)
+    cv2.rectangle(hdr, (bx, by), (bx + badge_w, by + badge_h), BORDER_COLOR, 1)
+    
+    tx = bx + (badge_w - badge_sz[0]) // 2
+    ty = by + badge_h - int(badge_h * 0.3)
+    cv2.putText(hdr, badge_text, (tx, ty), FONT, font_scale_f - 0.05, badge_fg, 1, cv2.LINE_AA)
 
-    # ── 3. FILMSTRIP ───────────────────────────────────────────────────
+    # ── 2. LEFT COLUMN (Pass 1: Content) ──────────────────────────────
+    col_l = np.full((COL_H, L_W, 3), BG, dtype=np.uint8)
+    cv2.line(col_l, (L_W - 1, 0), (L_W - 1, COL_H), BORDER_COLOR, 1)
+
+    p1_label = "PASS 1: CONTENT"
+    p1_sz = cv2.getTextSize(p1_label, FONT, font_scale_f, 1)[0]
+    cv2.putText(col_l, p1_label, ((L_W - p1_sz[0]) // 2, 20), FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
+    
+    content_cells = [
+        (0, "Blank/Logo",   GRAY_DARK,   GRAY_LIGHT),
+        (1, "Title/Cover",  RED_DARK,    RED_LIGHT),
+        (2, "Lect.Focus",   RED_DARK,    RED_LIGHT),
+        (3, "Head+1Bull",   RED_DARK,    RED_LIGHT),
+        (4, "Bullet List",  YELLOW_DARK, YELLOW_LIGHT),
+        (5, "Definition",   YELLOW_DARK, YELLOW_LIGHT),
+        (6, "SmallDiag",    YELLOW_DARK, YELLOW_LIGHT),
+        (7, "BigDiag/Code", GREEN_DARK,  GREEN_LIGHT),
+        (8, "CoreFormula",  GREEN_DARK,  GREEN_LIGHT),
+    ]
+    
+    cell_h = (COL_H - 40) // 9
+    cell_w = L_W - 16
+    pad_x = 8
+    
+    for i, (score_val, desc, bg_c, acc_c) in enumerate(content_cells):
+        cx = pad_x
+        cy = 30 + i * cell_h + 4
+        cw = cell_w
+        ch = cell_h - 4
+        
+        cv2.rectangle(col_l, (cx, cy), (cx + cw, cy + ch), bg_c, -1)
+        cv2.rectangle(col_l, (cx, cy), (cx + 4, cy + ch), acc_c, -1)
+        cv2.rectangle(col_l, (cx, cy), (cx + cw, cy + ch), BORDER_COLOR, 1)
+
+        cv2.putText(col_l, str(score_val), (cx + 12, cy + ch - int(ch*0.25)), FONT, font_scale_f + 0.1, WHITE, 1, cv2.LINE_AA)
+        cv2.putText(col_l, desc, (cx + 36, cy + ch - int(ch*0.35)), FONT_S, font_scale_s - 0.15, MUTED, 1, cv2.LINE_AA)
+
+    # ── 3. RIGHT COLUMN (Pass 2 + Keys) ───────────────────────────────
+    col_r = np.full((COL_H, R_W, 3), BG, dtype=np.uint8)
+    cv2.line(col_r, (0, 0), (0, COL_H), BORDER_COLOR, 1)
+
+    p2_label = "PASS 2: MOVE"
+    p2_sz = cv2.getTextSize(p2_label, FONT, font_scale_f, 1)[0]
+    cv2.putText(col_r, p2_label, ((R_W - p2_sz[0]) // 2, 20), FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
+
+    mod_cells = [
+        ("+0", "Still",     GRAY_DARK,   MUTED),
+        ("+1", "Pointing",  YELLOW_DARK, YELLOW_LIGHT),
+        ("+2", "Annotate",  GREEN_DARK,  GREEN_LIGHT),
+    ]
+
+    mod_cell_h = 45 if H_MAX < 550 else 60
+    
+    for i, (mod_val, desc, bg_c, acc_c) in enumerate(mod_cells):
+        cx = pad_x
+        cy = 30 + i * mod_cell_h + 4
+        cw = cell_w
+        ch = mod_cell_h - 4
+        
+        cv2.rectangle(col_r, (cx, cy), (cx + cw, cy + ch), bg_c, -1)
+        cv2.rectangle(col_r, (cx, cy), (cx + 4, cy + ch), acc_c, -1)
+        cv2.rectangle(col_r, (cx, cy), (cx + cw, cy + ch), BORDER_COLOR, 1)
+
+        cv2.putText(col_r, mod_val, (cx + 12, cy + ch - int(ch*0.3)), FONT, font_scale_f + 0.05, acc_c, 1, cv2.LINE_AA)
+        cv2.putText(col_r, desc, (cx + 40, cy + ch - int(ch*0.35)), FONT_S, font_scale_s - 0.1, WHITE, 1, cv2.LINE_AA)
+
+    key_label = "SHORTCUTS"
+    key_y = 30 + 3 * mod_cell_h + 20
+    cv2.putText(col_r, key_label, (pad_x, key_y), FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
+
+    keys = ["0-9/T: Score", "S: Skip", "B: Back", "Space: Keep", "Q: Quit"]
+    for i, k in enumerate(keys):
+        ky = key_y + 18 + i * 20 if H_MAX < 550 else key_y + 24 + i * 26
+        cv2.putText(col_r, k, (pad_x, ky), FONT_S, font_scale_s - 0.1, MUTED, 1, cv2.LINE_AA)
+
+    # ── 4. CENTER COLUMN (Video + Strip + Bar) ────────────────────────
+    col_c = np.full((COL_H, C_W, 3), BG, dtype=np.uint8)
+    C_MAIN_H = COL_H - STRIP_H - BAR_H
+
+    # a. Main Video
+    main = resize_keep_aspect(main_frame, C_W, max_height=C_MAIN_H)
+    pad_t = max(0, (C_MAIN_H - main.shape[0]) // 2)
+    pad_b = max(0, C_MAIN_H - main.shape[0] - pad_t)
+    pad_l = max(0, (C_W - main.shape[1]) // 2)
+    pad_r = max(0, C_W - main.shape[1] - pad_l)
+    main_padded = cv2.copyMakeBorder(main, pad_t, pad_b, pad_l, pad_r, cv2.BORDER_CONSTANT, value=BG)
+    cv2.line(main_padded, (0, C_MAIN_H - 1), (C_W, C_MAIN_H - 1), BORDER_COLOR, 1)
+    
+    col_c[:C_MAIN_H, :] = main_padded
+
+    # b. Filmstrip
+    strip = np.full((STRIP_H, C_W, 3), STRIP_BG, dtype=np.uint8)
     labels = ["START (0s)", "MIDDLE (5s)", "END (10s)"]
-    thumb_w = W // 3
-    thumb_imgs = []
-    for t in thumbs:
-        if t is None:
-            t = np.zeros((40, 60, 3), dtype=np.uint8)
-        thumb_imgs.append(resize_keep_aspect(t, thumb_w - 8, max_height=THUMB_H))
-
-    strip = np.full((STRIP_H, W, 3), STRIP_BG, dtype=np.uint8)
-    x = 0
-    for i, (img, lbl) in enumerate(zip(thumb_imgs, labels)):
-        x_off = x + (thumb_w - img.shape[1]) // 2
+    thumb_w = C_W // 3
+    
+    for i, (t_frame, lbl) in enumerate(zip(thumbs, labels)):
+        if t_frame is None:
+            t_frame = np.zeros((40, 60, 3), dtype=np.uint8)
+        img = resize_keep_aspect(t_frame, thumb_w - 8, max_height=THUMB_H)
+        
+        tx = i * thumb_w
+        x_off = tx + (thumb_w - img.shape[1]) // 2
         y_off = LABEL_H + 3
         ih = min(img.shape[0], STRIP_H - y_off - 1)
-        iw = min(img.shape[1], W - x_off)
+        iw = min(img.shape[1], C_W - x_off)
+        
         strip[y_off:y_off + ih, x_off:x_off + iw] = img[:ih, :iw]
         
-        # Elegant outline around thumbnail
         cv2.rectangle(strip, (x_off, y_off), (x_off + iw - 1, y_off + ih - 1), BORDER_COLOR, 1)
-        
-        # Center middle frame overlay indicator
-        if i == 1:
-            cv2.rectangle(strip, (x_off, y_off), (x_off + iw - 1, y_off + ih - 1), ACCENT, 1)
+        if i == active_thumb_idx:
+            cv2.rectangle(strip, (x_off, y_off), (x_off + iw - 1, y_off + ih - 1), ACCENT, 2)
 
-        # Draw label above
         lbl_sz = cv2.getTextSize(lbl, FONT_S, font_scale_s, 1)[0]
-        lbl_x = x + (thumb_w - lbl_sz[0]) // 2
+        lbl_x = tx + (thumb_w - lbl_sz[0]) // 2
         cv2.putText(strip, lbl, (lbl_x, LABEL_H - 3), FONT_S, font_scale_s, MUTED, 1, cv2.LINE_AA)
         
-        # Vertical divider
         if i < 2:
-            cv2.line(strip, (x + thumb_w - 1, 0), (x + thumb_w - 1, STRIP_H), BORDER_COLOR, 1)
-        x += thumb_w
-    
-    cv2.line(strip, (0, STRIP_H - 1), (W, STRIP_H - 1), BORDER_COLOR, 1)
-    parts.append(strip)
+            cv2.line(strip, (tx + thumb_w - 1, 0), (tx + thumb_w - 1, STRIP_H), BORDER_COLOR, 1)
+            
+    cv2.line(strip, (0, STRIP_H - 1), (C_W, STRIP_H - 1), BORDER_COLOR, 1)
+    col_c[C_MAIN_H:C_MAIN_H + STRIP_H, :] = strip
 
-    # ── 4. PROGRESS BAR ───────────────────────────────────────────────
-    bar = np.full((BAR_H, W, 3), BG, dtype=np.uint8)
+    # c. Progress Bar
+    bar = np.full((BAR_H, C_W, 3), BG, dtype=np.uint8)
     pct = done / max(total, 1)
     pct_text = "%d / %d segments rated (%.1f%%)" % (done, total, pct * 100)
     
-    bx0, by0, bx1, by1 = 12, 5, W - 12, BAR_H - 5
+    bx0, by0, bx1, by1 = 12, 5, C_W - 12, BAR_H - 5
     cv2.rectangle(bar, (bx0, by0), (bx1, by1), BAR_BG, -1)
     fill_x = bx0 + int((bx1 - bx0) * pct)
     if fill_x > bx0:
         cv2.rectangle(bar, (bx0, by0), (fill_x, by1), GREEN_LIGHT, -1)
         
     psz = cv2.getTextSize(pct_text, FONT, font_scale_f - 0.04, 1)[0]
-    cv2.putText(bar, pct_text, ((W - psz[0]) // 2 + 1, BAR_H - int(BAR_H * 0.32) + 1), FONT, font_scale_f - 0.04, (0, 0, 0), 1, cv2.LINE_AA)
-    cv2.putText(bar, pct_text, ((W - psz[0]) // 2, BAR_H - int(BAR_H * 0.32)), FONT, font_scale_f - 0.04, WHITE, 1, cv2.LINE_AA)
-    parts.append(bar)
-
-    # ── 4b. SIGNALS REMINDER BAR ──────────────────────────────────────
-    sig = np.full((SIG_H, W, 3), BG, dtype=np.uint8)
-    sig_text = "SIGNALS: [1] New Concept   |   [2] Formula/Eq   |   [3] Worked Example   |   [4] Emphasis Cue"
-    ssz = cv2.getTextSize(sig_text, FONT, font_scale_f - 0.05, 1)[0]
-    cv2.putText(sig, sig_text, ((W - ssz[0]) // 2, SIG_H - int(SIG_H * 0.32)), FONT, font_scale_f - 0.05, WHITE, 1, cv2.LINE_AA)
-    cv2.line(sig, (0, 0), (W, 0), BORDER_COLOR, 1)
-    cv2.line(sig, (0, SIG_H - 1), (W, SIG_H - 1), BORDER_COLOR, 1)
-    parts.append(sig)
-
-    # ── 5. SCORE GUIDE (Sleek SaaS Cards - 4 Bands) ───────────────────
-    guide = np.full((GUIDE_H, W, 3), BG, dtype=np.uint8)
-    bands = [
-        ("8-10 CRITICAL", "Diag/formula/example", GREEN_DARK, GREEN_LIGHT),
-        ("4-7  USEFUL",   "Bullet pts/definitions", YELLOW_DARK, YELLOW_LIGHT),
-        ("1-3  LOW VALUE", "Title/transition/talk", RED_DARK, RED_LIGHT),
-        ("0    SKIP/FILLER", "Blank/logo/admin/dup", GRAY_DARK, GRAY_LIGHT),
-    ]
-    col_w = W // 4
-    for i, (title, desc, bg_col, acc_col) in enumerate(bands):
-        x0 = i * col_w + 4
-        # Card Background
-        cv2.rectangle(guide, (x0, 2), (x0 + col_w - 8, GUIDE_H - 2), bg_col, -1)
-        # Left Accent highlight strip
-        cv2.rectangle(guide, (x0, 2), (x0 + 4, GUIDE_H - 2), acc_col, -1)
-        # Border
-        cv2.rectangle(guide, (x0, 2), (x0 + col_w - 8, GUIDE_H - 2), BORDER_COLOR, 1)
-        
-        cv2.putText(guide, title, (x0 + 10, int(GUIDE_H * 0.42)), FONT, font_scale_f, WHITE, 1, cv2.LINE_AA)
-        cv2.putText(guide, desc,  (x0 + 10, int(GUIDE_H * 0.80)), FONT_S, font_scale_s, MUTED, 1, cv2.LINE_AA)
-    parts.append(guide)
-
-    # ── 6. KEYBOARD HINT BAR ──────────────────────────────────────────
-    kb = np.full((KB_H, W, 3), BG, dtype=np.uint8)
-    keys_text = "[0-9] Score   |   [T] Ten   |   [S] Skip   |   [B] Back   |   [Q] Save & Quit"
-    ksz = cv2.getTextSize(keys_text, FONT, font_scale_f, 1)[0]
-    cv2.putText(kb, keys_text, ((W - ksz[0]) // 2, KB_H - int(KB_H * 0.35)), FONT, font_scale_f, MUTED, 1, cv2.LINE_AA)
+    cv2.putText(bar, pct_text, ((C_W - psz[0]) // 2 + 1, BAR_H - int(BAR_H * 0.32) + 1), FONT, font_scale_f - 0.04, (0, 0, 0), 1, cv2.LINE_AA)
+    cv2.putText(bar, pct_text, ((C_W - psz[0]) // 2, BAR_H - int(BAR_H * 0.32)), FONT, font_scale_f - 0.04, WHITE, 1, cv2.LINE_AA)
     
-    if prev_score is not None and prev_score != "-":
-        ps_text = f"Prev: {prev_score}"
-        cv2.putText(kb, ps_text, (12, KB_H - int(KB_H * 0.35)), FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
-    
-    cv2.line(kb, (0, 0), (W, 0), BORDER_COLOR, 1)
-    kb[KB_H - 2:KB_H, :] = ACCENT
-    parts.append(kb)
+    col_c[C_MAIN_H + STRIP_H:, :] = bar
 
-    return np.vstack(parts)
+    # ── 5. ASSEMBLE ───────────────────────────────────────────────────
+    cols = np.hstack([col_l, col_c, col_r])
+    canvas = np.vstack([hdr, cols])
+
+    strip_y = HDR_H + C_MAIN_H
+    return canvas, strip_y, STRIP_H, L_W, thumb_w
  
  
 def normalize(raw):
@@ -392,11 +434,116 @@ def run():
     done = sum(1 for s in all_segments if s["segment_id"] in annotations)
     print("Found %d videos, %d segments total, %d already done." %
           (len(video_paths), total, done))
+
+    reannotate_video_id = None
+    reannotate_all = False
+
+    while True:
+        print("\n" + "="*60)
+        print(" Welcome to Module 1 Annotation Helper (Integra)")
+        print("="*60)
+        print(f"Progress: {done} / {total} segments annotated ({done/total*100:.1f}%)")
+        print("\nChoose an option:")
+        if done > 0:
+            print("  [1] Continue from where you left off (default)")
+            print("  [2] Re-annotate / Review a specific video")
+            print("  [3] Re-annotate / Review ALL videos")
+            print("  [4] View Annotation Guidelines & Rubrics")
+            print("  [5] Start completely fresh (WARNING: clears all your progress)")
+        else:
+            print("  [1] Start annotating (default)")
+            print("  [2] View Annotation Guidelines & Rubrics")
+        
+        choice = input("\nEnter choice: ").strip()
+        
+        if not choice:
+            choice = '1'
+            
+        if choice == '1':
+            break
+        elif done > 0 and choice == '2':
+            annotated_video_ids = sorted(list(set(
+                ann.get("video_id") for ann in annotations.values() if isinstance(ann, dict) and "video_id" in ann
+            )))
+            if not annotated_video_ids:
+                print("No annotated videos found to re-annotate.")
+                continue
+            
+            print("\nAlready Annotated Videos:")
+            for idx_vid, v_id in enumerate(annotated_video_ids, 1):
+                print(f"  [{idx_vid}] {v_id}")
+            try:
+                vid_choice = input(f"\nSelect a video number (1-{len(annotated_video_ids)}): ").strip()
+                vid_idx = int(vid_choice) - 1
+                if 0 <= vid_idx < len(annotated_video_ids):
+                    reannotate_video_id = annotated_video_ids[vid_idx]
+                    print(f"\n>>> Mode: Re-annotating video '{reannotate_video_id}'")
+                    print(">>> TIP: Press SPACE, ENTER, or 'N' to KEEP the previous score and advance!")
+                    break
+                else:
+                    print("Invalid selection.")
+            except ValueError:
+                print("Invalid selection.")
+        elif done > 0 and choice == '3':
+            reannotate_all = True
+            print("\n>>> Mode: Re-annotating ALL videos")
+            print(">>> TIP: Press SPACE, ENTER, or 'N' to KEEP the previous score and advance!")
+            break
+        elif (done > 0 and choice == '4') or (done == 0 and choice == '2'):
+            print("\n" + "="*80)
+            print("         INTEGRA - MODULE 1 ANNOTATION GUIDELINES & RUBRICS")
+            print("="*80)
+            print("\n[1] THE TWO-PASS MENTAL SHORTCUT")
+            print("  Pass 1: Content Only (Base Score)")
+            print("    * 8 - Core diagram, formula, algorithm")
+            print("    * 7 - Big diagram, code, partial example")
+            print("    * 6 - Small diagram or table")
+            print("    * 5 - Definition or full text")
+            print("    * 4 - Bullet list (a few points)")
+            print("    * 3 - Heading + one bullet only")
+            print("    * 2 - Lecturer camera shot, slide is decorative")
+            print("    * 1 - Cover slide, title slide, empty slide")
+            print("  Pass 2: Lecturer Movement (Adjust Base Score)")
+            print("    * Standing still           -> Keep Base")
+            print("    * Pointing/gesturing       -> +1 Point")
+            print("    * Actively annotating/writing -> +2 Points (Capped at 10)")
+            print("\n[2] SCORING BANDS SUMMARY")
+            print("  * 8-10 CRITICAL   - Core diagram/formula/full worked example/annotations")
+            print("  * 4-7  USEFUL     - Normal content, definitions, bullet points")
+            print("  * 1-3  LOW VALUE  - Covers, titles, lecturer-focus shots")
+            print("  * 0    SKIP/FILLER- Blank screens, logos, transition blurs")
+            print("\n[3] TIE-BREAKER DECISION LADDER (for 1, 2, 3 confusion)")
+            print("  Ask in order, stop at first 'yes':")
+            print("    1. Is slide essentially empty? -> 1")
+            print("    2. Is lecturer the focus with slide adding nothing? -> 2")
+            print("    3. Small content (heading + one bullet) & standing still? -> 3")
+            print("="*80 + "\n")
+            input("Press Enter to return to menu...")
+        elif done > 0 and choice == '5':
+            confirm = input("\nWARNING: Are you absolutely sure you want to clear ALL annotations? (y/N): ").strip().lower()
+            if confirm == 'y':
+                annotations = {}
+                save_annotations(OUTPUT_FILE, annotations)
+                done = 0
+                print("\n>>> All annotations cleared! Starting completely fresh.")
+                break
+            else:
+                print("\nClear cancelled.")
+        else:
+            print("Invalid option. Please try again.")
  
     # Create a named window that is fully resizable and scaled beautifully
     WIN_NAME = "Module 1 Annotation - Integra"
     cv2.namedWindow(WIN_NAME, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(WIN_NAME, DISPLAY_WIDTH, MAX_CANVAS_HEIGHT)
+
+    mouse_state = {"clicked": False, "x": -1, "y": -1}
+    def mouse_cb(event, x, y, flags, param):
+        if event == cv2.EVENT_LBUTTONDOWN:
+            mouse_state["clicked"] = True
+            mouse_state["x"] = x
+            mouse_state["y"] = y
+    cv2.setMouseCallback(WIN_NAME, mouse_cb)
 
     idx = 0
     current_cap = None
@@ -408,8 +555,9 @@ def run():
  
         # skip already-annotated segments when moving forward
         if seg["segment_id"] in annotations and seg.get("_visited") is not True:
-            idx += 1
-            continue
+            if not reannotate_all and (reannotate_video_id is None or seg["video_id"] != reannotate_video_id):
+                idx += 1
+                continue
  
         # open the right video file
         if current_video != seg["video_path"]:
@@ -429,10 +577,47 @@ def run():
         done = sum(1 for s in all_segments if s["segment_id"] in annotations)
         prev = annotations.get(seg["segment_id"], {}).get("raw_score", "-")
  
-        canvas = make_canvas(mid, [start_f, mid, end_f], seg, done, total, prev, last_action)
-        cv2.imshow(WIN_NAME, canvas)
-        key = cv2.waitKey(0) & 0xFF
- 
+        active_thumb_idx = 1
+        force_redraw = True
+        key = -1
+
+        while True:
+            if force_redraw:
+                main_f = [start_f, mid, end_f][active_thumb_idx]
+                canvas, strip_y, strip_h, L_W, thumb_w = make_canvas(main_f, [start_f, mid, end_f], seg, done, total, prev, last_action, active_thumb_idx)
+                cv2.imshow(WIN_NAME, canvas)
+                force_redraw = False
+            
+            key = cv2.waitKey(50) & 0xFF
+            
+            if key != 255:
+                break
+
+            if mouse_state["clicked"]:
+                mx, my = mouse_state["x"], mouse_state["y"]
+                mouse_state["clicked"] = False
+                
+                # Check if click is inside the filmstrip area
+                if strip_y <= my <= strip_y + strip_h:
+                    if mx >= L_W and mx <= DISPLAY_WIDTH - (140 if MAX_CANVAS_HEIGHT < 550 else 160):
+                        rel_x = mx - L_W
+                        if rel_x < thumb_w:
+                            active_thumb_idx = 0
+                        elif rel_x < 2 * thumb_w:
+                            active_thumb_idx = 1
+                        else:
+                            active_thumb_idx = 2
+                        force_redraw = True
+
+        # Quick "keep score" shortcut for re-annotations
+        is_kept = False
+        if key in (13, 10, 32, ord('n')) and prev != "-":
+            if prev is None:
+                key = ord('s')  # Convert to a skip action
+            else:
+                score = prev
+                is_kept = True
+  
         if key == ord('q'):
             break
         elif key == ord('b'):
@@ -488,7 +673,10 @@ def run():
             }
             save_annotations(OUTPUT_FILE, annotations)
             seg.pop("_visited", None)
-            last_action = f"Saved: {score}"
+            if is_kept:
+                last_action = f"Kept Score: {score}"
+            else:
+                last_action = f"Saved: {score}"
             idx += 1
         else:
             if key not in (ord('q'), ord('b'), ord('s')):
