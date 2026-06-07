@@ -247,3 +247,6 @@ outputs/temp/
 
 # Gemini
 .gemini/
+
+#model.safetensors
+models/module3/vit_slide_classifier/model.safetensors
