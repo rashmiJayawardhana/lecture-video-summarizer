@@ -10,7 +10,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T02:09:27"
+    "annotated_at": "2026-06-09T02:09:27",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0001": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -23,7 +26,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T02:10:01"
+    "annotated_at": "2026-06-09T02:10:01",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0002": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -36,7 +42,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T02:10:03"
+    "annotated_at": "2026-06-09T02:10:03",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0003": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -49,7 +58,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:16:22"
+    "annotated_at": "2026-06-09T07:16:22",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0004": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -62,7 +74,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:16:59"
+    "annotated_at": "2026-06-09T07:16:59",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0005": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -75,7 +90,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:17:28"
+    "annotated_at": "2026-06-09T07:17:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0006": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -88,7 +106,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:17:48"
+    "annotated_at": "2026-06-09T07:17:48",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0007": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -101,7 +122,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:17:50"
+    "annotated_at": "2026-06-09T07:17:50",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0008": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -114,7 +138,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:17:51"
+    "annotated_at": "2026-06-09T07:17:51",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0009": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -127,7 +154,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:17:52"
+    "annotated_at": "2026-06-09T07:17:52",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0010": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -140,7 +170,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:17:53"
+    "annotated_at": "2026-06-09T07:17:53",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0011": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -153,7 +186,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:25"
+    "annotated_at": "2026-06-09T07:18:25",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0012": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -166,7 +202,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:26"
+    "annotated_at": "2026-06-09T07:18:26",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0013": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -179,7 +218,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:27"
+    "annotated_at": "2026-06-09T07:18:27",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0014": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -192,7 +234,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:28"
+    "annotated_at": "2026-06-09T07:18:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0015": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -205,7 +250,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:29"
+    "annotated_at": "2026-06-09T07:18:29",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0016": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -218,7 +266,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:30"
+    "annotated_at": "2026-06-09T07:18:30",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0017": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -231,7 +282,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:31"
+    "annotated_at": "2026-06-09T07:18:31",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0018": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -244,7 +298,10 @@
     "normalized_score": 0.0,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:33"
+    "annotated_at": "2026-06-09T07:18:33",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0019": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -257,7 +314,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:35"
+    "annotated_at": "2026-06-09T07:18:35",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0020": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -270,7 +330,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:36"
+    "annotated_at": "2026-06-09T07:18:36",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0021": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -283,7 +346,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:37"
+    "annotated_at": "2026-06-09T07:18:37",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0022": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -296,7 +362,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:37"
+    "annotated_at": "2026-06-09T07:18:37",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0023": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -309,7 +378,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:38"
+    "annotated_at": "2026-06-09T07:18:38",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0024": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -322,7 +394,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:18:39"
+    "annotated_at": "2026-06-09T07:18:39",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0025": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -335,7 +410,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:04"
+    "annotated_at": "2026-06-09T07:19:04",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0026": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -348,7 +426,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:06"
+    "annotated_at": "2026-06-09T07:19:06",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0027": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -361,7 +442,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:08"
+    "annotated_at": "2026-06-09T07:19:08",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0028": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -374,7 +458,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:09"
+    "annotated_at": "2026-06-09T07:19:09",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0029": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -387,7 +474,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:09"
+    "annotated_at": "2026-06-09T07:19:09",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0030": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -400,7 +490,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:10"
+    "annotated_at": "2026-06-09T07:19:10",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0031": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -413,7 +506,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:11"
+    "annotated_at": "2026-06-09T07:19:11",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0032": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -426,7 +522,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:19:14"
+    "annotated_at": "2026-06-09T07:19:14",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0033": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -439,7 +538,10 @@
     "normalized_score": 0.5,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:42:43"
+    "annotated_at": "2026-06-09T07:42:43",
+    "ai_score": 7,
+    "ai_reasoning": "[Simulated] Substantial diagram showing component relationships and list of key specifications.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0034": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -452,7 +554,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:42:47"
+    "annotated_at": "2026-06-09T07:42:47",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0035": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -465,7 +570,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:42:48"
+    "annotated_at": "2026-06-09T07:42:48",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0036": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -478,7 +586,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:42:50"
+    "annotated_at": "2026-06-09T07:42:50",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0037": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -491,7 +602,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:04"
+    "annotated_at": "2026-06-09T07:43:04",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0038": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -504,7 +618,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:05"
+    "annotated_at": "2026-06-09T07:43:05",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0039": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -517,7 +634,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:06"
+    "annotated_at": "2026-06-09T07:43:06",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0040": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -530,7 +650,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:08"
+    "annotated_at": "2026-06-09T07:43:08",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0041": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -543,7 +666,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:09"
+    "annotated_at": "2026-06-09T07:43:09",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0042": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -556,7 +682,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:14"
+    "annotated_at": "2026-06-09T07:43:14",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0043": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -569,7 +698,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:16"
+    "annotated_at": "2026-06-09T07:43:16",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0044": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -582,7 +714,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:17"
+    "annotated_at": "2026-06-09T07:43:17",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0045": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -595,7 +730,10 @@
     "normalized_score": 0.9,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:25"
+    "annotated_at": "2026-06-09T07:43:25",
+    "ai_score": 10,
+    "ai_reasoning": "[Simulated] Detailed database schema diagram and system sequence diagrams are fully presented.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0046": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -608,7 +746,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:28"
+    "annotated_at": "2026-06-09T07:43:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0047": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -621,7 +762,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:29"
+    "annotated_at": "2026-06-09T07:43:29",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0048": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -634,7 +778,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:30"
+    "annotated_at": "2026-06-09T07:43:30",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0049": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -647,7 +794,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:31"
+    "annotated_at": "2026-06-09T07:43:31",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0050": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -660,7 +810,10 @@
     "normalized_score": 0.5,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:45"
+    "annotated_at": "2026-06-09T07:43:45",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Explanation slide with a dense paragraph explaining the design pattern definition.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0051": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -673,7 +826,10 @@
     "normalized_score": 0.5,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:49"
+    "annotated_at": "2026-06-09T07:43:49",
+    "ai_score": 8,
+    "ai_reasoning": "[Simulated] Core flow chart and architectural block diagram are shown on screen with formula.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0052": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -686,7 +842,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:54"
+    "annotated_at": "2026-06-09T07:43:54",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0053": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -699,7 +858,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:55"
+    "annotated_at": "2026-06-09T07:43:55",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0054": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -712,7 +874,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:56"
+    "annotated_at": "2026-06-09T07:43:56",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0055": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -725,7 +890,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:43:57"
+    "annotated_at": "2026-06-09T07:43:57",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0056": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -738,7 +906,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:15"
+    "annotated_at": "2026-06-09T07:44:15",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0057": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -751,7 +922,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:28"
+    "annotated_at": "2026-06-09T07:44:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0058": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -764,7 +938,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:33"
+    "annotated_at": "2026-06-09T07:44:33",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0059": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -777,7 +954,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:37"
+    "annotated_at": "2026-06-09T07:44:37",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0060": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -790,7 +970,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:38"
+    "annotated_at": "2026-06-09T07:44:38",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0061": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -803,7 +986,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:39"
+    "annotated_at": "2026-06-09T07:44:39",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0062": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -816,7 +1002,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:39"
+    "annotated_at": "2026-06-09T07:44:39",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0063": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -829,7 +1018,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:40"
+    "annotated_at": "2026-06-09T07:44:40",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0064": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -842,7 +1034,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:44"
+    "annotated_at": "2026-06-09T07:44:44",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0065": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -855,7 +1050,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:49"
+    "annotated_at": "2026-06-09T07:44:49",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0066": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -868,7 +1066,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:51"
+    "annotated_at": "2026-06-09T07:44:51",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0067": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -881,7 +1082,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:52"
+    "annotated_at": "2026-06-09T07:44:52",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0068": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -894,7 +1098,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:54"
+    "annotated_at": "2026-06-09T07:44:54",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0069": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -907,7 +1114,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:56"
+    "annotated_at": "2026-06-09T07:44:56",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0070": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -920,7 +1130,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:44:58"
+    "annotated_at": "2026-06-09T07:44:58",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0071": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -933,7 +1146,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:00"
+    "annotated_at": "2026-06-09T07:45:00",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0072": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -946,7 +1162,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:03"
+    "annotated_at": "2026-06-09T07:45:03",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0073": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -959,7 +1178,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:04"
+    "annotated_at": "2026-06-09T07:45:04",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0074": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -972,7 +1194,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:06"
+    "annotated_at": "2026-06-09T07:45:06",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0075": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -985,7 +1210,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:08"
+    "annotated_at": "2026-06-09T07:45:08",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0076": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -998,7 +1226,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:09"
+    "annotated_at": "2026-06-09T07:45:09",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0077": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1011,7 +1242,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:10"
+    "annotated_at": "2026-06-09T07:45:10",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0078": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1024,7 +1258,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:11"
+    "annotated_at": "2026-06-09T07:45:11",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0079": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1037,7 +1274,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:12"
+    "annotated_at": "2026-06-09T07:45:12",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0080": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1050,7 +1290,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:13"
+    "annotated_at": "2026-06-09T07:45:13",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0081": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1063,7 +1306,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:14"
+    "annotated_at": "2026-06-09T07:45:14",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0082": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1076,7 +1322,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:15"
+    "annotated_at": "2026-06-09T07:45:15",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0083": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1089,7 +1338,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:16"
+    "annotated_at": "2026-06-09T07:45:16",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0084": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1102,7 +1354,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:17"
+    "annotated_at": "2026-06-09T07:45:17",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0085": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1115,7 +1370,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:18"
+    "annotated_at": "2026-06-09T07:45:18",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0086": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1128,7 +1386,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:19"
+    "annotated_at": "2026-06-09T07:45:19",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0087": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1141,7 +1402,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:20"
+    "annotated_at": "2026-06-09T07:45:20",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0088": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1154,7 +1418,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:22"
+    "annotated_at": "2026-06-09T07:45:22",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0089": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1167,7 +1434,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:42"
+    "annotated_at": "2026-06-09T07:45:42",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0090": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1180,7 +1450,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:45"
+    "annotated_at": "2026-06-09T07:45:45",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0091": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1193,7 +1466,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:46"
+    "annotated_at": "2026-06-09T07:45:46",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0092": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1206,7 +1482,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:47"
+    "annotated_at": "2026-06-09T07:45:47",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0093": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1219,7 +1498,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:47"
+    "annotated_at": "2026-06-09T07:45:47",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0094": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1232,7 +1514,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:48"
+    "annotated_at": "2026-06-09T07:45:48",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0095": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1245,7 +1530,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:48"
+    "annotated_at": "2026-06-09T07:45:48",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0096": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1258,7 +1546,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:49"
+    "annotated_at": "2026-06-09T07:45:49",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0097": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1271,7 +1562,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:51"
+    "annotated_at": "2026-06-09T07:45:51",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0098": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1284,7 +1578,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:53"
+    "annotated_at": "2026-06-09T07:45:53",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0099": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1297,7 +1594,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:53"
+    "annotated_at": "2026-06-09T07:45:53",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0100": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1310,7 +1610,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:54"
+    "annotated_at": "2026-06-09T07:45:54",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0101": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1323,7 +1626,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:56"
+    "annotated_at": "2026-06-09T07:45:56",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0102": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1336,7 +1642,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:45:58"
+    "annotated_at": "2026-06-09T07:45:58",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0103": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1349,7 +1658,10 @@
     "normalized_score": 0.5,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:04"
+    "annotated_at": "2026-06-09T07:46:04",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Explanation slide with a dense paragraph explaining the design pattern definition.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0104": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1362,7 +1674,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:06"
+    "annotated_at": "2026-06-09T07:46:06",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0105": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1375,7 +1690,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:08"
+    "annotated_at": "2026-06-09T07:46:08",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0106": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1388,7 +1706,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:09"
+    "annotated_at": "2026-06-09T07:46:09",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0107": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1401,7 +1722,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:11"
+    "annotated_at": "2026-06-09T07:46:11",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0108": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1414,7 +1738,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:12"
+    "annotated_at": "2026-06-09T07:46:12",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0109": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1427,7 +1754,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:14"
+    "annotated_at": "2026-06-09T07:46:14",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0110": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1440,7 +1770,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:16"
+    "annotated_at": "2026-06-09T07:46:16",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0111": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1453,7 +1786,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:18"
+    "annotated_at": "2026-06-09T07:46:18",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0112": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1466,7 +1802,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:20"
+    "annotated_at": "2026-06-09T07:46:20",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0113": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1479,7 +1818,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:21"
+    "annotated_at": "2026-06-09T07:46:21",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0114": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1492,7 +1834,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:22"
+    "annotated_at": "2026-06-09T07:46:22",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0115": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1505,7 +1850,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:23"
+    "annotated_at": "2026-06-09T07:46:23",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0116": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1518,7 +1866,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:24"
+    "annotated_at": "2026-06-09T07:46:24",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0117": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1531,7 +1882,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:25"
+    "annotated_at": "2026-06-09T07:46:25",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0118": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1544,7 +1898,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:26"
+    "annotated_at": "2026-06-09T07:46:26",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0119": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1557,7 +1914,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:28"
+    "annotated_at": "2026-06-09T07:46:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0120": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1570,7 +1930,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:29"
+    "annotated_at": "2026-06-09T07:46:29",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0121": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1583,7 +1946,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:30"
+    "annotated_at": "2026-06-09T07:46:30",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0122": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1596,7 +1962,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:31"
+    "annotated_at": "2026-06-09T07:46:31",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0123": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1609,7 +1978,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:32"
+    "annotated_at": "2026-06-09T07:46:32",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0124": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1622,7 +1994,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:33"
+    "annotated_at": "2026-06-09T07:46:33",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0125": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1635,7 +2010,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:34"
+    "annotated_at": "2026-06-09T07:46:34",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0126": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1648,7 +2026,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:35"
+    "annotated_at": "2026-06-09T07:46:35",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0127": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1661,7 +2042,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:36"
+    "annotated_at": "2026-06-09T07:46:36",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0128": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1674,7 +2058,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:37"
+    "annotated_at": "2026-06-09T07:46:37",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0129": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1687,7 +2074,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:37"
+    "annotated_at": "2026-06-09T07:46:37",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0130": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1700,7 +2090,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:38"
+    "annotated_at": "2026-06-09T07:46:38",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0131": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1713,7 +2106,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:39"
+    "annotated_at": "2026-06-09T07:46:39",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0132": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1726,7 +2122,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:42"
+    "annotated_at": "2026-06-09T07:46:42",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0133": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1739,7 +2138,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:43"
+    "annotated_at": "2026-06-09T07:46:43",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0134": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1752,7 +2154,10 @@
     "normalized_score": 0.6,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:49"
+    "annotated_at": "2026-06-09T07:46:49",
+    "ai_score": 6,
+    "ai_reasoning": "[Simulated] Simple block diagram and summary comparison table are displayed on the slide.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0135": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1765,7 +2170,10 @@
     "normalized_score": 0.6,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:51"
+    "annotated_at": "2026-06-09T07:46:51",
+    "ai_score": 8,
+    "ai_reasoning": "[Simulated] Detailed database schema diagram and system sequence diagrams are fully presented.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0136": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1778,7 +2186,10 @@
     "normalized_score": 0.8,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:55"
+    "annotated_at": "2026-06-09T07:46:55",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Explanation slide with a dense paragraph explaining the design pattern definition.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0137": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1791,7 +2202,10 @@
     "normalized_score": 0.0,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:57"
+    "annotated_at": "2026-06-09T07:46:57",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0138": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1804,7 +2218,10 @@
     "normalized_score": 0.0,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:46:58"
+    "annotated_at": "2026-06-09T07:46:58",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0139": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1817,7 +2234,10 @@
     "normalized_score": 0.0,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:47:01"
+    "annotated_at": "2026-06-09T07:47:01",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0140": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1830,7 +2250,10 @@
     "normalized_score": 0.0,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:47:03"
+    "annotated_at": "2026-06-09T07:47:03",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0141": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1843,7 +2266,10 @@
     "normalized_score": 0.0,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:47:04"
+    "annotated_at": "2026-06-09T07:47:04",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0142": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1856,7 +2282,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:27"
+    "annotated_at": "2026-06-09T07:49:27",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0143": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1869,7 +2298,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:28"
+    "annotated_at": "2026-06-09T07:49:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0144": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1882,7 +2314,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:29"
+    "annotated_at": "2026-06-09T07:49:29",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0145": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1895,7 +2330,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:31"
+    "annotated_at": "2026-06-09T07:49:31",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0146": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1908,7 +2346,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:32"
+    "annotated_at": "2026-06-09T07:49:32",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0147": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1921,7 +2362,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:33"
+    "annotated_at": "2026-06-09T07:49:33",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0148": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1934,7 +2378,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:34"
+    "annotated_at": "2026-06-09T07:49:34",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0149": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1947,7 +2394,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:35"
+    "annotated_at": "2026-06-09T07:49:35",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0150": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1960,7 +2410,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:36"
+    "annotated_at": "2026-06-09T07:49:36",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0151": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1973,7 +2426,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:37"
+    "annotated_at": "2026-06-09T07:49:37",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0152": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1986,7 +2442,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:40"
+    "annotated_at": "2026-06-09T07:49:40",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0153": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -1999,7 +2458,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:44"
+    "annotated_at": "2026-06-09T07:49:44",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0154": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2012,7 +2474,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:47"
+    "annotated_at": "2026-06-09T07:49:47",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0155": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2025,7 +2490,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:49"
+    "annotated_at": "2026-06-09T07:49:49",
+    "ai_score": 7,
+    "ai_reasoning": "[Simulated] Substantial diagram showing component relationships and list of key specifications.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0156": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2038,7 +2506,10 @@
     "normalized_score": 0.9,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:49:51"
+    "annotated_at": "2026-06-09T07:49:51",
+    "ai_score": 8,
+    "ai_reasoning": "[Simulated] Detailed database schema diagram and system sequence diagrams are fully presented.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0157": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2051,7 +2522,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:17"
+    "annotated_at": "2026-06-09T07:51:17",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0158": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2064,7 +2538,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:18"
+    "annotated_at": "2026-06-09T07:51:18",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0159": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2077,7 +2554,10 @@
     "normalized_score": 0.9,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:21"
+    "annotated_at": "2026-06-09T07:51:21",
+    "ai_score": 9,
+    "ai_reasoning": "[Simulated] Core flow chart and architectural block diagram are shown on screen with formula.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0160": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2090,7 +2570,10 @@
     "normalized_score": 0.8,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:28"
+    "annotated_at": "2026-06-09T07:51:28",
+    "ai_score": 8,
+    "ai_reasoning": "[Simulated] Complete mathematical derivation and algorithm steps are displayed with lecturer writing annotations.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0161": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2103,7 +2586,10 @@
     "normalized_score": 0.8,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:32"
+    "annotated_at": "2026-06-09T07:51:32",
+    "ai_score": 7,
+    "ai_reasoning": "[Simulated] Substantial diagram showing component relationships and list of key specifications.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0162": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2116,7 +2602,10 @@
     "normalized_score": 0.8,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:36"
+    "annotated_at": "2026-06-09T07:51:36",
+    "ai_score": 8,
+    "ai_reasoning": "[Simulated] Core flow chart and architectural block diagram are shown on screen with formula.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0163": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2129,7 +2618,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:41"
+    "annotated_at": "2026-06-09T07:51:41",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0164": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2142,7 +2634,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:41"
+    "annotated_at": "2026-06-09T07:51:41",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0165": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2155,7 +2650,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:42"
+    "annotated_at": "2026-06-09T07:51:42",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0166": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2168,7 +2666,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:44"
+    "annotated_at": "2026-06-09T07:51:44",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0167": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2181,7 +2682,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:56"
+    "annotated_at": "2026-06-09T07:51:56",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0168": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2194,7 +2698,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:51:58"
+    "annotated_at": "2026-06-09T07:51:58",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0169": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2207,7 +2714,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:00"
+    "annotated_at": "2026-06-09T07:52:00",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0170": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2220,7 +2730,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:02"
+    "annotated_at": "2026-06-09T07:52:02",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0171": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2233,7 +2746,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:03"
+    "annotated_at": "2026-06-09T07:52:03",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0172": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2246,7 +2762,10 @@
     "normalized_score": 0.8,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:05"
+    "annotated_at": "2026-06-09T07:52:05",
+    "ai_score": 8,
+    "ai_reasoning": "[Simulated] Core flow chart and architectural block diagram are shown on screen with formula.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0173": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2259,7 +2778,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:15"
+    "annotated_at": "2026-06-09T07:52:15",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0174": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2272,7 +2794,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:16"
+    "annotated_at": "2026-06-09T07:52:16",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0175": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2285,7 +2810,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:20"
+    "annotated_at": "2026-06-09T07:52:20",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0176": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2298,7 +2826,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:24"
+    "annotated_at": "2026-06-09T07:52:24",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0177": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2311,7 +2842,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:26"
+    "annotated_at": "2026-06-09T07:52:26",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0178": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2324,7 +2858,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:27"
+    "annotated_at": "2026-06-09T07:52:27",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0179": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2337,7 +2874,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:28"
+    "annotated_at": "2026-06-09T07:52:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0180": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2350,7 +2890,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:30"
+    "annotated_at": "2026-06-09T07:52:30",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0181": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2363,7 +2906,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:31"
+    "annotated_at": "2026-06-09T07:52:31",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0182": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2376,7 +2922,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:32"
+    "annotated_at": "2026-06-09T07:52:32",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0183": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2389,7 +2938,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:33"
+    "annotated_at": "2026-06-09T07:52:33",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0184": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2402,7 +2954,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:34"
+    "annotated_at": "2026-06-09T07:52:34",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0185": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2415,7 +2970,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:35"
+    "annotated_at": "2026-06-09T07:52:35",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0186": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2428,7 +2986,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:38"
+    "annotated_at": "2026-06-09T07:52:38",
+    "ai_score": 6,
+    "ai_reasoning": "[Simulated] Simple block diagram and summary comparison table are displayed on the slide.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0187": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2441,7 +3002,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:40"
+    "annotated_at": "2026-06-09T07:52:40",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0188": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2454,7 +3018,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:42"
+    "annotated_at": "2026-06-09T07:52:42",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0189": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2467,7 +3034,10 @@
     "normalized_score": 0.9,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:45"
+    "annotated_at": "2026-06-09T07:52:45",
+    "ai_score": 9,
+    "ai_reasoning": "[Simulated] Complete mathematical derivation and algorithm steps are displayed with lecturer writing annotations.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0190": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2480,7 +3050,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:49"
+    "annotated_at": "2026-06-09T07:52:49",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0191": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2493,7 +3066,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:51"
+    "annotated_at": "2026-06-09T07:52:51",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0192": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2506,7 +3082,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:51"
+    "annotated_at": "2026-06-09T07:52:51",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0193": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2519,7 +3098,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:52"
+    "annotated_at": "2026-06-09T07:52:52",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0194": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2532,7 +3114,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:52"
+    "annotated_at": "2026-06-09T07:52:52",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0195": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2545,7 +3130,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:54"
+    "annotated_at": "2026-06-09T07:52:54",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0196": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2558,7 +3146,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:54"
+    "annotated_at": "2026-06-09T07:52:54",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0197": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2571,7 +3162,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:55"
+    "annotated_at": "2026-06-09T07:52:55",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Explanation slide with a dense paragraph explaining the design pattern definition.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0198": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2584,7 +3178,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:56"
+    "annotated_at": "2026-06-09T07:52:56",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0199": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2597,7 +3194,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:56"
+    "annotated_at": "2026-06-09T07:52:56",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0200": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2610,7 +3210,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:57"
+    "annotated_at": "2026-06-09T07:52:57",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0201": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2623,7 +3226,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:58"
+    "annotated_at": "2026-06-09T07:52:58",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0202": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2636,7 +3242,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:58"
+    "annotated_at": "2026-06-09T07:52:58",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0203": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2649,7 +3258,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:52:59"
+    "annotated_at": "2026-06-09T07:52:59",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0204": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2662,7 +3274,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:00"
+    "annotated_at": "2026-06-09T07:53:00",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0205": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2675,7 +3290,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:02"
+    "annotated_at": "2026-06-09T07:53:02",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0206": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2688,7 +3306,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:04"
+    "annotated_at": "2026-06-09T07:53:04",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0207": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2701,7 +3322,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:04"
+    "annotated_at": "2026-06-09T07:53:04",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0208": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2714,7 +3338,10 @@
     "normalized_score": 0.9,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:13"
+    "annotated_at": "2026-06-09T07:53:13",
+    "ai_score": 9,
+    "ai_reasoning": "[Simulated] Complete mathematical derivation and algorithm steps are displayed with lecturer writing annotations.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0209": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2727,7 +3354,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:15"
+    "annotated_at": "2026-06-09T07:53:15",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0210": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2740,7 +3370,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:16"
+    "annotated_at": "2026-06-09T07:53:16",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0211": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2753,7 +3386,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:17"
+    "annotated_at": "2026-06-09T07:53:17",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0212": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2766,7 +3402,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:21"
+    "annotated_at": "2026-06-09T07:53:21",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Explanation slide with a dense paragraph explaining the design pattern definition.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0213": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2779,7 +3418,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:22"
+    "annotated_at": "2026-06-09T07:53:22",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0214": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2792,7 +3434,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:23"
+    "annotated_at": "2026-06-09T07:53:23",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0215": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2805,7 +3450,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:24"
+    "annotated_at": "2026-06-09T07:53:24",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0216": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2818,7 +3466,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:25"
+    "annotated_at": "2026-06-09T07:53:25",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0217": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2831,7 +3482,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:27"
+    "annotated_at": "2026-06-09T07:53:27",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0218": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2844,7 +3498,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:28"
+    "annotated_at": "2026-06-09T07:53:28",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0219": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2857,7 +3514,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:29"
+    "annotated_at": "2026-06-09T07:53:29",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0220": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2870,7 +3530,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:31"
+    "annotated_at": "2026-06-09T07:53:31",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0221": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2883,7 +3546,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:37"
+    "annotated_at": "2026-06-09T07:53:37",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0222": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2896,7 +3562,10 @@
     "normalized_score": 0.5,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:39"
+    "annotated_at": "2026-06-09T07:53:39",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Explanation slide with a dense paragraph explaining the design pattern definition.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0223": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2909,7 +3578,10 @@
     "normalized_score": 0.7,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:43"
+    "annotated_at": "2026-06-09T07:53:43",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0224": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2922,7 +3594,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:45"
+    "annotated_at": "2026-06-09T07:53:45",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0225": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2935,7 +3610,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:46"
+    "annotated_at": "2026-06-09T07:53:46",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0226": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2948,7 +3626,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:49"
+    "annotated_at": "2026-06-09T07:53:49",
+    "ai_score": 7,
+    "ai_reasoning": "[Simulated] Substantial diagram showing component relationships and list of key specifications.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0227": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2961,7 +3642,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:54"
+    "annotated_at": "2026-06-09T07:53:54",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0228": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2974,7 +3658,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:56"
+    "annotated_at": "2026-06-09T07:53:56",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0229": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -2987,7 +3674,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:53:57"
+    "annotated_at": "2026-06-09T07:53:57",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0230": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3000,7 +3690,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:02"
+    "annotated_at": "2026-06-09T07:54:02",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0231": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3013,7 +3706,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:03"
+    "annotated_at": "2026-06-09T07:54:03",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0232": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3026,7 +3722,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:04"
+    "annotated_at": "2026-06-09T07:54:04",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0233": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3039,7 +3738,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:05"
+    "annotated_at": "2026-06-09T07:54:05",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0234": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3052,7 +3754,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:06"
+    "annotated_at": "2026-06-09T07:54:06",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0235": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3065,7 +3770,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:07"
+    "annotated_at": "2026-06-09T07:54:07",
+    "ai_score": 5,
+    "ai_reasoning": "[Simulated] Full paragraph containing a definition of the core concept and bulleted list.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0236": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3078,7 +3786,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:07"
+    "annotated_at": "2026-06-09T07:54:07",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0237": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3091,7 +3802,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:08"
+    "annotated_at": "2026-06-09T07:54:08",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0238": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3104,7 +3818,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:09"
+    "annotated_at": "2026-06-09T07:54:09",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0239": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3117,7 +3834,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:10"
+    "annotated_at": "2026-06-09T07:54:10",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0240": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3130,7 +3850,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:11"
+    "annotated_at": "2026-06-09T07:54:11",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0241": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3143,7 +3866,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:11"
+    "annotated_at": "2026-06-09T07:54:11",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0242": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3156,7 +3882,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:12"
+    "annotated_at": "2026-06-09T07:54:12",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0243": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3169,7 +3898,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:13"
+    "annotated_at": "2026-06-09T07:54:13",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0244": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3182,7 +3914,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:14"
+    "annotated_at": "2026-06-09T07:54:14",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0245": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3195,7 +3930,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:19"
+    "annotated_at": "2026-06-09T07:54:19",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0246": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3208,7 +3946,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:22"
+    "annotated_at": "2026-06-09T07:54:22",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0247": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3221,7 +3962,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:23"
+    "annotated_at": "2026-06-09T07:54:23",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0248": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3234,7 +3978,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:24"
+    "annotated_at": "2026-06-09T07:54:24",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0249": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3247,7 +3994,10 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:25"
+    "annotated_at": "2026-06-09T07:54:25",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0250": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3260,7 +4010,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:26"
+    "annotated_at": "2026-06-09T07:54:26",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] One very short bullet point under the main section title.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0251": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3273,7 +4026,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:27"
+    "annotated_at": "2026-06-09T07:54:27",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0252": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3286,7 +4042,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:28"
+    "annotated_at": "2026-06-09T07:54:28",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0253": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3299,7 +4058,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:31"
+    "annotated_at": "2026-06-09T07:54:31",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0254": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3312,7 +4074,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:32"
+    "annotated_at": "2026-06-09T07:54:32",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0255": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3325,7 +4090,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:33"
+    "annotated_at": "2026-06-09T07:54:33",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0256": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3338,7 +4106,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:36"
+    "annotated_at": "2026-06-09T07:54:36",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0257": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3351,7 +4122,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:38"
+    "annotated_at": "2026-06-09T07:54:38",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0258": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3364,7 +4138,10 @@
     "normalized_score": 0.4,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:40"
+    "annotated_at": "2026-06-09T07:54:40",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] A short list of three bullet points detailing project requirements.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0259": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3377,7 +4154,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:44"
+    "annotated_at": "2026-06-09T07:54:44",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0260": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3390,7 +4170,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:46"
+    "annotated_at": "2026-06-09T07:54:46",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0261": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3403,7 +4186,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:47"
+    "annotated_at": "2026-06-09T07:54:47",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0262": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3416,7 +4202,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:47"
+    "annotated_at": "2026-06-09T07:54:47",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] TOC, title slide, or admin placeholder screen with no educational content.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0263": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3429,7 +4218,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:48"
+    "annotated_at": "2026-06-09T07:54:48",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0264": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3442,7 +4234,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:50"
+    "annotated_at": "2026-06-09T07:54:50",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Single heading and one simple bullet point visible on the screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0265": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3455,7 +4250,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:52"
+    "annotated_at": "2026-06-09T07:54:52",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0266": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3468,7 +4266,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:53"
+    "annotated_at": "2026-06-09T07:54:53",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0267": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3481,7 +4282,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:54"
+    "annotated_at": "2026-06-09T07:54:54",
+    "ai_score": 2,
+    "ai_reasoning": "[Simulated] Title heading only with no additional explanation bullets or diagrams.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0268": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3494,7 +4298,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:55"
+    "annotated_at": "2026-06-09T07:54:55",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0269": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3507,7 +4314,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:56"
+    "annotated_at": "2026-06-09T07:54:56",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0270": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3520,7 +4330,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:57"
+    "annotated_at": "2026-06-09T07:54:57",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0271": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3533,7 +4346,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:57"
+    "annotated_at": "2026-06-09T07:54:57",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0272": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3546,7 +4362,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:54:58"
+    "annotated_at": "2026-06-09T07:54:58",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0273": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3559,7 +4378,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:04"
+    "annotated_at": "2026-06-09T07:55:04",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0274": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3572,7 +4394,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:06"
+    "annotated_at": "2026-06-09T07:55:06",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0275": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3585,7 +4410,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:08"
+    "annotated_at": "2026-06-09T07:55:08",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0276": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3598,7 +4426,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:11"
+    "annotated_at": "2026-06-09T07:55:11",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0277": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3611,7 +4442,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:11"
+    "annotated_at": "2026-06-09T07:55:11",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Empty slides with lecturer presenting in front of a green screen.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0278": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3624,7 +4458,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:12"
+    "annotated_at": "2026-06-09T07:55:12",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0279": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3637,7 +4474,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:13"
+    "annotated_at": "2026-06-09T07:55:13",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0280": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3650,7 +4490,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:13"
+    "annotated_at": "2026-06-09T07:55:13",
+    "ai_score": 4,
+    "ai_reasoning": "[Simulated] Slide contains a few bullet points about administration details.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0281": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3663,7 +4506,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:14"
+    "annotated_at": "2026-06-09T07:55:14",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0282": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3676,7 +4522,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:16"
+    "annotated_at": "2026-06-09T07:55:16",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0283": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3689,7 +4538,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:18"
+    "annotated_at": "2026-06-09T07:55:18",
+    "ai_score": 0,
+    "ai_reasoning": "[Simulated] Blank black screen, intro logo, transition slide, or table of contents cover.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0284": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3702,7 +4554,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:19"
+    "annotated_at": "2026-06-09T07:55:19",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0285": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3715,7 +4570,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:20"
+    "annotated_at": "2026-06-09T07:55:20",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0286": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3728,7 +4586,10 @@
     "normalized_score": 0.1,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:21"
+    "annotated_at": "2026-06-09T07:55:21",
+    "ai_score": 1,
+    "ai_reasoning": "[Simulated] Lecturer visible on camera, slide is empty or contains decorative graphics only.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0287": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3741,7 +4602,10 @@
     "normalized_score": 0.3,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:24"
+    "annotated_at": "2026-06-09T07:55:24",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   },
   "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60__seg_0288": {
     "video_id": "LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework \u2713_1080p60",
@@ -3754,6 +4618,9 @@
     "normalized_score": 0.2,
     "skipped": false,
     "annotator": "ravindu",
-    "annotated_at": "2026-06-09T07:55:28"
+    "annotated_at": "2026-06-09T07:55:28",
+    "ai_score": 3,
+    "ai_reasoning": "[Simulated] Minimal visual information with a single sentence description.",
+    "reviewed": false
   }
 }

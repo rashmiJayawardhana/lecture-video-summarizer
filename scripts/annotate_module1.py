@@ -43,6 +43,260 @@ import time
 import shutil
 import datetime
 import numpy as np
+import threading
+import base64
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
+try:
+    import anthropic
+    ANTHROPIC_AVAILABLE = True
+except ImportError:
+    ANTHROPIC_AVAILABLE = False
+
+try:
+    from openai import OpenAI
+    OPENAI_AVAILABLE = True
+except ImportError:
+    OPENAI_AVAILABLE = False
+
+try:
+    from google import genai as genai_new
+    from google.genai import types as genai_types
+    GEMINI_AVAILABLE = True
+except ImportError:
+    GEMINI_AVAILABLE = False
+
+
+def draw_wrapped_text(img, text, x, y, max_w, font, scale, color, line_h=16):
+    """Draw text wrapped to fit within max_w pixels."""
+    words = str(text).split(" ")
+    lines = []
+    curr_line = ""
+    for word in words:
+        test_line = curr_line + (" " if curr_line else "") + word
+        sz = cv2.getTextSize(test_line, font, scale, 1)[0][0]
+        if sz > max_w:
+            lines.append(curr_line)
+            curr_line = word
+        else:
+            curr_line = test_line
+    if curr_line:
+        lines.append(curr_line)
+    
+    for i, line in enumerate(lines):
+        cv2.putText(img, line, (x, y + i * line_h), font, scale, color, 1, cv2.LINE_AA)
+    return len(lines) * line_h
+
+
+def encode_image_base64(frame):
+    """Encode an OpenCV BGR frame to base64 JPEG string."""
+    if frame is None:
+        return ""
+    success, buffer = cv2.imencode(".jpg", frame)
+    if not success:
+        return ""
+    return base64.b64encode(buffer).decode("utf-8")
+
+
+def get_ai_score_and_reasoning(start_f, mid_f, end_f):
+    """
+    Call either Claude (Anthropic) or GPT-4o (OpenAI) depending on which API key
+    is present, with the 10-second segment filmstrip frames and return (ai_score, ai_reasoning).
+    """
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+    openai_key = os.environ.get("OPENAI_API_KEY")
+
+    # Encode images to base64
+    start_b64 = encode_image_base64(start_f)
+    mid_b64 = encode_image_base64(mid_f)
+    end_b64 = encode_image_base64(end_f)
+
+    if not start_b64 or not mid_b64 or not end_b64:
+        return None, "Error encoding frames to base64."
+
+    system_prompt = """You are an expert AI annotator for university IT lecture videos.
+Your task is to assign a visual importance score (0 to 10) to a 10-second video segment.
+You are given 3 frames from the segment: the start frame, middle frame, and end frame.
+
+Please follow this strict 4-point visual importance scoring rubric:
+1. Base score (look at the slide content only):
+   - Score 8: Core diagram, complete formula, full algorithm.
+   - Score 7: Clear diagram, code snippet, partial worked example.
+   - Score 6: Small diagram, table, or partial example.
+   - Score 5: Definition or full paragraph of explanation.
+   - Score 4: A few bullet points or a short list.
+   - Score 3: Heading + one bullet, or a single sentence.
+   - Score 2: Heading only, or one very short bullet.
+   - Score 1: Lecturer on camera, slide empty or decorative.
+   - Score 0: Blank, logo, transition, title, section cover, TOC, thank-you, admin slide, or a repeated slide.
+
+2. Lecturer movement (adjust the base score):
+   - Standing still / just talking: +0
+   - Pointing or gesturing at the slide: +1
+   - Annotating / writing / circling: +2
+
+The final score is the base score + movement adjustment, capped at a maximum of 10.
+Important: If the lecturer is speaking with no slide content, score it low (0-2).
+Return your response as a JSON object with keys:
+"score": <integer from 0 to 10>
+"reasoning": "<short sentence explaining the score based on the rubric features present in the frames>"
+"""
+
+    if anthropic_key and ANTHROPIC_AVAILABLE:
+        try:
+            client = anthropic.Anthropic(api_key=anthropic_key)
+            claude_system_prompt = system_prompt + "\nReturn ONLY the JSON object, no other text."
+            user_content = [
+                {"type": "text", "text": "Analyze these three frames (start, middle, end) from a 10-second lecture segment and output the score and reasoning in the requested JSON format."}
+            ]
+
+            for label, img_b64 in [("Start Frame", start_b64),
+                                    ("Middle Frame", mid_b64),
+                                    ("End Frame", end_b64)]:
+                user_content.append({"type": "text", "text": f"{label}:"})
+                user_content.append({
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": "image/jpeg",
+                        "data": img_b64,
+                    }
+                })
+
+            response = client.messages.create(
+                model="claude-sonnet-4-20250514",
+                max_tokens=300,
+                temperature=0.0,
+                system=claude_system_prompt,
+                messages=[{"role": "user", "content": user_content}],
+            )
+
+            response_text = response.content[0].text.strip()
+            if response_text.startswith("```"):
+                response_text = response_text.split("\n", 1)[-1].rsplit("```", 1)[0].strip()
+
+            res_json = json.loads(response_text)
+            ai_score = int(res_json.get("score"))
+            ai_reasoning = res_json.get("reasoning", "")
+            ai_score = max(0, min(10, ai_score))
+            return ai_score, ai_reasoning
+        except Exception as e:
+            return None, f"Claude AI generation error: {str(e)}"
+
+    elif openai_key and OPENAI_AVAILABLE:
+        try:
+            client = OpenAI(api_key=openai_key)
+            user_content = [
+                {"type": "text", "text": "Analyze these three frames (start, middle, end) from a 10-second segment and output the score and reasoning in the requested JSON format."}
+            ]
+
+            for i, img_b64 in enumerate([start_b64, mid_b64, end_b64], 1):
+                name = ["Start Frame", "Middle Frame", "End Frame"][i-1]
+                user_content.append({"type": "text", "text": f"{name}:"})
+                user_content.append({
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/jpeg;base64,{img_b64}",
+                        "detail": "low"
+                    }
+                })
+
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_content}
+                ],
+                response_format={"type": "json_object"},
+                temperature=0.0,
+                max_tokens=200
+            )
+
+            res_json = json.loads(response.choices[0].message.content)
+            ai_score = int(res_json.get("score"))
+            ai_reasoning = res_json.get("reasoning", "")
+            ai_score = max(0, min(10, ai_score))
+            return ai_score, ai_reasoning
+        except Exception as e:
+            return None, f"OpenAI GPT-4o generation error: {str(e)}"
+
+    # --- Google Gemini (FREE TIER) ---
+    gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+    if gemini_key and GEMINI_AVAILABLE:
+        try:
+            client = genai_new.Client(api_key=gemini_key)
+
+            # Build content parts using the new SDK format
+            parts = [
+                genai_types.Part.from_text(
+                    text=system_prompt + "\nReturn ONLY the JSON object, no other text.\n"
+                    "Analyze these three frames (start, middle, end) from a 10-second lecture segment "
+                    "and output the score and reasoning in the requested JSON format."
+                )
+            ]
+            for label, img_b64 in [("Start Frame", start_b64),
+                                    ("Middle Frame", mid_b64),
+                                    ("End Frame", end_b64)]:
+                img_bytes = base64.b64decode(img_b64)
+                parts.append(genai_types.Part.from_text(text=f"{label}:"))
+                parts.append(genai_types.Part.from_bytes(data=img_bytes, mime_type="image/jpeg"))
+
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=parts,
+                config=genai_types.GenerateContentConfig(
+                    temperature=0.0,
+                    max_output_tokens=300,
+                ),
+            )
+
+            response_text = response.text.strip()
+            if response_text.startswith("```"):
+                response_text = response_text.split("\n", 1)[-1].rsplit("```", 1)[0].strip()
+
+            res_json = json.loads(response_text)
+            ai_score = int(res_json.get("score"))
+            ai_reasoning = res_json.get("reasoning", "")
+            ai_score = max(0, min(10, ai_score))
+            return ai_score, ai_reasoning
+        except Exception as e:
+            return None, f"Gemini AI generation error: {str(e)}"
+
+    else:
+        reasons = []
+        if not anthropic_key and not openai_key and not gemini_key:
+            reasons.append("No API key found (ANTHROPIC_API_KEY, OPENAI_API_KEY, or GEMINI_API_KEY).")
+        if not ANTHROPIC_AVAILABLE and not OPENAI_AVAILABLE and not GEMINI_AVAILABLE:
+            reasons.append("No AI packages installed (anthropic, openai, or google-generativeai).")
+        return None, " ".join(reasons)
+
+
+def fetch_ai_opinion_async(seg_id, start_f, mid_f, end_f, annotations_dict, output_file):
+    """Fetch AI score and reasoning in the background so it doesn't block the human annotator."""
+    def worker():
+        try:
+            # Check if already has ai_score
+            if "ai_score" in annotations_dict.get(seg_id, {}):
+                return
+            sf = start_f.copy() if start_f is not None else None
+            mf = mid_f.copy() if mid_f is not None else None
+            ef = end_f.copy() if end_f is not None else None
+            
+            ai_score, ai_reasoning = get_ai_score_and_reasoning(sf, mf, ef)
+            if ai_score is not None:
+                if seg_id in annotations_dict:
+                    annotations_dict[seg_id]["ai_score"] = ai_score
+                    annotations_dict[seg_id]["ai_reasoning"] = ai_reasoning
+                    save_annotations(output_file, annotations_dict)
+        except Exception:
+            pass
+            
+    threading.Thread(target=worker, daemon=True).start()
 
 # =====================================================================
 # CONFIGURATION  -  each group member edits the next TWO lines.
@@ -65,6 +319,12 @@ MAX_CANVAS_HEIGHT = 680
 # =====================================================================
 # TERMINAL UI HELPERS  -  ANSI colours, with safe fallbacks
 # =====================================================================
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(errors='replace')
+    except Exception:
+        pass
+
 def _enable_ansi_colours():
     """Enable ANSI colour codes on Windows 10+ and detect support."""
     if not sys.stdout.isatty():
@@ -261,7 +521,8 @@ def _fmt_eta(seconds):
 
 def make_canvas(main_frame, thumbs, seg, done, total, prev_score,
                 last_action="", active_thumb_idx=1,
-                session_scored=0, session_skipped=0, eta_sec=None):
+                session_scored=0, session_skipped=0, eta_sec=None,
+                review_mode=False, ai_score=None, ai_reasoning=None):
     """
     Build the modern, colour-coded annotation canvas.
     Returns: canvas, strip_y, strip_h, left_w, thumb_w
@@ -396,46 +657,79 @@ def make_canvas(main_frame, thumbs, seg, done, total, prev_score,
                         FONT_S, font_scale_s - 0.2, MUTED, 1, cv2.LINE_AA)
 
     # =====================================================
-    # 3. RIGHT COLUMN - PASS 2: Movement + Shortcuts
+    # 3. RIGHT COLUMN - PASS 2: Movement + Shortcuts OR Review Info
     # =====================================================
     col_r = np.full((COL_H, R_W, 3), BG, dtype=np.uint8)
     cv2.line(col_r, (0, 0), (0, COL_H), BORDER_COLOR, 1)
 
-    p2_label = "PASS 2: MOVE"
-    p2_sz = cv2.getTextSize(p2_label, FONT, font_scale_f, 1)[0]
-    cv2.putText(col_r, p2_label, ((R_W - p2_sz[0]) // 2, 20),
-                FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
-
-    mod_cells = [
-        ("+0", "Still",     GRAY_DARK,   MUTED),
-        ("+1", "Pointing",  YELLOW_DARK, YELLOW_LIGHT),
-        ("+2", "Annotate",  GREEN_DARK,  GREEN_LIGHT),
-    ]
-    mod_cell_h = 45 if H_MAX < 550 else 60
-    for i, (mod_val, desc, bg_c, acc_c) in enumerate(mod_cells):
-        cx, cy = pad_x, 30 + i * mod_cell_h + 4
-        cw, ch = cell_w, mod_cell_h - 4
-        cv2.rectangle(col_r, (cx, cy), (cx + cw, cy + ch), bg_c, -1)
-        cv2.rectangle(col_r, (cx, cy), (cx + 4, cy + ch), acc_c, -1)
-        cv2.rectangle(col_r, (cx, cy), (cx + cw, cy + ch), BORDER_COLOR, 1)
-        cv2.putText(col_r, mod_val, (cx + 12, cy + ch - int(ch * 0.3)),
-                    FONT, font_scale_f + 0.05, acc_c, 1, cv2.LINE_AA)
-        cv2.putText(col_r, desc, (cx + 40, cy + ch - int(ch * 0.35)),
+    if review_mode:
+        p2_label = "DISAGREEMENT"
+        p2_sz = cv2.getTextSize(p2_label, FONT, font_scale_f, 1)[0]
+        cv2.putText(col_r, p2_label, ((R_W - p2_sz[0]) // 2, 20),
+                    FONT, font_scale_f, RED_LIGHT, 1, cv2.LINE_AA)
+        
+        cv2.putText(col_r, f"Human Score: {prev_score}", (pad_x, 45),
+                    FONT, font_scale_f, WHITE, 1, cv2.LINE_AA)
+        cv2.putText(col_r, f"AI Score: {ai_score}", (pad_x, 65),
+                    FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
+        
+        diff = abs(int(prev_score) - int(ai_score)) if prev_score != "-" and ai_score is not None else 0
+        cv2.putText(col_r, f"Diff: {diff}", (pad_x, 85),
+                    FONT, font_scale_f, RED_LIGHT, 1, cv2.LINE_AA)
+        
+        cv2.putText(col_r, "AI REASONING:", (pad_x, 115),
+                    FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
+        
+        reason_text = ai_reasoning if ai_reasoning else "No reasoning provided."
+        draw_wrapped_text(col_r, reason_text, pad_x, 135, R_W - 16,
+                          FONT_S, font_scale_s - 0.25, MUTED, line_h=13)
+        
+        # Instruction at the bottom
+        inst_y = COL_H - 75
+        cv2.putText(col_r, "Enter Final Score:", (pad_x, inst_y),
                     FONT_S, font_scale_s - 0.1, WHITE, 1, cv2.LINE_AA)
+        cv2.putText(col_r, "[0-9/T] : New score", (pad_x, inst_y + 18),
+                    FONT_S, font_scale_s - 0.25, MUTED, 1, cv2.LINE_AA)
+        cv2.putText(col_r, "Space/Enter: Keep", (pad_x, inst_y + 33),
+                    FONT_S, font_scale_s - 0.25, MUTED, 1, cv2.LINE_AA)
+        cv2.putText(col_r, "B: Back  Q: Save/Quit", (pad_x, inst_y + 48),
+                    FONT_S, font_scale_s - 0.25, MUTED, 1, cv2.LINE_AA)
+    else:
+        p2_label = "PASS 2: MOVE"
+        p2_sz = cv2.getTextSize(p2_label, FONT, font_scale_f, 1)[0]
+        cv2.putText(col_r, p2_label, ((R_W - p2_sz[0]) // 2, 20),
+                    FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
 
-    # Shortcuts section
-    key_y = 30 + 3 * mod_cell_h + 20
-    cv2.putText(col_r, "SHORTCUTS", (pad_x, key_y),
-                FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
-    keys = ["0-9/T : Score",
-            "S     : Skip",
-            "B     : Back",
-            "Spc/N : Keep",
-            "Q     : Quit"]
-    line_step = 20 if H_MAX < 550 else 26
-    for i, k in enumerate(keys):
-        cv2.putText(col_r, k, (pad_x, key_y + 18 + i * line_step),
-                    FONT_S, font_scale_s - 0.1, MUTED, 1, cv2.LINE_AA)
+        mod_cells = [
+            ("+0", "Still",     GRAY_DARK,   MUTED),
+            ("+1", "Pointing",  YELLOW_DARK, YELLOW_LIGHT),
+            ("+2", "Annotate",  GREEN_DARK,  GREEN_LIGHT),
+        ]
+        mod_cell_h = 45 if H_MAX < 550 else 60
+        for i, (mod_val, desc, bg_c, acc_c) in enumerate(mod_cells):
+            cx, cy = pad_x, 30 + i * mod_cell_h + 4
+            cw, ch = cell_w, mod_cell_h - 4
+            cv2.rectangle(col_r, (cx, cy), (cx + cw, cy + ch), bg_c, -1)
+            cv2.rectangle(col_r, (cx, cy), (cx + 4, cy + ch), acc_c, -1)
+            cv2.rectangle(col_r, (cx, cy), (cx + cw, cy + ch), BORDER_COLOR, 1)
+            cv2.putText(col_r, mod_val, (cx + 12, cy + ch - int(ch * 0.3)),
+                        FONT, font_scale_f + 0.05, acc_c, 1, cv2.LINE_AA)
+            cv2.putText(col_r, desc, (cx + 40, cy + ch - int(ch * 0.35)),
+                        FONT_S, font_scale_s - 0.1, WHITE, 1, cv2.LINE_AA)
+
+        # Shortcuts section
+        key_y = 30 + 3 * mod_cell_h + 20
+        cv2.putText(col_r, "SHORTCUTS", (pad_x, key_y),
+                    FONT, font_scale_f, ACCENT, 1, cv2.LINE_AA)
+        keys = ["0-9/T : Score",
+                "S     : Skip",
+                "B     : Back",
+                "Spc/N : Keep",
+                "Q     : Quit"]
+        line_step = 20 if H_MAX < 550 else 26
+        for i, k in enumerate(keys):
+            cv2.putText(col_r, k, (pad_x, key_y + 18 + i * line_step),
+                        FONT_S, font_scale_s - 0.1, MUTED, 1, cv2.LINE_AA)
 
     # =====================================================
     # 4. CENTRE COLUMN  -  Main frame + filmstrip + progress
@@ -570,6 +864,61 @@ def merge_all():
     hr()
     ok(f"Wrote {len(combined)} records to module1_annotations.json")
 
+    # ─── Calculate Krippendorff's Alpha for Calibration (LecVideo 045) ───
+    calib_segments = set()
+    annotator_scores = {}
+    
+    for fp in files:
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                part = json.load(f)
+        except Exception:
+            continue
+        for sid, rec in part.items():
+            vid_id = rec.get("video_id", "")
+            if vid_id.startswith("LecVideo 045"):
+                calib_segments.add(sid)
+                ann = rec.get("annotator", "")
+                if ann:
+                    if ann not in annotator_scores:
+                        annotator_scores[ann] = {}
+                    if not rec.get("skipped", False) and rec.get("raw_score") is not None:
+                        annotator_scores[ann][sid] = float(rec["raw_score"])
+                        
+    if calib_segments and len(annotator_scores) >= 2:
+        sorted_sids = sorted(list(calib_segments))
+        sorted_anns = sorted(list(annotator_scores.keys()))
+        
+        matrix = []
+        for ann in sorted_anns:
+            row = []
+            for sid in sorted_sids:
+                row.append(annotator_scores[ann].get(sid, np.nan))
+            matrix.append(row)
+            
+        matrix = np.array(matrix, dtype=float)
+        valid_cols = np.sum(~np.isnan(matrix), axis=0) >= 2
+        num_valid = np.sum(valid_cols)
+        
+        if num_valid > 0:
+            try:
+                import krippendorff
+                alpha = krippendorff.alpha(reliability_data=matrix, level_of_measurement='interval')
+                print()
+                banner([
+                    "CALIBRATION ACCURACY  -  LecVideo 045 Inter-Annotator Agreement",
+                    f"  Annotators (coders)    : {', '.join(sorted_anns)}",
+                    f"  Segments in agreement  : {num_valid} of {len(sorted_sids)}",
+                    f"  Krippendorff's alpha   : {alpha:.4f}  (Interval metric)"
+                ])
+                if alpha >= 0.7:
+                    ok(f"Krippendorff's alpha is {alpha:.4f} (>= 0.7 target met! ✓)")
+                else:
+                    warn(f"Krippendorff's alpha is {alpha:.4f} (< 0.7 target. Review discrepancies!)")
+                print()
+            except Exception as e:
+                warn(f"Could not compute Krippendorff's alpha: {e}")
+
 
 # =====================================================================
 # WELCOME / GUIDELINES / MENU
@@ -666,7 +1015,7 @@ def show_main_menu(done, total):
 # =====================================================================
 # MAIN ANNOTATION LOOP
 # =====================================================================
-def run():
+def run(review_mode=False):
     # -------- 0. Validate config --------
     if not ANNOTATOR or " " in ANNOTATOR:
         err("ANNOTATOR is empty or contains spaces. Edit the CONFIGURATION block at the top of this file.")
@@ -674,6 +1023,22 @@ def run():
     if not OUTPUT_FILE.startswith("annotations_") or not OUTPUT_FILE.endswith(".json"):
         warn(f"OUTPUT_FILE '{OUTPUT_FILE}' does not match the team pattern 'annotations_<name>.json'.")
         warn("The --merge command will skip it. Continuing anyway.")
+
+    # Check for available API Keys
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+    openai_key = os.environ.get("OPENAI_API_KEY")
+    gemini_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+
+    if anthropic_key and ANTHROPIC_AVAILABLE:
+        print(f"{C.GRN}{TICK}{C.R}  [AI Opinion] ANTHROPIC_API_KEY found. Running in Claude AI-ASSISTED mode.")
+    elif openai_key and OPENAI_AVAILABLE:
+        print(f"{C.GRN}{TICK}{C.R}  [AI Opinion] OPENAI_API_KEY found. Running in GPT-4o AI-ASSISTED mode.")
+    elif gemini_key and GEMINI_AVAILABLE:
+        print(f"{C.GRN}{TICK}{C.R}  [AI Opinion] GEMINI_API_KEY found. Running in Gemini 2.0 Flash AI-ASSISTED mode (FREE).")
+    else:
+        print(f"{C.YEL}{WARNSIG}{C.R}  [AI Opinion] No valid API key found. Running in MANUAL-ONLY mode.")
+        print(f"{C.D}     Tip: Get a FREE Gemini API key at https://aistudio.google.com/apikey{C.R}")
+        print(f"{C.D}     Then add GEMINI_API_KEY=your_key to your .env file.{C.R}")
 
     # -------- 1. Discover videos --------
     video_paths = []
@@ -689,86 +1054,111 @@ def run():
     all_segments = []
     for vp in video_paths:
         all_segments.extend(build_segments(vp))
-    total = len(all_segments)
-    if total == 0:
-        err("Could not extract any segments. Are the video files readable?")
-        return
-    done = sum(1 for s in all_segments if s["segment_id"] in annotations)
 
-    # -------- 2. Welcome --------
-    show_welcome(len(video_paths), total, done)
-
-    # -------- 3. Main menu --------
     reannotate_video_id = None
     reannotate_all      = False
 
-    while True:
-        choice = show_main_menu(done, total) or "1"
-
-        if choice == "1":
-            break
-
-        # Option 2 means different things depending on progress
-        if choice == "2" and done == 0:
-            show_guidelines()
-            continue
-
-        if choice == "2" and done > 0:
-            # Pick a specific already-annotated video
-            annotated_ids = sorted({
-                r.get("video_id") for r in annotations.values()
-                if isinstance(r, dict) and "video_id" in r
-            })
-            if not annotated_ids:
-                warn("No annotated videos found.")
-                continue
+    if review_mode:
+        banner(["REVIEW DISAGREEMENTS MODE", "Looking for segments where |human - AI| >= 3"])
+        # Filter all_segments to only include the ones that need review
+        review_segments = []
+        for s in all_segments:
+            sid = s["segment_id"]
+            if sid in annotations:
+                rec = annotations[sid]
+                h_score = rec.get("raw_score")
+                a_score = rec.get("ai_score")
+                if h_score is not None and a_score is not None and abs(h_score - a_score) >= 3:
+                    if not rec.get("reviewed", False):
+                        review_segments.append(s)
+        
+        if not review_segments:
             print()
-            info("Already annotated videos:")
-            for i, vid in enumerate(annotated_ids, 1):
-                print(f"   {C.CYN}[{i}]{C.R} {vid}")
-            print()
-            try:
-                vc = input(f"  Select a video number (1-{len(annotated_ids)}): ").strip()
-                vi = int(vc) - 1
-                if 0 <= vi < len(annotated_ids):
-                    reannotate_video_id = annotated_ids[vi]
-                    ok(f"Re-annotation mode: '{reannotate_video_id}'")
-                    info("Press SPACE / ENTER / N to KEEP a previous score and advance.")
-                    break
-                err("Invalid selection.")
-            except ValueError:
-                err("Please enter a number.")
-            continue
+            banner(["REVIEW MODE", "No disagreements (|human - AI| >= 3) found to review! ✓"])
+            return
+            
+        ok(f"Starting review mode: {len(review_segments)} disagreements found.")
+        all_segments = review_segments
+        total = len(all_segments)
+        done = 0
+    else:
+        total = len(all_segments)
+        if total == 0:
+            err("Could not extract any segments. Are the video files readable?")
+            return
+        done = sum(1 for s in all_segments if s["segment_id"] in annotations)
 
-        if choice == "3" and done > 0:
-            reannotate_all = True
-            ok("Re-annotation mode: ALL videos")
-            info("Press SPACE / ENTER / N to KEEP a previous score and advance.")
-            break
+        # -------- 2. Welcome --------
+        show_welcome(len(video_paths), total, done)
 
-        if choice == "4" and done > 0:
-            show_guidelines()
-            continue
+        # -------- 3. Main menu --------
+        while True:
+            choice = show_main_menu(done, total) or "1"
 
-        if choice == "5" and done > 0:
-            print()
-            warn("This will clear ALL your annotations. This cannot be undone.")
-            confirm = input(f"  Type {C.B}YES{C.R} to confirm, anything else cancels: ").strip()
-            if confirm == "YES":
-                # Back up before wiping
-                if os.path.exists(OUTPUT_FILE):
-                    backup = OUTPUT_FILE + ".backup." + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-                    shutil.copy2(OUTPUT_FILE, backup)
-                    info(f"Old file backed up to {backup}")
-                annotations = {}
-                save_annotations(OUTPUT_FILE, annotations)
-                done = 0
-                ok("All annotations cleared. Starting fresh.")
+            if choice == "1":
                 break
-            info("Cancelled.")
-            continue
 
-        err("Invalid option. Please choose one of the numbered choices.")
+            # Option 2 means different things depending on progress
+            if choice == "2" and done == 0:
+                show_guidelines()
+                continue
+
+            if choice == "2" and done > 0:
+                # Pick a specific already-annotated video
+                annotated_ids = sorted({
+                    r.get("video_id") for r in annotations.values()
+                    if isinstance(r, dict) and "video_id" in r
+                })
+                if not annotated_ids:
+                    warn("No annotated videos found.")
+                    continue
+                print()
+                info("Already annotated videos:")
+                for i, vid in enumerate(annotated_ids, 1):
+                    print(f"   {C.CYN}[{i}]{C.R} {vid}")
+                print()
+                try:
+                    vc = input(f"  Select a video number (1-{len(annotated_ids)}): ").strip()
+                    vi = int(vc) - 1
+                    if 0 <= vi < len(annotated_ids):
+                        reannotate_video_id = annotated_ids[vi]
+                        ok(f"Re-annotation mode: '{reannotate_video_id}'")
+                        info("Press SPACE / ENTER / N to KEEP a previous score and advance.")
+                        break
+                    err("Invalid selection.")
+                except ValueError:
+                    err("Please enter a number.")
+                continue
+
+            if choice == "3" and done > 0:
+                reannotate_all = True
+                ok("Re-annotation mode: ALL videos")
+                info("Press SPACE / ENTER / N to KEEP a previous score and advance.")
+                break
+
+            if choice == "4" and done > 0:
+                show_guidelines()
+                continue
+
+            if choice == "5" and done > 0:
+                print()
+                warn("This will clear ALL your annotations. This cannot be undone.")
+                confirm = input(f"  Type {C.B}YES{C.R} to confirm, anything else cancels: ").strip()
+                if confirm == "YES":
+                    # Back up before wiping
+                    if os.path.exists(OUTPUT_FILE):
+                        backup = OUTPUT_FILE + ".backup." + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+                        shutil.copy2(OUTPUT_FILE, backup)
+                        info(f"Old file backed up to {backup}")
+                    annotations = {}
+                    save_annotations(OUTPUT_FILE, annotations)
+                    done = 0
+                    ok("All annotations cleared. Starting fresh.")
+                    break
+                info("Cancelled.")
+                continue
+
+            err("Invalid option. Please choose one of the numbered choices.")
 
     # -------- 4. Open the OpenCV window --------
     WIN_NAME = "Module 1 Annotation - Integra"
@@ -801,8 +1191,8 @@ def run():
     while 0 <= idx < total:
         seg = all_segments[idx]
 
-        # Skip already-annotated segments when moving forward, unless in re-annotation mode
-        if seg["segment_id"] in annotations and seg.get("_visited") is not True:
+        # Skip already-annotated segments when moving forward, unless in re-annotation mode or review mode
+        if not review_mode and seg["segment_id"] in annotations and seg.get("_visited") is not True:
             if not reannotate_all and (reannotate_video_id is None or
                                        seg["video_id"] != reannotate_video_id):
                 idx += 1
@@ -823,7 +1213,10 @@ def run():
         end_f   = grab_frame(current_cap,
                              max(seg["timestamp_end"] - 0.2, seg["timestamp_start"]))
 
-        done = sum(1 for s in all_segments if s["segment_id"] in annotations)
+        if review_mode:
+            done = sum(1 for s in all_segments if annotations.get(s["segment_id"], {}).get("reviewed") is True)
+        else:
+            done = sum(1 for s in all_segments if s["segment_id"] in annotations)
         prev = annotations.get(seg["segment_id"], {}).get("raw_score", "-")
 
         # Compute ETA from this session's average
@@ -841,10 +1234,15 @@ def run():
         while True:
             if force_redraw:
                 main_f = [start_f, mid, end_f][active_thumb_idx]
+                # Retrieve AI score and reasoning from annotations
+                rec = annotations.get(seg["segment_id"], {})
+                a_score = rec.get("ai_score")
+                a_reason = rec.get("ai_reasoning")
                 canvas, strip_y, strip_h, L_W, thumb_w = make_canvas(
                     main_f, [start_f, mid, end_f], seg, done, total, prev,
                     last_action, active_thumb_idx,
-                    session_scored, session_skipped, eta_sec)
+                    session_scored, session_skipped, eta_sec,
+                    review_mode=review_mode, ai_score=a_score, ai_reasoning=a_reason)
                 cv2.imshow(WIN_NAME, canvas)
                 force_redraw = False
 
@@ -889,19 +1287,31 @@ def run():
                 is_kept = True
 
         if key == ord("s"):
-            annotations[seg["segment_id"]] = {
-                "video_id":          seg["video_id"],
-                "segment_index":     seg["segment_index"],
-                "segment_id":        seg["segment_id"],
-                "timestamp_start":   seg["timestamp_start"],
-                "timestamp_end":     seg["timestamp_end"],
-                "middle_frame_time": seg["middle_frame_time"],
-                "raw_score":         None,
-                "normalized_score":  None,
-                "skipped":           True,
-                "annotator":         ANNOTATOR,
-                "annotated_at":      datetime.datetime.now().isoformat(timespec="seconds"),
-            }
+            if review_mode:
+                annotations[seg["segment_id"]].update({
+                    "raw_score":         None,
+                    "normalized_score":  None,
+                    "skipped":           True,
+                    "reviewed":          True,
+                    "final_score":       None,
+                    "reviewed_at":       datetime.datetime.now().isoformat(timespec="seconds"),
+                })
+            else:
+                annotations[seg["segment_id"]] = {
+                    "video_id":          seg["video_id"],
+                    "segment_index":     seg["segment_index"],
+                    "segment_id":        seg["segment_id"],
+                    "timestamp_start":   seg["timestamp_start"],
+                    "timestamp_end":     seg["timestamp_end"],
+                    "middle_frame_time": seg["middle_frame_time"],
+                    "raw_score":         None,
+                    "normalized_score":  None,
+                    "skipped":           True,
+                    "annotator":         ANNOTATOR,
+                    "annotated_at":      datetime.datetime.now().isoformat(timespec="seconds"),
+                }
+                fetch_ai_opinion_async(seg["segment_id"], start_f, mid_f, end_f, annotations, OUTPUT_FILE)
+
             save_annotations(OUTPUT_FILE, annotations)
             seg.pop("_visited", None)
             last_action     = "Skipped"
@@ -919,22 +1329,34 @@ def run():
             score = 10
 
         if score is not None:
-            annotations[seg["segment_id"]] = {
-                "video_id":          seg["video_id"],
-                "segment_index":     seg["segment_index"],
-                "segment_id":        seg["segment_id"],
-                "timestamp_start":   seg["timestamp_start"],
-                "timestamp_end":     seg["timestamp_end"],
-                "middle_frame_time": seg["middle_frame_time"],
-                "raw_score":         score,
-                "normalized_score":  normalize(score),
-                "skipped":           False,
-                "annotator":         ANNOTATOR,
-                "annotated_at":      datetime.datetime.now().isoformat(timespec="seconds"),
-            }
+            if review_mode:
+                annotations[seg["segment_id"]].update({
+                    "raw_score":         score,
+                    "normalized_score":  normalize(score),
+                    "skipped":           False,
+                    "reviewed":          True,
+                    "final_score":       score,
+                    "reviewed_at":       datetime.datetime.now().isoformat(timespec="seconds"),
+                })
+            else:
+                annotations[seg["segment_id"]] = {
+                    "video_id":          seg["video_id"],
+                    "segment_index":     seg["segment_index"],
+                    "segment_id":        seg["segment_id"],
+                    "timestamp_start":   seg["timestamp_start"],
+                    "timestamp_end":     seg["timestamp_end"],
+                    "middle_frame_time": seg["middle_frame_time"],
+                    "raw_score":         score,
+                    "normalized_score":  normalize(score),
+                    "skipped":           False,
+                    "annotator":         ANNOTATOR,
+                    "annotated_at":      datetime.datetime.now().isoformat(timespec="seconds"),
+                }
+                fetch_ai_opinion_async(seg["segment_id"], start_f, mid_f, end_f, annotations, OUTPUT_FILE)
+
             save_annotations(OUTPUT_FILE, annotations)
             seg.pop("_visited", None)
-            last_action     = f"Kept: {score}" if is_kept else f"Saved: {score}"
+            last_action     = f"Reviewed: {score}" if review_mode else (f"Kept: {score}" if is_kept else f"Saved: {score}")
             session_scored += 1
             idx += 1
         else:
@@ -974,9 +1396,15 @@ def run():
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--merge":
         merge_all()
+    elif len(sys.argv) > 1 and sys.argv[1] == "--review-disagreements":
+        try:
+            run(review_mode=True)
+        except KeyboardInterrupt:
+            print()
+            warn("Interrupted. Your last save is intact - run again to resume.")
     else:
         try:
-            run()
+            run(review_mode=False)
         except KeyboardInterrupt:
             print()
             warn("Interrupted. Your last save is intact - run again to resume.")
