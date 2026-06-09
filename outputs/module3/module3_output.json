@@ -1,0 +1,3431 @@
+[
+    {
+        "lecture_id": "lecture_002",
+        "frame_time": 2070.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3917,
+        "ocr_text": "Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support",
+        "frame_path": "data/processed/module3/slides/lecture_002/lecture_002_frame_00414_34m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 30.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3407,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00001_00m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 120.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3938,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00004_02m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 300.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3964,
+        "ocr_text": "Whatis AI? ij ~",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 390.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4054,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 420.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4043,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00014_07m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 450.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4115,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00015_07m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 750.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3545,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00025_12m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 1320.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3836,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00044_22m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 1350.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4065,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00045_22m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 1380.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4067,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00046_23m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 1980.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4683,
+        "ocr_text": "Seabom",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00066_33m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2040.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3984,
+        "ocr_text": "Deep Leamning",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00068_34m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2160.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.376,
+        "ocr_text": "Deep_Learning",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00072_36m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2220.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3767,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00074_37m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2250.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4,
+        "ocr_text": "Neural Networks",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00075_37m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2340.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3987,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00078_39m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2370.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4029,
+        "ocr_text": "Neural Networks",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00079_39m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2400.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3957,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00080_40m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2430.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4098,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00081_40m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2460.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4013,
+        "ocr_text": "Neural Networks",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00082_41m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2490.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4151,
+        "ocr_text": "Neural Networks",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00083_41m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2520.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3863,
+        "ocr_text": "Fonxard",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00084_42m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2550.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3826,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00085_42m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2580.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3904,
+        "ocr_text": "Fonard",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00086_43m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2640.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3876,
+        "ocr_text": "Fonard",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00088_44m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2700.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4054,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00090_45m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2730.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3889,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00091_45m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2760.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3949,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00092_46m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2790.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4096,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00093_46m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2820.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3864,
+        "ocr_text": "Fonxard",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00094_47m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2850.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3861,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00095_47m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2880.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4011,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00096_48m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2910.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4041,
+        "ocr_text": "PWTordh",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00097_48m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 2970.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3632,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00099_49m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3000.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3598,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00100_50m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3030.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3557,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00101_50m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3060.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3464,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00102_51m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3180.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3903,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00106_53m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3240.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3713,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00108_54m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3270.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3774,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00109_54m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3420.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3918,
+        "ocr_text": "Transforers",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00114_57m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3510.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4061,
+        "ocr_text": "Gen AI",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00117_58m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 3540.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4267,
+        "ocr_text": "Gen AI",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00118_59m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 60.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.384,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00002_01m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 930.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4155,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00031_15m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 990.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4319,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00033_16m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3300.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3573,
+        "ocr_text": "Python tunctions",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00110_55m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3360.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3986,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00112_56m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3390.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3971,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00113_56m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 30.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4148,
+        "ocr_text": "What we'Il cover: What js ArgoCD? Why ArgoCD? Its use cases",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00001_00m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 120.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4486,
+        "ocr_text": "CD workflow without Argo CD Image How does it get deployed to K8s cluster? containers: nane;",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00004_02m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 150.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3883,
+        "ocr_text": "CD workflow without Argo",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00005_02m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4329,
+        "ocr_text": "CD workfow without Challenges with this approach: Argo",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00006_03m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4498,
+        "ocr_text": "Challenges with this approach: CD Server",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00007_03m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 240.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4343,
+        "ocr_text": "CD workfow without Challenges with this approach: CI / CD Server [I] Argo",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00008_04m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4394,
+        "ocr_text": "Challenges with this approach: [I] Did app get created successfully in the cluster? Argo",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.435,
+        "ocr_text": "CD for Kubernetes can beimproved SUBSCRIBED",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4697,
+        "ocr_text": "Reverse the flow Argo",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4616,
+        "ocr_text": "1) Deploy ArgoCD in K8s cluster 2) Configure ArgoCD to track Git repository aulomtically applies",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4208,
+        "ocr_text": "Git repository klnd: Deploynent Update Test spec spec : Image repository",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 420.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4043,
+        "ocr_text": "App App Source Code Configuration",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00014_07m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 450.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.415,
+        "ocr_text": "App Source Code Configuration App",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00015_07m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4094,
+        "ocr_text": "App Source Code Configuration Out of Sync",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 510.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4003,
+        "ocr_text": "App App Source Code Configuration Synced Tracking",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00017_08m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 540.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.43,
+        "ocr_text": "DevOps Englneers: update Sync Synced App Tracking Configuration Changes:.",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00018_09m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 570.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4384,
+        "ocr_text": "Separatlon of concems Developers DevOps Operations DevOps",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00019_09m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 600.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3902,
+        "ocr_text": "helm insta Whole K8s configuration defined as Code In Git Repository Config Files are not applied manually from local laptops App Contiguration Same Interface for updating the cluster",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00020_10m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4282,
+        "ocr_text": "What happens if someone updates the cluster manually? App Configuration",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00021_10m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 660.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4587,
+        "ocr_text": "kubectl What happens if someone updates Desved Sate App Configuration Actual Stale well",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00022_11m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 690.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4459,
+        "ocr_text": "What happens if someone updates the cluster manually Sync Desed Sate App Configuration spec :",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00023_11m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 720.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4325,
+        "ocr_text": "Synces App Configuration spec : rcplicas:",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00024_12m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 750.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4387,
+        "ocr_text": "Need a way to quickly update App Configuration",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00025_12m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 780.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4261,
+        "ocr_text": "App Configuration",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00026_13m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 810.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4467,
+        "ocr_text": "Rollback Breaking Change Easy",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00027_13m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 840.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4967,
+        "ocr_text": "Rollback Syncing changes . Configuration Imperative step by step instructions how to revert No need to manually revert every update in the cluster Easy",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00028_14m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 870.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4425,
+        "ocr_text": "Cluster Disaster Recovery Contiguration region: 1-a region: 1-a",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00029_14m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 900.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.413,
+        "ocr_text": "Benefits you get with GitOps in general ArgoCD is based on GitOps and helps implement those GitOps principles",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00030_15m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 930.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4413,
+        "ocr_text": "App Configuration DevOps Operations Junior Senior Team Team Engineers",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00031_15m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 960.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4226,
+        "ocr_text": "Configuration Noneed to create ClusterRole & User resources In Kuberietes",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00032_16m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 990.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4023,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00033_16m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1020.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.443,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1050.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4578,
+        "ocr_text": "ArgoCD as Kubernetes extension What does that mean?",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00035_17m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1080.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4639,
+        "ocr_text": "Benefit of that? Visibility in the cluster",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00036_18m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1110.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4562,
+        "ocr_text": "Desired target state",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00037_18m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1140.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4261,
+        "ocr_text": "configure ArgoCD? Deploy ArgoCD into K8s cluster",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00038_19m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1170.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3899,
+        "ocr_text": "Howto 2) Configure ArgoCD with K8s YAMI",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00039_19m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1200.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4119,
+        "ocr_text": "configure ArgoCD? 2) Configure ArgoCD with K8s YAML File",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00040_20m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1230.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3827,
+        "ocr_text": "aws",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00041_20m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4588,
+        "ocr_text": "Working with multiple dusters 1 Glt reposttory development",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00043_21m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1320.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4546,
+        "ocr_text": "development development",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00044_22m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1350.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3791,
+        "ocr_text": "Overlays staglng product (on 2) Using overlays with kustomize",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00045_22m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1440.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4728,
+        "ocr_text": "Replacement for Continuous Delivery Specifically for Kubernetes",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00048_24m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1500.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.418,
+        "ocr_text": "Demo Setup",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00050_25m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1530.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4507,
+        "ocr_text": "Git Repository Deployment and Servce YAML Flles Docker Hub K8s Cluster Setup",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00051_25m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 1560.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4586,
+        "ocr_text": "Demo Overview tack and sync Steps",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00052_26m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 2340.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4084,
+        "ocr_text": "ArgoCD polls Git repository every 3 minutes",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00078_39m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 2370.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4221,
+        "ocr_text": "ArgoCD polls Git repository every 3 minutes webhook",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00079_39m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_005",
+        "frame_time": 2400.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4423,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_005/lecture_005_frame_00080_40m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 150.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4348,
+        "ocr_text": "OpenA",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00005_02m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4922,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00006_03m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3544,
+        "ocr_text": "Milestones",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00007_03m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4584,
+        "ocr_text": "Generative Pre-trained Transformer GPT",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4305,
+        "ocr_text": "From GPT-1 to GPT-3",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4006,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4284,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4477,
+        "ocr_text": "How does it perform for DevOps tasks? How qualitative will be the scripts",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3905,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 570.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3675,
+        "ocr_text": "DevOps Task ChatGPT node",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00019_09m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 1020.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4048,
+        "ocr_text": "Use Multi-stage builds",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 1260.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3643,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00042_21m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 1290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3677,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00043_21m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 2130.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.471,
+        "ocr_text": "Provide Jenkinsfile with complete CI/CD code Push to Bulld Test Deploy",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00071_35m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 2970.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3732,
+        "ocr_text": "You need a lot of knowledge yourself",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00099_49m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3000.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3891,
+        "ocr_text": "You need a lot of knowledge yourself You can't rely on the results! Can be very helpful though!",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00100_50m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3612,
+        "ocr_text": "DevOps tasks?",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00106_53m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3852,
+        "ocr_text": "DevOps tasks? For more experienced engineers, could be a tool to become more efficient",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00107_53m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3240.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4038,
+        "ocr_text": "ChatGPT",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00108_54m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4516,
+        "ocr_text": "Optimize on top GPT-3",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00109_54m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4739,
+        "ocr_text": "Optimize on top App for legal App for questions engineering tasks GPT 3",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00110_55m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3822,
+        "ocr_text": "Aloc Artificial Intelligence Infrastructure-as-Code Generator queries etc",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00111_55m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.421,
+        "ocr_text": "Install aiac Create your OpenAI API key Provide the API via environment variable get key",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00112_56m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3766,
+        "ocr_text": "AlaC Can be a useful tool for engineers Firefly",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00121_60m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_006",
+        "frame_time": 3660.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3669,
+        "ocr_text": "AlaC Can be a useful tool for engineers Relevant links in video description Sove output directly into file",
+        "frame_path": "data/processed/module3/slides/lecture_006/lecture_006_frame_00122_61m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 150.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4348,
+        "ocr_text": "OpenA",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00005_02m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4922,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00006_03m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3544,
+        "ocr_text": "Milestones",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00007_03m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4584,
+        "ocr_text": "Generative Pre-trained Transformer GPT",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4305,
+        "ocr_text": "From GPT-1 to GPT-3",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4006,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4284,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4477,
+        "ocr_text": "How does it perform for DevOps tasks? How qualitative will be the scripts",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3905,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 570.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3675,
+        "ocr_text": "DevOps Task ChatGPT node",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00019_09m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 1020.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4048,
+        "ocr_text": "Use Multi-stage builds",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 1260.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3643,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00042_21m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 1290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3677,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00043_21m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 2130.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.471,
+        "ocr_text": "Provide Jenkinsfile with complete CI/CD code Push to Bulld Test Deploy",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00071_35m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 2970.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3732,
+        "ocr_text": "You need a lot of knowledge yourself",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00099_49m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3000.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3891,
+        "ocr_text": "You need a lot of knowledge yourself You can't rely on the results! Can be very helpful though!",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00100_50m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3612,
+        "ocr_text": "DevOps tasks?",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00106_53m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3852,
+        "ocr_text": "DevOps tasks? For more experienced engineers, could be a tool to become more efficient",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00107_53m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3240.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4038,
+        "ocr_text": "ChatGPT",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00108_54m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4516,
+        "ocr_text": "Optimize on top GPT-3",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00109_54m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4739,
+        "ocr_text": "Optimize on top App for legal App for questions engineering tasks GPT 3",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00110_55m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3822,
+        "ocr_text": "Aloc Artificial Intelligence Infrastructure-as-Code Generator queries etc",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00111_55m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.421,
+        "ocr_text": "Install aiac Create your OpenAI API key Provide the API via environment variable get key",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00112_56m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3766,
+        "ocr_text": "AlaC Can be a useful tool for engineers Firefly",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00121_60m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3660.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3669,
+        "ocr_text": "AlaC Can be a useful tool for engineers Relevant links in video description Sove output directly into file",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00122_61m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_008",
+        "frame_time": 0.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.425,
+        "ocr_text": "FIRST",
+        "frame_path": "data/processed/module3/slides/lecture_008/lecture_008_frame_00000_00m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_008",
+        "frame_time": 540.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4239,
+        "ocr_text": "C#FOR CODINGI OURR FIRST",
+        "frame_path": "data/processed/module3/slides/lecture_008/lecture_008_frame_00018_09m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 29.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3867,
+        "ocr_text": "IBM",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00001_00m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 59.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.364,
+        "ocr_text": "60% of Fortune 500",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00002_00m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 269.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3687,
+        "ocr_text": "LLM",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00009_04m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 2818.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3582,
+        "ocr_text": "Build a Project Using Crew Al Automation Tool",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00094_46m58s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 2848.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3685,
+        "ocr_text": "Market Research",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00095_47m28s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 2878.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3555,
+        "ocr_text": "Market Marketing Research Strategy",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00096_47m58s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 2908.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3539,
+        "ocr_text": "Market Marketing Content Research Calendar",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00097_48m28s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 2938.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3625,
+        "ocr_text": "Market Marketing Content Scripts for Research Strategy Calendar Post Drafts Reels/shorts",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00098_48m58s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 2968.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.362,
+        "ocr_text": "Social Media Market Marketing Content Scrpts for Research Strategy Calendar Research Blogs",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00099_49m28s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 2998.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3545,
+        "ocr_text": "Maiketing Marketing Scripts for Post Drafts Research Calendar Reels/shorts Content Research Oraft Blogs Optimization Blogs",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00100_49m58s.jpg"
+    },
+    {
+        "lecture_id": "lecture_009",
+        "frame_time": 3058.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3453,
+        "ocr_text": "Market Marketing Content Post Drafts Research Strategy Reels/Shorts Content Research Oraft Blogs Optimization Blogs",
+        "frame_path": "data/processed/module3/slides/lecture_009/lecture_009_frame_00102_50m58s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 240.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4679,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00008_04m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4308,
+        "ocr_text": "NGINX as LoodBalancer",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3952,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4704,
+        "ocr_text": "NGINX as Load BBalancer",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4209,
+        "ocr_text": "Proxy Server",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3846,
+        "ocr_text": "Caching",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 420.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4388,
+        "ocr_text": "Caching",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00014_07m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 450.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4423,
+        "ocr_text": "One entrypoint Exposlng all servers to the public internet",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00015_07m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4092,
+        "ocr_text": "One entrypoint Exposing all servers to the public internet",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 510.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4402,
+        "ocr_text": "One entrypoint",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00017_08m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 540.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3817,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00018_09m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 570.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4095,
+        "ocr_text": "Encrypted Communication SSL",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00019_09m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3714,
+        "ocr_text": "Compression",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00021_10m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 660.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3826,
+        "ocr_text": "Compression NGINX Proxy can compress the response",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00022_11m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 690.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4487,
+        "ocr_text": "NGINX Confguration",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00023_11m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 840.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4199,
+        "ocr_text": "TechWorld wlth Nana",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00028_14m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 870.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4506,
+        "ocr_text": "What Is Ingress Controller?",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00029_14m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 930.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4388,
+        "ocr_text": "Clud Platfor Load Balancer own load balancer?",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00031_15m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 960.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4664,
+        "ocr_text": "Cloud Platform Load Balancer",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00032_16m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 990.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4559,
+        "ocr_text": "NGINX in Kubernetes",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00033_16m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 1020.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.482,
+        "ocr_text": "NGINX in Kubernetes",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 1050.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3716,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00035_17m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 1110.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.368,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00037_18m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 1140.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4531,
+        "ocr_text": "NGINX APACHE NGMX",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00038_19m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 1230.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.394,
+        "ocr_text": "TochWorld wlth Nand",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00041_20m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2070.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5235,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00069_34m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2100.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3934,
+        "ocr_text": "SSL",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00070_35m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2400.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4502,
+        "ocr_text": "What is a Worker Process7",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00080_40m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2430.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4138,
+        "ocr_text": "This configuration directly influences how well it can handle traffic (performance) ceu",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00081_40m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2580.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4006,
+        "ocr_text": "listen server_name",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00086_43m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2610.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.393,
+        "ocr_text": "listen location",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00087_43m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2640.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3735,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00088_44m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 2790.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4398,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00093_46m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3420.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4108,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00114_57m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3450.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4262,
+        "ocr_text": "sorver",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00115_57m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3711,
+        "ocr_text": "In Real Life",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00116_58m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3510.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4074,
+        "ocr_text": "https:''",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00117_58m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3540.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4332,
+        "ocr_text": "SSL",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00118_59m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3570.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4321,
+        "ocr_text": "to establish secure, encrypted session with the server key \"",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00119_59m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3600.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4611,
+        "ocr_text": "Generate a self-signed certificate",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00120_60m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 3840.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3863,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00128_64m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_010",
+        "frame_time": 4290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.384,
+        "ocr_text": "LIKE SHARE",
+        "frame_path": "data/processed/module3/slides/lecture_010/lecture_010_frame_00143_71m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 120.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5102,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00004_02m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 150.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5059,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00005_02m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5082,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00006_03m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4845,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00007_03m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 240.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5269,
+        "ocr_text": "Scale dow",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00008_04m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5163,
+        "ocr_text": "orchestraton",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4505,
+        "ocr_text": "Kubernetes kubelet Node Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4047,
+        "ocr_text": "Kubernetes_ Architecture Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.443,
+        "ocr_text": "Control Piane",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4709,
+        "ocr_text": "control Piane",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 420.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4817,
+        "ocr_text": "keeps track of Scheduler: etcd control Piane",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00014_07m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 450.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4951,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00015_07m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4828,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 510.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4813,
+        "ocr_text": "muchmore Important WorKer Nodes higherworkload",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00017_08m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 540.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3893,
+        "ocr_text": "Main Kubernetes Components",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00018_09m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 570.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3998,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00019_09m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 600.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5435,
+        "ocr_text": "pod Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00020_10m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5219,
+        "ocr_text": "pod Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00021_10m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 660.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5236,
+        "ocr_text": "pod Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00022_11m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 690.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5352,
+        "ocr_text": "pod Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00023_11m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 720.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5368,
+        "ocr_text": "pod Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00024_12m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 750.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5063,
+        "ocr_text": "SVC Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00025_12m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 780.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4792,
+        "ocr_text": "should be accessible through browser Node App",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00026_13m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 810.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4569,
+        "ocr_text": "Interal Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00027_13m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 840.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4944,
+        "ocr_text": "Service Service Internal Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00028_14m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 870.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4947,
+        "ocr_text": "Ingress Senice Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00029_14m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 900.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4895,
+        "ocr_text": "Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00030_15m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 930.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4896,
+        "ocr_text": "Pusn it to repo Pull it in vour Pod Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00031_15m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 960.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.529,
+        "ocr_text": "Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00032_16m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 990.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5119,
+        "ocr_text": "Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00033_16m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1020.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4202,
+        "ocr_text": "Secret mongo-db",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1050.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5154,
+        "ocr_text": "mongo-db Secret ConfgMap secret Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00035_17m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1080.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4766,
+        "ocr_text": "my-app Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00036_18m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1110.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4574,
+        "ocr_text": "Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00037_18m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1140.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4908,
+        "ocr_text": "my-app vol Volume Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00038_19m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1170.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4834,
+        "ocr_text": "Volume Node persistancel",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00039_19m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1200.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4932,
+        "ocr_text": "Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00040_20m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1230.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4859,
+        "ocr_text": "Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00041_20m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1260.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5179,
+        "ocr_text": "Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00042_21m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4935,
+        "ocr_text": "DEPLOYMENT My-ORP deploy Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00043_21m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1320.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4969,
+        "ocr_text": "DEPLOYMENT deploy Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00044_22m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1350.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5136,
+        "ocr_text": "Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00045_22m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1380.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4819,
+        "ocr_text": "Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00046_23m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1410.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5025,
+        "ocr_text": "STATEFULSET for sts elastic Service Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00047_23m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1440.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5202,
+        "ocr_text": "Deploying Statefuiset not easy Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00048_24m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1470.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5082,
+        "ocr_text": "DB: Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00049_24m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1500.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5152,
+        "ocr_text": "Node Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00050_25m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1530.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4812,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00051_25m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1560.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4406,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00052_26m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1590.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3889,
+        "ocr_text": "Main Kubernetes resources",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00053_26m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1620.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5391,
+        "ocr_text": "Control Piane",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00054_27m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1650.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4958,
+        "ocr_text": "control Plane",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00055_27m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1680.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4971,
+        "ocr_text": "Control Piane",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00056_28m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1710.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4984,
+        "ocr_text": "Shoua APLSERVER actual state ? Control Piane",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00057_28m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1740.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4263,
+        "ocr_text": "Senvice",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00058_29m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1770.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3893,
+        "ocr_text": "Deplovment;",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00059_29m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1800.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4488,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00060_30m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1830.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.49,
+        "ocr_text": "Actualz",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00061_30m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1860.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4616,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00062_31m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1890.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.504,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00063_31m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1920.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4566,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00064_32m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1950.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4726,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00065_32m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 1980.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4958,
+        "ocr_text": "Scheduler Cobroller 'anaper elcd elcd",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00066_33m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2010.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4421,
+        "ocr_text": "Scheduler Scheduler elcd etcd Nod Noae",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00067_33m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2040.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5078,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00068_34m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2070.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5341,
+        "ocr_text": "Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00069_34m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2100.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4724,
+        "ocr_text": "Api Server API processes CLI Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00070_35m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2130.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.504,
+        "ocr_text": "Aju Server API processes CLI 3ents processes Node",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00071_35m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2160.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5002,
+        "ocr_text": "Node KUBECTL",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00072_36m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2280.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.5198,
+        "ocr_text": "Pod Pod",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00076_38m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2310.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3946,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00077_38m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2490.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4013,
+        "ocr_text": "Demo Project Overview Deploy Deploy MongoDB Database Web Application webapp mongo mongo",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00083_41m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 2760.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4099,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00092_46m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 3300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.405,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00110_55m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 3450.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4127,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00115_57m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 3720.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4115,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00124_62m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 4140.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4461,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00138_69m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 4260.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4017,
+        "ocr_text": "Deployed Application with Database in Kubernetes cluster Learned some Kubectl Commands kubectl",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00142_71m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_012",
+        "frame_time": 4290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.394,
+        "ocr_text": "Become a K8s Tne Ultimale Administrator couise",
+        "frame_path": "data/processed/module3/slides/lecture_012/lecture_012_frame_00143_71m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 119.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.346,
+        "ocr_text": "Kig",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00004_01m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 239.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3973,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00008_03m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 299.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3836,
+        "ocr_text": "Google's WordzVec",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00010_04m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 329.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.446,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00011_05m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 359.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.403,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00012_05m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 389.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.41,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00013_06m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 449.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3655,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00015_07m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 509.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3412,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00017_08m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 569.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4088,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00019_09m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 599.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4034,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00020_09m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 809.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3677,
+        "ocr_text": "Made kheer Contextual Embedding",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00027_13m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 839.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3917,
+        "ocr_text": "Made kheer",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00028_13m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 869.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.368,
+        "ocr_text": "Training",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00029_14m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 899.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4329,
+        "ocr_text": "made kheet",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00030_14m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 929.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4013,
+        "ocr_text": "Generic Architecture BERT",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00031_15m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 959.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.447,
+        "ocr_text": "Generic Architecture",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00032_15m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1199.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.348,
+        "ocr_text": "made a sweet Indian rice dish called",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00040_19m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1259.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3579,
+        "ocr_text": "[PAD] BERT Vocab Size [UNK] the 30522 Tokens and",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00042_20m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1319.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3542,
+        "ocr_text": "Made sweet Indian rice dish call",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00044_21m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1349.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3732,
+        "ocr_text": "Made sweet Indian rice dish call",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00045_22m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1499.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3594,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00050_24m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1529.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3718,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00051_25m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1619.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.379,
+        "ocr_text": "Query need a book on quantum physics computatlon)",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00054_26m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1649.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4017,
+        "ocr_text": "Query (spectfically; quantum Key",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00055_27m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1679.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3394,
+        "ocr_text": "Query",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00056_27m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1739.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3568,
+        "ocr_text": "vake key key",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00058_28m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1769.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3529,
+        "ocr_text": "vake key key",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00059_29m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1799.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3438,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00060_29m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1919.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3917,
+        "ocr_text": "dish rice ness sweet ness Fozs",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00064_31m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 1979.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4057,
+        "ocr_text": "Query",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00066_32m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2009.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4036,
+        "ocr_text": "Querv modtfkrs fice",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00067_33m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2039.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4258,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00068_33m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2069.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4042,
+        "ocr_text": "Query",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00069_34m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2099.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3869,
+        "ocr_text": "Query want to know dbout dush called 03p",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00070_34m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2189.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3553,
+        "ocr_text": "Mexican Indian Rice kheer iS a festive sweet dish the Indian Shivaji engaged in both alliances ad hostilities developing an advanced crewved spacecraft dish Irom the from",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00073_36m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2219.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3603,
+        "ocr_text": "Mexican Indian Indian Shivaji engaged in both alliances and hostilities developing an advanced crewed spacecraft testive sweet",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00074_36m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2279.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3718,
+        "ocr_text": "key am te sublect of the sentence",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00076_37m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2309.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3806,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00077_38m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2369.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.382,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00079_39m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2429.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3813,
+        "ocr_text": "value",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00081_40m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2459.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4313,
+        "ocr_text": "Oish rice ness indian ness dish",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00082_40m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2549.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3542,
+        "ocr_text": "Attentlon Head",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00085_42m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2579.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3666,
+        "ocr_text": "Ecz",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00086_42m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2789.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3752,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00093_46m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2849.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3604,
+        "ocr_text": "Attontion Hoad2",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00095_47m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2879.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3471,
+        "ocr_text": "Mexican Rice kheer is a festive sweet dish the Indian Shivaji engaged in both alliances and hostilities developing an advanced crewed spacecraft Rice kheer I5 3 festive sweet from",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00096_47m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2969.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3897,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00099_49m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 2999.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3933,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00100_49m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 3059.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.362,
+        "ocr_text": "Layers BERT Basc BERT Large 12 Laycrs 24 Layers",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00102_50m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 3089.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3815,
+        "ocr_text": "BERT Basc BERT Large 24 Layers",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00103_51m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 3119.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3847,
+        "ocr_text": "Decoder Contextual Embedding",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00104_51m59s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 3269.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.423,
+        "ocr_text": "Generic Architecture GPT",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00109_54m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_013",
+        "frame_time": 3449.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4854,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_013/lecture_013_frame_00115_57m29s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 30.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3425,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00001_00m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 120.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.357,
+        "ocr_text": "Question",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00004_02m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 180.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.342,
+        "ocr_text": "LLM",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00006_03m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 210.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4357,
+        "ocr_text": "Neural Network",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00007_03m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3616,
+        "ocr_text": "Parameter Full Fine Tuning Efficient Fine Tuning (PEFT) LoRA",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 450.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3533,
+        "ocr_text": "Wq' Wk'",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00015_07m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 480.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3709,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 510.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3412,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00017_08m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 540.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3679,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00018_09m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 630.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4142,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00021_10m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 660.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3833,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00022_11m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 690.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3869,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00023_11m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1020.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.381,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1050.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4344,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00035_17m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1080.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3816,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00036_18m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1110.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3702,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00037_18m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1170.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4023,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00039_19m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1200.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4215,
+        "ocr_text": "Scale",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00040_20m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1380.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3916,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00046_23m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1410.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4228,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00047_23m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1470.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3877,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00049_24m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1500.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3964,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00050_25m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1530.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.416,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00051_25m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1560.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4077,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00052_26m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1590.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.408,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00053_26m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1650.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4294,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00055_27m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1680.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4306,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00056_28m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1800.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.369,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00060_30m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1830.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3619,
+        "ocr_text": "NFL Quantization",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00061_30m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1860.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3785,
+        "ocr_text": "Quantization",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00062_31m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1890.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3845,
+        "ocr_text": "7b Parameters parameters parameters",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00063_31m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1920.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3627,
+        "ocr_text": "7b Parameters parameters parmeters parameters Quantized Quantized Quantized",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00064_32m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1950.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3695,
+        "ocr_text": "7b Parameters parameters parameters parameters Quantlzed Quantized Quantized",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00065_32m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 1980.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.371,
+        "ocr_text": "Paged Optimizers",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00066_33m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 2010.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3686,
+        "ocr_text": "Paged Optimizers",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00067_33m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_015",
+        "frame_time": 2340.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3704,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_015/lecture_015_frame_00078_39m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_016",
+        "frame_time": 0.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3402,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_016/lecture_016_frame_00000_00m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_017",
+        "frame_time": 0.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3402,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_017/lecture_017_frame_00000_00m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_017",
+        "frame_time": 630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3969,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_017/lecture_017_frame_00021_10m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_017",
+        "frame_time": 840.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4145,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_017/lecture_017_frame_00028_14m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_018",
+        "frame_time": 0.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3402,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_018/lecture_018_frame_00000_00m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_019",
+        "frame_time": 30.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4036,
+        "ocr_text": "Security Management Levels Information vale Security propositons Governance Information Security enterprise Management IT Security Operations",
+        "frame_path": "data/processed/module3/slides/lecture_019/lecture_019_frame_00001_00m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_019",
+        "frame_time": 60.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.37,
+        "ocr_text": "Setenterpise 05 cclives mation curity on Security lenterprise objectives IT Security Operations",
+        "frame_path": "data/processed/module3/slides/lecture_019/lecture_019_frame_00002_01m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_019",
+        "frame_time": 840.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3846,
+        "ocr_text": "Information Compliance security policy Security Organization Business Human resources continuity security Incident Asset management Security management Supplier controls Access relationships develop. & maint Cryptography",
+        "frame_path": "data/processed/module3/slides/lecture_019/lecture_019_frame_00028_14m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_019",
+        "frame_time": 1020.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4043,
+        "ocr_text": "Reporting AssesSment The steps in the cycle can be performed in Good IS management requires that all steps Gontrols are implemented by the organisation",
+        "frame_path": "data/processed/module3/slides/lecture_019/lecture_019_frame_00034_17m00s.jpg"
+    }
+]
