@@ -13,16 +13,18 @@ class LectureFeatureDataset(Dataset):
     """
     Loads pre-extracted ResNet-50 features and their corresponding annotations.
     """
-    def __init__(self, features_dir, annotations_json, split="train"):
+    def __init__(self, features_dir, annotations_json, split="train", augment=False):
         """
         Args:
             features_dir: Directory containing *_features.npy files.
             annotations_json: Path to the merged module1_annotations.json file.
             split: "train" (videos 1-45), "val" (videos 46-50), or "test" (videos 51-60)
+            augment: Whether to apply data augmentation (temporal jitter & frame dropping)
         """
         self.features_dir = Path(features_dir)
         self.split = split
         self.sequence_length = 10  # 10 seconds = 10 frames at 1 FPS
+        self.augment = augment
         
         # Load annotations
         with open(annotations_json, 'r', encoding='utf-8') as f:
@@ -77,6 +79,12 @@ class LectureFeatureDataset(Dataset):
         start_idx = int(data["timestamp_start"])
         end_idx = int(data["timestamp_end"])
         
+        # Apply temporal jitter augmentation during training
+        if self.augment and self.split == "train":
+            jitter = np.random.randint(-2, 3)  # shift by -2, -1, 0, 1, or 2 seconds
+            start_idx = max(0, start_idx + jitter)
+            end_idx = max(start_idx + 1, end_idx + jitter)
+            
         # Get score
         score = float(data["normalized_score"])
         
@@ -97,10 +105,17 @@ class LectureFeatureDataset(Dataset):
         # Keep exactly sequence_length frames (just in case)
         segment_features = segment_features[:self.sequence_length]
         
+        # Apply random frame dropping/zeroing augmentation during training
+        if self.augment and self.split == "train":
+            # Randomly zero out 1 frame in the sequence to simulate frame dropping
+            drop_idx = np.random.randint(0, self.sequence_length)
+            segment_features = segment_features.copy()  # avoid modifying cached features
+            segment_features[drop_idx] = 0.0
+            
         return torch.tensor(segment_features, dtype=torch.float32), torch.tensor(score, dtype=torch.float32)
 
 
-def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=1e-4):
+def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=1e-4, augment=True):
     """
     Main training loop for Module 1.
     """
@@ -108,8 +123,8 @@ def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=1e-4):
     print(f"Using device: {device}")
     
     # Setup Datasets and DataLoaders
-    train_dataset = LectureFeatureDataset(data_dir, annotations_path, split="train")
-    val_dataset = LectureFeatureDataset(data_dir, annotations_path, split="val")
+    train_dataset = LectureFeatureDataset(data_dir, annotations_path, split="train", augment=augment)
+    val_dataset = LectureFeatureDataset(data_dir, annotations_path, split="val", augment=False)
     
     if len(train_dataset) == 0:
         print("Error: No training data found. Ensure you have run annotate_module1.py and merged the JSON.")
