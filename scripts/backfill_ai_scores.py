@@ -1,5 +1,5 @@
 """
-Backfill AI Scores and Reasoning - Project Integra
+Backfill AI Scores and Reasoning 
 
 Loops through an annotation JSON file, finds segments missing 'ai_score',
 extracts their frames from the corresponding video file, calls the configured
