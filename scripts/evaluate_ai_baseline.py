@@ -1,5 +1,5 @@
 """
-Evaluate AI Baseline - Project Integra
+Evaluate AI Baseline 
 
 Computes precision, recall, F1-score, Mean Absolute Error (MAE),
 Mean Squared Error (MSE), and Pearson correlation metrics for zero-training

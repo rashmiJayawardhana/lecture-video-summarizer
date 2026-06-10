@@ -1,5 +1,5 @@
 """
-Download sample lecture videos from MIT OpenCourseWare and other sources
+Download sample lecture videos from sources
 """
 
 import os

@@ -23,12 +23,12 @@ training:
 
 data:
   segment_duration: 10  # seconds — each segment is a scoring unit
-  sequence_length: 30   # 30-frame sequences as specified in plan
+  sequence_length: 10   # 10-frame sequences as specified in plan
   frame_sample_rate: 1  # 1 fps extraction
   image_size: 224
-  # Dataset split: 50 annotated IT lecture videos
-  num_videos: 50
-  train_videos: 35
+  # Dataset split: 60 annotated IT lecture videos
+  num_videos: 60
+  train_videos: 45
   val_videos: 5
   test_videos: 10
   # Annotation: 10-second segments rated 0-10 for instructional importance
