@@ -21,7 +21,7 @@ scikit-image>=0.21.0           # SSIM for slide deduplication
 Pillow>=10.0.0                 # Slide rendering for Pipeline B
 
 # ─── Video Processing ─────────────────────────────────────
-moviepy>=1.0.3                 # Video editing, clip extraction
+moviepy>=2.0.0                 # Video editing, clip extraction (2.x API: with_duration/with_audio)
 ffmpeg-python>=0.2.0           # FFmpeg wrapper
 imageio>=2.31.0
 imageio-ffmpeg>=0.4.8
