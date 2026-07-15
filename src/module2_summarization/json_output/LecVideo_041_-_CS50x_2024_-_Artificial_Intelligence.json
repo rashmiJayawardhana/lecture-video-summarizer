@@ -1,0 +1,3838 @@
+[
+  {
+    "sentence": "a",
+    "timestamp_start": 0.0,
+    "timestamp_end": 24.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'm gonna show you some magic.",
+    "timestamp_start": 54.94,
+    "timestamp_end": 61.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's the real thing.",
+    "timestamp_start": 61.94,
+    "timestamp_end": 64.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I mean, it's all the real thing.",
+    "timestamp_start": 64.94,
+    "timestamp_end": 71.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I mean, it's all the real thing.",
+    "timestamp_start": 71.94,
+    "timestamp_end": 85.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All right. This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.",
+    "timestamp_start": 85.94,
+    "timestamp_end": 93.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "My name is David Maillen and this is our family-friendly introduction to artificial intelligence or AI, which seems to be everywhere these days.",
+    "timestamp_start": 93.94,
+    "timestamp_end": 100.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But first, we're done with these rubber ducks, which your students might have had for some time.",
+    "timestamp_start": 100.94,
+    "timestamp_end": 106.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Within the World of Computer Science and programming in particular, there's this notion of rubber duck debugging or rubber ducking whereby, in the absence of a colleague, a friend, a family member, a teaching fellow who might be able to answer your questions about your code, especially when it's not working, ideally you might have at least a rubber duck, or really any inanimate object on your desk with whom to talk.",
+    "timestamp_start": 106.94,
+    "timestamp_end": 126.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the idea is that in expressing your logic, talking through your problems, even though the duck doesn't actually respond invariably, you hear eventually the illogic in your thoughts and the proverbial light bulb goes off.",
+    "timestamp_start": 126.94,
+    "timestamp_end": 137.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now, for students online for some time, CS50 has had a digital version thereof whereby, in the programming environment that CS50 students use, for the past several years, if they don't have a rubber duck on their desk, they can pull up this interface here.",
+    "timestamp_start": 137.94,
+    "timestamp_end": 149.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if they begin a conversation like, I'm hoping you can help me solve some problem, up until recently, CS50's virtual rubber duck would simply quack once, twice or three times in total.",
+    "timestamp_start": 149.94,
+    "timestamp_end": 160.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we have anecdotal evidence that that alone was enough to get students to realize what it is they were doing wrong.",
+    "timestamp_start": 160.94,
+    "timestamp_end": 166.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But of course, more recently has this duck and so many other ducks so to speak around the world come to life really and your students have been using artificial intelligence in some form within CS50 as a virtual teaching assistant.",
+    "timestamp_start": 166.94,
+    "timestamp_end": 179.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And what we'll do today is reveal not only how we've been using and leveraging AI within CS50, but also how AI itself works and to prepare you better for the years ahead.",
+    "timestamp_start": 179.94,
+    "timestamp_end": 189.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So last year around this time, like Dolly too, an image generation where all of the rage you might have played with this whereby you can type in some keywords and boom, you have a dynamically generated image.",
+    "timestamp_start": 190.94,
+    "timestamp_end": 200.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similar tools are like mid-journey, which gives you even more realistic 3D imagery.",
+    "timestamp_start": 200.94,
+    "timestamp_end": 204.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And within that world of image generation, there were nonetheless some tells like an observant viewer could tell that this was probably generated by AI.",
+    "timestamp_start": 204.94,
+    "timestamp_end": 214.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in fact, a few months ago, the New York Times took a look at some of these tools. And so for instance, here is a sequence of images that at least that left isn't all that implausible that this might be an actual photograph.",
+    "timestamp_start": 214.94,
+    "timestamp_end": 224.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But in fact, all three of these are AI generated. And for some time, there was a certain tell like AI up until recently really wasn't really good at the finer details.",
+    "timestamp_start": 224.94,
+    "timestamp_end": 233.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like the fingers are not quite right and so you could kind of have that sort of hint.",
+    "timestamp_start": 233.94,
+    "timestamp_end": 238.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But I dare say AI is getting even better and better, such that it's getting harder to discern these kinds of things.",
+    "timestamp_start": 238.94,
+    "timestamp_end": 243.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you haven't already, go ahead and take out your phone if you have one with you.",
+    "timestamp_start": 243.94,
+    "timestamp_end": 247.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if you'd like to partake, scan this barcode here, which will lead you to a URL.",
+    "timestamp_start": 247.94,
+    "timestamp_end": 253.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And on your screen, you'll have an opportunity in a moment to buzz in.",
+    "timestamp_start": 253.94,
+    "timestamp_end": 256.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If my colleague rung Shin, wouldn't mine joining me up here on stage, we'll ask you a sequence of questions and see just how prepared you are for this coming world of AI.",
+    "timestamp_start": 256.94,
+    "timestamp_end": 264.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for instance, once you've got this here, code scanned, if you don't, that's fine.",
+    "timestamp_start": 264.94,
+    "timestamp_end": 268.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can play along at home or alongside the person next to you.",
+    "timestamp_start": 268.94,
+    "timestamp_end": 271.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here are two images. And my question for you is which of these two images left or right was generated by AI?",
+    "timestamp_start": 271.94,
+    "timestamp_end": 281.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which of these two was generated by AI left or right?",
+    "timestamp_start": 281.94,
+    "timestamp_end": 288.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I think rung Shin, we can flip over and see as the responses start to come in.",
+    "timestamp_start": 289.94,
+    "timestamp_end": 293.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So far, we're about 20% saying left, 70% plus saying right, 3%, 4%, comfortably admitting unsure.",
+    "timestamp_start": 293.94,
+    "timestamp_end": 301.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And that's fine. Let's wait for a few more responses to come in, though I think the right hand folks have it.",
+    "timestamp_start": 301.94,
+    "timestamp_end": 306.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And let's go ahead and flip back and see what the solution is.",
+    "timestamp_start": 306.94,
+    "timestamp_end": 309.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In this case, it was in fact the right hand side that was AI generated.",
+    "timestamp_start": 309.94,
+    "timestamp_end": 313.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's great. I'm not sure what it means that we figured this one out.",
+    "timestamp_start": 314.94,
+    "timestamp_end": 316.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But let's try one more here.",
+    "timestamp_start": 316.94,
+    "timestamp_end": 318.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So let me propose that we consider now these two images.",
+    "timestamp_start": 318.94,
+    "timestamp_end": 321.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's the same code. So if you still have your phone up, you don't need to scan again.",
+    "timestamp_start": 321.94,
+    "timestamp_end": 324.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's going to be the same URL here, but just in case you closed it.",
+    "timestamp_start": 324.94,
+    "timestamp_end": 327.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's take a look now at these two images.",
+    "timestamp_start": 327.94,
+    "timestamp_end": 330.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which of these left or right was AI generated?",
+    "timestamp_start": 330.94,
+    "timestamp_end": 334.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Left or right this time?",
+    "timestamp_start": 334.94,
+    "timestamp_end": 337.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Rung Shin, should we take a look at how it's coming in?",
+    "timestamp_start": 337.94,
+    "timestamp_end": 339.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Oh, it's a little closer this time. Left or right, right losing a little ground.",
+    "timestamp_start": 340.94,
+    "timestamp_end": 345.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe as people are changing their answers to left, more people are unsure this time, which is somewhat revealing.",
+    "timestamp_start": 345.94,
+    "timestamp_end": 351.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's give folks another second or two.",
+    "timestamp_start": 351.94,
+    "timestamp_end": 354.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And rung Shin, should we flip back?",
+    "timestamp_start": 354.94,
+    "timestamp_end": 356.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The answer is actually a trick question.",
+    "timestamp_start": 356.94,
+    "timestamp_end": 358.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They were both AI. So most of you were in fact right.",
+    "timestamp_start": 358.94,
+    "timestamp_end": 363.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But if you take a glance at this, this is getting really, really good.",
+    "timestamp_start": 363.94,
+    "timestamp_end": 367.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so this is just a taste of the images that we might see down the line.",
+    "timestamp_start": 367.94,
+    "timestamp_end": 372.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in fact, that video with which we began, Tom Cruise, as you might have gleaned, was not in fact Tom Cruise.",
+    "timestamp_start": 372.94,
+    "timestamp_end": 379.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That was an example of a deep fake, a video that was synthesized whereby a different human was acting out those motions, saying those words, but software,",
+    "timestamp_start": 379.94,
+    "timestamp_end": 387.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "artificially intelligent, artificial intelligence, inspired software, was mutating the actual image and faking this video.",
+    "timestamp_start": 387.94,
+    "timestamp_end": 394.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's all fun in games for now as we take over these kinds of examples, but suffice it to say, as we've begun to discuss in classes like this already, disinformation is only going to become more challenging in a world where it's not just text, but it's imagery, and all the more soon video.",
+    "timestamp_start": 394.94,
+    "timestamp_end": 408.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But for today, we'll focus really on the fundamentals.",
+    "timestamp_start": 408.94,
+    "timestamp_end": 410.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What it is that's enabling technologies like these, and even more familiarly, text generation, which is all the rage.",
+    "timestamp_start": 410.94,
+    "timestamp_end": 416.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in fact, it seems just a few months ago, probably everyone in this room started to hear about tools like chat GPT.",
+    "timestamp_start": 416.94,
+    "timestamp_end": 422.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we thought we'd do one final exercise here as a group.",
+    "timestamp_start": 422.94,
+    "timestamp_end": 425.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this was another piece in the New York Times where they asked the audience, did a fourth grader write this or the new chatbot?",
+    "timestamp_start": 425.94,
+    "timestamp_end": 431.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So another opportunity to assess your discerning skill.",
+    "timestamp_start": 431.94,
+    "timestamp_end": 434.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So same URL, so if you still have your phone open and that same interface open, you're in the right place, and here we'll take a final stab at two essays of sorts.",
+    "timestamp_start": 434.94,
+    "timestamp_end": 444.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which of these essays was written by AI?",
+    "timestamp_start": 444.94,
+    "timestamp_end": 448.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "SA1 or SA2? And as folks buzz in, I'll read the first, SA1.",
+    "timestamp_start": 448.94,
+    "timestamp_end": 453.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I like to bring a yummy sandwich and a cold juice box for lunch.",
+    "timestamp_start": 453.94,
+    "timestamp_end": 456.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sometimes I'll even pack a tasty piece of fruit or a bag of crunchy chips.",
+    "timestamp_start": 456.94,
+    "timestamp_end": 460.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As we eat, we chat and laugh and catch up on each other's day, dot, dot, dot.",
+    "timestamp_start": 460.94,
+    "timestamp_end": 464.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "SA2. My mother packs me a sandwich, a drink, fruit, and a treat.",
+    "timestamp_start": 464.94,
+    "timestamp_end": 468.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When I get in the lunch room, I find an empty table and sit there and I eat my lunch.",
+    "timestamp_start": 468.94,
+    "timestamp_end": 471.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "My friends come and sit down with me, dot, dot, dot.",
+    "timestamp_start": 471.94,
+    "timestamp_end": 474.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Rungschen, should we see what folks think?",
+    "timestamp_start": 474.94,
+    "timestamp_end": 476.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It looks like most of you think that SA1 was generated by AI, and in fact, if we flip back to the answer here, it was in fact SA1.",
+    "timestamp_start": 476.94,
+    "timestamp_end": 487.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's great that we now already have seemingly this discerning eye, but let me perhaps deflate that enthusiasm by saying it's only going to get harder to discern one from the other.",
+    "timestamp_start": 487.94,
+    "timestamp_end": 498.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we're really now on the bleeding edge of what's soon to be possible.",
+    "timestamp_start": 498.94,
+    "timestamp_end": 502.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But most everyone in this room has probably by now seen, tried, certainly, heard of chat GPT, which is all about textual generation.",
+    "timestamp_start": 502.94,
+    "timestamp_end": 509.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Within CS50 and within academia more generally, have we been thinking about talking about how whether to use or not use these kinds of technologies.",
+    "timestamp_start": 509.94,
+    "timestamp_end": 517.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if the students in the room haven't told the family members in the room already, this here is an excerpt from CS50's own syllabus this year, whereby we have deemed tools like chat GPT in their current form to see what we're doing.",
+    "timestamp_start": 517.94,
+    "timestamp_end": 527.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in the current form, just too helpful, sort of like an overzealous friend who in school who just wants to give you all of the answers instead of leading you to them.",
+    "timestamp_start": 527.94,
+    "timestamp_end": 535.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so we simply prohibit by policy using AI-based software such as chat GPT, third party tools like GitHub, CoPilot, BingChat, and others that suggests or completes answers to questions or lines of code.",
+    "timestamp_start": 535.94,
+    "timestamp_end": 548.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But it would seem reactionary to sort of take away what technology surely has some potential upsides for education.",
+    "timestamp_start": 548.94,
+    "timestamp_end": 554.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so within CS50 this semester, as well as this past summer, have we allowed students to use CS50's own AI-based software, which are in effect as we'll discuss built on top of these third party tools, chat GPT from open AI, companies like Microsoft and Beyond.",
+    "timestamp_start": 554.94,
+    "timestamp_end": 568.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in fact, what students can now use is this brought to life, CS50 Duck or DDB, Duck Debugger within a website of our own, CS50.AI and another that your students know known as CS50.Dev.",
+    "timestamp_start": 568.94,
+    "timestamp_end": 580.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So students are using it, but in a way where we have tempered the enthusiasm of what might otherwise be an overly helpful duck to model it more into a good teacher, a good teaching fellow who might guide you to the answers but not simply hand them outright.",
+    "timestamp_start": 580.94,
+    "timestamp_end": 593.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what does that actually mean and what form does this come? Well, architecturally for those of you with engineering backgrounds, they might be curious as to how this is actually implemented.",
+    "timestamp_start": 593.94,
+    "timestamp_end": 601.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If a student here in the class has a question virtually in this case, they somehow ask these questions of this central web application, CS50.AI.",
+    "timestamp_start": 601.94,
+    "timestamp_end": 610.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we in turn have built much of our own logic on top of third party services, known as APIs, application programming interfaces, features that other companies provide that people like us can use.",
+    "timestamp_start": 610.94,
+    "timestamp_end": 621.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So as they are doing really a lot of the heavy lifting, the so called large language models are there.",
+    "timestamp_start": 621.94,
+    "timestamp_end": 626.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we too have information that is not in these models yet. For instance, the words that came out of my mouth just last week when we had a lecture on some other topic, not to mention all of the past lectures and homework assignments from this year.",
+    "timestamp_start": 626.94,
+    "timestamp_end": 638.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we have our own vector database locally via which we can search for more recent information and then hand some of that information into these models, which you might recall, as at least for OpenAI, is cut off as of 2021.",
+    "timestamp_start": 638.94,
+    "timestamp_end": 650.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As of now, to make the information even more current. So architecturally, that's sort of the flow. But for now, I thought I'd share at a higher level what it is your students are already familiar with and what will soon be more broadly available to our own students online as well.",
+    "timestamp_start": 650.94,
+    "timestamp_end": 664.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what we focused on is what's generally now known as prompt engineering, which isn't really a technical phrase because it's not so much engineering in the traditional sense. It really is just English.",
+    "timestamp_start": 664.94,
+    "timestamp_end": 674.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What we are largely doing when it comes to giving the AI the personality of a good teacher or a good duck. So what we're doing is giving it what's known as a system prompt nowadays whereby we write some English sentences, send those English sentences to OpenAI or Microsoft that sort of teaches it how to behave, not just using its own knowledge out of the box, but coursing it to behave a little more educationally constructively.",
+    "timestamp_start": 674.94,
+    "timestamp_end": 699.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so for instance, a representative snippet of English that we provide to these services looks a little something like this quote unquote, you are a friendly and supportive teaching assistant for CS50.",
+    "timestamp_start": 699.94,
+    "timestamp_end": 709.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You are also a rubber duck. You answer student questions only about CS50 and the field of computer science. Do not answer questions about unrelated topics. Do not provide full answers to problems as this would violate academic honesty.",
+    "timestamp_start": 709.94,
+    "timestamp_end": 723.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so in essence, and you can sort of do this manually with chat GPT, you can tell it or ask it how to behave. We essentially are doing this automatically so that it doesn't just hand answers out of the box and knows a little something more about us.",
+    "timestamp_start": 723.94,
+    "timestamp_end": 735.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There's also in this world of AI right now the notion of a user prompt versus that system prompt and the user prompt in our case is essentially the student's own question. I have a question about X or I have a problem with my code here and why.",
+    "timestamp_start": 735.94,
+    "timestamp_end": 748.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we pass to those same API students own questions as part of this so called user prompt, just so you're familiar now with some of the vernacular of late.",
+    "timestamp_start": 748.94,
+    "timestamp_end": 756.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now the programming environment that students have been using this whole year is known as visual studio code, a popular open source free product that most so many engineers around the world now use.",
+    "timestamp_start": 756.94,
+    "timestamp_end": 766.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we've instrumented it to be a little more course specific with some course specific features that make learning within this environment all the more easier.",
+    "timestamp_start": 766.94,
+    "timestamp_end": 776.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It lives at cs50.dev and as students in this room know that as of now the virtual duck lives within this environment and can do things like explain highlighted lines of code.",
+    "timestamp_start": 776.94,
+    "timestamp_end": 786.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here for instance is a screenshot of this programming environment. Here is some arcane looking code in a language called C that we've just left behind us in the class and suppose that you don't understand what one or more of these lines of code do.",
+    "timestamp_start": 786.94,
+    "timestamp_end": 798.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Students can now highlight those lines right click or control click on it select explain highlighted code and voila they see a chat GPT like explanation of that very code within a second or so that no human has typed out but that's been dynamically generated based on this code.",
+    "timestamp_start": 798.94,
+    "timestamp_end": 815.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Other things that the duck can now do for students is advise students on how to improve their code style the aesthetics the formatting thereof.",
+    "timestamp_start": 815.94,
+    "timestamp_end": 822.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so for instance here is similar code in a language called C and I'll stipulate that it's very messy everything is left aligned instead of nicely indented so it looks a little more structured.",
+    "timestamp_start": 822.94,
+    "timestamp_end": 832.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Students can now click a button they'll see at the right hand side in green how their code should ideally look and if they're not quite sure what those changes are or why they can click on explain changes and similarly the duck advises them on how and why.",
+    "timestamp_start": 832.94,
+    "timestamp_end": 844.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To turn their not great code into greater code from left to right respectively more compellingly and more generalizable beyond CS 50 and beyond computer science is a eyes ability to answer most of the questions that students might now ask online and we've been doing asynchronous Q&A for years by a various mobile or web applications and the like but today it has been humans myself included responding to all of those questions.",
+    "timestamp_start": 844.94,
+    "timestamp_end": 869.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now the duck has an opportunity to chime in generally within three seconds because we've integrated into an online Q&A tool that students in CS 50 and elsewhere across Harvard have long used so here's an anonymous screenshot of a question from an actual student but written here as John Harvard who asked this summer in the summer version of CS 50 what is flask exactly so fairly definitional question and here is what the duck spit out thanks to that architecture I described before I'll stipulate that this is correct but it is mostly a definition.",
+    "timestamp_start": 869.94,
+    "timestamp_end": 898.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's mostly a definition akin to what Google or Bing could already give you last year but here's a new wants question for instance from another anonymous students in this question here the students including an error message that they're seeing they're asking about that and they're asking a little more broadly and qualitatively is there a more efficient way to write this code a question that really is best answered based on experience here all stipulate that the duck responded with this answer which is actually pretty darn good not only responding in English but with some sample sample.",
+    "timestamp_start": 898.94,
+    "timestamp_end": 927.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That would make sense in this context and at the bottom it's worth noting because none of this technology is perfect just yet it's still indeed very bleeding edge and so we have chosen to do within CS 50 is include disclaimers like this I am an experimental bot.",
+    "timestamp_start": 927.94,
+    "timestamp_end": 942.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Do not assume that my reply is accurate unless you see that it's been endorsed by humans staff.",
+    "timestamp_start": 942.94,
+    "timestamp_end": 948.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Quack and in fact at top right the mechanism we've been using in this tool is usually within minutes a human whether it's a teaching fellow courses assistant or myself will click on a button like this to signal to our human students that yes like the duck is spot on here or we have an opportunity as always to chime in with our own responses.",
+    "timestamp_start": 948.94,
+    "timestamp_end": 965.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Frankly that disclaimer that button will soon I do think go away as the software gets better and better but for now that's how we're modulating exactly what students expectations might be when it comes to correctness or incorrectness.",
+    "timestamp_start": 965.94,
+    "timestamp_end": 977.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's common to in programming to see a lot of error messages certainly when you're learning first hand a lot of these error messages are caned confusing certainly to students versus the people who wrote them soon students will see a box like this whenever one of their terminal window programs errors they'll be assisted to with English.",
+    "timestamp_start": 977.94,
+    "timestamp_end": 994.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like Tf like support when it comes to explaining what it is that went wrong with that command and ultimately what this is really doing for students in our own experience already providing them really with virtual office hours and 24 seven which is actually quite compelling in a university environment where students schedules are already tightly packed be it with academics the curriculars athletics and the like and they might have enough time to dive into a homework assignment maybe eight hours even for something sizeable but if they hit that wall a couple of times.",
+    "timestamp_start": 994.94,
+    "timestamp_end": 1023.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah they can go to office hours or they can ask a question asynchronous in the online but it's really not optimal in the moment support that we can now provide all the more effectively we hope through software as well.",
+    "timestamp_start": 1023.94,
+    "timestamp_end": 1036.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you're curious even if you're not a technophile yourself anyone on the internet can go to cs50.ai and experiment with this user interface this one here actually resembles chat GPT itself but it's specific to cs50 and here again is just a sequence of screenshots that I'll stipulate for today's purposes.",
+    "timestamp_start": 1036.94,
+    "timestamp_end": 1052.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Our pretty darn good in akin to what I myself for a teaching fellow would reply to and answer to a students question in this case about their particular code and ultimately it's really aspirational the goal here ultimately is to really approximate a one to one teacher to student ratio which despite all of the resources we within cs50 we within Harvard and places like Yale have it we certainly have never had enough resources to approximate what might really be ideal which is more of an apprenticeship model",
+    "timestamp_start": 1052.94,
+    "timestamp_end": 1081.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a mentorship whereby it's just you and that teacher working one on one now we still have humans and the goal is not to reduce that human support but to a focus in all the more consciously on the students who would benefit most from some impersonal one on one support versus students who would happily take it at any hour of the day more digitally via online.",
+    "timestamp_start": 1081.94,
+    "timestamp_end": 1100.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in fact we're still in the process of evaluating just how well or not well all of this works but based on our summer experiments alone with about 70 students a few months back one student wrote us at terms end it felt like having a personal tutor I love how AI bots will answer questions without ego and without judgment generally entertaining even the stupidest of questions without treating them like they're stupid it has and as one could expect ironically in in human level of patience and so I thought that's telling as to how even we can do it.",
+    "timestamp_start": 1100.94,
+    "timestamp_end": 1129.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So let's consider now more academically what it is that's enabling those kinds of tools not just within cs50 within computer science but really the world more generally what the whole world's been talking about is generative artificial intelligence AI that can generate images generate text and sort of mimic the behavior of what we think of as human.",
+    "timestamp_start": 1130.94,
+    "timestamp_end": 1152.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what does that really mean well let's start really at the beginning artificial intelligence is actually a technique a technology a subject that's actually been with us for some time but it really was the introduction of this very user friendly interface known as chat chat chat chat chat and some of the more recent academic work over really just the past five or six years that really allowed us to take a massively forward it would seem technologically as to what these things can now do.",
+    "timestamp_start": 1152.94,
+    "timestamp_end": 1178.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is artificial intelligence it's been with us for some time and it's honestly so omnipresent that we sort of take it for granted nowadays a Gmail outlook it gotten really good at spam detection if you haven't checked your spam folder in a while that's testament to just how good they seem to be getting it out of your inbox.",
+    "timestamp_start": 1178.94,
+    "timestamp_end": 1194.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Hand writing recognition has been with us for some time I dare say it too was only getting better and better the more the software is able to adapt to different handwriting styles such as this recommendation histories and the like whether using Netflix or any other service.",
+    "timestamp_start": 1194.94,
+    "timestamp_end": 1208.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You've gotten better and better at recommending things you might like based on things you have liked and maybe based on things other people who like the same thing as you might have liked and suffice it to say there's no one at Netflix akin to the old like VHS stores of yesterday who are recommending to you specifically what movie you might like and there's no code no algorithm that says if they like X then recommend why else recommend Z because there's just too many movies too many people too many different tastes in the world.",
+    "timestamp_start": 1208.9,
+    "timestamp_end": 1235.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So AI is increasingly sort of looking for patterns that might not even be obvious to us humans and dynamically figuring out what might be good for me for you or you or anyone else.",
+    "timestamp_start": 1235.9,
+    "timestamp_end": 1245.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Siri Google Assistant Alexa any of these voice recognition tools that are answering questions that too suffice it to say is all powered by AI.",
+    "timestamp_start": 1245.9,
+    "timestamp_end": 1254.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But let's start with something a little simpler than any of those applications and this is one of the first arcade games from yesterday known as Pong and it's sort of like table tennis and person on the left can move their paddle up and down.",
+    "timestamp_start": 1254.9,
+    "timestamp_end": 1264.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Personal on the right can do the same and the goal is to get the ball past the other person or conversely make sure it hits your paddle and bounces back.",
+    "timestamp_start": 1264.9,
+    "timestamp_end": 1273.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well, somewhat simpler than this and so far as it can be one player is another Atari game from yesterday you're known as breakout whereby you're essentially just trying to bang the ball against the bricks to get more and more points and get rid of all of those bricks.",
+    "timestamp_start": 1273.9,
+    "timestamp_end": 1285.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But all of us in this room probably have a human instinct for how to win this game or at least how to play this game for instance if the ball pictured here back in the 80s as a single red dot just left the paddle pictured here is a red line.",
+    "timestamp_start": 1285.9,
+    "timestamp_end": 1300.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where is the ball presumably going to go next and in turn which direction should I slide my paddle to the left or to the right.",
+    "timestamp_start": 1300.9,
+    "timestamp_end": 1308.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So presumably to the left and we all have an eye for what seemed to be the digital physics of that and indeed that would then be an algorithm sort of step by step instructions for solving some problem.",
+    "timestamp_start": 1309.9,
+    "timestamp_end": 1319.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So how can we now translate that human intuition to what we describe more as artificial intelligence not nearly as sophisticated as those other applications but will indeed start with some basics you might know from economics or strategic thinking or computer science this idea of a decision tree that allows you to decide should I go this way or this way when it comes to making a decision.",
+    "timestamp_start": 1319.9,
+    "timestamp_end": 1337.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So let's consider how we could draw a picture to represent even something simplistic like breakout well if the ball is left of the paddle is a question or a Boolean expression I might ask myself in code if yes then I should move my paddle left is most everyone just said else if the ball is not left of paddle what do I want to do well I want to ask a question I don't want to just instinctively go right I want to check is the ball to the right of the paddle and if yes well then yes go ahead and move the paddle right but there is a third situation.",
+    "timestamp_start": 1338.9,
+    "timestamp_end": 1367.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Right like don't move it's coming right at you so that would be the third scenario here no it's not to the right or to the left so just don't move the paddle you got lucky and it's coming for instance straight down so breakout is fairly straight forward when it comes to an algorithm and we can actually translate this as any CS50 student now could to code or pseudo code sort of English light code that's independent of Java CC++ and all of the programming languages of today so in English pseudo code while a game is in the middle of the game so it's not going to be a problem.",
+    "timestamp_start": 1367.9,
+    "timestamp_end": 1396.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "While a game is ongoing if the ball is left of paddle I should move paddle left else if ball is right of the paddle should say paddle that's a bug not intended today move paddle right else don't move the paddle so that to represent a translation of this intuition to code that's very deterministic you can sort of anticipate all possible scenarios captured in code and frankly this should be the most boring game of breakout because the paddle should just perfectly play this game.",
+    "timestamp_start": 1396.9,
+    "timestamp_end": 1425.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So assuming there's no variables or randomness when it comes to speed or angles or the like which real world game certainly try to introduce but let's consider another game from yesterday that you might play with your kids today or you did yourself growing up here's Tick Tick Toe and for those unfamiliar the goal is to get three O's in a row or three X's in a row vertically horizontally or diagonally so suppose it's now X's turn if you've played Tick Tick Toe most of you probably just have an immediate instinct as to where X should probably go so that it doesn't lose the game.",
+    "timestamp_start": 1426.9,
+    "timestamp_end": 1455.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can't lose instantaneously but let's consider in the more general case how do you solve Tick Tick Toe frankly if you're in the habit of losing Tick Tick Toe but you're not trying to lose Tick Toe you're actually playing it wrong like you should minimally be able to always force a tie in Tick Tick Toe and better yet you should be able to beat the other person so hopefully everyone now will soon walk away with this strategy so how can we borrow inspiration from those same decision trees and do something similar here.",
+    "timestamp_start": 1456.9,
+    "timestamp_end": 1483.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you play a player ask yourself can I get three in a row on this turn well if yes then you should do that and play the X in that position play in the square to get three in a row straight forward.",
+    "timestamp_start": 1483.9,
+    "timestamp_end": 1494.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you can't get three in a row in this turn you should ask another question can my opponent get three in a row in their next turn because then you better preempt that by moving into that position play in the square to block play opponent three in a row.",
+    "timestamp_start": 1494.9,
+    "timestamp_end": 1510.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What if though that's not the case right what if there aren't even that many X's his nose on the board if you're in the habit of just kind of playing randomly like you're made not might not be playing optimally as a good AI could so if no it's kind of a question mark in fact there's probably more to this tree because we can think through what if I go there wait a minute what if I go there or there or there you can start to think a few steps ahead as a computer could do much better even than us humans so suppose for instance os turn now those of you are very good at Tick Tick Toe might have an instinct for where to go.",
+    "timestamp_start": 1510.9,
+    "timestamp_end": 1539.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But this is even harder problem it would seem I could go in eight possible places if I'm oh but let's try to break that down more algorithmically as an AI would and let's recognize to that with a with games in particular one of the reasons that AI was so early adopted in these games playing the CPU is that games really lend themselves to defining them if taking the fun out of it mathematically defining them in terms of inputs and outputs maybe paddle moving left or right ball moving up or down the game.",
+    "timestamp_start": 1539.9,
+    "timestamp_end": 1568.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can really quantize it at a very boring low level but that lends itself then to solving it optimally and in fact with most games the goal is to maximize or maybe minimize some math function right most games if you have scores the goal is to maximize your score and indeed get a high score so games lend themselves to a nice translation to mathematics and in turn here AI solutions so one of the first algorithms one might learn in the class on algorithms and on artificial intelligence.",
+    "timestamp_start": 1568.9,
+    "timestamp_end": 1597.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So something called minimax which alludes to this idea of trying to minimize and or maximize something as your function your goal and it actually derives inspiration from the same decision trees that we've been talking about but first the definition here are three representative Tick Tick Toe boards here is one in which oh has clearly one per the green here is one in which x is clearly one per the green and this one in the middle just represents a draw now there's a bunch of other ways that Tick Tick Toe could end but here's just three representative ones",
+    "timestamp_start": 1598.9,
+    "timestamp_end": 1627.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but let's make Tick Tick Toe even more boring that it might have always struck you as let's propose that this kind of configuration should have a score of negative one if oh wins it's a negative one if x wins it's a positive one and if no one wins we'll call it a zero we need some way of talking about and reasoning about which of these outcomes is better than the other and what's simpler than zero one and negative one.",
+    "timestamp_start": 1627.9,
+    "timestamp_end": 1650.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the goal though of x it would seem is to maximize its score but the goal of oh is to minimize its score so x is really trying to get positive one always really trying to get negative one and no one really wants zero but that's better than losing to the other person so we have now a way to define what it means to win or lose.",
+    "timestamp_start": 1650.9,
+    "timestamp_end": 1668.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well now we can sort of employ a strategy here. I'm here just as a quick check what would the score be of this board just so everyone's on the same page or so one because x has one and we just stipulated arbitrarily this means that this board has a value of one now let's put it into one more interesting context here a game has been played for a few moves already there's two spots left no one has one just yet and suppose that it's oh turn now now everyone probably has an instinct already has to where to go but let's try to break this down and see if it's going to be a good one.",
+    "timestamp_start": 1668.9,
+    "timestamp_end": 1697.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what is the value of this board we don't know yet because no one has one so let's consider what could happen next so we can draw this actually comes as tree as before here for instance is what might happen if oh goes into the top left hand corner and here's what might happen if oh goes into the bottom middle spot instead we should ask ourselves what's the value of this board what's the value of this board because if oh's purpose in life is to minimize its score it's going to go left or right based on whichever you are going to do.",
+    "timestamp_start": 1698.9,
+    "timestamp_end": 1727.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's the smallest number negative one ideally but we're still not sure yet because we don't have definitions for boards with holes in them like this so what could happen next here well it's obviously going to be x's turn next so if x moves unfortunately x has one in this configuration we can now conclude that the value of this board is what number so one and because there's only one way to reach this board by transitivity you might as well think of the value of this previous board is also one.",
+    "timestamp_start": 1728.9,
+    "timestamp_end": 1757.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because no matter what it's going to lead to that same outcome and so the value of this board is actually still to be determined because we don't know if oh is going to want to go with the one and probably not because that means x wins but let's see what the value of this board is will suppose that indeed x goes in that top left corner here what's the value of this board here zero because no one has one there's no x's or o's three in a row so the value of this board is zero there's only one way logically to get there so we might as well think of the value of this board as well.",
+    "timestamp_start": 1758.9,
+    "timestamp_end": 1786.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we might as well think of the value of this board is also zero and so now what's the value of this board well if we started the story by thinking about oh's turn oh's purpose is the min in minimax then which move is oh going to make go to the left or go to the right.",
+    "timestamp_start": 1786.9,
+    "timestamp_end": 1803.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Oh's probably going to go to the right and make the move that leads to whoops that make leads to this board because even though oh can't win in this configuration at least x didn't win so it's minimized its score relatively even though it's not a clean win.",
+    "timestamp_start": 1804.9,
+    "timestamp_end": 1818.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now this is all fine and good for a configuration of the board that's like almost done there's only two moves left the games about to end but if you kind of expand in your mind's eye how did we get to this branch of the decision tree if we rewind one step where there's three possible moves.",
+    "timestamp_start": 1818.9,
+    "timestamp_end": 1832.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Frankly the decision tree is a lot bigger if we run further in your mind's eye and have four moves left or five moves or all nine moves left imagine just zooming out out and out this is becoming a massive massive tree of decisions now even so here is that same sub tree the same decision tree we just looked at this is the exact same thing but I shrunk the font so that it appears here on the screen here but over here we have what could happen if instead it's actually x's turn because we're once move prior.",
+    "timestamp_start": 1833.9,
+    "timestamp_end": 1862.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There's a bunch of different moves x could now make two so what is the implication of this well most humans are not thinking through tic-tac toe to this extreme and frankly most of us probably just don't have the mental capacity to think about like going left and then right and then left and then right right this is not how people play tic-tac toe like we're not using that much memory so to speak but a computer can handle that and computers can play tic-tac toe optimally so if you're beating a computer a tic-tac toe like it's not implemented very well it's not following this very",
+    "timestamp_start": 1862.9,
+    "timestamp_end": 1892.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "logical deterministic mini max algorithm but this is where now a i's no longer as simple as just doing what these decision trees say in the context of tic-tac toe here's how we might translate this to code for instance if player is x for each possible move calculate a score for the board as we were doing verbally and then choose the move with the highest score because x is goal is to maximize its score if the player is oh though for each possible move calculate a score for the board and then choose the move with the",
+    "timestamp_start": 1892.9,
+    "timestamp_end": 1922.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "lowest score so that's a distillation of that verbal walkthrough into what cs 50 students know now as code or at least pseudo code but the problem with games not not so much tic-tac toe but other more sophisticated games as this does anyone want to ballpark how many possible ways there are to play tic-tac toe paper pencil two human children how many different way how long could you keep them occupied playing tic-tac toe in different ways if you actually think through how big does this",
+    "timestamp_start": 1922.9,
+    "timestamp_end": 1952.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tree get how many leaves are there on this decision tree like how many different directions well if you're thinking 255,168 you are correct and now most of us in our lifetime it probably not play tic-tac toe that many times so think about how many games you've been missing out on there are different decisions you could have been making all these years now that's a big number but honestly like that's not a big number for a computer that's a few megabytes of memory maybe to sort of keep all of that in mind and sort of implement that",
+    "timestamp_start": 1952.8,
+    "timestamp_end": 1982.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kind of code in c or Java or c++ or something else but other games are much more complicated and the games that you and I my play as we get older include maybe chess and if you think about chess with only the first four moves back and forth four times so only four moves that's not even a very long game anyone want to ballpark how many different ways there are to begin a game of chess with four moves back and forth",
+    "timestamp_start": 1982.7,
+    "timestamp_end": 2010.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this is evidence as to why chess is apparently so hard 288 million ways which is why when you are really good at chess you are really good at chess because apparently you either have an intuition for or a mind for thinking it would seem so many more steps ahead than your opponent and don't get a started on something like go 266 quintillion ways to play goes first four moves",
+    "timestamp_start": 2011.7,
+    "timestamp_end": 2035.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so at this point we just can't pull out our Mac RPC certainly not our phone to solve optimally games like chess and go because we don't have big enough CPUs we don't have enough memory we don't have enough years in our lifetimes for the computers to crunch all of those numbers and thus was born a different form of AI that's more inspired by finding patterns more dynamically learning from data as opposed to being told by humans here is the code via which to solve this problem",
+    "timestamp_start": 2035.7,
+    "timestamp_end": 2064.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so machine learning is a subset of artificial intelligence that tries instead to get machines to learn what they should do without being so coached step by step by step by humans here reinforcement learning for instance is one such example thereof where in reinforcement learning you sort of wait for the computer or maybe a robot to maybe just get better and better and better at things and as it does you reward it with a reward function give it plus one every time it does something well and maybe minus one you punish it any time it does something poorly",
+    "timestamp_start": 2064.7,
+    "timestamp_end": 2093.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and if you simply in program this AI or this robot to maximize its score not never mind minimizing maximize its score ideally it should repeat behaviors that got it plus one it should decrease the frequency with which it does bad behaviors that got it negative one and you can reinforce this kind of learning",
+    "timestamp_start": 2093.7,
+    "timestamp_end": 2111.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in fact I have here one demonstration could a student come on up who does not think they are particularly coordinated if okay wow you're being nominated by your friends come on up come on up",
+    "timestamp_start": 2111.7,
+    "timestamp_end": 2125.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "their hands went up instantly for you",
+    "timestamp_start": 2129.7,
+    "timestamp_end": 2131.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what is your name?",
+    "timestamp_start": 2134.7,
+    "timestamp_end": 2135.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "my name is Amaka Amaka do you want to introduce yourself to the world?",
+    "timestamp_start": 2135.7,
+    "timestamp_end": 2138.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Hi my name is Amaka I am the first year in Hallworthy planning to concentrate in CS",
+    "timestamp_start": 2138.7,
+    "timestamp_end": 2143.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "wonderful nice to see you come on over here",
+    "timestamp_start": 2143.7,
+    "timestamp_end": 2146.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so yes oh no it's sort of like a game show here we have a pan here with what appears to be something pancake like and we'd like to teach you how to flip a pancake",
+    "timestamp_start": 2149.7,
+    "timestamp_end": 2160.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so that when you gesture upward the pancake should flip around so you cook the other side so we're going to reward you verbally with plus one or minus one",
+    "timestamp_start": 2160.7,
+    "timestamp_end": 2168.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "minus one minus one",
+    "timestamp_start": 2171.7,
+    "timestamp_end": 2173.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "okay plus one plus one so do more of that minus one minus one minus one minus one do less of that",
+    "timestamp_start": 2174.7,
+    "timestamp_end": 2184.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "all right a big round of applause thank you we've been in the habit of handing out Super Mario brothers Oreos this year so thank you for participating",
+    "timestamp_start": 2184.7,
+    "timestamp_end": 2198.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so this is actually a good example of an opportunity for reinforcement learning and wonderfully a researcher has posted a video that we thought we'd share it's about a minute and a half long",
+    "timestamp_start": 2202.7,
+    "timestamp_end": 2211.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "where you can watch a robot now do exactly what our wonderful human volunteer here just attempted as well so let me go ahead and play this on the screen and give you a sense of what the human and the robot are doing together",
+    "timestamp_start": 2211.7,
+    "timestamp_end": 2224.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so their pancake looks a little similar there the human here is going to first sort of train the robot what to do by showing it some gestures but there's no one right way to do this",
+    "timestamp_start": 2224.7,
+    "timestamp_end": 2235.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but the human seems to know how to do it pretty well in this case and so it's trying to give the machine examples of how to flip a pancake successfully",
+    "timestamp_start": 2235.7,
+    "timestamp_end": 2244.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but now this is the very first trial okay look for them that you're in good company after three trials okay",
+    "timestamp_start": 2244.7,
+    "timestamp_end": 2254.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "okay now ten truck there's the human picking up the pancake after eleven trials",
+    "timestamp_start": 2255.7,
+    "timestamp_end": 2267.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and meanwhile there's presumably a human coding this in the sense that someone is saying good job or bad job plus one or minus one",
+    "timestamp_start": 2271.7,
+    "timestamp_end": 2278.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "twenty trials here now we'll see how the computer knows what it's even doing there's just a mapping to some kind of like xyz coordinate system so the robot can quantize what it's doing nice to do more of one thing less of another",
+    "timestamp_start": 2279.7,
+    "timestamp_end": 2296.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and you're just seeing a visualization in the background of those digitized movements and so now after fifty some odd trials the robot who has got it spot on",
+    "timestamp_start": 2296.7,
+    "timestamp_end": 2307.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and it should be able to repeat this again and again and again in order to keep flipping this pancake so our human volunteer wonderfully took you even fewer trials",
+    "timestamp_start": 2307.7,
+    "timestamp_end": 2315.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but this is an example then to be clear of what we'd call reinforcement learning whereby you're reinforcing a behavior you want or negatively reinforcing that is punishing a behavior that you don't",
+    "timestamp_start": 2315.7,
+    "timestamp_end": 2325.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "here's another example that brings us back into the realm of games a little bit but in a very abstract way if we were playing a game like the floor is lava",
+    "timestamp_start": 2325.7,
+    "timestamp_end": 2333.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "where you're only supposed to step certain places so that you don't fall through in the lava pit or something like that and lose a point or lose a life each of these squares might represent a position",
+    "timestamp_start": 2333.7,
+    "timestamp_end": 2342.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this yellow dot might represent the human player that can go up down left or right within this world I'm revealing to the whole audience where the lava pits are but the goal for this yellow dot is to get to green",
+    "timestamp_start": 2342.7,
+    "timestamp_end": 2353.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but the yellow dot as in any good game does not have this bird's eye view and knows from the get go exactly where to go it's going to have to try some trial and error",
+    "timestamp_start": 2353.7,
+    "timestamp_end": 2361.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but if we the programmers may be reinforced good behavior or punish bad behavior we can sort of teach this yellow dot without giving it step by step up down left right instructions what behaviors to repeat and what behaviors not to repeat so for",
+    "timestamp_start": 2361.7,
+    "timestamp_end": 2376.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "instance suppose the robot moves right that was bad you fell in the lava already so we'll use a bit of computer memory to sort of draw a thicker red line there don't do that again so negative one so to speak maybe the yellow dot moves up next time we can reward that behavior",
+    "timestamp_start": 2376.7,
+    "timestamp_end": 2390.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by not drawing any walls and allowing it to go again it's making pretty good progress but oh darn it it took a right turn and now fell into the lava but let's use a bit more of the computer's memory and keep track of that okay do not do that thing anymore maybe the next time the human dot goes this way oh we want to punish that behavior so",
+    "timestamp_start": 2390.7,
+    "timestamp_end": 2408.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we'll remember as much with that red line but now we're starting to make progress until now we hit this one and eventually even though the yellow dot much like our human",
+    "timestamp_start": 2408.7,
+    "timestamp_end": 2417.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like our human, much like our pancake flipping robot,",
+    "timestamp_start": 2417.7,
+    "timestamp_end": 2420.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "had to try again and again and again.",
+    "timestamp_start": 2420.58,
+    "timestamp_end": 2422.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "After enough trials, it's going to start",
+    "timestamp_start": 2422.86,
+    "timestamp_end": 2424.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to realize what behaviors it should repeat,",
+    "timestamp_start": 2424.98,
+    "timestamp_end": 2427.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and which ones it shouldn't.",
+    "timestamp_start": 2427.34,
+    "timestamp_end": 2428.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so in this case, maybe it finally",
+    "timestamp_start": 2428.78,
+    "timestamp_end": 2430.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "makes its way up to the green dot.",
+    "timestamp_start": 2430.7,
+    "timestamp_end": 2432.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And just to recap, once it finds that path,",
+    "timestamp_start": 2432.86,
+    "timestamp_end": 2435.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now we can sort of remember it forever",
+    "timestamp_start": 2435.14,
+    "timestamp_end": 2436.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as with these green thicker lines.",
+    "timestamp_start": 2436.78,
+    "timestamp_end": 2438.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Anytime you want to leave this map,",
+    "timestamp_start": 2438.74,
+    "timestamp_end": 2440.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "anytime you get really good at the Nintendo game,",
+    "timestamp_start": 2440.54,
+    "timestamp_end": 2442.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you'll follow that same path again and again,",
+    "timestamp_start": 2442.62,
+    "timestamp_end": 2444.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so you don't fall into the lava.",
+    "timestamp_start": 2444.7,
+    "timestamp_end": 2446.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But an astute human observer might realize that,",
+    "timestamp_start": 2446.66,
+    "timestamp_end": 2449.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yes, this is correct.",
+    "timestamp_start": 2449.34,
+    "timestamp_end": 2451.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's getting out of this so-called maze.",
+    "timestamp_start": 2451.22,
+    "timestamp_end": 2453.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But what is suboptimal or bad about this solution?",
+    "timestamp_start": 2453.78,
+    "timestamp_end": 2456.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sure.",
+    "timestamp_start": 2456.5,
+    "timestamp_end": 2457.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I was taking a really long time,",
+    "timestamp_start": 2457.0,
+    "timestamp_end": 2458.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "something like the fish should play together.",
+    "timestamp_start": 2458.54,
+    "timestamp_end": 2460.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Exactly.",
+    "timestamp_start": 2460.1,
+    "timestamp_end": 2460.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's taking a really long time, an inefficient way",
+    "timestamp_start": 2460.6,
+    "timestamp_end": 2462.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to get there, because I dare say,",
+    "timestamp_start": 2462.74,
+    "timestamp_end": 2464.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if we just try to different path occasionally,",
+    "timestamp_start": 2464.36,
+    "timestamp_end": 2467.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "maybe we could get lucky and get to the exit quicker.",
+    "timestamp_start": 2467.46,
+    "timestamp_end": 2471.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And maybe that means we get a higher score,",
+    "timestamp_start": 2471.7,
+    "timestamp_end": 2473.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we get rewarded even more.",
+    "timestamp_start": 2473.46,
+    "timestamp_end": 2475.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So within a lot of artificial intelligence algorithms,",
+    "timestamp_start": 2475.14,
+    "timestamp_end": 2478.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there's this idea of exploring versus exploiting.",
+    "timestamp_start": 2478.22,
+    "timestamp_end": 2481.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Whereby, you should occasionally,",
+    "timestamp_start": 2481.3,
+    "timestamp_end": 2483.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yes, exploit the knowledge you already have.",
+    "timestamp_start": 2483.8,
+    "timestamp_end": 2486.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In fact, frequently exploit that knowledge.",
+    "timestamp_start": 2486.1,
+    "timestamp_end": 2488.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But occasionally, you know what you should probably do,",
+    "timestamp_start": 2488.22,
+    "timestamp_end": 2490.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is explore just a little bit.",
+    "timestamp_start": 2490.18,
+    "timestamp_end": 2491.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Take a left instead of a right",
+    "timestamp_start": 2491.62,
+    "timestamp_end": 2492.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and see if it leads you to the solution even more quickly",
+    "timestamp_start": 2492.94,
+    "timestamp_end": 2495.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and you might find a better and better solution.",
+    "timestamp_start": 2495.5,
+    "timestamp_end": 2497.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here, mathematically, is how we might think of this.",
+    "timestamp_start": 2497.74,
+    "timestamp_end": 2500.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "10% of the time, we might say that epsilon,",
+    "timestamp_start": 2500.26,
+    "timestamp_end": 2503.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "just some variable, sort of a sprinkling of salt",
+    "timestamp_start": 2503.06,
+    "timestamp_end": 2505.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "into the algorithm here, epsilon will be like 10% of the time.",
+    "timestamp_start": 2505.98,
+    "timestamp_end": 2509.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if my robot or my player picks a random number that's",
+    "timestamp_start": 2509.42,
+    "timestamp_end": 2513.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "less than 10%, that's going to make a random move.",
+    "timestamp_start": 2513.06,
+    "timestamp_end": 2516.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Go left instead of right, even if you really typically",
+    "timestamp_start": 2516.06,
+    "timestamp_end": 2518.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "go right, otherwise make the move with the highest value",
+    "timestamp_start": 2518.62,
+    "timestamp_end": 2521.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as we've learned over time.",
+    "timestamp_start": 2521.66,
+    "timestamp_end": 2523.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And what the robots might learn then",
+    "timestamp_start": 2523.18,
+    "timestamp_end": 2525.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is that we could actually go via this path, which gets us",
+    "timestamp_start": 2525.5,
+    "timestamp_end": 2529.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to the output faster.",
+    "timestamp_start": 2529.06,
+    "timestamp_end": 2530.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We get a higher score.",
+    "timestamp_start": 2530.3,
+    "timestamp_end": 2531.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We do it in less time.",
+    "timestamp_start": 2531.22,
+    "timestamp_end": 2532.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's a win, win.",
+    "timestamp_start": 2532.42,
+    "timestamp_end": 2533.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Frankly, this really resonates with me",
+    "timestamp_start": 2533.62,
+    "timestamp_end": 2535.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because I've been in the habit as maybe some of you are.",
+    "timestamp_start": 2535.1,
+    "timestamp_end": 2537.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When you go to a restaurant, maybe that you really like,",
+    "timestamp_start": 2537.98,
+    "timestamp_end": 2539.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you find a dish you really like, I will never again",
+    "timestamp_start": 2539.98,
+    "timestamp_end": 2542.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "know what other dishes that restaurant offers",
+    "timestamp_start": 2542.42,
+    "timestamp_end": 2544.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because I'm sort of locally, optimally happy with the dish.",
+    "timestamp_start": 2544.62,
+    "timestamp_end": 2547.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I've chosen.",
+    "timestamp_start": 2547.86,
+    "timestamp_end": 2548.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I will never know if there's an even better dish",
+    "timestamp_start": 2548.46,
+    "timestamp_end": 2550.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at that restaurant, unless again, I sort of sprinkle",
+    "timestamp_start": 2550.86,
+    "timestamp_end": 2553.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a little bit of epsilon, a little bit of randomness",
+    "timestamp_start": 2553.42,
+    "timestamp_end": 2555.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "into my game playing, my dining out.",
+    "timestamp_start": 2555.74,
+    "timestamp_end": 2558.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The catch, of course, though, is that I might be punished.",
+    "timestamp_start": 2558.86,
+    "timestamp_end": 2561.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I might therefore sort of be less happy if I pick something",
+    "timestamp_start": 2561.66,
+    "timestamp_end": 2564.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and I don't like it.",
+    "timestamp_start": 2564.5,
+    "timestamp_end": 2565.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there's this tension between exploring and exploiting,",
+    "timestamp_start": 2565.38,
+    "timestamp_end": 2568.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but in general, in computer science,",
+    "timestamp_start": 2568.22,
+    "timestamp_end": 2569.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and especially in AI, adding a little bit of randomness,",
+    "timestamp_start": 2569.54,
+    "timestamp_end": 2572.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "especially over time, can in fact yield better",
+    "timestamp_start": 2572.14,
+    "timestamp_end": 2574.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and better outcomes.",
+    "timestamp_start": 2574.98,
+    "timestamp_end": 2576.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But now there's this notion all the more of deep learning,",
+    "timestamp_start": 2576.38,
+    "timestamp_end": 2579.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "whereby you're trying to infer to detect patterns,",
+    "timestamp_start": 2579.38,
+    "timestamp_end": 2582.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "figure out how to solve problems, even if the AI has never",
+    "timestamp_start": 2582.9,
+    "timestamp_end": 2586.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "seen those problems before.",
+    "timestamp_start": 2586.06,
+    "timestamp_end": 2587.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And even if there's no human there to reinforce,",
+    "timestamp_start": 2587.58,
+    "timestamp_end": 2590.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "positive or lear negatively, behavior.",
+    "timestamp_start": 2590.14,
+    "timestamp_end": 2592.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe it's just too complex of a problem for human to stand",
+    "timestamp_start": 2592.66,
+    "timestamp_end": 2595.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "alongside the robot and say, good or bad job.",
+    "timestamp_start": 2595.7,
+    "timestamp_end": 2598.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So with deep learning, they're actually very much related",
+    "timestamp_start": 2598.7,
+    "timestamp_end": 2600.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to what you might know as neural networks,",
+    "timestamp_start": 2600.78,
+    "timestamp_end": 2602.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "inspired by human physiology, whereby inside of our brains",
+    "timestamp_start": 2602.62,
+    "timestamp_end": 2605.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and elsewhere in our body, there's lots of these neurons here",
+    "timestamp_start": 2605.7,
+    "timestamp_end": 2607.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that can send electrical signals to sort of make movements",
+    "timestamp_start": 2607.9,
+    "timestamp_end": 2610.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "happen from brain to extremities.",
+    "timestamp_start": 2610.42,
+    "timestamp_end": 2612.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You might have two of these via which a signal can be transmitted",
+    "timestamp_start": 2612.3,
+    "timestamp_end": 2616.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "over larger distance.",
+    "timestamp_start": 2616.58,
+    "timestamp_end": 2617.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so computer scientists for some time",
+    "timestamp_start": 2617.7,
+    "timestamp_end": 2620.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have drawn inspiration from these neurons",
+    "timestamp_start": 2620.38,
+    "timestamp_end": 2623.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to create in software what we call neural networks, whereby",
+    "timestamp_start": 2623.34,
+    "timestamp_end": 2627.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there's inputs to these networks, and there's outputs",
+    "timestamp_start": 2627.42,
+    "timestamp_end": 2630.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "from these networks that represent inputs to problems",
+    "timestamp_start": 2630.1,
+    "timestamp_end": 2633.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and solutions there too.",
+    "timestamp_start": 2633.18,
+    "timestamp_end": 2634.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So let me abstract away the more biological diagrams",
+    "timestamp_start": 2634.46,
+    "timestamp_end": 2637.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with just circles that represent nodes or neurons in this case.",
+    "timestamp_start": 2637.02,
+    "timestamp_end": 2641.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This would be, we'd call, in CIS, 50, the input.",
+    "timestamp_start": 2641.02,
+    "timestamp_end": 2643.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is what we would call the output.",
+    "timestamp_start": 2643.58,
+    "timestamp_end": 2645.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But this is very simplistic, very simple neural network.",
+    "timestamp_start": 2645.62,
+    "timestamp_end": 2648.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This might be more common, whereby the network, the AI,",
+    "timestamp_start": 2648.66,
+    "timestamp_end": 2651.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "takes two inputs to a problem and tries",
+    "timestamp_start": 2651.78,
+    "timestamp_end": 2654.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to give you one solution.",
+    "timestamp_start": 2654.14,
+    "timestamp_end": 2655.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well, let's make this more real.",
+    "timestamp_start": 2655.98,
+    "timestamp_end": 2657.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For instance, suppose that, just for the sake of discussion,",
+    "timestamp_start": 2657.86,
+    "timestamp_end": 2662.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "here is like a grid that you might see in math class,",
+    "timestamp_start": 2662.66,
+    "timestamp_end": 2665.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with a y-axis and an x-axis vertically",
+    "timestamp_start": 2665.1,
+    "timestamp_end": 2667.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and horizontally respectively.",
+    "timestamp_start": 2667.22,
+    "timestamp_end": 2668.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Suppose there's a couple of blue and red dots in that world,",
+    "timestamp_start": 2668.74,
+    "timestamp_end": 2672.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and suppose that our goal computationally",
+    "timestamp_start": 2672.1,
+    "timestamp_end": 2675.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is to predict whether a dot is going to be blue or red",
+    "timestamp_start": 2675.06,
+    "timestamp_end": 2679.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "based on its position within that coordinate system.",
+    "timestamp_start": 2679.7,
+    "timestamp_end": 2682.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And maybe this represents some real world notion,",
+    "timestamp_start": 2682.98,
+    "timestamp_end": 2685.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "maybe it's something like rain that we're trying to predict,",
+    "timestamp_start": 2685.62,
+    "timestamp_end": 2687.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but we're doing it more simply with colors right now.",
+    "timestamp_start": 2687.5,
+    "timestamp_end": 2690.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here's my y-axis, here's my x-axis,",
+    "timestamp_start": 2690.02,
+    "timestamp_end": 2692.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and effectively my neural network, you",
+    "timestamp_start": 2692.3,
+    "timestamp_end": 2694.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can think of conceptually as this.",
+    "timestamp_start": 2694.1,
+    "timestamp_end": 2695.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's some kind of implementation of software,",
+    "timestamp_start": 2695.86,
+    "timestamp_end": 2698.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "where there's two inputs to the problem.",
+    "timestamp_start": 2698.5,
+    "timestamp_end": 2700.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Give me an x, give me a y value.",
+    "timestamp_start": 2700.06,
+    "timestamp_end": 2701.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this neural network will output red or blue",
+    "timestamp_start": 2701.98,
+    "timestamp_end": 2705.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as its prediction.",
+    "timestamp_start": 2705.3,
+    "timestamp_end": 2706.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well, how does it know whether to predict red or blue,",
+    "timestamp_start": 2706.62,
+    "timestamp_end": 2708.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "especially if no human has painstakingly written code",
+    "timestamp_start": 2708.78,
+    "timestamp_end": 2711.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to say when you see a dot here conclude that it's red?",
+    "timestamp_start": 2711.98,
+    "timestamp_end": 2715.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When you see a dot here conclude that it's blue,",
+    "timestamp_start": 2715.38,
+    "timestamp_end": 2717.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how can an AI just learn dynamically to solve problems?",
+    "timestamp_start": 2717.58,
+    "timestamp_end": 2721.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well, what might be a reasonable heuristic here?",
+    "timestamp_start": 2721.26,
+    "timestamp_end": 2723.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Honestly, this is probably a first approximation",
+    "timestamp_start": 2723.54,
+    "timestamp_end": 2725.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that's pretty good.",
+    "timestamp_start": 2725.94,
+    "timestamp_end": 2726.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If anything's to the left of that line,",
+    "timestamp_start": 2726.86,
+    "timestamp_end": 2728.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "let the neural network conclude that it's going to be blue.",
+    "timestamp_start": 2728.54,
+    "timestamp_end": 2730.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if it's to the right of the line,",
+    "timestamp_start": 2730.66,
+    "timestamp_end": 2731.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "let it conclude that it's going to be red.",
+    "timestamp_start": 2731.74,
+    "timestamp_end": 2733.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Until such time, is there's more training data,",
+    "timestamp_start": 2733.5,
+    "timestamp_end": 2736.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "more real world data that gets us to rethink our assumptions.",
+    "timestamp_start": 2736.7,
+    "timestamp_end": 2740.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for instance, if there's a third dot there,",
+    "timestamp_start": 2740.42,
+    "timestamp_end": 2742.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "oh, clearly a straight line is not sufficient.",
+    "timestamp_start": 2742.18,
+    "timestamp_end": 2744.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So maybe it's more of a diagonal line",
+    "timestamp_start": 2744.94,
+    "timestamp_end": 2747.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that splits the blue from the red world here.",
+    "timestamp_start": 2747.1,
+    "timestamp_end": 2749.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Meanwhile, here's even more dots.",
+    "timestamp_start": 2749.66,
+    "timestamp_end": 2751.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it's actually getting harder now.",
+    "timestamp_start": 2751.82,
+    "timestamp_end": 2753.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like this line is still pretty good.",
+    "timestamp_start": 2753.58,
+    "timestamp_end": 2755.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Most of the blue is up here.",
+    "timestamp_start": 2755.22,
+    "timestamp_end": 2756.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Most of the red is down here.",
+    "timestamp_start": 2756.7,
+    "timestamp_end": 2758.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this is why, if we fast forward to today,",
+    "timestamp_start": 2758.14,
+    "timestamp_end": 2760.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "AI is often very good, but not perfect at solving problems.",
+    "timestamp_start": 2760.46,
+    "timestamp_end": 2764.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But what is it we're looking at here?",
+    "timestamp_start": 2764.74,
+    "timestamp_end": 2766.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And what is this neural network really trying to figure out?",
+    "timestamp_start": 2766.1,
+    "timestamp_end": 2769.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well, again, at the risk of taking some fun out",
+    "timestamp_start": 2769.18,
+    "timestamp_end": 2771.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of red and blue dots, you can think of this neural network",
+    "timestamp_start": 2771.3,
+    "timestamp_end": 2775.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as, indeed, having these neurons, which represent inputs",
+    "timestamp_start": 2775.34,
+    "timestamp_end": 2777.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "here and outputs here.",
+    "timestamp_start": 2777.82,
+    "timestamp_end": 2779.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then what's happening inside of the computer's memory",
+    "timestamp_start": 2779.82,
+    "timestamp_end": 2782.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is that it's trying to figure out what the weight of this arrow",
+    "timestamp_start": 2782.3,
+    "timestamp_end": 2785.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or edge should be, what the weight of this arrow or edge should be.",
+    "timestamp_start": 2785.9,
+    "timestamp_end": 2789.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And maybe there's another variable there,",
+    "timestamp_start": 2789.3,
+    "timestamp_end": 2790.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like plus or minus c, that just tweaks the prediction.",
+    "timestamp_start": 2790.86,
+    "timestamp_end": 2793.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So x and y are literally going to be numbers in this scenario.",
+    "timestamp_start": 2793.9,
+    "timestamp_end": 2797.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the output of this neural network, ideally,",
+    "timestamp_start": 2797.62,
+    "timestamp_end": 2799.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is just true or false.",
+    "timestamp_start": 2799.46,
+    "timestamp_end": 2800.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is it red or blue?",
+    "timestamp_start": 2800.94,
+    "timestamp_end": 2802.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's sort of a binary state, as we discuss a lot in CS50.",
+    "timestamp_start": 2802.38,
+    "timestamp_end": 2805.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here, too, to take this sort of fun out of the pretty picture,",
+    "timestamp_start": 2805.5,
+    "timestamp_end": 2808.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it's really just like a high school math function.",
+    "timestamp_start": 2808.38,
+    "timestamp_end": 2810.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "With the neural network in this example,",
+    "timestamp_start": 2810.14,
+    "timestamp_end": 2811.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is trying to figure out is what formula of the form Ax plus By plus c",
+    "timestamp_start": 2811.98,
+    "timestamp_end": 2817.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is going to be arbitrarily greater than 0.",
+    "timestamp_start": 2817.74,
+    "timestamp_end": 2819.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if so, let's conclude that the dot is red.",
+    "timestamp_start": 2819.66,
+    "timestamp_end": 2822.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you get back a positive result, if you don't,",
+    "timestamp_start": 2822.06,
+    "timestamp_end": 2824.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "let's conclude that the dot is going to be blue instead.",
+    "timestamp_start": 2824.9,
+    "timestamp_end": 2828.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So really, what you're trying to do is figure out dynamically,",
+    "timestamp_start": 2828.74,
+    "timestamp_end": 2831.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what numbers do we have to tweak?",
+    "timestamp_start": 2831.42,
+    "timestamp_end": 2832.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These parameters inside of the neural network",
+    "timestamp_start": 2832.94,
+    "timestamp_end": 2835.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that just give us the answer we want,",
+    "timestamp_start": 2835.06,
+    "timestamp_end": 2836.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "based on all of this data.",
+    "timestamp_start": 2836.62,
+    "timestamp_end": 2838.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "More generally, though, this would be really",
+    "timestamp_start": 2838.3,
+    "timestamp_end": 2840.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "representative of deep learning.",
+    "timestamp_start": 2840.58,
+    "timestamp_end": 2842.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's not as simple as input, input, output.",
+    "timestamp_start": 2842.22,
+    "timestamp_end": 2844.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There's actually a lot of these nodes, these neurons.",
+    "timestamp_start": 2844.58,
+    "timestamp_end": 2847.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There's a lot of these edges.",
+    "timestamp_start": 2847.02,
+    "timestamp_end": 2848.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There's a lot of numbers in math are going on that, frankly,",
+    "timestamp_start": 2848.34,
+    "timestamp_end": 2851.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "even the computer scientists using these neural networks",
+    "timestamp_start": 2851.06,
+    "timestamp_end": 2853.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "don't necessarily know what they even mean or represent.",
+    "timestamp_start": 2853.58,
+    "timestamp_end": 2856.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It just happens to be that when you crunch the numbers",
+    "timestamp_start": 2856.82,
+    "timestamp_end": 2859.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with all of these parameters in place,",
+    "timestamp_start": 2859.46,
+    "timestamp_end": 2862.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you get the answer that you want, at least most of the time.",
+    "timestamp_start": 2862.26,
+    "timestamp_end": 2866.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's essentially the intuition behind that.",
+    "timestamp_start": 2866.18,
+    "timestamp_end": 2868.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And you can apply it to a very real world, if mundane applications",
+    "timestamp_start": 2868.34,
+    "timestamp_end": 2871.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "given today's humidity, given today's pressure, yes or no,",
+    "timestamp_start": 2871.42,
+    "timestamp_end": 2874.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "should there be rainfall?",
+    "timestamp_start": 2874.94,
+    "timestamp_end": 2876.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And maybe there is some mathematical function",
+    "timestamp_start": 2876.26,
+    "timestamp_end": 2878.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that based on years of training data,",
+    "timestamp_start": 2878.14,
+    "timestamp_end": 2880.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we can infer what that prediction should be.",
+    "timestamp_start": 2880.66,
+    "timestamp_end": 2883.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Another one, given this amount of advertising",
+    "timestamp_start": 2883.5,
+    "timestamp_end": 2885.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in this amount of month, what should our sales be for that year?",
+    "timestamp_start": 2885.46,
+    "timestamp_end": 2889.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Should they be up, or should they be down?",
+    "timestamp_start": 2889.46,
+    "timestamp_end": 2891.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sorry for that particular month.",
+    "timestamp_start": 2891.22,
+    "timestamp_end": 2893.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So real world problems map readily when you can break them",
+    "timestamp_start": 2893.1,
+    "timestamp_end": 2895.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "down into inputs and a binary output often,",
+    "timestamp_start": 2895.82,
+    "timestamp_end": 2899.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or some kind of output where you want the thing to figure out,",
+    "timestamp_start": 2899.26,
+    "timestamp_end": 2901.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "based on past data, what its prediction should be.",
+    "timestamp_start": 2901.78,
+    "timestamp_end": 2906.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that brings us back to generative artificial intelligence,",
+    "timestamp_start": 2906.9,
+    "timestamp_end": 2910.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which isn't just about solving problems,",
+    "timestamp_start": 2910.06,
+    "timestamp_end": 2912.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but really generating literally images, texts, even videos,",
+    "timestamp_start": 2912.06,
+    "timestamp_end": 2916.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that again, increasingly resemble what we humans might",
+    "timestamp_start": 2916.42,
+    "timestamp_end": 2920.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "otherwise output ourselves.",
+    "timestamp_start": 2920.34,
+    "timestamp_end": 2922.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And within the world of generative artificial intelligence,",
+    "timestamp_start": 2922.06,
+    "timestamp_end": 2925.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "do we have, of course, these same images",
+    "timestamp_start": 2925.54,
+    "timestamp_end": 2927.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that we saw before, the same text that we saw before,",
+    "timestamp_start": 2927.22,
+    "timestamp_end": 2930.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and more generally things like chat GPT,",
+    "timestamp_start": 2930.3,
+    "timestamp_end": 2932.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which are really examples of what we now call large language",
+    "timestamp_start": 2932.3,
+    "timestamp_end": 2935.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "models, these sort of massive neural networks",
+    "timestamp_start": 2935.82,
+    "timestamp_end": 2938.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that have so many inputs and so many neurons",
+    "timestamp_start": 2938.86,
+    "timestamp_end": 2942.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "implemented in software that essentially represent",
+    "timestamp_start": 2942.06,
+    "timestamp_end": 2945.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "all of the patterns that the software has discovered",
+    "timestamp_start": 2945.06,
+    "timestamp_end": 2947.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by being fed massive amounts of input.",
+    "timestamp_start": 2947.74,
+    "timestamp_end": 2949.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Think of it as the entire textual content of the internet.",
+    "timestamp_start": 2949.82,
+    "timestamp_end": 2953.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Think of it as the entire content, of course,",
+    "timestamp_start": 2953.22,
+    "timestamp_end": 2955.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is like CS50 that may very well be out there on the internet.",
+    "timestamp_start": 2955.3,
+    "timestamp_end": 2958.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And even though these AI's, these large language models,",
+    "timestamp_start": 2958.42,
+    "timestamp_end": 2961.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "haven't been told how to behave, they're really",
+    "timestamp_start": 2961.7,
+    "timestamp_end": 2965.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "inferring from all of these examples for better or for worse,",
+    "timestamp_start": 2965.14,
+    "timestamp_end": 2969.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how to make predictions.",
+    "timestamp_start": 2969.38,
+    "timestamp_end": 2971.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here, for instance, from 2017, just a few years back,",
+    "timestamp_start": 2971.42,
+    "timestamp_end": 2974.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is a seminal paper from Google that",
+    "timestamp_start": 2974.9,
+    "timestamp_end": 2976.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "introduced what we now known as a transformer architecture.",
+    "timestamp_start": 2976.98,
+    "timestamp_end": 2980.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this introduced this idea of attention values, whereby",
+    "timestamp_start": 2980.22,
+    "timestamp_end": 2983.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "they propose that, given an English sentence, for instance,",
+    "timestamp_start": 2983.74,
+    "timestamp_end": 2986.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or really any human sentence, you",
+    "timestamp_start": 2986.58,
+    "timestamp_end": 2988.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "try to assign numbers, not unlike our past exercises,",
+    "timestamp_start": 2988.3,
+    "timestamp_end": 2991.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "each of the words, each of the inputs,",
+    "timestamp_start": 2991.54,
+    "timestamp_end": 2993.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that speaks to its relationship with other words.",
+    "timestamp_start": 2993.78,
+    "timestamp_end": 2996.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if there's a high relationship between two words",
+    "timestamp_start": 2996.82,
+    "timestamp_end": 2998.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in a sentence, they would have high attention values.",
+    "timestamp_start": 2998.9,
+    "timestamp_end": 3001.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if maybe it's a preposition or an article like the or the like,",
+    "timestamp_start": 3001.22,
+    "timestamp_end": 3004.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "maybe those attention values are lower.",
+    "timestamp_start": 3004.74,
+    "timestamp_end": 3006.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And by encoding the world in that way,",
+    "timestamp_start": 3006.86,
+    "timestamp_end": 3008.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "do we begin to detect patterns that allow us to predict things",
+    "timestamp_start": 3008.9,
+    "timestamp_end": 3013.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like words that is generate text?",
+    "timestamp_start": 3013.7,
+    "timestamp_end": 3015.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for instance, up until a few years ago,",
+    "timestamp_start": 3015.3,
+    "timestamp_end": 3017.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "completing this sentence was actually",
+    "timestamp_start": 3017.34,
+    "timestamp_end": 3019.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "pretty hard for a lot of AI.",
+    "timestamp_start": 3019.7,
+    "timestamp_end": 3021.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for instance, here, Massachusetts is a state in the New England",
+    "timestamp_start": 3021.34,
+    "timestamp_end": 3024.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "region of the Northeastern United States.",
+    "timestamp_start": 3024.82,
+    "timestamp_end": 3027.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It borders on the Atlantic Ocean to the East.",
+    "timestamp_start": 3027.02,
+    "timestamp_end": 3029.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The state's capital is dot, dot, dot.",
+    "timestamp_start": 3029.62,
+    "timestamp_end": 3032.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now, you should think that this is relatively straightforward.",
+    "timestamp_start": 3032.38,
+    "timestamp_end": 3034.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's like just handing you a softball-type question.",
+    "timestamp_start": 3034.78,
+    "timestamp_end": 3037.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But historically, within the world of AI,",
+    "timestamp_start": 3037.5,
+    "timestamp_end": 3040.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this word state was so relatively far away from the proper noun",
+    "timestamp_start": 3040.18,
+    "timestamp_end": 3044.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that it's actually referring back to that we just",
+    "timestamp_start": 3044.9,
+    "timestamp_end": 3046.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "didn't have computational models that sort of took in",
+    "timestamp_start": 3046.98,
+    "timestamp_end": 3049.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that holistic picture that frankly we humans are much better at.",
+    "timestamp_start": 3049.1,
+    "timestamp_end": 3052.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you would ask this question a little more quickly,",
+    "timestamp_start": 3052.82,
+    "timestamp_end": 3054.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a little more immediately, you might have gotten a better response.",
+    "timestamp_start": 3054.94,
+    "timestamp_end": 3057.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But this is dare say why chat bots in the past",
+    "timestamp_start": 3057.3,
+    "timestamp_end": 3059.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have been so bad in the form of customer service and the like,",
+    "timestamp_start": 3059.38,
+    "timestamp_end": 3062.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because they're not really taking all of the context",
+    "timestamp_start": 3062.14,
+    "timestamp_end": 3064.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "into account that we humans might be inclined to provide.",
+    "timestamp_start": 3064.18,
+    "timestamp_end": 3067.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What's going on underneath the hood,",
+    "timestamp_start": 3067.78,
+    "timestamp_end": 3069.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "without escalating things too quickly,",
+    "timestamp_start": 3069.98,
+    "timestamp_end": 3071.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what an artificial intelligence nowadays,",
+    "timestamp_start": 3071.78,
+    "timestamp_end": 3074.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "these large language models might do,",
+    "timestamp_start": 3074.98,
+    "timestamp_end": 3076.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is sort of break down the user's input.",
+    "timestamp_start": 3076.86,
+    "timestamp_end": 3078.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Your input into chat GPT into the individual words,",
+    "timestamp_start": 3078.9,
+    "timestamp_end": 3083.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we might then take into account the order of those words.",
+    "timestamp_start": 3083.18,
+    "timestamp_end": 3086.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Massachusetts's first is last.",
+    "timestamp_start": 3086.9,
+    "timestamp_end": 3089.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We might further encode each of those words using a standard way.",
+    "timestamp_start": 3089.66,
+    "timestamp_end": 3093.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And there's different algorithms for this,",
+    "timestamp_start": 3093.26,
+    "timestamp_end": 3094.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but you come up with what are called embeddings.",
+    "timestamp_start": 3094.94,
+    "timestamp_end": 3097.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is to say, you can use one of those APIs I talked about earlier,",
+    "timestamp_start": 3097.22,
+    "timestamp_end": 3101.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or even software running on your own computers,",
+    "timestamp_start": 3101.38,
+    "timestamp_end": 3103.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to come up with a mathematical representation of the word Massachusetts.",
+    "timestamp_start": 3103.74,
+    "timestamp_end": 3108.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And Rung Shin kindly did this for us last night.",
+    "timestamp_start": 3108.02,
+    "timestamp_end": 3110.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is the 1536 floating point values that open AI uses",
+    "timestamp_start": 3110.38,
+    "timestamp_end": 3117.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to represent the word Massachusetts.",
+    "timestamp_start": 3117.18,
+    "timestamp_end": 3120.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this is to say, and you should not understand anything",
+    "timestamp_start": 3120.14,
+    "timestamp_end": 3122.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you are looking at on the screen, nor do I.",
+    "timestamp_start": 3122.62,
+    "timestamp_end": 3124.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But this is now a mathematical representation of the input",
+    "timestamp_start": 3124.66,
+    "timestamp_end": 3128.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that can be compared against the mathematical representations",
+    "timestamp_start": 3128.62,
+    "timestamp_end": 3131.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of other inputs in order to find proximity,",
+    "timestamp_start": 3131.58,
+    "timestamp_end": 3134.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "semantically words that somehow have relationships",
+    "timestamp_start": 3134.82,
+    "timestamp_end": 3137.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or correlations with each other that helps the AI ultimately predict",
+    "timestamp_start": 3137.94,
+    "timestamp_end": 3142.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what should the next word out of its mouth be, so to speak.",
+    "timestamp_start": 3142.7,
+    "timestamp_end": 3146.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in a case like this, these values represent",
+    "timestamp_start": 3146.1,
+    "timestamp_end": 3148.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "these lines, represent all of those attention values",
+    "timestamp_start": 3148.46,
+    "timestamp_end": 3150.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and thicker lines, means there's more attention given",
+    "timestamp_start": 3150.74,
+    "timestamp_end": 3153.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "from one word to another, thinner lines mean the opposite.",
+    "timestamp_start": 3153.02,
+    "timestamp_end": 3156.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And those inputs are ultimately fed into a large neural network",
+    "timestamp_start": 3156.06,
+    "timestamp_end": 3160.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "where you have inputs on the left, outputs on the right.",
+    "timestamp_start": 3160.94,
+    "timestamp_end": 3164.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in this particular case, the hope",
+    "timestamp_start": 3164.02,
+    "timestamp_end": 3165.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is to get out a single word, which is the capital of Boston itself,",
+    "timestamp_start": 3165.78,
+    "timestamp_end": 3170.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "whereby somehow the neural network and the humans behind it",
+    "timestamp_start": 3170.54,
+    "timestamp_end": 3174.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at OpenAI, Microsoft, Google, or elsewhere,",
+    "timestamp_start": 3174.54,
+    "timestamp_end": 3176.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have sort of crunched so many numbers",
+    "timestamp_start": 3176.86,
+    "timestamp_end": 3178.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by training these models on so much data",
+    "timestamp_start": 3178.86,
+    "timestamp_end": 3181.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that it figured out what all of those weights are,",
+    "timestamp_start": 3181.02,
+    "timestamp_end": 3183.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what the biases are, so as to influence mathematically",
+    "timestamp_start": 3183.26,
+    "timestamp_end": 3186.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the outputs therefrom.",
+    "timestamp_start": 3186.86,
+    "timestamp_end": 3188.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that is all underneath the hood of what students now perceive",
+    "timestamp_start": 3188.98,
+    "timestamp_end": 3193.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as this adorable rubber duck, but underneath it all",
+    "timestamp_start": 3193.7,
+    "timestamp_end": 3196.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is certainly a lot of domain knowledge.",
+    "timestamp_start": 3196.9,
+    "timestamp_end": 3200.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And CS50 by nature of being open courseware",
+    "timestamp_start": 3200.02,
+    "timestamp_end": 3202.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for the past many years, CS50 is fortunate",
+    "timestamp_start": 3202.26,
+    "timestamp_end": 3204.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to actually be part of the model, as might be any other content",
+    "timestamp_start": 3204.38,
+    "timestamp_end": 3207.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that's freely available online.",
+    "timestamp_start": 3207.34,
+    "timestamp_end": 3208.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so that certainly helps benefit the answers",
+    "timestamp_start": 3208.78,
+    "timestamp_end": 3211.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when it comes to asking CS50 specific questions.",
+    "timestamp_start": 3211.62,
+    "timestamp_end": 3214.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That said, it's not perfect.",
+    "timestamp_start": 3214.26,
+    "timestamp_end": 3216.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And you might have heard of what are currently called hallucinations.",
+    "timestamp_start": 3216.54,
+    "timestamp_end": 3219.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We're chatGPT and similar tools.",
+    "timestamp_start": 3219.82,
+    "timestamp_end": 3222.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Just makes stuff up.",
+    "timestamp_start": 3222.3,
+    "timestamp_end": 3223.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it sounds very confident.",
+    "timestamp_start": 3223.62,
+    "timestamp_end": 3225.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And you can sometimes call it on it.",
+    "timestamp_start": 3225.42,
+    "timestamp_end": 3227.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's whereby you can say, no, that's not right.",
+    "timestamp_start": 3227.34,
+    "timestamp_end": 3229.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it will playfully apologize.",
+    "timestamp_start": 3229.1,
+    "timestamp_end": 3230.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Oh, I'm sorry.",
+    "timestamp_start": 3230.62,
+    "timestamp_end": 3231.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But it made up some statement because it was probably",
+    "timestamp_start": 3231.78,
+    "timestamp_end": 3235.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "realistically something that could be said even",
+    "timestamp_start": 3235.9,
+    "timestamp_end": 3238.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if it's just not correct.",
+    "timestamp_start": 3238.18,
+    "timestamp_end": 3239.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now, I'll tell you to propose that this kind of problem",
+    "timestamp_start": 3239.82,
+    "timestamp_end": 3242.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is going to get less and less frequent.",
+    "timestamp_start": 3242.66,
+    "timestamp_end": 3245.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so as the models evolve and are techniques of all,",
+    "timestamp_start": 3245.22,
+    "timestamp_end": 3247.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this will be less of an issue.",
+    "timestamp_start": 3247.62,
+    "timestamp_end": 3249.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But I thought it would be fun to end on a note",
+    "timestamp_start": 3249.14,
+    "timestamp_end": 3250.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that a former colleague shared just the other day,",
+    "timestamp_start": 3250.9,
+    "timestamp_end": 3253.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which was this old poem by Shell Silverstein,",
+    "timestamp_start": 3253.26,
+    "timestamp_end": 3255.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "another something from our past childhood perhaps.",
+    "timestamp_start": 3255.9,
+    "timestamp_end": 3258.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this was from 1981, a poem called Homework Machine,",
+    "timestamp_start": 3258.7,
+    "timestamp_end": 3263.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is perhaps foretold where we are now in 2023.",
+    "timestamp_start": 3263.02,
+    "timestamp_end": 3267.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The Homework Machine, oh, the Homework Machine,",
+    "timestamp_start": 3267.22,
+    "timestamp_end": 3269.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "most perfect contraption that's ever been seen.",
+    "timestamp_start": 3269.74,
+    "timestamp_end": 3272.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Just put in your homework, then drop in a dime,",
+    "timestamp_start": 3272.54,
+    "timestamp_end": 3274.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "snap on the switch, and in 10 seconds time,",
+    "timestamp_start": 3274.82,
+    "timestamp_end": 3278.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "your homework comes out quick and clean as can be.",
+    "timestamp_start": 3278.06,
+    "timestamp_end": 3281.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here it is, 9 plus 4, and the answer is 3.",
+    "timestamp_start": 3281.54,
+    "timestamp_end": 3286.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "3?",
+    "timestamp_start": 3286.38,
+    "timestamp_end": 3287.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Oh, me.",
+    "timestamp_start": 3287.58,
+    "timestamp_end": 3288.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I guess it's not as perfect as I thought it would be.",
+    "timestamp_start": 3288.86,
+    "timestamp_end": 3292.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So quite foretelling, sure.",
+    "timestamp_start": 3292.18,
+    "timestamp_end": 3295.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "APPLAUSE",
+    "timestamp_start": 3295.06,
+    "timestamp_end": 3298.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Quite foretelling indeed.",
+    "timestamp_start": 3298.26,
+    "timestamp_end": 3301.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Though if for all this and more, the family members",
+    "timestamp_start": 3301.3,
+    "timestamp_end": 3304.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in the audience are welcome to take CS50 yourself online.",
+    "timestamp_start": 3304.54,
+    "timestamp_end": 3307.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's CS50.edx.org.",
+    "timestamp_start": 3307.1,
+    "timestamp_end": 3308.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For all of today and so much more, allow",
+    "timestamp_start": 3308.98,
+    "timestamp_end": 3310.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "me to thank Brian Rungshin, Sophie Andrew Patrick,",
+    "timestamp_start": 3310.66,
+    "timestamp_end": 3313.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Charlie CS50's whole team.",
+    "timestamp_start": 3313.34,
+    "timestamp_end": 3315.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you are a family member here, head into lunch with CS50's team.",
+    "timestamp_start": 3315.3,
+    "timestamp_end": 3319.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Please look for Cameron holding a rubber duck above her head.",
+    "timestamp_start": 3319.06,
+    "timestamp_end": 3322.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you so much for joining us today.",
+    "timestamp_start": 3322.38,
+    "timestamp_end": 3324.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This was CS50.",
+    "timestamp_start": 3324.42,
+    "timestamp_end": 3325.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "APPLAUSE",
+    "timestamp_start": 3325.98,
+    "timestamp_end": 3327.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  }
+]
