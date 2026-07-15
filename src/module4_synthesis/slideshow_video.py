@@ -33,7 +33,10 @@ TTS_VOICE = "en-US-AriaNeural"   # High quality Microsoft neural voice
 
 def get_font(size: int, bold: bool = False):
     """Load a font, falling back to default if custom fonts unavailable."""
+    windir = os.environ.get("WINDIR", "C:\\Windows")
     font_paths = [
+        os.path.join(windir, "Fonts", "segoeuib.ttf" if bold else "segoeui.ttf"),
+        os.path.join(windir, "Fonts", "arialbd.ttf" if bold else "arial.ttf"),
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
         "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
         "/System/Library/Fonts/Helvetica.ttc",
@@ -44,12 +47,14 @@ def get_font(size: int, bold: bool = False):
                 return ImageFont.truetype(path, size)
             except:
                 continue
-    return ImageFont.load_default()
+    return ImageFont.load_default(size=size)
 
 
 def get_mono_font(size: int):
     """Load monospace font for code blocks."""
+    windir = os.environ.get("WINDIR", "C:\\Windows")
     mono_paths = [
+        os.path.join(windir, "Fonts", "consola.ttf"),
         "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
         "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf",
     ]
@@ -59,7 +64,7 @@ def get_mono_font(size: int):
                 return ImageFont.truetype(path, size)
             except:
                 continue
-    return ImageFont.load_default()
+    return ImageFont.load_default(size=size)
 
 
 def create_intro_slide(overall_summary: dict, output_path: str) -> str:
@@ -152,7 +157,7 @@ def create_summary_slide(slide_data: dict, slide_index: int, total_slides: int, 
         draw.text((60, y), "Key Concepts:", font=bullet_title_font, fill=ACCENT_COLOR)
         y += 45
         for concept in concepts[:4]:  # Max 4 bullets
-            draw.text((80, y), f"▸  {concept}", font=font_bullet, fill=BULLET_COLOR)
+            draw.text((80, y), f"-  {concept}", font=font_bullet, fill=BULLET_COLOR)
             y += 42
         y += 10
 
