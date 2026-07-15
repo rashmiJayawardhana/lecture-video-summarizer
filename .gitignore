@@ -250,3 +250,23 @@ outputs/temp/
 
 
 models/module3/vit_slide_classifier/model.safetensors
+.env
+
+# Secrets
+.env
+
+# Raw videos and extracted frames
+data/raw/
+data/processed/
+
+# Trained models / large model files
+models/module3/
+*.pt
+*.pth
+*.bin
+*.keras
+*.h5
+
+# Cache
+__pycache__/
+*.pyc
