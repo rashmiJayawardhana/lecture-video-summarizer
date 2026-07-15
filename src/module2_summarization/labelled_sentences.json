@@ -1,0 +1,352 @@
+[
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "All right. Hi, everybody. We're going to get started. So today we have our guest speaker,",
+    "timestamp_start": 0.0,
+    "timestamp_end": 11.76,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "Vodai, from Google. Both finished his PhD at Georgia Tech, and he's currently a staff research",
+    "timestamp_start": 11.76,
+    "timestamp_end": 18.36,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "scientist at Google, where he works on all sorts of questions, theoretical and practical",
+    "timestamp_start": 18.36,
+    "timestamp_end": 23.48,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "in regard to reinforcement learning. I'm a big fan of a lot of those work on off-ball",
+    "timestamp_start": 23.48,
+    "timestamp_end": 29.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "sea evaluation offline RL, although I'm going to learn about something new with representation",
+    "timestamp_start": 29.04,
+    "timestamp_end": 33.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "based reinforcement learning today. So I'm really looking forward to that. And hopefully",
+    "timestamp_start": 33.84,
+    "timestamp_end": 37.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "you are too. Thank you. Thank you for the introduction. Let me put it here. Yeah, Ashley,",
+    "timestamp_start": 37.44,
+    "timestamp_end": 47.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "can we hear me down? Great. I think today I will talk about the retention based learning",
+    "timestamp_start": 47.6,
+    "timestamp_end": 53.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "based learning. I would say this representation is a little bit way to get into investment",
+    "timestamp_start": 53.04,
+    "timestamp_end": 60.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "learning, because slow-man and paper-claiming is doing dependational learning, for example,",
+    "timestamp_start": 60.04,
+    "timestamp_end": 64.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "the same clear. We say they want to do the visual representation, and it's also possible.",
+    "timestamp_start": 64.04,
+    "timestamp_end": 70.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "But today, this representation varies to specific, they can say, I want to find us.",
+    "timestamp_start": 70.04,
+    "timestamp_end": 77.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "So today I will... Is this working now? I don't think it's still working. Yeah, I will",
+    "timestamp_start": 77.04,
+    "timestamp_end": 93.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "hold it. Anyway, so today I will talking about various specific representation which is",
+    "timestamp_start": 93.04,
+    "timestamp_end": 98.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "I want to find a representation such that I can represent the Q function specifically.",
+    "timestamp_start": 98.04,
+    "timestamp_end": 104.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "I think we will see it later. Yeah, this is actually several paper together. It's a years-long",
+    "timestamp_start": 104.04,
+    "timestamp_end": 113.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "effort on this direction. And I should send to the major contributor for this work,",
+    "timestamp_start": 113.04,
+    "timestamp_end": 118.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "which is Tongjong from Yutiao Sting and Tianjin from here, Berkeley. And Chen Jun, Sherry, Lisa,",
+    "timestamp_start": 118.04,
+    "timestamp_end": 127.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "Lena, and the Dale, and the Chaba. Okay. Okay, let's start. Today actually the outline of the",
+    "timestamp_start": 127.04,
+    "timestamp_end": 134.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "talk is, first of all, I want to point out a question in current reinforcement learning,",
+    "timestamp_start": 134.04,
+    "timestamp_end": 139.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "which is actually there is the trade-off between modeling, planning, and exploration.",
+    "timestamp_start": 139.04,
+    "timestamp_end": 145.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "But actually we have them to treat these questions very seriously in later return.",
+    "timestamp_start": 145.04,
+    "timestamp_end": 150.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "We will sit into the details several slides later. And later I will use this",
+    "timestamp_start": 150.04,
+    "timestamp_end": 157.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "representation based reinforcement to provide a coherent solution for this to achieve a",
+    "timestamp_start": 157.04,
+    "timestamp_end": 162.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "delicate balance between this trade-off. Say we don't need to waste any computation",
+    "timestamp_start": 162.04,
+    "timestamp_end": 168.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "effort to say, for example, you really have very complicated model. But once we get there,",
+    "timestamp_start": 168.04,
+    "timestamp_end": 178.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "it's difficult to get an optimal policy from the model. So that means you are wasting some",
+    "timestamp_start": 178.04,
+    "timestamp_end": 183.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "effort in sample complexity from the learning model and the computation cost for achieve optimal policy",
+    "timestamp_start": 183.04,
+    "timestamp_end": 191.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "here. So that's why I'm saying we want to use this representation based reinforcement",
+    "timestamp_start": 191.04,
+    "timestamp_end": 197.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "learning to provide a coherent solution. Consider it as a whole problem. Okay, before we",
+    "timestamp_start": 197.04,
+    "timestamp_end": 205.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "dive into the problem there, that's first to make some definition of notation. I",
+    "timestamp_start": 205.04,
+    "timestamp_end": 212.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "think, I don't know, maybe this is already very familiar to everyone sitting here, but I just",
+    "timestamp_start": 212.04,
+    "timestamp_end": 218.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "want to make sure the notation is consistent with my following slides. Say we have",
+    "timestamp_start": 218.04,
+    "timestamp_end": 225.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "state space, the node has s, and action space the node has a, and the reward function",
+    "timestamp_start": 225.04,
+    "timestamp_end": 232.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "which is function from state and action to the real number. The transition operator,",
+    "timestamp_start": 232.04,
+    "timestamp_end": 241.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "which is the conditional distribution, once I gave you the state and action, you provided",
+    "timestamp_start": 241.04,
+    "timestamp_end": 246.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "me the probability of next state, and of course initial state distribution. I have",
+    "timestamp_start": 246.04,
+    "timestamp_end": 253.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "another component in the MDP, which is H or gamma. H means if it's fine and horizon,",
+    "timestamp_start": 253.04,
+    "timestamp_end": 260.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "it's just H steps. If it's in the horizon, the gamma is then which is a scale,",
+    "timestamp_start": 260.04,
+    "timestamp_end": 265.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "it's called a scalar from 0 to 1. Okay, and now I have some definition of notation here,",
+    "timestamp_start": 265.04,
+    "timestamp_end": 273.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "which is the value function V, and also the state action value function Q. Okay,",
+    "timestamp_start": 273.04,
+    "timestamp_end": 280.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "I think we don't have any questions here. Okay, oh, by the way, if you have any",
+    "timestamp_start": 280.04,
+    "timestamp_end": 285.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "questions just interrupt me. I'm very happy to answer. Great. Okay, let's see,",
+    "timestamp_start": 286.04,
+    "timestamp_end": 293.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "there are two major categories of the reinforcement algorithm. Why is model",
+    "timestamp_start": 293.04,
+    "timestamp_end": 300.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "free? Reinforce money. While the representative algorithm in model",
+    "timestamp_start": 300.04,
+    "timestamp_end": 305.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "free, IO is Q learning, which is highly depends on the dynamic programming where",
+    "timestamp_start": 305.04,
+    "timestamp_end": 312.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "it's the dynamic recursion. Q equals to R plus gamma transition with future Q.",
+    "timestamp_start": 312.04,
+    "timestamp_end": 321.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "Okay, with this relationship, actually, we can construct a TD update. And then we can",
+    "timestamp_start": 321.04,
+    "timestamp_end": 330.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "introduce the nonlinear function, for example, neural network into it, and we get",
+    "timestamp_start": 330.04,
+    "timestamp_end": 335.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_040_-_CS_285_Guest_Lecture_Bo_Dai_-_Deep_Reinforcement_Learning_2022_(1).json",
+    "sentence": "the deep version of this TD update. And now that we call it the deep-kill learning.",
+    "timestamp_start": 335.04,
+    "timestamp_end": 340.04,
+    "is_important": 1
+  }
+]
