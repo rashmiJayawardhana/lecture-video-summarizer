@@ -1,118 +1,126 @@
-"""
-TrOCR Integration for Module 3
-
-Extracts on-screen text from Critical and Important slide frames
-using TrOCR (Transformer-based OCR).
-
-Owner: Fazly (214008C)
-Reference: Li et al. 2023
-
-NOTE: This module uses TrOCR (microsoft/trocr-base-printed), NOT Tesseract.
-TrOCR was validated for OCR tasks in the literature review.
-"""
-
-import torch
-from transformers import TrOCRProcessor, VisionEncoderDecoderModel
-from PIL import Image
-from typing import List, Optional
-from pathlib import Path
+import os
+import json
+import argparse
+import cv2
+import easyocr
+from tqdm import tqdm
 
 
-class SlideOCR:
-    """
-    Extract text from slide images using TrOCR.
-    
-    Run on Critical and Important frames only (Skip frames excluded).
-    
-    Usage:
-        ocr = SlideOCR()
-        text = ocr.extract_text('slide_001.png')
-    """
-    
-    def __init__(
-        self,
-        model_name: str = "microsoft/trocr-base-printed",
-        device: str = "cuda",
-    ):
-        """
-        Args:
-            model_name: TrOCR model from Hugging Face.
-            device: Device for inference ('cuda' or 'cpu').
-        """
-        self.device = torch.device(device if torch.cuda.is_available() else "cpu")
-        
-        print(f"Loading TrOCR model: {model_name}...")
-        self.processor = TrOCRProcessor.from_pretrained(model_name)
-        self.model = VisionEncoderDecoderModel.from_pretrained(model_name)
-        self.model = self.model.to(self.device)
-        self.model.eval()
-    
-    def extract_text(self, image_path: str) -> str:
-        """
-        Extract text from a single slide image.
-        
-        Args:
-            image_path: Path to the slide image.
-        
-        Returns:
-            Extracted text string.
-        """
-        image = Image.open(image_path).convert("RGB")
-        return self._process_image(image)
-    
-    def extract_text_from_pil(self, image: Image.Image) -> str:
-        """
-        Extract text from a PIL Image object.
-        
-        Args:
-            image: PIL Image in RGB mode.
-        
-        Returns:
-            Extracted text string.
-        """
-        return self._process_image(image.convert("RGB"))
-    
-    def _process_image(self, image: Image.Image) -> str:
-        """Internal: run TrOCR on a PIL image."""
-        pixel_values = self.processor(
-            images=image, return_tensors="pt"
-        ).pixel_values.to(self.device)
-        
-        with torch.no_grad():
-            generated_ids = self.model.generate(pixel_values, max_new_tokens=200)
-        
-        text = self.processor.batch_decode(
-            generated_ids, skip_special_tokens=True
-        )[0]
-        
-        return text.strip()
-    
-    def batch_extract(
-        self,
-        image_paths: List[str],
-        skip_labels: Optional[List[str]] = None,
-    ) -> List[dict]:
-        """
-        Extract text from multiple slide images.
-        
-        Args:
-            image_paths: List of image file paths.
-            skip_labels: Optional list of labels to skip (e.g., 'Skip' frames).
-        
-        Returns:
-            List of dicts with 'image_path' and 'ocr_text'.
-        """
-        results = []
-        for path in image_paths:
-            text = self.extract_text(path)
-            results.append({
-                "image_path": path,
-                "ocr_text": text,
-            })
-        return results
+def preprocess_image(image_path, output_path):
+    image = cv2.imread(image_path)
+
+    if image is None:
+        raise FileNotFoundError(f"Image not found: {image_path}")
+
+    # Resize 2x to improve OCR on small slide text
+    image = cv2.resize(image, None, fx=2, fy=2, interpolation=cv2.INTER_CUBIC)
+
+    # Convert to grayscale
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    # Improve contrast
+    gray = cv2.equalizeHist(gray)
+
+    cv2.imwrite(output_path, gray)
+
+    return output_path
+
+
+def clean_ocr_results(results, confidence_threshold=0.60):
+    clean_text = []
+
+    for bbox, text, confidence in results:
+        text = text.strip()
+
+        # Keep only confident OCR results
+        if confidence < confidence_threshold:
+            continue
+
+        # Remove very short noisy outputs like "0", "7", "S"
+        if len(text) < 3:
+            continue
+
+        # Remove text that is only symbols/punctuation
+        if not any(char.isalpha() for char in text):
+            continue
+
+        clean_text.append(text)
+
+    return " ".join(clean_text)
+
+
+def run_ocr_on_predictions(input_json, output_json, limit=None, confidence_threshold=0.60):
+    if not os.path.exists(input_json):
+        raise FileNotFoundError(f"Input JSON not found: {input_json}")
+
+    with open(input_json, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if limit is not None:
+        data_to_process = data[:limit]
+    else:
+        data_to_process = data
+
+    print(f"Total records loaded: {len(data)}")
+    print(f"Records to process: {len(data_to_process)}")
+    print(f"OCR confidence threshold: {confidence_threshold}")
+
+    reader = easyocr.Reader(["en"], gpu=False)
+
+    debug_dir = "outputs/module3/ocr_debug"
+    os.makedirs(debug_dir, exist_ok=True)
+
+    updated_data = []
+
+    for index, item in enumerate(tqdm(data_to_process)):
+        label = item.get("label", "Skip")
+        frame_path = item.get("frame_path", "")
+
+        # Apply OCR only to Critical and Important frames
+        if label in ["Critical", "Important"] and os.path.exists(frame_path):
+            try:
+                preprocessed_path = os.path.join(debug_dir, f"ocr_temp_{index}.jpg")
+
+                preprocess_image(frame_path, preprocessed_path)
+
+                results = reader.readtext(preprocessed_path, detail=1)
+
+                ocr_text = clean_ocr_results(
+                    results,
+                    confidence_threshold=confidence_threshold
+                )
+
+            except Exception as e:
+                print(f"OCR failed for {frame_path}: {e}")
+                ocr_text = ""
+        else:
+            ocr_text = ""
+
+        item["ocr_text"] = ocr_text
+        updated_data.append(item)
+
+    os.makedirs(os.path.dirname(output_json), exist_ok=True)
+
+    with open(output_json, "w", encoding="utf-8") as f:
+        json.dump(updated_data, f, indent=4)
+
+    print(f"OCR output saved to: {output_json}")
+    print(f"Total records written: {len(updated_data)}")
 
 
 if __name__ == "__main__":
-    print("SlideOCR (TrOCR) ready.")
-    print("Usage: ocr = SlideOCR()")
-    print("       text = ocr.extract_text('slide.png')")
+    parser = argparse.ArgumentParser(description="Apply OCR to Module 3 prediction JSON.")
+
+    parser.add_argument("--input_json", required=True)
+    parser.add_argument("--output_json", required=True)
+    parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--threshold", type=float, default=0.60)
+
+    args = parser.parse_args()
+
+    run_ocr_on_predictions(
+        input_json=args.input_json,
+        output_json=args.output_json,
+        limit=args.limit,
+        confidence_threshold=args.threshold
+    )

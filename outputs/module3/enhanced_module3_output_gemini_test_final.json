@@ -1,0 +1,278 @@
+[
+    {
+        "lecture_id": "lecture_002",
+        "frame_time": 2070.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3917,
+        "ocr_text": "Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support",
+        "frame_path": "data/processed/module3/slides/lecture_002/lecture_002_frame_00414_34m30s.jpg",
+        "visual_type": "mixed_slide",
+        "detected_visual_types": [
+            "diagram",
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Security controls (aka. mechanisms) Confidentialty Integrity Availabilily suppor",
+                "content": "This Important frame contains OCR-based lecture content. Extracted text: Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support",
+                "key_points": [
+                    "Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support"
+                ]
+            }
+        ],
+        "slide_summary": "This Important frame contains OCR-based lecture content. Extracted text: Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 9,
+            "vertical_lines": 3,
+            "intersections": 7,
+            "horizontal_ratio": 0.09771701388888888,
+            "vertical_ratio": 0.02734375,
+            "rectangles": 1,
+            "hough_lines": 81,
+            "word_count": 8,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 2,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 1,
+            "diagram_keyword_count": 1
+        },
+        "gemini_analysis_status": "not_used_for_important",
+        "analysis_source": "ocr",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Security controls (aka. mechanisms) Confidentialty Integrity Availabilily suppor",
+            "visual_explanation": "This Important frame contains OCR-based lecture content. Extracted text: Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support",
+            "key_points": [
+                "Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support"
+            ],
+            "module4_usage": "Use this frame as supporting visual-text evidence together with audio and topic scores.",
+            "confidence": 0.6
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 30.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3407,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00001_00m30s.jpg",
+        "visual_type": "unknown",
+        "detected_visual_types": [],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Text slide",
+                "content": "This Critical frame contains OCR-based lecture content. Extracted text: ",
+                "key_points": []
+            }
+        ],
+        "slide_summary": "This Critical frame contains OCR-based lecture content. Extracted text: ",
+        "extraction_status": "low_confidence",
+        "visual_debug": {
+            "horizontal_lines": 0,
+            "vertical_lines": 2,
+            "intersections": 0,
+            "horizontal_ratio": 0.0,
+            "vertical_ratio": 0.004240451388888889,
+            "rectangles": 0,
+            "hough_lines": 4,
+            "word_count": 0,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 0,
+            "diagram_score": 0,
+            "text_score": 0,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "gemini_analysis_status": "failed",
+        "analysis_source": "gemini_failed_ocr_fallback",
+        "gemini_failure_details": {
+            "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Text slide",
+            "visual_explanation": "This Critical frame contains OCR-based lecture content. Extracted text: ",
+            "key_points": [],
+            "module4_usage": "Use this frame as supporting visual-text evidence together with audio and topic scores.",
+            "confidence": 0.3
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 120.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3938,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00004_02m00s.jpg",
+        "visual_type": "unknown",
+        "detected_visual_types": [],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Text slide",
+                "content": "This Critical frame contains OCR-based lecture content. Extracted text: ",
+                "key_points": []
+            }
+        ],
+        "slide_summary": "This Critical frame contains OCR-based lecture content. Extracted text: ",
+        "extraction_status": "low_confidence",
+        "visual_debug": {
+            "horizontal_lines": 4,
+            "vertical_lines": 11,
+            "intersections": 10,
+            "horizontal_ratio": 0.03801649305555556,
+            "vertical_ratio": 0.05451822916666667,
+            "rectangles": 1,
+            "hough_lines": 122,
+            "word_count": 0,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 0,
+            "text_score": 0,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "gemini_analysis_status": "failed",
+        "analysis_source": "gemini_failed_ocr_fallback",
+        "gemini_failure_details": {
+            "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        },
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Text slide",
+            "visual_explanation": "This Critical frame contains OCR-based lecture content. Extracted text: ",
+            "key_points": [],
+            "module4_usage": "Use this frame as supporting visual-text evidence together with audio and topic scores.",
+            "confidence": 0.3
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 300.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3964,
+        "ocr_text": "Whatis AI? ij ~",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00010_05m00s.jpg",
+        "visual_type": "text_slide",
+        "detected_visual_types": [
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "diagram",
+                "topic": "Relationship between Artificial Intelligence and Machine Learning",
+                "content": "The slide uses a nested circle diagram to illustrate that Machine Learning (ML), annotated with '(data)', is a subset contained within the broader field of Artificial Intelligence (AI). It also lists three core application areas of AI: pattern recognition, speech recognition, and image analysis.",
+                "key_points": [
+                    "Machine Learning (ML) is a subset of Artificial Intelligence (AI).",
+                    "Machine Learning is specifically associated with processing data.",
+                    "Common tasks or domains of AI include Pattern Recognition, Speech Recognition, and Image Analysis."
+                ]
+            }
+        ],
+        "slide_summary": "The slide uses a nested circle diagram to illustrate that Machine Learning (ML), annotated with '(data)', is a subset contained within the broader field of Artificial Intelligence (AI). It also lists three core application areas of AI: pattern recognition, speech recognition, and image analysis.",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 1,
+            "vertical_lines": 1,
+            "intersections": 0,
+            "horizontal_ratio": 0.005928819444444444,
+            "vertical_ratio": 0.004978298611111111,
+            "rectangles": 0,
+            "hough_lines": 7,
+            "word_count": 4,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 0,
+            "diagram_score": 2,
+            "text_score": 1,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 1
+        },
+        "gemini_analysis_status": "success",
+        "analysis_source": "gemini",
+        "semantic_analysis": {
+            "semantic_visual_type": "diagram",
+            "visual_topic": "Relationship between Artificial Intelligence and Machine Learning",
+            "visual_explanation": "The slide uses a nested circle diagram to illustrate that Machine Learning (ML), annotated with '(data)', is a subset contained within the broader field of Artificial Intelligence (AI). It also lists three core application areas of AI: pattern recognition, speech recognition, and image analysis.",
+            "key_points": [
+                "Machine Learning (ML) is a subset of Artificial Intelligence (AI).",
+                "Machine Learning is specifically associated with processing data.",
+                "Common tasks or domains of AI include Pattern Recognition, Speech Recognition, and Image Analysis."
+            ],
+            "module4_usage": "This frame is critical for the introductory segment of the video summary as it defines the foundational relationship between AI and Machine Learning.",
+            "confidence": 0.95
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 390.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4054,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00013_06m30s.jpg",
+        "visual_type": "unknown",
+        "detected_visual_types": [],
+        "visual_elements": [
+            {
+                "type": "diagram",
+                "topic": "Hierarchical Relationship of AI, ML, and DL",
+                "content": "Concentric circles depict Deep Learning (DL) as a subset of Machine Learning (ML), which in turn is a subset of Artificial Intelligence (AI). A biological neuron graphic suggests the biological inspiration behind deep neural networks.",
+                "key_points": [
+                    "Artificial Intelligence (AI) is the outermost, broad classification.",
+                    "Machine Learning (ML) is a data-driven subset of AI.",
+                    "Deep Learning (DL) is a specialized subset of ML centered on neural networks."
+                ]
+            }
+        ],
+        "slide_summary": "Concentric circles depict Deep Learning (DL) as a subset of Machine Learning (ML), which in turn is a subset of Artificial Intelligence (AI). A biological neuron graphic suggests the biological inspiration behind deep neural networks.",
+        "extraction_status": "low_confidence",
+        "visual_debug": {
+            "horizontal_lines": 1,
+            "vertical_lines": 0,
+            "intersections": 0,
+            "horizontal_ratio": 0.006241319444444444,
+            "vertical_ratio": 0.004713541666666667,
+            "rectangles": 0,
+            "hough_lines": 2,
+            "word_count": 0,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 0,
+            "diagram_score": 0,
+            "text_score": 0,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "gemini_analysis_status": "success",
+        "analysis_source": "gemini",
+        "semantic_analysis": {
+            "semantic_visual_type": "diagram",
+            "visual_topic": "Hierarchical Relationship of AI, ML, and DL",
+            "visual_explanation": "Concentric circles depict Deep Learning (DL) as a subset of Machine Learning (ML), which in turn is a subset of Artificial Intelligence (AI). A biological neuron graphic suggests the biological inspiration behind deep neural networks.",
+            "key_points": [
+                "Artificial Intelligence (AI) is the outermost, broad classification.",
+                "Machine Learning (ML) is a data-driven subset of AI.",
+                "Deep Learning (DL) is a specialized subset of ML centered on neural networks."
+            ],
+            "module4_usage": "This frame establishes foundational definitions and taxonomy, making it a critical anchor point for introductory video segments.",
+            "confidence": 0.95
+        }
+    }
+]

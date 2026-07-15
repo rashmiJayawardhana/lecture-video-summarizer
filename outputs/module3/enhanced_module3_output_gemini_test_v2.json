@@ -1,0 +1,251 @@
+[
+    {
+        "lecture_id": "lecture_002",
+        "frame_time": 2070.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3917,
+        "ocr_text": "Security controls (aka. mechanisms) Confidentialty Integrity Availabilily support",
+        "frame_path": "data/processed/module3/slides/lecture_002/lecture_002_frame_00414_34m30s.jpg",
+        "visual_type": "mixed_slide",
+        "detected_visual_types": [
+            "diagram",
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "mixed",
+                "topic": "Gemini analysis failed",
+                "content": "Gemini analysis failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+                "key_points": []
+            }
+        ],
+        "slide_summary": "Gemini analysis failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 9,
+            "vertical_lines": 3,
+            "intersections": 7,
+            "horizontal_ratio": 0.09771701388888888,
+            "vertical_ratio": 0.02734375,
+            "rectangles": 1,
+            "hough_lines": 81,
+            "word_count": 8,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 2,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 1,
+            "diagram_keyword_count": 1
+        },
+        "gemini_analysis_status": "failed",
+        "semantic_analysis": {
+            "semantic_visual_type": "mixed",
+            "visual_topic": "Gemini analysis failed",
+            "visual_explanation": "Gemini analysis failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+            "key_points": [],
+            "module4_usage": "Use OCR and visual_type only because Gemini analysis failed.",
+            "confidence": 0.0
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 30.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3407,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00001_00m30s.jpg",
+        "visual_type": "unknown",
+        "detected_visual_types": [],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Text slide",
+                "content": "This Critical frame contains text-based lecture content. Extracted text: ",
+                "key_points": []
+            }
+        ],
+        "slide_summary": "This Critical frame contains text-based lecture content. Extracted text: ",
+        "extraction_status": "low_confidence",
+        "visual_debug": {
+            "horizontal_lines": 0,
+            "vertical_lines": 2,
+            "intersections": 0,
+            "horizontal_ratio": 0.0,
+            "vertical_ratio": 0.004240451388888889,
+            "rectangles": 0,
+            "hough_lines": 4,
+            "word_count": 0,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 0,
+            "diagram_score": 0,
+            "text_score": 0,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "gemini_analysis_status": "not_needed_text_slide",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Text slide",
+            "visual_explanation": "This Critical frame contains text-based lecture content. Extracted text: ",
+            "key_points": [],
+            "module4_usage": "Use this frame as visual-text evidence together with audio and topic scores.",
+            "confidence": 0.3
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 120.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3938,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00004_02m00s.jpg",
+        "visual_type": "unknown",
+        "detected_visual_types": [],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Text slide",
+                "content": "This Critical frame contains text-based lecture content. Extracted text: ",
+                "key_points": []
+            }
+        ],
+        "slide_summary": "This Critical frame contains text-based lecture content. Extracted text: ",
+        "extraction_status": "low_confidence",
+        "visual_debug": {
+            "horizontal_lines": 4,
+            "vertical_lines": 11,
+            "intersections": 10,
+            "horizontal_ratio": 0.03801649305555556,
+            "vertical_ratio": 0.05451822916666667,
+            "rectangles": 1,
+            "hough_lines": 122,
+            "word_count": 0,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 0,
+            "text_score": 0,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "gemini_analysis_status": "not_needed_text_slide",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Text slide",
+            "visual_explanation": "This Critical frame contains text-based lecture content. Extracted text: ",
+            "key_points": [],
+            "module4_usage": "Use this frame as visual-text evidence together with audio and topic scores.",
+            "confidence": 0.3
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 300.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3964,
+        "ocr_text": "Whatis AI? ij ~",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00010_05m00s.jpg",
+        "visual_type": "text_slide",
+        "detected_visual_types": [
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Whatis AI? ij ~",
+                "content": "This Critical frame contains text-based lecture content. Extracted text: Whatis AI? ij ~",
+                "key_points": [
+                    "Whatis AI? ij ~"
+                ]
+            }
+        ],
+        "slide_summary": "This Critical frame contains text-based lecture content. Extracted text: Whatis AI? ij ~",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 1,
+            "vertical_lines": 1,
+            "intersections": 0,
+            "horizontal_ratio": 0.005928819444444444,
+            "vertical_ratio": 0.004978298611111111,
+            "rectangles": 0,
+            "hough_lines": 7,
+            "word_count": 4,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 0,
+            "diagram_score": 2,
+            "text_score": 1,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 1
+        },
+        "gemini_analysis_status": "not_needed_text_slide",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Whatis AI? ij ~",
+            "visual_explanation": "This Critical frame contains text-based lecture content. Extracted text: Whatis AI? ij ~",
+            "key_points": [
+                "Whatis AI? ij ~"
+            ],
+            "module4_usage": "Use this frame as visual-text evidence together with audio and topic scores.",
+            "confidence": 0.6
+        }
+    },
+    {
+        "lecture_id": "lecture_003",
+        "frame_time": 390.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.4054,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_003/lecture_003_frame_00013_06m30s.jpg",
+        "visual_type": "unknown",
+        "detected_visual_types": [],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Text slide",
+                "content": "This Critical frame contains text-based lecture content. Extracted text: ",
+                "key_points": []
+            }
+        ],
+        "slide_summary": "This Critical frame contains text-based lecture content. Extracted text: ",
+        "extraction_status": "low_confidence",
+        "visual_debug": {
+            "horizontal_lines": 1,
+            "vertical_lines": 0,
+            "intersections": 0,
+            "horizontal_ratio": 0.006241319444444444,
+            "vertical_ratio": 0.004713541666666667,
+            "rectangles": 0,
+            "hough_lines": 2,
+            "word_count": 0,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 0,
+            "diagram_score": 0,
+            "text_score": 0,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "gemini_analysis_status": "not_needed_text_slide",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Text slide",
+            "visual_explanation": "This Critical frame contains text-based lecture content. Extracted text: ",
+            "key_points": [],
+            "module4_usage": "Use this frame as visual-text evidence together with audio and topic scores.",
+            "confidence": 0.3
+        }
+    }
+]

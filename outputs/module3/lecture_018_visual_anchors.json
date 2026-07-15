@@ -1,0 +1,11 @@
+[
+    {
+        "lecture_id": "lecture_018",
+        "frame_time": 0.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3402,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_018/lecture_018_frame_00000_00m00s.jpg"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "lecture_id": "lecture_008",
+        "frame_time": 0.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.425,
+        "ocr_text": "FIRST",
+        "frame_path": "data/processed/module3/slides/lecture_008/lecture_008_frame_00000_00m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_008",
+        "frame_time": 540.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4239,
+        "ocr_text": "C#FOR CODINGI OURR FIRST",
+        "frame_path": "data/processed/module3/slides/lecture_008/lecture_008_frame_00018_09m00s.jpg"
+    }
+]
