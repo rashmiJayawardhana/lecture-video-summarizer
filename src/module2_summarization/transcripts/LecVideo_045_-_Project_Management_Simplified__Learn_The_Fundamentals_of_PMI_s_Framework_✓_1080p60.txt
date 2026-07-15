@@ -1,0 +1,431 @@
+0.0s - 3.2s : I'm really excited to finally share this video with you.
+3.2s - 8.32s : It took me quite a while to get everything right, but I think you're going to be very happy with the end result.
+8.32s - 12.4s : So you may be confused seeing a one-hour video with a title simplified in it.
+13.36s - 15.76s : Don't be. Just to set your expectations clearly.
+15.76s - 21.04s : This video has a lot of substance in it. It's not one of those cooking under three-minute videos.
+21.04s - 25.52s : I'm going to cover pretty much all the aspects of project management. Be it project life cycle,
+25.52s - 29.52s : process groups, knowledge areas, work breakdown structure scheduling costs,
+30.0s - 33.44s : so it's basically a 10-hour course condensed into one.
+34.0s - 40.32s : So my mission with this mini course is to make project management very easy to understand for you.
+41.2s - 46.96s : Because essentially project management is fun, but more importantly, it's very easy.
+46.96s - 51.36s : It's not a professional on its own. It's not like accounting or auditing or even consulting.
+51.36s - 56.64s : Project management is a complimentary discipline that helps you run your project very easily.
+56.72s - 62.08s : As simple as that. And the best part is pretty much all professionals,
+62.08s - 66.96s : you know, be it an accountant or a chemist can benefit from it. So who is this video for?
+67.6s - 71.44s : This video is for you if you want to learn how to manage your projects at work.
+71.44s - 75.28s : So it's applicable to every single professional I can think of.
+75.28s - 79.12s : I mean, I've never seen any professional in my 10-year management consultant career
+79.12s - 84.24s : who hasn't run a project. It just so happens that sometimes they don't know they were managing
+84.24s - 89.44s : projects, right? But they were projects indeed. So if you're looking for a simply enough
+89.44s - 94.4s : framework to understand project management and implement it at work, then you're on the right place.
+94.4s - 99.28s : By the end of this video, I'm confident that you'll be able to add project management as a skill
+99.28s - 106.64s : in your resume. Also, this video is for you if you're preparing for your PMP exam or CAPM exam.
+107.28s - 113.68s : Once you finish this mini course, the PIMBA guide will be a lot easier to understand.
+113.68s - 122.24s : See, the PIMBA guide is over 500 pages long. It's a very, very long and quite boring book, I must say.
+122.24s - 127.28s : So obviously, I can't share everything in this short video that exists in PIMBA guide,
+127.28s - 132.64s : but if you watch this video without skipping, the PIMBA guide project management body of knowledge
+133.36s - 138.56s : will be so easy to follow for you because it's all about understanding the fundamentals.
+139.28s - 146.32s : Everything else just becomes very easy to follow. See, when I took my PMP exam, I think around
+146.96s - 152.48s : six years ago, now, or five years ago, I almost aced it. I scored one of the highest points at that
+152.48s - 157.6s : time. And the only reason why I scored so high was not because I spent hundreds of hours studying.
+157.6s - 162.8s : On the contrary, I just understood the fundamentals. And once you understand the building blocks,
+163.44s - 169.28s : as I said earlier, everything else becomes so easy to follow. So I suggest you watch the entire
+169.28s - 174.88s : video without skipping, but if you're interested in learning just certain elements only, then you
+174.88s - 179.92s : can look at the description box for the index of the video. Good, so let's get started.
+186.08s - 190.8s : I mean, what is even a project? It definitely has a sexy tone to it, right? Project.
+191.44s - 199.28s : I wonder how it sounds in French. So here's the definition. Project is a temporary endover
+199.28s - 206.32s : to create a unique solution. Yeah, but that's operations. No, no. The difference between a project
+206.32s - 212.16s : and operations is fairly simple. A project ends. So it's temporary. You implement your project,
+212.16s - 216.48s : you close it, you create a unique product or service or whatever the outcome you wanted,
+217.04s - 223.6s : then you're done. Whereas in operations, it's an ongoing effort. It's repetitive.
+224.16s - 229.76s : So you may have also heard about the terms program and portfolio. Let me just quickly explain
+229.76s - 236.4s : them here as well. Program is multiple projects put together combined and portfolio is
+236.4s - 242.64s : similarly multiple programs put together. So it's basically project, program, and then portfolio.
+242.96s - 250.0s : Now, before I go further and dive deep, you need to understand something very crucial. To run
+250.0s - 256.56s : any project, you need two methodologies. The first one is a project lifecycle,
+257.36s - 264.0s : and the second one is project management process. Most people confuse these two, okay? And if
+264.0s - 269.6s : these are not clear, you can kiss that PMP certification. Good bye. It's absolutely amazing how
+269.6s - 275.52s : many content creators in YouTube or elsewhere confuse these two. They are not interchangeable.
+275.52s - 279.36s : You cannot afford to confuse a project lifecycle with a project management process.
+279.92s - 284.0s : But don't worry, I'm going to make it very, very simple for you. So let's start with project
+284.0s - 293.2s : lifecycle. Project lifecycle is unique to a project, to an industry, to your needs. It's highly
+293.2s - 300.8s : customizable. Think of it like this. A human development is a project, isn't it? So your
+300.8s - 310.56s : lifecycle is conceiving birth, childhood, then teenage hood, teenage hood. Is that a reward?
+310.56s - 317.36s : Teenaging, whatever. So, adulthood and then death, right? Easy stuff, right? So,
+318.08s - 323.76s : now, if it was an IT project, I'm not an IT, but it would probably look something like this.
+323.76s - 329.36s : It would be high-level design, high-level design, then detailed design, then coding, and testing,
+330.4s - 338.08s : installation, and then finally, probably a turnover if it was done for a client. So, this is project
+338.08s - 345.92s : lifecycle. And here is probably where the confusion comes from. The term cycle, and that's what's
+345.92s - 351.92s : confusing, because after you die, you don't get to be conceived again and be born again. I think
+352.96s - 358.56s : Bahoonos. So, or once you hand over the product to the client, you don't get to be, you know,
+358.56s - 363.36s : designing that again. So it's not actually a cycle. It's just a confusing term they use. It's
+363.36s - 370.88s : sequential. It's a sequential step of various phases of a project. And these phases, I'm going to
+370.88s - 376.88s : repeat it again, are unique to your own project and your needs. So you create your own cycle.
+378.32s - 383.6s : So, a project lifecycle may have one phase or multiple phases, like the examples I gave earlier.
+383.6s - 388.88s : You know, there is no single way to define the ideal structure for a project. For example,
+388.88s - 395.44s : one company may treat it feasibility study as first phase of a project. Another may treat that as
+396.08s - 400.96s : as a third phase of a project. And another may not have included at all. It's custom made.
+402.0s - 407.68s : I know I said this multiple times, custom made. But you'll soon understand why I had to repeat
+407.68s - 414.72s : it multiple times. Just be patient, just bear with me. Now, let's talk about the second element
+414.72s - 421.44s : that you need to run any project. And that's the project management process. Your process groups.
+421.44s - 428.32s : See, if you're following PMI's project management body of knowledge, then your process
+429.12s - 436.0s : groups aren't quite customizable. So you can customize the processes, but not really the groups.
+436.32s - 442.32s : We're going to talk about that soon. So we have five process groups to learn here. We have
+442.32s - 448.88s : initiation. We have planning. We have executing. Then we have monitoring and controlling and
+448.88s - 454.64s : finally closing. These are kind of set in stone. I mean, you can't really play around with them
+454.64s - 460.48s : that much. Now, here's where all the confusion arises. For those of you who are interested in
+460.48s - 467.6s : taking a PMP test, I will now tell you the single, single biggest reason why most test takers fail.
+468.24s - 477.04s : And it's all because of confusing this. This is what I'm about to share. So, ready? Okay, remember how
+477.04s - 483.36s : we talked about that the fact that project life cycle is highly customizable. I board you to
+483.36s - 491.44s : that death with it, customizable, customizable, customizable. So now what we do in real life is for
+491.44s - 498.16s : small projects, we really dump things down. We simplify things. Instead of attaching process groups
+498.96s - 506.56s : to every single phase of a project life cycle, conceiving process groups, like development process
+506.56s - 514.16s : groups, initiation planning, execution, MNC and closing. And then death, instead of doing that,
+514.72s - 520.8s : in real life, we just attach the process groups to a single phase project life cycle.
+521.6s - 528.0s : Now, I hope this is clear. This makes things really, really easy to run the project for us.
+528.0s - 532.48s : It's less complication. I mean, why make things more complicated than they should be, right?
+532.56s - 537.68s : There's so much paperwork involved, which you'll soon see a lot of paperwork.
+538.8s - 546.32s : So your project life cycle isn't initiation planning, execution, monitoring and closing and
+547.12s - 552.08s : monitoring and controlling and closing. If you don't get this right, I guarantee you that you will
+552.08s - 558.96s : fail the exam. Now, we're going to talk about the process groups. And while I'm explaining that,
+558.96s - 565.44s : I will also simultaneously run a project for you to demonstrate how it works in real life.
+566.8s - 571.6s : Now, let's start with the first process group. And that's initiation.
+576.56s - 582.48s : To make things very grounded, I will use the construction of this boat as an example.
+582.64s - 589.12s : I hope you can see this. It is a huge, huge boat.
+592.72s - 598.64s : So yeah, this is the boat I did, I think, whilst here. And I think it's going to be an awesome
+598.64s - 604.56s : example to run this session with you. I mean, I could give you examples from my own work history.
+604.56s - 608.8s : Obviously, as a manager at PWSC Consulting, press order as a group, I ran hundreds of projects.
+608.88s - 613.52s : But it would create a few problems. One, I'm under strict client confidentiality agreements. And
+614.08s - 619.28s : two, we don't use PMI's framework. So I'm going to teach you PMI's framework here.
+619.28s - 625.6s : So it won't really be very relevant. I think using this boat, designing and manufacturing it
+625.6s - 634.08s : with all the paperwork involved, it'll be awesome. So for initiation process group, you have two
+634.08s - 640.96s : important processes. The first process is that you develop a project charter. And the second
+640.96s - 649.52s : process is you identify stakeholders. Now, let's start with project charter. So project charter
+649.52s - 659.92s : is a fairly simple document. Outlining a few things. It's like a mini project plan.
+660.16s - 666.48s : Very simple one though. Essentially, you're finding an answer to why you're doing what you are doing.
+666.48s - 672.72s : So in my case, if I have to develop a project charter for building this boat, it would include my
+672.72s - 681.68s : objectives, scope, rough idea for the cost and time if I want to, and then key stakeholders
+681.68s - 688.0s : and key milestones. That's pretty much it. At the initiation stage, you don't want the document
+688.16s - 692.56s : to be very detailed. See, this is only like five, six slides. It's fairly simple.
+695.52s - 700.96s : Speaking of later stages, can you do me a favor? If you like the video so far, can you please
+700.96s - 705.84s : subscribe to my channel? Because if you don't, YouTube will not show my future videos to you. So
+705.84s - 714.4s : please do that. Let's continue. In your case, your project charter may be as simple as explaining
+714.4s - 720.88s : why you consider the expansion to foreign markets. Why you are considering building that new factory.
+721.44s - 726.64s : I'll repeat once more. This is not the time to go into huge details. Talk about the business
+726.64s - 731.84s : case and maybe high level project objectives and major deliverables and the roles and responsibilities.
+732.4s - 743.04s : But don't go into too much details. Then you would ask, okay, then why do it? Why do it?
+743.04s - 746.48s : I mean, if it's not detailed, nor comprehensive, it's just a couple pages.
+748.96s - 754.32s : It doesn't have much information. Why you waste time to prepare it. And if you ask that,
+754.32s - 761.28s : it would be a very smart question. The reason why we do that is to have a buy-in,
+761.28s - 766.56s : to have the permission. Because it's a checkpoint, right? We want the support from the leadership
+766.64s - 774.24s : to spend more time and maybe more money to properly plan it. I mean, as a principle,
+775.28s - 782.24s : are you my dear project sponsor? Are you fine with me exploring this project a bit more? Can you
+782.96s - 787.84s : sign off on this? It's a checkpoint. Your project sponsor may not want this project at all in
+787.84s - 794.64s : the first place. Why waste time? If they say, no, you don't start planning. And my friends,
+794.64s - 802.24s : planning is no easy task. Planning is difficult. So it's a great opportunity for the senior
+802.24s - 810.16s : leadership to kill the project early on before you spend so much time planning it. Okay? Maybe they
+810.16s - 814.24s : don't want to expand into that market. Maybe they have their own reasons. So they kill it off early on.
+815.92s - 820.0s : But I want to open a deep note here and contradict myself a little.
+820.08s - 827.6s : So what you need to do or how much detail that goes into the charter
+829.52s - 834.8s : heavily depends on your project needs, project scale, your industry. So if a project is this
+835.76s - 841.76s : is, let's say, creating international space station. I mean, obviously your initiation will include
+841.76s - 846.4s : a lot more details. You know, it'll be almost like high-level planning. And the reason for that
+846.48s - 852.08s : is because planning such a project, the international space station is over $10 billion. Just the
+852.08s - 857.92s : planning. So obviously it will require you to present a lot more information to your project
+857.92s - 867.28s : sponsor to get an approval for a $10 billion planning. Right? So far so good. Good. Let's move on.
+867.28s - 873.84s : The second process for initiation process group is stakeholder identification. At this stage,
+873.84s - 878.88s : you will again keep it very simple. You will not categorize all the stakeholders based on their
+878.88s - 885.12s : influence and the power. You will do that later. Now, as I mentioned before, we just want to know
+885.12s - 890.4s : whether we should proceed or not. It's a checkpoint. So all you do is create an exact list
+891.12s - 902.16s : and list down all the project stakeholders. I'll put it on the screen. So in my case, my stakeholders
+902.16s - 909.52s : will be my wife. She'll be my sponsor. Right? Then my neighbors, because I'll do a lot of hammering
+909.52s - 914.48s : and drilling. So I'll make a lot of noise. Therefore, I need to include them as my stakeholders as well.
+915.12s - 920.72s : For most projects, your primary stakeholder is your project sponsor. Who is your sponsor?
+920.72s - 925.12s : Who gives you to go or no go? Right? Who is the project manager? Are you the project manager?
+925.84s - 930.72s : Who are going to be part of your project team? Who are going to be project management team?
+930.72s - 934.8s : Right? Project management team is different than project team. Right? Now,
+936.16s - 945.12s : now we have the project charter and the project stakeholder register. It's now time to move on
+945.12s - 949.76s : to planning. Of course, provided that you secure the approvals. You get that sign off. Right?
+950.48s - 954.88s : Now we have initiated the project and we get our approvals. Let's plan it.
+954.88s - 965.6s : Planning is a lot more detailed and comprehensive than initiation. We're going to need to talk about
+965.6s - 972.0s : some lot of details and knowledge areas. So I'm going to introduce you to certain knowledge areas.
+972.0s - 976.72s : So I suggest you take a break now, pause the video, go get a cup of coffee, refresh yourself,
+976.72s - 981.76s : and come back when you're ready. Or you can just bookmark this video and watch it whenever
+981.84s - 990.16s : you're on top of your focus. Okay? Let's start. So with planning, we are looking to find answers
+990.16s - 999.2s : to three main questions. Okay? So the first question is, what are we going to do?
+1000.88s - 1008.0s : How are we going to do it? How to know when the project is done? This particular one is very important
+1008.56s - 1014.16s : because in real life, most projects are never done. They almost become operations. They're never done.
+1014.16s - 1019.92s : So at the end of the planning process, you'll end up with a comprehensive project plan. And this
+1019.92s - 1026.72s : project plan will include a few items. So it'll include the requirements. It'll include scope,
+1028.08s - 1036.48s : work breakdown structure, or as we call it, WBS. We'll have schedule, some sort of timeline.
+1037.44s - 1045.68s : Then we'll have cost and budget and quality. So for those PMP takers, let me put a disclaimer here.
+1046.4s - 1053.84s : The PIMBAR guide, whether it's 500 pages of glory, it has obviously a lot more knowledge areas.
+1054.96s - 1061.2s : But I'm simply fine, thanks for you here. So if you plan on taking the PMP test,
+1061.2s - 1066.4s : just make sure you properly read this whole thing. Okay? Because all I'm trying to do is
+1066.4s - 1070.48s : simplifying things and make you understand the fundamentals. So when you read this,
+1071.6s - 1077.52s : you'll be able to understand it very clearly. But just keep this in mind, I am leaving a few things out.
+1079.68s - 1084.08s : Because this video isn't only for PMP takers, but for anyone who just wants to learn the
+1084.08s - 1089.12s : fundamentals of project management. Good. So let's get going. The first process we have is collecting
+1089.12s - 1094.0s : requirements, understanding what stakeholders want. What do they really want? I mean,
+1095.6s - 1102.8s : we wrote this in the project charter, right? So what we're going to do is we'll just take this project
+1102.8s - 1110.56s : charter and give it more details and specifications. Right? And then it will become. See, this isn't a very
+1110.56s - 1116.72s : easy task in real life. I mean, collecting requirements, supposedly is the easiest part, but the
+1116.72s - 1122.08s : difficult part is maintaining your sanity. Because the moment you start gathering requirements,
+1122.96s - 1126.88s : then everybody is going to want to have the best of everything without consideration for
+1127.52s - 1132.8s : budget, quality or schedule. And they'll have contradicting requirements within themselves.
+1132.8s - 1138.4s : Right? They'll be clashes. And especially at this stage, you don't know the budget or the
+1138.4s - 1142.64s : quality or schedule it. I mean, you have a rough idea, but you don't know the details. So
+1143.04s - 1148.8s : you kind of gather the requirements based on your assumptions. And that's no easy task. Right?
+1148.8s - 1154.4s : If my wife comes up to me and says, Hey, let's buy you a new car. It's time. You know, she asks what
+1154.4s - 1160.48s : Cardi want. I'm going to say I want portion 911 GT3. You know, I won't consider the family budget or
+1160.48s - 1165.44s : the maintenance expenses. I'll just say what I want. That's how it's in project management as well.
+1165.44s - 1170.56s : When you ask what your stakeholders want, they'll shoot for the moon. They'll want the best. So
+1171.36s - 1177.12s : as a project manager, you have to keep things sort of on the leash and explain people that
+1177.84s - 1185.44s : there are always trade-offs in life. Just a small tip. When you're collecting requirements,
+1186.4s - 1190.72s : there are so many methods available to you. Right? I mean, you can do one-on-one interviews. You can
+1190.72s - 1196.0s : apply Delphi technique. You can do nominal group technique or other methods, all those fancy
+1196.0s - 1202.88s : sounding names. But if you ask me and if you can, just stick to the good old meeting. You know,
+1202.88s - 1208.32s : just get everyone in a room or in a teleconference and gather the requirements collectively.
+1208.32s - 1213.2s : If you do interviews one by one, then you'll have a lot of contradicting requirements at your
+1213.2s - 1219.44s : hand. Right? Get everyone together. Let them argue. Let them fight. But at the end, you'll have your
+1219.44s - 1229.6s : requirements set in stone. Next process is defining the scope. Right? Like this. It's the scope.
+1229.6s - 1234.32s : What does the scope do? The scope makes the C-starting things clear. But then exclude other things,
+1234.32s - 1242.24s : right? That's exactly what it is in project management as well. So to do our scope, we need a few
+1242.32s - 1255.04s : documents. We need the project charter and then where is my charter? Yeah. We need project charter.
+1255.04s - 1262.0s : And then we need project requirements documents and then any risk assumptions and constraints,
+1262.0s - 1269.04s : whatever you have, that will all help you define the scope. Now defining the scope is one of the
+1269.04s - 1274.48s : most important processes because what happens in reality is weak project managers include
+1274.48s - 1282.4s : everything in the project requirements document, right? Or make it very vague also in the project scope.
+1282.4s - 1290.08s : So as a result, your project plan just becomes an impossible plan to execute because your scope
+1290.08s - 1296.88s : goes into your project plan. Right? So if you do a weak job with setting your scope,
+1297.84s - 1304.88s : or if you're really vague, then you're not going to be able to execute it. Try not to go overboard,
+1306.08s - 1315.2s : make things very clear. So your project scope statement should or may include your project scope
+1316.4s - 1323.52s : and then your deliverables. I have it over here. Your project justification, your business case,
+1324.08s - 1336.64s : and success criteria. Right? So after the project scope, now let me introduce you to a concept called
+1336.64s - 1345.6s : scope baseline. What is this now? Scope baseline is composed of three things. So you have your
+1346.48s - 1355.28s : scope statement. Okay? Then we need work breakdown structure. I'll refer to it as WS from now on.
+1356.96s - 1363.6s : Okay, this is your WS. We're going to do that now. And after that, we're going to need WBS
+1363.6s - 1372.48s : dictionary. And again, we're going to talk about this. So, okay, let's move on with WBS. Now,
+1372.48s - 1380.88s : I want to stop you for a second and make an announcement here. You can't afford to misunderstand WBS.
+1381.76s - 1386.16s : It is very important. Whatever project management methodology or framework you use,
+1387.04s - 1396.96s : this is essential. Okay? Very, very important. So if you want to, again, feel free to take another
+1396.96s - 1405.68s : break. Go get some fresh air and come back when you're ready. Good. Before I start creating a WBS
+1406.32s - 1414.24s : for the board project, let me tell you what it is. The WBS breaks the project down
+1415.12s - 1423.68s : into smaller and more manageable pieces. It's a top-down effort. Right? You basically just decompose
+1423.68s - 1430.0s : your deliverables. And then we call them work packages. Now, I want to highlight one more
+1430.0s - 1437.52s : important thing here. If you're strictly following PMI's framework, then work packages have to be
+1438.24s - 1444.8s : things. They can't be actions. They need to be deliverables, things. They can be documents or
+1444.8s - 1451.6s : building or things. My vocabulary is failing me here, but I hope you understand. So,
+1452.96s - 1460.24s : in practice, though, the things is for PMI, but for everyone else, you can do a hybrid model.
+1461.76s - 1467.76s : It can be work packages and then activities and anything. So whatever suits your need.
+1467.84s - 1474.4s : Okay. So how deep you go? I mean, like how many layers do you want to go?
+1475.92s - 1483.2s : Here's the question. Can you answer this question? Can you confidently estimate the cost
+1483.2s - 1488.96s : and time requirements of that work package? Can you say it'll take one week or a thousand dollars?
+1488.96s - 1493.92s : Can you answer that question? Because if you can't, then you need to break it down further
+1493.92s - 1498.96s : to activity level until you can make some cost and time assumptions. For example,
+1499.6s - 1504.64s : when I look at this boat, I can't say how long it will take me to finish it, but I can estimate how
+1504.64s - 1511.36s : long it will take to lemonade it or do the woodwork, do the frames. So go as deep as you need to go,
+1511.36s - 1515.68s : and then you're going to roll up and estimate the cost at a time. But that's for later.
+1516.24s - 1524.08s : So let's do it. Let's do the WBS. So you start with a project name as level one.
+1524.96s - 1532.8s : And then you segment your project into various work components. So in my case, my segments are,
+1532.8s - 1541.12s : I have design, I have manufacturing, I have electronics, then I have the rigging, the rig.
+1541.68s - 1547.44s : Rigging is the mass sales and the shrouds and the whole thing. And then I have testing.
+1549.28s - 1553.28s : And then we need to put labels on them, 1.1, 1.2, 1.3.
+1554.96s - 1561.2s : Now, this is still too high level, right? I mean, when I look at the graph at that stage,
+1561.2s - 1567.76s : can I estimate the cost and schedule? No, probably not. This means we now need to break it down further.
+1568.56s - 1575.84s : Now, for this project, a project is small. I don't need sub-segment, but keep in mind that in your
+1575.84s - 1581.04s : project, you may need to put in sub-segment to break it down even more clearly. Now,
+1582.56s - 1588.56s : okay, let me start attaching my work packages. These are the important bits. My work packages are,
+1589.28s - 1600.96s : so I need to find an actual EMOCA 60 design. And then what else? After that, I need to adjust the
+1600.96s - 1605.76s : design for scaling down because you can't just take a design for a 20-meter boat and then
+1605.76s - 1611.84s : manufacture a 1.5-meter version of it. So it won't say, well, it won't float well. So that
+1611.84s - 1617.2s : means I need to increase the volume. Then after that, I need to finalize the design.
+1618.48s - 1623.44s : This is actually where I actually design it or modify the design I have. This is actually
+1626.24s - 1633.04s : where I make it ready for manufacturing, right? So for manufacturing, my work packages are,
+1634.24s - 1639.28s : I need to decide on the materials and then I need to procure them. Then I need the frames. I need
+1639.28s - 1652.48s : frame for the deck and the hull. Then, yeah, so what else I'm confused. Yeah, then I need to
+1652.48s - 1658.48s : eliminate it. I need to again, eliminate the hull and the deck. And then I need to assemble them
+1658.48s - 1665.52s : together, you know, the hull part and the deck. Then later on, the cosmetics. So for cosmetics,
+1665.52s - 1679.36s : I need to do a lot of sending. And after sending, I will do the painting. And yeah, yeah, I think
+1679.36s - 1684.0s : that's pretty much it. And as per the electronics, first package is again, decide on the components
+1684.0s - 1689.28s : and procure them. I'd like to merge them under one work package. So I can easily estimate the
+1689.28s - 1694.88s : cost and time investment at this level. I don't need to break it down further. And then the second work
+1694.88s - 1703.12s : package is assembly. Then move on to rigging. The rigging is again, as I said, the mast, the boom,
+1703.12s - 1709.28s : the the sales and lines and shrouds, everything, you know. So for that, again, I need to decide on the
+1710.08s - 1716.72s : the items and then I need to procure them. And then I need to install them, assemble them.
+1717.68s - 1724.8s : Yeah. And finally, the last one is testing. So I need to do the testing for the
+1726.08s - 1734.16s : electronics, the rigging and the hull. And then I need to do a pool trial and finally see trial.
+1734.16s - 1739.76s : Okay, now we finished creating our WBS. Now, I want to talk about the importance of this documents
+1740.72s - 1746.16s : once more. See, everything happens after WBS.
+1748.24s - 1755.84s : The in the planning process, for example, you know, the cost schedule risks, everything is calculated
+1755.84s - 1760.88s : by using this chart. We do not calculate the cost or the schedule for a project as a whole.
+1761.52s - 1771.04s : We do that at work package level using the WBS. Now, before we move on to the other processes,
+1771.04s - 1775.2s : I want to remind you of something, something that I mentioned earlier. Do you remember the scope
+1775.2s - 1782.56s : baseline? Remember what it was consisted of? Let me just remind you once more. It's the project scope,
+1783.12s - 1792.96s : WBS and WBS dictionary. So now we cover the first two. Right? Now it's time for the third one,
+1793.52s - 1800.0s : WBS dictionary. And once we have it now, then the project scope baseline is completed.
+1800.8s - 1804.64s : Okay, so what is this dictionary thingy? Let me just find it as well.
+1806.0s - 1810.8s : So imagine this. If we don't define these work packages in WBS properly,
+1811.36s - 1814.96s : then we are prone to a scope creep. Now, what is scope creep?
+1815.76s - 1821.76s : scope creep is basically scope extending its boundaries. Remember the Porsche 911 GT3 that I
+1821.76s - 1830.08s : wanted for my wife? So that Porsche 911 GT3 becomes GT3 RS, basically a higher model. So if you don't
+1830.08s - 1835.36s : control and keep the leash of the scope, then it keeps on getting expanded and expanded. Right?
+1836.24s - 1842.8s : Your stakeholders are going to want to stretch its limits and to prevent it, what you do is you
+1842.8s - 1849.76s : create a dictionary for every single WBS item. What does that mean? You know, like what are the
+1849.76s - 1855.68s : the boundaries of it? What do you mean by work package? Hall framed. Right? So you put boundaries
+1855.68s - 1864.88s : around it. You explain it. By that way, nobody can stretch it. Okay. For those of you who are
+1864.88s - 1871.44s : preparing for a PMP test or a cap M-tex test, you'll know that there are a few other knowledge areas
+1871.44s - 1877.28s : like human resources and communications and risk management, procurement and a couple others.
+1877.28s - 1882.72s : So I'm not going to cover them here for a few reasons. One, I don't think they need explanation.
+1883.92s - 1890.08s : Most of them are fairly easy to understand once you read the pinback. They're very intuitive.
+1891.04s - 1896.88s : You don't need me to teach you about procurement or human resources. The only exception in my opinion
+1896.88s - 1902.96s : is risk management. See, that's not very easy. But I won't talk about risk management here because
+1902.96s - 1908.4s : I will probably have a dedicated video on that later, maybe next month. And I don't want to spend
+1908.4s - 1913.12s : an hour running risk management simulations here, you know, the Monte Carlo and things. So
+1913.76s - 1919.36s : plus for most of you, like nine, nine percent of you running small projects, you don't factor in
+1919.36s - 1925.44s : risk management anyways. I mean, you're aware of the risks, but you don't go out of your way to
+1925.44s - 1932.08s : spend a week on preparing risk registers, right? So instead, I'll focus on, in my opinion, more
+1932.08s - 1942.32s : essential once here. So let's continue with time management, the schedule. And what we do is,
+1943.28s - 1949.36s : we start giving estimates for how long a particular work package will take.
+1950.72s - 1956.4s : Here's an important point for you. If you can't confidently estimate how long a particular work
+1956.4s - 1963.52s : package will take to complete, then you need to do what? You need to break it down first, right?
+1963.52s - 1970.08s : So let's pick one. Materials decided as part of manufacturing. Okay, do I know how long it takes?
+1970.56s - 1976.48s : Yeah, I probably, I know it. So I don't need to break it down further. And once you're done
+1977.2s - 1984.4s : estimating these, the other fun part starts. And that's putting them in a sequence. Now, for
+1984.4s - 1990.72s : PMP takers, you need to resort to PIMBA guide for boring details of finish to start, start to finish
+1990.72s - 1999.36s : and calculations of critical path. For all of you, for the rest of you, you don't need to.
+2000.32s - 2007.36s : Because I'm going to show you a lot easier way. So in practice, we do all of those with the help
+2007.36s - 2014.56s : of MS projects. MS project is very easy and it's an awesome, awesome program. But you don't
+2014.56s - 2021.28s : even need MS projects for most of your projects. All you need at this stage is a Gaunt chart,
+2021.28s - 2029.28s : again, chart, how are you say it? So again, chart is, it's very easy to use. It makes things so simple.
+2029.92s - 2035.52s : And it's very easy to list your activities or work packages in a suitable time scale.
+2036.08s - 2044.96s : Each work package or activity is represented by a bar that shows us to start date, the duration,
+2044.96s - 2051.04s : the length of it is a duration, and the end date of the activity. So it's very simple. You can
+2051.04s - 2057.6s : use MS projects, you can use MS Excel or even manually on a PowerPoint if you want to. So it really
+2057.6s - 2065.28s : depends on how complex your project is. So for me, and probably for you too, all you need is just
+2066.8s - 2071.6s : just a PowerPoint. You don't even need Excel. You don't need to run calculations or anything.
+2071.6s - 2077.92s : Just manually do it on PowerPoint. And that's how I'm going to do demonstrating how I did it for you
+2078.64s - 2086.88s : if I could speak. So if you're still with me by this point, please consider subscribing to my channel
+2086.88s - 2091.92s : because as I said, if you don't, YouTube will not show my future videos to you. In fact,
+2091.92s - 2096.64s : you can even hit that bell icon so you'll be immediately notified of my future releases.
+2098.08s - 2102.64s : Oh, you can also download all the templates I use in this mini course from the link down in the
+2102.64s - 2107.76s : description. You may need to register though. I'm not sure I haven't figured out how to do it yet.
+2108.4s - 2114.0s : So sorry, I digress. Let's get back to the topic. If you subscribed already,
+2114.96s - 2123.44s : let me now talk about three things very quickly that you'll hear a lot. One, fast tracking.
+2124.48s - 2130.88s : See, fast tracking a project means performing more activities in parallel. So you see more bars
+2130.88s - 2136.16s : along the same vertical axis, right? The other term you hear a lot is called project crashing.
+2136.16s - 2142.64s : Crashing in simple terms is shortening the duration of the activities by adding more resources.
+2142.64s - 2148.88s : For example, if two workers finish the project in 30 days, then how long does it take for four
+2148.88s - 2154.64s : workers to finish it? Obviously, 15. And if you said 60, please go get some fresh air.
+2156.08s - 2161.84s : You need a break. So this is called project crashing, but it comes at a cost,
+2161.84s - 2166.56s : right? Cost of additional resources, additional money. So you've, have you seen those,
+2166.96s - 2173.28s : you know, huge towers being built in China in 30 days, right? You can see their footage. They're
+2173.28s - 2179.84s : amazing. This is what they do. They just crash every single work package because they don't have
+2179.84s - 2184.0s : a labor shortage and probably no money shortage either. So that's how they do it.
+2185.2s - 2188.32s : Now, let's move on with the costs. We're done with the schedule.
+2189.92s - 2196.32s : All right, cost management. Now for this piece, we'll take out our beloved WBS again.
+2197.52s - 2204.72s : But instead of putting durations, now we'll give our cost assumptions fairly simple, right?
+2205.2s - 2210.56s : So we'll do a bottom up estimating and then start giving up, not giving, start giving
+2211.44s - 2216.64s : our cost assumptions for each work package. Again, very similar to what we did for schedule
+2216.64s - 2222.24s : management. And once you have all the costs added up for this, you may need to use Excel.
+2222.96s - 2230.56s : So you can use the easy calculations. PowerPoint want to want to find here.
+2231.28s - 2236.0s : So anyway, once you have all the costs added up, the direct cost in direct cost variable and
+2236.0s - 2242.24s : fixed cost if you want to, then you can create a budget. For those PMP takers, keep in mind that
+2242.24s - 2247.68s : there are a few more steps for you. For example, you need your risk register and risk contingencies
+2247.68s - 2252.96s : to be included in your budget. Not just that, actually. You also need your management resource.
+2252.96s - 2260.64s : So the way it works is you roll up, right? Get your cost estimates for activities if you
+2260.64s - 2267.6s : included activities, then work packages, right? Then you'll have a rough idea of the project cost
+2267.6s - 2274.0s : estimate. Okay? And once you have it, you include the contingency estimates which comes from your
+2274.0s - 2281.92s : risk studies. You include that, right? And that gives you your cost baseline. Then you include
+2281.92s - 2287.44s : the management reserves and voila, you have your cost budget. That's pretty much it.
+2289.2s - 2294.8s : And as I said, for 99% of us, we don't really do that in practice. We roll up the cost of each
+2294.8s - 2300.88s : work package and then put a 20% contingency reserve and we're done. So no need to complicate anything
+2301.44s - 2306.48s : that we don't have to. You know, we're done with planning. All right. So,
+2307.44s - 2311.6s : so far, we're done with the initiation. We're done with planning. And now it's the fun part.
+2312.24s - 2318.32s : The execution, you know, it's the doing part. It's where we execute things. It's the fun part.
+2319.2s - 2319.84s : Now let's do it.
+2319.92s - 2330.96s : The purpose of the executing process is to complete the work we defined in project management plan.
+2331.76s - 2338.72s : You know, meet the objectives. This is where we do the work. Your focus now is as a project manager,
+2338.72s - 2346.0s : I'm assuming you take the project manager role is to manage your team follow processes,
+2346.0s - 2351.76s : you know, conflict resolution. Your job is essentially guiding the team to stick to the plan you
+2351.76s - 2357.84s : created with your team. So if you've done a good job with planning, then your execution is going to be
+2357.84s - 2364.08s : so easy. Although it takes the longest, but it's just like playing with Legos. You just put them in
+2364.08s - 2368.56s : their places. But if you haven't done a good job with the planning, then your execution is going to
+2368.56s - 2375.92s : be a nightmare. So in execution, if you're not the one doing all the execution work, I like myself
+2375.92s - 2380.56s : in this case, I'm the one who is doing it, you need to constantly manage the expectations of
+2381.44s - 2387.36s : stakeholders. You need to protect your scope, right? I talked about the importance of this before
+2387.36s - 2392.24s : because you'll quickly realize that the stakeholders will want you to gold plate. Do you know what
+2392.24s - 2397.52s : that is? The gold plating? So it's in simple terms, making changes to our project that are
+2397.52s - 2402.72s : outside of your scope. You know, instead of getting the grade B quality material as you agreed,
+2402.72s - 2408.0s : your stakeholders now want you to get grade A quality. Now this is a problem because you didn't
+2408.0s - 2413.92s : you didn't factor that in your budget or time estimates. So as a project manager, you need to
+2413.92s - 2419.6s : prevent scope creep. Protect your scope. Your scope is like your your national flag, you know,
+2419.6s - 2423.68s : you protect it against all unnecessary change requests. You resist.
+2426.56s - 2431.52s : If they're really, really legitimate ones, you can evaluate it and put it in consideration.
+2432.32s - 2438.0s : If it's really valid with a change request, but don't just take it as is, don't say, okay, no problem.
+2439.2s - 2445.44s : For those PMP takers or cap-em takers, pay attention to change requests and how it's done.
+2447.04s - 2454.0s : Now this was the execution. The next process group is called monitoring and controlling process
+2454.16s - 2455.2s : group.
+2459.12s - 2466.64s : Monitoring and controlling means measuring the performance of your project against the plan,
+2467.28s - 2472.4s : managing your change requests and making sure you're hitting your KPIs if you have included
+2472.4s - 2479.68s : the manifest place. An important aspect here. Monitoring and controlling starts with the
+2479.68s - 2485.2s : execution process group. So they run in parallel. So you're monitoring and controlling when you're
+2485.2s - 2489.84s : already executing it. I mean, it makes sense, right? How can you monitor once you finish the
+2489.84s - 2498.8s : execution? It's it's common sense. So then what do you monitor and control then, right? So you monitor
+2498.8s - 2504.56s : your scope. You make sure no scope creep happens. You monitor your schedule and forecast if you think
+2504.56s - 2510.96s : there'll be delays. This is particularly easy to see because you already have your project time
+2510.96s - 2518.88s : plan, your project schedule. Remember, we even put it on the gun chart, right? Then you monitor your costs,
+2518.88s - 2524.88s : your quality, your risks and your procurement is procurement happening all right? Are the contractors
+2524.88s - 2531.12s : happy? So this is fairly simple. For example, you finish the particular work package, right?
+2531.12s - 2537.36s : And then you can just always look back and verify if you were within the allowance. I mean,
+2537.36s - 2542.24s : if you weren't, then you look for the root causes. What happened? Why do we exceed the budget or
+2542.24s - 2547.68s : the schedule? Then obviously you solve those problems so they won't repeat. And you make sure you
+2547.68s - 2556.4s : document everything. For PMP takers, please pay extra attention to earned value calculations here.
+2556.4s - 2561.68s : It becomes particularly important in this stage. Now I want to quickly touch on earned value.
+2561.68s - 2569.04s : So earned value is the total project budget multiplied by the percentage complete of the project.
+2569.84s - 2577.28s : For example, you have budgeted $1 million for the whole project, let's say, okay? And you have
+2577.28s - 2587.12s : finished 20% of it. So your earned value is $200,000. Now this is primarily used for construction
+2587.12s - 2595.52s : and software projects and an important concept by PMI, right? But in real life, it doesn't hold much
+2595.52s - 2601.44s : value other than fee industries like the construction and the IT. And the reason is the value gained
+2601.44s - 2607.2s : cannot always be assessed along the progression of the project. What does this even mean?
+2607.2s - 2613.68s : It means it's not always a linear progression. Most of the time, the actual value of a project goes
+2613.68s - 2619.76s : like this. So it's not linear, it's a power curve. Most projects show exponential growth
+2620.56s - 2626.4s : instead of a linear one. And they get compounded results every month. And their calculation is a
+2626.4s - 2633.68s : lot more difficult than a simple Y equals to MX plus B. To calculate it, you need a growth DK formula.
+2633.68s - 2639.2s : So it's a very complex one. And no project manager is going to run that every week just to calculate
+2639.2s - 2645.04s : the earned value. This one is very similar to how we calculate interest, compound interests.
+2645.84s - 2651.12s : So, okay, before I bore you to death, let's move to the closing process group.
+2651.28s - 2658.56s : Actually, no. I want to explain this just a bit more. The exponential growth, because I believe
+2658.56s - 2663.76s : you'll benefit from it. So let's take my YouTube channel, for example. Let's call this project,
+2663.76s - 2669.2s : project 100,000 subscribers. That's what I love to achieve. At the moment, I have about 19,000
+2669.2s - 2678.0s : subscribers. So let's say I get 500 subscribers per week with 20 videos, right? Total 20 videos.
+2678.56s - 2684.8s : So if I have 40 videos provided that I maintain the quality, I will not have 1,000 subscribers per
+2684.8s - 2691.76s : week. It'll probably be 2,000 per week or a lot more because it gets compounded. Just like your
+2691.76s - 2697.6s : money and your savings, I can. See, if you calculate your earned value based on your execution,
+2699.2s - 2702.64s : then you'll get confused. I mean, think of it this way. I'm still putting out about one
+2702.64s - 2710.16s : video per week, right? But it all of a sudden just became exponential, right? So that's how most
+2710.16s - 2718.0s : projects are in real life. Okay, sorry to have taken your time. I digress a little bit there.
+2718.0s - 2724.64s : So the key takeaways, whatever your project is, don't quit just because you don't see the results
+2724.64s - 2733.2s : now. They will come and when they do, they will come like that. Okay? Let's do closing. Let's close
+2733.2s - 2747.44s : this project. Now, we finished the product, right? The end result. We have the boat is completely finished.
+2748.32s - 2756.16s : But is the project finished? I mean, the product is finished, but the project? No, it's not. Not
+2756.16s - 2760.32s : yet. There's still some work to be done, not much, but we still have to do certain things.
+2761.28s - 2766.48s : And mostly boring admin work. So what do we do now? Well, what you do is,
+2769.36s - 2773.92s : well, it's actually really customizable to the needs and complexity of your project. But in general,
+2774.56s - 2782.48s : what I'm going to share with you are good starting points. One, we hand it over the end product to
+2782.48s - 2786.56s : the client. If it's a project you did for a client, right? You need to basically get a sign off
+2786.56s - 2792.0s : from the client. That says, okay, I received the position of this item, you know, and then they
+2792.0s - 2796.96s : sign it off. And then you finish procurement, meaning you need to make the final payments and
+2797.04s - 2803.68s : complete your cost records. And then you need to gather your final lessons learned.
+2803.68s - 2809.52s : This is basically documenting what went wrong and what did we learn from it? I mean,
+2809.52s - 2815.92s : you probably can't see it when I showed the boat, but this boat isn't perfect. The bow of the boat
+2815.92s - 2821.6s : is actually not straight. It's leaning towards the port side, the left side. So yeah, a few
+2821.68s - 2828.88s : lessons learned there. And then the four item to do is you release resources. Let your team members
+2828.88s - 2835.52s : go back to their own teams. And then finally, you go celebrate. Congratulations.
+2836.8s - 2841.76s : Thanks for being with me the past one hour. I hope you benefited from this video. And if you did,
+2841.76s - 2846.56s : please share it with your friends and professional network in LinkedIn. And if you share it in LinkedIn,
+2846.56s - 2850.64s : please feel free to send me an invitation to connect. I'd love to connect with you. And finally,
+2850.64s - 2856.08s : as I mentioned earlier, if you are looking to make a big jump in your career and explore working
+2856.08s - 2861.2s : for multinational companies, consider joining my LG program. That's where I share some of the
+2861.2s - 2868.0s : advanced strategies to getting yourself employed by amazing multinational firms. It delivers great
+2868.0s - 2873.68s : results. And all right, we're done. See you next week.
