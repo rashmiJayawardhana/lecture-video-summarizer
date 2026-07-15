@@ -1,0 +1,227 @@
+[
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 150.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4348,
+        "ocr_text": "OpenA",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00005_02m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4922,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00006_03m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3544,
+        "ocr_text": "Milestones",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00007_03m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4584,
+        "ocr_text": "Generative Pre-trained Transformer GPT",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4305,
+        "ocr_text": "From GPT-1 to GPT-3",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4006,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4284,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4477,
+        "ocr_text": "How does it perform for DevOps tasks? How qualitative will be the scripts",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3905,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 570.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3675,
+        "ocr_text": "DevOps Task ChatGPT node",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00019_09m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 1020.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4048,
+        "ocr_text": "Use Multi-stage builds",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 1260.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3643,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00042_21m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 1290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3677,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00043_21m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 2130.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.471,
+        "ocr_text": "Provide Jenkinsfile with complete CI/CD code Push to Bulld Test Deploy",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00071_35m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 2970.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3732,
+        "ocr_text": "You need a lot of knowledge yourself",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00099_49m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3000.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3891,
+        "ocr_text": "You need a lot of knowledge yourself You can't rely on the results! Can be very helpful though!",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00100_50m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3180.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3612,
+        "ocr_text": "DevOps tasks?",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00106_53m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3210.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3852,
+        "ocr_text": "DevOps tasks? For more experienced engineers, could be a tool to become more efficient",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00107_53m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3240.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4038,
+        "ocr_text": "ChatGPT",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00108_54m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4516,
+        "ocr_text": "Optimize on top GPT-3",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00109_54m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4739,
+        "ocr_text": "Optimize on top App for legal App for questions engineering tasks GPT 3",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00110_55m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3822,
+        "ocr_text": "Aloc Artificial Intelligence Infrastructure-as-Code Generator queries etc",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00111_55m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.421,
+        "ocr_text": "Install aiac Create your OpenAI API key Provide the API via environment variable get key",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00112_56m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3766,
+        "ocr_text": "AlaC Can be a useful tool for engineers Firefly",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00121_60m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_007",
+        "frame_time": 3660.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3669,
+        "ocr_text": "AlaC Can be a useful tool for engineers Relevant links in video description Sove output directly into file",
+        "frame_path": "data/processed/module3/slides/lecture_007/lecture_007_frame_00122_61m00s.jpg"
+    }
+]

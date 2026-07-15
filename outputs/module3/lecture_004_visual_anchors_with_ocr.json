@@ -1,0 +1,56 @@
+[
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 60.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.384,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00002_01m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 930.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4155,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00031_15m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 990.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4319,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00033_16m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3300.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3573,
+        "ocr_text": "Python tunctions",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00110_55m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3360.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3986,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00112_56m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3390.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3971,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00113_56m30s.jpg"
+    }
+]

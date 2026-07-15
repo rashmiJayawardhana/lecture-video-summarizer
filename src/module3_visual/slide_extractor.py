@@ -1,142 +1,102 @@
-"""
-Slide Extraction using OpenCV for Module 3
-
-Extracts unique slide frames from lecture videos using SSIM-based
-frame difference detection.
-
-Owner: Fazly (214008C)
-"""
-
 import cv2
-import numpy as np
-from pathlib import Path
-from typing import List, Tuple, Optional
-from skimage.metrics import structural_similarity as ssim
+import os
+import argparse
+import json
 
 
-class SlideExtractor:
+def seconds_to_time(seconds):
+    minutes = int(seconds // 60)
+    secs = int(seconds % 60)
+    return f"{minutes:02d}m{secs:02d}s"
+
+
+def get_lecture_id(video_path):
     """
-    Extract unique slide frames from lecture videos.
-    
-    Uses SSIM (Structural Similarity Index) to detect frame changes
-    and identify when a new slide appears on screen.
-    
-    Usage:
-        extractor = SlideExtractor(similarity_threshold=0.95)
-        slides = extractor.extract_slides('lecture_001.mp4')
+    Example:
+    data/raw/lecture_001.mp4 -> lecture_001
+    data/raw/lecture_002.mp4 -> lecture_002
     """
-    
-    def __init__(
-        self,
-        similarity_threshold: float = 0.95,
-        sample_rate: int = 30,
-        min_slide_duration: float = 2.0,
-    ):
-        """
-        Args:
-            similarity_threshold: SSIM threshold. Frames with SSIM below this
-                                  vs. previous slide are considered new slides.
-            sample_rate: Check every N frames (30 = 1 per second at 30fps).
-            min_slide_duration: Minimum seconds a slide must be shown to count.
-        """
-        self.similarity_threshold = similarity_threshold
-        self.sample_rate = sample_rate
-        self.min_slide_duration = min_slide_duration
-    
-    def extract_slides(
-        self,
-        video_path: str,
-        output_dir: Optional[str] = None,
-    ) -> List[dict]:
-        """
-        Extract unique slide frames from a video.
-        
-        Args:
-            video_path: Path to the input video file.
-            output_dir: Optional directory to save extracted slide images.
-        
-        Returns:
-            List of dicts with keys: 'frame_time', 'frame_idx', 'image_path'.
-        """
-        cap = cv2.VideoCapture(str(video_path))
-        if not cap.isOpened():
-            raise ValueError(f"Cannot open video: {video_path}")
-        
-        fps = cap.get(cv2.CAP_PROP_FPS)
-        slides = []
-        prev_frame_gray = None
-        frame_idx = 0
-        
-        if output_dir:
-            out_path = Path(output_dir)
-            out_path.mkdir(parents=True, exist_ok=True)
-        
-        while True:
-            ret, frame = cap.read()
-            if not ret:
-                break
-            
-            if frame_idx % self.sample_rate == 0:
-                gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                gray = cv2.resize(gray, (320, 240))
-                
-                is_new_slide = False
-                if prev_frame_gray is None:
-                    is_new_slide = True
-                else:
-                    score = ssim(prev_frame_gray, gray)
-                    if score < self.similarity_threshold:
-                        is_new_slide = True
-                
-                if is_new_slide:
-                    timestamp = frame_idx / fps
-                    slide_info = {
-                        "frame_time": round(timestamp, 2),
-                        "frame_idx": frame_idx,
-                    }
-                    
-                    if output_dir:
-                        img_name = f"slide_{len(slides):04d}_{timestamp:.1f}s.png"
-                        img_path = str(out_path / img_name)
-                        cv2.imwrite(img_path, frame)
-                        slide_info["image_path"] = img_path
-                    
-                    slides.append(slide_info)
-                    prev_frame_gray = gray
-            
-            frame_idx += 1
-        
-        cap.release()
-        
-        # Filter by minimum duration
-        filtered = self._filter_by_duration(slides, fps)
-        
-        print(f"Extracted {len(filtered)} unique slides from {video_path}")
-        return filtered
-    
-    def _filter_by_duration(
-        self,
-        slides: List[dict],
-        fps: float,
-    ) -> List[dict]:
-        """Remove slides shown for less than min_slide_duration."""
-        if len(slides) <= 1:
-            return slides
-        
-        filtered = []
-        for i in range(len(slides)):
-            if i < len(slides) - 1:
-                duration = slides[i + 1]["frame_time"] - slides[i]["frame_time"]
-            else:
-                duration = self.min_slide_duration  # Keep last slide
-            
-            if duration >= self.min_slide_duration:
-                filtered.append(slides[i])
-        
-        return filtered
+    filename = os.path.basename(video_path)
+    lecture_id = os.path.splitext(filename)[0]
+    return lecture_id
+
+
+def extract_frames(video_path, output_dir, interval_seconds=5):
+    os.makedirs(output_dir, exist_ok=True)
+
+    lecture_id = get_lecture_id(video_path)
+
+    cap = cv2.VideoCapture(video_path)
+
+    if not cap.isOpened():
+        raise FileNotFoundError(f"Cannot open video: {video_path}")
+
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+
+    if fps <= 0:
+        raise ValueError("Could not read FPS from video.")
+
+    frame_interval = int(fps * interval_seconds)
+
+    frame_count = 0
+    saved_count = 0
+    metadata = []
+
+    while True:
+        ret, frame = cap.read()
+
+        if not ret:
+            break
+
+        if frame_count % frame_interval == 0:
+            timestamp_seconds = frame_count / fps
+            time_text = seconds_to_time(timestamp_seconds)
+
+            filename = f"{lecture_id}_frame_{saved_count:05d}_{time_text}.jpg"
+            output_path = os.path.join(output_dir, filename)
+
+            cv2.imwrite(output_path, frame)
+
+            metadata.append({
+                "lecture_id": lecture_id,
+                "frame_path": output_path,
+                "frame_time": round(timestamp_seconds, 2)
+            })
+
+            saved_count += 1
+
+        frame_count += 1
+
+    cap.release()
+
+    metadata_path = os.path.join(output_dir, f"{lecture_id}_frames_metadata.json")
+
+    with open(metadata_path, "w", encoding="utf-8") as f:
+        json.dump(metadata, f, indent=4)
+
+    print("Frame extraction completed.")
+    print(f"Lecture ID: {lecture_id}")
+    print(f"Video path: {video_path}")
+    print(f"FPS: {fps}")
+    print(f"Total frames in video: {total_frames}")
+    print(f"Saved frames: {saved_count}")
+    print(f"Output folder: {output_dir}")
+    print(f"Metadata saved to: {metadata_path}")
 
 
 if __name__ == "__main__":
-    extractor = SlideExtractor(similarity_threshold=0.95)
-    print("SlideExtractor ready.")
-    print("Usage: slides = extractor.extract_slides('lecture.mp4', 'output/slides/')")
+    parser = argparse.ArgumentParser(description="Extract slide frames from lecture video.")
+
+    parser.add_argument("--video", required=True, help="Path to lecture video")
+    parser.add_argument("--output", required=True, help="Output directory for extracted frames")
+    parser.add_argument("--interval", type=int, default=30, help="Frame extraction interval in seconds")
+
+    args = parser.parse_args()
+
+    extract_frames(
+        video_path=args.video,
+        output_dir=args.output,
+        interval_seconds=args.interval
+    )
+

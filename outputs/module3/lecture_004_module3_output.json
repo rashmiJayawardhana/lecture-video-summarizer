@@ -1,0 +1,1037 @@
+[
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 0.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.3827,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00000_00m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 30.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.3957,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00001_00m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 60.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.384,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00002_01m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 90.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4415,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00003_01m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 120.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4408,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00004_02m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 150.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4639,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00005_02m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 180.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4454,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00006_03m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 210.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.36,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00007_03m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 240.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.38,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00008_04m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 270.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4417,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 300.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4721,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 330.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4594,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 360.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4398,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 390.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4926,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 420.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.401,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00014_07m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 450.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.457,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00015_07m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 480.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4605,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 510.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4528,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00017_08m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 540.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5191,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00018_09m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 570.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5019,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00019_09m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 600.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5273,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00020_10m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 630.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4974,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00021_10m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 660.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5225,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00022_11m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 690.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.417,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00023_11m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 720.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5457,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00024_12m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 750.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5782,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00025_12m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 780.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5379,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00026_13m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 810.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5469,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00027_13m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 840.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4568,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00028_14m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 870.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5201,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00029_14m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 900.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.39,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00030_15m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 930.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4155,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00031_15m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 960.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4047,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00032_16m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 990.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4319,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00033_16m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1020.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4242,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00034_17m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1050.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4946,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00035_17m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1080.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4482,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00036_18m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1110.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5025,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00037_18m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1140.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5175,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00038_19m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1170.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.557,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00039_19m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1200.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5336,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00040_20m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1230.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4698,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00041_20m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1260.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4894,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00042_21m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1290.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.461,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00043_21m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1320.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4807,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00044_22m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1350.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5016,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00045_22m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1380.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5424,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00046_23m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1410.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5369,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00047_23m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1440.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5375,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00048_24m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1470.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4923,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00049_24m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1500.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5279,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00050_25m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1530.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5393,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00051_25m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1560.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.3994,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00052_26m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1590.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4955,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00053_26m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1620.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5495,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00054_27m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1650.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5247,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00055_27m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1680.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5215,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00056_28m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1710.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5428,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00057_28m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1740.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5345,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00058_29m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1770.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5243,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00059_29m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1800.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.542,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00060_30m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1830.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5438,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00061_30m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1860.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5418,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00062_31m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1890.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5397,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00063_31m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1920.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5561,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00064_32m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1950.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5491,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00065_32m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 1980.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5031,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00066_33m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2010.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5287,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00067_33m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2040.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4887,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00068_34m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2070.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5339,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00069_34m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2100.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5241,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00070_35m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2130.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5196,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00071_35m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2160.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4619,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00072_36m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2190.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5208,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00073_36m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2220.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5574,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00074_37m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2250.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5666,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00075_37m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2280.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5112,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00076_38m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2310.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5158,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00077_38m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2340.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5244,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00078_39m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2370.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5398,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00079_39m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2400.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4846,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00080_40m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2430.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5758,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00081_40m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2460.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.6096,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00082_41m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2490.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5296,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00083_41m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2520.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5664,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00084_42m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2550.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5281,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00085_42m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2580.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.585,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00086_43m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2610.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5659,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00087_43m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2640.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5697,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00088_44m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2670.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.576,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00089_44m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2700.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5448,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00090_45m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2730.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5489,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00091_45m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2760.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5183,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00092_46m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2790.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5464,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00093_46m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2820.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4877,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00094_47m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2850.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4774,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00095_47m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2880.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5367,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00096_48m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2910.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5239,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00097_48m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2940.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5419,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00098_49m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 2970.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5209,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00099_49m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3000.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5383,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00100_50m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3030.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5315,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00101_50m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3060.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5293,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00102_51m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3090.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5403,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00103_51m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3120.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5176,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00104_52m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3150.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5269,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00105_52m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3180.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5176,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00106_53m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3210.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.535,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00107_53m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3240.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.528,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00108_54m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3270.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4892,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00109_54m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3300.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3573,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00110_55m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3330.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.5288,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00111_55m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3360.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3986,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00112_56m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3390.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3971,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00113_56m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_004",
+        "frame_time": 3420.0,
+        "label": "Skip",
+        "label_score": 0.0,
+        "confidence": 0.4012,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_004/lecture_004_frame_00114_57m00s.jpg"
+    }
+]
