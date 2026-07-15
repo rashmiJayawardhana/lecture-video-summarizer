@@ -303,8 +303,8 @@ def fetch_ai_opinion_async(seg_id, start_f, mid_f, end_f, annotations_dict, outp
 # Leave VIDEO_DIR set to "videos".
 # =====================================================================
 VIDEO_DIR   = "videos"                      # folder containing your lecture videos
-ANNOTATOR   = "rashmi"                      # your name (goes into every record)
-OUTPUT_FILE = "annotations_rashmi.json"     # your personal output file
+ANNOTATOR   = "ravindu"                      # your name (goes into every record)
+OUTPUT_FILE = "annotations_ravindu.json"     # your personal output file
 
 # Fixed settings (do NOT change - keeps the whole team consistent)
 SEGMENT_LENGTH   = 10                       # seconds per segment

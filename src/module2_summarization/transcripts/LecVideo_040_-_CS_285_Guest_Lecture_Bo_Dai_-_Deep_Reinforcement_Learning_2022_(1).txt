@@ -1,0 +1,583 @@
+0.0s - 11.76s : All right. Hi, everybody. We're going to get started. So today we have our guest speaker,
+11.76s - 18.36s : Vodai, from Google. Both finished his PhD at Georgia Tech, and he's currently a staff research
+18.36s - 23.48s : scientist at Google, where he works on all sorts of questions, theoretical and practical
+23.48s - 29.04s : in regard to reinforcement learning. I'm a big fan of a lot of those work on off-ball
+29.04s - 33.84s : sea evaluation offline RL, although I'm going to learn about something new with representation
+33.84s - 37.44s : based reinforcement learning today. So I'm really looking forward to that. And hopefully
+37.44s - 47.6s : you are too. Thank you. Thank you for the introduction. Let me put it here. Yeah, Ashley,
+47.6s - 53.04s : can we hear me down? Great. I think today I will talk about the retention based learning
+53.04s - 60.04s : based learning. I would say this representation is a little bit way to get into investment
+60.04s - 64.04s : learning, because slow-man and paper-claiming is doing dependational learning, for example,
+64.04s - 70.04s : the same clear. We say they want to do the visual representation, and it's also possible.
+70.04s - 77.04s : But today, this representation varies to specific, they can say, I want to find us.
+77.04s - 93.04s : So today I will... Is this working now? I don't think it's still working. Yeah, I will
+93.04s - 98.04s : hold it. Anyway, so today I will talking about various specific representation which is
+98.04s - 104.04s : I want to find a representation such that I can represent the Q function specifically.
+104.04s - 113.04s : I think we will see it later. Yeah, this is actually several paper together. It's a years-long
+113.04s - 118.04s : effort on this direction. And I should send to the major contributor for this work,
+118.04s - 127.04s : which is Tongjong from Yutiao Sting and Tianjin from here, Berkeley. And Chen Jun, Sherry, Lisa,
+127.04s - 134.04s : Lena, and the Dale, and the Chaba. Okay. Okay, let's start. Today actually the outline of the
+134.04s - 139.04s : talk is, first of all, I want to point out a question in current reinforcement learning,
+139.04s - 145.04s : which is actually there is the trade-off between modeling, planning, and exploration.
+145.04s - 150.04s : But actually we have them to treat these questions very seriously in later return.
+150.04s - 157.04s : We will sit into the details several slides later. And later I will use this
+157.04s - 162.04s : representation based reinforcement to provide a coherent solution for this to achieve a
+162.04s - 168.04s : delicate balance between this trade-off. Say we don't need to waste any computation
+168.04s - 178.04s : effort to say, for example, you really have very complicated model. But once we get there,
+178.04s - 183.04s : it's difficult to get an optimal policy from the model. So that means you are wasting some
+183.04s - 191.04s : effort in sample complexity from the learning model and the computation cost for achieve optimal policy
+191.04s - 197.04s : here. So that's why I'm saying we want to use this representation based reinforcement
+197.04s - 205.04s : learning to provide a coherent solution. Consider it as a whole problem. Okay, before we
+205.04s - 212.04s : dive into the problem there, that's first to make some definition of notation. I
+212.04s - 218.04s : think, I don't know, maybe this is already very familiar to everyone sitting here, but I just
+218.04s - 225.04s : want to make sure the notation is consistent with my following slides. Say we have
+225.04s - 232.04s : state space, the node has s, and action space the node has a, and the reward function
+232.04s - 241.04s : which is function from state and action to the real number. The transition operator,
+241.04s - 246.04s : which is the conditional distribution, once I gave you the state and action, you provided
+246.04s - 253.04s : me the probability of next state, and of course initial state distribution. I have
+253.04s - 260.04s : another component in the MDP, which is H or gamma. H means if it's fine and horizon,
+260.04s - 265.04s : it's just H steps. If it's in the horizon, the gamma is then which is a scale,
+265.04s - 273.04s : it's called a scalar from 0 to 1. Okay, and now I have some definition of notation here,
+273.04s - 280.04s : which is the value function V, and also the state action value function Q. Okay,
+280.04s - 285.04s : I think we don't have any questions here. Okay, oh, by the way, if you have any
+286.04s - 293.04s : questions just interrupt me. I'm very happy to answer. Great. Okay, let's see,
+293.04s - 300.04s : there are two major categories of the reinforcement algorithm. Why is model
+300.04s - 305.04s : free? Reinforce money. While the representative algorithm in model
+305.04s - 312.04s : free, IO is Q learning, which is highly depends on the dynamic programming where
+312.04s - 321.04s : it's the dynamic recursion. Q equals to R plus gamma transition with future Q.
+321.04s - 330.04s : Okay, with this relationship, actually, we can construct a TD update. And then we can
+330.04s - 335.04s : introduce the nonlinear function, for example, neural network into it, and we get
+335.04s - 340.04s : the deep version of this TD update. And now that we call it the deep-kill learning.
+341.04s - 346.04s : This is one representative algorithm. And another wise policy gradient.
+346.04s - 353.04s : Okay, this is just a review of what exists. Okay, that's from the idea that we
+353.04s - 358.04s : have constructed the object function with the self-pile, which is a cumulative
+358.04s - 364.04s : reward from the beginning to the end. And we calculate the gradient with back to
+365.04s - 372.04s : the parameter in policy. And we update for the policy with stochastic gradient here.
+372.04s - 377.04s : And it's also have a lot of different variants like natural policy gradient and
+377.04s - 383.04s : software, critical, so on and so forth. These two are the repetitive algorithm model
+383.04s - 390.04s : free. Let's see what's problem of it. The benefit of this algorithm is that we can easily
+390.04s - 395.04s : incorporate the nonlinear neural network into it, for example, as I mentioned in
+395.04s - 403.04s : previous two slides. But there are some questions here. One is if I introduce
+403.04s - 409.04s : highly nonlinear function proximity to the Q function or the policy function,
+409.04s - 416.04s : there's no guarantee we can achieve the optimal solution. That means you're wasting
+416.04s - 422.04s : a little bit of modeling effort while you need to pay for it when you introduce
+422.04s - 428.04s : the complex, I mean, that kind of completed nonlinear function for planning.
+428.04s - 435.04s : That's one problem. And another wise, actually, we don't have any idea how to
+435.04s - 441.04s : capture the uncertainty of nonlinear model for exploration. That's what I mean.
+441.04s - 446.04s : There is a tradeoff between modeling and planning and exploration.
+446.04s - 455.04s : Okay, this is the drawback of this existing model free IL. And questions here.
+455.04s - 465.04s : Okay. Let's see another category, which is model based on reinforcement.
+466.04s - 473.04s : This is the basic algorithm for flow for the model based reinforcement.
+473.04s - 480.04s : The idea is that first I collect the data from some policy, and then I use this
+480.04s - 486.04s : data to estimate the dynamic model and the reward. And once I get it, I will use
+486.04s - 492.04s : some model predictive control to calculate the optimal policy from it.
+492.04s - 497.04s : And then execute this policy to collect the model data and installs it first until
+497.04s - 506.04s : I eventually stop somewhere. Okay. Let's see the representative algorithm here.
+506.04s - 513.04s : Actually, most of the algorithm here are invented by Professor Sugi.
+513.04s - 520.04s : For example, the first one, the model ensemble trust regime policy optimization
+520.04s - 529.04s : and these are the still of that, a motivational reinforcement for a fair moment.
+529.04s - 534.04s : If you really want to see the benchmark for this one, you can go to this link to see it.
+534.04s - 541.04s : Still, let's see what's the benefit of the problem and cons for this motivational reinforcement.
+541.04s - 546.04s : As I mentioned, there's still a tradeoff between modeling planning and exploration.
+546.04s - 554.04s : In modeling part, we can definitely use complicated model to estimate this environment.
+554.04s - 562.04s : But it leads to the situation that when the more complicated the model it is, the difficult
+562.04s - 567.04s : to get the open policy from there. This is the difficulty from planning.
+567.04s - 572.04s : And of course, it's still like in exploration. Also, we don't have any idea how to capture
+572.04s - 579.04s : the uncertainty from it. So, yeah, this is the part I mentioned that there's elephant in the
+579.04s - 587.04s : rule in I.O. but we never seriously take it as a question. As a problem.
+587.04s - 593.04s : Okay, this is another representative algorithm in motivational reinforcement,
+593.04s - 598.04s : which is called the inner quadratic reinforcement. I was even in this case,
+598.04s - 604.04s : we still met some problem in the tradeoffs. It's not achieving very good balance
+604.04s - 611.04s : between the modeling planning and exploration. Why? Because in the modeling part,
+611.04s - 616.04s : we only use linear model for reward and linear model for the dynamic.
+616.04s - 622.04s : And this gave us the benefit that learning problem actually is very easy.
+622.04s - 628.04s : And also the planning, as we can see here, is convex optimization.
+628.04s - 635.04s : And we can definitely get the global optimal for this algorithm. But let's see what happens.
+635.04s - 642.04s : Yeah, we lost the flexibility to achieve to model the real problem.
+642.04s - 647.04s : We actually saw the wrong problem here.
+647.04s - 653.04s : So, and here is the thing I want to emphasize. There is a tradeoff between modeling,
+653.04s - 659.04s : exploration, and planning. And the nature question is whether we can get a practical
+659.04s - 668.04s : algorithm with rigorous theoretical guarantee to achieve balance between these two three things.
+668.04s - 674.04s : And that's why we want to propose this representation based reinforcement.
+675.04s - 681.04s : Where we use model based reinforcement to get some, I think, arbitrary.
+681.04s - 686.04s : Let me over claim it a little bit. I'll be treating the linear model based reinforcement model
+686.04s - 697.04s : to capture the dynamic. And I can also achieve relatively global optimal for the planning and exploration.
+698.04s - 703.04s : Before I dive into how I achieve here, any questions?
+703.04s - 706.04s : For the upgrade.
+712.04s - 719.04s : Yeah, good questions. The question is why I say the exploration is difficult in nonlinear model.
+720.04s - 728.04s : It is because for exploration, basically, we need to estimate the uncertainty of my current model.
+728.04s - 738.04s : And to be honest, in theoretical part, we only can provide a rigorous uncertainty estimation for linear model.
+738.04s - 748.04s : And the beyond linear, we don't have anything computational, efficient way to, or computational tractable way to estimate uncertainty.
+748.04s - 754.04s : So that gives a difficult and for exploration.
+760.04s - 765.04s : Yeah, roughly, you can understand it this way. Yeah, roughly.
+765.04s - 771.04s : Yeah, if you can. That's why, as theoretically, we don't have such a way to get it.
+779.04s - 781.04s : Uh-huh.
+783.04s - 790.04s : Yeah, if we can estimate the uncertainty, yes, we can get the exploration works well.
+790.04s - 794.04s : But the questions with the problems we cannot.
+794.04s - 806.04s : But definitely, you can use some ensemble as a model ensemble TIPO, but just not the rigorous way to capture the uncertainty.
+806.04s - 813.04s : So it gives you the difficulty for exploration.
+813.04s - 820.04s : Okay, any more questions?
+820.04s - 827.04s : Okay. Now, let me start with vanilla nonlinear control model.
+828.04s - 836.04s : Compared to the linear collater, this is replacing the collateric reward function with arbitrary reward function.
+836.04s - 847.04s : And I replaced the linear dynamic model with the optional linear dynamic model, but just with little bit of restriction, which is the noise is Gaussian.
+847.04s - 851.04s : Okay, this is at the starting point.
+851.04s - 859.04s : Yeah, this is difficult to solve for planning, which means for achieving the ultimate policy here.
+859.04s - 861.04s : So how I deal with it.
+861.04s - 871.04s : Actually, let's first form it to the MVP formation for this nonlinear dynamic model, which is I rewrite the dynamic as a transition operator.
+871.04s - 872.04s : This is Gaussian.
+872.04s - 876.04s : So it's not difficult to rewrite the transition operator here.
+876.04s - 892.04s : And looking to this actually bring us to a very, very interesting factorization, which is I can decouple this transition operator with a related into an inner product between two function.
+892.04s - 896.04s : As K times K at prime.
+896.04s - 903.04s : Here is inner product of two Gaussian to get to the final, get to the final exponential Gaussian part.
+903.04s - 909.04s : Okay, although it's infinite dimension, but let's conceptually understand this is an infinite feature here.
+909.04s - 923.04s : Okay, and of course with the random feature decomposition, which is also proposed by the brainwrap, we can rewrite it as expectation of this random feature here by function.
+923.04s - 929.04s : Okay, once we get this decomposition, let's see what happened.
+929.04s - 935.04s : So I can rewrite the transition operator as the inner product between five and the meal.
+935.04s - 938.04s : The five is my, let's look back into the slides.
+938.04s - 942.04s : The five actually is my KFSA.
+942.04s - 946.04s : Okay, the meal actually is my KS pride.
+946.04s - 948.04s : Just to rewrite a little bit.
+948.04s - 957.04s : And also I make assumptions saying my reward function is also representable map by QSA linearly.
+957.04s - 965.04s : Once I achieve here and remember the definition of value function here, we, what we can achieve is here.
+965.04s - 979.04s : Let's say integration V with T, we can use the factorize of T and rewrite it into a five times integration.
+979.04s - 983.04s : This is important to represent my Q function.
+983.04s - 988.04s : And the first line of the Q function is the Bellman relationship.
+988.04s - 1000.04s : Okay, and then I plug my factorization into the T so that I can get the Q function is the five transpose with this big chunk of thing.
+1000.04s - 1004.04s : But actually this integration is a factor.
+1004.04s - 1006.04s : So you really don't need to worry about it.
+1006.04s - 1011.04s : Just saying the Q function can be linearly represent by my five.
+1011.04s - 1025.04s : Essentially this is saying if I can find this five function, I can linearly represent my Q function in this function space.
+1025.04s - 1031.04s : Okay, that means the planning part actually is very easy now.
+1031.04s - 1038.04s : I can utilize this relationship saying to achieve a balance between modeling planning and exploration.
+1038.04s - 1040.04s : How?
+1040.04s - 1047.04s : In planning part actually what I need to do is just doing a planning in this linear space.
+1047.04s - 1056.04s : Yeah, the algorithm here is like I calculate the Q function as the linear span in Q.
+1056.04s - 1059.04s : And sorry, in five and so on so far.
+1059.04s - 1064.04s : Although I read this as integration part, actually in practice we don't need to do that.
+1064.04s - 1073.04s : We just use the linear square value iteration to estimate this big chunk thing as a factor.
+1073.04s - 1077.04s : Okay, and I do this from backward step by step.
+1077.04s - 1082.04s : And eventually I get my Q function linearly in five.
+1082.04s - 1094.04s : So that means roughly speaking with this five function I can say I can solve the planning for arbitrary non-linear function dynamic.
+1094.04s - 1101.04s : And an enquiry.
+1101.04s - 1104.04s : Sorry?
+1104.04s - 1109.04s : Yes, for this for current moment yes.
+1109.04s - 1112.04s : Yeah, exactly, exactly.
+1112.04s - 1124.04s : For current moment this is only conceptually kind of give you an idea how I can handle the infinite dimension five, how I can get this planning part.
+1124.04s - 1133.04s : So yeah.
+1133.04s - 1137.04s : Oh, actually this is a good question.
+1137.04s - 1143.04s : Here is only for illustration, but in practice you can just augment the five with R.
+1143.04s - 1149.04s : One more dimension. So eventually definitely can reprint the R function.
+1149.04s - 1161.04s : Let go ahead.
+1161.04s - 1168.04s : I wouldn't call it kernel check because kernel check these things are already dominated by another SVM thing.
+1168.04s - 1169.04s : This is not a kernel check.
+1169.04s - 1176.04s : It's like more like the specific factor addition yields kernel.
+1176.04s - 1179.04s : Okay.
+1179.04s - 1183.04s : Yeah.
+1183.04s - 1189.04s : Yeah.
+1189.04s - 1200.04s : So I need to come back to the questions right by professor which is five here's infinite dimensions.
+1200.04s - 1203.04s : So how can how I can deal with it?
+1203.04s - 1206.04s : Actually, I don't want actually I hide it.
+1206.04s - 1209.04s : I thought no one will write this question.
+1209.04s - 1216.04s : The point is that hiding here that the second line which is running feature part.
+1216.04s - 1221.04s : Your layer is infinite dimension because I need to sample omega from Gaussian distribution.
+1221.04s - 1224.04s : But actually I can use Monte Carlo to approximate it.
+1224.04s - 1230.04s : So eventually I can reduce it to from integration to a finite sum.
+1230.04s - 1234.04s : And just reduce this infinite dimension thing to finite dimension.
+1234.04s - 1239.04s : And I just need to work with this finite dimension here.
+1239.04s - 1245.04s : Actually there are very complicated theory.
+1245.04s - 1258.04s : Easily behind this which is if I use infinite dimension the Q function is reliable which means I can represent it because that claim with this Q function with my infinite dimension feature.
+1258.04s - 1263.04s : But if I use random feature that will introduce some approximate arrow.
+1263.04s - 1270.04s : And actually we recently just finished the theoretical guarantee to quantify this approximation arrow.
+1270.04s - 1275.04s : The good news is it's not introduced and in curse of dimension.
+1275.04s - 1281.04s : So we can safely use it in practice.
+1281.04s - 1283.04s : Okay.
+1283.04s - 1289.04s : Go ahead.
+1289.04s - 1294.04s : This is another question I should say honest.
+1294.04s - 1296.04s : I have no idea.
+1296.04s - 1305.04s : It's really actually very subtle questions which seems like stock has to use it is an deterministic number.
+1305.04s - 1309.04s : At least from this perspective.
+1309.04s - 1322.04s : This is just a starting point for a way to believe we can do linear recontention for the benefits for planning.
+1322.04s - 1330.04s : And that's after this we will be able to introduce some recent work.
+1330.04s - 1337.04s : Another part I want to comment that although I hear you some Gaussian at the noise.
+1337.04s - 1344.04s : But actually this can be general as easily which is you just introduce firing from in the left hand side of the notation.
+1344.04s - 1347.04s : So fire go to a plus some Gaussian.
+1347.04s - 1354.04s : And then the noise is the long Gaussian for S.
+1354.04s - 1356.04s : Okay.
+1356.04s - 1363.04s : And now we see the benefits of planning using this linear recontention.
+1363.04s - 1369.04s : And in this paper we didn't use use it.
+1369.04s - 1373.04s : So we still use the terms of sampling for exploration.
+1373.04s - 1381.04s : That means there are still some interactability for exploration capturing in F.
+1381.04s - 1384.04s : But we will see how we handle this later.
+1384.04s - 1391.04s : But for this moment I just use the Thomson sampling where I estimate a posterior of the dynamic F.
+1391.04s - 1397.04s : And every time I just sample from this F for exploration.
+1397.04s - 1401.04s : And the middle part is planning.
+1401.04s - 1405.04s : So nothing fancy here.
+1405.04s - 1407.04s : Is this part clear?
+1407.04s - 1417.04s : So should I dive into the detail here?
+1417.04s - 1418.04s : Okay.
+1418.04s - 1420.04s : Let me dive into detail here.
+1420.04s - 1428.04s : You see the second blue line which is by the ultimate policy pi k on F k with awkwardness to which this is awkwardness to.
+1428.04s - 1432.04s : I use this planning for open policy here.
+1432.04s - 1441.04s : And this whole algorithm actually is the outer loop which is I want to use this Thomson sampling for exploration.
+1441.04s - 1448.04s : Which means every time I sample one F from my posterior and based on this F I get my policy of the policy.
+1448.04s - 1451.04s : And then use my policy to collect the data.
+1451.04s - 1460.04s : And later I use this collected data to update my post to and this is how it works.
+1460.04s - 1467.04s : So the outer loop is for exploration and the inner part of my open policy which is only for planning in my previous slides.
+1467.04s - 1470.04s : This is how I will do it.
+1470.04s - 1471.04s : Yeah.
+1471.04s - 1477.04s : Any questions here?
+1477.04s - 1478.04s : Okay.
+1478.04s - 1479.04s : Good.
+1479.04s - 1481.04s : Let's see.
+1481.04s - 1482.04s : Yeah.
+1482.04s - 1488.04s : As I mentioned, I want to find a theoretical solid algorithm.
+1488.04s - 1493.04s : This is how we get it.
+1493.04s - 1505.04s : We can prove the regret of this algorithm which is independent of the state and action and only depends on the complexity of the dynamic function and the square root of t order.
+1505.04s - 1511.04s : And the proof is actually because it's quite standard.
+1511.04s - 1513.04s : It's quite standard.
+1513.04s - 1516.04s : No part is just how we do the planning part.
+1516.04s - 1522.04s : But if you have any interesting valid part, I can explain later.
+1522.04s - 1523.04s : Okay.
+1523.04s - 1524.04s : No, let's see.
+1524.04s - 1526.04s : How is the promoting practice?
+1526.04s - 1532.04s : We compare to the results provided by the benchmarking the model that's doing for money.
+1532.04s - 1536.04s : The stop, the algorithm is stopped.
+1536.04s - 1539.04s : It's all copied from the benchmark one.
+1540.04s - 1548.04s : And we follow the protocol to compare our algorithm which is called speed and the deep successor feature.
+1548.04s - 1555.04s : And as we can see here, at least we have better than the state of the app model based on reinforcement.
+1555.04s - 1556.04s : Okay.
+1556.04s - 1558.04s : This is the results on the logical path.
+1558.04s - 1559.04s : Sure.
+1560.04s - 1561.04s : Yeah.
+1561.04s - 1562.04s : Yeah.
+1562.04s - 1563.04s : Yeah.
+1563.04s - 1564.04s : Yeah.
+1564.04s - 1570.04s : Actually, good questions.
+1570.04s - 1575.04s : I find the poster of my file app.
+1575.04s - 1583.04s : And because I need to estimate the posterer, actually I use the long-gaming dynamics to get a different variant of the dynamic there.
+1583.04s - 1588.04s : And after I get the dynamic app, I use random feature to be tracked to the feature.
+1588.04s - 1594.04s : And upon that, I use the software credit to get the option policy here.
+1594.04s - 1600.04s : And do you use the long-gaming dynamics?
+1600.04s - 1601.04s : Yes.
+1601.04s - 1605.04s : I fix the feature for representing my queue function.
+1605.04s - 1609.04s : And based on that, I extract my queue, update my queue.
+1609.04s - 1614.04s : And then with that, I update my policy there.
+1615.04s - 1616.04s : Yeah.
+1616.04s - 1617.04s : Okay.
+1617.04s - 1620.04s : I'm hesitant to show this one.
+1620.04s - 1630.04s : Actually, after the previous comparison with model based reinforcement, actually we are very happy because we beat all the city of cloud model based reinforcement.
+1630.04s - 1634.04s : But still, you can see from here it's very difficult.
+1634.04s - 1635.04s : Okay.
+1635.04s - 1637.04s : I didn't show it.
+1638.04s - 1639.04s : Let's see.
+1639.04s - 1643.04s : For example, the end, it's only 800.
+1643.04s - 1645.04s : That's the whole second.
+1645.04s - 1647.04s : Second can get 2000.
+1647.04s - 1650.04s : So that's why I didn't put it into one table.
+1650.04s - 1656.04s : It's really embarrassing to say this is better than it's worse than second.
+1656.04s - 1664.04s : But we, we, in previous method, actually we fixed the random feature within a language.
+1664.04s - 1667.04s : And here we use it as a regulator.
+1667.04s - 1669.04s : A regularization.
+1669.04s - 1672.04s : And that's why we call this speed regulation version.
+1672.04s - 1678.04s : And now with that, we can achieve comparable with the stack sometimes better.
+1678.04s - 1679.04s : Yeah.
+1679.04s - 1690.04s : Actually, I pause here after we close this method, actually we are a little bit disappointed because we hope we can get better results because we achieve the state of that.
+1690.04s - 1694.04s : I mean, achieve the balance between the modeling planning and the version.
+1694.04s - 1696.04s : But practice, it's not that case.
+1696.04s - 1700.04s : So it's a little bit disappointing at that moment.
+1700.04s - 1703.04s : And that's why we go to later on with them.
+1703.04s - 1707.04s : And before we go to later on with them, let's see what we learned here.
+1707.04s - 1712.04s : What we learned actually is, linearization indeed sometimes works at least.
+1712.04s - 1717.04s : Provide us some promising direction to go for them.
+1717.04s - 1723.04s : And we already see there's still gap between the practice in the practical cases.
+1723.04s - 1734.04s : We, after this comparison, we contracted several reasons why we didn't achieve the optimal, we didn't achieve state of the other performance comparison.
+1734.04s - 1740.04s : Why is that ideally we should infuse infinite dimension feature.
+1740.04s - 1744.04s : But actually, we only have finite dimension because random feature.
+1744.04s - 1752.04s : We believe there's some arrow introduced by this random feature introduced.
+1752.04s - 1756.04s : And then, another wise, we also use tom's sampling.
+1756.04s - 1761.04s : And tom's and then require me to get accurate estimate of the posterior.
+1761.04s - 1762.04s : But we didn't.
+1762.04s - 1767.04s : We used long-term dynamics sample to sample from this posterior.
+1767.04s - 1770.04s : And I think there's also some arrow here.
+1770.04s - 1773.04s : And also, we use Gaussian noise.
+1773.04s - 1776.04s : And practically, maybe it's not Gaussian noise.
+1776.04s - 1779.04s : So I think there are several reasons for this.
+1779.04s - 1787.04s : So that's why we want to further improve it to avoid that kind of arrows introduced by this approximation.
+1787.04s - 1788.04s : Okay.
+1788.04s - 1793.04s : Yeah. Can we do it better?
+1793.04s - 1802.04s : Okay. Questions.
+1802.04s - 1806.04s : Sorry, can we repeat the questions?
+1806.04s - 1807.04s : Good questions.
+1807.04s - 1808.04s : Yeah.
+1808.04s - 1813.04s : Actually, in practice, we just fixed number in my implementation.
+1813.04s - 1814.04s : Yeah.
+1814.04s - 1818.04s : We used scalar to ask me this number.
+1818.04s - 1826.04s : We didn't do the estimation for this covariance matrix.
+1826.04s - 1827.04s : Okay.
+1827.04s - 1828.04s : Yeah, go ahead.
+1845.04s - 1847.04s : Yeah. What's the approximation?
+1847.04s - 1850.04s : There are several different levels of approximation.
+1850.04s - 1853.04s : Why is a used F model?
+1853.04s - 1856.04s : The parameter of F will introduce some approximation.
+1856.04s - 1858.04s : I didn't consider it.
+1858.04s - 1863.04s : Here, I mean, theoretically, F dimension and also,
+1863.04s - 1867.04s : Professor, be noticed that we should use infinite dimensional file.
+1867.04s - 1870.04s : But in practice, we cannot do that.
+1870.04s - 1874.04s : So we use random feature to reduce it from infinite dimension to finite dimension.
+1874.04s - 1879.04s : This is why we call it infinite dimension linear approximation.
+1879.04s - 1882.04s : So that's another level of approximation arrow.
+1882.04s - 1886.04s : And the third, the second part is because posterior,
+1886.04s - 1893.04s : we can also not able to get this posterior accuracy.
+1893.04s - 1896.04s : So we use longjuring to sample.
+1896.04s - 1898.04s : It's also got some approximate shell there.
+1898.04s - 1906.04s : There are several different levels of approximation.
+1906.04s - 1909.04s : Yes.
+1909.04s - 1913.04s : In this paper, we use elode dimension.
+1913.04s - 1915.04s : Elode dimension to merit.
+1915.04s - 1916.04s : Yeah, this is a starting point.
+1916.04s - 1921.04s : So definitely, there are so many drawback we didn't satisfy the way that it is.
+1921.04s - 1926.04s : But I think we should do starting from here to just give up a high level idea.
+1926.04s - 1930.04s : Say, how we started this kind of research.
+1930.04s - 1935.04s : And indeed, it's promising to inspire later over there.
+1935.04s - 1937.04s : Okay.
+1937.04s - 1941.04s : Any further questions?
+1941.04s - 1943.04s : Okay.
+1943.04s - 1945.04s : What's next?
+1945.04s - 1948.04s : Okay. That's because this is the real drawback.
+1948.04s - 1953.04s : We really want to say whether we can direct estimate this.
+1953.04s - 1957.04s : If we really want to get this model, we need to make sure that the consciousness satisfy,
+1957.04s - 1960.04s : which means for arbitrary state and action,
+1960.04s - 1965.04s : I need to say the integration of this is equal to one to ensure it is the probability.
+1965.04s - 1968.04s : Okay.
+1968.04s - 1992.04s : And of course, this country is really difficult to satisfy because it's infinite dimension management, infinite management.
+1993.04s - 1998.04s : And of course, we can say, okay, I switched from the previous model to this model,
+1998.04s - 2001.04s : where I normalize it explicitly.
+2001.04s - 2008.04s : Yeah, this is indeed introduce some benefits for competition, for estimating it.
+2008.04s - 2013.04s : But the bad thing is when we want to represent the Q function,
+2013.04s - 2017.04s : we need explicit estimate this partition function.
+2017.04s - 2020.04s : And this part is difficult.
+2021.04s - 2023.04s : Okay.
+2023.04s - 2028.04s : So the partition function really is not like sampling, we can ignore the part.
+2028.04s - 2032.04s : No. You can then be Q when needed explicitly.
+2032.04s - 2034.04s : Just to delete that.
+2034.04s - 2038.04s : So how can we deal with it?
+2038.04s - 2042.04s : Okay. I forgot to mention another condition to satisfy.
+2042.04s - 2046.04s : This condition actually is little bit weird.
+2046.04s - 2054.04s : But first line, which is staying for arbitrary G, which is up, up or bounded by some function,
+2054.04s - 2059.04s : some constant, I need to integrate it with meal, which is bounded.
+2059.04s - 2062.04s : Okay. This condition is little bit weird, but don't worry.
+2062.04s - 2068.04s : Actually, eventually, it is trying to calculate the complexity of Q function because you see,
+2068.04s - 2073.04s : the integration part shows up there as W.
+2073.04s - 2079.04s : So I need to bound the size of W insured as Q function, either to open it, either to learn.
+2079.04s - 2082.04s : Okay. This condition is for that.
+2082.04s - 2087.04s : This is purely theoretical condition, when I first recognize it.
+2087.04s - 2091.04s : Okay. Let's see. Yeah. Come back to the main thing.
+2091.04s - 2096.04s : The MLE for learning the factorization is really difficult.
+2096.04s - 2098.04s : Let me speed this part.
+2098.04s - 2100.04s : How can we deal with it?
+2100.04s - 2103.04s : So we propose three way to learn it.
+2103.04s - 2108.04s : Let's first see this way, which is using the contrasting loss.
+2108.04s - 2113.04s : And if you're familiar with CPC, indeed, this is CPC.
+2113.04s - 2120.04s : Constructive prediction coding.
+2120.04s - 2124.04s : Yeah. In this part, we can ignore the partition function.
+2124.04s - 2131.04s : And we also show that this is consistent with MLE, which means once you have infinite negative sample,
+2131.04s - 2134.04s : the solution for this one is for 5.
+2134.04s - 2136.04s : The solution for this one is for 5 and a meal.
+2136.04s - 2139.04s : It will recover the MLE. Okay.
+2139.04s - 2143.04s : Yes. It is 5.
+2143.04s - 2148.04s : To be honest, the way you try to very hard to calculate this file, by the way, failed.
+2148.04s - 2154.04s : So it's really difficult to calculate this file.
+2154.04s - 2159.04s : Okay. This is one way.
+2159.04s - 2164.04s : And this is the second way, which is once we finish the NCE, as a matter of fact,
+2164.04s - 2167.04s : we go back to see what file really is.
+2167.04s - 2173.04s : If we look back into the transition representation, it is 5 times new.
+2174.04s - 2178.04s : Indeed, it is SVD for transition opportunity.
+2178.04s - 2182.04s : So that means if I can just get SVD, the problem solved.
+2182.04s - 2186.04s : So that's why we go to this fact SVD decomposition.
+2186.04s - 2192.04s : But this SVD decomposition is not easy to optimize, because there is expectation inside of square.
+2192.04s - 2196.04s : We cannot use the stocking square to optimize it.
+2196.04s - 2201.04s : So, you know, I have read a lot of paper about the venture deal.
+2201.04s - 2203.04s : I applied venture deal again.
+2203.04s - 2206.04s : So now it becomes very easy to optimize.
+2206.04s - 2208.04s : Expectation, outside of everything.
+2208.04s - 2212.04s : That's outside stock has gradient, optimize it.
+2212.04s - 2215.04s : And the better thing is because it is doing max addition.
+2215.04s - 2218.04s : It's not no longer being max. It's max max.
+2218.04s - 2219.04s : Perfect.
+2219.04s - 2224.04s : So this is our recent paper here.
+2224.04s - 2228.04s : And this is our second try.
+2228.04s - 2238.04s : Okay, before I dive into the third method, I should mention a little bit of connection between this spectrum view to the success of feature.
+2238.04s - 2240.04s : Okay.
+2240.04s - 2244.04s : It's everyone familiar with success in here.
+2244.04s - 2253.04s : But anyway, it's a very classic representation proposed about 30 years ago.
+2253.04s - 2260.04s : And but still recently, still many people are using it for rain first morning.
+2260.04s - 2273.04s : Essentially, the success center feature, although it didn't propose in this way, but actually, it's a equivalent to do SVD for eye matters gamma, p-pi, inverse.
+2273.04s - 2274.04s : Okay.
+2274.04s - 2280.04s : And the p-pi is the transition operator integrated with some pi.
+2280.04s - 2284.04s : And also other kind of spectrum features at least here.
+2284.04s - 2288.04s : But all of them are depends on p-pi, which is not t.
+2288.04s - 2297.04s : Actually, this introduced some bad effect, which is your feature always depends on the policy used.
+2297.04s - 2302.04s : And once it changed, your feature also changed.
+2302.04s - 2311.04s : So the feature we learned is for t, which is invariant for aperture pi.
+2311.04s - 2317.04s : And also for success feature, there's no rigorous exploration proposed yet.
+2317.04s - 2322.04s : But for our method, we will see later, we can do exploration.
+2322.04s - 2333.04s : Okay, here is a second way to learn the linear representation as we want by SVD, version of formulation for SVD.
+2333.04s - 2344.04s : And before I dive into the next method, any questions here?
+2345.04s - 2346.04s : Okay.
+2346.04s - 2352.04s : The photo value on the photo, especially in the same method.
+2352.04s - 2355.04s : That's some...
+2355.04s - 2357.04s : Okay. That's some...
+2357.04s - 2358.04s : Yeah.
+2358.04s - 2365.04s : These are some existing features, also, can interpret to add factorization of the transition.
+2365.04s - 2368.04s : Some very normal transition operator, I just listed here.
+2368.04s - 2370.04s : It's very old paper, you feel that.
+2370.04s - 2373.04s : The first one's success feature actually is still used in practice.
+2373.04s - 2374.04s : Yeah.
+2377.04s - 2389.04s : And okay, now let's see the latest work of along this line, which is we really built the connection between linear mdp, inner feature to a later-valve model.
+2389.04s - 2391.04s : This is actually very straightforward.
+2391.04s - 2399.04s : You see, we can always be right to the transition operator as integration between p, f prime, given v, and v, given s and a.
+2400.04s - 2405.04s : And we'll write it into inner product in L2 space.
+2405.04s - 2406.04s : Okay.
+2406.04s - 2412.04s : Now, we have 5 equal to pz, given s8.
+2412.04s - 2418.04s : And the mu s prime equals to pz prime, given z.
+2418.04s - 2420.04s : And we treat the...
+2420.04s - 2428.04s : Because we can treat the pz, given s8 as the phi function, and we can represent my qsa with this pz, given s8.
+2429.04s - 2431.04s : So straightforward.
+2431.04s - 2440.04s : And the benefits of this later-valve representation is that we can represent...
+2440.04s - 2443.04s : We can use the elbow to optimize it.
+2443.04s - 2445.04s : Okay.
+2445.04s - 2452.04s : So this elbow division actually follows a standard formation.
+2453.04s - 2454.04s : I divide...
+2454.04s - 2455.04s : Okay.
+2455.04s - 2456.04s : First, the equation is mle.
+2456.04s - 2462.04s : And I divide a version of distribution, and times a version of distribution.
+2462.04s - 2463.04s : And then I go.
+2463.04s - 2468.04s : And then I use the answer in quality to get this second line.
+2468.04s - 2469.04s : Okay.
+2469.04s - 2479.04s : Now, what I need to do is just optimize this q and my pvc as a, and also my p, as prime, given z.
+2479.04s - 2488.04s : So this connection between latent variable model and linear pvc actually is very interesting.
+2488.04s - 2491.04s : To be honest, actually, this is quite surprising.
+2491.04s - 2494.04s : I don't know why people didn't realize it.
+2494.04s - 2501.04s : Say, so many people use the latent variable model to model the dynamic.
+2501.04s - 2506.04s : But the correct way to use the latent variable model is after you solve the model,
+2506.04s - 2515.04s : you need to use the pvc given as a to represent your q function instead of just a sample z from it to represent the q function.
+2515.04s - 2526.04s : This is significant difference between the latent variable model and linear p and the existing model based on reinforcement.
+2526.04s - 2529.04s : You'll see later on the variable model.
+2529.04s - 2531.04s : The final line here.
+2531.04s - 2533.04s : This is significant difference.
+2533.04s - 2534.04s : Different.
+2534.04s - 2536.04s : Okay.
+2536.04s - 2547.04s : So until now, any questions about this latent variable model as mission?
+2547.04s - 2548.04s : Okay.
+2548.04s - 2549.04s : Good.
+2549.04s - 2550.04s : Everyone.
+2550.04s - 2552.04s : Either.
+2552.04s - 2558.04s : I will write missing or it's clear.
+2558.04s - 2559.04s : Okay.
+2559.04s - 2562.04s : Now we have the algorithm framework.
+2562.04s - 2570.04s : Every, for me, every criteria I mentioned before can be plugged into this framework.
+2570.04s - 2574.04s : The only thing changed here is how we estimated latent linear representation.
+2574.04s - 2578.04s : So the framework, like I first plugged data.
+2578.04s - 2584.04s : And I used either nc, u s, vd or lb to estimate my phi assay.
+2584.04s - 2589.04s : And then I calculated the UCB bonus based on the representation alert.
+2589.04s - 2592.04s : Now you see, I don't need to use the Thompson sample anymore.
+2592.04s - 2600.04s : I just used this for the UCB bonus for my Bellman recursion for planning.
+2600.04s - 2608.04s : After I solve this Bellman recursion by Lisa Square, vi, only square policy evaluation.
+2608.04s - 2610.04s : And I get my policy.
+2610.04s - 2616.04s : So I go back to the first of that, plant data and refine my model, so on and so forth.
+2616.04s - 2617.04s : Okay.
+2617.04s - 2626.04s : As I promised, I can show it is the sample complexity of this algorithm.
+2626.04s - 2638.04s : Which is polynomial with the dimensional I use for the phi function, while it's independent of the size of the state.
+2638.04s - 2645.04s : If you are sharp enough, there is some dependence with action.
+2645.04s - 2647.04s : We are trying to handle it.
+2647.04s - 2648.04s : Yeah.
+2648.04s - 2649.04s : Go ahead.
+2649.04s - 2654.04s : It depends on the dimension D.
+2654.04s - 2659.04s : D is the number of the dimension of the phi.
+2659.04s - 2660.04s : So.
+2660.04s - 2673.04s : No, actually, we realize our assumptions saying this D will represent your dynamic.
+2673.04s - 2675.04s : Yeah, it's reliable.
+2675.04s - 2676.04s : Yeah.
+2676.04s - 2680.04s : It's reliable.
+2680.04s - 2681.04s : Okay.
+2681.04s - 2686.04s : Next slide is showing how this algorithm performs.
+2686.04s - 2689.04s : Actually, to be honest, these three algorithms are quite similar.
+2689.04s - 2693.04s : So we just released a wealthed, which is used as a speedy.
+2693.04s - 2694.04s : We call it speeder.
+2694.04s - 2695.04s : Yeah.
+2695.04s - 2699.04s : It's better than previous speed one.
+2699.04s - 2709.04s : And also this time, I can very confident to show the model free in one table with model based in one table.
+2709.04s - 2715.04s : So we can dominate both model based and model free, but still have an algorithm.
+2715.04s - 2716.04s : Okay.
+2716.04s - 2720.04s : This is the empirical study for a logical.
+2720.04s - 2722.04s : Oh, sure.
+2722.04s - 2727.04s : Yeah, yeah.
+2727.04s - 2729.04s : We didn't use as that.
+2729.04s - 2737.04s : We still use policy evaluation first and then do the actor act of critique.
+2737.04s - 2739.04s : No, no, no.
+2739.04s - 2740.04s : Yeah.
+2740.04s - 2742.04s : We didn't.
+2742.04s - 2744.04s : We first evaluate.
+2744.04s - 2747.04s : It's still your stack with space on the previous speed.
+2747.04s - 2751.04s : So we just changed the object function.
+2751.04s - 2753.04s : We no longer use it.
+2753.04s - 2754.04s : Yeah.
+2754.04s - 2759.04s : We just changed that.
+2759.04s - 2764.04s : This time, we need to handle the continual action for logical.
+2764.04s - 2767.04s : It's really difficult for me to get the max with action.
+2767.04s - 2774.04s : So that's why we do this way.
+2774.04s - 2778.04s : And also we based on the MBBL benchmark.
+2778.04s - 2783.04s : So it's really familiar in this way.
+2783.04s - 2784.04s : Okay.
+2784.04s - 2788.04s : Here is some curve such that we apply our algorithm to dem control.
+2788.04s - 2790.04s : And the blue lines are worse.
+2790.04s - 2797.04s : You can see besides the ultimate performance, we are also going to convert faster.
+2797.04s - 2806.04s : Especially in this walker sparse, which is we gave the sparse reward to the environment.
+2806.04s - 2816.04s : Okay, I think before I leave this part, I have any questions about this, this method.
+2816.04s - 2825.04s : And now basically, I just want to claim that as I mentioned before, there is a tradeoff between the modeling, planning and exploration.
+2825.04s - 2836.04s : And now that we can simply say with this linear representation, we can achieve a delicate balance between the three things.
+2836.04s - 2837.04s : Okay.
+2837.04s - 2854.04s : Adding questions.
+2854.04s - 2866.04s : Yeah, I think it's just because sometimes one or two seed just failed.
+2866.04s - 2870.04s : For this early stop.
+2870.04s - 2876.04s : Sorry.
+2876.04s - 2880.04s : Yeah, if you consider various, yes, I agree.
+2880.04s - 2882.04s : But I just say it's comparable.
+2882.04s - 2890.04s : Sometimes it's better.
+2890.04s - 2891.04s : Okay.
+2891.04s - 2893.04s : So.
+2893.04s - 2894.04s : No.
+2894.04s - 2905.04s : Then this is another byproduct of this method actually, which is we notice there is a relationship between q function and the policy.
+2905.04s - 2910.04s : Which is I can always contract a policy from current q function.
+2910.04s - 2918.04s : And now we call that our q function can be legally represented by my five basis.
+2918.04s - 2924.04s : So that means essentially I find another representation of skills by this five.
+2924.04s - 2944.04s : So this to evaluate how the skills learned when we follow the protocol of the off-line skill learning and compare it to some setup algorithm like opa and skilled and also the trail.
+2944.04s - 2952.04s : And I will say this algorithm is comparable with this specific design for skill discovery algorithm.
+2952.04s - 2953.04s : Okay.
+2953.04s - 2954.04s : Sure.
+2954.04s - 2964.04s : Yes.
+2964.04s - 2965.04s : Exactly.
+2965.04s - 2967.04s : I use this.
+2967.04s - 2969.04s : Okay.
+2969.04s - 2970.04s : Great.
+2970.04s - 2972.04s : After I learned this five function.
+2972.04s - 2973.04s : Okay.
+2973.04s - 2982.04s : I learned another policy which is condition five, which is like pi a given s and phi s.
+2982.04s - 2990.04s : So I use this kind of stuff to compose my downstream policy construction.
+2990.04s - 2999.04s : So that's what I used here.
+2999.04s - 3000.04s : Okay.
+3000.04s - 3017.04s : I think this is the final slides which I want to emphasize that linearization in a row for nonlinear model to achieve the delicately balanced as I mentioned always in this talk for flexible modeling.
+3017.04s - 3021.04s : Efficient the planning and efficient exploration.
+3021.04s - 3026.04s : Of course, this is only the first several steps along this line.
+3026.04s - 3028.04s : For example, we have a lot of things to do.
+3028.04s - 3038.04s : Is there any other better way to estimate this five function and also I only do very little step about off-line to online.
+3038.04s - 3046.04s : How can we use online data to fully implement this five based on off-line learning components and also death-line.
+3046.04s - 3055.04s : I didn't go to Palm Dp yet, which means which is more practical in the MVP because in practice, we only have the image and the video.
+3055.04s - 3057.04s : So I don't observe all the state and action.
+3057.04s - 3064.04s : So these are some listed directions as I can image for current moment to photo work on.
+3064.04s - 3068.04s : But definitely other kind of direction is also possible.
+3068.04s - 3069.04s : Yeah.
+3069.04s - 3080.04s : So, yeah, I think this is the full reference about what I talked today.
+3080.04s - 3095.04s : The first one is about the running feature part and second one is the NCE one and third one fourth one is SVD and the little little rainbow model.
+3095.04s - 3103.04s : And I think this is the end of my talk and questions.
+3110.04s - 3112.04s : Thank you.
