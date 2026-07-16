@@ -247,7 +247,7 @@ Return your response as a JSON object with keys:
                 parts.append(genai_types.Part.from_bytes(data=img_bytes, mime_type="image/jpeg"))
 
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-2.5-flash-lite",
                 contents=parts,
                 config=genai_types.GenerateContentConfig(
                     temperature=0.0,
