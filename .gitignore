@@ -273,3 +273,4 @@ models/module3/
 # Cache
 __pycache__/
 *.pyc
+src/module2_summarization/bert_model/model.safetensors 
