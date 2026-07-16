@@ -1,0 +1,202 @@
+[
+  {
+    "sentence": "All right. Hi, everybody. We're going to get started. So today we have our guest speaker,",
+    "timestamp_start": 0.0,
+    "timestamp_end": 11.76,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "Vodai, from Google. Both finished his PhD at Georgia Tech, and he's currently a staff research",
+    "timestamp_start": 11.76,
+    "timestamp_end": 18.36,
+    "is_important": false,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "scientist at Google, where he works on all sorts of questions, theoretical and practical",
+    "timestamp_start": 18.36,
+    "timestamp_end": 23.48,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "in regard to reinforcement learning. I'm a big fan of a lot of those work on off-ball",
+    "timestamp_start": 23.48,
+    "timestamp_end": 29.04,
+    "is_important": false,
+    "importance_ratio_T": 0.9,
+    "keyword_boost": true,
+    "definition_match": false,
+    "confidence": 0.9
+  },
+  {
+    "sentence": "sea evaluation offline RL, although I'm going to learn about something new with representation",
+    "timestamp_start": 29.04,
+    "timestamp_end": 33.84,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "based reinforcement learning today. So I'm really looking forward to that. And hopefully",
+    "timestamp_start": 33.84,
+    "timestamp_end": 37.44,
+    "is_important": false,
+    "importance_ratio_T": 0.9,
+    "keyword_boost": true,
+    "definition_match": false,
+    "confidence": 0.9
+  },
+  {
+    "sentence": "you are too. Thank you. Thank you for the introduction. Let me put it here. Yeah, Ashley,",
+    "timestamp_start": 37.44,
+    "timestamp_end": 47.6,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "can we hear me down? Great. I think today I will talk about the retention based learning",
+    "timestamp_start": 47.6,
+    "timestamp_end": 53.04,
+    "is_important": false,
+    "importance_ratio_T": 0.9,
+    "keyword_boost": true,
+    "definition_match": false,
+    "confidence": 0.9
+  },
+  {
+    "sentence": "based learning. I would say this representation is a little bit way to get into investment",
+    "timestamp_start": 53.04,
+    "timestamp_end": 60.04,
+    "is_important": true,
+    "importance_ratio_T": 0.9,
+    "keyword_boost": true,
+    "definition_match": false,
+    "confidence": 0.9
+  },
+  {
+    "sentence": "learning, because slow-man and paper-claiming is doing dependational learning, for example,",
+    "timestamp_start": 60.04,
+    "timestamp_end": 64.04,
+    "is_important": false,
+    "importance_ratio_T": 0.9,
+    "keyword_boost": true,
+    "definition_match": false,
+    "confidence": 0.9
+  },
+  {
+    "sentence": "the same clear. We say they want to do the visual representation, and it's also possible.",
+    "timestamp_start": 64.04,
+    "timestamp_end": 70.04,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "But today, this representation varies to specific, they can say, I want to find us.",
+    "timestamp_start": 70.04,
+    "timestamp_end": 77.04,
+    "is_important": false,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "So today I will... Is this working now? I don't think it's still working. Yeah, I will",
+    "timestamp_start": 77.04,
+    "timestamp_end": 93.04,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "hold it. Anyway, so today I will talking about various specific representation which is",
+    "timestamp_start": 93.04,
+    "timestamp_end": 98.04,
+    "is_important": false,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "I want to find a representation such that I can represent the Q function specifically.",
+    "timestamp_start": 98.04,
+    "timestamp_end": 104.04,
+    "is_important": true,
+    "importance_ratio_T": 0.9,
+    "keyword_boost": true,
+    "definition_match": false,
+    "confidence": 0.9
+  },
+  {
+    "sentence": "I think we will see it later. Yeah, this is actually several paper together. It's a years-long",
+    "timestamp_start": 104.04,
+    "timestamp_end": 113.04,
+    "is_important": false,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "effort on this direction. And I should send to the major contributor for this work,",
+    "timestamp_start": 113.04,
+    "timestamp_end": 118.04,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "which is Tongjong from Yutiao Sting and Tianjin from here, Berkeley. And Chen Jun, Sherry, Lisa,",
+    "timestamp_start": 118.04,
+    "timestamp_end": 127.04,
+    "is_important": false,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "Lena, and the Dale, and the Chaba. Okay. Okay, let's start. Today actually the outline of the",
+    "timestamp_start": 127.04,
+    "timestamp_end": 134.04,
+    "is_important": true,
+    "importance_ratio_T": 0.65,
+    "keyword_boost": false,
+    "definition_match": false,
+    "confidence": 0.65
+  },
+  {
+    "sentence": "talk is, first of all, I want to point out a question in current reinforcement learning,",
+    "timestamp_start": 134.04,
+    "timestamp_end": 139.04,
+    "is_important": false,
+    "importance_ratio_T": 0.9,
+    "keyword_boost": true,
+    "definition_match": false,
+    "confidence": 0.9
+  }
+]
