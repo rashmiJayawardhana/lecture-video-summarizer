@@ -317,8 +317,8 @@ def fetch_ai_opinion_async(seg_id, start_f, mid_f, end_f, annotations_dict, outp
 # Leave VIDEO_DIR set to "videos".
 # =====================================================================
 VIDEO_DIR   = "videos"                      # folder containing your lecture videos
-ANNOTATOR   = "ravindu"                      # your name (goes into every record)
-OUTPUT_FILE = "annotations_ravindu.json"     # your personal output file
+ANNOTATOR   = "rashmi"                      # your name (goes into every record)
+OUTPUT_FILE = "annotations_rashmi.json"     # your personal output file
 
 # Fixed settings (do NOT change - keeps the whole team consistent)
 SEGMENT_LENGTH   = 10                       # seconds per segment
@@ -1324,7 +1324,7 @@ def run(review_mode=False):
                     "annotator":         ANNOTATOR,
                     "annotated_at":      datetime.datetime.now().isoformat(timespec="seconds"),
                 }
-                fetch_ai_opinion_async(seg["segment_id"], start_f, mid_f, end_f, annotations, OUTPUT_FILE)
+                fetch_ai_opinion_async(seg["segment_id"], start_f, mid, end_f, annotations, OUTPUT_FILE)
 
             save_annotations(OUTPUT_FILE, annotations)
             seg.pop("_visited", None)
@@ -1366,7 +1366,7 @@ def run(review_mode=False):
                     "annotator":         ANNOTATOR,
                     "annotated_at":      datetime.datetime.now().isoformat(timespec="seconds"),
                 }
-                fetch_ai_opinion_async(seg["segment_id"], start_f, mid_f, end_f, annotations, OUTPUT_FILE)
+                fetch_ai_opinion_async(seg["segment_id"], start_f, mid, end_f, annotations, OUTPUT_FILE)
 
             save_annotations(OUTPUT_FILE, annotations)
             seg.pop("_visited", None)
