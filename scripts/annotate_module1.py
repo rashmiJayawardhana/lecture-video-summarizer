@@ -139,9 +139,22 @@ Please follow this strict 4-point visual importance scoring rubric:
    - Standing still / just talking: +0
    - Pointing or gesturing at the slide: +1
    - Annotating / writing / circling: +2
+   - The +1/+2 bonus ONLY applies if the lecturer is visibly interacting with content
+     that is actually part of the on-screen slide. If there is no slide visible at all,
+     no bonus applies no matter how expressive the gesture is - generic talking hand
+     movement with no slide always gets +0.
+   - A physical object held up to the camera (a book, a printed sheet/handout, a prop,
+     any real-world item) is NEVER slide content, even if the lecturer points at it,
+     holds it toward the camera, or it has readable text/diagrams on it. Score the base
+     as if no slide is present (0-1), and the movement bonus is always +0 for it.
 
 The final score is the base score + movement adjustment, capped at a maximum of 10.
 Important: If the lecturer is speaking with no slide content, score it low (0-2).
+Important: You are given the start, middle, and end frame of this segment. If the
+meaningful slide content is only visible in one of the three frames (e.g. only at the
+start, with the lecturer alone for the rest), treat the segment as if the content was
+NOT sustained - score it lower than you would if the same content were visible in all
+three frames.
 Return your response as a JSON object with keys:
 "score": <integer from 0 to 10>
 "reasoning": "<short sentence explaining the score based on the rubric features present in the frames>"
