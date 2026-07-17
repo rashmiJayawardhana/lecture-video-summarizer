@@ -453,11 +453,25 @@ def load_annotations(path):
 
 
 def save_annotations(path, data):
-    """Atomic write so the file is never half-written if you Ctrl-C."""
+    """Atomic write so the file is never half-written if you Ctrl-C.
+
+    Retries the final rename a few times: on Windows, antivirus/search
+    indexing/OneDrive can briefly hold a lock on a just-written file and
+    cause a transient PermissionError.
+    """
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
-    os.replace(tmp, path)
+
+    last_err = None
+    for attempt in range(5):
+        try:
+            os.replace(tmp, path)
+            return
+        except PermissionError as e:
+            last_err = e
+            time.sleep(0.2 * (attempt + 1))
+    raise last_err
 
 
 # =====================================================================
