@@ -1033,9 +1033,11 @@ def show_main_menu(done, total):
         print(f"   {C.CYN}[3]{C.R} Re-annotate or review ALL videos")
         print(f"   {C.CYN}[4]{C.R} View annotation guidelines & rubrics")
         print(f"   {C.CYN}[5]{C.R} Start fresh                            {C.YEL}(clears your progress){C.R}")
+        print(f"   {C.CYN}[6]{C.R} Jump to a specific video               {C.D}(any video, done or not){C.R}")
     else:
         print(f"   {C.CYN}[1]{C.R} Start annotating                       {C.D}(default){C.R}")
         print(f"   {C.CYN}[2]{C.R} View annotation guidelines & rubrics")
+        print(f"   {C.CYN}[3]{C.R} Jump to a specific video               {C.D}(any video, done or not){C.R}")
     hr()
     return input(f"  Enter choice [1]: ").strip()
 
@@ -1085,6 +1087,32 @@ def run(review_mode=False):
 
     reannotate_video_id = None
     reannotate_all      = False
+    start_idx           = 0
+
+    def _pick_video_and_jump():
+        """List every video in VIDEO_DIR (done or not) and return the index
+        of its first segment in all_segments, or None if cancelled."""
+        video_ids = sorted({s["video_id"] for s in all_segments})
+        print()
+        info("All videos:")
+        for i, vid in enumerate(video_ids, 1):
+            vid_done = sum(1 for s in all_segments
+                           if s["video_id"] == vid and s["segment_id"] in annotations)
+            vid_total = sum(1 for s in all_segments if s["video_id"] == vid)
+            print(f"   {C.CYN}[{i}]{C.R} {vid}  {C.D}({vid_done}/{vid_total} done){C.R}")
+        print()
+        try:
+            vc = input(f"  Select a video number (1-{len(video_ids)}): ").strip()
+            vi = int(vc) - 1
+            if 0 <= vi < len(video_ids):
+                target_vid = video_ids[vi]
+                for i, s in enumerate(all_segments):
+                    if s["video_id"] == target_vid:
+                        return i, target_vid
+            err("Invalid selection.")
+        except ValueError:
+            err("Please enter a number.")
+        return None, None
 
     if review_mode:
         banner(["REVIEW DISAGREEMENTS MODE", "Looking for segments where |human - AI| >= 3"])
@@ -1129,6 +1157,22 @@ def run(review_mode=False):
             # Option 2 means different things depending on progress
             if choice == "2" and done == 0:
                 show_guidelines()
+                continue
+
+            if choice == "3" and done == 0:
+                i, target_vid = _pick_video_and_jump()
+                if i is not None:
+                    start_idx = i
+                    ok(f"Jumping to '{target_vid}'.")
+                    break
+                continue
+
+            if choice == "6" and done > 0:
+                i, target_vid = _pick_video_and_jump()
+                if i is not None:
+                    start_idx = i
+                    ok(f"Jumping to '{target_vid}'.")
+                    break
                 continue
 
             if choice == "2" and done > 0:
@@ -1202,7 +1246,7 @@ def run(review_mode=False):
     cv2.setMouseCallback(WIN_NAME, _mouse_cb)
 
     # -------- 5. Annotation loop --------
-    idx             = 0
+    idx             = start_idx
     current_cap     = None
     current_video   = None
     last_action     = "Welcome!"
