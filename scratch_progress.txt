@@ -1,0 +1,10 @@
+501/501  LecVideo 001 - #01 - Relational Model & Algebra (CMU Intro to Database
+466/466  LecVideo 002 - #02 - Modern SQL ? dbt Database Talk (CMU Intro to Data
+462/462  LecVideo 003 - #03 - Database Storage Files, Pages, Tuples (CMU Intro 
+467/467  LecVideo 004 - #22 - Database Crash Recovery ? ClickHouse Database Tal
+387/387  LecVideo 005 - #Security of #Information #Systems - Lecture 1 _ Inform
+396/396  LecVideo 006 - #Security of #Information #Systems - Lecture 2 _ Inform
+319/319  LecVideo 007 - Software Engineering - 1.Introduction
+382/382  LecVideo 008 - #Software #Engineering - Lecture 2 _ Software Processes
+39/39  LecVideo 009 - 3. Sets and Sorting - MIT 6.006 Introduction to Algorit
+289/289  LecVideo 045 - Project Management Simplified_ Learn The Fundamentals o
