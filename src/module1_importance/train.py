@@ -203,11 +203,12 @@ def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=1e-4, a
             
 
 if __name__ == "__main__":
-    # Example usage:
-    # Set these to your Drive paths when running on Colab
-    FEATURES_DIR = "../../data/raw" # Or /content/drive/MyDrive/INTEGRA_Data/raw
-    ANNOTATIONS_FILE = "../../data/module1_annotations.json"
-    
+    # Run from the repo root, e.g.: python -m src.module1_importance.train
+    # These match where extract_all_features.py writes features and where
+    # `annotate_module1.py --merge` writes the combined annotations file.
+    FEATURES_DIR = "data/processed/features"
+    ANNOTATIONS_FILE = "module1_annotations.json"
+
     # To run this, you need the merged module1_annotations.json
     if Path(ANNOTATIONS_FILE).exists():
         train_model(FEATURES_DIR, ANNOTATIONS_FILE)
