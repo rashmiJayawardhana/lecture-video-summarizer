@@ -847,10 +847,23 @@ def normalize(raw):
 # =====================================================================
 # MERGE (run with --merge once everyone is done)
 # =====================================================================
+PRIORITY_ANNOTATOR = "rashmi"  # this annotator's scores win any conflict
+
+
 def merge_all():
-    """Combine all annotations_*.json into module1_annotations.json."""
+    """Combine all annotations_*.json into module1_annotations.json.
+
+    Files are merged in order, later files overwriting earlier ones on a
+    conflict. PRIORITY_ANNOTATOR's file is always loaded last, so their
+    scores always win regardless of alphabetical filename order (previously
+    "rashmi" sorted before "ravindu" and would have silently lost ties).
+    """
     banner(["MERGE  -  combining everyone's annotation files"])
     files = sorted(glob.glob("annotations_*.json"))
+    priority_file = f"annotations_{PRIORITY_ANNOTATOR}.json"
+    if priority_file in files:
+        files.remove(priority_file)
+        files.append(priority_file)
     if not files:
         warn("No 'annotations_*.json' files found in the current folder.")
         return
@@ -879,7 +892,7 @@ def merge_all():
     if conflicts:
         print()
         warn(f"{len(conflicts)} segment(s) were annotated by more than one person")
-        warn("  (last file in alphabetical order wins):")
+        warn(f"  ({PRIORITY_ANNOTATOR}'s score wins if involved, otherwise last file alphabetically):")
         for sid, a, b in conflicts[:5]:
             print(f"    {C.GRY}{sid}{C.R}: {a}  {ARROW}  {b}")
         if len(conflicts) > 5:
