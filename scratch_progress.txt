@@ -1,10 +1,63 @@
-501/501  LecVideo 001 - #01 - Relational Model & Algebra (CMU Intro to Database
-466/466  LecVideo 002 - #02 - Modern SQL ? dbt Database Talk (CMU Intro to Data
-462/462  LecVideo 003 - #03 - Database Storage Files, Pages, Tuples (CMU Intro 
-467/467  LecVideo 004 - #22 - Database Crash Recovery ? ClickHouse Database Tal
-387/387  LecVideo 005 - #Security of #Information #Systems - Lecture 1 _ Inform
-396/396  LecVideo 006 - #Security of #Information #Systems - Lecture 2 _ Inform
-319/319  LecVideo 007 - Software Engineering - 1.Introduction
-382/382  LecVideo 008 - #Software #Engineering - Lecture 2 _ Software Processes
-39/39  LecVideo 009 - 3. Sets and Sorting - MIT 6.006 Introduction to Algorit
-289/289  LecVideo 045 - Project Management Simplified_ Learn The Fundamentals o
+501/501  LecVideo 001 - #01 - Relational Model & Algebra (CMU Intro to Database Systems) (complete)
+466/466  LecVideo 002 - #02 - Modern SQL ✸ dbt Database Talk (CMU Intro to Database Systems) (complete)
+462/462  LecVideo 003 - #03 - Database Storage Files, Pages, Tuples (CMU Intro to Database Systems) (complete)
+467/467  LecVideo 004 - #22 - Database Crash Recovery ✸ ClickHouse Database Talk (CMU Intro to Database Systems) (complete)
+387/387  LecVideo 005 - #Security of #Information #Systems - Lecture 1 _ Information Security Basic Concepts (complete)
+396/396  LecVideo 006 - #Security of #Information #Systems - Lecture 2 _ Information Security Management & Governance (complete)
+319/319  LecVideo 007 - Software Engineering - 1.Introduction (complete)
+290/290  LecVideo 008 - Lecture 53 _ Webserver Vulnerability and Attacks (complete)
+317/317  LecVideo 009 - 3. Sets and Sorting - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
+317/317  LecVideo 010 - 9. Breadth-First Search - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
+314/314  LecVideo 011 - 10. Depth-First Search - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
+260/345  LecVideo 012 - 11. Weighted Shortest Paths - MIT 6.006 Introduction to Algorithms, Spring 2020
+0/354  LecVideo 013 - 19. Complexity - MIT Sping 2020
+0/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
+0/465  LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
+0/359  LecVideo 016 - Lecture -3 TCP IP - Part-1 -  Internet Technology
+0/406  LecVideo 017 - L02 Sorting & Hashing  UC Berkeley CS 186, Spring 2015
+0/274  LecVideo 018 - What Is Project Management  Introduction To Project Management  PMP Training Videos  Simplilearn
+421/421  LecVideo 019 - Project Planning And Management Full Course 2026 [FREE]  PMP Tutorial For Beginners  Simplilearn (complete)
+220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
+0/359  LecVideo 021 - Lecture -1 Introduction To Internet - Internet Technology
+0/352  LecVideo 022 - Lecture -39 Search Engine And Web Crawlers Part-II - Internet Technology
+0/438  LecVideo 023 - CS50 Cybersecurity - Lecture 0 - Securing Accounts
+0/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
+0/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
+0/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
+0/421  LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8
+398/398  LecVideo 028 - CMU CS251 - What is theoretical computer science (complete)
+498/498  LecVideo 029 - CS162 Lecture 1 What is an Operating System (complete)
+284/284  LecVideo 030 - CS162 Lecture 6.5 Concurrency and Mutual Exclusion (Supplemental) (complete)
+0/507  LecVideo 031 - CS162 Lecture 14 Memory 2 Virtual Memory (Con't), Caching and TLBs
+0/364  LecVideo 032 - AI Basics for Beginners
+0/345  LecVideo 033 - Transformers Explained _ Simple Explanation of Transformers
+0/287  LecVideo 034 - ArgoCD Tutorial for Beginners _ GitOps CD for Kubernetes
+0/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
+0/462  LecVideo 036 - CS50 Cybersecurity - Lecture 2 - Securing Systems
+369/369  LecVideo 037 - Networking Lecture 12 - Broadcast - 2020 (complete)
+0/364  LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
+0/287  LecVideo 039 - Lecture 23_ System Hacking
+354/354  LecVideo 040 - CMU CS251 - Encodings and Computational Problems (complete)
+335/335  LecVideo 041 - CS50x 2024 - Artificial Intelligence (complete)
+0/418  LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
+0/404  LecVideo 043 - S2024 #18 - Databricks Photon  Spark SQL (CMU Advanced Database Systems)
+0/373  LecVideo 044 - S2024 #20 - DuckDB Embedded Database System (CMU Advanced Database Systems)
+289/289  LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework ✓_1080p60 (complete)
+0/359  LecVideo 046 - Lecture -2 Review Of Network Technologies - Internet Technology
+0/493  LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
+0/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
+0/359  LecVideo 049 - PMP 6th Edition Training Video  PMBOK 6th Edition  PMP Certification Training Video  Simplilearn
+0/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
+0/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
+0/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
+0/547  LecVideo 053 - CS50x 2024 - Cybersecurity
+0/384  LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems)
+382/382  LecVideo 055 - #Software #Engineering - Lecture 2 _ Software Processes, Activities, The Rational Unified Process (complete)
+0/423  LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn
+0/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
+0/413  LecVideo 058 - S2024 #17 - Google BigQuery  Dremel (CMU Advanced Database Systems)
+0/432  LecVideo 059 - 20. Asynchronous Distributed Algorithms Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
+0/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
+
+TOTAL: 8046/23253 segments (34.6%) across 60 video(s), all annotators combined
+Updated: 2026-07-19T18:35:55

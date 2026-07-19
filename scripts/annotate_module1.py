@@ -851,6 +851,59 @@ def normalize(raw):
 PRIORITY_ANNOTATOR = "rashmi"  # this annotator's scores win any conflict
 
 
+SCRATCH_PROGRESS_FILE = "scratch_progress.txt"
+
+
+def write_scratch_progress(all_segments):
+    """Write a plain-text per-video progress summary covering every
+    annotator's annotations_*.json (not just this user's), so anyone can
+    see at a glance which videos are fully done team-wide. Regenerated
+    every time the annotation tool quits.
+    """
+    combined_done = set()
+    for fp in sorted(glob.glob("annotations_*.json")):
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                part = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            continue
+        for sid, rec in part.items():
+            if rec.get("skipped") or rec.get("normalized_score") is not None:
+                combined_done.add(sid)
+
+    per_video = {}
+    for seg in all_segments:
+        vid = seg["video_id"]
+        entry = per_video.setdefault(vid, {"done": 0, "total": 0})
+        entry["total"] += 1
+        if seg["segment_id"] in combined_done:
+            entry["done"] += 1
+
+    def video_num(vid):
+        try:
+            return int(vid.split()[1])
+        except (IndexError, ValueError):
+            return 10 ** 9
+
+    lines = []
+    grand_done = grand_total = 0
+    for vid in sorted(per_video, key=video_num):
+        d, t = per_video[vid]["done"], per_video[vid]["total"]
+        grand_done += d
+        grand_total += t
+        marker = " (complete)" if d == t and t > 0 else ""
+        lines.append(f"{d}/{t}  {vid}{marker}")
+
+    lines.append("")
+    pct = (grand_done / grand_total * 100.0) if grand_total else 0.0
+    lines.append(f"TOTAL: {grand_done}/{grand_total} segments ({pct:.1f}%) "
+                 f"across {len(per_video)} video(s), all annotators combined")
+    lines.append(f"Updated: {datetime.datetime.now().isoformat(timespec='seconds')}")
+
+    with open(SCRATCH_PROGRESS_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
 def merge_all():
     """Combine all annotations_*.json into module1_annotations.json.
 
@@ -1456,6 +1509,11 @@ def run(review_mode=False):
     done = sum(1 for s in all_segments if s["segment_id"] in annotations)
     pct  = (done / total * 100.0) if total else 0.0
     elapsed = time.time() - session_start
+
+    # Review mode only iterates a filtered subset of segments, so it can't
+    # produce a full per-video total - skip refreshing scratch_progress.txt then.
+    if not review_mode:
+        write_scratch_progress(all_segments)
 
     print()
     banner(["SESSION SUMMARY"])
