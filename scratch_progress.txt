@@ -9,13 +9,13 @@
 317/317  LecVideo 009 - 3. Sets and Sorting - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
 317/317  LecVideo 010 - 9. Breadth-First Search - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
 314/314  LecVideo 011 - 10. Depth-First Search - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
-260/345  LecVideo 012 - 11. Weighted Shortest Paths - MIT 6.006 Introduction to Algorithms, Spring 2020
-0/354  LecVideo 013 - 19. Complexity - MIT Sping 2020
+345/345  LecVideo 012 - 11. Weighted Shortest Paths - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
+6/354  LecVideo 013 - 19. Complexity - MIT Sping 2020
 0/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
 0/465  LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
-0/359  LecVideo 016 - Lecture -3 TCP IP - Part-1 -  Internet Technology
-0/406  LecVideo 017 - L02 Sorting & Hashing  UC Berkeley CS 186, Spring 2015
-0/274  LecVideo 018 - What Is Project Management  Introduction To Project Management  PMP Training Videos  Simplilearn
+359/359  LecVideo 016 - Lecture -3 TCP IP - Part-1 -  Internet Technology (complete)
+406/406  LecVideo 017 - L02 Sorting & Hashing  UC Berkeley CS 186, Spring 2015 (complete)
+7/274  LecVideo 018 - What Is Project Management  Introduction To Project Management  PMP Training Videos  Simplilearn
 421/421  LecVideo 019 - Project Planning And Management Full Course 2026 [FREE]  PMP Tutorial For Beginners  Simplilearn (complete)
 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
 0/359  LecVideo 021 - Lecture -1 Introduction To Internet - Internet Technology
@@ -59,5 +59,5 @@
 0/432  LecVideo 059 - 20. Asynchronous Distributed Algorithms Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
 0/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 8046/23253 segments (34.6%) across 60 video(s), all annotators combined
-Updated: 2026-07-19T18:35:55
+TOTAL: 8909/23253 segments (38.3%) across 60 video(s), all annotators combined
+Updated: 2026-07-19T22:33:51
