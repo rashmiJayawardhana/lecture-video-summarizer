@@ -18,7 +18,7 @@
 7/274  LecVideo 018 - What Is Project Management  Introduction To Project Management  PMP Training Videos  Simplilearn
 421/421  LecVideo 019 - Project Planning And Management Full Course 2026 [FREE]  PMP Tutorial For Beginners  Simplilearn (complete)
 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
-0/359  LecVideo 021 - Lecture -1 Introduction To Internet - Internet Technology
+359/359  LecVideo 021 - Lecture -1 Introduction To Internet - Internet Technology (complete)
 0/352  LecVideo 022 - Lecture -39 Search Engine And Web Crawlers Part-II - Internet Technology
 0/438  LecVideo 023 - CS50 Cybersecurity - Lecture 0 - Securing Accounts
 0/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
@@ -36,7 +36,7 @@
 0/462  LecVideo 036 - CS50 Cybersecurity - Lecture 2 - Securing Systems
 369/369  LecVideo 037 - Networking Lecture 12 - Broadcast - 2020 (complete)
 0/364  LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
-0/287  LecVideo 039 - Lecture 23_ System Hacking
+287/287  LecVideo 039 - Lecture 23_ System Hacking (complete)
 354/354  LecVideo 040 - CMU CS251 - Encodings and Computational Problems (complete)
 335/335  LecVideo 041 - CS50x 2024 - Artificial Intelligence (complete)
 0/418  LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
@@ -59,5 +59,5 @@
 0/432  LecVideo 059 - 20. Asynchronous Distributed Algorithms Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
 0/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 9261/23253 segments (39.8%) across 60 video(s), all annotators combined
-Updated: 2026-07-20T00:43:46
+TOTAL: 9907/23253 segments (42.6%) across 60 video(s), all annotators combined
+Updated: 2026-07-24T07:08:02
