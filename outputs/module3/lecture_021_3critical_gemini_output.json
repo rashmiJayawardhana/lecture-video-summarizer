@@ -1,0 +1,191 @@
+[
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 120.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3522,
+        "ocr_text": "KB + BD DBs",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00004_02m00s.jpg",
+        "visual_type": "diagram_slide",
+        "detected_visual_types": [
+            "diagram"
+        ],
+        "visual_elements": [
+            {
+                "type": "diagram",
+                "topic": "Categorization of Knowledge Bases, Big Data, and Databases",
+                "content": "This slide outlines a two-part classification system, distinguishing between Knowledge Bases combined with Big Data (KB + BD) and Databases (DBs).",
+                "key_points": [
+                    "Classification #1 groups Knowledge Bases (KB) and Big Data (BD) together.",
+                    "Classification #2 focuses specifically on Databases (DBs).",
+                    "Establishes a foundational distinction or organizational framework for the lecture topic."
+                ]
+            }
+        ],
+        "slide_summary": "This slide outlines a two-part classification system, distinguishing between Knowledge Bases combined with Big Data (KB + BD) and Databases (DBs).",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 2,
+            "vertical_lines": 17,
+            "intersections": 3,
+            "horizontal_ratio": 0.0033926504629629628,
+            "vertical_ratio": 0.011040219907407407,
+            "rectangles": 5,
+            "hough_lines": 75,
+            "word_count": 4,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 1,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "original_label": "Important",
+        "relabel_rule": "visual_content_detected_for_gemini_test",
+        "gemini_analysis_status": "success",
+        "analysis_source": "gemini",
+        "semantic_analysis": {
+            "semantic_visual_type": "diagram",
+            "visual_topic": "Categorization of Knowledge Bases, Big Data, and Databases",
+            "visual_explanation": "This slide outlines a two-part classification system, distinguishing between Knowledge Bases combined with Big Data (KB + BD) and Databases (DBs).",
+            "key_points": [
+                "Classification #1 groups Knowledge Bases (KB) and Big Data (BD) together.",
+                "Classification #2 focuses specifically on Databases (DBs).",
+                "Establishes a foundational distinction or organizational framework for the lecture topic."
+            ],
+            "module4_usage": "This frame is critical for identifying the start of a section where the instructor defines or contrasts these data management concepts. It should be used as a key anchor point for segmenting the video lecture.",
+            "confidence": 0.95
+        }
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 240.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3907,
+        "ocr_text": "COURSE LOgISTICS Course Policies Schedule: Course Web Discussion Announcements: Piazza Homeworks + Projects: Gradescope Final Grades: Canvas Waitlist: Six open seats (as of 12pm Non-CMU students can complete all assignments Gradescope (Code; WWJZ5) Do pot email instructors / TAs for Discord Channel: https discordggLYEZdMCg Page today) using help",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00008_04m00s.jpg",
+        "visual_type": "mixed_slide",
+        "detected_visual_types": [
+            "diagram",
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Course Administrative Logistics",
+                "content": "This slide provides essential administrative information for course participation, including platform links for assignments, grades, communication channels, and policies for both enrolled and non-enrolled students.",
+                "key_points": [
+                    "Centralized platforms: Course Web Page, Piazza for communication, Gradescope for submissions, and Canvas for grading.",
+                    "Guidelines for non-CMU students regarding assignment submission and access codes.",
+                    "Academic integrity and communication policies, including a prohibition on posting solutions online and emailing instructors directly for help.",
+                    "Provision of a Discord channel for community interaction."
+                ]
+            }
+        ],
+        "slide_summary": "This slide provides essential administrative information for course participation, including platform links for assignments, grades, communication channels, and policies for both enrolled and non-enrolled students.",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 6,
+            "vertical_lines": 5,
+            "intersections": 3,
+            "horizontal_ratio": 0.0091796875,
+            "vertical_ratio": 0.004345100308641975,
+            "rectangles": 0,
+            "hough_lines": 423,
+            "word_count": 48,
+            "number_count": 2,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 2,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 1
+        },
+        "original_label": "Important",
+        "relabel_rule": "visual_content_detected_for_gemini_test",
+        "gemini_analysis_status": "success",
+        "analysis_source": "gemini",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Course Administrative Logistics",
+            "visual_explanation": "This slide provides essential administrative information for course participation, including platform links for assignments, grades, communication channels, and policies for both enrolled and non-enrolled students.",
+            "key_points": [
+                "Centralized platforms: Course Web Page, Piazza for communication, Gradescope for submissions, and Canvas for grading.",
+                "Guidelines for non-CMU students regarding assignment submission and access codes.",
+                "Academic integrity and communication policies, including a prohibition on posting solutions online and emailing instructors directly for help.",
+                "Provision of a Discord channel for community interaction."
+            ],
+            "module4_usage": "This frame is important for the summary as it sets the operational framework for the course, helping students navigate the digital tools and classroom policies.",
+            "confidence": 1.0
+        }
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 270.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3935,
+        "ocr_text": "AGENDA Database Systems Background Relational Model Relational Algebra Alternative Data Models QeA Session",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00009_04m30s.jpg",
+        "visual_type": "mixed_slide",
+        "detected_visual_types": [
+            "diagram",
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "text",
+                "topic": "Lecture Agenda",
+                "content": "This slide provides an overview of the topics to be covered in the current lecture session, serving as a roadmap for the students.",
+                "key_points": [
+                    "Database systems background overview",
+                    "Study of the relational model",
+                    "Application of relational algebra",
+                    "Introduction to alternative data models"
+                ]
+            }
+        ],
+        "slide_summary": "This slide provides an overview of the topics to be covered in the current lecture session, serving as a roadmap for the students.",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 3,
+            "vertical_lines": 4,
+            "intersections": 3,
+            "horizontal_ratio": 0.007707368827160494,
+            "vertical_ratio": 0.004265528549382716,
+            "rectangles": 1,
+            "hough_lines": 134,
+            "word_count": 13,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 2,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 1,
+            "diagram_keyword_count": 1
+        },
+        "original_label": "Important",
+        "relabel_rule": "visual_content_detected_for_gemini_test",
+        "gemini_analysis_status": "success",
+        "analysis_source": "gemini",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Lecture Agenda",
+            "visual_explanation": "This slide provides an overview of the topics to be covered in the current lecture session, serving as a roadmap for the students.",
+            "key_points": [
+                "Database systems background overview",
+                "Study of the relational model",
+                "Application of relational algebra",
+                "Introduction to alternative data models"
+            ],
+            "module4_usage": "This frame is useful for identifying the start of a lecture segment or creating a table of contents bookmark for the video.",
+            "confidence": 1.0
+        }
+    }
+]

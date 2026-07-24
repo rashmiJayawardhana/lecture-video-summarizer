@@ -1,0 +1,722 @@
+[
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 0.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3402,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00000_00m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 120.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3522,
+        "ocr_text": "KB + BD DBs",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00004_02m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 150.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4062,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00005_02m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 240.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3907,
+        "ocr_text": "COURSE LOgISTICS Course Policies Schedule: Course Web Discussion Announcements: Piazza Homeworks + Projects: Gradescope Final Grades: Canvas Waitlist: Six open seats (as of 12pm Non-CMU students can complete all assignments Gradescope (Code; WWJZ5) Do pot email instructors / TAs for Discord Channel: https discordggLYEZdMCg Page today) using help",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00008_04m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 270.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3935,
+        "ocr_text": "AGENDA Database Systems Background Relational Model Relational Algebra Alternative Data Models QeA Session",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00009_04m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 300.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4058,
+        "ocr_text": "AGENDA Database Systems Background Relational Model Relational Algebra Alternative Data Models Q&A Session",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00010_05m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 330.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4058,
+        "ocr_text": "AGENDA Database Systems Background Relational Model Relational Algebra Alternative Data Models QeA Session",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00011_05m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 360.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3795,
+        "ocr_text": "Databases",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00012_06m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 390.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3705,
+        "ocr_text": "Databases",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00013_06m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 420.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4048,
+        "ocr_text": "DATABASE Organized collection of inter-related data that models some aspect of the real-world Databases are the core component of most computer applications",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00014_07m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 450.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4023,
+        "ocr_text": "DATABASE Organized collection of inter-related data that models some aspect of the real-world Databases are the core component of most computer applications;",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00015_07m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 480.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3996,
+        "ocr_text": "DATABASE Organized collection of inter-related data that models some aspect of the real-world Databases are the core component of most computer applications",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00016_08m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 510.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4092,
+        "ocr_text": "DATABASE Organized collection of inter-related data that models some aspect of the real-world Databases are the core component of most computer applications",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00017_08m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 540.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4204,
+        "ocr_text": "DATABASE EXAMPLE Create a database that models a digital music store track of artists and albums Information we need to The Albums those Artists released keep keep",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00018_09m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 630.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3929,
+        "ocr_text": "FLAT FILE STRAWMAN Example: Get the year that GZA went solo. Artist(name year country) USA parse( Line) GZA IGZA",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00021_10m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 660.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3967,
+        "ocr_text": "FLAT FILE STRAWMAN Example: Get the year that GZA went solo. Artist(name year country) USA parse(Line) GZA TUSA print(int (record[1]))",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00022_11m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 720.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3962,
+        "ocr_text": "FLAT FILE STRAWMAN Example: Get the that GZA went solo. Artist(name year country) USA parse(Line) \"Notorious BiG\" CMUDB year",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00024_12m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 750.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3764,
+        "ocr_text": "FLAT FILES: DATA INTEGRITY How dowe ensure that the artist is the same for each album entry?",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00025_12m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 780.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3854,
+        "ocr_text": "FLAT FILES: DATA INTEGRITY How do we ensure that the artist is the same for each album entry? What if somebody overwrites the album year with invalid string?",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00026_13m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 810.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3983,
+        "ocr_text": "FLAT FILES : DATA INTEGRITY How do we ensure that the artist is the same for each album entry? invalid string? Wbat ifthere are multiple artists on an album? What happens if we delete an artist that has albums?",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00027_13m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 840.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3967,
+        "ocr_text": "FLAT FILES : IMPLEMENTATION How do you find a particular record? What ifwe now want to create a new application that uses the same database? What ifthat application is running on a different machine?",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00028_14m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 870.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4017,
+        "ocr_text": "FLAT FILES: IMPLEMENTATION How do find a particular record? What ifwe now want t0 create a new application that uses the same database? What ifthat application is running on a different machine? What if two threads to write to the same file at the same time? you try",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00029_14m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 900.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3947,
+        "ocr_text": "FLAT FILES: IMPLEMENTATION How do find a particular record? What ifwe now want to create a new application that uses the same database? What ifthat application is running on a different machine? What if two threads to write to the same file at the same time? ATABASES you try",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00030_15m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 930.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4013,
+        "ocr_text": "FLAT FILES : DURABILITY What if the machine crashes while OUT program is updating a record? What if we want to Teplicate the database on multiple machines for high availability?",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00031_15m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 960.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3988,
+        "ocr_text": "FLAT FILES : DURABILITY What if the machine crashes while our program is updating a record? What if we want to replicate the database on multiple machines for high availability?",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00032_16m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1080.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4182,
+        "ocr_text": "DATA MODELS A data model is a collection of concepts for Aschema is a description of a particular collection using a data modell This defines the structure Ofi data for a data model_ Otherwise, you have random bits with no meaning data, given",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00036_18m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1110.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4136,
+        "ocr_text": "DATA MOdELS A data model is a collection of concepts for describing the data in a database A schema is a description ofa particular collection data model Otherwise, you have random bits with no meaning using given",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00037_18m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1140.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4158,
+        "ocr_text": "DATA A data model is a collection of concepts for describing the data in a database Aschema is a description of a particular collection data model This defines the structure of data for a data model Otherwise, you have random bits with no meaning using given",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00038_19m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1170.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4288,
+        "ocr_text": "A data model is a collection of concepts for describing the data in a database Aschema is a description of a particular collection data model This defines the structure of data for 4 data model Otherwise, you have random bits with no meaning using given",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00039_19m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1200.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4044,
+        "ocr_text": "DATA A data model is a collection of concepts for describing the data in a database Aschema is a description of a particular collection data model This defines the structure of data for 4 data model Otherwise, you have random bits with no meaning: using given",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00040_20m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1230.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3995,
+        "ocr_text": "DATA MODELS Relational Key/ Value Graph Document / JSON / XML / Object Wide-Column / Column ~family (Vector, Matrix, Tensor) Hierarchical Network Semantic Array",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00041_20m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1260.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4169,
+        "ocr_text": "DATA MODELS Relational Simple Caching Graph Document JSON / XML Object Wide-Column Column-family Array (Vector; Matrix; Tensor) Hierarchical Network Semantic Entity-Relationship",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00042_21m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1290.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4056,
+        "ocr_text": "DATA MODELS Relational Key/Value Graph Document / JSON XML / Object NoSQL Wide-Column Column-family Array (Vector, Matrix, Tensor) Hierarchical Network Semantic Entity-Relarionship",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00043_21m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1320.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3976,
+        "ocr_text": "DATA MODELS Relational Key/Value Graph Document JSON / XML / Object Wide-Column / Column-family Array (Vector, Matrix; Tensor) ML/ Science Hierarchical Semantic Entity-Relationship",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00044_22m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1350.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4336,
+        "ocr_text": "DATA MODELS Relational Key/Value Graph Document JSON / XML / Object Wide-Column / Column -family Hierarchical Network Semantic Entity-Relationship",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00045_22m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1380.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4028,
+        "ocr_text": "DATA MODELS Relational This Course Key/Value Graph Document JSON / XML [ Object Wide-Column / Column-family (Vector, Matrix; Tensor) Hierarchical: Network Semantic Entity-Relationship Array",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00046_23m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1410.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3871,
+        "ocr_text": "EARLY DBMSs Early database applications were difficult to build and maintain on available DBMSs in the 1960s. Computers were expensive, humans were Tight coupling between logical and physical layers Programmers had to (roughly) know what queries the application would execute before could deploy the database: cheap: they",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00047_23m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1470.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3902,
+        "ocr_text": "EARLY DBMSs Early database applications were difficult to build and maintain on available DBMSs in the 1960s. Examples: IDS, IMS CODASYL Computers were expensive; humans were cheap. Tight coupling between Iogical and physical Programmers had to (roughly) know what queries the application would execute before could deploy the database: layers: they",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00049_24m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1500.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3884,
+        "ocr_text": "EARLY DBMSs Early database applications were difficult to build and maintain on available DBMSs in the 1960s. Examples: IDS, IMS CODASYL Computers were expensive; humans were cheap. Tight coupling between logical and physical layers Programmers had to (roughly) know what queries the application would execute before could deploy the database: they",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00050_25m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1530.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.39,
+        "ocr_text": "EARLY DBMSs Early database applications were difficult to build and maintain on available DBMSs in the 1960s. Computers were expensive, humans were Tight coupling between logical and physical layers Programmers had to (roughly) know what queries the application would execute before could deploy the database. cheap: they",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00051_25m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1620.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3857,
+        "ocr_text": "(riting hged",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00054_27m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1650.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3863,
+        "ocr_text": "",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00055_27m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1680.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3882,
+        "ocr_text": "CODASYL The Differences and Similarities Between the Data Base Set and Relational Views of Data: Desctiption Access and Controkin Ann",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00056_28m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1740.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3946,
+        "ocr_text": "CODASYL The Differences and Similarities Between the Data Base Set and Relational Views of Data: ACM SIGFIDET Workshop on Data Description Access and Controlin Codd Bachman Stonebraker Ann",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00058_29m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1770.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.378,
+        "ocr_text": "CODASYL COBOLICODASYL camp: The Differences and Similarities mete mortal programmer will be able t0 under- Between the Data Base Set and stand your newfangled languages: Relational Views of Data: 2. Even ifyou can get programmers t0 Jearn new langueges, you won't be able to build an ACM SIGFIDET Workshop on Data efficient implementation of them Description Access-and Controlin epplications want Relational camp: 1 Nothing es complicated as the DBTG proposal can possibly be the right way t0 do data management 3. The CODASYL model Codd Bachman Stonebraker complex operations in CCMUDB Ann Any ning",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00059_29m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1800.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3801,
+        "ocr_text": "CODASYL COBOLICODASYL camp: The Differences and Similarities mete mortal programmer will be able t0 under- Between the Data Base Set and stand your newfangled languages: Relational Views of Data: new langueges, you won't be able to build an ACM SIGFIDET Workshop on Data efficient implementation of them Description Access-and Controlin epplications want Relational camp: 1, Nothing es complicated es the DBTG proposal can possibly be the right way t0 do data management 3. The CODASYL model Codd Bachman Stonebraker Ann Any using ning Gray",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00060_30m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1830.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4174,
+        "ocr_text": "RELATIONAL MODEL The relational model defines a database abstraction based on relations to avoid maintenance overhead tenets: Physical storage left up to theDBMS implementation Access data through high-level language, DBMS figures out best execution strategy: Key",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00061_30m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1860.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4038,
+        "ocr_text": "RELATIONAL MODEL The relationalmodel defines a database abstraction based on relations to avoid maintenance overhead tenets: Store database in simple data structures (relations) Physical storage left Up to the DBMS implementation Access data through high-level language; DBMS figures Key",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00062_31m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1890.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.419,
+        "ocr_text": "RELATIONAL MODEL The relational model defines a database abstraction based on relations to avoid maintenance overhead tenets: Store database in simple data structures (relations) Physical storage left up to the DBMS implementation Access data through high-level language, DBMS figures out best execution strategy: Key",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00063_31m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1920.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4233,
+        "ocr_text": "RELATIONAL MODEL The relationalmodel defines a database abstraction based on relations to avoid maintenance overhead tenets: Store database in simple data structures (relations) Physical storage left up to theDBMS implementation Access data through high-level language; DBMS figures out best execution strategy: Key",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00064_32m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1950.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4162,
+        "ocr_text": "RELATIONAL MODEL The relationalmodel defines a database abstraction based on relations to avoid maintenance overhead tenets: Store database in simple data structures (relations) Physical storage left Up to the DBMS implementation Access data through high-level language, DBMS figures out best execution strategy; Key",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00065_32m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 1980.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4149,
+        "ocr_text": "RELATIONAL MODEL The relationalmodel defines a database abstraction based on relations to avoid maintenance overhead tenets: Store database in simple data structures (relations) Physical storage left up to theDBMS implementation; Access data through high-level language; DBMS figures out best execution strategy: Key",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00066_33m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2010.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4159,
+        "ocr_text": "RELATIONAL MODEL Structure: The definition of the database's relations and their contents independent of their physical representation. constraints: Manipulation: Programming interface for",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00067_33m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2040.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4165,
+        "ocr_text": "RELATIONAL MODEL Structure: The definition of the database's relations and their contents independent of their physical representation. Integrity: Ensure the database' s contents satisfy constraints: Manipulation: Programming interface for accessing and modifying a database's contents",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00068_34m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2070.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.416,
+        "ocr_text": "RELATIONAL MODEL Structure: The definition of the database's relations and their contents independent of their physical representation; Integrity: Ensure the database's contents satisfy constraints: Manipulation: Programming interface for accessing and modifying a database's contents",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00069_34m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2100.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4193,
+        "ocr_text": "RELATIONAL MODEL Structure: The definition ofthe database s relations and their contents[ndependengof their physical representation. Integrity: Ensure the database's contents satisfy constraints: Manipulation: Programming interface accessing and modifying & database' Tfconfents",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00070_35m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2130.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3974,
+        "ocr_text": "DATA INDEPENDENCE Isolate the user/application from low- level data representation: The user worTies about high-level application logic DBMS optimizes the layout according to operating environment, database DBMS can then re optimize the database if/when these factors changes Datt Stoi only",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00071_35m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2160.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3991,
+        "ocr_text": "DATA INDEPENDENCE Isokate the user/application from low level data representation: The user worTies about high-level application DBMS optimizes the layout according to operating environment; database DBMS can then re-optimize the database if/when these factors changes. Physical Schema Datt Stoi only logic.",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00072_36m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2190.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.413,
+        "ocr_text": "DATA INDEPENDENCE Isolate the user/ 'application from low- level data representation: The user worTies about high-level External Schema External Schema application logic Views (SOL) DBMS optimizes the layout according to operating environment; database Logical Schema DBMS can then re-optimize the Physical Schema only",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00073_36m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2220.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4098,
+        "ocr_text": "DATA INDEPENDENCE Application Application Isolate the user/application from low- level data representation; The user worTies about high-level External Schema External Schema application logic Views (SOL) DBMS optimizes the layout according to operating environment; database Logical Schema re-optimize the (SQL) database if/ when these factors changes. Physical Schema Datl Stoi only",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00074_37m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2250.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4023,
+        "ocr_text": "DATA INDEPENDENCE Application Application Isolate the user/ 'application from low- level data representation: The user worries about high-level External Schema External Schema application logic Logical Data Views (SOL) DBMS optimizes the layout according Independence to operating environment; database Logical Schema contents, and workload' Physical Data DBMS can then re-optimize the (SQL) Independence database if/ when these factors changes. Physical Schema Stoi only",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00075_37m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2310.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4049,
+        "ocr_text": "RELATIONAL MODEL A relation iS an unordered set that contain the relationship of attributes Artist (name, year country) that represent entities: name year country Wu-Tang Clan USA tuple is a set ofattribute values Notorious BIG USA (aka its domain) in the relation: Values are (normally) atomic/scalar: The every domain (if allowed). special",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00077_38m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2340.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4076,
+        "ocr_text": "RELATIONAL MODEL A relation is an unordered set that contain the relationship of attributes Artist (name, year country) that represent entities; name year country Wu-Tang Clan USA Notorious BIG USA (aka its domain in the relation: Values are (normally) atomic/scalar: The value NULL is a member of every domain (if allowed)_ special",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00078_39m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2370.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4106,
+        "ocr_text": "RELATIONAL MODEL A relation iS an unordered set that contain the relationship ofattributes Artist(name year country) that represent entities: name year country Wu-Tang Clan USA USA in the relation: Values are (normally) atomic/scalar: value NULL is a member of every domain (if allowed)_ special",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00079_39m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2400.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3915,
+        "ocr_text": "RELATIONAL MODEL : PRIMARY KEYS A relations primary uniquely identifies & single tuple: Artist(name, year country) Some DBMSs automatically create an name year country internal primary ifa table does Wu-Tang Clan USA Notorious BIG USA not define one: DBMS can auto generation unique primarykeys via an identity column: IDENTITY (SQL Standard) SEQUENCE (PostgreSQL / Oracle) AUTO INCREMENT (MySQL) kex key DAVADSE",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00080_40m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2430.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4011,
+        "ocr_text": "RELATIONAL MODEL : PRIMARY KEYS A relation's primary uniquely identifies a single tuple: Artist (name, year country) Some DBMSs automatically create an name year country internal primary if a table does Wu-Tang Clan USA Notorious BIG USA not define one: DBMS can auto generation unique SEQUENCE (PostgreSQL Oracle) AUTO INCREMENT (MySQL) kex key",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00081_40m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2460.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3933,
+        "ocr_text": "RELATIONAL MODEL : PRIMARY KEYS A relation's primary uniquely identifies & Single tuple: Artist(name year country) Some DBMSs automatically create an name year country internal primary ifa table does Wu-Tang Clan USA not define one. Notorious BIG USA primary via an jdentity column: IDENTITY (SQL Standard) SEQUENCE (PostgreSQL Oracle) AUTO_INCREMENT (MySQL) kex key keys",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00082_41m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2490.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3996,
+        "ocr_text": "RELATIONAL MODEL : PRIMARY KEYS A relation's primary uniquely Artist(id, name year country) Some DBMSs automatically create an name year country internal primary ifa table does Wu-Tang Clan USA Notorious BIG USA not define one: DBMS can auto generation unique via an identity column: IDENTITY (SQL Standard) SEQUENCE (PostgreSQL Oracle) AUTO_INCREMENT (MySQL) kex key keys",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00083_41m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2550.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3914,
+        "ocr_text": "RELATIONAL MODEL : FORETGN KEYS A foreign specifies that an attribute from one relation maps;to a tuple in another relation. kex",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00085_42m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2610.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4217,
+        "ocr_text": "RELATIONAL MODEL : FOREIGN KEYS Artist(id, name year country) name year country Wu-Tang Clan USA ArtistAlbum(artist_id, album_id) Notorious BIG USA artist_id album_id USA Album( id, name year) name year Enter the Wu-Tang St.Ides Mix Tape Liquid_Swords",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00087_43m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2640.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4129,
+        "ocr_text": "RELATIONAL MODEL : FOREIGN KEYS Artist(id, name year country) name year country USA ArtistAlbum(artist_id, album_id) Notorious BIG USA artist_id album_id USA Album(id, name year) name year the Wu-Tang St.Ides Mix Tape Liquid_Swords",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00088_44m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2790.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3937,
+        "ocr_text": "DATA MANIPULATION LANGUAGES The API that a DBMS exposes to applications Procedural: The query specifies the (high-level) strategy to find the desired result based on sets Non-Procedural (Declarative): The query specifies only what data is wanted and not howto findit bags:",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00093_46m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2820.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4215,
+        "ocr_text": "DATA MANIPULATION LANGUAGES (DML ) The API that a DBMS exposes to applications store and retrieve information from a database_ Procedural: Relational The query specifies the (high-level) strategy to find the desired result based on sets / Algebra Non-Procedural Declarative): The query specifies only what data is wanted and not how to find it: bags:",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00094_47m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2850.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4105,
+        "ocr_text": "DATA MANIPULATION LANGUAGES (DML ) The API that a DBMS exposes to applications store and retrieve information from a database_ Procedural: Relational The query specifies the (high-level) strategy to find the desired result based on sets / Algebra Non-Procedural Declarative): Relational The query specifies only what data is wanted and Calculus bags:",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00095_47m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2880.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.3935,
+        "ocr_text": "RELATIONAL ALGEBRA Fundamental operations to retrieve Select and manipulate tuples in a relation. Based on set algebra (unordered lists with Projection duplicates) U:Union Each operator takes one Or more Intersection relations as its inputs and outputs a Difference new relation: We can chain operators together to create more complex operations Join ZCMUDB",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00096_48m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2910.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4131,
+        "ocr_text": "RELATIONAL ALGEBRA: SELECT Choose a subset of the tuples from a Predicate acts as a filter to retain that fulfill its qualifying requirement; Can combine multiple predicates _ conjunctions disjunctions; Syntax: Opredicate(R) only tuples using",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00097_48m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2940.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4204,
+        "ocr_text": "RELATIONAL SELECT Choose a subset of the tuples from & R(a_id;b_id) relation that satisfies a selection b_id predicate: Predicate acts as a filter t0 retain tuples that fulfill its qualifying la3 requirement Can combine multiple predicates conjunctions / disjunctions: Syntax: Opredicate (R) a_id only using",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00098_49m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 2970.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4249,
+        "ocr_text": "RELATIONAL ALGEBRA : SELECT Choose a subset of the tuples from a relation that satisfies a selection b_id predicate: la2 Predicate acts as a filter t0 retain tuples that fulfill its qualifying requirement (R) Can combine multiple predicates a_id b_id conjunctions / disjunctions: Syntax: Opredicate (R) a_id only using",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00099_49m30s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 3000.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4151,
+        "ocr_text": "RELATIONAL ALGEBRA : SELECT Choose a subset of the from a R(a_id,b_id) relation that satisfies a selection b_id predicate: Predicate acts as a filter to retain that fulfill its qualifying requirement a2\" (R) (R) Can combine multiple predicates a_id conjunctions disjunctions a2E Syntax: Opredicate(R) tuples a_id only tuples using a_id",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00100_50m00s.jpg"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 3030.0,
+        "label": "Important",
+        "label_score": 0.5,
+        "confidence": 0.4112,
+        "ocr_text": "RELATIONAL ALGEBRA: PROJECTION Generate a relation with that R(a_id,b_id) contains the specified attributes b_id Rearrange attributes' ordering: la2 Remove unwanted attributes: Manipulate values to create derived attributes: Syntax: FA1 (R) tuples a_id only",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00101_50m30s.jpg"
+    }
+]
