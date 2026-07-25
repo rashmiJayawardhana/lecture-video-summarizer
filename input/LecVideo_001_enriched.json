@@ -1,0 +1,322 @@
+[
+  {
+    "block_id": "block_001",
+    "timestamp_start": 440.0,
+    "timestamp_end": 450.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_044"
+    ],
+    "semantic_analysis": {
+      "topic": "Databases as Core CS Concept",
+      "summary": "Databases are the core concept underlying almost all computer applications and computer science.",
+      "key_points": [
+        "Databases are essential infrastructure",
+        "Fundamental to computer science",
+        "Foundation for modern applications"
+      ]
+    }
+  },
+  {
+    "block_id": "block_002",
+    "timestamp_start": 630.0,
+    "timestamp_end": 640.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_063"
+    ],
+    "semantic_analysis": {
+      "topic": "Database System Interaction",
+      "summary": "A database system provides the mechanism for applications to interact with stored data.",
+      "key_points": [
+        "Database systems mediate data access",
+        "Applications interact through defined interfaces",
+        "Core component of any data-driven system"
+      ]
+    }
+  },
+  {
+    "block_id": "block_003",
+    "timestamp_start": 990.0,
+    "timestamp_end": 1000.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_099"
+    ],
+    "semantic_analysis": {
+      "topic": "Data Models Define Structure",
+      "summary": "Data models specify how information is organized and accessed within databases.",
+      "key_points": [
+        "Data models define structural rules",
+        "Guide how data is stored and retrieved"
+      ]
+    }
+  },
+  {
+    "block_id": "block_004",
+    "timestamp_start": 1070.0,
+    "timestamp_end": 1120.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_107",
+      "seg_108",
+      "seg_109",
+      "seg_111"
+    ],
+    "semantic_analysis": {
+      "topic": "Blurred Lines Between Database Types",
+      "summary": "Modern relational databases can store documents like JSON, blurring boundaries with document databases.",
+      "key_points": [
+        "Relational databases now support JSON storage",
+        "Data model distinctions are less rigid",
+        "Hybrid capabilities in modern DBMS"
+      ]
+    }
+  },
+  {
+    "block_id": "block_005",
+    "timestamp_start": 1160.0,
+    "timestamp_end": 1200.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_116",
+      "seg_117",
+      "seg_118",
+      "seg_119"
+    ],
+    "semantic_analysis": {
+      "topic": "Schema and Data Model Foundations",
+      "summary": "A schema defines the structure of collections and their relationships within a chosen data model.",
+      "key_points": [
+        "Schema defines data structure",
+        "Similar to class vs object in Java",
+        "Establishes collections and relationships"
+      ]
+    }
+  },
+  {
+    "block_id": "block_006",
+    "timestamp_start": 1250.0,
+    "timestamp_end": 1330.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_125",
+      "seg_128",
+      "seg_129",
+      "seg_132"
+    ],
+    "semantic_analysis": {
+      "topic": "Data Independence Principle",
+      "summary": "The relational model provides logical data independence by separating logical structure from physical storage.",
+      "key_points": [
+        "Logical and physical layers are separate",
+        "Applications insulated from storage changes",
+        "Key benefit of relational model"
+      ]
+    }
+  },
+  {
+    "block_id": "block_007",
+    "timestamp_start": 1450.0,
+    "timestamp_end": 1570.0,
+    "segments_count": 6,
+    "segment_ids": [
+      "seg_145",
+      "seg_146",
+      "seg_149",
+      "seg_152",
+      "seg_153",
+      "seg_156"
+    ],
+    "semantic_analysis": {
+      "topic": "Relational Model Data Access",
+      "summary": "The relational model organizes data into tables (relations) accessed through relational algebra operations.",
+      "key_points": [
+        "Data organized as relations/tables",
+        "Access via mathematical operations",
+        "Foundation for SQL"
+      ]
+    }
+  },
+  {
+    "block_id": "block_008",
+    "timestamp_start": 1710.0,
+    "timestamp_end": 1720.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_171"
+    ],
+    "semantic_analysis": {
+      "topic": "Cartesian Product Operation",
+      "summary": "The Cartesian product combines all rows from two relations to produce every possible combination.",
+      "key_points": [
+        "Combines all rows from two tables",
+        "Basis for JOIN operations",
+        "Fundamental relational algebra operator"
+      ]
+    }
+  },
+  {
+    "block_id": "block_009",
+    "timestamp_start": 1770.0,
+    "timestamp_end": 1870.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_177",
+      "seg_180",
+      "seg_183",
+      "seg_186"
+    ],
+    "semantic_analysis": {
+      "topic": "Core Relational Algebra Operators",
+      "summary": "Relational algebra consists of fundamental operators like selection, projection, and union.",
+      "key_points": [
+        "Selection filters rows",
+        "Projection selects columns",
+        "Building blocks of SQL queries"
+      ]
+    }
+  },
+  {
+    "block_id": "block_010",
+    "timestamp_start": 2050.0,
+    "timestamp_end": 2060.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_205"
+    ],
+    "semantic_analysis": {
+      "topic": "Selection Operator in Queries",
+      "summary": "The selection operator filters tuples from a relation based on a specified condition.",
+      "key_points": [
+        "Filters rows by predicate",
+        "Written using sigma notation",
+        "Corresponds to WHERE clause in SQL"
+      ]
+    }
+  },
+  {
+    "block_id": "block_011",
+    "timestamp_start": 2130.0,
+    "timestamp_end": 2140.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_213"
+    ],
+    "semantic_analysis": {
+      "topic": "Set Operations on Relations",
+      "summary": "Relations support set operations like union, intersection, and difference between compatible tables.",
+      "key_points": [
+        "Union combines matching relations",
+        "Requires schema compatibility",
+        "Direct set theory application"
+      ]
+    }
+  },
+  {
+    "block_id": "block_012",
+    "timestamp_start": 2400.0,
+    "timestamp_end": 2410.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_240"
+    ],
+    "semantic_analysis": {
+      "topic": "Relational Set Operations Continued",
+      "summary": "Set operations require both relations to have the same schema and attribute domains.",
+      "key_points": [
+        "Schema compatibility required",
+        "Attributes must match in type and order"
+      ]
+    }
+  },
+  {
+    "block_id": "block_013",
+    "timestamp_start": 2450.0,
+    "timestamp_end": 2460.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_245"
+    ],
+    "semantic_analysis": {
+      "topic": "Query Optimization Independence",
+      "summary": "Relational algebra allows different equivalent expressions, enabling query optimization.",
+      "key_points": [
+        "Multiple ways to express same query",
+        "Optimizer picks best execution plan",
+        "Foundation of database performance"
+      ]
+    }
+  },
+  {
+    "block_id": "block_014",
+    "timestamp_start": 2670.0,
+    "timestamp_end": 2710.0,
+    "segments_count": 2,
+    "segment_ids": [
+      "seg_267",
+      "seg_270"
+    ],
+    "semantic_analysis": {
+      "topic": "Relational Algebra Basics Review",
+      "summary": "Relational algebra provides the mathematical foundation for querying relational databases.",
+      "key_points": [
+        "Mathematical language for queries",
+        "Basis for SQL semantics"
+      ]
+    }
+  },
+  {
+    "block_id": "block_015",
+    "timestamp_start": 4420.0,
+    "timestamp_end": 4430.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_442"
+    ],
+    "semantic_analysis": {
+      "topic": "Course Wrap-up on Fundamentals",
+      "summary": "Summary of core database concepts covered including models, schemas, and relational operations.",
+      "key_points": [
+        "Data models and schemas reviewed",
+        "Relational operations covered",
+        "Foundation for course topics"
+      ]
+    }
+  },
+  {
+    "block_id": "block_016",
+    "timestamp_start": 4470.0,
+    "timestamp_end": 4510.0,
+    "segments_count": 2,
+    "segment_ids": [
+      "seg_447",
+      "seg_450"
+    ],
+    "semantic_analysis": {
+      "topic": "Q&A Session Discussion",
+      "summary": "Discussion of student questions about database concepts and relational operations.",
+      "key_points": [
+        "Clarifications on relational algebra",
+        "Practical database scenarios"
+      ]
+    }
+  },
+  {
+    "block_id": "block_017",
+    "timestamp_start": 4590.0,
+    "timestamp_end": 4600.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_459"
+    ],
+    "semantic_analysis": {
+      "topic": "Course Conclusion",
+      "summary": "Final remarks and preview of upcoming topics in the database systems course.",
+      "key_points": [
+        "Preview of next lectures",
+        "Course roadmap discussed"
+      ]
+    }
+  }
+]
