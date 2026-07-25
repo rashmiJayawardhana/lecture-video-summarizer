@@ -16,12 +16,12 @@
 0/465  LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
 359/359  LecVideo 016 - Lecture -3 TCP IP - Part-1 -  Internet Technology (complete)
 406/406  LecVideo 017 - L02 Sorting & Hashing  UC Berkeley CS 186, Spring 2015 (complete)
-7/274  LecVideo 018 - What Is Project Management  Introduction To Project Management  PMP Training Videos  Simplilearn
+274/274  LecVideo 018 - What Is Project Management  Introduction To Project Management  PMP Training Videos  Simplilearn (complete)
 421/421  LecVideo 019 - Project Planning And Management Full Course 2026 [FREE]  PMP Tutorial For Beginners  Simplilearn (complete)
 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
 359/359  LecVideo 021 - Lecture -1 Introduction To Internet - Internet Technology (complete)
-0/537  LecVideo 022 - 5 - Part 1 - Project Risk Management - Project Management
-0/459  LecVideo 023 - Lec 05 - Enterprise Application Development
+537/537  LecVideo 022 - 5 - Part 1 - Project Risk Management - Project Management (complete)
+5/459  LecVideo 023 - Lec 05 - Enterprise Application Development
 0/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
 0/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
 0/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
@@ -41,7 +41,7 @@
 354/354  LecVideo 040 - CMU CS251 - Encodings and Computational Problems (complete)
 335/335  LecVideo 041 - CS50x 2024 - Artificial Intelligence (complete)
 0/418  LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
-0/404  LecVideo 043 - S2024 #18 - Databricks Photon  Spark SQL (CMU Advanced Database Systems)
+404/404  LecVideo 043 - S2024 #18 - Databricks Photon  Spark SQL (CMU Advanced Database Systems) (complete)
 0/373  LecVideo 044 - S2024 #20 - DuckDB Embedded Database System (CMU Advanced Database Systems)
 289/289  LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework ✓_1080p60 (complete)
 0/504  LecVideo 046 - 1 - Cloud Fundamentals - Recording 01_IS 4630
@@ -60,5 +60,5 @@
 0/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management
 0/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 9952/23402 segments (42.5%) across 61 video(s), all annotators combined
-Updated: 2026-07-25T19:35:56
+TOTAL: 11165/23402 segments (47.7%) across 61 video(s), all annotators combined
+Updated: 2026-07-25T23:16:20
