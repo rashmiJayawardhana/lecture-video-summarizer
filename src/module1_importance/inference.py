@@ -102,13 +102,13 @@ def run_inference(
     print("Validating output schema...")
     errors = validate_module1_output(output_data)
     if errors:
-        print(f"❌ Schema validation failed with {len(errors)} error(s):")
+        print(f"[FAILED] Schema validation failed with {len(errors)} error(s):")
         for err in errors[:5]:
             print(f"  - {err}")
         if len(errors) > 5:
             print(f"  - ... and {len(errors) - 5} more.")
     else:
-        print("✅ Schema validation passed successfully!")
+        print("[OK] Schema validation passed successfully!")
 
     # -------- 5. Save output JSON --------
     output_path = Path(output_json_path)
