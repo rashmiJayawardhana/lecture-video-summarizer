@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-load_dotenv(".env")
+load_dotenv(".env", override=True)
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
@@ -109,3 +109,7 @@ Rules:
     )
 
     return safe_json_loads(response.text)
+
+
+
+

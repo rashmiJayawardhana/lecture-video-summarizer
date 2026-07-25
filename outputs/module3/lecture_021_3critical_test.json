@@ -1,0 +1,178 @@
+[
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 120.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3522,
+        "ocr_text": "KB + BD DBs",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00004_02m00s.jpg",
+        "visual_type": "diagram_slide",
+        "detected_visual_types": [
+            "diagram"
+        ],
+        "visual_elements": [
+            {
+                "type": "diagram",
+                "content": "The frame appears to contain a diagram, flowchart, architecture, or visual process. Detected visual structure includes approximately 5 rectangular regions and 75 line segments. Detected labels/text: KB, +, BD, DBs. This may represent a relationship or process flow between the detected labels.",
+                "detected_labels": [
+                    "KB",
+                    "+",
+                    "BD",
+                    "DBs"
+                ],
+                "structure": {
+                    "rectangles": 5,
+                    "hough_lines": 75
+                }
+            }
+        ],
+        "slide_summary": "This Important frame contains diagram-based visual information. Main extracted text: KB + BD DBs",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 2,
+            "vertical_lines": 17,
+            "intersections": 3,
+            "horizontal_ratio": 0.0033926504629629628,
+            "vertical_ratio": 0.011040219907407407,
+            "rectangles": 5,
+            "hough_lines": 75,
+            "word_count": 4,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 1,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 0
+        },
+        "original_label": "Important",
+        "relabel_rule": "visual_content_detected_for_gemini_test"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 240.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3907,
+        "ocr_text": "COURSE LOgISTICS Course Policies Schedule: Course Web Discussion Announcements: Piazza Homeworks + Projects: Gradescope Final Grades: Canvas Waitlist: Six open seats (as of 12pm Non-CMU students can complete all assignments Gradescope (Code; WWJZ5) Do pot email instructors / TAs for Discord Channel: https discordggLYEZdMCg Page today) using help",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00008_04m00s.jpg",
+        "visual_type": "mixed_slide",
+        "detected_visual_types": [
+            "diagram",
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "diagram",
+                "content": "The frame appears to contain a diagram, flowchart, architecture, or visual process. Detected visual structure includes approximately 0 rectangular regions and 423 line segments. Detected labels/text: COURSE LOgISTICS Course Policies Schedule, Course Web Discussion Announcements, Piazza Homeworks + Projects, Gradescope Final Grades, Canvas Waitlist, Six open seats (as of 12pm Non-CMU students can complete all assignments Gradescope (Code, WWJZ5) Do pot email instructors / TAs for Discord Channel, https discordggLYEZdMCg Page today) using help. This may represent a relationship or process flow between the detected labels.",
+                "detected_labels": [
+                    "COURSE LOgISTICS Course Policies Schedule",
+                    "Course Web Discussion Announcements",
+                    "Piazza Homeworks + Projects",
+                    "Gradescope Final Grades",
+                    "Canvas Waitlist",
+                    "Six open seats (as of 12pm Non-CMU students can complete all assignments Gradescope (Code",
+                    "WWJZ5) Do pot email instructors / TAs for Discord Channel",
+                    "https discordggLYEZdMCg Page today) using help"
+                ],
+                "structure": {
+                    "rectangles": 0,
+                    "hough_lines": 423
+                }
+            },
+            {
+                "type": "text",
+                "content": "COURSE LOgISTICS Course Policies Schedule: Course Web Discussion Announcements: Piazza Homeworks + Projects: Gradescope Final Grades: Canvas Waitlist: Six open seats (as of 12pm Non-CMU students can complete all assignments Gradescope (Code; WWJZ5) Do pot email instructors / TAs for Discord Channel: https discordggLYEZdMCg Page today) using help"
+            }
+        ],
+        "slide_summary": "This Important frame contains mixed visual content (diagram, text). Main extracted text: COURSE LOgISTICS Course Policies Schedule: Course Web Discussion Announcements: Piazza Homeworks + Projects: Gradescope Final Grades: Canvas Waitlist: Six open seats (as of 12pm No",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 6,
+            "vertical_lines": 5,
+            "intersections": 3,
+            "horizontal_ratio": 0.0091796875,
+            "vertical_ratio": 0.004345100308641975,
+            "rectangles": 0,
+            "hough_lines": 423,
+            "word_count": 48,
+            "number_count": 2,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 2,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 0,
+            "diagram_keyword_count": 1
+        },
+        "original_label": "Important",
+        "relabel_rule": "visual_content_detected_for_gemini_test"
+    },
+    {
+        "lecture_id": "lecture_021",
+        "frame_time": 270.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.3935,
+        "ocr_text": "AGENDA Database Systems Background Relational Model Relational Algebra Alternative Data Models QeA Session",
+        "frame_path": "data/processed/module3/slides/lecture_021/lecture_021_frame_00009_04m30s.jpg",
+        "visual_type": "mixed_slide",
+        "detected_visual_types": [
+            "diagram",
+            "text"
+        ],
+        "visual_elements": [
+            {
+                "type": "diagram",
+                "content": "The frame appears to contain a diagram, flowchart, architecture, or visual process. Detected visual structure includes approximately 1 rectangular regions and 134 line segments. Detected labels/text: AGENDA, Database, Systems, Background, Relational, Model, Relational, Algebra, Alternative, Data, Models, QeA, Session. This may represent a relationship or process flow between the detected labels.",
+                "detected_labels": [
+                    "AGENDA",
+                    "Database",
+                    "Systems",
+                    "Background",
+                    "Relational",
+                    "Model",
+                    "Relational",
+                    "Algebra",
+                    "Alternative",
+                    "Data",
+                    "Models",
+                    "QeA",
+                    "Session"
+                ],
+                "structure": {
+                    "rectangles": 1,
+                    "hough_lines": 134
+                }
+            },
+            {
+                "type": "text",
+                "content": "AGENDA Database Systems Background Relational Model Relational Algebra Alternative Data Models QeA Session"
+            }
+        ],
+        "slide_summary": "This Important frame contains mixed visual content (diagram, text). Main extracted text: AGENDA Database Systems Background Relational Model Relational Algebra Alternative Data Models QeA Session",
+        "extraction_status": "success",
+        "visual_debug": {
+            "horizontal_lines": 3,
+            "vertical_lines": 4,
+            "intersections": 3,
+            "horizontal_ratio": 0.007707368827160494,
+            "vertical_ratio": 0.004265528549382716,
+            "rectangles": 1,
+            "hough_lines": 134,
+            "word_count": 13,
+            "number_count": 0,
+            "table_score": 0,
+            "graph_score": 2,
+            "diagram_score": 3,
+            "text_score": 2,
+            "graph_keyword_count": 0,
+            "table_keyword_count": 1,
+            "diagram_keyword_count": 1
+        },
+        "original_label": "Important",
+        "relabel_rule": "visual_content_detected_for_gemini_test"
+    }
+]
