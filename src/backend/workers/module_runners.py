@@ -5,6 +5,8 @@ import sys
 from pathlib import Path
 from collections import Counter
 
+import numpy as np
+
 
 def write_json(path: Path, data: dict) -> str:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -16,25 +18,72 @@ def write_json(path: Path, data: dict) -> str:
 
 
 def run_module1(video_path: str, output_dir: str) -> str:
-    time.sleep(5)
+    """
+    Real Module 1 backend runner.
 
-    output_path = Path(output_dir) / "module1_output.json"
+    Input:
+        video_path: uploaded lecture video path from backend job folder
+        output_dir: storage/jobs/{job_id}/outputs
 
-    data = {
-        "module": "module1",
-        "status": "completed",
-        "description": "Dummy Module 1 audio/importance output",
-        "video_path": video_path,
-        "segments": [
-            {
-                "start": 0,
-                "end": 30,
-                "importance_score": 0.75
-            }
-        ]
-    }
+    Output:
+        storage/jobs/{job_id}/outputs/module1_output.json
+        List of {segment_id, timestamp_start, timestamp_end, score_V}
+        (schema validated in run_inference against src/utils/json_schema.py)
+    """
+    from src.module1_importance.feature_extractor import FrameFeatureExtractor
+    from src.module1_importance.inference import run_inference
 
-    return write_json(output_path, data)
+    project_root = Path(__file__).resolve().parents[3]
+
+    video_path = Path(video_path)
+    output_dir = Path(output_dir)
+    job_dir = output_dir.parent
+    video_id = video_path.stem
+
+    module1_temp_dir = job_dir / "temp" / "module1"
+    module1_temp_dir.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    features_path = module1_temp_dir / f"{video_id}_features.npy"
+    timestamps_path = module1_temp_dir / f"{video_id}_timestamps.npy"
+    final_module1_json = output_dir / "module1_output.json"
+
+    # Falls back to random-weight dry-run inference (still schema-valid) until
+    # the trained checkpoint exists at the project root — see train.py.
+    model_path = project_root / "best_module1_model.pt"
+
+    print("========== REAL MODULE 1 START ==========")
+    print("Video path:", video_path)
+    print("Output dir:", output_dir)
+    print("Temp dir:", module1_temp_dir)
+    print("Model checkpoint:", model_path,
+          "(found)" if model_path.exists() else "(missing -> dry-run/random weights)")
+    print("==========================================")
+
+    # 1. Extract 1fps ResNet-50 features from the uploaded video
+    extractor = FrameFeatureExtractor(device="cuda")
+    features, timestamps = extractor.extract_from_video(str(video_path), fps=1)
+
+    np.save(features_path, features)
+    np.save(timestamps_path, np.array(timestamps))
+
+    # 2. Run BiLSTM inference -> score_V per 10s segment
+    run_inference(
+        features_path=str(features_path),
+        timestamps_path=str(timestamps_path),
+        model_path=str(model_path),
+        output_json_path=str(final_module1_json),
+        device="cuda",
+    )
+
+    if not final_module1_json.exists():
+        raise FileNotFoundError(f"Module 1 final output not found: {final_module1_json}")
+
+    print("========== MODULE 1 COMPLETED ==========")
+    print("Saved:", final_module1_json)
+    print("=========================================")
+
+    return str(final_module1_json)
 
 
 def run_module2(video_path: str, output_dir: str) -> str:

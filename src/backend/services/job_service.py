@@ -1,43 +1,13 @@
-import json
-from datetime import datetime
-from pathlib import Path
+from datetime import datetime, timezone
 
-from src.backend.core.paths import JOBS_DIR
-
-
-def get_job_dir(job_id: str) -> Path:
-    return JOBS_DIR / job_id
-
-
-def get_status_path(job_id: str) -> Path:
-    return get_job_dir(job_id) / "status.json"
-
-
-def write_status(job_id: str, status_data: dict) -> None:
-    status_data["updated_at"] = datetime.now().isoformat()
-
-    status_path = get_status_path(job_id)
-    status_path.parent.mkdir(parents=True, exist_ok=True)
-
-    with status_path.open("w", encoding="utf-8") as f:
-        json.dump(status_data, f, indent=4)
-
-
-def read_status(job_id: str) -> dict:
-    status_path = get_status_path(job_id)
-
-    if not status_path.exists():
-        return {
-            "job_id": job_id,
-            "status": "not_found"
-        }
-
-    with status_path.open("r", encoding="utf-8") as f:
-        return json.load(f)
+from src.backend.core.config import SUPABASE_JOBS_TABLE
+from src.backend.core.supabase_client import supabase
 
 
 def init_job_status(job_id: str, filename: str) -> None:
-    write_status(job_id, {
+    now = datetime.now(timezone.utc).isoformat()
+
+    supabase.table(SUPABASE_JOBS_TABLE).insert({
         "job_id": job_id,
         "filename": filename,
         "status": "uploaded",
@@ -48,11 +18,30 @@ def init_job_status(job_id: str, filename: str) -> None:
         "final_video": None,
         "final_json": None,
         "error": None,
-        "created_at": datetime.now().isoformat(),
-    })
+        "created_at": now,
+        "updated_at": now,
+    }).execute()
+
+
+def read_status(job_id: str) -> dict:
+    response = (
+        supabase.table(SUPABASE_JOBS_TABLE)
+        .select("*")
+        .eq("job_id", job_id)
+        .limit(1)
+        .execute()
+    )
+
+    if not response.data:
+        return {
+            "job_id": job_id,
+            "status": "not_found"
+        }
+
+    return response.data[0]
 
 
 def update_job_status(job_id: str, **updates) -> None:
-    status = read_status(job_id)
-    status.update(updates)
-    write_status(job_id, status)
+    updates["updated_at"] = datetime.now(timezone.utc).isoformat()
+
+    supabase.table(SUPABASE_JOBS_TABLE).update(updates).eq("job_id", job_id).execute()
