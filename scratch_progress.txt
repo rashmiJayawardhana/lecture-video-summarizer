@@ -47,8 +47,8 @@
 0/504  LecVideo 046 - 1 - Cloud Fundamentals - Recording 01_IS 4630
 0/493  LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
 0/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
-0/359  LecVideo 049 - PMP 6th Edition Training Video  PMBOK 6th Edition  PMP Certification Training Video  Simplilearn
-0/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
+359/359  LecVideo 049 - PMP 6th Edition Training Video  PMBOK 6th Edition  PMP Certification Training Video  Simplilearn (complete)
+3/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
 0/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
 0/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
 0/477  LecVideo 053 - Lec 06 - Enterprise Application Development
@@ -56,9 +56,9 @@
 382/382  LecVideo 055 - #Software #Engineering - Lecture 2 _ Software Processes, Activities, The Rational Unified Process (complete)
 0/423  LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn
 0/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
-0/428  LecVideo 058 - Lesson 02 - Interactions - Human Computer Interaction
-0/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management
-0/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
+428/428  LecVideo 058 - Lesson 02 - Interactions - Human Computer Interaction (complete)
+322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
+1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 11165/23402 segments (47.7%) across 61 video(s), all annotators combined
-Updated: 2026-07-25T23:16:20
+TOTAL: 12278/23402 segments (52.5%) across 61 video(s), all annotators combined
+Updated: 2026-07-26T02:07:30
