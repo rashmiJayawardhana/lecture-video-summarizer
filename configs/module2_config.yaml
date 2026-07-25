@@ -1,5 +1,4 @@
 # Module 2: Speech-to-Text & Content Summarization Configuration
-# Owner: Ravindu (214095L)
 # Architecture: OpenAI Whisper + Fine-tuned BERT-base (Radford et al. 2023, Gonzalez et al. 2023)
 
 whisper:

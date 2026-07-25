@@ -1,5 +1,4 @@
 # Module 4: Video Synthesis & Integration Configuration
-# Owner: Lathisana (214116F)
 # Technologies: MoviePy, FFmpeg, GPT-4o, edge-tts, Pillow
 # NOTE: Module 4 is an ENGINEERING module — no trainable DL model.
 # It consumes fusion scores from Modules 1, 2, 3 and produces output videos.

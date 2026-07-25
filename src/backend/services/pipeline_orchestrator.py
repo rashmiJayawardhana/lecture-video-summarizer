@@ -21,6 +21,7 @@ def process_pipeline(job_id: str, video_path: str, output_dir: str) -> None:
         )
 
         results = {}
+        failures = {}
 
         with ThreadPoolExecutor(max_workers=3) as executor:
             futures = {
@@ -42,13 +43,23 @@ def process_pipeline(job_id: str, video_path: str, output_dir: str) -> None:
                     )
 
                 except Exception as e:
+                    failures[module_name] = str(e)
+
                     update_job_status(
                         job_id,
-                        status="failed",
-                        **{module_name: "failed"},
-                        error=str(e)
+                        **{module_name: "failed"}
                     )
-                    return
+
+        # Every module has now reported its own real, final status above -
+        # only decide the overall job outcome once all three are actually done.
+        if failures:
+            error_summary = "; ".join(f"{m}: {err}" for m, err in failures.items())
+            update_job_status(
+                job_id,
+                status="failed",
+                error=f"Module(s) failed: {error_summary}"
+            )
+            return
 
         update_job_status(
             job_id,

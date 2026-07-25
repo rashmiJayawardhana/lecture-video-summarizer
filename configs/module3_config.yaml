@@ -1,5 +1,4 @@
 # Module 3: Visual Content Understanding & Slide Extraction Configuration
-# Owner: Fazly (214008C)
 # Architecture: ViT-base + TrOCR (Biswas et al. 2025, Li et al. 2023)
 
 model:

@@ -1,5 +1,4 @@
 # Module 1: Keyframe Detection & Importance Scoring Configuration
-# Owner: Rashmi (214093E)
 # Architecture: ResNet-50 + BiLSTM (Rahman et al. 2020, Zhang et al. 2016, Lin et al. 2022)
 
 model:
