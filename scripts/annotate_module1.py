@@ -898,6 +898,39 @@ def write_scratch_progress(all_segments):
     pct = (grand_done / grand_total * 100.0) if grand_total else 0.0
     lines.append(f"TOTAL: {grand_done}/{grand_total} segments ({pct:.1f}%) "
                  f"across {len(per_video)} video(s), all annotators combined")
+
+    complete_videos, partial_videos, not_started_videos = [], [], []
+    for vid in sorted(per_video, key=video_num):
+        d, t = per_video[vid]["done"], per_video[vid]["total"]
+        if t == 0:
+            continue
+        if d == t:
+            complete_videos.append(vid)
+        elif d == 0:
+            not_started_videos.append(vid)
+        else:
+            partial_videos.append(vid)
+
+    lines.append("")
+    lines.append(f"VIDEOS: {len(complete_videos)} complete | "
+                 f"{len(partial_videos)} partially annotated | "
+                 f"{len(not_started_videos)} not started yet "
+                 f"(of {len(per_video)} total)")
+
+    if partial_videos:
+        lines.append("")
+        lines.append(f"Partially annotated ({len(partial_videos)}):")
+        for vid in partial_videos:
+            d, t = per_video[vid]["done"], per_video[vid]["total"]
+            lines.append(f"  - {d}/{t}  {vid}")
+
+    if not_started_videos:
+        lines.append("")
+        lines.append(f"Not started yet ({len(not_started_videos)}):")
+        for vid in not_started_videos:
+            lines.append(f"  - {vid}")
+
+    lines.append("")
     lines.append(f"Updated: {datetime.datetime.now().isoformat(timespec='seconds')}")
 
     with open(SCRATCH_PROGRESS_FILE, "w", encoding="utf-8") as f:
