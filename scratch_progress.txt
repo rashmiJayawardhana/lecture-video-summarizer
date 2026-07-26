@@ -54,24 +54,25 @@
 0/477  LecVideo 053 - Lec 06 - Enterprise Application Development
 0/384  LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems)
 382/382  LecVideo 055 - #Software #Engineering - Lecture 2 _ Software Processes, Activities, The Rational Unified Process (complete)
-0/423  LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn
-0/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
+423/423  LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn (complete)
+24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
 428/428  LecVideo 058 - Lesson 02 - Interactions - Human Computer Interaction (complete)
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 12406/23402 segments (53.0%) across 61 video(s), all annotators combined
+TOTAL: 12853/23402 segments (54.9%) across 61 video(s), all annotators combined
 
-VIDEOS: 33 complete | 5 partially annotated | 23 not started yet (of 61 total)
+VIDEOS: 34 complete | 6 partially annotated | 21 not started yet (of 61 total)
 
-Partially annotated (5):
+Partially annotated (6):
   - 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
   - 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
   - 5/459  LecVideo 023 - Lec 05 - Enterprise Application Development
   - 3/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
+  - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
   - 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-Not started yet (23):
+Not started yet (21):
   - LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
   - LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
@@ -93,7 +94,5 @@ Not started yet (23):
   - LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
   - LecVideo 053 - Lec 06 - Enterprise Application Development
   - LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems)
-  - LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn
-  - LecVideo 057 - Networking Lecture 17 - Mobility - 2020
 
-Updated: 2026-07-26T13:52:12
+Updated: 2026-07-26T17:50:07
