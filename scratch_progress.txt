@@ -13,7 +13,7 @@
 345/345  LecVideo 012 - 11. Weighted Shortest Paths - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
 354/354  LecVideo 013 - 19. Complexity - MIT Sping 2020 (complete)
 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
-0/465  LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
+465/465  LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015 (complete)
 359/359  LecVideo 016 - Lecture -3 TCP IP - Part-1 -  Internet Technology (complete)
 406/406  LecVideo 017 - L02 Sorting & Hashing  UC Berkeley CS 186, Spring 2015 (complete)
 274/274  LecVideo 018 - What Is Project Management  Introduction To Project Management  PMP Training Videos  Simplilearn (complete)
@@ -21,8 +21,8 @@
 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
 359/359  LecVideo 021 - Lecture -1 Introduction To Internet - Internet Technology (complete)
 537/537  LecVideo 022 - 5 - Part 1 - Project Risk Management - Project Management (complete)
-273/459  LecVideo 023 - Lec 05 - Enterprise Application Development
-0/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
+459/459  LecVideo 023 - Lec 05 - Enterprise Application Development (complete)
+7/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
 0/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
 0/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
 0/421  LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8
@@ -60,21 +60,19 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 13121/23402 segments (56.1%) across 61 video(s), all annotators combined
+TOTAL: 13779/23402 segments (58.9%) across 61 video(s), all annotators combined
 
-VIDEOS: 34 complete | 6 partially annotated | 21 not started yet (of 61 total)
+VIDEOS: 36 complete | 6 partially annotated | 19 not started yet (of 61 total)
 
 Partially annotated (6):
   - 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
   - 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
-  - 273/459  LecVideo 023 - Lec 05 - Enterprise Application Development
+  - 7/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
   - 3/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
   - 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-Not started yet (21):
-  - LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
-  - LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
+Not started yet (19):
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
   - LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
   - LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8
@@ -95,4 +93,4 @@ Not started yet (21):
   - LecVideo 053 - Lec 06 - Enterprise Application Development
   - LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems)
 
-Updated: 2026-07-26T21:54:42
+Updated: 2026-07-27T04:22:29
