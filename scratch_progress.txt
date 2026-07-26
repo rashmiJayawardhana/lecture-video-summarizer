@@ -21,7 +21,7 @@
 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
 359/359  LecVideo 021 - Lecture -1 Introduction To Internet - Internet Technology (complete)
 537/537  LecVideo 022 - 5 - Part 1 - Project Risk Management - Project Management (complete)
-5/459  LecVideo 023 - Lec 05 - Enterprise Application Development
+273/459  LecVideo 023 - Lec 05 - Enterprise Application Development
 0/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
 0/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
 0/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
@@ -60,14 +60,14 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 12853/23402 segments (54.9%) across 61 video(s), all annotators combined
+TOTAL: 13121/23402 segments (56.1%) across 61 video(s), all annotators combined
 
 VIDEOS: 34 complete | 6 partially annotated | 21 not started yet (of 61 total)
 
 Partially annotated (6):
   - 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
   - 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
-  - 5/459  LecVideo 023 - Lec 05 - Enterprise Application Development
+  - 273/459  LecVideo 023 - Lec 05 - Enterprise Application Development
   - 3/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
   - 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
@@ -95,4 +95,4 @@ Not started yet (21):
   - LecVideo 053 - Lec 06 - Enterprise Application Development
   - LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems)
 
-Updated: 2026-07-26T17:50:07
+Updated: 2026-07-26T21:54:42
