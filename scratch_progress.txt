@@ -12,7 +12,7 @@
 314/314  LecVideo 011 - 10. Depth-First Search - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
 345/345  LecVideo 012 - 11. Weighted Shortest Paths - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
 354/354  LecVideo 013 - 19. Complexity - MIT Sping 2020 (complete)
-4/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
+132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
 0/465  LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015
 359/359  LecVideo 016 - Lecture -3 TCP IP - Part-1 -  Internet Technology (complete)
 406/406  LecVideo 017 - L02 Sorting & Hashing  UC Berkeley CS 186, Spring 2015 (complete)
@@ -60,12 +60,12 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 12278/23402 segments (52.5%) across 61 video(s), all annotators combined
+TOTAL: 12406/23402 segments (53.0%) across 61 video(s), all annotators combined
 
 VIDEOS: 33 complete | 5 partially annotated | 23 not started yet (of 61 total)
 
 Partially annotated (5):
-  - 4/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
+  - 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
   - 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
   - 5/459  LecVideo 023 - Lec 05 - Enterprise Application Development
   - 3/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
@@ -96,4 +96,4 @@ Not started yet (23):
   - LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn
   - LecVideo 057 - Networking Lecture 17 - Mobility - 2020
 
-Updated: 2026-07-26T02:16:24
+Updated: 2026-07-26T13:52:12
