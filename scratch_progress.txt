@@ -89,4 +89,4 @@ Not started yet (15):
   - LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
   - LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
 
-Updated: 2026-07-27T18:56:35
+Updated: 2026-07-27T19:18:44
