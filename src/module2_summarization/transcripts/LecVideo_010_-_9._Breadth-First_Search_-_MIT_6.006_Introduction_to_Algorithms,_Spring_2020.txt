@@ -1,0 +1,1221 @@
+0.0s - 18.2s : Okay team, let's get started for the day.
+18.2s - 20.06s : It's a pleasure to see all of you guys.
+21.16s - 22.86s : In case you don't remember, I'm Justin.
+23.02s - 25.82s : I'm the third instructor of 006 that you probably forgot about.
+26.44s - 29.88s : But you're going to see a lot more of me in the graph theory part of our course
+29.88s - 32.12s : because that's the part of algorithms that I like.
+32.2s - 35.54s : If I were reincarnated as a theoretical computer scientist,
+35.72s - 36.96s : I would probably go into this area.
+37.22s - 37.78s : Hey, guys.
+38.52s - 38.74s : Okay.
+40.28s - 44.28s : You know, we have our PhD admit visit days coming up for the next couple days.
+44.28s - 47.34s : I'm working on my camp counselor cheerleader voice.
+47.98s - 51.66s : So don't make me wake all of you guys up for the day.
+51.7s - 52.4s : You're not going to like it.
+53.32s - 58.24s : But in any event, right, so in 6006, if you look back at the course outline,
+58.38s - 59.86s : we're officially starting part two.
+59.88s - 60.98s : We're part two of this class.
+61.42s - 63.72s : There are a few corollaries to that fact.
+64.54s - 65.88s : So unless there are any questions about that,
+65.94s - 70.6s : we'll get started with our new unit in 6006, which is graph theory.
+71.64s - 74.54s : If you're wondering, there's a graph on the screen here.
+74.92s - 77.9s : But, of course, we'll fill in a little bit more information today
+77.9s - 78.78s : throughout our lecture.
+79.38s - 81.92s : When I was learning how to teach, which I'm still doing,
+83.86s - 86.34s : one of my – actually, my PhD advisor told me, like,
+86.36s - 89.26s : if you want somebody to learn something, you have to write it as big as possible.
+89.26s - 89.76s : And so I'm –
+89.88s - 93.24s : I'm really leaning into that approach today in our slides.
+94.16s - 98.6s : So in any event, right, so today we're going to have our first lecture on graphs,
+98.68s - 102.82s : which I think will somewhat be a review for many of you guys.
+102.88s - 105.76s : And if it's not, that's cool, too, because we'll start from the beginning
+105.76s - 109.82s : and kind of build up all the notions that we need to understand and process graphs
+109.82s - 114.0s : and hopefully by the end of lecture have some style of algorithm
+114.0s - 116.72s : for computing the shortest path from one vertex to all the other ones.
+118.02s - 119.44s : So in case we forgot,
+119.44s - 120.76s : a little bit of terminology.
+120.76s - 124.84s : A graph – some people call this a network, but sometimes that term is overloaded
+124.84s - 127.12s : with a few different kind of variations on the theme –
+127.12s - 130.04s : is a collection of two things, right?
+130.04s - 132.2s : That's what this parenthesis notation means.
+132.2s - 136.52s : There's a set of vertices and a set of edges, right?
+136.52s - 140.68s : And the edges, like you can see in the sort of third point on our screen here,
+140.68s - 143.44s : are a subset of V cross V.
+143.44s - 147.52s : Now, this is fancy notation for something really, really simple, right?
+147.52s - 148.56s : Because what is this telling me?
+148.56s - 149.36s : This is telling me,
+149.44s - 152.56s : that an edge, like in the picture that we see on the screen here,
+152.56s - 156.08s : is just something that connects two vertices together, right?
+156.08s - 160.16s : So if I think of there being a pair of vertices like the from and the to,
+160.16s - 163.84s : right, then that is a subset of the cross product of V in itself, right?
+163.84s - 167.16s : So hopefully the notation in that third line on the screen makes some sense.
+167.16s - 170.88s : This is just fancy notation for edges or pairs of vertices.
+170.88s - 172.72s : But of course, inside of that notation,
+172.72s - 177.12s : there are two special cases that we care about in this class.
+177.12s - 179.32s : One is when you have a directed graph,
+179.32s - 181.52s : and one is when you have an undirected graph.
+181.52s - 184.84s : Because I said them in opposite order from what's on the screen, right?
+184.84s - 189.52s : So in an undirected graph, I guess we still think of an edge like a pair of vertices.
+189.52s - 191.48s : But really, I should have notated this slightly differently.
+191.48s - 195.64s : In fact, maybe I'll revise it in the slides before they go into OCW,
+195.64s - 200.08s : where instead of writing E equals W comma V,
+200.08s - 204.96s : I should write, in fact, equals V comma W.
+204.96s - 208.22s : And notice that there's a slight difference between the notation on the slide and what I've written on the book.
+208.22s - 208.68s : And notice that there's a slight difference between the notation on the slide and what I've written on the book.
+208.68s - 209.16s : And notice that there's a slight difference between the notation on the slide and what I've written on the book.
+209.16s - 209.66s : And notice that there's a slight difference between the notation on the slide and what I've written on the board,
+209.66s - 212.52s : which is this set notation here.
+212.52s - 216.56s : What's the difference between parentheses and squiggly lines is that this guy is unordered.
+216.56s - 220.98s : This is a set of things, and what's on the board is ordered, right?
+220.98s - 223.2s : Or what's on the screen, rather.
+223.2s - 229.8s : And of course, in an undirected edge, there's no such thing as an edge from W to V being distinct from an edge from V to W.
+229.8s - 230.82s : Those are the same thing, right?
+230.82s - 231.58s : They're undirected.
+231.58s - 233.96s : It just is a notion of connectivity.
+233.96s - 238.5s : Whereas in a directed graph, now we're going to use that parenthetical notation to say
+238.5s - 239.0s : that the second digit is not the second digit.
+239.0s - 239.08s : So the second digit is the second digit.
+239.08s - 239.16s : And the second digit is the second digit.
+239.16s - 242.7s : the edge from w to v is different than the edge
+242.7s - 243.9s : from v to w.
+243.9s - 245.6s : That's going to make a big difference.
+245.6s - 249.18s : So for example, in the graph on the right,
+249.18s - 252.5s : let's maybe redraw it on the board here.
+252.5s - 254.16s : So we have four vertices.
+254.16s - 256.56s : I drew this last night, and I'm hoping that this example
+256.56s - 257.3s : actually works.
+262.08s - 264.28s : Like that.
+264.28s - 266.6s : Can I get from the upper right vertex
+266.6s - 269.18s : to the lower left vertex following edges
+269.18s - 271.6s : in this graph?
+271.6s - 273.56s : I heard one person.
+273.56s - 274.4s : Everybody on three.
+274.4s - 275.84s : One, two, three.
+275.84s - 276.42s : No.
+276.42s - 277.44s : No, right?
+277.44s - 279.36s : Because if I wanted to, I mean, maybe I
+279.36s - 281.34s : think of drawing this path here.
+281.34s - 285.62s : But of course, if I go from the upper right to the lower left,
+285.62s - 287.66s : this is like the ugliest thing I've ever drawn.
+287.66s - 288.86s : I'm so sorry.
+288.86s - 291.14s : You notice that the edges are pointing in the up direction
+291.14s - 292.2s : here.
+292.2s - 294.7s : And so I'd have to go kind of against the stream of the water,
+294.7s - 296.54s : but that's not allowable in the direction
+296.54s - 296.58s : of the graph.
+296.58s - 298.94s : So I'll just hint in bag four.
+298.94s - 299.92s : This닮ᴇ.
+299.92s - 301.48s : Couldn't help but say that this mixj psi
+301.48s - 303.22s : wont become visualize the path because the collapse
+303.22s - 306.02s : happens when we write down a graph.
+306.02s - 307.06s : All right, an sextant.
+307.06s - 307.56s : NO.
+307.56s - 308.56s : I got the volume trick.
+312.56s - 313.64s : All right.
+313.64s - 316.08s : Let's continue.
+316.08s - 321.24s : The first one is a series information nobody will automatically
+321.24s - 323.68s : realize including the verb length before I
+323.68s - 325.56s : create a Kininizi.
+325.56s - 326.52s : And now back here.
+326.52s - 330.42s : graphs are literally everywhere in our everyday life.
+330.42s - 333.7s : Any time that we come up with a network of stuff
+333.7s - 337.04s : connected together, implicitly, the right abstraction often
+337.04s - 340.46s : in the back of our heads is to think about a graph.
+340.46s - 342.24s : So some simple examples that I think
+342.24s - 345.58s : would all come to mind for us would be computer networks.
+345.58s - 348.9s : So the nodes or the vertices of your graph, in that case,
+348.9s - 349.92s : maybe our computers.
+349.92s - 352.38s : And then the edges are roughly the cables
+352.38s - 355.02s : connecting them together, in my very coarse understanding
+355.02s - 357.12s : of how networks work.
+357.12s - 360.12s : Or maybe in a social network, the nodes
+360.12s - 362.22s : are people in your social network,
+362.22s - 366.02s : and the edges are like friend relationships or like frenemy
+366.02s - 367.9s : relationships or whatever.
+367.9s - 370.02s : In fact, I think you could think of both directed
+370.02s - 375.42s : and undirected versions of that particular network.
+375.42s - 378.12s : In road networks, maybe I'm working for Google,
+378.12s - 381.34s : and I want to tell you the shortest path between your house
+381.34s - 382.32s : and MIT.
+382.32s - 384.5s : Of course, in order to do that, and essentially
+384.5s - 386.84s : behind the scenes, we're solving some version
+386.84s - 390.36s : of computing the shortest path between two vertices in a graph.
+390.36s - 391.82s : That's a tiny bit of a lie in the sense
+391.82s - 393.74s : that there's a lot of structure in that problem
+393.74s - 395.94s : that we're not going to leverage in this course.
+395.94s - 398.9s : A road network is a very special type of graph.
+398.9s - 401.26s : And if you take an advanced course, maybe you'll say,
+401.26s - 403.48s : well, if I know a little more about my graph,
+403.48s - 406.64s : I can do better than the general case we'll talk about here.
+406.64s - 409.62s : But the basic algorithms that we'll talk about in 6.006
+409.62s - 411.38s : are certainly relevant in that case
+411.38s - 413.68s : and are really the building blocks for what goes on
+413.68s - 414.4s : in the tools.
+414.4s - 416.74s : And so we're going to talk about the things that
+416.74s - 419.56s : are used every day on your phone when you open Google Maps or Waze
+419.56s - 421.28s : or whatever.
+421.28s - 423.06s : And of course, there's many others.
+423.06s - 426.16s : So for instance, an example that maybe is a little bit more
+426.16s - 429.14s : subtle would be the set of states and transitions
+429.14s - 430.36s : of a discrete thing.
+430.36s - 433.12s : So think about a Rubik's cube.
+433.12s - 435.56s : So I could make a graph where the node is
+435.56s - 437.68s : every configuration of my Rubik's cube,
+437.68s - 439.3s : like every rotation.
+439.3s - 441.14s : And then the edges are like, can I
+441.14s - 444.28s : get from this configuration to that one by making one simple
+444.28s - 444.78s : rotation?
+444.78s - 447.04s : I don't actually know the terminology in Rubik's cube.
+447.04s - 449.9s : I have a feeling you do for one rotation.
+449.9s - 450.52s : Twist.
+450.52s - 452.78s : Thank you.
+452.78s - 454.62s : And of course, there are many other places.
+454.62s - 458.18s : So for instance, in my day job here at MIT,
+458.18s - 460.14s : I typically teach computer graphics courses.
+460.14s - 462.16s : And actually, graph theory, although we
+462.16s - 465.16s : talk about it very differently, appears in that world
+465.16s - 467.32s : constantly because, of course, what's
+467.32s - 469.66s : sitting behind any 3D model on your computer
+469.66s - 472.28s : is a giant network of triangles.
+472.28s - 473.16s : This is called a triangulated surface.
+473.16s - 473.66s : And it's called a triangle.
+473.66s - 473.96s : And it's called a triangle.
+473.96s - 474.16s : And it's called a triangle.
+474.16s - 474.26s : And it's called a triangle.
+474.28s - 476.2s : It's like this torus we see here.
+476.2s - 477.86s : And this is nothing more than a graph.
+477.86s - 479.66s : And in fact, if you squint at the algorithms
+479.66s - 483.5s : that we cover in 6838, you'll see that they're roughly just
+483.5s - 485.36s : graph algorithms in disguise.
+485.36s - 487.02s : In fact, if you take my graduate course,
+487.02s - 488.8s : one thing we'll do, we'll spend a lot of time
+488.8s - 489.88s : doing differential geometry.
+489.88s - 492.22s : And then we'll step back 10 feet and notice
+492.22s - 495.58s : that exactly the algorithms we were using for computing
+495.58s - 498.6s : curvature and bendyness on triangle meshes
+498.6s - 499.9s : just looks like a graph algorithm
+499.9s - 502.42s : and can be applied to networks in exactly the same way.
+502.42s - 504.16s : So it'll be a nice kind of fun reveal
+504.16s - 510.42s : there. And of course, there's one last kind of fun application. I actually was gone the last
+510.42s - 514.16s : couple days at a conference on political redistricting. And the funny thing is,
+514.22s - 520.06s : most of the discussion at that conference was about graph theory. And the reason for that
+520.06s - 526.94s : is sort of a theme that shows up a lot in geometry world, which is if I take my state,
+527.02s - 531.96s : in this case, I think these are the voting precincts in some state or another, and I look
+531.96s - 537.2s : at adjacency relationships, then maybe I put a node for every precinct and an edge anytime they
+537.2s - 542.76s : share a boundary with one another. Well, now I have a network and maybe a region on my graph
+542.76s - 548.44s : is like a connected piece of this network. And so anyway, this is one of these examples where
+548.44s - 552.86s : graphs and networks and connectivity and so on just show up literally no matter where you go.
+552.94s - 557.4s : They're totally unavoidable. And so that's what we'll be spending quite a bit of time on
+557.4s - 561.7s : in this class here. Now, you could easily take,
+561.88s - 561.94s : I don't know, a lot of the data that we have here, but I don't know if you have any data
+561.94s - 561.96s : that you have in your head, but I don't know if you have any data that you have in your head,
+561.96s - 568.2s : but I would argue at least three entire courses on graph theory here at MIT, and you could easily
+568.2s - 573.08s : build a PhD dissertation doing nothing more than really simple problems on graphs. Of course,
+573.12s - 579.44s : in this class, we're limited to just a few lectures out of many. So we're going to make
+579.44s - 583.72s : a couple assumptions both on the problems we want to solve as well as on the graphs that we care
+583.72s - 588.52s : about. So in particular, one simplifying assumption, which actually really doesn't affect
+588.52s - 591.94s : many of the algorithms we'll talk about here, but is worth noting explicitly, is that we have
+591.94s - 594.56s : a lot of data that we can use to solve these problems. So we're going to be thinking about
+594.56s - 600.18s : a particular type of graph, which is a simple graph. And in fact, often depending on how
+600.18s - 604.64s : you define your graph, you kind of accidentally made your graph simple, even if you didn't
+604.64s - 610.36s : intend to. So for example, we wrote that our edges were a subset of v cross v, which maybe
+610.36s - 615.82s : means that I can't have multiple edges that, you know, sort of traverse the same pair
+615.82s - 621.86s : of vertices. So let's see an example of a graph that is not simple.
+621.86s - 627.48s : So sorry, I haven't actually defined it. A simple graph is a graph that has no self loops. So I
+627.48s - 634.88s : can't go from a vertex to itself. And every edge is distinct. So let's make the most non simple
+634.88s - 643.28s : graph we can think of. Like, let's say I have two vertices. So maybe if I want to make my so there's
+643.28s - 648.78s : a graph, right, two vertices and one edge, this is simple. If I wanted to be annoying and make it
+648.78s - 651.84s : not simple, maybe I take this edge and I'd like duplicate it. So I can't go from a vertex to an
+651.86s - 666.72s : edge. So I can't take it from a vertex to an edge, so I'm going to duplicate it three times. Just for fun. That violates the second assumption. And now to make it even worse, I can violate the first one by adding an edge that goes from this vertex to itself. This is not simple.
+666.72s - 681.76s : I don't know what you would call it, actually. General graph, I guess. Complicated, because it's not simple. I don't know. Yeah. A multi graph, I always thought of that. Anyway, it doesn't matter.
+681.76s - 685.44s : But in any event in this class, we're not going to worry about this particular
+686.2s - 690.96s : circumstance and of course in many applications of graph theory that's totally reasonable assumption to make.
+691.54s - 693.68s : Any questions about definition of a simple graph?
+696.26s - 701.64s : Okay, so from now on whenever we think about a graph in the back of our head, we're going to think of our graph as simple.
+702.04s - 707.28s : There's one nice property that a simple graph has which I've written in really big text on the screen here.
+707.28s - 711.88s : Which is that the edges are big O of v squared.
+711.88s - 715.14s : And in fact, let's expand that formula just a tiny bit.
+715.42s - 721.5s : So there's sort of two cases, right? One is when my graph is undirected, the other is when my graph is directed.
+721.78s - 723.34s : Yeah.
+723.34s - 725.34s : So if I have a directed graph,
+731.8s - 735.08s : well, let's think about how many edges we could possibly have, right?
+735.18s - 737.18s : So an edge is a pair of a
+737.28s - 739.52s : from vertex and a to vertex,
+740.84s - 746.18s : right? And I can never repeat it twice, right? That's sort of like the second assumption here, right?
+746.86s - 753.08s : So in particular, what do we know? We know that mod E or rather the number of edges in our graph is
+753.72s - 755.66s : upper bounded
+755.66s - 760.4s : by what? Well, I can take any pair of vertices
+763.74s - 767.06s : like that, but I have to be a little bit careful because my graph is directed.
+768.08s - 768.36s : Right?
+768.36s - 770.36s : So from and to matter here.
+770.36s - 774.72s : So this is v choose 2 is saying that I could take any unique pair of vertices
+775.66s - 778.36s : but I have to put a factor of two in front of it to account for
+778.36s - 781.28s : the fact that the source and the target can be flipped back and forth.
+782.0s - 785.58s : and of course if I want to do the undirected, I don't have to worry about that.
+789.82s - 791.82s : Right? We'll get E
+791.82s - 795.48s : here is less than or equal to just mod v choose 2.
+795.48s - 795.96s : Right
+795.96s - 796.68s : So this is just a figure about what's important and what's not.
+796.68s - 797.0s : Right. So this is just a figure about what's important and what's not.
+797.0s - 797.26s : Right. So this is just a figure about what's important and what's not.
+797.28s - 801.42s : fancy way of saying that every edge consists of two vertices
+801.42s - 802.9s : and my edges are unique.
+802.9s - 805.72s : And one thing, if you just write down the formula for our
+805.72s - 807.3s : binomial coefficient here, is we'll
+807.3s - 819.96s : see that both of these things are at worst mod v squared here.
+823.42s - 825.46s : And that makes perfect sense, because of course,
+825.46s - 826.76s : an edge is a pair of vertices.
+826.76s - 828.56s : So you kind of expect there to be a square there.
+828.56s - 829.06s : Yes?
+829.06s - 832.0s : So the two comes from the fact
+832.0s - 834.2s : that I'm not here to .
+834.2s - 835.16s : I'm so sorry.
+835.16s - 835.7s : I can't hear you.
+835.7s - 836.2s : Sorry.
+836.2s - 839.54s : So the two comes from the fact that it's not a square.
+839.54s - 840.14s : Yes, exactly.
+840.14s - 843.38s : So the two for the directed case comes from the fact
+843.38s - 846.98s : that an edge from v to w is different than an edge
+846.98s - 851.08s : from w to v. So remember that the binomial coefficient here,
+851.08s - 852.58s : it's just counting the number of ways
+852.58s - 855.32s : that I can choose two things from a set of size v,
+855.32s - 856.76s : but it doesn't care about ordering.
+856.76s - 859.64s : So I'm just going to put this in a little more detail.
+859.64s - 861.52s : So if I just had a set of size v, I
+861.52s - 863.66s : could just write down, oh, it's a square.
+863.66s - 866.26s : Yeah.
+866.26s - 869.22s : Any other questions?
+869.22s - 870.0s : Fabulous.
+870.0s - 871.36s : So why is this going to matter?
+871.36s - 873.2s : Well, these sorts of bounds, they
+873.2s - 874.82s : might seem a little bit obvious to you,
+874.82s - 876.52s : but we're going to write down graph algorithms.
+876.52s - 878.76s : And now when we analyze the runtime and the space
+878.76s - 881.44s : that they take, we now have two different numbers
+881.44s - 883.58s : that we can think about, the number of vertices
+883.58s - 884.8s : and the number of edges.
+884.8s - 885.3s : Right?
+885.3s - 886.58s : And so for instance, if I write down
+886.58s - 888.96s : as having a runtime that looks like the number of vertices
+888.96s - 891.04s : squared unless I put some additional assumptions
+891.04s - 892.08s : on my graph.
+892.08s - 893.84s : And so there's some connection between all
+893.84s - 895.1s : of these different constants.
+895.1s - 897.02s : And it's useful to kind of keep that at the back of our head,
+897.02s - 899.44s : that sometimes you'll see a bunch of different expressions
+899.44s - 902.22s : that really are encoding roughly the same relationship, just
+902.22s - 904.22s : in different language.
+904.22s - 906.74s : Of course, that also means that we can be more precise.
+906.74s - 910.4s : So sometimes a graph is what we would call sparse.
+910.4s - 912.3s : So in my universe, almost all graphs
+912.3s - 913.92s : that I deal with in my day-to-day life
+913.92s - 915.74s : are extremely sparse.
+915.74s - 918.56s : This is a consequence of topology.
+918.56s - 920.74s : And because of that, an algorithm
+920.74s - 922.78s : that scales like the number of edges
+922.78s - 925.58s : might actually be much preferable to an algorithm that
+925.58s - 927.36s : scales like the number of vertices squared,
+927.36s - 929.86s : because in practice, often there are fewer edges
+929.86s - 932.36s : than every single possible pair.
+932.36s - 934.58s : And so that's the sort of reason why
+934.58s - 937.16s : it's worth thinking about these numbers.
+937.16s - 940.58s : OK, so let's continue making boring definitions here.
+940.58s - 942.58s : So some other ones that we should think about
+942.58s - 945.2s : involve the topology or the connectivity
+945.2s - 949.28s : of our graph, in particular, thinking about neighbors.
+949.28s - 952.4s : So in general, we kind of think about pairs of vertices
+952.4s - 954.1s : as being neighbors of one another
+954.1s - 955.94s : if there's an edge between them.
+955.94s - 957.72s : We have to be a little bit careful,
+957.72s - 960.44s : because of course, when we have a directed edge,
+960.44s - 963.5s : we have to be careful who's on the giving and the receiving
+963.5s - 965.94s : end of this neighbor relationship.
+965.94s - 968.74s : So let's draw a really, really simple graph.
+968.74s - 970.16s : So here's vertex 0.
+970.16s - 971.48s : Here's vertex 1.
+971.48s - 973.16s : Here's vertex 2.
+973.16s - 975.02s : And maybe we'll have an edge going up.
+975.2s - 977.58s : Edge going down.
+977.58s - 981.5s : And then a cycle here.
+981.5s - 985.7s : OK, now we can define a lot of different notions of neighbors,
+985.7s - 989.12s : like the outgoing neighbor set, the incoming neighbor set.
+989.12s - 990.8s : And the basic idea here is that we
+990.8s - 993.42s : want to keep track of edges going from a vertex
+993.42s - 995.62s : and edges pointing into one.
+995.62s - 998.16s : Yeah, so for instance, the outgoing neighbor set,
+998.16s - 1005.2s : which we're going to notate as adj plus here, what is this?
+1005.2s - 1009.38s : This is the outgoing neighbor set of node 0 here.
+1009.38s - 1011.18s : Well, if we take a look, notice that there's
+1011.18s - 1014.22s : one edge going out of node 0, and it points to node 2.
+1014.22s - 1017.4s : So of course, this is a set which just
+1017.4s - 1019.42s : contains one other node.
+1019.42s - 1025.98s : And similarly, the incoming neighbor set of node 0, well,
+1025.98s - 1029.54s : notice that there's one incoming neighbor from vertex 1.
+1029.54s - 1034.16s : So that is a set like that.
+1034.16s - 1034.94s : Now, of course.
+1034.94s - 1037.32s : In an undirected graph, the sort of distinction
+1037.32s - 1039.48s : between these two things doesn't matter.
+1039.48s - 1041.66s : So if you look at our final bullet point here,
+1041.66s - 1043.16s : often in the undirected case, we just
+1043.16s - 1045.02s : drop that plus or minus superscript
+1045.02s - 1048.08s : because it sort of doesn't matter.
+1048.08s - 1050.54s : In any event, there's one additional piece
+1050.54s - 1053.88s : of terminology that matters quite a bit, which is degree.
+1053.88s - 1055.8s : And this is nothing more than just counting
+1055.8s - 1057.0s : the size of this set.
+1057.0s - 1058.94s : So the out degree is the number of edges
+1058.94s - 1060.7s : that point out of a vertex.
+1060.7s - 1063.9s : And the in degree is the number of edges that point in.
+1063.9s - 1064.56s : So notice.
+1064.56s - 1067.8s : In this case, both of those numbers are 1.
+1067.8s - 1069.38s : Let's see an example where they're not.
+1069.38s - 1073.08s : So in node 1, notice there's two edges that come out.
+1073.08s - 1076.06s : So the out degree of node 1 is 2.
+1076.06s - 1078.06s : There's one edge that points in.
+1078.06s - 1081.8s : So the in degree is 1.
+1081.8s - 1083.9s : So often, why are we going to do this?
+1083.9s - 1085.28s : Well, we're going to write a lot of graph algorithms
+1085.28s - 1088.68s : that have a for loop over the neighbors of a given vertex.
+1088.68s - 1092.22s : And then this degree number is going to come into play.
+1092.22s - 1093.98s : It's worth a bound.
+1093.98s - 1094.48s : OK.
+1094.56s - 1096.48s : So we're bounding these things just a tiny bit.
+1096.48s - 1100.64s : So in particular, one thing we could think about.
+1104.64s - 1106.68s : I write too big, and I'm going to run out of space
+1106.68s - 1109.56s : really quickly here, is the following.
+1109.56s - 1113.92s : So let's take a look at all of the possible nodes
+1113.92s - 1115.68s : inside of my graph.
+1115.68s - 1117.68s : And now, let's sum up all of their degrees.
+1122.84s - 1123.98s : So I'm going to look.
+1123.98s - 1124.74s : Let's see.
+1124.74s - 1126.56s : If I look at this graph, then notice
+1126.56s - 1130.94s : there's three edges adjacent to this vertex here,
+1130.94s - 1133.36s : three edges adjacent to that one, two adjacent to this.
+1133.36s - 1135.06s : So maybe I sum them all together.
+1135.06s - 1137.02s : So just a convenient bound to have around
+1137.02s - 1138.64s : is to sum these things, because we're
+1138.64s - 1140.98s : going to have algorithms that look like for every vertex,
+1140.98s - 1142.68s : for every neighbor, do something.
+1142.68s - 1145.14s : So we might as well know roughly how much time
+1145.14s - 1147.36s : that's going to take.
+1147.36s - 1149.48s : Let's think about this.
+1149.48s - 1150.82s : So what do we know?
+1150.82s - 1153.86s : In an undirected graph, every edge, and every vertex,
+1153.86s - 1155.36s : is adjacent to two vertices.
+1158.3s - 1162.68s : So if we think about how we account for degree,
+1162.68s - 1163.46s : what do we know?
+1163.46s - 1165.64s : Well, we know that an edge contributes
+1165.64s - 1169.46s : to the degree of two different vertices.
+1169.46s - 1175.26s : So if we think about it carefully here,
+1175.26s - 1183.06s : what we're going to see is that if our graph is undirected,
+1183.06s - 1184.74s : oh, oops, sorry.
+1187.3s - 1187.76s : Is that right?
+1187.76s - 1189.06s : Wait, I'm backward again.
+1189.06s - 1193.06s : So if I have a graph with two vertices and one edge
+1193.06s - 1198.5s : and it is undirected, notice that the number of edges
+1198.5s - 1199.68s : here is 1.
+1199.68s - 1202.6s : What is the sum of the degree?
+1202.6s - 1204.92s : Well, it's 1 plus 1 equals 2.
+1204.92s - 1207.06s : Yeah.
+1207.06s - 1208.46s : There's a 2 here.
+1208.46s - 1211.92s : If my graph is undirected.
+1213.06s - 1220.68s : And e, if my graph is directed, if what I'm counting
+1220.68s - 1225.36s : is just the outgoing degree.
+1225.36s - 1225.76s : That makes sense?
+1225.76s - 1227.66s : I think I managed to totally botch that sentence.
+1227.66s - 1229.14s : So maybe let's try that again.
+1229.14s - 1232.1s : So if I'm counting just the number of edges pointing out
+1232.1s - 1234.74s : of every vertex and account that over all
+1234.74s - 1237.3s : of the possible vertices, then there's two cases.
+1237.3s - 1240.02s : Right one is directed and one is undirected.
+1240.02s - 1241.34s : So in the undirected case you get a 2 here, because essentially,
+1241.34s - 1241.36s : I like to get a 2 here.
+1241.36s - 1241.92s : And if it gives me 2, I'm going to get a 1.
+1241.92s - 1242.08s : I'm going to be lucky.
+1242.08s - 1242.38s : So when you're counting there, you get a 2 here, and then,
+1242.38s - 1242.44s : you get a 2 here, and then, you're going to get a 2 here, and
+1242.44s - 1242.54s : then, you get a 2 here, and then, you're going to get a 2 here.
+1242.54s - 1244.82s : because essentially every edge is simultaneously
+1244.82s - 1248.12s : ingoing and outgoing, whereas you get a 1 as a coefficient
+1248.12s - 1249.54s : in the directed case.
+1249.54s - 1250.2s : That make sense?
+1250.2s - 1253.04s : I'm sorry, I botched that for a second.
+1253.04s - 1254.96s : OK, excellent.
+1254.96s - 1258.18s : OK, so that's going to be a useful bound for us later on.
+1258.18s - 1259.54s : Now, we think about graphs.
+1259.54s - 1261.02s : Of course, we just spent the last couple of weeks
+1261.02s - 1262.52s : thinking about data structures.
+1262.52s - 1264.86s : We should think about how to store a graph on a computer.
+1264.86s - 1266.7s : And there's many different options.
+1266.7s - 1268.96s : In fact, really one thing that you can do
+1268.96s - 1272.46s : is sort of pair, just like when we talked about sets.
+1272.46s - 1274.22s : There are many different ways to store sets.
+1274.22s - 1275.94s : And one way to think about it was,
+1275.94s - 1278.28s : depending on how we're going to interact with that set,
+1278.28s - 1280.38s : we might choose one data structure or another
+1280.38s - 1283.18s : to sort of optimize the types of interactions
+1283.18s - 1284.58s : we're going to have with that set
+1284.58s - 1286.26s : and make them as fast as possible.
+1286.26s - 1289.7s : There's exactly the same story for a graph.
+1289.7s - 1293.46s : So for instance, the world's dumbest representation
+1293.46s - 1296.54s : of a graph would be to just have a long list of edges.
+1296.54s - 1302.16s : So for example, for this graph up here, maybe I have 0, 1.
+1302.16s - 1302.44s : That's enough.
+1302.44s - 1303.08s : That's an edge.
+1303.08s - 1305.48s : And then 0, 2.
+1305.48s - 1306.42s : That's another edge.
+1306.42s - 1308.08s : And then 1, 2.
+1308.08s - 1310.96s : And then 2, 1.
+1310.96s - 1312.84s : There's a big list of edges.
+1312.84s - 1315.6s : Really sad I don't care about the order.
+1315.6s - 1317.22s : First one's 1, 0.
+1317.22s - 1317.88s : 1, 0.
+1317.88s - 1318.3s : Oh, you're right.
+1318.3s - 1318.9s : I'm sorry.
+1318.9s - 1320.62s : Yeah, the edge points up.
+1320.62s - 1321.38s : Thanks, Eric.
+1321.38s - 1322.2s : Or not Eric.
+1322.2s - 1322.7s : Jason.
+1326.54s - 1328.5s : So let's say that I have a graph algorithm.
+1328.5s - 1331.16s : And I'm going to have to do something like check
+1331.16s - 1332.4s : whether there exists an edge.
+1332.4s - 1336.0s : So I'm going to have to find an edge from v to w a bunch of times.
+1336.0s - 1339.3s : How long is that going to take in this data structure?
+1339.3s - 1342.84s : Well, if I just have a hot mess, disorganized list of edges,
+1342.84s - 1345.6s : and I want to know does there exist an edge from v to w,
+1345.6s - 1348.72s : all I can do is write a for loop that just goes along this set
+1348.72s - 1350.48s : and says, is this edge what I'm looking for?
+1350.48s - 1350.98s : No.
+1350.98s - 1351.92s : Is that the edge I'm looking for?
+1351.92s - 1352.86s : No.
+1352.86s - 1355.38s : So every single time I want to find an edge,
+1355.38s - 1358.4s : it's going to take me time proportional to the number
+1358.4s - 1361.04s : of edges in my graph, which could potentially be up to v squared.
+1361.04s - 1361.54s : Yeah.
+1361.54s - 1362.32s : Yeah.
+1362.32s - 1364.6s : So this is not such a great representation
+1364.6s - 1367.48s : of a graph on my computer.
+1367.48s - 1370.06s : So if we're thinking back at our data structure, we might say,
+1370.06s - 1372.14s : OK, so an edge list is probably not the way to go.
+1372.14s - 1374.66s : Although notice that the way we notated what is a graph kind
+1374.66s - 1376.76s : of looks like an edge list.
+1376.76s - 1379.88s : But in any event, the more common thing to do
+1379.88s - 1382.38s : is to store something like an adjacency list.
+1382.38s - 1388.34s : So the basic idea of an adjacency list
+1388.34s - 1391.34s : is that what I'm going to store is
+1391.34s - 1404.12s : a set that maps a vertex u to everything adjacent to u.
+1404.12s - 1404.62s : Right?
+1404.62s - 1405.96s : So in other words, I'm just going
+1405.96s - 1409.74s : to keep track of all the outgoing edges from every vertex.
+1409.74s - 1413.66s : And now I have to decide how am I going to store this object.
+1413.66s - 1415.16s : And oftentimes, we're going to have
+1415.16s - 1418.24s : to answer queries like, does there exist an edge from v to w?
+1418.24s - 1418.74s : Right?
+1418.74s - 1419.66s : So how could I do that?
+1419.66s - 1421.12s : First, I would look up the set.
+1421.12s - 1424.3s : Look up v. And I get back sort of a list or set
+1424.3s - 1426.1s : of all the things that are adjacent to v.
+1426.1s - 1427.34s : And I have to query that thing.
+1427.34s - 1429.28s : And I want it to be pretty fast.
+1429.28s - 1438.24s : So maybe what I do is I store the set of adjacent stuff
+1438.24s - 1445.38s : as something like a direct access array or a hash table
+1445.38s - 1447.28s : to make that look up fast.
+1451.12s - 1457.22s : So for example, how long would it take?
+1457.22s - 1459.04s : I see I'm going to finish the sentence here.
+1459.04s - 1460.42s : How long would it take me to check
+1460.42s - 1462.22s : if an edge exists in my graph?
+1462.22s - 1463.06s : Well, what would I do?
+1463.06s - 1464.68s : I would first pull out this object.
+1464.68s - 1466.26s : And then I'd look inside of here.
+1466.26s - 1466.76s : Right?
+1466.76s - 1469.26s : So if I stored this as a hash table, then at an expected
+1469.26s - 1471.1s : time, I would have order 1 look up.
+1471.1s - 1472.38s : Because this is order 1.
+1472.38s - 1474.88s : And then you have another order 1 look up there.
+1474.88s - 1478.5s : So we went from v squared to 1 with one simple trick.
+1478.5s - 1479.0s : Yes?
+1481.12s - 1483.88s : That's a great question.
+1483.88s - 1485.24s : So there's a design decision here.
+1485.24s - 1485.74s : I'm sorry.
+1485.74s - 1488.1s : In my head, I think a lot about undirected graphs.
+1488.1s - 1489.36s : And I'm going to make this mistake a lot.
+1489.36s - 1491.04s : And I'm glad that you caught me.
+1491.04s - 1492.76s : There's a totally reasonable thing to do,
+1492.76s - 1495.68s : which is maybe just to keep track of the outgoing edges
+1495.68s - 1496.86s : for every vertex.
+1496.86s - 1497.9s : This is a design decision.
+1497.9s - 1499.9s : For an algorithm, maybe I want to keep track
+1499.9s - 1500.94s : of the incoming edges.
+1500.94s - 1501.44s : Whatever.
+1501.44s - 1503.7s : I just have to make sure that it aligns with what I want
+1503.7s - 1505.14s : to do with my graph later.
+1505.14s - 1505.64s : Yep.
+1505.64s - 1507.02s : Excellent point.
+1507.02s - 1507.84s : Sorry.
+1507.84s - 1510.94s : As a geometry person, we rarely encounter directed graphs.
+1510.94s - 1511.12s : Yeah?
+1511.12s - 1511.62s : Yeah.
+1511.62s - 1513.74s : But it's important to keep remembering
+1513.74s - 1516.88s : that not everybody works on the same problems that I do.
+1516.88s - 1517.96s : OK.
+1517.96s - 1520.68s : Now, if I wanted to be totally extreme about it,
+1520.68s - 1523.22s : as just a third example of representation, which actually,
+1523.22s - 1525.94s : in some sense, you could think of like an adjacency list,
+1525.94s - 1528.16s : we'd be an adjacency matrix, where now I just
+1528.16s - 1532.12s : keep a giant v by v array of like, does this edge exist?
+1532.12s - 1533.8s : Does that edge exist?
+1533.8s - 1538.7s : Now, it's really, really easy to check if an edge exists.
+1538.7s - 1540.94s : But now, let's say that I make a graph algorithm that's
+1540.94s - 1545.38s : going to have a for loop over all the neighbors of some vertex.
+1545.38s - 1549.9s : So here, if I wanted to loop over all the neighbors of u,
+1549.9s - 1551.9s : I could do that in time proportional to the number
+1551.9s - 1554.3s : of neighbors of u.
+1554.3s - 1556.36s : But if I just have a big adjacency matrix, just
+1556.36s - 1559.78s : a bunch of binary values, like for every pair of vertices,
+1559.78s - 1561.02s : are these vertices adjacent?
+1561.02s - 1562.62s : Yay or nay?
+1562.62s - 1564.72s : If I want to iterate over all my neighbors,
+1564.72s - 1567.12s : now I have to iterate over all the vertices
+1567.12s - 1568.74s : and check, is that number 1?
+1568.74s - 1570.14s : And then do something.
+1570.14s - 1570.82s : So actually, that can exist.
+1570.82s - 1573.58s : It can incur some additional time and additional space.
+1573.58s - 1576.48s : Does that make sense?
+1576.48s - 1578.96s : So in any event, that's sort of the lazy man's graph
+1578.96s - 1579.72s : representation.
+1579.72s - 1582.24s : I use it a lot when I'm coding, because adjacency matrices
+1582.24s - 1583.2s : are easy to work with.
+1583.2s - 1585.44s : But it does incur a lot of additional space.
+1585.44s - 1587.28s : And it's not always the most efficient thing,
+1587.28s - 1589.32s : even if you have the space, because iterating
+1589.32s - 1593.12s : over neighbors actually can take quite a bit of time.
+1593.12s - 1595.26s : So the real point of our lecture today
+1595.26s - 1598.04s : is to start introducing sort of the canonical problem
+1598.04s - 1600.78s : that we all worry about on graphs, which is computing
+1600.78s - 1603.68s : paths, in particular, shortest paths.
+1603.68s - 1605.6s : So the first thing we should do is, of course,
+1605.6s - 1608.5s : define what a path is on a graph.
+1608.5s - 1611.58s : So we're going to think about our graph like a road network.
+1611.58s - 1614.68s : Let's think of maybe every node here as an intersection.
+1614.68s - 1617.02s : So this is roughly Kendall Square.
+1617.02s - 1619.54s : See, it's a square.
+1619.54s - 1624.74s : But in any event, let's say that I want to find, maybe question
+1624.74s - 1627.7s : one would be, does there exist a way to get from vertex 1
+1627.7s - 1628.84s : to vertex 3?
+1628.84s - 1630.56s : And then a better question to ask would be,
+1630.56s - 1633.78s : does there exist a short way to get from vertex 1 to vertex 3?
+1633.78s - 1635.48s : Then, of course, the first thing I have to do
+1635.48s - 1637.82s : is define my enemy, define what I'm looking for,
+1637.82s - 1639.38s : which is a path.
+1639.38s - 1641.72s : So a path is nothing more than a sequence of vertices
+1641.72s - 1645.54s : in a graph where every pair of adjacent vertices
+1645.54s - 1647.58s : in that sequence is an edge.
+1647.58s - 1649.56s : I think this all aligns with our intuition of what
+1649.56s - 1651.34s : a path is in a graph.
+1651.34s - 1655.36s : So for instance, here's a path, P equals v1, v2, v3.
+1655.36s - 1658.32s : So notice that there's an edge from v1 to v2,
+1658.32s - 1660.02s : and also an edge from v2 to v3.
+1660.02s - 1665.6s : So it satisfies the assumptions set forth in our definition.
+1665.6s - 1669.36s : What would not be a path in our graph would be v1, v3,
+1669.36s - 1671.9s : because there's no edge there.
+1671.9s - 1673.06s : OK.
+1673.06s - 1675.1s : So if we talk about paths, then there's
+1675.1s - 1678.44s : a very natural notion, which is the length.
+1678.44s - 1680.98s : Length, I guess you can think of the number of vertices
+1680.98s - 1683.88s : in your path minus 1, or the number of edges
+1683.88s - 1685.1s : that your path traverses.
+1685.1s - 1686.96s : Those are the same thing.
+1686.96s - 1689.8s : So for instance, the length of the path P here is 2.
+1689.8s - 1692.38s : Everybody see that?
+1692.38s - 1694.98s : A very common coding bug that I encounter a lot
+1694.98s - 1698.76s : is adding 1 to that number by accident,
+1698.76s - 1701.3s : because of course, there's one more vertex in your path
+1701.3s - 1702.84s : than there are edges.
+1702.84s - 1704.12s : OK.
+1704.12s - 1705.92s : And there are many different, there
+1705.92s - 1708.52s : could be potentially more than one path
+1708.52s - 1709.84s : between any pair of vertices.
+1709.84s - 1713.48s : So let's say that I have an undirected graph that
+1713.48s - 1715.18s : looks like the following.
+1715.18s - 1717.96s : This is a square plus a diagonal.
+1717.96s - 1718.84s : So here are nodes.
+1718.84s - 1719.34s : OK.
+1719.8s - 1722.04s : So this is a square plus a diagonal.
+1722.04s - 1724.6s : So then a perfectly valid path from the lower left
+1724.6s - 1727.8s : to the upper right would be to go one over and one up.
+1727.8s - 1729.56s : But of course, there's a more efficient way
+1729.56s - 1731.72s : to get from the lower left to the upper right, which
+1731.72s - 1734.68s : is go across the diagonal.
+1734.68s - 1736.52s : And so when we talk about the shortest path,
+1736.52s - 1737.78s : it's nothing more than the length
+1737.78s - 1740.76s : of the path that has the fewest number of edges or vertices
+1740.76s - 1745.14s : in it between any pair of vertices in my graph.
+1745.14s - 1745.64s : OK.
+1745.64s - 1746.56s : So this is our enemy.
+1746.56s - 1749.42s : This is what we're after, is computing the shortest path,
+1749.42s - 1751.64s : a path between vertices in a graph.
+1751.64s - 1754.24s : And this is the thing that we'll be talking about quite
+1754.24s - 1755.42s : a bit in this course.
+1755.42s - 1756.92s : Because of course, it's a very practical matter, right?
+1756.92s - 1759.2s : Like when I want to solve routing problems,
+1759.2s - 1761.78s : I want to move packets on my network, I'd prefer not to,
+1761.78s - 1764.1s : well, unless I'm doing Tor, I'd prefer
+1764.1s - 1767.18s : them not to hit too many computers in between.
+1767.18s - 1768.98s : Then maybe I want to compute a shortest path.
+1768.98s - 1774.18s : Or on a surface, maybe I want to move information in a way
+1774.18s - 1776.22s : that's not too far away.
+1776.22s - 1778.92s : But of course, there's many variations on that theme.
+1778.92s - 1781.02s : When we talk about shortest paths,
+1781.02s - 1782.92s : or even just existence of a path, right?
+1782.92s - 1785.02s : So these are three sort of model problems
+1785.02s - 1787.42s : that we might solve on a graph.
+1787.42s - 1790.02s : So the first one, which in this course
+1790.02s - 1792.42s : we're calling single pair reachability,
+1792.42s - 1795.74s : would be the idea that I take two vertices, s and t,
+1795.74s - 1798.76s : on my graph G. And I ask you, does there
+1798.76s - 1802.08s : exist a path between s and t?
+1802.08s - 1804.04s : So it would be the sort of extreme example
+1804.04s - 1808.92s : where this problem may not always give back the answer yes.
+1808.92s - 1811.38s : And somehow in our head, I think we think of all graphs
+1811.38s - 1813.24s : as being connected.
+1813.24s - 1815.82s : But a perfectly valid graph, the way we've defined it,
+1815.82s - 1819.48s : would be like 10 vertices and no edges.
+1819.48s - 1821.4s : This function would be very easy to code
+1821.4s - 1823.9s : if that were the only graph you ever cared about.
+1823.9s - 1826.68s : But in any event, the existence of a path
+1826.68s - 1828.32s : is already a query that takes a little bit
+1828.32s - 1829.32s : of algorithmic thinking.
+1829.32s - 1833.18s : We haven't figured out how to do that yet.
+1833.18s - 1835.56s : Now another problem we can solve would be the shortest path.
+1835.56s - 1838.82s : Given a graph and two vertices, we might say, well, how far apart
+1838.82s - 1841.82s : are these vertices in my graph if I
+1841.82s - 1843.94s : want to use the shortest possible distance from one
+1843.94s - 1845.7s : to the other?
+1845.7s - 1849.3s : Notice that I can use the second problem to solve the first one.
+1849.3s - 1852.26s : Because what's the length of the shortest path between two
+1852.26s - 1855.62s : vertices that don't have a path between them?
+1855.62s - 1857.24s : Infinity or shrug.
+1857.24s - 1860.04s : That's actually a totally valid answer.
+1860.04s - 1860.76s : That's right.
+1860.76s - 1863.76s : So how could I implement the reachability code?
+1863.76s - 1865.7s : Well, I could call my shortest path code,
+1865.7s - 1867.06s : and it gives me infinity.
+1867.06s - 1868.12s : Then I return no.
+1868.12s - 1868.96s : It's not reachable.
+1868.96s - 1872.26s : And if it gives me not infinity, I return yes.
+1872.26s - 1874.9s : So remember that a key idea in algorithms class
+1874.9s - 1877.66s : is this idea of reduction, that I can use one function
+1877.66s - 1879.1s : to solve another.
+1879.1s - 1881.26s : So in this case, if we can solve shortest path,
+1881.26s - 1883.88s : then we can certainly solve the reachability problem
+1883.88s - 1886.62s : by calling that piece of code.
+1886.62s - 1890.14s : And then finally, we could talk about single source shortest
+1890.14s - 1890.72s : path.
+1890.72s - 1895.2s : So notice now that there's only one input node here, s.
+1895.2s - 1897.02s : So what this problem is saying is give me
+1897.02s - 1898.12s : the length of the shortest path.
+1898.12s - 1899.96s : So I can take the shortest path from s
+1899.96s - 1903.88s : to every single other vertex in my graph.
+1903.88s - 1904.68s : That makes sense?
+1904.68s - 1907.48s : So maybe I return a big array with all of the information,
+1907.48s - 1910.96s : every single shortest distance.
+1910.96s - 1913.88s : So can we solve single pair shortest path using
+1913.88s - 1917.36s : single source shortest path?
+1917.36s - 1917.86s : Absolutely.
+1917.86s - 1922.88s : I could take s in my single pair shortest path problem,
+1922.88s - 1926.8s : compute the shortest path from s to literally everything else,
+1926.8s - 1927.96s : and then throw away all of that information, except the shortest
+1927.96s - 1930.36s : path only because I have Isso2 .
+1930.36s - 1932.72s : But if you consider that solution work that way,
+1932.72s - 1935.4s : how noodles node Europiangan?
+1935.4s - 1937.84s : You could also take will or work that way.
+1937.84s - 1939.2s : Think about that.
+1939.2s - 1940.8s : And so maybe you'll want to think about word errors
+1940.8s - 1943.18s : to solve prochaine problems in order to solve that beginning
+1943.18s - 1945.5s : problem.
+1945.5s - 1946.84s : So in the end, two problems always end up
+1946.84s - 1949.24s : being one bigger error than a second problem.
+1949.24s - 1952.82s : So one of them is theお願い with the second problem why
+1952.82s - 1954.76s : S man, because literally the problem
+1954.76s - 1956.92s : was the shortcut to get the query job.
+1956.92s - 1957.56s : And if we call resisting, 2 below h1,
+1957.56s - 1961.64s : And this is an idea called the shortest path tree.
+1961.64s - 1964.42s : I got lazy drawing PowerPoint slides at 2 AM yesterday,
+1964.42s - 1968.2s : and instead thought I'd draw a picture on the board.
+1968.2s - 1972.92s : So let's draw a graph.
+1972.92s - 1977.56s : So here we have A, B. I'm going to use letters instead
+1977.56s - 1979.84s : of numbers to refer to nodes from now on,
+1979.84s - 1982.8s : because I don't want to confuse the length of the shortest
+1982.8s - 1986.36s : path of the index of my node.
+1986.36s - 1990.3s : So here's A, B, C. I'm going to match my notes here.
+1990.3s - 1999.3s : D, E, F. Here's a graph.
+1999.3s - 2001.0s : Again, undirected, because your instructor
+2001.0s - 2002.46s : likes to think about undirected graphs.
+2002.46s - 2004.0s : But I know I'm going to get feedback that I shouldn't
+2004.0s - 2006.02s : have done that later.
+2006.02s - 2007.64s : But in any event, let's say that I
+2007.64s - 2010.1s : want to compute the shortest path from A to everything else,
+2010.1s - 2011.48s : or the length, rather.
+2011.48s - 2013.82s : So first of all, even without talking about an algorithm,
+2013.82s - 2015.6s : I think it's pretty easy to guess what it is.
+2015.6s - 2016.1s : Right?
+2016.1s - 2019.32s : Clearly, the shortest path from A to A has length 0.
+2019.32s - 2021.0s : The shortest length from A to B is 1.
+2021.0s - 2022.38s : From A to C is 2, right?
+2022.38s - 2023.98s : Because I can follow these guys.
+2023.98s - 2025.08s : Now it gets complicated.
+2025.08s - 2027.3s : It branched.
+2027.3s - 2032.12s : So the next shortest path has length 3, and then 4,
+2032.12s - 2032.86s : like that.
+2032.86s - 2035.24s : Does everybody agree with me that the numbers I've decorated
+2035.24s - 2037.76s : here are the length of the shortest path from A
+2037.76s - 2038.58s : to everything else?
+2041.56s - 2043.98s : But what have I not done?
+2043.98s - 2045.9s : I haven't told you how to actually compute
+2045.9s - 2046.46s : the path.
+2046.46s - 2049.78s : I'm just giving you the length of the path.
+2049.78s - 2052.34s : So I might want a piece of code that, in addition
+2052.34s - 2055.66s : to doing single source shortest path length,
+2055.66s - 2060.06s : also gives me single source shortest path.
+2060.06s - 2062.48s : So initially, when I think about that, I might think about,
+2062.48s - 2065.48s : well, how do I even write down a data structure that
+2065.48s - 2068.06s : can store all of those paths?
+2068.06s - 2071.06s : Well, every path could have v vertices in it.
+2071.06s - 2073.28s : It could be that, for whatever reason,
+2073.28s - 2075.32s : there's a lot of branching in my graph, and all the paths are
+2075.32s - 2076.74s : super long.
+2076.74s - 2078.24s : Actually, I guess I have to think
+2078.24s - 2080.74s : about whether branching would make them longer or shorter.
+2080.74s - 2084.42s : But in any event, I could have a really boring data structure
+2084.42s - 2085.8s : that just for every single vertex
+2085.8s - 2091.56s : keeps track of the shortest path from A to that vertex.
+2091.56s - 2094.2s : How big would that data structure be?
+2094.2s - 2096.74s : Well, if the only bound I have on the length of a path
+2096.74s - 2099.26s : is that, well, certainly, at most,
+2099.26s - 2102.0s : it takes all the vertices in my graph,
+2102.0s - 2104.68s : then any one path will take v space.
+2104.68s - 2107.74s : So that would take v squared space total.
+2107.74s - 2109.68s : That wouldn't be so good, because somehow I
+2109.68s - 2111.78s : have an amount of information on my graph currently
+2111.78s - 2112.5s : that's linear.
+2112.5s - 2114.1s : It's just the length of the path.
+2114.1s - 2115.88s : If I want to actually reconstruct that path,
+2115.88s - 2117.58s : initially, it sort of spiritually
+2117.58s - 2120.4s : feels like I need way more space to do that.
+2120.4s - 2122.0s : But the answer is that we actually don't,
+2122.0s - 2123.82s : that we're going to only need linear space.
+2123.82s - 2126.08s : And the idea for that is to store an object called the shortest
+2126.08s - 2126.7s : path tree.
+2126.7s - 2127.2s : Yes?
+2134.68s - 2136.0s : So the question was about recursion.
+2136.0s - 2137.86s : We haven't actually written down any graph algorithms.
+2137.86s - 2141.34s : So we're going to defer on that until we actually recurse.
+2141.34s - 2143.0s : And then we'll think about it more carefully.
+2143.0s - 2143.72s : Yeah.
+2143.72s - 2145.38s : But it's a totally reasonable question.
+2145.38s - 2147.8s : There are plenty of recursive graph algorithms out there.
+2147.8s - 2151.1s : And then we'll have to do our counting very carefully,
+2151.1s - 2151.6s : for sure.
+2154.82s - 2158.0s : So instead, we're going to define an object called
+2158.0s - 2159.24s : the shortest path tree.
+2159.24s - 2161.82s : And the basic trick here is to say, well,
+2161.82s - 2163.3s : how did I get from A to C?
+2163.3s - 2163.8s : Right?
+2163.8s - 2164.3s : Yeah.
+2164.3s - 2164.68s : Right.
+2164.68s - 2166.98s : Well, there's always a vertex, which
+2166.98s - 2170.22s : is its predecessor on the shortest path.
+2170.22s - 2172.88s : And shortest paths have this really beautiful property,
+2172.88s - 2177.06s : which is that the shortest path from A to C, if I truncate it,
+2177.06s - 2182.0s : so like it goes A to B to C, then the truncated one
+2182.0s - 2184.44s : is also the shortest path to that previous vertex.
+2184.44s - 2186.14s : So let's think about that a little bit,
+2186.14s - 2187.68s : because that sentence was, as usual,
+2187.68s - 2189.54s : poorly phrased by your instructor.
+2189.54s - 2192.84s : So let's say that I have the shortest path from A to D,
+2192.84s - 2194.3s : which is very clearly.
+2194.3s - 2200.54s : A, B, C, D. I think we can all agree.
+2200.54s - 2202.84s : And now I take this sub list.
+2202.84s - 2206.8s : I just look from A to C. Is there ever a circumstance
+2206.8s - 2209.68s : when this is not the shortest path or A shortest path
+2209.68s - 2210.38s : from A to C?
+2213.24s - 2214.06s : No, right?
+2214.06s - 2217.0s : Because if it were, if there existed a shorter path from A
+2217.0s - 2221.06s : to C, I could splice it in here and find a shortest path
+2221.06s - 2223.64s : from A to D. Do you see that?
+2224.3s - 2227.64s : So based on that reasoning, rather than storing
+2227.64s - 2230.44s : this giant set of shortest paths,
+2230.44s - 2234.4s : actually applying, in some senses, recursive suggestion,
+2234.4s - 2238.06s : instead, I can just think of the one vertex that's
+2238.06s - 2239.8s : before me in my shortest path.
+2239.8s - 2241.0s : I'm going to trace backwards.
+2241.0s - 2242.74s : So let's take a look at our graph here.
+2245.8s - 2247.74s : Essentially, the object I'm going to keep track of
+2247.74s - 2250.14s : is like a predecessor.
+2250.14s - 2253.74s : So what is the predecessor of F on the shortest path?
+2253.74s - 2254.28s : Let's look at this.
+2254.3s - 2257.36s : It's actually either D or E. It doesn't matter in this case.
+2257.36s - 2259.42s : Maybe the predecessor is E for fun.
+2262.7s - 2264.04s : What's the predecessor of E?
+2264.04s - 2267.16s : Well, clearly, the previous edge or vertex on the shortest path
+2267.16s - 2274.14s : is C. Similarly for D. Now we have B and A.
+2274.14s - 2276.64s : We have a bunch of arrows that point this way.
+2276.64s - 2278.14s : So for every vertex, I'm just going
+2278.14s - 2280.3s : to start an arrow pointing toward the previous vertex
+2280.3s - 2281.18s : on the shortest path.
+2281.18s - 2283.48s : I'm not going to store the whole shortest path, just
+2283.48s - 2284.3s : the very last edge.
+2284.3s - 2290.3s : So first of all, how much storage does this take?
+2290.3s - 2291.94s : It takes V space.
+2291.94s - 2292.58s : Do you see that?
+2292.58s - 2294.22s : Or the size of the vertices space.
+2294.22s - 2295.88s : Because every vertex just has to store
+2295.88s - 2300.74s : one thing, which is the previous vertex on a shortest path.
+2300.74s - 2302.86s : Now what is my algorithm for tracing shortest paths?
+2302.86s - 2303.76s : It's really simple.
+2303.76s - 2306.34s : I just start walking along these edges all the way
+2306.34s - 2310.9s : until I get back to A. Now this object is called a shortest path
+2310.9s - 2311.4s : tree.
+2311.4s - 2313.66s : Notice I snuck in one additional word, which is tree.
+2314.3s - 2315.66s : Why is that?
+2315.66s - 2318.8s : Can I ever have a cycle in this graph?
+2318.8s - 2320.34s : It wouldn't really make any sense.
+2320.34s - 2321.36s : These are shortest paths.
+2321.36s - 2323.32s : You should be able to follow the gradient back
+2323.32s - 2326.48s : to the original vertex.
+2326.48s - 2327.1s : OK.
+2327.1s - 2331.48s : So in other words, I'm going to basically decorate my graph
+2331.48s - 2332.6s : with one additional thing.
+2332.6s - 2336.02s : We'll call it P of V, which is the previous vertex
+2336.02s - 2340.64s : on the shortest path from my source point to my vertex V.
+2340.64s - 2343.5s : And what I think I've tried to argue to you guys today is that,
+2343.5s - 2345.2s : if I have this information, that's actually enough
+2345.2s - 2346.64s : to reconstruct the shortest path.
+2346.64s - 2350.16s : I just keep taking P of V, and then P of P of V,
+2350.16s - 2352.04s : and then P of P of P of V, and so on,
+2352.04s - 2354.36s : which sounds more complicated than it is,
+2354.36s - 2356.94s : until I trace back to my original vertex.
+2356.94s - 2359.46s : And this object, conceptually, is called the shortest path
+2359.46s - 2360.64s : tree.
+2360.64s - 2363.84s : Any questions about that?
+2363.84s - 2364.34s : Yes?
+2364.34s - 2368.16s : connected A to D.
+2368.16s - 2370.44s : JASON KUO- If I had an edge that connected A to D, OK.
+2370.44s - 2370.94s : .
+2373.5s - 2377.04s : .
+2377.04s - 2378.18s : JASON KUO- Ah.
+2378.18s - 2381.78s : OK, so the question was, let's say that our colleague here
+2381.78s - 2384.64s : added an edge.
+2384.64s - 2387.84s : This is a great question.
+2387.84s - 2389.62s : You know, somebody was evil.
+2389.62s - 2392.62s : My adversarial neural network, still an edge here,
+2392.62s - 2395.12s : because it was adversarial, and it wanted my shortest path code
+2395.12s - 2396.52s : to fail.
+2396.52s - 2399.22s : And now, somehow, the tree that I gave you
+2399.22s - 2401.28s : is no longer correct.
+2401.28s - 2403.5s : And my answer to that is yes.
+2403.5s - 2404.08s : Why is that?
+2404.08s - 2407.62s : Well, by adding this edge here, the length of my shortest path
+2407.62s - 2408.48s : changed, right?
+2408.48s - 2411.02s : The shortest path from A to D is now 1.
+2411.02s - 2412.28s : So this tree is no longer valid.
+2412.28s - 2414.08s : I need a new tree.
+2414.08s - 2419.12s : So now, what would be the previous P of D here?
+2419.12s - 2423.04s : Well, rather than being C, it would be A. Yeah,
+2423.04s - 2424.16s : so that's absolutely right.
+2424.16s - 2427.6s : And it actually is reflective of a really annoying property
+2427.6s - 2431.2s : of shortest paths, which is if I add one edge to my graph,
+2431.2s - 2433.08s : the length of the shortest path to every vertex can change.
+2433.08s - 2437.36s : Well, I guess with the exception of the source vertex.
+2437.36s - 2438.08s : Yeah?
+2438.08s - 2441.1s : And that's actually a really big headache
+2441.1s - 2442.14s : in certain applications.
+2442.14s - 2444.96s : So for instance, and then I'll shut up about applications
+2444.96s - 2447.02s : and do math again.
+2447.02s - 2448.9s : I work a lot with 3D models.
+2448.9s - 2451.4s : And there's a big data set of 3D models of ballerinas.
+2451.4s - 2452.86s : And ballerinas are really annoying
+2452.86s - 2455.48s : because sometimes they put their hands together like that.
+2455.48s - 2458.54s : And then suddenly, the shortest path between your fingers
+2458.54s - 2461.76s : goes from your entire body to zero.
+2461.76s - 2462.66s : And then you have to do this.
+2462.66s - 2462.96s : And then you have to do this.
+2462.96s - 2463.06s : And then you have to do this.
+2463.06s - 2465.86s : And so incremental algorithms for computing shortest path
+2465.86s - 2466.94s : can fail here, right?
+2466.94s - 2468.9s : Because I have to update everything
+2468.9s - 2472.06s : if I accidentally glued together fingers like that.
+2472.06s - 2473.6s : So anyway, I'll let you think about how
+2473.6s - 2474.64s : you might fix that problem.
+2474.64s - 2477.42s : And if you want to know more, you should take 6838.
+2477.42s - 2477.92s : Yes?
+2480.54s - 2482.44s : If you change your source node, the shortest path
+2482.44s - 2483.14s : would change again.
+2483.14s - 2485.3s : Yeah, so this is going to be one of these really boring things
+2485.3s - 2487.22s : where I'm going to keep answering like, anytime
+2487.22s - 2489.44s : I change anything about my problem, I change my source,
+2489.44s - 2491.78s : I change my edges, I have to just recompute all the shortest
+2491.78s - 2492.94s : paths.
+2492.94s - 2494.82s : And there are obviously algorithms out there
+2494.82s - 2497.32s : that don't do that.
+2497.32s - 2499.7s : But we're not going to think about them yet.
+2499.7s - 2500.7s : OK.
+2500.7s - 2502.7s : So as usual, I've talked too much and left myself
+2502.7s - 2505.18s : about 10 minutes to do the actual algorithm that's
+2505.18s - 2507.62s : interesting in the lecture here.
+2507.62s - 2509.62s : Although actually, it's really not so complicated.
+2509.62s - 2512.02s : So I think we'll do OK, which is how do I actually
+2512.02s - 2513.7s : compute shortest paths?
+2513.7s - 2515.32s : And the basic thing we're going to do
+2515.32s - 2518.5s : is sort of build on this tree analogy here.
+2518.5s - 2520.9s : We're going to define one more object, which I really like.
+2520.9s - 2522.82s : Actually, I enjoy this from Jason's notes,
+2522.82s - 2524.7s : and I enjoy that.
+2524.7s - 2528.14s : And that's an idea of a level set.
+2528.14s - 2531.06s : And so this is a whole set of things, L sub k.
+2531.06s - 2534.02s : And these are all the vertices that are distance k away
+2534.02s - 2535.72s : from my source.
+2535.72s - 2538.6s : So for instance, if my source vertex in this example
+2538.6s - 2540.52s : is the vertex all the way on the left,
+2540.52s - 2544.24s : then L0 obviously contains just that vertex.
+2544.24s - 2545.66s : L1 is the next one.
+2545.66s - 2547.06s : L2 is the third one.
+2547.06s - 2550.82s : But now L3 is a set of three vertices,
+2550.82s - 2552.58s : because those are all the things that are distance
+2552.58s - 2554.18s : three away from the source.
+2554.18s - 2556.9s : That's what I've labeled in pink here.
+2556.9s - 2560.2s : So that's all that this notation here means.
+2560.2s - 2561.58s : Oh, oops, I've made a slight typo,
+2561.58s - 2563.92s : because in this class, distance is delta and not d.
+2563.92s - 2565.7s : But whatever.
+2565.7s - 2567.04s : The shortest distance.
+2567.04s - 2568.16s : JASON KU- The shortest distance.
+2568.16s - 2569.3s : That's absolutely right.
+2569.3s - 2571.64s : So for instance, I could have a very long distance from L0
+2571.64s - 2572.38s : to L1.
+2572.38s - 2574.98s : I could just flip back and forth between L0 and L1,
+2574.98s - 2577.14s : maybe go over to L4 and then go back.
+2577.14s - 2580.14s : But that wouldn't be a terribly helpful thing to compute.
+2580.14s - 2581.14s : That's absolutely right.
+2581.14s - 2581.64s : Yes?
+2582.58s - 2584.22s : The red background is the set L.
+2584.22s - 2587.14s : JASON KU- Ah, the red background is the set L.
+2587.14s - 2590.68s : So for example, L3 contains these three vertices,
+2590.68s - 2592.86s : because they're all the things that are distance three
+2592.86s - 2594.02s : away from the left.
+2594.02s - 2597.94s : I got a little too slick drawing my diagram late last night.
+2597.94s - 2599.8s : I'm kind of proud of it.
+2599.8s - 2602.02s : OK.
+2602.02s - 2604.54s : So essentially, if I wanted to compute the length
+2604.54s - 2607.36s : of the shortest path from vertex all the way on the left
+2607.36s - 2610.1s : to all the other vertices, one way to do that
+2610.1s - 2611.82s : would be to compute all these level sets,
+2611.82s - 2615.14s : and then just sort of check what level set I'm in.
+2615.14s - 2617.7s : So we're going to introduce an algorithm called
+2617.7s - 2620.94s : breadth-first search, which does roughly that.
+2620.94s - 2623.78s : So breadth-first search, the way we'll introduce it today,
+2623.78s - 2625.44s : is going to be an algorithm for computing
+2625.44s - 2627.84s : all of those level sets, L sub i.
+2627.84s - 2630.12s : And then from that, we can construct the length and even
+2630.12s - 2632.64s : the shape of the shortest path.
+2632.64s - 2635.34s : And I'm going to move to my handwritten notes.
+2635.34s - 2637.24s : OK.
+2637.24s - 2639.58s : And here's what our algorithm is going to do.
+2639.58s - 2640.78s : Ah.
+2640.78s - 2641.58s : I'm going to write it.
+2641.58s - 2642.6s : I'm going to write it in a slightly different way
+2642.6s - 2647.08s : than what's in the course notes on the screen, but only slightly.
+2647.08s - 2650.56s : So first of all, one thing I think we can all agree on
+2650.56s - 2652.78s : is that level set 0, oh, that's cool.
+2652.78s - 2655.24s : This chalk bifurcated.
+2655.24s - 2657.4s : It contains one node.
+2657.4s - 2659.44s : What should that node be?
+2659.44s - 2660.6s : The source, right?
+2660.6s - 2662.4s : Because the only thing that's distance away
+2662.4s - 2664.48s : is 0 away from the source is the source node.
+2664.48s - 2664.98s : Yeah?
+2668.78s - 2669.82s : OK.
+2669.82s - 2671.44s : And in addition to that.
+2671.58s - 2675.84s : We can initialize the distance from the source to itself.
+2675.84s - 2677.46s : Everybody on 3, what is the distance
+2677.46s - 2678.58s : from the source to itself?
+2678.58s - 2679.52s : 1, 2, 3.
+2679.52s - 2680.46s : 0.
+2680.46s - 2681.2s : Thank you.
+2681.2s - 2682.34s : See, you're waking up now.
+2682.34s - 2684.34s : It's getting, it's almost 11, 12.
+2684.34s - 2684.96s : What time is it?
+2684.96s - 2685.68s : Almost 12.
+2685.68s - 2687.12s : OK.
+2687.12s - 2690.54s : And then finally, well, maybe initially, we
+2690.54s - 2692.68s : don't really know anything about the array p.
+2692.68s - 2694.14s : So we just make it empty, right?
+2694.14s - 2697.14s : Because p of the source is somehow doesn't matter, right?
+2697.14s - 2699.02s : Because once I've made it back to the source,
+2699.02s - 2700.7s : I'm done computing shortest paths.
+2700.7s - 2701.58s : So we're going to write an output.
+2701.58s - 2703.34s : And then we're going to write the algorithm
+2703.34s - 2706.58s : that computes all the level sets and fills in this array p
+2706.58s - 2709.34s : and fills in the distances all in one big shot.
+2709.34s - 2712.08s : We're going to call it breadth-first search.
+2712.08s - 2712.58s : OK.
+2712.58s - 2713.46s : So let's do that.
+2716.76s - 2718.96s : So we can use the notation here.
+2718.96s - 2721.46s : And notice that there's basically an induction going on,
+2721.46s - 2724.8s : which is I'm going to compute level set 1 from level set 0,
+2724.8s - 2727.68s : level set 2 from level set 1, and so on until I've
+2727.68s - 2729.58s : filled in all my level sets.
+2729.58s - 2730.7s : Does that make sense?
+2730.7s - 2731.2s : Yeah.
+2731.2s - 2734.24s : So here's a slightly different way to notate the same thing.
+2734.24s - 2735.9s : I'm going to use a while loop, which I know
+2735.9s - 2737.66s : is slightly non-kosher.
+2737.66s - 2739.52s : But that's OK.
+2739.52s - 2742.7s : So I'm going to initialize a number i to be 1.
+2742.7s - 2744.62s : This is going to be like our counter.
+2744.62s - 2752.84s : I'm going to say while the previous level set is not
+2752.84s - 2755.48s : empty, meaning that potentially there's
+2755.48s - 2757.96s : a path that goes through the previous level set
+2757.96s - 2759.62s : into the next one, right?
+2759.62s - 2760.5s : Because as soon as one of my levels is empty, I'm going to say,
+2760.5s - 2762.14s : OK, I'm going to add a new one.
+2762.14s - 2764.22s : So if one of my levels is empty, notice that all the remit,
+2764.22s - 2767.14s : like the li for even bigger i are also going to be empty.
+2767.14s - 2769.76s : It's like never a case when there's something not distance
+2769.76s - 2773.4s : i, but then distance like i plus 5.
+2773.4s - 2773.9s : OK.
+2773.9s - 2776.84s : So now what am I going to do?
+2776.84s - 2778.86s : Well, let's think back to our graph.
+2784.2s - 2787.4s : So now I know that this guy is distance 0 away.
+2787.4s - 2789.12s : That's what I started with.
+2789.12s - 2790.5s : So now I'm going to look at all the neighbors of this vertex.
+2790.5s - 2793.0s : I'm going to make them distance 1 away.
+2793.0s - 2795.74s : Does that make sense?
+2795.74s - 2798.5s : And similarly here, this guy is distance 2.
+2798.5s - 2800.26s : And eventually, I'm going to get in trouble
+2800.26s - 2804.42s : because maybe, well, what's a good example here?
+2804.42s - 2806.34s : I won't even try to draw.
+2806.34s - 2809.46s : I could run into trouble if I don't want to add a vertex
+2809.46s - 2811.7s : twice to two different level sets, right?
+2811.7s - 2814.02s : Once I've put it in li, then I don't
+2814.02s - 2816.24s : want to put it in like li plus 5 because I already
+2816.24s - 2818.3s : know that it's distance i away.
+2818.3s - 2819.8s : Does that make sense?
+2819.8s - 2820.26s : OK.
+2820.5s - 2822.0s : So what I'm going to do is I'm going
+2822.0s - 2825.22s : to iterate over all the vertices in my previous level set.
+2829.7s - 2832.12s : And now I'm going to look at every vertex
+2832.12s - 2835.62s : that is adjacent to u.
+2835.62s - 2836.5s : Because what do I know?
+2836.5s - 2839.52s : I know that if I can get to u in i minus 1 steps,
+2839.52s - 2844.32s : how many steps should it take me to get to any neighbor of u?
+2844.32s - 2845.12s : i steps, right?
+2845.12s - 2848.2s : Because I can go through the path, which is length i minus 1,
+2848.2s - 2849.8s : add one additional edge.
+2849.8s - 2852.04s : And now I get to that new guy, right?
+2852.04s - 2854.3s : So what can I do?
+2854.3s - 2862.3s : I can iterate over all v, which is in the adjacent set of u.
+2862.3s - 2864.68s : I have to be a little bit careful because what
+2864.68s - 2865.92s : if I have an edge backwards?
+2865.92s - 2869.96s : So for instance, here I have an edge back to the source.
+2869.96s - 2874.1s : I guess this is a valid example.
+2874.1s - 2877.38s : I wouldn't want to add the source to the third level set
+2877.38s - 2879.1s : because I already added it in a previous guy.
+2879.1s - 2881.1s : Right?
+2881.1s - 2885.22s : So I want to get rid of the union of all
+2885.22s - 2886.34s : of the previous level sets.
+2891.54s - 2892.6s : Does that make sense?
+2892.6s - 2894.1s : So in other words, I'm only going
+2894.1s - 2897.96s : to look at the adjacent vertices that I haven't visited yet
+2897.96s - 2901.16s : in my level set computation algorithm.
+2901.16s - 2903.38s : And now all I have to do is update my arrays, right?
+2903.38s - 2908.42s : So in particular, I'm going to add vertex v.
+2909.1s - 2914.1s : And I'm going to add vertex v to level set i
+2914.1s - 2916.6s : because I haven't seen v yet.
+2916.6s - 2926.34s : I'm going to set the distance from s to v equal to i, right?
+2926.34s - 2929.34s : Because I'm currently filling in my level set i.
+2929.34s - 2934.54s : And then finally, what is p of v?
+2934.54s - 2937.54s : What is the previous vertex to v in my shortest path
+2937.54s - 2938.6s : from my source?
+2938.6s - 2939.72s : It's u, right?
+2939.72s - 2942.1s : Because that's the guy in the previous level set
+2942.1s - 2945.64s : that I'm building my path from, right?
+2945.64s - 2947.36s : And I set that to u.
+2947.36s - 2948.86s : And then, sorry, I ran out of space.
+2948.86s - 2953.0s : But I also have to increment i.
+2953.0s - 2954.62s : OK.
+2954.62s - 2955.94s : So what does this algorithm do?
+2955.94s - 2957.94s : It's just building one level set at a time.
+2957.94s - 2959.92s : We go back to our picture, right?
+2959.92s - 2963.84s : So it starts by initializing L0 to just be the source vertex.
+2963.84s - 2966.04s : Then it looks at all the edges coming out of that,
+2966.04s - 2967.16s : in that case just 1.
+2967.16s - 2968.48s : It makes that length 1.
+2968.6s - 2970.34s : And so on, right?
+2970.34s - 2972.26s : And so this is just incrementally building up
+2972.26s - 2973.52s : all these level sets.
+2973.52s - 2975.36s : Now, there's a pretty straightforward proof
+2975.36s - 2978.86s : by induction that this algorithm correctly computes the Ls,
+2978.86s - 2981.02s : the Ps, and the Deltas, which is all the information
+2981.02s - 2984.6s : that we need to compute the shortest path.
+2984.6s - 2986.34s : I think you guys can do that in your recitation
+2986.34s - 2989.78s : if you still need a little bit of induction proof practice
+2989.78s - 2991.32s : here.
+2991.32s - 2993.22s : And the final thing that we should check
+2993.22s - 2995.94s : is what is the runtime of this algorithm?
+2995.94s - 2998.42s : I'm going to squeeze in there just at the last second here.
+2998.6s - 3001.46s : So let's take a look.
+3001.46s - 3007.44s : So first of all, I did something a little, oh, oops.
+3007.44s - 3008.72s : No, that's OK.
+3008.72s - 3010.34s : In my algorithm, actually in step 0,
+3010.34s - 3012.36s : I had to make an array, which was the size equal
+3012.36s - 3014.5s : to the number of vertices.
+3014.5s - 3017.12s : Remember that in 6.006, how much time
+3017.12s - 3019.88s : does it take to allocate memory?
+3019.88s - 3021.26s : Yeah, it takes the amount of time
+3021.26s - 3024.6s : proportional to the amount of memory that I allocate.
+3024.6s - 3027.08s : So already, I see your hand, but we're low on time.
+3027.08s - 3028.44s : So we're going to make it to the end.
+3028.44s - 3031.36s : So already, we've incurred v time,
+3031.36s - 3034.8s : because our shortest path already takes v space.
+3034.8s - 3039.58s : But in addition to that, we have this kind of funny for loop,
+3039.58s - 3044.72s : where for every node, I have to visit all of its neighbors.
+3044.72s - 3049.2s : Now first of all, do I ever see a node twice here?
+3049.2s - 3052.4s : No, because I'm going in order of distance.
+3052.4s - 3054.72s : And the second that I've seen a node in one level set,
+3054.72s - 3055.76s : it can't be in another.
+3055.76s - 3057.4s : That's sort of our basic construction here.
+3058.44s - 3060.66s : Well, conveniently for you guys,
+3060.66s - 3063.04s : you already proved exactly the formula that we need,
+3063.04s - 3064.58s : and if I'm lucky I didn't erase it.
+3064.58s - 3067.18s : Yeah, here we are.
+3067.18s - 3069.66s : Because if we take a look here, this is exactly the scenario
+3069.66s - 3070.84s : that we're in, right?
+3070.84s - 3071.74s : Because what did we do?
+3071.74s - 3074.56s : We integrated over all the nodes in our graph,
+3074.56s - 3077.1s : and then we iterated over all the neighbors of those nodes.
+3077.1s - 3078.74s : And that's the basic computational time
+3078.74s - 3081.1s : in our algorithm.
+3081.1s - 3085.18s : So that for loop, or that while loop rather in my code,
+3085.18s - 3087.64s : is incurring time proportional to the number of edges.
+3088.44s - 3093.44s : So what is the total runtime for breadth-first search?
+3093.44s - 3095.44s : Well, we need to construct that array.
+3095.44s - 3099.44s : Even so, just as step 0, we've incurred v time.
+3099.44s - 3104.44s : And then we have to iterate over something that takes at most the number of edges.
+3104.44s - 3112.44s : So overall, our algorithm takes O time.
+3112.44s - 3117.44s : Now notice that this is, you might view this as kind of redundant.
+3117.44s - 3119.44s : By the way, in this, I have a little bit of a quibble with Jason.
+3119.44s - 3125.44s : But in this class, we'll call this a linear time algorithm because it's linear in the space that you're using to store your graph.
+3125.44s - 3132.44s : I think that's a little fishy personally because this could scale quadratically in v, but I digress.
+3132.44s - 3138.44s : In any event, right, why do we need both of these terms here?
+3138.44s - 3145.44s : Well, notice that if I had no edges in my graph, right, now this term is going to dominate.
+3145.44s - 3146.44s : But as I add edges to my graph, I'm going to have no edges.
+3146.44s - 3147.44s : So I'm going to have no edges.
+3147.44s - 3149.44s : So I'm going to have no edges in my graph.
+3149.44s - 3151.44s : This thing could go up to v squared, right?
+3151.44s - 3154.44s : So this is somehow a more informative expression than just saying, well, at worst, this is v squared time.
+3154.44s - 3155.44s : Does that make sense?
+3155.44s - 3158.44s : This is a slightly better formula to have.
+3158.44s - 3160.44s : OK, so with that, we just squeaked into the finish line.
+3160.44s - 3163.44s : We have an algorithm for computing shortest paths.
+3163.44s - 3166.44s : And I'll see you guys again, I guess on Tuesday.

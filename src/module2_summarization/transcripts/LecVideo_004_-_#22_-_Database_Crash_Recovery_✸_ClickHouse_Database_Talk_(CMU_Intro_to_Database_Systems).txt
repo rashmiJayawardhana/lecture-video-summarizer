@@ -1,0 +1,1616 @@
+0.0s - 25.1s : Alright, guys.
+26.08s - 26.74s : Let's get started.
+26.9s - 27.98s : Round of applause for DJ Cash.
+28.02s - 28.3s : Thank you.
+28.38s - 28.5s : Again.
+28.5s - 34.0s : I was compliment how great of a DJ you are, but there's a lot of cover today, so we're going to jump right into it.
+34.18s - 35.1s : So he's great.
+35.3s - 35.76s : This is great.
+35.84s - 36.14s : Let's go.
+36.46s - 37.04s : All right.
+37.48s - 38.82s : Project four, the recitation.
+39.94s - 44.28s : The video is available on, actually, I think that 280 is wrong.
+44.5s - 45.4s : I posted it this morning.
+46.28s - 47.34s : But the recitation was last night.
+47.58s - 48.24s : Slides are available.
+48.38s - 48.9s : The video is available.
+49.36s - 51.52s : Homework five is due this Sunday coming up.
+51.88s - 53.98s : And then, again, the final exam will be on December 11th.
+53.98s - 55.1s : And there's one more homework after this.
+55.54s - 55.7s : Okay?
+55.7s - 57.74s : All right.
+57.74s - 69.04s : So remember last class we were talking about the first lecture of how we're going to handle logging and recovery in our database system?
+69.48s - 78.72s : And obviously the reason why we need to do this is because if we write some data, we tell the outside world your transaction is committed, no matter what happens, we don't want to lose that data.
+78.8s - 79.4s : So we crash.
+79.92s - 85.26s : If the OS crashes, the database system crashes, the hardware crashes, whatever, we need to come back and sort those changes.
+85.82s - 87.72s : And then recall from last class I said that.
+87.84s - 91.58s : Every recovery protocol you're going to have in a database system is going to have two parts.
+92.18s - 102.2s : The first part is what we talked about last class was all the things you do during normal operations to ensure that when there's a crash later on that you can recover.
+102.56s - 113.0s : So we talked about how we're going to maintain this write ahead log in most systems that we're just going to record all the things that we're doing in all the changes that transactions are making as they go along.
+113.48s - 117.14s : So then now today's class is the second part where we start talking about.
+117.2s - 117.56s : Oops, sorry.
+117.74s - 118.82s : We start talking about.
+119.2s - 119.34s : Okay.
+119.54s - 121.28s : After now there's a crash.
+121.66s - 133.42s : The system comes back online and we're going to look at all the data we recorded for ourselves during the normal operation to try to reconstruct the database to be what it was at the moment that it crashed.
+133.68s - 136.54s : But of course we can't resume any crash transactions.
+136.74s - 142.62s : We need to make sure that we clean all those guys up and roll back any of their changes so we don't have any torn rights or partial transactions.
+143.32s - 144.04s : So again, it's going to look.
+144.24s - 147.36s : We want to restore the database to the state it was at the moment of the crash.
+147.74s - 148.74s : Okay.
+148.94s - 155.94s : So again, with write ahead log in our buffer pool is me a steel no force policy.
+156.14s - 164.54s : Steel means that we're allowed to evict dirty pages before the transactions that modified those pages are committed.
+164.74s - 171.24s : And then no force says we're not required to flush all the dirty pages for transactions at the moment that they commit.
+171.44s - 175.84s : And since transactions may abort or fail during operations.
+176.04s - 177.64s : Can we make sure we roll back?
+177.64s - 177.74s : There's no.
+177.94s - 179.54s : Changes and sure that everything's atomic.
+179.74s - 180.24s : Right.
+180.44s - 182.04s : So basically trying to give the state of the world like that.
+182.24s - 184.74s : So say in our running some transactions.
+184.94s - 185.94s : All sudden there's a crash.
+186.14s - 189.14s : The top guy T1 has committed would make sure to keep its changes.
+189.34s - 191.54s : T2 did not commit and aborted.
+191.74s - 198.74s : Make sure rollback is changes and then T3 didn't complete before the crash and therefore to make sure it doesn't.
+198.94s - 202.94s : It none of its changes survive after the crash.
+203.14s - 203.94s : Okay.
+204.14s - 206.54s : So again, last class is about okay.
+206.74s - 207.64s : What are we going to put in the write ahead log?
+207.84s - 218.74s : The undo and redo records so that we can recover after crash and then we quickly talked about a sort of naive checkpoint scheme at the end of the class so that we don't have to replay the entire log.
+218.94s - 220.94s : But we said they had a bunch of problems and that's we're going to fix today.
+221.14s - 226.54s : So now the protocol we're going to learn about today is called Aries.
+226.74s - 230.04s : The algorithms for recovery and isolation explaining semantics.
+230.24s - 231.04s : Like it's so important.
+231.24s - 232.94s : It has its own Wikipedia article about it.
+233.14s - 237.64s : And this was a this is work developed at IBM Research.
+237.74s - 240.74s : As part of the DB2 project.
+240.94s - 243.94s : So this is you know building a relational system is not not IMS stuff.
+244.14s - 254.94s : And this is basically the gold standard of how you would how you want to implement a transaction recovery or sorry a recovery protocol in your database systems.
+255.14s - 256.94s : You ensure that you don't you don't lose any changes.
+257.14s - 260.74s : So there was obviously, you know, this came out in 92.
+260.94s - 264.54s : There are people have been doing database recovery protocols for a while.
+264.74s - 267.54s : One of the key differences that we'll see in Aries.
+267.74s - 271.74s : Is that it's going to be overly careful to make sure we don't lose anything.
+271.94s - 276.94s : I'd rather do I rather make sure I'm super careful and then slowly peel back some of the pieces to make it faster.
+277.14s - 280.64s : But I want to try don't lose anything first and we'll see as we go along.
+280.84s - 283.74s : There's the Aries protocol has three phases.
+283.94s - 296.74s : The analyze or analysis the redo and the undo and what differs from what Aries does from what other data systems were doing prior to this paper is that sometimes they were doing the redo first and sometimes they were doing the undo first.
+296.84s - 300.84s : But this thing is going to be super careful and make sure that you do the redo first by the undo.
+301.04s - 308.84s : And then once you finish that last phase, then you say that now the Davis is fully returned back to the correct state and you start running transactions again.
+309.04s - 312.04s : So again, I've said this many times before.
+312.24s - 318.04s : I'm going to go through what Aries does, but the exact implementation from different data systems is going to vary slightly.
+318.24s - 321.84s : But the three phase piece and the CLR stuff we'll talk about in a second.
+322.04s - 324.74s : That's the key the key ideas that everyone should be doing.
+324.94s - 326.64s : To ensure that everything's recoverable.
+326.84s - 328.34s : The paper is beautiful.
+328.54s - 329.44s : It's 70 pages.
+329.64s - 334.14s : It's not an easy read and there's a bunch of things that they're going to cover that we're not going to cover.
+334.34s - 338.64s : Like how do you handle different isolation levels which is actually running at the same time.
+338.84s - 344.54s : We're going to keep our lives simple and assume we're running everything in restrict strong strict 2PL.
+344.74s - 346.04s : So we get serializable transactions.
+346.24s - 350.04s : Alright, so there's three main ideas for Aries.
+350.24s - 356.64s : The first one we've already covered is that we're going to maintain a right-hand log during normal operations where we record all the changes.
+356.84s - 359.14s : That transactions make to objects in our database.
+359.34s - 365.84s : But we're going to have to record them to the log first before we apply the changes to the to the actual objects.
+366.04s - 373.14s : And then we said last class that we have to make sure that the log records that correspond to changes that to two objects.
+373.34s - 379.34s : Those things have to be written to disk before the modified objects of the dirty pages for their allowed to be written to disk.
+379.54s - 385.14s : Right so we can't write the dirty page and then later on write write a log record because we crash come back.
+385.34s - 386.64s : The log record may not made it out.
+386.74s - 393.34s : But now we have a page that made a change and we don't know what changed it or how that changed.
+393.54s - 401.44s : The next idea that we're going to do is that we're going to be repeat our history during the redo phase upon recovery.
+401.64s - 403.64s : So that means that we're going to look at our write ahead log.
+403.84s - 409.24s : Look at all the changes transactions made during the normal operation and we're going to just redo everything.
+409.44s - 412.74s : Even if some of those changes actually made it out the disk.
+412.94s - 416.24s : We're going to be getting super cautious and we're going to say I'm going to make sure you really got this.
+416.34s - 418.14s : And we go ahead and apply those changes.
+420.24s - 426.84s : And then the last piece is that when we start undoing the effects of transaction undoing operations of transactions.
+427.44s - 431.24s : Right because they got aborted or they crashed the crash before the system.
+431.74s - 433.44s : They didn't commit before the system crashed.
+434.34s - 442.54s : We're now actually going to maintain additional write ahead log records that correspond to the reversal operations that we're going to do as part of the undo step.
+443.54s - 446.04s : Basically you got a log record for any time you make a change.
+446.24s - 450.14s : And then if a transaction aborts and rolled back now going to have log records to reverse those changes.
+451.84s - 456.64s : Because I want to know exactly what's happening in my data system on my pages.
+456.84s - 458.34s : And so I want to record everything that I do.
+460.84s - 461.24s : Okay.
+463.14s - 466.64s : So we'll start off talking about the log sequence numbers.
+466.64s - 471.44s : How we're going to start keeping track of the order of these operations that transactions are doing.
+472.04s - 475.24s : And then we'll talk about how we do normal commit and abort during regular runtime.
+475.54s - 476.14s : Then we'll.
+476.74s - 485.14s : Build a or design a better checkpointing algorithm called fuzzy checkpoints where we don't have to block all the transactions while we're running in the system.
+485.74s - 489.94s : And then we'll do our we'll put it all together and finish up with Aries.
+490.84s - 493.44s : And then we had the click house guys giving us a talk with us today.
+494.14s - 498.24s : And so we'll we'll cut her into that at the end and we ran a time.
+498.24s - 499.24s : We're not getting full areas.
+499.24s - 502.14s : We can pick up on that on Monday next week.
+502.34s - 502.84s : Okay.
+503.54s - 505.84s : And again during this discussion today's lecture.
+505.84s - 509.54s : I'm going to be very conservative and very careful about how our recovery schemes can be implemented.
+510.14s - 516.04s : And that means we're going to end up writing much of redundant information, but that's okay because we don't we don't want to lose anything.
+516.64s - 527.44s : And there's some optimization to talk about the end where you can start tweaking some of this to maybe not do everything is so with so much verbosity as as again the textbook or else it the Aries paper describes it.
+528.24s - 528.84s : But keep it simple.
+528.84s - 529.74s : We'll ignore them beginning.
+532.34s - 532.44s : All right.
+532.44s - 533.84s : So the first thing we need to do is extend our right-hand log record.
+533.84s - 534.44s : So the first thing we need to do is extend our right-hand log record.
+534.44s - 535.64s : So the first thing we need to do is extend our right-hand log record.
+535.64s - 535.74s : So the first thing we need to do is extend our right-hand log record.
+535.84s - 536.34s : So the first thing we need to do is extend our right-hand log record.
+536.34s - 536.84s : So the first thing we need to do is extend our right-hand log record.
+536.84s - 537.24s : So the first thing we need to do is extend our right-hand log record.
+537.24s - 538.64s : The log objects records.
+538.64s - 541.44s : We had to talk about last time start including some additional information.
+542.54s - 550.04s : And when I showed the log records before I'm kind of appending him in sequential order and I was only showing like one or two transactions running at a time.
+550.14s - 560.84s : But now if you have maybe hundreds or thousands of transactions running at the same time, you kind of want to know what the true order these operations that are getting applied, especially if they're happening to different pages at the same time.
+561.64s - 565.64s : So now every log records is going to now record and meet and be provided.
+565.64s - 570.24s : A globally unique, monetarily increasing log sequence number.
+570.24s - 579.34s : You can think of this a little bit like the timestamp we talked about with transactions in OCC where every, you know, the transactions are signed these global unique timestamps.
+579.34s - 582.94s : Every log records now can be signed a globally unique log sequence number.
+582.94s - 588.54s : And this is going to represent the physical order in which the changes are applied to pages.
+588.54s - 591.84s : The logical order is the timestamp stuff up above.
+591.84s - 595.44s : So we're still running two-phase locking or OCC or whatever you want up above in the log records.
+595.44s - 596.74s : And the rest of the system.
+596.74s - 603.54s : But now when actually we write log records to disk, this log sequence number is going to correspond to the physical order in which those things actually occur.
+605.14s - 613.74s : And now other parts of the system need to be aware of these log sequence numbers because it's going to determine when they're allowed to do certain things with pages.
+615.54s - 617.14s : So again, we have the log sequence number.
+617.14s - 619.94s : That can increase every time we make a new record.
+620.44s - 625.24s : But now in every page in our database, whether it's an index page or a table page.
+625.24s - 626.14s : Doesn't matter what it is.
+626.14s - 636.54s : It's going to have this page lsn record that's going to keep track of the most recent log record that modified the contents of that page.
+636.54s - 638.84s : Right?
+638.84s - 642.74s : So again, everything in the header, every data page, now we're going to have this page lsn.
+642.74s - 646.24s : And some of them are going to point to log records that are on disk.
+646.24s - 650.24s : Some of them are going to point to log records that are still in memory in our log buffer.
+650.24s - 652.94s : And then now there's a global lsn called the flush record.
+652.94s - 653.94s : And it's going to be a global lsn.
+653.94s - 654.94s : And it's going to be a global lsn.
+654.94s - 655.94s : So the flush lsn.
+655.94s - 663.94s : The data system keeps track of what's the largest log sequence number for a log record that's been flushed to disk.
+663.94s - 664.94s : Right?
+664.94s - 672.94s : So it's basically the dividing point, the demarcation line of where the disk buffer stops and where the in memory buffer continues.
+674.94s - 683.94s : So again, as I said before, now we talked about how we need to make sure that the log record for a, that modified a page and made it dirty.
+683.94s - 684.94s : Now we have to make sure that loom to disk.
+684.94s - 685.94s : Make sure that that gets written to disk before we can write the dirty page to disk.
+685.94s - 686.94s : These lsn's are how we're going to be able to do this now.
+686.94s - 687.94s : So now in your buffer pool manager, in your eviction algorithm, it has to be aware of what's
+687.94s - 688.94s : my flush lsn.
+688.94s - 689.94s : And now as you start examining pages to determine whether they can be evicted or not, you go
+689.94s - 700.94s : look at the page lsn in the header and you see whether it's less than or equal to the
+700.94s - 701.94s : flush lsn.
+701.94s - 704.94s : If it is, then you know that the log record that modified that page last gets rid of the
+704.94s - 705.94s : datahack.
+705.94s - 706.94s : So then we can see how the header looks like after the loss.
+706.94s - 707.94s : You can see that there's the image of the page that we've just copied.
+707.94s - 708.94s : You can see that there's the image of the page that we just copied.
+708.94s - 714.94s : If it is, then you know that the log record that modified that page last is out on disk.
+714.94s - 719.08s : If the page ls is greater than this, then you know there's some log record hanging out in DRAM,
+719.76s - 720.98s : and therefore you can't flush that page.
+722.88s - 728.42s : So now you do a bunch of things like, all right, well, my eviction policy says I really want to flush this page,
+728.86s - 731.96s : but my log record for it is still in memory.
+732.3s - 737.64s : So you could have your buffer pool then decide, oh, go flush the log buffer by doing one of the group fit stuff,
+737.64s - 739.62s : make that happen earlier than it normally would,
+739.78s - 744.6s : and then when that comes back with an acknowledgement, then you can flush out the page and evict it.
+748.34s - 750.84s : So these lsn's are going to show up in a bunch of different places.
+751.3s - 753.54s : We talked about the page lsn and the flush lsn.
+754.12s - 758.5s : Flush lsn hangs out in memory because it's the last lsn of the log record on disk.
+758.98s - 764.36s : Page lsn is the latest lsn that last modified a page.
+765.12s - 767.32s : But every single page we're also going to keep track of.
+767.32s - 767.62s : So we're going to keep track of the log record on disk.
+767.9s - 774.98s : We're going to keep track of the rec lsn, which is going to be the oldest update that modified this page
+774.98s - 777.24s : since that page was last flushed to disk.
+778.86s - 781.78s : And you don't actually have to store this in the page itself.
+782.24s - 784.94s : We're going to have two separate data structures we'll cover in a second
+784.94s - 787.2s : called the dirty page table and the accurate transaction table.
+787.84s - 795.62s : So unlike the page lsn where in the header of the page you put the lsn that modified it last,
+795.88s - 797.58s : the rec lsn just hangs.
+797.62s - 798.9s : It's going to be the last lsn that hangs out in memory.
+798.9s - 801.72s : And it's going to correspond to the lsn that last modified,
+801.72s - 805.6s : first modified the page since it was last flushed and written to disk.
+807.24s - 811.62s : The last lsn for every transaction is keep track of the latest,
+812.06s - 816.34s : the most recent log record for any transaction that's actually running in our system.
+816.9s - 821.78s : So if it aborts, we know how to jump to the last lsn and start working our way backwards, undo its changes.
+822.42s - 827.0s : And then a special one called the master record will be a global lsn that's going to keep track of the last lsn.
+827.0s - 833.06s : That's going to keep track of the beginning point of the last checkpoint that successfully completed in our write-head log.
+833.82s - 837.56s : Remember we said when we take a checkpoint, we have to write a log record since I'm taking a checkpoint.
+838.3s - 842.1s : So the master record will keep track of when that last checkpoint that completed successfully,
+842.56s - 844.42s : when that started, where to go find that in the log.
+848.48s - 848.9s : All right.
+848.94s - 851.36s : So now we go back to our example we had before.
+851.52s - 852.9s : We have now a write-head log.
+852.98s - 853.58s : It hangs out in memory.
+853.9s - 854.46s : We have a buffer hole.
+854.56s - 855.16s : We're bringing in pages.
+855.16s - 855.3s : We're bringing in pages.
+855.88s - 856.98s : And then now we see that.
+856.98s - 860.88s : In our write-head log, we're including these lsn's, right?
+860.94s - 863.8s : This is monotonically increasing by one every time we get a new log record.
+864.64s - 870.76s : And then we have now in our pages, for data pages, we have a page lsn, right?
+870.76s - 873.7s : And they can be different from in memory versus on disk, right?
+873.72s - 876.84s : So whenever it gets written out, then obviously the on disk one gets updated.
+878.18s - 883.94s : Then you have this flush lsn that's just going to correspond to what's the last lsn that made it out to disk.
+884.14s - 886.96s : And that may exist in your buffer pool.
+886.98s - 888.04s : So in memory or not.
+888.28s - 893.74s : So in the log buffer that's in memory, it may still be in there.
+894.02s - 894.9s : But I don't care about that.
+895.0s - 899.18s : I just care about, like, you know, I'm pointing basically the last entry I have on my log on disk.
+900.34s - 901.36s : I have my master record.
+901.5s - 902.74s : That's going to hang out in disk two.
+902.88s - 907.48s : Again, that's just going to point to the starting point of the last checkpoint that I took.
+908.1s - 912.72s : Because I'm going to use that as a way to jump into the log and figure out what was going on at the time at the crash.
+915.64s - 916.8s : So my page lsn.
+916.98s - 918.12s : Points to something that's on disk.
+918.38s - 919.06s : Can I flush it?
+922.76s - 925.04s : Say I need to modify this page.
+925.16s - 926.3s : I want to run it out to disk.
+926.72s - 928.72s : My page lsn points to something on the log.
+928.82s - 929.34s : Can I flush it?
+929.98s - 930.3s : Yes.
+930.68s - 933.14s : Because I know the log record that corresponds to that change made it out to disk.
+934.42s - 934.56s : Right?
+935.24s - 936.46s : So it's safe to flush this.
+937.28s - 940.7s : But now if my page lsn points to something that's still in memory.
+941.48s - 941.84s : Right?
+941.84s - 946.08s : And I know that that lsn is greater than my flush lsn.
+946.08s - 948.08s : Then I know it's not safe to flush this.
+948.08s - 950.08s : Because the log record for it hasn't made it out.
+950.08s - 959.08s : So these lsn's are simple watermarks for us to determine what's on disk, what's in memory for both pages and for log records.
+963.08s - 963.58s : Right.
+963.58s - 965.08s : So I've already said this.
+965.08s - 966.08s : Every log record has an lsn.
+966.08s - 970.08s : And every time we're going to modify a page.
+970.08s - 973.08s : We're going to create the log record.
+973.08s - 975.08s : Get an lsn that corresponds to the change we're making to the page.
+975.08s - 975.58s : Right?
+975.58s - 976.58s : Then now when we go modify the page.
+976.58s - 978.58s : We also go update the page lsn that sits in the header.
+978.58s - 980.58s : And we have the write latch on the page.
+980.58s - 982.58s : So we can go ahead and do that.
+982.58s - 988.58s : Then every single time we flush out the write log in that group commit process.
+988.58s - 990.58s : Or when the log buffer gets full.
+990.58s - 996.58s : Then we update the flush lsn to determine where the end point is for the log on disk.
+1002.58s - 1003.08s : All right.
+1003.08s - 1004.58s : So normalization is done.
+1004.58s - 1008.58s : Normal execution is basically all the stuff that I just talked about.
+1008.58s - 1009.08s : Right?
+1009.08s - 1010.58s : Like transaction makes changes.
+1010.58s - 1018.58s : And we want to record those changes in our write ahead log before we go apply the changes to the pages themselves.
+1018.58s - 1020.58s : So to simplify our discussion today.
+1020.58s - 1026.58s : The assumption we're going to make is that we're going to assume that all our log records fit in a single page.
+1026.58s - 1027.08s : Right?
+1027.08s - 1027.58s : Yes.
+1027.58s - 1030.58s : You can have tuples that are larger than a single page.
+1030.58s - 1032.58s : Like 4 kilobytes, 8 kilobytes.
+1032.58s - 1033.58s : But then obviously what do you do if the log record expands that?
+1033.58s - 1040.58s : You know, you just have a sequence number within the page or segment number.
+1040.58s - 1045.58s : So I would say my log record is too big to fit in a single page.
+1045.58s - 1049.58s : Then I would have sort of the first half log record say I'm segment number 1, 1 of 2.
+1049.58s - 1051.58s : And then the next log record say I'm segment 2 of 2.
+1051.58s - 1053.58s : So you would know you don't have the first one, not the second one.
+1053.58s - 1055.58s : You don't have the full log record.
+1055.58s - 1060.58s : And obviously you don't update anything to say things are sexually flushing until both of those segments make it out.
+1060.58s - 1062.58s : But we can ignore that for now.
+1062.58s - 1066.58s : We assume that all our disk writes are going to be, you know, 4 kilobyte atomic writes.
+1066.58s - 1067.58s : Right?
+1067.58s - 1074.58s : If things are, span multiple pages, you know, just wait for the extra flush to make sure everything's made it out before you tell the outside world you've committed.
+1074.58s - 1079.58s : We're going to assume that the day's system is going to be single version running strong strict 2PL.
+1079.58s - 1083.58s : So that means that we won't worry about weird interleavings of transactions upon replay.
+1083.58s - 1086.58s : And of course we're using right-hand log.
+1086.58s - 1087.58s : We have to use steel no force.
+1087.58s - 1089.58s : We assume we're going to do physical log scheme.
+1089.58s - 1091.58s : Physical log scheme or physiological logging.
+1091.58s - 1094.58s : We're not going to do the logical logging where you just have the SQL query in the log record.
+1094.58s - 1097.58s : We're basically have the diff of the changes we're making to pages.
+1097.58s - 1103.58s : And then I'm not going to talk about how you update the pages for indexes as a part of these changes.
+1103.58s - 1106.58s : It works the same way as you would for regular table pages.
+1106.58s - 1110.58s : But to keep it simple, we're just updating single objects and we'll do physical logging.
+1112.58s - 1113.58s : All right.
+1113.58s - 1119.58s : So when a transaction goes commit, the data system is going to write the commit message to the log buffer in memory.
+1119.58s - 1120.58s : And then...
+1121.58s - 1127.58s : It can then flush that log buffer out the disk either right away or part of the group commit,
+1127.58s - 1129.58s : waiting a little bit to get batched together.
+1129.58s - 1133.58s : And then once we know that the commit is successful,
+1133.58s - 1137.58s : we can tell the outside world that your transaction has successfully committed.
+1137.58s - 1141.58s : But then now we're also going to introduce a new log record called transaction end
+1141.58s - 1144.58s : that we can append to our memory log buffer.
+1144.58s - 1150.58s : And this is being used to represent to the system to keep track of the fact that this transaction has successfully committed.
+1150.58s - 1153.58s : And there's nothing else we ever need to do for it ever again.
+1153.58s - 1158.58s : So in this case here, since the transaction is normally committing,
+1158.58s - 1163.58s : I commit and then I can put the transaction end message once I know that things have successfully flushed.
+1163.58s - 1167.58s : And I don't need to maintain any additional metadata for...
+1167.58s - 1168.58s : about it later on.
+1168.58s - 1170.58s : This will make more sense when we do recovery.
+1170.58s - 1174.58s : And we see in this case why we need this transaction end for when we do aborts.
+1174.58s - 1176.58s : But for commit, it's pretty straightforward.
+1176.58s - 1180.58s : And this transaction end message does not need to be flushed.
+1180.58s - 1182.58s : It's just going to be flushed immediately.
+1182.58s - 1186.58s : We can just put that in the log buffer and then eventually it will get written out and that's fine.
+1186.58s - 1189.58s : There's no problems.
+1189.58s - 1190.58s : So it looks like this.
+1190.58s - 1192.58s : So again we have our transaction begin.
+1192.58s - 1194.58s : That's fine. We put a log buffer there.
+1194.58s - 1196.58s : Then this transaction does a bunch of updates.
+1196.58s - 1198.58s : We update the...
+1198.58s - 1201.58s : We go ahead and create the log records.
+1201.58s - 1202.58s : We update the pages in the memory.
+1202.58s - 1205.58s : Then upon commit, we've got to make sure we flush this out the disk.
+1205.58s - 1206.58s : That's fine.
+1206.58s - 1208.58s : Once that's been updated,
+1208.58s - 1210.58s : we can update the flush LSN to now 0.1.
+1210.58s - 1213.58s : And then we can point to this latest log record here.
+1213.58s - 1216.58s : We can tell the outside world that our transaction has committed.
+1216.58s - 1218.58s : That's all fine.
+1218.58s - 1220.58s : And then at some later point, soon after this,
+1220.58s - 1223.58s : we'll say, alright, we don't need this transaction anymore.
+1223.58s - 1225.58s : We'll put a transaction end message in it.
+1225.58s - 1226.58s : In the log.
+1226.58s - 1230.58s : And then that will eventually get written out.
+1230.58s - 1233.58s : One additional optimization you can do, you can say, well I keep track of my flushed LSN.
+1233.58s - 1237.58s : So I know that at some point I don't need to keep this log buffer around.
+1237.58s - 1240.58s : So again, I can just do the swapping mechanism.
+1240.58s - 1242.58s : If I have two buffers or three buffers.
+1242.58s - 1244.58s : Essentially I'm just trimming out what I have in memory
+1244.58s - 1246.58s : because I know I don't need to access these logs anymore.
+1246.58s - 1248.58s : Okay?
+1248.58s - 1252.58s : Alright, so this is pretty straightforward.
+1252.58s - 1254.58s : The aborts one is where we add additional things.
+1254.58s - 1257.58s : So now, when a transaction aborts,
+1257.58s - 1261.58s : it's basically going to be an undo operation.
+1261.58s - 1263.58s : During normal execution, when we abort,
+1263.58s - 1266.58s : it's going to basically be doing the same steps that we would do during recovery.
+1266.58s - 1270.58s : Because now we're just doing this part of the regular execution process.
+1270.58s - 1275.58s : So we need to add one additional field to our log records called the previous LSM.
+1275.58s - 1277.58s : And we don't need this for correctness reasons.
+1277.58s - 1280.58s : We're going to need this for performance reasons.
+1280.58s - 1283.58s : It's going to allow us to basically maintain a linked list
+1283.58s - 1286.58s : of the log records that correspond to a single transaction.
+1286.58s - 1289.58s : So I can jump to the last log record for a transaction
+1289.58s - 1295.58s : and then follow this previous LSM to jump to the different log records for that transaction.
+1295.58s - 1298.58s : Right? And it corresponds to the order.
+1298.58s - 1300.58s : Again, for PowerPoint, I'm only showing like one or two transactions.
+1300.58s - 1302.58s : I'm only showing transactions at a time.
+1302.58s - 1304.58s : Think of like a thousand transactions a second.
+1304.58s - 1309.58s : I want to quickly even navigate and get all the log records I need for a transaction.
+1309.58s - 1314.58s : Another thing to point out too is that the...
+1314.58s - 1316.58s : While we're doing this, while transactions are running,
+1316.58s - 1318.58s : and then we end up aborting and need to roll them back,
+1318.58s - 1322.58s : we're still technically doing all the concurrent usual stuff we talked about before.
+1322.58s - 1328.58s : So if I'm doing 2PL, I don't lease the locks as soon as the transaction tells me I abort.
+1328.58s - 1331.58s : I still need to go modify the records I've already modified
+1331.58s - 1333.58s : when I thought I was still going to commit.
+1333.58s - 1336.58s : So I hold the locks and all those things I'm going to reverse back on.
+1336.58s - 1340.58s : And only when I go ahead and actually finish the rollback,
+1340.58s - 1344.58s : finish the undo process, then I go ahead and release the locks.
+1344.58s - 1348.58s : This ensures that like someone else doesn't write to something
+1348.58s - 1351.58s : and I try to roll back my change, I had to put it back to the value it was
+1351.58s - 1355.58s : before I started running, and I end up blowing away, you know,
+1355.58s - 1356.58s : that other transaction's write.
+1356.58s - 1358.58s : All the same stuff we talked about before.
+1358.58s - 1361.58s : With 2PL.
+1361.58s - 1362.58s : All right, so coming back here now.
+1362.58s - 1364.58s : Now we have again, in our head of our log records,
+1364.58s - 1367.58s : we have the LSN that's always going up in time.
+1367.58s - 1370.58s : And the previous LSN just corresponds to the previous one.
+1370.58s - 1373.58s : In the case of the top one, we're beginning transaction 4,
+1373.58s - 1376.58s : there isn't a previous LSN for the begin message.
+1376.58s - 1380.58s : So it's just null or nil.
+1380.58s - 1383.58s : So transaction is run, makes these changes.
+1383.58s - 1384.58s : Then it goes ahead and gets an abort.
+1384.58s - 1388.58s : And again, this could occur because the application said abort this transaction.
+1388.58s - 1391.58s : Or a concurrential protocol said abort this transaction.
+1391.58s - 1393.58s : We don't know. We don't care.
+1393.58s - 1396.58s : And now the question is, what do we do in this middle step here
+1396.58s - 1399.58s : before we can put that transaction end message for T4?
+1399.58s - 1404.58s : What do we need to do to roll back those changes?
+1404.58s - 1406.58s : What's that?
+1406.58s - 1409.58s : Following class, but like, and do what?
+1415.58s - 1417.58s : I heard somebody said it, yes.
+1418.58s - 1420.58s : Process the undo.
+1420.58s - 1421.58s : Process the undo, yes.
+1421.58s - 1423.58s : But we're talking about the logging here.
+1423.58s - 1425.58s : We've got to record what we do.
+1425.58s - 1428.58s : So undo gives me the same thing as normal operation.
+1428.58s - 1432.58s : We want to record what we're undoing.
+1432.58s - 1436.58s : So that if we crash when we try to undo this,
+1436.58s - 1441.58s : we know what we undid and we can make sure we can still undo it.
+1441.58s - 1446.58s : And so we're going to introduce a new log record type called compensation log records, or CLRs.
+1446.58s - 1448.58s : And it's basically, it's the same thing as the other one.
+1448.58s - 1449.58s : It's the update operation.
+1449.58s - 1454.58s : We do normal execution, but it's just the reversal of it.
+1454.58s - 1458.58s : We're just taking the before and after value and just swapping it over.
+1458.58s - 1463.58s : And then when we do this for normal execution,
+1463.58s - 1465.58s : when we're undoing transactions,
+1465.58s - 1470.58s : we don't have to wait until these CLRs that reverse the changes,
+1470.58s - 1474.58s : they don't need to be flushed to disk immediately when the transaction,
+1474.58s - 1476.58s : when we complete the undo process.
+1476.58s - 1478.58s : Because actually, as soon as the transaction says,
+1478.58s - 1482.58s : it gets aborted, like either because they say abort or we tell it's going to abort,
+1482.58s - 1484.58s : we immediately come back to the application and say,
+1484.58s - 1486.58s : your transaction has been aborted.
+1486.58s - 1489.58s : We don't need to wait to flush anything.
+1489.58s - 1493.58s : Because we're not making any guarantees other than make sure that we reverse all these changes,
+1493.58s - 1495.58s : which we'll do.
+1500.58s - 1501.58s : Questions.
+1501.58s - 1503.58s : If the machine crashes before the rollback completes, what do we do?
+1503.58s - 1504.58s : Rollback.
+1504.58s - 1506.58s : We'll get there in a second.
+1506.58s - 1507.58s : That's the last step of ARIES.
+1508.58s - 1511.58s : We're running out of space in PowerPoint,
+1511.58s - 1513.58s : so now I'm going to put this in tabular form.
+1513.58s - 1517.58s : So now we have, think of like every row in this table corresponds to a log record.
+1517.58s - 1522.58s : We have an LSN, a previous LSN, transaction ID of the transaction making the change,
+1522.58s - 1526.58s : the log record type, what objects are modifying the before and after value,
+1526.58s - 1530.58s : and this undo next LSN thing if we need to roll things back.
+1530.58s - 1533.58s : So this is the same setup we had before.
+1533.58s - 1534.58s : T1 made some changes.
+1534.58s - 1535.58s : Now it aborts.
+1535.58s - 1537.58s : So as soon as we get the abort,
+1537.58s - 1539.58s : as soon as we get the abort message,
+1539.58s - 1542.58s : we tell the outside world the transaction is finished, it's aborted.
+1542.58s - 1544.58s : But then now we got to start undoing the changes.
+1544.58s - 1547.58s : So this is why having the previous LSN for transactions makes this easier
+1547.58s - 1549.58s : because I see the abort message.
+1549.58s - 1552.58s : I know the previous LSN for this transaction was 003,
+1552.58s - 1556.58s : so I can quickly jump up to find that log record and roll it back.
+1556.58s - 1560.58s : So I see the update message at LSN 3.
+1560.58s - 1565.58s : So I'm going to create a CLR for this that says I'm going to reverse the change
+1565.58s - 1567.58s : that happened up above in this previous LSN.
+1567.58s - 1571.58s : So I'm going to have the same object that I modified,
+1571.58s - 1574.58s : but then I have now basically the reverse of the before and after value,
+1574.58s - 1577.58s : so I can swap it back to what it should have been
+1577.58s - 1579.58s : before the transaction made any changes.
+1579.58s - 1584.58s : And then my undo next LSN, again, it's just a helper to say,
+1584.58s - 1589.58s : here's the next LSN that you need to roll back after this one,
+1589.58s - 1591.58s : so then jump up there.
+1591.58s - 1595.58s : And then I'll do the same thing, create another CLR for it
+1595.58s - 1597.58s : that's going to modify it.
+1597.58s - 1603.58s : It corresponds to this change here, and I'm just reversing the values back.
+1603.58s - 1605.58s : Then I get the undo next LSN.
+1605.58s - 1608.58s : I see that it's the begin message, and at this point I know I'm done.
+1608.58s - 1611.58s : I reversed all the changes I needed for this transaction,
+1611.58s - 1614.58s : so now this is where I put the transaction end message
+1614.58s - 1617.58s : for this aborted transaction.
+1617.58s - 1620.58s : So for committed transactions, there's nothing in between commit and end.
+1620.58s - 1624.58s : In aborted transactions, it's all the CLRs making sure that you reverse
+1624.58s - 1626.58s : all the changes that it made during normal operations.
+1626.58s - 1628.58s : Before it aborted. Yes?
+1628.58s - 1634.58s : .
+1634.58s - 1636.58s : The question is, for committed transactions,
+1636.58s - 1639.58s : can I immediately write the transaction end after the commit?
+1639.58s - 1642.58s : Yes.
+1642.58s - 1644.58s : During normal operation, yes.
+1644.58s - 1646.58s : Recovery, you may be sticking around.
+1646.58s - 1647.58s : We'll see it in a second.
+1647.58s - 1649.58s : It has to stick around maybe a little longer.
+1649.58s - 1654.58s : Any other questions?
+1656.58s - 1658.58s : All right, good. So far, so good.
+1658.58s - 1660.58s : So far, this is pretty straightforward.
+1660.58s - 1663.58s : The abort algorithm is basically, as I said before,
+1663.58s - 1665.58s : we first write the abort message in the write-ahead log.
+1665.58s - 1668.58s : We can tell the outside world that the transaction has been aborted at that point.
+1668.58s - 1672.58s : Then we're going to analyze the transaction's operations,
+1672.58s - 1675.58s : updates it made in reverse order,
+1675.58s - 1679.58s : and apply the reversal and then going back in time.
+1679.58s - 1684.58s : So take the latest log record that they established to do an update,
+1684.58s - 1686.58s : reverse that, and then do the next one.
+1686.58s - 1688.58s : Until I hit begin and then I know I'm done,
+1688.58s - 1690.58s : I'm going to write the transaction end message.
+1690.58s - 1693.58s : At that point, I can release all the locks for my transaction
+1693.58s - 1695.58s : because I've updated all the records that I wanted to update,
+1695.58s - 1698.58s : and then I'm done.
+1698.58s - 1700.58s : Again, a simple optimization you could do in this case here.
+1704.58s - 1706.58s : This is an example where in two-phase locking,
+1706.58s - 1708.58s : you could start releasing the locks early.
+1708.58s - 1712.58s : If you know that you're never going to update the same object again multiple times
+1712.58s - 1714.58s : during undue changes, during the undue process,
+1714.58s - 1716.58s : you can release the lock for that object at the next step.
+1716.58s - 1719.58s : The moment you get, as you apply the update.
+1719.58s - 1722.58s : But you have to, if you scan all the right-hand log
+1722.58s - 1724.58s : and know all the objects you're going to modify ahead of time,
+1724.58s - 1725.58s : you can do that.
+1725.58s - 1726.58s : If you don't do that, then you can't
+1726.58s - 1730.58s : because you don't know whether you have to do multiple undues.
+1732.58s - 1736.58s : The other thing to point out too is we're never going to undo a CLR.
+1736.58s - 1738.58s : We're never going to undo an undo.
+1738.58s - 1740.58s : It doesn't make any sense
+1740.58s - 1743.58s : because we're trying to undo something that happened during no execution.
+1743.58s - 1746.58s : So we don't need to make CLRs for our CLRs.
+1746.58s - 1750.58s : When we do recovery, once it's there,
+1750.58s - 1754.58s : we know that we can always reapply it over and over again.
+1758.58s - 1759.58s : Seria?
+1761.58s - 1765.58s : Question, why do we need the before and after value for the CLRs?
+1765.58s - 1768.58s : Again, we're being over-pedantic here.
+1768.58s - 1775.58s : You could say, I know I need to reverse this change here,
+1776.58s - 1780.58s : go look at it and say it was 30, 40.
+1780.58s - 1782.58s : I don't need to record that it was 40, 30.
+1782.58s - 1785.58s : But again, we're being overly verbose.
+1793.58s - 1797.58s : All right, so he's basically saying, can I start caching things?
+1797.58s - 1801.58s : Let's not do any, let's make sure it's correct first.
+1801.58s - 1803.58s : In databases, you want to make sure it's correct first,
+1803.58s - 1804.58s : then you make it faster.
+1804.58s - 1806.58s : But yes, you could start doing that.
+1806.58s - 1807.58s : You could start doing things like that.
+1807.58s - 1808.58s : Yes?
+1808.58s - 1809.58s : .
+1809.58s - 1810.58s : .
+1810.58s - 1811.58s : .
+1811.58s - 1812.58s : .
+1812.58s - 1813.58s : .
+1813.58s - 1814.58s : .
+1814.58s - 1815.58s : .
+1815.58s - 1816.58s : .
+1816.58s - 1817.58s : .
+1817.58s - 1818.58s : .
+1818.58s - 1819.58s : .
+1819.58s - 1820.58s : .
+1820.58s - 1821.58s : .
+1821.58s - 1822.58s : .
+1822.58s - 1823.58s : .
+1823.58s - 1824.58s : .
+1824.58s - 1825.58s : .
+1825.58s - 1826.58s : .
+1826.58s - 1827.58s : .
+1827.58s - 1828.58s : .
+1828.58s - 1829.58s : .
+1829.58s - 1830.58s : .
+1830.58s - 1831.58s : .
+1831.58s - 1832.58s : .
+1832.58s - 1833.58s : .
+1833.58s - 1834.58s : .
+1834.58s - 1835.58s : .
+1835.58s - 1837.58s : .
+1837.58s - 1838.58s : .
+1838.58s - 1839.58s : .
+1839.58s - 1840.58s : .
+1840.58s - 1841.58s : .
+1841.58s - 1842.58s : .
+1842.58s - 1846.58s : .
+1846.58s - 1847.58s : .
+1847.58s - 1849.58s : .
+1849.58s - 1853.58s : .
+1853.58s - 1854.58s : .
+1854.58s - 1855.54s : .
+1855.54s - 1856.58s : .
+1856.58s - 1857.58s : .
+1857.58s - 1859.58s : .
+1859.58s - 1860.58s : .
+1860.58s - 1864.58s : .
+1864.58s - 1868.58s : out the disk yet. Sometimes we can, sometimes we don't.
+1868.58s - 1872.58s : Yeah, but are you supposed to be able to look at the previous collection
+1872.58s - 1876.58s : and say, hey, in any case, is it true that we need to be able
+1876.58s - 1880.58s : to look at what we put in A yesterday and re-print it up?
+1880.58s - 1884.58s : The statement is, isn't it true that I need to be able
+1884.58s - 1888.58s : to look at a log record from yesterday and know what
+1888.58s - 1892.58s : went into it so I can then reverse it?
+1892.58s - 1896.58s : Yes, but to do that correctly, I've got to reverse all the changes.
+1896.58s - 1900.58s : The checkpoints are basically trying to freeze the state of the buffer pool,
+1900.58s - 1904.58s : write all these dirty pages, but the problem is the way I'm going to do checkpoints
+1904.58s - 1908.58s : is that I'm not going to stop everybody from updating things while I'm doing it.
+1908.58s - 1912.58s : So I could be in this weird state where some dirty page
+1912.58s - 1916.58s : has been written to disk and some pages haven't been, and I've been modifying
+1916.58s - 1920.58s : things while the checkpoint is occurring. So I don't know what exactly the state
+1920.58s - 1922.58s : of the world is at the moment I got to do it.
+1922.58s - 1926.58s : I've got a checkpoint, so all these undo's and these CLRs and the regular records
+1926.58s - 1930.58s : allows me to reverse things back to the correct state.
+1930.58s - 1934.58s : Are there some optimizations you could do? Yes.
+1934.58s - 1938.58s : But again, for recovery stuff, you want to be super, super careful.
+1938.58s - 1942.58s : So this is, I said at the beginning,
+1942.58s - 1946.58s : this is overly verbose. Let's start with this.
+1946.58s - 1950.58s : Postgres is even more verbose than this. Postgres,
+1950.58s - 1954.58s : after you take a checkpoint,
+1954.58s - 1958.58s : the first time a transaction modifies a page, they write
+1958.58s - 1962.58s : the whole page out to the write-ahead log, then write the log record
+1962.58s - 1966.58s : that modified that page. Because again, you want to be super careful
+1966.58s - 1970.58s : that if things get corrupted, you always come back and get back to the correct state.
+1970.58s - 1974.58s : So we're getting extra redundancy through these CLRs, but it's also going to make sure that if we
+1974.58s - 1978.58s : crash during recovery, we know what we actually modified.
+1978.58s - 1980.58s : So like,
+1980.58s - 1984.58s : you two guys, every year, people are always like, why are we doing this? It seems so wasteful.
+1984.58s - 1988.58s : You're correct, but to be super careful, we're going to do all of this.
+1988.58s - 1992.58s : And there's optimizations you obviously can do afterwards.
+1992.58s - 1996.58s : Okay.
+1996.58s - 2000.58s : Alright, so I think we've recovered all this. So at this point, now we can get to
+2000.58s - 2004.58s : start to understand why we have all these CLRs and additional things.
+2004.58s - 2008.58s : Now we're talking about how we're going to do fuzzy checkpoints.
+2008.58s - 2010.58s : Again, as a reminder,
+2010.58s - 2014.58s : the reason why we need to do checkpoints is that the log's going to grow forever, assuming you have
+2014.58s - 2018.58s : transactions running all the time. And when I crash and come back, I don't want to have to
+2018.58s - 2022.58s : replay five years worth of log to put my database back in the correct
+2022.58s - 2026.58s : state. I want to be able to go back to a certain
+2026.58s - 2030.58s : go back a little bit in my write-ahead log and use that as the starting point
+2030.58s - 2034.58s : for me to say, let me reconstruct the state of the database at that point in time, rather than
+2034.58s - 2038.58s : the beginning of time. So this is going to be a mechanism that's going to allow us to
+2038.58s - 2042.58s : speed up the recovery time.
+2042.58s - 2046.58s : So the
+2046.58s - 2050.58s : last class we talked about a simple protocol where we basically
+2050.58s - 2054.58s : stop the world when we want to take a checkpoint. Like stop queries
+2054.58s - 2058.58s : from running, queries from modifying things, stop any new queries from starting any new transactions.
+2058.58s - 2062.58s : Wait until all any extra transactions that are still running could finish
+2062.58s - 2066.58s : execution, which could take days or hours.
+2066.58s - 2068.58s : That sucks. But then once we know there's no
+2068.58s - 2072.58s : active transactions, then we take whatever's in our buffer pool,
+2072.58s - 2076.58s : write that out the disk, and we know that's been flushed, and then we add a
+2076.58s - 2080.58s : checkpoint entry into our log. So now if we crash and come back,
+2080.58s - 2084.58s : we go look at that checkpoint record, and we know that all, there's
+2084.58s - 2088.58s : no in-flight transactions at that moment at the checkpoint, and the database is a consistent
+2088.58s - 2092.58s : snapshot. Right? So it makes
+2092.58s - 2096.58s : recovery super easy because again, I don't have to look at the log and look for transactions that might have been running
+2096.58s - 2098.58s : when I took the checkpoint. I waited until they all finished.
+2098.58s - 2102.58s : And then I don't have any weird to-unwrite situations.
+2102.58s - 2106.58s : So recovery is easy, but obviously this is super slow because you have to pause everything while you take a checkpoint.
+2108.58s - 2112.58s : So a slightly better one is not wait for transactions to finish,
+2112.58s - 2116.58s : but you just pause them from executing whatever they were executing.
+2116.58s - 2120.58s : Right? And then you write out your dirty pages, and then once that's done,
+2120.58s - 2124.58s : then you can allow transactions to start running again. But this has problems too.
+2124.58s - 2126.58s : So say I have three pages in my database, I have my buffer pool,
+2126.58s - 2130.58s : I have one worker thread that wants to do checkpoints,
+2130.58s - 2134.58s : one worker thread that's running transactions. So say the transaction is going to modify two pages.
+2134.58s - 2138.58s : It's going to modify page one and three. So it first modifies page three.
+2138.58s - 2142.58s : Then the checkpoint starts. And the checkpoint's going to pause
+2142.58s - 2146.58s : any transaction that's running from running anything else.
+2146.58s - 2150.58s : Right? It could be either in-flight query or just preventing it from running
+2150.58s - 2154.58s : another query. Then now the checkpoint's going to basically do a sequential scan
+2154.58s - 2158.58s : of all my pages in my buffer pool and write those out to disk.
+2158.58s - 2162.58s : Right? So I have page one, page two, and then the modified page three that the transaction modified.
+2162.58s - 2166.58s : Then the checkpoint completes. The transaction wakes up again, and now it modifies
+2166.58s - 2170.58s : page one. But
+2170.58s - 2174.58s : I don't have a consistent snapshot of those pages in my buffer pool.
+2174.58s - 2178.58s : I'll have half the changes that transaction one made.
+2180.58s - 2184.58s : So I still have to go look around more in the write log to figure out
+2184.58s - 2188.58s : what was this transaction doing at the time I was taking the checkpoint so I make sure that I got
+2188.58s - 2192.58s : I can try to reconstruct the database and make sure I get that page one in there.
+2192.58s - 2196.58s : Because this transaction may later commit, and we tell the outside world the transaction's committed,
+2196.58s - 2200.58s : but I'm missing its update in the page.
+2202.58s - 2206.58s : So what we're going to start doing now, now we're going to add additional metadata
+2206.58s - 2210.58s : to our write-ahead log to keep track of when we take the
+2210.58s - 2214.58s : checkpoints, when the checkpoint's going to start, and when it's going to finish.
+2214.58s - 2218.58s : And then we're going to record what were the transactions that were running at the moment
+2218.58s - 2222.58s : that the checkpoint started, and what pages were dirty in our
+2222.58s - 2226.58s : buffer pool at the moment the checkpoint started.
+2226.58s - 2230.58s : So that's at least going to give us more idea about what's going on
+2230.58s - 2234.58s : in the state of the system at the moment that we at least started taking checkpoints.
+2234.58s - 2238.58s : We'll know whether these changes actually made it out the disk or not.
+2238.58s - 2242.58s : So the ATT or the Actors Transaction Table is pretty straightforward.
+2242.58s - 2246.58s : Every transaction that exists will have a transaction ID. It's similar to the Actors Transaction
+2246.58s - 2250.58s : Table we talked about when we tried to do OCC or MVCC. We need to keep track of
+2250.58s - 2254.58s : what transactions are running at the same time. So it's basically the same table.
+2254.58s - 2258.58s : Then we'll have the status of the transactions mode,
+2258.58s - 2262.58s : what phase it's in. It can either be running, because it's still actively going on.
+2262.58s - 2266.58s : It's in committing process.
+2266.58s - 2270.58s : And then candidate for undo means that we think we're going to have to undo this.
+2270.58s - 2274.58s : It may change later on that it turns out this transaction does commit, and we can change its status.
+2274.58s - 2278.58s : But when we do recovery, we're going to assume everyone's going to get rolled back until we learn otherwise.
+2278.58s - 2282.58s : So we can remove a transaction
+2282.58s - 2286.58s : from the ATT once we see its transaction end message,
+2286.58s - 2290.58s : either because it got committed or boarded and rolled back, because at that point we know
+2290.58s - 2294.58s : that there isn't going to be any more changes coming from this transaction, and we don't need to maintain
+2294.58s - 2298.58s : additional state for it.
+2298.58s - 2302.58s : So when we do this recovery process, we're going to look at the
+2302.58s - 2306.58s : active transaction table and say, well these transactions
+2306.58s - 2310.58s : are running at the time I took the checkpoint, but I don't know yet whether they're going to commit or not,
+2310.58s - 2314.58s : so I'm going to assume everyone's going to abort. And then later on as I scan the log, I might find the commit message
+2314.58s - 2318.58s : and I go ahead and change its status.
+2318.58s - 2322.58s : The dirty page table is going to be another separate data structure where we're going to record
+2322.58s - 2326.58s : all the pages that were in our buffer pool that were marked dirty,
+2326.58s - 2330.58s : that were not flush to disk yet, at the moment that the checkpoint
+2330.58s - 2334.58s : started. And this is where we're going to record
+2334.58s - 2338.58s : the REC-LSN to say, here's the newest log record,
+2338.58s - 2342.58s : sorry, here's the oldest log record that modified this
+2342.58s - 2346.58s : page and made it dirty since the last time that page was written out to disk.
+2346.58s - 2350.58s : So page LSN is the newest log record that modified the page,
+2350.58s - 2354.58s : and REC-LSN is the oldest log record since the page was brought into memory.
+2354.58s - 2356.58s : Or the best record
+2356.58s - 2360.58s : since it was last written to disk.
+2360.58s - 2364.58s : So this dirty page table is going to keep track of all the pages that are in our buffer pool at the moment the checkpoint started
+2364.58s - 2368.58s : that are dirty.
+2368.58s - 2372.58s : So now, in this case here, we have our checkpoint start,
+2372.58s - 2376.58s : and in this case here, we have the, when our checkpoint starts,
+2376.58s - 2380.58s : we keep track of the ATT, so we know that there's a transaction T2
+2380.58s - 2384.58s : that's still running. T1 got transaction N before the
+2384.58s - 2386.58s : checkpoint started, so it's not in our
+2386.58s - 2390.58s : transaction table. And then there's this, there's a log record up above
+2390.58s - 2394.58s : that corresponds to a modification on page 22 from transaction T2
+2394.58s - 2398.58s : and that was, that's hanging out in our buffer pool that's still dirty.
+2398.58s - 2402.58s : Then later on we take another checkpoint,
+2402.58s - 2406.58s : right, and now we have transaction T2 and T3, right,
+2406.58s - 2410.58s : because T2 committed before our checkpoint started, but we haven't seen a transaction
+2410.58s - 2414.58s : N message yet, so it's still technically alive.
+2414.58s - 2418.58s : And then T3 started after the last checkpoint, so that goes in our
+2418.58s - 2422.58s : action transaction table. And then we have in our dirty page table, we have the two modifications here
+2422.58s - 2426.58s : from the, you know, from T2 and T3.
+2426.58s - 2430.58s : The question is, why
+2430.58s - 2434.58s : isn't P11 in the DPT? It got written at the disk.
+2434.58s - 2438.58s : Right, there's no log record that said a page got written at the disk, the only information we have is whether
+2438.58s - 2442.58s : it shows up in the dirty page table.
+2442.58s - 2446.58s : So, this is better, because now
+2446.58s - 2450.58s : we at least have some additional metadata about what's going on in our system
+2450.58s - 2454.58s : at the moment of the crash, but we're still taking blocking checkpoints.
+2454.58s - 2458.58s : So every time, you know, every time I'm taking a checkpoint here and the two log records here, I'm stopping
+2458.58s - 2462.58s : all the transactions running, take a checkpoint, and
+2462.58s - 2466.58s : at least now I know that if a transaction modified
+2466.58s - 2470.58s : a pages, I would at least keep track of like, was it dirty before
+2470.58s - 2474.58s : or after I took the checkpoint, yes or no. But I'm still blocking all my transactions.
+2478.58s - 2482.58s : So, what everyone does instead is what we call fuzzy checkpoints, and this is now where
+2482.58s - 2486.58s : it's fuzzy because it's allowed to
+2486.58s - 2490.58s : write out pages that, you want to write out
+2490.58s - 2494.58s : all the pages that were dirty since the moment the checkpoint starts, but
+2494.58s - 2498.58s : those dirty pages might contain changes that, from log records
+2498.58s - 2502.58s : that came in after the checkpoint started, and there may be changes
+2502.58s - 2506.58s : that occurred to pages that I don't write out in my checkpoint, because they were modified
+2506.58s - 2510.58s : after the checkpoint started as well, but I just, I missed it.
+2510.58s - 2514.58s : Right, but the dbt and att are just going to give me enough metadata to go look
+2514.58s - 2518.58s : in the log around, snoop around and figure out what was actually going on, to figure out
+2518.58s - 2522.58s : you know, find out the things that I may have missed.
+2522.58s - 2526.58s : So now, instead of just having a single checkpoint, you know, record in my log
+2526.58s - 2530.58s : that says here's where the checkpoint started, and I block everyone, now I'm going to have a begin and
+2530.58s - 2534.58s : end, and that's going to correspond to the point in time, right,
+2534.58s - 2538.58s : denoted by the log sequence numbers, because that's basically representing physical time,
+2538.58s - 2542.58s : of when the checkpoint was occurring, and I'm going to record
+2542.58s - 2546.58s : the, what the dbt and att were at the moment
+2546.58s - 2550.58s : the checkpoint started, but I end up writing it out to the commit end message,
+2550.58s - 2554.58s : let's try checkpoint end message, as a way to simplify things.
+2554.58s - 2556.58s : So I can find things like that.
+2556.58s - 2560.58s : I can find things more easily later on.
+2560.58s - 2564.58s : So, in this case here, assume now we're going to, that transaction
+2564.58s - 2568.58s : Davis is going to flush page P11, before the checkpoint starts
+2568.58s - 2572.58s : here, right, so then now
+2572.58s - 2576.58s : when the checkpoint finishes, I'll have the att from when I started
+2576.58s - 2580.58s : so transaction T2 was running when the checkpoint started at 007
+2580.58s - 2584.58s : T1 got a transaction end at 006, so it's not
+2584.58s - 2588.58s : in the actual transaction table, and then there's my dirty page table
+2588.58s - 2592.58s : that, it's beginning up there, my dirty page table corresponds to this update here
+2592.58s - 2596.58s : that occurred, that was dirty before I took the checkpoint,
+2596.58s - 2600.58s : and then I may have written it out with that change,
+2600.58s - 2604.58s : or may have a change from another transaction that made a change before the checkpoint ended,
+2604.58s - 2608.58s : or I made it written out and then someone updated it,
+2608.58s - 2612.58s : and that update is still in memory 2. So there's sort of three states
+2612.58s - 2614.58s : that a page could be in.
+2614.58s - 2618.58s : And then now once the
+2618.58s - 2622.58s : checkpoint completes, and I flush the checkpoint end message,
+2622.58s - 2626.58s : I then update the master record for the database and say here's the
+2626.58s - 2630.58s : LSN of the last checkpoint that I took. So in the case here
+2630.58s - 2634.58s : 010, when I complete that checkpoint, I write my master
+2634.58s - 2638.58s : record 007, because that's the checkpoint beginning up above. Then when this checkpoint ends
+2638.58s - 2642.58s : down here, 015, I write my master record that the checkpoint started
+2642.58s - 2646.58s : at, last successful checkpoint was 013. And then when I crash and come back
+2646.58s - 2650.58s : and want to see it in a second, we're going to use that to jump to this
+2650.58s - 2654.58s : checkpoint begin.
+2654.58s - 2658.58s : Alright, so now Ares,
+2658.58s - 2662.58s : with our fuzzy checkpoints and these CLRs and the log records,
+2662.58s - 2666.58s : we now do recovery. So it's going to be
+2666.58s - 2670.58s : three phases. The first phase, we're going to analyze
+2670.58s - 2674.58s : the RedHead log, starting at where the master record points do, so the
+2674.58s - 2678.58s : beginning of the last successful checkpoint, and we're going to scan forward in time to the
+2678.58s - 2682.58s : end of the log on disk, and look at all the log records
+2682.58s - 2686.58s : we see and try to figure out what transactions are going to survive,
+2686.58s - 2690.58s : what transactions need to get rolled back, and what pages may
+2690.58s - 2694.58s : or may not have been written to disk during this process.
+2694.58s - 2698.58s : Then after the analysis phase, then we do redo,
+2698.58s - 2700.58s : we're now going to jump back to another point in the log,
+2700.58s - 2704.58s : where we determine, here's the starting point of an active transaction,
+2704.58s - 2708.58s : or transaction that was active when a checkpoint started, and we're going to scan
+2708.58s - 2712.58s : through and make sure we redo all its changes. And then now
+2712.58s - 2716.58s : we go back and undo all the changes to transactions that should have not
+2716.58s - 2720.58s : survived after the crash, and go ahead and reverse them.
+2720.58s - 2724.58s : So we're essentially taking three passes over the log,
+2724.58s - 2728.58s : but in every pass, we may be jumping farther and farther back in the log based on the
+2728.58s - 2730.58s : information we collect during the
+2730.58s - 2734.58s : analysis and redo process.
+2734.58s - 2738.58s : And the way to look at it visually, again, we say this is a write-in log,
+2738.58s - 2742.58s : and we crash here down below. So when I come back in the analysis phase,
+2742.58s - 2746.58s : I'm going to use the master record to figure out what's the starting point of the last checkpoint, and so I'll
+2746.58s - 2750.58s : scan from that point down and look at what all the transactions are doing
+2750.58s - 2754.58s : after that checkpoint started.
+2754.58s - 2758.58s : Then now, based on my ATT, I can determine, here's the transactions that
+2758.58s - 2762.58s : I know about in my log, and I need to
+2762.58s - 2766.58s : make sure I redo all their changes. Even if they're going to get
+2766.58s - 2770.58s : aborted later on, I'm still going to redo them. So in this case
+2770.58s - 2774.58s : here, I go look at my log in the redo phase, I find
+2774.58s - 2778.58s : the smallest Rec. LSN in my dirty page table after analysis. So this is going to be
+2778.58s - 2782.58s : what's the earliest
+2782.58s - 2786.58s : LSN that corresponds to a log record that modified a page
+2786.58s - 2788.58s : that was not
+2788.58s - 2792.58s : that was dirty before I started my checkpoint.
+2792.58s - 2796.58s : I'm going to go back and make sure I reapply all these changes from here down below.
+2796.58s - 2800.58s : And then now, in the analysis phase, I'm going to jump
+2800.58s - 2804.58s : to the oldest log record of any active transaction
+2804.58s - 2808.58s : that was still alive at the moment that I crashed,
+2808.58s - 2812.58s : jump back to that point in time, and then scan through
+2812.58s - 2816.58s : and undo all those transactions that should be aborted and rolled back.
+2818.58s - 2822.58s : And during this redo process, we end up
+2822.58s - 2826.58s : reapplying
+2826.58s - 2830.58s : the CLR records to make sure we will reverse
+2830.58s - 2834.58s : things, but that's okay because that's going to put us back to the correct state we want to be in.
+2838.58s - 2842.58s : So now it's this phase, as I've already said, you can scan
+2842.58s - 2846.58s : for it from the beginning of the last successor checkpoint to the end of the log. You're basically reconstructing the
+2846.58s - 2850.58s : ATT going forward in time.
+2850.58s - 2854.58s : As you're scanning along in the analysis phase, if you find a
+2854.58s - 2858.58s : transaction end message, you know that there's not going to be anything else from that transaction,
+2858.58s - 2862.58s : so you can go ahead and remove it from the ATT because it's successfully committed.
+2862.58s - 2866.58s : For all other log records, if the transaction is not
+2866.58s - 2870.58s : in the ATT, then you go ahead and add it, but you set its
+2870.58s - 2874.58s : execution status to be candidate for undo because, again,
+2874.58s - 2878.58s : you're scanning for it in time, so you haven't seen a commit
+2878.58s - 2882.58s : or abort message for the transaction, so you just assume that it's going to abort.
+2882.58s - 2886.58s : But then when you see the commit message for a transaction, then you update
+2886.58s - 2890.58s : its status in the ATT to say it's allowed to commit.
+2890.58s - 2894.58s : As we scan along too, we also want to populate the
+2894.58s - 2898.58s : dbt, so if we find a page that's not
+2898.58s - 2902.58s : being referenced that's not in our dbt as we scan along,
+2902.58s - 2906.58s : then we know it's been modified since our last checkpoint, and therefore we want to make sure
+2906.58s - 2910.58s : that it exists in there, and we just set its recln to be whatever
+2910.58s - 2914.58s : the lsn that modified it. Because we know it didn't exist in the
+2914.58s - 2918.58s : buffer pool, at least in a modified form,
+2918.58s - 2922.58s : at the moment that we see the log message, because otherwise we would have seen it in the dbt.
+2926.58s - 2930.58s : So now at the end of the analysis phase, the ATT is going to tell us what are all the transactions
+2930.58s - 2932.58s : that are active at the time of the crash,
+2932.58s - 2936.58s : and therefore we need to roll them back, and the dbt is going to tell us all the pages
+2936.58s - 2940.58s : that were modified, but may not have been written
+2940.58s - 2944.58s : out the disk. And you don't know whether
+2944.58s - 2948.58s : the changes got written out the disk unless you go read them.
+2948.58s - 2952.58s : The dbt is telling you what you've got to go check.
+2952.58s - 2956.58s : Let's look at an example like this. So say that
+2956.58s - 2960.58s : our system begins a checkpoint at 010,
+2960.58s - 2964.58s : so at this point here, we don't have anything in our ATT or dbt,
+2964.58s - 2968.58s : at least initially, but we know that all the transactions that are
+2968.58s - 2972.58s : running in our system, and all the
+2972.58s - 2976.58s : log records, sorry, all the pages that are sitting in our buffer pool,
+2976.58s - 2980.58s : at this point here, we don't record that in the begin message.
+2980.58s - 2984.58s : Then later on at 020, we see this transaction
+2984.58s - 2988.58s : t96 is making an update to
+2988.58s - 2992.58s : an object A in page 33,
+2992.58s - 2996.58s : and again, assuming that if this thing was in our log message, then
+2996.58s - 3000.58s : it modified the page, but we don't know whether that page
+3000.58s - 3004.58s : was flushed out the disk as part of the checkpoint, like the checkpoint got to it
+3004.58s - 3008.58s : first, or we modified it after the checkpoint read out that page.
+3008.58s - 3012.58s : So we put a log record in that says, here's
+3012.58s - 3016.58s : an entry in our ATT that says, here's this transaction t96 that we now know about,
+3016.58s - 3018.58s : because we didn't see the beginning of the transaction,
+3018.58s - 3022.58s : we didn't see the begin before the checkpoint started, so the begin message for this transaction is up above
+3022.58s - 3026.58s : before the checkpoint began, but since we don't know what's going to happen to it at this point
+3026.58s - 3030.58s : in our analysis, we assume it's going to get rolled back and
+3030.58s - 3034.58s : abort, so it's an undo candidate. And then we keep track of the page that it
+3034.58s - 3038.58s : modified during this, and the recl.lsn that corresponds to the one that modified it.
+3038.58s - 3042.58s : Then now we get to our transaction end, and at this
+3042.58s - 3046.58s : point here, now we have in our ATT, we have t96, t97,
+3046.58s - 3050.58s : so there's another transaction t97 up above that did a bunch of other stuff
+3050.58s - 3054.58s : before our transaction began, and we haven't seen it yet in any log messages after the
+3054.58s - 3058.58s : checkpoint started, so we now know about it, and
+3058.58s - 3062.58s : I'm going to assume that's going to abort. And we also know about, there was
+3062.58s - 3066.58s : a page 20 that was dirty in our buffer pool
+3066.58s - 3070.58s : that the checkpoint would have at least, we know it
+3070.58s - 3074.58s : would have been written out if the checkpoint completed.
+3074.58s - 3078.58s : Then we see the log record for t96 that it committed, so we update its status
+3078.58s - 3082.58s : in the ATT that it's allowed to commit, and then we now see the transaction
+3082.58s - 3086.58s : end message for t96, so we can go ahead and remove it.
+3086.58s - 3090.58s : So at this point at the end, we know that there's a transaction
+3090.58s - 3094.58s : t97 that did something up above that we're going to need to roll back,
+3094.58s - 3098.58s : but we don't have the log records for it, so we have to go find those, and we know that
+3098.58s - 3102.58s : there's page 33 and page 20 where there was changes made
+3102.58s - 3104.58s : to them that may have not made it out to disk.
+3104.58s - 3106.58s : Yes?
+3110.58s - 3114.58s : The question is why does not, why does the DPT not have p33
+3114.58s - 3118.58s : at 030? Because it was not dirty
+3118.58s - 3122.58s : at the moment the checkpoint started. So the DPT ATT recorded what was the state of
+3122.58s - 3126.58s : the world at the time the checkpoint started.
+3126.58s - 3130.58s : And they put it in the transaction end part,
+3130.58s - 3132.58s : not the beginning.
+3134.58s - 3140.58s : All right, so now, after the analysis phase, we have our ATT
+3140.58s - 3144.58s : or DPT, and now we know what transactions we need to
+3144.58s - 3148.58s : reapply changes to, and what transactions are going to get
+3148.58s - 3152.58s : aborted, and therefore we need to start undoing those changes.
+3152.58s - 3156.58s : And, sorry,
+3156.58s - 3160.58s : we're not going to undo anything yet, we're going to apply always all our changes,
+3160.58s - 3162.58s : but if there were aborted transactions and we see the CLRs in the
+3162.58s - 3166.58s : log as we're scanning through, we're going to reapply them as well.
+3166.58s - 3170.58s : And then in the second phase, we're going to go back and undo stuff.
+3170.58s - 3174.58s : But for now, we're just going to reapply whatever we see in the log.
+3174.58s - 3178.58s : We're not going to create new log entries, we're just re-executing what we have.
+3178.58s - 3182.58s : So we're going to scan for it from the log,
+3182.58s - 3186.58s : at the smallest REC
+3186.58s - 3190.58s : LSN in the DPT, because that's going to correspond to the log record
+3190.58s - 3192.58s : that modified a page, and then we're going to do a re-apply.
+3192.58s - 3194.58s : So we know that the page that was dirty
+3194.58s - 3196.58s : at the moment the checkpoint started,
+3196.58s - 3198.58s : so we know that's going to be farther back in time
+3198.58s - 3200.58s : than anything that got modified
+3200.58s - 3202.58s : while the checkpoint was running.
+3204.58s - 3206.58s : And then any time we need to undo a transaction,
+3206.58s - 3208.58s : because we know what its status should be,
+3208.58s - 3210.58s : because we've scanned to the end of the log,
+3210.58s - 3212.58s : we know whether any transaction is going to commit or not,
+3212.58s - 3214.58s : so we have to undo any changes,
+3214.58s - 3216.58s : that's when we go ahead and apply the CLRs.
+3222.58s - 3224.58s : Sorry, I'm getting ahead of myself.
+3224.58s - 3226.58s : That's undo. For redo,
+3226.58s - 3228.58s : as I scan through, if I find
+3228.58s - 3230.58s : a log record that updates
+3230.58s - 3232.58s : a page or a CLR,
+3232.58s - 3234.58s : I need to determine whether I should
+3234.58s - 3236.58s : bring that page back into memory and go
+3236.58s - 3238.58s : apply it. And so now you can start
+3238.58s - 3240.58s : looking about what's in my dirty
+3240.58s - 3242.58s : page table, and understanding how
+3242.58s - 3244.58s : these log sequence numbers are going to determine
+3244.58s - 3246.58s : whether I've already applied this change or not
+3246.58s - 3248.58s : based on what I see when I bring
+3248.58s - 3250.58s : the page back into memory.
+3250.58s - 3252.58s : So,
+3252.58s - 3254.58s : if we see an update record or
+3254.58s - 3256.58s : a CLR that we need to reapply,
+3256.58s - 3258.58s : if that page is not in our
+3258.58s - 3260.58s : dirty page table, then we know
+3260.58s - 3262.58s : that the change for it, for that
+3262.58s - 3264.58s : particular
+3264.58s - 3266.58s : page,
+3266.58s - 3268.58s : that page when it was modified was written
+3268.58s - 3270.58s : out the disk before
+3270.58s - 3272.58s : we crashed. And therefore we don't
+3272.58s - 3274.58s : need to bring it back in memory and reapply our change.
+3274.58s - 3276.58s : If it is
+3276.58s - 3278.58s : in our dirty page table, then we need
+3278.58s - 3280.58s : to check to see whether that
+3280.58s - 3282.58s : last log record
+3282.58s - 3284.58s : or the reclsn, the earliest log record
+3284.58s - 3286.58s : that modified that page since it was
+3286.58s - 3288.58s : last flushed to disk, if that
+3288.58s - 3290.58s : comes before
+3290.58s - 3292.58s : the lsn that I'm looking at right now,
+3292.58s - 3294.58s : then I know that whatever my
+3294.58s - 3296.58s : change was, that got applied
+3296.58s - 3298.58s : to that
+3298.58s - 3300.58s : log record, or that
+3300.58s - 3302.58s : log record I'm looking at, that got applied
+3302.58s - 3304.58s : since the page was written out.
+3304.58s - 3306.58s : So I don't need to reapply it.
+3306.58s - 3308.58s : But if the
+3308.58s - 3310.58s : log record I'm trying to apply,
+3310.58s - 3312.58s : if it's lsn, is
+3312.58s - 3314.58s : greater
+3314.58s - 3316.58s : than the page lsn,
+3316.58s - 3318.58s : then I know that
+3318.58s - 3320.58s : my transaction that I'm trying to
+3320.58s - 3322.58s : redo made some change
+3322.58s - 3324.58s : that modified the page and that
+3324.58s - 3326.58s : record was not, those changes
+3326.58s - 3328.58s : were not written out the disk.
+3328.58s - 3330.58s : Because the page lsn was the last
+3330.58s - 3332.58s : log record that
+3332.58s - 3334.58s : modified this page when that page was written to disk.
+3334.58s - 3336.58s : So my reclsn,
+3336.58s - 3338.58s : if my lsn comes later in time,
+3338.58s - 3340.58s : I know that this page got modified,
+3340.58s - 3342.58s : flushed to disk, and then
+3342.58s - 3344.58s : I try to update it, and my update didn't
+3344.58s - 3346.58s : actually make it out the disk.
+3346.58s - 3348.58s : The challenge though, in order for me to
+3348.58s - 3350.58s : figure that out, I gotta go out the disk,
+3350.58s - 3352.58s : bring that page back in, and go check
+3352.58s - 3354.58s : its page lsn. Because I'm not recording
+3354.58s - 3356.58s : that in my dirty page
+3356.58s - 3358.58s : table, in my checkpoints. I'm only
+3358.58s - 3360.58s : recording the reclsn, I'm only recording
+3360.58s - 3362.58s : the
+3362.58s - 3364.58s : oldest log record
+3364.58s - 3366.58s : that modified the page.
+3366.58s - 3368.58s : Since it was last flushed
+3368.58s - 3370.58s : to disk.
+3372.58s - 3374.58s : So for the first two here, you can just check
+3374.58s - 3376.58s : on the dirty page table without actually looking
+3376.58s - 3378.58s : at the page and figure out whether you need to reapply this.
+3378.58s - 3380.58s : For the last one, you have to go bring the page
+3380.58s - 3382.58s : in and look at what the page
+3382.58s - 3384.58s : lsn is set to.
+3386.58s - 3388.58s : So, to redo any action, we
+3388.58s - 3390.58s : just reapply the update,
+3390.58s - 3392.58s : and then set the page lsn to whatever the
+3392.58s - 3394.58s : lsn that we're modifying,
+3394.58s - 3396.58s : that we applied. We don't do
+3396.58s - 3398.58s : initial logging, and we don't need to make sure we flush
+3398.58s - 3400.58s : anything during this recovery process,
+3400.58s - 3402.58s : because that would be unnecessarily slow.
+3402.58s - 3404.58s : We're not running up a
+3404.58s - 3406.58s : transaction, we're just trying to redo things, so why bother
+3406.58s - 3408.58s : flushing things and make sure things are committed.
+3408.58s - 3410.58s : And then now,
+3410.58s - 3412.58s : once we reach the end of the
+3412.58s - 3414.58s : redo phase, any
+3414.58s - 3416.58s : transaction that
+3416.58s - 3418.58s : successfully committed, or
+3418.58s - 3420.58s : any transaction that
+3420.58s - 3422.58s : successfully committed, then we can put the transaction
+3422.58s - 3424.58s : end message. But we may still have
+3424.58s - 3426.58s : transactions that we need to reverse their changes on,
+3426.58s - 3428.58s : and that's what we're going to do in the second
+3428.58s - 3430.58s : phase. Because this is where we're
+3430.58s - 3432.58s : going to generate additional CLRs.
+3432.58s - 3434.58s : So now, in the undo phase,
+3434.58s - 3436.58s : this is where we know all the
+3436.58s - 3438.58s : transactions that
+3438.58s - 3440.58s : successfully committed, or did not commit,
+3440.58s - 3442.58s : at the time the crash occurred.
+3442.58s - 3444.58s : We've gone through the analysis phase,
+3444.58s - 3446.58s : we've figured out what everything is,
+3446.58s - 3448.58s : we've done the redo where we've
+3448.58s - 3450.58s : reapplied everybody's changes,
+3450.58s - 3452.58s : and then now we need to go back and undo
+3452.58s - 3454.58s : the changes for transactions that
+3454.58s - 3456.58s : should not be allowed to commit,
+3456.58s - 3458.58s : or don't commit. So if any transaction
+3458.58s - 3460.58s : that's still in our ATT, with this
+3460.58s - 3462.58s : undo status at the end of the redo phase,
+3462.58s - 3464.58s : we now need to go back in reverse order
+3464.58s - 3466.58s : and apply the changes as if it was an abort
+3466.58s - 3468.58s : during normal execution operations.
+3468.58s - 3470.58s : And we're going to use this,
+3470.58s - 3472.58s : the last LSN,
+3472.58s - 3474.58s : the undo things,
+3474.58s - 3476.58s : allows us to quickly jump back
+3476.58s - 3478.58s : in the write head log,
+3478.58s - 3480.58s : jump over things we don't need to look at again,
+3480.58s - 3482.58s : just jump to the transaction,
+3482.58s - 3484.58s : the undo things,
+3484.58s - 3486.58s : and then we can go back and undo
+3486.58s - 3488.58s : the changes.
+3488.58s - 3490.58s : So now we're going to go back
+3490.58s - 3492.58s : and if we have a transaction
+3492.58s - 3494.58s : that we're aborting, undoing,
+3494.58s - 3496.58s : we can jump to its log records and quickly find them
+3496.58s - 3498.58s : and roll them back.
+3498.58s - 3500.58s : And every time we're going to reverse a change,
+3500.58s - 3502.58s : undo a change, we're going to create a new CLR.
+3504.58s - 3506.58s : Alright, so let's look at a full end-to-end example here.
+3506.58s - 3508.58s : So we have our transaction starts at
+3508.58s - 3510.58s : checkpoint at 010,
+3510.58s - 3512.58s : sorry, 011,
+3512.58s - 3514.58s : checkpoint ends at 012,
+3514.58s - 3516.58s : there's a T1 at 013 that makes a change
+3516.58s - 3518.58s : to page P5,
+3518.58s - 3520.58s : T2 makes a change to P3,
+3520.58s - 3522.58s : T1 then calls an abort.
+3522.58s - 3524.58s : So to roll that back, again,
+3524.58s - 3526.58s : we have our CLR records for this,
+3526.58s - 3528.58s : we just go ahead and reverse the changes.
+3528.58s - 3530.58s : Once we know all the changes for T1 are done,
+3530.58s - 3532.58s : then we can put the transaction
+3532.58s - 3534.58s : end message in,
+3534.58s - 3536.58s : and then PSLSN allows us to quickly jump through
+3536.58s - 3538.58s : and find everything we want without having to
+3538.58s - 3540.58s : look at everything individually.
+3540.58s - 3542.58s : Then now,
+3542.58s - 3544.58s : say T3 does another change,
+3544.58s - 3546.58s : T2 now shows up,
+3546.58s - 3548.58s : makes a change,
+3548.58s - 3550.58s : and then we crash.
+3550.58s - 3552.58s : So now we're going to go through
+3552.58s - 3554.58s : the three phases.
+3554.58s - 3556.58s : So, we're going to come back and
+3556.58s - 3558.58s : use the master record to figure out where
+3558.58s - 3560.58s : the starting point of the last successful checkpoint
+3560.58s - 3562.58s : was, so that's going to be up here.
+3562.58s - 3564.58s : And then when we now look at the checkpoint
+3564.58s - 3566.58s : end message, assume inside of it
+3566.58s - 3568.58s : that record's going to have the
+3568.58s - 3570.58s : ATT and the DPT.
+3572.58s - 3574.58s : So that's going to tell us that we know about transaction T1,
+3574.58s - 3576.58s : T2, T3,
+3576.58s - 3578.58s : and since we don't know what's going to happen to them at this point,
+3578.58s - 3580.58s : we assume that it's their status
+3580.58s - 3582.58s : or undue candidates.
+3582.58s - 3584.58s : And then there's a dirty page, P1, that has some
+3584.58s - 3586.58s : modification from a transaction that made a change
+3586.58s - 3588.58s : up above at LSN 001.
+3590.58s - 3592.58s : So now when I scan through in my
+3592.58s - 3594.58s : from the checkpoint
+3594.58s - 3596.58s : end to the end,
+3596.58s - 3598.58s : I saw that
+3598.58s - 3600.58s : there's two more pages that got modified
+3600.58s - 3602.58s : since then.
+3602.58s - 3604.58s : They may not have made it out to disk, I don't know.
+3604.58s - 3606.58s : And then now, T1,
+3606.58s - 3608.58s : I saw a transaction end message for,
+3608.58s - 3610.58s : so I don't need to keep track of it anymore, because I know
+3610.58s - 3612.58s : it's going to successfully commit.
+3612.58s - 3614.58s : So then now,
+3614.58s - 3616.58s : I have these last LSNs
+3616.58s - 3618.58s : for my, for these
+3618.58s - 3620.58s : T2 and T3 here. I'm going to know
+3620.58s - 3622.58s : where I need to start,
+3622.58s - 3624.58s : my starting point is to be able to roll
+3624.58s - 3626.58s : them back.
+3626.58s - 3628.58s : So, same now,
+3628.58s - 3630.58s : I do my
+3632.58s - 3634.58s : redo, I go through
+3634.58s - 3636.58s : and reapply everything,
+3636.58s - 3638.58s : right, and then now at this
+3638.58s - 3640.58s : point I want to start reversing the two transactions
+3640.58s - 3642.58s : that don't successfully commit.
+3642.58s - 3644.58s : So I'm going to start with T2, because that's the first one
+3644.58s - 3646.58s : that I had,
+3646.58s - 3648.58s : the most recent log message right before the crash.
+3648.58s - 3650.58s : So I'm going to put a CLR for it to reverse
+3650.58s - 3652.58s : its change, and then my undo next pointer
+3652.58s - 3654.58s : just points to the next thing I have to undo.
+3654.58s - 3656.58s : And then now I know the next thing I need to do is
+3656.58s - 3658.58s : reverse this change at the T3.
+3658.58s - 3660.58s : And again, assuming that it's undo
+3660.58s - 3662.58s : next is some begin message for this transaction
+3662.58s - 3664.58s : that's up above us in the log that we're not showing here.
+3664.58s - 3666.58s : At this point here,
+3666.58s - 3668.58s : I know I don't have any more changes I have
+3668.58s - 3670.58s : for T3, so again,
+3670.58s - 3672.58s : I want to be super cautious, I'll flush the writeahead log
+3672.58s - 3674.58s : and flush all the ready pages to disk,
+3674.58s - 3676.58s : and then that way, again,
+3676.58s - 3678.58s : I'm ensuring that all my changes are made
+3678.58s - 3680.58s : out there, but yet you don't have to do this.
+3680.58s - 3682.58s : And I just update my flush LSN
+3682.58s - 3684.58s : to keep track of that these are the changes
+3684.58s - 3686.58s : that I made. And the reason why I want to do this
+3686.58s - 3688.58s : is if I crash come back during this recovery process,
+3690.58s - 3692.58s : I can look at the
+3692.58s - 3694.58s : page LSN and recognize that my change actually
+3694.58s - 3696.58s : made it out, the disk, when I reversed
+3696.58s - 3698.58s : this transaction, so therefore I don't have to
+3698.58s - 3700.58s : reapply to the changes later on.
+3700.58s - 3702.58s : But let's say now,
+3702.58s - 3704.58s : during recovery, I crash again.
+3704.58s - 3706.58s : Worst case scenario.
+3706.58s - 3708.58s : So now when I come back the second time,
+3708.58s - 3710.58s : after I do my analysis,
+3710.58s - 3712.58s : I'm going to see that the only thing I have
+3712.58s - 3714.58s : sitting around is this T3
+3714.58s - 3716.58s : that I still need, I'm sorry, T2
+3716.58s - 3718.58s : that I still need to roll back on.
+3718.58s - 3720.58s : So I'll just add my CLR
+3720.58s - 3722.58s : to reverse its change, see that
+3722.58s - 3724.58s : there's some undo next pointing something else, and at this point
+3724.58s - 3726.58s : here, I know
+3726.58s - 3728.58s : there's nothing else for me to reverse for the T2,
+3728.58s - 3730.58s : so I can go ahead and put my transaction end message in
+3730.58s - 3732.58s : and then now at this point
+3732.58s - 3734.58s : the database is fully recovered, I can tell the
+3734.58s - 3736.58s : outside world that we're accepting new queries
+3736.58s - 3738.58s : and new transactions.
+3740.58s - 3742.58s : Yes?
+3742.58s - 3744.58s : Question, when did you crash in the middle of abort?
+3744.58s - 3746.58s : Question, when did you crash in the middle of abort?
+3746.58s - 3748.58s : We just did that, right?
+3748.58s - 3750.58s : So I'm aborting
+3750.58s - 3752.58s : T2 and T3, T3 gets
+3752.58s - 3754.58s : aborted, I put transaction end, but before
+3754.58s - 3756.58s : I can put the transaction, reverse the last
+3756.58s - 3758.58s : change for T2, I crash.
+3758.58s - 3760.58s : Question, when did you crash in the middle of abort?
+3760.58s - 3762.58s : We just did that, right?
+3762.58s - 3764.58s : Question, when did you crash in the middle of abort?
+3764.58s - 3766.58s : We just did that, right?
+3766.58s - 3768.58s : Question, when did you crash in the middle of abort?
+3768.58s - 3770.58s : We just did that, right?
+3770.58s - 3772.58s : That's this, that's what I'm doing right here.
+3772.58s - 3774.58s : T2, when I go forward,
+3774.58s - 3776.58s : T2 has still one more thing to abort
+3776.58s - 3778.58s : before I get there, I crash.
+3778.58s - 3780.58s : I come back,
+3780.58s - 3782.58s : and when I scan
+3782.58s - 3784.58s : everything, I see T2 is still
+3784.58s - 3786.58s : hanging out there, I have to roll it back,
+3786.58s - 3788.58s : but then when I go through
+3788.58s - 3790.58s : and redo,
+3790.58s - 3792.58s : I would reapply the CLR change
+3792.58s - 3794.58s : and make sure I reverse its change,
+3794.58s - 3796.58s : then recognize I still have to,
+3796.58s - 3798.58s : this thing points to undo next
+3798.58s - 3800.58s : 014,
+3800.58s - 3802.58s : so when I come back, I need to put a CLR for 014.
+3802.58s - 3804.58s : 014.
+3804.58s - 3806.58s : 014.
+3806.58s - 3808.58s : So no many times
+3808.58s - 3810.58s : I keep aborting and come back, I'm going to
+3810.58s - 3812.58s : redo the changes until I get to the transaction end.
+3812.58s - 3814.58s : redo the changes until I get to the transaction end.
+3814.58s - 3816.58s : redo the changes until I get to the transaction end.
+3816.58s - 3818.58s : Other questions?
+3818.58s - 3820.58s : Other questions?
+3824.58s - 3826.58s : Alright.
+3826.58s - 3828.58s : Well, we can finish up quickly then.
+3828.58s - 3830.58s : So, what do I do if I crash during recovery
+3830.58s - 3832.58s : in the analysis phase? Nothing.
+3832.58s - 3834.58s : You just come back and do the analysis phase over again.
+3834.58s - 3836.58s : That's a read-only operation.
+3836.58s - 3838.58s : If I crash during the redo,
+3838.58s - 3840.58s : again, I do nothing.
+3840.58s - 3842.58s : Because all I'm doing is
+3842.58s - 3844.58s : pedantically reapplying the changes over again,
+3844.58s - 3846.58s : and maybe overwriting the same changes
+3846.58s - 3848.58s : over and over again, but that's okay.
+3848.58s - 3850.58s : I'm guaranteed to end up with the same database state.
+3850.58s - 3852.58s : So, if I
+3852.58s - 3854.58s : crash during redo, I just do it all over again.
+3856.58s - 3858.58s : To make things go faster during redo,
+3858.58s - 3860.58s : again, I assume that my changes are not
+3860.58s - 3862.58s : going to crash during the redo process.
+3862.58s - 3864.58s : So, I don't do those flushes
+3864.58s - 3866.58s : every single time I see a transaction end.
+3866.58s - 3868.58s : I just eventually get to them later on.
+3868.58s - 3870.58s : And this is what most systems will do.
+3870.58s - 3872.58s : The original ARIES paper was
+3872.58s - 3874.58s : super careful. They would flush
+3874.58s - 3876.58s : every time a transaction ended. Even though
+3876.58s - 3878.58s : you don't need to.
+3878.58s - 3880.58s : And then to make the undoes faster,
+3880.58s - 3882.58s : there is a
+3882.58s - 3884.58s : research paper that basically says
+3884.58s - 3886.58s : you don't apply the changes
+3886.58s - 3888.58s : in the undo phase. You just record
+3888.58s - 3890.58s : that there's things you want to undo in pages.
+3890.58s - 3892.58s : And it's kind of like the mod log
+3892.58s - 3894.58s : we saw in the case of the B epsilon tree
+3894.58s - 3896.58s : or in my SQL's compression scheme.
+3896.58s - 3898.58s : You keep a little mod log that says, here's the things
+3898.58s - 3900.58s : I need to reverse back on this page,
+3900.58s - 3902.58s : and then upon reading that page or trying to do something
+3902.58s - 3904.58s : on that page, then I go ahead and apply them.
+3904.58s - 3906.58s : And the idea there is that rather
+3906.58s - 3908.58s : than waiting for me to do the entire
+3908.58s - 3910.58s : undo process, I just
+3910.58s - 3912.58s : queue up those changes
+3912.58s - 3914.58s : and immediately start executing other
+3914.58s - 3916.58s : transactions so they can go ahead and read
+3916.58s - 3918.58s : and do whatever they want. And eventually
+3918.58s - 3920.58s : once they will touch the pages
+3920.58s - 3922.58s : that have pending undo records I need to apply,
+3922.58s - 3924.58s : and only then I go ahead
+3924.58s - 3926.58s : and apply them.
+3926.58s - 3928.58s : And of course the last one is
+3928.58s - 3930.58s : you can always rewrite your application and try to undo
+3930.58s - 3932.58s : long running transactions that's easier said than done.
+3932.58s - 3934.58s : Alright, so I'm rushing to this
+3934.58s - 3936.58s : end. I can pick up where we left off
+3936.58s - 3938.58s : I'll pick up on this again
+3938.58s - 3940.58s : and do a quick
+3940.58s - 3942.58s : review next class.
+3942.58s - 3944.58s : But the main things to remember about Ares is that
+3944.58s - 3946.58s : we're using steal no force,
+3946.58s - 3948.58s : fuzzy checkpoints allow us to take snapshots of
+3948.58s - 3950.58s : pages while transactions are still running.
+3950.58s - 3952.58s : We can still redo everything starting at
+3952.58s - 3954.58s : the earliest data page.
+3954.58s - 3956.58s : We're never going to
+3956.58s - 3958.58s : make sure that when
+3958.58s - 3960.58s : transactions get subordinated, we're going to apply
+3960.58s - 3962.58s : CLRs, make sure we undo all the changes, and that
+3962.58s - 3964.58s : no matter what, the number of times we restart,
+3964.58s - 3966.58s : those changes always get correctly reversed.
+3966.58s - 3968.58s : And the log sequence numbers are just a way to
+3968.58s - 3970.58s : record the physical ordering
+3970.58s - 3972.58s : of the changes as
+3972.58s - 3974.58s : they should be correctly applied.
+3974.58s - 3976.58s : So,
+3976.58s - 3978.58s : at this point in the semester, you know how to
+3978.58s - 3980.58s : build now a safe and correct
+3980.58s - 3982.58s : single node database system.
+3982.58s - 3984.58s : Congrats. The first pass may not be
+3984.58s - 3986.58s : a good one, but you know how to build one.
+3986.58s - 3988.58s : Next class we'll talk about how to make it distributed
+3988.58s - 3990.58s : because this is when everything gets much harder.
+3990.58s - 3992.58s : Okay?
+3992.58s - 3994.58s : Alright, so let's switch over to the guest speaker.
+3994.58s - 3996.58s : Um,
+3996.58s - 3998.58s : hi everyone again, um,
+3998.58s - 4000.58s : and thanks for having me on.
+4000.58s - 4002.58s : I'm Robert, I work at Clickhouse,
+4002.58s - 4004.58s : and I saw
+4004.58s - 4006.58s : that you had Benjamin from Firebolt
+4006.58s - 4008.58s : speaking here two weeks ago in class.
+4008.58s - 4010.58s : So I guess that makes me the second
+4010.58s - 4012.58s : German to present this
+4012.58s - 4014.58s : semester. And it's actually
+4014.58s - 4016.58s : quite interesting,
+4016.58s - 4018.58s : Firebolt started as a fork of
+4018.58s - 4020.58s : Clickhouse's open source codebase,
+4020.58s - 4022.58s : and as far as I know,
+4022.58s - 4024.58s : they are still using the same file format
+4024.58s - 4026.58s : as Clickhouse. So we
+4026.58s - 4028.58s : must obviously have done something
+4028.58s - 4030.58s : right with the file format, and
+4030.58s - 4032.58s : I thought I could talk a little bit about
+4032.58s - 4034.58s : data organization and indices
+4034.58s - 4036.58s : in Clickhouse and how that powers
+4036.58s - 4038.58s : fast analytics.
+4038.58s - 4040.58s : First of all,
+4040.58s - 4042.58s : what is Clickhouse actually? So
+4042.58s - 4044.58s : Clickhouse is an open source, column-oriented,
+4044.58s - 4046.58s : distributed analytics database.
+4046.58s - 4048.58s : The code is open source since 10 years, and
+4048.58s - 4050.58s : Clickhouse is really popular.
+4050.58s - 4052.58s : I
+4052.58s - 4054.58s : took a look, and there are
+4054.58s - 4056.58s : almost 45,000 stars on Github.
+4056.58s - 4058.58s : And on the right, you see some
+4058.58s - 4060.58s : of the analytics
+4060.58s - 4062.58s : database in our space.
+4062.58s - 4064.58s : The code is written in C++, and
+4064.58s - 4066.58s : the database runs on pretty much anything
+4066.58s - 4068.58s : from a Raspberry Pi to powerful
+4068.58s - 4070.58s : servers and clusters with hundreds
+4070.58s - 4072.58s : of nodes.
+4072.58s - 4074.58s : Clickhouse is a column store, and
+4074.58s - 4076.58s : people typically use it to filter
+4076.58s - 4078.58s : and aggregate billions
+4078.58s - 4080.58s : and trillions of rows.
+4080.58s - 4082.58s : Our storage layer is also optimized for
+4082.58s - 4084.58s : appends, which basically means that
+4084.58s - 4086.58s : inserts are super fast, and
+4086.58s - 4088.58s : updates and deletes do work, but
+4088.58s - 4090.58s : they tend to be a bit slower. But I'll say we
+4090.58s - 4092.58s : made a few optimizations for that recently as well.
+4092.58s - 4094.58s : Now,
+4094.58s - 4096.58s : append-only workloads. That might
+4096.58s - 4098.58s : sound a bit strange, but
+4098.58s - 4100.58s : there are actually lots of use cases where
+4100.58s - 4102.58s : the data is continuously inserted,
+4102.58s - 4104.58s : but only rarely or never
+4104.58s - 4106.58s : modified.
+4106.58s - 4108.58s : These use cases are typically around events,
+4108.58s - 4110.58s : log files, time series,
+4110.58s - 4112.58s : financial data, and so on.
+4112.58s - 4114.58s : Okay,
+4114.58s - 4116.58s : this slide shows how Clickhouse
+4116.58s - 4118.58s : stores tables.
+4118.58s - 4120.58s : So you see on the left side a bunch of
+4120.58s - 4122.58s : insert operations, and each insert
+4122.58s - 4124.58s : basically creates a file
+4124.58s - 4126.58s : on disk. The term that we use
+4126.58s - 4128.58s : internally is part, but in
+4128.58s - 4130.58s : the end, it's a file plus
+4130.58s - 4132.58s : some metadata. And it
+4132.58s - 4134.58s : might even be too obvious
+4134.58s - 4136.58s : here, but when you insert the data,
+4136.58s - 4138.58s : right, you don't need to synchronize
+4138.58s - 4140.58s : with existing parts or global
+4140.58s - 4142.58s : data structures. You don't need to do index
+4142.58s - 4144.58s : lookups to check uniqueness.
+4144.58s - 4146.58s : The performance of your inserts is only
+4146.58s - 4148.58s : limited by the performance of your disk.
+4148.58s - 4150.58s : The other thing that's
+4150.58s - 4152.58s : the other important
+4152.58s - 4154.58s : thing is that the rows in each part
+4154.58s - 4156.58s : are sorted or clustered by
+4156.58s - 4158.58s : the primary key columns of the table.
+4158.58s - 4160.58s : The user defines the
+4160.58s - 4162.58s : primary key columns upfront.
+4162.58s - 4164.58s : So keep that in mind for a second.
+4164.58s - 4166.58s : You also see a box
+4166.58s - 4168.58s : labeled buffer on the left
+4168.58s - 4170.58s : side, and that's our asynchronous
+4170.58s - 4172.58s : insert mode, which basically buffers
+4172.58s - 4174.58s : the rows from multiple inserts before the
+4174.58s - 4176.58s : part is then flushed to disk.
+4176.58s - 4178.58s : Okay, now as more data comes in,
+4178.58s - 4180.58s : the parts, of course, start to accumulate.
+4180.58s - 4182.58s : So ClickHouse has a compaction
+4182.58s - 4184.58s : job that runs in the background,
+4184.58s - 4186.58s : and it continuously merges multiple
+4186.58s - 4188.58s : parts into bigger parts.
+4188.58s - 4190.58s : And remember the parts are sorted, right?
+4190.58s - 4192.58s : This means the compaction job can use
+4192.58s - 4194.58s : a k-way merge sort algorithm
+4194.58s - 4196.58s : to combine the parts,
+4196.58s - 4198.58s : and that's fairly efficient.
+4198.58s - 4200.58s : So you may notice
+4200.58s - 4202.58s : that all of this is
+4202.58s - 4204.58s : quite similar to a classical
+4204.58s - 4206.26s : LSM tree.
+4206.58s - 4208.58s : The difference is that the parts
+4208.58s - 4210.58s : in ClickHouse are all equal,
+4210.58s - 4212.58s : so they are not organized in a tree or in a
+4212.58s - 4214.58s : hierarchy.
+4214.58s - 4216.58s : This is quite nice for our use case
+4216.58s - 4218.58s : because of two reasons.
+4218.58s - 4220.58s : First, the scan
+4220.58s - 4222.58s : can parallelize over all the parts,
+4222.58s - 4224.58s : so there is no implicit
+4224.58s - 4226.58s : chronological ordering
+4226.58s - 4228.58s : between the parts that would
+4228.58s - 4230.58s : somehow restrict concurrency.
+4230.58s - 4232.58s : And the second reason is that the
+4232.58s - 4234.58s : merge is also not bound
+4234.58s - 4236.58s : to certain LSM trees,
+4236.58s - 4238.58s : so it can freely pick
+4238.58s - 4240.58s : any parts anywhere
+4240.58s - 4242.58s : to merge.
+4242.58s - 4244.58s : I'll also say that updates and leads
+4244.58s - 4246.58s : become a bit more tricky in this
+4246.58s - 4248.58s : overall design, so we cannot use
+4248.58s - 4250.58s : tombstones, but that's fine for us
+4250.58s - 4252.58s : since we don't expect to have a lot of updates and
+4252.58s - 4254.58s : leads anyways.
+4254.58s - 4256.58s : Okay, now
+4256.58s - 4258.58s : let's zoom into one of these
+4258.58s - 4260.58s : mysterious parts.
+4260.58s - 4262.58s : This slide shows a table with
+4262.58s - 4264.58s : web access statistics.
+4264.58s - 4266.58s : So you have a user from
+4266.58s - 4268.58s : a certain region who accesses
+4268.58s - 4270.58s : a certain website, right? And we
+4270.58s - 4272.58s : collect all of this information in a table.
+4272.58s - 4274.58s : So the data in this part consists
+4274.58s - 4276.58s : of only a few seconds,
+4276.58s - 4278.58s : but there are nevertheless many thousands of rows here.
+4278.58s - 4280.58s : The user
+4280.58s - 4282.58s : defined the event time
+4282.58s - 4284.58s : column as the primary key for the table,
+4284.58s - 4286.58s : and like I mentioned before, this means that
+4286.58s - 4288.58s : ClickHouse sorts the rows
+4288.58s - 4290.58s : in the part by event time.
+4290.58s - 4292.58s : From a database
+4292.58s - 4294.58s : perspective, sorting is really nice,
+4294.58s - 4296.58s : but we'll need an even smaller
+4296.58s - 4298.58s : granularity, or data access
+4298.58s - 4300.58s : granularity, to make the scans efficient.
+4300.58s - 4302.58s : So what ClickHouse does is that
+4302.58s - 4304.58s : it splits each part further
+4304.58s - 4306.58s : into so-called granules,
+4306.58s - 4308.58s : and every granule has
+4308.58s - 4310.58s : 8,192 rows.
+4310.58s - 4312.58s : You can see that on the
+4312.58s - 4314.58s : left side, so there is
+4314.58s - 4316.58s : granule 0 in blue, granule 1
+4316.58s - 4318.58s : in pink, and so on.
+4318.58s - 4320.58s : A granule in ClickHouse is the
+4320.58s - 4322.58s : smallest unit that our
+4322.58s - 4324.58s : scan operator can load from this.
+4324.58s - 4326.58s : Now the questions of
+4326.58s - 4328.58s : how does all of this help with scans?
+4328.58s - 4330.58s : The key concept is to
+4330.58s - 4332.58s : prune data as aggressively as
+4332.58s - 4334.58s : possible. So you want your select queries
+4334.58s - 4336.58s : to skip most of the data, because
+4336.58s - 4338.58s : every byte that you don't read
+4338.58s - 4340.58s : makes your query faster, right?
+4340.58s - 4342.58s : So let's make an example.
+4342.58s - 4344.58s : You see a simple select query
+4344.58s - 4346.58s : with a filter on event time
+4346.58s - 4348.58s : at the bottom of the slide,
+4348.58s - 4350.58s : and this query could, in theory,
+4350.58s - 4352.58s : do a binary search on the events time
+4352.58s - 4354.58s : column to find the right granules.
+4354.58s - 4356.58s : Now a binary search will
+4356.58s - 4358.58s : have a logarithmic
+4358.58s - 4360.58s : number of disk accesses.
+4360.58s - 4362.58s : That sounds nice,
+4362.58s - 4364.58s : but it's still not fast enough,
+4364.58s - 4366.58s : especially when you try to do that
+4366.58s - 4368.58s : on top of object storage, which has
+4368.58s - 4370.58s : latencies of multiple
+4370.58s - 4372.58s : tens of milliseconds.
+4372.58s - 4374.58s : So,
+4374.58s - 4376.58s : ClickHouse will do something smarter.
+4376.58s - 4378.58s : It will create a small index structure
+4378.58s - 4380.58s : on top of the primary key columns,
+4380.58s - 4382.58s : which contain the first row
+4382.58s - 4384.58s : of each granule.
+4384.58s - 4386.58s : And you can see that in the yellow box
+4386.58s - 4388.58s : on the slide.
+4388.58s - 4390.58s : We say that this index
+4390.58s - 4392.58s : is a sparse index, because
+4392.58s - 4394.58s : it points only to every
+4394.58s - 4396.58s : 8192nd row
+4396.58s - 4398.58s : and not to every row.
+4398.58s - 4400.58s : And this index
+4400.58s - 4402.58s : is also tiny compared to the rest of the table.
+4402.58s - 4404.58s : For example, you need only 1000
+4404.58s - 4406.58s : entries, and then you can index already
+4406.58s - 4408.58s : over 8 million rows.
+4408.58s - 4410.58s : So actually the index is so small
+4410.58s - 4412.58s : that we load it and pin
+4412.58s - 4414.58s : it in memory.
+4414.58s - 4416.58s : So now, our select query
+4416.58s - 4418.58s : will do the binary
+4418.58s - 4420.58s : search on the sparse index, and
+4420.58s - 4422.58s : that will find the right granule, and then
+4422.58s - 4424.58s : it will load the granules from this
+4424.58s - 4426.58s : and finally filter them,
+4426.58s - 4428.58s : because they could still contain a mix
+4428.58s - 4430.58s : of matching and non-matching rows.
+4430.58s - 4432.58s : So that's what we call pruning with primary key
+4432.58s - 4434.58s : indices. There are two
+4434.58s - 4436.58s : more pruning techniques in ClickHouse, and I'll
+4436.58s - 4438.58s : mention them only briefly.
+4438.58s - 4440.58s : Projections are the second pruning technique.
+4440.58s - 4442.58s : So you can think of a projection
+4442.58s - 4444.58s : as a permutation of a table.
+4444.58s - 4446.58s : It contains exactly the same rows as the
+4446.58s - 4448.58s : original table, but it's sorted by a different
+4448.58s - 4450.58s : primary key.
+4450.58s - 4452.58s : So if your workload has a lot
+4452.58s - 4454.58s : of queries with filters on
+4454.58s - 4456.58s : columns different than the original
+4456.58s - 4458.58s : primary key columns, then you
+4458.58s - 4460.58s : want to create a projection.
+4460.58s - 4462.58s : The cool thing is that
+4462.58s - 4464.58s : the projections in ClickHouse
+4464.58s - 4466.58s : are implemented at
+4466.58s - 4468.58s : the part level. So basically
+4468.58s - 4470.58s : every part can have an arbitrary number of
+4470.58s - 4472.58s : projections, and the optimizer will pick
+4472.58s - 4474.58s : the most beneficial one for every
+4474.58s - 4476.58s : query.
+4476.58s - 4478.58s : Projections can help a lot with query performance,
+4478.58s - 4480.58s : but their biggest problem is the
+4480.58s - 4482.58s : storage footprint. So you can easily
+4482.58s - 4484.58s : double or triple
+4484.58s - 4486.58s : the memory consumption of the table.
+4486.58s - 4488.58s : So what is even
+4488.58s - 4490.58s : more popular is our customers are
+4490.58s - 4492.58s : skipping indices, and the idea here
+4492.58s - 4494.58s : is to annotate the granules
+4494.58s - 4496.58s : with small amounts of metadata.
+4496.58s - 4498.58s : The scan can then check if
+4498.58s - 4500.58s : no rows, or if all the rows
+4500.58s - 4502.58s : in a block or in the
+4502.58s - 4504.58s : granules match the predicate, and
+4504.58s - 4506.58s : it can potentially skip the entire block.
+4506.58s - 4508.58s : ClickHouse has different
+4508.58s - 4510.58s : types of skipping indices, for example
+4510.58s - 4512.58s : the max indices, the unique block
+4512.58s - 4514.58s : values, and bloom filters.
+4514.58s - 4516.58s : Each type has different trade-offs,
+4516.58s - 4518.58s : but generally speaking, skipping indices
+4518.58s - 4520.58s : are a lot more lightweight than projections,
+4520.58s - 4522.58s : but they're also
+4522.58s - 4524.58s : harder to tune because they make
+4524.58s - 4526.58s : assumptions about the data distribution.
+4528.58s - 4530.58s : There is a lot more to say about ClickHouse,
+4530.58s - 4532.58s : of course, but I hope I could give you at least an idea
+4532.58s - 4534.58s : how data pruning works in our database.
+4534.58s - 4536.58s : If you have any more questions, please
+4536.58s - 4538.58s : feel free to drop me an email,
+4538.58s - 4540.58s : and thanks for your attention.
+4540.58s - 4542.58s : All right. Any quick questions for Robert
+4542.58s - 4544.58s : before we let him go?
+4544.58s - 4546.58s : Yes. Are there any plans
+4546.58s - 4548.58s : to make joins faster? Because
+4548.58s - 4550.58s : I feel like joins have been the primary bottleneck
+4550.58s - 4552.58s : for primary queries on ClickHouse.
+4552.58s - 4554.58s : Yes. Go for it.
+4554.58s - 4556.58s : Yes. We are working on it,
+4556.58s - 4558.58s : and we implemented joins reordering
+4558.58s - 4560.58s : recently, and we are now adding tons
+4560.58s - 4562.58s : more optimizations for joins.
+4562.58s - 4564.58s : Yeah. What
+4564.58s - 4566.58s : means the primary bottleneck stopped you?
+4566.58s - 4568.58s : I think it's
+4568.58s - 4570.58s : the main bottleneck for joins
+4570.58s - 4572.58s : and ClickHouse that you guys
+4572.58s - 4574.58s : have been fixing in recent
+4574.58s - 4576.58s : weeks or months.
+4576.58s - 4578.58s : Oh, no. There was no particular
+4578.58s - 4580.58s : bottleneck. It's just, you know,
+4580.58s - 4582.58s : historically, most of our users
+4582.58s - 4584.58s : use denormalized tables,
+4584.58s - 4586.58s : right? So everything's one single
+4586.58s - 4588.58s : huge fact table, and then you don't
+4588.58s - 4590.58s : need joins. That was the only reason.
+4590.58s - 4592.58s : Okay.
+4592.58s - 4594.58s : So, what's the main bottleneck
+4594.58s - 4596.58s : for joins and ClickHouse?
+4596.58s - 4598.58s : ClickHouse is an amazingly engineered
+4598.58s - 4600.58s : system. It's like, same category
+4600.58s - 4602.58s : as like the Umbro system
+4602.58s - 4604.58s : or Yellow Brick.
+4604.58s - 4606.58s : Like, the amount of engineering they've done
+4606.58s - 4608.58s : in ClickHouse is amazing.
+4608.58s - 4610.58s : When, I think,
+4610.58s - 4612.58s : Yandex first announced in 2016,
+4612.58s - 4614.58s : I thought it was fake. I thought it was vaporware
+4614.58s - 4616.58s : because, like, it didn't exist.
+4616.58s - 4618.58s : I never heard about it before 2016
+4618.58s - 4620.58s : or 2015, and then they list all these features.
+4620.58s - 4622.58s : I was like, there's no way somebody wrote
+4622.58s - 4624.58s : all in a year. But, like, they've been
+4624.58s - 4626.58s : working on it for a long time.
+4626.58s - 4628.58s : It just publicly came out about that.
+4628.58s - 4630.58s : And again, the amount of engineering these guys do
+4630.58s - 4632.58s : to make this system work is phenomenal.
+4632.58s - 4634.58s : It's amazing. So, again, thank you, Robert.
+4654.58s - 4656.58s : Thank you, Robert.

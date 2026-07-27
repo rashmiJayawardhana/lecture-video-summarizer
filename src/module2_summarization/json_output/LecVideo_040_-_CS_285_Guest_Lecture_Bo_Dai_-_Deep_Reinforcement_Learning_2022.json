@@ -1,0 +1,5413 @@
+[
+  {
+    "sentence": "All right. Hi, everybody. We're going to get started. So today we have our guest speaker,",
+    "timestamp_start": 0.0,
+    "timestamp_end": 11.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bo Dai from Google. Bo finished his PhD at Georgia Tech, and he's currently a staff research",
+    "timestamp_start": 11.76,
+    "timestamp_end": 18.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "scientist at Google, where he works on all sorts of questions, theoretical and practical,",
+    "timestamp_start": 18.32,
+    "timestamp_end": 23.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in regard to reinforcement learning. I'm a big fan of a lot of Bo's work on off-policy",
+    "timestamp_start": 23.64,
+    "timestamp_end": 29.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "evaluation and offline RL, although I'm going to learn about something new with representation-based",
+    "timestamp_start": 29.16,
+    "timestamp_end": 34.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "reinforcement learning today. So I'm really looking forward to that, and hopefully you",
+    "timestamp_start": 34.1,
+    "timestamp_end": 37.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are too.",
+    "timestamp_start": 37.48,
+    "timestamp_end": 38.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you. Thanks, again, for the introduction. Let me put it here. Yeah, actually, can you",
+    "timestamp_start": 38.48,
+    "timestamp_end": 43.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "hear me now? Great. I think today we'll talk about the representation-based reinforcement",
+    "timestamp_start": 43.48,
+    "timestamp_end": 48.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "learning. I would say this representation is really big in machine learning, because",
+    "timestamp_start": 48.48,
+    "timestamp_end": 53.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so many people are using it. And so many people are using it, and so many people are using",
+    "timestamp_start": 53.48,
+    "timestamp_end": 58.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it. And so many people are using it. And so many people are using it. And so many people",
+    "timestamp_start": 58.48,
+    "timestamp_end": 59.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "claim they are doing representation learning. For example, Sinclair, they say they want",
+    "timestamp_start": 59.14,
+    "timestamp_end": 64.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to do the visual representation, and so on, so forth. But today, this representation is",
+    "timestamp_start": 64.14,
+    "timestamp_end": 69.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "very specific, saying, I want to find a... Okay, I will hold it. So today I will...",
+    "timestamp_start": 69.14,
+    "timestamp_end": 76.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is this working now?",
+    "timestamp_start": 86.14,
+    "timestamp_end": 88.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I don't think it's... I think it's still not working. Yeah, I will hold it. Anyway. So",
+    "timestamp_start": 89.14,
+    "timestamp_end": 94.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "today we're talking about a very specific representation, which is I want to find a",
+    "timestamp_start": 94.14,
+    "timestamp_end": 99.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "representation such that I can represent the Q function specifically. I think we will see",
+    "timestamp_start": 99.14,
+    "timestamp_end": 106.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it later. Yeah, this is actually several papers together. It's a years-long effort on this",
+    "timestamp_start": 106.14,
+    "timestamp_end": 114.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "direction. And I should thank to the major contributor for this work, which is... I'm",
+    "timestamp_start": 114.14,
+    "timestamp_end": 116.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "from UT Austin and from here, Berkeley. And Chen Jun, Sherry, Lisa, Lena, and Dale, and",
+    "timestamp_start": 116.14,
+    "timestamp_end": 123.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Chaba. Okay. Okay, let's start. Today, actually, the outline of the talk is, first of all, I",
+    "timestamp_start": 123.14,
+    "timestamp_end": 131.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "want to point out a question in current reinforcement learning, which is actually there is a trade-off",
+    "timestamp_start": 131.14,
+    "timestamp_end": 138.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "between modeling, planning, and exploration. But actually, the question is, how do we do",
+    "timestamp_start": 138.14,
+    "timestamp_end": 143.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this?",
+    "timestamp_start": 143.14,
+    "timestamp_end": 144.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We haven't treated this question very seriously in literature. We will get into the details",
+    "timestamp_start": 144.14,
+    "timestamp_end": 150.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "several slides later. And later, I will use this representation-based reinforcement learning",
+    "timestamp_start": 150.14,
+    "timestamp_end": 158.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to provide a coherent solution for this to achieve a delicate balance between this trade-off.",
+    "timestamp_start": 158.14,
+    "timestamp_end": 165.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Say, we don't need to waste any computation effort to... For example, we... You already",
+    "timestamp_start": 165.14,
+    "timestamp_end": 173.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have very complex... You already have very complex, very complex, very complex, very complex, very",
+    "timestamp_start": 173.14,
+    "timestamp_end": 174.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "complicated model. But once we get there, it's difficult to get an optimal policy from",
+    "timestamp_start": 174.14,
+    "timestamp_end": 180.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the model. So that means you are wasting some effort in sample complexity to learn this",
+    "timestamp_start": 180.14,
+    "timestamp_end": 185.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "model, and the computation cost to achieve optimal policy here. So that's why I'm saying",
+    "timestamp_start": 185.14,
+    "timestamp_end": 194.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we want to use this representation-based reinforcement learning to provide a coherent solution, to",
+    "timestamp_start": 194.14,
+    "timestamp_end": 199.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "consider it as a whole problem.",
+    "timestamp_start": 199.14,
+    "timestamp_end": 203.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. Before we dive into the problem there, let's first make some definition of notation.",
+    "timestamp_start": 203.14,
+    "timestamp_end": 212.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I think... I don't know. Maybe this is already very familiar to everyone sitting here, but",
+    "timestamp_start": 212.14,
+    "timestamp_end": 218.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I just want to make sure the notation is consistent with my following slides. Say, we have a state",
+    "timestamp_start": 218.14,
+    "timestamp_end": 226.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "space denoted as S, an action space denoted as A, and the reward function, which is a",
+    "timestamp_start": 226.14,
+    "timestamp_end": 232.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "function from state and action to the real number. And the transition operator, which",
+    "timestamp_start": 232.14,
+    "timestamp_end": 241.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is the conditional distribution, once I give you the state and action, you provide me the",
+    "timestamp_start": 241.14,
+    "timestamp_end": 246.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "probability of next state, and of course, initial state distribution. I... Okay. I have",
+    "timestamp_start": 246.14,
+    "timestamp_end": 253.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "another component in the MDP, which is H or gamma. H means if it's finite horizon, it's",
+    "timestamp_start": 253.14,
+    "timestamp_end": 260.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "just H steps.",
+    "timestamp_start": 260.14,
+    "timestamp_end": 261.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if it's infinite horizon, the gamma stands, which is a scalar... a scalar... a discount",
+    "timestamp_start": 261.14,
+    "timestamp_end": 267.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "scalar from 0 to 1. Okay. And now I have some definition of notation here, which is the value",
+    "timestamp_start": 267.14,
+    "timestamp_end": 275.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "function, V, and also the state action value function, Q. Okay. I think we don't have any",
+    "timestamp_start": 275.14,
+    "timestamp_end": 283.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "questions here. Okay. Oh, by the way, if you have any questions, just interrupt me. I'm very",
+    "timestamp_start": 283.14,
+    "timestamp_end": 289.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "happy to answer. Great.",
+    "timestamp_start": 289.14,
+    "timestamp_end": 291.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. Let's see. There are two major categories of the reinforcement learning algorithm.",
+    "timestamp_start": 291.14,
+    "timestamp_end": 299.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One is model-free reinforcement learning. One of the representative algorithms in model-free",
+    "timestamp_start": 299.14,
+    "timestamp_end": 305.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "RL is Q-learning, which highly depends on the dynamic programming via this Bellman recursion.",
+    "timestamp_start": 305.14,
+    "timestamp_end": 314.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Q equals to R plus gamma transition with future Q.",
+    "timestamp_start": 314.14,
+    "timestamp_end": 319.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. With this relationship, actually, we can construct a TD update. And it's... Then",
+    "timestamp_start": 319.14,
+    "timestamp_end": 330.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we can introduce the nonlinear function, for example, neural network into it, and we get",
+    "timestamp_start": 330.14,
+    "timestamp_end": 334.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the deep version of this TD update. And now that we call it deep Q-learning. So this is",
+    "timestamp_start": 334.14,
+    "timestamp_end": 341.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "one representative algorithm. And another one is policy gradient. Okay. This is just",
+    "timestamp_start": 341.14,
+    "timestamp_end": 346.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a review of... A brief review of what is deep Q-learning.",
+    "timestamp_start": 346.14,
+    "timestamp_end": 347.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. That's from the idea that we have constructed the object function with the receptor pi,",
+    "timestamp_start": 347.14,
+    "timestamp_end": 357.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is accumulate reward from the beginning to the end. And we calculate the gradient",
+    "timestamp_start": 357.14,
+    "timestamp_end": 363.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with respect to the parameter in policy. And we update with... For the policy with stock",
+    "timestamp_start": 363.14,
+    "timestamp_end": 371.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as the gradient here. And it also has a lot of different variants, like a natural policy",
+    "timestamp_start": 371.14,
+    "timestamp_end": 376.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "gradient and the sub-actor critic, so on and so forth.",
+    "timestamp_start": 376.14,
+    "timestamp_end": 379.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These two are the representative algorithm model-free RL. Let's see what's the problem",
+    "timestamp_start": 379.14,
+    "timestamp_end": 386.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with it. The benefit of this algorithm is that we can easily incorporate the nonlinear",
+    "timestamp_start": 386.14,
+    "timestamp_end": 392.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "neural network into it. For example, as I mentioned in the previous two slides. But",
+    "timestamp_start": 392.14,
+    "timestamp_end": 398.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there are some questions here. One is if I introduce highly nonlinear function, what",
+    "timestamp_start": 398.14,
+    "timestamp_end": 404.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is the nonlinear function? And if I introduce highly nonlinear function approximator to",
+    "timestamp_start": 404.14,
+    "timestamp_end": 407.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the Q function or the policy function, there's no guarantee we can achieve the optimal solution.",
+    "timestamp_start": 407.14,
+    "timestamp_end": 414.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That means you are wasting a little bit of modeling effort while you need to pay for",
+    "timestamp_start": 414.14,
+    "timestamp_end": 421.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it when you introduce the complex... I mean, when you use that kind of complicated nonlinear",
+    "timestamp_start": 421.14,
+    "timestamp_end": 428.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "function for planning. That's one problem. And another one is... Actually, it's... We",
+    "timestamp_start": 428.14,
+    "timestamp_end": 434.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have an idea how to capture the uncertainty of nonlinear model for exploration. That's",
+    "timestamp_start": 434.14,
+    "timestamp_end": 441.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what I mean. There's a tradeoff between modeling and planning and exploration.",
+    "timestamp_start": 441.14,
+    "timestamp_end": 448.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. This is the drawback of this existing model-free RL. Any questions here? Okay. Let's",
+    "timestamp_start": 448.14,
+    "timestamp_end": 461.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "see another category, which is model-based RL.",
+    "timestamp_start": 461.14,
+    "timestamp_end": 463.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is the basic algorithm for flow for the model-based RL. The idea is that first I collect",
+    "timestamp_start": 464.14,
+    "timestamp_end": 477.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the data from some policy. And then I use this data to estimate the dynamic model and",
+    "timestamp_start": 477.14,
+    "timestamp_end": 483.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the reward. And once I get it, I will use some model predictive control to calculate",
+    "timestamp_start": 483.14,
+    "timestamp_end": 490.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the optimal policy from it. And then execute this policy. And then I will use the data",
+    "timestamp_start": 490.14,
+    "timestamp_end": 493.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to calculate the optimal policy from it. And then execute this policy. And then execute",
+    "timestamp_start": 493.14,
+    "timestamp_end": 494.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this policy to collect more data. And so on and so forth. Until I eventually stop somewhere.",
+    "timestamp_start": 494.14,
+    "timestamp_end": 501.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. Let's see the representative algorithm here. Actually, most of the algorithm here",
+    "timestamp_start": 501.14,
+    "timestamp_end": 509.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are invented by Professor Sugi. For example, the first one, the model ensemble trust region",
+    "timestamp_start": 509.14,
+    "timestamp_end": 518.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "policy optimization. And yeah, these are the set of data. And then the second one is",
+    "timestamp_start": 518.14,
+    "timestamp_end": 523.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the model-based RL model for curve moment. If you really want to see the benchmark why,",
+    "timestamp_start": 523.14,
+    "timestamp_end": 532.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you can go to this link to see it. Still, let's see what's々 74 00",
+    "timestamp_start": 532.06,
+    "timestamp_end": 536.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "prone and the cost for this model-based RL model-based RL model-based RL model-based RL",
+    "timestamp_start": 536.26,
+    "timestamp_end": 540.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "model-based RL model-based RL model-based RL model-based RL model-based RL model-based",
+    "timestamp_start": 540.64,
+    "timestamp_end": 541.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "RL model-based RL model-based RL model-based RL model-based RL model-based RL model-based",
+    "timestamp_start": 541.64,
+    "timestamp_end": 542.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "RL model-based RL model-based RL model-based RL model-based RL model-based RL model-based",
+    "timestamp_start": 542.64,
+    "timestamp_end": 543.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As I mentioned, there's still a tradeoff between modeling planning and exploration.",
+    "timestamp_start": 543.64,
+    "timestamp_end": 547.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the modeling part, we can market goods. Tackling the model to estimate that this inflation",
+    "timestamp_start": 547.0,
+    "timestamp_end": 552.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "배 os",
+    "timestamp_start": 552.0,
+    "timestamp_end": 552.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the environment but it leads to the situation that when the more",
+    "timestamp_start": 552.2,
+    "timestamp_end": 558.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "complicated the model it is the difficult you get the optimal policy from",
+    "timestamp_start": 558.86,
+    "timestamp_end": 563.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there this is the difficulty from planning and of course it's still like",
+    "timestamp_start": 563.18,
+    "timestamp_end": 567.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "exploration also we don't have any idea how to capture the uncertainty from it",
+    "timestamp_start": 567.92,
+    "timestamp_end": 574.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so yeah this is the part I mentioned that there's elephant in the room in IL",
+    "timestamp_start": 574.6,
+    "timestamp_end": 580.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but we never seriously take it as a question as a problem okay this is",
+    "timestamp_start": 580.32,
+    "timestamp_end": 589.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "another representative algorithm in model-based reinforcement which is called",
+    "timestamp_start": 589.76,
+    "timestamp_end": 594.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "linear quadratic reinforcement I would say even in this case we still",
+    "timestamp_start": 594.52,
+    "timestamp_end": 599.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "met some problem in the trade-off it's not achieving very good balance between",
+    "timestamp_start": 599.2,
+    "timestamp_end": 604.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this rate between the modeling planning and exploration why because",
+    "timestamp_start": 604.82,
+    "timestamp_end": 610.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in the modeling part we only use linear model quadratic model for reward and",
+    "timestamp_start": 610.32,
+    "timestamp_end": 615.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "linear model for the dynamic and this gives us the benefit that learning",
+    "timestamp_start": 615.36,
+    "timestamp_end": 620.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "problem actually it's very easy and also the planning as we can see here it's",
+    "timestamp_start": 620.16,
+    "timestamp_end": 626.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "convex optimization and we can definitely get the global optimal for",
+    "timestamp_start": 626.22,
+    "timestamp_end": 630.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this algorithm but yeah we lost the flexibility to achieve to",
+    "timestamp_start": 630.88,
+    "timestamp_end": 640.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "model the real problem we actually solve a wrong problem here so and here is the",
+    "timestamp_start": 640.32,
+    "timestamp_end": 649.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "thing I want to emphasize there is the trade-off between modeling exploration",
+    "timestamp_start": 649.74,
+    "timestamp_end": 653.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and planning and the nature question is whether we can get a practical algorithm",
+    "timestamp_start": 653.94,
+    "timestamp_end": 660.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with rigorous theoretical guarantee to achieve balance between these two three",
+    "timestamp_start": 660.06,
+    "timestamp_end": 664.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "things",
+    "timestamp_start": 664.0,
+    "timestamp_end": 666.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and that's why we",
+    "timestamp_start": 668.16,
+    "timestamp_end": 670.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "want to propose this representation based reinforcement learning where we",
+    "timestamp_start": 670.32,
+    "timestamp_end": 675.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "use model-based reinforcement to get some I think arbitrary let me over",
+    "timestamp_start": 675.46,
+    "timestamp_end": 682.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "claim it a little bit arbitrary nonlinear model based reinforcement learning",
+    "timestamp_start": 682.14,
+    "timestamp_end": 685.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "model to capture the dynamic and I can also achieve relatively global optimal",
+    "timestamp_start": 685.92,
+    "timestamp_end": 693.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for the planning and exploration okay before I dive into how I",
+    "timestamp_start": 693.48,
+    "timestamp_end": 700.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "achieve here any questions for the upgrade",
+    "timestamp_start": 700.32,
+    "timestamp_end": 706.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yeah good questions the questions is why I say the exploration is difficult in",
+    "timestamp_start": 711.56,
+    "timestamp_end": 717.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "nonlinear model it is because for exploration basically we need to",
+    "timestamp_start": 717.9,
+    "timestamp_end": 725.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "estimate the uncertainty of my current model and",
+    "timestamp_start": 725.1,
+    "timestamp_end": 730.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to be honest in theoretical part we only can provide a rigorous uncertain",
+    "timestamp_start": 730.16,
+    "timestamp_end": 737.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "estimation for linear model and beyond linear we don't have any computational",
+    "timestamp_start": 737.0,
+    "timestamp_end": 742.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "efficient way to or computational tractable way to estimate uncertainty so",
+    "timestamp_start": 742.78,
+    "timestamp_end": 748.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that gives a difficulty for exploration",
+    "timestamp_start": 748.32,
+    "timestamp_end": 752.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is it",
+    "timestamp_start": 752.78,
+    "timestamp_end": 755.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is it",
+    "timestamp_start": 755.92,
+    "timestamp_end": 757.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ", yeah roughly you can understand in this way yeah yeah definitely definitely if you can that's why I say theoretically we don't have such kind of way to get it",
+    "timestamp_start": 760.16,
+    "timestamp_end": 771.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yeah if we can estimate the uncertainty yes we can get the exploration works well but the",
+    "timestamp_start": 771.78,
+    "timestamp_end": 790.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "questions away the problems we cannot yeah but definitely you can use some",
+    "timestamp_start": 790.16,
+    "timestamp_end": 795.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ensemble as the model ensemble TRPO by just not rigorous way to capture the",
+    "timestamp_start": 795.48,
+    "timestamp_end": 803.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "uncertainty so it gives you the difficulty for exploration okay any more",
+    "timestamp_start": 803.64,
+    "timestamp_end": 814.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "questions",
+    "timestamp_start": 814.04,
+    "timestamp_end": 816.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 816.46,
+    "timestamp_end": 818.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 820.16,
+    "timestamp_end": 850.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 850.16,
+    "timestamp_end": 880.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 880.16,
+    "timestamp_end": 910.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 910.16,
+    "timestamp_end": 940.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 940.16,
+    "timestamp_end": 970.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 970.16,
+    "timestamp_end": 1000.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 1000.16,
+    "timestamp_end": 1030.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 1030.16,
+    "timestamp_end": 1060.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 1060.16,
+    "timestamp_end": 1090.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "",
+    "timestamp_start": 1090.16,
+    "timestamp_end": 1120.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ", yeah",
+    "timestamp_start": 1120.16,
+    "timestamp_end": 1123.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so yeah",
+    "timestamp_start": 1123.16,
+    "timestamp_end": 1127.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yeah",
+    "timestamp_start": 1127.16,
+    "timestamp_end": 1130.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "uh-huh",
+    "timestamp_start": 1130.16,
+    "timestamp_end": 1133.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "uh-huh",
+    "timestamp_start": 1133.16,
+    "timestamp_end": 1134.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "oh actually this is a good question here is only for illustration but in practice you can just the argument to the file with R one more dimension so eventually definitely can represent the R function here",
+    "timestamp_start": 1134.16,
+    "timestamp_end": 1145.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "go ahead",
+    "timestamp_start": 1145.16,
+    "timestamp_end": 1149.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I would have called kernel trigger because kernel trigger this thing's already been dominated by another SVM thing right this is not a kernel trigger this is like a more or less like a specific factorization use kernel okay",
+    "timestamp_start": 1150.16,
+    "timestamp_end": 1177.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we're there for kernel trigger",
+    "timestamp_start": 1177.16,
+    "timestamp_end": 1179.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "no",
+    "timestamp_start": 1179.16,
+    "timestamp_end": 1181.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's more or less like a classic kernel trigger",
+    "timestamp_start": 1181.16,
+    "timestamp_end": 1182.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "not",
+    "timestamp_start": 1182.16,
+    "timestamp_end": 1186.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Not",
+    "timestamp_start": 1186.16,
+    "timestamp_end": 1187.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah",
+    "timestamp_start": 1187.16,
+    "timestamp_end": 1190.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then I need to come back to the questions",
+    "timestamp_start": 1190.16,
+    "timestamp_end": 1196.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is five here is infinite dimensions so how can I how I can deal with it, actually",
+    "timestamp_start": 1196.1,
+    "timestamp_end": 1203.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I don't want, actually it, I had it I thought no one will write these questions, the point",
+    "timestamp_start": 1203.22,
+    "timestamp_end": 1207.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is, can you get some link in the committee and type that into your slides, or no we used it last week we got some leads but I don't want to do it straight away just directly",
+    "timestamp_start": 1207.16,
+    "timestamp_end": 1207.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now let's do it.",
+    "timestamp_start": 1207.76,
+    "timestamp_end": 1208.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The point is that, heading here, that's the second line, which is a random feature part.",
+    "timestamp_start": 1208.16,
+    "timestamp_end": 1216.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Usually it's infinite dimension because I need to sample omega from a Gaussian distribution.",
+    "timestamp_start": 1216.16,
+    "timestamp_end": 1221.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But actually I can use Monte Carlo to approximate it.",
+    "timestamp_start": 1221.16,
+    "timestamp_end": 1224.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So eventually I can reduce from integration to a finite sum.",
+    "timestamp_start": 1224.16,
+    "timestamp_end": 1229.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it just reduces this infinite dimension thing to a finite dimension.",
+    "timestamp_start": 1229.16,
+    "timestamp_end": 1234.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I just need to work with this finite dimension here.",
+    "timestamp_start": 1234.16,
+    "timestamp_end": 1238.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually, there are very complicated theory behind this, which is, if I use infinite dimension, the Q function is realizable.",
+    "timestamp_start": 1238.16,
+    "timestamp_end": 1251.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which means I can represent exactly this Q function with my infinite dimension feature.",
+    "timestamp_start": 1251.16,
+    "timestamp_end": 1258.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But if I use random feature, that will introduce some approximation error.",
+    "timestamp_start": 1258.16,
+    "timestamp_end": 1263.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And actually, I can do this.",
+    "timestamp_start": 1263.16,
+    "timestamp_end": 1264.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, we recently just finished the theoretical guarantee to quantify this approximation error.",
+    "timestamp_start": 1264.16,
+    "timestamp_end": 1270.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The good news is it's not introducing any curse of dimension.",
+    "timestamp_start": 1270.16,
+    "timestamp_end": 1275.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we can safely use it in practice.",
+    "timestamp_start": 1275.16,
+    "timestamp_end": 1279.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. Go ahead.",
+    "timestamp_start": 1279.16,
+    "timestamp_end": 1283.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, this is another question.",
+    "timestamp_start": 1288.16,
+    "timestamp_end": 1291.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I should say, honestly, I don't know.",
+    "timestamp_start": 1291.16,
+    "timestamp_end": 1293.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I have no idea.",
+    "timestamp_start": 1294.16,
+    "timestamp_end": 1296.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's really actually very subtle question, which seems like stochastic things easier than determining a signal.",
+    "timestamp_start": 1296.16,
+    "timestamp_end": 1305.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "At least from this perspective.",
+    "timestamp_start": 1305.16,
+    "timestamp_end": 1309.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 1309.16,
+    "timestamp_end": 1310.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is just a starting point for us to believe we can do linear representation for the benefits of planning.",
+    "timestamp_start": 1310.16,
+    "timestamp_end": 1321.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 1321.16,
+    "timestamp_end": 1322.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And that's it.",
+    "timestamp_start": 1322.16,
+    "timestamp_end": 1323.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "After this, I will introduce some recent work beyond this part.",
+    "timestamp_start": 1323.16,
+    "timestamp_end": 1330.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah. Another part I want to comment is that although I hear some Gaussian noise, but actually this can be generalized easily.",
+    "timestamp_start": 1330.16,
+    "timestamp_end": 1339.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which is, you just introduce phi in front, in the left-hand side of the notation.",
+    "timestamp_start": 1339.16,
+    "timestamp_end": 1343.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So phi goes to F plus some Gaussian.",
+    "timestamp_start": 1343.16,
+    "timestamp_end": 1347.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then the noise is the long Gaussian for S.",
+    "timestamp_start": 1347.16,
+    "timestamp_end": 1351.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Right.",
+    "timestamp_start": 1351.16,
+    "timestamp_end": 1352.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1353.16,
+    "timestamp_end": 1354.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now we see the benefits of planning using this linear representation.",
+    "timestamp_start": 1354.16,
+    "timestamp_end": 1363.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in this paper, we didn't use UCB.",
+    "timestamp_start": 1363.16,
+    "timestamp_end": 1369.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we still use the Thompson sampling for exploration.",
+    "timestamp_start": 1369.16,
+    "timestamp_end": 1373.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That means there are still some intractability for exploration capturing in F.",
+    "timestamp_start": 1373.16,
+    "timestamp_end": 1381.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we will see how we handle this later.",
+    "timestamp_start": 1381.16,
+    "timestamp_end": 1384.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But for this moment, I just used Thompson sampling, where I estimate a posterior of the dynamic F.",
+    "timestamp_start": 1384.16,
+    "timestamp_end": 1391.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And every time, I just sample from this F for exploration.",
+    "timestamp_start": 1391.16,
+    "timestamp_end": 1397.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the middle part is planning.",
+    "timestamp_start": 1397.16,
+    "timestamp_end": 1401.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So nothing fancy here.",
+    "timestamp_start": 1401.16,
+    "timestamp_end": 1405.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is this part clear?",
+    "timestamp_start": 1405.16,
+    "timestamp_end": 1407.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or should I dive into the detail here?",
+    "timestamp_start": 1407.16,
+    "timestamp_end": 1409.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1409.16,
+    "timestamp_end": 1418.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let me dive into the detail here.",
+    "timestamp_start": 1418.16,
+    "timestamp_end": 1419.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You see the second blue line, which is phi to the optimal policy pi k on F k with algorithm 2.",
+    "timestamp_start": 1419.16,
+    "timestamp_end": 1426.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is algorithm 2.",
+    "timestamp_start": 1426.16,
+    "timestamp_end": 1428.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I use this planning for optimal policy here.",
+    "timestamp_start": 1428.16,
+    "timestamp_end": 1432.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this whole algorithm actually is outer loop, which is I want to use this Thompson sampling.",
+    "timestamp_start": 1432.16,
+    "timestamp_end": 1437.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For exploration.",
+    "timestamp_start": 1437.16,
+    "timestamp_end": 1440.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which means every time I sample one F from my posterior.",
+    "timestamp_start": 1440.16,
+    "timestamp_end": 1445.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And based on this F, I get my policy.",
+    "timestamp_start": 1445.16,
+    "timestamp_end": 1447.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then use my policy to collect the data.",
+    "timestamp_start": 1447.16,
+    "timestamp_end": 1451.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And later, I use this collected data to update my posterior.",
+    "timestamp_start": 1451.16,
+    "timestamp_end": 1457.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this is whole iteration and so on and so forth.",
+    "timestamp_start": 1457.16,
+    "timestamp_end": 1460.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So outer loop is for exploration.",
+    "timestamp_start": 1460.16,
+    "timestamp_end": 1462.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the inner part finds the optimal policy, which is only for planning in my previous slide.",
+    "timestamp_start": 1462.16,
+    "timestamp_end": 1466.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is the whole algorithm.",
+    "timestamp_start": 1466.16,
+    "timestamp_end": 1468.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Any questions here?",
+    "timestamp_start": 1468.16,
+    "timestamp_end": 1473.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1473.16,
+    "timestamp_end": 1478.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Great.",
+    "timestamp_start": 1478.16,
+    "timestamp_end": 1479.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's see.",
+    "timestamp_start": 1479.16,
+    "timestamp_end": 1481.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 1481.16,
+    "timestamp_end": 1482.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As I mentioned, I want to find a theoretical solid algorithm, proof of algorithm.",
+    "timestamp_start": 1482.16,
+    "timestamp_end": 1489.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is how we get it.",
+    "timestamp_start": 1489.16,
+    "timestamp_end": 1492.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We can prove the regret of this algorithm, which is incorrect.",
+    "timestamp_start": 1492.16,
+    "timestamp_end": 1495.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's independent of the state of action.",
+    "timestamp_start": 1495.16,
+    "timestamp_end": 1498.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it only depends on the complexity of the dynamic function and the square root of T order.",
+    "timestamp_start": 1498.16,
+    "timestamp_end": 1505.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the proof is actually because it's quite standard.",
+    "timestamp_start": 1505.16,
+    "timestamp_end": 1511.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's quite standard.",
+    "timestamp_start": 1511.16,
+    "timestamp_end": 1513.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The normal part is just how we do the planning part.",
+    "timestamp_start": 1513.16,
+    "timestamp_end": 1517.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But if you have any interest in this part, I can explain later.",
+    "timestamp_start": 1517.16,
+    "timestamp_end": 1521.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1521.16,
+    "timestamp_end": 1523.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now, let's see how it performs in practice.",
+    "timestamp_start": 1523.16,
+    "timestamp_end": 1525.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We compared to the results provided by the benchmarking the model-based reinforcement.",
+    "timestamp_start": 1525.16,
+    "timestamp_end": 1532.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The algorithm with star is all copied from the benchmark one.",
+    "timestamp_start": 1532.16,
+    "timestamp_end": 1539.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we followed the protocol to compare our algorithm, which is called speed, and the deep successor feature.",
+    "timestamp_start": 1539.16,
+    "timestamp_end": 1547.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And as we can see here, at least we are better than the state of the art model-based reinforcement.",
+    "timestamp_start": 1547.16,
+    "timestamp_end": 1553.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1553.16,
+    "timestamp_end": 1554.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is the results on modulo part.",
+    "timestamp_start": 1554.16,
+    "timestamp_end": 1557.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sure.",
+    "timestamp_start": 1557.16,
+    "timestamp_end": 1558.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what's the ?",
+    "timestamp_start": 1558.16,
+    "timestamp_end": 1560.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is that separate, like, find the ?",
+    "timestamp_start": 1560.16,
+    "timestamp_end": 1563.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, yeah.",
+    "timestamp_start": 1563.16,
+    "timestamp_end": 1564.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Are you doing ?",
+    "timestamp_start": 1564.16,
+    "timestamp_end": 1566.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or are you just running the ?",
+    "timestamp_start": 1566.16,
+    "timestamp_end": 1568.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually, good question.",
+    "timestamp_start": 1568.16,
+    "timestamp_end": 1570.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I find the posterior of my f.",
+    "timestamp_start": 1570.16,
+    "timestamp_end": 1575.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And because I need to estimate the posterior, actually, I use the long-during dynamics to get a different variant of the dynamic there.",
+    "timestamp_start": 1575.16,
+    "timestamp_end": 1582.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And after I get the dynamic f, I use random feature to track the feature.",
+    "timestamp_start": 1582.16,
+    "timestamp_end": 1588.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And upon that, I use the software actor critic to get the optimal .",
+    "timestamp_start": 1588.16,
+    "timestamp_end": 1594.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And to do the ?",
+    "timestamp_start": 1594.16,
+    "timestamp_end": 1600.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1600.16,
+    "timestamp_end": 1601.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I fix the feature for representing my Q function.",
+    "timestamp_start": 1601.16,
+    "timestamp_end": 1604.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And based on that, I track my Q.",
+    "timestamp_start": 1604.16,
+    "timestamp_end": 1607.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I update my Q.",
+    "timestamp_start": 1607.16,
+    "timestamp_end": 1609.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then with that, I update my policy.",
+    "timestamp_start": 1609.16,
+    "timestamp_end": 1611.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 1611.16,
+    "timestamp_end": 1614.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1614.16,
+    "timestamp_end": 1615.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'm happy to show this one.",
+    "timestamp_start": 1615.16,
+    "timestamp_end": 1617.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually, after the previous comparison with model-based reinforcement, actually, we are very happy because we beat all the state of the art model-based reinforcement.",
+    "timestamp_start": 1617.16,
+    "timestamp_end": 1626.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But still, you can see from here, it's very difficult.",
+    "timestamp_start": 1626.16,
+    "timestamp_end": 1630.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1630.16,
+    "timestamp_end": 1631.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I didn't show it.",
+    "timestamp_start": 1631.16,
+    "timestamp_end": 1633.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's see.",
+    "timestamp_start": 1633.16,
+    "timestamp_end": 1634.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, the ?",
+    "timestamp_start": 1634.16,
+    "timestamp_end": 1636.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And you can see that the ?",
+    "timestamp_start": 1636.16,
+    "timestamp_end": 1638.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the ?",
+    "timestamp_start": 1638.16,
+    "timestamp_end": 1639.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the ?",
+    "timestamp_start": 1639.16,
+    "timestamp_end": 1640.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the ?",
+    "timestamp_start": 1640.16,
+    "timestamp_end": 1641.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the ?",
+    "timestamp_start": 1641.16,
+    "timestamp_end": 1642.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "?",
+    "timestamp_start": 1642.16,
+    "timestamp_end": 1643.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1643.16,
+    "timestamp_end": 1644.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, now we will show you the two.",
+    "timestamp_start": 1644.16,
+    "timestamp_end": 1645.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 1645.16,
+    "timestamp_end": 1646.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1646.16,
+    "timestamp_end": 1647.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, it's worth the second.",
+    "timestamp_start": 1647.16,
+    "timestamp_end": 1648.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we can see the ?",
+    "timestamp_start": 1648.16,
+    "timestamp_end": 1649.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1649.16,
+    "timestamp_end": 1650.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It'll not work.",
+    "timestamp_start": 1650.16,
+    "timestamp_end": 1651.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I will show you the two.",
+    "timestamp_start": 1651.16,
+    "timestamp_end": 1652.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One.",
+    "timestamp_start": 1652.16,
+    "timestamp_end": 1653.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ?",
+    "timestamp_start": 1653.16,
+    "timestamp_end": 1654.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ?",
+    "timestamp_start": 1654.16,
+    "timestamp_end": 1655.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ?",
+    "timestamp_start": 1655.16,
+    "timestamp_end": 1656.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1656.16,
+    "timestamp_end": 1657.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ?",
+    "timestamp_start": 1657.16,
+    "timestamp_end": 1658.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1658.16,
+    "timestamp_end": 1659.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ?",
+    "timestamp_start": 1659.16,
+    "timestamp_end": 1660.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1660.16,
+    "timestamp_end": 1661.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1661.16,
+    "timestamp_end": 1662.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, now I will show you the ?",
+    "timestamp_start": 1662.16,
+    "timestamp_end": 1663.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ?",
+    "timestamp_start": 1663.16,
+    "timestamp_end": 1664.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the ?",
+    "timestamp_start": 1664.16,
+    "timestamp_end": 1665.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the ?",
+    "timestamp_start": 1665.16,
+    "timestamp_end": 1666.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1666.16,
+    "timestamp_end": 1667.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1667.16,
+    "timestamp_end": 1668.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ?",
+    "timestamp_start": 1668.16,
+    "timestamp_end": 1669.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "why we call this speed regulation version.",
+    "timestamp_start": 1669.16,
+    "timestamp_end": 1671.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And now with that we can achieve comparable",
+    "timestamp_start": 1671.58,
+    "timestamp_end": 1674.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with the stack, sometimes better.",
+    "timestamp_start": 1674.04,
+    "timestamp_end": 1675.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, actually I pause here.",
+    "timestamp_start": 1678.26,
+    "timestamp_end": 1680.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "After we proposed this method,",
+    "timestamp_start": 1680.8,
+    "timestamp_end": 1682.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "actually we're a little bit disappointed",
+    "timestamp_start": 1682.02,
+    "timestamp_end": 1683.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because we hope we can get better results",
+    "timestamp_start": 1683.5,
+    "timestamp_end": 1687.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because we achieved the balance between the modeling,",
+    "timestamp_start": 1687.52,
+    "timestamp_end": 1692.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "planning, and exploration.",
+    "timestamp_start": 1692.96,
+    "timestamp_end": 1694.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But practice, it's not that case.",
+    "timestamp_start": 1694.36,
+    "timestamp_end": 1696.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's a little bit disappointing at that moment.",
+    "timestamp_start": 1696.4,
+    "timestamp_end": 1699.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And that's why we go to later algorithm.",
+    "timestamp_start": 1699.16,
+    "timestamp_end": 1703.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And before we go to later algorithm,",
+    "timestamp_start": 1703.08,
+    "timestamp_end": 1705.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "let's see what we learned here.",
+    "timestamp_start": 1705.28,
+    "timestamp_end": 1707.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What we learned actually is linearization indeed",
+    "timestamp_start": 1707.4,
+    "timestamp_end": 1710.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sometimes works, at least.",
+    "timestamp_start": 1710.44,
+    "timestamp_end": 1712.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Provides us some promising direction to go further.",
+    "timestamp_start": 1712.92,
+    "timestamp_end": 1717.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And as we already see, there's still gap",
+    "timestamp_start": 1717.28,
+    "timestamp_end": 1720.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "between the, in the practical cases.",
+    "timestamp_start": 1720.34,
+    "timestamp_end": 1723.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We, after this comparison, we contracted",
+    "timestamp_start": 1723.68,
+    "timestamp_end": 1727.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there are several reasons",
+    "timestamp_start": 1727.76,
+    "timestamp_end": 1728.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "why we didn't achieve the optimal,",
+    "timestamp_start": 1728.88,
+    "timestamp_end": 1731.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we didn't achieve state of the art performance",
+    "timestamp_start": 1731.3,
+    "timestamp_end": 1733.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "compared to stack.",
+    "timestamp_start": 1733.2,
+    "timestamp_end": 1734.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One is that ideally we should use infinite dimension feature.",
+    "timestamp_start": 1734.46,
+    "timestamp_end": 1739.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But actually we only have finite dimension",
+    "timestamp_start": 1740.84,
+    "timestamp_end": 1743.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because random feature.",
+    "timestamp_start": 1743.1,
+    "timestamp_end": 1744.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We believe there's some error introduced",
+    "timestamp_start": 1744.7,
+    "timestamp_end": 1749.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by this random feature introduced.",
+    "timestamp_start": 1749.02,
+    "timestamp_end": 1752.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then another one is we also use Thompson sampling.",
+    "timestamp_start": 1752.54,
+    "timestamp_end": 1756.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the Thompson sampling required me to get up",
+    "timestamp_start": 1756.56,
+    "timestamp_end": 1758.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and do some accurate estimating of the posterior.",
+    "timestamp_start": 1758.88,
+    "timestamp_end": 1761.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we didn't.",
+    "timestamp_start": 1761.24,
+    "timestamp_end": 1762.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We used long-distance dynamics sample",
+    "timestamp_start": 1762.58,
+    "timestamp_end": 1765.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to sample from this posterior.",
+    "timestamp_start": 1765.2,
+    "timestamp_end": 1767.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I think there's also some error here.",
+    "timestamp_start": 1767.94,
+    "timestamp_end": 1770.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also we use Gaussian noise.",
+    "timestamp_start": 1770.7,
+    "timestamp_end": 1773.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And practically, maybe it's not Gaussian noise.",
+    "timestamp_start": 1773.02,
+    "timestamp_end": 1776.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I think there are several reasons for this.",
+    "timestamp_start": 1776.62,
+    "timestamp_end": 1779.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's why we want to further improve it",
+    "timestamp_start": 1779.24,
+    "timestamp_end": 1782.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to avoid that kind of errors introduced",
+    "timestamp_start": 1782.54,
+    "timestamp_end": 1785.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by this approximation.",
+    "timestamp_start": 1785.6,
+    "timestamp_end": 1786.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay?",
+    "timestamp_start": 1787.8,
+    "timestamp_end": 1788.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, can we do it better?",
+    "timestamp_start": 1788.88,
+    "timestamp_end": 1791.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, questions?",
+    "timestamp_start": 1793.46,
+    "timestamp_end": 1794.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sorry, can I repeat the questions?",
+    "timestamp_start": 1802.1,
+    "timestamp_end": 1803.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 1803.8,
+    "timestamp_end": 1806.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Good questions, yeah.",
+    "timestamp_start": 1806.56,
+    "timestamp_end": 1807.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually in practice we just fixed the number",
+    "timestamp_start": 1807.98,
+    "timestamp_end": 1811.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in my implementation.",
+    "timestamp_start": 1811.28,
+    "timestamp_end": 1812.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, we use scalar to estimate this number.",
+    "timestamp_start": 1813.64,
+    "timestamp_end": 1818.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then to skip the estimations for this cogax matrix.",
+    "timestamp_start": 1818.88,
+    "timestamp_end": 1824.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I expect.",
+    "timestamp_start": 1824.6,
+    "timestamp_end": 1825.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is something that's important to implement on the",
+    "timestamp_start": 1825.7,
+    "timestamp_end": 1829.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to sense the estimations for this matrix.",
+    "timestamp_start": 1829.18,
+    "timestamp_end": 1832.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1832.56,
+    "timestamp_end": 1833.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, go ahead.",
+    "timestamp_start": 1834.54,
+    "timestamp_end": 1835.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, when I say approximation, there are several different levels of approximation.",
+    "timestamp_start": 1835.58,
+    "timestamp_end": 1849.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One is I use F model.",
+    "timestamp_start": 1849.66,
+    "timestamp_end": 1853.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The parameterizer of F will introduce some approximation error.",
+    "timestamp_start": 1853.66,
+    "timestamp_end": 1856.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I didn't consider it.",
+    "timestamp_start": 1856.74,
+    "timestamp_end": 1857.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here, I mean, virtually, as I mentioned, and also noticed that we should use infinite",
+    "timestamp_start": 1857.74,
+    "timestamp_end": 1866.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "dimension of phi.",
+    "timestamp_start": 1866.4,
+    "timestamp_end": 1868.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But in practice, we cannot do that.",
+    "timestamp_start": 1868.24,
+    "timestamp_end": 1870.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we use random feature to reduce it from infinite dimension to finite dimension.",
+    "timestamp_start": 1870.6,
+    "timestamp_end": 1875.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is why we call it infinite dimension linear approximation.",
+    "timestamp_start": 1875.12,
+    "timestamp_end": 1879.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's another level for approximation error.",
+    "timestamp_start": 1879.74,
+    "timestamp_end": 1882.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the second part is because posterior.",
+    "timestamp_start": 1882.9,
+    "timestamp_end": 1887.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We can also not able to get this posterior accuracy.",
+    "timestamp_start": 1887.26,
+    "timestamp_end": 1893.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we use long serving to sample.",
+    "timestamp_start": 1893.96,
+    "timestamp_end": 1896.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there are several different level of approximation.",
+    "timestamp_start": 1896.12,
+    "timestamp_end": 1900.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 1900.14,
+    "timestamp_end": 1901.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In this paper, we use illusion dimension.",
+    "timestamp_start": 1901.14,
+    "timestamp_end": 1905.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Illusion dimension to merit.",
+    "timestamp_start": 1905.16,
+    "timestamp_end": 1907.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, this is the starting point.",
+    "timestamp_start": 1907.76,
+    "timestamp_end": 1912.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So definitely, there is a problem.",
+    "timestamp_start": 1912.98,
+    "timestamp_end": 1916.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we use the first step.",
+    "timestamp_start": 1916.3,
+    "timestamp_end": 1917.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well, what is the first step?",
+    "timestamp_start": 1917.26,
+    "timestamp_end": 1920.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The first step is some has another answer to the first step.",
+    "timestamp_start": 1920.42,
+    "timestamp_end": 1924.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the first phase, we put the second step next to the first step.",
+    "timestamp_start": 1924.08,
+    "timestamp_end": 1926.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For the second step, we plus a for zero.",
+    "timestamp_start": 1926.58,
+    "timestamp_end": 1927.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's just say it's not the one that is not true.",
+    "timestamp_start": 1927.58,
+    "timestamp_end": 1928.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And set a second step paste that we use to temporarily squat for a future set of Dareing",
+    "timestamp_start": 1928.58,
+    "timestamp_end": 1929.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "answers.",
+    "timestamp_start": 1929.58,
+    "timestamp_end": 1930.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it can do it invoke.",
+    "timestamp_start": 1930.58,
+    "timestamp_end": 1931.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, the second step is kept a π15 mantra, a three kinds of",
+    "timestamp_start": 1931.58,
+    "timestamp_end": 1935.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "theory about dual",
+    "timestamp_start": 1935.1,
+    "timestamp_end": 1941.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Questions question of zoom talent because if you point at charged signal control in",
+    "timestamp_start": 1941.96,
+    "timestamp_end": 1942.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this shooting in recent me, what happens?",
+    "timestamp_start": 1942.96,
+    "timestamp_end": 1943.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here the new learning life is star 1 if",
+    "timestamp_start": 1943.96,
+    "timestamp_end": 1944.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the works have two stages of judgment time.",
+    "timestamp_start": 1944.92,
+    "timestamp_end": 1945.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is left this this is studied in technology is loving this f mà.",
+    "timestamp_start": 1945.92,
+    "timestamp_end": 1946.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because this is real drawback, we really want to say whether we can directly estimate this",
+    "timestamp_start": 1946.92,
+    "timestamp_end": 1957.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "factorization as the model-based reinforced learning.",
+    "timestamp_start": 1957.9,
+    "timestamp_end": 1961.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The answer is no, it's really difficult.",
+    "timestamp_start": 1961.9,
+    "timestamp_end": 1965.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because the reality part, if we really want to get this model, we need to make sure the",
+    "timestamp_start": 1965.1,
+    "timestamp_end": 1972.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "constraint is satisfied, which means for arbitrary state and action, I need to say the integration",
+    "timestamp_start": 1972.3,
+    "timestamp_end": 1977.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of this is equal to 1 to ensure it is a probability.",
+    "timestamp_start": 1977.2,
+    "timestamp_end": 1985.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Of course, this constraint is really difficult to satisfy because it's an infinite-manifest",
+    "timestamp_start": 1985.2,
+    "timestamp_end": 1991.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "constraint.",
+    "timestamp_start": 1991.7,
+    "timestamp_end": 1992.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And of course, we can say, OK, I switch from the previous model to this model, where I",
+    "timestamp_start": 1992.7,
+    "timestamp_end": 1999.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "normalize it explicitly.",
+    "timestamp_start": 1999.26,
+    "timestamp_end": 2001.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2001.26,
+    "timestamp_end": 2002.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the idea of this is indeed introduce some benefits for computation, for estimating it.",
+    "timestamp_start": 2002.26,
+    "timestamp_end": 2008.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But the bad thing is when we want to represent the Q function, we need explicit estimate",
+    "timestamp_start": 2008.88,
+    "timestamp_end": 2015.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this partition function.",
+    "timestamp_start": 2015.76,
+    "timestamp_end": 2017.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this part is difficult.",
+    "timestamp_start": 2017.84,
+    "timestamp_end": 2020.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2020.84,
+    "timestamp_end": 2021.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the partition function really is not like sampling we can ignore every time.",
+    "timestamp_start": 2021.84,
+    "timestamp_end": 2028.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No.",
+    "timestamp_start": 2028.12,
+    "timestamp_end": 2029.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In representing Q, we need it explicitly.",
+    "timestamp_start": 2029.12,
+    "timestamp_end": 2031.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is really bad.",
+    "timestamp_start": 2031.12,
+    "timestamp_end": 2032.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2032.12,
+    "timestamp_end": 2033.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So how can we deal with it?",
+    "timestamp_start": 2033.12,
+    "timestamp_end": 2037.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2037.22,
+    "timestamp_end": 2038.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I forgot to mention another condition to satisfy.",
+    "timestamp_start": 2038.22,
+    "timestamp_end": 2041.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This condition actually is a little bit weird, the first line, which is saying for arbitrary",
+    "timestamp_start": 2041.62,
+    "timestamp_end": 2048.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "G, which is up bounded by some constant, I need to integrate to a mill, which is bounded.",
+    "timestamp_start": 2048.48,
+    "timestamp_end": 2058.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2058.12,
+    "timestamp_end": 2059.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This condition is a little bit weird.",
+    "timestamp_start": 2059.12,
+    "timestamp_end": 2060.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But don't worry.",
+    "timestamp_start": 2060.72,
+    "timestamp_end": 2062.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Eventually, it is trying to calculate the complexity of Q function because, you see,",
+    "timestamp_start": 2062.12,
+    "timestamp_end": 2067.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the integration part shows up there as W. And we need to bound the size of W to ensure",
+    "timestamp_start": 2067.76,
+    "timestamp_end": 2074.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that Q function is easy to optimize, easy to learn.",
+    "timestamp_start": 2074.88,
+    "timestamp_end": 2078.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK, this condition is for that.",
+    "timestamp_start": 2078.88,
+    "timestamp_end": 2081.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is a purely theoretical condition.",
+    "timestamp_start": 2081.36,
+    "timestamp_end": 2083.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We may first ignore it.",
+    "timestamp_start": 2083.88,
+    "timestamp_end": 2086.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK, let's see.",
+    "timestamp_start": 2086.88,
+    "timestamp_end": 2088.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, come back to the main thing.",
+    "timestamp_start": 2088.88,
+    "timestamp_end": 2090.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The MLE for learning the factorization is really difficult.",
+    "timestamp_start": 2090.88,
+    "timestamp_end": 2096.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let me skip to this part.",
+    "timestamp_start": 2096.64,
+    "timestamp_end": 2098.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "How can we do it?",
+    "timestamp_start": 2098.64,
+    "timestamp_end": 2099.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually, we propose three ways to learn it.",
+    "timestamp_start": 2099.88,
+    "timestamp_end": 2102.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's first see this way, which is using the contrastive loss.",
+    "timestamp_start": 2102.98,
+    "timestamp_end": 2108.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if you're familiar with CPC, indeed, this is a CPC,",
+    "timestamp_start": 2108.26,
+    "timestamp_end": 2113.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "contrastive prediction coding.",
+    "timestamp_start": 2113.42,
+    "timestamp_end": 2117.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2120.28,
+    "timestamp_end": 2120.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In fact, we have a lot of data.",
+    "timestamp_start": 2120.78,
+    "timestamp_end": 2120.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in this part, we can ignore the partition function.",
+    "timestamp_start": 2120.86,
+    "timestamp_end": 2124.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we also show that this is consistent with MLE, which means once you have infinite negative",
+    "timestamp_start": 2124.32,
+    "timestamp_end": 2130.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sample, the solution for this one is for phi.",
+    "timestamp_start": 2130.86,
+    "timestamp_end": 2133.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The solution for this one for phi and mu, it will recover the MLE.",
+    "timestamp_start": 2133.86,
+    "timestamp_end": 2138.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK?",
+    "timestamp_start": 2138.26,
+    "timestamp_end": 2138.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, it is phi.",
+    "timestamp_start": 2138.76,
+    "timestamp_end": 2143.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And to be honest, we tried very hard to calculate this bias.",
+    "timestamp_start": 2143.26,
+    "timestamp_end": 2147.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we failed.",
+    "timestamp_start": 2147.26,
+    "timestamp_end": 2148.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's a.",
+    "timestamp_start": 2148.36,
+    "timestamp_end": 2148.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2148.86,
+    "timestamp_end": 2149.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2149.36,
+    "timestamp_end": 2149.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2149.86,
+    "timestamp_end": 2150.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's really difficult to calculate this bias.",
+    "timestamp_start": 2150.86,
+    "timestamp_end": 2153.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2153.1,
+    "timestamp_end": 2153.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK, this is one way.",
+    "timestamp_start": 2156.76,
+    "timestamp_end": 2159.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this is second way, which is once we finish the NC estimator,",
+    "timestamp_start": 2159.18,
+    "timestamp_end": 2163.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we go back to see what phi really is.",
+    "timestamp_start": 2163.96,
+    "timestamp_end": 2167.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If we look back into the transition representation,",
+    "timestamp_start": 2167.74,
+    "timestamp_end": 2171.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it is phi times mu.",
+    "timestamp_start": 2171.1,
+    "timestamp_end": 2173.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Indeed, it is SVD for transition operator T.",
+    "timestamp_start": 2173.96,
+    "timestamp_end": 2178.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that means if I can just get SVD,",
+    "timestamp_start": 2178.18,
+    "timestamp_end": 2180.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the problem is solved.",
+    "timestamp_start": 2180.76,
+    "timestamp_end": 2182.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's why we go to this SVD decomposition.",
+    "timestamp_start": 2182.76,
+    "timestamp_end": 2186.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But this SVD decomposition is not easy to optimize,",
+    "timestamp_start": 2186.5,
+    "timestamp_end": 2188.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because there is expectation inside of square.",
+    "timestamp_start": 2188.82,
+    "timestamp_end": 2192.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We cannot use the Stochast gradient to optimize it.",
+    "timestamp_start": 2192.88,
+    "timestamp_end": 2196.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I have read a lot of paper about venture deals.",
+    "timestamp_start": 2196.66,
+    "timestamp_end": 2200.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I apply venture deal again.",
+    "timestamp_start": 2200.76,
+    "timestamp_end": 2202.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now it becomes very easy to optimize expectation outside",
+    "timestamp_start": 2202.84,
+    "timestamp_end": 2207.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of everything.",
+    "timestamp_start": 2207.62,
+    "timestamp_end": 2208.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so Stochast gradient optimize it.",
+    "timestamp_start": 2208.76,
+    "timestamp_end": 2210.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the better thing is because this is doing maximization,",
+    "timestamp_start": 2210.76,
+    "timestamp_end": 2215.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it's no longer being max.",
+    "timestamp_start": 2215.04,
+    "timestamp_end": 2216.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's max, max.",
+    "timestamp_start": 2216.58,
+    "timestamp_end": 2217.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Perfect.",
+    "timestamp_start": 2217.96,
+    "timestamp_end": 2219.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is our recent paper here.",
+    "timestamp_start": 2219.52,
+    "timestamp_end": 2223.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this is our second try.",
+    "timestamp_start": 2223.86,
+    "timestamp_end": 2226.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK, before I dive into the third method,",
+    "timestamp_start": 2228.54,
+    "timestamp_end": 2231.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I should mention a little bit connection",
+    "timestamp_start": 2231.76,
+    "timestamp_end": 2233.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "between this spectral view to the successor feature.",
+    "timestamp_start": 2233.94,
+    "timestamp_end": 2237.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2238.76,
+    "timestamp_end": 2240.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's everyone familiar with successor feature here.",
+    "timestamp_start": 2240.76,
+    "timestamp_end": 2244.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But anyway, it's a very classic representation proposed",
+    "timestamp_start": 2244.26,
+    "timestamp_end": 2250.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about 30 years ago.",
+    "timestamp_start": 2250.92,
+    "timestamp_end": 2253.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But still, recently, still many people",
+    "timestamp_start": 2253.5,
+    "timestamp_end": 2256.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are using it to try for reinforced learning.",
+    "timestamp_start": 2256.24,
+    "timestamp_end": 2260.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Essentially, the successor feature,",
+    "timestamp_start": 2260.62,
+    "timestamp_end": 2262.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "although it didn't propose in this way,",
+    "timestamp_start": 2262.68,
+    "timestamp_end": 2264.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but actually, mathematically, it is equivalent to do SVD for i",
+    "timestamp_start": 2264.38,
+    "timestamp_end": 2269.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "minus gamma p pi.",
+    "timestamp_start": 2269.44,
+    "timestamp_end": 2270.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can see that the first one is the pi inverse.",
+    "timestamp_start": 2270.76,
+    "timestamp_end": 2275.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the pi pi is the transition operator",
+    "timestamp_start": 2275.66,
+    "timestamp_end": 2278.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "integrated with some pi.",
+    "timestamp_start": 2278.64,
+    "timestamp_end": 2282.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also other kind of spectral features, at least here.",
+    "timestamp_start": 2282.12,
+    "timestamp_end": 2286.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But all of them depends on pi pi, which is not t.",
+    "timestamp_start": 2286.4,
+    "timestamp_end": 2290.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually, this introduces some bad effect,",
+    "timestamp_start": 2290.08,
+    "timestamp_end": 2294.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is your feature always depends on the policy you use.",
+    "timestamp_start": 2294.0,
+    "timestamp_end": 2298.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And once it change, your feature also change.",
+    "timestamp_start": 2298.92,
+    "timestamp_end": 2300.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So while the feature we learned is for t,",
+    "timestamp_start": 2300.76,
+    "timestamp_end": 2305.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is invariant for arbitrary pi.",
+    "timestamp_start": 2305.32,
+    "timestamp_end": 2307.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also for successor feature, there",
+    "timestamp_start": 2310.84,
+    "timestamp_end": 2314.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is no rigorous exploration proposed yet.",
+    "timestamp_start": 2314.2,
+    "timestamp_end": 2316.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But for our method, we will see later we can do exploration.",
+    "timestamp_start": 2316.84,
+    "timestamp_end": 2322.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK, here is a second way to learn the linear representation",
+    "timestamp_start": 2322.3,
+    "timestamp_end": 2327.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as we want by SVD.",
+    "timestamp_start": 2327.94,
+    "timestamp_end": 2330.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And before I dive into the next method, any questions here?",
+    "timestamp_start": 2330.76,
+    "timestamp_end": 2336.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2344.08,
+    "timestamp_end": 2344.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The photo value and the",
+    "timestamp_start": 2344.58,
+    "timestamp_end": 2350.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "YUFENG GUO, SVD .",
+    "timestamp_start": 2350.6,
+    "timestamp_end": 2352.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "YUFENG GUO, SVD .",
+    "timestamp_start": 2352.3,
+    "timestamp_end": 2355.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2355.4,
+    "timestamp_end": 2356.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's some, yeah.",
+    "timestamp_start": 2356.08,
+    "timestamp_end": 2358.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are the existing features.",
+    "timestamp_start": 2358.84,
+    "timestamp_end": 2360.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the others also can interpret to as factorization",
+    "timestamp_start": 2360.76,
+    "timestamp_end": 2363.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of the transition.",
+    "timestamp_start": 2363.76,
+    "timestamp_end": 2364.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some variants of the transition project, I just listed here.",
+    "timestamp_start": 2364.82,
+    "timestamp_end": 2367.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's very old paper, if you're diving into it.",
+    "timestamp_start": 2367.82,
+    "timestamp_end": 2369.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But the first one, successor feature, actually",
+    "timestamp_start": 2369.98,
+    "timestamp_end": 2371.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is still used in practice.",
+    "timestamp_start": 2371.98,
+    "timestamp_end": 2373.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2373.14,
+    "timestamp_end": 2373.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2378.08,
+    "timestamp_end": 2379.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now let's see the latest work of along this line, which is,",
+    "timestamp_start": 2379.14,
+    "timestamp_end": 2384.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we really built the connection between linear MDP,",
+    "timestamp_start": 2384.06,
+    "timestamp_end": 2386.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "linear feature to latent variable model.",
+    "timestamp_start": 2386.62,
+    "timestamp_end": 2389.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is actually very straightforward.",
+    "timestamp_start": 2389.28,
+    "timestamp_end": 2390.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You see, we can always rewrite the transition operator",
+    "timestamp_start": 2390.38,
+    "timestamp_end": 2393.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as integration between P S prime given Z and Z given S and A.",
+    "timestamp_start": 2393.76,
+    "timestamp_end": 2400.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we rewrite it into inner product in L2 space.",
+    "timestamp_start": 2400.38,
+    "timestamp_end": 2405.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2405.5,
+    "timestamp_end": 2406.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now we have phi equal to P Z given S A.",
+    "timestamp_start": 2406.32,
+    "timestamp_end": 2412.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And mu S prime equals to P S prime given Z.",
+    "timestamp_start": 2412.84,
+    "timestamp_end": 2418.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we treat the.",
+    "timestamp_start": 2418.58,
+    "timestamp_end": 2419.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because we have a linear MDP, we can also write the linear MDP.",
+    "timestamp_start": 2419.62,
+    "timestamp_end": 2419.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2419.7,
+    "timestamp_end": 2419.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we can write the linear MDP.",
+    "timestamp_start": 2419.86,
+    "timestamp_end": 2420.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we can also write the linear MDP.",
+    "timestamp_start": 2420.1,
+    "timestamp_end": 2420.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2420.14,
+    "timestamp_end": 2420.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we can treat the P Z given S A as the phi function.",
+    "timestamp_start": 2420.34,
+    "timestamp_end": 2423.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we can represent my Q S A with this P Z given S A.",
+    "timestamp_start": 2423.14,
+    "timestamp_end": 2431.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So straightforward.",
+    "timestamp_start": 2431.2,
+    "timestamp_end": 2434.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the benefits of this latent variable representation",
+    "timestamp_start": 2434.16,
+    "timestamp_end": 2437.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is that we can represent, we can use the elbow to optimize it.",
+    "timestamp_start": 2437.62,
+    "timestamp_end": 2442.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this elbow division actually is",
+    "timestamp_start": 2447.48,
+    "timestamp_end": 2450.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "actually quite good.",
+    "timestamp_start": 2450.1,
+    "timestamp_end": 2450.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if I have k prime K after cp or by k presidente.",
+    "timestamp_start": 2450.68,
+    "timestamp_end": 2452.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What do we do?",
+    "timestamp_start": 2452.6,
+    "timestamp_end": 2454.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We should do Y salaryziej exhausted and",
+    "timestamp_start": 2454.78,
+    "timestamp_end": 2459.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then we divide Antonyou and the like式 L centimeter by 1.",
+    "timestamp_start": 2459.84,
+    "timestamp_end": 2463.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's do the same step out in public.",
+    "timestamp_start": 2463.08,
+    "timestamp_end": 2469.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But it'll just be a little bit.",
+    "timestamp_start": 2469.08,
+    "timestamp_end": 2473.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I give this all this Z and then I give 2ồi as Well.",
+    "timestamp_start": 2473.74,
+    "timestamp_end": 2475.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then Katz says, you can read that as mu PACS cafe Casihan.",
+    "timestamp_start": 2475.0,
+    "timestamp_end": 2475.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Iiticator.",
+    "timestamp_start": 2475.44,
+    "timestamp_end": 2477.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I talk version.",
+    "timestamp_start": 2477.0,
+    "timestamp_end": 2478.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I think that's usually Y thành the Kalft.",
+    "timestamp_start": 2478.14,
+    "timestamp_end": 2478.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One way, I take Ythroughyy into Me , I see the pied father.",
+    "timestamp_start": 2478.86,
+    "timestamp_end": 2479.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "obvious.",
+    "timestamp_start": 2479.2,
+    "timestamp_end": 2479.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the question is ML e. and I divide this equation, and times um squares, and run.",
+    "timestamp_start": 2479.4,
+    "timestamp_end": 2479.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this connection between latent variable model",
+    "timestamp_start": 2479.96,
+    "timestamp_end": 2483.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and linear MVP actually is very interesting.",
+    "timestamp_start": 2483.46,
+    "timestamp_end": 2486.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To be honest, actually this is quite surprising.",
+    "timestamp_start": 2488.96,
+    "timestamp_end": 2491.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I don't know why people didn't realize it.",
+    "timestamp_start": 2491.22,
+    "timestamp_end": 2493.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Say, so many people use the latent variable model",
+    "timestamp_start": 2494.74,
+    "timestamp_end": 2497.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to model the dynamic.",
+    "timestamp_start": 2497.86,
+    "timestamp_end": 2501.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But the correct way to use the latent variable model",
+    "timestamp_start": 2501.32,
+    "timestamp_end": 2504.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is after you solve the model,",
+    "timestamp_start": 2504.56,
+    "timestamp_end": 2506.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to use the PZ given SA",
+    "timestamp_start": 2506.94,
+    "timestamp_end": 2509.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to represent your Q function,",
+    "timestamp_start": 2509.5,
+    "timestamp_end": 2510.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "instead of just a sample Z from it",
+    "timestamp_start": 2510.74,
+    "timestamp_end": 2513.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to represent the Q function.",
+    "timestamp_start": 2514.24,
+    "timestamp_end": 2516.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is significant difference",
+    "timestamp_start": 2516.16,
+    "timestamp_end": 2518.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "between latent variable model as linear MVP",
+    "timestamp_start": 2520.9,
+    "timestamp_end": 2523.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the existing model-based reinforcement",
+    "timestamp_start": 2523.72,
+    "timestamp_end": 2526.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "using latent variable model.",
+    "timestamp_start": 2526.96,
+    "timestamp_end": 2528.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The final line here.",
+    "timestamp_start": 2529.98,
+    "timestamp_end": 2532.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is significant difference.",
+    "timestamp_start": 2532.16,
+    "timestamp_end": 2534.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so until now,",
+    "timestamp_start": 2535.94,
+    "timestamp_end": 2539.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "any questions?",
+    "timestamp_start": 2539.22,
+    "timestamp_end": 2539.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Any questions about this latent variable model estimation?",
+    "timestamp_start": 2539.5,
+    "timestamp_end": 2542.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, good.",
+    "timestamp_start": 2547.32,
+    "timestamp_end": 2548.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Either everyone is missing or it's crystal clear.",
+    "timestamp_start": 2550.18,
+    "timestamp_end": 2555.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, now we have the algorithm framework.",
+    "timestamp_start": 2558.3,
+    "timestamp_end": 2561.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Every formulation, every criteria I mentioned before",
+    "timestamp_start": 2562.56,
+    "timestamp_end": 2567.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can be plugged into this framework.",
+    "timestamp_start": 2568.08,
+    "timestamp_end": 2569.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The only thing changed here is how we estimate",
+    "timestamp_start": 2569.22,
+    "timestamp_end": 2571.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the latent linear representation.",
+    "timestamp_start": 2571.82,
+    "timestamp_end": 2574.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the framework like I first collect data,",
+    "timestamp_start": 2574.28,
+    "timestamp_end": 2576.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and I use either NCU SVD or ELBO to estimate my phi SA.",
+    "timestamp_start": 2577.68,
+    "timestamp_end": 2582.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then I calculate the UCB bonus",
+    "timestamp_start": 2584.4,
+    "timestamp_end": 2587.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "based on the representation alert.",
+    "timestamp_start": 2587.34,
+    "timestamp_end": 2589.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now you see I don't need to use the Thompson-Sample anymore.",
+    "timestamp_start": 2589.68,
+    "timestamp_end": 2592.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I just use this UCB bonus for my Bellman recursion",
+    "timestamp_start": 2592.34,
+    "timestamp_end": 2597.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for planning.",
+    "timestamp_start": 2597.34,
+    "timestamp_end": 2598.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2598.34,
+    "timestamp_end": 2599.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I can start planning.",
+    "timestamp_start": 2599.02,
+    "timestamp_end": 2599.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "After I solve this Bellman recursion by least square VI,",
+    "timestamp_start": 2599.86,
+    "timestamp_end": 2604.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or least square policy evaluation,",
+    "timestamp_start": 2606.14,
+    "timestamp_end": 2608.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and I get my policy.",
+    "timestamp_start": 2608.32,
+    "timestamp_end": 2609.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I go back to the first step, collect data,",
+    "timestamp_start": 2609.86,
+    "timestamp_end": 2612.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and refine my model, so on and so forth.",
+    "timestamp_start": 2612.26,
+    "timestamp_end": 2614.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, as I promised,",
+    "timestamp_start": 2616.28,
+    "timestamp_end": 2620.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I can show it is simple complexity of this algorithm,",
+    "timestamp_start": 2620.44,
+    "timestamp_end": 2623.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is polynomial with respect to the term.",
+    "timestamp_start": 2626.8,
+    "timestamp_end": 2628.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I can see that the dimension I used for the phi function,",
+    "timestamp_start": 2628.8,
+    "timestamp_end": 2631.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "while it's independent of the size of the state.",
+    "timestamp_start": 2631.72,
+    "timestamp_end": 2635.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you are sharp enough, there is still some dimension,",
+    "timestamp_start": 2638.8,
+    "timestamp_end": 2642.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sorry, still some dependence with the action.",
+    "timestamp_start": 2642.44,
+    "timestamp_end": 2644.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We are trying to handle it.",
+    "timestamp_start": 2645.82,
+    "timestamp_end": 2647.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, go ahead.",
+    "timestamp_start": 2647.56,
+    "timestamp_end": 2648.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2648.4,
+    "timestamp_end": 2649.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It depends on the dimension D.",
+    "timestamp_start": 2653.14,
+    "timestamp_end": 2655.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "D is the number of the dimension of the phi.",
+    "timestamp_start": 2655.02,
+    "timestamp_end": 2657.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2657.92,
+    "timestamp_end": 2658.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So.",
+    "timestamp_start": 2658.8,
+    "timestamp_end": 2660.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2660.26,
+    "timestamp_end": 2668.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No, actually, we rely on assumptions saying this D",
+    "timestamp_start": 2668.26,
+    "timestamp_end": 2671.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "will represent your dynamic.",
+    "timestamp_start": 2671.54,
+    "timestamp_end": 2673.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2673.16,
+    "timestamp_end": 2674.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, it's realizable, yeah.",
+    "timestamp_start": 2674.2,
+    "timestamp_end": 2676.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, it's realizable.",
+    "timestamp_start": 2676.18,
+    "timestamp_end": 2677.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, next slide is showing how this algorithm performs.",
+    "timestamp_start": 2680.56,
+    "timestamp_end": 2685.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually, to be honest, these three algorithms perform so well.",
+    "timestamp_start": 2686.72,
+    "timestamp_end": 2686.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2686.8,
+    "timestamp_end": 2687.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we just released the one of it, which is SVD,",
+    "timestamp_start": 2687.82,
+    "timestamp_end": 2693.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we call it a speeder.",
+    "timestamp_start": 2693.18,
+    "timestamp_end": 2694.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, it's better than previous speed one.",
+    "timestamp_start": 2694.64,
+    "timestamp_end": 2699.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also, this time, I can very confident to show the model free",
+    "timestamp_start": 2699.38,
+    "timestamp_end": 2705.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in one table with model based in one table.",
+    "timestamp_start": 2705.74,
+    "timestamp_end": 2709.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we can dominate both model based and model free,",
+    "timestamp_start": 2709.2,
+    "timestamp_end": 2711.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but still have an algorithm.",
+    "timestamp_start": 2711.82,
+    "timestamp_end": 2713.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, this is the imperialization algorithm.",
+    "timestamp_start": 2713.22,
+    "timestamp_end": 2715.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2715.82,
+    "timestamp_end": 2716.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2716.82,
+    "timestamp_end": 2717.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, we have a local study for modico.",
+    "timestamp_start": 2717.82,
+    "timestamp_end": 2720.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Oh, sure.",
+    "timestamp_start": 2720.82,
+    "timestamp_end": 2721.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2721.66,
+    "timestamp_end": 2726.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, yeah, we didn't use LSVL.",
+    "timestamp_start": 2726.54,
+    "timestamp_end": 2729.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We still use the policy evaluation first,",
+    "timestamp_start": 2729.64,
+    "timestamp_end": 2731.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then do the actor critic.",
+    "timestamp_start": 2731.38,
+    "timestamp_end": 2734.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2735.26,
+    "timestamp_end": 2737.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No, no, no.",
+    "timestamp_start": 2737.38,
+    "timestamp_end": 2738.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2738.22,
+    "timestamp_end": 2739.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2739.4,
+    "timestamp_end": 2740.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2740.24,
+    "timestamp_end": 2741.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We didn't.",
+    "timestamp_start": 2741.86,
+    "timestamp_end": 2742.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We first evaluate.",
+    "timestamp_start": 2742.7,
+    "timestamp_end": 2743.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's still your stack.",
+    "timestamp_start": 2743.76,
+    "timestamp_end": 2745.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It was based on the previous speed.",
+    "timestamp_start": 2745.32,
+    "timestamp_end": 2746.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We just changed the object function.",
+    "timestamp_start": 2746.74,
+    "timestamp_end": 2748.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We no longer use .",
+    "timestamp_start": 2748.42,
+    "timestamp_end": 2752.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, we just change that.",
+    "timestamp_start": 2752.92,
+    "timestamp_end": 2754.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2754.46,
+    "timestamp_end": 2759.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This time, we need to handle the continual action.",
+    "timestamp_start": 2759.06,
+    "timestamp_end": 2762.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For modico, it's really difficult for me",
+    "timestamp_start": 2762.58,
+    "timestamp_end": 2764.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to get the max with an action.",
+    "timestamp_start": 2764.9,
+    "timestamp_end": 2766.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's why we do this way.",
+    "timestamp_start": 2766.94,
+    "timestamp_end": 2769.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2769.0,
+    "timestamp_end": 2774.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also, we're based on the MBV.",
+    "timestamp_start": 2774.5,
+    "timestamp_end": 2775.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ". Yeah.",
+    "timestamp_start": 2775.44,
+    "timestamp_end": 2775.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ". Yeah.",
+    "timestamp_start": 2775.66,
+    "timestamp_end": 2775.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ". Yeah.",
+    "timestamp_start": 2775.86,
+    "timestamp_end": 2776.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2776.38,
+    "timestamp_end": 2776.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, we're using the MBVL benchmark.",
+    "timestamp_start": 2776.88,
+    "timestamp_end": 2778.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2778.5,
+    "timestamp_end": 2779.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, it's easy to implement it in this way.",
+    "timestamp_start": 2779.48,
+    "timestamp_end": 2781.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2781.12,
+    "timestamp_end": 2782.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2782.88,
+    "timestamp_end": 2783.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here is some curves such that we apply our algorithm",
+    "timestamp_start": 2783.42,
+    "timestamp_end": 2786.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to DM control.",
+    "timestamp_start": 2786.12,
+    "timestamp_end": 2787.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the blue lines are worse.",
+    "timestamp_start": 2787.56,
+    "timestamp_end": 2789.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can see besides the ultimate performance,",
+    "timestamp_start": 2789.88,
+    "timestamp_end": 2792.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we are going to also convert faster.",
+    "timestamp_start": 2792.26,
+    "timestamp_end": 2796.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2796.22,
+    "timestamp_end": 2797.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Especially in this workers sparse,",
+    "timestamp_start": 2797.2,
+    "timestamp_end": 2800.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is we gave the sparse reward to the environment.",
+    "timestamp_start": 2800.58,
+    "timestamp_end": 2804.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2804.18,
+    "timestamp_end": 2806.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, definitely has a lower profit indicated,",
+    "timestamp_start": 2806.38,
+    "timestamp_end": 2809.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we succeed.",
+    "timestamp_start": 2809.44,
+    "timestamp_end": 2811.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Finally, we're ready for cost wait.",
+    "timestamp_start": 2811.88,
+    "timestamp_end": 2814.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, after this a couple of years,",
+    "timestamp_start": 2814.12,
+    "timestamp_end": 2816.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we are ending像 sólo",
+    "timestamp_start": 2816.34,
+    "timestamp_end": 2835.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, any questions?",
+    "timestamp_start": 2835.08,
+    "timestamp_end": 2838.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, I think it's just because sometimes one or two seeds just fail.",
+    "timestamp_start": 2855.08,
+    "timestamp_end": 2861.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For this early start.",
+    "timestamp_start": 2865.08,
+    "timestamp_end": 2867.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sir?",
+    "timestamp_start": 2870.08,
+    "timestamp_end": 2871.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, if you consider various, yes, I agree.",
+    "timestamp_start": 2876.08,
+    "timestamp_end": 2879.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But I just say it's comparable. Sometimes it's better.",
+    "timestamp_start": 2880.08,
+    "timestamp_end": 2883.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 2883.08,
+    "timestamp_end": 2884.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2890.08,
+    "timestamp_end": 2891.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, no.",
+    "timestamp_start": 2892.08,
+    "timestamp_end": 2895.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is another byproduct of this method, actually.",
+    "timestamp_start": 2896.08,
+    "timestamp_end": 2899.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which is, we notice there's a relationship between Q function and the policy.",
+    "timestamp_start": 2900.08,
+    "timestamp_end": 2905.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which is, I can always contract a policy from a current Q function.",
+    "timestamp_start": 2906.08,
+    "timestamp_end": 2910.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And now, recall that.",
+    "timestamp_start": 2911.08,
+    "timestamp_end": 2912.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Our Q function is not a policy.",
+    "timestamp_start": 2912.08,
+    "timestamp_end": 2913.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, my Q function can be linearly represented by my five bases.",
+    "timestamp_start": 2914.08,
+    "timestamp_end": 2917.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, that means, essentially, I find another representation of skills by this five.",
+    "timestamp_start": 2918.08,
+    "timestamp_end": 2923.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, this, to evaluate how these skills learn, we follow the protocol of the offline skill learning.",
+    "timestamp_start": 2924.08,
+    "timestamp_end": 2934.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And compare it to some state of the art algorithms like OPA and the skilled.",
+    "timestamp_start": 2935.08,
+    "timestamp_end": 2942.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also the trail.",
+    "timestamp_start": 2943.08,
+    "timestamp_end": 2944.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I will say this algorithm is comparable with this specific design for skill discovery algorithm.",
+    "timestamp_start": 2945.08,
+    "timestamp_end": 2950.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2953.08,
+    "timestamp_end": 2954.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sure.",
+    "timestamp_start": 2954.08,
+    "timestamp_end": 2955.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2955.08,
+    "timestamp_end": 2964.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 2964.08,
+    "timestamp_end": 2965.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Exactly.",
+    "timestamp_start": 2965.08,
+    "timestamp_end": 2966.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I use this.",
+    "timestamp_start": 2966.08,
+    "timestamp_end": 2967.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 2967.08,
+    "timestamp_end": 2968.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2968.08,
+    "timestamp_end": 2969.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Great.",
+    "timestamp_start": 2969.08,
+    "timestamp_end": 2970.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Uh.",
+    "timestamp_start": 2970.08,
+    "timestamp_end": 2971.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, here I learned this five function.",
+    "timestamp_start": 2971.08,
+    "timestamp_end": 2972.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2972.08,
+    "timestamp_end": 2973.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I learned another policy which is conditional five.",
+    "timestamp_start": 2973.08,
+    "timestamp_end": 2978.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which is like pi A given S and the five S A.",
+    "timestamp_start": 2978.08,
+    "timestamp_end": 2982.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, I use this kind of stuff to compose my downstream policy construction.",
+    "timestamp_start": 2982.08,
+    "timestamp_end": 2989.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, that's what I used here.",
+    "timestamp_start": 2990.08,
+    "timestamp_end": 2991.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2991.08,
+    "timestamp_end": 2992.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I think this is the end of my presentation.",
+    "timestamp_start": 2992.08,
+    "timestamp_end": 2993.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 2993.08,
+    "timestamp_end": 2994.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 2994.08,
+    "timestamp_end": 2995.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 2995.08,
+    "timestamp_end": 2996.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 2996.08,
+    "timestamp_end": 2997.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 2997.08,
+    "timestamp_end": 2998.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 2998.08,
+    "timestamp_end": 2999.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 2999.08,
+    "timestamp_end": 3000.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3000.08,
+    "timestamp_end": 3001.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3001.08,
+    "timestamp_end": 3002.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3002.08,
+    "timestamp_end": 3003.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3003.08,
+    "timestamp_end": 3004.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 3004.08,
+    "timestamp_end": 3005.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, I think this is the final slides which I want to emphasize that linearization in",
+    "timestamp_start": 3005.08,
+    "timestamp_end": 3006.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Eagle Isle for non-linear model to achieve the delicate balance as I mentioned always",
+    "timestamp_start": 3006.08,
+    "timestamp_end": 3007.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in this talk for flexible modeling, efficient planning, and efficient exploration.",
+    "timestamp_start": 3007.08,
+    "timestamp_end": 3008.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Of course, this is only the, first of several steps along this line.",
+    "timestamp_start": 3008.08,
+    "timestamp_end": 3009.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, we still have a lot of things to do.",
+    "timestamp_start": 3009.08,
+    "timestamp_end": 3010.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is there any other better way to analyze the modeling?",
+    "timestamp_start": 3010.08,
+    "timestamp_end": 3011.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And how do you know that the modeling is not exactly the same as the conventional modeling.",
+    "timestamp_start": 3011.08,
+    "timestamp_end": 3012.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Are you using the non-linear model to make it more efficient?",
+    "timestamp_start": 3012.08,
+    "timestamp_end": 3013.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Are you using the non-linear model to make it more efficient?",
+    "timestamp_start": 3013.08,
+    "timestamp_end": 3014.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 3014.08,
+    "timestamp_end": 3015.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, I made the definition of the millennial model.",
+    "timestamp_start": 3015.08,
+    "timestamp_end": 3016.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ".",
+    "timestamp_start": 3016.08,
+    "timestamp_end": 3017.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's right.",
+    "timestamp_start": 3017.08,
+    "timestamp_end": 3018.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's right.",
+    "timestamp_start": 3018.08,
+    "timestamp_end": 3019.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's right.",
+    "timestamp_start": 3019.08,
+    "timestamp_end": 3020.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's right.",
+    "timestamp_start": 3020.08,
+    "timestamp_end": 3021.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Of course this is only the first several steps",
+    "timestamp_start": 3021.08,
+    "timestamp_end": 3024.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "along this line.",
+    "timestamp_start": 3024.56,
+    "timestamp_end": 3025.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, we still have a lot of things to do.",
+    "timestamp_start": 3025.8,
+    "timestamp_end": 3028.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is there any other better way to estimate this phi function?",
+    "timestamp_start": 3028.3,
+    "timestamp_end": 3031.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also, I only do very little step about",
+    "timestamp_start": 3031.8,
+    "timestamp_end": 3036.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "offline to online.",
+    "timestamp_start": 3036.74,
+    "timestamp_end": 3038.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "How can we use online data to fully improve this phi",
+    "timestamp_start": 3038.24,
+    "timestamp_end": 3041.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "based on offline learned component?",
+    "timestamp_start": 3041.66,
+    "timestamp_end": 3044.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also, definitely, I didn't go to POMDP yet,",
+    "timestamp_start": 3044.3,
+    "timestamp_end": 3048.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is more practical than MPP.",
+    "timestamp_start": 3048.64,
+    "timestamp_end": 3051.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because in practice, we only have the image and the video.",
+    "timestamp_start": 3051.84,
+    "timestamp_end": 3054.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We don't observe all the state and action.",
+    "timestamp_start": 3054.86,
+    "timestamp_end": 3057.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So these are some listed directions",
+    "timestamp_start": 3057.6,
+    "timestamp_end": 3060.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as I can image for current moment to further work on.",
+    "timestamp_start": 3060.78,
+    "timestamp_end": 3063.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But definitely, other kind of direction is also possible.",
+    "timestamp_start": 3063.56,
+    "timestamp_end": 3067.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah.",
+    "timestamp_start": 3067.34,
+    "timestamp_end": 3069.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So yeah, I think this is the full reference",
+    "timestamp_start": 3069.16,
+    "timestamp_end": 3076.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about what I talked today.",
+    "timestamp_start": 3076.72,
+    "timestamp_end": 3078.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The first why it's about the running feature part.",
+    "timestamp_start": 3078.64,
+    "timestamp_end": 3084.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And second why it's the NCE one.",
+    "timestamp_start": 3084.88,
+    "timestamp_end": 3087.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And third one, the fourth one, is SVD and the latent variable",
+    "timestamp_start": 3087.5,
+    "timestamp_end": 3092.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "model.",
+    "timestamp_start": 3092.12,
+    "timestamp_end": 3094.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I think this is the end of my talk.",
+    "timestamp_start": 3094.62,
+    "timestamp_end": 3099.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Any questions?",
+    "timestamp_start": 3099.94,
+    "timestamp_end": 3100.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3108.64,
+    "timestamp_end": 3109.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  }
+]

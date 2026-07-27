@@ -1,0 +1,1125 @@
+0.0s - 0.5s : .
+12.34s - 13.24s : Hi, everyone.
+13.24s - 19.0s : Welcome to the 11th lecture of 6.006, our first lecture
+19.0s - 21.12s : on weighted shortest paths.
+21.12s - 23.68s : Until now, we've only been talking
+23.68s - 28.06s : about graphs where we measure distance
+28.06s - 31.38s : in terms of the number of edges in a path.
+31.38s - 33.38s : Today, we're going to generalize that notion,
+33.38s - 35.44s : but I just want to go over what we've talked about
+35.44s - 37.78s : in the last two lectures.
+37.78s - 40.84s : In the last two lectures, we've talked about two algorithms,
+40.84s - 43.66s : breadth-first search and depth-first search,
+43.66s - 45.2s : to solve a range of problems.
+45.2s - 47.56s : Here's some of the problems that we've been solving.
+47.56s - 51.76s : Single-source shortest paths, where distances are measured
+51.76s - 54.8s : in number of edges in a path.
+54.8s - 59.26s : And we use a BFS to solve this problem,
+59.26s - 63.12s : starting from a single source, usually a vertex s that we
+63.12s - 64.56s : call.
+64.56s - 67.02s : And we solve that in linear time.
+67.02s - 73.5s : We solve that in order v plus e.
+73.5s - 76.58s : That's what we called linear time for a graph.
+76.58s - 79.82s : For the special case of single-source reachability,
+79.82s - 83.32s : here we had to return a shortest path distance for every vertex.
+84.8s - 87.84s : And there was at most e things reachable from a vertex.
+87.84s - 93.2s : So this is the bound we got, but in the special case
+93.2s - 95.76s : for single-source reachability, when our output only
+95.76s - 100.38s : has to list the vertices that are reachable from me,
+100.38s - 102.56s : the number of things reachable in basically
+102.56s - 106.94s : a spanning tree of the connected component of my source
+106.94s - 109.62s : can almost be of order e.
+109.62s - 112.2s : And so for all the little singleton vertices
+112.2s - 114.56s : in my graph, in terms of individual among them,
+114.56s - 117.14s : I don't really care.
+117.14s - 119.1s : So I can get this in order e, but that's
+119.1s - 123.8s : kind of a little optimization.
+123.8s - 125.74s : The next thing we did was we talked
+125.74s - 127.42s : about connected components.
+127.42s - 131.18s : And we didn't just reduce to using a search algorithm
+131.18s - 134.16s : like a single source reachability algorithm
+134.16s - 135.76s : like BFS or DFS.
+135.76s - 140.12s : We put a for loop around that to explore the entire graph
+140.12s - 142.04s : by basically saying, if I've explored
+142.04s - 146.8s : one connected component, then I can
+146.8s - 149.4s : look at any other vertex I haven't seen
+149.4s - 150.96s : and explore the next one.
+150.96s - 155.16s : And so that actually, with a little analysis,
+155.16s - 158.3s : also got linear time because I'm at most traversing
+158.3s - 161.06s : any component of my graph once.
+161.06s - 163.72s : That's kind of the idea.
+163.72s - 167.66s : And we can use that using BFS or DFS, really,
+167.66s - 170.66s : because we're just trying to get a thing that searches
+170.66s - 172.04s : an entire connected component.
+172.04s - 175.84s : And then this topological sort we did at the end
+175.84s - 179.34s : of the last lecture, we used full DFS
+179.34s - 184.72s : to give an ordering of the vertices in a DAG.
+184.72s - 189.98s : Maybe I'll specify clearly that this is only for a DAG,
+189.98s - 193.98s : where we have an ordering of the vertices
+193.98s - 199.04s : so all the edges go forward in that order, for example.
+199.04s - 200.48s : And that we also did in linear time.
+202.04s - 202.88s : So we can do that.
+202.88s - 203.92s : And then we can also do this.
+203.92s - 204.8s : And we can also do this.
+204.8s - 205.72s : And we can also do this.
+205.72s - 206.22s : All right.
+206.22s - 209.74s : In this lecture and in actually the next four lectures,
+209.74s - 213.92s : what we're going to do is instead
+213.92s - 216.78s : of measuring distance in terms of the number of edges
+216.78s - 221.42s : in a path, so previously distance
+221.42s - 226.16s : equaled number of edges, we're going
+226.16s - 227.6s : to generalize that notion.
+227.6s - 230.18s : So instead of counting an edge, we're
+230.18s - 231.88s : going to count a number of edges.
+231.88s - 234.26s : An integer associated with that edge.
+234.26s - 236.02s : It's going to be called a weight.
+236.02s - 241.14s : So here's an example of a weighted graph G.
+241.14s - 244.88s : And I've labeled in red weights for each of these edges.
+244.88s - 247.88s : There's a directed graph on eight vertices.
+247.88s - 250.56s : And I've got a integer associated with each edge.
+250.56s - 252.82s : You'll notice some of them are positive, some of them
+252.82s - 253.44s : are negative.
+253.44s - 255.16s : It's OK to be 0 as well.
+255.16s - 258.56s : It's just any integer edge weight here.
+258.56s - 261.88s : So generally, we're going to be along with our graph G,
+261.88s - 268.76s : we're going to be given a weight function that
+268.76s - 274.26s : maps the edges of G to, we're going to say, integers.
+277.36s - 279.9s : In this class, anyway.
+279.9s - 281.72s : In other contexts, in mathematics,
+281.72s - 283.3s : you might have this be real numbers.
+283.3s - 285.6s : But in this class, we're going to deal with integers.
+285.6s - 291.3s : So each edge, if you have an edge, we're going to say this,
+291.3s - 298.62s : is the weight of this edge E from E. We might sometimes,
+298.62s - 307.08s : if this edge E is uv, we might sometimes say the weight
+307.08s - 311.42s : from u to v, since we have a simple graph that's
+311.42s - 314.86s : unambiguous.
+314.86s - 316.94s : But this is just talking about our notation.
+316.94s - 320.78s : So in general, for example, the weight from vertex,
+320.78s - 324.44s : b to f in this graph is what?
+324.44s - 326.96s : Can someone tell me?
+326.96s - 328.04s : Minus 4, right?
+328.04s - 328.72s : It's right here.
+328.72s - 332.96s : And I'll be consistent with my coloring,
+332.96s - 336.32s : because I've got colored chalk today.
+336.32s - 338.72s : Minus 4, happiness.
+338.72s - 341.9s : All right, so why do we care about adding weights
+341.9s - 343.34s : to our graph?
+343.34s - 346.9s : Well, this comes up a lot in many applications.
+346.9s - 350.26s : For example, distance isn't a road network, right?
+350.26s - 359.42s : If I have a road from here, so from Mass Ave, front of MIT,
+359.42s - 363.32s : to Central Square, we might think of that as one road.
+363.32s - 367.14s : Maybe you've got each road is a connection between two
+367.14s - 370.14s : intersections in my road network.
+370.14s - 374.7s : But an edge, it takes longer to go from, say,
+374.7s - 377.66s : Vassar Street to Amherst.
+377.66s - 379.94s : That takes a shorter amount of time than it does to go
+379.94s - 384.68s : from Memorial Drive across the river to Beacon Street, right?
+384.68s - 388.68s : So we might want to associate a larger distance or a weight
+388.68s - 391.72s : associated with that edge, right?
+391.72s - 396.62s : Latency in a network, for example, maybe strength
+396.62s - 399.08s : of relationships in a social network.
+399.08s - 402.36s : And you could imagine that it's possible maybe
+402.36s - 404.36s : you're frenemies with someone, right?
+404.36s - 406.16s : Like you don't like them.
+406.16s - 409.52s : And so maybe you have a negative weight associated with an edge
+409.52s - 409.94s : in a network.
+409.94s - 412.24s : And so you might want to associate a larger distance
+412.24s - 413.6s : with a social network.
+413.6s - 414.5s : I'm not sure.
+414.5s - 415.18s : Maybe not.
+415.18s - 417.2s : But there are lots of applications
+417.2s - 421.44s : where you might want weights on your edges.
+421.44s - 426.56s : So that comes to the next question of how do I represent,
+426.56s - 431.84s : how do I give the user or the algorithm these weights
+431.84s - 433.16s : in my graph, right?
+433.16s - 437.66s : We had a representation for a graph, right?
+437.66s - 439.52s : Our common way to represent a graph
+439.52s - 442.76s : is to have a data structure on the vertices mapping
+442.76s - 446.72s : to the adjacencies of each vertex, which we stored
+446.72s - 449.06s : in what we called an adjacency list, which really could
+449.06s - 452.96s : be any data structure, right?
+452.96s - 456.5s : Commonly, it's just an array of the adjacencies.
+456.5s - 461.64s : But you could also have that be a set data structure where
+461.64s - 467.0s : you can query in constant time what if a particular adjacency
+467.0s - 468.68s : exists in that graph.
+468.68s - 469.4s : So a common way.
+469.4s - 469.48s : OK.
+469.48s - 469.52s : OK.
+469.52s - 473.98s : There are two kind of common ways to store these weights.
+473.98s - 477.8s : One is just with every adjacency,
+477.8s - 478.92s : I'm going to store its weight.
+478.92s - 490.46s : Maybe just in a tuple, with each adjacency,
+490.46s - 497.66s : also store weight of the edge that it corresponds to,
+497.66s - 498.26s : right?
+498.26s - 499.48s : Just in any way.
+499.48s - 500.8s : Right?
+500.8s - 505.6s : A second way, instead of trying to modify our graph structure
+505.6s - 508.06s : that we gave you before, let's just
+508.06s - 511.0s : have a dictionary of all the edges mapping to their weights,
+511.0s - 511.5s : right?
+511.5s - 512.98s : And we already know how to do that.
+512.98s - 523.38s : Just any set data structure, any separate set data structure
+523.38s - 529.36s : mapping edges to their edges.
+529.36s - 531.44s : I guess weights.
+531.44s - 533.68s : Bad notation, but you get the idea.
+533.68s - 536.18s : OK?
+536.18s - 538.66s : And it doesn't really matter how we're doing this.
+538.66s - 543.22s : The assumption that we're going to rely on here is that given
+543.22s - 547.36s : an edge, given this vertex pair, I
+547.36s - 550.96s : can query what the weight of that edge is in constant time.
+550.96s - 551.88s : Right?
+551.88s - 553.3s : And so if I'm going to do that, I
+553.3s - 557.0s : can either store it with maybe a hash table of hash tables,
+557.0s - 557.5s : right?
+557.5s - 559.24s : A hash table.
+559.24s - 562.54s : Mapping the set of vertices to their adjacencies.
+562.54s - 566.92s : And then each adjacency list stores its adjacencies
+566.92s - 567.76s : in a hash table.
+567.76s - 571.0s : And that way, in constant time, I can check what the weight is
+571.0s - 571.66s : there.
+571.66s - 576.74s : Or here, I could even have just a single hash table mapping
+576.74s - 584.02s : the pair, the edge, the tuple, constant size, to its weight.
+584.02s - 584.52s : Right?
+584.52s - 586.78s : So either way is fine.
+586.78s - 587.98s : We're just going to assume that we can query an edge.
+587.98s - 588.48s : OK.
+588.48s - 588.98s : All right.
+588.98s - 589.16s : All right.
+589.16s - 589.18s : All right.
+589.18s - 589.22s : All right.
+589.22s - 589.7s : OK.
+589.7s - 591.06s : So we're going to be working on that.
+591.06s - 592.88s : And I'm going to call this a graph example.
+592.88s - 594.28s : But we're going to call this a graph.
+594.28s - 596.22s : So in a graph, we're going to call this a graph.
+596.22s - 597.7s : So we're going to call this a graph.
+597.7s - 598.94s : And the graph is a graph of the edge
+598.94s - 602.02s : in constant time, the weight of an edge in constant time.
+602.02s - 602.52s : OK.
+602.52s - 607.22s : So this is that graph example.
+607.22s - 608.74s : It's a little busy here.
+608.74s - 612.26s : I'm probably going to erase that in just a second.
+612.26s - 617.06s : But we're going to move on to what giving these edges weights
+617.06s - 619.16s : implies for kind of these problems
+619.16s - 621.86s : single source shortest paths again,
+621.86s - 623.36s : at least for the next three lectures.
+623.36s - 628.54s : We'll generalize that even still in the next lecture.
+628.54s - 633.72s : I mean, in three lectures from now.
+633.72s - 636.74s : But what we had here was that the distance before
+636.74s - 639.94s : in an unweighted graph was the number of edges in the path.
+639.94s - 646.4s : Here, we're going to generalize that notion kind of obviously
+646.4s - 647.96s : to weighted paths.
+652.18s - 659.36s : And the weight of a path, I'm going to call it pi.
+659.36s - 668.24s : So weight of path pi is just going
+668.24s - 672.78s : to be the sum of the weights in the edges in the path.
+672.78s - 675.92s : So edge in the path.
+675.92s - 680.52s : I'm going to sum their weights.
+680.52s - 682.98s : So that's all this the weight of a path means.
+682.98s - 685.48s : It's just I'm going to sum all the weights in a path.
+685.48s - 689.6s : So if I took a look at the maybe there's a particular path here,
+689.6s - 695.92s : the path from A to B to F to G is going to be minus 5,
+695.92s - 698.2s : minus 4, 2.
+698.2s - 702.7s : That's going to be minus 9 plus 2 is minus 7.
+702.7s - 703.26s : OK?
+703.26s - 704.2s : So just as an example.
+705.92s - 712.46s : So then what is the shortest path then?
+712.46s - 716.64s : Well, kind of obviously among all paths between two vertices,
+716.64s - 719.78s : it's going to be one with the minimum weight.
+719.78s - 720.28s : Right?
+720.28s - 720.9s : Yeah, question.
+720.9s - 723.12s : Can I use the same edge more than once?
+723.12s - 726.74s : JASON KUO- Can I use the same edge more than once?
+726.74s - 733.1s : Right now, you're asking about the distinction in our class,
+733.1s - 735.7s : which we have between paths and simple paths.
+735.7s - 735.74s : Right?
+735.74s - 736.4s : JASON KUO- Right?
+736.4s - 738.62s : So here, a weighted path doesn't really
+738.62s - 740.98s : care if we visit an edge more than once.
+740.98s - 741.62s : Right?
+741.62s - 744.98s : So if an edge appears more than once in pi,
+744.98s - 750.14s : we have to count that more than once in the weight of the path.
+750.14s - 752.68s : OK, great question.
+752.68s - 755.78s : But what we're going to see later on
+755.78s - 764.36s : is shortest paths cannot repeat an edge more than once
+764.36s - 765.52s : in certain contexts.
+765.74s - 766.24s : Right?
+766.24s - 770.5s : So we're going to get to the problem there a little later
+770.5s - 772.32s : in this lecture, and we're going to solve
+772.32s - 774.32s : that in tomorrow's lecture.
+774.32s - 778.58s : But if you have, we're getting a little ahead of ourselves,
+778.58s - 781.34s : but when we have negative weights in a graph,
+781.34s - 782.94s : it's possible that things go wrong.
+782.94s - 785.02s : We're going to get there in about five lines.
+785.02s - 786.86s : OK, great.
+786.86s - 791.12s : So the shortest path.
+795.74s - 799.0s : And in this case, I'm going to clarify
+799.0s - 800.68s : that this is the weighted shortest path.
+800.68s - 801.18s : Right?
+803.86s - 818.62s : Is a minimum, min, minimum, short, is a minimum weight
+818.62s - 825.52s : path from s to t.
+825.52s - 827.14s : Right?
+827.14s - 830.26s : Nothing too interesting here, but there's actually
+830.26s - 832.66s : some subtleties we have to deal with here.
+832.66s - 834.74s : Right?
+834.74s - 838.7s : We're going to call, just like we did with breadth first
+838.7s - 840.46s : search when we talked about shortest paths,
+840.46s - 845.62s : we're going to define an expression for what
+845.62s - 850.7s : the distance or the shortest path weight
+850.7s - 852.22s : is between two vertices.
+852.22s - 854.64s : And I'm going to represent that by a delta.
+854.64s - 855.14s : Right?
+855.52s - 864.28s : So the delta from a vertex s to t is going to be,
+864.28s - 866.8s : I'm going to do the wrong thing first,
+866.8s - 877.36s : the minimum over the weight of all paths for all paths pi
+877.36s - 883.64s : from s to t.
+883.64s - 884.64s : OK.
+884.64s - 886.96s : So there's some things that go wrong here.
+886.96s - 890.4s : First thing that goes wrong is the same thing that went wrong
+890.4s - 892.38s : with breadth first search.
+892.38s - 893.28s : Right?
+893.28s - 896.1s : Anyone remember what could go wrong with breadth first search
+896.1s - 897.48s : for this delta definition?
+897.48s - 898.68s : Maybe there's no path.
+898.68s - 900.0s : JASON KUO- Maybe there's no path.
+900.0s - 901.16s : Right.
+901.16s - 901.66s : Right?
+901.66s - 909.58s : So except if no path, just by convention,
+909.58s - 914.28s : we're setting delta s t to equal.
+914.64s - 915.16s : Right?
+915.16s - 916.86s : So on the left, we could go east.
+916.86s - 917.92s : Then we're setting уз the third part down.
+917.92s - 919.0s : Give t over here.
+919.0s - 921.24s : Then we're writing anyysics.
+921.24s - 921.74s : All right.
+921.74s - 923.72s : So that's h over 4.
+923.72s - 926.12s : And this might be the last part.
+926.12s - 929.5s : And I guess just by gravity, to the last
+929.5s - 931.28s : case, what we're really obsessed with here
+931.28s - 933.0s : is not the one kind of thing.
+933.0s - 935.78s : This is what we're trying to find out the whole saying about
+935.78s - 938.94s : stretch is called result length, length.
+938.94s - 940.06s : And the answer to this question
+940.06s - 943.0s : is withnea finite less than infinity,
+943.0s - 946.66s : getting a shorter path.
+946.66s - 952.3s : So if the shortest, the minimum weight of a path from s to t
+952.3s - 954.9s : actually goes through an infinite number of edges,
+954.9s - 957.54s : then this isn't really well-defined.
+957.54s - 964.14s : So I'm going to change this minimum here to,
+964.14s - 967.86s : in mathematics, just to be specific,
+967.86s - 970.68s : we call it an infimum.
+970.68s - 976.44s : So if, in the case where the weight of a shortest path
+976.44s - 980.58s : can approach arbitrarily small, then we'll
+980.58s - 984.14s : call this thing minus infinity.
+984.14s - 986.4s : So when does that occur?
+991.2s - 993.32s : When does that occur?
+993.32s - 997.78s : When could we have our shortest path go through lots and lots
+997.78s - 998.34s : of vertices?
+998.34s - 1000.62s : Well, let's actually take a look at this example here.
+1000.68s - 1008.56s : Can someone tell me what the shortest path is from A
+1008.56s - 1010.48s : to actually any vertex in this graph?
+1017.3s - 1018.8s : Ah, OK.
+1018.8s - 1023.68s : So well, we could look at this path I have to B.
+1023.68s - 1027.8s : Let's just take a look at B. I have a path going from A to B
+1027.8s - 1028.64s : that is minus 5.
+1028.64s - 1029.52s : OK, that's pretty good.
+1029.52s - 1030.28s : That's pretty small.
+1030.28s - 1030.68s : Right?
+1030.68s - 1035.6s : And it seems that if I go around this graph
+1035.6s - 1038.64s : through another way, it might be bigger, right?
+1038.64s - 1043.1s : So I go 7 plus 3 plus 8.
+1043.1s - 1045.14s : That's 15 minus 1.
+1045.14s - 1046.3s : That's 14.
+1046.3s - 1049.3s : That's much bigger than minus 5.
+1049.3s - 1052.02s : So it seems like minus 5 should be good, right?
+1052.02s - 1053.8s : Anyone have a problem with this path?
+1053.8s - 1057.58s : Or a problem with this being the shortest path?
+1057.58s - 1060.28s : And what your colleague just informed me,
+1060.28s - 1063.52s : was that there is something interesting happening here
+1063.52s - 1064.32s : in this graph.
+1064.32s - 1072.28s : In particular, we have a cycle from B to F to G to C
+1072.28s - 1074.98s : that has negative total weight, right?
+1074.98s - 1076.78s : Back to B, right?
+1076.78s - 1082.74s : This has minus 4 plus 2 plus 1 minus 1, right?
+1082.74s - 1089.04s : So that total cycle has a cycle weight of minus 2, right?
+1089.04s - 1090.16s : This is negative weight 2.
+1090.16s - 1092.5s : This is a negative weight cycle.
+1092.5s - 1097.66s : So if I want to get to B, I could go there
+1097.66s - 1100.66s : via this minus 5 weight edge.
+1100.66s - 1105.4s : But every time I circled around this cycle,
+1105.4s - 1110.32s : I incur minus 2 to my path weight, right?
+1110.32s - 1113.92s : So I just keep going around this cycle over and over and over
+1113.92s - 1116.5s : and over and over and over again.
+1116.5s - 1119.76s : And I don't have any finite length minimum weight path,
+1119.76s - 1120.16s : right?
+1120.16s - 1126.38s : And in such cases, we just say that delta is minus infinity,
+1126.38s - 1126.88s : right?
+1126.88s - 1131.1s : So the problem here is that we could
+1131.1s - 1132.38s : have negative weight cycles.
+1135.38s - 1136.78s : Deserves a capital letter.
+1136.78s - 1143.02s : Negative weight cycles.
+1147.38s - 1150.0s : It's a problem.
+1150.0s - 1151.72s : OK?
+1151.72s - 1171.32s : In particular, if there exists a path from S to some vertex V
+1171.32s - 1179.28s : that goes through a vertex.
+1180.0s - 1190.14s : Well, I can take that path to that vertex,
+1190.14s - 1192.84s : circle around the negative weight cycle,
+1192.84s - 1196.94s : and then proceed to V. And I can take that cycle as many
+1196.94s - 1198.34s : times as I want.
+1198.34s - 1201.72s : Then this delta SV goes through that vertex.
+1201.72s - 1204.68s : And I can take that path to the vertex,
+1204.68s - 1207.72s : circle around the negative weight cycle,
+1207.72s - 1209.82s : and then proceed to V. And I can take that cycle as many times
+1209.82s - 1210.36s : as I want.
+1210.36s - 1212.04s : And I can set that value to the negative weight,
+1212.04s - 1212.92s : and I can set that to minus infinity.
+1212.92s - 1214.42s : OK?
+1214.42s - 1218.28s : And in such cases, in our shortest paths algorithm,
+1218.28s - 1223.08s : we don't really care about what the shortest path is, right?
+1223.08s - 1226.2s : We're not even going to deal with parent pointers here,
+1226.2s - 1227.0s : right?
+1227.0s - 1230.78s : Because there is no finite length shortest path.
+1230.78s - 1233.66s : So I'm just going to throw up my hands in the air and say,
+1233.66s - 1234.28s : you know what?
+1234.28s - 1235.96s : I can't return you a shortest path.
+1235.96s - 1237.94s : But I might want to return to you.
+1237.94s - 1238.68s : A is the shortest path.
+1238.68s - 1239.42s : I'm going to return you an A. I'm going to return to you an A.
+1239.42s - 1241.24s : a negative weight cycle.
+1241.24s - 1245.36s : If you told me that this thing has bad weight,
+1245.36s - 1247.76s : maybe I want you to tell me what a path is that
+1247.76s - 1252.38s : goes through a negative weight cycle to get back to S.
+1252.38s - 1254.46s : So that's what we're going to talk about next lecture.
+1254.46s - 1257.46s : This lecture, we are not going to talk about that.
+1257.46s - 1259.52s : We are going to talk about weighted shortest paths,
+1259.52s - 1260.18s : though.
+1260.18s - 1266.54s : That's what the remainder of this unit on graphs
+1266.54s - 1269.02s : is really about, is weighted shortest paths.
+1269.02s - 1271.92s : OK, so in weighted shortest paths,
+1271.92s - 1274.78s : we actually know an algorithm already
+1274.78s - 1283.26s : to solve a subset of weighted shortest paths, namely BFS.
+1283.26s - 1286.9s : Now, you're like, wait, Jason.
+1286.9s - 1289.02s : BFS doesn't solve weighted shortest paths.
+1289.02s - 1291.06s : We didn't even know about weighted graphs then.
+1291.06s - 1293.86s : How does that solve weighted shortest paths?
+1293.86s - 1297.88s : Well, there's a couple cases where
+1297.88s - 1299.0s : we might be able to reduce.
+1299.02s - 1302.66s : So we might be able to reduce to solving shortest paths using BFS.
+1302.66s - 1304.5s : Can anyone think of such a scenario?
+1310.04s - 1314.88s : So let's say, I mean, kind of what we did before
+1314.88s - 1317.9s : was we counted the number of edges, right?
+1317.9s - 1323.7s : So if we gave a weight of 1 to every edge in my graph,
+1323.7s - 1328.04s : then just that graph, that weighted graph,
+1328.04s - 1328.98s : corresponds to the number of edges.
+1328.98s - 1330.96s : But if we gave a weight of 1 to every edge in my graph,
+1330.96s - 1332.3s : then it corresponds to an unweighted graph
+1332.3s - 1335.74s : using the other distance metric, right?
+1335.74s - 1339.26s : So in that case, BFS just solves our problem.
+1339.26s - 1343.04s : And in fact, we can generalize further.
+1343.04s - 1347.1s : What if all of our weights were positive but the same value,
+1347.1s - 1348.6s : right?
+1348.6s - 1352.46s : If it was all positive in the same value,
+1352.46s - 1355.96s : then we could just divide by that value, right?
+1355.96s - 1358.1s : Now we have a weighted, an unweighted value.
+1358.1s - 1358.6s : OK?
+1358.6s - 1362.08s : graph, which we can run BFS and then multiply shortest path
+1362.08s - 1364.42s : distances by that value later on.
+1364.42s - 1367.4s : And in fact, there's one further generalization
+1367.4s - 1370.58s : we could make, which is a little bit of a tricky graph
+1370.58s - 1373.46s : transformation problem.
+1373.46s - 1376.94s : But we can also get this linear time algorithm
+1376.94s - 1381.98s : for weighted single source shortest paths in contexts
+1381.98s - 1386.6s : where the weights aren't that large.
+1386.6s - 1391.1s : So if I have positive edge weights,
+1391.1s - 1396.16s : if I have a positive edge weight that's, say,
+1396.16s - 1404.52s : using my weight color here, that's like weight of 4,
+1404.52s - 1407.34s : that's kind of problematic because I
+1407.34s - 1410.84s : don't know how to simulate that using an unweighted graph.
+1410.84s - 1412.36s : Or do I?
+1412.36s - 1415.7s : Anyone have an idea of how I could simulate
+1415.7s - 1416.3s : an edge?
+1416.6s - 1421.08s : I could simulate an edge of weight 4 with an unweighted
+1421.08s - 1421.58s : graph.
+1421.58s - 1422.08s : Yeah?
+1422.08s - 1423.82s : I have four edges of weight 1.
+1423.82s - 1424.32s : Yeah.
+1424.32s - 1429.42s : I can just put four edges of weight 1 in parallel here.
+1429.42s - 1433.36s : Sorry, in series, the opposite of parallel.
+1433.36s - 1442.9s : I can just convert this here into 1, 2, 3, 4 edges.
+1442.9s - 1446.06s : And if I do that for every edge in my graph,
+1446.06s - 1448.34s : and we have positive edge weights,
+1448.34s - 1450.44s : then that transformation can hold.
+1450.44s - 1453.06s : Now, that's not necessarily a good transformation to make.
+1453.06s - 1453.56s : Why?
+1453.56s - 1456.74s : The weight might be very big.
+1456.74s - 1459.92s : Yeah, the weights might be very big compared
+1459.92s - 1462.88s : to the number of vertices and edges in my graph.
+1462.88s - 1466.8s : However, if the sum of all weights in my graph
+1466.8s - 1472.4s : is asymptotically less than v plus e,
+1472.4s - 1474.54s : we can get a linear time algorithm again
+1474.54s - 1475.46s : by reducing to BFS.
+1475.46s - 1475.94s : OK.
+1475.94s - 1478.4s : So that's great.
+1478.4s - 1482.7s : Today, but in general, that gives us a linear time
+1482.7s - 1486.56s : algorithm in these very special cases.
+1486.56s - 1488.42s : And in general, it's an open problem.
+1488.42s - 1494.48s : We don't know whether we can solve the single source
+1494.48s - 1498.44s : shortest paths problem in the weighted context
+1498.44s - 1500.98s : for general graphs in linear time.
+1500.98s - 1502.88s : We don't know how to do it.
+1502.88s - 1503.98s : Right?
+1503.98s - 1505.88s : But what we do know.
+1505.88s - 1508.48s : Are some algorithms that do pretty well,
+1508.48s - 1511.58s : and that's what we use all the time.
+1511.58s - 1515.26s : But in the one more special case we're going to go over today
+1515.26s - 1519.02s : is when we have this really nice structure, where
+1519.02s - 1522.76s : we have a DAG, a directed acyclic graph,
+1522.76s - 1527.3s : like we were talking about in the last lecture,
+1527.3s - 1529.68s : we can actually, for any set of edge weights.
+1529.68s - 1530.18s : Right?
+1530.18s - 1533.5s : Remember with BFS, we needed to restrict our edge weights
+1533.5s - 1535.0s : to be positive.
+1535.0s - 1535.76s : Or maybe bounded.
+1535.76s - 1539.72s : Or maybe bounded to get this good running time.
+1539.72s - 1543.2s : For any set of edge weights, if our graph structure is a DAG,
+1543.2s - 1545.12s : it really has nothing to do with the weights.
+1545.12s - 1548.06s : If the graph structure is a DAG, then we
+1548.06s - 1551.34s : can actually solve this single source shortest paths
+1551.34s - 1554.72s : problem in linear time, which is pretty awesome.
+1554.72s - 1556.62s : Right?
+1556.62s - 1561.08s : Now, for general graphs, we're going
+1561.08s - 1564.88s : to show you in the next lecture how to, for any graph,
+1564.88s - 1569.14s : even with cycles, even with negative weight cycles,
+1569.14s - 1571.14s : we're going to show you how to solve this single source
+1571.14s - 1573.34s : shortest paths problem in something
+1573.34s - 1574.96s : like a quadratic running time bound.
+1574.96s - 1577.12s : Now, this isn't the best known, but it's
+1577.12s - 1580.54s : a really practical algorithm, and people use it all the time.
+1580.54s - 1581.04s : OK?
+1581.04s - 1585.64s : And we are going to show Bellman-Ford
+1585.64s - 1588.98s : in the context of the DAG algorithm
+1588.98s - 1591.76s : we're going to solve today.
+1591.76s - 1592.9s : OK?
+1592.9s - 1594.76s : So that's the very general case.
+1594.76s - 1597.38s : In terms of restrictions on our graph.
+1597.38s - 1603.1s : But in reality, most problems that come up in applications
+1603.1s - 1606.98s : occur with graphs that have positive edge weights.
+1606.98s - 1608.44s : You can think of a road network.
+1608.44s - 1610.3s : You've got non-negative ones anyway.
+1610.3s - 1610.9s : Right?
+1610.9s - 1613.44s : That you're traveling along.
+1613.44s - 1614.72s : Right?
+1614.72s - 1617.64s : And it's not ever useful to kind of go back
+1617.64s - 1621.3s : to where you came from because you want to make progress
+1621.3s - 1622.42s : to where you're going.
+1622.42s - 1623.5s : OK?
+1623.5s - 1624.06s : So.
+1624.06s - 1627.36s : In the context where you don't have negative weights,
+1627.36s - 1629.82s : you don't have this problem where you have negative weight
+1629.82s - 1632.76s : cycles, we can actually do a lot better
+1632.76s - 1635.4s : by exploiting that property.
+1635.4s - 1640.68s : And we get a bound that looks a little bit more like n log n.
+1640.68s - 1641.18s : Right?
+1641.18s - 1643.08s : Like it's pretty close to linear.
+1643.08s - 1647.24s : You're losing a log factor on the number of vertices.
+1647.24s - 1647.8s : OK?
+1647.8s - 1648.96s : But it's pretty good.
+1648.96s - 1651.06s : This is called Dijkstra, and we'll get to that in two
+1651.06s - 1652.32s : lectures.
+1652.32s - 1652.9s : OK.
+1652.9s - 1653.4s : So.
+1653.4s - 1655.36s : That's kind of the roadmap of what
+1655.36s - 1659.24s : we're going to do for at least the next three lectures.
+1659.24s - 1661.94s : But before we go on to showing you
+1661.94s - 1666.24s : how to solve single source shortest paths in a DAG
+1666.24s - 1672.8s : using this algorithm that I'm calling DAG relaxation here,
+1672.8s - 1676.06s : I'm going to go back to a thing that we talked about
+1676.06s - 1678.92s : in breadth-first search, where in breadth-first search,
+1678.92s - 1681.32s : when we solve single source shortest paths,
+1681.32s - 1683.1s : we output two things.
+1683.4s - 1683.9s : Right?
+1683.9s - 1687.64s : We output single source shortest paths, these deltas,
+1687.64s - 1691.74s : right, for the other definition of distance.
+1691.74s - 1692.9s : You know, the weights.
+1692.9s - 1693.74s : I mean, not the weights.
+1693.74s - 1695.7s : The distances.
+1695.7s - 1698.36s : The shortest distances.
+1698.36s - 1700.2s : But we also return parent pointers.
+1700.2s - 1700.7s : Right?
+1700.7s - 1706.32s : We return parent pointers back along paths to the source
+1706.32s - 1707.48s : along shortest paths.
+1707.48s - 1707.98s : Right?
+1707.98s - 1709.64s : We call this the shortest paths tree.
+1709.64s - 1712.24s : So I'm going to revisit this topic of shortest paths tree.
+1712.24s - 1712.48s : OK.
+1712.48s - 1712.94s : OK.
+1712.94s - 1713.28s : OK.
+1713.28s - 1713.36s : OK.
+1713.36s - 1713.82s : OK.
+1713.82s - 1716.9s : Shortest path trees.
+1716.9s - 1724.34s : Shortest path trees.
+1724.34s - 1725.38s : OK?
+1725.38s - 1727.58s : And in particular, it's kind of going
+1727.58s - 1731.96s : to be annoying to talk about both of these quantities,
+1731.96s - 1736.16s : distances and parent pointers, as we go through all three
+1736.16s - 1737.46s : of these algorithms.
+1737.46s - 1741.74s : It's basically going to be bookkeeping to distances
+1741.74s - 1743.24s : are actually sufficient for us.
+1743.24s - 1745.7s : It's going to be a lot of work to reconstruct parent pointers
+1745.7s - 1746.96s : if we need them later.
+1746.96s - 1747.6s : OK?
+1747.6s - 1750.1s : So what I'm going to prove to you now
+1750.1s - 1754.76s : is that if I give you the shortest path distances
+1754.76s - 1759.72s : for the subset of the graph reachable from s that
+1759.72s - 1763.64s : doesn't go through negative weight cycles, right?
+1763.64s - 1765.36s : If I'm giving you those distances,
+1765.36s - 1769.34s : I can reconstruct parent pointers along shortest paths
+1769.34s - 1770.2s : in linear time.
+1770.2s - 1770.7s : Right?
+1770.7s - 1771.2s : Right?
+1771.2s - 1771.7s : Right?
+1771.7s - 1772.2s : Right?
+1772.2s - 1772.7s : Right?
+1772.7s - 1773.12s : Right?
+1773.12s - 1773.62s : Right?
+1773.62s - 1776.32s : For any graph I might give you if I give you those shortest
+1776.32s - 1777.26s : path distances.
+1777.26s - 1777.86s : OK.
+1777.86s - 1780.2s : So that's what I'm going to try to show to you now.
+1783.66s - 1789.3s : So here's the algorithm.
+1789.3s - 1792.0s : For weighted, there's the caveat here
+1792.0s - 1797.98s : I'm going to write down for weighted shortest paths,
+1797.98s - 1803.0s : only need parent pointers.
+1803.0s - 1816.34s : For v with finite shortest path distance.
+1816.34s - 1817.46s : OK?
+1817.46s - 1819.26s : Only finite shortest path distance, right?
+1819.26s - 1822.88s : We don't care about the infinite ones or the minus infinite ones,
+1822.88s - 1823.84s : just the finite ones.
+1823.84s - 1824.34s : OK.
+1824.34s - 1827.12s : So here's the algorithm.
+1827.12s - 1831.62s : I'm going to initialize all pv.
+1833.0s - 1842.18s : And I'm going to initialize all v to equal, sorry, oh.
+1842.18s - 1843.38s : Getting ahead of myself.
+1843.38s - 1845.1s : I'm writing down dag.
+1845.1s - 1845.6s : All right.
+1845.6s - 1846.14s : Init all.
+1846.14s - 1854.9s : Init my parent pointer data structure, right, to be empty.
+1854.9s - 1855.4s : OK?
+1855.4s - 1855.9s : Right?
+1855.9s - 1859.54s : First, I'm not going to store any parent pointers.
+1859.54s - 1861.5s : But at the beginning, I'm going to set up my data structure.
+1861.5s - 1862.0s : OK?
+1862.0s - 1862.5s : OK.
+1862.5s - 1867.54s : I'm going to set the parent pointer of the source to be none.
+1867.54s - 1868.04s : Right?
+1868.04s - 1871.62s : So that's what we kind of did in breadth-first search as well.
+1871.62s - 1873.42s : Right?
+1873.42s - 1877.2s : Now, what I've given you is I'm trying
+1877.2s - 1879.54s : to show that given all the shortest path distances,
+1879.54s - 1882.12s : I can construct these parent pointers correctly.
+1882.12s - 1891.56s : So what I'm going to do is for each vertex u, in my case,
+1891.56s - 1892.2s : I'm going to write down.
+1892.2s - 1895.36s : I'm going to write down, well, this is the one
+1895.36s - 1897.44s : that's going to be the shortest path.
+1897.44s - 1900.78s : It is going to be the shortest path in my graph,
+1900.78s - 1904.84s : where my delta s of u is finite.
+1909.84s - 1910.86s : What am I going to do?
+1910.86s - 1914.14s : I'm going to say, well, let's take a look
+1914.14s - 1916.58s : at all my outgoing neighbors.
+1916.58s - 1917.08s : OK?
+1917.08s - 1920.2s : This is kind of what we do in every graph algorithm.
+1920.2s - 1921.3s : For each v.
+1921.3s - 1922.04s : So I'm going to write down.
+1922.04s - 1930.42s : in the outgoing adjacencies of U,
+1930.42s - 1937.98s : if there is no parent pointer assigned to this V,
+1937.98s - 1943.9s : there's the potential that I, U, this U, this vertex U,
+1943.9s - 1945.76s : is the parent of V. It's possible.
+1945.76s - 1950.28s : It's some incoming edge to V. When
+1950.28s - 1953.66s : will it be an incoming edge to V?
+1953.66s - 1961.64s : If I haven't said if V not in P, I haven't assigned it
+1961.64s - 1964.0s : a parent pointer.
+1964.0s - 1971.08s : And so this means it could be my parent.
+1971.08s - 1977.24s : When is it my parent along the shortest path?
+1977.24s - 1977.74s : Sure.
+1977.74s - 1980.26s : Can you sum the distance along the edge
+1980.26s - 1981.44s : to the distance to the origin?
+1981.44s - 1981.94s : Yeah.
+1981.94s - 1988.14s : So we have some edge from U to V. It has some weight.
+1988.14s - 1991.4s : If I already know the shortest path distance to U,
+1991.4s - 1995.22s : and I know the shortest path distance to V,
+1995.22s - 2000.94s : if the shortest path distance from S to U,
+2000.94s - 2002.28s : let's draw a picture here.
+2002.28s - 2005.92s : We've got S. We've got some path here to U.
+2005.92s - 2010.22s : And we've got an edge from U to V. OK?
+2010.26s - 2017.54s : If this shortest path distance plus this edge weight
+2017.54s - 2023.58s : is equal to the shortest path distance from S to V,
+2023.58s - 2024.28s : then it better be.
+2024.28s - 2026.66s : I mean, there may be more than one shortest path,
+2026.66s - 2028.64s : but this is certainly a shortest path.
+2028.64s - 2031.5s : So we can assign a parent pointer back to U.
+2031.5s - 2032.0s : OK?
+2032.0s - 2032.5s : Right.
+2032.5s - 2034.08s : So let's write that condition down.
+2034.08s - 2038.64s : If the shortest path distance from S to V
+2038.64s - 2040.26s : equals the shortest path distance
+2040.26s - 2045.26s : from S to U, and then traversing the edge from U
+2045.26s - 2066.24s : to V, then exists shortest path that uses edge U of V, right?
+2066.24s - 2069.6s : In particular, this one, right?
+2070.26s - 2081.66s : So set the parent of U of V to U. OK.
+2081.66s - 2082.82s : So this is the algorithm.
+2082.82s - 2086.36s : I'm not going to prove to you that this is correct,
+2086.36s - 2088.6s : but it kind of intuitively makes sense, right?
+2088.6s - 2092.24s : If I have these shortest path distances,
+2092.24s - 2094.3s : you can prove by induction that not only does
+2094.3s - 2097.58s : this parent pointer point to the right place
+2097.58s - 2099.38s : along some shortest path here.
+2099.38s - 2099.88s : Right?
+2100.26s - 2102.48s : But it also does so in linear time,
+2102.48s - 2104.86s : because I'm looping over all the vertices
+2104.86s - 2107.78s : and looping over its outgoing adjacencies once.
+2107.78s - 2113.5s : Same analysis as we had for both BFS and DFS, essentially.
+2113.5s - 2114.34s : Right?
+2114.34s - 2116.92s : And then, since we can do this, since we
+2116.92s - 2120.82s : can compute parent pointers from these distances,
+2120.82s - 2123.94s : we're going to kind of ignore computing these parent
+2123.94s - 2125.4s : pointers from now on.
+2125.4s - 2126.0s : Right?
+2126.0s - 2128.3s : We're just going to concentrate on computing the distances
+2128.3s - 2129.86s : because, you know, we're going to have
+2129.86s - 2132.62s : to take linear time anyway, right?
+2132.62s - 2134.04s : At least.
+2134.04s - 2136.16s : And all these other things take more time,
+2136.16s - 2139.1s : so we can compute the distances in more time
+2139.1s - 2141.44s : and then compute the parents after.
+2141.44s - 2142.94s : OK.
+2142.94s - 2146.44s : So that's what we're going to do.
+2146.44s - 2147.08s : OK.
+2147.08s - 2151.1s : So now, with all that build up, let's show an algorithm.
+2151.1s - 2151.62s : Right?
+2151.62s - 2156.5s : How do we compute shortest single source shortest paths
+2156.5s - 2158.98s : in a DAG in linear time?
+2158.98s - 2159.48s : Right?
+2159.86s - 2161.14s : OK.
+2161.14s - 2164.98s : Well, I mean, this is actually a super useful, convenient thing
+2164.98s - 2167.42s : in algorithms in general.
+2167.42s - 2169.9s : DAGs are just nice things.
+2169.9s - 2170.4s : Right?
+2170.4s - 2172.08s : They're kind of ordered in a way.
+2172.08s - 2172.58s : Right?
+2172.58s - 2174.52s : There's this topological order that we
+2174.52s - 2175.54s : were talking about before.
+2175.54s - 2177.64s : This is going to play a key role.
+2177.64s - 2178.32s : Right?
+2178.32s - 2181.52s : There's a really nice structure to DAGs not having cycles,
+2181.52s - 2184.76s : not having to deal with this negative weight cycle problem.
+2184.76s - 2185.26s : Right?
+2185.26s - 2188.62s : You can only kind of go in one direction along this graph.
+2188.62s - 2189.12s : Right?
+2189.86s - 2192.94s : It's very nice structure to exploit.
+2192.94s - 2195.8s : And so we're going to exploit it.
+2195.8s - 2197.94s : And here's the idea.
+2197.94s - 2207.24s : DAG relaxation, what it's going to do
+2207.24s - 2210.3s : is it's going to start out with some estimates of what
+2210.3s - 2211.92s : these distances should be.
+2211.92s - 2212.92s : Right?
+2212.92s - 2213.42s : OK.
+2213.42s - 2215.38s : So maintain.
+2215.38s - 2215.88s : Maintain.
+2219.86s - 2220.44s : Maintain.
+2220.44s - 2221.74s : Distance estimates.
+2226.06s - 2228.9s : And now I'm going to try to be careful here
+2228.9s - 2231.0s : about how I draw my d's.
+2233.98s - 2234.54s : OK?
+2234.54s - 2237.74s : This is a d.
+2237.74s - 2239.38s : This is a delta.
+2239.38s - 2240.32s : OK?
+2240.32s - 2242.28s : This is shortest paths.
+2242.28s - 2244.58s : This is a distance estimate.
+2244.58s - 2245.2s : OK?
+2245.2s - 2249.74s : So that's what I'm going to be using for the rest of this time.
+2249.74s - 2254.16s : So we're going to initialize, maintain these estimates
+2254.16s - 2262.58s : of distance d, which are going to start at initially infinite.
+2262.58s - 2263.92s : Right?
+2263.92s - 2264.42s : OK.
+2264.42s - 2265.74s : I don't know what they are.
+2265.74s - 2266.04s : Right?
+2266.04s - 2267.84s : I don't know what the shortest paths are,
+2267.84s - 2271.46s : but they better be less than infinite or else I don't care.
+2271.46s - 2272.06s : Right?
+2272.06s - 2274.62s : So I'm going to that's the kind of worst case scenario.
+2274.62s - 2275.2s : Right?
+2275.2s - 2278.94s : It can't be worse than this for every vertex.
+2278.94s - 2279.66s : And we're going to maintain.
+2279.66s - 2288.9s : Maintain the property that estimates upper bound.
+2295.1s - 2297.0s : That should probably be two words.
+2297.0s - 2300.6s : Upper bound delta sv.
+2305.42s - 2307.68s : We're going to maintain that the upward bound this thing
+2307.68s - 2308.84s : and gradually lower.
+2308.84s - 2309.34s : OK?
+2309.66s - 2311.82s : But we're going to maintain that we're always upper bounding
+2311.82s - 2312.36s : the distance.
+2312.36s - 2313.32s : And we're going to keep doing it.
+2313.32s - 2313.9s : Keep doing it.
+2313.9s - 2314.48s : Keep doing it.
+2314.48s - 2319.0s : Until they're equal.
+2319.0s - 2319.82s : OK?
+2319.82s - 2320.76s : So this is the idea.
+2320.76s - 2324.78s : We start from an overestimate, an upper bound on the distance
+2324.78s - 2325.92s : estimate.
+2325.92s - 2329.54s : And then we're repeatedly going to lower that value
+2329.54s - 2333.1s : as we gain more information about the graph.
+2333.1s - 2336.72s : Maintaining that we're always upper bounding the distance.
+2336.72s - 2339.1s : And we're going to keep doing it, keep doing it, keep doing it,
+2339.1s - 2342.86s : until, as we will try to prove to you,
+2342.86s - 2346.24s : these estimates actually reach down all the way
+2346.24s - 2348.54s : to our shortest path distances.
+2348.54s - 2349.38s : OK?
+2349.38s - 2350.8s : So when do we lower these things?
+2353.8s - 2356.6s : When do we lower these things?
+2356.6s - 2358.84s : We're going to lower these distance estimates
+2358.84s - 2361.58s : whenever the distance estimates violate what we're going
+2361.58s - 2363.86s : to call the triangle inequality.
+2363.86s - 2364.36s : OK.
+2364.36s - 2365.86s : What is the triangle inequality?
+2369.1s - 2379.38s : Triangle inequality is actually a pretty intuitive notion.
+2379.38s - 2379.88s : OK?
+2379.88s - 2384.34s : It's basically saying if I have three points,
+2384.34s - 2387.5s : that's this triangle, right?
+2387.5s - 2389.44s : Maybe bigger so I can write a letter in them.
+2392.08s - 2392.58s : OK.
+2392.58s - 2397.36s : It's basically saying that if I have a vertex u, a vertex v,
+2397.36s - 2397.86s : vertex x.
+2397.86s - 2398.34s : If I have a vertex v, a vertex x.
+2398.34s - 2398.92s : If I have a vertex y.
+2398.92s - 2399.06s : If I have a vertex y.
+2399.06s - 2401.18s : Vertes u, point y.
+2401.18s - 2405.32s : If I have a vertex y is big, right?
+2405.32s - 2408.2s : Then the midpoint of v is right, diagonal,
+2408.2s - 2410.0s : and ultimately, well, yeah, delta of u,
+2410.0s - 2411.88s : 與 v, as being the shortest distance
+2411.88s - 2414.12s : once I have crossing with this gorgeous graph.
+2414.12s - 2415.94s : And the removal of the two vertex CUV
+2415.94s - 2423.8s : matrix into the page, and behind the Dennis
+2423.8s - 2429.04s : récup abge can't have the number rights.
+2429.04s - 2437.26s : of to the ones that go through x, the shortest path distance
+2437.26s - 2440.92s : from u to v can't be bigger than restricting paths that
+2440.92s - 2443.72s : go through x and taking that shortest distance,
+2443.72s - 2445.9s : getting the shortest path distance from here
+2445.9s - 2451.6s : and adding it to the shortest path distance here, delta ux,
+2451.6s - 2454.32s : delta xv.
+2454.32s - 2461.66s : And I mean, that's just a statement of I'm
+2461.66s - 2463.34s : restricting to a subset of the paths.
+2463.34s - 2467.58s : I can't increase my I can't decrease my minimum distance.
+2467.58s - 2470.5s : So this is the statement of the triangle inequality,
+2470.5s - 2474.52s : that the shortest path distance from u to v
+2474.52s - 2480.2s : is can't be bigger than the shortest path distance
+2480.2s - 2484.32s : from u to x plus the shortest path distance from x to v.
+2484.32s - 2487.26s : So that's the triangle inequality for any x in my graph
+2487.26s - 2489.84s : that's not u and v.
+2489.84s - 2492.28s : So that's the triangle inequality.
+2492.28s - 2494.7s : Pretty intuitive notion, right?
+2494.7s - 2496.1s : Why is this useful?
+2496.1s - 2503.5s : OK, well, if I find an edge in my graph,
+2503.5s - 2513.7s : if there's an edge uv in my graph such that,
+2513.7s - 2514.2s : OK,
+2514.32s - 2521.6s : this condition is violated for the estimates that I have,
+2521.6s - 2525.08s : it obviously can't be violated on my shortest path distances.
+2525.08s - 2528.24s : But if it violates it on the estimates,
+2528.24s - 2534.0s : uv is bigger than ux.
+2534.0s - 2537.58s : Sorry, u, how am I going to do this?
+2537.58s - 2540.72s : I want this to be s.
+2540.72s - 2544.0s : I'm calculating shortest path distances from s.
+2544.32s - 2551.88s : And shortest path distances from s to some incoming vertex u
+2551.88s - 2556.8s : plus the edge weight from u to v.
+2556.8s - 2558.04s : OK, all right.
+2558.04s - 2559.9s : So what is this doing?
+2559.9s - 2563.38s : I have some edge uv in my graph.
+2563.38s - 2567.84s : OK, basically what I've said is that I have some distance
+2567.84s - 2573.84s : estimate to u, but going through, making a path to v,
+2573.84s - 2578.12s : by going through u, and then the edge from u to v
+2578.12s - 2583.44s : is better than my current estimate, my shortest path
+2583.44s - 2588.26s : estimate to v. That's bad, right?
+2588.26s - 2589.92s : That's violating the triangle inequality.
+2589.92s - 2592.18s : These cannot be the right weights.
+2592.18s - 2594.78s : These cannot be the right distances.
+2594.78s - 2597.84s : So how we're going to do that is lower.
+2597.84s - 2601.66s : This is what we said repeatedly lower these distance estimates.
+2601.66s - 2603.84s : I'm going to lower this guy down to equal.
+2603.84s - 2605.62s : I don't think I could do that.
+2605.62s - 2607.06s : So now we're trying to say what we do.
+2607.06s - 2608.22s : But basically what we're actually doing
+2608.22s - 2611.48s : is take stretch removes, and take stretch
+2611.48s - 2613.2s : reduces and police in all the edges.
+2613.2s - 2614.94s : These are Model N numbers.
+2614.94s - 2616.46s : They're two certain networks.
+2616.46s - 2618.3s : We're taking the same combo, this is always
+2618.3s - 2620.08s : arrangements, and we took the same combo and used Van
+2620.08s - 2621.14s : Allen income.
+2621.14s - 2622.08s : And that came up.
+2622.08s - 2625.12s : So you see that the performance line keeps herself
+2625.12s - 2627.52s : at отt," is at not over giving rise again.
+2627.52s - 2629.26s : You think of a bit of sampling.
+2629.26s - 2633.18s : You look at fasting in terms of
+2633.18s - 2633.48s : room.
+2633.48s - 2633.8s : Mint.
+2633.8s - 2633.84s : 0.
+2633.84s - 2635.92s : So it at least resolves locally that constraint.
+2635.92s - 2640.04s : Now, it may violate the triangle inequality other places
+2640.04s - 2641.66s : now that we've done this change.
+2641.66s - 2644.84s : But at least this constraint is now relaxed and satisfied.
+2644.84s - 2663.1s : OK, so relax edge by lowering d of sv to this thing.
+2663.84s - 2667.56s : OK, that's what we're going to mean by relaxing an edge.
+2667.56s - 2675.44s : OK, and relaxing an edge is what I'll call safe.
+2675.44s - 2677.12s : It's safe to do.
+2677.12s - 2680.82s : OK, what do I mean by relaxation is safe?
+2680.82s - 2686.18s : It means that as I am computing these shortest path distances,
+2686.18s - 2688.94s : right, I'm going to maintain this property
+2688.94s - 2693.36s : that each one of these estimates, sorry,
+2693.36s - 2693.82s : these estimates.
+2693.82s - 2698.88s : It's here has the property that it's either infinite
+2698.88s - 2703.26s : or it is the weight of some path to v.
+2703.26s - 2708.32s : OK, so that's the thing that relaxation is safe.
+2717.98s - 2720.74s : OK, so each.
+2723.82s - 2734.26s : So this is the distance estimate sv is weight of some path
+2734.26s - 2743.32s : from s to v or infinite.
+2743.32s - 2748.78s : OK, and this is a pretty easy thing to prove, right?
+2748.78s - 2751.98s : If I had the invariant that these were all weights of shortest path,
+2751.98s - 2753.02s : then I would have a very good idea.
+2753.02s - 2753.74s : So I would have a very good idea.
+2753.74s - 2754.3s : Let's try to do some math.
+2754.3s - 2755.4s : So if I had the invariant that these were all weights of shortest
+2755.4s - 2756.12s : path, let's try to relax an edge.
+2756.12s - 2757.16s : Right?
+2757.16s - 2760.42s : And we need to show that this property is maintained.
+2760.42s - 2762.7s : Relax edge uv.
+2762.7s - 2764.18s : OK?
+2764.18s - 2768.96s : Now, if I relax edge uv, what do I do?
+2768.96s - 2772.5s : I set this thing.
+2772.5s - 2777.4s : Or sorry, I set this thing, my shortest path distance to v,
+2777.4s - 2779.8s : to be this thing plus this thing.
+2779.8s - 2782.94s : This is a weight of an edge from u to v. Now, I'm going to do this.
+2782.94s - 2787.7s : Now, by my assumption that we're maintaining that this is
+2787.7s - 2793.62s : a weight of some path in my graph, right?
+2793.62s - 2795.94s : If this thing is bigger, I'm setting it
+2795.94s - 2797.58s : to the weight of some path in my graph
+2797.58s - 2802.9s : to u plus an edge from u to v. And so this checks out.
+2802.9s - 2812.3s : So assign d of s to v.
+2812.94s - 2816.2s : And then I'm going to write down the distance estimate
+2816.2s - 2819.18s : to weight of some path.
+2819.18s - 2819.68s : OK?
+2819.68s - 2821.66s : I'm not going to write down all the argument
+2821.66s - 2823.12s : that I just had here.
+2823.12s - 2826.1s : But basically, since this distance estimate
+2826.1s - 2831.5s : was by supposition before the weight of some path to u,
+2831.5s - 2836.0s : then this is, again, the weight of some path to v.
+2836.0s - 2837.02s : OK, great.
+2837.02s - 2840.26s : So now, we're ready to actually go back to the argument
+2840.26s - 2841.2s : and to the algebra.
+2841.2s - 2841.94s : So I'm going to write down.
+2841.94s - 2842.44s : OK.
+2842.44s - 2842.94s : Great.
+2842.94s - 2844.4s : So I'm going to go through this algorithm.
+2848.94s - 2855.26s : So dag relaxation from over there
+2855.26s - 2862.74s : initializes all of our distance estimates to equal infinity,
+2862.74s - 2872.44s : just like we did in BFS, then set my distance estimate
+2872.44s - 2875.88s : to myself to be 0.
+2875.88s - 2877.38s : Right?
+2877.38s - 2880.36s : Now, it's possible that this might be minus infinity
+2880.36s - 2883.5s : or negative at some point.
+2883.5s - 2886.08s : But right now, I'm just setting it to 0.
+2886.08s - 2886.58s : OK?
+2886.58s - 2891.16s : And either way, 0 is going to upper bound the distance to s.
+2891.16s - 2891.94s : Right?
+2891.94s - 2899.26s : So in particular, at initialization, anything not
+2899.26s - 2900.44s : reachable from s is set to 0.
+2900.44s - 2900.94s : OK.
+2900.94s - 2901.48s : So I'm going to write down the distance estimate to be 0.
+2901.48s - 2901.98s : OK.
+2901.98s - 2903.96s : So I'm just showing you an example.
+2903.96s - 2905.24s : But instead of coming down, I'm also
+2905.24s - 2906.46s : entering an example to show you a little bit more
+2906.46s - 2907.74s : something related to that.
+2907.74s - 2908.42s : So now, if I wereлось to write down
+2908.42s - 2910.18s : for antire��오, I could have one in this example,
+2910.18s - 2910.68s : right?
+2910.68s - 2912.06s : And since I have B fr מה, I could
+2912.06s - 2914.12s : authentically say B fr of here ns1 and we can write down
+2914.12s - 2914.98s : how much Jn is here in general.
+2914.98s - 2915.8s : But the actual running slower function
+2915.8s - 2917.22s : which is dv is less than 1.
+2917.22s - 2919.34s : This tells us that the procedure for Binance
+2919.34s - 2921.26s : is really important.
+2921.26s - 2921.76s : OK.
+2921.76s - 2923.9s : Now, if we Canvas the first condition,
+2923.9s - 2926.62s : we're going to give a Brush this equation
+2926.62s - 2927.8s : because you fix it into WesternMi.
+2927.8s - 2929.74s : And this is commonality.
+2929.74s - 2930.96s : So the first condition is
+2930.96s - 2931.54s : I, At .
+2931.54s - 2934.24s : input to DAG realization is a DAG.
+2934.24s - 2937.22s : So this thing has a topological sort order.
+2937.22s - 2940.66s : We're going to process these vertices in that order.
+2940.66s - 2943.0s : You can imagine we're starting at the top,
+2943.0s - 2947.08s : and all my edges are pointed away from me.
+2947.08s - 2949.6s : And I'm just processing each vertex down
+2949.6s - 2953.38s : this topological sort line.
+2953.38s - 2955.92s : And then for each of these vertices,
+2955.92s - 2957.1s : what am I going to do?
+2957.1s - 2960.06s : I'm going to look at all the outgoing neighbors.
+2960.06s - 2963.36s : And if the triangle inequality is violated,
+2963.36s - 2966.12s : I'm going to relax that edge.
+2966.12s - 2968.52s : The algorithm is as simple as that.
+2968.52s - 2981.84s : For each outgoing neighbor of v, sorry, of u,
+2981.84s - 2983.64s : I always get u and v mixed up here.
+2987.74s - 2988.24s : If.
+2990.06s - 2994.98s : My shortest path estimate to v violates the triangle
+2994.98s - 3004.84s : inequality for an edge, for an incoming edge.
+3004.84s - 3013.64s : Then I'm going to set relax u, v, i.e.
+3013.64s - 3019.44s : set d, s, v equal to d.
+3020.06s - 3028.94s : So I'm going to write d, s, u plus w, u, v.
+3028.94s - 3031.32s : So that's the algorithm.
+3031.32s - 3037.4s : So if I were to take a look at this example graph over here,
+3037.4s - 3039.56s : maybe a is my start vertex.
+3039.56s - 3042.8s : I initialize it to.
+3042.8s - 3043.8s : This is not a DAG.
+3043.8s - 3045.3s : Thank you.
+3045.3s - 3046.58s : Let's make it a DAG.
+3050.06s - 3053.3s : So I'm going to claim to you.
+3053.3s - 3056.3s : Now, this is a DAG.
+3056.3s - 3056.8s : OK?
+3056.8s - 3058.82s : In particular, a topological sort order
+3058.82s - 3062.82s : is when there's a path through all the vertices,
+3062.82s - 3065.3s : then there's a unique topological sort order,
+3065.3s - 3070.82s : a, b, e, f, g, h, d, c.
+3070.82s - 3072.3s : This is a topological order.
+3072.3s - 3075.3s : You can check all the edges.
+3075.3s - 3077.3s : So I'm going to start with a.
+3077.3s - 3085.3s : And I'm going to initialize this by setting the.
+3085.3s - 3087.92s : Well, actually, let's use e.
+3087.92s - 3089.52s : Let's do shortest paths from e.
+3089.52s - 3090.98s : Why not?
+3090.98s - 3091.48s : OK?
+3091.48s - 3093.14s : Shortest paths from e.
+3096.68s - 3100.64s : Vertex a actually comes before e in the topological order.
+3100.64s - 3101.14s : Right?
+3101.14s - 3101.9s : So it has no.
+3101.9s - 3105.54s : I mean, its shortest path distance when I initialize,
+3105.54s - 3106.54s : I'm going to initialize this to 0.
+3106.54s - 3107.24s : I'm going to initialize this to infinite.
+3107.24s - 3107.78s : Infinite.
+3107.78s - 3108.28s : Infinite.
+3108.28s - 3108.78s : Infinite.
+3108.78s - 3109.28s : Infinite.
+3109.28s - 3109.78s : Infinite.
+3109.78s - 3110.28s : Infinite.
+3110.28s - 3110.78s : Infinite.
+3110.78s - 3111.28s : Infinite.
+3111.28s - 3112.4s : All these things to infinite.
+3112.4s - 3114.12s : These are my estimates.
+3114.12s - 3118.9s : These are not quite the shortest paths yet, distances.
+3118.9s - 3122.66s : But when I get here, clearly, I can't be.
+3127.86s - 3131.44s : Distance to me being infinite can never
+3131.44s - 3133.7s : violate the triangle inequality with something
+3133.7s - 3135.18s : infinite or finite.
+3135.18s - 3136.24s : Doesn't matter.
+3136.24s - 3137.24s : Right?
+3137.24s - 3139.78s : So I don't do anything to a.
+3139.78s - 3143.4s : Anything before my source vertex in the topological order
+3143.4s - 3144.36s : can't be visited.
+3144.36s - 3145.24s : Right?
+3145.24s - 3147.28s : Because it's before in the topological order.
+3147.28s - 3148.34s : That's kind of the point.
+3148.34s - 3150.62s : There's no path from my source vertex
+3150.62s - 3153.76s : to anything before it in the topological order.
+3153.76s - 3155.3s : OK?
+3155.3s - 3158.02s : So same with b.
+3158.02s - 3160.48s : b is before it in the topological order.
+3160.48s - 3161.66s : OK?
+3161.66s - 3165.36s : Now I'm at e.
+3165.36s - 3166.56s : And it's possible.
+3166.56s - 3167.24s : We are violating.
+3167.24s - 3168.9s : Triangle inequality.
+3168.9s - 3170.42s : In particular here.
+3170.42s - 3171.3s : Right?
+3171.3s - 3175.48s : I think the shortest path distance to f is infinite.
+3175.48s - 3182.74s : But actually, if I go to e through this edge with a weight
+3182.74s - 3187.42s : 3, I know that this is violating triangle inequality.
+3187.42s - 3191.28s : So actually, this thing is wrong.
+3191.28s - 3194.5s : And I can set it equal to 3.
+3194.5s - 3195.08s : OK?
+3195.08s - 3197.24s : Now, that might not be the shortest path.
+3197.24s - 3197.74s : Distance.
+3200.06s - 3202.74s : But right now, it's a better estimate.
+3202.74s - 3204.4s : So we've said it.
+3204.4s - 3206.74s : OK, now, I'm moving on.
+3206.74s - 3208.18s : I'm done with this guy.
+3208.18s - 3210.96s : I move to the next vertex in my topological order.
+3210.96s - 3214.46s : And again, I relax the edges out of f.
+3214.46s - 3220.34s : OK, so here looking at 8, 3 plus 8 is better than infinite.
+3220.34s - 3221.56s : So we'll say that that's 11.
+3224.88s - 3227.0s : And 3 plus 2 is better than infinite.
+3227.0s - 3227.12s : So.
+3227.12s - 3230.48s : So that's 5.
+3230.48s - 3232.34s : Now I keep going in the topological order.
+3232.34s - 3234.02s : g is the next.
+3234.02s - 3236.18s : 5 plus 1 is 6.
+3236.18s - 3238.5s : So we found a better estimate here.
+3238.5s - 3241.28s : So this 11 is not as good.
+3241.28s - 3242.6s : 6 is better.
+3242.6s - 3244.4s : So we replace it.
+3244.4s - 3246.72s : Here, we haven't visited before.
+3246.72s - 3247.64s : It's still infinite.
+3247.64s - 3250.52s : So 5 plus minus 2 is 3.
+3253.3s - 3254.88s : This is the next in the topological order.
+3254.88s - 3257.88s : 3 plus 9 is bigger than 6.
+3257.88s - 3260.64s : So that's not a shorter path.
+3260.64s - 3263.44s : 3 plus 4 is certainly smaller than infinite.
+3263.44s - 3265.74s : So set that equal to 7.
+3265.74s - 3269.22s : Then 7 plus 5 is also bigger than 6.
+3269.22s - 3272.28s : And actually, you can confirm that these
+3272.28s - 3276.66s : are all the shortest path distances from E.
+3276.66s - 3279.84s : So this algorithm seems to work.
+3279.84s - 3283.24s : Does it actually work?
+3283.24s - 3284.1s : Let's take a look.
+3284.88s - 3293.0s : The claim to you is that at the end of relaxation,
+3293.0s - 3309.88s : this algorithm, we've set claim at end all the estimates
+3309.88s - 3313.74s : equal shortest path distances.
+3313.74s - 3314.24s : OK?
+3314.88s - 3324.96s : So the basic idea here is that if I take the k-th vertex
+3324.96s - 3327.38s : in the topological order, assuming
+3327.38s - 3331.04s : that these distances are all equal for the ones
+3331.04s - 3333.1s : before me in the topological order,
+3333.1s - 3335.32s : I can prove by induction.
+3335.32s - 3341.64s : We can consider a shortest path from s to v, the k-th vertex.
+3341.64s - 3343.0s : And look at the vertex preceding me along the shortest path.
+3343.0s - 3344.0s : So we can prove by induction.
+3344.0s - 3344.6s : And we can consider a shortest path from s to v, the k-th vertex. And look at the vertex preceding me along the shortest path.
+3344.88s - 3352.32s : That vertex better be before me in the topological order,
+3352.32s - 3354.42s : or we're not a DAG.
+3354.42s - 3356.38s : And we've already set it shortest path distance
+3356.38s - 3362.94s : to be equal to the correct thing by induction.
+3362.94s - 3368.92s : So then when we processed u, s to u to v, when we processed u, in the topological order,
+3368.92s - 3369.72s : we get the k-th vertex.
+3369.72s - 3372.96s : And then we can do the same thing in the topological order.
+3372.96s - 3374.0s : So that's the way to do it.
+3374.0s - 3374.6s : So that's the way to do it.
+3374.6s - 3378.88s : In DAG relaxation here, process the vertex,
+3378.88s - 3381.46s : and looked at all its outgoing adjacencies,
+3381.46s - 3387.6s : we would have relaxed this edge to be no greater than that shortest path distance.
+3387.6s - 3394.96s : So this is correct.
+3394.96s - 3401.74s : You can also think of it as the DAG relaxation algorithm for each vertex.
+3401.74s - 3403.66s : Look solid its incoming neighbors.
+3403.66s - 3403.96s : Look solid its incoming neighbors.
+3403.96s - 3410.24s : Assuming that their shortest path distances are computed correctly already,
+3410.24s - 3413.72s : any shortest path distance to me needs to be composed of a shortest path distance to
+3413.72s - 3418.98s : one of my incoming neighbors through an edge to me.
+3418.98s - 3420.88s : So I can just check all of them.
+3420.88s - 3424.0s : That's what DAG relaxation kind of does.
+3424.0s - 3428.36s : And again, we're looping over every vertex and looking at its adjacencies, doing constant
+3428.36s - 3429.36s : work.
+3429.36s - 3431.2s : This again takes linear time.
+3431.2s - 3432.2s : OK.
+3432.2s - 3433.84s : So that's shortest paths in a DAG.
+3433.84s - 3443.0s : Next time, we'll look at, for general graphs, how we can use kind of the same technique
+3443.0s - 3445.0s : in an algorithm we call Bellman-Ford.
+3445.0s - 3446.0s : OK.
+3446.0s - 3446.42s : That's it for today.

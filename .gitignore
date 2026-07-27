@@ -292,3 +292,6 @@ models/
 *.avi
 *.mov
 *.mkv
+src/module2_summarization/bert_model/model.safetensors 
+src/module2_summarization/bert_model/model.safetensors 
+src/module2_summarization/bert_model_v2/model.safetensors 

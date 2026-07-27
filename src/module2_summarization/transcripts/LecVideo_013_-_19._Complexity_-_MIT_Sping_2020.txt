@@ -1,0 +1,1232 @@
+0.0s - 0.5s : .
+12.68s - 15.92s : Today we're going to, in one lecture,
+15.92s - 19.44s : cover an entire field, which is computational complexity.
+19.44s - 23.44s : It's sort of, it meets algorithms
+23.44s - 25.28s : in an interesting way, which is algorithms
+25.28s - 28.12s : is mostly about showing how to solve problems well
+28.12s - 30.76s : and showing that you can solve a problem well.
+30.76s - 33.28s : And computational complexity is more about the lower bound
+33.28s - 37.24s : side, proving that you can't solve a problem very well.
+37.24s - 39.96s : You can't find a good algorithm to solve it.
+39.96s - 42.42s : We've seen a little bit about lower bounds several lectures
+42.42s - 45.5s : ago, proving search and sorting lower bounds
+45.5s - 51.1s : in bounded branching decision tree model.
+51.1s - 54.5s : But these are much stronger notions of badness.
+54.5s - 56.74s : This is not about n versus n log n,
+56.74s - 58.42s : or constant versus log n.
+58.42s - 62.44s : This is about polynomial versus exponential,
+62.44s - 66.04s : which has been the sort of bread and butter model in this class.
+66.04s - 67.64s : Polynomial is a good running time,
+67.64s - 69.1s : and we're always striving for that.
+69.1s - 72.28s : Exponential is usually pretty trivial to get.
+72.28s - 74.32s : And so we're going to talk about some different,
+74.32s - 76.26s : they're called complexity classes,
+76.26s - 78.52s : that talk about this issue and different ways
+78.52s - 80.5s : to prove hardness.
+80.5s - 82.26s : This is a pretty high level lecture,
+82.26s - 83.74s : so you're not going to be expected to be
+83.74s - 84.8s : able to prove hardness.
+84.8s - 86.42s : But you'll get a flavor of what it's like.
+86.42s - 89.48s : And this will segue nicely into other follow-on classes, which
+89.48s - 92.36s : is we're at pretty much the end of 006,
+92.36s - 97.52s : so natural to talk about what other things you might study.
+97.52s - 101.68s : One result we'll prove today is that most problems actually
+101.68s - 104.9s : have no algorithm, which is kind of shocking,
+104.9s - 106.78s : and lots of other fun things.
+106.78s - 110.8s : So let's get started with the notion of p.
+110.8s - 115.6s : This is a set of all problems solvable in polynomial time.
+116.42s - 125.92s : We talked about what polynomial time means a bunch last lecture.
+125.92s - 128.1s : So just recall that polynomial time
+128.1s - 133.62s : means polynomial in the problem size, which
+133.62s - 141.8s : I'll denote as n here, the number of words in your input.
+146.42s - 149.86s : OK.
+149.86s - 152.92s : So these are the problems that are efficiently solvable.
+152.92s - 155.92s : P is the set of all of them.
+155.92s - 159.64s : And for contrast, exp is the set of all problems
+159.64s - 161.4s : solvable in exponential time.
+163.92s - 173.94s : Problems solvable in exponential time.
+173.94s - 176.22s : Exponential here means something like p.
+176.22s - 180.66s : Something like 2 to the n to the constant.
+180.66s - 182.72s : One reasonable definition of exponential.
+182.72s - 187.04s : So just the exponentiation of this polynomial.
+187.04s - 191.46s : So as you might expect, every problem
+191.46s - 193.72s : that we've talked about in this class so far
+193.72s - 196.5s : can be solved in exponential time rather easily.
+196.5s - 198.0s : And algorithms, in some sense, is
+198.0s - 200.82s : about distinguishing these two, which problems are in p
+200.82s - 204.98s : versus are in, say, exp minus p.
+204.98s - 206.08s : So to formalize this.
+206.08s - 212.98s : a little bit, I'm going to draw a picture, which
+212.98s - 215.26s : is a bit of a simplification of reality,
+215.26s - 218.38s : but for the purposes of this class will suffice
+218.38s - 221.46s : and I think is a really helpful way to think about things,
+221.46s - 225.34s : which is to have a big axis for a single axis for how
+225.34s - 226.68s : hard is your problem?
+226.68s - 230.18s : What is the difficulty of solving your problem?
+230.18s - 232.9s : And I want to be sure to leave.
+232.9s - 235.08s : So the easiest problems are over here.
+235.08s - 235.88s : And each problem.
+235.88s - 237.7s : There's a dot on this axis.
+237.7s - 241.3s : Hardest problems are way down the line.
+241.3s - 243.98s : And I want to make sure to leave enough space for all the things
+243.98s - 245.0s : I care about.
+245.0s - 250.5s : So p, I'm just going to call this segment up front.
+250.5s - 254.64s : And then I'm going to have a bigger thing
+254.64s - 257.14s : for exponential time.
+260.44s - 264.64s : So this is just to say that p is nested inside x.
+264.64s - 265.86s : Every problem that can be solved in
+265.88s - 268.22s : polynomial time can also be solved in exponential time,
+268.22s - 270.82s : because polynomials less than or equal to exponential.
+270.82s - 273.74s : These are just upper bounds.
+273.74s - 275.54s : Being an x means you're somewhere
+275.54s - 276.8s : from this line to the left.
+276.8s - 278.42s : Being in p means you're somewhere
+278.42s - 281.6s : from this line to the left in terms of difficulty.
+281.6s - 288.16s : But formally, we would write p is contained in x as sets.
+288.16s - 293.0s : In fact, they're also known to be different from each other.
+293.0s - 295.66s : There are problems that can be solved in exponential time that
+295.66s - 297.28s : cannot be solved in polynomial time.
+297.28s - 301.7s : For example, I'll put that here.
+301.7s - 302.2s : Sure.
+309.52s - 318.58s : For example, n by n chess is in exponential time,
+318.58s - 319.98s : but not polynomial time.
+319.98s - 322.2s : So what is the n by n chess problem?
+322.2s - 325.5s : This is I give you an n by n chess board, and I describe it.
+325.5s - 328.44s : I describe to you a position.
+328.44s - 329.94s : Here's where all the white pieces are.
+329.94s - 331.68s : Here's where all the black pieces are.
+331.68s - 334.02s : You can have an arbitrary number of queens and bishops
+334.02s - 337.74s : and pawns of each color, of course, up to n squared of them
+337.74s - 339.68s : so they don't overlap each other.
+339.68s - 342.72s : And I want to know, does white win from this position?
+342.72s - 343.92s : Let's say it's white to move.
+343.92s - 345.04s : Can white win?
+345.04s - 347.76s : And that problem can be solved in exponential time
+347.76s - 351.78s : by exploring the entire tree of all possible games.
+351.78s - 353.76s : But it cannot be proved that it cannot
+353.76s - 355.4s : be solved in polynomial time.
+355.4s - 355.42s : OK.
+355.42s - 355.5s : OK.
+355.5s - 356.08s : OK.
+356.08s - 357.88s : So that's a nice example.
+357.88s - 361.6s : A more positive example, so to speak,
+361.6s - 365.12s : is negative weight cycle detection.
+365.12s - 367.78s : It's literally negative, but it's morally positive.
+373.78s - 376.0s : Negative weight cycle detection is the following problem.
+376.0s - 378.68s : I give you a graph, a directed graph, with weights.
+378.68s - 381.26s : And I want to know, does it have a negative weight cycle, yes
+381.26s - 382.4s : or no?
+382.4s - 384.7s : And this problem is in?
+384.7s - 385.42s : P.
+385.42s - 389.42s : P. Because we saw a polynomial time algorithm for this.
+389.42s - 392.18s : You run Bellman-Ford on an augmented graph.
+392.18s - 394.34s : So this is an example of a problem we know how to solve.
+394.34s - 396.14s : This whole class is full of examples
+396.14s - 398.3s : that we know how to solve in polynomial time.
+398.3s - 404.6s : But this is a nice non-trivial and succinct one to phrase.
+404.6s - 406.64s : It's also an example of a decision problem.
+406.64s - 409.9s : A lot of, basically, all the problems I'll talk about today
+409.9s - 412.6s : are decision problems, like we talked about last class,
+412.6s - 414.8s : meaning the answer is just yes or no.
+414.8s - 416.18s : Can white win from this position?
+416.18s - 417.8s : Yes or no?
+417.8s - 419.06s : Is there a negative weight cycle?
+419.06s - 420.04s : Yes or no?
+420.04s - 425.08s : Tetris we can also formulate as a problem.
+425.08s - 426.8s : This is a version of Tetris that we
+426.8s - 429.68s : might call perfect information Tetris.
+429.68s - 432.16s : Suppose I give you a Tetris board.
+432.16s - 436.36s : It has some garbage left over from your past playing,
+436.36s - 437.62s : or maybe it started that way.
+437.62s - 440.62s : And I give you the sequence of n pieces that are going to come.
+440.62s - 442.52s : And I want to know, can I survive
+442.52s - 444.0s : this sequence of n pieces?
+444.0s - 445.76s : Can you place each of these pieces
+445.76s - 451.66s : as they fall such that you never overflow the top of the board
+451.66s - 454.18s : on an n by n board?
+454.18s - 457.86s : This problem can be solved in exponential time.
+457.86s - 460.82s : But we don't know whether it can be solved in polynomial time.
+468.38s - 470.28s : We will talk about that more in a moment.
+470.28s - 473.8s : It's a problem that very likely is not in p.
+473.8s - 477.12s : But we can't actually prove it yet.
+477.12s - 478.52s : All right.
+478.52s - 481.1s : So there's one other class I want to define at this point.
+481.1s - 483.52s : And we'll get to a fourth one also.
+483.52s - 487.4s : But r is the class of all problems
+487.4s - 490.36s : that can be solved in finite time.
+490.36s - 491.44s : r stands for finite.
+491.44s - 491.94s : Ha.
+491.94s - 505.56s : r stands for recursive, actually.
+505.56s - 507.7s : This is a notion by Church way back
+507.7s - 509.76s : in the foundations of computing.
+509.76s - 511.66s : As we know, we write recursive algorithms
+511.66s - 513.12s : to solve problems in the beginning.
+513.12s - 514.12s : That was the only way to do it.
+514.12s - 515.5s : Now we have other ways with loops.
+515.5s - 518.26s : But they're all effectively recursion in the end.
+518.26s - 521.56s : So r is all the problems that can be solved in finite time,
+521.56s - 523.18s : on any computer.
+523.18s - 524.2s : So very general.
+524.2s - 527.44s : This should include everything we care about, right?
+527.44s - 528.58s : And it's bigger than x.
+528.58s - 531.34s : It includes problems that take doubly exponential time
+531.34s - 533.78s : or whatever.
+533.78s - 539.88s : So I will draw a region for r.
+539.88s - 541.32s : So everything includes p.
+541.32s - 543.06s : It includes x.
+543.06s - 548.0s : And so we also have containment but not equal r.
+548.0s - 550.18s : There's, of course, many classes in between.
+550.18s - 551.56s : You could talk about problems that
+551.56s - 553.26s : take doubly exponential time.
+553.26s - 555.26s : And that would have a thing in between here.
+555.26s - 557.48s : Or there's also between p and x.
+557.48s - 558.96s : There's a lot of different things.
+558.96s - 562.1s : We will talk about one of them.
+562.1s - 565.34s : But before we get to the finer side of things,
+565.34s - 568.18s : let me talk in particular about r.
+568.18s - 570.78s : So we have a nice example.
+570.78s - 574.62s : We being computational complexity theory,
+574.62s - 577.5s : or I guess this usually just called theoretical computer
+577.5s - 580.08s : science, has a problem.
+580.08s - 581.42s : And if you're interested in this,
+581.42s - 590.74s : you can take 604 1, I think.
+590.74s - 591.98s : No, that doesn't sound right.
+591.98s - 593.52s : That's probability.
+593.52s - 594.24s : It'll come to me.
+602.52s - 607.42s : We have an explicit problem that is not in r.
+607.42s - 610.12s : So this class has been all about problems that are in p.
+610.12s - 611.22s : You have the number?
+611.22s - 612.16s : 604 5.
+612.16s - 613.1s : 604 5.
+613.1s - 613.6s : Thank you.
+613.6s - 615.46s : It's so close to this class.
+615.46s - 618.4s : Or it's so close to 604 6, which is this natural successor
+618.4s - 619.64s : to this class.
+619.64s - 621.28s : So 604 5 would talk about this.
+624.04s - 625.82s : So this class is all about problems
+625.82s - 627.82s : that are in p, which is very easy.
+627.82s - 630.98s : But in fact, there are problems way out here beyond r.
+634.84s - 639.28s : And here is one such problem, which we won't prove here
+639.28s - 639.78s : today.
+639.78s - 640.62s : It takes a whole lecture to prove.
+640.62s - 641.12s : This.
+641.12s - 649.3s : Given a computer program, does it ever halt?
+659.18s - 660.74s : Does it ever terminate?
+660.74s - 662.88s : This would be a great thing if we knew how to solve.
+662.88s - 664.74s : It's basically an infinite loop detector.
+664.74s - 666.4s : If your problem doesn't halt, then it
+666.4s - 668.04s : has an infinite loop of some sort.
+668.04s - 670.82s : And you'd like to tell your user, hey, you have a bug
+670.82s - 671.84s : in your program.
+671.84s - 674.04s : So this is one part of bug detection.
+674.04s - 674.96s : And it's impossible.
+674.96s - 678.8s : There is no algorithm that solves all inputs
+678.8s - 679.88s : to this problem.
+679.88s - 683.34s : Maybe given one program that, say, has zero lines of code,
+683.34s - 684.18s : it could solve that.
+684.18s - 686.0s : It says, yeah, that one terminates.
+686.0s - 688.88s : And maybe you can detect simple kinds of infinite loops.
+688.88s - 691.0s : So there are some inputs, some computer programs
+691.0s - 692.12s : that you could detect.
+692.12s - 696.88s : But there is no one algorithm that solves all inputs.
+696.88s - 699.72s : This is kind of sad news.
+699.72s - 702.48s : We call such problems uncomputable.
+702.48s - 712.7s : It's just another word for being not in R. OK.
+712.7s - 714.32s : And the next thing I'd like to do
+714.32s - 718.28s : is prove to you that most decision problems are
+718.28s - 720.66s : uncomputable or sketch-approved.
+728.84s - 729.56s : So remember.
+729.56s - 731.9s : Decision problems are problems where the answer is just
+731.9s - 732.96s : yes or no.
+732.96s - 734.66s : This is a very special kind of problem.
+738.66s - 743.82s : And even those, almost all of them, cannot be solved.
+743.82s - 747.26s : So halting is an example of a problem we want,
+747.26s - 748.5s : we can't solve.
+748.5s - 752.7s : This whole class, this 006, is about problems we can solve.
+752.7s - 754.78s : But today, I'm going to show you that actually those
+754.78s - 755.62s : are in the minority.
+755.62s - 757.44s : Most problems cannot be computed.
+757.44s - 759.56s : This is very strange and also a little
+759.56s - 761.86s : depressing.
+761.86s - 763.54s : So we'll talk more about that in a moment.
+763.54s - 765.84s : First, let me argue why this is the case.
+765.84s - 769.98s : So I'm going to be a little informal about what exactly
+769.98s - 773.78s : is a computer program and what exactly is a decision problem.
+773.78s - 778.9s : But roughly, all I need to do, the only level of precision
+778.9s - 781.78s : I need is just to count how many are there.
+781.78s - 783.54s : What is a computer program?
+783.54s - 785.02s : Well, it's usually a file.
+785.02s - 785.68s : What's a file?
+785.68s - 787.28s : It's like a string of characters.
+787.28s - 788.32s : What's a character?
+788.32s - 789.26s : It's a string of bits.
+789.26s - 792.28s : So a program is just, in the end, a string of bits.
+792.28s - 794.06s : Finite string of bits.
+798.26s - 799.24s : We all understand that.
+799.24s - 803.46s : Whatever language you define, in the end,
+803.46s - 806.36s : every program is just a string of bits.
+806.36s - 810.04s : And a string of bits we can translate into a number.
+810.04s - 816.16s : So we can convert between strings of bits and numbers.
+816.16s - 819.22s : When I say number, I mean what's usually called a natural number.
+819.26s - 825.26s : So a number is a number or a non-negative integer.
+825.26s - 833.26s : This is usually represented by bold, blackboard, bold,
+833.26s - 838.26s : blackboard, bold, capital N. So this is just 0, 1, 2, and so on.
+843.26s - 845.26s : Now, what about decision problems?
+849.26s - 853.82s : Decision problem is a specification
+853.82s - 854.88s : of what we want to solve.
+854.88s - 857.46s : So we can think of it as saying, for every input,
+857.46s - 859.3s : is the answer yes or no?
+859.3s - 861.82s : That's literally what a decision problem is.
+861.82s - 863.98s : The only question is, what is an input?
+863.98s - 866.42s : And we've talked about inputs and the size of inputs.
+866.42s - 870.06s : And there's lots of different ways to measure them.
+870.06s - 871.9s : But in the end, we can think of an input
+871.9s - 873.22s : as a string of bits also.
+873.22s - 875.02s : It's just a file.
+875.02s - 878.46s : So a decision problem is a function.
+879.26s - 882.02s : And we can think of it as a string of bits.
+882.02s - 886.5s : From inputs to yes or no.
+890.44s - 895.92s : And inputs, we're going to say, well, that's a string of bits,
+895.92s - 903.96s : which we can associate with a number in N.
+903.96s - 908.26s : Here, we can start to tie things together.
+908.26s - 909.26s : So in other words, a problem.
+909.26s - 912.1s : A program is a finite string of bits.
+912.1s - 917.34s : And a problem is, in some sense, an infinite string of bits.
+917.34s - 920.0s : Because there are infinitely many possible inputs.
+920.0s - 923.34s : And for each of them, we specify yes or no.
+923.34s - 931.96s : So this is basically an infinite string of bits.
+931.96s - 943.14s : So we can imagine 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, infinitely.
+943.14s - 945.04s : For every string of bits, we can say, OK,
+945.04s - 949.2s : if your input is the number 0, here's the answer, no.
+949.2s - 952.72s : If your input is the number 1, then the answer is yes.
+952.72s - 955.0s : If your input is the number 2, your answer is yes.
+955.0s - 956.8s : And so on down this line.
+956.8s - 959.1s : Every infinite string of bits is an infinite string of bits.
+959.1s - 961.2s : So we can imagine, OK, if your input is the number 1, then the answer is yes.
+961.2s - 963.84s : Every infinite string of bits corresponds to exactly one
+963.84s - 966.66s : decision problem, which specifies for every possible
+966.66s - 969.48s : input integer, which corresponds to a string of bits,
+969.48s - 972.02s : what is the answer, yes or no?
+972.02s - 974.94s : So this may seem subtle, or it may seem like not a big deal.
+974.94s - 976.32s : This is a finite string of bits.
+976.32s - 977.88s : This is an infinite string of bits.
+977.88s - 981.06s : But mathematics has well studied this problem.
+981.06s - 986.08s : And infinite strings of bits, there are very many of them.
+986.08s - 986.88s : Infinitely many.
+986.88s - 987.7s : It's not surprising.
+987.7s - 989.76s : There are also infinitely many integers.
+989.76s - 991.2s : So that's maybe doesn't seem right.
+991.2s - 992.22s : It doesn't seem that deep.
+992.22s - 998.02s : But there's a difference in infinitude.
+998.02s - 1002.32s : Programs and integers are countably infinite.
+1007.62s - 1010.66s : And infinite strings of bits are what's called uncountable.
+1016.26s - 1018.62s : I think the most intuitive way to see this
+1018.62s - 1020.48s : is an infinite string of bits.
+1020.48s - 1024.9s : If I put a decimal or binary point in front,
+1024.9s - 1029.56s : this encodes a real number between 0 and 1.
+1029.56s - 1037.4s : So this is roughly a real number in 0, 1.
+1037.4s - 1039.86s : And when I'm writing approximately equal here,
+1039.86s - 1041.4s : this really goes in both directions.
+1041.4s - 1044.14s : Given a decision problem, I can define a string of bits,
+1044.14s - 1046.1s : of course, giving me the answer for all inputs.
+1046.1s - 1048.28s : And I can convert that into a real number between 0 and 1,
+1048.28s - 1049.52s : but also the other direction.
+1049.52s - 1049.98s : If I take any real number, I can write it in the other direction.
+1049.98s - 1052.8s : If I take a real number, that is a corresponding decision
+1052.8s - 1053.3s : problem.
+1053.3s - 1056.8s : These are 1 to 1 by ejection between them.
+1056.8s - 1059.86s : And the bad news is real numbers are uncountable.
+1059.86s - 1062.16s : And natural numbers are countable,
+1062.16s - 1067.74s : which means there's a lot more of these than there are these.
+1067.74s - 1075.3s : So one way you might phrase this is, informally,
+1075.3s - 1077.38s : is the number of natural numbers is way smaller
+1077.38s - 1079.48s : than the number of real numbers.
+1079.48s - 1085.14s : And so from that, we derive that most problems are unsolvable,
+1085.14s - 1090.3s : because every program solves exactly one decision problem.
+1090.3s - 1092.64s : We can also run a program, conceptually,
+1092.64s - 1094.86s : on all possible inputs, and we will figure out
+1094.86s - 1096.32s : what function it's solving.
+1096.32s - 1099.04s : And if we don't allow random numbers in our program, which
+1099.04s - 1103.62s : I'm not here, then every program solves exactly one decision
+1103.62s - 1104.12s : problem.
+1104.12s - 1105.8s : Possibly, it's even worse for us,
+1105.8s - 1107.6s : because multiple programs probably
+1107.6s - 1109.24s : solve the same decision problem.
+1109.24s - 1111.24s : They're just they add irrelevant lines of code,
+1111.24s - 1112.66s : or they don't do anything different.
+1112.66s - 1116.8s : Or you run Bellman-Ford versus running Bellman-Ford five times,
+1116.8s - 1120.48s : you'll get the same result. And that's actually
+1120.48s - 1121.76s : the bad direction for us.
+1121.76s - 1123.82s : We'd like to know whether there is a program that
+1123.82s - 1126.28s : solves every decision problem.
+1126.28s - 1130.3s : And because there are only this many programs
+1130.3s - 1132.18s : and this many decision problems, there
+1132.18s - 1134.06s : aren't enough to go around.
+1134.06s - 1138.2s : So most, what's the phrasing?
+1139.24s - 1143.76s : Not nearly enough programs for all problems.
+1143.76s - 1158.16s : And so there's no assignment of programs to problems,
+1158.16s - 1159.66s : because there's just too many problems.
+1162.64s - 1165.92s : More money, more problems, I guess.
+1165.92s - 1169.16s : So when I first saw this result, I was shocked and dismayed,
+1169.24s - 1171.22s : that why are we even doing computer science
+1171.22s - 1172.86s : if most problems can't be solved?
+1172.86s - 1175.56s : Luckily, it seems like most of the problems we care about
+1175.56s - 1176.42s : can be solved.
+1176.42s - 1178.08s : That's what this class is all about.
+1178.08s - 1180.58s : And in fact, even the problems that seem really, really hard
+1180.58s - 1183.86s : for us to solve, like n by n chess, where we can prove
+1183.86s - 1186.74s : it takes exponential time, there is an algorithm to solve chess.
+1186.74s - 1188.62s : It's just really slow.
+1188.62s - 1190.78s : This is a statement about most problems can't even
+1190.78s - 1193.0s : be solved in finite time, no matter how much time you
+1193.0s - 1194.9s : give them.
+1194.9s - 1198.04s : So it's not all bad.
+1198.04s - 1198.64s : Sort of luckily.
+1199.24s - 1216.34s : Most problems we care about are in R.
+1216.34s - 1217.42s : I don't know why.
+1217.42s - 1219.86s : This is sort of a mystery of life.
+1219.86s - 1222.56s : But it's good news.
+1222.56s - 1227.48s : Or it's why we keep persevering trying
+1227.48s - 1228.74s : to solve problems with algorithms.
+1229.24s - 1232.56s : Because when you state problems,
+1232.56s - 1235.82s : the statement tends to be small?
+1235.82s - 1237.84s : Well, I mean, so the question was,
+1237.84s - 1240.58s : maybe it's just because the short statement problems are
+1240.58s - 1241.08s : easy.
+1241.08s - 1243.52s : But this is a pretty short statement.
+1243.52s - 1244.96s : And it's hard.
+1244.96s - 1250.84s : I think I don't have a great reason why I wish I understood.
+1250.84s - 1253.22s : There's a general result that if you have any question
+1253.22s - 1255.66s : about the program itself, then there's
+1255.66s - 1256.86s : no algorithm to solve it.
+1256.86s - 1258.98s : Basically, any non-trivial question about programs.
+1258.98s - 1260.12s : It's hard.
+1260.12s - 1264.22s : It's not in R. And I guess if you took,
+1264.22s - 1267.44s : I mean, if you imagine taking a random statement of a problem,
+1267.44s - 1269.22s : then maybe this will be in the middle of it
+1269.22s - 1270.82s : with some probability.
+1270.82s - 1272.02s : Maybe that's why most.
+1272.02s - 1274.2s : But this is a very strong notion of most.
+1274.2s - 1276.56s : There are so many more real numbers than natural numbers
+1276.56s - 1278.4s : that I don't know.
+1281.26s - 1283.82s : All right.
+1283.82s - 1288.74s : I want to add one more class to this picture, which is,
+1288.98s - 1291.72s : what is NP?
+1291.72s - 1295.26s : It nestles in between P and exp.
+1295.26s - 1303.1s : So we know that P is contained in or equal to NP.
+1303.1s - 1306.86s : And NP is contained in or equal to exp.
+1306.86s - 1309.5s : We don't know whether there's a quality here or here.
+1309.5s - 1310.54s : Probably not.
+1310.54s - 1312.42s : But we can't prove it.
+1312.42s - 1314.42s : But what is this class?
+1314.42s - 1316.52s : Couple of different ways to define it.
+1316.52s - 1318.62s : You might find one way.
+1318.62s - 1318.82s : Or the other.
+1318.82s - 1318.92s : OK.
+1318.92s - 1318.96s : OK.
+1318.96s - 1321.4s : That's rather more intuitive.
+1321.4s - 1322.2s : They are equivalent.
+1322.2s - 1327.86s : So as long as you understand at least one of them, that's good.
+1327.86s - 1332.14s : NP is just a class of decision problems.
+1332.14s - 1336.02s : So I define P and exp and R arbitrary.
+1336.02s - 1338.38s : They could be problems with any kind of output.
+1338.38s - 1341.48s : But NP only makes sense for decision problems.
+1341.48s - 1348.9s : And it's going to look almost like the definition of P.
+1348.9s - 1350.04s : So we're going to call it NP.
+1350.04s - 1351.34s : And we're going to call it NP.
+1351.34s - 1352.38s : And we're going to call it NP.
+1352.38s - 1354.36s : Problem solvable in polynomial time.
+1354.36s - 1356.3s : We've just restricted to decision problems.
+1356.3s - 1361.96s : But we're going to allow a strange kind of computer,
+1361.96s - 1366.18s : or algorithm, which I like to call a lucky algorithm.
+1370.84s - 1373.18s : And this is going to relate to the notion of guessing
+1373.18s - 1375.22s : that we talked about for the last four lectures
+1375.22s - 1377.34s : in dynamic programming.
+1377.34s - 1378.9s : With dynamic programming, we said, oh,
+1378.9s - 1381.36s : there are all these different choices I could make.
+1381.36s - 1382.36s : What's the right choice?
+1382.36s - 1383.38s : I don't know.
+1383.38s - 1385.86s : So I'd like to make a guess.
+1385.86s - 1388.06s : And what that meant in terms of a real algorithm
+1388.06s - 1389.94s : is we tried all of the possibilities
+1389.94s - 1392.26s : and then took the max or the or or whatever
+1392.26s - 1395.64s : over all those possibilities.
+1395.64s - 1397.68s : But what we were simulating is something
+1397.68s - 1400.62s : that I call a lucky algorithm, which can make guesses
+1400.62s - 1402.84s : and always makes the right guess.
+1402.84s - 1405.6s : This is a computer that is impossible to buy.
+1405.6s - 1408.12s : It'd be great if you could buy a computer that's lucky.
+1408.12s - 1408.84s : But we don't know.
+1408.84s - 1412.42s : We don't know how to build such a computer.
+1412.42s - 1415.74s : So what does this mean?
+1415.74s - 1417.8s : So informally, it means your algorithm
+1417.8s - 1418.88s : can make lucky guesses.
+1418.88s - 1421.34s : And it always makes the right guess.
+1421.34s - 1423.78s : And whereas in DP, we had to try all the options
+1423.78s - 1426.08s : and spend time for all of them, the lucky algorithm
+1426.08s - 1428.22s : only has to spend time on the lucky guess,
+1428.22s - 1429.94s : on the correct guess.
+1429.94s - 1434.4s : More formally, this is called a nondeterministic model
+1434.4s - 1435.02s : of computation.
+1438.84s - 1445.8s : And this n is the n in nondeterminism
+1445.8s - 1446.88s : is the n for np.
+1446.88s - 1449.12s : So this is nondeterministic polynomial time.
+1451.76s - 1457.7s : So an algorithm can make guesses.
+1463.64s - 1467.88s : And then in the end, it should output yes or no.
+1468.84s - 1475.22s : So let's say if you're exploring a maze,
+1475.22s - 1478.4s : this algorithm could say, should I go left or go right?
+1478.4s - 1480.5s : I'm going to guess whether to go left or go right.
+1480.5s - 1482.08s : And let's say it guesses left.
+1482.08s - 1483.32s : And so then it just goes left.
+1483.32s - 1485.3s : And then it reaches another junction.
+1485.3s - 1486.62s : It says, should I go left or right?
+1486.62s - 1487.88s : And it'll say, I'll guess.
+1487.88s - 1489.62s : And let's say I guess right this time.
+1489.62s - 1493.46s : And in the end, if I get to some dead end maybe and I say no,
+1493.46s - 1496.34s : or if I get to the destination I'm trying to get to, I say yes.
+1496.34s - 1498.64s : So that's a nondeterministic algorithm.
+1498.64s - 1502.6s : And what does it mean to run that algorithm?
+1502.6s - 1506.14s : What does it mean for the guesses to be lucky?
+1506.14s - 1507.94s : Here's what it means.
+1507.94s - 1513.34s : These guesses are guaranteed which way you end up going
+1513.34s - 1526.64s : is guaranteed to lead you to a yes if there is one, if possible.
+1528.64s - 1529.88s : All right, so guess what?
+1529.88s - 1531.44s : Guess what?
+1531.44s - 1534.2s : This is the maze analogy.
+1534.2s - 1538.18s : If my destination is reachable from my source,
+1538.18s - 1542.62s : then I'm guaranteed whenever I guess left or right.
+1542.62s - 1546.48s : I will choose a path that leads me to my destination.
+1546.48s - 1548.68s : Whereas if the destination is in some disconnected part
+1548.68s - 1551.1s : of the maze and I can't get there,
+1551.1s - 1552.4s : then I don't know what the guesses do.
+1552.4s - 1554.32s : It doesn't really matter because no matter what I do,
+1554.32s - 1556.68s : I'll end up in a dead end and say no.
+1556.68s - 1557.18s : OK?
+1557.18s - 1557.68s : That's the model.
+1557.68s - 1558.04s : OK.
+1558.04s - 1558.48s : Thanks.
+1558.48s - 1561.7s : yes or no in polynomial time, because we're only
+1561.7s - 1564.6s : talking about polynomial time lucky algorithms.
+1564.6s - 1566.42s : If there's any way to get to a yes,
+1566.42s - 1570.24s : then your machine will magically find it
+1570.24s - 1573.52s : without having to spend any time to make these decisions.
+1573.52s - 1576.14s : So it's a pretty magical computer.
+1576.14s - 1578.64s : And it's not a computer that exists in real life.
+1578.64s - 1581.44s : But it's a computer that's great to program on.
+1581.44s - 1582.48s : It's very powerful.
+1582.48s - 1584.1s : You could solve lots of things with it.
+1584.1s - 1584.6s : Yeah?
+1584.6s - 1587.84s : If you had this magical computer,
+1587.84s - 1590.08s : it can guess whether it's yes or no.
+1590.08s - 1593.66s : Why doesn't it just answer the question?
+1593.66s - 1595.04s : Right.
+1595.04s - 1598.46s : So a nice check is, does this make all problems
+1598.46s - 1600.08s : trivial, all decision problems?
+1600.08s - 1601.12s : Maybe I should say, well, I don't
+1601.12s - 1603.28s : know whether the answer to the problem is yes or no.
+1603.28s - 1605.62s : So I'll just guess yes or no.
+1605.62s - 1611.96s : This is problematic because I might say it would guess A or B.
+1611.96s - 1614.78s : And if I choose the A option, I will output yes.
+1614.78s - 1616.96s : And if I choose the B option, I will output no.
+1616.96s - 1617.58s : In this model.
+1617.84s - 1620.22s : That algorithm will always output yes.
+1620.22s - 1621.72s : Because what it's saying is, if there's
+1621.72s - 1625.84s : any way to get to a yes answer, I will do that way.
+1625.84s - 1628.88s : And so such an algorithm that tries to cheat and just guess
+1628.88s - 1630.6s : the whole answer to the problem will actually
+1630.6s - 1632.64s : end up always saying yes, which means it doesn't solve
+1632.64s - 1633.76s : a very interesting problem.
+1633.76s - 1636.78s : It only solves the problem which is represented by the bit
+1636.78s - 1641.96s : vector 1, 1, 1, 1, 1, 1, 1, where all answers are yes.
+1641.96s - 1643.6s : But good check.
+1643.6s - 1644.96s : Yeah?
+1644.96s - 1647.12s : Does there have to be a bound on the number
+1647.12s - 1651.56s : of things it has to choose between?
+1651.56s - 1652.06s : Yes.
+1652.06s - 1653.56s : Exponential number of?
+1656.88s - 1659.82s : Exponential number of choices is OK.
+1659.82s - 1662.28s : I usually like to think of it as you can only
+1662.28s - 1665.32s : guess one bit at a time.
+1665.32s - 1667.12s : But we're allowed polynomial time.
+1667.12s - 1669.92s : So you're actually allowed to guess polynomial number of bits.
+1669.92s - 1672.74s : And at that point, you can guess over an exponential size space,
+1672.74s - 1675.18s : but not more than exponential.
+1675.18s - 1675.68s : Cool.
+1675.68s - 1676.92s : So it's, yeah.
+1676.92s - 1681.16s : Polynomial time, let's say, in the one-bit guessing model.
+1681.16s - 1683.6s : Did I say makes guesses?
+1683.6s - 1685.02s : Let's add binary here.
+1687.6s - 1692.36s : Otherwise, we get some other class, which I don't want.
+1692.36s - 1693.0s : OK.
+1693.0s - 1696.04s : Let's do an example, a real example of such an algorithm
+1696.04s - 1700.56s : that's useful, which is Tetris.
+1700.56s - 1702.84s : So I claim Tetris is in NP.
+1706.92s - 1709.42s : Because there is a lucky algorithm,
+1709.42s - 1712.42s : an undeterministic polynomial time algorithm,
+1712.42s - 1714.3s : that can solve the Tetris game.
+1714.3s - 1716.42s : So again, you're given a board.
+1716.42s - 1719.42s : You're given some sequence of pieces.
+1719.42s - 1721.42s : And you want to know whether there's
+1721.42s - 1724.86s : some way to place the pieces that lets you survive.
+1724.86s - 1733.86s : And so what I'm going to do is for each piece,
+1733.86s - 1736.72s : I'm going to guess how to place it.
+1736.92s - 1743.76s : So for the first piece, I'm going to guess how far left
+1743.76s - 1744.6s : or right do I move it.
+1744.6s - 1745.86s : Then I let it fall one step.
+1745.86s - 1747.32s : Maybe I rotate it.
+1747.32s - 1750.6s : I choose a sequence of moves among left, right, down,
+1750.6s - 1753.48s : rotate right, rotate left.
+1753.48s - 1757.42s : And all along the way, I check, is that move valid?
+1757.42s - 1761.22s : If the move is invalid at any point, I just say return no.
+1761.22s - 1764.18s : And then if the piece gets nestled into a good spot,
+1764.18s - 1765.6s : I continue to the next piece.
+1765.6s - 1766.7s : I do the same thing.
+1766.7s - 1768.94s : There's a couple of possible things I could do to that.
+1768.94s - 1771.8s : Again, I only need to guess one bit at a time.
+1771.8s - 1774.14s : And I'll only need to do a polynomial number of guesses,
+1774.14s - 1776.6s : like a linear number of guesses for each piece
+1776.6s - 1777.68s : about where it falls in.
+1777.68s - 1780.62s : So maybe a quadratic number of guesses overall.
+1780.62s - 1783.7s : And then at the end, if I survived, oh, I also
+1783.7s - 1785.26s : have to check if a line clears.
+1785.26s - 1787.44s : Then I clear the line.
+1787.44s - 1790.28s : And if in the end I survive, I return yes.
+1790.28s - 1793.96s : So this is a nondeterministic algorithm.
+1793.96s - 1796.52s : So I would say check the rules of the game.
+1796.7s - 1806.58s : And if we survive, return yes.
+1806.58s - 1810.32s : And if at any point we violate the rules, for example,
+1810.32s - 1814.06s : we go off the top of the board, we return no.
+1814.06s - 1816.06s : So this is an algorithm that sometimes returns no
+1816.06s - 1817.96s : and sometimes return yes, depending
+1817.96s - 1819.42s : on what choices you make.
+1819.42s - 1822.82s : And this model guarantees if there's any way to get to a yes,
+1822.82s - 1824.76s : it will find it.
+1824.76s - 1826.18s : If I swapped these answers.
+1826.18s - 1826.62s : OK.
+1826.62s - 1830.38s : If I returned yes when I violated the rules
+1830.38s - 1832.56s : and returned no if I survived, this
+1832.56s - 1833.98s : would be an uninteresting algorithm.
+1833.98s - 1836.54s : Because it's very easy to lose in Tetris.
+1836.54s - 1838.9s : The hard part is to survive.
+1838.9s - 1841.8s : If I say, is there any way to play the game in such a way
+1841.8s - 1845.04s : that I violate the rules, then of course the answer is yes.
+1845.04s - 1848.0s : You can just stack pieces and go off the top.
+1848.0s - 1852.34s : There's an asymmetry in this definition of yes versus no.
+1852.34s - 1855.54s : It always finds yes answers if possible.
+1855.54s - 1856.5s : It doesn't always find no.
+1856.5s - 1858.1s : There's no answers if possible.
+1858.1s - 1861.28s : So it's very important the way that I wrote these questions.
+1861.28s - 1862.86s : It's important that I define Tetris
+1862.86s - 1864.9s : as the problem of, can I survive?
+1864.9s - 1868.52s : The problem of, can I not survive?
+1868.52s - 1870.02s : Is it impossible to survive?
+1870.02s - 1871.18s : That's a different question.
+1871.18s - 1874.18s : That problem is not in NP, probably.
+1874.18s - 1874.8s : OK.
+1874.8s - 1876.54s : So slight subtlety there.
+1876.54s - 1877.4s : Yes versus no.
+1877.4s - 1879.28s : Let me give you the other definition of NP.
+1879.28s - 1881.3s : So if this one's confusing, which,
+1881.3s - 1884.54s : although I prefer this definition, most people do not.
+1884.54s - 1885.38s : So I'm going to give you just this one.
+1885.38s - 1885.88s : OK.
+1885.88s - 1891.56s : So if this is confusing, let's do the other definition.
+1891.56s - 1898.46s : So other definition is that NP is a set of decision problems.
+1915.88s - 1927.14s : And it's a set of decisions that can be checked in polynomial time.
+1938.8s - 1940.98s : This actually came up in the last lecture where
+1940.98s - 1942.1s : we talked about subset sum.
+1942.1s - 1944.86s : I said here's a bunch of integers.
+1944.86s - 1945.88s : Here's a target integer.
+1945.88s - 1948.02s : And I can prove to you that this integer can
+1948.02s - 1953.06s : be represented as a subset of numbers from my set
+1953.06s - 1954.36s : because here they are.
+1954.36s - 1958.72s : I gave you this plus this plus this equals a target sum.
+1958.72s - 1961.6s : And so that is a solution, in some sense,
+1961.6s - 1962.88s : that can be checked.
+1962.88s - 1966.24s : For a yes example, if I can represent my number
+1966.24s - 1968.98s : as a subset sum of a given set, it's
+1968.98s - 1970.72s : easy for me to prove that to you.
+1970.72s - 1973.32s : And you can check it just by adding up the numbers
+1973.32s - 1974.76s : and checking that each number was in the set.
+1974.76s - 1975.26s : OK.
+1975.88s - 1980.96s : Whereas no instances, I had an example of a target sum that
+1980.96s - 1981.76s : could not be reached.
+1981.76s - 1983.72s : And the only reason I knew that is because I
+1983.72s - 1985.82s : had brute forced the thing.
+1985.82s - 1988.96s : And there's no succinct way to prove to you
+1988.96s - 1991.84s : that that number can't be represented.
+1991.84s - 1995.2s : Similar thing with Tetris.
+1995.2s - 1998.68s : What I would say is, so this is version 1.
+1998.68s - 2005.08s : Version 2 for Tetris is that a certificate, which I've got,
+2005.08s - 2005.58s : OK.
+2005.58s - 2006.58s : I'm going to write it down.
+2006.58s - 2007.92s : I'm going to write it down.
+2007.92s - 2009.12s : I'm going to write it down.
+2009.12s - 2020.04s : For a yes input of Tetris is a sequence of moves
+2020.04s - 2020.54s : for the pieces.
+2028.82s - 2031.92s : If it's possible to survive in Tetris, I can prove it to you.
+2031.92s - 2034.7s : I can just play the game and show you that I survived.
+2034.7s - 2035.2s : OK.
+2035.58s - 2036.82s : No answers.
+2036.82s - 2037.54s : I don't know.
+2037.54s - 2039.42s : It's hard to prove to you that I can't survive
+2039.42s - 2040.8s : a given sequence of pieces.
+2040.8s - 2042.04s : But yes, answers are easy.
+2042.04s - 2045.08s : I just show you here's the sequence of button presses
+2045.08s - 2046.96s : I'll do for this piece, then for this piece, then
+2046.96s - 2047.58s : for this piece.
+2047.58s - 2049.92s : Notice it's exactly the same thing
+2049.92s - 2053.12s : that I guessed in the beginning of this algorithm.
+2053.12s - 2055.42s : And then I did some other work to implement the rules.
+2055.42s - 2057.5s : And similarly, if I gave you a certificate, which
+2057.5s - 2060.88s : is the things that I wanted to guess of how to play the game,
+2060.88s - 2063.82s : I can check this certificate by just implementing
+2063.82s - 2064.78s : the rules of Tetris.
+2064.78s - 2066.36s : And seeing whether I survived.
+2066.36s - 2069.38s : And if you violate the rules at any point, you say no.
+2069.38s - 2072.32s : And if you survive, you return yes.
+2072.32s - 2074.66s : That's what's called a verification algorithm.
+2074.66s - 2076.16s : So let me formalize this notion.
+2078.16s - 2088.58s : Given a problem input plus a certificate,
+2088.58s - 2094.58s : like that one over there, there is
+2094.58s - 2096.76s : a polynomial time.
+2096.76s - 2098.56s : So this is yet another definition.
+2098.56s - 2101.38s : This is what I mean by this definition of NP.
+2101.38s - 2112.26s : Verification algorithm that satisfies two properties.
+2112.26s - 2116.96s : One is for every yes input, so every input where the answer is
+2116.96s - 2121.26s : yes to the problem, there exists a certificate.
+2124.58s - 2126.88s : And that certificate is a certificate
+2126.88s - 2131.24s : that is always valid, such that the verifier says yes.
+2131.24s - 2135.8s : So this is saying, it's possible to prove to me
+2135.8s - 2136.7s : that an answer is yes.
+2136.7s - 2140.58s : Because if you ever have an input that the answer happens
+2140.58s - 2143.96s : to be yes, you can prove it to me by giving me a certificate.
+2143.96s - 2147.32s : There's always some certificate that proves the answer is yes,
+2147.32s - 2150.46s : because the verifier, which runs in regular polynomial time,
+2150.46s - 2153.84s : this is a regular old fashioned down to earth verification,
+2153.84s - 2154.56s : right?
+2154.58s - 2156.92s : This is a regular old fashioned down to earth verification
+2156.92s - 2159.08s : algorithm, polynomial time in our usual sense.
+2159.08s - 2160.34s : It will say yes.
+2160.34s - 2162.34s : And furthermore, the yes answers from the verifier
+2162.34s - 2167.34s : are actually meaningful, because if I ever give it a no input,
+2167.34s - 2171.34s : it always says no, no matter what certificate I give it.
+2179.84s - 2182.76s : So this should really formalize what all this means.
+2182.76s - 2183.84s : It's equivalent to the previous definition.
+2183.84s - 2187.34s : This is saying that proofs exist for yes instances.
+2187.34s - 2189.68s : And this is saying that proofs don't exist for no instances,
+2189.68s - 2191.52s : meaning there are no false proofs.
+2191.52s - 2193.5s : So if the verifier ever outputs yes,
+2193.5s - 2196.84s : you know that the answer to your problem is yes.
+2196.84s - 2198.42s : But if it outputs no, you're not sure.
+2198.42s - 2200.2s : Maybe you got the certificate wrong,
+2200.2s - 2201.78s : because we only know there's some certificate where
+2201.78s - 2202.84s : the verifier will say yes.
+2202.84s - 2204.4s : Or maybe it was a no input, and then it
+2204.4s - 2206.7s : didn't matter what certificate you used.
+2206.7s - 2209.22s : But it's nice, because it says on, say, Tetris,
+2209.22s - 2211.0s : if I give you the sequence of pieces,
+2211.0s - 2213.5s : it's very easy to write down a verifier which just implements
+2213.5s - 2215.88s : the rules of Tetris.
+2215.88s - 2217.3s : And so then you can at least check
+2217.3s - 2219.92s : whether a solution is valid in the yes case.
+2219.92s - 2223.06s : In the no case, we don't have anything useful.
+2223.06s - 2226.74s : So NP is a structure, some additional structure,
+2226.74s - 2229.96s : about the yes inputs in your problem.
+2229.96s - 2232.74s : And a lot of decision problems are in NP.
+2232.74s - 2234.86s : A lot of the problems that we care about
+2234.86s - 2236.46s : can be phrased as an NP problem.
+2236.46s - 2238.16s : As long as it's a decision problem,
+2238.16s - 2241.88s : usually answering yes or no is provable.
+2243.5s - 2246.44s : Like subset sum, like Tetris, these
+2246.44s - 2248.48s : are all problems where if the answer is yes,
+2248.48s - 2252.14s : I can give you a convincing proof why.
+2252.14s - 2253.74s : And it turns out a lot of problems
+2253.74s - 2255.64s : fall into this NP setting.
+2255.64s - 2259.4s : And so we have some tools for talking about problems
+2259.4s - 2265.56s : being hard with respect to NP.
+2265.56s - 2270.88s : Let me first talk a little bit about P does not equal NP.
+2270.88s - 2271.38s : Question mark.
+2271.38s - 2271.88s : Question mark.
+2271.88s - 2272.38s : Question mark.
+2272.38s - 2272.88s : Question mark.
+2272.88s - 2273.38s : Question mark.
+2273.38s - 2273.42s : Question mark.
+2273.42s - 2273.46s : Question mark.
+2273.46s - 2273.48s : Question mark.
+2273.48s - 2273.5s : Question mark.
+2273.5s - 2274.0s : Question mark.
+2274.0s - 2274.5s : Question mark.
+2274.5s - 2275.62s : Question mark.
+2275.62s - 2278.52s : A lot of people conjecture that P does not equal NP.
+2278.52s - 2280.78s : It's sort of a standard conjecture
+2280.78s - 2282.18s : in theoretical computer science.
+2282.18s - 2285.52s : But we don't know how to prove whether P equals NP
+2285.52s - 2288.18s : or does not equal NP.
+2288.18s - 2292.2s : And so in this picture, I've drawn the hypothesis,
+2292.2s - 2296.64s : which is that NP is a strictly bigger region than P is.
+2296.64s - 2298.22s : But we don't actually know whether there
+2298.22s - 2300.3s : are problems in this region.
+2300.3s - 2303.46s : We don't know whether there are problems in this region between,
+2303.46s - 2304.78s : NP and exp.
+2304.78s - 2306.38s : We conjecture there are problems here
+2306.38s - 2308.22s : and there are problems here.
+2308.22s - 2310.7s : There's definitely problems here or problems here,
+2310.7s - 2312.22s : but we don't know which one.
+2312.22s - 2313.58s : Because we know P does not equal X,
+2313.58s - 2315.28s : but we don't know whether P equals NP.
+2315.28s - 2317.54s : And we don't know whether NP equals exp.
+2317.54s - 2321.24s : If you could prove that P does not equal NP, or disprove it,
+2321.24s - 2324.02s : you would win $1 million, which is not that much money
+2324.02s - 2324.58s : these days.
+2324.58s - 2327.94s : But you would be famous for the rest of time
+2327.94s - 2329.76s : if you could ever prove this.
+2329.76s - 2333.42s : Every year, there's usually a crackpot proof that, you know,
+2333.42s - 2336.36s : it doesn't work out.
+2336.36s - 2338.02s : Some of them go to me.
+2338.02s - 2339.98s : Please don't send them.
+2339.98s - 2342.68s : And anyway, it's a very hard problem.
+2342.68s - 2345.54s : It is sort of the core problem in theoretical computer science,
+2345.54s - 2347.46s : how to prove P does not equal NP.
+2347.46s - 2351.62s : But for the most part, we just assume it.
+2351.62s - 2353.08s : Now, what does this conjecture mean?
+2353.08s - 2355.22s : It essentially means, the way I like to say it,
+2355.22s - 2357.94s : is you cannot engineer luck.
+2357.94s - 2359.54s : Because NP problems are problems you
+2359.54s - 2360.94s : can solve by lucky algorithms.
+2360.94s - 2362.92s : P are problems you can solve by regularity.
+2362.92s - 2363.42s : Right?
+2363.42s - 2365.02s : Regular old algorithms.
+2365.02s - 2368.86s : And so if P equal to NP, it means luck doesn't buy you
+2368.86s - 2370.62s : anything, which seems weird.
+2370.62s - 2374.66s : Like, if I can magically make these super powerful guesses,
+2374.66s - 2376.2s : then I can solve the problem.
+2376.2s - 2377.16s : That's NP.
+2377.16s - 2379.82s : That seems super powerful, way more powerful
+2379.82s - 2382.62s : than regular algorithms, where we have to actually brute force
+2382.62s - 2385.12s : and try all the choices.
+2385.12s - 2388.58s : And so it seems pretty solid that P does not equal NP.
+2388.58s - 2391.14s : That's my, of course, we don't know how to prove it.
+2391.14s - 2392.7s : Another phrasing is that it's harder
+2392.7s - 2396.24s : to come up with proofs than it is to check them
+2396.24s - 2397.7s : from a mathematical perspective.
+2397.7s - 2400.38s : This is equivalent to P does not equal NP.
+2400.38s - 2403.14s : So that's why you should believe it.
+2403.14s - 2406.46s : Now, let's go over here.
+2411.84s - 2416.94s : The next notion is NP hardness.
+2422.7s - 2430.98s : So in particular, I want to claim,
+2430.98s - 2433.26s : this is a theorem that exists in the literature,
+2433.26s - 2444.18s : that if P does not equal NP, then Tetris is not in P.
+2444.18s - 2446.34s : So I said right here, Tetris is in x,
+2446.34s - 2448.02s : but we don't know whether it's in P.
+2448.02s - 2450.24s : But in fact, we conjecture it's not in P,
+2450.24s - 2451.96s : because we conjecture that P does not equal NP.
+2451.96s - 2452.46s : OK?
+2452.46s - 2452.68s : OK.
+2452.68s - 2453.78s : You could prove this conjecture.
+2453.78s - 2455.94s : And there's a lot of theorems that are conditioned.
+2455.94s - 2458.5s : Assuming P does not equal NP, then we get some nice results.
+2458.5s - 2461.56s : Like Tetris cannot be solved in polynomial time.
+2461.56s - 2464.06s : Cannot figure out whether I can win
+2464.06s - 2468.5s : a Tetris game in polynomial time in the input size.
+2468.5s - 2470.92s : Why?
+2470.92s - 2475.36s : This is a consequence of another theorem,
+2475.36s - 2481.78s : which is that Tetris is NP-hard.
+2481.78s - 2484.46s : I'm going to define NP-hard informally first,
+2484.46s - 2487.54s : and then I'll define it slightly more formally in a second.
+2487.54s - 2492.22s : But this means, roughly, that Tetris
+2492.22s - 2498.42s : is as hard as all problems in NP.
+2501.88s - 2506.02s : So let me draw this in the picture.
+2506.02s - 2506.88s : So NP-hard is this.
+2506.88s - 2507.46s : This is NP-hard.
+2507.46s - 2507.9s : This is NP-hard.
+2507.9s - 2508.4s : This is NP-hard.
+2508.4s - 2508.9s : This is NP-hard.
+2508.9s - 2509.44s : This is NP-hard.
+2509.44s - 2509.94s : This is NP-hard.
+2509.94s - 2510.44s : This is NP-hard.
+2510.44s - 2510.94s : This is NP-hard.
+2510.94s - 2511.54s : This is NP-hard.
+2511.54s - 2512.2s : This part.
+2515.2s - 2516.62s : Did I leave myself enough room?
+2516.62s - 2517.12s : Maybe not.
+2522.42s - 2525.14s : Well, I'll squeeze it in.
+2525.14s - 2527.84s : There's another region here for x-part.
+2534.36s - 2538.72s : So your problem being in NP was a positive result.
+2538.72s - 2541.42s : It says you're no more difficult than this.
+2541.42s - 2543.3s : You're no longer in this line.
+2543.3s - 2545.98s : You're either at this position or to the left.
+2545.98s - 2547.6s : Being in P was also a positive statement.
+2547.6s - 2549.76s : It says you're here or to the left.
+2549.76s - 2552.1s : Being in P is better than being in NP
+2552.1s - 2555.04s : because this is a subset of that.
+2555.04s - 2557.2s : NP-hard is a lower bound.
+2557.2s - 2561.3s : It says you are at this point, this level of difficulty,
+2561.3s - 2563.8s : or to the right.
+2563.8s - 2567.72s : And so it goes from here off to infinity in difficulty.
+2567.72s - 2570.2s : And x-part says you're at least as hard as the right extent of the X-part.
+2571.42s - 2574.96s : And so you're at this point, this set, or you're harder than that,
+2574.96s - 2578.68s : in a sense that we will formalize in a moment.
+2578.68s - 2581.48s : And this place right here, as you might imagine,
+2581.48s - 2582.66s : is kind of interesting.
+2582.66s - 2585.66s : It's exactly where NP meets NP-hard.
+2585.66s - 2589.64s : This thing is called NP-complete.
+2589.64s - 2592.8s : You probably have heard about NP-completeness, a famous notion.
+2592.8s - 2594.66s : And this is what it means.
+2594.66s - 2597.96s : It is the problems that are in NP.
+2597.96s - 2599.84s : So they have a lucky algorithm that solves them.
+2599.84s - 2600.84s : They can be verified.
+2600.84s - 2601.42s : They're certificates.
+2601.42s - 2602.66s : They can be verified.
+2602.66s - 2605.26s : And they are NP-hard.
+2605.26s - 2606.36s : So they're in NP.
+2606.36s - 2609.42s : And they are the hardest among problems in NP.
+2609.42s - 2611.04s : Now, they're not the hardest problem.
+2611.04s - 2613.04s : There are actually many problems right here
+2613.04s - 2616.92s : at this single level of difficulty called NP-complete.
+2616.92s - 2619.24s : Among them is Tetris.
+2619.24s - 2623.2s : There are many others, which I will list in a moment.
+2623.2s - 2625.72s : So that is NP-completeness.
+2625.72s - 2631.42s : So because these problems are the hardest problems
+2631.42s - 2636.92s : in NP, if there's any problems here in between in NP minus P,
+2636.92s - 2639.66s : then these must be among them.
+2639.66s - 2643.66s : And so if you assume that P does not equal NP, as most people do,
+2643.66s - 2646.92s : then you know that all problems at this rightmost extreme of NP,
+2646.92s - 2650.6s : the hardest of the problems in NP, they must not be NP.
+2650.6s - 2653.02s : And that's why I can say if P does not equal NP,
+2653.02s - 2653.96s : Tetris is not NP.
+2653.96s - 2656.1s : And also, any NP-complete problem is not NP.
+2659.34s - 2661.26s : What does as hard as mean?
+2661.42s - 2670.1s : This is our good friend, reductions.
+2673.1s - 2675.12s : We talked about reductions a lot in this class.
+2678.26s - 2680.6s : Reductions are the easy way to use algorithms.
+2680.6s - 2682.34s : You just take your problem and you
+2682.34s - 2685.54s : reduce it to a problem you already know how to solve.
+2685.54s - 2691.34s : You take the input to some problem that you want to solve.
+2691.34s - 2695.52s : And you convert it into an input to some other problem,
+2695.52s - 2697.72s : like single-store shortest paths or something like that,
+2697.72s - 2700.92s : that you already have an algorithm for solving.
+2700.92s - 2704.06s : So if you have an algorithm that solves problem B,
+2704.06s - 2708.84s : you can convert that into a solution for B.
+2708.84s - 2712.34s : And a reduction should also tell me how to, given a solution to B,
+2712.34s - 2716.34s : how to convert it back into a solution for A.
+2716.34s - 2718.1s : And when I say solution here, I actually
+2718.1s - 2720.02s : mean certificate from over there.
+2720.02s - 2731.7s : So if I have, so reduction consists of these two pieces.
+2731.7s - 2735.02s : How to convert an input at A to an input for B,
+2735.02s - 2737.0s : and given a solution to B, how to convert it
+2737.0s - 2738.62s : to a solution to A. Let me give you
+2738.62s - 2740.66s : some examples of reductions you've already seen.
+2740.66s - 2742.66s : You've seen a lot of them.
+2742.66s - 2747.62s : If I have unweighted shortest paths on the left, unweighted,
+2747.62s - 2748.7s : I don't know.
+2748.7s - 2749.64s : I don't know.
+2749.64s - 2749.9s : I don't know.
+2749.9s - 2750.7s : I don't know.
+2750.7s - 2752.74s : Single-store shortest paths.
+2752.74s - 2755.22s : I can reduce that to weighted shortest paths.
+2760.1s - 2761.6s : How?
+2761.6s - 2763.08s : Set all the weights to 1.
+2763.08s - 2764.12s : Set all the weights to 1.
+2764.12s - 2766.14s : So here I'm given a graph without weights.
+2766.14s - 2767.84s : If I set all the weights to 1, that
+2767.84s - 2770.4s : turns it into an input for weighted single-store shortest
+2770.4s - 2770.9s : paths.
+2770.9s - 2772.66s : So if you didn't know how to solve this,
+2772.66s - 2774.28s : you could solve it by converting it.
+2774.28s - 2776.48s : If you've already written, say, a Dijkstra algorithm,
+2776.48s - 2779.24s : you could apply it to solve unweighted single-store shortest
+2779.24s - 2779.52s : paths.
+2779.52s - 2781.32s : And we know a faster way to solve this.
+2781.32s - 2783.48s : But it's only a log factor faster.
+2783.48s - 2786.52s : And here we're talking about polynomial versus exponential.
+2786.52s - 2787.68s : So this is a valid reduction.
+2787.68s - 2788.88s : It's not the most interesting one
+2788.88s - 2790.22s : from an algorithmic standpoint.
+2790.22s - 2792.36s : But it is an algorithm.
+2792.36s - 2795.48s : Another one we have we've seen is
+2795.48s - 2797.58s : if you have integer weights on the left,
+2797.58s - 2800.82s : you can convert that to unweighted on the right
+2800.82s - 2804.84s : by positive integer weights by subdividing each edge of weight
+2804.84s - 2809.32s : w into w edges of no weight.
+2809.32s - 2812.26s : So that's maybe a little bit less efficient.
+2812.26s - 2815.32s : It depends what the sum of the weights are.
+2815.32s - 2819.94s : Another version that we've seen is longest path in a graph.
+2819.94s - 2822.92s : We can weighted path.
+2822.92s - 2826.98s : We can reduce to shortest path in a graph weighted
+2826.98s - 2830.66s : by negating all the weights.
+2830.66s - 2832.74s : We did this in some of the dynamic programming things.
+2832.74s - 2834.6s : Oh, longest path in a DAG?
+2834.6s - 2836.84s : We can convert that into shortest path in a DAG just
+2836.84s - 2838.12s : by negating all the weights.
+2838.12s - 2839.2s : So these are all examples.
+2839.2s - 2841.9s : But these are not just examples of converting one problem
+2841.9s - 2843.0s : to another.
+2843.0s - 2845.92s : Usually you convert from, for algorithms,
+2845.92s - 2848.84s : you convert from a problem you want to solve into a problem
+2848.84s - 2851.22s : that you already know how to solve.
+2851.22s - 2853.18s : But it turns out the same tool of reductions
+2853.18s - 2856.6s : can be used to prove negative results, too.
+2856.6s - 2859.34s : And in this case, we're going to reduce from a problem
+2859.34s - 2862.7s : that we think cannot be solved and reduce it
+2862.7s - 2866.42s : to the problem that we're interested in solving.
+2866.42s - 2869.2s : So let me write more precisely what this means.
+2869.2s - 2873.1s : a reduction like this, it means that solving A
+2873.1s - 2882.02s : is at least as easy as solving B.
+2882.02s - 2884.36s : Because I can solve A, in particular,
+2884.36s - 2886.96s : by converting it into B, solving B,
+2886.96s - 2889.48s : and then converting it back to a solution to A.
+2889.48s - 2891.52s : So in other words, if I can solve B,
+2891.52s - 2894.22s : I can solve A, which I can phrase informally
+2894.22s - 2898.54s : as A is at least as easy as B. And now using
+2898.54s - 2900.52s : grammar or contrapositive, whatever,
+2900.52s - 2912.18s : this is the same thing as saying that B is at least as hard as A.
+2912.18s - 2914.44s : And this is what I mean by at least as hard as.
+2914.44s - 2917.26s : So this is my definition of at least as hard
+2917.26s - 2920.84s : in this notion of NP-hardness.
+2920.84s - 2924.22s : So what NP-hard means is that I'm at least as hard
+2924.22s - 2925.54s : as all problems in NP.
+2925.54s - 2928.22s : And so what that means is every problem
+2928.22s - 2928.54s : in NP is hard.
+2928.54s - 2934.04s : And NP can be reduced to Tetris, which is kind of funny.
+2934.04s - 2935.78s : But in particular, that means that if there's
+2935.78s - 2937.5s : an algorithm for Tetris, there's an algorithm
+2937.5s - 2940.08s : for all problems in NP.
+2940.08s - 2941.76s : And so that's actually the contrapositive
+2941.76s - 2942.66s : of this statement.
+2942.66s - 2944.12s : So it's saying if there's a polynomial,
+2944.12s - 2945.5s : if I take the contrapositive of this,
+2945.5s - 2947.62s : this is saying if there's a polynomial time algorithm
+2947.62s - 2949.76s : for Tetris, then P equals NP.
+2949.76s - 2951.92s : There's a polynomial time algorithm for every problem
+2951.92s - 2952.78s : in NP.
+2952.78s - 2954.96s : And the way we prove that is by reductions.
+2954.96s - 2958.12s : We take an arbitrary problem in NP, and we reduce it to Tetris.
+2958.54s - 2960.8s : Luckily, that's not as hard as it sounds,
+2960.8s - 2962.88s : because it's already been done once.
+2962.88s - 2968.76s : There is already a reduction from all problems in NP
+2968.76s - 2972.7s : to singular problems out there, the NP-complete problems.
+2972.7s - 2975.5s : There was some first NP-complete problem, which I guess
+2975.5s - 2978.5s : is Turing machine, non-determinant.
+2978.5s - 2980.34s : It's basically simulating lucky algorithms.
+2980.34s - 2982.5s : So it's kind of a not very interesting problem.
+2982.5s - 2983.94s : But from that problem, if you can
+2983.94s - 2985.38s : reduce it to any other problem, you
+2985.38s - 2987.04s : know that problem is NP-hard as well.
+2987.04s - 2988.34s : And so, basically, we're going to have to do this.
+2988.34s - 2988.42s : So we're going to have to do this.
+2988.42s - 2988.52s : So we're going to have to do this.
+2988.54s - 2996.26s : And briefly, I want to show you some examples of that here.
+2996.26s - 2999.12s : So I want to start out with a problem
+2999.12s - 3002.54s : that I'm just going to assume is NP-complete.
+3002.54s - 3004.98s : And it's called 3-partition.
+3004.98s - 3008.72s : It's one way to phrase it is I give you a bunch of integers.
+3008.72s - 3012.54s : I think I have it written down over here.
+3012.54s - 3014.4s : Also, the board.
+3014.4s - 3016.58s : I give you n integers.
+3016.58s - 3018.42s : And I'd like to divide them up into n over
+3018.42s - 3022.34s : 3 groups of size 3 such that each group of size 3
+3022.34s - 3025.22s : has the same sum.
+3025.22s - 3027.84s : And it's written there on the board.
+3027.84s - 3030.0s : So you can also think of this as the following problem.
+3030.0s - 3033.66s : I give you a bunch of rectangles that are side length
+3033.66s - 3036.96s : or a bunch of sticks, let's say, of varying lengths.
+3036.96s - 3040.92s : And I want to group them up like on the right diagram
+3040.92s - 3044.76s : so that in groups of 3 such that the total length of each group
+3044.76s - 3046.98s : is exactly the same.
+3046.98s - 3048.3s : This is just a problem.
+3048.3s - 3051.34s : And just believe for now that it is NP-complete.
+3051.34s - 3052.54s : I won't prove that.
+3052.54s - 3057.22s : But what I'd like to show you is a reduction from this problem
+3057.22s - 3061.52s : to another problem, solving jigsaw puzzles.
+3061.52s - 3064.6s : So you might think jigsaw puzzles are really easy,
+3064.6s - 3069.62s : and especially easy if I lose the projector.
+3069.62s - 3072.36s : But in fact, if you have a jigsaw puzzle where
+3072.36s - 3074.58s : some of the matches are ambiguous,
+3074.58s - 3077.9s : if there's multiple pieces that could fit against a given tab
+3077.9s - 3083.12s : or pocket, then I claim I can represent this 3-partition
+3083.12s - 3087.4s : problem by building little sticks like here.
+3087.4s - 3090.68s : So if I want to represent a stick of length ai,
+3090.68s - 3092.5s : I'm just going to build an ai.
+3092.5s - 3093.96s : I didn't mention they're all integers
+3093.96s - 3098.14s : and they're polynomial-sized integers.
+3098.14s - 3103.4s : I'm going to represent that by ai different pieces here.
+3103.4s - 3107.9s : And the red tabs and pockets are designed to be unique.
+3107.9s - 3110.66s : Global to the puzzle, like a regular jigsaw puzzle.
+3110.66s - 3116.28s : Given this piece on the left and this tab on the right,
+3116.28s - 3117.66s : there's a unique pocket.
+3117.66s - 3120.3s : There's a piece with a unique pocket that fits perfectly
+3120.3s - 3121.08s : into that piece.
+3121.08s - 3123.78s : So this joining is forced.
+3123.78s - 3125.46s : And also this joining is forced.
+3125.46s - 3127.52s : But the blue tabs and pockets are different.
+3127.52s - 3129.6s : They're all the same.
+3129.6s - 3131.04s : They're all identical.
+3131.04s - 3136.88s : And so if I build this frame using the red unique
+3136.88s - 3137.26s : assignments.
+3137.26s - 3137.76s : .
+3137.76s - 3140.52s : And I build these rectangles, if I
+3140.52s - 3143.22s : want to pack these rectangles into this rectangle,
+3143.22s - 3146.14s : that's exactly the 3-partition problem, with some details
+3146.14s - 3147.46s : that I didn't fill in.
+3147.46s - 3150.86s : But it turns out you'd be forced to group these
+3150.86s - 3156.04s : into groups of size 3, something like this.
+3156.04s - 3159.2s : Varying lengths.
+3159.2s - 3160.82s : OK, so that's an example of a reduction.
+3160.82s - 3162.7s : If you believe the 3-partition is NP-hard,
+3162.7s - 3166.2s : this proves to you that jigsaw puzzles are NP-hard, something
+3166.2s - 3167.12s : you may not have known.
+3167.12s - 3169.02s : And every time you solve a jigsaw puzzle,
+3169.02s - 3171.02s : you can feel good about yourself now, especially
+3171.02s - 3173.0s : if it has ambiguous mates.
+3173.0s - 3174.94s : Next is Tetris.
+3174.94s - 3179.08s : So here is a reduction from the same 3-partition problem, which
+3179.08s - 3181.26s : is one of my favorite problems, to Tetris.
+3181.26s - 3183.76s : It starts out with this strange board.
+3183.76s - 3190.16s : It has a bunch of columns here where I could put pieces.
+3190.16s - 3193.36s : So I'm not allowed to put pieces in these dark regions.
+3193.36s - 3196.48s : They all have height t. t is the target sum that we want.
+3196.48s - 3200.14s : All of the numbers to all of the triples of numbers to add up to.
+3200.14s - 3202.98s : And there's n over 3 of these slots
+3202.98s - 3205.78s : where I can try to put pieces.
+3205.78s - 3208.26s : And because of this thing over on the right,
+3208.26s - 3211.96s : there's no way to clear lines in this game.
+3211.96s - 3214.84s : And now to represent a single number ai,
+3214.84s - 3217.64s : I'm going to give you this sequence of pieces,
+3217.64s - 3219.46s : starts with an l piece.
+3219.46s - 3222.52s : And then it has ai repetitions of this pattern.
+3222.52s - 3224.78s : And then it ends with these two pieces.
+3224.78s - 3226.38s : And so what happens here is that I'm going to put this number,
+3226.38s - 3227.96s : and this is an added in the other side,
+3227.96s - 3229.52s : into this bucket.
+3229.52s - 3234.12s : And so what ends up happening is that this
+3234.12s - 3235.74s : is in the intended solution.
+3235.74s - 3240.46s : You first place an l at the bottom of one of these buckets.
+3240.46s - 3243.14s : And then you repeat this pattern in this nice way.
+3243.14s - 3247.96s : And it fills up ai roughly height of this bucket.
+3247.96s - 3249.82s : And then at the end, you have to put the i here.
+3253.12s - 3256.08s : What this ends up guaranteeing is that all of these pieces go
+3256.08s - 3259.38s : But if you tried to put some of these pieces in one bucket
+3259.38s - 3261.12s : and other pieces in a different bucket,
+3261.12s - 3263.2s : you would lose some space.
+3263.2s - 3264.18s : And then you would die.
+3264.18s - 3265.64s : So if you want to survive, you have
+3265.64s - 3267.16s : to put all these pieces into one bucket.
+3267.16s - 3268.92s : And so again, we're just stacking rectangles.
+3268.92s - 3271.52s : We're putting a whole bunch of rectangles in one pocket
+3271.52s - 3273.34s : and then a bunch of rectangles in another pocket.
+3273.34s - 3275.26s : We can switch back and forth however we want.
+3275.26s - 3277.34s : But the only way to win, it turns out,
+3277.34s - 3280.1s : is if you get all of those rectangles
+3280.1s - 3282.14s : to add up to exactly the right height.
+3282.14s - 3284.1s : Then you get a picture like this.
+3284.1s - 3285.76s : If you don't get a picture like this,
+3285.76s - 3287.74s : you can prove you end up dying.
+3287.74s - 3289.48s : Then I'll give you a bunch of L's.
+3289.48s - 3292.42s : Then I'll finally give you this T, which clears some lines.
+3292.42s - 3294.94s : And then I'll give you the most satisfying Tetris game ever.
+3294.94s - 3296.36s : I'll give you a ton of I's.
+3296.36s - 3297.94s : And you get Tetris, Tetris, Tetris.
+3297.94s - 3299.52s : And you clear the entire board.
+3299.52s - 3302.06s : And so if you can solve the three partition problem,
+3302.06s - 3304.84s : you can clear the board and win the game and be
+3304.84s - 3306.7s : the best Tetris player ever.
+3306.7s - 3309.38s : And if there is no solution to three partition,
+3309.38s - 3311.56s : you're guaranteed to lose.
+3311.56s - 3315.08s : And so this proves Tetris is NP-hard.
+3315.08s - 3315.58s : Cool.
+3315.76s - 3318.62s : So what else do I want to say?
+3318.62s - 3324.28s : Briefly, I think that's the main idea.
+3324.28s - 3326.1s : So another example.
+3326.1s - 3329.44s : So this spot is called x-completeness.
+3335.44s - 3338.86s : And this includes problems such as n by n chess.
+3338.86s - 3341.98s : So we know that chess requires exponential time
+3341.98s - 3343.7s : because, in fact, it's among the hardest
+3343.7s - 3345.08s : problems in exponential time.
+3345.08s - 3348.24s : But most common are the, somehow,
+3348.24s - 3351.5s : because of the two-player nature of the game.
+3351.5s - 3353.74s : Most common are NP-complete problems.
+3353.74s - 3356.78s : And we have a bunch of example NP-complete problems
+3356.78s - 3359.18s : I'll just briefly mention here.
+3359.18s - 3362.12s : So we saw the subset sum problem, which
+3362.12s - 3365.12s : we had a polynomial time algorithm for, sorry,
+3365.12s - 3367.62s : a pseudo polynomial time algorithm for last class,
+3367.62s - 3371.3s : in fact, has no polynomial time algorithm, assuming p equals np.
+3371.3s - 3374.42s : So pseudo poly is the best you can hope for for subset sum.
+3374.42s - 3374.92s : OK.
+3375.08s - 3377.36s : There's a related notion called weakly NP-hardness,
+3377.36s - 3379.2s : which I won't get into here.
+3379.2s - 3380.52s : Three partition is one we saw.
+3380.52s - 3383.12s : We saw some reductions to other problems.
+3383.12s - 3384.98s : So these are all NP-complete.
+3384.98s - 3387.5s : Longest common subsequence is another dynamic programming
+3387.5s - 3389.3s : problem we saw with two sequences.
+3389.3s - 3391.1s : I mentioned you could solve it for three or four
+3391.1s - 3392.3s : or any constant number.
+3392.3s - 3394.64s : But if I give you n sequences, each of length n,
+3394.64s - 3397.88s : that problem is NP-hard, NP-complete.
+3397.88s - 3399.86s : Longest simple path in a graph.
+3399.86s - 3401.3s : We know how to solve longest path.
+3401.3s - 3403.88s : You just solve shortest path and negative weights.
+3403.88s - 3405.08s : But longest simple path.
+3405.08s - 3407.9s : Where you don't repeat vertices, that's NP-complete.
+3407.9s - 3411.32s : Relatedly, one of the most famous NP-complete problems
+3411.32s - 3413.66s : is traveling salesman problem, finding
+3413.66s - 3418.32s : the shortest path that visits all vertices in a given graph.
+3418.32s - 3420.2s : So instead of just going from a to b,
+3420.2s - 3423.58s : I want to visit all the vertices in the graph.
+3423.58s - 3426.74s : A lot of these problems I'm phrasing as optimization
+3426.74s - 3427.28s : problems.
+3427.28s - 3428.96s : But when I say NP-complete, I actually
+3428.96s - 3430.58s : mean a decision version of the problem.
+3430.58s - 3432.72s : For example, with this one, the decision question
+3432.72s - 3435.0s : is, is the shortest path that visits all vertices
+3435.0s - 3437.98s : in a graph less than or equal to a given value x?
+3437.98s - 3439.86s : If you can solve this, then by binary search
+3439.86s - 3442.52s : you can solve the overall weight.
+3442.52s - 3443.9s : Three-color in your graph is hard.
+3443.9s - 3446.16s : Even though two-color in your graph is polynomial,
+3446.16s - 3447.84s : three-coloring is NP-complete.
+3447.84s - 3450.18s : Assigning three colors to the vertices
+3450.18s - 3452.5s : so that no adjacent vertices have the same color.
+3452.5s - 3454.46s : Finding the largest clique in a given graph,
+3454.46s - 3456.8s : which would be useful for analyzing social networks,
+3456.8s - 3458.06s : whatever.
+3458.06s - 3460.2s : This is a fun one for me as a geometer.
+3460.2s - 3463.56s : If you're in a three-dimensional world, which I am,
+3463.56s - 3464.88s : and I want to find the shortest path, which is NP-complete,
+3464.88s - 3467.12s : and I want to find the shortest path from here
+3467.12s - 3470.64s : to there that doesn't collide with any obstacles,
+3470.64s - 3473.52s : like this desk and all the chairs and so on.
+3473.52s - 3475.8s : In 3D, this problem, if you can fly,
+3475.8s - 3478.92s : so if you're a drone flying among all these obstacles,
+3478.92s - 3482.04s : and you want to find the shortest path from A to B,
+3482.04s - 3483.24s : this is NP-complete.
+3483.24s - 3483.84s : Quite surprising.
+3483.84s - 3485.58s : In two dimensions, it's polynomial.
+3485.58s - 3487.24s : You can reduce it to graph shortest paths,
+3487.24s - 3489.04s : but in 3D it's NP-hard.
+3489.04s - 3491.34s : This is a formula problem that comes up a lot.
+3491.34s - 3493.22s : Given a Boolean formula with and, or, or not,
+3493.22s - 3494.66s : can you ever make it true?
+3494.66s - 3496.08s : It's a problem that's not assigned.
+3496.08s - 3498.84s : And some more fun examples are Minesweeper or Sudoku,
+3498.84s - 3501.56s : basically any paper and pencil puzzle you've ever played.
+3501.56s - 3502.9s : There's probably a paper out there
+3502.9s - 3504.5s : proving that it's NP-complete.
+3504.5s - 3508.2s : And on the video game side, Super Mario Brothers is NP-hard.
+3508.2s - 3509.5s : Legend of Zelda is NP-hard.
+3509.5s - 3510.86s : Pokemon is NP-hard.
+3510.86s - 3513.42s : These problems are actually all a little bit harder
+3513.42s - 3516.22s : than NP in a different class called PSPACE, which
+3516.22s - 3517.46s : I won't go into.
+3517.46s - 3519.72s : But if you're interested in this stuff,
+3519.72s - 3521.54s : there is a whole class devoted to it,
+3521.54s - 3524.66s : which has online video lectures, so you can watch them.
+3524.66s - 3525.94s : Whenever you want.
+3525.94s - 3528.14s : Code 6892.
+3528.14s - 3531.38s : That gives a bunch of especially fun examples
+3531.38s - 3534.66s : of NP-hardness and other types of hardness proofs
+3534.66s - 3536.44s : from a sort of algorithm's perspective
+3536.44s - 3541.16s : for lots of games and puzzles you might care about.
+3541.16s - 3543.28s : And that's it.

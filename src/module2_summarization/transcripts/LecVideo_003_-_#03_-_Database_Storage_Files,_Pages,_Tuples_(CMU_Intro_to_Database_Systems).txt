@@ -1,0 +1,1469 @@
+0.0s - 21.54s : 🎵 Music Playing 🎵
+21.54s - 27.96s : Hi guys, so as I said in class last week,
+27.96s - 31.12s : I can't be on campus this week. I'm in London.
+31.12s - 38.96s : And actually right now we are actually in the emergency room here in London.
+38.96s - 46.96s : So fat-faced Rick did a microdata of LSD last night, went walking around,
+46.96s - 49.96s : and then he got beat up by a bunch of like 12-year-olds.
+49.96s - 52.96s : He basically beat the shit out of them.
+52.96s - 56.96s : So we had to bring him to the hospital, and I'm out here in the waiting room
+56.96s - 61.96s : waiting for him to get cleaned up, stitched up, and then we can go back.
+61.96s - 64.96s : So I figured while I'm sitting here, we have to teach about databases
+64.96s - 66.96s : because that's super important in life.
+66.96s - 68.96s : So let's jump into this.
+68.96s - 72.96s : So last class we were talking about SQL,
+72.96s - 77.96s : and then today we're going to talk about how to actually build a system.
+77.96s - 80.96s : So as a reminder, Project Zero is due this coming Sunday coming up.
+80.96s - 83.96s : Again, you're required to pass that if you want to get into the class.
+83.96s - 86.96s : And Hovercorn is also due this coming up Sunday.
+86.96s - 90.96s : So we're going to talk about that at the same time.
+90.96s - 95.96s : So now that we understand what SQL looks like at the sort of logical level,
+95.96s - 98.96s : like how to define tables, how to run queries on it,
+98.96s - 102.96s : and what are the properties of relational algebra
+102.96s - 105.96s : and how that fit into the model,
+105.96s - 111.96s : that's sort of the last time we're going to be looking at the application level
+111.96s - 114.96s : of a database for most of the semester.
+114.96s - 116.96s : Now we're going to really start talking about how to build a system.
+116.96s - 120.96s : So we actually had to build the software to run the queries that we saw
+120.96s - 122.96s : or store the data that we want from the database.
+122.96s - 125.96s : And so that's really what's going forward at this point in the semester.
+125.96s - 128.96s : It's like how do we actually build that system?
+128.96s - 131.96s : And so the outline of the course roughly looks like this.
+131.96s - 133.96s : So we've already sort of covered what the first week
+133.96s - 135.96s : of the relational database looks like.
+135.96s - 139.96s : And we're now going to go sort of at a level-by-level basis
+139.96s - 142.96s : and start looking at like, okay, here's how you build the different layers
+142.96s - 144.96s : that you need to put together and interact with them
+144.96s - 146.96s : to actually build a full-fledged system.
+146.96s - 150.96s : And so this is sort of the rough outline of where the course is going
+150.96s - 152.96s : for this semester.
+152.96s - 155.96s : A lot of the things we'll be getting to at the very beginning
+155.96s - 157.96s : will be like how to build a single-node system.
+157.96s - 160.96s : And then once we understand that, then we'll finish up and talk about
+160.96s - 164.96s : how can you scale it out and run across multiple nodes.
+164.96s - 167.96s : And so the way to think about this is that the database system
+167.96s - 172.96s : is essentially a bunch of layers where there's a well-defined API
+172.96s - 176.96s : that one layer exposes to the next layer in order to provide
+176.96s - 187.96s : certain guarantees or certain operations on data or whatever the level of
+187.96s - 190.96s : that they're trying to interact with.
+190.96s - 193.96s : So you can think at the very bottom, you have this disk manager,
+193.96s - 195.96s : the thing that actually reads and writes data from disk.
+195.96s - 198.96s : It's essentially a database that just files on disk.
+198.96s - 200.96s : And then above that, you have the buffer manager that's going to be
+200.96s - 203.96s : responsible for bringing in pages from disk, bringing in memory,
+203.96s - 206.96s : and then handing them out correctly to the other upper layer.
+206.96s - 209.96s : So you have components such as access methods for then accessing data
+209.96s - 212.96s : on behalf of operators, executing queries.
+212.96s - 216.96s : And above that, we have a query planner optimizer to try to then take SQL queries
+216.96s - 220.96s : and convert it to physical plans that we can then execute on our system.
+220.96s - 223.96s : So again, you just think of the database system as a bunch of layers.
+223.96s - 225.96s : And what we're going to be going through this semester is actually
+225.96s - 229.96s : we're going to go start at the bottom and work our way back up with the stack.
+229.96s - 231.96s : So the application is up here.
+231.96s - 234.96s : This is what we talked about before, like the relational database in SQL.
+234.96s - 235.96s : Right?
+235.96s - 236.96s : And it interacts with the front end.
+236.96s - 238.96s : That's going to be the query planning.
+238.96s - 241.96s : And then we're just going to, again, we're going to talk about how to go up the stack now
+241.96s - 243.96s : and be able to execute those queries.
+243.96s - 245.96s : So today's class, we're going to actually start at the very bottom.
+245.96s - 247.96s : We're going to talk about storage.
+247.96s - 251.96s : Next class, next week, when I come back in town, we'll actually go back up
+251.96s - 254.96s : to the buffer manager, talk about how to bring some pages of memory.
+254.96s - 258.96s : But then we actually need to go back down and talk about different alternatives
+258.96s - 259.96s : to storing things on disk.
+259.96s - 263.96s : So that'll be where we're at for the next two weeks.
+263.96s - 265.96s : So today, again, we're going to talk about how to bring in some memory.
+265.96s - 269.96s : Let's start talking about what the background is of what the database is going to see
+269.96s - 271.96s : and interact with in terms of hardware.
+271.96s - 274.96s : Then we'll talk about the lowest level, actually how to store things in files,
+274.96s - 280.96s : how you can then divide those files into pages, and how you can then divide those pages into tuples.
+280.96s - 285.96s : So today's class is going to be a, what I call, row-oriented centric view,
+285.96s - 290.96s : meaning we're going to organize the data, as tuple says, in rows.
+290.96s - 295.96s : We'll see in two weeks how we actually put that on its head and actually store things in it.
+295.96s - 298.96s : So today's sort of going to be a classical database system architecture,
+298.96s - 302.96s : how the original ones were built in the 1970s, and then we'll go from there
+302.96s - 307.96s : and talk about how to, you know, alternative methods, the more modern methods, in a few weeks.
+307.96s - 310.96s : We kind of understand the basics first before we get to the other ones.
+310.96s - 319.96s : So the other thing about this class, too, I actually bring up is that we'll be focusing on
+319.96s - 323.96s : what I call a disk-based or disk-oriented system architecture.
+323.96s - 324.96s : And what I mean by that is, you know, we're going to be focusing on a disk-based or disk-oriented system architecture.
+324.96s - 325.96s : And what I mean by that is, you know, we're going to be focusing on a disk-based or disk-oriented system architecture.
+325.96s - 326.96s : And what I mean by that is, you know, we're going to be focusing on a disk-based or disk-oriented system architecture.
+326.96s - 327.96s : So you know, we're going to be focusing on a disk-based or disk-oriented system architecture.
+327.96s - 328.96s : And what I mean by that is, you know, we're going to be focusing on a disk-based or disk-oriented system architecture.
+328.96s - 333.96s : Now the key way for that is that we'll be texting into certain passwords or terminologies in our regions
+333.96s - 338.96s : that we've already Jordan-oug accidents, have developed, or we'll have fazemailes or changes in the relevant database!
+338.96s - 341.96s : And that can 칸 be if we want to, you know, backually send those codes to people and, you know,
+341.96s - 343.96s : you want to send these codes to people also there.
+343.96s - 344.96s : And what's interesting about the system architecture, one of the things,
+344.96s - 346.96s : is that you don't have to adapt that to what's actually available on a open site.
+346.96s - 352.24s : on anything that while existing disk and said you have to bring thing bring pages from disk or the
+352.24s - 358.48s : files from disk into memory into volatile storage like something like dram and then that's where you
+358.48s - 364.0s : read and write to the data that you want and the data system is is then responsible for writing up
+364.0s - 371.84s : those changes to the volatile non-volatile disk at some later point so this is really really
+371.84s - 376.96s : refocusing on and then all of the uh components that we're going to talk about the hours we're
+376.96s - 384.16s : talking about is really predicated on on this architecture assumption so the way to think about
+384.16s - 388.16s : how we're going to interact with non-volatile and volatile storage is so this classic hierarchy like
+388.16s - 392.88s : this you've probably seen this in the classes right this is should not be anything new um but
+392.88s - 400.32s : you sort of think of the the the bottom layer you have the the very large and but slower storage and
+400.32s - 401.76s : the very top you have the very fast
+401.84s - 406.16s : and cheaper one right so the top would be things like cpu registers because that's the smallest
+406.16s - 412.56s : amount of data you can store or access on a cpu um and obviously it's gonna be really really fast
+412.56s - 416.4s : but it's also gonna be really expensive it could be very limited then as you go down the stack
+416.4s - 422.64s : things get bigger um capacity is larger uh they're going to get slower and they'll be actually much
+422.64s - 427.52s : cheaper to store per you know per byte or per gigabyte so this is the sort of the way we want
+427.52s - 430.64s : to think about and how these different storage layers are going to work with each other
+431.84s - 435.6s : but there's also this division line that i'll draw here between d-ram and ssds
+436.16s - 439.6s : and basically say at the top you have again what i call volatile storage
+441.04s - 445.36s : where again if you lose the power on whatever the computing device you're using to store this
+445.92s - 450.56s : everything is blown away um but they're going to be they're going to support what i'll call
+450.56s - 456.48s : random access or byte addressable access meaning we can jump to initial byte offsets
+457.12s - 461.04s : without worrying about bringing in a bunch of other data that maybe we don't actually need
+461.84s - 466.72s : now with cache lines on the cpu that's not entirely true but for our purposes in this semester
+467.28s - 473.2s : uh we can ignore that and then below this demarcation line we have uh non-volatile storage
+473.76s - 478.96s : so this will be things like again spinning disk hard drives or ssds or network storage like s3 on
+478.96s - 485.84s : amazon or google cloud storage and so forth so these devices will be uh non-volatile meaning
+485.84s - 491.76s : if you write to them and we can send a command to say flush the data to this storage device
+491.84s - 496.64s : and then we'd be guaranteed that power is lost that we come back and data will be there again
+497.36s - 501.12s : if obviously the machine catches a fire and the disks know we can't do that but there's
+501.12s - 505.6s : ways to get around that we'll cover later in the semester these devices are also going to be what
+505.6s - 511.76s : are called block adjustable and that means that the the smallest granularity in which we can
+511.76s - 516.72s : access data is going to be through a block and typically this can be four kilobytes sometimes
+516.72s - 521.36s : larger smaller but we can't do the byte addressable access that we can do in dbd
+521.84s - 528.0s : ram or cpu caches meaning if we want to access a single byte we have to bring in the whole page
+528.0s - 534.8s : block where that byte exact resides even if you don't need that other data right that's sort of
+534.8s - 538.88s : the trade-off we have to make in in our system design when we actually want to start storing
+538.88s - 545.04s : things on a non-bubble storage so for the purposes of this semester what we're going to say is that
+545.68s - 550.24s : anything below this this demarcation line here between non-volatile and volatile storage we're
+550.24s - 551.44s : just going to say that's just called devreuse so devreuse is a resource that's going to be in this
+551.44s - 551.68s : creating a system of things and so what we're going to do here is we're going to start working with
+551.68s - 551.82s : something like the supporting data that we've developed over the last five years for the
+551.84s - 557.3s : Well, it doesn't matter whether it's an SSD, a spinning disk hard drive, or network storage.
+557.3s - 562.84s : Even below network storage, you can have things like tape drives, but people really only use
+562.84s - 565.16s : that for archival stuff like Amazon Glacier.
+565.16s - 569.84s : So everything down below is block addressable and non-volatile.
+569.84s - 573.04s : We'll just call that disk.
+573.04s - 575.52s : And then above that line, we're going to say that we're just going to call whatever's in
+575.52s - 579.26s : DRAM, we're just going to call that memory.
+579.26s - 583.38s : And then above that will be anything that's directly on the CPU, like on the actual die
+583.38s - 587.02s : or the socket itself, like CPU caches and CPU registers.
+587.02s - 589.96s : We're just going to say that's CPU storage.
+589.96s - 595.12s : And so for the purposes of this semester, we're actually going to ignore CPU-related
+595.12s - 596.12s : stuff.
+596.12s - 606.12s : We can talk a little bit about more efficient ways to store the stuff, but for our purposes
+606.12s - 609.12s : here, we can just ignore all that.
+609.12s - 611.88s : We'll cover these things in the advanced class because that's where we really care about
+611.88s - 613.88s : cache locality and other things.
+613.88s - 618.88s : But for this semester, it's really about is it in memory or is it a disk, and then how
+618.88s - 621.26s : do we move back and forth.
+621.26s - 624.92s : Now the other thing we have to be mindful of too, and this is going to be where we're
+624.92s - 630.94s : going to deviate from maybe traditional algorithm classes you've taken in computer science classes
+630.94s - 635.06s : before, where we actually need to be aware of how long it's going to take for us to access
+635.06s - 636.98s : data at these different levels.
+636.98s - 638.02s : And so there's this great table here.
+638.02s - 638.98s : I'm going to go ahead and show you this.
+638.98s - 642.66s : This is a table here that comes from this website you see in the corner.
+642.66s - 647.16s : Jeff Dean has a version of this that actually predates him and goes back to Jim Gray from
+647.16s - 648.16s : the early 1990s.
+648.16s - 649.16s : But basically, it's a table.
+649.16s - 656.54s : Here's all the time it takes to access different levels of storage, from the volatile ones
+656.54s - 658.78s : down to the non-volatile ones.
+658.78s - 662.1s : And here I'm showing these numbers measured in nanoseconds.
+662.1s - 665.74s : So basically, it just shows if I'm going to read something from DRAM, it's going to take
+665.74s - 666.74s : 100 nanoseconds.
+666.74s - 667.88s : But if I'm going to read it in SSD, it's going to take 100 nanoseconds.
+667.88s - 668.88s : So it's going to take 100 nanoseconds.
+668.88s - 674.34s : Now it's going to take me 60, maybe 50, 50,000 nanoseconds.
+674.34s - 677.62s : So it's like two orders of magnitude slower than reading from DRAM.
+677.62s - 682.02s : So obviously, we want to be mindful of when we're going to read things from disk and try
+682.02s - 686.46s : to minimize the amount of time, how many times we have to do that.
+686.46s - 691.52s : Then once you get below in SSD, that's when things just get super, super slow.
+691.52s - 696.96s : So really, as humans, it's hard for us to wrap our heads around times in terms of data.
+696.96s - 697.96s : Right?
+697.96s - 698.88s : Yeah.
+698.88s - 700.48s : And so even if you have to do five to 10 times a day, how do you do that physically?
+700.48s - 701.48s : Right?
+701.48s - 728.12s : 1ico ayr
+728.88s - 731.94s : Pluto and back to read a single page in a book.
+731.94s - 733.74s : It'd be ridiculously long.
+733.74s - 737.46s : We want to try to avoid that as much as possible.
+737.46s - 738.88s : So again, as I said, most systems
+738.88s - 740.64s : are not going to be stored in tape drives,
+740.64s - 742.26s : so that's not why they're worried
+742.26s - 745.02s : about that level of latency.
+745.02s - 747.18s : But certainly, there's a lot of systems and real systems
+747.18s - 749.76s : today are storing these SSDs, spinny-disk hard drives
+749.76s - 751.5s : in network storage like S3.
+751.5s - 753.34s : And so we've got to be mindful of when
+753.34s - 755.22s : are we going to read my data from disk
+755.22s - 758.22s : and try to avoid having to block the system while we're waiting
+758.22s - 761.34s : to hack those things.
+761.34s - 765.0s : The other thing we need to be mindful of in our implementation
+765.0s - 766.54s : of our algorithms is the difference
+766.54s - 770.34s : between sequential and random access, random I.O.
+770.34s - 773.28s : So again, when you assume you're talking
+773.28s - 776.04s : about quicksort algorithms in intro classes and so forth,
+776.04s - 778.04s : you just assume that, oh, I can read and write anything
+778.04s - 782.2s : in memory, and the time it takes to read any object or entity
+782.2s - 783.46s : takes the same amount of time.
+783.46s - 786.16s : But in reality, on real hardware,
+786.16s - 788.22s : the latencies between the data that
+788.22s - 790.8s : I'm reading and random access and sequential access
+790.8s - 792.12s : can be quite significant.
+792.12s - 794.22s : So random access would be like jumping around
+794.22s - 797.34s : to different locations and reading different bits as I need
+797.34s - 799.8s : or bytes as I need, whereas sequential access would
+799.8s - 802.86s : be read like a stride of data that
+802.86s - 804.84s : is antiquity of each other.
+804.84s - 808.02s : And so I can just do one lookup and get multiple bytes
+808.02s - 811.98s : or kilobytes that are all close to each other.
+811.98s - 814.26s : So just to give you some ballpark numbers here,
+814.26s - 817.2s : random I.O. would be on a fast SSD.
+818.22s - 820.98s : Maybe 80 to 100 microseconds.
+820.98s - 827.4s : So let's be on the high end for a consumer-grade drive,
+827.4s - 829.86s : where sequential I.O. would be you
+829.86s - 834.72s : can read a bunch of data in terms of 10 to 100 microseconds.
+834.72s - 836.64s : And again, it depends on how much data you're reading,
+836.64s - 838.2s : how many threads you're reading.
+838.2s - 840.04s : This is all much complicated that we're not
+840.04s - 841.46s : going to cover in this class.
+841.46s - 843.84s : But the main thing to be mindful of
+843.84s - 846.54s : is that there is a huge difference between sequential
+846.54s - 848.06s : and random I.O.
+848.06s - 849.98s : Especially when spinning through these hard drives.
+849.98s - 854.22s : And we want to try to maximize the amount of sequential access
+854.22s - 856.52s : we can do whenever we have to read and write everything
+856.52s - 857.3s : from disk.
+857.3s - 860.3s : And that means that we'll make certain choices in our algorithms
+860.3s - 863.66s : that try to reduce the number of writes to random pages
+863.66s - 868.04s : so that we store data in continuous blocks.
+868.04s - 870.08s : And that means that we certainly,
+870.08s - 873.5s : certain systems will do certain things that seems crazy to do.
+873.5s - 876.44s : But again, if you're aware that sequential access is much faster
+876.44s - 877.86s : than random access, you're going to have to do a lot more.
+877.86s - 877.88s : So that's the main thing.
+877.88s - 878.38s : And then if you're aware that sequential access is much faster
+878.38s - 879.84s : than random access, you would sort of make sense.
+879.84s - 884.44s : So like MySQL, for example, will store their,
+884.44s - 886.0s : when they write dirty pages to disk,
+886.0s - 888.76s : they'll first write it to this double writeback buffer.
+888.76s - 890.24s : And that's a sequential write where
+890.24s - 893.44s : they put all the dirty pages they want to flush out.
+893.44s - 895.16s : They write those sequentially.
+895.16s - 900.3s : And in the background, they'll do the random writes
+900.3s - 901.24s : at a later point.
+901.24s - 902.98s : But at that point, you're not blocked
+902.98s - 905.42s : waiting for that dirty page to be written,
+905.42s - 907.68s : because you've written that sequentially the first time.
+907.68s - 912.68s : So that's the key to doing good at mySQL.
+912.68s - 915.18s : So the ultimate goal for a database system,
+915.18s - 917.2s : we're going to try to build this semester,
+917.2s - 922.24s : is a system that can manage a database system that's
+922.24s - 926.04s : larger than the amount of memory that's available to the system.
+926.04s - 928.12s : So if you only have eight gigs of RAM,
+928.12s - 930.2s : you can run a database, a handheld database,
+930.2s - 932.26s : that's 16 kilobytes or 32 gigabytes or larger.
+932.26s - 937.48s : So the ultimate goal for our database system is to try to build a database
+937.48s - 941.58s : The challenge, of course, is going to be to provide this illusion is that we have to move
+941.58s - 947.82s : data back and forth between disk and the memory, as I said, sort of the binomial infrastructure.
+947.82s - 951.68s : And so we want to do this in a clever way and take advantage of as many optimizations
+951.68s - 957.38s : as we can where we want to avoid large stalls while we're fetching things in disk and have
+957.38s - 962.74s : the system sort of grind to a halt just because we're waiting to go fetch I.O.
+962.74s - 968.56s : And so there'll be a bunch of things we'll do as we go along about allowing multiple
+968.56s - 973.74s : queries to run at the same time, reusing data that we bring into memory, being clever about
+973.74s - 978.26s : what we write up from memory into disk.
+978.26s - 981.34s : So there's a bunch of things we're going to want to do, and we're going to design certain
+981.34s - 987.58s : algorithms in such a way that we can reduce that burden, reduce that cost of having to
+987.58s - 990.92s : read my data from disk and to get it to make it look like we have enough memory to handle
+990.92s - 991.92s : everything.
+991.92s - 992.72s : And of course, at some point, we're going to have to do that.
+992.72s - 997.72s : And if the working set size of the data of all the queries that are running, meaning
+997.72s - 1000.6s : all the things that you need to be in memory is larger than the amount of memory you have,
+1000.6s - 1002.88s : that's going to be a problem.
+1002.88s - 1003.98s : There's no way to get around that.
+1003.98s - 1009.22s : But for other sort of in the general case, we'll be okay.
+1009.22s - 1012.52s : All right.
+1012.52s - 1014.94s : So everything I've said here is kind of hand-wavy and vague.
+1014.94s - 1018.66s : So let's actually go into more details of like, look at a high-volt picture of what
+1018.66s - 1021.9s : a disk-oriented database is going to look like.
+1021.9s - 1027.66s : And then we'll see what we're trying to then design and build as we go along for the rest
+1027.66s - 1028.66s : of the semester.
+1028.66s - 1035.12s : So as I said before, the database and a disk-oriented system, it's just files on disk.
+1035.12s - 1040.08s : Sometimes it's one file, but some systems like DuckDB and SQLite, they pride themselves
+1040.08s - 1042.96s : in storing the entire database as a single file.
+1042.96s - 1047.26s : But most systems are going to store the database across multiple files on disk.
+1047.26s - 1051.28s : These files aren't special in terms of the operating system, meaning it's like the operating
+1051.28s - 1051.78s : system.
+1051.9s - 1057.66s : It's just a bunch of files that it's created with fwrite or fopen.
+1057.66s - 1062.12s : It's really the database interpreting what those files are, where the sort of important
+1062.12s - 1065.3s : stuff or the match happens in the system.
+1065.3s - 1068.78s : So we have on our non-Vasal disk, we have some metadata in this file.
+1068.78s - 1071.66s : And we'll break this up into a bunch of pages.
+1071.66s - 1078.66s : And these will be sort of fixed length size segments or divisions of the file.
+1078.66s - 1079.66s : All right.
+1079.66s - 1080.66s : And at the header or at the header, we'll have a bunch of files.
+1080.66s - 1081.66s : And then we'll have a bunch of files.
+1081.66s - 1084.98s : And then we'll have some special location usually that's usually the header.
+1084.98s - 1087.42s : It'll be what we'll call a page directory.
+1087.42s - 1093.04s : And that's just an internal database of keeping track of here's all the pages that I have
+1093.04s - 1095.42s : on the disk.
+1095.42s - 1099.18s : And then now I have in memory for my data system, I have what I call a buffer pool.
+1099.18s - 1104.38s : Sometimes it's called the buffer cache or the memory cache or something.
+1104.38s - 1105.6s : Different systems call them different things.
+1105.6s - 1108.34s : But it's basically the same thing.
+1108.34s - 1109.66s : And this is going to have a bunch of frames.
+1109.66s - 1110.66s : And that's going to be the summary of the code.
+1110.66s - 1111.66s : And then I'm going to have a bunch of data.
+1111.66s - 1115.1s : we'll call them, where I can store pages that I'm going to bring into memory.
+1115.1s - 1120.18s : So again, the DB system's job is really about managing the movement of disk pages
+1120.18s - 1127.1s : back and forth between disk and memory in order to service whatever the queries are that I'm executing.
+1127.1s - 1132.66s : Queries number 157.3.02. Position? Hold.
+1132.66s - 1137.9s : It's not us, okay. So I have my execution engine, right?
+1137.9s - 1139.62s : I'm not defining what this is for now.
+1139.62s - 1142.62s : I just assume that it's something that wants queries.
+1142.62s - 1146.26s : And so it's executing something that says, I want to get page number two.
+1146.26s - 1149.46s : So at the very beginning, assuming that nothing is in memory.
+1149.46s - 1152.06s : So the very first thing we need to do is to bring in the directory to memory,
+1152.06s - 1155.7s : because the directory is going to tell us what pages we have and where to go find them.
+1155.7s - 1158.62s : And again, for us right now, in this example here, we assume it's a single file,
+1158.62s - 1161.5s : but it could be spread across multiple files and multiple directories,
+1161.5s - 1163.42s : or even across multiple machines.
+1163.42s - 1166.42s : But at this point, it doesn't matter.
+1166.42s - 1169.34s : So...
+1169.34s - 1171.78s : So we bring the directory in, and we look inside that,
+1171.78s - 1175.22s : and that's going to tell us where to go find page two, right?
+1175.22s - 1179.5s : So for simplicity, assume we could just compute where offset is in this file and that it finds it for us.
+1179.5s - 1181.94s : Then we go fetch that page into memory.
+1181.94s - 1187.62s : And then now we then hand back to the execution engine a pointer to that page in memory.
+1187.62s - 1191.86s : And the buffer pool is going to guarantee that that pointer is not going to get replaced
+1191.86s - 1196.34s : or swapped out with another page until the execution engine says they're done with it.
+1196.34s - 1199.14s : So now, I also notice here that we didn't...
+1199.34s - 1202.14s : say anything about what's inside these pages.
+1202.14s - 1206.46s : It's up for... it's up to whatever the up above in the system to then interpret what's in these pages
+1206.46s - 1208.74s : is to decide what the bytes actually mean.
+1208.74s - 1210.82s : But this lowest level here, we don't know.
+1210.82s - 1213.98s : We don't actually care right now.
+1213.98s - 1217.74s : So then the execution engine does whatever it does, interprets the page layout,
+1217.74s - 1219.02s : and the save that's doing updates.
+1219.02s - 1221.66s : So it wants to update the contents of page number two.
+1221.66s - 1224.94s : So then it writes back the change to page.
+1224.94s - 1227.5s : And then it can then say, I completed.
+1227.5s - 1228.74s : And at some later point, the buffer pool will say, I completed.
+1228.74s - 1229.14s : And then it can then say, I completed. And at some later point, the buffer pool will say, I completed.
+1229.14s - 1229.66s : And then it can then say, I completed. And at some later point, the buffer pool will say, I completed.
+1229.66s - 1233.38s : And then it can then say, I completed. And at some later point, the buffer pool is going to write out that dirty page to disk and update the files.
+1233.38s - 1237.58s : And it does it in a way that's safe so that if we crash and come back,
+1237.58s - 1243.78s : we don't lose any of those changes that the execution engine made to that page.
+1243.78s - 1246.54s : So we're not going to go into the details of all these things in this lecture.
+1246.54s - 1252.66s : We'll discuss things at other lectures, but we'll discuss some of what these pages actually look like at the files in this lecture.
+1252.66s - 1255.3s : And then we'll come back to this in five, six.
+1255.3s - 1258.54s : And then we're going to spend in lecture four, we're going to spend time discussing what the buffer pool manager looks like.
+1258.54s - 1264.18s : And then we're going to spend time discussing what the buffer pool manager looks like in memory and how it does some of the writing out to disk.
+1264.18s - 1266.82s : We won't discuss everything how to do this in a transaction safe manner.
+1266.82s - 1269.18s : It'll be later in the semester at the midterm.
+1269.18s - 1273.74s : We'll just have a general idea of how the mechanism is actually going to work.
+1273.74s - 1277.22s : So we'll cover that in next week in lecture four.
+1277.22s - 1280.66s : It's also to that would be what you'll need in the first project.
+1280.66s - 1286.58s : And then for what the execution engine is going to look like, we'll cover that in lectures 13 and 14 in a few weeks.
+1286.58s - 1287.58s : OK.
+1288.54s - 1289.54s : All right.
+1289.54s - 1291.98s : So there's two big questions we have to deal with in our system.
+1291.98s - 1297.38s : The first is how we're going to represent the databases, which are files on disk.
+1297.38s - 1309.94s : And then the second question we have to deal with is how we're going to move that that those pages back and forth into disk into memory and then hand them off to other parts of the system to interpret their bytes.
+1309.94s - 1311.86s : So for today's class, we're going to focus on this.
+1311.86s - 1318.34s : As I said, next class will then come back to problem number two and understand what the buffer pool manager is actually doing for us and how it works.
+1318.54s - 1325.58s : So as I said, the database is just files on disk.
+1325.58s - 1330.02s : And there's nothing special about them in terms of getting the operative.
+1330.02s - 1336.18s : It's just as if I create a bunch of files in any application and then the data is up to interpret what's in them.
+1336.18s - 1346.34s : Now, historically, these file formats within the files has always been proprietary, meaning like they are what the.
+1346.34s - 1347.7s : They're specific to whatever the file format is.
+1347.7s - 1347.9s : So.
+1347.9s - 1347.94s : OK.
+1347.94s - 1348.18s : All right.
+1348.18s - 1348.24s : So.
+1348.24s - 1348.26s : So.
+1348.26s - 1348.3s : So.
+1348.3s - 1348.36s : So.
+1348.36s - 1348.46s : So.
+1348.46s - 1348.5s : So.
+1348.5s - 1348.52s : So.
+1348.54s - 1348.56s : So.
+1348.56s - 1348.6s : So.
+1348.6s - 1353.9s : the database system that created them, and i'm not usually interpreted by other other database systems.
+1353.9s - 1361.9s : So like, you can't take a Postgres file, like it's file format and then open it up in my sequel work, or it's not going to know how to interpret these bytes because it
+1361.9s - 1364.66s : doesn't mean anything to the other system.
+1364.66s - 1365.84s : Right.
+1365.84s - 1373.92s : There are there's a newer trend in building what are called portable file formats, things like parquet, where it's a file format that is open.
+1373.92s - 1376.74s : Well, that letter, that's interesting.
+1376.74s - 1378.24s : And then sometimes not.
+1378.24s - 1381.62s : We can read right to them, but we're not going to discuss that in this class.
+1381.62s - 1384.36s : We'll cover that when we talk about column stores.
+1384.36s - 1389.18s : The other thing I'll also point out too is that the database system is typically going
+1389.18s - 1396.78s : to go run on off-the-shelf file system, like ext4, WinFS, whatever the operating system
+1396.78s - 1401.78s : installs, and that's going to be typically good enough for what we need.
+1401.78s - 1409.52s : There was some systems in the 1980s that would actually build custom file systems on top
+1409.52s - 1410.52s : of raw block storage.
+1410.52s - 1415.28s : So you'd buy a storage device that's just raw blocks, and then the database system would
+1415.28s - 1418.72s : install its own custom file system inside of that.
+1418.72s - 1424.82s : You typically don't see that, especially in non-open source systems, and you only really
+1424.82s - 1429.02s : see this in really high-end enterprise systems like Oracle and Teradata.
+1429.02s - 1430.66s : Most people aren't going to do this.
+1430.66s - 1431.66s : So if you look at Oracle and Teradata, they're not going to do this.
+1431.66s - 1433.9s : Oracle is documentation.
+1433.9s - 1436.9s : You could have a database called Oracle ASM.
+1436.9s - 1442.44s : It basically says instead of having the operating system manage the file system for you with
+1442.44s - 1448.66s : a logical volume manager or whatever, instead the data system is going to do that for you.
+1448.66s - 1452.28s : It's basically injecting a custom file system to the operating system.
+1452.28s - 1459.42s : That still exposes the standard POSIX API that the operating system expects, but it
+1459.42s - 1461.54s : lays out data in such a way that it's very specific.
+1461.54s - 1462.54s : It's very specific to what the data system wants.
+1462.54s - 1463.54s : There hasn't been a study on this for a while, but you get roughly about a 15% improvement
+1463.54s - 1464.54s : in performance for this.
+1464.54s - 1465.54s : It's a major engineering effort.
+1465.54s - 1466.54s : Most systems aren't going to do this.
+1466.54s - 1481.54s : So then the data system at the lowest level is going to have this thing called the storage
+1481.54s - 1482.54s : manager.
+1482.54s - 1487.7s : Again, sometimes it's called the disk manager, but it's usually the same thing.
+1487.7s - 1489.66s : But it's the component of the system that's responsible for running the system.
+1489.66s - 1490.66s : So it's the system that's responsible for running the system.
+1490.66s - 1491.42s : So it's the system that's responsible for running the system.
+1491.42s - 1492.42s : So it's the system that's responsible for Arenalمة and Ada.
+1492.42s - 1493.42s : I think we've almost freshmen are at the Wheelys.
+1493.42s - 1494.42s : So, so if you better read the database description.
+1494.42s - 1495.42s : That's awesome.
+1495.42s - 1496.42s : Let's go back and see what folks are reading the sensible flames.
+1496.42s - 1497.42s : The Behance companies our 얘�eremony I'm heading to not crack down.
+1497.42s - 1498.42s : Here just happened to be.
+1498.42s - 1504.42s : Let's do a kind of a quick could Ой, there you kind of add on the
+1504.42s - 1509.42s : things that aren't for the start.
+1509.42s - 1513.42s : So, and then thealing out that's most traveling team from.
+1513.42s - 1515.42s : Of course, they're not that rice soup nutrition syringe unit for network configuration,
+1515.42s - 1519.42s : you see tomorrow that like heavy industry mission was that the reason we created this
+1519.42s - 1520.42s : spongeline, I mean, thing is that.
+1520.42s - 1522.42s : Pages usually fixed length
+1523.68s - 1529.82s : Within the file and then some systems will allow you to find a different page size per table
+1529.82s - 1534.3s : I got BMDB to could do this and there but still within the single
+1534.86s - 1538.86s : The file itself the collection of files for a table. They'll be all the same side
+1544.6s - 1548.76s : And then the storage manager is gonna responsible for
+1550.42s - 1552.42s : Keeping track of these pages
+1552.42s - 1558.42s : Reading and writing to them and it keeps track of available space and then when there's a request from above that says hey I need to store so many bytes
+1558.42s - 1565.18s : You can then figure out where's the free space to actually store this
+1566.62s - 1569.32s : Now the other thing we're mindful of is that the
+1571.38s - 1573.38s : Within a single like
+1573.94s - 1577.44s : Files on disk where it's like a single instance running on a box by itself
+1578.42s - 1580.42s : We're not going to maintain multiple copies
+1580.42s - 1582.42s : Of a single page on disk
+1582.76s - 1588.42s : Like a physical level at a logical level we may have multiple copies of data within a tuple
+1588.74s - 1590.74s : Who might store them in heat files?
+1590.94s - 1593.8s : Talking a second or like and then store it again in the log file
+1594.2s - 1599.82s : But it's it's not the storage manager responsibility to like oh, I gotta write this page out. I'm gonna make multiple copies of it
+1599.92s - 1603.78s : That's either gonna happen at the level below it like in the file system
+1604.58s - 1608.02s : Like with something like raid or the storage appliance can make multiple copies
+1608.9s - 1610.4s : or have you know replicas or
+1610.42s - 1614.66s : S3 or it's gonna happen above the storage manager where there'll be
+1615.36s - 1619.6s : Something that says I have to have logical copies of this data across multiple
+1620.6s - 1626.92s : Nodes, right at the level of the storage manager. It's not going to do that's really about I got a right data to a single
+1629.24s - 1631.78s : Single instance first a single location of first single page
+1634.26s - 1637.46s : All right, then as I said the page is gonna be a fixed size block of data and
+1638.14s - 1640.34s : That's going to basically contain everything that's there
+1640.42s - 1643.14s : In our database system, right? So it's contained the tuples that are in the data
+1643.32s - 1646.92s : It's became metadata about those data catalog on what tables I have
+1648.54s - 1653.18s : Information I have the page directory is basically short as its pages as well indexes the log writers
+1653.56s - 1655.56s : All this is going to be stored
+1655.64s - 1658.28s : And broken up to div internally as pages
+1659.86s - 1662.98s : Now most systems are not going to mix the page
+1664.64s - 1667.14s : Meaning like you're not gonna have within a single file
+1668.26s - 1670.26s : pages for table X
+1670.42s - 1677.52s : Y or index X table together. It's typically like here's one file has data just for this one for one page, right?
+1678.58s - 1680.58s : Some systems are also gonna require
+1680.66s - 1685.76s : Systems the pages to be self-contained meaning everything you need to know about what's inside the page
+1686.92s - 1690.06s : Has to be stored in the page itself. So you can add to things like
+1690.64s - 1692.28s : if it's a
+1692.28s - 1698.28s : Data page for a table you would say here's all the the metadata I need to have to know that this page is for this
+1698.28s - 1700.38s : table and you do that for like
+1700.42s - 1702.72s : Perweber you only see that it's like oracle
+1703.4s - 1707.22s : Whatever paranoid about not losing people's data and rightfully so
+1708.42s - 1710.52s : another point thing to note is also that the
+1711.36s - 1713.86s : Each page is given a unique identifier club. It's hiding
+1715.44s - 1721.22s : And a page id it's going to be this unique number but the establishment is going to maintain to keep track of like
+1721.5s - 1724.66s : Here's how to address and find this particular page
+1724.66s - 1726.56s : I'm looking for it could be unique burden
+1726.56s - 1729.14s : this instance per table per database
+1729.22s - 1729.7s : Ever it's gonna be so important and there's no and then we certainly can do that in the marketplace Muse of thoseanga blocks, am I right twitch one? You see that, right? You see to my background page is this only the Transfer articles can be transferred to別 variations, which mean once your database has on theaintness of multiple environments there's not anything new text designer just Jim cortisolون Rich 2000 or taking
+1730.42s - 1733.36s : some number that's going to tell us where to go find,
+1733.36s - 1735.92s : to address that single page.
+1735.92s - 1737.82s : Now, it could be an offset in the file as well,
+1737.82s - 1741.26s : but it could just be also a logical location
+1741.26s - 1744.16s : that would then use the page directory to go and then find out
+1744.16s - 1746.16s : where that thing's actually being located.
+1751.12s - 1753.62s : So now, the important thing to understand also is there's actually
+1753.62s - 1757.32s : three notions of pages in a system.
+1757.32s - 1760.26s : So at the lowest level, you have what's called a Harvard page.
+1760.26s - 1769.7s : This is typically 4 kilobytes, and it's the smallest atomic unit of data
+1769.7s - 1775.5s : that the hardware can guarantee that it can write out to the storage device,
+1775.5s - 1780.9s : the actual physical medium of the storage that's done atomically.
+1780.9s - 1786.92s : So this would be, if I have to write out, say, two 4 kilobyte pages or 8 kilobytes,
+1786.92s - 1790.26s : the hardware can only guarantee that it can write the 4 kilobyte
+1790.26s - 1792.16s : one 4 kilobyte atomically.
+1792.16s - 1795.2s : So it can't guarantee that it's going to write out both pages,
+1795.2s - 1795.8s : or none of them.
+1795.8s - 1801.0s : It has to guarantee that it can only guarantee that it can write one of them.
+1801.0s - 1805.42s : All right, so then now above that, you have the OS page.
+1805.42s - 1809.16s : And by default in Linux, this is 4 kilobytes.
+1809.16s - 1813.5s : In some new versions of Linux, you can get what are called huge pages,
+1813.5s - 1815.6s : and then you can get like 2 megabytes or 1 gigabyte.
+1815.6s - 1820.26s : But this is basically the mapping of a Harvard page to,
+1820.26s - 1825.1s : sort of, a logical page that the OS is going to keep track of,
+1825.1s - 1829.12s : and its own internal page directory.
+1829.12s - 1831.8s : Then now above that, we have the database page.
+1831.8s - 1839.36s : And this is going to be what the database is going to organize, its own pages.
+1839.36s - 1843.4s : So again, the Harvard page is always going to be 4 kilobytes,
+1843.4s - 1846.4s : and that's the largest block of the guarantee that can write atomically.
+1846.4s - 1848.5s : But then the OS can have its own page sizes,
+1848.5s - 1850.24s : and the database can have its own page sizes,
+1850.26s - 1852.26s : and it's going to be very, very low.
+1852.26s - 1855.26s : And we just have to be mindful of how we're going to do this mapping
+1855.26s - 1858.26s : from a database page to a Harvard page,
+1858.26s - 1863.26s : and be aware of that if we have to write more data that we can do atomically
+1863.26s - 1866.26s : in a 4 kilobyte page, we have to do a bunch of extra steps
+1866.26s - 1869.26s : to make sure that things are written safely before we tell the outside world,
+1869.26s - 1875.26s : before everything has been flushed.
+1875.26s - 1879.26s : So the database page size is going to vary per system.
+1879.26s - 1880.26s : Right?
+1880.26s - 1882.26s : On the smallest, actually, it's something like SQLite.
+1882.26s - 1886.26s : I know for some embedded devices, it can go down to 512 bytes.
+1886.26s - 1889.26s : By default, it's 4 kilobytes.
+1889.26s - 1893.26s : Oracle, by default, is 4 kilobytes.
+1893.26s - 1894.26s : The DBT is 4 kilobytes.
+1894.26s - 1899.26s : RockCD, which is an embedded storage engine that's used in a lot of systems,
+1899.26s - 1900.26s : that's 4 kilobytes.
+1900.26s - 1903.26s : WiredTiger is the storage engine for MongoDB.
+1903.26s - 1905.26s : That's 4 kilobytes.
+1905.26s - 1909.26s : Then you have things like SQL Server and Postgres, right?
+1909.26s - 1910.26s : They're 8 kilobytes.
+1910.26s - 1915.26s : Then MySQL, famously, can go up to 16 kilobytes.
+1915.26s - 1920.26s : So the size of a database page, what you actually want to use in your system,
+1920.26s - 1924.26s : depends on many different factors, like the environment,
+1924.26s - 1926.26s : the hardware environment that the system is running in,
+1926.26s - 1928.26s : what the data is you're actually storing.
+1928.26s - 1932.26s : Are they really wide tables that have a lot of columns or a small number of columns?
+1932.26s - 1936.26s : Are they big blobs of data or are they just small integers?
+1936.26s - 1938.26s : And it actually depends on the workload.
+1938.26s - 1941.26s : The workload you expect to run in your database system.
+1941.26s - 1945.26s : So in general, for data systems that are doing read-heavy workloads,
+1945.26s - 1949.26s : and we'll see more of this in a week or two,
+1949.26s - 1953.26s : with these ones, you actually want to store things as larger page sizes
+1953.26s - 1955.26s : because you know you're going to do a lot of sequential scans
+1955.26s - 1958.26s : where you're reading a lot of data that's all contiguous.
+1958.26s - 1961.26s : So for every page I have to read, I'm going to bring in two bools
+1961.26s - 1965.26s : that I know I'm going to want to, that I need for my query.
+1965.26s - 1967.26s : So every fetch for a page.
+1968.26s - 1971.26s : Again, a database page brings in useful data for me.
+1971.26s - 1974.26s : We'll see how we handle that when we switch from a row store to a column store.
+1974.26s - 1977.26s : That's going to be one of the big things that they're going to do.
+1977.26s - 1980.26s : And then for systems that are more write-heavy,
+1980.26s - 1983.26s : meaning like I'm doing a lot of updates to two bools,
+1983.26s - 1986.26s : like updates and deletes and inserts,
+1986.26s - 1991.26s : these ones you typically want a database page in the 416 kilobytes
+1991.26s - 1996.26s : because, again, the non-potential storage is block-addressable.
+1996.26s - 1998.26s : So that means, like, I only have to write,
+1998.26s - 2001.26s : you know, if I'm only writing, updating a single byte within a page,
+2001.26s - 2003.26s : I have to write that whole page out.
+2003.26s - 2005.26s : So if it's a 4 kilobyte page and I don't update a single byte,
+2005.26s - 2008.26s : I still have to write 4 kilobytes out to disk.
+2008.26s - 2011.26s : So I don't want really massively large database pages
+2011.26s - 2013.26s : because I would have to write all of that out.
+2013.26s - 2017.26s : I can't just do, like, sort of finite updates on things.
+2017.26s - 2021.26s : So for this class, we'll start off with this term,
+2021.26s - 2023.26s : 416 kilobytes pages.
+2023.26s - 2026.26s : We'll talk about in lecture six.
+2026.26s - 2028.26s : We'll see then how I log the pages.
+2028.26s - 2031.26s : We'll see how we do read heavy reports.
+2035.26s - 2037.26s : All right, so now there's a bunch of different ways
+2037.26s - 2041.26s : we can manage these pages that are on disk.
+2041.26s - 2043.26s : And, again, they're all going to have different tradeoffs
+2043.26s - 2045.26s : for how we want to do certain things.
+2045.26s - 2049.26s : So the heap file will be the most common one.
+2049.26s - 2052.26s : The basic ones we'll see and we'll assume we're doing that
+2052.26s - 2055.26s : for this lecture and next lecture.
+2055.26s - 2057.26s : We just assume you have a bunch of pages,
+2057.26s - 2059.26s : and you're going to address them and bring them in,
+2059.26s - 2061.26s : and they're not ordered anyway.
+2061.26s - 2063.26s : Another approach would be a tree file organization
+2063.26s - 2068.26s : where we're actually storing the pages in a tree data structure.
+2068.26s - 2070.26s : And as I traverse the tree, I'm bringing in pages
+2070.26s - 2072.26s : as I would need them.
+2072.26s - 2075.26s : We'll talk a little bit about that later on.
+2075.26s - 2077.26s : Again, for this class, we don't need this.
+2077.26s - 2080.26s : Sequential organization or it's called a file organization.
+2080.26s - 2082.26s : It's sometimes called ISAM.
+2082.26s - 2084.26s : This is an older architecture from the 1970s
+2084.26s - 2086.26s : that people really don't do anymore.
+2086.26s - 2089.26s : But it's sort of similar to the tree one.
+2089.26s - 2091.26s : We don't have to worry about this.
+2091.26s - 2093.26s : And then hashing is another variation similar to a heap file
+2093.26s - 2095.26s : where just things aren't ordered.
+2095.26s - 2097.26s : You can jump around into them.
+2097.26s - 2099.26s : So I guess for this lecture, we're going to assume
+2099.26s - 2101.26s : we're doing heap files.
+2101.26s - 2103.26s : And then for the most part, right now,
+2103.26s - 2105.26s : for the next few more slides, we don't have to care
+2105.26s - 2107.26s : about what's inside the pages.
+2107.26s - 2109.26s : And then we'll go into more detail what they look like.
+2109.26s - 2111.26s : For just understanding what the page architecture looks like,
+2111.26s - 2113.26s : it doesn't matter what's inside them.
+2116.26s - 2119.26s : So a heap file is going to be an unordered collection of pages.
+2119.26s - 2123.26s : Because SQL is an unordered, a relational model is unordered,
+2123.26s - 2126.26s : we can store tuples anywhere we want in random order.
+2126.26s - 2128.26s : It's wherever we have free space.
+2128.26s - 2134.26s : And then it exposes a basic API to create that right into the pages
+2134.26s - 2136.26s : because that's the basic operations we need to do
+2136.26s - 2138.26s : at this lowest level in the storage manager.
+2138.26s - 2143.26s : We also need to be able to iterate over all the pages,
+2143.26s - 2145.26s : meaning like give me the page IDs for all the pages.
+2146.26s - 2148.26s : I'm not giving a table or giving an index
+2148.26s - 2150.26s : because we'll need that to be able to do a sequential scan.
+2150.26s - 2153.26s : But when we do looking up things in indexes,
+2153.26s - 2156.26s : we'll see how we get the page ID from an index lookup
+2156.26s - 2158.26s : and then we'll be able to go get that single page.
+2158.26s - 2161.26s : We'll also need to be able to scan across all the pages as well.
+2161.26s - 2166.26s : So for this, this means that we need additional metadata,
+2166.26s - 2169.26s : essentially what we had in the page directory
+2169.26s - 2171.26s : to keep track of the location of these files
+2171.26s - 2174.26s : and also keep track of where do we have free space.
+2174.26s - 2176.26s : Because any time we need a free space,
+2176.26s - 2177.26s : we need to store something.
+2177.26s - 2179.26s : We've got to say where can we put it.
+2179.26s - 2182.26s : And since we're going to assume that we're storing things
+2182.26s - 2185.26s : like 8 kilobytes pages like it is in Postgres,
+2185.26s - 2187.26s : most tuples aren't 8 kilobytes,
+2187.26s - 2191.26s : so we need to make sure that we can fill in free space that we have
+2191.26s - 2196.26s : and our data doesn't balloon to be too big.
+2196.26s - 2199.26s : So here's a basic configuration.
+2199.26s - 2201.26s : We use some of the data as a single file.
+2201.26s - 2205.26s : So assume something says, hey, I want to do page number two.
+2205.26s - 2207.26s : I'm not defining how I'm doing that just yet.
+2207.26s - 2209.26s : There's some part of the system that says give me go page two.
+2209.26s - 2212.26s : I can do basic, just do simple arithmetic to say
+2212.26s - 2214.26s : I know the starting location of my file.
+2214.26s - 2216.26s : I know my page number.
+2216.26s - 2219.26s : I know my page size because I'm assuming all the page sizes
+2219.26s - 2221.26s : are the same on disk.
+2221.26s - 2224.26s : And I just do simple math to be able to say
+2224.26s - 2227.26s : jump to the offset that I want to find that I'm looking for.
+2227.26s - 2233.26s : In cases where the data is broken up across multiple files on disk,
+2233.26s - 2235.26s : right, now we want to get something
+2235.26s - 2237.26s : like page number 23.
+2237.26s - 2240.26s : Again, there's this page directory thing we haven't really defined
+2240.26s - 2243.26s : that's going to have the metadata we need to go find the file
+2243.26s - 2245.26s : that may contain the page.
+2245.26s - 2248.26s : And then once we get in there, we can then do simple math to say
+2248.26s - 2253.26s : for a given page number, what's the given page size,
+2253.26s - 2256.26s : what's the offset I should jump to to find the bytes that I need.
+2256.26s - 2258.26s : That's pretty basic architecture.
+2258.26s - 2260.26s : And again, different data systems, different things,
+2260.26s - 2262.26s : how they implement the page directory.
+2262.26s - 2265.26s : But at a high level, all these systems basically work this way.
+2265.26s - 2272.26s : So a common architecture is to use what's called a page directory,
+2272.26s - 2274.26s : as I sort of talked about before.
+2274.26s - 2278.26s : And this is just like a database within the database that keeps track of
+2278.26s - 2283.26s : here's all my pages that I have for sort of logical database objects.
+2283.26s - 2285.26s : You can break it up across different ways.
+2285.26s - 2288.26s : Like you have your database system that supports multiple databases.
+2288.26s - 2290.26s : You could have a directory for database.
+2290.26s - 2293.26s : You could have a directory for table, for index, or whatever.
+2293.26s - 2295.26s : Different systems will do different things.
+2295.26s - 2299.26s : And the basic idea is that I have a way to say I want to get data
+2299.26s - 2303.26s : from like table X or table Y.
+2303.26s - 2307.26s : Here's the file, here's the directory, here's the location on the network
+2307.26s - 2309.26s : that has this data.
+2309.26s - 2313.26s : And then within that, I can then jump to the offset that I need
+2313.26s - 2317.26s : based on the page directory information about where to find the pages
+2317.26s - 2319.26s : that I'm looking for.
+2319.26s - 2323.26s : Now the tricky thing is going to be is making sure that this page directory
+2323.26s - 2325.26s : is synchronized.
+2325.26s - 2327.26s : So that's going to be the data that I'm going to be able to find
+2327.26s - 2329.26s : on disk with the data pages.
+2329.26s - 2333.26s : Because if we crash and lose this thing, we're kind of screwed because now
+2333.26s - 2335.26s : we don't know where to find anything else.
+2335.26s - 2339.26s : And then if we start allocating new pages for our files,
+2339.26s - 2342.26s : we want our page directory to sort of reflect that.
+2342.26s - 2345.26s : Now the truth is it doesn't actually have to be 100% always synchronized
+2345.26s - 2348.26s : because if you crash and come back and this thing gets trashed,
+2348.26s - 2351.26s : if you have enough metadata in your files, you could actually recreate this.
+2351.26s - 2353.26s : It just makes recovery a lot slower.
+2353.26s - 2357.26s : And a bunch of systems are going to have different ways to do this
+2357.26s - 2359.26s : more efficiently.
+2359.26s - 2365.26s : But in general, this is something you want to keep synchronized if you can,
+2365.26s - 2367.26s : at least in memory, certainly in memory.
+2367.26s - 2371.26s : But on disk, we can kind of be a little bit looser than we would be
+2371.26s - 2373.26s : maybe other data.
+2373.26s - 2376.26s : It's a tradeoff between how fast you want to run at runtime versus how long
+2376.26s - 2379.26s : it takes to recover if there's a crash.
+2379.26s - 2383.26s : So this, we can keep track of additional metadata about the data
+2383.26s - 2387.26s : for every file, how much free space we have on a given page or a given file,
+2387.26s - 2390.26s : what are pages that we have that are completely empty that we can jump to
+2390.26s - 2392.26s : them really quickly.
+2392.26s - 2395.26s : And then keep track of, like, are these pages keeping track of metadata
+2395.26s - 2398.26s : or about a table or index or whatever.
+2398.26s - 2401.26s : Or are they keeping track of, like, actual user data, like for tuples.
+2401.26s - 2405.26s : And the page directory can maintain all this information for us.
+2405.26s - 2407.26s : All right.
+2407.26s - 2410.26s : So that's what things look like on disk.
+2410.26s - 2411.26s : All right.
+2411.26s - 2413.26s : All right.
+2413.26s - 2415.26s : So you can assume that the database is a bunch of files.
+2415.26s - 2417.26s : I broke up the pages.
+2417.26s - 2421.26s : So now let's talk about actually what the pages actually look like on the inside.
+2421.26s - 2428.26s : So the, in general, at a high level, every page is going to have what we'll call
+2428.26s - 2432.26s : the header, where we keep track of metadata about what's inside the page.
+2432.26s - 2435.26s : So obviously, you keep track of things like the page size,
+2435.26s - 2440.26s : check some of the contents of the page, the version of the software that wrote
+2440.26s - 2443.26s : that information, right, so that way if you upgrade the version,
+2443.26s - 2448.26s : change the layout of pages, you know whether this page reflects that new layout or not.
+2448.26s - 2451.26s : There's much information we can maintain about transaction visibility,
+2451.26s - 2456.26s : like what data should be visible to what transactions.
+2456.26s - 2458.26s : For that one, we don't have to worry about this class.
+2458.26s - 2461.26s : We'll cover that again after the midterm.
+2461.26s - 2465.26s : It could have additional information about, like, how the data is actually being compressed,
+2465.26s - 2468.26s : what, you know, what encoding they're using to store things.
+2468.26s - 2471.26s : In some cases, like in Oracle, we had said they had to be self-contained,
+2471.26s - 2473.26s : but actually we've maintained that.
+2473.26s - 2476.26s : So we can look at the table schema in the header of the page as well.
+2476.26s - 2478.26s : So if there's a crash, you can come back and actually just look at the page
+2478.26s - 2480.26s : and say, I know what table this belongs to.
+2480.26s - 2482.26s : Here's how many different templates that are inside of it.
+2482.26s - 2487.26s : Sometimes you'll see also summary information or sketches that keep track of,
+2487.26s - 2492.26s : like, here's the values that I have in my page.
+2492.26s - 2497.26s : So if I don't need to scan the entire page and look for certain pieces of data,
+2497.26s - 2502.26s : like I'm looking for all records that are all to both have the name Andy in it.
+2502.26s - 2507.26s : If I have a summary in my page that keeps track of, like, the number of Andy tuples inside of it,
+2507.26s - 2511.26s : I can just read that and if it's zero, then I know enough to read the rest of the tuples.
+2511.26s - 2513.26s : It's a high-level idea of how the summary stuff works.
+2513.26s - 2517.26s : And you only see that in the read-heavy stuff we'll cover later.
+2517.26s - 2521.26s : The checksum is super important because if you crash, come back and read the page back in,
+2521.26s - 2524.26s : or actually not even crash, just go read a page in.
+2524.26s - 2526.26s : You want to know whether I got corrupted on disk.
+2526.26s - 2528.26s : You can trust the bytes you're reading.
+2528.26s - 2530.26s : The checksum will tell you that.
+2530.26s - 2532.26s : Again, different systems will do different things.
+2532.26s - 2536.26s : And it's the enterprise ones that will have the more safety controls in place
+2536.26s - 2539.26s : to make sure that you're not losing data or corrupting data.
+2539.26s - 2545.26s : Okay, so then now, within the page, we want to figure out how we're actually going to store tuples in it.
+2545.26s - 2548.26s : As I said, at a high level, there's always going to be a header.
+2548.26s - 2551.26s : But then now we want to talk about how we're actually going to put tuples inside the page.
+2551.26s - 2553.26s : We'll put data inside the pages.
+2553.26s - 2557.26s : Assume we're doing tuples. We won't worry about indexes for now.
+2557.26s - 2560.26s : That'll come later.
+2560.26s - 2564.26s : We're also going to assume that we're doing what's called a row-oriented storage model,
+2564.26s - 2569.26s : meaning we're going to organize each record or each tuple as a row
+2569.26s - 2572.26s : where all the data is being stored continuously inside the page.
+2572.26s - 2578.26s : And that means also we're going to assume that each tuple has to fit inside a single page.
+2578.26s - 2580.26s : We'll see how we handle larger values in a second.
+2580.26s - 2583.26s : But for our purposes here in this discussion right now,
+2583.26s - 2588.26s : we'll just assume that every tuple is continuously stored within a single page.
+2588.26s - 2590.26s : So there's actually...
+2590.26s - 2596.26s : There's actually three ways to do this, to organize data into pages.
+2596.26s - 2601.26s : So for this class here today, we're going to assume we're doing tuple-oriented storage.
+2601.26s - 2605.26s : The entire tuple is stored in its entirety in a page.
+2605.26s - 2612.26s : But there's actually two of the methods we'll cover next week, next Wednesday,
+2612.26s - 2615.26s : called log structure and index storage,
+2615.26s - 2619.26s : where we're actually going to store not the tuple,
+2619.26s - 2623.26s : but we're actually going to store the...
+2623.26s - 2626.26s : basically the delta of the tuple when things get changed.
+2626.26s - 2629.26s : And then after this, we'll end up having multiple copies of the tuple
+2629.26s - 2631.26s : if it gets updated multiple times.
+2631.26s - 2634.26s : And that'll make more sense when we talk about it later on.
+2634.26s - 2638.26s : And index organized storage is basically storing, as I said, the data as a tree structure.
+2638.26s - 2640.26s : But we'll come to that later.
+2640.26s - 2643.26s : For our purposes here, we're assuming that there's only one copy of a single tuple,
+2643.26s - 2647.26s : and it's going to be stored in a page in its entirety continuously.
+2649.26s - 2652.26s : Okay, so if we wanted to start doing this,
+2652.26s - 2655.26s : how should we keep track of the tuples in a page?
+2655.26s - 2658.26s : Well, we could just do something really simple.
+2658.26s - 2663.26s : We could just say, alright, I'm assuming that the tuples are all the same length,
+2663.26s - 2669.26s : and then I'm just going to append the tuples to the first relocation that I have in the page,
+2669.26s - 2671.26s : and I just have my header, and just keep track of the number of tuples that I have.
+2671.26s - 2676.26s : So I can do simple math to say, what offset do I jump on the page to find the data that I want?
+2676.26s - 2679.26s : So every time I start a new tuple, I'm going to do this.
+2679.26s - 2682.26s : So it's appending it on one after another in a page like this.
+2682.26s - 2686.26s : So now if I delete a tuple, well, that comes in more tricky, right?
+2686.26s - 2691.26s : So if I delete tuple 2, now I have the number of tuples equals to 2,
+2691.26s - 2697.26s : so I can't just jump to the end anymore, because I need to make sure I don't overwrite tuple 3.
+2697.26s - 2701.26s : So maybe I can just do a quick scan and try to find the first free slot,
+2701.26s - 2703.26s : and then put my tuple that way.
+2703.26s - 2706.26s : But then this starts to get kind of expensive.
+2706.26s - 2708.26s : If I want to do this, I can just do this.
+2708.26s - 2711.26s : If I have to scan every single time.
+2711.26s - 2713.26s : And furthermore, I can't do any compaction now,
+2713.26s - 2719.26s : because if I move tuple 3 back to where tuple 2's slot was,
+2719.26s - 2723.26s : or location was in the page, then I have to update a bunch of other metadata,
+2723.26s - 2728.26s : or index data structures, because now the physical address of tuple 3
+2728.26s - 2732.26s : would have changed in my page.
+2732.26s - 2735.26s : But then also, this doesn't work either if I have variable link data,
+2735.26s - 2737.26s : because now I may have a bunch of free space that I can't actually use,
+2737.26s - 2739.26s : to insert the new tuple that I need,
+2739.26s - 2741.26s : or I'd have to start moving things around,
+2741.26s - 2743.26s : and again pay that penalty of updating indexes,
+2743.26s - 2746.26s : or updating other parts of the database system.
+2748.26s - 2752.26s : So to overcome this problem, I'm going to use a technique called slotted pages.
+2752.26s - 2755.26s : And so what I'm describing here is basically at a high level
+2755.26s - 2760.26s : how any row storage or tube-oriented system is going to do this.
+2760.26s - 2763.26s : The exact details of what the metadata is storing,
+2763.26s - 2767.26s : or whether the slot is in the beginning or the end, it varies per system.
+2767.26s - 2770.26s : But at a high level, this is basically how they work.
+2770.26s - 2774.26s : So what's going to happen is that we're going to have the...
+2774.26s - 2776.26s : At the beginning of the page, we always have a header,
+2776.26s - 2778.26s : because it tells us the metadata that was inside the page,
+2778.26s - 2780.26s : like a checksum and so forth.
+2780.26s - 2783.26s : But then I'm going to have this slot array,
+2783.26s - 2789.26s : and it's going to be a fixed length array that keeps track of an offset
+2789.26s - 2793.26s : within the page for a tuple at a given slot.
+2793.26s - 2796.26s : And at the bottom of the page,
+2796.26s - 2799.26s : that's where I'm going to store all my data.
+2799.26s - 2802.26s : So this is going to be any fixed length of relevant data for the tuple,
+2802.26s - 2805.26s : or my tuples, they're going to be at the bottom.
+2805.26s - 2809.26s : And so the slot array basically is giving us pointers
+2809.26s - 2812.26s : or locations or offsets within the page.
+2812.26s - 2814.26s : Like if it's 4 kilobytes offsets,
+2814.26s - 2818.26s : then the sort of 4 kilobytes pages, the offsets aren't going to be that big.
+2818.26s - 2822.26s : And it's going to tell me for a given tuple defined by a slot,
+2822.26s - 2825.26s : here's the offset within that page to go find it.
+2826.26s - 2828.26s : So as I want to add more tuples,
+2828.26s - 2830.26s : the slot array is going to grow this way,
+2830.26s - 2832.26s : and then the tuple data is going to grow the other way.
+2832.26s - 2834.26s : At some point you reach in the middle,
+2834.26s - 2836.26s : where there's no more free space,
+2836.26s - 2838.26s : and then the page is considered full.
+2838.26s - 2840.26s : Now, is it guaranteed to be 100% full,
+2840.26s - 2842.26s : full occupancy of data? No.
+2842.26s - 2845.26s : Because the very well linked data down below might have,
+2845.26s - 2847.26s : you know, might not fit exactly,
+2847.26s - 2850.26s : align exactly within the page and have,
+2850.26s - 2852.26s : you know, use all the data.
+2852.26s - 2854.26s : But in general, this works good enough.
+2854.26s - 2856.26s : And the advantage of this approach is that,
+2856.26s - 2860.26s : now if I delete like a tuple,
+2860.26s - 2862.26s : if I delete like say tuple 3 here,
+2862.26s - 2866.26s : I can either leave tuple 4 where it is by itself,
+2866.26s - 2869.26s : and then hopefully another tuple that comes along gets inserted,
+2869.26s - 2871.26s : could fill in that space.
+2871.26s - 2875.26s : Or actually I can then move tuple 4 to be the end of this page,
+2875.26s - 2878.26s : or is that the end where tuple 2 ends,
+2878.26s - 2881.26s : and then all I need to do is update the slot array,
+2881.26s - 2884.26s : to say the location of tuple 4 within the slot array,
+2884.26s - 2886.26s : is now at the end of this page.
+2886.26s - 2888.26s : So I can do this offset.
+2888.26s - 2890.26s : And what I get is an indirection,
+2890.26s - 2894.26s : that allows me to change the location of a tuple within the page,
+2894.26s - 2897.26s : without having to go update other parts of the system.
+2897.26s - 2899.26s : So I don't have to go update indexes,
+2899.26s - 2901.26s : I don't have to go tell them,
+2901.26s - 2903.26s : you know, here's the location of tuple 4 has changed.
+2903.26s - 2907.26s : So the blast radius of the modification I do from this compaction,
+2907.26s - 2910.26s : is just limited to this single page.
+2910.26s - 2913.26s : Ticket number 165.
+2913.26s - 2915.26s : Please go to position 2.
+2916.26s - 2918.26s : And as I said before also too,
+2918.26s - 2926.26s : that the cost of bringing things into disk is very expensive,
+2926.26s - 2928.26s : versus the cost of bringing things into memory.
+2928.26s - 2931.26s : So once I bring the page into memory,
+2931.26s - 2935.26s : I can change around the contents of this page,
+2935.26s - 2938.26s : doing the compaction or not doing the compaction,
+2938.26s - 2943.26s : and that's cheap relative to having to remove data from disk all over again.
+2943.26s - 2945.26s : So once it's in memory, I'm pretty much free to do whatever I want.
+2945.26s - 2947.26s : To reorganize this page.
+2947.26s - 2950.26s : Some systems like Postgres won't do it,
+2950.26s - 2952.26s : some systems like SQL Server will do it.
+2952.26s - 2954.26s : Like every time you update a tuple.
+2954.26s - 2957.26s : But having this in-directional layer,
+2957.26s - 2959.26s : having this in-directional layer makes a big difference for us,
+2959.26s - 2961.26s : because we can change things,
+2961.26s - 2963.26s : change the location of tuples in the page,
+2963.26s - 2967.26s : and not worry about updating indexes and other things.
+2967.26s - 2970.26s : Alright, so the other cool thing is that,
+2970.26s - 2973.26s : or not cool thing,
+2973.26s - 2974.26s : it's all cool, it's databases.
+2974.26s - 2977.26s : So another thing we want to talk about is
+2977.26s - 2984.26s : how we're going to identify each logical tuple with a physical location.
+2984.26s - 2986.26s : For this we're going to use what we call record IDs.
+2986.26s - 2990.26s : Some systems will call them tuple IDs or page IDs,
+2990.26s - 2992.26s : or sorry not page IDs,
+2992.26s - 2995.26s : tuple IDs, record IDs, or row IDs.
+2995.26s - 2997.26s : Essentially the ID is all the same thing,
+2997.26s - 3001.26s : but it's a unique identifier for a logical tuple
+3001.26s - 3002.26s : that gives the,
+3002.26s - 3004.26s : that stores the information,
+3004.26s - 3006.26s : that represents its physical location,
+3006.26s - 3009.26s : or represents its physical location within the database.
+3009.26s - 3011.26s : So an example would be like,
+3011.26s - 3013.26s : record ID could say like,
+3013.26s - 3015.26s : here's the file ID and the page ID,
+3015.26s - 3017.26s : and then the slot number within that page.
+3017.26s - 3020.26s : And then in other parts of the system,
+3020.26s - 3022.26s : if I want to be unique,
+3022.26s - 3024.26s : I want to be able to say what's the index pointing to,
+3024.26s - 3026.26s : what's the record ID or the address I'm pointing to,
+3026.26s - 3029.26s : you would represent that through this record ID.
+3029.26s - 3032.26s : Now most systems don't store this.
+3032.26s - 3037.26s : Instead it's derived at runtime based on,
+3037.26s - 3039.26s : as you read the data.
+3039.26s - 3043.26s : So looking at a bunch of different implementations,
+3043.26s - 3046.26s : Ingress has a tuple ID, it's four bytes,
+3046.26s - 3049.26s : Postgres has a CT ID, it's six bytes,
+3049.26s - 3051.26s : and it's going to be page ID and slot number.
+3051.26s - 3054.26s : For these systems, they don't actually store this.
+3054.26s - 3058.26s : But you can uniquely address tuples based on it.
+3058.26s - 3060.26s : The slide that I'm going to show you,
+3060.26s - 3064.26s : the SQLite is an interesting one for its row ID,
+3064.26s - 3067.26s : because it does actually store it for you.
+3067.26s - 3072.26s : And no matter what you declare as the primary key,
+3072.26s - 3074.26s : that we call create table,
+3074.26s - 3077.26s : it's going to use the row ID as the primary key,
+3077.26s - 3080.26s : to give like a monotonically increasing value.
+3080.26s - 3084.26s : And it uses that because that guarantees that
+3084.26s - 3087.26s : you can uniquely identify any given record,
+3087.26s - 3089.26s : even if you don't provide it,
+3089.26s - 3091.26s : even if you don't provide a primary key,
+3091.26s - 3093.26s : when you create the table.
+3093.26s - 3096.26s : Now it's important to understand that
+3096.26s - 3099.26s : this is something that will be exposed to you
+3099.26s - 3101.26s : through a database interface.
+3101.26s - 3105.26s : Hopefully, maybe I can do a demo.
+3105.26s - 3107.26s : I want to go back and come back to this
+3107.26s - 3109.26s : and cut some of the video here.
+3109.26s - 3111.26s : But you'll be able to see this through SQL,
+3111.26s - 3115.26s : and sometimes you can address the records through this.
+3115.26s - 3118.26s : But it's not actually something you would want to rely on
+3118.26s - 3119.26s : the application for.
+3119.26s - 3123.26s : Because these IDs can change for a logical tuple
+3123.26s - 3126.26s : based on how the database starts moving data around.
+3126.26s - 3129.26s : So you could do compaction
+3129.26s - 3132.26s : and change the physical location of data.
+3132.26s - 3135.26s : It's still correct because at a logical level,
+3135.26s - 3138.26s : since SQL and relational model is unordered,
+3138.26s - 3140.26s : I can change the ordering of tuples,
+3140.26s - 3142.26s : and everything's still correct.
+3142.26s - 3144.26s : The record ID may change,
+3144.26s - 3146.26s : but again, I should never have relied on that
+3146.26s - 3148.26s : in my application code.
+3149.26s - 3152.26s : So I'm going to go back and look at this.
+3152.26s - 3154.26s : All right, so we know what files look like.
+3154.26s - 3156.26s : We know what pages look like.
+3156.26s - 3158.26s : Let's go deeper inside the pages
+3158.26s - 3161.26s : and talk about what the tuples actually look like.
+3161.26s - 3164.26s : So at its core, a tuple is just a bunch of bytes.
+3164.26s - 3167.26s : It's a byte array that have a header in front of it.
+3167.26s - 3169.26s : Just like a page has a header,
+3169.26s - 3171.26s : tuples are going to have a header too
+3171.26s - 3175.26s : that contain metadata about what's in the tuple itself.
+3175.26s - 3178.26s : Now, it typically doesn't contain metadata
+3178.26s - 3179.26s : about what the schema is
+3179.26s - 3181.26s : because that's done at the page level,
+3181.26s - 3183.26s : and this is why you don't mix data within a page
+3183.26s - 3185.26s : because you don't want to redundantly store
+3185.26s - 3187.26s : the same schema of information over and over again
+3187.26s - 3189.26s : for every single tuple in that page.
+3189.26s - 3191.26s : Page header just has that for you.
+3191.26s - 3193.26s : But this will have information about, like,
+3193.26s - 3198.26s : a bitmap of what columns are null,
+3198.26s - 3203.26s : information about what transactions can see the data
+3203.26s - 3206.26s : or whether they can see that tuple or not.
+3206.26s - 3208.26s : For that purpose, we don't need to worry about that.
+3208.26s - 3215.26s : But then the data system is going to maintain a catalog
+3215.26s - 3217.26s : that keeps track of the schema for every single page,
+3217.26s - 3219.26s : sorry, every single tuple or table,
+3219.26s - 3223.26s : so that when you go read a page for a given table,
+3223.26s - 3225.26s : you know how to then interpret the bytes
+3225.26s - 3228.26s : within these byte arrays for the tuple
+3228.26s - 3230.26s : to say what the data actually contains.
+3232.26s - 3234.26s : So as I said, the header is going to contain
+3234.26s - 3236.26s : basic information like visibility,
+3236.26s - 3238.26s : like what transactions created at what time,
+3238.26s - 3240.26s : this data and so forth.
+3240.26s - 3242.26s : It'll have a bitmap for null values.
+3242.26s - 3246.26s : Then everything else of that is just the attribute data.
+3246.26s - 3250.26s : So typically, the attributes for a tuple
+3250.26s - 3253.26s : are going to be stored in the order that you apply them.
+3253.26s - 3256.26s : We'll see some ways...
+3256.26s - 3258.26s : There are some...
+3258.26s - 3260.26s : You could reorganize them
+3260.26s - 3262.26s : to ensure things are aligned correctly,
+3262.26s - 3264.26s : but most systems don't do that.
+3264.26s - 3266.26s : Instead, they're going to rely on padding
+3266.26s - 3268.26s : to make sure things that are correctly aligned
+3268.26s - 3271.26s : are aligned across typically 64-bit values.
+3271.26s - 3274.26s : So let's say we have a simple example here.
+3274.26s - 3276.26s : We have a table foo,
+3276.26s - 3278.26s : and it has five columns,
+3278.26s - 3281.26s : three integers, followed by a double prior float.
+3281.26s - 3283.26s : Again, it literally is the byte array for a tuple
+3283.26s - 3285.26s : which is going to be stored in the order
+3285.26s - 3287.26s : in which it's defined by the create table statement.
+3287.26s - 3289.26s : So now the challenge is going to be
+3289.26s - 3291.26s : is when you have things, again,
+3291.26s - 3293.26s : that span these boundaries,
+3293.26s - 3295.26s : and you need to be clever at how you're going to handle it.
+3295.26s - 3297.26s : So for this example here, it's pretty simple.
+3297.26s - 3299.26s : I have an ID, 32 bits.
+3299.26s - 3302.26s : I have a value that's a big int, that's 64 bits.
+3302.26s - 3305.26s : Assuming the header is 32 bits.
+3305.26s - 3311.26s : This will fit nicely within a 128-bit sequence of bytes.
+3311.26s - 3315.26s : So again, if I want to jump now to get this attribute,
+3315.26s - 3317.26s : I just look at the...
+3317.26s - 3319.26s : I get my offset to the tuple
+3319.26s - 3321.26s : by looking at the slot array in the page,
+3321.26s - 3323.26s : and then I just do some arithmetic,
+3323.26s - 3325.26s : jump over the header,
+3325.26s - 3327.26s : and then jump to this location
+3327.26s - 3330.26s : to find the attribute that I want.
+3330.26s - 3332.26s : And then I basically do the equivalent
+3332.26s - 3335.26s : of the interpret cast in C++
+3335.26s - 3338.26s : to then convert the address that I'm looking at
+3338.26s - 3341.26s : to be a third-dubit integer.
+3341.26s - 3343.26s : This is something that's done at runtime.
+3343.26s - 3345.26s : This is actually a compiler directive.
+3345.26s - 3347.26s : There's no computation done here.
+3347.26s - 3350.26s : It's just ensuring that any code
+3350.26s - 3352.26s : that comes after this interpretation
+3352.26s - 3354.26s : of this casting here is going to operate
+3354.26s - 3356.26s : on a third-dubit...
+3356.26s - 3359.26s : third-dubit signed integer.
+3359.26s - 3361.26s : So now the tricky thing is going to be
+3361.26s - 3363.26s : is when you have data that doesn't fit
+3363.26s - 3367.26s : nicely into these sort of word boundaries, right?
+3367.26s - 3369.26s : For simplicity, we'll assume it's 64-bit words.
+3369.26s - 3371.26s : So the challenge is going to be
+3371.26s - 3373.26s : the table might have smaller types
+3373.26s - 3376.26s : or larger types that might go across these boundaries,
+3376.26s - 3378.26s : and we have problems, right?
+3378.26s - 3380.26s : So this 32-bit integer here fits nicely
+3380.26s - 3382.26s : in the first half of the 64-bit word,
+3382.26s - 3385.26s : but now I have a 64-bit date or timestamp here.
+3385.26s - 3388.26s : And that's going to span two words.
+3388.26s - 3391.26s : And likewise, I have now a two-byte character,
+3391.26s - 3393.26s : one that's just 16 bits,
+3393.26s - 3396.26s : and then a zip code like this, right?
+3396.26s - 3401.26s : So if I have things nicely, you know, exactly aligned,
+3401.26s - 3403.26s : I'm going to have this problem where now
+3403.26s - 3406.26s : I try to go access something like the...
+3406.26s - 3409.26s : like the date here, the timestamp.
+3409.26s - 3412.26s : I've got to go fetch two 64-bit words,
+3412.26s - 3414.26s : go read that in,
+3414.26s - 3417.26s : and some compiler might complain,
+3417.26s - 3419.26s : or the CPU might freak out,
+3419.26s - 3421.26s : depending on what architecture I'm running on,
+3421.26s - 3423.26s : and this becomes problematic.
+3423.26s - 3425.26s : So an easy way to get around this is just to pad
+3425.26s - 3427.26s : and make sure that everything's always byte-aligned.
+3427.26s - 3429.26s : So it's wasting space, but it does...
+3429.26s - 3431.26s : ensures that I don't have these problems
+3431.26s - 3433.26s : that I talked about before.
+3433.26s - 3436.26s : So the first case of the integer is...
+3436.26s - 3438.26s : for the ID is 32 bits.
+3438.26s - 3441.26s : So I just put another 32 bits of zeros that come after it.
+3441.26s - 3443.26s : The date simply knows that any time it has access,
+3444.26s - 3446.26s : the data, I only need the first 32 bits,
+3446.26s - 3449.26s : and it just ignores what comes after that.
+3449.26s - 3451.26s : But this ensures now when I do a lookup on the date,
+3451.26s - 3453.26s : I'm jumping to the right location,
+3453.26s - 3456.26s : and it fits nicely within my word.
+3456.26s - 3459.26s : Another approach, you could do this...
+3459.26s - 3461.26s : I've only seen this in the research literature.
+3461.26s - 3463.26s : I don't think any system actually does this.
+3463.26s - 3466.26s : It's just to reorder things so that they're nicely packed in.
+3466.26s - 3469.26s : Right? So if I just move the columns around like this,
+3469.26s - 3471.26s : or the entries around like this,
+3471.26s - 3473.26s : then I land with a nice alignment that I would want.
+3473.26s - 3476.26s : Now logically, it still is defined in the order
+3476.26s - 3478.26s : when they call create table,
+3478.26s - 3480.26s : but physically, the bits are moved around,
+3480.26s - 3485.26s : and then it just knows how to do that reinterpretation
+3485.26s - 3488.26s : at the right location to get the data that it may need.
+3488.26s - 3490.26s : Like I said, you could do this.
+3490.26s - 3492.26s : I don't know if any system actually does it.
+3492.26s - 3495.26s : At least I haven't come across any that do this.
+3495.26s - 3499.26s : Then I make sure that the next tuple comes afterwards.
+3499.26s - 3501.26s : It's nicely aligned.
+3501.26s - 3503.26s : We just put padding after the last one.
+3503.26s - 3505.26s : We still have to make some space,
+3505.26s - 3509.26s : but that's why I said most systems don't actually do this.
+3511.26s - 3513.26s : Now what do the attributes look like?
+3513.26s - 3520.26s : For the basic data types like ints, floats, strings, and timestamps,
+3520.26s - 3525.26s : this is roughly how the system is actually implemented.
+3525.26s - 3529.26s : There could be some variation based on the hardware,
+3529.26s - 3531.26s : which you're actually running on, but in general, this is what you would do.
+3531.26s - 3535.26s : For a 32-bit integer or a big 64-bit integer,
+3535.26s - 3539.26s : the same way you would represent things in C++ or C,
+3539.26s - 3541.26s : this is what you would get in your system,
+3541.26s - 3543.26s : and that's going to be hardware.
+3543.26s - 3550.26s : In general, that would be the same across hardware.
+3550.26s - 3552.26s : You do have to worry about NDNS,
+3552.26s - 3556.26s : but for our purposes, we'll assume it's x86.
+3556.26s - 3558.26s : We're not going to worry about that problem.
+3558.26s - 3561.26s : SQLite, we talked a little about this.
+3561.26s - 3563.26s : SQLite's actually going to store everything as strings,
+3563.26s - 3565.26s : and then it interprets it at runtime,
+3565.26s - 3568.26s : so that way if you run on a little NDN or big NDN system,
+3568.26s - 3570.26s : it always comes out to be correct,
+3570.26s - 3573.26s : but most systems do not do that.
+3573.26s - 3576.26s : They do a little extra work to keep track of what is the NDNS
+3576.26s - 3579.26s : when they store things so that if you come back up,
+3579.26s - 3583.26s : if you copy your database to another machine that flips things around,
+3583.26s - 3586.26s : you end up with the data as you'd expect.
+3586.26s - 3589.26s : But for now, we can ignore that.
+3589.26s - 3591.26s : For floats and reels,
+3591.26s - 3593.26s : for floatable numbers,
+3593.26s - 3597.26s : this will follow what's called the IEEE 784 standard.
+3597.26s - 3601.26s : Again, this is a hardware spec that says how these floatable numbers
+3601.26s - 3603.26s : should be represented in hardware,
+3603.26s - 3605.26s : and again, most systems follow that.
+3605.26s - 3607.26s : Numerics and decimals or fixed-point decimals,
+3607.26s - 3610.26s : these are going to be database-specific.
+3610.26s - 3612.26s : We'll see what they look like in a second.
+3612.26s - 3617.26s : For text strings, either VARCHAR, VARBINARY, text or blobs,
+3617.26s - 3621.26s : you either have things be inlined within the tuple itself,
+3621.26s - 3626.26s : so it'll be the length of the attribute followed by the actual bytes,
+3626.26s - 3630.26s : or there'll be a pointer to another location or another page
+3630.26s - 3633.26s : that'll have that data that you can follow along.
+3633.26s - 3636.26s : We'll see what that looks like in a second.
+3636.26s - 3639.26s : If the VARCHARs are small enough, you'll store them inline.
+3639.26s - 3643.26s : If they get too big, then you store them in overflow pages.
+3643.26s - 3647.26s : We're not going to talk about this class, collation sorting,
+3647.26s - 3649.26s : but you do have to be super careful about...
+3649.26s - 3653.26s : for text strings, about who's actually deciding
+3653.26s - 3657.26s : the right way to lexicographically store data.
+3657.26s - 3661.26s : For different languages, it has different orderings.
+3661.26s - 3664.26s : Data systems don't worry about that, but for our purposes here,
+3664.26s - 3667.26s : at this lowest level for these bytes, we're not worried about that.
+3667.26s - 3669.26s : We'll talk about that later when it comes to sorting,
+3669.26s - 3672.26s : but it's something we need to be mindful of.
+3672.26s - 3674.26s : And most things, by default, in a system,
+3674.26s - 3676.26s : most other things are ASCII.
+3676.26s - 3679.26s : You don't have to worry about Unicode or UTF-8 or UTF-16.
+3679.26s - 3681.26s : You can store things as that as well.
+3681.26s - 3687.26s : It's gotten more tricky in recent years or the last 20 years.
+3687.26s - 3690.26s : And you can be mindful that people might be storing things
+3690.26s - 3693.26s : that aren't English characters.
+3693.26s - 3696.26s : And then timestamps and dates.
+3696.26s - 3700.26s : Oftentimes internally, you would represent these things
+3700.26s - 3704.26s : as just the number of microseconds or milliseconds
+3704.26s - 3706.26s : since the Unix epoch.
+3706.26s - 3709.26s : Sometimes some systems have their own internal dates,
+3709.26s - 3711.26s : date format or timestamp format,
+3711.26s - 3713.26s : and then keep track of time zones or not.
+3713.26s - 3716.26s : This varies per system.
+3716.26s - 3718.26s : But the one I want to spend a little time talking about
+3718.26s - 3721.26s : is the difference between floating reels and numerics
+3721.26s - 3725.26s : because this is a good example where the database systems
+3725.26s - 3727.26s : are going to do a bunch of extra stuff to make sure your data
+3727.26s - 3729.26s : is actually stored correctly in the way that you expect,
+3729.26s - 3732.26s : even though it may not be the fastest way to do this
+3732.26s - 3734.26s : because the hardware can do things much faster than we can,
+3734.26s - 3738.26s : but we can guarantee that we don't have any loss of data
+3738.26s - 3741.26s : or loss of precision in what we're storing.
+3741.26s - 3746.26s : So for variable precision numbers,
+3746.26s - 3749.26s : this would be what we call the floating point numbers.
+3749.26s - 3753.26s : So these are using the native data types you would have
+3753.26s - 3757.26s : in C++ that you call float or you call double.
+3757.26s - 3759.26s : And that's in the code.
+3759.26s - 3762.26s : That's defined by the IEEE 74 standard.
+3762.26s - 3765.26s : This is what most architectures are actually going to implement.
+3765.26s - 3767.26s : And then because they're also going to have
+3767.26s - 3771.26s : specific instructions that can operate on these data
+3771.26s - 3773.26s : that is really, really fast,
+3773.26s - 3775.26s : but the problem is going to be that, again,
+3775.26s - 3779.26s : they can't guarantee that they can store exact values.
+3779.26s - 3781.26s : So the example I always like to give is something like this.
+3781.26s - 3783.26s : You have some simple C code,
+3783.26s - 3785.26s : and you want to store two floating point numbers,
+3785.26s - 3789.26s : x and y, 0.1 and 0.2.
+3789.26s - 3791.26s : And so if I run this code here,
+3791.26s - 3793.26s : you get output that looks like this.
+3793.26s - 3795.26s : It looks like as I would expect, right?
+3795.26s - 3797.26s : That I can store x plus y.
+3797.26s - 3799.26s : So I can get 0.3, followed by a bunch of zeros.
+3799.26s - 3803.26s : Same with just storing 0.3 by writing out 0.3 by itself.
+3803.26s - 3807.26s : But if I change the precision of the,
+3807.26s - 3810.26s : basically the number of decimal,
+3810.26s - 3812.26s : the address I want at the decimal point,
+3812.26s - 3813.26s : like this,
+3813.26s - 3816.26s : now you see you actually get wildly different numbers.
+3816.26s - 3819.26s : And neither one is exactly 0.3.
+3819.26s - 3822.26s : And this is because the way the hardware is going to store
+3822.26s - 3825.26s : these floating point numbers is using variable precision,
+3825.26s - 3827.26s : and it can't exactly store
+3827.26s - 3830.26s : certain decimal values like 0.3, right?
+3830.26s - 3832.26s : So even though, you know, with a higher,
+3832.26s - 3834.26s : with a less precision in my output,
+3834.26s - 3836.26s : it looks like it's the same,
+3836.26s - 3838.26s : but in actuality, the actual bits in the hardware
+3838.26s - 3840.26s : are not the same.
+3840.26s - 3842.26s : And if I, so now if I write this out to disk,
+3842.26s - 3844.26s : and I read it back in,
+3844.26s - 3846.26s : and based on what calculation I'm trying to do,
+3846.26s - 3848.26s : I may end up with incorrect results,
+3848.26s - 3850.26s : or unexpected results.
+3850.26s - 3852.26s : And this is why data systems will maintain
+3852.26s - 3854.26s : what are called fixed precision numbers,
+3854.26s - 3857.26s : where the data systems will basically keep track of
+3857.26s - 3860.26s : the, the, where the decimal point is,
+3860.26s - 3863.26s : and the scale, and other metadata
+3863.26s - 3865.26s : about every single number that it's going to store.
+3865.26s - 3868.26s : And then now I would store maybe like a string representation
+3868.26s - 3871.26s : of the, of the, of the decimal.
+3871.26s - 3874.26s : And then I know, I use that extra metadata I'm storing
+3874.26s - 3877.26s : to be able to interpret the,
+3877.26s - 3880.26s : what the byte array actually means
+3880.26s - 3883.26s : to guarantee that any calculation I do,
+3883.26s - 3886.26s : I get the expected precision I would want on results.
+3887.26s - 3889.26s : Right, this is because sometimes it's called fixed point decimals,
+3889.26s - 3891.26s : right, basically the same idea.
+3891.26s - 3892.26s : Like, where I'm doing decimal points,
+3892.26s - 3893.26s : but I'm managing this everything
+3893.26s - 3894.26s : inside the data system myself,
+3894.26s - 3896.26s : because, you know, we can get guaranteed
+3896.26s - 3899.26s : that we end up with, with correct values.
+3899.26s - 3902.26s : So this is super important in things like,
+3902.26s - 3903.26s : sort of like banking,
+3903.26s - 3904.26s : time of computing interest,
+3904.26s - 3906.26s : you don't want rounding errors.
+3906.26s - 3907.26s : Anything with like scientific instruments,
+3907.26s - 3909.26s : you don't want rounding errors,
+3909.26s - 3911.26s : especially if you're like sending a rocket
+3911.26s - 3912.26s : to the moon or something, right?
+3912.26s - 3914.26s : So this is why we want to be able to do this,
+3914.26s - 3916.26s : and it's not, you know, they don't take it lightly,
+3916.26s - 3918.26s : or it's not trivial to actually implement these things,
+3918.26s - 3919.26s : to guarantee the correctness
+3919.26s - 3922.26s : under all possible circumstances.
+3922.26s - 3924.26s : So the example I always like to show
+3924.26s - 3925.26s : is actually Postgres' implementation
+3925.26s - 3927.26s : of their fixed point decimals.
+3927.26s - 3929.26s : They have a data type called numeric.
+3929.26s - 3931.26s : And if you actually go look in the Postgres code,
+3931.26s - 3933.26s : this is essentially what it looks like, right?
+3933.26s - 3936.26s : That you, you have this struct here,
+3936.26s - 3941.26s : and it has a bunch of metadata about what the,
+3941.26s - 3945.26s : what's going to be in a fixed point decimal,
+3945.26s - 3946.26s : and then, you know,
+3946.26s - 3948.26s : at its core, the decimal,
+3948.26s - 3952.26s : the value itself is being stored as a byte array,
+3952.26s - 3954.26s : and then all this additional metadata is then being used
+3954.26s - 3958.26s : to interpret that byte array to generate the answer,
+3958.26s - 3964.26s : you know, to convert it back into its correct form
+3964.26s - 3968.26s : that guarantees the exact value that you expect.
+3968.26s - 3970.26s : And of course, now this means that when we want to do
+3970.26s - 3973.26s : simple things like add two numerics together, right,
+3973.26s - 3976.26s : it's not just, you know, calling number plus number,
+3976.26s - 3978.26s : but it's also calling number plus number, right?
+3978.26s - 3980.26s : So we have to implement all this stuff ourselves.
+3980.26s - 3983.26s : So this is the code from a Postgres a few years ago,
+3983.26s - 3986.26s : but basically it's the same in the newer versions,
+3986.26s - 3987.26s : to add two numerics.
+3987.26s - 3989.26s : And you can see here there's a bunch of if-then-elses
+3989.26s - 3991.26s : where we're checking to see is the number positive,
+3991.26s - 3995.26s : is it negative, is it infinity, is it not a number, right?
+3995.26s - 3997.26s : And this is all code just to add two numbers together,
+3997.26s - 4000.26s : and certainly this would be way more expensive to compute
+4000.26s - 4003.26s : than just, again, calling the simple addition instruction
+4003.26s - 4005.26s : on two data registers.
+4005.26s - 4007.26s : This is something that, like, you have to run all this code,
+4007.26s - 4013.26s : but this will guarantee that the value you would get
+4013.26s - 4015.26s : is what you would expect, right?
+4017.26s - 4019.26s : All right, so the other thing we have to be mindful of
+4019.26s - 4021.26s : is how we're going to handle nulls.
+4021.26s - 4024.26s : So there's basically three approaches, and as I said,
+4024.26s - 4029.26s : the most common one would be in the header of every tuple,
+4029.26s - 4033.26s : you have a bitmap that keeps track of what values you have
+4033.26s - 4035.26s : within that tuple.
+4035.26s - 4038.26s : So you can store the values within that tuple,
+4038.26s - 4040.26s : whether they're null or not.
+4040.26s - 4043.26s : And typically, you would just store this bitmap to be the same size
+4043.26s - 4046.26s : of the number of entries that you have, regardless of whether columns
+4046.26s - 4047.26s : would be null or not.
+4047.26s - 4052.26s : It's not worth the overhead of checking that as you're interpreting bytes.
+4052.26s - 4055.26s : But this is the most common approach people use.
+4055.26s - 4059.26s : One that's more rare is to do special values.
+4059.26s - 4062.26s : You basically say within the domain or the range of values
+4062.26s - 4065.26s : you could have for a given data type, you designate one of them
+4065.26s - 4066.26s : and then you would store it.
+4066.26s - 4068.26s : But what you would do is you would start sorting things
+4068.26s - 4071.26s : as storing 32-bit integers and certain 32-bit signed integers.
+4071.26s - 4075.26s : You would say that the smallest value you could have represented by the
+4075.26s - 4081.26s : N32 min, you'd say that value is considered null.
+4081.26s - 4084.26s : And so you'd prevent anybody from inserting that value,
+4084.26s - 4086.26s : and of course this means you have one less possible value
+4086.26s - 4088.26s : you could have in your domain, but now you don't need to store
+4088.26s - 4091.26s : that header per tuple.
+4091.26s - 4093.26s : So this would be more common with column stores,
+4093.26s - 4095.26s : which we'll cover in a few weeks.
+4095.26s - 4098.66s : And you sometimes see this in the memory databases as well.
+4098.66s - 4103.22s : They're trying to reduce the size of the metadata they're storing for tuples.
+4103.22s - 4105.96s : But for emperors, it's here at the top one.
+4105.96s - 4107.82s : It's more common.
+4107.82s - 4115.44s : The last one is to store a flag per attribute in the tuple
+4115.44s - 4119.9s : to tell you whether this value is null or not.
+4119.9s - 4122.54s : So think of like when I'm storing a 32-bit integer,
+4122.54s - 4126.98s : I have to have a one-bit flag in front of that value for that 32-bit integer
+4126.98s - 4129.16s : that tells me whether it's null or not.
+4129.16s - 4131.98s : Of course, now as you talk about alignment, you can't just store things as single bits.
+4131.98s - 4134.18s : You'd have to store an entire byte.
+4134.18s - 4140.54s : So that means that I have to store a 32-bit integer has to be stored as 40 bits
+4140.54s - 4143.72s : to keep track of whether the first one's null or not.
+4143.72s - 4146.72s : So this is a bad idea.
+4146.72s - 4149.48s : I'm only bringing this up to say this is the possibility of what you could do.
+4149.48s - 4152.52s : But as we go out the entire semester, I'll try to put this little mark
+4152.52s - 4155.12s : right here to tell you like, hey, this exists, but don't do this.
+4155.12s - 4156.34s : So definitely don't do this.
+4156.34s - 4159.46s : I only know one system that did this, and they immediately
+4159.46s - 4161.62s : got rid of it a few years later.
+4161.62s - 4162.9s : So this is a bad idea.
+4162.9s - 4164.26s : If you have a row store, you want the first one.
+4164.26s - 4167.58s : If you have a column store, you want the second one here.
+4167.58s - 4169.66s : And then we actually have our own paper actually
+4169.66s - 4172.16s : how to store nulls correctly in column stores.
+4172.16s - 4174.28s : We'll cover that more in a few weeks.
+4174.28s - 4176.68s : But if you take the advanced class, we'll read this paper
+4176.68s - 4179.16s : and go into way more detail about how to do it.
+4181.72s - 4182.22s : All right.
+4182.22s - 4186.4s : So before I said the assumption that we say that a tuple has
+4186.4s - 4191.56s : to fit into a single page, of course, now if I have to support really large
+4191.56s - 4194.32s : attributes, this is not going to work.
+4194.32s - 4197.4s : If my attribute I want to store is larger than my page size,
+4197.4s - 4199.56s : what do I actually have to do?
+4199.56s - 4202.92s : So this is where overflow pages come in.
+4202.92s - 4206.0s : The basic idea is that we have separate pages
+4206.0s - 4210.74s : where if the value of a given tuple is larger than it can fit in that page,
+4210.74s - 4211.42s : then I have a separate page.
+4211.42s - 4213.46s : So I have a separate page where I put that value in.
+4213.46s - 4220.32s : And now within my tuple, I store a pointer, basically a record ID,
+4220.32s - 4222.54s : to that other overflow page.
+4222.54s - 4224.16s : And then now as I'm scanning the data, I'm
+4224.16s - 4226.14s : going to interpret this data within a tuple.
+4226.14s - 4229.38s : I know I've come across one of these pointers to this overflow page.
+4229.38s - 4232.08s : I don't need to follow that original data.
+4232.08s - 4236.18s : So this contents attribute in this table here is too big.
+4236.18s - 4237.66s : So I have an overflow page where I'm just
+4237.66s - 4239.12s : going to store all this variable data.
+4239.12s - 4240.62s : And then now within my original tuple, I'll store it.
+4240.62s - 4241.12s : So I'm going to do that.
+4241.42s - 4245.1s : I'm going to store the size of the data and then the page number
+4245.1s - 4249.78s : and offset, the record ID, to where to go find this overflow page.
+4249.78s - 4252.42s : So different databases do different things
+4252.42s - 4255.52s : to trigger when you store things in overflow.
+4255.52s - 4259.4s : So in Postgres by default, if anything you try to store
+4259.4s - 4262.66s : is larger than 2 kilobytes, even though they have 8 kilobytes pages,
+4262.66s - 4266.58s : they put in the overflow page in MySQL and SQL Server
+4266.58s - 4268.26s : and I think Oracle as well.
+4268.26s - 4271.26s : If the thing you're trying to store is larger than half the page size,
+4271.42s - 4274.92s : or larger than the page size or larger than half the page size,
+4274.92s - 4277.84s : then they put it in the overflow page.
+4277.84s - 4279.78s : There's a bunch of optimizations we can do
+4279.78s - 4284.88s : to mitigate the overhead of trying to fetch these pages.
+4284.88s - 4287.06s : So we can take these overflow pages and compress them
+4287.06s - 4289.12s : using like Snappy or Gzip.
+4289.12s - 4291.72s : And we'll cover that in two weeks.
+4291.72s - 4294.14s : Another technique is called German strings.
+4294.14s - 4296.72s : This obviously comes from the Germans, where in addition
+4296.72s - 4301.42s : to the size and offset that I store in the original tuple, I can actually store,
+4301.42s - 4304.66s : I mean, I can store a prefix of the value.
+4304.66s - 4306.9s : So if I'm just trying to do string matching,
+4306.9s - 4309.02s : where like define all records,
+4309.02s - 4313.12s : find all records where the contents field starts with the word Andy,
+4313.12s - 4316.32s : I could check the prefix in the original tuple
+4316.32s - 4320.9s : and see whether I have a match there before even following the pointer
+4320.9s - 4322.26s : to go catch the overflow page.
+4322.26s - 4324.8s : Again, it's back to this idea we said at the beginning
+4324.8s - 4327.74s : of like trying to avoid having to read data from disks
+4327.74s - 4328.74s : that I don't actually need.
+4328.74s - 4330.76s : If I spent a little storage overhead of storing things,
+4330.76s - 4334.96s : a prefix can avoid me having to go do that in certain situations.
+4337.66s - 4340.44s : And if the data I'm storing in my overflow page
+4340.44s - 4344.2s : is too large within the overflow age, I can just again put another record ID
+4344.2s - 4347.32s : at the end of it or the front of it to tell you where the subsequent page can
+4347.32s - 4348.06s : be found.
+4348.06s - 4352.56s : So I can chain these things together to reconstruct large tuples.
+4352.56s - 4354.6s : In some systems also too, you can actually
+4354.6s - 4359.56s : represent data in pages that are not managed by the database system.
+4359.56s - 4360.56s : These are called it.
+4360.56s - 4362.36s : So external value storage.
+4362.36s - 4366.76s : So this would be like if I have a 20 gigabyte movie,
+4366.76s - 4368.42s : I don't want to maybe put that in my database system,
+4368.42s - 4373.0s : but I want to still have the database system be aware of that this data exists.
+4373.0s - 4379.32s : So I could have a record that has essentially a URI or pointer
+4379.32s - 4383.8s : to some external storage that's managed outside the database system
+4383.8s - 4387.6s : that if I need to, I can suck it in, read it, and hand it back to queries.
+4387.6s - 4389.36s : But the responsibility of maintaining that data,
+4389.36s - 4390.46s : I can't do that.
+4390.46s - 4392.66s : So I can't just go ahead and just run it through the database system
+4392.66s - 4394.46s : and make sure that it's actually safe and make sure that it is.
+4398.46s - 4401.7s : Any guarantees it would have for making sure the data is durable
+4401.7s - 4404.7s : or it's safe on the regular data, it's not going to guarantee those things.
+4404.7s - 4410.22s : But it still allows me to stream data out and serve it into tuples as needed.
+4410.22s - 4412.1s : So not every system supports this.
+4412.1s - 4413.32s : Oracle calls them B files.
+4413.32s - 4415.42s : Microsoft calls them file streams.
+4415.42s - 4418.22s : It's basically a way to store large files outside the data system,
+4418.22s - 4419.66s : but then still suck it in if you need to.
+4420.46s - 4423.96s : And there's a paper from a few years ago.
+4423.96s - 4428.46s : Actually, it's over 20 years now.
+4428.46s - 4434.22s : That from Jim Gray, the guy that went and taught in databases,
+4434.22s - 4439.1s : where they examined whether you should put things in the data system or not.
+4439.1s - 4441.96s : I think their recommendation was like anything larger than,
+4441.96s - 4448.46s : I think it was like 128 kilobytes should be external, less than that internal.
+4448.46s - 4450.46s : I don't know if that's entirely true.
+4450.46s - 4451.46s : I don't know if that's true anymore.
+4451.46s - 4452.46s : But people have thought about this problem.
+4452.46s - 4454.46s : When should you store large things in the database or not?
+4454.46s - 4456.96s : In general, database systems usually run on more expensive hardware,
+4456.96s - 4459.46s : so you don't want to store massive files.
+4459.46s - 4462.96s : And something that's external value storage is a way to sort of get around that.
+4462.96s - 4464.96s : So it looks like it's in the database even though it's not.
+4464.96s - 4466.96s : Then you can put it on cheaper storage.
+4466.96s - 4468.96s : All right.
+4468.96s - 4470.46s : So we've covered a lot.
+4470.46s - 4472.96s : Fat-faced Rick is still not out of the hospital yet.
+4472.96s - 4475.96s : So I'm not going to go figure out where he is.
+4475.96s - 4478.46s : But we've covered database storage.
+4478.46s - 4479.46s : We've covered the database.
+4479.46s - 4480.46s : We've covered the database.
+4480.46s - 4481.46s : We've covered the basics of it.
+4481.46s - 4485.46s : So again, database systems is basically a collection of pages that can be stored on disk
+4485.46s - 4487.46s : or some non-model storage.
+4487.46s - 4491.46s : And then we have different ways to keep track of where those pages are located.
+4491.46s - 4494.46s : And then we'll have different ways to store those pages on disk,
+4494.46s - 4496.46s : whether they're single file, multiple files, or whatever.
+4496.46s - 4500.46s : And then we have different ways to store the tubules that are inside those pages.
+4500.46s - 4503.46s : And then, again, because of this layered architecture...
+4503.46s - 4506.46s : Ticket number 169.
+4506.46s - 4509.46s : Please go to position 2, ticket number 302.
+4509.46s - 4512.46s : Ticket number 360.
+4512.46s - 4513.46s : That's not fat-faced Rick.
+4513.46s - 4514.46s : Okay.
+4514.46s - 4515.46s : The...
+4515.46s - 4517.46s : Because we have this sort of layered architecture,
+4517.46s - 4520.46s : the other parts of the system don't need to be entirely aware of, like,
+4520.46s - 4524.46s : oh, this is actually how I'm storing things, like, in a slot in a page architecture or not.
+4524.46s - 4526.46s : All that is abstracted away.
+4526.46s - 4529.46s : And then we can still, you know, we can change things out and modify them and extend them
+4529.46s - 4533.46s : or enhance them as needed without worrying about breaking the entire system.
+4533.46s - 4535.46s : It's not always the case.
+4535.46s - 4536.46s : But then ultimately that's the goal.
+4536.46s - 4538.46s : Of course, there's a trade-off by having too much abstraction.
+4538.46s - 4540.46s : It makes things inefficient.
+4540.46s - 4542.46s : But, again, it depends on the limitation.
+4542.46s - 4546.46s : And we'll see when we want to relax certain guarantees or certain restrictions later on.
+4546.46s - 4548.46s : All right.
+4548.46s - 4552.46s : So, again, today's class was about how to represent data as a database of files on disk.
+4552.46s - 4558.46s : Next class will be then how we then talk about when we bring things into memory, how do we keep track of that?
+4558.46s - 4563.46s : How do we then hand off those pages of memory, those pages of memory to other parts of the system?
+4563.46s - 4567.46s : And how do we make sure that we write them out in a timely manner and in a safe manner?
+4567.46s - 4569.46s : So that we don't crash and lose anything.
+4569.46s - 4575.46s : Then after that, we'll come back and talk about different ways to get things into disk again.
+4575.46s - 4581.46s : But we're going to cover the buffer, we'll manage the memory stuff first because you're going to need that for project one that will go out next week.
+4581.46s - 4582.46s : Okay?
+4597.46s - 4612.46s : So, let's get started.
+4612.46s - 4614.46s : Okay.
+4614.46s - 4617.46s : So, let's get started.
+4617.46s - 4621.46s : So, let's get started.

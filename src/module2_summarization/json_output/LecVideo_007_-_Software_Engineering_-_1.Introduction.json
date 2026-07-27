@@ -1,0 +1,4216 @@
+[
+  {
+    "sentence": "Hello dear students. Welcome to the lecture 1 of software engineering course.",
+    "timestamp_start": 0.0,
+    "timestamp_end": 7.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I will be using IN Summerville 9th edition lecture slides.",
+    "timestamp_start": 7.0,
+    "timestamp_end": 14.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I won't be mostly don't touch their slides.",
+    "timestamp_start": 14.0,
+    "timestamp_end": 23.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in this course what we are going to learn is",
+    "timestamp_start": 23.0,
+    "timestamp_end": 30.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Professional software development what is meant by software engineering.",
+    "timestamp_start": 38.0,
+    "timestamp_end": 43.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what truly means software engineering?",
+    "timestamp_start": 43.0,
+    "timestamp_end": 48.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is it just about knowing how to program, knowing coding,",
+    "timestamp_start": 48.0,
+    "timestamp_end": 53.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is it just about being a coder, being a web designer?",
+    "timestamp_start": 53.0,
+    "timestamp_end": 58.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No. Software engineering means much more than just being a programmer.",
+    "timestamp_start": 58.0,
+    "timestamp_end": 65.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We will learn that. What we are going to learn in this course",
+    "timestamp_start": 65.0,
+    "timestamp_end": 70.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "will help you tremendously in your professional life.",
+    "timestamp_start": 70.0,
+    "timestamp_end": 74.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Especially if you work with a professional big company.",
+    "timestamp_start": 74.0,
+    "timestamp_end": 81.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A corporate company.",
+    "timestamp_start": 81.0,
+    "timestamp_end": 83.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Believe me. You will have great easiness",
+    "timestamp_start": 83.0,
+    "timestamp_end": 92.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if you take this course seriously and learn what is taught in this lesson.",
+    "timestamp_start": 92.0,
+    "timestamp_end": 101.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering ethics a brief introduction to ethical issues",
+    "timestamp_start": 108.0,
+    "timestamp_end": 111.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that affect software engineering.",
+    "timestamp_start": 111.0,
+    "timestamp_end": 116.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Case studies an introduction to three examples that are used in later chapters in the book.",
+    "timestamp_start": 116.0,
+    "timestamp_end": 121.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. Case studies is not that important.",
+    "timestamp_start": 121.0,
+    "timestamp_end": 124.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. So software engineering.",
+    "timestamp_start": 124.0,
+    "timestamp_end": 131.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The economies of all developed nations are dependent on software.",
+    "timestamp_start": 131.0,
+    "timestamp_end": 135.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "More and more systems are software controlled software engineering is concerned with theories,",
+    "timestamp_start": 135.0,
+    "timestamp_end": 140.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "methods and tools for professional software development.",
+    "timestamp_start": 140.0,
+    "timestamp_end": 144.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Expenditure on software represents a significant fraction of gross national product in all developed countries.",
+    "timestamp_start": 144.0,
+    "timestamp_end": 152.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes. As you know that already just the value of Facebook and Google",
+    "timestamp_start": 152.0,
+    "timestamp_end": 159.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "probably is more than all of the companies in our country.",
+    "timestamp_start": 159.0,
+    "timestamp_end": 164.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So software is the future.",
+    "timestamp_start": 164.0,
+    "timestamp_end": 167.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering is the future.",
+    "timestamp_start": 170.0,
+    "timestamp_end": 173.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering is the future.",
+    "timestamp_start": 173.0,
+    "timestamp_end": 175.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software costs often dominate computer system costs.",
+    "timestamp_start": 175.0,
+    "timestamp_end": 178.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The costs of software on a PC are often greater than the hardware cost.",
+    "timestamp_start": 178.0,
+    "timestamp_end": 183.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software costs more to maintain than it does to develop.",
+    "timestamp_start": 183.0,
+    "timestamp_end": 187.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For systems with a long life, maintenance costs may be several times development costs.",
+    "timestamp_start": 187.0,
+    "timestamp_end": 193.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering is concerned with cost-effective software development.",
+    "timestamp_start": 193.0,
+    "timestamp_end": 198.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is also so true.",
+    "timestamp_start": 198.0,
+    "timestamp_end": 200.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "After you deliver your software, maintenance of it sometimes may be usually costs more than the developing that software.",
+    "timestamp_start": 200.0,
+    "timestamp_end": 213.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Moreover, software almost always costs more than the hardware itself.",
+    "timestamp_start": 213.0,
+    "timestamp_end": 221.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Think about MS SQL Server.",
+    "timestamp_start": 221.0,
+    "timestamp_end": 223.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "MS SQL License costs many times more than the hardware that it's.",
+    "timestamp_start": 223.0,
+    "timestamp_end": 227.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And software is not the only thing that costs more than the hardware itself.",
+    "timestamp_start": 228.0,
+    "timestamp_end": 230.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software products.",
+    "timestamp_start": 230.0,
+    "timestamp_end": 232.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Generic products, standalone systems that are marketed and sold to any customer who wishes to buy them.",
+    "timestamp_start": 232.0,
+    "timestamp_end": 242.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Examples.",
+    "timestamp_start": 242.0,
+    "timestamp_end": 243.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "PC software such as graphics programs, project management tools, computer-aided design software,",
+    "timestamp_start": 243.0,
+    "timestamp_end": 251.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software for specific markets such as appointment systems for dentists.",
+    "timestamp_start": 251.0,
+    "timestamp_end": 255.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, Photoshop is a business model.",
+    "timestamp_start": 255.0,
+    "timestamp_end": 257.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is a very popular software.",
+    "timestamp_start": 257.0,
+    "timestamp_end": 258.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is a generic graphics program.",
+    "timestamp_start": 258.0,
+    "timestamp_end": 260.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or MS SQL Server, a generic database management program.",
+    "timestamp_start": 260.0,
+    "timestamp_end": 266.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or Windows 10, a generic operation system software.",
+    "timestamp_start": 266.0,
+    "timestamp_end": 271.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are all generic products to sold millions of customers.",
+    "timestamp_start": 271.0,
+    "timestamp_end": 281.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Customized product software that is commissioned by a specific customer to meet their own needs.",
+    "timestamp_start": 281.0,
+    "timestamp_end": 287.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Examples.",
+    "timestamp_start": 287.0,
+    "timestamp_end": 288.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Embedded control systems, air traffic control software, traffic monitoring systems.",
+    "timestamp_start": 288.0,
+    "timestamp_end": 294.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Customized products always cost more because you can't sell it to the many people.",
+    "timestamp_start": 294.0,
+    "timestamp_end": 302.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thus, you cannot reduce price.",
+    "timestamp_start": 302.0,
+    "timestamp_end": 305.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And so, yes, customized products always cost more.",
+    "timestamp_start": 305.0,
+    "timestamp_end": 312.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Product specification.",
+    "timestamp_start": 312.0,
+    "timestamp_end": 314.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Generic products, the specification of what the software should do is owned by the software developer",
+    "timestamp_start": 317.0,
+    "timestamp_end": 324.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and decisions on software change are made by the developer.",
+    "timestamp_start": 324.0,
+    "timestamp_end": 327.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Customized products.",
+    "timestamp_start": 327.0,
+    "timestamp_end": 329.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The specification of what the software should do is owned by the customer for the software",
+    "timestamp_start": 329.0,
+    "timestamp_end": 336.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and they make decisions on software changes that are required.",
+    "timestamp_start": 336.0,
+    "timestamp_end": 340.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 340.0,
+    "timestamp_end": 342.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Frequently asked questions about software engineering.",
+    "timestamp_start": 342.0,
+    "timestamp_end": 346.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is software?",
+    "timestamp_start": 347.0,
+    "timestamp_end": 349.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computer programs and associated documentation.",
+    "timestamp_start": 349.0,
+    "timestamp_end": 352.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software products may be developed for a particular customer or may be developed for a general market.",
+    "timestamp_start": 352.0,
+    "timestamp_end": 363.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the attributes of good software?",
+    "timestamp_start": 363.0,
+    "timestamp_end": 366.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Good software should deliver the required functionality and performance to the user and should be maintainable, dependable and usable.",
+    "timestamp_start": 366.0,
+    "timestamp_end": 376.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is software engineering?",
+    "timestamp_start": 376.0,
+    "timestamp_end": 378.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is software engineering?",
+    "timestamp_start": 378.0,
+    "timestamp_end": 381.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering is an engineering discipline that is concerned with all aspects of software production.",
+    "timestamp_start": 381.0,
+    "timestamp_end": 387.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Not just coding or not just doing the job.",
+    "timestamp_start": 387.0,
+    "timestamp_end": 392.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 392.0,
+    "timestamp_end": 393.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the fundamental software engineering activities?",
+    "timestamp_start": 393.0,
+    "timestamp_end": 401.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software specification.",
+    "timestamp_start": 401.0,
+    "timestamp_end": 403.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software development.",
+    "timestamp_start": 403.0,
+    "timestamp_end": 404.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software validation and software development.",
+    "timestamp_start": 404.0,
+    "timestamp_end": 405.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software development.",
+    "timestamp_start": 405.0,
+    "timestamp_end": 406.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software evolution.",
+    "timestamp_start": 406.0,
+    "timestamp_end": 407.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is the difference between software engineering and computer science?",
+    "timestamp_start": 416.0,
+    "timestamp_end": 421.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computer science focuses on theory and fundamentals.",
+    "timestamp_start": 421.0,
+    "timestamp_end": 425.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering is concerned with the practicalities of developing and delivering useful software.",
+    "timestamp_start": 425.0,
+    "timestamp_end": 431.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is important. What is the difference between software and computer science? Let's listen again.",
+    "timestamp_start": 436.0,
+    "timestamp_end": 443.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computer science focuses on theory and fundamentals. Software engineering is concerned with the practicalities of developing and delivering useful software.",
+    "timestamp_start": 445.3,
+    "timestamp_end": 454.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So actually software engineering is more useful in the daily life when you get a job. Okay, so it's more focused on the practical usage of software development.",
+    "timestamp_start": 454.84,
+    "timestamp_end": 470.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software development.",
+    "timestamp_start": 470.66,
+    "timestamp_end": 472.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computer science and engineering is concerned with all aspects of computer-based systems development including hardware, software and process engineering. Software engineering is part of this more general process.",
+    "timestamp_start": 484.84,
+    "timestamp_end": 496.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Frequently asked questions about software engineering.",
+    "timestamp_start": 499.9,
+    "timestamp_end": 503.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, more questions and answers.",
+    "timestamp_start": 504.68,
+    "timestamp_end": 507.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the key challenges facing software engineering?",
+    "timestamp_start": 507.44,
+    "timestamp_end": 511.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Coping with increasing diversity.",
+    "timestamp_start": 512.36,
+    "timestamp_end": 513.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Demand.",
+    "timestamp_start": 514.5,
+    "timestamp_end": 514.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the costs of software engineering?",
+    "timestamp_start": 514.84,
+    "timestamp_end": 525.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Roughly 60% of software costs are development costs, 40% are testing costs. For custom software, evolution costs often exceed development costs.",
+    "timestamp_start": 525.38,
+    "timestamp_end": 537.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the key challenges facing software engineering?",
+    "timestamp_start": 537.1,
+    "timestamp_end": 544.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the best software engineering techniques and methods?",
+    "timestamp_start": 544.06,
+    "timestamp_end": 548.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "While all software projects have to be professionally managed and developed, different techniques are appropriate for different types of system.",
+    "timestamp_start": 548.14,
+    "timestamp_end": 555.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, games should always be developed using a series of prototypes whereas safety-critical control systems require a complete and analyzable specification to be developed.",
+    "timestamp_start": 556.76,
+    "timestamp_end": 567.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can't, therefore, say that one method is better than another.",
+    "timestamp_start": 567.1,
+    "timestamp_end": 572.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, for games, you can open a pre-beta, beta, and omega versions or alpha versions and the errors are not critical for games.",
+    "timestamp_start": 572.3,
+    "timestamp_end": 587.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "However, if you are developing a critical software system, let's say for a computer, software engineering, or software engineering, you can use a pre-beta or beta version.",
+    "timestamp_start": 587.04,
+    "timestamp_end": 596.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, if you are developing software for MR devices that are running on patients, you can't have a not-completed, not-truly-tested software.",
+    "timestamp_start": 596.76,
+    "timestamp_end": 611.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because it may be hazardous for life, it may cost life, or you are, let's say, developing a software for banks, you can't have a not-completed software.",
+    "timestamp_start": 611.32,
+    "timestamp_end": 623.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It may cost millions of dollars.",
+    "timestamp_start": 623.56,
+    "timestamp_end": 626.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so methods differ for different types of software.",
+    "timestamp_start": 626.42,
+    "timestamp_end": 632.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For games, it is perfectly fine to open beta, alpha versions and let the clients, the users, the gamers to find out bugs and you fix them.",
+    "timestamp_start": 632.42,
+    "timestamp_end": 643.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, it changes.",
+    "timestamp_start": 643.92,
+    "timestamp_end": 645.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What differences has the web made to software engineering?",
+    "timestamp_start": 651.92,
+    "timestamp_end": 655.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The web has led to a new generation of software engineering.",
+    "timestamp_start": 655.42,
+    "timestamp_end": 656.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It has led to the availability of software services and the possibility of developing highly distributed service-based systems.",
+    "timestamp_start": 656.42,
+    "timestamp_end": 663.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web-based systems development has led to important advances in programming languages and software reuse.",
+    "timestamp_start": 663.42,
+    "timestamp_end": 670.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Definitely.",
+    "timestamp_start": 670.42,
+    "timestamp_end": 672.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, let's take into account that code management systems such as GitHub.",
+    "timestamp_start": 672.42,
+    "timestamp_end": 680.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "With GitHub, tens of hundreds of thousands of developers can work.",
+    "timestamp_start": 680.42,
+    "timestamp_end": 686.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They can run around the world on the same software and contribute to the open-source development.",
+    "timestamp_start": 686.42,
+    "timestamp_end": 692.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And there are limitless number of new opportunities with the web.",
+    "timestamp_start": 692.42,
+    "timestamp_end": 702.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the essential attributes of good software?",
+    "timestamp_start": 702.42,
+    "timestamp_end": 708.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Essential attributes of good software.",
+    "timestamp_start": 708.42,
+    "timestamp_end": 710.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the essential attributes of good software?",
+    "timestamp_start": 710.42,
+    "timestamp_end": 712.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What are the essential attributes of good software?",
+    "timestamp_start": 712.42,
+    "timestamp_end": 714.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maintainability software should be written in such a way so that it can evolve to meet the changing needs of customers.",
+    "timestamp_start": 714.42,
+    "timestamp_end": 721.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is a critical attribute because software change is an inevitable requirement of a changing business environment.",
+    "timestamp_start": 721.42,
+    "timestamp_end": 728.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is so true. Your software should be able to obtainable, maintainable.",
+    "timestamp_start": 728.42,
+    "timestamp_end": 738.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Dependability and security software dependability includes the following.",
+    "timestamp_start": 738.42,
+    "timestamp_end": 740.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The first is the software.",
+    "timestamp_start": 740.42,
+    "timestamp_end": 742.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The second is the software.",
+    "timestamp_start": 742.42,
+    "timestamp_end": 743.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Next is the software.",
+    "timestamp_start": 743.42,
+    "timestamp_end": 744.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This particular category of box.",
+    "timestamp_start": 744.42,
+    "timestamp_end": 746.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are the features that define the programs that solve your problem following the existing box related.",
+    "timestamp_start": 746.42,
+    "timestamp_end": 748.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some of them are future type if, some are an example.",
+    "timestamp_start": 748.42,
+    "timestamp_end": 750.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Stuff like de vidé",
+    "timestamp_start": 750.42,
+    "timestamp_end": 765.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ORY",
+    "timestamp_start": 765.22,
+    "timestamp_end": 767.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "was used to devise and find software solutions for a specific type of problem.",
+    "timestamp_start": 767.42,
+    "timestamp_end": 771.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you are part of the existing box, you should know what software to use.",
+    "timestamp_start": 771.42,
+    "timestamp_end": 773.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Safety. Dependable software should not cause physical or economic damage in the event of system failure.",
+    "timestamp_start": 773.42,
+    "timestamp_end": 780.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Malicious users should not be able to access or damage the system.",
+    "timestamp_start": 780.96,
+    "timestamp_end": 784.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in many cases your software has to be dependable so you need to be careful of all of these.",
+    "timestamp_start": 784.66,
+    "timestamp_end": 791.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Efficiency.",
+    "timestamp_start": 793.56,
+    "timestamp_end": 794.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software should not make wasteful use of system resources such as memory and processor cycles.",
+    "timestamp_start": 797.42,
+    "timestamp_end": 803.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Efficiency therefore includes responsiveness, processing time, memory utilization, etc.",
+    "timestamp_start": 804.18,
+    "timestamp_end": 810.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In most cases, let's say in client-based software, this is at the moment the least important factor.",
+    "timestamp_start": 811.02,
+    "timestamp_end": 819.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because the hardware becomes much more powerful for single-user applications, efficiency can always be improved after the delivery.",
+    "timestamp_start": 820.22,
+    "timestamp_end": 829.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I would say this is the least important.",
+    "timestamp_start": 830.64,
+    "timestamp_end": 833.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Dependability is the most important one.",
+    "timestamp_start": 833.42,
+    "timestamp_end": 837.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Main table is also second most important one.",
+    "timestamp_start": 837.7,
+    "timestamp_end": 840.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And acceptability.",
+    "timestamp_start": 841.26,
+    "timestamp_end": 842.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software must be acceptable to the type of users for which it is designed.",
+    "timestamp_start": 846.92,
+    "timestamp_end": 851.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This means that it must be understandable, usable and compatible with other systems that they use.",
+    "timestamp_start": 852.08,
+    "timestamp_end": 857.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this is the third important one.",
+    "timestamp_start": 857.76,
+    "timestamp_end": 860.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, it must be easy to use.",
+    "timestamp_start": 860.26,
+    "timestamp_end": 862.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it must have a good user interface or good documentation.",
+    "timestamp_start": 863.42,
+    "timestamp_end": 866.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is also important but not important as these two.",
+    "timestamp_start": 866.66,
+    "timestamp_end": 872.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 873.22,
+    "timestamp_end": 873.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering.",
+    "timestamp_start": 873.68,
+    "timestamp_end": 874.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering is an engineering discipline that is concerned with all aspects of software production from the early stages of system specification through to maintaining the system after it has gone into use.",
+    "timestamp_start": 881.6,
+    "timestamp_end": 893.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you see a software engineer thinks about all of the aspects, not just coding, not just developing, not just producing a software that doesn't think about, don't think about the other aspects of development.",
+    "timestamp_start": 893.42,
+    "timestamp_end": 910.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We will see what does this mean with the future lessons.",
+    "timestamp_start": 910.7,
+    "timestamp_end": 914.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Engineering discipline.",
+    "timestamp_start": 914.24,
+    "timestamp_end": 916.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Engineering discipline.",
+    "timestamp_start": 916.1,
+    "timestamp_end": 916.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Using appropriate theories and methods to solve problems.",
+    "timestamp_start": 916.14,
+    "timestamp_end": 923.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "CPU software software engineers.",
+    "timestamp_start": 923.26,
+    "timestamp_end": 924.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And what is engineering gonna do with software engineering?",
+    "timestamp_start": 924.3,
+    "timestamp_end": 925.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The first step is to learn about it, but effectively start with information.",
+    "timestamp_start": 925.56,
+    "timestamp_end": 927.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and contribute listening to yours.",
+    "timestamp_start": 927.98,
+    "timestamp_end": 929.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "From beginning to end, every degree requires commitment to the broader structure of Device motivation Training,",
+    "timestamp_start": 929.38,
+    "timestamp_end": 947.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "競争 A test of common interests It is not difficult to begin from scratch.",
+    "timestamp_start": 947.54,
+    "timestamp_end": 948.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ly just blank because it alone hardly Xiaobai view content development",
+    "timestamp_start": 948.18,
+    "timestamp_end": 952.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, importantly has such class there is engineering and being fresh.",
+    "timestamp_start": 952.44,
+    "timestamp_end": 953.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You're this open movement.",
+    "timestamp_start": 953.06,
+    "timestamp_end": 953.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now, the UK of West Virgin five.",
+    "timestamp_start": 953.1,
+    "timestamp_end": 953.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's like a person I hope to live on a new West Virgin, because we already saw theists who sentence worked with fees to 6 않는.",
+    "timestamp_start": 953.18,
+    "timestamp_end": 953.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But it was pretty quickly, constantly aromatic to everyone.",
+    "timestamp_start": 953.22,
+    "timestamp_end": 953.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And actually stopped working in very short pieces before I've said nothing in parallel.",
+    "timestamp_start": 953.24,
+    "timestamp_end": 953.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "advanced software systems. We need to be able to produce reliable and trustworthy systems",
+    "timestamp_start": 953.26,
+    "timestamp_end": 959.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "economically and quickly. It is usually cheaper, in the long run, to use software engineering",
+    "timestamp_start": 959.34,
+    "timestamp_end": 965.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "methods and techniques for software systems rather than just write the programs as if it",
+    "timestamp_start": 965.9,
+    "timestamp_end": 970.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "was a personal programming project. For most types of system, the majority of costs are the",
+    "timestamp_start": 970.54,
+    "timestamp_end": 976.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "costs of changing the software after it has gone into use. This is so true. I also experienced",
+    "timestamp_start": 976.54,
+    "timestamp_end": 983.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this myself for my personal projects and programs. Believe me, this is so true. Let's read this again.",
+    "timestamp_start": 983.98,
+    "timestamp_end": 992.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is usually cheaper, in the long run, to use software engineering methods and techniques for",
+    "timestamp_start": 995.74,
+    "timestamp_end": 1001.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software systems rather than just write the programs as if it was a personal programming",
+    "timestamp_start": 1001.5,
+    "timestamp_end": 1006.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project. For most types of system, the majority of costs are the costs of changing the software",
+    "timestamp_start": 1006.38,
+    "timestamp_end": 1012.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "after it has gone into use. This also separates a programmer and a coder from a software engineer.",
+    "timestamp_start": 1012.62,
+    "timestamp_end": 1019.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In this era, you have to be a software engineer to be a wanted programmer,",
+    "timestamp_start": 1020.7,
+    "timestamp_end": 1027.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "not just a simple programmer or a coder. It will make the difference. Software process activities",
+    "timestamp_start": 1028.14,
+    "timestamp_end": 1036.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software specification, where customers and engineers define the software that is to be",
+    "timestamp_start": 1036.38,
+    "timestamp_end": 1047.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "produced and the constraints on its operation. Software development, where the software is",
+    "timestamp_start": 1047.94,
+    "timestamp_end": 1053.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "designed and programmed. Software validation, where the software is checked to ensure that it",
+    "timestamp_start": 1053.78,
+    "timestamp_end": 1059.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is what the customer requires. Software evolution, where the software is modified to reflect changing",
+    "timestamp_start": 1059.42,
+    "timestamp_end": 1066.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "customers. Software evolution, where the software is modified to reflect changing customers.",
+    "timestamp_start": 1066.08,
+    "timestamp_end": 1066.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, software engineering separates software into the four processes, into the four stages.",
+    "timestamp_start": 1066.38,
+    "timestamp_end": 1077.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software specification, software development, software validation, and software evolution,",
+    "timestamp_start": 1077.76,
+    "timestamp_end": 1083.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as we can see. Okay. General issues that affect most software. Heterogeneity,",
+    "timestamp_start": 1083.96,
+    "timestamp_end": 1092.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as we can see. Increasingly, systems are required to operate as distributed systems",
+    "timestamp_start": 1096.38,
+    "timestamp_end": 1102.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "across networks that include different types of computer and mobile devices.",
+    "timestamp_start": 1102.0,
+    "timestamp_end": 1106.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Social Change",
+    "timestamp_start": 1107.76,
+    "timestamp_end": 1112.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Business and society are changing incredibly quickly as emerging economies develop and new",
+    "timestamp_start": 1113.64,
+    "timestamp_end": 1118.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "technologies become available. They need to be able to change their existing software and to",
+    "timestamp_start": 1118.72,
+    "timestamp_end": 1124.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "rapidly develop new software. Business, social change, and society are a key component of the",
+    "timestamp_start": 1124.48,
+    "timestamp_end": 1125.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software. As software is intertwined with all aspects of our lives, it is essential that we",
+    "timestamp_start": 1125.76,
+    "timestamp_end": 1135.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can trust that software. There are many different types of software system and there is no universal",
+    "timestamp_start": 1135.38,
+    "timestamp_end": 1148.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "set of software techniques that is applicable to all of these. The software engineering methods",
+    "timestamp_start": 1148.84,
+    "timestamp_end": 1154.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and tools used depend on the type of application being developed, the requirements of the customer",
+    "timestamp_start": 1154.78,
+    "timestamp_end": 1160.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the background of the development team. So you have to be careful about which type of",
+    "timestamp_start": 1160.18,
+    "timestamp_end": 1181.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software you are developing and choose the",
+    "timestamp_start": 1181.24,
+    "timestamp_end": 1184.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software that is applicable to you.",
+    "timestamp_start": 1184.42,
+    "timestamp_end": 1184.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Proper methods and tools for that application type.",
+    "timestamp_start": 1184.78,
+    "timestamp_end": 1190.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Application types.",
+    "timestamp_start": 1190.78,
+    "timestamp_end": 1191.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, standalone applications.",
+    "timestamp_start": 1192.7,
+    "timestamp_end": 1194.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are application systems that run on a local computer, such as a PC. They include all necessary",
+    "timestamp_start": 1197.04,
+    "timestamp_end": 1204.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "functionality and do not need to be connected to a network.",
+    "timestamp_start": 1204.5,
+    "timestamp_end": 1207.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, interactive transaction-based applications.",
+    "timestamp_start": 1208.8,
+    "timestamp_end": 1211.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Applications that execute on a remote computer and are accessed by users from their own PCs or",
+    "timestamp_start": 1214.78,
+    "timestamp_end": 1220.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "terminals. These include web applications such as e-commerce applications.",
+    "timestamp_start": 1220.68,
+    "timestamp_end": 1225.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And embedded control systems.",
+    "timestamp_start": 1227.02,
+    "timestamp_end": 1228.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are software control systems that control and manage hardware devices.",
+    "timestamp_start": 1229.86,
+    "timestamp_end": 1234.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Numerically, there are probably more embedded systems than any other type of system.",
+    "timestamp_start": 1235.34,
+    "timestamp_end": 1240.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I would say currently most of the applications are",
+    "timestamp_start": 1240.1,
+    "timestamp_end": 1244.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "either interactive transactions-based applications or standalone applications that",
+    "timestamp_start": 1244.78,
+    "timestamp_end": 1250.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "access the remote computers to execute the core functions.",
+    "timestamp_start": 1251.46,
+    "timestamp_end": 1256.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Such as online games and service-based applications.",
+    "timestamp_start": 1256.78,
+    "timestamp_end": 1263.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, even to run Photoshop on your computer, even though it is a",
+    "timestamp_start": 1266.58,
+    "timestamp_end": 1271.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "standalone application, it has to connectuplates.",
+    "timestamp_start": 1272.66,
+    "timestamp_end": 1274.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's server and also it provides many features that you can do with its remote servers.",
+    "timestamp_start": 1274.78,
+    "timestamp_end": 1281.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's a mix of both.",
+    "timestamp_start": 1281.78,
+    "timestamp_end": 1284.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, application types. We continue.",
+    "timestamp_start": 1284.78,
+    "timestamp_end": 1286.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Embedded control systems. This is a rare area.",
+    "timestamp_start": 1286.78,
+    "timestamp_end": 1289.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in Turkey, it doesn't have much of job opportunities.",
+    "timestamp_start": 1289.78,
+    "timestamp_end": 1301.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But if you get into a manufacturing factory of embedded control systems, of course, it is still mandatory.",
+    "timestamp_start": 1301.78,
+    "timestamp_end": 1314.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Application types. Batch processing systems.",
+    "timestamp_start": 1314.78,
+    "timestamp_end": 1321.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are business systems that are designed to process data in large batches.",
+    "timestamp_start": 1321.78,
+    "timestamp_end": 1326.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They process large numbers of individual inputs to create corresponding batches.",
+    "timestamp_start": 1326.78,
+    "timestamp_end": 1331.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And they also process data in large batches.",
+    "timestamp_start": 1331.78,
+    "timestamp_end": 1332.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And they also process data in large batches.",
+    "timestamp_start": 1332.78,
+    "timestamp_end": 1333.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Entertainment systems.",
+    "timestamp_start": 1333.78,
+    "timestamp_end": 1334.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are systems that are primarily for personal use and which are intended to entertain the user.",
+    "timestamp_start": 1334.78,
+    "timestamp_end": 1345.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Systems for modeling and simulation.",
+    "timestamp_start": 1345.78,
+    "timestamp_end": 1349.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are systems that are developed by scientists and engineers to model physical processes or situations, which include many, separate, interacting objects.",
+    "timestamp_start": 1349.78,
+    "timestamp_end": 1359.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1359.78,
+    "timestamp_end": 1360.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some more.",
+    "timestamp_start": 1360.78,
+    "timestamp_end": 1361.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "More application types.",
+    "timestamp_start": 1361.78,
+    "timestamp_end": 1362.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Data collection systems.",
+    "timestamp_start": 1362.78,
+    "timestamp_end": 1366.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are systems that collect data from their environment using a set of sensors and send that data to other systems for processing.",
+    "timestamp_start": 1366.78,
+    "timestamp_end": 1374.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And systems of systems.",
+    "timestamp_start": 1374.78,
+    "timestamp_end": 1377.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are systems that are composed of a number of other software systems.",
+    "timestamp_start": 1377.78,
+    "timestamp_end": 1382.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay. Software engineering fundamentals.",
+    "timestamp_start": 1382.78,
+    "timestamp_end": 1385.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is really important.",
+    "timestamp_start": 1385.78,
+    "timestamp_end": 1389.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some fundamental principles apply to all systems.",
+    "timestamp_start": 1389.78,
+    "timestamp_end": 1390.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Examples apply to software programming technology.",
+    "timestamp_start": 1390.78,
+    "timestamp_end": 1392.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is basically a lucky rule of silence now.",
+    "timestamp_start": 1392.78,
+    "timestamp_end": 1394.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The principles apply to software programming technology.",
+    "timestamp_start": 1394.78,
+    "timestamp_end": 1396.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These systems are structures that release data using the system's system software capabilities.",
+    "timestamp_start": 1396.78,
+    "timestamp_end": 1400.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is basically an easy question to solve a child in the future.",
+    "timestamp_start": 1400.78,
+    "timestamp_end": 1401.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And sounds difficult to answer.",
+    "timestamp_start": 1401.78,
+    "timestamp_end": 1402.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Talk in your own language but there's nothing wrong with it.",
+    "timestamp_start": 1402.78,
+    "timestamp_end": 1404.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's not like school.",
+    "timestamp_start": 1404.78,
+    "timestamp_end": 1405.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Myself might have a window to ugly aussieocks.",
+    "timestamp_start": 1405.78,
+    "timestamp_end": 1406.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Am I slowly completing an online course if I'm contemplating myした jobções and trying to useCommonS�� evilrelations?",
+    "timestamp_start": 1406.78,
+    "timestamp_end": 1407.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I really like playing League of Legends or something just like that.",
+    "timestamp_start": 1407.78,
+    "timestamp_end": 1408.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well then God.",
+    "timestamp_start": 1408.78,
+    "timestamp_end": 1409.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Well I got rid of the whole stuff.",
+    "timestamp_start": 1409.78,
+    "timestamp_end": 1410.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are systems that Experience textures really just ludicrous use those confusing job only alright",
+    "timestamp_start": 1410.78,
+    "timestamp_end": 1413.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "technical support instance we've whileñor knew one look hereώνși",
+    "timestamp_start": 1413.78,
+    "timestamp_end": 1419.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "students compiler pending us.",
+    "timestamp_start": 1419.42,
+    "timestamp_end": 1420.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where appropriate, you should reuse software that has already been developed rather than write new software.",
+    "timestamp_start": 1420.78,
+    "timestamp_end": 1426.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is a core concept for being useful in software development.",
+    "timestamp_start": 1426.78,
+    "timestamp_end": 1435.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You should reuse software, especially open source software that is checked and validated many times by many other users.",
+    "timestamp_start": 1435.78,
+    "timestamp_end": 1446.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Not try to invent the wheel again and again.",
+    "timestamp_start": 1446.78,
+    "timestamp_end": 1451.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This will make your software more dependable, better, more robust, more effective, more efficient, and will save you a lot of time.",
+    "timestamp_start": 1451.78,
+    "timestamp_end": 1461.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Engineering and the Web",
+    "timestamp_start": 1461.78,
+    "timestamp_end": 1465.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The web is now a platform for running application and organizations are increasingly developing web-based systems.",
+    "timestamp_start": 1469.78,
+    "timestamp_end": 1475.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The web is now a platform for running application and organizations are increasingly developing web-based systems.",
+    "timestamp_start": 1475.78,
+    "timestamp_end": 1476.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Rather than local systems.",
+    "timestamp_start": 1476.78,
+    "timestamp_end": 1478.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web services, discussed in chapter 19, allow application functionality to be accessed over the web.",
+    "timestamp_start": 1478.78,
+    "timestamp_end": 1485.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Cloud computing is an approach to the provision of computer services where applications run remotely on the cloud.",
+    "timestamp_start": 1485.78,
+    "timestamp_end": 1492.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Users do not buy software by pay according to use.",
+    "timestamp_start": 1492.78,
+    "timestamp_end": 1496.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, this is the most commonly used service type at the moment.",
+    "timestamp_start": 1496.78,
+    "timestamp_end": 1501.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, for reading these text-to-speech I am using,",
+    "timestamp_start": 1501.78,
+    "timestamp_end": 1505.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I am using premium service of Google Cloud.",
+    "timestamp_start": 1505.78,
+    "timestamp_end": 1509.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Google Cloud text-to-speech API.",
+    "timestamp_start": 1509.4,
+    "timestamp_end": 1512.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I have subscribed to them.",
+    "timestamp_start": 1512.04,
+    "timestamp_end": 1513.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is normally paid but they give you some free credits.",
+    "timestamp_start": 1513.92,
+    "timestamp_end": 1517.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Currently, I am using free credits.",
+    "timestamp_start": 1517.54,
+    "timestamp_end": 1519.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is the future of the software and development cloud computing.",
+    "timestamp_start": 1519.92,
+    "timestamp_end": 1527.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web services also very similar to cloud computing.",
+    "timestamp_start": 1527.3,
+    "timestamp_end": 1532.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we can say the future is the web.",
+    "timestamp_start": 1532.48,
+    "timestamp_end": 1536.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web software engineering we continue.",
+    "timestamp_start": 1536.16,
+    "timestamp_end": 1541.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software reuse is the dominant approach for constructing web-based systems.",
+    "timestamp_start": 1541.94,
+    "timestamp_end": 1546.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When building these systems, you think about how you can assemble them from pre-existing",
+    "timestamp_start": 1546.38,
+    "timestamp_end": 1550.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software components and systems.",
+    "timestamp_start": 1550.86,
+    "timestamp_end": 1553.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually this is not the dominant approach for only web-based but all systems.",
+    "timestamp_start": 1553.24,
+    "timestamp_end": 1560.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because it is extremely hard to build.",
+    "timestamp_start": 1560.02,
+    "timestamp_end": 1562.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In today's world, to build something from scratch.",
+    "timestamp_start": 1562.46,
+    "timestamp_end": 1568.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In today's world, softwares are so advanced, so attractive, so complex so that it is very",
+    "timestamp_start": 1568.64,
+    "timestamp_end": 1578.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "very hard to develop from scratch.",
+    "timestamp_start": 1578.52,
+    "timestamp_end": 1581.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They are usually composed from existing frameworks, existing libraries.",
+    "timestamp_start": 1581.02,
+    "timestamp_end": 1590.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And...",
+    "timestamp_start": 1590.18,
+    "timestamp_end": 1592.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Utilizing what is already there.",
+    "timestamp_start": 1592.18,
+    "timestamp_end": 1597.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is very important.",
+    "timestamp_start": 1597.82,
+    "timestamp_end": 1606.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web-based systems should be developed and delivered incrementally.",
+    "timestamp_start": 1606.3,
+    "timestamp_end": 1610.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is now generally recognized that it is impractical to specify all the requirements",
+    "timestamp_start": 1610.04,
+    "timestamp_end": 1614.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for such systems in advance.",
+    "timestamp_start": 1614.72,
+    "timestamp_end": 1616.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, you constantly update your web service or web system.",
+    "timestamp_start": 1616.8,
+    "timestamp_end": 1621.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, you constantly update your web service or web system.",
+    "timestamp_start": 1621.36,
+    "timestamp_end": 1621.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is easy to update also.",
+    "timestamp_start": 1621.92,
+    "timestamp_end": 1626.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User interfaces are constrained by the capabilities of web browsers.",
+    "timestamp_start": 1626.02,
+    "timestamp_end": 1630.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Technologies such as Ajax allow rich interfaces to be created within a web browser but are",
+    "timestamp_start": 1630.96,
+    "timestamp_end": 1635.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "still difficult to use.",
+    "timestamp_start": 1635.44,
+    "timestamp_end": 1637.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web forms with local scripting are more commonly used.",
+    "timestamp_start": 1637.92,
+    "timestamp_end": 1641.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Actually, this is pretty much changing with the recent advances in asynchronous programming.",
+    "timestamp_start": 1641.08,
+    "timestamp_end": 1645.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is not a new thing.",
+    "timestamp_start": 1645.56,
+    "timestamp_end": 1646.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We are still working on it.",
+    "timestamp_start": 1646.56,
+    "timestamp_end": 1647.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is a new thing.",
+    "timestamp_start": 1647.56,
+    "timestamp_end": 1648.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We are still working on it.",
+    "timestamp_start": 1648.56,
+    "timestamp_end": 1649.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We are still working on it.",
+    "timestamp_start": 1649.56,
+    "timestamp_end": 1650.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We are still working on it.",
+    "timestamp_start": 1650.56,
+    "timestamp_end": 1651.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web based software engineering...",
+    "timestamp_start": 1651.56,
+    "timestamp_end": 1652.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let me finish now.",
+    "timestamp_start": 1652.62,
+    "timestamp_end": 1654.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We are going to complete the web based software engineering test.",
+    "timestamp_start": 1654.28,
+    "timestamp_end": 1657.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We will continue.",
+    "timestamp_start": 1657.46,
+    "timestamp_end": 1661.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web based systems are complex distributed systems but the fundamental principles of",
+    "timestamp_start": 1661.18,
+    "timestamp_end": 1665.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software engineering discussed previously are as applicable to them as they are to any",
+    "timestamp_start": 1665.62,
+    "timestamp_end": 1669.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "other types of system.",
+    "timestamp_start": 1669.8,
+    "timestamp_end": 1671.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The fundamental ideas of software engineering discussed in the previous section apply to",
+    "timestamp_start": 1671.7,
+    "timestamp_end": 1676.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "web based software in the same way that they apply to other types of software systems.",
+    "timestamp_start": 1676.92,
+    "timestamp_end": 1678.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, if we were to build a system, we would need an automatic system for web",
+    "timestamp_start": 1678.94,
+    "timestamp_end": 1679.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "based software engineering.",
+    "timestamp_start": 1679.94,
+    "timestamp_end": 1680.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, this is true. Key points. Okay.",
+    "timestamp_start": 1680.94,
+    "timestamp_end": 1685.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, all these key points are so true. Let's read them again.",
+    "timestamp_start": 1710.94,
+    "timestamp_end": 1723.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The high-level activities of specification, development, validation and evolution are part of all software processes.",
+    "timestamp_start": 1740.94,
+    "timestamp_end": 1748.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The fundamental notions of software engineering are universally applicable to all types of system development.",
+    "timestamp_start": 1749.1,
+    "timestamp_end": 1755.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, two more key points.",
+    "timestamp_start": 1756.18,
+    "timestamp_end": 1758.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are many different types of system and each requires appropriate software engineering tools and techniques for their development.",
+    "timestamp_start": 1760.04,
+    "timestamp_end": 1767.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The fundamental ideas of software engineering.",
+    "timestamp_start": 1768.4,
+    "timestamp_end": 1770.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, let's read again.",
+    "timestamp_start": 1770.94,
+    "timestamp_end": 1776.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are many different types of system and each requires appropriate software engineering tools and techniques for their development.",
+    "timestamp_start": 1776.3,
+    "timestamp_end": 1783.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The fundamental ideas of software engineering are applicable to all types of software system.",
+    "timestamp_start": 1784.9,
+    "timestamp_end": 1790.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, let's continue to lecture two.",
+    "timestamp_start": 1791.4,
+    "timestamp_end": 1795.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so.",
+    "timestamp_start": 1799.42,
+    "timestamp_end": 1800.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is lecture two of the slides, but we are in still lecture one of our courses.",
+    "timestamp_start": 1800.94,
+    "timestamp_end": 1807.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Our course.",
+    "timestamp_start": 1809.14,
+    "timestamp_end": 1809.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, software engineering ethics.",
+    "timestamp_start": 1810.46,
+    "timestamp_end": 1812.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering ethics.",
+    "timestamp_start": 1814.9,
+    "timestamp_end": 1816.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's read them.",
+    "timestamp_start": 1817.3,
+    "timestamp_end": 1818.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineering involves wider responsibilities than simply the application of technical skills.",
+    "timestamp_start": 1820.3,
+    "timestamp_end": 1826.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineers must behave in an honest and ethically responsible manner.",
+    "timestamp_start": 1826.86,
+    "timestamp_end": 1830.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineers must behave in an honest and ethically responsible manner.",
+    "timestamp_start": 1830.94,
+    "timestamp_end": 1832.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineers must behave in an honest and ethically responsible manner.",
+    "timestamp_start": 1832.04,
+    "timestamp_end": 1834.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We should be responsible if they are to be respected as professionals.",
+    "timestamp_start": 1834.02,
+    "timestamp_end": 1834.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We should be responsible if they are to be respected as professionals.",
+    "timestamp_start": 1834.32,
+    "timestamp_end": 1834.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ethical behavior is more than simply upholding the law but involves following a set of principles that are morally correct.",
+    "timestamp_start": 1834.38,
+    "timestamp_end": 1841.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We already have to abide the law.",
+    "timestamp_start": 1842.2,
+    "timestamp_end": 1845.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "However, to be an ethical software developer, we have to follow the principles that are morally correct.",
+    "timestamp_start": 1845.34,
+    "timestamp_end": 1852.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, issues of professional responsibility.",
+    "timestamp_start": 1853.42,
+    "timestamp_end": 1857.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "First, confidentiality.",
+    "timestamp_start": 1857.82,
+    "timestamp_end": 1860.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1860.66,
+    "timestamp_end": 1860.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, competence.",
+    "timestamp_start": 1860.94,
+    "timestamp_end": 1874.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1886.06,
+    "timestamp_end": 1886.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1886.74,
+    "timestamp_end": 1886.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Intellectual property rights.",
+    "timestamp_start": 1889.9,
+    "timestamp_end": 1891.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Engineers should be aware of local laws governing the use of intellectual property such as patents, copyright, etc.",
+    "timestamp_start": 1893.86,
+    "timestamp_end": 1900.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They should be careful to ensure that the intellectual property of employers and clients is protected.",
+    "timestamp_start": 1901.54,
+    "timestamp_end": 1906.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computer misuse.",
+    "timestamp_start": 1908.08,
+    "timestamp_end": 1909.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineers should not use their technical skills to misuse other people's software.",
+    "timestamp_start": 1912.22,
+    "timestamp_end": 1916.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computer misuse ranges from relatively trivial game playing on an employer's machine, say, to extremely serious dissemination of viruses.",
+    "timestamp_start": 1916.74,
+    "timestamp_end": 1927.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1928.44,
+    "timestamp_end": 1928.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ACM, Association for Computing Machinery, IEEE Institute of Electrical and Electronics Engineers, Code of Ethics.",
+    "timestamp_start": 1932.06,
+    "timestamp_end": 1940.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1941.86,
+    "timestamp_end": 1942.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1942.86,
+    "timestamp_end": 1942.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's see the Code of Ethics.",
+    "timestamp_start": 1946.74,
+    "timestamp_end": 1973.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Code of Ethics.",
+    "timestamp_start": 1976.74,
+    "timestamp_end": 1977.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computers have a central and growing role in commerce, industry, government, medicine, education, entertainment and society at large.",
+    "timestamp_start": 1981.34,
+    "timestamp_end": 1990.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineers are those who contribute by direct participation or by teaching to the analysis, specification, design, development, certification, maintenance and testing of software systems.",
+    "timestamp_start": 1991.32,
+    "timestamp_end": 2004.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineers are those who contribute by direct participation or by teaching to the analysis, specification, design, development, certification and testing of software systems.",
+    "timestamp_start": 2006.74,
+    "timestamp_end": 2007.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because of their roles in developing software systems, software engineers have significant opportunities to do good or cause harm, to enable others to do good or cause harm, or to influence others to do good or cause harm.",
+    "timestamp_start": 2007.78,
+    "timestamp_end": 2021.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To ensure, as much as possible, that their efforts will be used for good, software engineers must commit themselves to making software engineering a beneficial and respected profession.",
+    "timestamp_start": 2021.66,
+    "timestamp_end": 2033.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2034.22,
+    "timestamp_end": 2034.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2034.86,
+    "timestamp_end": 2035.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The ACM-IEEE Code of Ethics",
+    "timestamp_start": 2036.74,
+    "timestamp_end": 2041.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Engineering Code of Ethics and Professional Practice",
+    "timestamp_start": 2041.8,
+    "timestamp_end": 2046.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ACM-IEEE CS Joint Task Force on Software Engineering Ethics and Professional Practices",
+    "timestamp_start": 2046.78,
+    "timestamp_end": 2054.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2066.74,
+    "timestamp_end": 2068.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2096.74,
+    "timestamp_end": 2124.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2126.74,
+    "timestamp_end": 2136.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2136.74,
+    "timestamp_end": 2138.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2138.74,
+    "timestamp_end": 2150.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2150.74,
+    "timestamp_end": 2154.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2154.74,
+    "timestamp_end": 2156.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2156.74,
+    "timestamp_end": 2166.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2166.74,
+    "timestamp_end": 2168.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2168.74,
+    "timestamp_end": 2174.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2174.74,
+    "timestamp_end": 2180.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2180.74,
+    "timestamp_end": 2184.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2184.74,
+    "timestamp_end": 2194.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2194.74,
+    "timestamp_end": 2200.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2200.74,
+    "timestamp_end": 2206.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2206.74,
+    "timestamp_end": 2212.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2212.74,
+    "timestamp_end": 2216.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2216.74,
+    "timestamp_end": 2222.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2222.74,
+    "timestamp_end": 2228.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2228.74,
+    "timestamp_end": 2234.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2234.74,
+    "timestamp_end": 2240.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2240.74,
+    "timestamp_end": 2250.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2250.74,
+    "timestamp_end": 2256.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2256.74,
+    "timestamp_end": 2262.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2262.74,
+    "timestamp_end": 2268.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2268.74,
+    "timestamp_end": 2276.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2276.74,
+    "timestamp_end": 2278.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2278.74,
+    "timestamp_end": 2280.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2280.74,
+    "timestamp_end": 2282.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2282.74,
+    "timestamp_end": 2284.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2284.74,
+    "timestamp_end": 2286.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2286.74,
+    "timestamp_end": 2288.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2288.74,
+    "timestamp_end": 2290.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2290.74,
+    "timestamp_end": 2292.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2292.74,
+    "timestamp_end": 2294.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Preamble",
+    "timestamp_start": 2294.74,
+    "timestamp_end": 2296.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Case studies of some system development.",
+    "timestamp_start": 2296.74,
+    "timestamp_end": 2304.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A personal insulin pump.",
+    "timestamp_start": 2304.48,
+    "timestamp_end": 2305.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We will see that with details in future.",
+    "timestamp_start": 2307.28,
+    "timestamp_end": 2309.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "An embedded system in an insulin pump used by diabetics to maintain blood glucose control.",
+    "timestamp_start": 2309.92,
+    "timestamp_end": 2315.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A mental health case patient management system.",
+    "timestamp_start": 2316.54,
+    "timestamp_end": 2319.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A system used to maintain records of people receiving care for mental health problems.",
+    "timestamp_start": 2319.98,
+    "timestamp_end": 2328.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A wilderness weather station.",
+    "timestamp_start": 2334.94,
+    "timestamp_end": 2337.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A data collection system that collects data about weather conditions in remote areas.",
+    "timestamp_start": 2340.66,
+    "timestamp_end": 2346.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, there are three rather different.",
+    "timestamp_start": 2346.22,
+    "timestamp_end": 2349.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Systems and let's see about them.",
+    "timestamp_start": 2349.98,
+    "timestamp_end": 2352.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Insulin pump control system.",
+    "timestamp_start": 2352.94,
+    "timestamp_end": 2355.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Collects data from a blood sugar sensor and calculates the amount of insulin required to be injected.",
+    "timestamp_start": 2360.62,
+    "timestamp_end": 2366.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Calculation based on the rate of change of blood sugar levels.",
+    "timestamp_start": 2366.62,
+    "timestamp_end": 2370.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Send signals to a micro pump to deliver the correct dose of insulin.",
+    "timestamp_start": 2370.62,
+    "timestamp_end": 2375.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Safety critical system as low blood sugars can lead to brain malfunction.",
+    "timestamp_start": 2375.62,
+    "timestamp_end": 2379.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Coma and death.",
+    "timestamp_start": 2379.98,
+    "timestamp_end": 2381.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "High blood sugar levels have long-term consequences such as eye and kidney damage.",
+    "timestamp_start": 2381.98,
+    "timestamp_end": 2385.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this system is a critical safety system.",
+    "timestamp_start": 2385.98,
+    "timestamp_end": 2389.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Safety critical system.",
+    "timestamp_start": 2389.98,
+    "timestamp_end": 2391.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the software engineer has to be extremely cautious with this system before releasing it.",
+    "timestamp_start": 2391.98,
+    "timestamp_end": 2398.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As you can see, first, the description of the system is made and let's continue.",
+    "timestamp_start": 2398.98,
+    "timestamp_end": 2405.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the insulin pump hardware is.",
+    "timestamp_start": 2405.98,
+    "timestamp_end": 2407.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's a.",
+    "timestamp_start": 2407.98,
+    "timestamp_end": 2408.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's a.",
+    "timestamp_start": 2408.54,
+    "timestamp_end": 2408.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's a.",
+    "timestamp_start": 2408.98,
+    "timestamp_end": 2409.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's a.",
+    "timestamp_start": 2409.48,
+    "timestamp_end": 2409.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Hardware architecture architecture is designed and planets.",
+    "timestamp_start": 2409.98,
+    "timestamp_end": 2411.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There is insulin.",
+    "timestamp_start": 2411.98,
+    "timestamp_end": 2413.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Reservoir.",
+    "timestamp_start": 2413.98,
+    "timestamp_end": 2415.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Reservoir.",
+    "timestamp_start": 2415.98,
+    "timestamp_end": 2416.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Needle assembly.",
+    "timestamp_start": 2416.98,
+    "timestamp_end": 2417.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sensor.",
+    "timestamp_start": 2417.98,
+    "timestamp_end": 2418.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Palm controller.",
+    "timestamp_start": 2418.98,
+    "timestamp_end": 2419.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Clock alarm.",
+    "timestamp_start": 2419.98,
+    "timestamp_end": 2420.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And displays.",
+    "timestamp_start": 2420.98,
+    "timestamp_end": 2421.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is the basic architecture of the hardware.",
+    "timestamp_start": 2421.98,
+    "timestamp_end": 2426.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Activity model of the insulin pump.",
+    "timestamp_start": 2426.98,
+    "timestamp_end": 2429.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A software engineer prepares all of these before even starting to code.",
+    "timestamp_start": 2429.98,
+    "timestamp_end": 2436.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is what.",
+    "timestamp_start": 2436.98,
+    "timestamp_end": 2438.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What makes what difference the software engineer from a simple programmer or a coder?",
+    "timestamp_start": 2438.98,
+    "timestamp_end": 2445.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We will have more ideas about this in the future lessons future lectures.",
+    "timestamp_start": 2445.58,
+    "timestamp_end": 2450.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so the activity model of the insulin pump blood sensor analyze sensor reading.",
+    "timestamp_start": 2450.18,
+    "timestamp_end": 2460.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So analyze sensor gets the data from blood sensor and reads it then calculates blood sugar compute the",
+    "timestamp_start": 2460.18,
+    "timestamp_end": 2468.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "needed insulin amount and then decide the insulin dose and then set the dose to the compute pump commands pump data.",
+    "timestamp_start": 2468.48,
+    "timestamp_end": 2481.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the pumping command is sent to the control insulin pump insulin is pumped into the blood and what those is used and all other related data is logged.",
+    "timestamp_start": 2481.08,
+    "timestamp_end": 2495.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then it computes the insulin again.",
+    "timestamp_start": 2495.28,
+    "timestamp_end": 2498.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To decide whether insulin was enough or not.",
+    "timestamp_start": 2498.38,
+    "timestamp_end": 2503.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, essential high-level requirements.",
+    "timestamp_start": 2503.68,
+    "timestamp_end": 2507.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system shall be available to deliver insulin when required the system shall perform reliably and deliver the correct amount of insulin to counteract the current level of blood sugar.",
+    "timestamp_start": 2507.78,
+    "timestamp_end": 2522.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system must therefore be designed and implemented to ensure that the system always meets the requirements.",
+    "timestamp_start": 2522.78,
+    "timestamp_end": 2528.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "He aí, work",
+    "timestamp_start": 2528.38,
+    "timestamp_end": 2552.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ok, let's see",
+    "timestamp_start": 2552.8,
+    "timestamp_end": 2553.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a patient information system to support mental health care as a medical information system that maintains information about patients suffering from mental health problems and the treatments that they offer to this system.",
+    "timestamp_start": 2553.28,
+    "timestamp_end": 2553.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Head endpoint",
+    "timestamp_start": 2553.48,
+    "timestamp_end": 2554.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They had created your final stage of this mythical process,",
+    "timestamp_start": 2554.08,
+    "timestamp_end": 2555.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here,",
+    "timestamp_start": 2555.28,
+    "timestamp_end": 2556.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "see sessions",
+    "timestamp_start": 2556.28,
+    "timestamp_end": 2557.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "training",
+    "timestamp_start": 2557.28,
+    "timestamp_end": 2558.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "they have received. Most mental health patients do not require dedicated hospital treatment but need",
+    "timestamp_start": 2558.28,
+    "timestamp_end": 2564.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to attend specialist clinics regularly where they can meet a doctor who has detailed knowledge of",
+    "timestamp_start": 2564.2,
+    "timestamp_end": 2569.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "their problems. To make it easier for patients to attend, these clinics are not just run in hospitals.",
+    "timestamp_start": 2569.0,
+    "timestamp_end": 2575.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They may also be held in local medical practices or community centers.",
+    "timestamp_start": 2575.96,
+    "timestamp_end": 2580.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Just now I have MHC-PMS. It is a mental health care patient management system.",
+    "timestamp_start": 2580.2,
+    "timestamp_end": 2588.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "MHC-PMS.",
+    "timestamp_start": 2588.46,
+    "timestamp_end": 2591.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Berkcan Demirtas",
+    "timestamp_start": 2591.26,
+    "timestamp_end": 2593.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay",
+    "timestamp_start": 2593.88,
+    "timestamp_end": 2594.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The MHC-PMS, Mental Health Care Patient Management System, is an information system that is intended",
+    "timestamp_start": 2597.82,
+    "timestamp_end": 2604.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for use in clinics. It makes use of a centralized database of patient information",
+    "timestamp_start": 2604.5,
+    "timestamp_end": 2609.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but has mini-channels where the source of the information and cause of the disease can be scored.",
+    "timestamp_start": 2609.82,
+    "timestamp_end": 2610.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "has also been designed to run on a PC, so that it may be accessed and used from sites",
+    "timestamp_start": 2610.18,
+    "timestamp_end": 2615.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that do not have secure network connectivity.",
+    "timestamp_start": 2615.3,
+    "timestamp_end": 2618.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When the local systems have secure network access, they use patient information in the",
+    "timestamp_start": 2618.7,
+    "timestamp_end": 2623.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "database but they can download and use local copies of patient records when they are disconnected.",
+    "timestamp_start": 2623.4,
+    "timestamp_end": 2629.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is kind of a mixed system that works both online and offline.",
+    "timestamp_start": 2629.24,
+    "timestamp_end": 2635.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what are the goals of this system?",
+    "timestamp_start": 2635.18,
+    "timestamp_end": 2641.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To generate management information that allows health service managers to assess performance",
+    "timestamp_start": 2641.8,
+    "timestamp_end": 2646.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "against local and government targets.",
+    "timestamp_start": 2646.78,
+    "timestamp_end": 2649.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To provide medical staff with timely information to support the treatment of patients.",
+    "timestamp_start": 2649.68,
+    "timestamp_end": 2655.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it has two main goals.",
+    "timestamp_start": 2655.5,
+    "timestamp_end": 2658.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The organization of the MHC PMS.",
+    "timestamp_start": 2658.26,
+    "timestamp_end": 2663.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It has a local system.",
+    "timestamp_start": 2663.34,
+    "timestamp_end": 2664.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It has a local system.",
+    "timestamp_start": 2664.34,
+    "timestamp_end": 2665.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It has databases.",
+    "timestamp_start": 2665.16,
+    "timestamp_end": 2666.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As you can see, it has a main server and it has a patient database.",
+    "timestamp_start": 2666.16,
+    "timestamp_end": 2673.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you see they both exchange data between them.",
+    "timestamp_start": 2673.92,
+    "timestamp_end": 2678.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is the main organization.",
+    "timestamp_start": 2678.6,
+    "timestamp_end": 2680.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Key features.",
+    "timestamp_start": 2680.44,
+    "timestamp_end": 2682.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Individual care management.",
+    "timestamp_start": 2682.54,
+    "timestamp_end": 2687.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Clinicians can create records for patients, edit the information in the system, view patient",
+    "timestamp_start": 2687.92,
+    "timestamp_end": 2692.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "history, etc.",
+    "timestamp_start": 2692.78,
+    "timestamp_end": 2694.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system supports data summaries so that doctors can quickly learn about the key problems",
+    "timestamp_start": 2694.92,
+    "timestamp_end": 2699.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and treatments that have been prescribed.",
+    "timestamp_start": 2699.84,
+    "timestamp_end": 2702.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Patient monitoring.",
+    "timestamp_start": 2702.92,
+    "timestamp_end": 2706.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system monitors the records of patients that are involved in treatment and issues",
+    "timestamp_start": 2706.54,
+    "timestamp_end": 2710.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "warnings if possible problems are detected.",
+    "timestamp_start": 2710.78,
+    "timestamp_end": 2713.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And administrative reporting.",
+    "timestamp_start": 2713.92,
+    "timestamp_end": 2721.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system generates monthly management reports showing the number of patients that have been",
+    "timestamp_start": 2721.16,
+    "timestamp_end": 2721.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "diagnosed.",
+    "timestamp_start": 2721.92,
+    "timestamp_end": 2722.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system also generates monthly management reports showing the number of patients that",
+    "timestamp_start": 2722.92,
+    "timestamp_end": 2723.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have been diagnosed.",
+    "timestamp_start": 2723.92,
+    "timestamp_end": 2724.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system also generates monthly management reports showing the number of patients treated",
+    "timestamp_start": 2724.92,
+    "timestamp_end": 2725.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at each clinic, the number of patients who have entered and left the care system, number",
+    "timestamp_start": 2725.92,
+    "timestamp_end": 2730.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of patients sectioned, the drugs prescribed and their costs, etc.",
+    "timestamp_start": 2730.2,
+    "timestamp_end": 2734.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You see this administrative reporting is all about statistical data and it can tremendously",
+    "timestamp_start": 2734.04,
+    "timestamp_end": 2741.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "help administrators of the system to improve efficiency.",
+    "timestamp_start": 2741.3,
+    "timestamp_end": 2748.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so what concerns there are?",
+    "timestamp_start": 2748.04,
+    "timestamp_end": 2752.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is not a safety critical system.",
+    "timestamp_start": 2752.32,
+    "timestamp_end": 2754.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "However, it still has some concerns.",
+    "timestamp_start": 2754.92,
+    "timestamp_end": 2758.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "First one is privacy.",
+    "timestamp_start": 2758.36,
+    "timestamp_end": 2762.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is essential that patient information is confidential and is never disclosed to anyone",
+    "timestamp_start": 2762.58,
+    "timestamp_end": 2767.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "apart from authorized medical staff and the patient themselves.",
+    "timestamp_start": 2767.32,
+    "timestamp_end": 2771.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Usually this is the most common problem in such systems.",
+    "timestamp_start": 2771.48,
+    "timestamp_end": 2775.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's also it's also existing e-commerce systems or in other systems.",
+    "timestamp_start": 2775.38,
+    "timestamp_end": 2780.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Privacy is not that much taken into the account.",
+    "timestamp_start": 2780.3,
+    "timestamp_end": 2782.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2782.92,
+    "timestamp_end": 2783.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2783.92,
+    "timestamp_end": 2784.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So they'll never become a priority and they have become a priority.",
+    "timestamp_start": 2784.92,
+    "timestamp_end": 2793.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's it.",
+    "timestamp_start": 2793.44,
+    "timestamp_end": 2794.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And safety?",
+    "timestamp_start": 2794.44,
+    "timestamp_end": 2795.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some mental illnesses cause patients to become suicidal or a danger to other people.",
+    "timestamp_start": 2795.44,
+    "timestamp_end": 2796.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Wherever possible, the system should warn medical staff about potentially suicidal or",
+    "timestamp_start": 2796.44,
+    "timestamp_end": 2801.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "dangerous patients.",
+    "timestamp_start": 2801.1,
+    "timestamp_end": 2803.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system must be available when needed otherwise safety may be compromised and it may be impossible",
+    "timestamp_start": 2803.08,
+    "timestamp_end": 2808.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to prescribe the correct medication to patients.",
+    "timestamp_start": 2808.46,
+    "timestamp_end": 2811.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2811.54,
+    "timestamp_end": 2812.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the third example system is wilderness care.",
+    "timestamp_start": 2812.54,
+    "timestamp_end": 2813.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The government of a country with large areas of wilderness decides to deploy several hundred weather stations in remote areas.",
+    "timestamp_start": 2813.92,
+    "timestamp_end": 2826.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Weather stations collect data from a set of instruments that measure temperature and pressure, sunshine, rainfall, wind speed and wind direction.",
+    "timestamp_start": 2826.92,
+    "timestamp_end": 2839.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The weather station includes a number of instruments that measure weather parameters such as the wind speed and direction, the ground and air temperatures, the barometric pressure and the rainfall over a 24-hour period.",
+    "timestamp_start": 2839.92,
+    "timestamp_end": 2852.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Each of these instruments is controlled by a software system that takes parameter readings periodically and manages the data collected from the instruments.",
+    "timestamp_start": 2852.92,
+    "timestamp_end": 2861.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These instruments are also sensors of the station.",
+    "timestamp_start": 2861.92,
+    "timestamp_end": 2867.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The weather stations and wind speed and direction.",
+    "timestamp_start": 2867.92,
+    "timestamp_end": 2868.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These instruments are also sensors of the station.",
+    "timestamp_start": 2868.92,
+    "timestamp_end": 2869.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "According to the data collected every hour, weather stations are used within certain periods of time to measure weather conditions.",
+    "timestamp_start": 2869.92,
+    "timestamp_end": 2881.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system of weather stations is determined by the недне impatаци ник unlearned with a manual controller.",
+    "timestamp_start": 2881.92,
+    "timestamp_end": 2888.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It can be recorded in the information system something or the weather莫sios system of the station with this sheet of information.",
+    "timestamp_start": 2888.92,
+    "timestamp_end": 2894.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There is no need for an automatic control system of this device.",
+    "timestamp_start": 2894.92,
+    "timestamp_end": 2895.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But it is adapted andinto a system of government sources.",
+    "timestamp_start": 2895.92,
+    "timestamp_end": 2896.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All distance and time data are commentaires of weather stations with processes to measure information.",
+    "timestamp_start": 2896.92,
+    "timestamp_end": 2897.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Naval systems test all agreements of weather systems and data generated by the system.",
+    "timestamp_start": 2897.92,
+    "timestamp_end": 2898.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is the system design.",
+    "timestamp_start": 2898.92,
+    "timestamp_end": 2900.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is responsible for collecting weather data, carrying out some initial data processing and",
+    "timestamp_start": 2903.08,
+    "timestamp_end": 2908.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "transmitting it to the data management system. The data management and archiving system.",
+    "timestamp_start": 2908.36,
+    "timestamp_end": 2913.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it is composed of three systems. This system collects the data from all of the wilderness",
+    "timestamp_start": 2914.76,
+    "timestamp_end": 2919.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "weather stations, carries out data processing and analysis and archives the data.",
+    "timestamp_start": 2919.24,
+    "timestamp_end": 2924.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the system maintenance system, the station maintenance system,",
+    "timestamp_start": 2924.52,
+    "timestamp_end": 2927.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this system can communicate by satellite with all wilderness weather stations to",
+    "timestamp_start": 2928.92,
+    "timestamp_end": 2933.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "monitor the health of these systems and provide reports of problems.",
+    "timestamp_start": 2933.32,
+    "timestamp_end": 2936.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And additional software functionality, functionality, functionality.",
+    "timestamp_start": 2936.92,
+    "timestamp_end": 2943.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, functionality.",
+    "timestamp_start": 2947.56,
+    "timestamp_end": 2948.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Monitor the instruments, power and communication hardware and report faults to the management system.",
+    "timestamp_start": 2951.04,
+    "timestamp_end": 2956.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Manage the system power,",
+    "timestamp_start": 2957.08,
+    "timestamp_end": 2958.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ensuring that batteries are charged whenever the environmental conditions permit but also that generators are shut down in potentially damaging weather conditions, such as high wind.",
+    "timestamp_start": 2958.6,
+    "timestamp_end": 2968.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Support dynamic reconfiguration where parts of the software are replaced with new versions and where backup instruments are switched into the system in the event of system failure.",
+    "timestamp_start": 2969.68,
+    "timestamp_end": 2979.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you see there are many other key issues that a software engineer has to take into consideration.",
+    "timestamp_start": 2979.72,
+    "timestamp_end": 2988.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is not just about starting and running a data collector station.",
+    "timestamp_start": 2988.16,
+    "timestamp_end": 2996.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are many other issues always in such projects, in big projects, and you have to consider all of them, plan all of them before even starting coding.",
+    "timestamp_start": 2996.76,
+    "timestamp_end": 3008.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So key points so far.",
+    "timestamp_start": 3009.36,
+    "timestamp_end": 3012.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software engineers have responsibilities to the engineers.",
+    "timestamp_start": 3014.78,
+    "timestamp_end": 3018.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They should not simply be concerned with technical issues.",
+    "timestamp_start": 3018.16,
+    "timestamp_end": 3023.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Professional societies publish codes of conduct which set out the standards of behavior expected of their members.",
+    "timestamp_start": 3023.94,
+    "timestamp_end": 3029.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Three case studies are used in the book.",
+    "timestamp_start": 3030.78,
+    "timestamp_end": 3032.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "An embedded insulin pump control system, a system for mental health care patient management, a wilderness weather station.",
+    "timestamp_start": 3033.14,
+    "timestamp_end": 3039.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we will have more detailed explanations or examples about these systems.",
+    "timestamp_start": 3039.84,
+    "timestamp_end": 3048.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the future lectures.",
+    "timestamp_start": 3048.16,
+    "timestamp_end": 3049.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so I am finishing the first lecture here.",
+    "timestamp_start": 3057.98,
+    "timestamp_end": 3060.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let me upload them to our GitHub repository.",
+    "timestamp_start": 3061.48,
+    "timestamp_end": 3065.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It will be useful for a upcoming session for besser",
+    "timestamp_start": 3078.16,
+    "timestamp_end": 3105.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "MP4 reading.",
+    "timestamp_start": 3105.96,
+    "timestamp_end": 3106.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes, please.",
+    "timestamp_start": 3106.74,
+    "timestamp_end": 3107.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "use this code management system such as git bash. I am using git bash to upload or",
+    "timestamp_start": 3107.54,
+    "timestamp_end": 3115.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "synchronize my data with the remote repository. Definitely learn how to use",
+    "timestamp_start": 3115.34,
+    "timestamp_end": 3121.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "github and git bash. It will be extremely useful in your professional",
+    "timestamp_start": 3121.64,
+    "timestamp_end": 3128.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "job. Almost every professional company now uses as such code management",
+    "timestamp_start": 3128.12,
+    "timestamp_end": 3134.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "repository. Whatever you learn in this course will help you in your professional",
+    "timestamp_start": 3134.48,
+    "timestamp_end": 3147.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "life. This course is not about developing your skills in coding or programming.",
+    "timestamp_start": 3147.32,
+    "timestamp_end": 3154.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This course is about improving your group working skills,",
+    "timestamp_start": 3154.64,
+    "timestamp_end": 3160.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "improving your professional",
+    "timestamp_start": 3160.34,
+    "timestamp_end": 3163.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "skills, improving your professional skills, and improving your professional",
+    "timestamp_start": 3163.92,
+    "timestamp_end": 3164.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "viewpoints, your professional life in future. Believe me, this is the truth.",
+    "timestamp_start": 3164.46,
+    "timestamp_end": 3176.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Hopefully see you next week. Stay safe. Stay away from crowded places",
+    "timestamp_start": 3176.96,
+    "timestamp_end": 3188.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "until COVID-19 pandemic ends.",
+    "timestamp_start": 3188.58,
+    "timestamp_end": 3193.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Alright. See you later hopefully.",
+    "timestamp_start": 3194.46,
+    "timestamp_end": 3199.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  }
+]

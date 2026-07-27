@@ -1,0 +1,1434 @@
+0.0s - 4.0s : 🎵
+4.0s - 26.26s : Alright, let's get started!
+27.94s - 29.62s : Alright, give it up for DPH Cash again!
+30.0s - 32.0s : Awesome.
+32.0s - 37.0s : Alright, so quick reminder, I'm going to be gone next week.
+37.0s - 40.0s : I'm going to London to see your boy, Patface Rick.
+40.0s - 42.0s : Oh, my man Patface Rick!
+42.0s - 44.0s : So no class next week.
+44.0s - 50.0s : In person, I'll record it while I'm remote, post it on YouTube, and I'll say hi to your friend, whatever.
+50.0s - 54.0s : So, alright, and then Project Zero, that went out on Monday.
+54.0s - 56.0s : That'll be due on September 7th.
+56.0s - 59.0s : Homework 1 will be released later today, and that'll also be due on the same date.
+59.0s - 60.0s : So again, Project Zero.
+60.0s - 65.0s : Project Zero is the C++ project approved that you know is C++, and you can debug multi-threaded code.
+65.0s - 71.0s : So please go, you know, start that sooner rather than later, because you'll set up your dev environment and make sure everything's working.
+71.0s - 79.0s : Alright, so last class, we were a bit rushed, but we talked about how the relational model was the superior data model for databases.
+79.0s - 86.0s : And it pretty much is the fundamental way you would represent any major application database or data in a system.
+86.0s - 90.0s : And then we also talked about how relational algebra is the building blocks.
+90.0s - 97.0s : So it's really about how you can create a system for us to manipulate and query data in a relational model database, in a relational database system.
+97.0s - 104.0s : And so today's class is really about sort of, we won't go back and look at relational algebra again.
+104.0s - 109.0s : Now we'll talk about SQL, which is in a higher form of a query language than what relational algebra is.
+109.0s - 116.0s : But then when we start actually talking about how to implement the system itself and actually execute the queries that we'll talk about today,
+116.0s - 118.0s : that's when relational algebra will come back and sort of fit in.
+118.0s - 119.0s : See, okay, now you see how these are.
+119.0s - 121.0s : These are the building blocks that are building the system.
+121.0s - 122.0s : Okay?
+122.0s - 129.0s : Alright, so let's go back to the 70s and the very beginning of SQL.
+129.0s - 137.0s : So as I said, when Ted Codd wrote the original paper on the relational model in 1969, 1970, it was just the relational model and relational algebra.
+137.0s - 142.0s : He didn't go into anything in details about the implementation of the system that could run a relational model.
+142.0s - 147.0s : And he didn't say anything about what the query language should be.
+147.0s - 152.0s : And so the other people at IBM picked up the paper and said, hey, this is actually a really good idea.
+152.0s - 159.0s : Even though IBM was making a ton of early money on a non-relational model system called IMS.
+159.0s - 163.0s : And so they decided to start building a prototype in England.
+163.0s - 169.0s : And the guys that invented SQL first developed a query language called Square.
+169.0s - 173.0s : And it's considered to be the first relational query language.
+173.0s - 175.0s : But nobody actually uses it because the syntax is pretty esoteric.
+175.0s - 176.0s : And there actually wasn't a lot of information about it.
+176.0s - 177.0s : So they just started building a prototype.
+177.0s - 180.0s : And they didn't even have a keyboard or any application to let you write code in it.
+180.0s - 184.0s : You write things in this vertical manner.
+184.0s - 189.0s : This is the classic example of getting the average sales salary of employees in a department.
+189.0s - 191.0s : So again, so this was Square.
+191.0s - 193.0s : Nobody actually did this.
+193.0s - 194.0s : They threw it away.
+194.0s - 200.0s : And then a bunch of the people that were working in England, they moved to San Jose in California at IBM Research.
+200.0s - 206.0s : And they started building the first prototype or the second prototype of IBM.
+206.0s - 207.0s : And it was a really cool idea.
+207.0s - 209.0s : It was a really cool idea for building a relational data system called System R.
+209.0s - 210.0s : It's very influential.
+210.0s - 212.0s : A lot of seminal work came out of this.
+212.0s - 216.0s : We'll see many times throughout the entire semester where I'll say, like, hey, this is a kind of cool idea.
+216.0s - 219.0s : And here's a bunch of new systems in the modern era that actually implemented it.
+219.0s - 222.0s : Well, it turns out IBM invented a bunch of that crap in the 1970s.
+222.0s - 224.0s : All right.
+224.0s - 231.0s : And so they first developed a query language called SQL, spelled S-E-Q-U-E-L, in 1972.
+231.0s - 233.0s : And this was Chamberlain and Boyce.
+233.0s - 235.0s : And it originally stood for Structured English Query Language.
+235.0s - 248.0s : But then when IBM later then released a commercial product based on relational model and SQL in the 1980s, then they got sued because there was some other system or some other language out there was already using SQL.
+248.0s - 251.0s : And they changed it to be SQL.
+251.0s - 254.0s : So sometimes you'll see people refer to, like, MySQL as MySQL.
+254.0s - 262.0s : But a lot of the older guys back in the 70s, around the 80s, refer to it as SQL because that was the original name.
+262.0s - 264.0s : So IBM released the neighborhood name.
+264.0s - 265.0s : It's called SQL.
+265.0s - 269.0s : They didn't release system R. They then later released other commercial systems like system 38.
+269.0s - 271.0s : That's not really around anymore.
+271.0s - 274.0s : SQL DS is around, but it's kind of in maintenance mode.
+274.0s - 278.0s : But DB2 in 1983 was the big one that IBM put out.
+278.0s - 280.0s : And that's still out today.
+280.0s - 289.0s : I guarantee if you run any transaction online to some website, some bank, you're running on changes are very likely some bank will be using DB2.
+289.0s - 290.0s : Right?
+290.0s - 292.0s : There was other commercial systems in the 1970s.
+292.0s - 294.0s : The first one was probably Oracle.
+294.0s - 297.0s : Which was founded by Larry Ellison.
+297.0s - 300.0s : If you don't know him, he's the third richest person in the world.
+300.0s - 302.0s : He owns a Hawaiian island.
+302.0s - 304.0s : All paid for by databases.
+304.0s - 306.0s : Again, this is why this class is important.
+306.0s - 307.0s : All right.
+307.0s - 310.0s : So SQL was originally, again, this proposal from IBM.
+310.0s - 316.0s : But, again, IBM was the juggernaut of computing back in the 1960s, 70s, and 80s.
+316.0s - 318.0s : So whatever IBM did, that's what they said.
+318.0s - 320.0s : Everyone said, okay, that's the standard.
+320.0s - 322.0s : The Oracle guys lucked out.
+322.0s - 325.0s : They basically copied what IBM was doing.
+325.0s - 329.0s : The Berkeley guys that built Ingress, they had their own query language called Quell.
+329.0s - 334.0s : But then when IBM put out DB2, SQL became the de facto standard.
+334.0s - 340.0s : It became an anti-standard in 1986 within the United States and then an international standard in 1987.
+340.0s - 344.0s : And then they changed it to be the structured query language for SQL.
+344.0s - 350.0s : So even though SQL is old, I just told you SQL was invented in 1972, 73.
+350.0s - 352.0s : It's not a dead language.
+352.0s - 354.0s : It's actively being used everywhere.
+354.0s - 359.0s : I keep telling you throughout the entire semester, knowing SQL and writing SQL is super important.
+359.0s - 361.0s : And they put out new versions of it all the time.
+361.0s - 364.0s : The latest one came out in March 2023.
+364.0s - 369.0s : They added a bunch of new features like property graph queries and multidimensional arrays.
+369.0s - 374.0s : You ever heard of systems like Neo4j, Dgraph, there's a bunch of other graph databases.
+374.0s - 376.0s : Now you can do all that SQL.
+376.0s - 379.0s : So the great thing about SQL is it evolves over time.
+379.0s - 381.0s : And as applications change.
+381.0s - 384.0s : And what people want to do with data changes.
+384.0s - 386.0s : SQL gets added.
+386.0s - 390.0s : They add new features to SQL to adopt to the times.
+390.0s - 396.0s : And the challenge is going to be, and we'll see this throughout this lecture here, is that the SQL standard is going to say one thing.
+396.0s - 399.0s : But nobody is actually going to implement it exactly.
+399.0s - 403.0s : Every single data system is going to have their own quirks, their own little extra stuff they're going to sprinkle in.
+403.0s - 407.0s : Sometimes they're ahead of the standard and they try to get whatever their version of a feature is into the standard.
+407.0s - 410.0s : And sometimes the standard comes out and then they add it later on.
+410.0s - 415.0s : But they still take their own liberties, if you will, with it.
+415.0s - 419.0s : And we'll see what some of the biggest offenders are today in our demos.
+419.0s - 429.0s : So if you have a data system today and you say you're going to support SQL, the bare minimum you need to have, say I have a SQL database, is what was defined in the SQL92 standard.
+429.0s - 431.0s : So this is your select, insert, update, deletes.
+431.0s - 434.0s : Your create tables, create indexes, transactions.
+434.0s - 439.0s : The very basic you need to say, you know, SQL, that I have SQL is that you follow the SQL92 standard.
+440.0s - 444.0s : But today's class we'll go a little bit, talk about the newer stuff.
+444.0s - 448.0s : And so people come along every ten years and say SQL is a terrible language.
+448.0s - 449.0s : It's not great.
+449.0s - 452.0s : It certainly has its rough spots.
+452.0s - 457.0s : But every attempt to try to replace it in the last 50, 60 years has failed.
+457.0s - 462.0s : So right now we're in the phase where all the AI guys are saying, oh, yeah, SQL is going to die.
+462.0s - 464.0s : You can use LLMs for everything, yada, yada, yada.
+464.0s - 466.0s : So this is the guy working on a system called Vespa.
+466.0s - 468.0s : He's basically saying natural language would replace SQL.
+468.0s - 469.0s : This guy is going to say, hey, I'm going to replace SQL.
+469.0s - 481.0s : This guy is like a crypto bro and trying to sell some video demo or some video like code academy thing, right, where you can use chat dbt to replace everything with SQL.
+481.0s - 487.0s : So I'm not here to say that SQL is not going to be replaced in my lifetime.
+487.0s - 489.0s : It may be, but it's very unlikely.
+489.0s - 490.0s : It was here before you were born.
+490.0s - 492.0s : It would be here after we die.
+492.0s - 494.0s : So it's not going to go away.
+494.0s - 499.0s : But the would you be when you sit down, are you going to immediately write SQL?
+499.0s - 501.0s : In many cases, oftentimes no.
+501.0s - 502.0s : Right?
+502.0s - 503.0s : Yes?
+503.0s - 506.0s : .
+506.0s - 509.0s : The question is what would replace SQL?
+509.0s - 511.0s : I don't know.
+511.0s - 517.0s : So we actually did a seminar series last semester where we had all the people that are trying to replace SQL.
+517.0s - 519.0s : Talk about how they're going to replace SQL.
+519.0s - 525.0s : The closest one that I think could not replace SQL but extend it is actually Google's pipe SQL syntax.
+525.0s - 527.0s : And I can give a little demo of that in a second.
+527.0s - 528.0s : What's that?
+528.0s - 529.0s : You were at Google?
+529.0s - 530.0s : Yeah.
+530.0s - 531.0s : So that thing's.
+531.0s - 532.0s : Yeah, I wrote it down.
+532.0s - 533.0s : Oh, you wrote it.
+533.0s - 534.0s : Okay.
+534.0s - 535.0s : Yes.
+535.0s - 536.0s : So there you go.
+536.0s - 537.0s : So that's probably the closest thing.
+537.0s - 540.0s : But it's still fundamentally it's an enhancement to SQL.
+540.0s - 542.0s : What's that?
+542.0s - 545.0s : The question is what keeps it going?
+545.0s - 547.0s : Going back to this, it evolves.
+547.0s - 548.0s : Right?
+548.0s - 550.0s : Like here's all the different versions.
+550.0s - 553.0s : Like say 15 years ago, what was the hot database?
+553.0s - 554.0s : MongoDB.
+554.0s - 556.0s : Because of web 2.0, whatever the buzz word was at the time.
+556.0s - 557.0s : You were starting everything as JSON.
+557.0s - 560.0s : Well, the SQL standard now adds support for JSON.
+560.0s - 564.0s : 30 years ago, 20 years ago, XML was the hot thing.
+564.0s - 567.0s : Well, SQL supports XML.
+567.0s - 572.0s : The statement is the flexibility of the SQL.
+572.0s - 577.0s : SQL will provide you a basic building block that you can then add more advanced features and do just about things.
+577.0s - 578.0s : Right?
+578.0s - 581.0s : Now, again, I mentioned like are they doing things?
+581.0s - 582.0s : Is it perfect?
+582.0s - 583.0s : No.
+583.0s - 586.0s : One of the biggest complaints is that the select clause comes before the from clause.
+586.0s - 587.0s : Right?
+587.0s - 593.0s : Well, in the original proposal from IBM in the 1970s, the from clause came first, then the select.
+593.0s - 598.0s : But then they did a user study at the Arizona State University.
+598.0s - 602.0s : And all the students, whatever they tested, said, oh, we like the select before the from.
+602.0s - 605.0s : And that's the way it's been for 50, 60 years because of those people.
+605.0s - 607.0s : Right?
+607.0s - 614.0s : Well, we'll see some data systems we can play around with and see how you can change things.
+614.0s - 616.0s : Sometimes you don't always have to have it in that order.
+616.0s - 618.0s : You can do it in the general order you do.
+618.0s - 619.0s : All right.
+619.0s - 627.0s : So, again, I've said many, many public statements before that like SQL is the most important programming language you need to learn as a student.
+627.0s - 633.0s : Because, again, no matter whether you're actually building a database system or just using one, the rest of your life you're going to come across SQL.
+633.0s - 638.0s : And maybe the LLMs can provide you a first draft of a query language.
+638.0s - 645.0s : Maybe it will end up being like assembly where there's the high level things we can write and then that gets transpiled down to SQL.
+645.0s - 648.0s : Which is what a lot of replacements to SQL are trying to do.
+648.0s - 650.0s : But everybody has to learn SQL.
+650.0s - 652.0s : It's very, very important.
+652.0s - 656.0s : And so to give you how an example of how serious I am about learning SQL.
+656.0s - 658.0s : Audio up here.
+658.0s - 660.0s : There's no audio.
+660.0s - 662.0s : That sucks.
+662.0s - 665.0s : Well, this is my 5-year-old biological daughter.
+665.0s - 672.0s : And every morning we wake up at 7 a.m. and she has to write SQL before she can have breakfast.
+672.0s - 673.0s : Is that considered child abuse?
+673.0s - 674.0s : No.
+675.0s - 677.0s : I don't know.
+677.0s - 680.0s : Now is mommy going to love me more since I wrote SQL?
+680.0s - 682.0s : I tell her mom loves her more when she writes SQL.
+682.0s - 683.0s : It works.
+683.0s - 686.0s : Okay.
+686.0s - 687.0s : All right.
+687.0s - 688.0s : So what does the relational language give it?
+688.0s - 690.0s : What is SQL going to give us?
+690.0s - 692.0s : There will be sort of three basic components.
+692.0s - 694.0s : The DML, DDL, and DCL.
+694.0s - 696.0s : DML is the data manipulation language.
+696.0s - 700.0s : When you write a select statement or update, insert, update, delete, those are all going to be DMLs.
+700.0s - 703.0s : The DDL will be the definition of like a table, an index, or a view.
+703.0s - 704.0s : And the DCL is the definition of a table.
+704.0s - 709.0s : And the DCL will be like controls, like controlling who is allowed to see what data or what comps and so forth.
+709.0s - 716.0s : There's other things we'll cover later in the semester, like transactions, like how to call begin transaction and rollback and things like that.
+716.0s - 719.0s : But we'll worry about that later.
+719.0s - 729.0s : One important thing we got to understand also, too, is that although the relational model is based on sets, right, we looked at unions and intersections, that was basic set theory.
+729.0s - 732.0s : SQL is going to be based on bags.
+732.0s - 734.0s : So sets are unordered collections of data.
+734.0s - 738.0s : When you don't have duplicates, bags are unordered collections of data.
+738.0s - 740.0s : You do have duplicates.
+740.0s - 746.0s : Lists are lists would be an order collection that has a defined order.
+746.0s - 748.0s : Bags and sets do not.
+748.0s - 757.0s : So that means that if the in SQL, they're going to make this choice to allow duplicates because it requires extra work to remove the duplicates.
+757.0s - 762.0s : And so if you really want to remove them, you have to add extra maybe, you know, keywords like distinct and other things to remove the things that you don't want to remove.
+762.0s - 763.0s : Right?
+763.0s - 765.0s : So by default, we'll have duplicates.
+765.0s - 767.0s : And most of the times, it's not a problem.
+767.0s - 773.0s : But if you do care about removing duplicates, there's SQL that will allow you to do this.
+773.0s - 775.0s : All right.
+775.0s - 777.0s : So we're going to do a quick crash course on the basics of SQL.
+777.0s - 784.0s : But I want to cover the things that are more modern in the spec.
+784.0s - 787.0s : And we'll look at some examples of how real systems actually run these things.
+787.0s - 791.0s : And then for today, we actually have one of our first flash talks for the semester.
+791.0s - 796.0s : So the guys from dbt are going to come give a talk about their system.
+796.0s - 800.0s : Who here has ever heard of dbt or used dbt before?
+800.0s - 801.0s : One.
+801.0s - 802.0s : Okay.
+802.0s - 806.0s : It is one of the most widely used database tools in the world today.
+806.0s - 813.0s : It's basically if you're a data scientist or doing any major data analysis, chances are they're running on dbt.
+813.0s - 814.0s : Right?
+814.0s - 815.0s : It's pretty significant.
+815.0s - 816.0s : And guess what?
+816.0s - 817.0s : It's just based on SQL.
+817.0s - 819.0s : It's SQL with templates.
+819.0s - 820.0s : Right?
+820.0s - 822.0s : So he'll talk about what they're doing over there.
+822.0s - 827.0s : And then they'll come, again, come give a pitch for recruiting later in the semester.
+827.0s - 831.0s : Like one of our best students from 445 last year, she's there right now.
+831.0s - 832.0s : All right.
+832.0s - 839.0s : So today's class, the example database we're going to use will be just a really simple representation of a university.
+839.0s - 840.0s : Right?
+840.0s - 841.0s : There's a student table.
+841.0s - 842.0s : There's a course table.
+842.0s - 845.0s : And then students take those courses and they get grades.
+845.0s - 846.0s : Right?
+846.0s - 849.0s : So we'll just use this as the running example throughout today's class.
+849.0s - 850.0s : All right.
+850.0s - 852.0s : So the very first thing we want to do is aggregations.
+852.0s - 853.0s : Right?
+853.0s - 855.0s : I'm assuming everyone here has seen SQL before.
+855.0s - 858.0s : So you know how to do basic selects, inserts, updates, deletes.
+858.0s - 860.0s : We don't need to cover those things.
+860.0s - 867.0s : But now we want to start extrapolating new data, new information from the data we've already collected and put it into our database.
+867.0s - 870.0s : So aggregations are the basic formula of how to do this.
+870.0s - 875.0s : The idea is that you're going to take multiple tuples or multiple values across multiple tuples.
+875.0s - 879.0s : And we can coalesce them into a single scalar value.
+879.0s - 883.0s : And we can use a single scalar value that computes some aggregate function.
+883.0s - 887.0s : Like an average, min, max, the count.
+887.0s - 892.0s : Other systems can support things like standard deviations or geometric means.
+892.0s - 896.0s : The basic idea is you're collapsing down multiple values and producing a single output.
+896.0s - 898.0s : Right?
+898.0s - 904.0s : So the aggregation function can pretty much be used only in the output list or projection list of our SQL query.
+904.0s - 906.0s : Not always the case because of nested queries.
+906.0s - 908.0s : But for now we can ignore that.
+908.0s - 910.0s : So some really basic things.
+910.0s - 914.0s : Like you can say count the number of students that have an at CS login.
+914.0s - 915.0s : Right?
+915.0s - 921.0s : And then in our projection output list here we see we have an account function that's computing.
+921.0s - 927.0s : For every student that matches that predicate, I think of the filter from last class.
+927.0s - 933.0s : My projection output is going to maintain a running tally of the number of students that it counts.
+933.0s - 936.0s : Notice I have count with the login field in there.
+936.0s - 937.0s : Does that make any sense?
+937.0s - 939.0s : Does that sound right?
+939.0s - 942.0s : What does it mean to be counting logins?
+942.0s - 946.0s : Well, it turns out for some functions like count, it doesn't actually matter what you put in there.
+946.0s - 948.0s : I can do count star, produce the same answer.
+948.0s - 951.0s : I can do count one, produce the same answer.
+951.0s - 953.0s : You can put count one plus plus one.
+953.0s - 954.0s : Like whatever.
+954.0s - 958.0s : Because at the end of the day all it's really doing is counting the number of tuples that get matched here.
+958.0s - 959.0s : Right?
+959.0s - 962.0s : So that's a basic aggregation.
+962.0s - 967.0s : If we try to do things like have multiple attributes.
+967.0s - 968.0s : In our projection list.
+968.0s - 971.0s : In addition to an aggregation, we can have some problems.
+971.0s - 972.0s : Right?
+972.0s - 976.0s : So in this query here we're trying to get the average GPA of a student enrolled in each course.
+976.0s - 978.0s : And obviously now we want to include the course ID.
+978.0s - 979.0s : Right?
+979.0s - 982.0s : Because we want to know what course the average is being computed for.
+982.0s - 983.0s : Right?
+983.0s - 985.0s : But is this correct?
+985.0s - 987.0s : Shaking his head no.
+987.0s - 988.0s : Why?
+988.0s - 990.0s : Well, he says group by.
+990.0s - 991.0s : That will be the answer.
+991.0s - 992.0s : How to fix it.
+992.0s - 995.0s : But what does it mean to compute the average GPA of all the tuples.
+995.0s - 996.0s : But then spit out the average GPA.
+996.0s - 999.0s : But then spit out some kind of course ID.
+999.0s - 1000.0s : Right?
+1000.0s - 1002.0s : What's that?
+1002.0s - 1004.0s : There isn't a canonical one.
+1004.0s - 1007.0s : The statement is there isn't a canonical one that should be part of the output.
+1007.0s - 1008.0s : Correct.
+1008.0s - 1009.0s : Right.
+1009.0s - 1010.0s : So this is invalid.
+1010.0s - 1014.0s : Most database systems will throw an error and say you can't do this.
+1014.0s - 1015.0s : SQLite will let you do this.
+1015.0s - 1017.0s : MySQL used to let you do it.
+1017.0s - 1020.0s : Doesn't let you do it anymore.
+1020.0s - 1023.0s : And so the way to get around this would be you just put.
+1023.0s - 1024.0s : You can put any value in there.
+1024.0s - 1025.0s : Right?
+1025.0s - 1027.0s : This is something new that SQL added.
+1027.0s - 1029.0s : And it produces some output.
+1029.0s - 1030.0s : Is this correct?
+1030.0s - 1031.0s : I don't know.
+1031.0s - 1037.0s : But like from the database systems perspective, you told it what you wanted and it computed it for you.
+1037.0s - 1042.0s : Right?
+1042.0s - 1045.0s : So he brought up the way to solve this is to do group bys.
+1045.0s - 1053.0s : So group by is a way to partition or cluster the data as we're scanning along so that when we compute our aggregation, the aggregation is going to be the same as the aggregation.
+1053.0s - 1054.0s : Right?
+1054.0s - 1060.0s : So if I compute my aggregation, the aggregation will be derived from each group, each cluster.
+1060.0s - 1064.0s : So, again, the query is I want to get the average GPA for each course.
+1064.0s - 1069.0s : So I add my group by clause with the course ID and then say this is my original table.
+1069.0s - 1076.0s : Now when I scan through, I can look at the course ID and basically keep track of where the boundaries of these are.
+1076.0s - 1082.0s : And then when I compute my aggregation, I know to compute the average per group.
+1082.0s - 1083.0s : I didn't say it had an input.
+1083.0s - 1085.0s : I didn't say it had an input into this.
+1085.0s - 1087.0s : The data system is doing this for us.
+1087.0s - 1088.0s : You can either build a hash table.
+1088.0s - 1091.0s : You can actually sort things first, then do the group by.
+1091.0s - 1093.0s : We'll cover how to do that later in the semester.
+1093.0s - 1104.0s : But at this point in the class, I'm just trying to say, hey, look, I can group things up and the data system will figure out how to make sure I produce the right calculation.
+1104.0s - 1106.0s : Right?
+1106.0s - 1110.0s : You can go even more sophisticated with group bys with what are called grouping sets.
+1110.0s - 1112.0s : There's also a thing called rollups and cubes.
+1112.0s - 1114.0s : We don't have to worry about that.
+1114.0s - 1122.0s : But say you want to do something like I want to compute multiple aggregations on my data, but I want to be able to do this in a single query.
+1122.0s - 1125.0s : Now I can do the union operator that I saw last class.
+1125.0s - 1130.0s : I can add that to SQL and do a bunch of separate queries and mash things all together.
+1130.0s - 1140.0s : But if I can tell the data system that this is exactly what I want and kind of put everything together in a single package or a single query, then although we said it's just to be declarative and we don't have to tell the data system, we can do it.
+1140.0s - 1141.0s : Right?
+1141.0s - 1151.0s : And actually produce queries for it that it has a better time reasoning about and crunching one.
+1151.0s - 1155.0s : So you have group by and then you specify that you have a grouping set.
+1155.0s - 1161.0s : And then now within my grouping set clause, I can specify the separate group bys that I want.
+1161.0s - 1164.0s : And each of these will be executed as if they were a separate query.
+1164.0s - 1169.0s : But really what's happening is it's scanning through the data once and computing this answer for you and sort of mashing everything together at the end.
+1169.0s - 1170.0s : Right?
+1170.0s - 1175.0s : So the first group by is a group everything by the course and the grade.
+1175.0s - 1178.0s : Then group everything by just the course name.
+1178.0s - 1181.0s : And then give me the overall number for the total.
+1181.0s - 1189.0s : So this is trying to count the number of students in each course, by each course and by each grade, by each course, and by total across all students.
+1189.0s - 1192.0s : What about what?
+1192.0s - 1193.0s : Sorry?
+1193.0s - 1195.0s : .
+1195.0s - 1196.0s : Okay.
+1196.0s - 1197.0s : Yeah.
+1197.0s - 1198.0s : Okay.
+1198.0s - 1201.0s : So again, just think of like these are like groups or clusters.
+1201.0s - 1203.0s : So here's the red one.
+1203.0s - 1204.0s : Right?
+1204.0s - 1205.0s : There's the blue one.
+1205.0s - 1206.0s : Here's the bottom.
+1206.0s - 1208.0s : And then the overall total is at the top.
+1208.0s - 1217.0s : And then for the cases where the output doesn't have the column that's being grouped on, they'll put a null there.
+1217.0s - 1218.0s : It's kind of funky.
+1218.0s - 1225.0s : But again, the one reoccurring theme we'll see with queries is that we want to reduce the amount of back and forth between we have the database server and the application.
+1225.0s - 1227.0s : So we can give as much information all in one single query.
+1227.0s - 1229.0s : Give it to the database system.
+1229.0s - 1235.0s : It can ideally do a better job at running this more efficiently than it would from multiple round trips.
+1235.0s - 1239.0s : Is this clear?
+1239.0s - 1241.0s : All right.
+1241.0s - 1245.0s : Let's say I want to do some additional filtering after I've done my aggregation with the group I.
+1245.0s - 1248.0s : Well, SQL supports that with the having clause.
+1248.0s - 1249.0s : Right?
+1249.0s - 1255.0s : And the basic idea is that I want to be able to filter things out based on whatever is being computed as part of the aggregation.
+1255.0s - 1256.0s : Right?
+1256.0s - 1268.0s : So in this case here, my where clause, I want to filter out all the students or all the courses where the average GPA is greater than or less than 3.9.
+1268.0s - 1271.0s : So I want to get the ones that are 3.9.
+1271.0s - 1272.0s : But what am I trying to do here?
+1272.0s - 1274.0s : I'm trying to reference average GPA.
+1274.0s - 1278.0s : But that's being produced as the output in my projection list for my select statement.
+1278.0s - 1281.0s : So at this point, again, think of like the database is actually executing this.
+1281.0s - 1283.0s : You're scanning through the data.
+1283.0s - 1284.0s : You're trying to apply some filter.
+1284.0s - 1287.0s : You don't have this average computed yet.
+1287.0s - 1291.0s : So how do you know whether to throw away a record or not?
+1291.0s - 1292.0s : So you can't do this.
+1292.0s - 1295.0s : Instead, you want to do this through a having clause.
+1295.0s - 1299.0s : For now, I can put what my filter should be at the bottom.
+1299.0s - 1303.0s : Now, in some database systems, they're really strict about what's down here in the having clause.
+1303.0s - 1304.0s : Right?
+1304.0s - 1306.0s : Again, I have an alias for the average GPA.
+1306.0s - 1308.0s : I'm calling average underscore GPA.
+1308.0s - 1310.0s : AVG underscore GPA.
+1310.0s - 1312.0s : In some systems, you can't do that either.
+1312.0s - 1313.0s : Because it doesn't know about what the alias is.
+1313.0s - 1315.0s : It's pointing as it's scanning.
+1315.0s - 1321.0s : I sort of said SQL is not supposed to be about thinking about how things are actually going to be executed in like what order of the operations.
+1321.0s - 1324.0s : But in some cases, it actually is that case.
+1324.0s - 1326.0s : Or in some cases, it is that way.
+1326.0s - 1328.0s : So some systems won't let you do this.
+1328.0s - 1333.0s : And instead, you have to repeat the actual average, the aggregation you want at the bottom here.
+1333.0s - 1335.0s : And Postgres requires this.
+1335.0s - 1336.0s : Yes?
+1336.0s - 1340.0s : So the long way of logic is to include the .
+1340.0s - 1341.0s : Yeah.
+1341.0s - 1342.0s : So you can't do that.
+1342.0s - 1343.0s : You can't do that.
+1343.0s - 1344.0s : You can't do that.
+1344.0s - 1349.0s : The statement is the from where clause is effectively a join.
+1349.0s - 1350.0s : Oh, sorry.
+1350.0s - 1351.0s : Yeah, sorry.
+1351.0s - 1357.0s : Yeah, so right here, I have from enrolled as E comma student as S.
+1357.0s - 1358.0s : Yes.
+1358.0s - 1359.0s : So.
+1359.0s - 1362.0s : .
+1362.0s - 1363.0s : No.
+1363.0s - 1364.0s : Let's not teach product.
+1364.0s - 1370.0s : So in this syntax here, because I didn't explicitly say join.
+1370.0s - 1373.0s : This is like the old way of writing it without explicit join.
+1373.0s - 1374.0s : Don't do what I did here.
+1374.0s - 1376.0s : You should always include join.
+1376.0s - 1383.0s : But the will be smart enough to recognize that I have my E.SID equals S.SID.
+1383.0s - 1386.0s : So it would know, OK, well, this is from this table here.
+1386.0s - 1387.0s : This is from that table there.
+1387.0s - 1388.0s : I got a join.
+1388.0s - 1390.0s : And it's an inner join.
+1390.0s - 1393.0s : It'll do that before the Cartesian product, ideally.
+1393.0s - 1394.0s : Yes?
+1394.0s - 1395.0s : .
+1395.0s - 1396.0s : .
+1396.0s - 1397.0s : .
+1397.0s - 1398.0s : .
+1398.0s - 1399.0s : .
+1399.0s - 1400.0s : .
+1400.0s - 1401.0s : .
+1401.0s - 1402.0s : .
+1402.0s - 1403.0s : .
+1403.0s - 1404.0s : .
+1404.0s - 1405.0s : .
+1405.0s - 1406.0s : All right.
+1406.0s - 1409.66s : So this question is, I have the average aggregation in both the having and the select output.
+1409.66s - 1412.0s : Is the div system going to be stupid enough to run both of them?
+1412.0s - 1413.0s : Hopefully no.
+1413.0s - 1416.0s : But there's no guarantee.
+1416.0s - 1417.68s : But ideally, yes.
+1417.68s - 1421.18s : Like most systems will be smart enough to know not to do that.
+1421.18s - 1427.82s : Just for whatever reason, some systems don't let you reference the alias things up above.
+1427.82s - 1428.82s : Other questions?
+1428.82s - 1428.9s : .
+1429.0s - 1430.0s : Okay.
+1430.0s - 1431.0s : Right?
+1431.0s - 1434.32s : And it produces the output like this.
+1434.32s - 1435.32s : All right.
+1435.32s - 1439.44s : So that's the basic for aggregations.
+1439.44s - 1443.46s : And again, with some slight nuances about what the have and close looks like and what
+1443.46s - 1445.42s : the grouping sets may look like.
+1445.42s - 1449.24s : In general, most database systems will support all the things I just showed you here today.
+1449.24s - 1450.24s : Right?
+1450.24s - 1453.46s : Next, we'll talk about different things you can do to start different data types.
+1453.46s - 1455.02s : We'll start with strings.
+1455.02s - 1457.66s : That should be mostly the same across different data systems.
+1457.66s - 1459.42s : Some will come in a date and times.
+1459.42s - 1461.1s : That's when it all falls apart.
+1461.1s - 1462.1s : Right?
+1462.1s - 1467.42s : And the although the first homework for you guys will be based on DuckDB, that's really
+1467.42s - 1470.88s : because it's a great system and it runs on every single laptop or every single machine
+1470.88s - 1471.88s : you have.
+1471.88s - 1474.84s : It still runs on the Android machines even though they're running on old version of Ubuntu
+1474.84s - 1475.84s : here.
+1475.84s - 1476.84s : Right?
+1476.84s - 1479.5s : There isn't another other than SQLite, there isn't another system we could give you that
+1479.5s - 1484.1s : could run everywhere.
+1484.1s - 1487.66s : But I'm not trying to say like, okay, you're learning DuckDB SQL syntax.
+1487.66s - 1492.42s : It's really I care about you understand what you can possibly do with SQL at a high level.
+1492.42s - 1495.52s : Because when you go out in the real world or use different data systems, again, all
+1495.52s - 1498.26s : these nuances that we'll talk about here, they're going to be every system will have
+1498.26s - 1499.9s : their own little quirks and be slightly different.
+1499.9s - 1503.84s : So if you understand the fundamentals of SQL, then you can take that and go understand how
+1503.84s - 1508.92s : to apply that knowledge to different data systems.
+1508.92s - 1515.9s : I would say it is easier to take a SQL dialect from one system and apply it to a different
+1515.9s - 1516.9s : system.
+1516.9s - 1517.42s : Right?
+1517.42s - 1518.42s : And apply it to another.
+1518.42s - 1519.42s : Now, it's not going to be a one-to-one.
+1519.42s - 1523.24s : It's not going to be I'm not trying to say you can take the SQL and just like do search
+1523.24s - 1525.66s : from a place and it magically runs on the next system.
+1525.66s - 1529.48s : There's a lot of people who spend a lot of money trying to convert from one system to
+1529.48s - 1530.48s : another.
+1530.48s - 1535.08s : I'm just trying to say that it would not take you a lot of time to get up to speed pretty
+1535.08s - 1537.2s : quickly with a new system.
+1537.2s - 1540.6s : Like going from Python to Rust, that's a major lift.
+1540.6s - 1544.66s : Going from MySQL to Postgres, again, mentally less so.
+1544.66s - 1545.66s : Okay?
+1545.66s - 1546.66s : All right.
+1546.66s - 1550.32s : So there's string data types, of course.
+1550.32s - 1555.44s : The SQL standard says that any string you store in a database will be case sensitive.
+1555.44s - 1561.34s : And you can represent them or the constants of them as single quoted strings.
+1561.34s - 1562.5s : Most systems follow that.
+1562.5s - 1569.36s : MySQL is going to be the dark horse here where they're going to be case insensitive for whatever
+1569.36s - 1570.36s : reason.
+1570.36s - 1572.66s : And they're going to support both single and double.
+1572.66s - 1575.66s : So let's see what happens when you do this.
+1575.66s - 1582.66s : Can we all read that or should I make the screen ‑‑ is that better?
+1582.66s - 1583.66s : All right.
+1583.66s - 1598.28s : Let me log in with my laptop here.
+1598.28s - 1600.86s : Because it's a pain to type on the surface here.
+1600.86s - 1601.86s : All right.
+1601.86s - 1603.42s : So I said that strings were ‑‑ sorry.
+1603.42s - 1604.36s : In the code, I said that strings were ‑‑ sorry.
+1604.36s - 1605.36s : In the code, I said that strings were ‑‑ sorry.
+1605.36s - 1612.94s : In the SQL standard, strings are case sensitive and you represent them with single quotes.
+1612.94s - 1613.94s : So this is Postgres.
+1613.94s - 1616.94s : So I can do select star.
+1616.94s - 1620.36s : Couldn't do my last connection.
+1620.36s - 1621.36s : Awesome.
+1621.36s - 1625.82s : There we go.
+1625.82s - 1627.36s : So look up the student table.
+1627.36s - 1632.36s : Where ‑‑ I'm going to do a little bit of a search.
+1632.36s - 1633.36s : Okay.
+1633.36s - 1634.36s : So I'm going to do a search.
+1634.36s - 1635.36s : Okay.
+1635.36s - 1637.78s : Can I do a search that's name equals RZA?
+1637.78s - 1638.78s : Right?
+1638.78s - 1639.78s : Nothing shows up.
+1639.78s - 1640.78s : Make sure I have capital A. See?
+1640.78s - 1641.78s : So that doesn't work because it has to be a capital A. All right?
+1641.78s - 1642.78s : Why is this going so slow?
+1642.78s - 1643.78s : Sorry.
+1643.78s - 1644.78s : You know what it is?
+1644.78s - 1645.78s : I think I'm uploading your videos from last time.
+1645.78s - 1646.78s : Let me get rid of that.
+1646.78s - 1647.78s : Sorry.
+1647.78s - 1648.78s : Much better.
+1648.78s - 1649.78s : All right.
+1649.78s - 1650.78s : So things have changed.
+1650.78s - 1651.78s : All right?
+1651.78s - 1652.78s : All right.
+1652.78s - 1653.78s : We're going to do a search.
+1653.78s - 1654.78s : So we have a little bit of a time difference.
+1654.78s - 1655.78s : Okay.
+1655.78s - 1656.78s : So let's go ahead and do a search.
+1656.78s - 1657.78s : So we have a little bit of a time difference.
+1657.78s - 1658.78s : All right.
+1658.78s - 1659.78s : So let's go ahead and do a search.
+1659.78s - 1660.78s : All right.
+1660.78s - 1661.78s : So we have a little bit of a time difference.
+1661.78s - 1664.7s : get rid of that, sorry.
+1664.7s - 1665.3s : Much better.
+1665.3s - 1676.58s : So if we now try this in MySQL, that works.
+1676.58s - 1677.62s : But I can also do this.
+1681.88s - 1683.3s : That seems kind of weird.
+1686.2s - 1687.9s : I can also use double quotes.
+1691.78s - 1695.42s : And that works.
+1695.42s - 1698.74s : If I go try the exact same query on other systems,
+1698.74s - 1700.68s : it should not work.
+1700.68s - 1702.48s : So this is Postgres.
+1702.48s - 1702.98s : Sorry.
+1708.3s - 1709.02s : Doesn't work.
+1709.02s - 1709.9s : How could I do that?
+1714.34s - 1716.42s : In Postgres, the double quotes is
+1716.42s - 1721.44s : meant to represent an escape-like name of a column or table.
+1721.44s - 1721.78s : Like if I had a table, I would have to do this.
+1721.78s - 1723.56s : If I have a table with a space in it,
+1723.56s - 1726.44s : I can use double quotes to take care of that.
+1726.44s - 1733.38s : Over on MySQL, or sorry, SQLite now, it is case sensitive.
+1733.38s - 1736.8s : But it lets me do the double quotes.
+1736.8s - 1745.18s : In DuckDB, it's case sensitive.
+1745.18s - 1746.72s : Here it's complaining because it's looking
+1746.72s - 1748.26s : for the name of the column.
+1748.26s - 1751.44s : So I have to escape it with single quotes.
+1751.44s - 1755.62s : And then it is case sensitive.
+1755.62s - 1758.38s : We'll come back to ClickHouse and Firebolt and SQL Server
+1758.38s - 1758.88s : in a second.
+1758.88s - 1760.26s : But again, just trying to show you
+1760.26s - 1762.94s : that a basic thing like, hey, strings,
+1762.94s - 1766.44s : they're going to be different.
+1766.44s - 1770.96s : So there's basic string operations.
+1770.96s - 1773.54s : If you want to do wildcard matches on the string,
+1773.54s - 1778.0s : SQL standard specifies the like clause.
+1778.0s - 1781.06s : And then it doesn't follow maybe the general, more
+1781.06s - 1784.0s : common regular expressions syntax you might seem
+1784.0s - 1786.94s : to have for it, like stars and dots and so forth.
+1786.94s - 1791.0s : The present sign is meant to represent any substring,
+1791.0s - 1792.2s : including empty strings.
+1792.2s - 1794.78s : And then if you want to match a single character,
+1794.78s - 1795.82s : you do an underscore.
+1795.82s - 1798.4s : So this is trying to get all of the students that
+1798.4s - 1803.14s : are enrolled in 15, followed by a wildcard, all the 15 courses.
+1803.14s - 1805.94s : And you would use the like clause for that.
+1805.94s - 1806.92s : This is case sensitive.
+1806.92s - 1807.88s : If you want to be case insensitive,
+1807.88s - 1808.92s : you would use I like.
+1808.92s - 1809.42s : Yes?
+1811.06s - 1814.42s : .
+1814.42s - 1816.84s : His statement is, are the field names and table names
+1816.84s - 1820.26s : always case sensitive in SQL?
+1820.26s - 1822.18s : Depends on implementation.
+1822.18s - 1823.72s : Postgres will automatically lowercase
+1823.72s - 1825.56s : any table name you give it.
+1825.56s - 1828.42s : Other systems don't do that.
+1828.42s - 1830.28s : I have no idea what the SQL standard says.
+1834.76s - 1835.3s : What's that?
+1835.3s - 1838.74s : .
+1838.74s - 1841.06s : His statement is, in Postgres, if you use double quotes,
+1841.06s - 1844.72s : to name a column, does that, will that give you escape?
+1844.72s - 1845.22s : I don't know.
+1845.22s - 1845.72s : Let's find out.
+1848.74s - 1853.42s : Create table.
+1853.42s - 1854.66s : Sorry.
+1854.66s - 1856.14s : Create table.
+1856.14s - 1859.12s : You want to use xxx.
+1859.12s - 1860.94s : That.
+1860.94s - 1861.64s : In field.
+1866.08s - 1866.58s : Yeah, all right.
+1866.58s - 1869.42s : So Postgres took it and maintained it.
+1869.42s - 1870.5s : So what if I can I do this?
+1870.5s - 1875.26s : Can I do select star from Wi-Fi?
+1877.92s - 1878.42s : Sorry.
+1882.26s - 1886.14s : Select star from xxx.
+1886.14s - 1889.1s : Yeah, I didn't know about that.
+1889.1s - 1892.14s : Yeah, so his point, by default, unless you quote it
+1892.14s - 1900.18s : in Postgres, you will not get the case sensitivity.
+1900.18s - 1900.86s : All right.
+1900.86s - 1907.18s : So again, if you want regular expressions,
+1907.18s - 1909.42s : the SQL standard specifies some of those calls
+1909.42s - 1911.26s : are operator-clause similar to.
+1911.26s - 1913.02s : Postgres supports this.
+1913.02s - 1914.28s : DuckDB supports this.
+1914.28s - 1915.36s : Many other systems do not.
+1915.36s - 1919.58s : Instead, they have their own regular expression syntax.
+1919.58s - 1922.68s : Again, a good example where the SQL standard says one thing,
+1922.68s - 1925.36s : systems implement other things.
+1925.36s - 1927.56s : There's a bunch of built-in string functions
+1927.56s - 1929.46s : that you can do just to manipulate strings.
+1929.46s - 1930.18s : That's one of expect.
+1930.18s - 1934.94s : Like substring, lowercase, uppercase, and so forth.
+1934.94s - 1937.8s : And most systems have the same implementation
+1937.8s - 1941.06s : of these functions, roughly provide the same semantics.
+1944.06s - 1946.22s : Something really basic like a concatenating string,
+1946.22s - 1948.64s : this is where things go wrong as well.
+1948.64s - 1953.28s : The SQL standard specifies that you have a double bar to say,
+1953.28s - 1955.46s : I want to concatenate two things.
+1955.46s - 1957.6s : In SQL Server, it's the plus operator.
+1957.6s - 1958.6s : And then in MySQL, it's the plus operator.
+1958.6s - 1959.1s : And then in MySQL, it's the plus operator.
+1959.1s - 1959.62s : And then in MySQL, it's the plus operator.
+1959.62s - 1960.14s : And then in MySQL, it's the plus operator.
+1960.14s - 1960.16s : And then in MySQL, it's the plus operator.
+1960.16s - 1960.56s : And then in MySQL, it's the plus operator.
+1960.56s - 1960.94s : And then in MySQL, it's the plus operator.
+1960.94s - 1961.36s : And then in MySQL, it's the plus operator.
+1961.36s - 1961.76s : And then in MySQL, it's the plus operator.
+1961.76s - 1962.2s : And then in MySQL, it's the plus operator.
+1962.2s - 1962.78s : And then in MySQL, it's the plus operator.
+1962.78s - 1964.04s : That's basically what all of that is.
+1964.04s - 1964.36s : If you want to look at real-time function build,
+1964.36s - 1965.18s : don't look at the real-time thing.
+1965.18s - 1965.54s : You have to run some technical, I should attest,
+1965.54s - 1966.02s : this a bit more recently, in the newer versions.
+1966.02s - 1966.5s : But they don't have either one.
+1966.5s - 1967.0s : You have to run an explicit concat function.
+1967.0s - 1967.16s : Right?
+1967.16s - 1967.22s : Again, this is painful and this is annoying,
+1967.22s - 1967.54s : but it's not the end of the world.
+1967.54s - 1970.84s : You can easily navigate this from going
+1970.84s - 1973.34s : from going to one system to the next.
+1973.34s - 1977.62s : painful it's annoying but it's not it's not the end of the world right you can
+1977.62s - 1982.68s : easily navigate this from going one system to the next but let's have a
+1982.68s - 1988.86s : date sometimes right obviously in our database yes question
+1997.1s - 2002.46s : yes so this question is when I say most systems don't don't do support it or
+2002.46s - 2013.52s : don't support it do not so the sequel 92 would give you like the basic select
+2013.52s - 2018.62s : select insert update leads the things we're talking about today and like
+2018.62s - 2023.38s : they're but you still find me we're talking today is back in the sequel 92
+2023.38s - 2027.96s : standard and so they're they they're off slightly on this one thing there's no
+2027.96s - 2032.08s : system in the world that I've been aware of the implements exactly the sequel 92
+2032.08s - 2032.46s : standard
+2032.46s - 2037.5s : as written they're always going to be slightly off my sequel used to be the
+2037.5s - 2042.68s : worst offender they've gotten better in the last 10 years
+2053.36s - 2059.46s : a statement is when I say the sequel 23 standard came out who actually supports
+2059.46s - 2060.46s : that again nobody so probably the worst offender would be the sequel 22 standard
+2060.46s - 2061.46s : because the thing is the way the old one works is that it's a little bit of a
+2061.46s - 2062.46s : little bit of a challenge and it's the way it works is that it's a little bit of a challenge
+2062.46s - 2063.46s : and it's the way it works is that it's a little bit of a challenge
+2063.46s - 2064.46s : you know what I mean like the only system I use can't be no property graph
+2064.46s - 2066.0s : queries the only system I know supports that is Oracle because Oracle was pushing
+2066.0s - 2069.12s : to get that in there I'm pretty sure postgres doesn't support it ducktb
+2069.12s - 2073.12s : doesn't support it right the other commercial vendors same thing it's not to
+2073.12s - 2077.36s : say they won't just they haven't got to it yet but it's like will they implement
+2077.36s - 2082.32s : it exactly as written probably not because for whatever reason right again
+2082.32s - 2085.22s : my sequel had all sorts of weird stuff and then we had the guy that invented my
+2085.22s - 2090.66s : sequel gave a talk with us because it was last semester and I asked him at the
+2090.66s - 2091.32s : beginning of the talk it's not recorded like hey what what's your idea I'm like
+2091.32s - 2092.32s : well I'm not sure what's your idea but I'm not sure which one is good which one isn't
+2092.32s - 2096.48s : what's up why did you do all this right and he's like god because we just did it
+2097.12s - 2103.12s : what's the 90s i don't know this is what he said right it's oftentimes it's many times it's like
+2103.12s - 2106.72s : some guy sitting there it's like oh i'll do it this way and then everyone's like all right good
+2107.84s - 2112.72s : right we'll see this when we talk about lateral joints uh lateral joints was in the standard the
+2112.72s - 2115.76s : my understanding is the microsoft guys didn't know it existed and they made their own called
+2115.76s - 2120.4s : cross supply it has basically the same semantics as lateral joints but they don't call it lateral
+2120.4s - 2126.0s : joint they call it across supply right again there's so many implementations out there
+2126.0s - 2132.88s : nobody actually follows it all right days times this is where it gets rough so uh
+2133.44s - 2141.12s : the sql center specifies a basic date and time type uh i think it also has uh times with time
+2141.12s - 2145.76s : zones by default you get whatever the time zone is on the on the data system where it's running
+2145.76s - 2150.0s : when you start a record uh if you're lucky maybe utc is the time zone always
+2150.4s - 2154.56s : not always not always the case um if you explicitly want to know what the time zone is
+2154.56s - 2158.88s : you want to store that in the type with it but again not every system will support that
+2160.0s - 2163.28s : this is my favorite demo to give every year i will do something that seems like it makes
+2163.28s - 2171.92s : you really simple to do we're going to compute the number days from today august 27th 2025 to
+2171.92s - 2179.28s : the beginning of the year january 1st 2025 right it seems pretty pretty simple but as we'll see
+2179.28s - 2179.44s : every system is going to do something it seems pretty pretty simple but as we'll see every
+2179.44s - 2179.66s : system is gonna do a CD transplant process and then
+2179.66s - 2180.08s : still be able to pass the full code that way for those days because we do that by the end of the
+2180.08s - 2180.2s : year we're going to copy all of theissa's surname in the fuckindal do therek's code let's give all the inaneh and
+2180.2s - 2186.28s : something slightly different. How to get that answer. All right. So, in...
+2190.36s - 2194.04s : All right. So, we need to get dates. All right. So, how do we get the current date? Well,
+2194.92s - 2201.32s : in the SQL standard, there's a now function. And that will give you out the current year as a
+2201.32s - 2206.44s : timestamp. Right? Or the full timestamp. So, we go along now to our different system. This is
+2206.44s - 2214.04s : MySQL. MySQL has it. That's great. Go to SQLite. SQLite doesn't have it. Okay. Let's go to DuckDB.
+2214.6s - 2219.56s : DuckDB follows the grammar from Postgres. They literally have a copy of the Postgres
+2219.56s - 2223.4s : grammar and they're using that. So, a lot of times what Postgres has, DuckDB will have.
+2224.04s - 2229.24s : Let's go to Clickhouse. Clickhouse has it. That's good. Let's go to Firebolt.
+2231.08s - 2235.64s : Firebolt got that. So, that's good. And then last one is SQL Server.
+2237.24s - 2243.64s : For reasons of the 1980s, I don't fully understand, you have to write go after every
+2243.64s - 2249.24s : query. Because it wants to do like a batch. Right? This is for this one client. Other clients...
+2250.2s - 2252.84s : There's other clients that don't have to do this. But the one that Microsoft gives you,
+2252.84s - 2257.56s : you always have to write go. So, they complain they don't have now. All right. Well, there's
+2257.56s - 2264.68s : another way to do this. In the SQL standard, I think you can also get a... You can get something
+2264.68s - 2265.56s : called current timestamp. All right. So, you can get something called current timestamp.
+2266.44s - 2272.04s : All right. So, this is Postgres. Except Postgres doesn't have it.
+2273.72s - 2279.48s : They don't have the function but they have the keyword. Let's go to my SQL.
+2282.04s - 2291.96s : Sorry. They have the function. They have the keyword. Let's go to SQLite.
+2293.4s - 2294.6s : SQLite doesn't have the function
+2294.6s - 2296.62s : but it has the keyword.
+2298.16s - 2299.9s : DuckDB is going to have the,
+2300.02s - 2300.84s : doesn't have the function,
+2301.38s - 2303.3s : but it has the keyword, just like Postgres.
+2304.18s - 2306.7s : ClickHouse has the function,
+2307.96s - 2309.46s : does not have the keyword.
+2311.38s - 2313.52s : Firebolt has the function,
+2315.36s - 2319.92s : has the function, does not have the keyword.
+2319.92s - 2322.46s : And then SQL Server,
+2322.46s - 2325.26s : here I go,
+2326.1s - 2328.62s : does not have the function,
+2329.66s - 2331.66s : but it has the keyword.
+2333.02s - 2334.3s : All right, well, that kind of sucks
+2334.3s - 2336.42s : because, again, nobody has the same thing.
+2338.82s - 2342.06s : So this turned out to be really easy to do in Postgres
+2342.06s - 2342.92s : in a bunch of systems.
+2343.4s - 2344.96s : So what I can do is
+2344.96s - 2348.22s : take the date as a string,
+2348.22s - 2352.44s : so 2025 on the 27th,
+2352.46s - 2354.12s : and then cast the beginning of the year,
+2354.46s - 2355.28s : cast these as dates,
+2355.66s - 2356.7s : and just subtract them.
+2358.88s - 2359.92s : And we get 238,
+2360.3s - 2361.98s : which is actually correct.
+2363.64s - 2365.04s : So what am I doing here?
+2365.12s - 2366.5s : This cast function is taking the string,
+2366.6s - 2369.16s : and I'm telling it I want to cast this data,
+2369.6s - 2371.36s : this constant string I'm giving you,
+2371.62s - 2372.3s : cast it as a date.
+2372.4s - 2373.62s : For whatever reason, you've got to put as,
+2374.22s - 2375.32s : oh, shit, you can't even see that, sorry.
+2375.32s - 2375.4s : All right.
+2377.9s - 2378.88s : Please say something next time.
+2379.3s - 2380.96s : Let me make sure this looks good.
+2382.22s - 2382.44s : All right.
+2382.62s - 2383.38s : There we go.
+2384.64s - 2385.82s : And probably it's going to be,
+2386.92s - 2387.94s : let me shrink it over here.
+2391.08s - 2391.44s : Okay.
+2391.7s - 2392.16s : There you go.
+2392.26s - 2392.42s : All right.
+2392.48s - 2393.98s : So, again, I take the string,
+2394.26s - 2395.08s : I call this cast function,
+2395.16s - 2396.26s : and I say I want as a date.
+2396.86s - 2397.08s : All right.
+2397.08s - 2397.6s : So that's fine.
+2399.24s - 2402.86s : What I like about in one example of an idiom
+2402.86s - 2404.62s : in Postgres that I like a lot
+2404.62s - 2407.8s : is that instead of calling that cast function,
+2408.2s - 2410.74s : I can put two colons at the end of any piece of data,
+2411.34s - 2412.44s : and that tells the data type,
+2412.44s - 2413.44s : I want to cast into it.
+2414.24s - 2414.48s : Right?
+2414.58s - 2415.16s : So that's nice.
+2415.24s - 2416.54s : So I can cast my strings to a date.
+2416.76s - 2417.34s : So that works great.
+2418.32s - 2420.72s : So let's pop over now to try to do the same thing
+2420.72s - 2422.66s : in MySQL.
+2426.98s - 2427.8s : I get this.
+2429.7s - 2429.98s : 726.
+2431.92s - 2433.12s : Again, as a refresher brain,
+2433.12s - 2435.42s : there's not 726 days in a year.
+2436.38s - 2438.36s : It's 238 days since the beginning.
+2440.2s - 2441.32s : So what is this number?
+2442.44s - 2445.9s : I didn't know either.
+2446.54s - 2447.86s : Some rando in YouTube,
+2448.2s - 2449.64s : in the YouTube comment of all places,
+2450.26s - 2451.12s : posted what it was,
+2451.14s - 2452.12s : and I'm like, oh, he was right.
+2453.6s - 2454.4s : So what this is,
+2454.48s - 2455.94s : this is the first number 7
+2455.94s - 2458.8s : is the current month of August, 8,
+2459.28s - 2461.38s : subtracting January 1,
+2461.48s - 2462.08s : you get 7.
+2462.78s - 2465.46s : Then you get the same thing for the number days.
+2465.56s - 2467.24s : So what's happening here is that
+2467.24s - 2469.64s : MySQL is casting the date
+2469.64s - 2472.18s : as an unsigned integer like this,
+2472.22s - 2472.32s : where there's no date.
+2472.32s - 2472.42s : So I'm going to cast this as an unsigned integer.
+2472.42s - 2473.5s : So it's mashing together
+2473.5s - 2475.34s : the year, the month, the day.
+2476.52s - 2479.78s : And so it's really computing this.
+2482.5s - 2483.14s : All right.
+2483.74s - 2484.62s : That sucks.
+2484.98s - 2485.72s : There's your 726.
+2487.48s - 2490.98s : So it turns out
+2490.98s - 2492.34s : there's actually a date diff function
+2492.34s - 2493.9s : in MySQL
+2493.9s - 2495.94s : where I can easily get back
+2495.94s - 2497.42s : 238 days.
+2498.04s - 2499.68s : Okay, well, let's go back to SQL Server,
+2499.68s - 2500.9s : or sorry, to Postgres.
+2500.9s - 2503.22s : And of course, they don't have it either.
+2503.58s - 2503.8s : All right.
+2504.8s - 2507.26s : All right, so let's see how to do this
+2507.26s - 2511.18s : in SQL Server.
+2511.32s - 2512.1s : We'll come back to the other ones.
+2513.14s - 2515.22s : SQL Server, you can cast things as a date.
+2515.3s - 2516.74s : You've got to write go, right?
+2516.94s - 2518.08s : And I get a date like that.
+2518.42s - 2521.7s : And then they actually have the date diff function.
+2523.92s - 2524.68s : There I go.
+2525.02s - 2525.66s : And I get 238.
+2525.7s - 2527.16s : But notice now I have this new thing here.
+2527.16s - 2528.5s : I have this get date.
+2530.9s - 2532.66s : Right?
+2533.78s - 2535.12s : That's different.
+2535.26s - 2535.8s : I didn't see that before.
+2535.92s - 2537.76s : So let's see whether anybody has that.
+2540.28s - 2541.16s : MySQL doesn't have it.
+2543.26s - 2544.12s : Postgres doesn't have it.
+2544.22s - 2544.3s : Right?
+2544.38s - 2545.28s : So you see where I'm getting at.
+2545.34s - 2545.52s : All right.
+2546.16s - 2550.14s : So let's try this now in ClickHouse.
+2551.76s - 2554.76s : Actually, to prove that this works in,
+2554.82s - 2556.16s : let me prove it works in DuckDB
+2556.16s - 2558.84s : and in Firebolt.
+2559.42s - 2560.36s : So let's go to DuckDB.
+2560.9s - 2562.8s : I can do it the Postgres way.
+2563.4s - 2563.66s : Boom.
+2563.7s - 2564.38s : I get the right answer.
+2564.8s - 2565.8s : I can do this in Firebolt.
+2566.82s - 2568.12s : I do it the Postgres way.
+2568.36s - 2568.98s : I get the right answer.
+2569.58s - 2569.78s : All right.
+2569.78s - 2571.1s : So Firebolt, DuckDB, and Postgres
+2571.1s - 2572.88s : are doing the same thing.
+2572.94s - 2573.28s : So that's good.
+2573.92s - 2575.52s : If we go back to our boy ClickHouse.
+2576.74s - 2579.22s : So we try this before.
+2579.82s - 2581.04s : That produced the right answer.
+2581.12s - 2581.86s : That worked out pretty well.
+2584.28s - 2586.58s : ChatGPT gave me this.
+2589.28s - 2589.68s : Right?
+2590.34s - 2590.84s : But it's going to be a little bit more.
+2590.84s - 2590.86s : But it's going to be a little bit more.
+2590.86s - 2590.88s : But it's going to be a little bit more.
+2590.88s - 2592.06s : It's complaining that it doesn't know
+2592.06s - 2593.14s : about this today function.
+2594.28s - 2594.54s : Okay.
+2594.64s - 2595.66s : Well, I've never seen that before.
+2595.82s - 2596.6s : I said it was now.
+2596.72s - 2597.24s : What is today?
+2599.1s - 2599.98s : They don't have it.
+2601.5s - 2602.48s : Does MySQL have it?
+2606.18s - 2606.58s : Nope.
+2607.7s - 2608.2s : All right.
+2608.26s - 2610.34s : Well, the documentation of ClickHouse
+2610.34s - 2611.04s : says they have it.
+2612.14s - 2615.3s : But it's actually case sensitive.
+2615.64s - 2616.64s : It's lowercase today.
+2617.1s - 2617.96s : Then you get that.
+2619.46s - 2619.86s : Right?
+2619.86s - 2619.94s : All right.
+2620.88s - 2621.24s : Right?
+2621.38s - 2621.7s : Exactly.
+2622.08s - 2623.88s : So before, I think we did now, right?
+2626.54s - 2627.46s : That's uppercase.
+2627.92s - 2628.2s : Okay.
+2628.7s - 2629.28s : Can I go now?
+2631.26s - 2631.7s : Yeah.
+2632.64s - 2634.32s : So now I can do uppercase, lowercase,
+2634.4s - 2634.94s : but today I cannot.
+2635.76s - 2636.2s : Awesome.
+2637.74s - 2638.04s : All right.
+2638.32s - 2638.92s : Last one.
+2639.0s - 2639.36s : SQLite.
+2640.76s - 2643.68s : So they don't have date diff.
+2645.3s - 2649.9s : So if I try to do it the Postgres way,
+2649.9s - 2650.8s : I'm going to have to do it the Postgres way.
+2651.1s - 2666.4s : So I get 0.
+2666.48s - 2667.1s : And that's not good.
+2667.18s - 2668.28s : So I actually came up with the same answer
+2668.36s - 2671.08s : that ChatGPT came up with, where you convert the timestamps
+2672.78s - 2675.14s : into the Julian calendar, which is the numbered days
+2675.24s - 2677.94s : since 452 BC or whatever.
+2678.72s - 2680.82s : I mean, Julius Caesar converted everyone to the Julian calendar
+2680.82s - 2683.52s : dating goes back even farther, right?
+2683.54s - 2684.78s : So you can do something like this,
+2685.24s - 2687.28s : and you get 238, but it's a decimal.
+2689.24s - 2695.18s : So if you cast it as a integer,
+2696.52s - 2698.3s : you get 238.
+2698.94s - 2700.5s : Another way to do this would be
+2700.5s - 2703.12s : to convert this to the Unix epoch.
+2705.24s - 2706.36s : If you know what that is, right?
+2706.38s - 2709.26s : It's the number of seconds since the dawn of Unix
+2709.26s - 2710.6s : was like January 1st, 1970.
+2711.42s - 2713.44s : So you can convert it to that,
+2713.82s - 2717.32s : convert the current timestamp to that number of seconds,
+2717.68s - 2720.36s : to the beginning of the year to the timestamps,
+2720.7s - 2724.62s : divided by 60 seconds by 60 minutes times 24 hours.
+2726.26s - 2727.14s : Why is it an integer?
+2728.0s - 2733.1s : Because it's doing some kind of casting.
+2734.52s - 2734.64s : Yeah.
+2735.72s - 2738.08s : I don't want to get into type conversion,
+2738.36s - 2739.18s : because this is a CMU,
+2739.28s - 2740.8s : and people get really uptight about it.
+2740.92s - 2742.48s : But yeah, that's another problem here.
+2743.5s - 2743.82s : All right.
+2743.88s - 2745.8s : So the main takeaway from all this
+2745.8s - 2746.94s : is just like a really simple thing,
+2747.02s - 2747.92s : like let's calculate dates,
+2748.64s - 2749.8s : and think things go wrong.
+2751.22s - 2751.5s : All right.
+2751.58s - 2754.7s : So let me skip through output control,
+2754.82s - 2755.62s : or get through this real quickly.
+2756.18s - 2757.12s : You can do order bys.
+2757.28s - 2759.38s : If you can, again, SQL or racial models on order.
+2759.66s - 2761.36s : If you care about order, you can add order by clause.
+2762.7s - 2765.72s : Since the relational model is, or SQL is also,
+2766.0s - 2769.44s : it's unordered, and if you care about the order,
+2769.5s - 2770.04s : you would add order by,
+2770.04s - 2770.8s : but sometimes you may,
+2770.88s - 2771.98s : if you don't want all the results,
+2772.6s - 2773.92s : you can add a limit clause,
+2774.12s - 2776.34s : or a fetch offset clause,
+2777.0s - 2777.7s : where you basically say,
+2777.86s - 2779.4s : I only want the first five rows,
+2779.52s - 2780.68s : or first 10 rows,
+2780.76s - 2781.76s : and you can even offset it.
+2782.02s - 2783.68s : And then you can specify what to deal with
+2783.68s - 2784.36s : when you have ties,
+2784.5s - 2787.08s : or if two tuples should be part of the same output,
+2787.2s - 2787.68s : what do you do?
+2788.34s - 2790.54s : The shorthand way is to use a limit clause.
+2791.3s - 2792.44s : That's not in the SQL standard,
+2792.7s - 2794.58s : but many systems support that.
+2794.58s - 2797.26s : At least the DuckDB and Postgres do, MySQL.
+2798.26s - 2799.84s : And then SQL Server has their own syntax
+2799.84s - 2800.8s : of saying top 10,
+2800.8s - 2802.28s : in the front.
+2805.24s - 2806.24s : All right, so jump along.
+2806.48s - 2809.66s : So the, as I said,
+2809.72s - 2810.66s : many times what you want to be able to do
+2810.66s - 2812.84s : is have a single SQL query produce all the answers.
+2812.92s - 2813.5s : We're not having to go back and forth
+2813.5s - 2814.0s : with the application.
+2814.76s - 2818.44s : So you can take the output of a SQL query
+2818.44s - 2820.72s : and put it into an actual table,
+2820.84s - 2821.4s : or a temp table,
+2821.82s - 2823.48s : and then do additional queries on that.
+2824.12s - 2825.1s : So in the SQL standard,
+2825.2s - 2827.36s : you say select with the into clause,
+2827.62s - 2829.9s : and then where it says course IDs,
+2829.9s - 2830.78s : that's the name of the table,
+2830.82s - 2832.02s : I'm going to insert into.
+2832.9s - 2834.22s : In Postgres, you can actually specify
+2834.22s - 2835.1s : that it's a temporary table,
+2835.1s - 2836.3s : so that when you close the client,
+2836.56s - 2837.66s : the table gets blown away.
+2838.92s - 2840.62s : But that's not in standard in all systems.
+2842.22s - 2844.44s : All right, so let's jump into the more challenging things
+2844.66s - 2845.66s : in the last half an hour.
+2846.3s - 2850.42s : So nested queries, CTEs, and window functions.
+2851.34s - 2854.34s : So many times you're going to find yourself
+2854.34s - 2857.58s : not being able to express what you want to compute
+2857.84s - 2859.9s : within a single select statement.
+2859.9s - 2862.4s : And you actually maybe need to use multiple select statements.
+2862.4s - 2865.12s : And as I said, you could write your result out
+2865.12s - 2867.9s : to a temp table, but oftentimes you may want to do a select
+2867.9s - 2870.66s : inside of an existing select.
+2870.66s - 2874.06s : And so these are called inner queries or nested queries,
+2874.06s - 2877.06s : and they can appear pretty much anywhere in a SQL statement.
+2878.14s - 2879.52s : So I can do something really simple like this,
+2879.52s - 2880.78s : where I have a select statement,
+2880.78s - 2883.78s : what we'll call the outer query, the top part here.
+2884.14s - 2885.68s : And then inside my where clause,
+2885.86s - 2888.02s : now I have another select statement called the inner query,
+2888.28s - 2889.1s : where I'm computing some answer that can be used to compute the query.
+2889.1s - 2889.32s : So I can do that.
+2889.32s - 2889.34s : So I can do that.
+2889.34s - 2889.82s : So I can do that.
+2889.82s - 2893.32s : So I can then be used or leveraged in the outer query.
+2895.02s - 2895.32s : Right?
+2896.2s - 2897.9s : So this is an example of putting in the where clause.
+2898.0s - 2899.34s : You can put it in the projection output.
+2899.46s - 2900.6s : You can put it in the from clause.
+2900.9s - 2903.88s : I think some systems let you put it in like the group by clause,
+2903.98s - 2905.82s : the having clause, which is not a good idea,
+2905.86s - 2906.58s : but you could do that.
+2907.8s - 2910.04s : And so we're not going to talk about how to actually implement this
+2910.04s - 2911.4s : or execute this efficiently just yet.
+2911.86s - 2914.14s : But it's obvious the dumbest thing to do would be
+2914.14s - 2916.06s : treat this as like two nested for loops,
+2916.06s - 2917.5s : where, say, in the top one here,
+2917.74s - 2919.02s : for every single student,
+2919.02s - 2924.64s : I'm going to then run that inner query in its entirety for, you know, to try to find a match.
+2925.8s - 2929.32s : My SQL used to do that. Most systems, when they first start doing nest queries, they do that.
+2929.92s - 2933.62s : And obviously, that's very inefficient because the answer is not going to change from one tuple
+2933.62s - 2940.86s : on the outer query to the next. So we'll talk about this later after the midterm. But ideally,
+2940.94s - 2944.8s : what you want to be able to do is rewrite that query into a join. Because data systems know how
+2944.8s - 2948.66s : to execute joins very efficiently. And so you can take a, if you have a nest query like that,
+2948.66s - 2952.58s : you can convert it to a join, it'll run much faster. But not every system can do that.
+2953.24s - 2954.64s : Postgres is actually very bad at it.
+2957.56s - 2960.72s : The question, the statement is, there might be some cases where the subquery is actually faster.
+2966.62s - 2971.46s : So this is getting to the weeds, but like, you can imagine something like a computing aggregation,
+2971.56s - 2977.32s : like a max ID. If I could run that once, cache the result, and reuse that, then yeah,
+2977.32s - 2977.98s : that would be faster.
+2977.98s - 2982.64s : But you almost never want to run, I don't think you ever want to run the inner query over and over again.
+2983.12s - 2983.66s : It's like stupid.
+2987.96s - 2991.06s : The question is, what system is actually good at converting these things?
+2992.14s - 2998.34s : There's a system out of Germany called Umbra. It's been written by one of the best database system
+2998.34s - 3003.26s : researchers in the world. And he has a new paper that came out this year where he can handle
+3003.26s - 3006.02s : basically any nested query he can rewrite.
+3007.98s - 3011.52s : So, statement is, well, make it into more mainstream systems.
+3011.52s - 3017.16s : So DuckDB does an earlier version of what he did, because they just copied what he did.
+3017.16s - 3018.54s : Because it was in the papers, right?
+3019.74s - 3025.24s : But one of my PG students here came up with a nested query that actually broke,
+3025.24s - 3028.02s : would break DuckDB and broke this other system.
+3029.42s - 3032.76s : It won't work correctly. It runs out of memory because it blows up.
+3034.82s - 3035.88s : Because it's just thinking like, you're just generating a bunch of intermediate results, and, you know,
+3035.88s - 3037.78s : you're just generating a bunch of intermediate results.
+3037.98s - 3040.22s : The balloon's up and you run out of memory.
+3040.86s - 3045.42s : So the newer version of this German system called Umbra, which is now commercialized as C or DB,
+3045.42s - 3046.66s : that system actually supports it.
+3047.76s - 3049.38s : This I have to cut on the video.
+3049.44s - 3050.04s : I can't say this.
+3050.52s - 3052.74s : Yeah, as we bury the bodies and the cops never said anything.
+3053.64s - 3054.6s : That's the way it is.
+3055.02s - 3056.94s : All right. All right.
+3056.94s - 3059.04s : So nested query.
+3059.04s - 3062.16s : So let's see. We want to get the names of the students that are in 445.
+3062.74s - 3066.14s : Right. And so when you start doing homework one, you got to think about how you're going to construct these things.
+3066.38s - 3067.36s : But nested queries, you want to sort of maybe start with the ones that are in 445.
+3067.36s - 3067.66s : So you want to start with the ones that are in 445.
+3067.66s - 3067.92s : And then you want to start with the ones that are in 445.
+3067.92s - 3072.54s : So you want to start with the outer query first and figure out what you want the final output to be.
+3073.1s - 3077.16s : And then oftentimes I'll just write maybe in like natural language what the inner query should be.
+3077.66s - 3082.9s : And I figure out how to sort of, you know, what that, how to rewrite that inner query to fit into what I want in the outer query.
+3083.58s - 3086.08s : So if I want to get all the names of the students that are in 445,
+3086.68s - 3089.58s : I don't want to do select name from student with some kind of where clause.
+3089.86s - 3094.68s : And my where clause is going to say something like, get the list of the people, the set of people that are taking 445.
+3095.32s - 3097.18s : So my inner query would look something like this.
+3097.18s - 3099.26s : But now I need to mash the two together.
+3100.26s - 3106.94s : And so this is where I can add things like an in clause or other operators in my expressions
+3106.94s - 3112.22s : to specify how I want to link together the inner query with the outer query.
+3112.92s - 3118.04s : So in this case here, I'm saying where SID is in and then some nested query here.
+3118.52s - 3119.72s : So this is doing set membership.
+3120.52s - 3125.4s : I'll match on my outer table's query or the outer query
+3125.68s - 3127.1s : any record that has an SID.
+3127.18s - 3129.72s : That is in my set that is produced by the inner query.
+3130.58s - 3135.56s : And to his point, he was saying before, sometimes it's more efficient to run the nested query
+3136.7s - 3137.7s : without doing a join.
+3137.7s - 3142.46s : And obviously in this one, it's pretty obvious that you want to run that query once, the inner query,
+3142.46s - 3144.58s : and be able to reuse the result over and over again.
+3145.3s - 3147.3s : And a join would basically do that for you.
+3148.52s - 3151.26s : So notice also here too that like I'm now referencing the
+3151.68s - 3155.76s : student ID and the inner query. That's going to get bound to the enroll table inside the inner query.
+3155.76s - 3156.8s : And then the student ID,
+3157.18s - 3159.18s : is getting bound to the one on the outside.
+3159.84s - 3161.84s : There are things like correlated sub queries where you can then
+3162.3s - 3164.94s : you can match things on the inside with the outside,
+3165.36s - 3167.36s : but we don't have that just yet.
+3169.04s - 3173.04s : All right, so you can do a bunch of different operators to specify what the matching should be.
+3173.52s - 3175.94s : My example I did before was in.
+3176.36s - 3177.68s : It's equivalent to equals any.
+3178.08s - 3180.38s : But you can say like all have to match.
+3181.24s - 3183.3s : At least one has to match or none has to match.
+3183.56s - 3185.7s : Right? You can do a bunch of these kind of operations.
+3187.18s - 3189.18s : All right, let's do more complicated things.
+3189.18s - 3192.74s : Let's find the student record that has the highest ID that is enrolled in at least one course.
+3193.62s - 3196.6s : So the outer query I know I'm going to want to say I want the student ID and their name.
+3196.98s - 3199.96s : And then the inner query is going to be something like is the highest enrolled student ID.
+3200.88s - 3202.68s : So my inner query can be like this.
+3202.68s - 3205.26s : I want to get the max student ID if I'm enrolled.
+3205.56s - 3207.96s : And I want to match that with the student on the outer query.
+3208.86s - 3209.36s : Right?
+3209.84s - 3216.04s : And instead of writing in equals any or equals all, I'll put in the end clause like this.
+3216.04s - 3224.28s : This is one way to do this. You could do this with sorting the table and fetching the first row. That would be the max.
+3224.28s - 3228.28s : I can put the max query, the aggregation inside the join clause.
+3228.28s - 3234.54s : There's a bunch of different ways that you can rewrite queries to produce the correct answer.
+3234.54s - 3240.2s : I'm not saying one way is better than another. It's going to depend highly on what the system can actually support and run.
+3240.2s - 3244.78s : In theory, SQL, it shouldn't matter, but oftentimes it does.
+3244.78s - 3249.12s : For homework one, you're running on DuckDB on your local machine.
+3249.12s - 3253.82s : It won't be a huge difference in performance, writing different things. At least, there shouldn't be.
+3253.82s - 3260.44s : One more example. Find all the courses that have no students enrolled in it.
+3260.44s - 3263.54s : My outer query should be select all the courses.
+3263.54s - 3268.28s : Where I want to match where there isn't a tuple for that course in the enrolled table.
+3268.28s - 3273.28s : I can do something really simple like this. I can say select star from enrolled where the course ID
+3273.28s - 3274.78s : where the course ID
+3274.78s - 3279.78s : and when the old table matches the course ID from the course table on the outside here.
+3279.78s - 3283.78s : Then notice how this inner one here is being bound to the one on the outside.
+3283.78s - 3294.78s : This is called a correlated subquery where the result being computed on the inside depends on whatever tuple you're looking at on the outside.
+3294.78s - 3300.28s : Many systems can't convert that into joins.
+3300.28s - 3303.28s : But now, SQL Server, DuckDB, and this German system, C3D, and so on, they're all doing that.
+3303.28s - 3303.78s : They're all doing that. They're all doing that.
+3303.78s - 3304.28s : They're all doing that. They're all doing that.
+3304.28s - 3305.28s : They're all doing that.
+3305.28s - 3306.28s : They're all doing that.
+3306.28s - 3313.28s : So, when you do homework one, sometimes it'll be obvious that you want to use a CTE, which we'll cover in a second.
+3313.28s - 3321.28s : Sometimes if you want to do a Nesta query, but in general, it's up to preference.
+3321.28s - 3325.28s : We'll see CTs in a second.
+3325.28s - 3333.28s : Lateral joins are a special kind of join where it allows a query that's technically at the same level
+3333.28s - 3340.28s : of nesting within one query to reference data in another query at the same level.
+3340.28s - 3342.28s : So, what do I mean by that?
+3342.28s - 3351.28s : So, think of it like it's two for loops where I can now have a previous executed query within my same outer query
+3351.28s - 3354.28s : be referenced by queries that came after it.
+3354.28s - 3360.28s : So, I said before that in SQL, ideally, in a declarative language, you don't want to specify what the order of the operations should be.
+3360.28s - 3361.28s : But in something like a lateral join, you do have to specify that.
+3361.28s - 3362.28s : So, I said before that in SQL, ideally, in a declarative language, you don't want to specify what the order of the operations should be.
+3362.28s - 3364.28s : But in something like a lateral join, you do have to specify that.
+3364.28s - 3368.28s : Because you have to know, like, this thing has to get computed for this other one gets computed.
+3368.28s - 3370.28s : So, this is a really toy example.
+3370.28s - 3374.28s : Select star from a derived table where I have select one as x.
+3374.28s - 3381.28s : So, this is making a synthetic virtual table that has one tuple with one value of one.
+3381.28s - 3383.28s : And then now I have my lateral operator.
+3383.28s - 3390.28s : And in the second query here, I'm now allowed to reference up the Nesta query that came before it.
+3390.28s - 3392.28s : And it's roughly equivalent to pre-nested.
+3392.28s - 3398.28s : So, I'm producing the output of this Python code like this.
+3398.28s - 3400.28s : I'm seeing a lot of confused faces.
+3400.28s - 3402.28s : So, let's look at another example.
+3402.28s - 3407.28s : So, I want to calculate the number of students that enrolled in each course and get their average GPA.
+3407.28s - 3412.28s : And I want to sort them based on the enrollment count in descending order.
+3412.28s - 3415.28s : So, the outer query, again, is going to be select star from course.
+3415.28s - 3422.28s : When all the attributes for anybody within a course are any course tuple.
+3422.28s - 3427.28s : The first lateral query is going to be for each course compute the number of enrolled students.
+3427.28s - 3433.28s : And then the second lateral query would be for each course now compute the average GPA of the enrolled students.
+3433.28s - 3437.28s : So, it would look roughly like this.
+3437.28s - 3447.28s : So, in some cases, in some versions of SQL, you have to specify that it's a lateral join explicitly with a join operator.
+3447.28s - 3450.28s : In this case here in Postgres, you can say I have a lateral.
+3450.28s - 3451.28s : And then you have a nested query.
+3451.28s - 3453.28s : And then that can do whatever it wants aside that.
+3453.28s - 3461.28s : So, the first one here, again, we're computing the counting the number of students that are enrolled in each given course.
+3461.28s - 3462.28s : Right?
+3462.28s - 3469.28s : So, in this case here, the course ID I'm referencing is going to come from the outer query.
+3469.28s - 3474.28s : The second one down here, we're computing the average GPA for every student that enrolled in the course.
+3474.28s - 3476.28s : Again, the same thing here now.
+3476.28s - 3479.28s : This course ID can come from this outer one here.
+3479.28s - 3481.28s : Or it could come from the one in the middle.
+3481.28s - 3482.28s : It doesn't matter.
+3482.28s - 3484.28s : They're actually both semantically correct.
+3484.28s - 3488.28s : It would both produce the same result.
+3488.28s - 3489.28s : You would get something like this.
+3489.28s - 3492.28s : And I would sort by the count in ascending order.
+3492.28s - 3496.28s : All right.
+3496.28s - 3498.28s : Let me give a quick, show you quickly what this looks like.
+3498.28s - 3506.28s : So, DuckDB, MySQL, Postgres, and Fireball are all going to produce the same result for lateral joins, which is nice.
+3506.28s - 3507.28s : Sorry.
+3507.28s - 3508.28s : What was that?
+3508.28s - 3509.28s : I'm sorry.
+3509.28s - 3510.28s : I'm sorry.
+3510.28s - 3512.28s : Say it again.
+3512.28s - 3518.28s : For that, could you do that with a normal join?
+3518.28s - 3519.28s : For that example, yes.
+3519.28s - 3523.28s : Actually, in the sake of time, let me get through CTEs.
+3523.28s - 3527.28s : Because we have the caller, the speaker today.
+3527.28s - 3530.28s : And I can always show what this looks like afterwards.
+3530.28s - 3531.28s : All right.
+3531.28s - 3532.28s : CTEs are common table expressions.
+3532.28s - 3534.28s : This is a newer construct in SQL.
+3534.28s - 3538.28s : Think of this as like instead of having two separate select statements, one to create a temp table and one to create a table.
+3538.28s - 3539.28s : Think of this as like instead of having two separate select statements, one to create a temp table and one to create a table.
+3539.28s - 3548.28s : This is another library of form and I can create a temp table, which very similar to CTE Local Files you have in a compose menu purchase,
+3548.28s - 3552.28s : where you increase the text, an increase the text value, and then around the content.
+3552.28s - 3555.28s : When that Hunter NHS Tiguese column is different it is helpful.
+3555.28s - 3557.28s : You can get the text that got the most value.
+3557.28s - 3561.28s : It's happened to the woman at work and at home and the stuff is great.
+3561.28s - 3563.28s : Thatetaan is wholesome.
+3563.28s - 3564.28s : A cell display.
+3564.28s - 3565.28s : Right?
+3565.28s - 3566.28s : If I do the thing in one of these cells.
+3566.28s - 3567.28s : How are those labeled?
+3567.28s - 3568.28s : All right.
+3568.28s - 3575.84s : clause here and then now down below after the the closing parentheses I can then reference that CTE
+3575.84s - 3583.88s : as if it was a uh like a real table let me think it's like like a macro or I'm like like I could
+3583.88s - 3588.8s : take whatever is in that with clause and inject that as a as a nested query here
+3590.72s - 3594.02s : can you save it as questions can you parameterize it what do you mean by that
+3598.28s - 3607.52s : oh yeah so statement is uh statement is can you can you pass in a value that causes the the
+3612.98s - 3615.62s : I don't I don't think you can uh
+3620.18s - 3626.06s : we take this online there is research where you can take a arbitrary uh procedural code like
+3626.06s - 3627.98s : Python or or whatever
+3628.28s - 3632.9s : um you know Pascal people write these store procedures or functions in like this language
+3632.9s - 3637.34s : called PL sequel there's ways to convert automatically convert procedural code into
+3638.48s - 3643.64s : uh into CTEs which they do it does look like this but now you're actually maintaining a state table
+3643.64s - 3650.24s : what the input is to basically mimic the same thing that that is not you don't need to know
+3650.24s - 3656.9s : that for this okay all right so quick example uh now I'm going to find the student record the highest
+3656.9s - 3658.22s : ID enrolled in at least one course
+3658.28s - 3663.86s : you saw this before instead of doing an essay query I now have my my CTE right I can do a
+3663.86s - 3668.36s : joint against it uh and so the data says it could be smart up note compute the CTE once
+3668.36s - 3672.2s : and then fill in the value and use that uh later on
+3675.74s - 3681.44s : it's nicer syntax than using nested queries because you sort of declare them up front and
+3681.44s - 3685.82s : then you can reference them down below whereas nested queries you kind of like they're embedded
+3685.82s - 3687.68s : and makes makes the the sequel quite large
+3688.28s - 3696.74s : the statement is yes nested queries cannot reference in line things correct yes
+3697.46s - 3698.96s : but sometimes this is okay
+3701.84s - 3706.28s : all right the last thing I want to cover is window functions so the
+3707.42s - 3711.5s : in all the aggregations and things you're talking about before you can't easily
+3712.7s - 3718.22s : keep track of like uh how things are being processed of the order that you're looking at them
+3718.28s - 3728.48s : right so you can't compute things that that require a notion of bordering because again
+3728.48s - 3730.8s : moving average I think of like a time series date data data set where I'm having different
+3730.8s - 3735.54s : time stamps different different times throughout the day I'm recording the temperature so I want
+3735.54s - 3739.58s : to say what was the moving average of the temperature at this given time or stock
+3739.58s - 3744.44s : price would be another good example of this but with window functions you can now do this
+3747.32s - 3747.9s : generate
+3748.28s - 3755.6s : multiple aggregation outputs as you scan along logically scan along the data in
+3755.6s - 3759.66s : your sequel query so sort of like an aggregation but you're not grouping them
+3759.66s - 3763.22s : to produce a single output you have multiple outputs for every single
+3763.22s - 3767.76s : tuple so the way this works you specify in your projection list you have a
+3767.76s - 3770.76s : function name and that will have basic aggregation bonus and additional
+3770.76s - 3775.48s : functions that are specific for window functions and then you have this over
+3775.48s - 3780.28s : clause to specify how you want to split things up or slice things up as you go
+3780.28s - 3784.48s : along so the aggregation could be anything we talked about before like
+3784.48s - 3788.54s : again if I want to be the moving average the min max the count of some some
+3788.54s - 3793.84s : window as I scan and then the special functions are row number and rank so row
+3793.84s - 3798.76s : number would be like what offset you are in the in a group as you slice it up and
+3798.76s - 3805.16s : the rank is would be the position according to some sort order right so my
+3805.16s - 3805.46s : query is
+3805.46s - 3810.08s : select star from from the enroll table and I'm going to compute the row number
+3810.08s - 3815.46s : without doing any without doing any slicing or any group eyes and so now
+3815.46s - 3821.0s : you would see that I'm introducing this new column here called row number that
+3821.0s - 3826.3s : keeps track of where the where that tool is position is within that group of the
+3826.3s - 3832.02s : window if I want to again do something like group by they have a partition by
+3832.02s - 3835.14s : keyword so now again I'm going to compute the
+3835.14s - 3839.9s : get the course ID and the student ID for everyone enrolled in in the course I
+3839.9s - 3844.9s : want to know what the row number is as I partition them by the course ID right and
+3844.9s - 3847.9s : so again just like the group by clause grow things up in the groups when I
+3847.9s - 3851.08s : produce my output same thing here now you can see the row number gets reset
+3851.08s - 3857.86s : back to one every time I enter a new partition or enter a new group I can
+3857.86s - 3861.68s : sort things within my group as well right so I get in the over clause I can
+3861.68s - 3864.0s : specify an order by and then
+3865.14s - 3869.58s : the second time I'll the good this pass over this but you can do more
+3869.58s - 3874.88s : complicated things in there all right so finish up again
+3874.88s - 3879.52s : sequels very important it's not going away there's this survey that I actually
+3879.52s - 3883.2s : does every year about what what students say are the most important languages
+3883.2s - 3888.76s : they need to learn sequel is always now number one pythons number two number
+3888.76s - 3894.98s : three is Java all right so again as I said the rest of your life you're gonna come a
+3894.98s - 3899.26s : cross sequel and it's really important to at least know the basics of it so
+3899.26s - 3902.3s : homework one and this class right here today will be providing the foundation
+3902.3s - 3908.6s : you can then expand upon in your further careers all right so homework one is
+3908.6s - 3913.78s : going out today again doing basic data analysis using WP you submit you can run
+3913.78s - 3916.82s : everything locally and test and then you submit the grade scope and your output
+3916.82s - 3923.22s : has to match whatever the expected output is on grade scope okay should you
+3923.22s - 3923.8s : use an LLM
+3924.98s - 3932.34s : yes try it see how far you can get but you need to understand what what the
+3932.34s - 3934.94s : things actually spitting out because there might be an exam might ask you
+3934.94s - 3942.2s : some basic sequel questions okay all right so so again next class I won't be
+3942.2s - 3946.76s : here we'll be in London so we there's no money's a holiday so one dude no cause
+3946.76s - 3953.5s : any for anybody and then Wednesday we'll post on we'll post on on YouTube okay so
+3953.5s - 3954.92s : new classroom
+3954.98s - 3962.6s : this is drew he's at dbt and as I said before this is the arguably the one most
+3962.6s - 3968.22s : important applications in the data space right now it's widely used everywhere
+3968.22s - 3973.8s : and it's it's it's super important all right so drew sorry for being late for
+3973.8s - 3978.56s : the techno mess up the floor is yours go for it great Andy thanks for having me
+3978.56s - 3984.14s : on appreciate the cut words my screw bed over the co-founders of dbt laughs we do make a product that's really useful and we're really excited to be here today so we'll see you next time.
+3984.98s - 3989.6s : call it dbt you can see it's definitely not a database definitely not a data
+3989.6s - 3994.22s : warehouse but we help companies use their data work options and make sense of the
+3994.22s - 3999.3s : data you know in the database I think I've got about 10 minutes with you today
+3999.3s - 4002.92s : so this is a sort of modified version of an onboarding session that you for your
+4002.92s - 4007.58s : employees just talking about what dbt is and why it matters and how this into a
+4007.58s - 4012.98s : broader ecosystem so I got an apple pencil let's sketch it out so this is
+4012.98s - 4017.42s : the setup that you'll see it a lot of modern data oriented companies they've
+4017.42s - 4021.14s : got data coming from data sources in their transactional databases like
+4021.14s - 4025.42s : Postgres MySQL they've got advertising data and payments data finance
+4025.42s - 4029.6s : elementary sales customer support you name it what they want to do is
+4029.6s - 4033.5s : extractable all this data into a centralized place data warehouse or
+4033.5s - 4038.06s : data lake and so practically what happens is they've got these extractable
+4038.06s - 4042.86s : processes that are creating you know hundreds or thousands of tables and
+4042.98s - 4046.88s : loaded by different teams in different departments sometimes duplicated
+4046.88s - 4050.36s : sometimes stale but you just have a bunch of tables in a data warehouse
+4051.44s - 4055.7s : on the other side of the data warehouse we have the consumers so there's bi and
+4055.7s - 4060.44s : data science dashboards or notebooks or scripts that are clearing these tables
+4060.44s - 4067.28s : you've got your ml and ai use cases pulling from maybe the drop data directly
+4067.28s - 4070.64s : and they've got operational stuff like wanting to send emails to people who
+4070.64s - 4072.92s : left you know items in the shopping cart
+4072.98s - 4077.22s : um on a new commerce website so that's great some more tables too and so the
+4077.22s - 4081.32s : net result is that there's a giant mess here there's no semblance of data
+4081.32s - 4085.16s : lineage meaning that you can't actually see where the data is coming from that's
+4085.16s - 4088.82s : powering this bi report right you just have to trust that it works and usually
+4088.82s - 4092.96s : it's wrong in some way um there's no documentation so it's hard to find
+4092.96s - 4096.08s : things like data assets that already exist it's hard to reuse someone else's
+4096.08s - 4100.38s : work you frequently have to rebuild things from scratch um there's no
+4100.38s - 4102.56s : semblance of a deployment process here you just
+4102.98s - 4107.38s : stuff in prop, you edit the dashboard in prop, you change the tables in props, and hope you don't
+4107.38s - 4112.26s : break anything for anyone. There's no sense of QA, which means things are broken all the time,
+4112.26s - 4117.46s : quality assurance. And fundamentally, you get duplicated business logic for each of your
+4117.46s - 4122.9s : different use cases or dashboards. And so here we're kind of, you know, imagine recalculating
+4122.9s - 4127.78s : what it means to be a customer 100 times over. That leads to inconsistencies and brokenness.
+4127.78s - 4134.74s : So the alternative approach here is the one that we take with dbt. And the big idea is,
+4134.74s - 4140.5s : you know, as before, we want to load, extract and load data into a data warehouse. But this time,
+4140.5s - 4144.26s : we'll draw this imaginary line down the middle of the database, we'll say the left hand side
+4144.26s - 4152.42s : is for raw data. And that's where we extract and load, you know, our raw tables loaded from our
+4152.42s - 4157.7s : data sources. And then we have these blue pipelines here that I drew. So this is actually
+4157.78s - 4163.38s : what dbt does, it takes your raw data sets and helps you create derived data sets that are, you
+4163.38s - 4168.9s : know, enriched or apply your business logic to the raw data. And that results is that you get these
+4168.9s - 4176.1s : higher multiples of abstraction and these tables that you can query. And basically, the data set
+4176.1s - 4180.5s : you expose to the business represents sort of the terminology that folks that this is used and not
+4180.5s - 4186.5s : the raw data coming out of Salesforce or coming out of Postgres. So it's a sort of translation or
+4186.5s - 4187.46s : transformation layer.
+4187.78s - 4194.26s : The benefit of doing it with dbt is that you can source control your business logic as SQL code,
+4195.3s - 4200.9s : you can visualize your data lineage, you can see how data flows from raw tables through data models
+4200.9s - 4207.62s : into dashboards, you can use an actual CI process. So you can develop code in depth and not in fraud.
+4208.82s - 4212.5s : And you can find out that your game is working before your CEO
+4213.06s - 4216.9s : hears about it, which is always the better time to find out your next trouble.
+4216.9s - 4217.46s : And by the way, I'm going to show you a couple of examples of how you can do that.
+4217.46s - 4217.7s : So the first one is, you can use a lot of data to create a database. So you can use a lot of data to
+4217.7s - 4221.54s : create a database. And finally, you know, you can reuse assets. We've built this transform table,
+4221.54s - 4225.78s : other colleagues across the business can build on top of it, we can amplify each other's impact.
+4227.06s - 4231.54s : So I'll show you what this looks like a little bit in dbt. The big idea here is that, you know,
+4231.54s - 4236.02s : we're looking at a dbt model called stage GitHub stars. In this case, GitHub,
+4236.02s - 4241.94s : we first controlled in GitHub. And so stage GitHub stars is the name of our table. Here,
+4241.94s - 4247.22s : STG, it's like a staging model. This is like going from your raw data to kind of one layer of
+4247.22s - 4253.46s : preparation, you bring in some columns of clarity, filter out invalid or deleted records and stuff
+4253.46s - 4258.58s : like that, soft deleted records. And then fundamentally, our model code is just SQL.
+4259.22s - 4264.58s : So it's select star for all, you know, some source, and then we've got a little window function
+4264.58s - 4270.26s : action here to de duplicate records by, you know, first for startup date.
+4271.7s - 4276.26s : The only difference between this and pure SQL is that dbt has a built in template language called
+4276.26s - 4276.66s : Jinja.
+4277.22s - 4282.18s : And this allows us to do pretty cool things. And specifically, it allows us to represent edges
+4282.18s - 4286.42s : between different nodes in a dependency graph. So here we're saying stage GitHub stars,
+4287.7s - 4293.78s : stage GitHub stars depends on the raw source GitHub star users, in our case loaded by Fivetran.
+4295.3s - 4300.74s : So we can also do things like write for loops, and iterate over tables and union a bunch of tables
+4300.74s - 4305.46s : together with divergent schemas. There's really a lot a lot to do with this template language.
+4305.46s - 4306.98s : But fundamentally, what we're doing here is the
+4307.22s - 4309.94s : we're doing a lot of this logic in SQL, that gets first control.
+4312.5s - 4316.18s : The net of it is that you get a sort of dependency graph that looks like this in dbt.
+4316.74s - 4321.46s : So here's just a sample of an overall, much bigger dbt dependency graph.
+4322.1s - 4326.5s : And every single one of these nodes is either a data source, you know, in this case, these are
+4326.5s - 4330.5s : sources, or it's a sort of intermediate transformation, like we see here.
+4331.06s - 4335.54s : So this is us breaking up a lot of business logic into smaller pieces, kind of like you would with
+4335.54s - 4336.5s : functions, you know, and
+4337.22s - 4342.82s : in another programming language. But each of these nodes in the graph is itself a table.
+4343.46s - 4347.3s : And so there's some really cool stuff you can do with dbt, like testing your data sets,
+4347.3s - 4352.74s : documenting your data sets. So we can create assertions that say, you know, the invoice ID
+4352.74s - 4356.58s : in this table should always be unique and not null, or something like that. And now we can
+4356.58s - 4361.46s : find out if our assumptions about the data set don't hold, you know, again, before this.
+4363.38s - 4366.98s : Finally, we all put a sort of dimensional model here. This is dimstrace.
+4367.22s - 4372.02s : And this is a very simple model that we can use to query our customers. And that's what we want to
+4372.02s - 4376.74s : actually expose to the BI tools or data analysts in the company who are querying these data sets
+4376.74s - 4381.54s : and trying to answer questions about business. And I can guarantee you, it is a much nicer
+4381.54s - 4385.3s : experience for that person to query this table that has all the information that they need
+4385.3s - 4390.26s : blended from 40 different source tables, than it would be to go query those source tables directly.
+4390.26s - 4393.46s : Because we did all this hard work along the way to
+4393.46s - 4397.54s : translate from the raw data sets into sort of what I call business.
+4399.54s - 4407.14s : That was the six or seven minute answer to what exactly is dbt. If you take anything away,
+4407.14s - 4412.26s : it's transform data into data warehouse and do it like a software engineer with red code.
+4413.3s - 4415.54s : Okay, awesome. Any questions for Drew?
+4416.74s - 4417.22s : Yes, yes.
+4418.5s - 4423.3s : Yeah, so you mentioned that you write your data pipelines in SQL,
+4423.46s - 4429.94s : do you have like an efficient execution engine that can run this efficiently over like big
+4429.94s - 4430.74s : amounts of data?
+4430.74s - 4436.1s : The question is, you mentioned that you want to find these DAGs through SQL,
+4436.1s - 4438.82s : do you guys have an execution engine that can efficiently execute these?
+4440.26s - 4444.18s : That's a great question. We do. And it's called Snowflake, or Databricks, or BigQuery,
+4444.18s - 4449.3s : or Redshift, or so on and so on. So DBT again is not a data warehouse itself.
+4449.86s - 4453.38s : What we do is we run queries on the customer's data warehouse.
+4453.46s - 4458.42s : Which for us, I think the biggest for Snowflake, Redshift, BigQuery, Databricks.
+4460.5s - 4464.34s : And so our customers really like that because they did all this work to get their data into
+4464.34s - 4468.98s : their data warehouse. It's in their like single source of truth. They want the data to stay there,
+4468.98s - 4473.46s : so they like that DBT will connect to their Snowflake account or their BigQuery project,
+4473.46s - 4477.54s : and run the queries on the data, you know, in C2 where it lives.
+4478.34s - 4482.9s : A large percentage of all queries that run on like Snowflake, like DBT,
+4483.46s - 4487.7s : Snowflake BigQuery, and so on comes from DBT. It's massive.
+4487.7s - 4493.54s : .
+4493.54s - 4497.38s : It's like a data lineage marketplace tool. Drew?
+4497.38s - 4502.98s : Oh, interesting. Well, what I would say is, so we can do things and maybe this diagram is
+4502.98s - 4509.7s : confusing, but actually DBT's job is to create these tables. They can be two of these nodes as
+4509.7s - 4513.22s : a table, or a view, could be a view. So DBT actually creates these tables. So DBT actually
+4513.46s - 4518.42s : creates these based on the version control definition in your DBT project. We can also
+4518.42s - 4523.46s : visualize it for you so that you can trace, you know, where does the data come from that ultimately
+4523.46s - 4527.3s : lies in the dim, straight customers table. Well, you can trace it all the way back to these data
+4527.3s - 4532.26s : sources and some other stuff over here in the sub-shed. But DBT's primary job is to actually
+4532.26s - 4537.14s : build those data sets in dependency order. We just so happen to also visualize it for you as like
+4537.14s - 4542.82s : debugging or data catalog tool. All right, awesome. Let's thank Drew.
+4543.46s - 4548.66s : No, no, no, no, go for it, go for it.
+4548.66s - 4555.14s : Yeah, if you were to look at a typical DBT model, basically, I showed this up earlier, what we'll
+4555.14s - 4561.94s : do is wrap your select statement and, you know, create table as blah, blah, blah. And so this is
+4561.94s - 4566.9s : how we like push down the execution to the logic. The user's job is to define the business logic and
+4566.9s - 4572.82s : SQL select statement. DBT's job is to materialize that logic as tables of the user, incrementally
+4572.82s - 4573.46s : update tables.
+4573.46s - 4576.58s : Things like that. So that's how that's how this all fits together.
+4577.38s - 4582.18s : All right. So you may not all realize the significance of what DBT is because you don't
+4582.18s - 4587.06s : have any data, right? At some point in your life, you're gonna have a bunch of Python scripts trying
+4587.06s - 4591.54s : to mash this, right? And then you realize this is terrible. How are you ever going to maintain this?
+4591.54s - 4596.02s : This is the problem that DBT solves, right? That's why I keep saying it's a big deal. It's widely
+4596.02s - 4601.54s : used because it is a way to declare here's my pipeline for my data projects. Whereas before,
+4601.54s - 4603.46s : it was just like a bunch of random stuff people would have.
+4603.46s - 4605.54s : And GitHub. Okay. All right. Let's thank Drew.
+4610.1s - 4613.78s : All right. Thanks, man. Appreciate it. All right. Again, Monday's the holiday,
+4613.78s - 4617.94s : no classes. And then Wednesday, I'm in London. That'll be on YouTube. And then please get started
+4617.94s - 4622.26s : on project zero and the homework. Okay. Thank you. Hit it.
+4622.26s - 4624.26s : .
+4633.46s - 4644.26s : .
+4644.26s - 4646.26s : .
+4646.26s - 4648.26s : .
+4648.26s - 4652.26s : .
+4652.26s - 4653.3s : .
+4653.3s - 4657.3s : .
+4657.3s - 4659.3s : .
+4659.3s - 4661.3s : .
