@@ -85,11 +85,35 @@ def align(slides_path: str, audio_path: str) -> Dict[str, Any]:
     }
 
 
+# Candidate input filenames, checked in order. Lets a fresh rerun just drop
+# lecture_slide.json / lecture_audio.json into input/ without renaming
+# anything or touching the original lecture_021 / LecVideo_001 sample files.
+SLIDE_FILENAME_CANDIDATES = ["lecture_slide.json", "lecture_021_module3_final_output.json"]
+AUDIO_FILENAME_CANDIDATES = ["lecture_audio.json", "LecVideo_001_enriched.json"]
+
+
+def _resolve_input(input_dir: Path, candidates: List[str]) -> Path:
+    for name in candidates:
+        path = input_dir / name
+        if path.exists():
+            return path
+    raise FileNotFoundError(
+        f"None of {candidates} found in {input_dir}"
+    )
+
+
 if __name__ == "__main__":
     repo_root = Path(__file__).resolve().parents[2]
+    input_dir = repo_root / "input"
+
+    slides_path = _resolve_input(input_dir, SLIDE_FILENAME_CANDIDATES)
+    audio_path = _resolve_input(input_dir, AUDIO_FILENAME_CANDIDATES)
+    print(f"Using slides file: {slides_path.name}")
+    print(f"Using audio file : {audio_path.name}")
+
     result = align(
-        slides_path=str(repo_root / "input" / "lecture_021_module3_final_output.json"),
-        audio_path=str(repo_root / "input" / "LecVideo_001_enriched.json"),
+        slides_path=str(slides_path),
+        audio_path=str(audio_path),
     )
 
     out_path = repo_root / "input" / "aligned_sources.json"
