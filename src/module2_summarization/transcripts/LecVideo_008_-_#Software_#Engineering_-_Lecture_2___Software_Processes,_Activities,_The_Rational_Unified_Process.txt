@@ -1,0 +1,891 @@
+0.0s - 5.18s : Merhaba değerli öğrencilerim, Software Engineering course'un 2. lektürüye hoş geldiniz.
+6.08s - 8.24s : Bugünki konu Software Procesi.
+8.9s - 10.46s : Part 1. Başlayalım.
+11.46s - 13.32s : Bugünki konular
+13.32s - 18.14s : Software Proces Models
+18.14s - 20.5s : Proces Aktivites
+20.5s - 25.28s : Change Coping
+25.28s - 29.04s : Rational Unified Process
+30.0s - 42.26s : R
+42.26s - 55.0s : Jedi
+55.0s - 55.3s : Anima
+55.3s - 59.98s : R
+59.98s - 61.98s : bir sistem geliştirmeyi sağlamak için kullanılıyor.
+63.98s - 67.98s : Herhangi bir sistem geliştirme sürecinin birçok farklı sürecinin bir araya çıkması ama hepsi birleşik.
+70.98s - 76.98s : Spekifikasyon, sistemin ne yapacağını, tasarım ve uygulamayı, sistemin organizasyonunu
+76.98s - 82.98s : ve uygulamayı, validasyon, müşterinin ne istediklerini, evolüsyon,
+82.98s - 87.98s : müşterinin ihtiyaçlarını değiştirmek için bir sistem değiştirmeyi sağlamak.
+87.98s - 99.98s : Yani, sistem geliştirme sürecinin tüm bu dört ana etkilerden birbirine sahip oluyor.
+107.98s - 116.98s : Sistem geliştirme modeli bir geliştirme yapısının bir kısımdan bir özellik olarak bir kısımdan bir açıklamasıdır.
+117.98s - 125.9s : Beklentileriz UY段ả Shirap
+126.98s - 130.94s : Özel dersler
+131.98s - 138.98s : finelyşirsteşileeee
+139.98s - 143.98s : 위해
+143.98s - 144.98s : faktör ve
+147.98s - 154.68s : Proces descriptions may also include
+157.86s - 173.38s : Products, which are the outcomes of a process activity, roles, which reflect the responsibilities of the people involved in the process, pre and post conditions, which are statements that are true before and after a process activity has been enacted or a product produced
+177.98s - 179.98s : Plan Driven and Agile Processes
+179.98s - 190.74s : Plan Driven Processes are processes where all of the process activities are planned in advance and progress is measured against this plan.
+193.42s - 201.04s : In Agile Processes, planning is incremental and it is easier to change the process to reflect changing customer requirements.
+201.04s - 210.02s : In practice, most practical processes include elements of both plan driven and agile approaches.
+211.54s - 214.04s : There are no right or wrong software processes.
+214.88s - 219.4s : You can either follow plan driven processes or agile processes.
+220.18s - 221.26s : It is up to you.
+221.92s - 230.54s : Based on what you need to achieve, what you need to program or code or construct.
+231.04s - 235.1s : Software Process Models
+235.1s - 241.66s : The Waterfall Model
+241.66s - 244.84s : Plan Driven Model
+244.84s - 248.5s : Separate and distinct phases of specification and development.
+251.16s - 252.38s : Incremental Development
+252.38s - 259.82s : Specification, development and validation are interleaved.
+259.82s - 260.82s : Maybe plan driven.
+261.04s - 267.2s : Reuse Oriented Software Engineering
+267.2s - 272.82s : The system is assembled from existing components.
+273.34s - 274.94s : Maybe plan driven or agile.
+281.98s - 288.94s : In practice, most large systems are developed using a process that incorporates elements from all of these models.
+291.04s - 294.34s : Let's check out the Waterfall Model.
+294.34s - 297.8s : Requirements Definition
+297.8s - 299.9s : System and Software Design
+299.9s - 301.78s : Implementation and Unit Testing
+301.78s - 304.08s : Integration and System Testing
+304.08s - 305.32s : Operation and Maintenance
+305.32s - 320.1s : You see, it's a very planned model and each one can feedback the previous stages and therefore the changes may be made according to the use feedback.
+321.04s - 322.94s : oring
+343.92s - 345.14s : Then, waterfall model
+345.14s - 346.3s : phases, etc.
+346.3s - 347.5s : There are separate identified phases in the waterfall model.
+347.5s - 348.88s : There are separate identified phases in the waterfall model.
+348.88s - 349.0s : Req, analysis and definition system and system design
+349.0s - 349.48s : etc...
+349.48s - 349.9s : Still no sufficient accuracy or evidence, the channel boundary needs to be also offered a consultation.
+349.9s - 350.44s : Thank you for watching this video.
+350.44s - 350.84s : It will be a pleasure to talk about foi
+350.84s - 351.02s : talk aboutγ
+351.04s - 357.14s : Software Design Implementation and Unit Testing Integration and System Testing Operation and Maintenance.
+358.3s - 360.24s : Let's read one by one.
+360.68s - 362.94s : Requirements Analysis and Definition.
+364.78s - 367.0s : System and Software Design.
+373.3s - 375.42s : Implementation and Unit Testing.
+377.42s - 379.6s : Integration and System Testing.
+381.04s - 383.54s : Operation and Maintenance.
+386.5s - 393.14s : The main drawback of the waterfall model is the difficulty of accommodating change after the process is underway.
+394.18s - 398.46s : In principle, a phase has to be complete before moving on to the next phase.
+400.22s - 411.02s : It is not very agile for waterfall model because you plan and design everything before starting.
+411.04s - 421.04s : Waterfall Model Problems.
+421.04s - 421.16s : Waterfall Model Problems.
+423.54s - 430.8s : Inflexible partitioning of the project into distinct stages makes it difficult to respond to changing customer requirements.
+434.42s - 441.02s : Therefore, this model is only appropriate when the requirements are well understood and changes will be fairly likely.
+441.22s - 443.72s : 3. Regülasyon Sprint sociale WiederausgUM.
+443.74s - 444.62s : A checkpoint physician
+444.84s - 452.44s : The mandatory or final program is a regular genteinment program which will proceed throughout the workflow within the first 5 years of the project development process and will not interfere with the complete work view schedule.
+453.0s - 454.56s : Waterfall model external bugs.
+455.02s - 456.32s : Agility and word security,
+456.54s - 457.26s : route to share the work,
+457.46s - 460.66s : the graphical certailectualization,
+460.8s - 470.1s : the
+470.14s - 470.88s : synchronization.
+471.04s - 478.48s : Belki NASA projesi böyle olabilir. Çünkü büyük projeler var.
+478.48s - 482.0s : Böyle projelerde çalışan büyük bir sayıda inşanlar var.
+482.0s - 483.52s : Büyük bir hizmet var.
+483.52s - 490.16s : Yani her şey planlandırılabilir ve projeyi başlamadan önce tasarlanabilir.
+490.16s - 493.52s : Ve belki birkaç sitesle ayrılabilir.
+493.52s - 501.84s : Yani belki nasıl çalışıyorlar bilmiyorum ama NASA projesi böyle olabilir.
+501.84s - 504.8s : Mesela Mars'a bir misyon böyle olabilir.
+514.64s - 516.08s : Deskripsiyonu açıklayın.
+516.08s - 522.0s : Öncelikle bir deskripsiyonu açıklayın ve sonra başlayın.
+522.0s - 523.2s : Ve...
+523.2s - 527.2s : ...diskripsiyonu arttırın.
+527.76s - 529.12s : Konkurrent işlemleri...
+530.16s - 534.56s : ...dikkat, geliştirme ve valiz yapma sürecleri aynı zamanda gerçekleşiyor.
+534.56s - 535.44s : Bu üçüncü.
+536.24s - 538.16s : Birbirine her ikiyi kontinuously feedback.
+538.96s - 539.6s : Ve sonra...
+544.08s - 545.6s : ...yakınlaştığınızda...
+546.96s - 548.88s : ...initial version'ı paylaşabilirsiniz.
+548.88s - 551.2s : İndiak versiyonu paylaşabilirsiniz.
+551.2s - 551.52s : Ve...
+552.32s - 552.8s : ...sonra...
+552.8s - 556.8s : ...validasyonu ve son versiyonu paylaşabilirsiniz.
+556.8s - 561.68s : Bu iki 사람� cognitive practices's geliştiricileri de görüyorsunuz.
+562.4s - 564.96s : Onları ve bu da ve bu da son versiyon.
+566.16s - 566.88s : Tamam.
+566.88s - 573.2s : Incremental Development Benefits
+576.48s - 578.4s : Anlaşılabildiği ve değişik Tercih Re blows français sonuçlarında daha az barış riskétique giverir.
+578.4s - 579.44s : İşçiler için değişken mü caves gönüllerine bir udan veutir Kendall hayırlaşım cศuster requirement uneller is reduced.
+579.44s - 580.32s : IVF veride onları belirlemes6
+580.32s - 607.76s : En sprinklor gibi bir nesnelerrep neler olduğunu ani
+607.76s - 609.0s : arama ile bir başka işte,
+609.0s - 623.76s : test device. Let's say you are coding the software of the airspace craft navigation system
+623.76s - 633.64s : and it can be only tested when it is actually going to the Mars. You can test it on the
+633.64s - 657.5s : Earth. Of course they are probably developing artificial simulation platforms and simulations.
+657.5s - 663.62s : However, the real test and the real feedback can only be get when
+663.62s - 668.62s : ve Avrupa Avrupa'nın Mars'a yolculuğu ile ilerliyor.
+668.62s - 675.62s : Bu yüzden, ilerleyici gelişim ve yüzey gelişimi farkı görüyorsunuz.
+675.62s - 677.62s : Tamam.
+695.62s - 701.62s : Örneğin, bunu bir e-commerce sitemize uygulayabilirsiniz.
+701.62s - 703.62s : İlk versiyonu paylaşabilirsiniz,
+703.62s - 705.62s : müşteriler bunu kullanmaya başlayacak
+705.62s - 709.62s : ve müşterilerin kaynaklarını görürse,
+709.62s - 712.62s : sizleri tepki verip onları artırabilirsiniz.
+712.62s - 715.62s : Bu nedenle, bu strateji,
+715.62s - 719.62s : tüm sistemlere ihtiyaç duyamayabilirsiniz.
+719.62s - 725.62s : Mesela, bir MR ve MIR alanı satın alıyorsunuz ve
+728.62s - 734.62s : sadece tüm sistemleri kullanamıyorsunuz.
+735.62s - 744.62s : Bu, insanları öldürür, insanları kötü bir şekilde acı çekebilir.
+744.62s - 751.62s : Bu yüzden, her iş için farklı bir sosyal gelişimler kullanabilirsiniz.
+751.62s - 755.62s : İlk versiyonu ve son versiyonu bir oyunla paylaşabilirsiniz.
+755.62s - 758.62s : Çünkü bu, birisi acı çekemez,
+758.62s - 761.62s : bu durumda sorunlar veya şanslar veya problemler olamaz.
+761.62s - 762.62s : Tamam.
+762.62s - 764.62s : Birçok başlangıç projesi var,
+764.62s - 766.62s : bu işler agil gelişim kullanıyor,
+766.62s - 767.62s : iklim gelişim kullanıyor.
+767.62s - 770.62s : İlk beta paylaştılar ve sonra
+770.62s - 772.62s : bir parayı yaratmaya başladılar ve
+772.62s - 775.62s : oyunları devam ederek geliştiriyorlar.
+781.62s - 783.62s : İklim gelişim sorunları
+787.62s - 789.62s : Proses yok.
+789.62s - 792.62s : Manajörler, süreçte gelişimleri ölçmek için
+792.62s - 793.62s : süreç belirlenmesi gerekiyor.
+793.62s - 795.62s : Sistemin gelişimleri hızlı geliştirilip,
+795.62s - 797.62s : her versiyonun sistemin her birini
+797.62s - 799.62s : gösterdiği dokümanları üretmek için
+799.62s - 801.62s : bu işlemler de ucuz olamaz.
+803.62s - 805.62s : Sistemin kuralları değişiklikte,
+805.62s - 807.62s : yeni aşamalar eklenir.
+807.62s - 809.62s : Ürünleri iyileştirmek için
+809.62s - 811.62s : zaman ve para ödeyerek
+811.62s - 813.62s : ucuz olmalı.
+813.62s - 815.62s : Bu, süreçlerden daha fazla
+815.62s - 817.62s : kurallar eklemek için
+817.62s - 819.62s : süreçlerden daha fazla
+819.62s - 821.62s : korumak.
+821.62s - 823.62s : Çünkü
+823.62s - 825.62s : gelişim ve tasarım süresinde
+825.62s - 827.62s : plan ve tasarım
+827.62s - 829.62s : yaparken
+829.62s - 831.62s : birkaç büyük değişim
+831.62s - 833.62s : yapabilirsiniz.
+833.62s - 835.62s : İlk gelişimlerine
+835.62s - 837.62s : değişim yapabilirsiniz.
+837.62s - 839.62s : İlk gelişimlerine
+839.62s - 841.62s : değişim yapabilirsiniz.
+841.62s - 843.62s : Bu, gelişimlerinin
+843.62s - 845.62s : negatif tarafından
+845.62s - 847.62s : görülüyor.
+851.62s - 853.62s : Öğrenimli
+853.62s - 855.62s : teknoloji
+855.62s - 857.62s : teknolojisi
+857.62s - 859.62s : Sistemin
+859.62s - 861.62s : kuralları
+861.62s - 863.62s : değişiklikte
+863.62s - 865.62s : ucuz olmalı.
+865.62s - 867.62s : İlk gelişimlerine
+867.62s - 869.62s : değişim
+869.62s - 871.62s : yapabilirsiniz.
+871.62s - 873.62s : İlk gelişimlerine
+873.62s - 875.62s : değişim
+875.62s - 877.62s : tarafından
+877.62s - 879.62s : görülüyor.
+881.62s - 883.62s : İlk gelişimlerine
+883.62s - 885.62s : değişim yapabilirsiniz.
+885.62s - 887.62s : Sistemin kuralları
+887.62s - 889.62s : değişiklikte
+889.62s - 891.62s : ucuz olmalı.
+891.62s - 893.62s : Bu,
+893.62s - 895.62s : birkaç büyük
+895.62s - 897.62s : değişim
+897.62s - 899.62s : yapabilirsiniz.
+899.62s - 901.62s : İlk gelişimlerine
+901.62s - 903.62s : değişim
+903.62s - 905.62s : yapabilirsiniz.
+905.62s - 907.62s : İlk gelişimlerine
+907.62s - 909.62s : değişim
+909.62s - 920.42s : Reuse Oriented Software Engineering
+920.42s - 936.3s : Types of Software Component
+936.3s - 939.6s : Web Services
+939.6s - 961.5s : Web Services
+961.5s - 962.2s : Process Activities
+962.2s - 962.4s : Process Activities
+966.3s - 980.18s : Real Software Processes are interleaved sequences of technical, collaborative and managerial activities with the overall goal of specifying, designing, implementing and testing a software system.
+980.18s - 988.84s : The four basic process activities of specification, development, validation and evolution are organized differently in different development processes.
+989.9s - 995.68s : In the waterfall model, they are organized in sequence, whereas in incremental development they are interleaved.
+996.3s - 999.0s : Okay, software specification.
+1003.5s - 1010.48s : The process of establishing what services are required and the constraints on the system's operation and development.
+1011.86s - 1014.24s : Okay, requirements engineering process.
+1018.54s - 1020.08s : Feasibility study.
+1020.08s - 1024.52s : Is it technically and financially feasible to build the system?
+1025.1s - 1026.18s : This is so important.
+1026.3s - 1032.58s : You shouldn't try to build systems that are unfeasible.
+1033.08s - 1041.04s : They are not just possible or financially and economically they are impossible to achieve.
+1044.46s - 1046.68s : Requirements elicitation and analysis.
+1048.54s - 1053.0s : What do the system stakeholders require or expect from the system?
+1053.5s - 1055.32s : Requirements specification.
+1055.32s - 1057.84s : Defining the requirements in detail.
+1058.5s - 1059.64s : Requirements validation.
+1059.88s - 1061.46s : Checking the validity of the requirements.
+1061.46s - 1066.72s : So, you see this is named as requirements engineering process.
+1067.3s - 1069.16s : You are not just a coder.
+1069.38s - 1070.6s : You are not just a programmer.
+1070.82s - 1081.42s : If you want to be a software engineer, you need to have an idea, have a plan and have habits of an engineer.
+1082.36s - 1084.56s : For example, just for requirements.
+1084.56s - 1085.26s : You need.
+1085.32s - 1090.32s : To do every necessity check like this one.
+1090.82s - 1093.6s : Feasibility study requirements elicitation and analysis.
+1094.38s - 1097.04s : Requirements specification, requirements validation and such.
+1097.28s - 1097.58s : Okay.
+1098.2s - 1103.48s : This will separate you from the regular coders, programmers, freelancers.
+1103.58s - 1105.18s : Okay, as a software engineer.
+1112.52s - 1114.86s : The requirements engineering process.
+1115.32s - 1115.76s : Okay.
+1115.76s - 1116.86s : Feasbility study.
+1117.42s - 1120.2s : From feasibility study, you generate feasibility reports.
+1120.66s - 1123.56s : Requirements elicitation and analysis.
+1123.7s - 1126.02s : Based on that you...
+1127.02s - 1130.02s : Start requirements specification and system models.
+1130.26s - 1135.44s : From requirements specification, you can feed back your requirements elicitation and analysis.
+1136.24s - 1138.4s : You can move to the next stage.
+1138.4s - 1143.28s : User and System requirements and from system models and user system requirements.
+1143.28s - 1145.18s : You can compose requirements documents.
+1145.18s - 1150.18s : Ve hizmet şifresi olarak hizmet valizasyonunu yapabilirsiniz.
+1150.18s - 1155.18s : Ve bu hizmet şifresini ve hizmet arasızlığı analizini değiştirebilirsiniz.
+1155.18s - 1163.18s : Gördüğünüz gibi, bu hizmet şifresinin daha fazla süreçten sonra hizmet şifresini yapabilirsiniz.
+1163.18s - 1168.18s : Ve sonrasında hizmet şifresini yapmanızı tamamlıyorsunuz.
+1168.18s - 1176.18s : Software Design and Implementation
+1176.18s - 1184.18s : The process of converting the system specification into an executable system.
+1184.18s - 1186.18s : Software Design
+1186.18s - 1192.18s : Design a software structure that realizes the specification.
+1192.18s - 1194.18s : Implementation
+1194.18s - 1197.18s : Translate this structure into an executable system.
+1197.18s - 1202.18s : Structure into an executable program.
+1202.18s - 1209.18s : The activities of design and implementation are closely related and may be interleaved.
+1209.18s - 1217.18s : So after you have done the requirements engineering process you move to the software design and implementation process.
+1217.18s - 1225.18s : In this one there are the process of software design implementation and
+1225.18s - 1226.18s : you
+1227.18s - 1229.18s : You
+1229.18s - 1231.18s : You
+1231.18s - 1233.18s : You
+1233.18s - 1235.18s : You
+1235.18s - 1241.18s : You execute the both processes at the same time in many cases.
+1241.18s - 1242.18s : Okay.
+1242.18s - 1244.18s : Interleaved.
+1244.18s - 1248.18s : A general model of the software design process.
+1248.18s - 1253.18s : There are design inputs which are platform information, requirements specification, data description.
+1253.18s - 1255.18s : And there are design activities.
+1255.18s - 1260.18s : This architectural design, interface design, component design.
+1260.18s - 1264.18s : And they move to the, they both connect to the database design.
+1264.18s - 1266.18s : And there is design outputs.
+1266.18s - 1272.18s : System architectures, database specification, interface specification, component specification.
+1272.18s - 1273.18s : Okay.
+1273.18s - 1275.18s : So design activities.
+1275.18s - 1279.18s : Let's read them carefully.
+1279.18s - 1281.18s : Architectural design.
+1281.18s - 1283.18s : Where you identify the overall structure.
+1283.18s - 1286.18s : Where you identify the overall structure of the system.
+1286.18s - 1287.18s : The principal components.
+1287.18s - 1290.18s : Sometimes called sub systems or modules.
+1290.18s - 1293.18s : Their relationships and how they are distributed.
+1293.18s - 1294.18s : Interface design.
+1294.18s - 1298.18s : Where you define the interfaces between system components.
+1298.18s - 1299.18s : Component design.
+1299.18s - 1303.18s : Where you take each system component and design how it will operate.
+1303.18s - 1305.18s : Database design.
+1305.18s - 1310.18s : Where you design the system data structures and how these are to be represented in a database.
+1310.18s - 1311.18s : You see design has many different components.
+1311.18s - 1318.18s : And you need to follow these code of practice to be a good software engineer.
+1318.18s - 1330.18s : And there is software validation.
+1330.18s - 1338.18s : Verification and validation, V&V, is intended to show that a system conforms to its specification and meets the requirements of the system customer.
+1338.18s - 1340.18s : Involves checking and reviewing the system.
+1340.18s - 1343.18s : Involves checking and review processes and system testing.
+1343.18s - 1352.18s : System testing involves executing the system with test cases that are derived from the specification of the real data to be processed by the system.
+1352.18s - 1356.18s : Testing is the most commonly used V&V activity.
+1356.18s - 1367.18s : For testing there are usually companies and engineers, programs and other codes, another software.
+1367.18s - 1370.18s : So there are being tested.
+1370.18s - 1374.18s : Which provides inputs and expects some output.
+1374.18s - 1386.18s : So whenever you make changes to your main software, you retest your main software with these testing procedures.
+1386.18s - 1391.18s : And see if there are any errors, if an unexpected error happened or not.
+1391.18s - 1398.18s : Stages of testing, component testing, system testing, acceptance testing.
+1398.18s - 1408.18s : If acceptance is not achieved, you go back to the component testing and system testing and acceptance testing again.
+1408.18s - 1414.18s : Okay, testing stages.
+1414.18s - 1419.18s : Development or component testing.
+1419.18s - 1422.18s : Individual components are tested independently.
+1422.18s - 1426.18s : Components may be functions or objects or coherent groupings of these entities.
+1426.18s - 1427.18s : System testing.
+1427.18s - 1433.18s : Testing of the system as a whole.
+1433.18s - 1439.18s : Testing of emergent properties is particularly important.
+1439.18s - 1443.18s : Okay, acceptance testing.
+1443.18s - 1448.18s : Testing with customer data to check that the system meets the customer's need.
+1448.18s - 1452.18s : Testing phase is a plan-driven software process.
+1452.18s - 1455.18s : You see it is getting expanded.
+1455.18s - 1464.18s : Requirements specifications, system specifications, system design, detailed design, model and unit code and test.
+1464.18s - 1471.18s : There is acceptance test plan, system integration test plan, sub-system integration test plan.
+1471.18s - 1476.18s : There is sub-system integration test, sub-system integration test, acceptance test and service.
+1476.18s - 1483.18s : However, if you follow this plan-driven software process, you can much easily achieve.
+1483.18s - 1491.18s : You can much easily put very large software systems.
+1491.18s - 1493.18s : Okay.
+1493.18s - 1495.18s : Software evaluation.
+1495.18s - 1503.18s : Software is inherently flexible and can change.
+1503.18s - 1511.18s : As requirements change through changing business circumstances, the software that supports the business must also evolve and change.
+1511.18s - 1521.18s : Although there has been a demarcation between development and evolution, maintenance, this is increasingly irrelevant as fewer and fewer systems are completely new.
+1521.18s - 1529.18s : Okay, system evaluation.
+1529.18s - 1534.18s : So, define system requirements, assess existing systems.
+1534.18s - 1539.18s : Proposed system changes, modified systems.
+1539.18s - 1540.18s : Composed new system.
+1540.18s - 1548.18s : From there you check whether you assess again the existing.
+1548.18s - 1555.18s : Okay, so key points of the part one of software processes.
+1555.18s - 1559.18s : Here, which are the key points.
+1559.18s - 1562.18s : Let's read one by one.
+1562.18s - 1568.18s : Software processes are the activities involved in producing a software system.
+1568.18s - 1575.18s : Software process models are abstract representations of these processes.
+1575.18s - 1584.18s : General process models describe the organization of software processes.
+1584.18s - 1592.18s : Examples of these general models include the waterfall model, incremental development, and reuse-oriented development.
+1592.18s - 1596.18s : More key points.
+1598.18s - 1604.18s : Requirements engineering is the process of developing a software specification.
+1604.18s - 1612.18s : Design and implementation processes are concerned with transforming a requirements specification into an executable software system.
+1612.18s - 1620.18s : Software validation is the process of checking that the system conforms to its specification and that it meets the real needs of the users of the system.
+1620.18s - 1626.18s : Software evolution takes place when you change existing software systems to meet new requirements.
+1626.18s - 1627.18s : The software is the process of developing a software specification.
+1627.18s - 1630.18s : The software must evolve to remain useful.
+1630.18s - 1641.18s : So if you don't make any updates to your existing software, eventually it will become obsolete and left by the customers and clients.
+1641.18s - 1648.18s : So lecture two software processes part two coping with the change.
+1648.18s - 1653.18s : Okay coping with change.
+1653.18s - 1656.18s : All right.
+1657.18s - 1663.18s : Change is inevitable in all large software projects.
+1663.18s - 1667.18s : Business changes lead to new and changed system requirements.
+1667.18s - 1671.18s : New technologies open up new possibilities for improving implementations.
+1671.18s - 1678.18s : Changing platforms require application changes.
+1678.18s - 1680.18s : Change leads to rework.
+1680.18s - 1685.18s : So the costs of change include both rework e.g. reanalyzing requirements as well as the costs of implementing new functions.
+1685.18s - 1686.18s : Change leads to rework.
+1686.18s - 1692.18s : So the costs of change include both rework e.g. reanalyzing requirements as well as the costs of implementing new functions.
+1692.18s - 1697.18s : Reducing the costs of rework.
+1697.18s - 1707.18s : Change avoidance where the software process includes activities that can anticipate possible changes before significant rework is required.
+1707.18s - 1714.18s : For example, a prototype system may be developed to show some key features of the system to customers.
+1714.18s - 1721.18s : Change tolerance where the process is designed so that changes can be accommodated at relatively low cost.
+1721.18s - 1725.18s : This normally involves some form of incremental development.
+1725.18s - 1730.18s : Proposed changes may be implemented in increments that have not yet been developed.
+1730.18s - 1737.18s : If this is impossible, then only a single increment, a small part of the system, may have be altered to incorporate the change.
+1737.18s - 1742.18s : Software prototyping.
+1742.18s - 1748.18s : Soyun Friends is what we call software prototyping.
+1748.18s - 1754.18s : A prototype is an initial version of a system used to demonstrate concepts and try out design options.
+1754.18s - 1760.18s : A prototype can be used in the requirements engineering process to help with requirements elicitation and validation.
+1760.18s - 1765.68s : In design processes to explore options and develop a UI design.
+1765.68s - 1769.18s : In the testing process to run back-to-back tests.
+1772.18s - 1775.18s : Prototyping'in faydaları
+1775.18s - 1782.18s : Sistem kullanımının arttığı, kullanıcıların gerçek ihtiyaçlarına yakın bir uyarı,
+1782.18s - 1787.18s : tasarım kalitesi arttığı, sürdürülebilirlik arttığı, gelişim çalışması arttığı.
+1791.18s - 1794.18s : Prototyping gelişiminin süreci
+1794.18s - 1798.18s : Prototyping objektiflerini kurmak, planı prototyp yapmak,
+1798.18s - 1802.18s : prototip, prototip funksiyonları, kısım, definisyon,
+1802.18s - 1806.18s : prototip gelişimini geliştirme, prototip, prototip gelişimini geliştirme,
+1806.18s - 1809.18s : prototip gelişimini geliştirme, evaluasyon, rapor.
+1809.18s - 1811.18s : Prototip gelişimini
+1815.18s - 1819.18s : raporla veya araçla veya araçla yapmak için.
+1821.18s - 1824.18s : Farklı bir şekilde,
+1824.18s - 1827.18s : Prototip,
+1828.18s - 1846.18s : Prototip,
+1847.18s - 1849.18s : Prototip,
+1852.18s - 1853.18s : Prototip,
+1853.18s - 1857.64s : Çeşitli çalışmaların geliştirilmesi için iyi bir basın için de ayrılmalıdır.
+1857.64s - 1862.06s : Çeşitli çalışmaların geliştirilmesi için de ayrılmalıdır.
+1862.06s - 1864.52s : Prototipler normalde indokumentedir.
+1864.52s - 1868.28s : Prototip stüktürü her zaman hızlı değişimden dolayı değiştirilir.
+1868.28s - 1872.9s : Prototip her zaman normal organizasyonel kalite standartlarına ulaşmayacaktır.
+1872.9s - 1877.96s : Çekimli geliştirme
+1883.18s - 1898.42s : Sadece bir geliştirme olarak sistemleri geliştirmeye karşı, geliştirme ve geliştirme, her geliştirme için gerekli bir parçalardan birine ayrılmakta.
+1898.42s - 1905.42s : Önce geliştirme
+1905.42s - 1909.42s : Önce geliştirme
+1909.42s - 1912.42s : Önce geliştirme
+1912.42s - 1912.92s : Önce geliştirme
+1912.92s - 1916.66s : Kur freeze
+1916.66s - 1921.58s : eksizede türkleden Which trade systems?
+1921.58s - 1924.68s : Son hızlı geliştirme
+1924.68s - 1925.82s : Erconos
+1925.82s - 1927.1s : Erconos
+1927.1s - 1929.0s : Merzlendirme
+1929.0s - 1929.92s : Kullanılardaki geliştirme ve
+1929.92s - 1931.28s : Kullanılardaki geliştirme
+1931.28s - 1933.58s : Kullanılardaki geliştirme
+1933.58s - 1935.84s : A jail
+1935.84s - 1937.52s : Trival
+1937.52s - 1938.8s : Uash
+1938.8s - 1938.86s : Jurme
+1938.86s - 1940.06s : Akos
+1940.06s - 1941.08s : Endüstri
+1941.08s - 1942.62s : viable
+1942.62s - 1942.78s : �ne
+1942.78s - 1942.84s : diamant
+1942.84s - 1942.88s : ekos
+1942.88s - 1958.28s : Deploy an increment for use by end users, more realistic evaluation about practical use of software, difficult to implement for replacement systems as increments have less functionality than the system being replaced.
+1958.28s - 1975.22s : So if you are going to replace a whole working system, incremental delivery may not be appropriate for it. Because with incremental delivery, you are adding functionality of the system by one way.
+1975.22s - 1987.6s : However, if you are replacing an existing system, a working system, it may cause serious problems of the working system. It may cause damage of profit.
+1988.28s - 1998.8s : So incremental delivery and incremental development may not suit very well to every kind of application.
+1998.8s - 2009.8s : In software engineering, the methods you choose have to be appropriate to the software you are developing.
+2009.8s - 2014.3s : Okay, incremental delivery.
+2014.3s - 2016.98s : We found outline requirements.
+2018.28s - 2020.72s : Assign requirements to increments.
+2020.72s - 2022.62s : Design system architecture.
+2022.62s - 2024.88s : Develop system increment.
+2024.88s - 2026.42s : Update increment.
+2026.42s - 2028.66s : Integrate increment.
+2028.66s - 2029.76s : Validate system.
+2029.76s - 2030.86s : Deploy increment.
+2030.86s - 2035.34s : If system incomplete, continue develop system increment.
+2035.34s - 2042.44s : If system is incomplete, develop system increment.
+2042.44s - 2045.6s : If system is complete, final system.
+2048.28s - 2052.72s : Incremental delivery advantages.
+2052.72s - 2059.32s : Customer value can be delivered with each increment so system functionality is available earlier.
+2059.32s - 2065.46s : Early increments act as a prototype to help elicit requirements for later increments.
+2065.46s - 2068.66s : Lower risk of overall project failure.
+2068.66s - 2074.44s : The highest priority system services tend to receive the most testing.
+2074.44s - 2075.72s : What problems there are?
+2075.72s - 2076.72s : What problems there are?
+2076.72s - 2077.76s : What problems there are?
+2077.76s - 2078.76s : Incremental delivery problems.
+2078.76s - 2079.36s : Incremental delivery problems.
+2084.76s - 2089.94s : Most systems require a set of basic facilities that are used by different parts of the system.
+2089.94s - 2099.4s : As requirements are not defined in detail until an increment is to be implemented.
+2099.4s - 2100.94s : It can be hard to identify common facilities that are needed by all increments.
+2100.94s - 2105.56s : The essence of iterative processes is that the specification is developed in conjunction with the software.
+2105.56s - 2106.02s : Based on very simple logicяч göbeceğiniz açıklık 400'te, вами...
+2106.02s - 2106.46s : Ta Crossword buy provider lı recruiting process account is established.
+2106.46s - 2106.66s : It allows you to design the software system by going to site to its repository.
+2106.66s - 2106.96s : Jare,t Ezy",st irmalingaumoiki tercih etmek un Joanna sådan işe làmat.
+2106.96s - 2107.32s : You can anti interpretatörah".Ar pratik olarak eksik riches ve Europe private banks who operate within your Future chuyenküsir.
+2107.32s - 2112.32s : Bu konflik, birçok organizasyonun hizmet modeli ile ilgili.
+2112.32s - 2117.32s : Bütün sistem temelinin sistem gelişim kontraktının bir kısmı.
+2128.32s - 2130.32s : Bir başka model.
+2131.32s - 2133.32s : BOEM Spiral Model.
+2133.32s - 2141.32s : Procesin bir spiral olarak tanımlanır, birçok aktiviteyle baktırma yaparak tanımlanır.
+2142.32s - 2147.32s : Her sürücün spiral'de bir süreç olarak tanımlanır.
+2148.32s - 2156.32s : Bir tasarım veya tasarım, sürücün spiral'de sürücünler seçilir, neye ihtiyaç duyduklarına göre.
+2157.32s - 2162.32s : Riskeler süreçlerinde açıkça belirledik ve anlaşılıyor.
+2163.32s - 2168.32s : BOEM Spiral Model'in bir software süresi.
+2169.32s - 2171.32s : Peki, nereye başlıyor?
+2172.32s - 2174.32s : Buradan başlıyor.
+2174.32s - 2176.32s : Ancak bu bir spiral.
+2176.32s - 2178.32s : Service.
+2181.32s - 2183.32s : Açıklama testi.
+2183.32s - 2184.32s : İntegrasyon testi.
+2184.32s - 2186.32s : Devam et, bir başka nesil veri ver.
+2186.32s - 2187.32s : Ünit testi.
+2187.32s - 2188.32s : Kod.
+2188.32s - 2189.32s : Detaylı tasarım.
+2190.32s - 2191.32s : Operasyon prototip.
+2191.32s - 2192.32s : Görüyorsunuz.
+2193.32s - 2200.32s : Spiral modelinde, bir süreç yok.
+2201.32s - 2203.32s : Spiral'de seçilen süreçte birçok sıra var.
+2203.32s - 2205.32s : Neye ihtiyaç duyduklarına göre.
+2205.32s - 2216.32s : Yani, ilk başlığınızda, neye ihtiyaç duyduğunuzu, neye ihtiyaç duyduğunuzu,
+2217.32s - 2219.32s : olaylarınızda,
+2219.32s - 2221.32s : geliştirmeniz,
+2221.32s - 2222.32s : veya
+2222.32s - 2225.32s : objektleri, alternatifleri ve konstraktları seçeneklerine göre.
+2225.32s - 2226.32s : Tamam.
+2226.32s - 2227.32s : Yani,
+2227.32s - 2230.32s : bir süreç için neyi seçiyorsunuz?
+2230.32s - 2233.32s : Bunu yapıyorsunuz.
+2233.32s - 2236.32s : Bir süreç için neyi seçiyorsunuz? Bunu yapıyorsunuz.
+2236.32s - 2239.32s : Ve neyi seçiyorsanız devam edin.
+2240.32s - 2242.32s : Neye ihtiyaç duyduğuna göre.
+2242.32s - 2243.32s : Tamam.
+2243.32s - 2246.32s : Bu, spiral modeli.
+2246.32s - 2248.32s : Bir kere bir kere görelim.
+2249.32s - 2253.32s : Spiral modeli sektörleri.
+2253.32s - 2256.32s : Objektif seçenekleri.
+2256.32s - 2259.32s : Bu kere,
+2259.32s - 2262.32s : objektif seçenekleri.
+2262.32s - 2264.32s : Yani, bu.
+2264.32s - 2267.32s : Objektif, alternatif ve konstrakt.
+2267.32s - 2268.32s : Tamam.
+2268.32s - 2272.32s : Bu kere, objektif, alternatif ve konstrakt.
+2272.32s - 2273.32s : Tamam.
+2273.32s - 2276.32s : Bu kere, objektif, alternatif ve konstrakt.
+2276.32s - 2277.32s : Tamam.
+2279.32s - 2281.32s : Spiral modeli ayarlar ve kesileşir branşı.
+2281.32s - 2284.32s : Yani önemli şiddeti sağlayan çalışmalar ve işlemleri.
+2284.32s - 2285.28s : Onlar,
+2285.28s - 2290.32s : ekip öncesinde führ Bahn ile saygıwupl census,
+2290.32s - 2293.32s : kombinasyon vegrade Lily ülke falan necessitàrabilir,
+2293.32s - 2296.32s : bölün mekaniz gefunden al verder bilin.
+2296.32s - 2297.26s : Oh
+2297.26s - 2299.34s : rivers
+2299.34s - 2300.32s : Daha ilk
+2300.32s - 2302.1s : Asset
+2302.1s - 2304.22s : Çünkü
+2304.22s - 2306.32s : I
+2306.32s - 2307.32s : Alt
+2307.32s - 2312.22s : A development model for the system is chosen which can be any of the generic models.
+2313.1s - 2315.46s : So it can be any of the development model.
+2315.46s - 2316.46s : Planning.
+2320.94s - 2325.46s : The project is reviewed and the next phase of the spiral is planned.
+2334.74s - 2336.58s : Spiral model usage.
+2337.32s - 2347.76s : Spiral model has been very influential in helping people think about iteration in software processes and introducing the risk-driven approach to development.
+2348.44s - 2350.2s : So this is a risk-driven approach.
+2350.32s - 2353.96s : Based on the risk and evaluation you pick the next phase.
+2355.72s - 2361.28s : In practice, however, the model is rarely used as published for practical software development.
+2361.28s - 2367.28s : So in practice it is not very practical as it is on the...
+2367.32s - 2367.82s : ...paper.
+2369.64s - 2370.96s : One second.
+2372.9s - 2373.34s : Okay.
+2374.32s - 2376.66s : The rationally unified process.
+2380.58s - 2386.7s : A modern generic process derived from the work on the UML and associated process.
+2388.86s - 2394.26s : Brings together aspects of the three generic process models discussed previously.
+2396.28s - 2397.26s : Normally described.
+2397.32s - 2399.32s : Described from three perspectives.
+2399.32s - 2404.36s : A dynamic perspective that shows phases over time.
+2404.36s - 2407.66s : A static perspective that shows process activities.
+2407.66s - 2410.66s : A practive perspective that suggests good practice.
+2410.66s - 2413.66s : So.
+2413.66s - 2418.08s : Phases in the rational unified process.
+2418.08s - 2420.18s : There is inception phase.
+2420.18s - 2421.4s : Elaboration phase.
+2421.4s - 2424.4s : Construction phase and transition phase.
+2424.4s - 2426.44s : This is phase iteration.
+2426.44s - 2428.26s : Ok.
+2429.14s - 2431.82s : So, Rational Unified Phases.
+2432.56s - 2433.16s : Inception.
+2436.14s - 2440.68s : Establish the business case for the system.
+2441.66s - 2442.42s : Elaboration.
+2444.9s - 2447.68s : Develop an understanding of the problem domain
+2447.68s - 2449.1s : and the system architecture.
+2449.98s - 2450.66s : Construction.
+2452.94s - 2455.28s : System design, programming and testing.
+2455.28s - 2467.58s : So, we continue.
+2473.58s - 2475.52s : R.U.P. iteration.
+2476.7s - 2477.92s : In phase iteration.
+2479.72s - 2482.94s : Each phase is iterative with results developed incrementally.
+2482.94s - 2485.44s : Cross-phase iteration.
+2488.32s - 2495.28s : As shown by the loop in the R.U.P. model, the whole set of phases may be enacted incrementally.
+2496.94s - 2497.24s : OK.
+2502.76s - 2506.04s : Static workflows in the rational unified process.
+2510.14s - 2511.64s : Business modeling.
+2512.94s - 2514.94s : İş sürecinin açıklaması.
+2514.94s - 2518.94s : İş sürecinin açıklaması.
+2518.94s - 2520.94s : Reqler.
+2530.94s - 2532.94s : Analiz ve tasarım.
+2542.94s - 2544.94s : İmplementasyon.
+2562.94s - 2564.94s : Tamam, devam ediyoruz.
+2570.94s - 2571.94s : Test.
+2572.94s - 2574.94s : Test.
+2581.94s - 2583.94s : Deployment.
+2590.94s - 2592.94s : Konfigürasyon ve değişim yönetimi.
+2600.94s - 2602.94s : Projektör.
+2602.94s - 2604.94s : İş sürecinin yönetimi.
+2606.94s - 2609.94s : Bu destekli çalışma sistem gelişimini yönetiyor.
+2609.94s - 2611.94s : Bir çevre.
+2618.94s - 2620.94s : Bu çalışma,
+2620.94s - 2622.94s : software gelişimleri için
+2622.94s - 2624.94s : mümkün olan araştırma araçları
+2624.94s - 2626.94s : için.
+2626.94s - 2628.94s : Tamam, bu yüzden.
+2628.94s - 2630.94s : R.U.P. iyi bir pratik.
+2630.94s - 2632.94s : Software gelişimini iteratif olarak geliştirin.
+2634.94s - 2636.94s : Kullanma önceliklerini kutlamalarına göre
+2636.94s - 2638.94s : kutlamaların önceliklerini en yüksek önceliklere
+2638.94s - 2640.94s : verin.
+2640.94s - 2642.94s : Bu, durumlarınızda
+2642.94s - 2644.94s : çok faydalı olabilir.
+2644.94s - 2646.94s : Diyelim ki siz
+2646.94s - 2648.94s : bir e-commerce
+2648.94s - 2650.94s : sitemizi kuruyorsunuz.
+2650.94s - 2652.94s : En yüksek öncelikler ne olur?
+2652.94s - 2654.94s : Çatı sistemi,
+2654.94s - 2656.94s : iş payı sistemi.
+2656.94s - 2658.94s : İlk olarak onları
+2658.94s - 2660.94s : verirseniz,
+2660.94s - 2662.94s : ve sonra
+2662.94s - 2664.94s : kutlamalar değişimlerini veya
+2664.94s - 2666.94s : işsizlik arttırmalarını yapabilirsiniz.
+2666.94s - 2668.94s : En yüksek önceliklerle
+2668.94s - 2670.94s : bu şekilde
+2670.94s - 2672.94s : software gelişimini geliştirebilirsiniz.
+2672.94s - 2674.94s : Manage requirement.
+2676.94s - 2678.94s : Kullanma önceliklerini
+2678.94s - 2680.94s : ve bu önceliklere
+2680.94s - 2682.94s : değişimleri takip et.
+2682.94s - 2684.94s : Kullanma önceliklerini
+2684.94s - 2686.94s : ve bu önceliklere
+2686.94s - 2688.94s : takip et.
+2688.94s - 2690.94s : Mekanik modeli
+2690.94s - 2692.94s : ve sistem arketekştiri
+2692.94s - 2695.94s : ve kullanımlı
+2695.94s - 2697.94s : kılavuzlar bir seti.
+2697.94s - 2698.94s : RUP iyi bir
+2698.94s - 2700.94s : yargı.
+2700.94s - 2702.94s : Bu RUP'nin
+2702.94s - 2704.94s : iyi bir yargı.
+2704.94s - 2706.94s : Bunu takip etmelisiniz.
+2706.94s - 2708.94s : Vizual model
+2708.94s - 2710.94s : software.
+2710.94s - 2712.94s : Grafik UML modeli
+2712.94s - 2714.94s : software'ın
+2714.94s - 2716.94s : statik ve dinamik
+2716.94s - 2718.94s : Kalite,
+2718.94s - 2722.94s : Software'ın organizasyonel kalite standartlarına karşı karşılaşılması,
+2726.94s - 2729.94s : Software'a değişimleri kontrol etmeleri,
+2731.94s - 2737.94s : Software değişimlerini değişim yönetim sistem ve konfigürasyon yönetim araçlarıyla yönetilir.
+2738.94s - 2745.94s : Peki, 2. bölümün, 2. dersin,
+2746.94s - 2757.94s : Procesler değişimle karşılaşılması için yapılan işlemleri de bulunmalıdır. Bu, proje değişimlerine karşı karşılaşılması ve tasarımlarına karşı karşılaşılması için zorluklu bir karar vermek için yardımcı olabilen bir bölümdür.
+2758.94s - 2773.94s : Yani, bir software, yeni requerimleri, yeni trendleri karşılaşır, değişimleri karşılaşır, yeni tasarımları karşılaşır, böyle bir şekilde planlanmalı.
+2774.94s - 2775.94s : Statik olmalı,
+2776.94s - 2778.94s : İBSCRI Zach Coca'nın At tea
+2780.94s - 2788.94s : bir konferansı var ve
+2790.94s - 2792.94s : deneyimi mutlu etmek için çok daha çok has dizisinin for Nine'i
+2792.94s - 2805.94s : ツabini
+2806.94s - 2816.94s : Bu çok eski. Bu da çok önemli. Çünkü, diyelim ki, müşteriniz size çok büyük bir sistem
+2816.94s - 2830.94s : geliştirmek istediler. Bu sistem, diyelim ki, yaklaşık 5 yıl geliştirecek. Ama 5 yıl içinde
+2830.94s - 2842.94s : müşteriniz hiç para yapmadan gitmeyecek. Yani, müşterinizin iteratif geliştirme ve
+2842.94s - 2847.94s : hücresi için kuruluşlarınızın bir şekilde kuruluşu ve hücresi için kuruluşlarınızın bir şekilde kuruluşu
+2847.94s - 2853.94s : yapabilmek için yapılan işlerinizi planlayabilirsiniz. Yani, müşteriniz, uygulama ve para yapmaya başlayacak.
+2853.94s - 2859.94s : Ve size, diyelim ki, ayda para ödeyebilecek. Bu arada, müşteriniz de,
+2859.94s - 2867.94s : hücresi için para yapmaya başlayacak. Yani sonunda, müşteriniz hala hücresi alıyor ve
+2867.94s - 2876.94s : her ay para alıyorsunuz ve müşteriniz de biraz para yaratıyor. Bu, en çok yapılan sistemlerin
+2876.94s - 2883.94s : en çok yapılan sistemlerin en çok yapılan sistemlerin birçok parayı kaybedebilir ve
+2883.94s - 2888.94s : müşterinizin çok büyük bir sistem değilse, daha çok para kaybedebilir ve
+2888.94s - 2895.94s : bana ulaşmak için para lustrayıp, daha çok para yaptığı için bewletme alabilirsiniz.
+2895.94s - 2901.92s : Peki, bu teori hakkında ne kaydediydi?
+2901.92s - 2902.94s : 列 rozsuz şifre tarifin şeytinde gelişme ve değişme ücretiyle ilgili daha çok şifre
+2902.94s - 2903.94s : parlé fracture categora söyle desarrollo ve bu menget, chick слыш imposing отлич Oops'u
+2903.94s - 2905.94s : An Люб birda da yine bir aynı yanda düşündü mi tulacıkçı niye
+2905.94s - 2908.94s : ikincisi ise, rakamın geçe Trainer'ın vorchselidedrail.
+2908.94s - 2911.86s : Yani aile-beşli Kanal healeraced, diğer arทeltkası
+2911.86s - 2914.92s : ulis blackfield middle ic province y sudden yuhman City-daki Yxö an
+2914.94s - 2917.9s : gönep-reale.-
+2917.9s - 2918.9s : также y�re leer deep, gowrland gowrland, gowrland, yuhman D scattered Dorthos yuhman
+2918.94s - 2922.94s : Bu modern bir genel süreç ve olaylarla birlikte kullanılıyor.
+2922.94s - 2925.94s : İnternette de paylaşalım.
+2925.94s - 2929.94s : Wikipedia'dan da okuyalım.
+2948.94s - 2968.94s : Ok, bir hikaye var.
+2968.94s - 2973.94s : Ok, birkaç bünyelik blok okuyalim.
+2978.94s - 2983.94s : Nasıl bir JCB kelimesini okuduklarımızın tekrarına da uyguladığı bir next-generation elde BJT estil analizi konusu.
+2983.94s - 2988.94s : Bu kısımlar, şunuажı Bismillahirrahmanirrahim hemen vale油 enthusiast Bakan mahkemesi kısımlarından anlay succeeded Соş Imaginski Crow duyalım.
+2988.94s - 3001.44s : Sadece nuestras sanoği finger
+3001.94s - 3007.94s : en ünlü kese Hawitt genelsel yönetim konusunda değişik harflersey.
+3007.94s - 3013.94s : Bu işlemi, tüm dokümanları ve modelleri, çalışma sürecinde çalışanlarla ilgili bir iş.
+3013.94s - 3020.94s : İşler, bir iş, bir iş ürünü, bir rol ile alınan bir iş.
+3020.94s - 3026.94s : Her iterasyonun içinde, işler 9 disipline kategorize edilir.
+3026.94s - 3034.94s : 6. Disipline, iş modelleri, analiz ve tasarım, işaret, test, işaret.
+3037.94s - 3046.94s : 3. Disipline, konfigürasyon ve değişim yönetimi, proje yönetimi, çevre.
+3046.94s - 3051.94s : 4. Proje, hayat sürecinin fazlası.
+3051.94s - 3056.94s : R.U.P. proje hayat sürecini 4 fazlasıyla seçti.
+3056.94s - 3061.94s : Bu fazlası, proje, yukarıdaki bir yönde gösterilebilir.
+3061.94s - 3065.94s : Bu, bir yönde gösterilebilir.
+3065.94s - 3066.94s : Bu yönde, bir yönde gösterilebilir.
+3066.94s - 3069.3s : 6. Ruzuk
+3069.3s - 3071.3s : Söz,, yapısını cesavet etmek için serve yönetimロ.
+3071.3s - 3074.94s : 6, bir yö nouptes只 müşteri olan modelin bahsedildiği back-up kiddedibilmiş,
+3074.94s - 3077.94s : göstermez ve geçirilerek uncle file ile broader öğretil roboticрачların şeklini rozum stimuli
+3077.94s - 3085.1s : sıTo cezada diktir�, correlated splitting ve
+3085.1s - 3091.74s : そう fly s whiskey modelinin akşam uçak verisinden at believes
+3091.74s - 3094.36s : ,
+3094.36s - 3095.04s : in ciptağın Ya-tab
+3095.04s - 3095.14s : 8. Hayat sıça vivası
+3095.14s - 3096.38s : 7. İlginç çeşpoints
+3096.38s - 3103.38s : Öncelikli olarak sistemin başlangıcı ve ödeme ve hizmeti verilmesi için adetli bir basınç olarak skop yapmak.
+3103.38s - 3114.38s : Bu bölümde işçilik, iş kontekstini, başarı faktörlerini, beklenen ücreti, marka tanımını, vs. ve finansal bekletimi oluşturmak.
+3114.38s - 3122.38s : İşçilik konusunda, basit bir kullanım modeli, proje planı, başlangıç risk ayarlaması ve proje açıklaması,
+3122.38s - 3127.38s : başlangıç proje requerimleri, zorunları ve önemli fiyatları oluşturmak.
+3127.38s - 3132.38s : Bunların tamamlanmasından sonra, proje bu kriterleri kontrol etmeye çalışılır.
+3134.38s - 3139.38s : Skop definisyonu ve kuruldurma belirli bir şartı ve kuruldurma belirli bir şartı.
+3139.38s - 3145.38s : Biliyemiz ve özelliklerine göre, işçilik kullanımlarının adetli bir kullanım olasılığı, kuruldurma belirli bir şartı,
+3145.38s - 3150.38s : risk ve gelişim süreci, ödeme ve hizmeti, etkili bir şartı, ve başlangıç ve uzmanlık süreci,
+3150.38s - 3151.38s : kuruldurma belirli bir şartı, ve başlangıç ve uzmanlık süreci, özellik ve uzmanlık süreci,
+3151.38s - 3160.38s : kemik %First rescue modeli ve ikinci aşırı olduğun şart.
+3161.38s - 3170.0s : Bu westlake haceptile do
+3170.0s - 3172.32s : lemek Ahmad
+3174.78s - 3177.78s : yarcore
+3181.38s - 3188.38s : Önemli olan, analizden gelene kadar bu aşamadan dolayı bilinmeyen önemli risk alanlarını temsil etmek.
+3188.38s - 3192.38s : Bu aşamadan dolayı proje başlıyor.
+3192.38s - 3199.38s : Bu aşamada sorun domeni analiz yapılıyor ve proje arketörünün basit formunu alıyor.
+3199.38s - 3202.38s : Bu aşamadan dolayı sonuçlar...
+3202.38s - 3214.38s : ...sizce, işsizlik ve risk alanlarına sahip olduğu, ve bu işsizlik alanlarına sahip olduğu bir işsizlik modeli oluşturuyor.
+3214.38s - 3217.38s : İşsizlik modeli 80% tamamlanmalı.
+3217.38s - 3226.38s : İşsizlik alanlarında, bir sistem gelişim prosesi içinde, araştırıcı bir araştırma, işsizlik alanlarında ve risk alanlarında...
+3226.38s - 3231.38s : ...sizce, işsizlik ve risk alanlarında yapılan işsizlik modeli oluşturuyor.
+3231.38s - 3234.38s : Bütün projelerin gelişim planı.
+3234.38s - 3238.38s : Prototipler, her tanıdık teknik riskleri temsil etmek.
+3238.38s - 3241.38s : Öncelikli kullanıcı manueli.
+3243.38s - 3249.38s : Bu aşamada, bu soruları soranlarla ilgili, hayat sürecinin, arketörlü bir araya geçmek gerektiğini soruyor.
+3250.38s - 3254.38s : Projelerin vizyonu, arketörlü bir araya geçiyor mu?
+3254.38s - 3260.38s : İşsizlik alanlarında, önemli risk alanları, adres ve kesimlerle iletilmiş oluyor mu?
+3260.38s - 3264.38s : D Speak'da şu konuya yaklaşık detaylı ve doğru kullanım法ı var mı?
+3264.38s - 3271.38s : Her soruittäklarla, yılan laHSF çalışmasının kon существu sürücüler için bebanhangi kullanımla protectürleri olebiliyor.
+3271.38s - 3275.38s : Ancak plan verenilos olmak ön undertapa anoş located mi?
+3278.38s - 3284.38s : Eğer proje bu vizyonu t famavar geçirmezse, hala o romantikdeki beleni yalanlamaya ikynıla olsun.
+3284.38s - 3289.38s : Ancak, bu puan speak'ın sonunda programm оlek mugradlarında era geçiyor.
+3290.38s - 3293.38s : değişimler çok daha zor ve etkili.
+3293.38s - 3297.38s : Yönetim arketikleri olarak iletişim ve
+3297.38s - 3300.38s : yapım arketikleri olarak ana alan analiz edilir.
+3300.38s - 3303.38s : Yönetim Fazı
+3303.38s - 3306.38s : Önemli olan, software sistemini
+3306.38s - 3308.38s : oluşturmak. Bu faza,
+3308.38s - 3311.38s : fonksiyonun ve sistemlerin diğer
+3311.38s - 3313.38s : özellikleriyle ilerleme konusunda
+3313.38s - 3315.38s : en çok konutlanmıştır. Bu faza,
+3315.38s - 3317.38s : kodun çoğunluğunun yerine çıkması.
+3317.38s - 3319.38s : Büyük projelerde, çoğunlukla
+3319.38s - 3321.38s : yapılan işlemler,
+3321.38s - 3323.38s : kullanım durumlarını
+3323.38s - 3325.38s : yönetilebilir segmentlerden
+3325.38s - 3327.38s : kullanıcı prototiplerden
+3327.38s - 3329.38s : oluşturulabilir.
+3329.38s - 3331.38s : Kodun başladığında,
+3331.38s - 3334.38s : çok şeyin
+3334.38s - 3338.38s : başlaması gerektiğini görüyorsunuz.
+3338.38s - 3341.38s : İlk olarak, incelemenin
+3341.38s - 3343.38s : sonucunu tamamlıyorsunuz ve
+3343.38s - 3346.38s : sonra, başlamalarını tamamlamalısınız.
+3346.38s - 3348.38s : Planlarınızı tamamlıyorsunuz ve
+3348.38s - 3350.38s : tüm dokumentasyonları tamamlıyorsunuz.
+3350.38s - 3353.38s : Risk analizini tamamlıyorsunuz.
+3353.38s - 3356.38s : Ve sonra, sadece
+3356.38s - 3358.38s : tüm bu kuru fazaları
+3358.38s - 3360.38s : oluşturduğunuzda, kodun başlıyorsunuz.
+3360.38s - 3362.38s : Bu, software mühendisliğinin
+3362.38s - 3364.38s : hareketi. Software mühendisliği
+3364.38s - 3367.38s : hemen kodun başlamıyor ve
+3367.38s - 3369.38s : sonra, kodun ve geliştirme
+3369.38s - 3371.38s : sürecinin tüm değişimlerini
+3371.38s - 3373.38s : başlıyor.
+3373.38s - 3375.38s : Bu, kodun başlamaya
+3375.38s - 3377.38s : etkili olacaktır.
+3378.38s - 3381.38s : Sistem, arktikültür ve
+3381.38s - 3383.38s : ve
+3383.38s - 3385.38s : diğer şeyler.
+3385.38s - 3386.38s : Bu,
+3386.38s - 3388.38s : software mühendisliğinin
+3388.38s - 3389.38s : kalitesini arttıracaktır.
+3389.38s - 3390.38s : Bu, birkaç fase
+3390.38s - 3392.38s : sonra devam etmektedir ve
+3392.38s - 3394.38s : her şeyi
+3394.38s - 3396.38s : kodlamak zorundasınız.
+3396.38s - 3398.38s : Ve böyle şeyler.
+3398.38s - 3399.38s : Yani,
+3399.38s - 3401.38s : software mühendisliği
+3401.38s - 3403.38s : planla,
+3403.38s - 3405.38s : tasarımla,
+3405.38s - 3406.38s : sonra,
+3406.38s - 3408.38s : başlangıç fazları
+3408.38s - 3410.38s : yapıp,
+3410.38s - 3412.38s : kodlamaya başlıyor.
+3412.38s - 3414.38s : Yani,
+3414.38s - 3416.38s : her şey planlanmış olduğunda,
+3416.38s - 3418.38s : kodlamak en kolay kodluyor.
+3418.38s - 3420.38s : Değil mi?
+3420.38s - 3422.38s : Sistem,
+3422.38s - 3424.38s : geliştirme sürecinin
+3424.38s - 3426.38s : tüm değişimlerini
+3426.38s - 3428.38s : başlıyor.
+3428.38s - 3430.38s : Bu,
+3430.38s - 3432.38s : kodlamak zorundadır.
+3432.38s - 3434.38s : Bu,
+3434.38s - 3436.38s : şirketin,
+3436.38s - 3438.38s : kodlamak için
+3438.38s - 3440.38s : yapılan,
+3440.38s - 3442.38s : ve
+3442.38s - 3444.38s : işlemciye
+3444.38s - 3446.38s : anlaşılan,
+3446.38s - 3448.38s : süreçte
+3448.38s - 3450.38s : kodlamak için
+3450.38s - 3452.38s : yapılan,
+3452.38s - 3454.38s : süreçte
+3454.38s - 3456.38s : yapılan,
+3456.38s - 3458.38s : işlemciye
+3458.38s - 3460.38s : yapılan,
+3460.38s - 3462.38s : süreçte
+3462.38s - 3464.38s : yapılan,
+3464.38s - 3466.38s : d witnesses
+3466.38s - 3467.38s : backyard
+3467.38s - 3468.38s : ş Learning
+3468.38s - 3469.38s : ş Near
+3469.38s - 3470.38s : Ej lol
+3470.38s - 3471.88s : te Pacific
+3471.88s - 3472.38s : Watch
+3472.38s - 3473.38s : organlar
+3473.38s - 3474.38s : kültür
+3474.38s - 3476.38s : bu
+3476.38s - 3477.38s : şiir
+3477.38s - 3478.36s : Sist
+3478.36s - 3479.38s : formulate
+3479.38s - 3480.62s : ing
+3480.62s - 3481.38s : krátones
+3481.38s - 3482.38s : art Similar
+3482.38s - 3483.38s : Sohbet
+3483.38s - 3484.38s : Society
+3484.38s - 3491.88s : Lot
+3492.38s - 3501.9s : Kayıt folklor anlamına girerkindir.
+3502.62s - 3516.58s : Ancak sıkkınlar sings Putin'e izlenWhereeni Bilgi olması eigenlijk büyük bir maliyet telefonunuacımı alır.
+3516.58s - 3521.58s : bir ilerleyici proje yaratılması sadece önerilen değil, aslında önlemli.
+3521.58s - 3527.58s : Bu, birçok altyapıda birleştirilmeden önce birleştirilmeden önce birçok altyapıyı test etmek için yardımcı oluyor.
+3527.58s - 3535.58s : Ayrıca, kod kullanımının büyük bir faydası ve objektif programlamanın kullanımıyla kullanılabilmesi daha kolay.
+3535.58s - 3541.58s : Model, bütün büyük altyapıları, kullanıcılar ve iletişimlerini etkilemeyi kullanmak için görülebilir.
+3541.58s - 3548.58s : UML, birleştirilme diline kastediyorum, bu işlemi daha uygun yapabilmek için kullanılabilir bir araç.
+3548.58s - 3554.58s : Verify Quality her zaman projeyi en büyük kısımdan yapar.
+3554.58s - 3561.58s : Projeyi test ediyorsanız, projeyin başarıları daha yüksek olacak ama her bir software üretimine bir süreç olmalıdır.
+3561.58s - 3563.58s : Kontrol değişimi
+3563.58s - 3570.58s : Birçok projeyi birçok ekibin yaratıldığı zaman, farklı yerlerde, farklı platformlarda kullanılabilir.
+3570.58s - 3571.58s : E.g.
+3571.58s - 3578.58s : Aslında, sistemine yaptığı değişimler sürekli sincronize ve verif edilmeyecek.
+3578.58s - 3580.58s : Kontinüist İntegrasyon
+3594.58s - 3597.58s : Software Engineering'da, kontinüist iletişim,
+3597.58s - 3600.58s : Merkezlerle çalışanlarla birleştirilmesi,
+3600.58s - 3604.58s : Yine de, birçok gün birçok zaman bir araya ayrı bir başlangıç olarak çalışanlarla çalışanlarla birleştirilmesi,
+3604.58s - 3609.58s : 1. Grady Butch ilk önce 1991'deki metodunda C'yi önerdi.
+3609.58s - 3613.58s : 2. Ayrıca, birçok gün bir araya ayrı bir başlangıç olarak iletişim yapmadığını önerdi.
+3613.58s - 3620.58s : X-P, Extreme Programming'da, C'yi iletişim yapmak ve bir gün bir araya ayrı bir başlangıç olarak iletişim yapmak adresini kabul etti.
+3620.58s - 3623.58s : Belki de birçok gün bir araya ayrı bir başlangıç olarak.
+3625.58s - 3626.58s : Tamam, o zaman,
+3626.58s - 3631.58s : Eğer bir şeyin kesinlikle anlamayacağınız bir şey varsa,
+3631.58s - 3636.58s : İnternette daha fazla bilgi için bakabilirsiniz.
+3636.58s - 3638.58s : Her zaman daha fazla bilgi var.
+3638.58s - 3643.58s : Software İngilizcesi sadece değerinizi artıracak,
+3643.58s - 3649.58s : İyi bir iş almak için şansınızı artıracak, iyi bir para almak için şansınızı artıracak ve
+3649.58s - 3654.58s : Sizleri arayacak ve geliştiricilerden ayrılacak.
+3654.58s - 3655.58s : Tamam.
+3656.58s - 3664.58s : 10-20 yıldan daha fazla kodlayıcı ve geliştiriciler var.
+3664.58s - 3666.58s : Çok yüksek bir kutu var.
+3666.58s - 3678.58s : Yani, programcılar, kodlayıcı, arayışçıları ile kendinizi ayrılmak için iyi bir software inisiyatörü olmak zorundasınız.
+3678.58s - 3681.58s : Bu yüzden büyük kurumlar,
+3681.58s - 3684.58s : Sizin içinizde de varlık görür.
+3684.58s - 3685.58s : Google gibi, Facebook gibi,
+3685.58s - 3691.58s : Apple gibi, Amazon gibi ve böyle bir şirket.
+3691.58s - 3695.58s : Ve sizleri arayacaklar.
+3695.58s - 3696.58s : Çünkü,
+3696.58s - 3706.58s : Software inisiyatörü olarak, sizlere bir ekip olarak, büyük bir kurum olarak çalışabilmeniz, bir ekip olarak, bir parça olarak yardımcı olacağını verir.
+3706.58s - 3708.58s : Tamam.
+3708.58s - 3712.58s : Bu, bugün de bahsettiğimiz bir ders.
+3712.58s - 3716.58s : Derslerimizi GitHub'da ekleyebiliriz.
+3729.58s - 3732.58s : Software inisiyatörü olarak, öğrenmelisiniz.
+3732.58s - 3738.58s : Aslında, nasıl GitHub gibi bir kod yönetimi sistemini kullanmak için öğrenmelisiniz.
+3738.58s - 3739.58s : Tamam.
+3739.58s - 3740.58s : Bu, bu olmalı.
+3740.58s - 3745.58s : Bu yüzden, bu sizin bir öneriniz.
+3745.58s - 3749.58s : Kod yönetimi sistemini kullanabilmek için.
+3749.58s - 3754.58s : Bu kurs için bu semeste size bir proje vereceğim.
+3754.58s - 3755.58s : Ve,
+3755.58s - 3760.58s : Kod yönetimi sistemini kullanmak için zorlanırsınız.
+3760.58s - 3763.58s : GitHub gibi, Bitbucket gibi veya böyle.
+3763.58s - 3764.58s : Tamam.
+3764.58s - 3767.58s : Kod yönetimi softveri ile ilgili.
+3767.58s - 3768.58s : Git Bash gibi.
+3768.58s - 3769.58s : Bu bir.
+3769.58s - 3772.58s : Bu git başı, kullanıyorum.
+3788.58s - 3792.58s : Origin Master, benim kod adım.
+3792.58s - 3793.58s : Tamam.
+3793.58s - 3794.58s : Burada kod olabilir.
+3794.58s - 3797.58s : Iıı.
+3799.58s - 3800.58s : Şu şekilde yapacağız.
+3800.58s - 3801.58s : Bakalım.
+3801.58s - 3802.58s : Tamam, şimdi uygundu.
+3802.58s - 3803.58s : Kliklediğimde, derslerini görebiliyorum.
+3803.58s - 3804.58s : Dersler, Dersler Drake.
+3804.58s - 3805.58s : Dersler, 2 ders uygundu.
+3805.58s - 3806.58s : Bunları burada görüyorsunuz.
+3806.58s - 3807.58s : Ve ilk dersleri de uygundum.
+3807.58s - 3808.58s : Tamam.
+3808.58s - 3809.58s : Umarım yarın görüşürüz.
+3809.58s - 3810.58s : Korona virüsünden kurtulun.
+3810.58s - 3811.58s : Tamam, görüşürüz.
+3811.58s - 3824.58s : Artık,
+3824.58s - 3827.58s : Tamam, görüşürüz.

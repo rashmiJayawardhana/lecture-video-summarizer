@@ -1,0 +1,2865 @@
+0.0s - 29.0s : 🎵
+29.0s - 31.54s : So before we get started, I have to read this out.
+33.8s - 37.98s : So I do not have child protection clearance for Act 153.
+38.38s - 39.82s : This is the state law in Pennsylvania.
+40.4s - 44.8s : So if anybody here is under the age of 18, you cannot be in this classroom.
+46.64s - 47.78s : No, it's not a joke, seriously.
+48.88s - 53.68s : I don't think they would have notified me, but just make sure that anybody here who's not 18 or older,
+54.32s - 56.46s : it's a Pennsylvania State Law and Criminal History patch.
+56.46s - 63.24s : I don't have the criminal history background to pass this.
+63.56s - 67.02s : So again, if you're under 18, please leave the room.
+67.96s - 71.94s : With that aside, I want to give a quick shout out to people who's helped us get here where we are today.
+72.44s - 78.62s : So this is EZE in Crooklyn, JAL in Seattle, and then DJ Drop Tables unfortunately passed away this summer.
+79.02s - 79.96s : So RIP to him.
+80.38s - 83.56s : And then DJ Mushu is in lockdown, which is a whole other issue.
+84.18s - 86.14s : So we send our respect for him.
+86.46s - 86.6s : Okay?
+87.36s - 87.7s : All right.
+87.82s - 90.36s : So with that out of the way, let's get into databases.
+90.88s - 94.78s : So I sort of mentioned this in Lecture 0, which I did re-record today.
+94.94s - 97.98s : I apologize for f***ing up the mic, but it should be better now.
+99.16s - 103.02s : So as we go along throughout the semester, you will see I get very, very excited about databases.
+103.42s - 106.58s : And this is for a very important reason.
+107.22s - 109.36s : I only care about two things in my life.
+110.12s - 112.9s : The first thing is my wife and my biological daughter.
+113.16s - 115.04s : And then the second thing is databases.
+115.34s - 116.44s : I don't care about anything.
+116.6s - 117.72s : I don't talk to my family.
+117.82s - 119.3s : They're all Trump supporters, anti-vax.
+119.82s - 120.64s : I don't care about them.
+120.88s - 121.62s : I don't have any hobbies.
+121.76s - 122.46s : It's just databases.
+122.92s - 125.84s : I live what you call a database-centric lifestyle.
+126.26s - 129.42s : And hopefully I hope to impart to you guys what that means, what that entails,
+129.62s - 132.04s : and you can continue down the path beyond those courts.
+132.78s - 136.8s : Now, earlier last week, someone posted this on the CMU Reddit.
+137.46s - 137.86s : Right?
+139.44s - 142.72s : They want to know whether taking 440 or 445 is harder
+142.72s - 145.64s : because they want to spend their time doing other things in their life.
+145.64s - 145.94s : Right?
+146.46s - 150.6s : So I chime in and say whoever this person is should not be taking the course
+150.6s - 153.36s : because I don't care whether they think it's hard or easy.
+153.6s - 154.1s : Right?
+154.1s - 159.1s : You will see throughout the semester that if you take a viewpoint of everything is pretty much a database problem
+159.42s - 161.88s : and that all your time should be spending working on databases,
+162.74s - 164.52s : then you'll be happier in your life.
+165.44s - 169.44s : So again, if someone's in the class here that posted this, you don't belong.
+171.4s - 173.58s : Again, just quickly a reminder about the course logistics.
+173.74s - 173.96s : Right?
+173.96s - 175.32s : Everything's on the course web page.
+175.52s - 176.46s : All the announcements are discussed.
+176.66s - 180.06s : We have a discussion for projects, homeworks, logistics, and other things we've done through Piazza.
+180.26s - 183.22s : All the homeworks and projects will be submitted through Gradescope and auto-graded.
+183.42s - 188.1s : Your final grades for the most, actually the mid-semester grades and the final grades for all your projects and homeworks
+188.3s - 190.3s : and final exams will be posted on Canvas.
+191.4s - 196.04s : If you're on the wait list, I think our max capacity is 140 before the fire marshal shows up.
+196.64s - 203.34s : And as of an hour or so ago, we have six open seats and the administrators will fill off people from the wait list into that.
+203.78s - 205.62s : So if you're still on the wait list, you may have a chance to get in,
+205.62s - 206.28s : but I can't get in.
+206.28s - 206.44s : So if you're still on the wait list, you may have a chance to get in, but I can't get in.
+206.62s - 207.12s : So if you're still on the wait list, you may have a chance to get in, but I can't get in.
+207.12s - 207.68s : So if you're still on the wait list, you may have a chance to get in, but I can't get in.
+207.68s - 208.18s : Okay?
+208.74s - 214.06s : And if you're not at CMU, we'll make everything available for the projects through this Gradescope.
+214.06s - 214.82s : Use this code.
+215.06s - 218.96s : Make sure you put yourself as the University of Carnegie Mellon.
+219.26s - 221.96s : Everybody in this room right now, do not do this because then you won't get a grade.
+222.28s - 225.36s : And just ask everyone else who is not at CMU, who's watching the videos,
+225.72s - 227.14s : don't post your solutions on GitHub.
+227.4s - 232.24s : Don't do the stupid thing of submitting the PR with your code because we're going to put a wall of shame up for that.
+232.46s - 235.04s : And then don't email myself or the TAs if you're not a CMU student.
+235.32s - 236.28s : Everybody else here in the class,
+236.28s - 238.7s : please post on Piazza and we will respond.
+238.7s - 242.04s : Any questions or comments about any of these things?
+242.04s - 244.7s : Again, if you're coming in, if you're not 18 or older,
+244.7s - 247.26s : you have to leave the room because of the Act 153.
+247.26s - 249.1s : OK?
+249.1s - 251.72s : So today's agenda, we're going to talk
+251.72s - 253.92s : about a quick background of what database systems are.
+253.92s - 256.56s : That sort of sets us up for what the course will be about.
+256.56s - 258.72s : We'll spend most of our time talking about the relational
+258.72s - 260.2s : model and relational algebra.
+260.2s - 262.64s : This is going to be the bedrock for how most database systems
+262.64s - 264.52s : that you're going to care about, not all,
+264.52s - 268.72s : but most systems will be predicated on this.
+268.72s - 270.94s : We'll talk a little bit about alternative data models that
+270.94s - 275.04s : are out there, like MongoDBs, and document stuff, JSON stuff,
+275.04s - 276.64s : and vector databases.
+276.64s - 279.16s : But these will sort of be ancillary to what we talk about
+279.16s - 280.36s : in this course.
+280.36s - 283.36s : The core ideas beyond the relational model
+283.36s - 286.3s : of how we're going to build these database system
+286.3s - 289.02s : will be applicable to these other alternative data models.
+289.02s - 291.64s : It's just I care less about them, right?
+291.64s - 292.78s : Because I care about SQL.
+292.78s - 294.36s : I care about the relational data model.
+294.36s - 298.68s : And as I said on Piazza yesterday, since this comes up every year,
+298.68s - 301.96s : people always ask sort of high level questions about databases
+301.96s - 302.92s : throughout the semester.
+302.92s - 305.74s : And I want to try to cover as much as I can at the very beginning.
+305.74s - 308.08s : So if you have any questions you want to ask me at the end,
+308.08s - 310.88s : we can take those.
+310.88s - 313.68s : And again, as I said in lecture zero,
+313.68s - 315.24s : I get very excited about databases.
+315.24s - 316.2s : I talk very fast.
+316.2s - 317.72s : Please tell me to stop and slow down.
+317.72s - 319.92s : If you have any questions, please interrupt me
+319.92s - 321.18s : and ask me to repeat myself.
+321.18s - 323.76s : And I refuse to answer any questions about the lecture.
+324.36s - 325.38s : At the end of class.
+325.38s - 327.42s : I don't line up and say, what did you say in lecture?
+327.42s - 328.3s : Slide five said this.
+328.3s - 329.26s : What do you mean?
+329.26s - 331.38s : Interrupt me as we go along, because if you have a question,
+331.38s - 333.66s : somebody else also probably has the same question.
+333.66s - 336.96s : And so we want to cover these things.
+336.96s - 337.96s : All right.
+337.96s - 340.92s : Databases, the second most important thing in my life.
+340.92s - 343.08s : Can anybody give me an example of a database?
+348.68s - 349.18s : Yes.
+349.18s - 349.82s : Click house.
+349.82s - 351.56s : He said click house.
+351.56s - 352.06s : Anybody else?
+354.36s - 356.64s : You said dictionary?
+356.64s - 357.18s : Yeah, that's pretty good.
+357.18s - 357.68s : What else?
+362.76s - 364.12s : Nobody can give me a database.
+364.12s - 365.96s : The contact manager on your phone.
+365.96s - 366.74s : Contact manager on your phone.
+366.74s - 367.04s : Good.
+367.04s - 368.06s : Excellent.
+368.06s - 368.56s : One more?
+368.56s - 369.8s : IMDB.
+369.8s - 370.3s : Say what?
+370.3s - 371.24s : IMDB.
+371.24s - 371.64s : IMDB.
+371.64s - 371.82s : Good.
+371.82s - 372.58s : Excellent.
+372.58s - 372.78s : All right.
+372.78s - 373.76s : So he said click house.
+373.76s - 374.44s : He said dictionary.
+374.44s - 375.86s : He said he said contact manager.
+375.86s - 377.18s : He said IMDB.
+377.18s - 380.1s : So click house is a database management system.
+380.1s - 382.26s : The other examples are all databases.
+382.26s - 383.7s : And so what's tricky.
+383.7s - 384.2s : Yeah.
+384.36s - 388.04s : In well, the common semantics of how people describe databases
+388.04s - 390.42s : is usually they meant the database systems, which
+390.42s - 391.68s : we will focus on this class.
+391.68s - 394.18s : But I want to first sort of discover discuss what a database
+394.18s - 396.6s : is and then how we're going to build a database management
+396.6s - 398.76s : system to manage it.
+398.76s - 400.44s : OK.
+400.44s - 404.24s : So a database is going to be an organized collection of data.
+404.24s - 405.14s : No surprise there.
+405.14s - 409.14s : That are related to a way in some manner.
+409.14s - 411.86s : And it's meant to model some aspect of the real world.
+411.86s - 413.26s : So he said dictionary.
+413.26s - 414.26s : And what is a dictionary?
+414.26s - 415.46s : A bunch of words.
+415.46s - 416.96s : And then their definitions.
+416.96s - 419.4s : And maybe like the part of speech or whatever.
+419.4s - 422.38s : So that's modeling the vocabulary.
+422.38s - 423.5s : He said a contact manager.
+423.5s - 425.3s : That's modeling someone keeping track of elements
+425.3s - 426.28s : of pencil and paper.
+426.28s - 428.04s : Here's all my contacts and their phone numbers and email
+428.04s - 429.5s : addresses.
+429.5s - 431.84s : You're modeling some aspect of the real world.
+431.84s - 435.2s : And you're trying to capture all of the constraints and aspects
+435.2s - 439.86s : of that real world concept in your database.
+439.86s - 442.36s : And again, I'm highly biased because all I care about
+442.36s - 443.54s : is databases.
+443.54s - 446.08s : But the database is going to be the core concept
+446.08s - 447.62s : for almost all computer applications
+447.62s - 449.82s : and almost all of computer science.
+449.82s - 451.58s : At the end of the day, what is a computer doing?
+451.58s - 452.58s : Some input comes in.
+452.58s - 453.82s : You do something on data.
+453.82s - 455.88s : You produce some output.
+455.88s - 456.58s : That's a database.
+456.58s - 459.64s : That middle part almost always is a database.
+459.64s - 460.78s : What is a file system?
+460.78s - 461.88s : File system is a database.
+461.88s - 463.58s : If you use a website, what are you doing?
+463.58s - 466.7s : You're interacting with some form that talks to a database.
+466.7s - 468.5s : What is an LLM?
+468.5s - 471.54s : It's a database, more or less.
+471.54s - 472.74s : So this is the most important thing.
+472.74s - 473.24s : Right?
+473.54s - 475.98s : In computer science, again, I'm biased.
+475.98s - 477.6s : But you're going to encounter databases
+477.6s - 479.24s : all throughout your life.
+479.24s - 481.62s : And what this class is going to teach you
+481.62s - 484.4s : is to understand what a database management system is
+484.4s - 486.54s : trying to do for you.
+486.54s - 487.66s : Why are things going slow?
+487.66s - 490.44s : Why is my query coming back with garbage?
+490.44s - 493.34s : So if you understand how the components are implemented,
+493.34s - 495.54s : what they're doing, you're in a better position
+495.54s - 500.14s : to use a database system, to manage a database.
+500.14s - 502.48s : So no matter where you go off and become a database systems
+502.48s - 503.54s : internal developer.
+503.54s - 505.64s : Like all the companies that are coming in a few weeks
+505.64s - 506.68s : to talk to us.
+506.68s - 508.18s : Or you go off and do something else,
+508.18s - 509.06s : at the end of the day, you're going
+509.06s - 510.18s : to interact with databases.
+510.18s - 512.82s : Because that's what really life is all about.
+512.82s - 515.3s : Everyone's got a smartphone here.
+515.3s - 517.14s : All those applications are running SQLite.
+517.14s - 518.72s : SQLite is a database management system.
+518.72s - 520.14s : It's the most widely deployed one.
+520.14s - 522.14s : So we'll understand how SQLite is actually implemented.
+522.14s - 525.9s : And in homework one, you'll use SQLite.
+525.9s - 527.6s : So let's discuss a toy example.
+527.6s - 530.24s : And we can use that to explain the various parts
+530.24s - 531.9s : of the relational model and database management systems
+531.9s - 532.54s : as we go along.
+532.54s - 533.42s : So the simple way to do this is to use SQLite.
+533.42s - 533.54s : And then you can use it to do a lot of other things.
+533.54s - 536.86s : And then we're trying to build a Spotify clone.
+536.86s - 538.64s : So it's some kind of digital music store.
+538.64s - 540.86s : And we want to keep track of the artists that
+540.86s - 543.16s : are putting out music, and then the albums
+543.16s - 544.32s : that those artists release.
+544.32s - 547.26s : We want to know what, for a given album, what artist
+547.26s - 549.66s : appears on those albums.
+549.66s - 552.3s : So a really simple implementation of the database
+552.3s - 556.74s : could just be a bunch of files on disk.
+556.74s - 558.92s : In my example here, I'm showing them as CSVs,
+558.92s - 560.32s : or Comma Saber Values.
+560.32s - 561.68s : But it could be JSON.
+561.68s - 562.64s : The kids love YAML.
+562.64s - 563.34s : You could do YAML.
+563.34s - 565.28s : It doesn't matter.
+565.28s - 567.88s : But we're going to have a separate file per entity.
+567.88s - 569.78s : So we'll have a file for the artists.
+569.78s - 572.8s : And artists have a name, the year that they came out,
+572.8s - 575.0s : and maybe the country that they're located in.
+575.0s - 578.42s : And then we'll have albums with the name of the album,
+578.42s - 580.36s : the artist that appears on the album,
+580.36s - 583.6s : and then the year the album was released.
+583.6s - 584.82s : This is a database.
+584.82s - 585.94s : I don't recommend doing it this way,
+585.94s - 587.1s : but you could do it this way.
+587.1s - 589.6s : A bunch of files on disk.
+589.6s - 593.22s : So now, any time you want to update or insert a new record,
+593.22s - 596.8s : we just could go open the file, append to the end of it.
+596.8s - 599.0s : Or if we need to answer a query, we just scan through it
+599.0s - 601.8s : and show it will find the answer that we want.
+601.8s - 604.08s : So say we want to answer a query like, what year did the GZA go
+604.08s - 605.12s : solo?
+605.12s - 608.22s : Well, I could write some Python code that just opens the file
+608.22s - 613.46s : up, reads every line, parses it as a CSV to get back
+613.46s - 616.26s : an array or a list of values.
+616.26s - 619.44s : I know that I'm trying to look up the name GZA.
+619.44s - 622.26s : Well, the name is the first field in my file.
+622.26s - 623.22s : So I just jump to the first field.
+623.22s - 625.22s : I just go to the first element of the array,
+625.22s - 627.7s : check to see whether that value equals GZA.
+627.7s - 628.98s : If it does, then I print it out.
+632.98s - 634.72s : This is the database system, more or less.
+634.72s - 637.8s : Well, this is interacting with the database
+637.8s - 640.46s : that I'm basically embedding the logical database system
+640.46s - 643.46s : inside my application to do this.
+643.46s - 644.76s : Is this a good idea or a bad idea?
+648.32s - 650.32s : I guess it says straw man at the top, so you know it's a bad idea.
+650.32s - 651.3s : So why is it a bad idea?
+653.22s - 654.22s : Yes?
+654.22s - 656.22s : So you kind of need to look over every entry.
+656.22s - 658.8s : So he says you kind of need to look over every entry.
+658.8s - 660.12s : Yes.
+660.12s - 662.8s : So my example here, my file has three lines.
+662.8s - 663.94s : OK, who cares?
+663.94s - 665.86s : That'll sit in L1 cache.
+665.86s - 666.98s : It'll be super fast.
+666.98s - 669.46s : But always, when you think about in computer science,
+669.46s - 671.12s : especially in databases, think about what
+671.12s - 673.86s : happens if you scale up to really large numbers.
+673.86s - 677.28s : So what if my file had a billion records?
+677.28s - 680.16s : Do I want to be scanning through and parsing every single line
+680.16s - 682.26s : just to find the element I'm looking for, one entry?
+682.26s - 682.76s : No.
+683.22s - 687.02s : What are some other problems?
+687.02s - 687.52s : Yes?
+687.52s - 689.6s : You have to rewrite the code every time
+689.6s - 690.84s : you want to change the query.
+690.84s - 691.14s : Excellent.
+691.14s - 692.56s : So he says you have to rewrite the code every time
+692.56s - 694.98s : you want to change your query.
+694.98s - 698.68s : Worse than that, what if I want to add a new field?
+698.68s - 700.86s : Now I've got to change a bunch of my code as well.
+700.86s - 701.84s : It's updating the file.
+701.84s - 704.14s : That sucks.
+704.14s - 705.4s : Maybe one more.
+705.4s - 706.28s : In the back, yes?
+706.28s - 710.9s : .
+710.9s - 711.66s : Yes.
+711.66s - 713.2s : So he says, what if you come across
+713.2s - 715.48s : a line that's reordered in a different way?
+715.48s - 719.58s : Maybe they swapped the, somebody's stupid,
+719.58s - 720.7s : and these are just files on disk.
+720.7s - 722.74s : They open up a text editor and flip the order of these things.
+722.74s - 726.32s : And now my Python code is going to choke on it.
+726.32s - 730.0s : Or even, what if I put, instead of the year 1990,
+730.0s - 731.86s : I put a phone number in?
+731.86s - 733.96s : What happens then?
+733.96s - 736.18s : So there's a bunch of problems doing this approach,
+736.18s - 738.88s : but this is what the data center system is
+738.88s - 741.96s : going to prevent you from encountering these issues,
+741.96s - 743.08s : because it'll manage all these things.
+743.08s - 745.26s : It'll manage all these things for you.
+745.26s - 748.08s : So there's some other issues we have to deal with.
+748.08s - 754.3s : So in my file, if an artist puts out multiple albums,
+754.3s - 756.68s : then in my album file, I'm just repeating their name
+756.68s - 757.48s : over and over again.
+757.48s - 759.46s : Wu-Tang Clan, Wu-Tang Clan, Wu-Tang Clan.
+759.46s - 761.46s : But how do I make sure that someone doesn't drop
+761.46s - 764.68s : an N in the name of the Wu-Tang Clan,
+764.68s - 767.34s : and now it's Wu-Tang Claw?
+767.34s - 769.2s : Well, I know that they should be the same thing,
+769.2s - 771.96s : but the data says that they're different.
+771.96s - 773.0s : We brought this up before.
+773.0s - 775.98s : What if someone comes along and overwrites the album name
+775.98s - 778.44s : with a weird string, puts an email address in,
+778.44s - 782.48s : or puts in a random number that shouldn't be there?
+782.48s - 786.0s : And then we didn't talk about this, but in my toy example,
+786.0s - 790.42s : I assume that there was one artist per album.
+790.42s - 793.52s : But if it's a mixtape, there's a lot of artists on that.
+793.52s - 799.24s : And in my simple example, I couldn't handle that.
+799.24s - 802.1s : Then what happens is, what if I delete an artist by accident
+802.1s - 802.8s : or by choice?
+802.8s - 806.28s : I can delete an artist from the artist file,
+806.28s - 811.2s : but now I've got a bunch of albums that mention an artist
+811.2s - 815.1s : that doesn't exist in my table or my file.
+815.1s - 818.12s : So I basically have a dangling pointer now.
+818.12s - 820.5s : We've talked about how, on the implementation side,
+820.5s - 822.06s : how do you find a particular record?
+822.06s - 824.32s : Well, just iterating over a single file
+824.32s - 825.82s : and parsing it one by one.
+825.82s - 826.42s : That's terrible.
+826.42s - 828.28s : That's slow.
+828.28s - 829.8s : What if you have another application that
+829.8s - 830.88s : wants to use the same database?
+830.88s - 832.6s : Well, now I've got to basically copy and paste the code that I wrote to parse it out.
+832.6s - 834.94s : And then I've got to parse that file and get records out
+834.94s - 836.54s : and put it to my other application.
+836.54s - 839.24s : But what if I wrote the first version of the application in Python,
+839.24s - 841.12s : but then I rewrote it in Rust?
+841.12s - 843.94s : Now I've got to translate all the Python code to Rust code.
+843.94s - 845.62s : That sucks.
+845.62s - 848.52s : But then also, what if the other application
+848.52s - 851.28s : is running on a different machine or a bunch of cell phones?
+851.28s - 854.34s : Now I've got to make sure that all the application implementations
+854.34s - 856.82s : can access that file some way, through a distributed file
+856.82s - 859.78s : system, which is the database, by the way.
+859.78s - 861.98s : And then what happens if we have two threads trying to write
+861.98s - 864.44s : to the same file at the same time?
+864.44s - 867.88s : Well, we could do something really stupid and just let the OS lock stuff for us,
+867.88s - 873.04s : lock the file, and then only allow one thread to write into it at a time.
+873.04s - 875.8s : But a reoccurring theme you're going to see throughout the semester is,
+875.8s - 879.36s : in the world of databases, the OS is our frenemy.
+879.36s - 881.54s : We never want to let it do anything for us.
+881.54s - 883.92s : So letting the OS lock files for us is a bad idea.
+883.92s - 886.74s : Because we're database people, and we can always do it better than they can.
+886.74s - 890.38s : So only allowing one thread to write to the file at a time,
+890.38s - 891.82s : that is actually what SQLite does.
+891.98s - 893.98s : But SQLite's meant to run on cell phones.
+893.98s - 896.8s : If you're running a machine with 1,000 cores,
+896.8s - 898.54s : you don't want to do that.
+898.54s - 899.92s : And the OS implementation is always
+899.92s - 902.98s : going to be more inefficient anyway.
+902.98s - 908.02s : And then lastly, what happens if we're modifying the file,
+908.02s - 911.8s : and we're going to write a new record, we write half of it,
+911.8s - 912.8s : and then it crashes?
+912.8s - 915.1s : The machine crashes, someone trips over the power cord,
+915.1s - 917.52s : lightning strikes the transformer, whatever.
+917.52s - 921.52s : Now we come back online, what should be in our file?
+921.52s - 925.2s : Well, if we just write to the file, we'll just see whatever we wrote before the crash.
+925.2s - 926.12s : But that's invalid, right?
+926.12s - 930.04s : Now we have a record that's missing half of it.
+930.04s - 933.6s : And then what if we want to allow multiple machines to access the file,
+933.6s - 938.28s : or the database, and we want to make sure that if any one of those machines goes down,
+938.28s - 942.06s : we can keep running and still serve queries, serve requests?
+942.06s - 944.84s : Well, now I've got to basically implement a bunch of load balancing stuff
+944.84s - 946.88s : to handle accessing the file.
+946.88s - 948.84s : That sucks.
+948.84s - 951.44s : So this is just a quick smattering of the problems,
+951.44s - 953.84s : that we're going to have to solve throughout the entire semester
+953.84s - 957.62s : to make it so people don't have to do stupid things like relying on the operating system
+957.62s - 962.12s : or managing a bunch of stuff in application code.
+962.12s - 964.92s : And this is what a database management system is going to do for you.
+964.92s - 971.46s : It's going to be the software that allows applications to store, analyze, query data
+971.46s - 972.88s : in a database.
+972.88s - 978.0s : And a general purpose database system will be one that can support any arbitrary schema,
+978.0s - 979.68s : within reason, of course.
+979.68s - 981.44s : It can allow any arbitrary queries.
+981.44s - 984.8s : Meaning it's not hard coded just to do that one look up on the jizza.
+984.8s - 988.72s : You can change the query to look up on any artist, or any field,
+988.72s - 991.64s : or do any kind of transformation.
+991.64s - 994.38s : And it's going to do this according to what we'll call a data model.
+994.38s - 1000.88s : It's the high level representation of what is in a database.
+1000.88s - 1005.38s : And again, just to push this point home further,
+1005.38s - 1008.44s : database systems are some of the most widely deployed and widely tested
+1008.44s - 1011.44s : and vetted pieces of software in the world that may be rivaled,
+1011.44s - 1012.44s : and that's the only one I can think of.
+1012.44s - 1013.44s : Maybe some embedded systems.
+1013.44s - 1018.44s : There's multi-billion dollar corporations that are running off of database systems that
+1018.44s - 1021.44s : are tested and sold by major enterprises.
+1021.44s - 1025.44s : There's a lot of money involved in databases, both building them and selling them,
+1025.44s - 1029.44s : and a lot of money riding on a database system operating correctly.
+1029.44s - 1035.44s : And so at no point, say again, if you go off in the real world and you do a startup or whatever,
+1035.44s - 1037.44s : at no point should you say to yourself,
+1037.44s - 1040.44s : oh, I'm just going to build my own database system in my application.
+1040.44s - 1040.64s : Right?
+1040.64s - 1040.68s : Yeah.
+1040.68s - 1040.78s : Yeah.
+1040.78s - 1040.84s : Yeah.
+1040.84s - 1040.88s : Yeah.
+1040.88s - 1040.94s : Yeah.
+1040.94s - 1041.08s : Yeah.
+1041.08s - 1041.14s : Yeah.
+1041.14s - 1041.24s : Yeah.
+1041.24s - 1041.28s : Yeah.
+1041.28s - 1041.34s : Yeah.
+1041.34s - 1041.4s : Yeah.
+1041.4s - 1041.44s : Yeah.
+1041.44s - 1041.74s : Yeah.
+1041.74s - 1041.8s : Yeah.
+1041.8s - 1042.74s : That's a bad idea.
+1042.74s - 1043.84s : You're going to have problems.
+1043.84s - 1048.44s : You're going to rely on these existing tools that are out there.
+1048.44s - 1052.68s : And again, this class is going to teach you how to do it.
+1052.68s - 1053.2s : All right.
+1053.2s - 1059.14s : So a data model is going to be this high-level abstraction that is going to represent data
+1059.14s - 1060.26s : in a database.
+1060.26s - 1064.88s : Again, according to some scheme we'll see in a second.
+1064.88s - 1071.24s : And most database systems support only one data model, like a relational database,
+1071.24s - 1076.64s : database or document database, the lines start to get blurred more recently because in relational
+1076.64s - 1077.82s : databases, you can store documents.
+1077.92s - 1079.12s : You can store JSON now in a field.
+1079.82s - 1084.46s : And now the document databases all support SQL and relational-like things on top of JSON.
+1085.38s - 1088.64s : So in some cases, it's clear that there's a distinction between the data models.
+1089.6s - 1092.46s : But in the more widely-placed systems, again, the lines get blurry.
+1093.9s - 1099.3s : And so given a data model, your database will be defined according to a schema that just
+1099.3s - 1102.68s : specifies, I have these tables or these collections of data.
+1102.96s - 1105.9s : They have these attributes with this name and this data type.
+1106.22s - 1107.7s : Again, we'll see this throughout the entire semester.
+1108.16s - 1112.84s : But it's a way to specify the structure of the things you want to store in your database.
+1113.72s - 1116.96s : Because without a schema, it's just a bunch of random bits, and it doesn't mean anything.
+1118.22s - 1125.1s : The schema is allowed to provide a structure to the data so that you can write queries
+1125.1s - 1125.7s : against it.
+1126.8s - 1129.28s : Another way to think about this, save a bunch of log files for my application server.
+1129.44s - 1132.14s : It's a bunch of text lines with timestamps and so forth.
+1133.14s - 1138.52s : If I don't have any structure on top of that, then there's no way to find the data I'm looking for.
+1138.96s - 1142.78s : But if I say, oh, a log file entry is going to have a timestamp, followed by maybe an
+1142.78s - 1144.78s : event code, followed by a string with the event.
+1145.46s - 1146.14s : Well, that's a schema.
+1146.22s - 1148.68s : That's a structure that I can then run queries on top of it.
+1149.68s - 1154.52s : Because otherwise, again, if it's just a random bunch of bits, the data is useless.
+1154.64s - 1155.36s : The data is meaningless.
+1156.54s - 1156.86s : Yes?
+1156.86s - 1159.08s : How is this differentiating the data?
+1159.3s - 1159.56s : The model?
+1159.82s - 1161.46s : I thought the data model was also a data model.
+1161.56s - 1163.44s : The data model is, we'll see in a second.
+1163.52s - 1171.34s : A data model is the abstraction for how you define collections of data, and then their
+1171.34s - 1173.1s : relationships between other collections.
+1174.38s - 1179.3s : The schema says, OK, within that data model, I have these collections that have these attributes
+1179.3s - 1180.3s : with these types.
+1181.76s - 1186.88s : Think of it like a, it's almost like a class versus object in the Java world.
+1186.88s - 1188.88s : The class is the definition of data.
+1189.3s - 1192.34s : The class is the definition of the data model.
+1192.8s - 1194.94s : And then the instantiation would be, actually, that's a bad example.
+1197.08s - 1203.66s : It would be like a, in the programming language, you would specify, like in Java, the Java
+1203.66s - 1207.14s : has a way to define how you represent data.
+1207.62s - 1209.56s : And then you would create instances of it in classes.
+1211.1s - 1212.12s : Let's go further along.
+1212.22s - 1213.14s : I think it's a bad example, too.
+1213.14s - 1219.14s : But I think it makes sense when you start seeing differentiations between them.
+1219.3s - 1219.36s : OK?
+1220.6s - 1221.2s : Other questions?
+1224.14s - 1224.5s : OK.
+1225.28s - 1228.2s : So I'm going to be highly, highly biased throughout the entire semester.
+1228.46s - 1229.7s : I love the relational data model.
+1229.98s - 1233.1s : I think it's how every data system should be implemented, because the relational model
+1233.1s - 1238.02s : can be contorted, at least in the modern version of it, into any possible data model you would
+1238.02s - 1239.86s : care about, except for one, which I'll talk about in a second.
+1240.68s - 1244.64s : So most database systems we're going to talk about this semester, and most database systems
+1244.64s - 1248.28s : that are in the real world that you've heard of, are very likely going to be relational
+1248.28s - 1248.68s : databases.
+1249.3s - 1252.16s : But it's not to say that it's the only one out there.
+1253.2s - 1258.5s : There's these key value stores that are out there, things like RocksDB, LevelDB, Redis
+1258.5s - 1262.06s : is sort of like this, where you sort of have a key and then a value, and that's it.
+1262.12s - 1265.54s : And there's no meaning to the actual value, except for what the application puts upon
+1265.54s - 1265.74s : it.
+1266.2s - 1271.74s : So this is typically used for simple applications or caching, like a cookie ID to some payload.
+1272.92s - 1277.04s : Then you have this whole sort of category that falls under the moniker NoSQL, which is
+1277.04s - 1279.04s : ironic now, because now they really mean...
+1279.3s - 1282.36s : At the beginning when NoSQL came out, they were like, oh, guys, SQL sucks.
+1282.7s - 1283.98s : We're not doing any SQL, NoSQL.
+1284.34s - 1289.84s : Now they say, oh, NoSQL really means not only SQL, because they've seen the light and basically
+1289.84s - 1291.48s : become relational databases.
+1293.1s - 1297.32s : So the documented stuff, the JSON databases, probably the ones that you've heard about
+1297.32s - 1301.04s : the most, like MongoDB would be a documented database.
+1302.52s - 1306.74s : Wide column or column family is a subset of JSON databases.
+1307.34s - 1308.24s : It's like...
+1308.24s - 1308.52s : Yeah.
+1309.3s - 1310.98s : Google Bigtable was this.
+1311.4s - 1312.32s : Cassandra was this.
+1313.7s - 1319.0s : Then you have these array databases, so vectors, matrices, and tensors.
+1321.52s - 1324.8s : Tensors are probably the thing you don't want to store in a relational database, because
+1324.8s - 1328.9s : since it's like a multidimensional array, it's kind of weird to do that in a relational
+1328.9s - 1332.86s : model, even though the SQL standard last year just added multidimensional arrays.
+1334.56s - 1337.2s : And then there's these hodgepodge of these ones at the end.
+1338.42s - 1339.22s : Hierarchical networks.
+1339.22s - 1339.28s : And then there's these...
+1339.3s - 1342.82s : I'll talk about network one a little bit in Codacil.
+1343.14s - 1345.4s : But these are like stuff from the 70s and 80s.
+1346.06s - 1347.26s : They were doing cocaine back then.
+1347.3s - 1347.8s : They were experimenting.
+1348.28s - 1351.34s : But basically, the world has come back to realize that the relational model is the right
+1351.34s - 1351.68s : way to go.
+1352.26s - 1355.36s : Every 10 years, though, there's always this repeat where someone says, oh, relational
+1355.36s - 1355.86s : model is stupid.
+1355.96s - 1356.44s : SQL is stupid.
+1357.0s - 1358.12s : We're going to have a new data model.
+1358.58s - 1360.62s : And then everyone gets all excited about that on Hacker News.
+1360.74s - 1363.16s : And then they eventually come around and say, oh, yeah, relational model is the right idea.
+1363.82s - 1368.3s : So right now, we're in the phase where all of these guys have said, oh, yeah, SQL is
+1368.3s - 1369.06s : actually a good idea.
+1369.3s - 1372.44s : And then the next step is going to be the vector databases come back and say, SQL is
+1372.44s - 1372.82s : a good idea.
+1373.44s - 1374.16s : But we'll get there.
+1375.34s - 1375.5s : All right.
+1375.52s - 1378.02s : So again, this course is going to be about relational databases.
+1378.22s - 1381.28s : But it's not to say that the things we're talking about can't be applied to the other
+1381.28s - 1381.82s : data models.
+1382.36s - 1386.1s : It's just most of the systems you encounter are going to be relational.
+1388.1s - 1388.52s : All right.
+1388.52s - 1390.24s : So why does relational model matter?
+1390.34s - 1391.72s : And why am I so keen on it?
+1392.24s - 1398.78s : Well, if you go back to the 60s and early, early 70s, there wasn't this sort of plethora
+1398.78s - 1399.16s : of database systems.
+1399.16s - 1402.02s : There was a small number of them.
+1402.48s - 1405.34s : And it was very difficult to build database applications.
+1405.88s - 1407.12s : Think of like mainframe days.
+1408.4s - 1411.88s : And so in the early days, one of the first database systems that was built was a thing
+1411.88s - 1414.12s : called IDS, or Integrated Data Store.
+1414.64s - 1419.32s : That was actually built by GE in 1965 or 66.
+1420.26s - 1424.62s : IMS was a hierarchical database built by IBM to manage the Apollo moon mission, to keep
+1424.62s - 1427.56s : track of all the parts to build the rocket going up.
+1428.1s - 1429.14s : And then IMS was a database that was built by IBM to manage the Apollo moon mission.
+1429.16s - 1432.4s : And so part of this IDS work, there was this thing called Codacil, which came out of the
+1432.4s - 1433.1s : COBOL world.
+1433.58s - 1436.96s : It was basically trying to define what the API is, how you would interact with it with
+1436.96s - 1437.34s : the database.
+1438.4s - 1443.14s : And so back in the day, in the 60s and 70s, computers were very, very expensive.
+1443.88s - 1445.18s : Humans were relatively cheap.
+1445.66s - 1448.88s : The labor of humans were relatively cheap to computers.
+1449.64s - 1453.14s : So it wasn't that big of a deal that people had to spend a lot of time rewriting their
+1453.14s - 1457.7s : code, as he brought up, every time they could change your database, if you use these other
+1457.7s - 1458.88s : data models.
+1459.16s - 1463.38s : And that's because there was a tight coupling between, at the logical level, how you're
+1463.38s - 1466.94s : defining your database, and then how the data system actually physically represented it.
+1467.36s - 1471.58s : So now in your application code, you had to be aware of how the data system is laid out
+1471.58s - 1474.92s : in bits on disk, and how things were connected with pointers.
+1475.44s - 1478.78s : And you had to basically traverse those data structures manually in your code.
+1480.1s - 1484.12s : So that meant that any time there was a change in your database schema, you had to go back
+1484.12s - 1486.06s : and rewrite all your application code to account for that.
+1486.74s - 1488.06s : So an example would be in...
+1489.16s - 1493.52s : IMS, at least the early days, you would define a table, and then you would tell the database
+1493.52s - 1496.44s : system, I want to sort it either as a hash table or a B-tree.
+1497.1s - 1500.54s : And then say if you made a mistake and said, oh, I really want to store it, I decided to
+1500.54s - 1504.14s : do a hash table, but I really need to do range scans, and you can't do range scans on a hash
+1504.14s - 1505.8s : table, and I want to switch it to a B-tree.
+1506.2s - 1510.5s : Well, I've got to dump the data out, then load it back in as a B-tree, then rewrite
+1510.5s - 1513.8s : all my application code, because now the API to that table has changed, because it went
+1513.8s - 1514.78s : from a hash table to a B-tree.
+1515.54s - 1518.94s : So there was this guy at IBM who basically...
+1519.16s - 1523.44s : He saw all these programmers doing the same thing over again, making all these mundane
+1523.44s - 1527.18s : changes to their database applications every single time there was a change.
+1527.56s - 1531.44s : And there's always going to be changes in databases, because as the world evolves, or
+1531.44s - 1535.54s : the data you're capturing evolves, you want to evolve your database.
+1537.32s - 1540.62s : So there's this guy named Ted Codd, who was originally a mathematician.
+1541.04s - 1542.4s : He did his PhD in mathematics.
+1543.04s - 1545.22s : He joins IBM Research in New York.
+1545.76s - 1549.14s : And as I said, he was seeing all these programmers doing the same thing over and
+1549.16s - 1554.48s : over again, just rewriting their applications every single time the layout or schema changed.
+1555.22s - 1557.2s : And he obviously thought there has to be a better way to do this.
+1557.5s - 1565.56s : And so he devised the relational model in 1969 as a sort of abstraction to a database
+1565.56s - 1567.2s : based on sets...
+1567.78s - 1571.92s : Or sorry, based on relations, which I'll explain that in a second, and that there would be
+1571.92s - 1576.54s : this logical connection between data through values rather than physical connections like
+1576.54s - 1578.4s : pointers and offsets and things on disk.
+1578.64s - 1578.82s : Right?
+1578.82s - 1578.84s : Right.
+1578.84s - 1578.86s : Right.
+1578.86s - 1578.92s : Right.
+1578.92s - 1578.98s : Right.
+1578.98s - 1579.0s : Right.
+1579.0s - 1579.02s : Right.
+1579.02s - 1579.04s : Right.
+1579.04s - 1579.06s : Right.
+1579.06s - 1579.08s : Right.
+1579.16s - 1579.2s : Right.
+1579.2s - 1579.4s : Right.
+1579.56s - 1579.84s : Right.
+1579.84s - 1580.12s : Right.
+1580.12s - 1580.28s : Right.
+1580.28s - 1580.4s : Right.
+1580.4s - 1580.78s : Right.
+1580.78s - 1580.82s : Right.
+1580.82s - 1580.84s : Right.
+1580.92s - 1581.32s : Right.
+1582.38s - 1585.52s : So the first paper that defined the relational model came out in 1969.
+1586.28s - 1589.84s : I think this was an internal tech report at IBM.
+1590.26s - 1594.0s : But the one that's really, really famous that everyone refers to is this one here that came
+1594.0s - 1596.78s : out in the CACM in 1970.
+1597.42s - 1599.42s : So if you say, what's the first paper on the relational model?
+1599.7s - 1601.32s : People typically point to this other one here.
+1602.26s - 1605.76s : And so when this came out, all the academics thought this was the greatest thing ever.
+1605.84s - 1608.22s : This is clearly how we should be building database systems.
+1608.5s - 1608.98s : Right.
+1608.98s - 1613.32s : But IBM poo-pooed it, or ignored it, right?
+1613.32s - 1616.98s : Because they were making so much money on IMS, which is the High Echo Database System,
+1616.98s - 1619.82s : and then one of their own employees comes along and says, hey, the thing you're making
+1619.82s - 1621.72s : a lot of money on is actually stupid.
+1621.72s - 1622.72s : You don't want to do it this way.
+1622.72s - 1626.14s : You want to do it this other way for this system that hasn't actually been implemented.
+1626.14s - 1628.5s : But here's the better way to represent databases.
+1628.5s - 1631.06s : Again, he was a mathematician.
+1631.06s - 1632.76s : He wasn't building a system at the time.
+1632.76s - 1634.82s : And actually, in this first paper here, it's all mathematics.
+1634.82s - 1637.44s : There is no SQL at this time.
+1637.44s - 1639.06s : He didn't define a programming language.
+1639.06s - 1642.98s : It's all through relational algebra and how you manipulate databases.
+1642.98s - 1646.2s : So from IBM's perspective, they were like, well, we can't do anything with this.
+1646.2s - 1649.84s : It's just a paper, right?
+1649.84s - 1654.28s : But eventually, IBM did do this, did take the paper, but not in New York, actually in
+1654.28s - 1655.28s : San Jose.
+1655.28s - 1658.26s : They got a team together, which we'll cover throughout the semester, and actually built
+1658.26s - 1664.5s : one of the first relational databases as a prototype based on Ted Codd's paper.
+1664.5s - 1667.38s : So I mentioned Codacil.
+1667.38s - 1667.44s : Codacil.
+1667.44s - 1672.68s : Codacil is a hierarchical database that was spearheaded by the guy that was building IDS
+1672.68s - 1675.76s : or IIM at GE.
+1675.76s - 1680.0s : And so there was a sort of back and forth between the relational guys, people that were
+1680.0s - 1682.4s : in academia, that the relational database was the right way to go.
+1682.4s - 1685.28s : And then all the Codacil people, all the COBOL people said, no, no, no, Codacil is the right
+1685.28s - 1686.42s : way to go.
+1686.42s - 1690.98s : And so actually, who here has ever heard of Codacil?
+1690.98s - 1691.98s : No one, right?
+1691.98s - 1693.94s : Because it's dead, right?
+1693.94s - 1696.06s : So Codacil was based on these sets.
+1696.06s - 1697.06s : So you would have...
+1697.06s - 1700.68s : You would find these collections as if tables, and you would define the relationships between
+1700.68s - 1702.44s : them through these sets.
+1702.44s - 1707.04s : And you would basically iterate over every element in each set and follow pointers to
+1707.04s - 1709.62s : go find the data that you're looking for.
+1709.62s - 1716.18s : And so there was this famous workshop in 1974 in Michigan where they got all the people
+1716.18s - 1719.14s : from the Codacil camp and all the people from the relational database camp, put them in
+1719.14s - 1721.5s : a single room, and they fought over it.
+1721.5s - 1723.74s : So this is a very, very famous meeting.
+1723.74s - 1726.1s : Obviously, Ted Codd was there.
+1726.1s - 1727.0s : But there's been four...
+1727.0s - 1731.1s : Four Turing Awards in databases, and all four of those people were there.
+1731.1s - 1734.6s : And so we're gonna cover a bunch of these guys throughout the semester.
+1734.6s - 1736.5s : Bachman was the Codacil guy.
+1736.5s - 1737.5s : He's dead.
+1737.5s - 1738.5s : Jim Gray invented two-phase locking.
+1738.5s - 1740.36s : We'll have a whole lecture on that.
+1740.36s - 1741.36s : He's dead.
+1741.36s - 1745.54s : And then Stonebreaker invented Ingress and Postgres and a bunch of other stuff that you
+1745.54s - 1747.56s : may have heard of before.
+1747.56s - 1748.56s : He's still alive.
+1748.56s - 1749.56s : He's 80.
+1749.56s - 1750.56s : He turns 81 this year.
+1750.56s - 1753.56s : He was my PhD advisor.
+1753.56s - 1754.56s : He's brilliant.
+1754.56s - 1755.12s : But basically, all the Codacils...
+1755.12s - 1756.12s : I'm sorry.
+1756.12s - 1756.84s : I'm sorry.
+1756.84s - 1760.02s : All the Codacil guys are saying, hey, this relational model stuff, you can't actually
+1760.02s - 1761.52s : build a real system doing this.
+1761.52s - 1766.06s : People aren't gonna understand what it means to have relations and tables.
+1766.06s - 1771.7s : And then furthermore, if you're gonna be programming at a high-level language, again, SQL...
+1771.7s - 1775.0s : The guys that invented SQL were actually at this conference, too.
+1775.0s - 1777.6s : But at the time, SQL was very early.
+1777.6s - 1783.24s : You're never gonna be able to take SQL and compile it to a program that can run efficiently.
+1783.24s - 1784.24s : So they all complained.
+1784.24s - 1784.96s : The Codacil guy said that relational databases are a bad idea.
+1784.96s - 1785.96s : And they said, well, you can't do that.
+1785.96s - 1786.46s : You can't do that.
+1786.84s - 1787.34s : You can't do that.
+1787.34s - 1787.84s : You can't do that.
+1787.84s - 1788.34s : That's a bad idea.
+1788.34s - 1788.84s : But then the relational guy says...
+1788.84s - 1793.62s : They all say that this Codacil thing, these sets that you have to walk through and these
+1793.62s - 1796.8s : records that deal with the physical data structure, that's all a bad idea, too.
+1796.8s - 1798.9s : It makes the application brittle.
+1798.9s - 1803.78s : It makes the application more likely to break when one part of the database breaks.
+1803.78s - 1807.02s : It breaks all the other stuff because it relies on the physical integrity of data.
+1807.02s - 1810.78s : And as I said, nobody here has ever heard of Codacil.
+1810.78s - 1813.08s : The relational camp won.
+1813.08s - 1816.06s : But again, as I was saying, every 10 years, people forget all the things we've learned
+1816.06s - 1817.06s : before.
+1817.06s - 1820.02s : And now the graph database guys are basically making the same claims now as the Codacil
+1820.02s - 1823.02s : people did in the 70s.
+1823.02s - 1824.02s : All right.
+1824.02s - 1826.4s : So what is the relational model?
+1826.4s - 1833.32s : So it's a data model that's going to define an abstraction for a database based on relations
+1833.32s - 1839.12s : to avoid the cost of having to maintain the implicit knowledge of what the data looks
+1839.12s - 1842.24s : like physically in your application code.
+1842.24s - 1845.06s : So there's three key ideas in the relational model.
+1845.06s - 1846.06s : First is that...
+1846.06s - 1852.38s : We're going to store our database in simple data structures, i.e. relations or tables,
+1852.38s - 1856.82s : and that we don't expose that information to the application code.
+1856.82s - 1860.78s : You get this abstraction of just, I have tables and I can interact with them.
+1860.78s - 1864.86s : The physical storage, the way the actual database system is going to actually write down the
+1864.86s - 1869.88s : bits of your tables is left up to the implementation.
+1869.88s - 1874.06s : So the idea here is that, say I have a database, I use a database system, I have my database
+1874.06s - 1875.06s : and I'd sort out a database system that stores things on disk.
+1875.06s - 1876.06s : But maybe I want to store things in memory, in an in-memory database.
+1876.06s - 1877.06s : Well, if I define things through relations and interact it through SQL, in theory, I
+1877.06s - 1878.06s : could take my database out of the disk database and put it into the in-memory database, where
+1878.06s - 1879.06s : some new storage device comes along and just pop it in that one.
+1879.06s - 1880.06s : And now I don't have to change any of my application code, even though the physical layout of the
+1880.06s - 1881.06s : bits has changed.
+1881.06s - 1882.06s : Now, I say, in theory, this should work.
+1882.06s - 1883.06s : As we see next class, there is a SQL standard that allows you to do that.
+1883.06s - 1884.06s : But it's not going to be the same as if you were to do it in a different way.
+1884.06s - 1885.06s : So you're going to have to do it in a different way.
+1885.06s - 1886.06s : So you're going to have to do it in a different way.
+1886.06s - 1887.06s : So you're going to have to do it in a different way.
+1887.06s - 1888.06s : Nobody follows it exactly.
+1888.06s - 1889.06s : The only sort of de facto SQL standard we have now would be Postgres, because everyone
+1889.06s - 1890.06s : can take the Postgres parser and reuse that.
+1890.06s - 1891.06s : But we'll see many cases where, just because it's a standard, it's a bad thing.
+1891.06s - 1892.06s : And that's why I say, in theory, this should work.
+1892.06s - 1893.06s : Nobody follows it exactly.
+1893.06s - 1894.06s : But if I do it in a different way, then I could take my database out of the disk database
+1894.06s - 1895.06s : and put it into the in-memory database, where some new storage device comes along and just
+1895.06s - 1896.06s : pop it in that one.
+1896.06s - 1897.06s : And now I don't have to change any of my application code, even though the physical
+1897.06s - 1898.06s : layout of the bits has changed.
+1898.06s - 1899.06s : Now, I say, in theory, this should work.
+1899.06s - 1900.06s : As we see next class, there is a SQL standard.
+1900.06s - 1901.06s : Nobody follows it exactly.
+1901.06s - 1902.06s : The only sort of de facto SQL standard we have now would be Postgres, because everyone
+1902.06s - 1903.06s : can take the Postgres parser and reuse that.
+1903.06s - 1904.06s : But we'll see many cases where, just because I have two relational databases doesn't mean
+1904.06s - 1905.06s : they're always going to be compatible.
+1905.06s - 1906.06s : So again, I say, in theory, you should be able to do this, but not always.
+1906.06s - 1907.06s : And then the last one, again, is that instead of writing procedural code, like a low-level
+1907.06s - 1908.06s : for loops, the iterator or the syntax, you're going to have to write a procedure code.
+1908.06s - 1909.06s : And this is a very important thing.
+1909.06s - 1910.06s : And it's really important to remember that the procedure code is not always going to
+1910.06s - 1911.06s : be compatible with the database.
+1911.06s - 1912.06s : It's always going to be compatible with the database.
+1912.06s - 1913.06s : And you can see that in the case of a single-level database, the procedure code is going to be
+1913.06s - 1914.06s : compatible with the database.
+1914.06s - 1915.06s : So that will have to instantaneously interact with your information.
+1915.06s - 1916.06s : It's really important it entire .
+1916.06s - 1917.06s : And it tasks master mind, and it uses .
+1917.06s - 1918.06s : And again, when we're available when we're working in an area like Harvard or even in
+1918.06s - 1930.06s : exemple, even if you want to look within there it's completely soup〜 Kafka's
+1930.06s - 1931.06s : process staff.
+1931.06s - 1932.06s : It's basically a Toyota system and it maps PDFs and evenly importaing topics to the
+1932.06s - 1933.06s : database, but without being able to see, but without seeing all the people working around
+1933.06s - 1934.06s : it.
+1934.06s - 1935.06s : I'm back to open functions at pengu result – we're going to summon the power of
+1935.06s - 1936.06s : give two- endure.
+1936.06s - 1937.06s : We're going to controlpretestingfeitoceval.
+1937.06s - 1938.06s : And then notably, what does this take for us to do for theき 보Qt engine in practice?
+1938.06s - 1941.06s : we've, I've already mentioned this already that, might also get very jal בรי
+1941.06s - 1942.06s : a fellow one within Unreal.
+1942.06s - 1943.86s : We have to do relation optimal first before we get there.
+1944.38s - 1946.54s : And then that way, we just say, here's the answer that I want.
+1947.22s - 1949.34s : And it's up to the database management system to figure out
+1949.34s - 1952.16s : what's the most efficient way to implement it, to execute it.
+1953.68s - 1956.12s : So my example before where I said I was parsing that file
+1956.12s - 1957.78s : to try to find one record, and it said,
+1957.86s - 1959.02s : what if I have a billion records?
+1960.3s - 1961.36s : Then that would really be slow.
+1961.42s - 1962.72s : But if I wrote it as a SQL query,
+1963.36s - 1965.32s : and say I had a billion records and things went slow,
+1965.6s - 1967.3s : well, then I can go back and add an index
+1967.3s - 1969.86s : so I can jump to the exact record that I want.
+1970.24s - 1971.92s : Think of like a glossary in a textbook.
+1972.06s - 1973.96s : I can jump to the page I want for some keyword.
+1974.8s - 1977.12s : And then now, again, I don't have to rewrite my application code
+1977.12s - 1978.08s : because I have an index.
+1978.68s - 1982.22s : Because I've extracted away the implementation
+1982.22s - 1984.48s : of both the data and the query plan.
+1987.92s - 1989.8s : So we'll see as we go throughout the semester.
+1989.92s - 1992.28s : Again, back in the 70s, people were making the same arguments
+1992.28s - 1995.42s : when C came along, the C programming language,
+1995.42s - 1997.44s : that, oh, there's never going to be a compiler
+1997.44s - 2000.18s : that can generate assembly for C code
+2000.18s - 2001.78s : as well as a human can write.
+2002.06s - 2003.22s : Of course, now we know that's crazy.
+2003.36s - 2004.42s : Compilers are very, very efficient.
+2004.9s - 2006.92s : Same thing was said about SQL back in the day
+2006.92s - 2008.42s : from the Codacil guys,
+2008.48s - 2010.82s : that no computer program is going to be able to generate
+2010.82s - 2013.04s : a query plan for a SQL query
+2013.04s - 2015.82s : that's as efficient as what a human could write themselves.
+2017.56s - 2019.86s : And of course, again, nobody writes SQL by hand anymore.
+2020.12s - 2021.72s : Or at least, I'm sorry, nobody writes the query plans by hand.
+2021.92s - 2023.1s : Let the data system do it for you.
+2023.1s - 2026.2s : All right, so there's going to be
+2026.2s - 2028.42s : sort of three components of the relational model.
+2028.9s - 2030.92s : There's going to be the structure of the database.
+2031.34s - 2032.04s : Again, that's going to be the database.
+2032.04s - 2033.9s : There's going to be the definition of the tables we have.
+2034.58s - 2037.0s : You can use the term tables and relations interchangeably,
+2037.36s - 2039.64s : but to be pedantic, you would say relations, not tables.
+2040.48s - 2043.0s : You define what's going to be in your relations
+2043.0s - 2044.8s : and then their contents,
+2045.12s - 2047.54s : and you define this independent of their physical representation,
+2048.36s - 2050.4s : and we'll cover that a bit further in the next slide.
+2051.08s - 2052.2s : And then you can also define
+2052.2s - 2053.76s : what we'll call sort of integrity constraints,
+2054.2s - 2055.62s : and these are going to be definitions
+2055.62s - 2057.84s : of what the data is allowed to look like
+2057.84s - 2060.26s : in accordance to whatever you're trying to model
+2060.26s - 2061.04s : in the real world.
+2062.04s - 2065.18s : All right, so if you store someone's age in a database,
+2065.3s - 2068.06s : we know no one can be negative, right?
+2068.12s - 2069.58s : There's nobody that's negative 10 years old,
+2069.72s - 2072.2s : so we can put a constraint in our table and say,
+2072.46s - 2075.0s : this value of this age can never be less than zero.
+2076.76s - 2078.82s : And the last one is going to be the manipulation mechanism,
+2079.04s - 2081.44s : and this is basically the API, the programming interface
+2081.44s - 2084.38s : that is exposed to us to allow us to access
+2084.38s - 2087.06s : and modify the contents in our database.
+2087.66s - 2091.14s : And this is what relational algebra will be
+2091.14s - 2092.22s : that we'll see in a second.
+2093.46s - 2095.02s : But I'm going to cover the independence thing first
+2095.02s - 2095.98s : a little bit more, because this is,
+2096.4s - 2098.7s : it seems obvious now, but again, in the 1970s,
+2098.72s - 2100.0s : this was considered groundbreaking.
+2101.9s - 2103.9s : But the idea of data independence is that, again,
+2103.9s - 2108.24s : we don't want to have to expose, necessarily,
+2108.52s - 2110.9s : the physical layout of data
+2111.42s - 2113.7s : on whatever storage device we're storing it on
+2113.7s - 2117.1s : to the application so they can program against it
+2117.1s - 2118.4s : using a high-level abstraction.
+2119.86s - 2120.76s : All right, so at the lowest level,
+2120.76s - 2121.72s : there's database storage.
+2122.16s - 2123.5s : I'm not defining what that is,
+2123.54s - 2125.26s : because it could be in memory, it could be in SSD,
+2125.54s - 2127.04s : it could be in object store, like S3.
+2127.92s - 2129.38s : Again, for our purposes here, it doesn't matter.
+2130.52s - 2132.72s : And then you would define a physical schema
+2132.72s - 2137.5s : of basically how to represent the database
+2137.5s - 2140.52s : you're trying to store in that database storage device.
+2141.46s - 2143.04s : So this would be, you're defining the pages,
+2143.14s - 2143.98s : the layouts of the pages,
+2144.3s - 2146.04s : like how the bits are actually laid out in a single page,
+2146.54s - 2148.58s : where the files are, how the files are organized,
+2149.04s - 2150.72s : is your database one file, multiple file,
+2150.76s - 2151.58s : multiple directories.
+2152.3s - 2153.5s : All right, what do your extents look like?
+2153.52s - 2155.2s : Are you packing multiple, you know, files in a single,
+2155.42s - 2156.6s : or sorry, multiple pages in a single stent,
+2156.64s - 2157.86s : or is it a single stent for per table?
+2158.28s - 2160.88s : All that is handled at the physical schema level.
+2161.76s - 2163.8s : And then above that, you have the logical schema,
+2163.96s - 2165.92s : which is how the application is going to define
+2165.92s - 2167.82s : what's in my database.
+2168.28s - 2170.56s : I have these tables, I have these columns,
+2170.66s - 2171.78s : I have these constraints on them.
+2172.28s - 2173.7s : Typically, you would do this through SQL.
+2173.7s - 2176.12s : They get a create table command.
+2177.74s - 2179.62s : Then I have a further abstraction on top of that
+2179.62s - 2180.62s : called an external schema.
+2181.6s - 2184.74s : And this is where I can define sort of virtual tables
+2184.74s - 2185.94s : on top of my existing tables.
+2186.58s - 2187.5s : These are called views.
+2188.28s - 2189.96s : Again, we'll cover this throughout the semester.
+2190.04s - 2191.02s : But the idea here is that,
+2191.44s - 2194.08s : say I have some table of student records,
+2194.76s - 2197.02s : and I want to expose to different applications
+2197.02s - 2199.82s : portions of what's in that table.
+2199.92s - 2201.74s : So say, like, accounting needs to know
+2201.74s - 2202.64s : your social security number,
+2202.94s - 2205.06s : but they don't need to know your grades.
+2205.32s - 2206.76s : Say it's all in a single table.
+2207.1s - 2208.6s : So I can create a view that says,
+2208.74s - 2210.48s : this application can see the table
+2210.48s - 2211.42s : with these columns,
+2211.58s - 2212.94s : and this application can see the table
+2212.94s - 2213.7s : with these other columns.
+2214.04s - 2215.74s : Even though physically it's the same table,
+2216.04s - 2218.5s : it's just exposed to you in a different way.
+2219.82s - 2221.12s : And above that, at the very top,
+2221.16s - 2222.1s : this is the application code.
+2222.32s - 2224.18s : This is the Python code, JavaScript, whatever.
+2224.36s - 2224.82s : It doesn't matter.
+2225.44s - 2227.8s : That's going to interact with our database.
+2229.28s - 2231.22s : So physical independence would be this part here,
+2231.46s - 2235.5s : where I could define my tables and their contents,
+2235.8s - 2237.7s : but I don't care about how they're actually
+2237.7s - 2238.52s : being physically stored.
+2238.52s - 2241.72s : And I have a further level of logical independence,
+2241.98s - 2244.22s : where I could say, I have these logical tables,
+2244.32s - 2247.08s : but then I could sort of recompose them
+2247.08s - 2249.1s : in different ways for different applications
+2249.1s - 2249.86s : or different users,
+2250.08s - 2252.16s : and they don't need to know how things
+2252.16s - 2254.4s : are actually being stored at the logical level
+2254.4s - 2254.98s : right below it.
+2256.3s - 2258.06s : So this physical data independence,
+2258.52s - 2260.06s : this was a big deal,
+2260.16s - 2261.38s : because Codacel couldn't do this.
+2261.74s - 2262.64s : In your application code,
+2262.68s - 2264.04s : you had to know how to follow the pointers
+2264.04s - 2266.82s : of the data structures that the data system
+2266.82s - 2267.9s : was storing for you.
+2267.9s - 2270.38s : The relational model says there is no notion of pointers,
+2271.22s - 2272.88s : even though we're going to use pointers
+2272.88s - 2273.72s : to implement our system,
+2274.1s - 2277.1s : but we don't expose that to the application code.
+2278.04s - 2280.14s : Again, it's one of those things where it seems obvious now
+2280.14s - 2281.2s : when you hear it,
+2281.24s - 2283.3s : but back in the day, this was groundbreaking.
+2285.98s - 2287.02s : All right, so let's go a bit more now
+2287.02s - 2289.34s : what relations look like.
+2290.3s - 2291.24s : So as I said,
+2291.72s - 2293.82s : I'm going to use the term relation interchangeably
+2293.82s - 2294.2s : with table,
+2294.6s - 2297.82s : but to be pedantic to the relational model,
+2297.9s - 2298.68s : we'll call them relations.
+2299.68s - 2302.38s : So a relation is going to be an unordered set of data
+2302.38s - 2304.38s : that contains a relationship of attributes
+2304.38s - 2308.3s : that represent some entity in the world.
+2309.26s - 2310.88s : So again, going back to the artist table,
+2311.8s - 2315.44s : one record or one entity would be an artist that exists,
+2315.66s - 2316.42s : like the Wu-Tang Clan,
+2317.04s - 2318.54s : and we would have all the attributes
+2318.54s - 2320.7s : that represent the information or the metadata,
+2320.98s - 2321.88s : or sorry, not the metadata,
+2322.12s - 2324.68s : the attributes of that entity
+2324.68s - 2327.52s : together within a record.
+2327.9s - 2330.4s : And a record we're going to call a tuple.
+2331.06s - 2331.62s : Again, think of it,
+2331.88s - 2332.88s : I want to use the term row
+2332.88s - 2334.34s : because a row means it applies to a row store.
+2334.72s - 2336.12s : We'll see column stores later on,
+2336.26s - 2338.42s : but a tuple is going to represent some entity
+2338.42s - 2340.58s : or instance of an entity within my relation.
+2342.04s - 2343.54s : And so the original relational model
+2343.54s - 2345.88s : had to define that all the attributes
+2345.88s - 2349.44s : you would have in your relation
+2349.44s - 2351.32s : had to be atomic or scalar.
+2352.02s - 2352.92s : You couldn't have lists.
+2353.28s - 2354.84s : You couldn't have nested documents like JSON.
+2355.3s - 2357.5s : That has since obviously been relaxed.
+2357.52s - 2357.6s : So that's a little bit of a difference.
+2357.6s - 2357.68s : So that's a little bit of a difference.
+2357.68s - 2357.76s : So that's a little bit of a difference.
+2357.76s - 2357.88s : So that's a little bit of a difference.
+2357.88s - 2358.64s : And the SQL standard
+2358.64s - 2360.14s : and most data systems support these things.
+2360.4s - 2361.98s : But back in the 70s, you couldn't do this.
+2363.76s - 2365.64s : We'll also have a special value of null
+2365.64s - 2367.58s : if it's allowed,
+2367.68s - 2369.4s : because we can define that things can't be null
+2369.4s - 2370.78s : in our relations.
+2371.36s - 2372.32s : But this is just a way to say
+2372.32s - 2375.32s : that the value of something is unknown
+2375.32s - 2376.4s : for a given attribute.
+2378.2s - 2379.5s : So you would say a,
+2380.68s - 2382.78s : again, to be sort of pedantically correct,
+2383.06s - 2384.3s : you would say an n-ary relation,
+2384.42s - 2385.8s : meaning a relation with n attributes,
+2386.06s - 2387.62s : that's more or less equivalent to a table
+2387.62s - 2387.66s : with n attributes.
+2387.66s - 2388.68s : So a table with n columns.
+2389.8s - 2389.9s : Right?
+2390.64s - 2392.14s : And similar to if you say,
+2392.26s - 2392.78s : oh, I'm using,
+2392.94s - 2393.58s : what database are you using?
+2393.62s - 2394.68s : I'm using MySQL or Postgres.
+2394.92s - 2395.7s : People know what you mean.
+2395.8s - 2397.14s : So if you say table with these columns,
+2397.3s - 2397.88s : people know what you mean.
+2400.34s - 2402.54s : So a core concept of a relational model
+2402.54s - 2404.88s : is this idea of having a primary key.
+2405.78s - 2407.66s : And a primary key is going to be
+2407.66s - 2409.52s : some set of attributes
+2409.52s - 2413.48s : that uniquely represent one entity
+2413.48s - 2416.18s : within our relation.
+2417.66s - 2418.16s : Right?
+2418.26s - 2420.32s : So say, for simplicity,
+2420.5s - 2424.46s : we could say that no artist can have the same name.
+2424.58s - 2425.8s : So we could say that's our primary key.
+2426.2s - 2429.04s : Of course, we know that's not correct in the real world.
+2429.34s - 2430.4s : But for our purposes here,
+2430.42s - 2430.88s : we could say, oh yeah,
+2431.16s - 2434.0s : the primary key is a name for an artist.
+2434.32s - 2436.66s : So for a given name, like a string,
+2436.9s - 2438.7s : I can jump to one tuple that has that information.
+2440.58s - 2442.64s : So you don't always have to define a primary key.
+2443.88s - 2444.76s : Most relational databases
+2444.76s - 2446.06s : will let you define tables without it.
+2446.74s - 2447.64s : What we'll see later on,
+2447.64s - 2448.4s : is underneath the covers,
+2448.46s - 2449.72s : if you don't define a primary key,
+2450.08s - 2451.5s : some systems will actually create one for you.
+2452.8s - 2455.12s : And then even though you may define a primary key,
+2455.56s - 2457.2s : some systems may ignore that,
+2457.9s - 2459.9s : treat that as still a unique constraint,
+2460.2s - 2462.0s : like the value of the primary key is still unique,
+2462.3s - 2463.12s : but underneath the covers,
+2463.18s - 2464.32s : it maintains its own primary key.
+2465.4s - 2466.34s : So SQLite does this.
+2466.46s - 2468.68s : SQLite has its own incrementing value
+2468.68s - 2469.54s : as the primary key.
+2470.7s - 2472.76s : And it treats whatever you define as primary key
+2472.76s - 2473.58s : as a unique attribute.
+2475.26s - 2476.6s : So going back here,
+2476.6s - 2478.22s : as I said before,
+2478.22s - 2479.92s : we could use the name as the primary key,
+2479.92s - 2480.86s : but that's bad,
+2480.86s - 2482.46s : because obviously artists could have the same name.
+2483.0s - 2484.26s : So to get around this,
+2484.26s - 2487.12s : we could rely on a synthetic ID,
+2488.32s - 2489.78s : like a number,
+2490.42s - 2493.12s : that could represent that given attribute,
+2493.38s - 2494.32s : or sorry, given tuple.
+2495.32s - 2497.36s : And they could just be incremented monotonically,
+2497.36s - 2498.48s : 101, 102, 103.
+2498.98s - 2500.42s : So the SQL standard allows you to find
+2500.42s - 2501.62s : what are called identity columns.
+2502.28s - 2504.16s : Again, think of these as synthetic values
+2504.16s - 2506.0s : that don't really map to things in the real world,
+2506.0s - 2506.48s : but it's going to allow you to define them.
+2506.48s - 2507.68s : It's going to allow us in our application code
+2507.68s - 2510.28s : to uniquely define where that data is located.
+2511.74s - 2512.92s : SQL standard calls it identity.
+2513.38s - 2514.6s : Postgres and Oracle call it these sequences.
+2515.3s - 2517.0s : And as we'll see throughout the semester,
+2517.36s - 2518.56s : MySQL, for whatever reason,
+2518.6s - 2519.34s : does things differently.
+2519.78s - 2520.92s : They call it an auto-increment key.
+2522.6s - 2522.82s : Right?
+2522.9s - 2524.06s : So it would be this column here.
+2525.88s - 2527.32s : So in addition to the primary keys,
+2527.36s - 2528.34s : we also have foreign keys.
+2529.1s - 2530.54s : And the foreign keys are going to allow us
+2530.54s - 2532.72s : to map some set of attributes
+2532.72s - 2534.8s : from one relation to another relation
+2534.8s - 2536.4s : to define that those things
+2536.4s - 2537.06s : are linked together.
+2538.0s - 2539.96s : And again, this is different from what Codacel did.
+2540.06s - 2541.42s : Codacel would actually have pointers
+2541.42s - 2544.28s : from one record to another record
+2544.28s - 2545.58s : that you would literally follow
+2545.58s - 2548.2s : either through memory or through disk access
+2548.2s - 2550.4s : to go find the things that it was connected to.
+2551.7s - 2553.04s : But in the relational model,
+2553.14s - 2554.3s : instead we're going to use values
+2554.3s - 2557.32s : to represent those relationships.
+2558.5s - 2559.6s : So say before, remember,
+2559.76s - 2561.18s : we wanted to be able to keep track of
+2561.18s - 2563.32s : all the artists in our album.
+2564.58s - 2566.28s : But if the album only has
+2566.28s - 2567.38s : one artist, well, that's fine
+2567.38s - 2568.76s : because we just stored the single value.
+2569.82s - 2571.44s : But what if I have a mix table, again,
+2571.48s - 2573.14s : with multiple artists on it?
+2573.66s - 2575.48s : Now, again, I said you can store arrays
+2575.48s - 2577.14s : as attributes.
+2577.68s - 2578.54s : Ignore that for now.
+2579.52s - 2583.86s : In the true relational model form,
+2584.22s - 2585.54s : you would actually have to store this
+2585.54s - 2586.98s : as a separate cross-reference table
+2586.98s - 2589.16s : that keeps track of,
+2589.58s - 2590.5s : for a given artist ID,
+2591.12s - 2592.4s : what album do they appear on?
+2593.28s - 2595.22s : And so these would be called the foreign keys.
+2595.32s - 2596.14s : You would have a foreign key,
+2596.14s - 2596.98s : from the artist table,
+2597.54s - 2599.22s : the artist ID that points to the record
+2599.22s - 2599.78s : in the artist table.
+2600.22s - 2601.06s : And you have an album ID,
+2601.14s - 2603.54s : it's a foreign key pointing to the album table.
+2605.0s - 2606.46s : And again, it's up to the data center
+2606.46s - 2608.64s : to decide how to make this work efficiently.
+2609.44s - 2610.74s : Typically, there's going to be an index
+2610.74s - 2613.54s : that says, for this record here,
+2613.64s - 2614.54s : give it a look up on,
+2615.02s - 2615.98s : if I have an album ID,
+2616.54s - 2619.16s : I have to have an index on that ID
+2619.16s - 2619.92s : in the other table.
+2620.18s - 2622.18s : So when I go insert something into this table
+2622.18s - 2623.06s : and I need to quickly check,
+2623.3s - 2625.08s : does this album ID actually exist,
+2625.58s - 2626.08s : I can do that,
+2626.08s - 2626.9s : you quickly do that look up.
+2628.28s - 2629.04s : And these foreign keys
+2629.04s - 2630.28s : are going to allow us to handle constraints
+2630.28s - 2631.2s : or other issues where like,
+2631.56s - 2633.48s : if now I delete an artist
+2633.48s - 2636.72s : and I want to cascade and remove all their albums,
+2637.26s - 2638.44s : well, I can follow this table
+2638.44s - 2640.16s : to go find all the albums that they belong to
+2640.16s - 2641.9s : and then go make sure I delete things here.
+2642.34s - 2642.88s : Or in some cases,
+2643.0s - 2644.34s : you can prevent you from deleting things.
+2644.4s - 2645.56s : You say, I can't delete a record
+2645.56s - 2648.0s : if I know I have a foreign key reference over here.
+2650.28s - 2651.08s : Basically, the data system
+2651.08s - 2652.84s : is preventing you from shooting yourself in the foot.
+2653.92s - 2654.32s : And you may think,
+2654.36s - 2655.32s : oh, I'm a CMU student,
+2655.4s - 2656.06s : I'm not going to make this,
+2656.08s - 2656.28s : I'm going to make mistakes.
+2656.44s - 2657.4s : Everybody makes mistakes.
+2658.24s - 2659.2s : And so the data system
+2659.2s - 2661.06s : can prevent you from causing a lot of problems.
+2663.26s - 2665.06s : So I sort of mentioned this with the foreign keys,
+2665.16s - 2666.1s : but the idea of constraints,
+2666.22s - 2668.32s : these are a way to define
+2668.32s - 2670.76s : what data is allowed to look like.
+2671.72s - 2673.76s : And that can be either within a single attribute
+2673.76s - 2677.72s : or multiple attributes within a tuple
+2677.72s - 2680.38s : or what values are allowed to look like
+2680.38s - 2681.64s : across multiple tuples
+2681.64s - 2684.3s : within a table,
+2684.38s - 2684.9s : within a relation.
+2684.9s - 2688.56s : So we said, oh, the artist ID has to be unique
+2688.56s - 2689.44s : because that's the primary key.
+2689.6s - 2690.46s : That's a constraint.
+2691.14s - 2692.74s : That's saying that there's only one tuple
+2692.74s - 2693.94s : that can have a given artist ID
+2693.94s - 2695.5s : across the entire table.
+2697.22s - 2699.76s : So the most common ones are going to be unique keys
+2699.76s - 2700.98s : and then the foreign key references.
+2702.04s - 2703.72s : The SQL standard from 1992
+2703.72s - 2707.22s : has this idea of basically global asserts.
+2707.36s - 2710.06s : But I think maybe some systems implement this,
+2710.1s - 2710.88s : but they're rarely used
+2710.88s - 2711.7s : because they're really slow.
+2712.02s - 2713.02s : Because think of like every single time
+2713.02s - 2714.44s : I insert into the table,
+2714.44s - 2714.54s : I insert into the table.
+2714.54s - 2714.6s : I insert into the table.
+2714.6s - 2714.66s : I insert into the table.
+2714.66s - 2714.72s : I insert into the table.
+2714.72s - 2714.74s : I insert into the table.
+2714.74s - 2714.76s : I insert into the table.
+2714.76s - 2714.88s : I insert into the table.
+2714.9s - 2714.94s : I insert into the table.
+2714.94s - 2715.64s : I run this other query
+2715.64s - 2716.88s : to see whether my constraint
+2716.88s - 2717.82s : has been violated or not.
+2719.26s - 2720.78s : So the most common you'll see of them
+2720.78s - 2722.34s : is defined in the table itself.
+2723.02s - 2724.5s : So if I could say I have a name,
+2724.72s - 2725.74s : it's going to be a var char
+2725.74s - 2726.86s : that's a string type,
+2727.14s - 2728.08s : and then not null.
+2728.42s - 2730.0s : That not null part is the constraint
+2730.0s - 2732.2s : that says you can't assert a record
+2732.2s - 2733.26s : with a null name.
+2734.8s - 2735.62s : Another one could be
+2735.62s - 2737.16s : an explicit check down here.
+2737.46s - 2738.76s : We could say that the year
+2738.76s - 2740.26s : has to be greater than 1900
+2740.26s - 2743.14s : because nobody can be born in the 1800s.
+2743.16s - 2743.68s : It's not correct,
+2743.68s - 2744.72s : but in the real world,
+2744.72s - 2746.16s : but that's the idea
+2746.16s - 2747.32s : of how you could apply
+2747.32s - 2748.16s : different constraints like that.
+2749.82s - 2750.26s : And as I said,
+2750.32s - 2751.74s : you have these global asserts.
+2751.96s - 2753.38s : There's a create assertion command.
+2753.9s - 2755.18s : You basically put a SQL statement in,
+2755.2s - 2755.8s : and every single time
+2755.8s - 2756.88s : you modify the table,
+2757.18s - 2757.92s : this thing runs.
+2758.46s - 2759.92s : But again, they're super slow.
+2760.8s - 2761.64s : You can always think big.
+2761.74s - 2762.84s : I have a billion records,
+2763.3s - 2764.08s : and I've got to scan
+2764.08s - 2764.98s : to make sure that some constraint
+2764.98s - 2765.46s : is not violated
+2765.46s - 2766.42s : across those billion records.
+2766.82s - 2768.52s : Every single update of that table,
+2768.76s - 2769.38s : I've got to run that
+2769.38s - 2770.06s : across a billion tuples,
+2770.16s - 2770.52s : and that's bad.
+2773.94s - 2774.38s : All right.
+2774.42s - 2774.7s : So then,
+2774.72s - 2775.62s : the next thing is the DML,
+2776.32s - 2776.92s : and it's basically
+2776.92s - 2777.96s : the way we're going to manipulate
+2777.96s - 2780.24s : and interact with the database
+2780.24s - 2781.2s : through the relational model.
+2781.9s - 2783.16s : And there's sort of two categories
+2783.16s - 2786.5s : of the DML you could have,
+2786.56s - 2787.04s : a programming language
+2787.04s - 2788.42s : you could have in a database.
+2788.94s - 2790.2s : The first is going to be procedural,
+2790.78s - 2791.74s : where this is basically
+2791.74s - 2793.26s : defining the exact steps
+2793.26s - 2794.66s : you want the data system to execute
+2794.66s - 2796.06s : in order to run your query.
+2796.78s - 2797.46s : And the other one
+2797.46s - 2798.26s : would be non-procedural
+2798.26s - 2798.88s : or declarative,
+2799.16s - 2800.42s : where this is you're specifying
+2800.42s - 2801.74s : the answer you want
+2801.74s - 2803.72s : the data system to compute for you.
+2804.1s - 2804.7s : You don't have to find
+2804.7s - 2806.64s : how you want to compute it.
+2807.48s - 2807.78s : You just say,
+2807.94s - 2808.88s : but this is just what I want.
+2810.16s - 2811.54s : So for this class here,
+2811.66s - 2812.32s : today's lecture,
+2812.6s - 2813.66s : we're going to focus on this one
+2813.66s - 2814.18s : because this is going to be
+2814.18s - 2814.74s : relational algebra.
+2815.5s - 2815.92s : And as I said,
+2816.04s - 2817.38s : no data system will expose
+2817.38s - 2818.92s : a relational algebra interface to you
+2818.92s - 2819.54s : because it's just
+2819.54s - 2821.52s : too cumbersome to write it,
+2822.22s - 2824.0s : and you're basically defining
+2824.0s - 2825.38s : what the query plan should be.
+2826.82s - 2828.92s : Most systems will support this,
+2829.04s - 2829.9s : a declarative language,
+2830.18s - 2831.22s : and this will be based on
+2831.22s - 2832.54s : what we call relational calculus.
+2833.5s - 2834.38s : For this class,
+2834.38s - 2834.96s : you don't need to know
+2834.96s - 2835.8s : relational calculus,
+2835.98s - 2837.66s : but it's a higher level form
+2837.66s - 2839.38s : of defining operations
+2840.26s - 2841.34s : over the relational model.
+2842.14s - 2843.66s : So if you take the advanced class,
+2843.72s - 2844.18s : or we might do
+2844.18s - 2845.12s : the special topics class
+2845.12s - 2846.2s : in the spring semester
+2846.2s - 2847.44s : on query optimizers,
+2848.16s - 2849.5s : relational calculus will come up,
+2850.04s - 2850.72s : sparingly.
+2851.28s - 2853.34s : But for our purposes here today,
+2853.4s - 2853.94s : in this semester,
+2854.02s - 2854.64s : we only really care
+2854.64s - 2855.26s : about relational algebra.
+2856.68s - 2858.06s : Earlier inversions of this course
+2858.06s - 2859.04s : used to teach relational calculus,
+2859.18s - 2861.58s : but nobody uses that
+2861.58s - 2862.0s : in the real world,
+2862.0s - 2862.5s : unless you're learning
+2862.5s - 2863.08s : query optimizer.
+2864.38s - 2866.96s : All right, so relational algebra
+2866.96s - 2868.76s : is going to define,
+2868.86s - 2869.46s : so the relational model
+2869.46s - 2870.04s : is going to define
+2870.04s - 2872.0s : seven primitives,
+2872.66s - 2874.12s : and the idea here is that
+2874.12s - 2875.66s : we can use these to construct
+2875.66s - 2877.84s : any possible query you would want
+2877.84s - 2879.36s : to have on a relational database.
+2879.88s - 2881.16s : Now, not entirely true.
+2882.16s - 2883.02s : Ted Codd's original paper
+2883.02s - 2883.84s : in the 70s defined
+2883.84s - 2886.88s : these seven primitives.
+2887.22s - 2888.26s : It's since been expanded
+2888.26s - 2889.42s : because this doesn't handle
+2889.42s - 2890.12s : things like sorting,
+2890.62s - 2891.2s : or aggregations,
+2891.26s - 2891.8s : or group bys.
+2893.06s - 2894.14s : But I want to cover
+2894.14s - 2895.78s : the core primitives,
+2896.22s - 2897.52s : and then it's sort of trivial
+2897.52s - 2898.44s : to see how you could extend that
+2898.44s - 2899.16s : to do other things
+2899.16s - 2900.2s : that you want to do
+2900.2s - 2900.92s : in a real system.
+2902.42s - 2903.54s : So we're going to be able
+2903.54s - 2904.48s : to chain these things together
+2904.48s - 2906.06s : to compute more complex queries,
+2906.3s - 2906.9s : but I'm going to go through
+2906.9s - 2908.2s : each of them one by one.
+2909.84s - 2911.06s : So the most basic operation
+2911.06s - 2912.86s : you can do is a select.
+2914.64s - 2915.64s : And this is basically
+2915.64s - 2917.02s : the first order predicate logic
+2917.02s - 2917.5s : to say,
+2917.7s - 2918.8s : here's how to identify
+2918.8s - 2919.78s : the tuples that I want
+2919.78s - 2921.22s : for a given relation.
+2921.72s - 2922.58s : And it could be
+2922.58s - 2923.1s : what I'll call
+2923.1s - 2923.84s : the base relation,
+2923.84s - 2924.86s : whatever I define
+2924.86s - 2925.82s : in my database,
+2926.16s - 2926.84s : I'm going directly
+2926.84s - 2927.9s : at those tables.
+2928.34s - 2929.26s : Or it could be
+2929.26s - 2930.56s : from the output
+2930.56s - 2931.9s : of another relational operator
+2931.9s - 2933.18s : that's feeding
+2933.18s - 2934.48s : into my select operator.
+2936.04s - 2936.48s : And so basically
+2936.48s - 2937.98s : you're going to find predicates
+2937.98s - 2940.22s : that be based on
+2940.22s - 2941.02s : Boolean logic
+2941.02s - 2942.18s : to define what tuples
+2942.18s - 2942.78s : are allowed to set,
+2942.98s - 2943.84s : or what tuples satisfy
+2944.42s - 2946.18s : the constraints
+2946.18s - 2947.48s : you want on the data,
+2947.9s - 2948.96s : and then any tuple
+2948.96s - 2949.98s : that does satisfy
+2949.98s - 2951.3s : is then emitted as output.
+2952.34s - 2952.86s : So say I have
+2952.86s - 2953.54s : a really simple table
+2953.54s - 2953.98s : or relation
+2953.98s - 2954.88s : with two attributes,
+2955.04s - 2955.98s : AID and BID.
+2956.82s - 2958.08s : I can define a,
+2959.02s - 2959.84s : do a select
+2959.84s - 2960.54s : where the predicate is
+2960.54s - 2962.06s : where AID equals A2
+2962.06s - 2963.7s : against the relation R,
+2964.18s - 2964.96s : and that just matches
+2964.96s - 2966.24s : any record
+2966.24s - 2968.6s : where AID equals A2.
+2969.78s - 2969.98s : Right?
+2970.7s - 2971.78s : It's like the where clause
+2971.78s - 2972.56s : in a select statement
+2972.56s - 2973.24s : if you're familiar with that.
+2974.38s - 2974.94s : And you combine
+2974.94s - 2975.52s : these things together,
+2975.6s - 2976.78s : conjunctions and disjunctions,
+2976.88s - 2977.38s : so I can say,
+2977.88s - 2979.54s : find me all the tuples
+2979.54s - 2980.1s : from R
+2980.1s - 2981.56s : where AID equals 2
+2981.56s - 2983.24s : and BID is greater
+2983.24s - 2983.52s : than 1.
+2983.54s - 2983.6s : So I can say,
+2983.6s - 2983.62s : find me all the tuples
+2983.62s - 2983.9s : from R
+2983.9s - 2983.92s : where AID equals 2
+2983.92s - 2983.96s : and BID equals 1.
+2983.96s - 2984.98s : And it produces
+2984.98s - 2985.84s : that relation
+2985.84s - 2986.28s : as the output.
+2988.12s - 2988.26s : Right?
+2988.92s - 2989.54s : So for me,
+2989.62s - 2990.5s : the way I always remember this
+2990.5s - 2991.4s : is like the,
+2991.56s - 2993.04s : it's the lowercase
+2993.04s - 2994.04s : sigma symbol,
+2994.58s - 2995.68s : S for sigma,
+2995.9s - 2996.56s : S for select.
+2998.2s - 2999.02s : Easy mnemonic
+2999.02s - 2999.52s : to remember that.
+3001.32s - 3002.18s : So in SQL,
+3002.54s - 3003.12s : which most of you
+3003.12s - 3003.52s : are going to be writing,
+3004.02s - 3004.94s : it's just the where clause.
+3005.38s - 3005.56s : Right?
+3005.86s - 3006.8s : So select R from R
+3006.8s - 3008.16s : and then my where clause
+3008.16s - 3008.68s : be the predicate
+3008.68s - 3009.68s : for how I'm filtering tuples.
+3011.1s - 3011.94s : And that's equivalent
+3011.94s - 3012.54s : to defining
+3012.54s - 3013.46s : the select operator.
+3013.54s - 3013.68s : Here.
+3015.98s - 3016.46s : All right.
+3016.48s - 3016.94s : The next thing we do
+3016.94s - 3017.5s : is projection.
+3018.4s - 3019.42s : And this is where
+3019.42s - 3020.14s : we're defining
+3020.14s - 3021.26s : what the output
+3021.26s - 3021.96s : should look like
+3021.96s - 3023.02s : in terms of
+3023.02s - 3024.02s : what attributes
+3024.02s - 3024.7s : that we care about
+3024.7s - 3025.3s : from our input
+3025.3s - 3026.44s : that we want to produce
+3026.44s - 3027.02s : as the output
+3027.02s - 3028.28s : as well as
+3028.28s - 3029.16s : how to manipulate
+3029.16s - 3029.78s : that,
+3030.0s - 3030.8s : those attributes
+3030.8s - 3031.58s : in any given way.
+3032.62s - 3033.46s : So again,
+3033.68s - 3033.92s : same,
+3033.94s - 3035.04s : same relation on R
+3035.04s - 3036.1s : with AID and BID.
+3036.58s - 3037.6s : I could have
+3037.6s - 3038.6s : a projection
+3038.6s - 3040.44s : where I take
+3040.44s - 3040.94s : whatever the,
+3040.94s - 3041.62s : the input is
+3041.62s - 3041.96s : from the,
+3041.96s - 3042.78s : from this interrelation,
+3042.94s - 3043.1s : sorry,
+3043.2s - 3043.36s : inter,
+3043.54s - 3044.32s : operator here.
+3044.62s - 3045.1s : So here I'm doing
+3045.1s - 3045.64s : a select
+3045.64s - 3047.32s : or on,
+3047.54s - 3048.86s : where AID equals A2
+3048.86s - 3049.96s : and then I take
+3049.96s - 3050.4s : the output
+3050.4s - 3051.34s : of this inner select
+3051.34s - 3052.54s : and now project it
+3052.54s - 3052.98s : where I take
+3052.98s - 3053.92s : the BID value
+3053.92s - 3055.2s : or BID attribute,
+3055.56s - 3056.66s : subtract 100 to it
+3056.66s - 3058.04s : and then also produce
+3058.04s - 3059.06s : AID as the output.
+3059.6s - 3060.52s : So not only
+3060.52s - 3061.3s : am I selecting
+3061.3s - 3062.22s : what attributes I want,
+3062.46s - 3062.92s : I can change
+3062.92s - 3063.66s : the order of them,
+3063.72s - 3064.64s : I can manipulate them,
+3064.98s - 3065.42s : I can do
+3065.42s - 3066.78s : arithmetic operations,
+3066.96s - 3067.46s : string functions,
+3067.54s - 3068.06s : whatever you want.
+3068.62s - 3069.02s : Right?
+3069.16s - 3069.92s : And you're just defining
+3069.92s - 3070.66s : what you want the output
+3070.66s - 3071.34s : to look like
+3071.34s - 3072.28s : from any given input.
+3073.54s - 3074.1s : And that's equivalent
+3074.1s - 3074.9s : to the,
+3074.98s - 3075.88s : like the select operator,
+3076.1s - 3077.24s : the projection clause
+3077.24s - 3077.96s : of a select operator
+3077.96s - 3079.14s : in SQL.
+3081.02s - 3081.86s : So far so good?
+3084.8s - 3085.54s : So then now
+3085.54s - 3086.16s : we're going to be able
+3086.16s - 3086.9s : to start combining
+3086.9s - 3088.08s : relations together
+3088.08s - 3089.46s : because again,
+3089.6s - 3090.38s : the idea is that
+3090.38s - 3090.82s : instead of having
+3090.82s - 3091.86s : this one giant relation
+3091.86s - 3092.5s : with every single
+3092.5s - 3093.26s : possible attribute
+3093.26s - 3093.84s : I could have
+3093.84s - 3094.62s : for whatever,
+3094.74s - 3095.26s : whatever it is
+3095.26s - 3096.4s : I'm trying to model
+3096.4s - 3096.88s : in my database,
+3097.3s - 3098.04s : I'm going to break it up
+3098.04s - 3098.48s : into relations
+3098.48s - 3100.72s : and then combine them
+3100.72s - 3101.7s : together to reconstruct
+3101.7s - 3102.84s : the original form.
+3103.54s - 3105.46s : So I have the union operator
+3105.46s - 3106.54s : which basically just takes
+3106.54s - 3107.48s : all the attributes
+3107.48s - 3109.52s : from one side
+3109.52s - 3110.58s : and all the attributes
+3110.58s - 3111.16s : from the other side
+3111.16s - 3113.78s : and just sort of
+3113.78s - 3114.74s : mashes them together
+3114.74s - 3115.66s : into a single,
+3115.66s - 3116.36s : single relation.
+3117.18s - 3117.94s : In this case here,
+3118.06s - 3119.56s : this operator only works
+3119.56s - 3120.16s : if the,
+3120.7s - 3121.58s : if the,
+3121.66s - 3122.44s : both the relations
+3122.44s - 3123.12s : you're trying to union
+3123.12s - 3124.54s : have the same,
+3124.64s - 3126.18s : the same attributes
+3126.18s - 3126.96s : of the same types.
+3128.8s - 3129.3s : Right?
+3129.36s - 3129.82s : Because you're literally
+3129.82s - 3130.22s : just taking,
+3130.5s - 3131.1s : concatenating,
+3131.54s - 3131.8s : you know,
+3131.8s - 3132.4s : taking R
+3132.4s - 3133.18s : and putting S
+3133.18s - 3133.52s : at the bottom
+3133.54s - 3133.82s : of it
+3133.82s - 3134.44s : and that's the output.
+3135.64s - 3136.1s : So in SQL
+3136.1s - 3136.7s : you can do this
+3136.7s - 3136.88s : with the,
+3136.96s - 3138.12s : there is a union operator
+3138.12s - 3139.58s : where you basically
+3139.58s - 3141.1s : combine the values
+3141.1s - 3141.92s : of two select statements
+3141.92s - 3142.28s : and again,
+3142.34s - 3142.76s : they have to have
+3142.76s - 3143.26s : the same attributes
+3143.26s - 3143.64s : because you're just
+3143.64s - 3144.5s : concatenating the tuples
+3144.5s - 3145.34s : combining them
+3145.34s - 3146.02s : into a single output.
+3147.98s - 3148.38s : Of course,
+3148.46s - 3149.08s : if there's a union,
+3149.18s - 3149.82s : there's an intersection,
+3150.66s - 3150.92s : right?
+3151.36s - 3152.28s : An intersection is just
+3152.28s - 3153.86s : taking the,
+3155.12s - 3155.92s : finding the where,
+3156.12s - 3156.48s : sorry,
+3156.62s - 3157.02s : back, yes?
+3162.58s - 3163.4s : This question is,
+3163.54s - 3163.82s : if there's,
+3164.4s - 3164.62s : in,
+3165.04s - 3165.62s : for union,
+3165.98s - 3166.76s : if there's a tuple
+3166.76s - 3167.68s : that exists in both tables,
+3168.14s - 3169.28s : will it reuse them?
+3171.72s - 3172.54s : Let me think about this.
+3173.42s - 3174.64s : In the original relational model,
+3175.04s - 3175.52s : no,
+3175.64s - 3176.78s : because it's based on sets.
+3177.36s - 3178.2s : In SQL,
+3178.78s - 3179.98s : the answer is yes.
+3181.26s - 3181.5s : Sorry,
+3181.86s - 3182.6s : other way around.
+3183.24s - 3183.52s : In,
+3183.62s - 3184.86s : in the original relational model,
+3184.96s - 3185.92s : it'll remove duplicates.
+3186.48s - 3187.22s : In SQL,
+3187.68s - 3188.64s : it will keep them.
+3189.38s - 3190.14s : So in SQL,
+3190.22s - 3190.78s : if you do a union,
+3190.9s - 3191.5s : it keeps them.
+3191.5s - 3193.1s : You put union all,
+3193.54s - 3194.98s : then it removes them.
+3196.06s - 3196.98s : Because by default,
+3197.1s - 3197.96s : they want to be efficient
+3197.96s - 3198.84s : because it's extra work
+3198.84s - 3199.6s : to find the duplicates.
+3202.92s - 3203.5s : I'll say also too,
+3203.58s - 3204.54s : this is unordered.
+3204.92s - 3205.54s : So even though I'm showing
+3205.54s - 3206.6s : R followed by S,
+3207.18s - 3207.48s : this is going to be
+3207.48s - 3208.1s : a key thing we see
+3208.1s - 3209.7s : throughout the semester
+3209.7s - 3212.32s : is the order of
+3212.32s - 3213.82s : the relational model
+3213.82s - 3215.18s : in SQL is undefined.
+3215.92s - 3217.58s : So it's okay for things
+3217.58s - 3218.36s : to end up being,
+3218.54s - 3218.72s : you know,
+3218.84s - 3220.12s : maybe inserted into your table
+3220.12s - 3221.4s : and then when you read them back,
+3221.4s - 3221.88s : they come back
+3221.88s - 3222.48s : in a different order.
+3223.16s - 3223.52s : And this is going to,
+3223.52s - 3223.92s : it's going to open up
+3223.92s - 3224.64s : a lot of opportunities
+3224.64s - 3225.52s : for us to optimize things
+3225.52s - 3226.08s : in different ways
+3226.08s - 3226.78s : because we don't have
+3226.78s - 3227.64s : to maintain that order.
+3228.02s - 3228.16s : Now,
+3228.36s - 3229.0s : in some cases,
+3229.0s - 3230.0s : we do want that order.
+3230.68s - 3231.46s : We have to put constraints
+3231.46s - 3232.54s : on top of that to do that.
+3232.6s - 3233.1s : And some systems
+3233.1s - 3234.2s : will always store data
+3234.2s - 3235.18s : in sort of order
+3235.18s - 3236.66s : in some manner.
+3237.2s - 3238.44s : But we'll see examples
+3238.44s - 3239.14s : when we see,
+3239.16s - 3239.82s : you know,
+3239.94s - 3240.6s : manipulating
+3240.6s - 3241.56s : or updating
+3241.56s - 3242.6s : the database
+3242.6s - 3244.26s : through transactions
+3244.26s - 3245.66s : that if we maybe run
+3245.66s - 3246.06s : like a background
+3246.06s - 3246.64s : garbage collector,
+3246.72s - 3247.78s : it could reorder things
+3247.78s - 3248.8s : in any way we want
+3248.8s - 3249.48s : and we get back things
+3249.48s - 3249.98s : in a different order.
+3250.98s - 3251.68s : So if you care about
+3251.68s - 3252.52s : getting back things
+3252.52s - 3253.04s : in the right order,
+3253.04s - 3254.52s : you define an order by clause
+3254.52s - 3255.9s : in SQL.
+3256.36s - 3256.72s : But again,
+3256.78s - 3257.32s : the original version
+3257.32s - 3257.92s : of the relational model
+3257.92s - 3258.6s : does not have that.
+3260.84s - 3262.16s : So intersection is,
+3262.28s - 3262.34s : again,
+3262.44s - 3263.08s : finding things
+3263.08s - 3264.1s : that are in both.
+3264.54s - 3265.6s : In this case here,
+3265.9s - 3266.34s : I have to have,
+3266.4s - 3266.6s : again,
+3266.64s - 3266.92s : I have to have
+3266.92s - 3267.54s : the same attributes.
+3268.04s - 3269.66s : There's only one tuple
+3269.66s - 3270.52s : that matches to both of them,
+3270.6s - 3271.88s : A3 and 103,
+3272.26s - 3273.0s : and that produces
+3273.0s - 3274.48s : the output below.
+3278.34s - 3279.24s : Difference is
+3279.24s - 3280.9s : finding all the tuples
+3280.9s - 3281.26s : that appear
+3281.26s - 3282.1s : in the first relation
+3282.1s - 3283.02s : and the second relation
+3283.04s - 3284.62s : but not in the second relation.
+3285.76s - 3286.2s : Again,
+3286.26s - 3286.92s : this is just sort of
+3286.92s - 3288.08s : set theory stuff here.
+3288.18s - 3289.2s : Nothing exotic.
+3289.98s - 3291.48s : So I can do this again
+3291.48s - 3291.96s : in SQL
+3291.96s - 3293.48s : using the accept operator.
+3294.22s - 3294.62s : Again, here,
+3295.06s - 3295.4s : I have A,
+3295.82s - 3296.84s : I produce my output
+3296.84s - 3297.54s : A1, 100,
+3297.74s - 3298.78s : 101, A2, 102
+3298.78s - 3299.8s : because those things
+3299.8s - 3301.1s : don't exist in S.
+3301.48s - 3302.2s : But because I have
+3302.2s - 3302.82s : A3, 103,
+3303.2s - 3303.78s : also in S,
+3303.96s - 3304.96s : that thing is excluded
+3304.96s - 3306.28s : from my output.
+3309.96s - 3310.46s : All right,
+3310.48s - 3310.94s : so this is,
+3310.94s - 3311.36s : again,
+3311.42s - 3312.34s : this is basic set theory.
+3313.04s - 3315.24s : But it still doesn't,
+3315.64s - 3316.5s : it's not allowing us
+3316.5s - 3317.48s : to identify
+3317.48s - 3319.36s : the relations
+3319.36s - 3319.78s : that we would,
+3319.86s - 3320.42s : or the relationship
+3320.42s - 3321.0s : or the connections
+3321.0s - 3322.3s : between different relations
+3322.3s - 3322.9s : that we would want.
+3323.56s - 3324.68s : So to do that,
+3324.74s - 3325.22s : we want to do
+3325.22s - 3326.1s : what are called joins.
+3326.72s - 3327.6s : But before we get joins,
+3327.64s - 3328.02s : we have to do
+3328.02s - 3328.72s : a Cartesian product
+3328.72s - 3329.54s : because that's the basis
+3329.54s - 3330.1s : of how we're going
+3330.1s - 3330.94s : to do joins later on.
+3331.84s - 3332.68s : So Cartesian product,
+3332.86s - 3333.14s : yes?
+3337.84s - 3338.54s : This question is,
+3338.76s - 3339.74s : for these operations here,
+3339.82s - 3340.16s : do the columns
+3340.16s - 3340.54s : have to be the same?
+3340.68s - 3340.92s : Yes.
+3342.02s - 3342.78s : Joins, we'll see in a second,
+3342.78s - 3343.22s : or they don't.
+3343.7s - 3344.62s : For union,
+3344.78s - 3345.14s : intersection,
+3345.22s - 3345.52s : and difference,
+3345.58s - 3346.14s : they have to be yes.
+3350.78s - 3351.22s : All right,
+3351.3s - 3352.4s : so the,
+3352.56s - 3353.24s : the,
+3353.94s - 3355.0s : let's say the easiest,
+3355.24s - 3355.56s : the,
+3355.56s - 3355.62s : the,
+3355.62s - 3357.72s : a naive join
+3357.72s - 3358.18s : would be
+3358.18s - 3359.02s : the Cartesian product.
+3359.14s - 3359.56s : We're just taking
+3359.56s - 3360.44s : all the tuples
+3360.44s - 3361.36s : that are one relation
+3361.36s - 3362.46s : and all the tuples
+3362.46s - 3363.18s : in the other relation
+3363.18s - 3363.92s : and just finding
+3363.92s - 3364.82s : all combinations of them
+3364.82s - 3365.62s : and producing the output.
+3366.44s - 3366.62s : Right?
+3366.68s - 3367.46s : So in this case here,
+3367.58s - 3368.56s : if I do the Cartesian product
+3368.56s - 3369.22s : on R and S,
+3369.68s - 3370.94s : I get all of these.
+3371.02s - 3372.32s : So for every AID,
+3372.58s - 3372.7s : sorry,
+3372.78s - 3374.2s : where AID is A1
+3374.2s - 3374.64s : and 101,
+3375.2s - 3376.22s : I then generate
+3376.22s - 3377.04s : all of the,
+3377.26s - 3378.6s : sorry,
+3380.24s - 3381.14s : I generate all of the,
+3381.18s - 3381.98s : these guys here,
+3382.26s - 3382.88s : just mash them together
+3382.88s - 3383.44s : and that's these.
+3383.52s - 3383.96s : And then I go into
+3383.96s - 3384.94s : the next tuple on this side
+3384.94s - 3386.38s : and get all the A2,
+3386.42s - 3386.92s : 102s,
+3386.98s - 3387.62s : and then mash them together
+3387.62s - 3387.88s : and that.
+3388.86s - 3389.12s : Right?
+3390.18s - 3391.12s : So you may think,
+3391.22s - 3392.2s : why is this a good idea?
+3392.28s - 3392.74s : Why would you ever
+3392.74s - 3393.52s : actually want to do this?
+3393.54s - 3394.22s : Because you're generating
+3394.22s - 3394.8s : a bunch of data
+3394.8s - 3395.82s : that actually doesn't
+3395.82s - 3396.3s : actually match
+3396.3s - 3398.44s : with what's in the real world.
+3399.52s - 3400.32s : This shows up
+3400.32s - 3401.18s : when you do experiments
+3401.18s - 3402.04s : and experiment analysis
+3402.04s - 3402.76s : and sometimes in tests.
+3402.78s - 3403.38s : Because you want to get
+3403.38s - 3404.36s : all possible combinations
+3404.36s - 3405.02s : of your inputs,
+3405.72s - 3406.14s : you would do the
+3406.14s - 3407.0s : Cartesian product for that.
+3408.88s - 3409.64s : But more importantly,
+3409.7s - 3410.58s : from a theoretical perspective,
+3410.7s - 3411.3s : this is going to be
+3411.3s - 3412.52s : the basis of how
+3412.52s - 3413.28s : we're going to do joins
+3413.28s - 3414.52s : in the next operator
+3414.52s - 3415.84s : because what we're going
+3415.84s - 3416.28s : to want to do
+3416.28s - 3417.54s : is find all the,
+3417.98s - 3418.14s : you know,
+3418.18s - 3420.0s : where the AIDs in R
+3420.0s - 3421.36s : match with the AIDs in Ss.
+3421.5s - 3422.02s : Because we know
+3422.02s - 3422.38s : they're going to be
+3422.38s - 3423.48s : connected in some way
+3423.48s - 3424.7s : based on how we define them
+3424.7s - 3425.46s : in our schema.
+3427.68s - 3428.74s : So you can do this in SQL.
+3428.84s - 3429.44s : There is an explicit
+3429.44s - 3430.94s : cross-join operator
+3430.94s - 3432.1s : or keyword
+3432.1s - 3432.76s : where you can
+3432.78s - 3433.3s : write, so I can say
+3433.3s - 3434.22s : select star from R
+3434.22s - 3435.08s : cross-join with S
+3435.08s - 3435.46s : and that gives you
+3435.46s - 3436.06s : the Cartesian product.
+3436.62s - 3437.8s : Or it's not recommended
+3437.8s - 3438.58s : in the standard
+3438.58s - 3439.46s : but you can just put,
+3439.88s - 3440.16s : you know,
+3440.26s - 3442.24s : the comma-separated list
+3442.24s - 3442.78s : of the tables
+3442.78s - 3443.9s : and this will produce
+3443.9s - 3444.58s : the Cartesian product
+3444.58s - 3444.98s : for you.
+3445.94s - 3446.02s : Right?
+3448.02s - 3448.92s : But joins are the
+3448.92s - 3449.32s : important thing
+3449.32s - 3449.86s : that we care about.
+3449.96s - 3450.6s : This is basically
+3450.6s - 3453.6s : finding all the matches
+3453.6s - 3455.02s : from one relation
+3455.02s - 3456.22s : according to some value
+3456.22s - 3459.92s : with the given attributes
+3459.92s - 3460.82s : in S.
+3461.46s - 3462.1s : And so unlike
+3462.1s - 3462.6s : in the intersectional
+3462.78s - 3464.04s : operator where the
+3464.04s - 3464.8s : schemas of the two
+3464.8s - 3465.4s : relations have to be
+3465.4s - 3465.84s : the same,
+3466.64s - 3467.84s : join doesn't have to be.
+3468.56s - 3469.32s : So implicitly,
+3469.36s - 3469.84s : it's going to look
+3469.84s - 3470.98s : for the name of a column
+3470.98s - 3472.66s : and find the corresponding
+3472.66s - 3473.28s : matching name
+3473.28s - 3474.16s : in the other column
+3474.16s - 3474.9s : when I do a join.
+3475.66s - 3476.88s : So for R and S here,
+3478.12s - 3479.1s : when I do a join
+3479.1s - 3479.64s : on R and S
+3479.64s - 3480.4s : with the join operator,
+3480.98s - 3482.06s : I'll find where the values
+3482.06s - 3483.34s : of AID and BID
+3483.34s - 3484.06s : are the same
+3484.06s - 3486.12s : and then value
+3486.12s - 3487.04s : just sort of comes along
+3487.04s - 3487.66s : for the ride too
+3487.66s - 3488.46s : because it was part
+3488.46s - 3489.32s : of the matching tuple.
+3490.34s - 3490.5s : Right?
+3491.72s - 3492.34s : So again,
+3492.34s - 3492.9s : you sort of think
+3492.9s - 3493.76s : of this as like
+3493.76s - 3496.8s : you're sort of
+3496.8s - 3497.52s : sort of mashing
+3497.52s - 3498.72s : the two tuples together
+3498.72s - 3500.94s : then checking to see
+3500.94s - 3501.76s : where things match.
+3502.0s - 3503.74s : Like AID for R
+3503.74s - 3504.44s : has to match
+3504.44s - 3505.74s : AID for S
+3505.74s - 3506.96s : and the BID for R
+3506.96s - 3507.32s : has to match
+3507.32s - 3508.22s : the BID for S
+3508.22s - 3509.32s : and then you just
+3509.32s - 3510.14s : you throw away
+3510.14s - 3511.32s : the duplicate attributes.
+3512.78s - 3513.18s : Right?
+3513.26s - 3514.14s : And then that's your output.
+3516.5s - 3517.26s : Joins are going to see this.
+3517.44s - 3517.84s : We'll have to spend
+3517.84s - 3518.9s : a whole lecture on this.
+3519.32s - 3519.68s : Joins are going to be
+3519.68s - 3520.72s : where data systems
+3520.72s - 3521.26s : are going to spend
+3521.26s - 3522.22s : most of their time
+3522.22s - 3523.72s : in running queries.
+3524.38s - 3525.14s : So this is the thing
+3525.14s - 3525.46s : we're going to try
+3525.46s - 3526.16s : to optimize the most
+3526.16s - 3526.88s : to make them run the fastest.
+3528.62s - 3529.66s : There's a lot of different ways
+3529.66s - 3530.4s : to define joins.
+3530.52s - 3531.62s : A lot of different types of joins.
+3531.86s - 3533.08s : We'll see more in the next class.
+3534.0s - 3535.44s : And so my example here
+3535.44s - 3536.52s : where I'm sort of
+3536.52s - 3537.66s : implicitly joining
+3537.66s - 3539.04s : based on having the values
+3539.04s - 3539.62s : be the same
+3539.62s - 3539.9s : or sorry,
+3540.08s - 3541.0s : the names of the attributes
+3541.0s - 3541.6s : be the same.
+3541.88s - 3543.0s : That's called a natural join.
+3543.54s - 3544.74s : So there's a natural join keyword
+3544.74s - 3545.4s : that's basically going to
+3545.4s - 3546.1s : look up the names
+3546.1s - 3547.24s : of columns
+3547.24s - 3547.94s : and see whether they match
+3547.94s - 3548.96s : and then do a join against them.
+3549.7s - 3550.86s : I don't recommend doing this
+3550.86s - 3551.4s : because again,
+3551.7s - 3551.9s : it's implicitly
+3552.22s - 3553.16s : storing the
+3553.16s - 3555.12s : it's implicitly figuring out
+3555.12s - 3556.32s : what the join should be based on.
+3557.24s - 3558.14s : And you actually want to
+3558.14s - 3558.74s : actually define
+3558.74s - 3559.7s : how you want to do your join.
+3560.1s - 3561.12s : So you can either do this
+3561.12s - 3562.14s : with a join clause
+3562.14s - 3563.12s : for R and S
+3563.12s - 3564.68s : and there's a using keyword
+3564.68s - 3565.12s : you say
+3565.12s - 3565.88s : what you're doing
+3565.88s - 3566.74s : your lookup on
+3566.74s - 3567.76s : or you can do
+3567.76s - 3568.84s : the on clause
+3568.84s - 3569.56s : where you explicitly say
+3569.56s - 3570.78s : like AID has to
+3570.78s - 3572.78s : R has to equal to AID for S
+3572.78s - 3574.14s : and the BID for R
+3574.14s - 3575.3s : has to equal to BID for S.
+3576.6s - 3576.86s : Right?
+3577.48s - 3578.48s : So the bottom one
+3578.48s - 3578.98s : is probably
+3578.98s - 3579.68s : if you're writing by hand
+3579.68s - 3580.34s : is probably what you're
+3580.34s - 3581.28s : going to be doing.
+3581.86s - 3582.2s : This is going to be
+3582.22s - 3582.68s : this has a little bit
+3582.68s - 3583.02s : more information
+3583.02s - 3583.42s : because you're actually
+3583.42s - 3584.34s : specifying what columns
+3584.34s - 3585.82s : you want to do the join on
+3585.82s - 3586.98s : and then natural join
+3586.98s - 3588.14s : again is not something
+3588.14s - 3588.58s : I recommend.
+3590.72s - 3590.94s : Again,
+3591.02s - 3591.82s : the ANC SQL standard
+3591.82s - 3592.12s : prefers
+3592.12s - 3593.16s : wants you to
+3593.16s - 3594.1s : explicitly define
+3594.1s - 3594.8s : as much as possible
+3594.8s - 3596.58s : so that way
+3596.58s - 3597.34s : if the schema changes
+3597.34s - 3598.2s : or things evolve
+3598.2s - 3599.06s : it doesn't break
+3599.06s - 3599.8s : your application code.
+3602.74s - 3602.92s : All right.
+3602.98s - 3603.76s : So there's a bunch
+3603.76s - 3604.38s : of other stuff
+3604.38s - 3605.88s : that came along later
+3605.88s - 3606.56s : in the 70s
+3606.56s - 3608.26s : for the relational model.
+3608.88s - 3610.08s : How to rename columns
+3610.08s - 3612.2s : how to assign columns
+3612.2s - 3613.06s : to variables
+3613.06s - 3614.56s : removing duplicates
+3614.56s - 3615.6s : aggregations
+3615.6s - 3616.6s : and sorting and division.
+3617.7s - 3618.14s : Again,
+3618.2s - 3618.86s : these all came
+3618.86s - 3619.86s : after Ted Kott's
+3619.86s - 3620.36s : original paper
+3620.36s - 3622.3s : and most data systems
+3622.3s - 3623.26s : are going to support
+3623.26s - 3625.18s : maybe not division
+3625.18s - 3626.32s : but everything above.
+3629.18s - 3629.62s : Okay?
+3630.86s - 3631.96s : So that's the crash course
+3631.96s - 3632.46s : which you need to know
+3632.46s - 3633.06s : for relational algebra
+3633.06s - 3633.9s : but we'll see how this
+3633.9s - 3634.52s : you know
+3634.52s - 3635.62s : as we go along
+3635.62s - 3636.06s : it should build
+3636.06s - 3636.86s : the query engine
+3636.86s - 3637.46s : of a system
+3637.46s - 3638.7s : that's being predicated
+3638.7s - 3639.66s : on these ideas.
+3642.2s - 3642.78s : All right.
+3642.88s - 3645.5s : So as I said before
+3645.5s - 3646.5s : relational algebra
+3646.5s - 3647.08s : is considered
+3647.08s - 3648.08s : a procedural language.
+3648.54s - 3648.88s : Like even though
+3648.88s - 3649.82s : it's mathematical notation
+3649.82s - 3651.46s : you can kind of easily see
+3651.46s - 3652.02s : how you can implement
+3652.02s - 3653.22s : a system to implement it.
+3653.9s - 3654.58s : One of the complaints
+3654.58s - 3655.42s : about Ted Kott's paper
+3655.42s - 3656.2s : in the 70s was
+3656.2s - 3656.94s : they thought it was
+3656.94s - 3657.44s : too mathematical.
+3659.02s - 3659.78s : I'm not saying
+3659.78s - 3660.78s : that I'm brilliant
+3660.78s - 3661.94s : and I could easily decipher it
+3661.94s - 3662.88s : but I was surprised
+3662.88s - 3663.56s : when they said that
+3663.56s - 3664.48s : because it's not that
+3664.48s - 3665.94s : it's not that esoteric
+3665.94s - 3666.48s : it's not that hard.
+3667.38s - 3667.5s : Right?
+3668.06s - 3668.84s : Having any
+3668.84s - 3670.26s : CS undergrad people
+3670.26s - 3670.82s : should be able
+3670.82s - 3671.34s : to understand that.
+3672.2s - 3673.2s : But it's still
+3673.2s - 3674.28s : defining the steps
+3674.28s - 3675.22s : you want the data system
+3675.22s - 3675.88s : to perform
+3675.88s - 3676.76s : in order to compute
+3676.76s - 3677.16s : your query.
+3677.94s - 3678.12s : Right?
+3678.24s - 3680.02s : So I have to say
+3680.02s - 3681.38s : if I'm going to join R and S
+3681.38s - 3683.7s : I have to define
+3683.7s - 3684.62s : in what order
+3684.62s - 3685.44s : I want that to happen.
+3685.86s - 3686.44s : So I would say
+3686.44s - 3686.9s : all right first
+3686.9s - 3687.66s : my choices are
+3687.66s - 3688.52s : first join R
+3688.52s - 3689.16s : and then S
+3689.16s - 3691.96s : then do the select on it
+3691.96s - 3693.92s : to filter out
+3693.92s - 3694.72s : the tuples that I want.
+3695.92s - 3696.74s : Or I could do
+3696.74s - 3697.74s : the filter on S first
+3697.74s - 3698.56s : based on the BID
+3698.56s - 3699.7s : then take whatever
+3699.7s - 3700.58s : the output of that
+3700.58s - 3701.68s : select operator
+3701.68s - 3702.18s : then do the select
+3702.2s - 3702.72s : then do the join
+3702.72s - 3703.3s : against that.
+3705.18s - 3705.4s : And again
+3705.4s - 3706.04s : there would be
+3706.04s - 3706.86s : pretty dramatically
+3706.86s - 3707.54s : different performance
+3707.54s - 3709.78s : of these two queries
+3709.78s - 3711.38s : based on what
+3711.38s - 3711.7s : the database
+3711.7s - 3712.52s : actually looks like.
+3713.12s - 3713.36s : Again
+3713.36s - 3715.54s : if R and S
+3715.54s - 3716.02s : only have like
+3716.02s - 3716.62s : 10 tuples
+3716.62s - 3717.7s : then it's not that
+3717.7s - 3718.2s : big of a deal.
+3719.0s - 3719.8s : But if R and S
+3719.8s - 3720.88s : have billions of tuples
+3720.88s - 3722.18s : then I definitely
+3722.18s - 3722.58s : want to filter
+3722.58s - 3723.3s : as much as I can
+3723.3s - 3724.04s : out from S
+3724.04s - 3724.84s : before I join it
+3724.84s - 3725.6s : with R.
+3726.58s - 3727.56s : But in relational algebra
+3727.56s - 3728.4s : there is no concept
+3728.4s - 3729.68s : of allowing things
+3729.68s - 3730.1s : to be reordered.
+3730.1s - 3731.2s : I'm defining exactly
+3731.2s - 3731.94s : what I want to happen.
+3732.2s - 3734.62s : So this is going
+3734.62s - 3735.44s : to lead us to next class
+3735.44s - 3736.0s : talking about SQL
+3736.0s - 3737.16s : but a better solution
+3737.16s - 3737.5s : is going to be
+3737.5s - 3738.58s : say the high level
+3738.58s - 3740.0s : definition or declaration
+3740.0s - 3741.18s : of the answer
+3741.18s - 3741.9s : that I want
+3741.9s - 3743.04s : in my query
+3743.04s - 3744.3s : and let the data system
+3744.3s - 3744.62s : figure out
+3744.62s - 3745.28s : what's the best way
+3745.28s - 3746.36s : to perform that.
+3747.08s - 3747.66s : And again now
+3747.66s - 3748.28s : if I change
+3748.28s - 3749.16s : the physical layout
+3749.16s - 3750.16s : or data structures
+3750.16s - 3751.6s : that are in my database
+3751.6s - 3753.52s : I don't have to
+3753.52s - 3754.46s : change my query plan
+3754.46s - 3756.54s : or don't have to
+3756.54s - 3757.0s : change my query
+3757.0s - 3757.76s : if it's defined as SQL
+3757.76s - 3758.84s : I let the data system
+3758.84s - 3759.64s : figure that out for me.
+3759.64s - 3763.36s : So that's why SQL matters
+3763.36s - 3764.66s : and we'll see this more
+3764.66s - 3765.16s : in the next class.
+3765.16s - 3768.58s : All right so the
+3768.58s - 3771.2s : as I said the relational model
+3771.2s - 3771.96s : defined by Ted Kott
+3771.96s - 3773.04s : in the 1970s
+3773.04s - 3773.46s : didn't come with
+3773.46s - 3774.68s : a programming language.
+3774.68s - 3776.32s : SQL was invented by IBM
+3776.32s - 3777.54s : a few years later.
+3777.54s - 3778.82s : Ted Kott eventually proposed
+3778.82s - 3779.64s : his own query language
+3779.64s - 3780.82s : called alpha
+3780.82s - 3781.38s : but nobody actually
+3781.38s - 3781.88s : implemented that.
+3781.88s - 3783.56s : And there was actually
+3783.56s - 3784.48s : an earlier version of SQL
+3784.48s - 3785.22s : called square
+3785.22s - 3786.54s : which we'll see next time
+3786.54s - 3787.54s : which required a keyboard
+3787.54s - 3788.24s : that didn't exist
+3788.24s - 3788.7s : because you had to write
+3788.7s - 3789.4s : things vertically.
+3789.4s - 3789.56s : Right?
+3789.64s - 3790.34s : It was a bizarre thing.
+3791.4s - 3792.86s : But SQL basically became
+3792.86s - 3793.52s : the de facto standard
+3793.52s - 3794.04s : that it is now.
+3794.32s - 3794.94s : It wasn't the first one.
+3794.98s - 3795.54s : There was another language
+3795.54s - 3796.1s : called Quell
+3796.1s - 3797.44s : invented by Stonebreaker
+3797.44s - 3798.98s : from Ingress
+3798.98s - 3800.2s : which later became Postgres.
+3801.88s - 3802.64s : But there was
+3802.64s - 3803.36s : there was a bunch of
+3803.36s - 3804.7s : there was other variations
+3804.7s - 3806.54s : of relational query languages.
+3807.0s - 3807.54s : SQL ended up being
+3807.54s - 3808.24s : the dominant one.
+3808.58s - 3809.72s : There is a SQL standard
+3809.72s - 3810.46s : but again
+3810.46s - 3811.14s : nobody actually
+3811.14s - 3811.82s : implements that
+3811.82s - 3812.78s : exactly
+3812.78s - 3814.02s : in every system.
+3814.92s - 3815.72s : So the idea is that
+3815.72s - 3816.18s : instead of writing
+3816.18s - 3817.18s : procedural code like this
+3817.18s - 3818.04s : like doing my lookup
+3818.04s - 3819.4s : in Python code
+3819.64s - 3821.94s : I'm better off writing SQL.
+3821.94s - 3823.54s : Because now I don't care
+3823.54s - 3824.3s : about how stuff's
+3824.3s - 3824.94s : physically stored.
+3825.04s - 3825.7s : I don't care how
+3825.7s - 3826.78s : how the query plan
+3826.78s - 3828.1s : is actually going to execute.
+3828.86s - 3829.76s : I let the data system
+3829.76s - 3830.6s : handle all that for me.
+3833.22s - 3834.0s : So any questions
+3834.0s - 3834.66s : about the relational model?
+3836.94s - 3837.32s : Yes?
+3837.32s - 3838.36s : When we talked about
+3838.36s - 3839.18s : relational algebra
+3839.18s - 3840.26s : there was no concept
+3840.26s - 3840.96s : of a key
+3840.96s - 3842.0s : like a primary key
+3842.0s - 3843.16s : in that situation
+3843.16s - 3844.06s : because when we did unions
+3844.06s - 3844.82s : I didn't understand
+3844.82s - 3845.54s : like what if we had
+3845.54s - 3846.28s : two values
+3846.28s - 3847.0s : with the same key.
+3847.16s - 3847.92s : So his question is
+3847.92s - 3848.46s : we didn't
+3848.46s - 3848.88s : when we talked about
+3848.88s - 3849.26s : relational algebra
+3849.26s - 3850.46s : we didn't mention
+3850.46s - 3851.62s : primary keys
+3851.62s - 3853.1s : and that's because
+3853.1s - 3854.44s : you would define that
+3854.44s - 3855.04s : in the schema
+3855.04s - 3856.22s : of like
+3856.22s - 3857.18s : here's what my relations
+3857.18s - 3857.88s : look like.
+3858.42s - 3858.84s : The data system
+3858.84s - 3859.7s : can then enforce
+3859.7s - 3860.46s : that the constraint
+3860.46s - 3861.32s : that the primary key
+3861.32s - 3862.0s : has to be unique
+3862.0s - 3863.44s : but then when it came time
+3863.44s - 3864.44s : to actually run queries
+3864.44s - 3866.86s : you don't care
+3866.86s - 3868.0s : like what the primary key
+3868.0s - 3868.6s : actually is.
+3869.1s - 3870.3s : So I can do joins
+3870.3s - 3870.94s : I can do intersections
+3870.94s - 3871.36s : and all that
+3871.36s - 3872.18s : without worrying about
+3872.18s - 3873.18s : what the primary key is.
+3877.28s - 3878.08s : Likewise I didn't have to
+3878.08s - 3878.92s : find what the foreign key was.
+3879.26s - 3880.36s : It's there.
+3880.74s - 3883.04s : It's integrity constraint.
+3886.42s - 3886.98s : All right.
+3887.08s - 3888.38s : So I want to briefly talk about
+3888.38s - 3889.9s : in the last five minutes
+3889.9s - 3891.88s : the leading alternative
+3891.88s - 3892.3s : which is going to be
+3892.3s - 3893.7s : the document JSON model
+3893.7s - 3896.04s : and then the vector database stuff
+3896.04s - 3896.84s : is the hot thing now.
+3897.68s - 3898.44s : I just want to expose you
+3898.44s - 3899.14s : to this real quickly
+3899.14s - 3900.56s : what these ideas are
+3900.56s - 3901.36s : and then we'll
+3901.36s - 3903.14s : we can mostly ignore them
+3903.14s - 3903.92s : throughout the rest of the semester.
+3905.34s - 3905.92s : All right.
+3906.22s - 3907.18s : The document data model
+3907.18s - 3908.36s : is distinct JSON.
+3909.26s - 3909.54s : Right.
+3909.96s - 3910.66s : Or XML
+3910.66s - 3912.68s : or object oriented
+3912.68s - 3915.82s : data.
+3916.38s - 3916.7s : Right.
+3916.72s - 3917.46s : But the idea is that
+3917.46s - 3917.94s : you're going to have
+3917.94s - 3918.4s : some kind of
+3918.4s - 3919.26s : high-quality collection
+3919.26s - 3920.16s : of data
+3920.16s - 3921.68s : where there's going to be
+3921.68s - 3923.6s : these name key value pairs
+3923.6s - 3924.8s : but then within
+3924.8s - 3925.86s : a given document
+3925.86s - 3926.78s : you can have
+3926.78s - 3927.84s : a nesting of arrays
+3927.84s - 3929.18s : nesting of other documents
+3929.18s - 3929.98s : and so forth.
+3930.94s - 3931.04s : Right.
+3932.08s - 3933.0s : JSON is how
+3933.0s - 3933.8s : you would implement this today.
+3933.92s - 3934.56s : There's older systems
+3934.56s - 3935.18s : from XML
+3935.18s - 3936.78s : and then even earlier than that
+3936.78s - 3937.46s : in the early 90s
+3937.46s - 3938.06s : late 80s
+3938.06s - 3938.96s : when object oriented
+3938.96s - 3939.24s : programs
+3939.26s - 3939.96s : was a big thing
+3939.96s - 3940.28s : there was these
+3940.28s - 3941.18s : object oriented databases
+3941.18s - 3942.64s : that you've never heard of
+3942.64s - 3944.46s : that basically try to map
+3944.46s - 3945.46s : like C++ objects
+3945.46s - 3946.7s : into objects in a database.
+3947.3s - 3948.1s : So instead of operating
+3948.1s - 3948.48s : on relations
+3948.48s - 3949.86s : you would operate on objects.
+3950.68s - 3952.2s : So we'll see this more
+3952.2s - 3952.86s : next class
+3952.86s - 3953.94s : but the problem
+3953.94s - 3954.66s : that they're trying to solve
+3954.66s - 3955.42s : is the idea of
+3955.42s - 3956.28s : the relational object
+3956.28s - 3957.1s : impedance mismatch
+3957.1s - 3958.9s : meaning I'm writing code
+3958.9s - 3960.02s : in my application
+3960.02s - 3961.02s : based on objects
+3961.02s - 3962.56s : that have this
+3962.56s - 3963.3s : hierarchical structure
+3963.3s - 3964.4s : but then when I have to
+3964.4s - 3965.38s : store it in my database
+3965.38s - 3966.62s : the database requires me
+3966.62s - 3967.84s : to store it as relations
+3967.84s - 3969.12s : and then now I need a way
+3969.12s - 3970.06s : to map that back and forth
+3970.06s - 3971.12s : between relations and objects
+3971.12s - 3972.0s : which can be cumbersome.
+3973.0s - 3974.16s : There's a bunch of systems
+3974.16s - 3974.66s : out there
+3974.66s - 3976.1s : that implement this
+3976.1s - 3977.12s : the document model
+3977.12s - 3978.08s : MongoDB is probably
+3978.08s - 3979.02s : the most famous one
+3979.02s - 3980.56s : CouchDB or Couchbase
+3980.56s - 3981.46s : is probably the second one
+3981.46s - 3982.4s : but again
+3982.4s - 3984.06s : this idea goes back
+3984.06s - 3985.06s : to the 1980s.
+3986.58s - 3986.76s : So
+3986.76s - 3988.58s : going back to my
+3988.58s - 3989.18s : example of
+3989.18s - 3990.38s : our music store
+3990.38s - 3991.52s : I would have
+3991.52s - 3992.64s : a relation for artists
+3992.64s - 3993.36s : I would have a relation
+3993.36s - 3993.84s : for album
+3993.84s - 3994.46s : and then I have this
+3994.46s - 3995.48s : cross reference table
+3995.48s - 3996.38s : cross reference relation
+3996.38s - 3997.82s : that maps artists
+3997.82s - 3998.32s : to albums.
+3998.82s - 3998.84s : Right?
+3999.12s - 4000.38s : So now if I want to get
+4000.38s - 4001.1s : for a given artist
+4001.1s - 4002.04s : all the albums
+4002.04s - 4002.72s : that they appear on
+4002.72s - 4004.22s : I have to do a join
+4004.22s - 4005.54s : to go from
+4005.54s - 4006.26s : the artist table
+4006.26s - 4007.98s : to then the artist album table
+4007.98s - 4008.84s : and then to the
+4008.84s - 4009.96s : the album table.
+4010.8s - 4011.8s : So the document
+4011.8s - 4013.04s : model people say
+4013.04s - 4013.98s : this is stupid
+4013.98s - 4014.82s : joins are slow
+4014.82s - 4015.92s : you want to get rid of
+4015.92s - 4016.52s : this thing
+4016.52s - 4017.52s : and instead
+4017.52s - 4018.18s : what you want to do
+4018.18s - 4019.18s : is just embed
+4019.18s - 4020.28s : for a given artist
+4020.28s - 4021.62s : all the albums
+4021.62s - 4022.26s : that they appear on
+4022.26s - 4023.84s : or the reverse of that
+4023.84s - 4024.64s : for a given album
+4024.64s - 4025.52s : all the artists
+4025.52s - 4026.18s : that appear on it.
+4027.4s - 4028.38s : So the idea is like
+4028.38s - 4028.76s : if you're writing
+4028.76s - 4028.82s : much of it
+4028.82s - 4030.46s : Python code
+4030.46s - 4030.94s : or Java code
+4030.94s - 4031.22s : or whatever
+4031.22s - 4032.62s : you define these classes
+4032.62s - 4033.98s : and then when now
+4033.98s - 4034.48s : you actually want to
+4034.48s - 4035.44s : store it in your database
+4035.44s - 4037.02s : in this case here
+4037.02s - 4037.64s : for a given artist
+4037.64s - 4038.72s : we're now going to embed
+4038.72s - 4040.48s : the list of
+4040.48s - 4042.18s : albums that they appear on.
+4043.32s - 4043.64s : So now
+4043.64s - 4044.56s : again when I want to do
+4044.56s - 4044.94s : that lookup
+4044.94s - 4045.7s : for a given artist
+4045.7s - 4046.62s : go give me all their albums
+4046.62s - 4047.92s : it's one query
+4047.92s - 4048.52s : to go fetch
+4048.52s - 4049.4s : that artist record
+4049.4s - 4050.34s : and then it pulls out
+4050.34s - 4051.08s : all their albums.
+4052.64s - 4053.52s : Is this a good idea
+4053.52s - 4054.12s : or a bad idea?
+4056.78s - 4057.14s : Again
+4057.14s - 4058.06s : it's obvious
+4058.06s - 4058.46s : with my answers
+4058.46s - 4059.24s : what my answer's going to be.
+4060.24s - 4061.18s : Why is it a bad idea?
+4062.56s - 4062.82s : Yes?
+4065.62s - 4066.46s : He says you can't
+4066.46s - 4067.48s : query directly on albums.
+4067.54s - 4067.82s : You could.
+4068.04s - 4068.34s : You can do
+4068.34s - 4070.32s : you can do nesting inside
+4070.32s - 4070.98s : to get things.
+4071.22s - 4071.34s : Yes?
+4080.02s - 4081.02s : She said yes.
+4081.1s - 4081.52s : She said
+4081.52s - 4082.02s : and she's correct
+4082.02s - 4082.64s : this is
+4082.64s - 4083.76s : you have to predict
+4083.76s - 4084.32s : what the queries
+4084.32s - 4084.68s : are going to want
+4084.68s - 4085.38s : to look up on
+4085.38s - 4086.7s : and then model that
+4086.7s - 4087.64s : in your database.
+4087.74s - 4088.36s : Absolutely yes.
+4088.46s - 4089.66s : And then likewise
+4089.66s - 4091.82s : I'm going to end up
+4091.82s - 4092.42s : duplicating a bunch
+4092.42s - 4092.86s : of information.
+4093.4s - 4094.6s : If a
+4094.6s - 4096.3s : artist appears on
+4096.3s - 4096.56s : sorry
+4096.56s - 4097.46s : if multiple artists
+4097.46s - 4098.12s : appear on one album
+4098.12s - 4099.54s : I've got to re-record
+4099.54s - 4100.38s : that over and over again.
+4101.08s - 4101.9s : So in some cases
+4101.9s - 4102.8s : this nesting makes sense
+4102.8s - 4103.88s : in many cases it doesn't.
+4104.0s - 4104.14s : Yes?
+4107.54s - 4108.36s : He said if you've got
+4108.36s - 4108.8s : to delete an album
+4108.8s - 4109.34s : you've got to find
+4109.34s - 4109.78s : all the artists
+4109.78s - 4110.66s : where the album appears on.
+4110.9s - 4111.1s : Yes?
+4111.84s - 4112.56s : You could do an index
+4112.56s - 4113.82s : an index could help
+4113.82s - 4114.32s : find that
+4114.32s - 4115.68s : but still it's
+4115.68s - 4116.98s : implicitly in your application
+4116.98s - 4117.9s : what the layout is.
+4118.46s - 4120.16s : So in some cases
+4120.16s - 4121.18s : you do want to store things
+4121.18s - 4122.48s : as JSON
+4122.48s - 4123.18s : in your database
+4123.18s - 4124.9s : but oftentimes
+4124.9s - 4125.52s : you do not.
+4128.76s - 4129.18s : All right.
+4129.22s - 4129.6s : So the last one
+4129.6s - 4129.9s : I want to talk about
+4129.9s - 4130.78s : is vector databases.
+4131.52s - 4133.58s : So this is the hot thing now.
+4133.68s - 4134.5s : There's a bunch of companies
+4134.5s - 4134.84s : that have gotten
+4134.84s - 4135.52s : a lot of money
+4135.52s - 4136.74s : that are building
+4136.74s - 4137.76s : systems in this space.
+4138.26s - 4138.98s : Weeviate is coming
+4138.98s - 4139.84s : to talk with us
+4139.84s - 4140.26s : on campus
+4140.26s - 4141.84s : in a few weeks.
+4143.04s - 4143.88s : I like those guys
+4143.88s - 4144.6s : they're good people.
+4146.08s - 4146.22s : But
+4146.22s - 4147.64s : no they're
+4147.64s - 4148.44s : they're fun.
+4148.46s - 4149.48s : I was on their podcast
+4149.48s - 4149.94s : they're fun.
+4151.86s - 4152.38s : So
+4152.38s - 4153.9s : a
+4153.9s - 4155.32s : vector database
+4155.32s - 4156.1s : at its core
+4156.1s - 4156.76s : when you say
+4156.76s - 4157.36s : I have a vector database
+4157.36s - 4158.4s : they really mean
+4158.4s - 4159.46s : a document database
+4159.46s - 4160.38s : that also has
+4160.38s - 4161.52s : this extra data type
+4161.52s - 4162.06s : called a vector
+4162.06s - 4162.7s : an embedding.
+4163.28s - 4164.2s : Think of that as a
+4164.2s - 4165.64s : it's a large array
+4165.64s - 4166.46s : of floating point numbers.
+4167.54s - 4167.78s : And
+4167.78s - 4169.0s : what they're trying
+4169.0s - 4169.42s : to provide
+4169.42s - 4170.0s : is the ability
+4170.0s - 4170.7s : to do
+4170.7s - 4172.26s : approximate nearest neighbor
+4172.26s - 4172.84s : searches
+4172.84s - 4175.1s : based on these vectors
+4175.1s - 4176.06s : because these vectors
+4176.06s - 4176.84s : are going to be generated
+4176.84s - 4178.2s : from some kind of transformer
+4178.46s - 4179.3s : so embedding
+4179.3s - 4180.42s : is trying to represent
+4180.42s - 4181.46s : what's actually in the data
+4181.46s - 4182.18s : you're storing.
+4182.18s - 4183.9s : Right?
+4183.9s - 4184.54s : At the end of the day
+4184.54s - 4185.72s : they're just a fast index
+4185.72s - 4186.66s : to do approximate
+4186.66s - 4187.5s : nearest neighbor search.
+4188.56s - 4189.58s : So what does that look like?
+4189.58s - 4190.18s : So again
+4190.18s - 4191.56s : say I have my album table
+4192.76s - 4193.58s : and then somehow
+4193.58s - 4194.6s : I'm going to get out
+4194.6s - 4195.54s : all the lyrics
+4195.54s - 4196.22s : from these albums
+4196.22s - 4196.92s : from
+4196.92s - 4197.46s : from
+4197.46s - 4197.76s : you know
+4197.76s - 4198.5s : from Rap Genius
+4198.5s - 4199.74s : or whatever right?
+4199.74s - 4200.64s : And I'm going to feed that
+4200.64s - 4202.64s : into some kind of transformer
+4202.64s - 4203.38s : either I'm using
+4203.38s - 4204.04s : an obeying eye
+4204.04s - 4204.92s : or
+4204.92s - 4206.36s : something from Hugging Face
+4206.36s - 4207.36s : and then that's going to generate
+4207.36s - 4207.94s : me a bunch of these embeddings.
+4207.94s - 4209.78s : Which is just floating point
+4209.78s - 4211.42s : arrays of floating point numbers.
+4211.42s - 4212.26s : And that somehow
+4212.26s - 4213.68s : they're the
+4213.68s - 4214.68s : the magic of the transformer
+4214.68s - 4215.78s : is that somehow implicitly
+4215.78s - 4216.58s : the information
+4216.58s - 4217.84s : or the semantics
+4217.84s - 4219.1s : of the data
+4219.1s - 4220.1s : that I fed into the transformer
+4220.1s - 4220.94s : is
+4220.94s - 4222.54s : is in those
+4222.54s - 4224.22s : floating point numbers.
+4224.22s - 4225.06s : So then I'm going to store that
+4225.06s - 4226.38s : in my vector database
+4226.38s - 4228.32s : it's kind of a vector index.
+4228.32s - 4230.22s : The most common one is HNSW
+4230.22s - 4231.06s : a hierarchical
+4231.06s - 4232.18s : nearest or
+4232.18s - 4233.02s : hierarchical navigatable
+4233.02s - 4234.3s : small worlds.
+4234.3s - 4235.14s : IVV
+4235.14s - 4236.72s : IVF flat
+4236.72s - 4237.52s : it's another one
+4237.52s - 4237.92s : but there's a bunch of libraries
+4237.92s - 4238.92s : like Metafess
+4238.92s - 4240.16s : or Spotify annoy.
+4240.16s - 4241.42s : There's going to be some data structure
+4241.42s - 4242.7s : we'll cover in a few lectures
+4242.7s - 4243.86s : to easily do
+4243.86s - 4245.46s : these nearest neighbor searches
+4245.46s - 4246.06s : on these
+4247.42s - 4248.84s : on these embeddings.
+4248.84s - 4249.68s : So now my query
+4249.68s - 4250.92s : instead of doing exact lookups
+4250.92s - 4252.72s : like find me jizzes albums
+4252.72s - 4254.1s : I can say things like
+4254.1s - 4254.92s : find me albums
+4254.92s - 4257.3s : that are similar to Liquid Swords
+4257.3s - 4258.36s : and somehow assuming
+4258.36s - 4260.28s : I have lyrics to Liquid Swords
+4260.28s - 4263.22s : I can convert that information into
+4264.22s - 4265.56s : put that in my transformer.
+4265.56s - 4267.36s : I get out the same kind of embedding
+4267.36s - 4267.82s : that I would get
+4267.82s - 4269.42s : when I first loaded my database
+4269.42s - 4270.62s : and then I do a nearest neighbor search
+4270.62s - 4271.78s : on the vector index
+4271.78s - 4272.72s : and that turns back
+4272.72s - 4275.82s : the ranked list of matches.
+4275.82s - 4277.14s : Right.
+4277.14s - 4278.2s : So the vector database
+4278.2s - 4280.44s : is essentially this part here.
+4280.44s - 4281.6s : They can also store metadata
+4281.6s - 4282.58s : like they are also stored
+4282.58s - 4283.6s : this information that I over here
+4283.6s - 4284.86s : as JSON.
+4284.86s - 4285.06s : Right.
+4285.06s - 4286.54s : So I can say find me all the albums
+4286.54s - 4287.46s : that are sound like Liquid Swords
+4287.46s - 4289.02s : that came out after 2012
+4289.02s - 4289.98s : or something
+4289.98s - 4291.28s : and I can incorporate that
+4291.28s - 4292.42s : in my lookup
+4292.42s - 4293.18s : but at its core
+4293.18s - 4294.02s : a vector database
+4294.02s - 4296.1s : is this vector index piece here.
+4296.1s - 4296.82s : But in the last year or so.
+4296.82s - 4297.82s : So.
+4297.82s - 4299.42s : Pretty much all relational databases
+4299.42s - 4301.22s : now support vector indexes.
+4302.54s - 4303.5s : Right.
+4303.5s - 4304.98s : So it's again it's
+4304.98s - 4306.48s : I've argued and I've told the VBA guys
+4306.48s - 4307.28s : this directly
+4307.28s - 4308.2s : like it's not
+4309.58s - 4310.62s : the idea of vector search
+4310.62s - 4311.46s : and nearest neighbor search
+4311.46s - 4312.3s : does not mean you have to build
+4312.3s - 4313.12s : a whole new system
+4313.12s - 4313.96s : that throws away
+4313.96s - 4314.8s : everything we talk about
+4314.8s - 4315.64s : the entire semester.
+4315.64s - 4316.98s : It's just an extra thing we can add
+4316.98s - 4317.8s : and the relational model
+4317.8s - 4319.38s : can accommodate it.
+4319.38s - 4321.34s : So the SQL standard does not support
+4321.34s - 4322.52s : or it doesn't have a notion
+4322.52s - 4324.64s : of this nearest neighbor searches.
+4325.92s - 4327.82s : Postgres through PG vector has their own
+4327.82s - 4329.22s : API.
+4329.22s - 4330.2s : Oracle has copied that.
+4330.2s - 4331.04s : I think that's gonna end up
+4331.04s - 4332.74s : in the SQL standard in a few years.
+4334.06s - 4336.72s : And the vector guys will have to figure out
+4336.72s - 4337.72s : how to overcome that.
+4338.94s - 4339.78s : Okay.
+4340.64s - 4341.58s : All right this is the crash course
+4341.58s - 4344.52s : in vector databases in two minutes.
+4344.52s - 4347.1s : The VBA guys will come talk about it more
+4347.1s - 4348.76s : later in the semester.
+4348.76s - 4350.34s : All right so whatever it is.
+4350.34s - 4351.32s : Databases are ubiquitous.
+4351.32s - 4352.16s : Databases are important.
+4352.16s - 4354.54s : Databases are the second love of my life.
+4354.54s - 4356.46s : Relational algebra is gonna be the foundation
+4356.46s - 4357.5s : for how we're gonna build
+4357.5s - 4359.48s : our systems to support them.
+4359.48s - 4360.7s : And then we're gonna see this over and over again.
+4360.7s - 4363.28s : We talk about query optimization, query execution.
+4363.28s - 4364.32s : And certainly we'll see this next class
+4364.32s - 4365.82s : when we talk about SQL.
+4365.82s - 4366.94s : Okay.
+4366.94s - 4368.2s : So next class will be,
+4368.2s - 4370.0s : not done yet because Q and A.
+4370.0s - 4371.56s : Next class we're gonna do modern SQL.
+4371.56s - 4372.84s : So by modern SQL I mean like
+4372.84s - 4374.82s : I'm not gonna teach you what a select star is.
+4374.82s - 4376.26s : It's 2024.
+4376.26s - 4377.18s : You guys are senior students.
+4377.18s - 4379.1s : I'm assuming most of you have seen SQL before
+4379.1s - 4380.92s : in some form, the basic form of it.
+4380.92s - 4382.5s : So I'll try to teach you the more advanced things
+4382.5s - 4384.62s : and where things break in the SQL standard.
+4384.62s - 4387.06s : Okay so at least make sure you understand basic SQL.
+4387.06s - 4388.2s : We'll for sure in the next class.
+4388.2s - 4389.04s : Okay?
+4389.94s - 4390.78s : All right.
+4390.78s - 4393.1s : We have eight minutes left.
+4393.1s - 4394.54s : Any questions about databases?
+4397.22s - 4398.06s : Yes.
+4398.06s - 4399.96s : So you talked about it a little bit earlier.
+4399.96s - 4401.62s : You talked about the blurry lines
+4401.62s - 4404.32s : between relational and document-based.
+4404.32s - 4406.28s : So I see you've done a little bit.
+4406.28s - 4407.12s : Yes.
+4407.12s - 4409.44s : And it feels like you're using a relational database.
+4409.44s - 4410.28s : They support SQL now, right?
+4410.28s - 4411.6s : You've gone on to it.
+4411.6s - 4416.4s : So how, what is, can you explain that merging a little bit more?
+4416.4s - 4416.9s : Take it easy.
+4416.9s - 4419.78s : So his question is, he's used .
+4419.78s - 4423.94s : is one of the, from Amazon, one of the first NoSQL databases.
+4423.94s - 4427.46s : It originally started off as a, I think, as a key value store.
+4427.46s - 4429.08s : Then they added a support for JSON.
+4429.08s - 4432.38s : And then more recently they've added basically looks like tables.
+4432.38s - 4433.58s : And I don't think it's directly SQL.
+4433.58s - 4435.02s : I think it's the, it's part of QL.
+4435.02s - 4437.26s : It's, it's, it's, no, not graph QL.
+4437.26s - 4438.76s : It's part of QL.
+4438.76s - 4441.08s : It's Amazon's dialect of SQL.
+4441.08s - 4442.22s : And it looks like SQL.
+4442.22s - 4447.28s : So why is it, why is this convergence between the, the NoSQL guys and the,
+4447.28s - 4450.52s : and the and the, in the relational world?
+4450.52s - 4453.34s : Well, because all the things we talked about today are why having a relational
+4453.34s - 4456.88s : model and, and making sure you can't shoot yourself in the foot in your database
+4456.88s - 4458.16s : is a good idea.
+4458.16s - 4461.34s : They, they've come to realize, oh, customers actually want these things.
+4461.34s - 4464.5s : And they've added, added it, added it on, on top of it, right?
+4464.5s - 4467.84s : So that's why I think there's a convergence because, like, in the same way
+4467.84s - 4470.66s : that no one's going to invent a new mathematics where, like, because, because
+4470.66s - 4472.1s : one plus one equals two is just true.
+4472.22s - 4476.1s : I think, like, the relational model is just the, the true way, the correct way
+4476.1s - 4478.46s : to implement, to represent data.
+4478.46s - 4482.12s : And you can add accoutrements like the vector indexes on top of that, or
+4482.12s - 4484.18s : the various things that deal with JSON.
+4484.18s - 4485.76s : But everyone's basically coming back around, like,
+4485.76s - 4487.96s : like, the relational model is the right way to go.
+4487.96s - 4488.68s : Ted Cobb is a genius.
+4489.78s - 4490.28s : Yes?
+4490.28s - 4494.04s : So I have a question about the vector database.
+4494.04s - 4494.54s : Yes.
+4494.54s - 4497.48s : I actually know there's a very famous
+4497.48s - 4501.92s : Yes.
+4501.92s - 4506.56s : I wonder, like, for this kind of real time vector search database,
+4506.56s - 4511.42s : what kind of realistic, you know, applications do you think ?
+4511.42s - 4512.12s : For vector indexes?
+4512.12s - 4512.8s : For your databases?
+4512.8s - 4515.98s : For, like, using vector databases.
+4515.98s - 4518.28s : All right, so his first question he started off with is,
+4518.28s - 4520.42s : OpenAI made a major acquisition this summer.
+4520.42s - 4521.24s : They bought Rockset.
+4521.24s - 4525.24s : Rockset was a database startup, a relational database startup,
+4525.24s - 4528.44s : based on the guys that, that created RocksDB out of Facebook.
+4528.44s - 4531.36s : And OpenAI, he paid a lot of money for it.
+4531.92s - 4534.3s : And so his question is, well what, first of all,
+4534.3s - 4535.86s : what is OpenAI going to do with Rockset?
+4535.86s - 4536.4s : I can't tell you.
+4538.12s - 4541.44s : But what are some uses for a vector database?
+4541.44s - 4547.88s : So going back to my example here, Right?
+4547.88s - 4549.98s : This idea of this semantic search, like,
+4549.98s - 4553.14s : find me the albums that are similar to Liquid Source.
+4553.14s - 4555.64s : I'm not defining what it means to be similar, right?
+4555.64s - 4558.82s : Or find me the albums where they talk about slinging rocks.
+4558.82s - 4560.12s : Well, you could have your transformer know that slinging rocks means DLN.
+4560.12s - 4560.82s : And so I'm going to go ahead and do that.
+4560.82s - 4561.1s : And so I'm going to go ahead and do that.
+4561.1s - 4561.24s : And so I'm going to go ahead and do that.
+4561.24s - 4561.32s : And so I'm going to go ahead and do that.
+4561.32s - 4561.46s : And so I'm going to go ahead and do that.
+4561.46s - 4561.62s : And so I'm going to go ahead and do that.
+4561.62s - 4562.98s : And so I'm going to go ahead and do that.
+4562.98s - 4564.58s : And even though you asked for slinging rocks,
+4564.58s - 4568.64s : it somehow magically knows, because the training data it's based on,
+4568.64s - 4571.0s : how to match that to different things.
+4571.0s - 4575.18s : So it's a way to do better searching based on the semantics,
+4575.18s - 4578.06s : rather than find exact matches.
+4578.06s - 4580.72s : That's where these things are being useful.
+4580.72s - 4581.22s : Yes?
+4581.22s - 4583.8s : Are we not able to do these kind of semantics
+4583.8s - 4586.14s : through a relational database?
+4586.14s - 4588.28s : The question is, are we not able to do these semantic searches
+4588.28s - 4588.78s : in relational database?
+4588.78s - 4589.74s : No, I said absolutely.
+4589.74s - 4590.8s : Yes, you can.
+4590.8s - 4591.4s : Assuming you can store them.
+4591.4s - 4595.3s : You can store this, an embedding, and then have a vector index
+4595.3s - 4598.0s : do the fast approximate nearest neighbor search.
+4598.0s - 4599.72s : You could write SQL queries against this.
+4599.72s - 4601.3s : Postgres does this with pgVector.
+4601.3s - 4603.34s : Almost all relational databases have now
+4603.34s - 4604.84s : some form of a vector index.
+4604.84s - 4606.22s : You can do this.
+4606.22s - 4608.3s : Prior to this, though, the way you would do lookups
+4608.3s - 4609.52s : would be like fuzzy matching.
+4609.52s - 4613.66s : Like, find me all the albums that had the word swords in it.
+4613.66s - 4615.34s : You couldn't do this.
+4615.34s - 4618.56s : The semantic meaning is, that part's just new.
+4618.56s - 4620.2s : In the back, yes?
+4620.2s - 4621.3s : .
+4621.4s - 4625.6s : .
+4625.6s - 4627.44s : This question is, if every record needs to go through a transformer,
+4627.44s - 4628.28s : wouldn't that be slow?
+4628.28s - 4628.78s : Yes?
+4628.78s - 4634.0s : .
+4634.0s - 4635.14s : I mean, milliseconds.
+4635.14s - 4636.36s : It takes milliseconds.
+4636.36s - 4638.34s : Yeah, it's not seconds.
+4638.34s - 4638.84s : Yeah.
+4638.84s - 4642.66s : .
+4642.66s - 4643.64s : I can be very clear here.
+4643.64s - 4647.86s : Like, you can put this in a relational database, right?
+4647.86s - 4650.4s : The question would be, is the.
+4650.4s - 4650.9s : .
+4651.4s - 4654.0s : Is running through the transformer to get back the embedding,
+4654.0s - 4656.86s : then do the lookup, is that going to be slower than doing
+4656.86s - 4659.56s : an inverted index, which we'll cover later on?
+4659.56s - 4661.54s : Maybe.
+4661.54s - 4662.58s : Depends on what this is.
+4662.58s - 4663.52s : Depends on what's in memory.
+4663.52s - 4666.14s : There's so many different factors involved, it's hard to say.
+4666.14s - 4669.72s : And then that assumes that you're going to get the data you'd want
+4669.72s - 4671.98s : using a fuzzy search anyway.
+4671.98s - 4674.32s : Again, for some things, it's not going to work.
+4674.32s - 4678.42s : Because there's no understanding of what actually is in the data,
+4678.42s - 4679.4s : what it means.
+4679.4s - 4681.28s : That's what the transformer does for you.
+4681.28s - 4683.96s : .
+4683.96s - 4684.46s : Yes?
+4684.46s - 4693.48s : .
+4693.48s - 4693.98s : Yes.
+4693.98s - 4697.7s : .
+4697.7s - 4698.96s : Well, fuck him if he did that, right?
+4698.96s - 4702.94s : So his question is, sometimes in the job interview,
+4702.94s - 4704.96s : the interviewer will ask you, pick a database for
+4704.96s - 4707.16s : whatever the prototype is from your building.
+4707.16s - 4708.34s : The answer is Postgres.
+4708.34s - 4709.24s : Always pick Postgres.
+4709.24s - 4709.96s : Right?
+4709.96s - 4710.4s : .
+4710.4s - 4711.12s : Damn dead serious.
+4711.12s - 4712.72s : .
+4712.72s - 4713.22s : Right?
+4713.22s - 4715.02s : And you can't say, oh, because Andy said so.
+4715.02s - 4718.02s : But Postgres is a rock solid database system
+4718.02s - 4719.62s : that has a lot of the features you
+4719.62s - 4724.12s : would see in a sort of enterprise-y system.
+4724.12s - 4725.96s : And actually, not just for interviews,
+4725.96s - 4727.84s : for anybody doing a startup, your first choice
+4727.84s - 4729.62s : would be Postgres.
+4729.62s - 4732.3s : Because you wouldn't be spending your time building
+4732.3s - 4733.92s : your application not worrying about what
+4733.92s - 4735.12s : database system you want to build.
+4735.12s - 4736.36s : So you could just say Postgres, because I
+4736.36s - 4737.76s : want to spend my time building the application,
+4737.76s - 4738.92s : because that's what matters.
+4738.92s - 4740.84s : No one's going to know or care that your application is running
+4740.84s - 4743.14s : on Postgres or MongoDB, because they don't interact
+4743.14s - 4744.6s : with the database at that level.
+4744.6s - 4746.34s : Postgres is almost always the right choice.
+4746.34s - 4748.44s : Now, you may get to the point where Postgres can't scale
+4748.44s - 4751.56s : and handle your data, and at which point you pay, not me,
+4751.56s - 4754.14s : but pay somebody else a lot of money to help figure out how
+4754.14s - 4756.44s : to make Postgres scale.
+4756.44s - 4757.34s : In the back, yes?
+4757.34s - 4760.6s : .
+4760.6s - 4761.08s : Can you speak up?
+4761.08s - 4761.58s : Sorry.
+4761.58s - 4762.4s : .
+4762.4s - 4763.4s : .
+4763.4s - 4764.4s : .
+4764.4s - 4765.4s : .
+4765.4s - 4766.4s : .
+4766.4s - 4767.4s : .
+4767.4s - 4768.4s : .
+4768.4s - 4769.4s : .
+4769.4s - 4773.02s : This question is, where do some good database companies
+4773.02s - 4774.9s : work at, what are some bad database companies
+4774.9s - 4775.4s : to work at?
+4775.4s - 4776.4s : .
+4776.4s - 4778.28s : All right, so good database companies.
+4778.28s - 4780.04s : This is the great thing about databases.
+4780.04s - 4781.7s : There's a lot of money, and there's
+4781.7s - 4784.82s : a lot of people building database systems.
+4784.82s - 4786.86s : So say you're in operating systems.
+4786.86s - 4788.76s : Where can you go to build an opposition?
+4788.76s - 4790.6s : IBM, Red Hat maybe, right?
+4790.6s - 4792.68s : The Linux guys are all doing their various things,
+4792.68s - 4795.82s : but there aren't a lot of competing operating systems.
+4795.82s - 4796.92s : There's a ton of databases.
+4796.92s - 4798.86s : And if you want to go to a big company, the Microsoft,
+4798.86s - 4801.3s : the Amazons, the Googles, even the Facebooks,
+4801.3s - 4803.52s : all of them are building database systems.
+4803.52s - 4804.98s : And then there's a bunch of startups
+4804.98s - 4806.32s : that are all in this space as well.
+4806.32s - 4810.56s : Now some of them have questionable financial footings.
+4810.56s - 4815.24s : I say this because my database startup failed this summer.
+4815.24s - 4816.98s : So there's a lot of choices in the database.
+4816.98s - 4818.54s : There's a lot of money in it.
+4818.54s - 4820.66s : Even now, even though the relational model,
+4820.66s - 4822.94s : relational databases are 50 years old,
+4822.94s - 4825.74s : there's still people trying to build new systems all the time.
+4825.74s - 4828.4s : Now in terms of bad companies, I mean,
+4828.4s - 4835.6s : not to say off the bat, Enterprise DB
+4835.6s - 4836.1s : them.
+4836.1s - 4839.58s : So avoid Enterprise DB.
+4839.58s - 4841.48s : In terms of other ones, for startups,
+4841.48s - 4843.02s : obviously you want to talk to people
+4843.02s - 4846.72s : and see what the finances look like.
+4846.72s - 4849.28s : You can maybe get a sense of how much they're chasing fads.
+4852.96s - 4855.78s : If all of a sudden they start off being some kind of database
+4855.78s - 4856.96s : and now they're a vector database because it's
+4856.96s - 4858.38s : the hot thing or the AI database.
+4858.38s - 4860.88s : That looks a little dicey.
+4860.88s - 4863.74s : Another interesting avenue is also, I mentioned Google.
+4863.74s - 4866.34s : Google and Amazon, they sell database services.
+4866.34s - 4869.6s : Then there's companies like, I can't say, well,
+4869.6s - 4871.42s : I'll bleep it out, like .
+4871.42s - 4873.54s : They're building a database system that's .
+4873.54s - 4875.78s : And the great thing about it is they're building it in-house.
+4875.78s - 4877.18s : They don't have to worry about getting customers
+4877.18s - 4878.28s : because they're their own customer.
+4878.28s - 4879.76s : But they're actually building a whole system from scratch
+4879.76s - 4881.7s : from and doing some interesting things.
+4881.7s - 4882.78s : So there's so many different options
+4882.78s - 4884.18s : to do this in databases.
+4884.18s - 4885.84s : And that's why I think the class is super important
+4885.84s - 4888.08s : because you're going to encounter this throughout your life.
+4888.08s - 4890.7s : And the companies don't want to hire a bunch of random JavaScript
+4890.7s - 4891.8s : programmers because those people are going
+4891.8s - 4892.7s : to break your database system.
+4892.7s - 4894.46s : You don't want them to touch the internals.
+4894.46s - 4898.1s : They want CMU students who know how to handle these things
+4898.1s - 4900.24s : and are dying to hire you guys.
+4900.24s - 4900.74s : Yes, quick.
+4900.74s - 4902.7s : Do you think this class is in good preparation
+4902.7s - 4903.52s : for a database career?
+4903.52s - 4904.98s : His question is, is this class in good preparation
+4904.98s - 4905.94s : for a database career?
+4905.94s - 4909.22s : I am biased because it's my class.
+4909.22s - 4910.9s : I've been told by certain database companies,
+4910.9s - 4915.38s : this class is the onboarding process for database companies.
+4915.38s - 4918.08s : I've also been told that the interviews,
+4918.08s - 4920.42s : for some database companies, are basically entire lectures
+4920.42s - 4922.38s : from this class.
+4922.38s - 4926.9s : So take that to mean what it means.
+4926.9s - 4928.82s : There's always money in databases.
+4928.82s - 4929.58s : How about that?
+4929.58s - 4930.56s : OK?
+4930.56s - 4931.7s : Last question.
+4931.7s - 4933.7s : What's the best way to incorporate blockchain
+4933.7s - 4934.7s : into my database?
+4939.8s - 4940.3s : All right.
+4940.3s - 4942.54s : Do you have a real question?
+4942.54s - 4944.78s : I'll have to do the DJ in this course.
+4944.78s - 4945.98s : All right.
+4945.98s - 4946.44s : Yeah.
+4946.44s - 4947.9s : So unfortunately, we cannot have a DJ this year
+4947.9s - 4950.54s : because of legal problems dealing with Warner Hall.
+4950.54s - 4951.38s : So I apologize.
+4955.46s - 4957.66s : I have tenure, but there is the moral turpitude clause at CMU
+4957.66s - 4959.2s : where I can still get fired.
+4959.2s - 4961.16s : So I'm trying to lay low this year.
+4961.16s - 4962.04s : So I apologize.
+4962.04s - 4963.68s : OK?
+4963.68s - 4964.56s : All right.
+4964.56s - 4965.66s : All right, guys.
+4965.66s - 4966.26s : That's it.
+4966.26s - 4968.78s : See you on Tuesday or Wednesday.
+4968.78s - 4971.32s : Mm, I need something refreshing when I get finished
+4971.32s - 4972.16s : manifesting.
+4972.16s - 4974.54s : Too cold, a whole bowl like Smith and Wesson.
+4974.54s - 4977.24s : One court and my thoughts hip hop related.
+4977.24s - 4977.74s : Right around.
+4977.74s - 4977.82s : .
+4977.9s - 4979.96s : I'm in my pants intoxicated.
+4979.96s - 4982.34s : Lyrics are quicker with a sip of more liquor.
+4982.34s - 4985.08s : Since I'm a city slicker, brain waves are thicker.
+4985.08s - 4988.88s : Rhymes I create rotate at a way too quick to duplicate.
+4988.88s - 4990.46s : Feel a breeze as I skate.
+4990.46s - 4993.22s : Mic's at Fahrenheit when I hold it real tight.
+4993.22s - 4994.54s : Then I'm in flight.
+4994.54s - 4995.9s : Then we ignite.
+4995.9s - 4997.28s : Blood starts to boil.
+4997.28s - 4998.54s : I heat up a party for you.
+4998.54s - 5001.3s : Let my girl run me and my mic down with oil.
+5001.3s - 5004.74s : Records still turn with third degree burn for one man.
+5004.74s - 5007.74s : I heat up your brain, give it a suntan to just cool.
+5007.74s - 5012.18s : Let the temperature rise to cool it off with St. Ives.

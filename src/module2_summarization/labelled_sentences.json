@@ -2805,5 +2805,3799 @@
     "timestamp_start": 2429.04,
     "timestamp_end": 2431.04,
     "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So before we get started, I have to read this out.",
+    "timestamp_start": 29.0,
+    "timestamp_end": 31.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So I do not have child protection clearance for Act 153.",
+    "timestamp_start": 33.8,
+    "timestamp_end": 37.98,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "This is the state law in Pennsylvania.",
+    "timestamp_start": 38.38,
+    "timestamp_end": 39.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So if anybody here is under the age of 18, you cannot be in this classroom.",
+    "timestamp_start": 40.4,
+    "timestamp_end": 44.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "No, it's not a joke, seriously.",
+    "timestamp_start": 46.64,
+    "timestamp_end": 47.78,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't think they would have notified me, but just make sure that anybody here who's not 18 or older,",
+    "timestamp_start": 48.88,
+    "timestamp_end": 53.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "it's a Pennsylvania State Law and Criminal History patch.",
+    "timestamp_start": 54.32,
+    "timestamp_end": 56.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't have the criminal history background to pass this.",
+    "timestamp_start": 56.46,
+    "timestamp_end": 63.24,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So again, if you're under 18, please leave the room.",
+    "timestamp_start": 63.56,
+    "timestamp_end": 67.02,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "With that aside, I want to give a quick shout out to people who's helped us get here where we are today.",
+    "timestamp_start": 67.96,
+    "timestamp_end": 71.94,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So this is EZE in Crooklyn, JAL in Seattle, and then DJ Drop Tables unfortunately passed away this summer.",
+    "timestamp_start": 72.44,
+    "timestamp_end": 78.62,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So RIP to him.",
+    "timestamp_start": 79.02,
+    "timestamp_end": 79.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then DJ Mushu is in lockdown, which is a whole other issue.",
+    "timestamp_start": 80.38,
+    "timestamp_end": 83.56,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So we send our respect for him.",
+    "timestamp_start": 84.18,
+    "timestamp_end": 86.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All right.",
+    "timestamp_start": 87.36,
+    "timestamp_end": 87.7,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So with that out of the way, let's get into databases.",
+    "timestamp_start": 87.82,
+    "timestamp_end": 90.36,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So I sort of mentioned this in Lecture 0, which I did re-record today.",
+    "timestamp_start": 90.88,
+    "timestamp_end": 94.78,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I apologize for f***ing up the mic, but it should be better now.",
+    "timestamp_start": 94.94,
+    "timestamp_end": 97.98,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So as we go along throughout the semester, you will see I get very, very excited about databases.",
+    "timestamp_start": 99.16,
+    "timestamp_end": 103.02,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And this is for a very important reason.",
+    "timestamp_start": 103.42,
+    "timestamp_end": 106.58,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I only care about two things in my life.",
+    "timestamp_start": 107.22,
+    "timestamp_end": 109.36,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The first thing is my wife and my biological daughter.",
+    "timestamp_start": 110.12,
+    "timestamp_end": 112.9,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then the second thing is databases.",
+    "timestamp_start": 113.16,
+    "timestamp_end": 115.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't care about anything.",
+    "timestamp_start": 115.34,
+    "timestamp_end": 116.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't talk to my family.",
+    "timestamp_start": 116.6,
+    "timestamp_end": 117.72,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "They're all Trump supporters, anti-vax.",
+    "timestamp_start": 117.82,
+    "timestamp_end": 119.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't care about them.",
+    "timestamp_start": 119.82,
+    "timestamp_end": 120.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't have any hobbies.",
+    "timestamp_start": 120.88,
+    "timestamp_end": 121.62,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's just databases.",
+    "timestamp_start": 121.76,
+    "timestamp_end": 122.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I live what you call a database-centric lifestyle.",
+    "timestamp_start": 122.92,
+    "timestamp_end": 125.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And hopefully I hope to impart to you guys what that means, what that entails,",
+    "timestamp_start": 126.26,
+    "timestamp_end": 129.42,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and you can continue down the path beyond those courts.",
+    "timestamp_start": 129.62,
+    "timestamp_end": 132.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Now, earlier last week, someone posted this on the CMU Reddit.",
+    "timestamp_start": 132.78,
+    "timestamp_end": 136.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "They want to know whether taking 440 or 445 is harder",
+    "timestamp_start": 139.44,
+    "timestamp_end": 142.72,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "because they want to spend their time doing other things in their life.",
+    "timestamp_start": 142.72,
+    "timestamp_end": 145.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So I chime in and say whoever this person is should not be taking the course",
+    "timestamp_start": 146.46,
+    "timestamp_end": 150.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "because I don't care whether they think it's hard or easy.",
+    "timestamp_start": 150.6,
+    "timestamp_end": 153.36,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You will see throughout the semester that if you take a viewpoint of everything is pretty much a database problem",
+    "timestamp_start": 154.1,
+    "timestamp_end": 159.1,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and that all your time should be spending working on databases,",
+    "timestamp_start": 159.42,
+    "timestamp_end": 161.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "then you'll be happier in your life.",
+    "timestamp_start": 162.74,
+    "timestamp_end": 164.52,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So again, if someone's in the class here that posted this, you don't belong.",
+    "timestamp_start": 165.44,
+    "timestamp_end": 169.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Again, just quickly a reminder about the course logistics.",
+    "timestamp_start": 171.4,
+    "timestamp_end": 173.58,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Everything's on the course web page.",
+    "timestamp_start": 173.96,
+    "timestamp_end": 175.32,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All the announcements are discussed.",
+    "timestamp_start": 175.52,
+    "timestamp_end": 176.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We have a discussion for projects, homeworks, logistics, and other things we've done through Piazza.",
+    "timestamp_start": 176.66,
+    "timestamp_end": 180.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All the homeworks and projects will be submitted through Gradescope and auto-graded.",
+    "timestamp_start": 180.26,
+    "timestamp_end": 183.22,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Your final grades for the most, actually the mid-semester grades and the final grades for all your projects and homeworks",
+    "timestamp_start": 183.42,
+    "timestamp_end": 188.1,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and final exams will be posted on Canvas.",
+    "timestamp_start": 188.3,
+    "timestamp_end": 190.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "If you're on the wait list, I think our max capacity is 140 before the fire marshal shows up.",
+    "timestamp_start": 191.4,
+    "timestamp_end": 196.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And as of an hour or so ago, we have six open seats and the administrators will fill off people from the wait list into that.",
+    "timestamp_start": 196.64,
+    "timestamp_end": 203.34,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So if you're still on the wait list, you may have a chance to get in,",
+    "timestamp_start": 203.78,
+    "timestamp_end": 205.62,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "but I can't get in.",
+    "timestamp_start": 205.62,
+    "timestamp_end": 206.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So if you're still on the wait list, you may have a chance to get in, but I can't get in.",
+    "timestamp_start": 206.28,
+    "timestamp_end": 206.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So if you're still on the wait list, you may have a chance to get in, but I can't get in.",
+    "timestamp_start": 206.62,
+    "timestamp_end": 207.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So if you're still on the wait list, you may have a chance to get in, but I can't get in.",
+    "timestamp_start": 207.12,
+    "timestamp_end": 207.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And if you're not at CMU, we'll make everything available for the projects through this Gradescope.",
+    "timestamp_start": 208.74,
+    "timestamp_end": 214.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Use this code.",
+    "timestamp_start": 214.06,
+    "timestamp_end": 214.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Make sure you put yourself as the University of Carnegie Mellon.",
+    "timestamp_start": 215.06,
+    "timestamp_end": 218.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Everybody in this room right now, do not do this because then you won't get a grade.",
+    "timestamp_start": 219.26,
+    "timestamp_end": 221.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And just ask everyone else who is not at CMU, who's watching the videos,",
+    "timestamp_start": 222.28,
+    "timestamp_end": 225.36,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "don't post your solutions on GitHub.",
+    "timestamp_start": 225.72,
+    "timestamp_end": 227.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Don't do the stupid thing of submitting the PR with your code because we're going to put a wall of shame up for that.",
+    "timestamp_start": 227.4,
+    "timestamp_end": 232.24,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then don't email myself or the TAs if you're not a CMU student.",
+    "timestamp_start": 232.46,
+    "timestamp_end": 235.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Everybody else here in the class,",
+    "timestamp_start": 235.32,
+    "timestamp_end": 236.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "please post on Piazza and we will respond.",
+    "timestamp_start": 236.28,
+    "timestamp_end": 238.7,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Any questions or comments about any of these things?",
+    "timestamp_start": 238.7,
+    "timestamp_end": 242.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Again, if you're coming in, if you're not 18 or older,",
+    "timestamp_start": 242.04,
+    "timestamp_end": 244.7,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "you have to leave the room because of the Act 153.",
+    "timestamp_start": 244.7,
+    "timestamp_end": 247.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So today's agenda, we're going to talk",
+    "timestamp_start": 249.1,
+    "timestamp_end": 251.72,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "about a quick background of what database systems are.",
+    "timestamp_start": 251.72,
+    "timestamp_end": 253.92,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That sort of sets us up for what the course will be about.",
+    "timestamp_start": 253.92,
+    "timestamp_end": 256.56,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We'll spend most of our time talking about the relational",
+    "timestamp_start": 256.56,
+    "timestamp_end": 258.72,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "model and relational algebra.",
+    "timestamp_start": 258.72,
+    "timestamp_end": 260.2,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "This is going to be the bedrock for how most database systems",
+    "timestamp_start": 260.2,
+    "timestamp_end": 262.64,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "that you're going to care about, not all,",
+    "timestamp_start": 262.64,
+    "timestamp_end": 264.52,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "but most systems will be predicated on this.",
+    "timestamp_start": 264.52,
+    "timestamp_end": 268.72,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We'll talk a little bit about alternative data models that",
+    "timestamp_start": 268.72,
+    "timestamp_end": 270.94,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "are out there, like MongoDBs, and document stuff, JSON stuff,",
+    "timestamp_start": 270.94,
+    "timestamp_end": 275.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and vector databases.",
+    "timestamp_start": 275.04,
+    "timestamp_end": 276.64,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But these will sort of be ancillary to what we talk about",
+    "timestamp_start": 276.64,
+    "timestamp_end": 279.16,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "in this course.",
+    "timestamp_start": 279.16,
+    "timestamp_end": 280.36,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The core ideas beyond the relational model",
+    "timestamp_start": 280.36,
+    "timestamp_end": 283.36,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "of how we're going to build these database system",
+    "timestamp_start": 283.36,
+    "timestamp_end": 286.3,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "will be applicable to these other alternative data models.",
+    "timestamp_start": 286.3,
+    "timestamp_end": 289.02,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's just I care less about them, right?",
+    "timestamp_start": 289.02,
+    "timestamp_end": 291.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Because I care about SQL.",
+    "timestamp_start": 291.64,
+    "timestamp_end": 292.78,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I care about the relational data model.",
+    "timestamp_start": 292.78,
+    "timestamp_end": 294.36,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And as I said on Piazza yesterday, since this comes up every year,",
+    "timestamp_start": 294.36,
+    "timestamp_end": 298.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "people always ask sort of high level questions about databases",
+    "timestamp_start": 298.68,
+    "timestamp_end": 301.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "throughout the semester.",
+    "timestamp_start": 301.96,
+    "timestamp_end": 302.92,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And I want to try to cover as much as I can at the very beginning.",
+    "timestamp_start": 302.92,
+    "timestamp_end": 305.74,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So if you have any questions you want to ask me at the end,",
+    "timestamp_start": 305.74,
+    "timestamp_end": 308.08,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "we can take those.",
+    "timestamp_start": 308.08,
+    "timestamp_end": 310.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And again, as I said in lecture zero,",
+    "timestamp_start": 310.88,
+    "timestamp_end": 313.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I get very excited about databases.",
+    "timestamp_start": 313.68,
+    "timestamp_end": 315.24,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I talk very fast.",
+    "timestamp_start": 315.24,
+    "timestamp_end": 316.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Please tell me to stop and slow down.",
+    "timestamp_start": 316.2,
+    "timestamp_end": 317.72,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "If you have any questions, please interrupt me",
+    "timestamp_start": 317.72,
+    "timestamp_end": 319.92,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and ask me to repeat myself.",
+    "timestamp_start": 319.92,
+    "timestamp_end": 321.18,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And I refuse to answer any questions about the lecture.",
+    "timestamp_start": 321.18,
+    "timestamp_end": 323.76,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "At the end of class.",
+    "timestamp_start": 324.36,
+    "timestamp_end": 325.38,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't line up and say, what did you say in lecture?",
+    "timestamp_start": 325.38,
+    "timestamp_end": 327.42,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Slide five said this.",
+    "timestamp_start": 327.42,
+    "timestamp_end": 328.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What do you mean?",
+    "timestamp_start": 328.3,
+    "timestamp_end": 329.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Interrupt me as we go along, because if you have a question,",
+    "timestamp_start": 329.26,
+    "timestamp_end": 331.38,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "somebody else also probably has the same question.",
+    "timestamp_start": 331.38,
+    "timestamp_end": 333.66,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And so we want to cover these things.",
+    "timestamp_start": 333.66,
+    "timestamp_end": 336.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All right.",
+    "timestamp_start": 336.96,
+    "timestamp_end": 337.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Databases, the second most important thing in my life.",
+    "timestamp_start": 337.96,
+    "timestamp_end": 340.92,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Can anybody give me an example of a database?",
+    "timestamp_start": 340.92,
+    "timestamp_end": 343.08,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Click house.",
+    "timestamp_start": 349.18,
+    "timestamp_end": 349.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He said click house.",
+    "timestamp_start": 349.82,
+    "timestamp_end": 351.56,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Anybody else?",
+    "timestamp_start": 351.56,
+    "timestamp_end": 352.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You said dictionary?",
+    "timestamp_start": 354.36,
+    "timestamp_end": 356.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Yeah, that's pretty good.",
+    "timestamp_start": 356.64,
+    "timestamp_end": 357.18,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What else?",
+    "timestamp_start": 357.18,
+    "timestamp_end": 357.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Nobody can give me a database.",
+    "timestamp_start": 362.76,
+    "timestamp_end": 364.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The contact manager on your phone.",
+    "timestamp_start": 364.12,
+    "timestamp_end": 365.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Contact manager on your phone.",
+    "timestamp_start": 365.96,
+    "timestamp_end": 366.74,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Excellent.",
+    "timestamp_start": 367.04,
+    "timestamp_end": 368.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Excellent.",
+    "timestamp_start": 371.82,
+    "timestamp_end": 372.58,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All right.",
+    "timestamp_start": 372.58,
+    "timestamp_end": 372.78,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So he said click house.",
+    "timestamp_start": 372.78,
+    "timestamp_end": 373.76,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He said dictionary.",
+    "timestamp_start": 373.76,
+    "timestamp_end": 374.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He said he said contact manager.",
+    "timestamp_start": 374.44,
+    "timestamp_end": 375.86,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He said IMDB.",
+    "timestamp_start": 375.86,
+    "timestamp_end": 377.18,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So click house is a database management system.",
+    "timestamp_start": 377.18,
+    "timestamp_end": 380.1,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The other examples are all databases.",
+    "timestamp_start": 380.1,
+    "timestamp_end": 382.26,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And so what's tricky.",
+    "timestamp_start": 382.26,
+    "timestamp_end": 383.7,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "In well, the common semantics of how people describe databases",
+    "timestamp_start": 384.36,
+    "timestamp_end": 388.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "is usually they meant the database systems, which",
+    "timestamp_start": 388.04,
+    "timestamp_end": 390.42,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "we will focus on this class.",
+    "timestamp_start": 390.42,
+    "timestamp_end": 391.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But I want to first sort of discover discuss what a database",
+    "timestamp_start": 391.68,
+    "timestamp_end": 394.18,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "is and then how we're going to build a database management",
+    "timestamp_start": 394.18,
+    "timestamp_end": 396.6,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "system to manage it.",
+    "timestamp_start": 396.6,
+    "timestamp_end": 398.76,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So a database is going to be an organized collection of data.",
+    "timestamp_start": 400.44,
+    "timestamp_end": 404.24,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "No surprise there.",
+    "timestamp_start": 404.24,
+    "timestamp_end": 405.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That are related to a way in some manner.",
+    "timestamp_start": 405.14,
+    "timestamp_end": 409.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And it's meant to model some aspect of the real world.",
+    "timestamp_start": 409.14,
+    "timestamp_end": 411.86,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So he said dictionary.",
+    "timestamp_start": 411.86,
+    "timestamp_end": 413.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And what is a dictionary?",
+    "timestamp_start": 413.26,
+    "timestamp_end": 414.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "A bunch of words.",
+    "timestamp_start": 414.26,
+    "timestamp_end": 415.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then their definitions.",
+    "timestamp_start": 415.46,
+    "timestamp_end": 416.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And maybe like the part of speech or whatever.",
+    "timestamp_start": 416.96,
+    "timestamp_end": 419.4,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So that's modeling the vocabulary.",
+    "timestamp_start": 419.4,
+    "timestamp_end": 422.38,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He said a contact manager.",
+    "timestamp_start": 422.38,
+    "timestamp_end": 423.5,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That's modeling someone keeping track of elements",
+    "timestamp_start": 423.5,
+    "timestamp_end": 425.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "of pencil and paper.",
+    "timestamp_start": 425.3,
+    "timestamp_end": 426.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Here's all my contacts and their phone numbers and email",
+    "timestamp_start": 426.28,
+    "timestamp_end": 428.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "addresses.",
+    "timestamp_start": 428.04,
+    "timestamp_end": 429.5,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You're modeling some aspect of the real world.",
+    "timestamp_start": 429.5,
+    "timestamp_end": 431.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And you're trying to capture all of the constraints and aspects",
+    "timestamp_start": 431.84,
+    "timestamp_end": 435.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "of that real world concept in your database.",
+    "timestamp_start": 435.2,
+    "timestamp_end": 439.86,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And again, I'm highly biased because all I care about",
+    "timestamp_start": 439.86,
+    "timestamp_end": 442.36,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "is databases.",
+    "timestamp_start": 442.36,
+    "timestamp_end": 443.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But the database is going to be the core concept",
+    "timestamp_start": 443.54,
+    "timestamp_end": 446.08,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "for almost all computer applications",
+    "timestamp_start": 446.08,
+    "timestamp_end": 447.62,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and almost all of computer science.",
+    "timestamp_start": 447.62,
+    "timestamp_end": 449.82,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "At the end of the day, what is a computer doing?",
+    "timestamp_start": 449.82,
+    "timestamp_end": 451.58,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Some input comes in.",
+    "timestamp_start": 451.58,
+    "timestamp_end": 452.58,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You do something on data.",
+    "timestamp_start": 452.58,
+    "timestamp_end": 453.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You produce some output.",
+    "timestamp_start": 453.82,
+    "timestamp_end": 455.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That's a database.",
+    "timestamp_start": 455.88,
+    "timestamp_end": 456.58,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That middle part almost always is a database.",
+    "timestamp_start": 456.58,
+    "timestamp_end": 459.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What is a file system?",
+    "timestamp_start": 459.64,
+    "timestamp_end": 460.78,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "File system is a database.",
+    "timestamp_start": 460.78,
+    "timestamp_end": 461.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "If you use a website, what are you doing?",
+    "timestamp_start": 461.88,
+    "timestamp_end": 463.58,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You're interacting with some form that talks to a database.",
+    "timestamp_start": 463.58,
+    "timestamp_end": 466.7,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What is an LLM?",
+    "timestamp_start": 466.7,
+    "timestamp_end": 468.5,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's a database, more or less.",
+    "timestamp_start": 468.5,
+    "timestamp_end": 471.54,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So this is the most important thing.",
+    "timestamp_start": 471.54,
+    "timestamp_end": 472.74,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "In computer science, again, I'm biased.",
+    "timestamp_start": 473.54,
+    "timestamp_end": 475.98,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But you're going to encounter databases",
+    "timestamp_start": 475.98,
+    "timestamp_end": 477.6,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "all throughout your life.",
+    "timestamp_start": 477.6,
+    "timestamp_end": 479.24,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And what this class is going to teach you",
+    "timestamp_start": 479.24,
+    "timestamp_end": 481.62,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "is to understand what a database management system is",
+    "timestamp_start": 481.62,
+    "timestamp_end": 484.4,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "trying to do for you.",
+    "timestamp_start": 484.4,
+    "timestamp_end": 486.54,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Why are things going slow?",
+    "timestamp_start": 486.54,
+    "timestamp_end": 487.66,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Why is my query coming back with garbage?",
+    "timestamp_start": 487.66,
+    "timestamp_end": 490.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So if you understand how the components are implemented,",
+    "timestamp_start": 490.44,
+    "timestamp_end": 493.34,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "what they're doing, you're in a better position",
+    "timestamp_start": 493.34,
+    "timestamp_end": 495.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "to use a database system, to manage a database.",
+    "timestamp_start": 495.54,
+    "timestamp_end": 500.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So no matter where you go off and become a database systems",
+    "timestamp_start": 500.14,
+    "timestamp_end": 502.48,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "internal developer.",
+    "timestamp_start": 502.48,
+    "timestamp_end": 503.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Like all the companies that are coming in a few weeks",
+    "timestamp_start": 503.54,
+    "timestamp_end": 505.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "to talk to us.",
+    "timestamp_start": 505.64,
+    "timestamp_end": 506.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Or you go off and do something else,",
+    "timestamp_start": 506.68,
+    "timestamp_end": 508.18,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "at the end of the day, you're going",
+    "timestamp_start": 508.18,
+    "timestamp_end": 509.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "to interact with databases.",
+    "timestamp_start": 509.06,
+    "timestamp_end": 510.18,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Because that's what really life is all about.",
+    "timestamp_start": 510.18,
+    "timestamp_end": 512.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Everyone's got a smartphone here.",
+    "timestamp_start": 512.82,
+    "timestamp_end": 515.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All those applications are running SQLite.",
+    "timestamp_start": 515.3,
+    "timestamp_end": 517.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "SQLite is a database management system.",
+    "timestamp_start": 517.14,
+    "timestamp_end": 518.72,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's the most widely deployed one.",
+    "timestamp_start": 518.72,
+    "timestamp_end": 520.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So we'll understand how SQLite is actually implemented.",
+    "timestamp_start": 520.14,
+    "timestamp_end": 522.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And in homework one, you'll use SQLite.",
+    "timestamp_start": 522.14,
+    "timestamp_end": 525.9,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So let's discuss a toy example.",
+    "timestamp_start": 525.9,
+    "timestamp_end": 527.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And we can use that to explain the various parts",
+    "timestamp_start": 527.6,
+    "timestamp_end": 530.24,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "of the relational model and database management systems",
+    "timestamp_start": 530.24,
+    "timestamp_end": 531.9,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "as we go along.",
+    "timestamp_start": 531.9,
+    "timestamp_end": 532.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So the simple way to do this is to use SQLite.",
+    "timestamp_start": 532.54,
+    "timestamp_end": 533.42,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then you can use it to do a lot of other things.",
+    "timestamp_start": 533.42,
+    "timestamp_end": 533.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then we're trying to build a Spotify clone.",
+    "timestamp_start": 533.54,
+    "timestamp_end": 536.86,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So it's some kind of digital music store.",
+    "timestamp_start": 536.86,
+    "timestamp_end": 538.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And we want to keep track of the artists that",
+    "timestamp_start": 538.64,
+    "timestamp_end": 540.86,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "are putting out music, and then the albums",
+    "timestamp_start": 540.86,
+    "timestamp_end": 543.16,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "that those artists release.",
+    "timestamp_start": 543.16,
+    "timestamp_end": 544.32,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We want to know what, for a given album, what artist",
+    "timestamp_start": 544.32,
+    "timestamp_end": 547.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "appears on those albums.",
+    "timestamp_start": 547.26,
+    "timestamp_end": 549.66,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So a really simple implementation of the database",
+    "timestamp_start": 549.66,
+    "timestamp_end": 552.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "could just be a bunch of files on disk.",
+    "timestamp_start": 552.3,
+    "timestamp_end": 556.74,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "In my example here, I'm showing them as CSVs,",
+    "timestamp_start": 556.74,
+    "timestamp_end": 558.92,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "or Comma Saber Values.",
+    "timestamp_start": 558.92,
+    "timestamp_end": 560.32,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But it could be JSON.",
+    "timestamp_start": 560.32,
+    "timestamp_end": 561.68,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The kids love YAML.",
+    "timestamp_start": 561.68,
+    "timestamp_end": 562.64,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You could do YAML.",
+    "timestamp_start": 562.64,
+    "timestamp_end": 563.34,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It doesn't matter.",
+    "timestamp_start": 563.34,
+    "timestamp_end": 565.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But we're going to have a separate file per entity.",
+    "timestamp_start": 565.28,
+    "timestamp_end": 567.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So we'll have a file for the artists.",
+    "timestamp_start": 567.88,
+    "timestamp_end": 569.78,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And artists have a name, the year that they came out,",
+    "timestamp_start": 569.78,
+    "timestamp_end": 572.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and maybe the country that they're located in.",
+    "timestamp_start": 572.8,
+    "timestamp_end": 575.0,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then we'll have albums with the name of the album,",
+    "timestamp_start": 575.0,
+    "timestamp_end": 578.42,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "the artist that appears on the album,",
+    "timestamp_start": 578.42,
+    "timestamp_end": 580.36,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and then the year the album was released.",
+    "timestamp_start": 580.36,
+    "timestamp_end": 583.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "This is a database.",
+    "timestamp_start": 583.6,
+    "timestamp_end": 584.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I don't recommend doing it this way,",
+    "timestamp_start": 584.82,
+    "timestamp_end": 585.94,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "but you could do it this way.",
+    "timestamp_start": 585.94,
+    "timestamp_end": 587.1,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "A bunch of files on disk.",
+    "timestamp_start": 587.1,
+    "timestamp_end": 589.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So now, any time you want to update or insert a new record,",
+    "timestamp_start": 589.6,
+    "timestamp_end": 593.22,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "we just could go open the file, append to the end of it.",
+    "timestamp_start": 593.22,
+    "timestamp_end": 596.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Or if we need to answer a query, we just scan through it",
+    "timestamp_start": 596.8,
+    "timestamp_end": 599.0,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and show it will find the answer that we want.",
+    "timestamp_start": 599.0,
+    "timestamp_end": 601.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So say we want to answer a query like, what year did the GZA go",
+    "timestamp_start": 601.8,
+    "timestamp_end": 604.08,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, I could write some Python code that just opens the file",
+    "timestamp_start": 605.12,
+    "timestamp_end": 608.22,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "up, reads every line, parses it as a CSV to get back",
+    "timestamp_start": 608.22,
+    "timestamp_end": 613.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "an array or a list of values.",
+    "timestamp_start": 613.46,
+    "timestamp_end": 616.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I know that I'm trying to look up the name GZA.",
+    "timestamp_start": 616.26,
+    "timestamp_end": 619.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, the name is the first field in my file.",
+    "timestamp_start": 619.44,
+    "timestamp_end": 622.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So I just jump to the first field.",
+    "timestamp_start": 622.26,
+    "timestamp_end": 623.22,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I just go to the first element of the array,",
+    "timestamp_start": 623.22,
+    "timestamp_end": 625.22,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "check to see whether that value equals GZA.",
+    "timestamp_start": 625.22,
+    "timestamp_end": 627.7,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "If it does, then I print it out.",
+    "timestamp_start": 627.7,
+    "timestamp_end": 628.98,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "This is the database system, more or less.",
+    "timestamp_start": 632.98,
+    "timestamp_end": 634.72,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, this is interacting with the database",
+    "timestamp_start": 634.72,
+    "timestamp_end": 637.8,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "that I'm basically embedding the logical database system",
+    "timestamp_start": 637.8,
+    "timestamp_end": 640.46,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "inside my application to do this.",
+    "timestamp_start": 640.46,
+    "timestamp_end": 643.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Is this a good idea or a bad idea?",
+    "timestamp_start": 643.46,
+    "timestamp_end": 644.76,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I guess it says straw man at the top, so you know it's a bad idea.",
+    "timestamp_start": 648.32,
+    "timestamp_end": 650.32,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So why is it a bad idea?",
+    "timestamp_start": 650.32,
+    "timestamp_end": 651.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So you kind of need to look over every entry.",
+    "timestamp_start": 654.22,
+    "timestamp_end": 656.22,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So he says you kind of need to look over every entry.",
+    "timestamp_start": 656.22,
+    "timestamp_end": 658.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So my example here, my file has three lines.",
+    "timestamp_start": 660.12,
+    "timestamp_end": 662.8,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "OK, who cares?",
+    "timestamp_start": 662.8,
+    "timestamp_end": 663.94,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That'll sit in L1 cache.",
+    "timestamp_start": 663.94,
+    "timestamp_end": 665.86,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It'll be super fast.",
+    "timestamp_start": 665.86,
+    "timestamp_end": 666.98,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But always, when you think about in computer science,",
+    "timestamp_start": 666.98,
+    "timestamp_end": 669.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "especially in databases, think about what",
+    "timestamp_start": 669.46,
+    "timestamp_end": 671.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "happens if you scale up to really large numbers.",
+    "timestamp_start": 671.12,
+    "timestamp_end": 673.86,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So what if my file had a billion records?",
+    "timestamp_start": 673.86,
+    "timestamp_end": 677.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Do I want to be scanning through and parsing every single line",
+    "timestamp_start": 677.28,
+    "timestamp_end": 680.16,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "just to find the element I'm looking for, one entry?",
+    "timestamp_start": 680.16,
+    "timestamp_end": 682.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What are some other problems?",
+    "timestamp_start": 683.22,
+    "timestamp_end": 687.02,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You have to rewrite the code every time",
+    "timestamp_start": 687.52,
+    "timestamp_end": 689.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "you want to change the query.",
+    "timestamp_start": 689.6,
+    "timestamp_end": 690.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Excellent.",
+    "timestamp_start": 690.84,
+    "timestamp_end": 691.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So he says you have to rewrite the code every time",
+    "timestamp_start": 691.14,
+    "timestamp_end": 692.56,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "you want to change your query.",
+    "timestamp_start": 692.56,
+    "timestamp_end": 694.98,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Worse than that, what if I want to add a new field?",
+    "timestamp_start": 694.98,
+    "timestamp_end": 698.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Now I've got to change a bunch of my code as well.",
+    "timestamp_start": 698.68,
+    "timestamp_end": 700.86,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's updating the file.",
+    "timestamp_start": 700.86,
+    "timestamp_end": 701.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That sucks.",
+    "timestamp_start": 701.84,
+    "timestamp_end": 704.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Maybe one more.",
+    "timestamp_start": 704.14,
+    "timestamp_end": 705.4,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "In the back, yes?",
+    "timestamp_start": 705.4,
+    "timestamp_end": 706.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So he says, what if you come across",
+    "timestamp_start": 711.66,
+    "timestamp_end": 713.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "a line that's reordered in a different way?",
+    "timestamp_start": 713.2,
+    "timestamp_end": 715.48,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Maybe they swapped the, somebody's stupid,",
+    "timestamp_start": 715.48,
+    "timestamp_end": 719.58,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and these are just files on disk.",
+    "timestamp_start": 719.58,
+    "timestamp_end": 720.7,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "They open up a text editor and flip the order of these things.",
+    "timestamp_start": 720.7,
+    "timestamp_end": 722.74,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And now my Python code is going to choke on it.",
+    "timestamp_start": 722.74,
+    "timestamp_end": 726.32,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Or even, what if I put, instead of the year 1990,",
+    "timestamp_start": 726.32,
+    "timestamp_end": 730.0,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I put a phone number in?",
+    "timestamp_start": 730.0,
+    "timestamp_end": 731.86,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What happens then?",
+    "timestamp_start": 731.86,
+    "timestamp_end": 733.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So there's a bunch of problems doing this approach,",
+    "timestamp_start": 733.96,
+    "timestamp_end": 736.18,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "but this is what the data center system is",
+    "timestamp_start": 736.18,
+    "timestamp_end": 738.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "going to prevent you from encountering these issues,",
+    "timestamp_start": 738.88,
+    "timestamp_end": 741.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "because it'll manage all these things.",
+    "timestamp_start": 741.96,
+    "timestamp_end": 743.08,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It'll manage all these things for you.",
+    "timestamp_start": 743.08,
+    "timestamp_end": 745.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So there's some other issues we have to deal with.",
+    "timestamp_start": 745.26,
+    "timestamp_end": 748.08,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So in my file, if an artist puts out multiple albums,",
+    "timestamp_start": 748.08,
+    "timestamp_end": 754.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "then in my album file, I'm just repeating their name",
+    "timestamp_start": 754.3,
+    "timestamp_end": 756.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "over and over again.",
+    "timestamp_start": 756.68,
+    "timestamp_end": 757.48,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Wu-Tang Clan, Wu-Tang Clan, Wu-Tang Clan.",
+    "timestamp_start": 757.48,
+    "timestamp_end": 759.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But how do I make sure that someone doesn't drop",
+    "timestamp_start": 759.46,
+    "timestamp_end": 761.46,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "an N in the name of the Wu-Tang Clan,",
+    "timestamp_start": 761.46,
+    "timestamp_end": 764.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and now it's Wu-Tang Claw?",
+    "timestamp_start": 764.68,
+    "timestamp_end": 767.34,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, I know that they should be the same thing,",
+    "timestamp_start": 767.34,
+    "timestamp_end": 769.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "but the data says that they're different.",
+    "timestamp_start": 769.2,
+    "timestamp_end": 771.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We brought this up before.",
+    "timestamp_start": 771.96,
+    "timestamp_end": 773.0,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What if someone comes along and overwrites the album name",
+    "timestamp_start": 773.0,
+    "timestamp_end": 775.98,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "with a weird string, puts an email address in,",
+    "timestamp_start": 775.98,
+    "timestamp_end": 778.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "or puts in a random number that shouldn't be there?",
+    "timestamp_start": 778.44,
+    "timestamp_end": 782.48,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then we didn't talk about this, but in my toy example,",
+    "timestamp_start": 782.48,
+    "timestamp_end": 786.0,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I assume that there was one artist per album.",
+    "timestamp_start": 786.0,
+    "timestamp_end": 790.42,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But if it's a mixtape, there's a lot of artists on that.",
+    "timestamp_start": 790.42,
+    "timestamp_end": 793.52,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And in my simple example, I couldn't handle that.",
+    "timestamp_start": 793.52,
+    "timestamp_end": 799.24,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Then what happens is, what if I delete an artist by accident",
+    "timestamp_start": 799.24,
+    "timestamp_end": 802.1,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "or by choice?",
+    "timestamp_start": 802.1,
+    "timestamp_end": 802.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I can delete an artist from the artist file,",
+    "timestamp_start": 802.8,
+    "timestamp_end": 806.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "but now I've got a bunch of albums that mention an artist",
+    "timestamp_start": 806.28,
+    "timestamp_end": 811.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "that doesn't exist in my table or my file.",
+    "timestamp_start": 811.2,
+    "timestamp_end": 815.1,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So I basically have a dangling pointer now.",
+    "timestamp_start": 815.1,
+    "timestamp_end": 818.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We've talked about how, on the implementation side,",
+    "timestamp_start": 818.12,
+    "timestamp_end": 820.5,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "how do you find a particular record?",
+    "timestamp_start": 820.5,
+    "timestamp_end": 822.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, just iterating over a single file",
+    "timestamp_start": 822.06,
+    "timestamp_end": 824.32,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and parsing it one by one.",
+    "timestamp_start": 824.32,
+    "timestamp_end": 825.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That's terrible.",
+    "timestamp_start": 825.82,
+    "timestamp_end": 826.42,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That's slow.",
+    "timestamp_start": 826.42,
+    "timestamp_end": 828.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "What if you have another application that",
+    "timestamp_start": 828.28,
+    "timestamp_end": 829.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "wants to use the same database?",
+    "timestamp_start": 829.8,
+    "timestamp_end": 830.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, now I've got to basically copy and paste the code that I wrote to parse it out.",
+    "timestamp_start": 830.88,
+    "timestamp_end": 832.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then I've got to parse that file and get records out",
+    "timestamp_start": 832.6,
+    "timestamp_end": 834.94,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and put it to my other application.",
+    "timestamp_start": 834.94,
+    "timestamp_end": 836.54,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But what if I wrote the first version of the application in Python,",
+    "timestamp_start": 836.54,
+    "timestamp_end": 839.24,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "but then I rewrote it in Rust?",
+    "timestamp_start": 839.24,
+    "timestamp_end": 841.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Now I've got to translate all the Python code to Rust code.",
+    "timestamp_start": 841.12,
+    "timestamp_end": 843.94,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That sucks.",
+    "timestamp_start": 843.94,
+    "timestamp_end": 845.62,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But then also, what if the other application",
+    "timestamp_start": 845.62,
+    "timestamp_end": 848.52,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "is running on a different machine or a bunch of cell phones?",
+    "timestamp_start": 848.52,
+    "timestamp_end": 851.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Now I've got to make sure that all the application implementations",
+    "timestamp_start": 851.28,
+    "timestamp_end": 854.34,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "can access that file some way, through a distributed file",
+    "timestamp_start": 854.34,
+    "timestamp_end": 856.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "system, which is the database, by the way.",
+    "timestamp_start": 856.82,
+    "timestamp_end": 859.78,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then what happens if we have two threads trying to write",
+    "timestamp_start": 859.78,
+    "timestamp_end": 861.98,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "to the same file at the same time?",
+    "timestamp_start": 861.98,
+    "timestamp_end": 864.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, we could do something really stupid and just let the OS lock stuff for us,",
+    "timestamp_start": 864.44,
+    "timestamp_end": 867.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "lock the file, and then only allow one thread to write into it at a time.",
+    "timestamp_start": 867.88,
+    "timestamp_end": 873.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But a reoccurring theme you're going to see throughout the semester is,",
+    "timestamp_start": 873.04,
+    "timestamp_end": 875.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "in the world of databases, the OS is our frenemy.",
+    "timestamp_start": 875.8,
+    "timestamp_end": 879.36,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We never want to let it do anything for us.",
+    "timestamp_start": 879.36,
+    "timestamp_end": 881.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So letting the OS lock files for us is a bad idea.",
+    "timestamp_start": 881.54,
+    "timestamp_end": 883.92,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Because we're database people, and we can always do it better than they can.",
+    "timestamp_start": 883.92,
+    "timestamp_end": 886.74,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So only allowing one thread to write to the file at a time,",
+    "timestamp_start": 886.74,
+    "timestamp_end": 890.38,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "that is actually what SQLite does.",
+    "timestamp_start": 890.38,
+    "timestamp_end": 891.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But SQLite's meant to run on cell phones.",
+    "timestamp_start": 891.98,
+    "timestamp_end": 893.98,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "If you're running a machine with 1,000 cores,",
+    "timestamp_start": 893.98,
+    "timestamp_end": 896.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "you don't want to do that.",
+    "timestamp_start": 896.8,
+    "timestamp_end": 898.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And the OS implementation is always",
+    "timestamp_start": 898.54,
+    "timestamp_end": 899.92,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "going to be more inefficient anyway.",
+    "timestamp_start": 899.92,
+    "timestamp_end": 902.98,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then lastly, what happens if we're modifying the file,",
+    "timestamp_start": 902.98,
+    "timestamp_end": 908.02,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and we're going to write a new record, we write half of it,",
+    "timestamp_start": 908.02,
+    "timestamp_end": 911.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and then it crashes?",
+    "timestamp_start": 911.8,
+    "timestamp_end": 912.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The machine crashes, someone trips over the power cord,",
+    "timestamp_start": 912.8,
+    "timestamp_end": 915.1,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "lightning strikes the transformer, whatever.",
+    "timestamp_start": 915.1,
+    "timestamp_end": 917.52,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Now we come back online, what should be in our file?",
+    "timestamp_start": 917.52,
+    "timestamp_end": 921.52,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, if we just write to the file, we'll just see whatever we wrote before the crash.",
+    "timestamp_start": 921.52,
+    "timestamp_end": 925.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But that's invalid, right?",
+    "timestamp_start": 925.2,
+    "timestamp_end": 926.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Now we have a record that's missing half of it.",
+    "timestamp_start": 926.12,
+    "timestamp_end": 930.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then what if we want to allow multiple machines to access the file,",
+    "timestamp_start": 930.04,
+    "timestamp_end": 933.6,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "or the database, and we want to make sure that if any one of those machines goes down,",
+    "timestamp_start": 933.6,
+    "timestamp_end": 938.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "we can keep running and still serve queries, serve requests?",
+    "timestamp_start": 938.28,
+    "timestamp_end": 942.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, now I've got to basically implement a bunch of load balancing stuff",
+    "timestamp_start": 942.06,
+    "timestamp_end": 944.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "to handle accessing the file.",
+    "timestamp_start": 944.84,
+    "timestamp_end": 946.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That sucks.",
+    "timestamp_start": 946.88,
+    "timestamp_end": 948.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So this is just a quick smattering of the problems,",
+    "timestamp_start": 948.84,
+    "timestamp_end": 951.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "that we're going to have to solve throughout the entire semester",
+    "timestamp_start": 951.44,
+    "timestamp_end": 953.84,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "to make it so people don't have to do stupid things like relying on the operating system",
+    "timestamp_start": 953.84,
+    "timestamp_end": 957.62,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "or managing a bunch of stuff in application code.",
+    "timestamp_start": 957.62,
+    "timestamp_end": 962.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And this is what a database management system is going to do for you.",
+    "timestamp_start": 962.12,
+    "timestamp_end": 964.92,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's going to be the software that allows applications to store, analyze, query data",
+    "timestamp_start": 964.92,
+    "timestamp_end": 971.46,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "in a database.",
+    "timestamp_start": 971.46,
+    "timestamp_end": 972.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And a general purpose database system will be one that can support any arbitrary schema,",
+    "timestamp_start": 972.88,
+    "timestamp_end": 978.0,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "within reason, of course.",
+    "timestamp_start": 978.0,
+    "timestamp_end": 979.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It can allow any arbitrary queries.",
+    "timestamp_start": 979.68,
+    "timestamp_end": 981.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Meaning it's not hard coded just to do that one look up on the jizza.",
+    "timestamp_start": 981.44,
+    "timestamp_end": 984.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You can change the query to look up on any artist, or any field,",
+    "timestamp_start": 984.8,
+    "timestamp_end": 988.72,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "or do any kind of transformation.",
+    "timestamp_start": 988.72,
+    "timestamp_end": 991.64,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And it's going to do this according to what we'll call a data model.",
+    "timestamp_start": 991.64,
+    "timestamp_end": 994.38,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's the high level representation of what is in a database.",
+    "timestamp_start": 994.38,
+    "timestamp_end": 1000.88,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And again, just to push this point home further,",
+    "timestamp_start": 1000.88,
+    "timestamp_end": 1005.38,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "database systems are some of the most widely deployed and widely tested",
+    "timestamp_start": 1005.38,
+    "timestamp_end": 1008.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and vetted pieces of software in the world that may be rivaled,",
+    "timestamp_start": 1008.44,
+    "timestamp_end": 1011.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and that's the only one I can think of.",
+    "timestamp_start": 1011.44,
+    "timestamp_end": 1012.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Maybe some embedded systems.",
+    "timestamp_start": 1012.44,
+    "timestamp_end": 1013.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "There's multi-billion dollar corporations that are running off of database systems that",
+    "timestamp_start": 1013.44,
+    "timestamp_end": 1018.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "are tested and sold by major enterprises.",
+    "timestamp_start": 1018.44,
+    "timestamp_end": 1021.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "There's a lot of money involved in databases, both building them and selling them,",
+    "timestamp_start": 1021.44,
+    "timestamp_end": 1025.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and a lot of money riding on a database system operating correctly.",
+    "timestamp_start": 1025.44,
+    "timestamp_end": 1029.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And so at no point, say again, if you go off in the real world and you do a startup or whatever,",
+    "timestamp_start": 1029.44,
+    "timestamp_end": 1035.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "at no point should you say to yourself,",
+    "timestamp_start": 1035.44,
+    "timestamp_end": 1037.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "oh, I'm just going to build my own database system in my application.",
+    "timestamp_start": 1037.44,
+    "timestamp_end": 1040.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That's a bad idea.",
+    "timestamp_start": 1041.8,
+    "timestamp_end": 1042.74,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You're going to have problems.",
+    "timestamp_start": 1042.74,
+    "timestamp_end": 1043.84,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You're going to rely on these existing tools that are out there.",
+    "timestamp_start": 1043.84,
+    "timestamp_end": 1048.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And again, this class is going to teach you how to do it.",
+    "timestamp_start": 1048.44,
+    "timestamp_end": 1052.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All right.",
+    "timestamp_start": 1052.68,
+    "timestamp_end": 1053.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So a data model is going to be this high-level abstraction that is going to represent data",
+    "timestamp_start": 1053.2,
+    "timestamp_end": 1059.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "in a database.",
+    "timestamp_start": 1059.14,
+    "timestamp_end": 1060.26,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Again, according to some scheme we'll see in a second.",
+    "timestamp_start": 1060.26,
+    "timestamp_end": 1064.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And most database systems support only one data model, like a relational database,",
+    "timestamp_start": 1064.88,
+    "timestamp_end": 1071.24,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "database or document database, the lines start to get blurred more recently because in relational",
+    "timestamp_start": 1071.24,
+    "timestamp_end": 1076.64,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "databases, you can store documents.",
+    "timestamp_start": 1076.64,
+    "timestamp_end": 1077.82,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "You can store JSON now in a field.",
+    "timestamp_start": 1077.92,
+    "timestamp_end": 1079.12,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And now the document databases all support SQL and relational-like things on top of JSON.",
+    "timestamp_start": 1079.82,
+    "timestamp_end": 1084.46,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So in some cases, it's clear that there's a distinction between the data models.",
+    "timestamp_start": 1085.38,
+    "timestamp_end": 1088.64,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But in the more widely-placed systems, again, the lines get blurry.",
+    "timestamp_start": 1089.6,
+    "timestamp_end": 1092.46,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And so given a data model, your database will be defined according to a schema that just",
+    "timestamp_start": 1093.9,
+    "timestamp_end": 1099.3,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "specifies, I have these tables or these collections of data.",
+    "timestamp_start": 1099.3,
+    "timestamp_end": 1102.68,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "They have these attributes with this name and this data type.",
+    "timestamp_start": 1102.96,
+    "timestamp_end": 1105.9,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Again, we'll see this throughout the entire semester.",
+    "timestamp_start": 1106.22,
+    "timestamp_end": 1107.7,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But it's a way to specify the structure of the things you want to store in your database.",
+    "timestamp_start": 1108.16,
+    "timestamp_end": 1112.84,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Because without a schema, it's just a bunch of random bits, and it doesn't mean anything.",
+    "timestamp_start": 1113.72,
+    "timestamp_end": 1116.96,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The schema is allowed to provide a structure to the data so that you can write queries",
+    "timestamp_start": 1118.22,
+    "timestamp_end": 1125.1,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "against it.",
+    "timestamp_start": 1125.1,
+    "timestamp_end": 1125.7,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Another way to think about this, save a bunch of log files for my application server.",
+    "timestamp_start": 1126.8,
+    "timestamp_end": 1129.28,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's a bunch of text lines with timestamps and so forth.",
+    "timestamp_start": 1129.44,
+    "timestamp_end": 1132.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "If I don't have any structure on top of that, then there's no way to find the data I'm looking for.",
+    "timestamp_start": 1133.14,
+    "timestamp_end": 1138.52,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But if I say, oh, a log file entry is going to have a timestamp, followed by maybe an",
+    "timestamp_start": 1138.96,
+    "timestamp_end": 1142.78,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "event code, followed by a string with the event.",
+    "timestamp_start": 1142.78,
+    "timestamp_end": 1144.78,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, that's a schema.",
+    "timestamp_start": 1145.46,
+    "timestamp_end": 1146.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That's a structure that I can then run queries on top of it.",
+    "timestamp_start": 1146.22,
+    "timestamp_end": 1148.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Because otherwise, again, if it's just a random bunch of bits, the data is useless.",
+    "timestamp_start": 1149.68,
+    "timestamp_end": 1154.52,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The data is meaningless.",
+    "timestamp_start": 1154.64,
+    "timestamp_end": 1155.36,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "How is this differentiating the data?",
+    "timestamp_start": 1156.86,
+    "timestamp_end": 1159.08,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The model?",
+    "timestamp_start": 1159.3,
+    "timestamp_end": 1159.56,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I thought the data model was also a data model.",
+    "timestamp_start": 1159.82,
+    "timestamp_end": 1161.46,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The data model is, we'll see in a second.",
+    "timestamp_start": 1161.56,
+    "timestamp_end": 1163.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "A data model is the abstraction for how you define collections of data, and then their",
+    "timestamp_start": 1163.52,
+    "timestamp_end": 1171.34,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "relationships between other collections.",
+    "timestamp_start": 1171.34,
+    "timestamp_end": 1173.1,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The schema says, OK, within that data model, I have these collections that have these attributes",
+    "timestamp_start": 1174.38,
+    "timestamp_end": 1179.3,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "with these types.",
+    "timestamp_start": 1179.3,
+    "timestamp_end": 1180.3,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Think of it like a, it's almost like a class versus object in the Java world.",
+    "timestamp_start": 1181.76,
+    "timestamp_end": 1186.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The class is the definition of data.",
+    "timestamp_start": 1186.88,
+    "timestamp_end": 1188.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The class is the definition of the data model.",
+    "timestamp_start": 1189.3,
+    "timestamp_end": 1192.34,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then the instantiation would be, actually, that's a bad example.",
+    "timestamp_start": 1192.8,
+    "timestamp_end": 1194.94,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It would be like a, in the programming language, you would specify, like in Java, the Java",
+    "timestamp_start": 1197.08,
+    "timestamp_end": 1203.66,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "has a way to define how you represent data.",
+    "timestamp_start": 1203.66,
+    "timestamp_end": 1207.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then you would create instances of it in classes.",
+    "timestamp_start": 1207.62,
+    "timestamp_end": 1209.56,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Let's go further along.",
+    "timestamp_start": 1211.1,
+    "timestamp_end": 1212.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I think it's a bad example, too.",
+    "timestamp_start": 1212.22,
+    "timestamp_end": 1213.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But I think it makes sense when you start seeing differentiations between them.",
+    "timestamp_start": 1213.14,
+    "timestamp_end": 1219.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Other questions?",
+    "timestamp_start": 1220.6,
+    "timestamp_end": 1221.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So I'm going to be highly, highly biased throughout the entire semester.",
+    "timestamp_start": 1225.28,
+    "timestamp_end": 1228.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I love the relational data model.",
+    "timestamp_start": 1228.46,
+    "timestamp_end": 1229.7,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I think it's how every data system should be implemented, because the relational model",
+    "timestamp_start": 1229.98,
+    "timestamp_end": 1233.1,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "can be contorted, at least in the modern version of it, into any possible data model you would",
+    "timestamp_start": 1233.1,
+    "timestamp_end": 1238.02,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "care about, except for one, which I'll talk about in a second.",
+    "timestamp_start": 1238.02,
+    "timestamp_end": 1239.86,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So most database systems we're going to talk about this semester, and most database systems",
+    "timestamp_start": 1240.68,
+    "timestamp_end": 1244.64,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "that are in the real world that you've heard of, are very likely going to be relational",
+    "timestamp_start": 1244.64,
+    "timestamp_end": 1248.28,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "databases.",
+    "timestamp_start": 1248.28,
+    "timestamp_end": 1248.68,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But it's not to say that it's the only one out there.",
+    "timestamp_start": 1249.3,
+    "timestamp_end": 1252.16,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "There's these key value stores that are out there, things like RocksDB, LevelDB, Redis",
+    "timestamp_start": 1253.2,
+    "timestamp_end": 1258.5,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "is sort of like this, where you sort of have a key and then a value, and that's it.",
+    "timestamp_start": 1258.5,
+    "timestamp_end": 1262.06,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And there's no meaning to the actual value, except for what the application puts upon",
+    "timestamp_start": 1262.12,
+    "timestamp_end": 1265.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So this is typically used for simple applications or caching, like a cookie ID to some payload.",
+    "timestamp_start": 1266.2,
+    "timestamp_end": 1271.74,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Then you have this whole sort of category that falls under the moniker NoSQL, which is",
+    "timestamp_start": 1272.92,
+    "timestamp_end": 1277.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "ironic now, because now they really mean...",
+    "timestamp_start": 1277.04,
+    "timestamp_end": 1279.04,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "At the beginning when NoSQL came out, they were like, oh, guys, SQL sucks.",
+    "timestamp_start": 1279.3,
+    "timestamp_end": 1282.36,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We're not doing any SQL, NoSQL.",
+    "timestamp_start": 1282.7,
+    "timestamp_end": 1283.98,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Now they say, oh, NoSQL really means not only SQL, because they've seen the light and basically",
+    "timestamp_start": 1284.34,
+    "timestamp_end": 1289.84,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "become relational databases.",
+    "timestamp_start": 1289.84,
+    "timestamp_end": 1291.48,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So the documented stuff, the JSON databases, probably the ones that you've heard about",
+    "timestamp_start": 1293.1,
+    "timestamp_end": 1297.32,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "the most, like MongoDB would be a documented database.",
+    "timestamp_start": 1297.32,
+    "timestamp_end": 1301.04,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Wide column or column family is a subset of JSON databases.",
+    "timestamp_start": 1302.52,
+    "timestamp_end": 1306.74,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's like...",
+    "timestamp_start": 1307.34,
+    "timestamp_end": 1308.24,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Google Bigtable was this.",
+    "timestamp_start": 1309.3,
+    "timestamp_end": 1310.98,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Cassandra was this.",
+    "timestamp_start": 1311.4,
+    "timestamp_end": 1312.32,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Then you have these array databases, so vectors, matrices, and tensors.",
+    "timestamp_start": 1313.7,
+    "timestamp_end": 1319.0,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Tensors are probably the thing you don't want to store in a relational database, because",
+    "timestamp_start": 1321.52,
+    "timestamp_end": 1324.8,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "since it's like a multidimensional array, it's kind of weird to do that in a relational",
+    "timestamp_start": 1324.8,
+    "timestamp_end": 1328.9,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "model, even though the SQL standard last year just added multidimensional arrays.",
+    "timestamp_start": 1328.9,
+    "timestamp_end": 1332.86,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then there's these hodgepodge of these ones at the end.",
+    "timestamp_start": 1334.56,
+    "timestamp_end": 1337.2,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Hierarchical networks.",
+    "timestamp_start": 1338.42,
+    "timestamp_end": 1339.22,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then there's these...",
+    "timestamp_start": 1339.22,
+    "timestamp_end": 1339.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "I'll talk about network one a little bit in Codacil.",
+    "timestamp_start": 1339.3,
+    "timestamp_end": 1342.82,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But these are like stuff from the 70s and 80s.",
+    "timestamp_start": 1343.14,
+    "timestamp_end": 1345.4,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "They were doing cocaine back then.",
+    "timestamp_start": 1346.06,
+    "timestamp_end": 1347.26,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "They were experimenting.",
+    "timestamp_start": 1347.3,
+    "timestamp_end": 1347.8,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But basically, the world has come back to realize that the relational model is the right",
+    "timestamp_start": 1348.28,
+    "timestamp_end": 1351.34,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "way to go.",
+    "timestamp_start": 1351.34,
+    "timestamp_end": 1351.68,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Every 10 years, though, there's always this repeat where someone says, oh, relational",
+    "timestamp_start": 1352.26,
+    "timestamp_end": 1355.36,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "model is stupid.",
+    "timestamp_start": 1355.36,
+    "timestamp_end": 1355.86,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "SQL is stupid.",
+    "timestamp_start": 1355.96,
+    "timestamp_end": 1356.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "We're going to have a new data model.",
+    "timestamp_start": 1357.0,
+    "timestamp_end": 1358.12,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then everyone gets all excited about that on Hacker News.",
+    "timestamp_start": 1358.58,
+    "timestamp_end": 1360.62,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then they eventually come around and say, oh, yeah, relational model is the right idea.",
+    "timestamp_start": 1360.74,
+    "timestamp_end": 1363.16,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So right now, we're in the phase where all of these guys have said, oh, yeah, SQL is",
+    "timestamp_start": 1363.82,
+    "timestamp_end": 1368.3,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "actually a good idea.",
+    "timestamp_start": 1368.3,
+    "timestamp_end": 1369.06,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then the next step is going to be the vector databases come back and say, SQL is",
+    "timestamp_start": 1369.3,
+    "timestamp_end": 1372.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "a good idea.",
+    "timestamp_start": 1372.44,
+    "timestamp_end": 1372.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But we'll get there.",
+    "timestamp_start": 1373.44,
+    "timestamp_end": 1374.16,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All right.",
+    "timestamp_start": 1375.34,
+    "timestamp_end": 1375.5,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So again, this course is going to be about relational databases.",
+    "timestamp_start": 1375.52,
+    "timestamp_end": 1378.02,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "But it's not to say that the things we're talking about can't be applied to the other",
+    "timestamp_start": 1378.22,
+    "timestamp_end": 1381.28,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "data models.",
+    "timestamp_start": 1381.28,
+    "timestamp_end": 1381.82,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It's just most of the systems you encounter are going to be relational.",
+    "timestamp_start": 1382.36,
+    "timestamp_end": 1386.1,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "All right.",
+    "timestamp_start": 1388.1,
+    "timestamp_end": 1388.52,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So why does relational model matter?",
+    "timestamp_start": 1388.52,
+    "timestamp_end": 1390.24,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And why am I so keen on it?",
+    "timestamp_start": 1390.34,
+    "timestamp_end": 1391.72,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, if you go back to the 60s and early, early 70s, there wasn't this sort of plethora",
+    "timestamp_start": 1392.24,
+    "timestamp_end": 1398.78,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "of database systems.",
+    "timestamp_start": 1398.78,
+    "timestamp_end": 1399.16,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "There was a small number of them.",
+    "timestamp_start": 1399.16,
+    "timestamp_end": 1402.02,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And it was very difficult to build database applications.",
+    "timestamp_start": 1402.48,
+    "timestamp_end": 1405.34,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Think of like mainframe days.",
+    "timestamp_start": 1405.88,
+    "timestamp_end": 1407.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And so in the early days, one of the first database systems that was built was a thing",
+    "timestamp_start": 1408.4,
+    "timestamp_end": 1411.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "called IDS, or Integrated Data Store.",
+    "timestamp_start": 1411.88,
+    "timestamp_end": 1414.12,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "That was actually built by GE in 1965 or 66.",
+    "timestamp_start": 1414.64,
+    "timestamp_end": 1419.32,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "IMS was a hierarchical database built by IBM to manage the Apollo moon mission, to keep",
+    "timestamp_start": 1420.26,
+    "timestamp_end": 1424.62,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "track of all the parts to build the rocket going up.",
+    "timestamp_start": 1424.62,
+    "timestamp_end": 1427.56,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then IMS was a database that was built by IBM to manage the Apollo moon mission.",
+    "timestamp_start": 1428.1,
+    "timestamp_end": 1429.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And so part of this IDS work, there was this thing called Codacil, which came out of the",
+    "timestamp_start": 1429.16,
+    "timestamp_end": 1432.4,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "COBOL world.",
+    "timestamp_start": 1432.4,
+    "timestamp_end": 1433.1,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "It was basically trying to define what the API is, how you would interact with it with",
+    "timestamp_start": 1433.58,
+    "timestamp_end": 1436.96,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "the database.",
+    "timestamp_start": 1436.96,
+    "timestamp_end": 1437.34,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And so back in the day, in the 60s and 70s, computers were very, very expensive.",
+    "timestamp_start": 1438.4,
+    "timestamp_end": 1443.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Humans were relatively cheap.",
+    "timestamp_start": 1443.88,
+    "timestamp_end": 1445.18,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "The labor of humans were relatively cheap to computers.",
+    "timestamp_start": 1445.66,
+    "timestamp_end": 1448.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So it wasn't that big of a deal that people had to spend a lot of time rewriting their",
+    "timestamp_start": 1449.64,
+    "timestamp_end": 1453.14,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "code, as he brought up, every time they could change your database, if you use these other",
+    "timestamp_start": 1453.14,
+    "timestamp_end": 1457.7,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "data models.",
+    "timestamp_start": 1457.7,
+    "timestamp_end": 1458.88,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And that's because there was a tight coupling between, at the logical level, how you're",
+    "timestamp_start": 1459.16,
+    "timestamp_end": 1463.38,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "defining your database, and then how the data system actually physically represented it.",
+    "timestamp_start": 1463.38,
+    "timestamp_end": 1466.94,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So now in your application code, you had to be aware of how the data system is laid out",
+    "timestamp_start": 1467.36,
+    "timestamp_end": 1471.58,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "in bits on disk, and how things were connected with pointers.",
+    "timestamp_start": 1471.58,
+    "timestamp_end": 1474.92,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And you had to basically traverse those data structures manually in your code.",
+    "timestamp_start": 1475.44,
+    "timestamp_end": 1478.78,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So that meant that any time there was a change in your database schema, you had to go back",
+    "timestamp_start": 1480.1,
+    "timestamp_end": 1484.12,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "and rewrite all your application code to account for that.",
+    "timestamp_start": 1484.12,
+    "timestamp_end": 1486.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So an example would be in...",
+    "timestamp_start": 1486.74,
+    "timestamp_end": 1488.06,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "IMS, at least the early days, you would define a table, and then you would tell the database",
+    "timestamp_start": 1489.16,
+    "timestamp_end": 1493.52,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "system, I want to sort it either as a hash table or a B-tree.",
+    "timestamp_start": 1493.52,
+    "timestamp_end": 1496.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And then say if you made a mistake and said, oh, I really want to store it, I decided to",
+    "timestamp_start": 1497.1,
+    "timestamp_end": 1500.54,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "do a hash table, but I really need to do range scans, and you can't do range scans on a hash",
+    "timestamp_start": 1500.54,
+    "timestamp_end": 1504.14,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "table, and I want to switch it to a B-tree.",
+    "timestamp_start": 1504.14,
+    "timestamp_end": 1505.8,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "Well, I've got to dump the data out, then load it back in as a B-tree, then rewrite",
+    "timestamp_start": 1506.2,
+    "timestamp_end": 1510.5,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "all my application code, because now the API to that table has changed, because it went",
+    "timestamp_start": 1510.5,
+    "timestamp_end": 1513.8,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "from a hash table to a B-tree.",
+    "timestamp_start": 1513.8,
+    "timestamp_end": 1514.78,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So there was this guy at IBM who basically...",
+    "timestamp_start": 1515.54,
+    "timestamp_end": 1518.94,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He saw all these programmers doing the same thing over again, making all these mundane",
+    "timestamp_start": 1519.16,
+    "timestamp_end": 1523.44,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "changes to their database applications every single time there was a change.",
+    "timestamp_start": 1523.44,
+    "timestamp_end": 1527.18,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "And there's always going to be changes in databases, because as the world evolves, or",
+    "timestamp_start": 1527.56,
+    "timestamp_end": 1531.44,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "the data you're capturing evolves, you want to evolve your database.",
+    "timestamp_start": 1531.44,
+    "timestamp_end": 1535.54,
+    "is_important": 1
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "So there's this guy named Ted Codd, who was originally a mathematician.",
+    "timestamp_start": 1537.32,
+    "timestamp_end": 1540.62,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He did his PhD in mathematics.",
+    "timestamp_start": 1541.04,
+    "timestamp_end": 1542.4,
+    "is_important": 0
+  },
+  {
+    "source": "LecVideo_001_-_#01_-_Relational_Model_&_Algebra_(CMU_Intro_to_Database_Systems).json",
+    "sentence": "He joins IBM Research in New York.",
+    "timestamp_start": 1543.04,
+    "timestamp_end": 1545.22,
+    "is_important": 0
   }
 ]

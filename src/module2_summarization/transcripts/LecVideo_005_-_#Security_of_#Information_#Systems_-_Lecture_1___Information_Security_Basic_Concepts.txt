@@ -1,0 +1,843 @@
+0.76s - 8.52s : Dear students, welcome to the lecture one of security of information systems course.
+8.52s - 19.4s : In this course, my aim is to give you an overview, a general idea about security of online systems,
+19.4s - 21.24s : IT systems.
+21.24s - 29.12s : This area is a profession of its alone.
+29.12s - 31.62s : It cannot be fully understood.
+31.62s - 39.44s : You cannot become an expert of this area with just a single course, with just a single lesson.
+39.44s - 49.88s : So we will see many of the things with just overview to get a general idea.
+49.88s - 57.6s : However, if you get such security job in future, you will know where to look.
+57.6s - 58.6s : You will know where to look.
+58.6s - 59.1s : You will know where to look.
+59.1s - 62.58s : You will know where to study.
+62.58s - 64.94s : So you will have a basic idea.
+64.94s - 71.4s : But to become an expert, as I said, this is just a profession itself.
+71.4s - 78.24s : Like you need to study four years of security systems.
+78.24s - 80.86s : Like you are studying software engineering.
+80.86s - 86.6s : However, you will get an overview, a general idea.
+86.6s - 87.6s : Okay.
+87.6s - 88.6s : So lecture one is.
+88.6s - 92.7s : Basic concepts in information security.
+92.7s - 100.64s : I will be using Alden Juicing lectures.
+100.64s - 105.72s : He is a professor in University of Oslo.
+105.72s - 109.44s : I will be using his 2018 lectures.
+109.44s - 111.44s : Okay.
+111.44s - 115.52s : Let's start.
+115.52s - 117.52s : Why study information security?
+118.6s - 119.92s : mainly, there is no right or wrong description.
+119.92s - 121.22s : i think i don't understand.
+121.22s - 123.22s : Moreover, i don't practice too much.
+123.22s - 124.32s : 1st and 2nd, you don't have to ask about the right or wrong like an instructor
+124.32s - 134.72s : 2nd and 3rd, you don't have a middle forgive or pointing a brush.
+134.72s - 135.88s : I will apply and study other information as well.
+135.88s - 136.28s : Because i think that it does exist in some country as well.
+136.28s - 138.16s : Responsibility is not only in a major grants.
+138.16s - 143.18s : 3rd and 4th, what do i need to choose.
+143.18s - 144.18s : wosk TR AND 4th learning sciences, and sixth, education.
+144.18s - 145.26s : There will be shuttle train do in world perd instagram.
+145.26s - 146.52s : another one is i think you'll Championship student.
+146.52s - 147.04s : Women are like 8% preventым from podcasts on interesting mangt olong expect.
+147.04s - 147.28s : Other one will take measure 2nd and 3rd Você lempás de seguir bilhar com naj debts?".
+147.28s - 155.68s : vulnerable IT systems. IT experts without security skills are part of the problem.
+159.12s - 165.84s : Okay, so what does this mean? This means that if you are going to be an IT expert, you have to
+165.84s - 176.48s : at least some sort of security consciousness. You have to consider security at least when you are
+176.48s - 186.16s : programming a software. This is extremely important. You have to have awareness of security
+187.92s - 195.28s : and do your coding, do your tasks with considering the highest possible security.
+202.64s - 206.0s : Learn about IT security to become part of the solution.
+206.48s - 209.52s : This is very important.
+209.52s - 217.6s : Security by design is a prerequisite for privacy by design which is a legal requirement for processing personal data.
+217.6s - 225.12s : Information security is a political issue.
+225.12s - 231.92s : Often seen as a cost, but saves costs in the long term.
+231.92s - 233.84s : Often given low priority.
+233.84s - 235.92s : This is a political issue.
+235.92s - 238.86s : The security of security is a very important issue.
+238.86s - 240.86s : It is a very important issue.
+240.86s - 242.86s : It is a very important issue.
+242.86s - 244.86s : It is a very important issue.
+244.86s - 246.86s : It is a very important issue.
+246.86s - 248.86s : This is so true.
+248.86s - 252.82s : We always hear that very big e-commerce companies are getting
+252.82s - 254.82s : penetrated by hackers.
+254.82s - 260.82s : Their information is getting stolen and such things because they only focus on selling products and making profit.
+260.82s - 262.82s : They don't give a lot of information to the market.
+262.82s - 264.82s : They don't give a lot of information to the market.
+265.92s - 272.46s : This excuse
+272.46s - 276.46s : So I say to people like me,
+276.46s - 279.94s : many times such people say that they don't have a doctor or a flight attendant or any doctor experience
+279.94s - 282.62s : So I first mango they get scared in the face.
+282.62s - 283.94s : This video is not for me but Beadie's honest
+283.94s - 293.7s : Unless you are a doctor or the more Mafia he got cały
+293.7s - 294.96s : I made 5 seconds long photos to show you da Nikolaj of food market.
+294.96s - 304.4s : years to have secure systems.
+304.4s - 307.28s : Certifications for as professionals.
+307.28s - 314.7s : IS is IT is security, information security.
+314.7s - 330.3s : Many different types of certifications available.
+330.3s - 339.18s : Vendor neutral or vendor specific.
+339.18s - 344.14s : From nonprofit organizations or commercial for profit organizations.
+344.14s - 344.66s : Okay.
+344.66s - 344.68s : Okay.
+344.7s - 346.7s : Okay.
+346.7s - 352.42s : Certification gives assurance of knowledge and skills.
+352.42s - 357.22s : Needed in job functions.
+357.22s - 366.48s : Gives credibility for consultants applying for jobs for promotion.
+366.48s - 370.36s : Sometimes required.
+370.36s - 373.46s : US government, IT security jobs.
+373.46s - 374.66s : Actually, this is saying
+374.66s - 381.06s : for many of the countries. In Turkey, they would require to have certifications for almost
+381.06s - 390.7s : everything, for every job.
+390.7s - 396.9s : Storage domains reflect current topics in IT security.
+396.9s - 403.38s : Generally kept up to date.
+403.38s - 411.38s : ISACA Certifications
+411.38s - 413.86s : Information Systems Audit and Control Association
+413.86s - 420.68s : ISACA provides certification for ISACA.
+420.68s - 431.14s : IT Professionals
+431.14s - 434.68s : CISM
+434.68s - 439.46s : Certified Information Security Manager
+439.46s - 444.5s : CISA
+444.5s - 449.8s : Certified Information System Auditor
+449.8s - 450.66s : CGI
+450.66s - 451.72s : CUN
+451.72s - 453.14s : C
+462.38s - 464.06s : IF
+464.06s - 464.36s : I
+464.36s - 466.86s : survive
+468.98s - 470.36s : Empire
+470.36s - 471.56s : Building
+471.56s - 473.84s : Industry
+473.84s - 475.44s : Risk
+477.44s - 479.08s : Information
+479.08s - 479.8s : Systems
+479.8s - 480.3s : Control
+480.3s - 480.64s : System
+480.64s - 487.88s : and if you get certified, you could have found lots of awesome paying jobs in United States,
+488.46s - 495.06s : in Turkey, there may be companies looking for such certified people, certified IT professionals,
+496.12s - 499.4s : and it is about, these are about this.
+500.06s - 504.54s : CISM is the most popular ISACA security certification.
+504.54s - 514.02s : IT auditors and consultants commonly have ISACA certifications.
+515.74s - 519.42s : ISACA promotes IT governance framework COBIT.
+521.66s - 522.66s : So what is COBIT?
+525.8s - 529.8s : Control Objectives for Information and Related Technologies.
+533.76s - 533.8s : CIB.
+534.54s - 535.28s : CISM.
+535.7s - 538.08s : Certified Information Security Manager.
+540.3s - 543.44s : Focuses on four domains of IS management.
+545.36s - 548.86s : 1. Information Security Governance.
+549.9s - 552.32s : 2. Information Risk Management.
+554.1s - 558.84s : 3. Information Security Program Development and Management.
+560.14s - 564.04s : 4. Information Security Incident Management.
+564.54s - 566.34s : 5. Lösung of Driveków in IT suspected communicated information Linial considers Common and
+566.34s - 566.46s : Non-Complicated.
+566.5s - 583.16s : The CMF makes the portfolio for the joint smart voting in 85 3.
+583.2s - 585.32s : Dem денег harteinan and bayağı ataç small предondo.
+585.36s - 589.38s : знач salted to a regular mark lndg inat последiôme ken procedures kdo
+589.4s - 593.44s : number of examples CISM.
+593.5s - 593.66s : Last words Bilal 1.
+593.7s - 593.78s : First,apsalyl second.
+593.78s - 594.32s : Dogудь .
+594.32s - 597.56s : 2018 exam information to give you an idea.
+597.56s - 604.72s : Okay, so this was the information of 2018.
+604.72s - 611.0s : You see there is a deadline to register the registration address, the fee is approximately
+611.0s - 616.42s : $500 and such.
+616.42s - 626.84s : So if you get that exam, you get certified and per year I think they are charging $100
+626.84s - 631.66s : for maintenance and such.
+631.66s - 643.56s : ISC-2 Certifications International Information Systems Security Certification
+643.56s - 644.4s : Consortium
+646.42s - 666.8s : ISC-2 provides certification for information security professionals.
+666.8s - 673.58s : CISSP.
+673.58s - 676.32s : Certified Information Systems Security Professional.
+676.42s - 679.42s : ISSAP.
+679.42s - 683.92s : Information Systems Security Architecture Professional.
+683.92s - 687.42s : ISSMP.
+687.42s - 691.42s : Information Systems Security Management Professional.
+691.42s - 694.42s : ISSEP.
+694.42s - 698.42s : Information Systems Security Engineering Professional.
+698.42s - 702.42s : CAP.
+702.42s - 706.42s : Certification and Accreditation Professiona.
+706.42s - 709.42s : SSCP.
+709.42s - 714.42s : Information Systems Security Certified Practitioner.
+714.42s - 717.42s : CSSLP.
+717.42s - 722.42s : Certified Secure Software Lifecycle Professional.
+722.42s - 729.42s : CISSP is the most common IT security certification.
+729.42s - 735.42s : Most IT security consultants are CISSP.
+735.42s - 741.42s : So let's say you want to become an IT security consultant.
+741.42s - 751.42s : You get such a certificate and you prove that you know what is IT security, how experienced
+751.42s - 752.42s : you are.
+752.42s - 762.42s : It is same as the job offers that require certifications.
+762.42s - 766.42s : The main things there are about what you are and the job offer.
+766.42s - 767.42s : Not only the clients.
+767.42s - 768.42s : But afterm your aquí scribin course.
+768.42s - 769.42s : Right certain the support.
+769.42s - 770.42s : And what paid attention to.
+770.42s - 771.42s : So you receive, the flow of information.
+771.42s - 772.42s : You check details.
+772.42s - 773.42s : Let's say at the top of the visually and this target a two-disc audience likeissent.
+773.42s - 780.42s : Select this primary awareness of, up peers
+780.42s - 781.42s : AU passiert.
+781.42s - 783.42s : Tanto out computer right menu.
+783.42s - 785.42s : Is distinction and bottom of the screen.
+785.42s - 787.42s : What being white and black.
+787.42s - 790.42s : Flash off what your web, what she had seen.
+790.42s - 802.3s : So, the professor prepared these lecture slides, used this book.
+803.14s - 812.88s : And you may get such book, you may purchase and develop your skills, become an expert of IT security.
+814.78s - 820.16s : As you can see, he also says that most of the material presented in this course,
+820.42s - 825.38s : is taken from CISSP CBK.
+828.5s - 830.74s : Okay, there are eight domains.
+831.54s - 832.5s : One second.
+838.58s - 842.5s : CISSP CBK, common body of knowledge.
+844.5s - 845.86s : Eight domains.
+849.14s - 849.64s : One.
+849.86s - 850.36s : Security.
+850.42s - 851.48s : Security and risk management.
+851.7s - 852.1s : Security.
+852.64s - 852.96s : Risk.
+853.28s - 853.88s : Compliance.
+854.22s - 854.5s : Law.
+854.84s - 855.5s : Regulations.
+855.82s - 856.96s : And business continuity.
+859.28s - 859.58s : Two.
+859.98s - 860.86s : Asset security.
+861.12s - 862.88s : Protecting security of assets.
+866.84s - 867.68s : Three.
+868.12s - 869.2s : Security engineering.
+869.54s - 871.58s : Engineering and management of security.
+873.9s - 874.78s : Four.
+875.14s - 876.98s : Communication and network security.
+876.98s - 879.72s : Designing and protecting network security.
+880.42s - 881.42s : Five.
+881.42s - 887.86s : Identity and access management.
+887.86s - 892.14s : Controlling access and managing identity.
+892.14s - 893.0s : Six.
+893.0s - 899.52s : Security assessment and testing .
+899.52s - 904.58s : Performing and analyzing security testing.
+904.58s - 905.48s : Seven.
+905.48s - 906.08s : Security operations.
+906.08s - 906.3s : Foundational concepts.
+906.3s - 906.7s : Investigations.
+906.7s - 907.7s : Incident management.
+907.7s - 908.46s : And disaster recovery.
+908.46s - 909.36s : Six.
+909.36s - 909.64s : Security assessment and testing.
+909.64s - 909.88s : Performing and analyzing security testing.
+909.88s - 909.98s : Performing and analyzing security testing.
+909.98s - 918.98s : 8. Software development security, understanding, applying, and enforcing software security.
+918.98s - 927.48s : Okay, there are some security surveys if you want to check.
+927.48s - 932.08s : And their links are provided.
+932.08s - 940.58s : And there are some security advisories if you want to check them.
+940.58s - 947.58s : There was also an academic forum on security. Probably it is held every year.
+947.58s - 961.08s : You see the professor prepared these slides were also a speaker in that security seminar.
+961.08s - 961.58s : Okay.
+961.58s - 962.08s : It was organized.
+962.08s - 964.08s : It was organized by security lab.
+964.08s - 969.08s : And let's start with information security basic concepts lecture 1.
+974.08s - 979.08s : What is security in general?
+979.08s - 985.08s : Security is about protecting assets from damage or harm.
+985.08s - 989.08s : Focuses on all types of assets.
+989.08s - 991.08s : Example.
+991.08s - 991.58s : Your body.
+991.58s - 992.58s : Possessions.
+992.58s - 993.34s : The environment.
+993.34s - 998.18s : The nation.
+998.18s - 1000.58s : Security and related concepts.
+1000.58s - 1001.58s : National security.
+1001.58s - 1003.58s : Political stability.
+1003.58s - 1004.08s : Safety.
+1004.08s - 1004.58s : Health.
+1004.58s - 1005.58s : Environmental security.
+1005.58s - 1006.58s : Clean environment.
+1006.58s - 1008.58s : Information security.
+1008.58s - 1009.58s : Etc.
+1009.58s - 1011.58s : Okay.
+1011.58s - 1017.58s : What is information security?
+1017.58s - 1018.58s : What is information security?
+1018.58s - 1019.58s : What is information security?
+1019.58s - 1020.58s : What is information security?
+1020.58s - 1027.58s : Information security focuses on protecting assets from damage or harm.
+1027.58s - 1032.58s : But which assets? Information assets.
+1032.58s - 1044.58s : So the main difference of information security is securing information assets rather than physical assets or other type of assets.
+1044.58s - 1051.58s : What are the assets to be protected?
+1051.58s - 1060.58s : Example, data files, software, IT equipment and infrastructure.
+1060.58s - 1073.58s : Covers both intentional and accidental events. Threat agents can be people or acts of nature. People can cause harm by accident or by intent.
+1073.58s - 1074.58s : So, what are the assets to be protected?
+1074.58s - 1088.58s : Information security defined.
+1088.58s - 1093.58s : The preservation of confidentiality, integrity and availability of information.
+1093.58s - 1102.58s : In addition, other properties such as authenticity, accountability, non-repudiation and reliability can also be involved.
+1102.58s - 1103.58s : ISO 27000 is the most important.
+1103.58s - 1104.58s : The most important is the most important.
+1104.58s - 1114.58s : Information security management systems, overview and vocabulary.
+1114.58s - 1119.58s : Scope of information security.
+1119.58s - 1125.58s : IS management has as goal to avoid damage and to control risk of damage to information assets.
+1125.58s - 1132.58s : IS is information security.
+1132.58s - 1140.58s : Is management focuses on.
+1140.58s - 1143.58s : Understanding threats and vulnerabilities.
+1143.58s - 1147.58s : Managing threats by reducing vulnerabilities or threat exposures.
+1147.58s - 1150.58s : Detection of attacks and recovery from attacks.
+1150.58s - 1160.58s : Investigate and collect evidence about incidents .
+1160.58s - 1169.58s : So, if you talk about this, you need to understand threats and vulnerabilities to take precautions.
+1169.58s - 1171.58s : You manage them and reduce them.
+1171.58s - 1175.58s : Detection of attacks and recovery from attacks is also very important.
+1175.58s - 1185.58s : You need to quickly understand that you are under attack and you need to have proper backups so that attack cannot harm you permanently.
+1185.58s - 1189.58s : Investigate and collect evidence about incidents is very important because.
+1189.58s - 1191.58s : You may.
+1191.58s - 1207.58s : Would likely to take legal legal action against the attackers or you can find why attack happened, how it happened and you fix the vulnerability or vulnerabilities.
+1207.58s - 1216.58s : You prevent the future attacks and such.
+1216.58s - 1218.58s : The need for information security.
+1218.58s - 1224.58s : Why not simply solve all security problems once for all.
+1224.58s - 1234.58s : Reasons why that's impossible.
+1234.58s - 1242.58s : Rapid innovation constantly generates new technology with new vulnerabilities.
+1242.58s - 1244.58s : More activities go online.
+1244.58s - 1246.58s : Crime follows the money.
+1246.58s - 1248.58s : Information security as a second.
+1248.58s - 1250.58s : Thought when developing IT.
+1250.58s - 1252.58s : New and changing threats.
+1252.58s - 1256.58s : More effective and efficient attack technique and tools are being developed.
+1256.58s - 1276.58s : Reasons why that's impossible.
+1276.58s - 1284.58s : Rapid innovation constantly generates new technology with new vulnerabilities.
+1284.58s - 1286.58s : More activities go online.
+1286.58s - 1288.58s : Crime follows the money.
+1288.58s - 1290.58s : Information security as a second.
+1290.58s - 1292.58s : Thought when developing IT.
+1292.58s - 1294.58s : New and changing threats.
+1294.58s - 1296.58s : More effective and efficient attack technique and tools are being developed.
+1296.58s - 1298.58s : Okay, I have repeated the reasons because they are really important.
+1298.58s - 1300.58s : As you know, many of you are already familiar with the technology.
+1300.58s - 1302.58s : I have been working with the technology for a long time.
+1302.58s - 1304.58s : I have been working with the technology for a long time.
+1304.58s - 1306.58s : I have been working with the technology for a long time.
+1306.58s - 1310.58s : Many of our devices get updates frequently.
+1310.58s - 1320.58s : And this software update means that there can be always human mistakes that can lead to information security problems.
+1320.58s - 1322.58s : More activities go online.
+1322.58s - 1324.58s : This is so true.
+1324.58s - 1328.58s : Because something has to be accessible to be vulnerable.
+1328.58s - 1334.58s : Okay, I am just talking from a good sugaring sitar so I will fraction that after theч
+1334.58s - 1346.58s : Let's say your home computer is not connected to internet. That means that it can be only infected by physical means but not from internet, not from anyone.
+1346.58s - 1351.58s : Crime follows the money. This is so true in recent years.
+1351.58s - 1371.58s : There are viruses that encrypt your data and request money from you. They are called as ransomware.
+1371.58s - 1380.58s : And this is increasing every year. This is increasing as by the time goes and they are requesting.
+1380.58s - 1381.58s : Bip.
+1381.58s - 1388.58s : Bitcoins from you since bitcoins are not tractable. So crime follows the money. This is true.
+1388.58s - 1393.58s : Ransomware is just one of the example.
+1393.58s - 1403.58s : Yes, security is not taken seriously when developing IT. This is true.
+1403.58s - 1410.58s : New and changing trends as always and more effective and efficient attack techniques are being developed.
+1410.58s - 1411.58s : Thank you.
+1411.58s - 1423.58s : And not only they are becoming developed and not also they are being developed, they are also becoming more available to do more people.
+1423.58s - 1440.58s : And so more people are able to do such effective attacks and cause harm damage.
+1440.58s - 1441.58s : Yes, this is true.
+1441.58s - 1452.58s : Security is one of the jobs of future.
+1452.58s - 1464.58s : If you become an expert of IT security, if you become IT security expert, information security expert, then you will likely to get paid very well.
+1464.58s - 1466.58s : Okay there is that.
+1466.58s - 1468.58s : It is a.
+1468.58s - 1469.58s : Okay.
+1469.58s - 1475.0s : A chart like this, let's see if the website is still working.
+1476.08s - 1476.76s : Okay.
+1482.56s - 1489.38s : Summary, the survival time is calculated as the average time between reports for an average target IP address.
+1489.7s - 1494.98s : If you are assuming that most of these reports are generated by worms that attempt to propagate,
+1494.98s - 1498.4s : an unpatched system would be infected by such a probe.
+1498.4s - 1503.28s : The average time between probes will vary widely from network to network.
+1503.28s - 1509.2s : Some of our submitters subscribe to ISPs which block ports commonly used by worms.
+1509.2s - 1514.48s : As a result, these submitters report a much longer survival time.
+1514.48s - 1524.0s : On the other hand, university networks and users of high-speed internet services are frequently targeted with additional scans from malware like bots.
+1524.0s - 1528.38s : If you are connected to such a network, your survival time
+1528.38s - 1530.38s : will be much smaller.
+1536.7s - 1542.94s : The main issue here is of course that the time to download critical patches will exceed this survival time.
+1542.94s - 1554.54s : In order to help users set up new systems, refer to our guide, Windows Vista, First Steps, a follow on to our guide, Windows XP, Surviving the First Day.
+1554.54s - 1556.54s : Okay, so this is the survival time.
+1556.54s - 1557.08s : Okay, so this is the survival time.
+1557.08s - 1557.58s : Okay, so this is the survival time.
+1557.58s - 1558.08s : Okay, so this is the survival time.
+1558.08s - 1558.38s : Okay, so this is the survival time.
+1558.38s - 1558.88s : Okay, so this is the survival time.
+1558.88s - 1559.38s : Okay, so this is the survival time.
+1559.38s - 1563.38s : You can get more information from this website.
+1563.38s - 1566.76s : You can get more information from this website.
+1566.76s - 1572.68s : Okay.
+1572.68s - 1578.18s : Also the malware trend is very obvious.
+1578.18s - 1579.58s : Let's check the latest one.
+1579.58s - 1579.68s : Okay.
+1579.68s - 1579.88s : Also the malware trend is very obvious.
+1579.88s - 1588.08s : Let's check the latest one.
+1588.08s - 1601.66s : Okay, so you can see the malware trends by year and it is growing really fast with a
+1601.66s - 1608.86s : steady increase each year.
+1608.86s - 1614.28s : In future probably there will be more more malware.
+1614.28s - 1617.68s : You see there are also new malwares.
+1617.68s - 1618.68s : Remote data.
+1618.68s - 1632.16s : You can get more information this website.
+1632.16s - 1635.26s : Security control categories.
+1635.26s - 1636.26s : Information security.
+1636.26s - 1642.04s : Okay, physical controls.
+1642.04s - 1647.12s : Physical controls, facility protection, security guards, locks, monitoring, environmental
+1647.12s - 1647.62s : controls.
+1647.68s - 1650.32s : Intrusion detection.
+1650.32s - 1657.86s : So these are the physically controlled things.
+1657.86s - 1663.02s : Technical controls.
+1663.02s - 1668.72s : Technical controls, logical access control, cryptographic controls, security devices,
+1668.72s - 1673.12s : user authentication, intrusion detection, forensics.
+1673.12s - 1675.68s : And software site controls.
+1675.68s - 1676.68s : Okay.
+1677.68s - 1684.18s : Administrative controls, policies and standards, procedures and practice, personnel screening,
+1684.18s - 1687.86s : awareness training, secure system dev.
+1687.86s - 1690.9s : Incident response.
+1690.9s - 1694.62s : So there are three legs of information security.
+1694.62s - 1700.32s : You have to physically control the environment.
+1700.32s - 1707.68s : Let's say if your server is easily accessible by physically, they can insert any kind of
+1707.68s - 1711.48s : unwanted software to your server.
+1711.48s - 1718.82s : You have to physically control safety of your server.
+1718.82s - 1719.82s : Technical control.
+1719.82s - 1725.3s : Not everyone should be able to access to your server.
+1725.3s - 1728.3s : And there is also administrative control.
+1728.3s - 1734.68s : Who is able to do administrative tasks and such.
+1734.68s - 1735.68s : Okay.
+1735.68s - 1736.68s : Okay.
+1736.68s - 1737.68s : Okay.
+1737.68s - 1740.82s : Let's highlight some of these areas.
+1740.82s - 1741.82s : Music.
+1741.82s - 1742.82s : Security control.
+1742.82s - 1743.82s : Functional types.
+1743.82s - 1746.82s : Prevention control You want to set your VPN to gate.
+1746.82s - 1747.82s : Yup.
+1747.82s - 1753.98s : And if the things you are using are not installed in your console, it is optional.
+1753.98s - 1755.9s : Let's call security off value.
+1755.9s - 1759.2s : Next let's talk about security controls.
+1759.2s - 1760.94s : Security controlsales.
+1760.94s - 1766.2s : For our port and your server kartlyit's data is able to do THAT.
+1766.2s - 1767.68s : Be share anything you'd like.
+1767.68s - 1788.4s : Therefore, you have left an exploit in your system that lead attacker to intrude your system. However, you had a preventive control which was encryption of your files.
+1788.4s - 1802.4s : So the attacker only obtained your encrypted files and the attacker wasn't able to see what was the content of your files. This is preventive control.
+1808.4s - 1816.4s : Detective controls warn of attempts to exploit vulnerabilities. Example, intrusion detection systems .
+1816.4s - 1817.4s : IDS.
+1817.4s - 1818.4s : So,
+1818.4s - 1831.4s : in this case, you are putting running detective controls. If someone tries to hack into your system, you get a warning.
+1831.4s - 1839.4s : This may be like, let's say, normally a client may be doing 100 requests per minute at max.
+1839.4s - 1847.4s : And if there is a client doing 1000, 10,000 attempts, you may get warned or similar things can happen.
+1847.4s - 1848.4s : So,
+1848.4s - 1849.4s : this can be detective control.
+1849.4s - 1858.4s : You may put some traps to understand if someone is a regular client or he is an attacker.
+1858.4s - 1871.4s : Corrective controls. Correct errors or irregularities that have been detected.
+1871.4s - 1877.4s : Example, restoring all applications from the last known good image to bring a corrupted system back online.
+1877.4s - 1889.4s : Use a combination of controls to help ensure that the organizational processes, people, and technology operate within prescribed bounds.
+1889.4s - 1898.4s : Controls by information states.
+1898.4s - 1906.4s : Information security involves protecting information assets from harm or damage.
+1906.4s - 1916.4s : Information is considered in one of three possible states.
+1916.4s - 1923.4s : During storage, information storage containers, electronic, physical, human.
+1923.4s - 1929.4s : During transmission, physical or electronic.
+1929.4s - 1935.4s : During processing, use, physical or electronic.
+1935.4s - 1941.4s : Security controls for all information states are needed.
+1941.4s - 1951.4s : So, you have to have security when keeping the data, when transmitting the data, transferring the data, and when using the data.
+1951.4s - 1959.4s : All three cases.
+1959.4s - 1961.4s : Security services and properties.
+1961.4s - 1963.4s : Security services and properties.
+1963.4s - 1968.4s : A security service provides a high-level security property.
+1968.4s - 1975.4s : The traditional definition of information security is to preserve the three CIA properties for data and services.
+1975.4s - 1979.4s : Okay, so what are the CIA properties?
+1979.4s - 1980.4s : These three are.
+1980.4s - 1989.4s : Confidentiality. Integrity. Availability.
+1989.4s - 1990.4s : Okay.
+1990.4s - 1991.4s : Security services and properties.
+1991.4s - 2001.4s : CIA are the three main security properties, services, data privacy as an additional property which assumes CIA.
+2001.4s - 2002.4s : Okay.
+2002.4s - 2017.4s : So, to have data privacy, you have to have CIA which is confidentiality, integrity, and availability.
+2017.4s - 2019.4s : Security services and controls.
+2019.4s - 2020.4s : Okay.
+2021.4s - 2022.4s : Okay okay.
+2022.4s - 2023.4s : Please proceed.
+2023.4s - 2024.4s : Security services and properties.
+2024.4s - 2026.4s : All in all, security services are documents.
+2026.4s - 2040.4s : You have to have security in order to complete an�
+2040.4s - 2045.4s : Security services, aka, goals or property implementation independent supported by specific controls.
+2045.4s - 2050.4s : Security controls, aka, mechanisms practically actions, tools, or procedures that are used to provide security services.
+2050.4s - 2052.56s : Potentiality, integrity, availability.
+2056.88s - 2058.72s : Support, security controls.
+2062.28s - 2065.46s : E.g. encryption, firewalls, awareness.
+2067.36s - 2071.54s : So there are three services and there are three controls.
+2072.62s - 2075.1s : As an example, there can be more, of course.
+2076.46s - 2077.36s : Okay, let's see them.
+2077.36s - 2081.52s : Confidentiality.
+2083.52s - 2091.36s : The property that information is not made available or disclosed to unauthorized individuals, entities, or processes.
+2092.36s - 2093.36s : ISO 27000.
+2094.28s - 2104.58s : So this is the definition of confidentiality in ISO 27000.
+2107.36s - 2109.36s : So this is the definition of confidentiality in ISO 27000.
+2111.4s - 2121.4s : Can be divided into secrecy, protecting business data, privacy, protecting personal data, anonymity, hide who is engaging in what actions.
+2126.36s - 2127.54s : Main threat.
+2127.94s - 2128.94s : Information theft.
+2129.34s - 2130.64s : Unintentional disclosure.
+2130.9s - 2131.58s : Controls.
+2131.92s - 2132.48s : Encryption.
+2132.84s - 2133.76s : Access control.
+2134.28s - 2136.42s : Perimeter defense as general controls.
+2136.42s - 2136.52s : Controls.
+2136.52s - 2136.92s : Controls.
+2136.92s - 2137.04s : Controls.
+2137.04s - 2137.06s : Controls.
+2137.06s - 2137.08s : Controls.
+2137.08s - 2137.18s : Controls.
+2137.36s - 2137.68s : Include.
+2138.02s - 2139.54s : Secure systems development.
+2139.86s - 2140.94s : Incident response.
+2141.84s - 2143.06s : Okay, let's hear again.
+2143.74s - 2144.42s : Main threat.
+2144.84s - 2145.88s : Information theft.
+2146.2s - 2147.5s : Unintentional disclosure.
+2150.6s - 2151.36s : Controls.
+2151.68s - 2152.24s : Encryption.
+2152.6s - 2153.56s : Access control.
+2153.96s - 2155.0s : Perimeter defense.
+2157.52s - 2159.54s : As general controls.
+2159.84s - 2160.84s : Also include.
+2163.24s - 2165.28s : Secure systems development.
+2165.74s - 2166.82s : Incident response.
+2166.82s - 2166.9s : Incident response.
+2166.9s - 2166.92s : Incident response.
+2167.58s - 2167.76s : Conclusion.
+2167.76s - 2180.0s : In jurisdictional questions do write to the
+2180.0s - 2180.76s : clou
+2180.78s - 2182.94s : burley,
+2183.0s - 2188.62s : the
+2188.62s - 2190.96s : entire
+2191.0s - 2192.4s : I
+2192.4s - 2194.16s : will
+2194.18s - 2195.48s : email
+2195.48s - 2196.44s : smi
+2196.44s - 2197.44s : for OSI.
+2197.44s - 2208.08s : Okay, so this is the definition of data integrity according to X800 security architecture for
+2208.08s - 2209.08s : OSI.
+2209.08s - 2216.22s : Okay, so let's see this system integrity definition.
+2216.22s - 2217.36s : System integrity.
+2217.36s - 2231.04s : The property of accuracy and completeness can include the accountability of actions,
+2231.04s - 2246.36s : threats, data and system corruption, loss of accountability, controls, hashing, cryptographic
+2246.36s - 2247.36s : integrity check and so on.
+2247.36s - 2254.1s : And encryption, authentication, access control and logging, software digital signing, configuration
+2254.1s - 2257.88s : management and change control, system integrity.
+2257.88s - 2264.26s : So these are the controlling ways of integrity.
+2264.26s - 2270.7s : We will have an idea about them in future.
+2270.7s - 2276.36s : As general controls also include secure system development, incident response.
+2276.36s - 2277.36s : Okay.
+2277.36s - 2278.36s : Availability.
+2278.36s - 2279.36s : Availability.
+2279.36s - 2288.96s : So let's see the definition.
+2288.96s - 2295.36s : The property of being accessible and usable upon demand by an authorized entity.
+2295.36s - 2298.42s : Okay.
+2298.42s - 2303.74s : Main threats.
+2303.74s - 2304.74s : Main threat.
+2304.74s - 2306.32s : Denial of service, dose.
+2306.32s - 2307.32s : The prevention of authorizing.
+2307.32s - 2312.18s : Authorized access to resources or the delaying of time-critical operations.
+2312.18s - 2315.38s : It is very famous DDoS attack.
+2315.38s - 2318.48s : So what is DDoS attack?
+2318.48s - 2321.82s : DDoS attack means distributed dose attack.
+2321.82s - 2332.64s : It is one of the most famous attacking way to exhaust all of the available resources
+2332.64s - 2335.38s : of a system so that the normal, regular users cannot access that system.
+2335.38s - 2336.38s : Okay.
+2336.38s - 2339.44s : Are there any moreший спасov.
+2339.44s - 2340.46s : Okay.
+2340.46s - 2343.82s : Social especially in the przestwoction of emergency Turning them off
+2343.82s - 2343.92s : Let's look at the cringe moves flare difícil Not only or .
+2343.92s - 2365.12s : Tu se enter a crisis Down then pathos
+2365.12s - 2366.22s : .
+2366.22s - 2366.34s : About P告诉.
+2366.34s - 2379.74s : Okay, data privacy.
+2379.74s - 2384.82s : To protect specific aspects of information that may be related to natural persons, personal
+2384.82s - 2393.44s : information.
+2393.44s - 2397.2s : Prevent unauthorized collection and storage of personal information.
+2397.2s - 2400.5s : Prevent unauthorized use of collected personal information.
+2400.5s - 2403.14s : Make sure your personal information is correct.
+2403.14s - 2406.4s : Ensure transparency and access for data subjects.
+2406.4s - 2411.36s : Provide adequate information security around personal information.
+2411.36s - 2416.38s : Define clear responsibilities around personal information.
+2416.38s - 2422.0s : So GDPR is the regulation of Europe.
+2422.0s - 2423.0s : Okay.
+2423.0s - 2429.44s : GDPR becomes EU law on the 25th of May 2018.
+2429.44s - 2434.12s : One Oh one Oh one data privacy to protect specific aspects of information that may be
+2434.12s - 2438.28s : related to natural persons, personal information.
+2438.28s - 2441.76s : General data protection regulation.
+2441.76s - 2446.36s : Okay.
+2446.36s - 2452.0s : Authenticity, security service.
+2453.0s - 2459.56s : The CIA properties are quite general security services.
+2459.56s - 2463.14s : Other security services are often mentioned.
+2463.14s - 2469.44s : Authentication is very important with various types.
+2469.44s - 2470.98s : User authentication.
+2470.98s - 2475.9s : The process of verifying a claimed identity of a legal user when accessing a system or
+2475.9s - 2479.72s : an application.
+2479.72s - 2481.0s : So remember these pictures.
+2481.0s - 2482.0s : They will be used.
+2482.0s - 2483.0s : Okay.
+2483.0s - 2488.68s : They will be used in the following slides.
+2488.68s - 2490.16s : Organization authentication.
+2490.16s - 2495.44s : The process of verifying a claimed identity of a legal organization in an online interaction
+2495.44s - 2499.8s : session.
+2499.8s - 2501.06s : System authentication.
+2501.06s - 2502.68s : Peer entity authentication.
+2502.68s - 2508.36s : The corroboration verification that a peer entity system in an association connection
+2508.36s - 2511.52s : session is the one claimed by point eight zero zero.
+2511.52s - 2512.52s : Okay.
+2513.0s - 2526.4s : Data origin authentication, message authentication, the corroboration verification that the source
+2526.4s - 2537.0s : of data received as, as claimed.
+2537.0s - 2538.88s : Okay.
+2538.88s - 2540.42s : Okay.
+2540.42s - 2542.68s : Okay.
+2543.0s - 2547.36s : Taxonomy of authentication.
+2547.36s - 2553.1s : Authentication, entity authentication, user authentication.
+2553.1s - 2560.0s : So to authenticate a user what do we use?
+2560.0s - 2565.4s : Passwords, tokens, OTP, biometrics, PKI.
+2565.4s - 2571.98s : Okay to authenticate an organization what do we use?
+2571.98s - 2576.22s : Crypto protocols, e.g. TLS, PKI.
+2576.22s - 2584.1s : To authenticate a system what do we use?
+2584.1s - 2587.66s : Crypto protocols, e.g. IPSC, PKI.
+2587.66s - 2592.3s : Okay to authenticate a data what do we use?
+2592.3s - 2598.4s : MAC, DIG, SIG and PKI.
+2598.4s - 2601.4s : User identification and authentication.
+2601.4s - 2601.96s : Okay.
+2601.98s - 2605.74s : Identification.
+2605.74s - 2613.92s : Who you claim to be, method, user, name, biometrics.
+2613.92s - 2615.58s : User authentication.
+2615.58s - 2617.82s : Prove that you are the one you claim to be.
+2617.82s - 2624.0s : Okay we use our email or username to login the websites usually.
+2624.0s - 2631.22s : That is identification and then we use we provide our password to prove that we are
+2631.22s - 2631.98s : that user.
+2631.98s - 2638.98s : Main threat, unauthorized access.
+2638.98s - 2647.74s : So main threat of user identification is or user authentication is unauthorized access.
+2647.74s - 2655.74s : Controls, passwords, personal cryptographic tokens, OTP generators, etc. biometrics, ID cards, cryptographic security, authentication, etc.
+2655.74s - 2657.74s : To authenticate a user what do we use?
+2657.74s - 2659.74s : Passwords, tokens, OTP, biometrics, PKI.
+2659.74s - 2667.58s : So these are user to control user authentication.
+2667.58s - 2675.5s : Passwords, cryptographic tokens, biometrics, and such protocols.
+2675.5s - 2681.5s : Okay.
+2681.5s - 2686.74s : And let's see the organization system authentication.
+2686.74s - 2687.74s : Organization, security, authentication.
+2687.74s - 2688.74s : Okay.
+2688.74s - 2689.74s : Let's see the organization system authentication.
+2689.74s - 2690.74s : Okay let's see the organization system authentication.
+2690.74s - 2697.88s : memorized system notification, but we will have to find out first thing—
+2697.88s - 2702.28s : System authentication.
+2702.28s - 2706.42s : Goal, establish the correct identity of organizations, remote hosts.
+2706.42s - 2711.5s : Main threat, network intrusion, masquerading attacks, replay attacks, death attacks.
+2711.5s - 2712.5s : Okay.
+2712.5s - 2713.5s : Controls –
+2713.5s - 2718.0s : Controls, cryptographic authentication protocols based on hashing and encryption algorithms,
+2718.0s - 2719.0s : examples ofISsing and autosystem 인zlich t니 After notification of exchange, promote and
+2719.0s - 2719.58s : �
+2719.74s - 2722.8s : Examples, TLS, VPN, IPSC.
+2723.16s - 2726.04s : So you may be wondering what are these.
+2726.64s - 2731.28s : We don't have time to show all of them, but if you are wondering what are they,
+2731.28s - 2738.7s : just you select these from the slide and search network intrusion.
+2739.2s - 2742.72s : You will see what they mean from various resources.
+2749.74s - 2755.06s : A network intrusion refers to any unauthorized activity on a digital network.
+2755.84s - 2759.66s : Network intrusions often involve stealing valuable network resources
+2759.66s - 2763.82s : and almost always jeopardize the security of networks and or their data.
+2764.04s - 2769.74s : You can get more information from the link provided by Google.
+2775.22s - 2779.06s : A masquerade attack is an attack that uses a fake identity,
+2779.06s - 2784.68s : such as a network identity, to gain unauthorized access to personal computer information
+2784.68s - 2786.94s : through legitimate access identification.
+2787.94s - 2788.24s : Okay.
+2793.22s - 2794.96s : Okay, replay attack.
+2795.36s - 2798.02s : Let's look from the Wikipedia.
+2802.1s - 2805.68s : A replay attack, also known as playback attack,
+2805.68s - 2808.68s : is a form of network attack in which a valid data transmission
+2809.06s - 2812.0s : is maliciously or fraudulently repeated or delayed.
+2812.56s - 2816.16s : This is carried out either by the originator or by an adversary
+2816.16s - 2818.88s : who intercepts the data and retransmits it,
+2819.28s - 2823.08s : possibly as part of a masquerade attack by IP packet substitution.
+2824.02s - 2827.94s : This is one of the lower tier versions of a man in the middle attack.
+2828.56s - 2831.22s : Another way of describing such an attack is
+2831.22s - 2834.9s : an attack on a security protocol using replay of messages
+2834.9s - 2838.9s : from a different context into the intended or original and expected context.
+2839.06s - 2844.04s : context, thereby fooling the honest participants into thinking they have successfully completed
+2844.04s - 2845.68s : the protocol run.
+2845.68s - 2846.68s : 1.
+2846.68s - 2853.36s : As you can see there are many more information you can look at them and maybe all of you
+2853.36s - 2868.58s : have heard this TDoS attacks, it is the most famous and most famous one.
+2868.58s - 2874.38s : In computing, a denial of service attack is a cyber attack in which the perpetrator
+2874.38s - 2879.76s : seeks to make a machine or network resource unavailable to its intended users by temporarily
+2879.76s - 2885.0s : or indefinitely disrupting services of a host connected to the internet.
+2885.0s - 2889.26s : Denial of service is typically accomplished by flooding the targeted machine or resource
+2889.26s - 2894.38s : with superfluous requests in an attempt to overload systems and prevent some or all legitimate
+2894.38s - 2896.58s : requests from being fulfilled.
+2896.58s - 2897.64s : 1.
+2897.64s - 2898.56s : So in a
+2898.56s - 2903.96s : TDoS attack, there is no security flaw actually.
+2903.96s - 2910.92s : It is all about the massive number of incoming requests.
+2910.92s - 2919.72s : Let's say you have a web server which can hold up to 1000 live visitors and you regularly
+2919.72s - 2927.48s : never exceed 1000 visitors at a time so you don't need a stronger server.
+2927.48s - 2928.48s : However, some
+2928.48s - 2933.8s : ppy attack can be successful, but this one attacks you and sends the server you've
+2933.8s - 2942.42s : collected more than 1 million, fake visitors, and your real visitors become inaccessible
+2942.42s - 2946.04s : to your server, because your server is over flooded.
+2946.04s - 2948.04s : A TDoS attack can not
+2948.04s - 2953.38s : be prevented without having an extremely expensive Norwegian.
+2953.38s - 2958.28s : First of all, it is an urban user Plus when it comes to basic
+2958.28s - 2973.6s : bandwidth or resource management. It is the lamest and also one of the most critical threats
+2973.6s - 2983.48s : to the web servers.
+2983.48s - 2988.98s : In a distributed denial of service attack , the incoming traffic flooding the
+2988.98s - 2994.74s : victim originates from many different sources. This effectively makes it impossible to stop
+2994.74s - 2998.26s : the attack simply by blocking a single source.
+2998.26s - 3009.64s : So, a DDoS attack can take anything down as long as they have enough number of zombie
+3009.64s - 3012.64s : attacks.
+3012.64s - 3018.14s : The DDoS attack can be used to control the attack.
+3018.14s - 3025.14s : You can see it is a pretty long page with lots of information.
+3025.14s - 3030.14s : Okay, so what controls do we have?
+3030.14s - 3037.64s : Cryptographic authentication protocols based on hashing and encryption algorithms.
+3037.64s - 3041.64s : TLS, VPN, IPSC.
+3041.64s - 3042.64s : Okay.
+3042.64s - 3052.88s : So, if you hide your server's real identity behind a VPN or such things, they may not
+3052.88s - 3062.64s : carry a DDoS attack on you because they wouldn't be able to find your server's real IP address.
+3062.64s - 3069.64s : For example, a free DDoS protection system.
+3069.64s - 3070.64s : Okay.
+3070.64s - 3071.64s : Okay.
+3071.64s - 3072.64s : Okay.
+3072.64s - 3073.64s : Okay.
+3073.64s - 3074.64s : Let's take a look at Innovate URL history.
+3074.64s - 3075.94s : Dig into OutUltra andсылk the link for more details.
+3075.94s - 3078.62s : Let's look at the Cloud Flayer by the way.
+3078.62s - 3085.04s : So, this Cloud Flayer is also related to malware.
+3085.04s - 3091.04s : They default that their server's web well-meaning signature page is not estéb increase
+3091.04s - 3096.74s : the number of sources on the web if Lilly 성 called the DNS.
+3096.74s - 3100.14s : Under the cloud they are no longerinterpreted as the company map.
+3100.14s - 3101.14s : I can see it.
+3101.64s - 3111.48s : want DDoS protection or some other protections, you may use Cloudflare's free service or paid
+3111.48s - 3124.6s : service. This is the perhaps the best option you can have at the moment.
+3124.6s - 3134.82s : Data origin authentication, message authentication. Recipient of a message, i.e. data, can verify
+3134.82s - 3139.88s : the correctness of claimed sender identity, but third party may not be able to verify
+3139.88s - 3148.28s : it. Main threats, false transactions, false messages and data.
+3148.28s - 3154.4s : Okay, this may happen, for example, in emails.
+3154.4s - 3154.58s : Anyone who is using Cloudflare, they may not be able to verify the correctness of the
+3154.58s - 3165.02s : email. Anyone can send you an email with faking its identity. So there are controls
+3165.02s - 3174.8s : to control whether the originating email is truly that identity or not. This is very important
+3174.8s - 3184.38s : one, data origin authentication. Controls, encryption with shared secret
+3184.38s - 3191.22s : key, MAC message authentication code, security protocols, digital signature with private key,
+3191.22s - 3194.82s : electronic signature, i.e. any digital evidence.
+3194.82s - 3196.82s : Okay.
+3196.82s - 3202.82s : Non-repudiation, strong form of data authentication.
+3202.82s - 3210.82s : Goal, making sending and receiving messages undeniable through unforgeable evidence. Non-repudiation of origin.
+3210.82s - 3211.94s : Preventing the spread of false information.
+3211.94s - 3212.18s : Okay.
+3212.18s - 3214.18s : Non-repudiation of origin.
+3214.18s - 3215.98s : Proof that data was sent.
+3215.98s - 3218.14s : Non-repudiation of delivery.
+3218.14s - 3220.14s : Proof that data was received.
+3220.14s - 3223.02s : NB, imprecise interpretation.
+3223.02s - 3228.02s : Has a message been received and read just because it has been delivered to your mailbox?
+3228.02s - 3232.02s : Okay, main threats.
+3232.02s - 3234.38s : Main threats.
+3234.38s - 3240.38s : Sender falsely denying having sent message, recipient falsely denying having received message.
+3240.38s - 3242.38s : Okay.
+3242.38s - 3243.98s : Main threats.
+3243.98s - 3253.98s : Control, digital signature, cryptographic evidence that can be confirmed by a third party.
+3253.98s - 3265.98s : Data origin authentication and non-repudiation are similar. Data origin authentication only provides proof to recipient party. Non-repudiation also provides proof to third parties.
+3265.98s - 3267.98s : Okay, so this is the defense.
+3267.98s - 3269.98s : Accountability can be considered as a part of system.
+3269.98s - 3271.98s : Okay, so this is the defense.
+3271.98s - 3273.98s : Accountability can be considered as a part of system.
+3273.98s - 3274.98s : Control, data integration, uncertainty with dividers.
+3274.98s - 3276.98s : yes, this is the defense line.
+3276.98s - 3298.92s : Interest, kind of a
+3298.92s - 3299.98s : system context securityahu explains.
+3299.98s - 3301.98s : But, again, people oftenesta testing doesn't work.
+3301.98s - 3302.98s : No policy is allowed in person to audit data contents.
+3302.98s - 3305.74s : use it to trace
+3305.74s - 3309.98s : okay
+3309.98s - 3322.92s : main threats inability to identify source of incident
+3322.92s - 3325.4s : inability to make attacker responsible
+3325.4s - 3340.0s : Controls identify and authenticate users log all system events audit electronic signature
+3340.0s - 3349.56s : nonrepudiation based on digital signature forensics
+3349.56s - 3354.5s : Authorization authorization has to specify access and usage permissions for entities
+3354.5s - 3355.38s : roles or processes
+3355.38s - 3362.18s : authorization policy normally defined by humans issued by an authority within the domain organization
+3362.18s - 3371.32s : authorities authorize systems don't authority can be delegated management right pointing arrow size
+3371.32s - 3378.02s : admin implemented in it systems as configuration policy so management
+3378.02s - 3384.88s : is system administration implemented in it systems as configuration policy
+3384.88s - 3391.18s : so authorities authorize systems don't that is the difference
+3391.18s - 3403.8s : identity and access management i am phases so there are phases configuration phase
+3404.16s - 3408.0s : registration of identity provisioning of
+3408.0s - 3414.02s : credentials authorization of access operation base self-identification
+3414.02s - 3418.74s : authentication access control termination phase
+3418.74s - 3424.0s : their registration deactivate credentials rework authorization okay simple
+3424.0s - 3430.36s : confusion about authorization
+3434.46s - 3437.98s : the term authorization is often wrongly
+3438.0s - 3440.3s : used in the sense of access control
+3440.3s - 3450.0s : eg misleading figure on p.725 in harris 7th ed common in textbooks and technical
+3450.0s - 3458.64s : specifications rfc 2196 cisco triple a server authentication authorization and accounting
+3458.64s - 3464.98s : for example let's open rfc uh 2196 to this
+3464.98s - 3465.98s : uh
+3465.98s - 3466.98s : for example let's open rfc uh 2196 to this uh
+3466.98s - 3467.98s : for example let's open rfc uh 2196 to this uh
+3468.0s - 3470.0s : for example let's open rfc uh 2196 to this uh
+3470.0s - 3472.8s : a handbook
+3472.8s - 3478.8s : site security handbook
+3478.8s - 3483.76s : okay so it is many pages probably
+3483.76s - 3486.64s : let's open the authorization
+3486.64s - 3490.8s : okay there is authorization
+3490.8s - 3492.88s : authorization refers to the
+3492.88s - 3493.92s : authorization refers to the
+3493.92s - 3495.92s : authorization refers to the
+3495.92s - 3497.92s : authorization refers to the
+3498.0s - 3500.0s : principal signature that steak
+3500.0s - 3506.0s : third the default
+3506.0s - 3507.92s : default
+3507.92s - 3514.6s : and worshipping
+3514.6s - 3522.6s : urged user ありa
+3523.74s - 3524.62s : Martin
+3524.62s - 3525.68s : how did you find just fine
+3525.68s - 3525.78s : is be
+3525.78s - 3525.88s : Ridge
+3525.88s - 3526.86s : you something like a
+3526.86s - 3526.96s : Footloom
+3526.96s - 3534.96s : Wrong usage of authorization leads to absurd scenario.
+3534.96s - 3542.96s : 1. You get somebody's password and uses it to access account.
+3542.96s - 3554.96s : 2. Login screen gives warning, only authorized users may access this system.
+3554.96s - 3562.96s : 3. You get caught and taken to the police.
+3562.96s - 3576.96s : 4. You argue, textbooks in security state that a system authorizes the user when typing the right password, hence I was authorized because I typed the right password.
+3576.96s - 3580.96s : 5. Case dismissed, you go free.
+3580.96s - 3583.96s : So you see authorization doesn't mean
+3583.96s - 3586.96s : of access control.
+3586.96s - 3588.96s : Okay.
+3588.96s - 3594.96s : It is being used in a correct sense.
+3594.96s - 3597.96s : Authorization is actually this.
+3601.96s - 3610.96s : Authorization is to specify access and usage permissions for entities, roles or processes, authorization policy normally defined by humans,
+3610.96s - 3613.96s : issued by an authority within the domain organization.
+3613.96s - 3616.96s : Authorities authorize, systems don't.
+3616.96s - 3624.96s : So in this case, system lets you get access control but the authorization is not.
+3624.96s - 3634.96s : Because authorization only authorizes that user, that owner of that password, not the one who obtained that password.
+3634.96s - 3639.96s : This is somewhat related to terms.
+3639.96s - 3641.96s : Okay, just get an idea.
+3641.96s - 3642.96s : Okay.
+3643.96s - 3656.96s : So the user first registers the identity provider system owner.
+3656.96s - 3661.96s : The identity provider system owner does provisioning.
+3661.96s - 3667.96s : And then if registration is successful, it provides authorization.
+3667.96s - 3672.96s : It gets controlled from PAP, police administration program.
+3672.96s - 3681.96s : If it is accepted, passes policy, it forwards to policy decision point.
+3681.96s - 3684.96s : And then the decision is made.
+3684.96s - 3692.96s : And if policy enforcement also verifies that the user can access system resources.
+3692.96s - 3694.96s : This is the case of registration.
+3694.96s - 3701.96s : If a user is already registered, the user log on with ID plus ID.
+3701.96s - 3703.96s : Plus credit details.
+3703.96s - 3707.96s : It can be password or such other things.
+3707.96s - 3710.96s : User authentication function runs.
+3710.96s - 3719.96s : And if authentication is successful, user requests the resource and access type.
+3719.96s - 3722.96s : Then it goes to policy enforcement point.
+3722.96s - 3729.96s : And if user has access to that data.
+3729.96s - 3732.96s : Then it accesses to that data.
+3734.96s - 3739.96s : Okay, so this is the end of today.
+3739.96s - 3748.96s : As I said, information security, security of IT systems is alone a profession.
+3748.96s - 3752.96s : It can be an entire career.
+3752.96s - 3758.96s : It can be an entire university education area like software engineering.
+3758.96s - 3767.96s : It is impossible to cover the aspects with details in this course.
+3767.96s - 3777.96s : However, you will get general idea about security, security mechanisms, controls, threats and such things.
+3777.96s - 3787.96s : Just look to the Google and to get a detailed information.
+3787.96s - 3799.96s : Look for the YouTube videos to get more detailed information about the things that you don't understand or you wonder.
+3799.96s - 3807.96s : I will try to give you the general idea of most important ones.
+3807.96s - 3809.96s : So you may search them.
+3809.96s - 3813.96s : You may focus on them.
+3813.96s - 3815.96s : Hopefully see you in the next week.
+3815.96s - 3816.96s : We will have.
+3816.96s - 3817.96s : We will have.
+3817.96s - 3820.96s : A GitHub repository.
+3820.96s - 3829.96s : And all the resources will be posted on there.
+3829.96s - 3835.96s : Just type GitHub Furkan Gözükara and open my GitHub page.
+3835.96s - 3838.96s : Click repositories.
+3838.96s - 3844.96s : And you will see our course repository, which is this one.
+3844.96s - 3846.96s : I will also share on.
+3846.96s - 3849.96s : And I am a system of the school.
+3849.96s - 3855.96s : So make sure that you follow the system of school.
+3855.96s - 3858.96s : I will also send SMS messages.
+3858.96s - 3861.96s : Okay.
+3861.96s - 3863.96s : Stay safe.
+3863.96s - 3867.96s : Be cautious of COVID-19.
+3867.96s - 3868.96s : See you.
+3868.96s - 3869.96s : Hopefully.

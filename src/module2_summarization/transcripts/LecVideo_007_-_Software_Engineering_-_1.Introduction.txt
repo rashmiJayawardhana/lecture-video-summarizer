@@ -1,0 +1,602 @@
+0.0s - 7.0s : Hello dear students. Welcome to the lecture 1 of software engineering course.
+7.0s - 14.0s : I will be using IN Summerville 9th edition lecture slides.
+14.0s - 23.0s : And I won't be mostly don't touch their slides.
+23.0s - 30.0s : So in this course what we are going to learn is
+38.0s - 43.0s : Professional software development what is meant by software engineering.
+43.0s - 48.0s : So what truly means software engineering?
+48.0s - 53.0s : Is it just about knowing how to program, knowing coding,
+53.0s - 58.0s : Is it just about being a coder, being a web designer?
+58.0s - 65.0s : No. Software engineering means much more than just being a programmer.
+65.0s - 70.0s : We will learn that. What we are going to learn in this course
+70.0s - 74.0s : will help you tremendously in your professional life.
+74.0s - 81.0s : Especially if you work with a professional big company.
+81.0s - 83.0s : A corporate company.
+83.0s - 92.0s : Believe me. You will have great easiness
+92.0s - 101.0s : if you take this course seriously and learn what is taught in this lesson.
+108.0s - 111.0s : Software engineering ethics a brief introduction to ethical issues
+111.0s - 116.0s : that affect software engineering.
+116.0s - 121.0s : Case studies an introduction to three examples that are used in later chapters in the book.
+121.0s - 124.0s : Okay. Case studies is not that important.
+124.0s - 131.0s : Okay. So software engineering.
+131.0s - 135.0s : The economies of all developed nations are dependent on software.
+135.0s - 140.0s : More and more systems are software controlled software engineering is concerned with theories,
+140.0s - 144.0s : methods and tools for professional software development.
+144.0s - 152.0s : Expenditure on software represents a significant fraction of gross national product in all developed countries.
+152.0s - 159.0s : Yes. As you know that already just the value of Facebook and Google
+159.0s - 164.0s : probably is more than all of the companies in our country.
+164.0s - 167.0s : So software is the future.
+170.0s - 173.0s : Software engineering is the future.
+173.0s - 175.0s : Software engineering is the future.
+175.0s - 178.0s : Software costs often dominate computer system costs.
+178.0s - 183.0s : The costs of software on a PC are often greater than the hardware cost.
+183.0s - 187.0s : Software costs more to maintain than it does to develop.
+187.0s - 193.0s : For systems with a long life, maintenance costs may be several times development costs.
+193.0s - 198.0s : Software engineering is concerned with cost-effective software development.
+198.0s - 200.0s : This is also so true.
+200.0s - 213.0s : After you deliver your software, maintenance of it sometimes may be usually costs more than the developing that software.
+213.0s - 221.0s : Moreover, software almost always costs more than the hardware itself.
+221.0s - 223.0s : Think about MS SQL Server.
+223.0s - 227.0s : MS SQL License costs many times more than the hardware that it's.
+228.0s - 230.0s : And software is not the only thing that costs more than the hardware itself.
+230.0s - 232.0s : Software products.
+232.0s - 242.0s : Generic products, standalone systems that are marketed and sold to any customer who wishes to buy them.
+242.0s - 243.0s : Examples.
+243.0s - 251.0s : PC software such as graphics programs, project management tools, computer-aided design software,
+251.0s - 255.0s : software for specific markets such as appointment systems for dentists.
+255.0s - 257.0s : For example, Photoshop is a business model.
+257.0s - 258.0s : It is a very popular software.
+258.0s - 260.0s : It is a generic graphics program.
+260.0s - 266.0s : Or MS SQL Server, a generic database management program.
+266.0s - 271.0s : Or Windows 10, a generic operation system software.
+271.0s - 281.0s : These are all generic products to sold millions of customers.
+281.0s - 287.0s : Customized product software that is commissioned by a specific customer to meet their own needs.
+287.0s - 288.0s : Examples.
+288.0s - 294.0s : Embedded control systems, air traffic control software, traffic monitoring systems.
+294.0s - 302.0s : Customized products always cost more because you can't sell it to the many people.
+302.0s - 305.0s : Thus, you cannot reduce price.
+305.0s - 312.0s : And so, yes, customized products always cost more.
+312.0s - 314.0s : Product specification.
+317.0s - 324.0s : Generic products, the specification of what the software should do is owned by the software developer
+324.0s - 327.0s : and decisions on software change are made by the developer.
+327.0s - 329.0s : Customized products.
+329.0s - 336.0s : The specification of what the software should do is owned by the customer for the software
+336.0s - 340.0s : and they make decisions on software changes that are required.
+340.0s - 342.0s : Okay.
+342.0s - 346.0s : Frequently asked questions about software engineering.
+347.0s - 349.0s : What is software?
+349.0s - 352.0s : Computer programs and associated documentation.
+352.0s - 363.0s : Software products may be developed for a particular customer or may be developed for a general market.
+363.0s - 366.0s : What are the attributes of good software?
+366.0s - 376.0s : Good software should deliver the required functionality and performance to the user and should be maintainable, dependable and usable.
+376.0s - 378.0s : What is software engineering?
+378.0s - 381.0s : What is software engineering?
+381.0s - 387.0s : Software engineering is an engineering discipline that is concerned with all aspects of software production.
+387.0s - 392.0s : Not just coding or not just doing the job.
+392.0s - 393.0s : Okay.
+393.0s - 401.0s : What are the fundamental software engineering activities?
+401.0s - 403.0s : Software specification.
+403.0s - 404.0s : Software development.
+404.0s - 405.0s : Software validation and software development.
+405.0s - 406.0s : Software development.
+406.0s - 407.0s : Software evolution.
+416.0s - 421.0s : What is the difference between software engineering and computer science?
+421.0s - 425.0s : Computer science focuses on theory and fundamentals.
+425.0s - 431.0s : Software engineering is concerned with the practicalities of developing and delivering useful software.
+436.0s - 443.5s : So this is important. What is the difference between software and computer science? Let's listen again.
+445.3s - 454.84s : Computer science focuses on theory and fundamentals. Software engineering is concerned with the practicalities of developing and delivering useful software.
+454.84s - 470.66s : So actually software engineering is more useful in the daily life when you get a job. Okay, so it's more focused on the practical usage of software development.
+470.66s - 472.66s : Software development.
+484.84s - 496.8s : Computer science and engineering is concerned with all aspects of computer-based systems development including hardware, software and process engineering. Software engineering is part of this more general process.
+499.9s - 503.48s : Frequently asked questions about software engineering.
+504.68s - 507.44s : Okay, more questions and answers.
+507.44s - 511.86s : What are the key challenges facing software engineering?
+512.36s - 513.44s : Coping with increasing diversity.
+514.5s - 514.82s : Demand.
+514.84s - 525.38s : What are the costs of software engineering?
+525.38s - 537.1s : Roughly 60% of software costs are development costs, 40% are testing costs. For custom software, evolution costs often exceed development costs.
+537.1s - 544.06s : What are the key challenges facing software engineering?
+544.06s - 548.14s : What are the best software engineering techniques and methods?
+548.14s - 555.92s : While all software projects have to be professionally managed and developed, different techniques are appropriate for different types of system.
+556.76s - 567.08s : For example, games should always be developed using a series of prototypes whereas safety-critical control systems require a complete and analyzable specification to be developed.
+567.1s - 572.3s : You can't, therefore, say that one method is better than another.
+572.3s - 587.04s : Yes, for games, you can open a pre-beta, beta, and omega versions or alpha versions and the errors are not critical for games.
+587.04s - 596.76s : However, if you are developing a critical software system, let's say for a computer, software engineering, or software engineering, you can use a pre-beta or beta version.
+596.76s - 611.32s : For example, if you are developing software for MR devices that are running on patients, you can't have a not-completed, not-truly-tested software.
+611.32s - 623.56s : Because it may be hazardous for life, it may cost life, or you are, let's say, developing a software for banks, you can't have a not-completed software.
+623.56s - 626.42s : It may cost millions of dollars.
+626.42s - 632.42s : Okay, so methods differ for different types of software.
+632.42s - 643.92s : For games, it is perfectly fine to open beta, alpha versions and let the clients, the users, the gamers to find out bugs and you fix them.
+643.92s - 645.92s : So, it changes.
+651.92s - 655.42s : What differences has the web made to software engineering?
+655.42s - 656.42s : The web has led to a new generation of software engineering.
+656.42s - 663.42s : It has led to the availability of software services and the possibility of developing highly distributed service-based systems.
+663.42s - 670.42s : Web-based systems development has led to important advances in programming languages and software reuse.
+670.42s - 672.42s : Definitely.
+672.42s - 680.42s : For example, let's take into account that code management systems such as GitHub.
+680.42s - 686.42s : With GitHub, tens of hundreds of thousands of developers can work.
+686.42s - 692.42s : They can run around the world on the same software and contribute to the open-source development.
+692.42s - 702.42s : And there are limitless number of new opportunities with the web.
+702.42s - 708.42s : What are the essential attributes of good software?
+708.42s - 710.42s : Essential attributes of good software.
+710.42s - 712.42s : What are the essential attributes of good software?
+712.42s - 714.42s : What are the essential attributes of good software?
+714.42s - 721.42s : Maintainability software should be written in such a way so that it can evolve to meet the changing needs of customers.
+721.42s - 728.42s : This is a critical attribute because software change is an inevitable requirement of a changing business environment.
+728.42s - 738.42s : This is so true. Your software should be able to obtainable, maintainable.
+738.42s - 740.42s : Dependability and security software dependability includes the following.
+740.42s - 742.42s : The first is the software.
+742.42s - 743.42s : The second is the software.
+743.42s - 744.42s : Next is the software.
+744.42s - 746.42s : This particular category of box.
+746.42s - 748.42s : These are the features that define the programs that solve your problem following the existing box related.
+748.42s - 750.42s : Some of them are future type if, some are an example.
+750.42s - 765.22s : Stuff like de vidé
+765.22s - 767.42s : ORY
+767.42s - 771.42s : was used to devise and find software solutions for a specific type of problem.
+771.42s - 773.42s : If you are part of the existing box, you should know what software to use.
+773.42s - 780.06s : Safety. Dependable software should not cause physical or economic damage in the event of system failure.
+780.96s - 784.66s : Malicious users should not be able to access or damage the system.
+784.66s - 791.28s : So in many cases your software has to be dependable so you need to be careful of all of these.
+793.56s - 794.28s : Efficiency.
+797.42s - 803.3s : Software should not make wasteful use of system resources such as memory and processor cycles.
+804.18s - 810.12s : Efficiency therefore includes responsiveness, processing time, memory utilization, etc.
+811.02s - 819.54s : In most cases, let's say in client-based software, this is at the moment the least important factor.
+820.22s - 829.74s : Because the hardware becomes much more powerful for single-user applications, efficiency can always be improved after the delivery.
+830.64s - 833.4s : So I would say this is the least important.
+833.42s - 837.06s : Dependability is the most important one.
+837.7s - 840.5s : Main table is also second most important one.
+841.26s - 842.3s : And acceptability.
+846.92s - 851.28s : Software must be acceptable to the type of users for which it is designed.
+852.08s - 857.76s : This means that it must be understandable, usable and compatible with other systems that they use.
+857.76s - 860.12s : And this is the third important one.
+860.26s - 862.88s : Yes, it must be easy to use.
+863.42s - 866.66s : And it must have a good user interface or good documentation.
+866.66s - 872.68s : This is also important but not important as these two.
+873.22s - 873.4s : Okay.
+873.68s - 874.6s : Software engineering.
+881.6s - 893.38s : Software engineering is an engineering discipline that is concerned with all aspects of software production from the early stages of system specification through to maintaining the system after it has gone into use.
+893.42s - 910.7s : So you see a software engineer thinks about all of the aspects, not just coding, not just developing, not just producing a software that doesn't think about, don't think about the other aspects of development.
+910.7s - 914.24s : We will see what does this mean with the future lessons.
+914.24s - 916.1s : Engineering discipline.
+916.1s - 916.14s : Engineering discipline.
+916.14s - 923.26s : Using appropriate theories and methods to solve problems.
+923.26s - 924.3s : CPU software software engineers.
+924.3s - 925.56s : And what is engineering gonna do with software engineering?
+925.56s - 927.76s : The first step is to learn about it, but effectively start with information.
+927.98s - 929.38s : and contribute listening to yours.
+929.38s - 947.54s : From beginning to end, every degree requires commitment to the broader structure of Device motivation Training,
+947.54s - 948.18s : 競争 A test of common interests It is not difficult to begin from scratch.
+948.18s - 952.44s : ly just blank because it alone hardly Xiaobai view content development
+952.44s - 953.06s : Yes, importantly has such class there is engineering and being fresh.
+953.06s - 953.1s : You're this open movement.
+953.1s - 953.18s : Now, the UK of West Virgin five.
+953.18s - 953.22s : It's like a person I hope to live on a new West Virgin, because we already saw theists who sentence worked with fees to 6 않는.
+953.22s - 953.24s : But it was pretty quickly, constantly aromatic to everyone.
+953.24s - 953.26s : And actually stopped working in very short pieces before I've said nothing in parallel.
+953.26s - 959.34s : advanced software systems. We need to be able to produce reliable and trustworthy systems
+959.34s - 965.9s : economically and quickly. It is usually cheaper, in the long run, to use software engineering
+965.9s - 970.54s : methods and techniques for software systems rather than just write the programs as if it
+970.54s - 976.54s : was a personal programming project. For most types of system, the majority of costs are the
+976.54s - 983.98s : costs of changing the software after it has gone into use. This is so true. I also experienced
+983.98s - 992.62s : this myself for my personal projects and programs. Believe me, this is so true. Let's read this again.
+995.74s - 1001.5s : It is usually cheaper, in the long run, to use software engineering methods and techniques for
+1001.5s - 1006.38s : software systems rather than just write the programs as if it was a personal programming
+1006.38s - 1012.62s : project. For most types of system, the majority of costs are the costs of changing the software
+1012.62s - 1019.66s : after it has gone into use. This also separates a programmer and a coder from a software engineer.
+1020.7s - 1027.58s : In this era, you have to be a software engineer to be a wanted programmer,
+1028.14s - 1036.22s : not just a simple programmer or a coder. It will make the difference. Software process activities
+1036.38s - 1047.94s : Software specification, where customers and engineers define the software that is to be
+1047.94s - 1053.78s : produced and the constraints on its operation. Software development, where the software is
+1053.78s - 1059.42s : designed and programmed. Software validation, where the software is checked to ensure that it
+1059.42s - 1066.08s : is what the customer requires. Software evolution, where the software is modified to reflect changing
+1066.08s - 1066.36s : customers. Software evolution, where the software is modified to reflect changing customers.
+1066.38s - 1077.16s : So, software engineering separates software into the four processes, into the four stages.
+1077.76s - 1083.96s : Software specification, software development, software validation, and software evolution,
+1083.96s - 1092.72s : as we can see. Okay. General issues that affect most software. Heterogeneity,
+1096.38s - 1102.0s : as we can see. Increasingly, systems are required to operate as distributed systems
+1102.0s - 1106.16s : across networks that include different types of computer and mobile devices.
+1107.76s - 1112.6s : Social Change
+1113.64s - 1118.72s : Business and society are changing incredibly quickly as emerging economies develop and new
+1118.72s - 1124.48s : technologies become available. They need to be able to change their existing software and to
+1124.48s - 1125.76s : rapidly develop new software. Business, social change, and society are a key component of the
+1125.76s - 1135.38s : software. As software is intertwined with all aspects of our lives, it is essential that we
+1135.38s - 1148.84s : can trust that software. There are many different types of software system and there is no universal
+1148.84s - 1154.78s : set of software techniques that is applicable to all of these. The software engineering methods
+1154.78s - 1160.18s : and tools used depend on the type of application being developed, the requirements of the customer
+1160.18s - 1181.24s : and the background of the development team. So you have to be careful about which type of
+1181.24s - 1184.42s : software you are developing and choose the
+1184.42s - 1184.76s : software that is applicable to you.
+1184.78s - 1190.24s : Proper methods and tools for that application type.
+1190.78s - 1191.72s : Application types.
+1192.7s - 1194.52s : Okay, standalone applications.
+1197.04s - 1204.5s : These are application systems that run on a local computer, such as a PC. They include all necessary
+1204.5s - 1207.74s : functionality and do not need to be connected to a network.
+1208.8s - 1211.58s : Okay, interactive transaction-based applications.
+1214.78s - 1220.68s : Applications that execute on a remote computer and are accessed by users from their own PCs or
+1220.68s - 1225.82s : terminals. These include web applications such as e-commerce applications.
+1227.02s - 1228.94s : And embedded control systems.
+1229.86s - 1234.86s : These are software control systems that control and manage hardware devices.
+1235.34s - 1240.1s : Numerically, there are probably more embedded systems than any other type of system.
+1240.1s - 1244.1s : I would say currently most of the applications are
+1244.78s - 1250.66s : either interactive transactions-based applications or standalone applications that
+1251.46s - 1256.78s : access the remote computers to execute the core functions.
+1256.78s - 1263.98s : Such as online games and service-based applications.
+1266.58s - 1271.62s : For example, even to run Photoshop on your computer, even though it is a
+1272.66s - 1274.76s : standalone application, it has to connectuplates.
+1274.78s - 1281.78s : It's server and also it provides many features that you can do with its remote servers.
+1281.78s - 1284.78s : So it's a mix of both.
+1284.78s - 1286.78s : Okay, application types. We continue.
+1286.78s - 1289.78s : Embedded control systems. This is a rare area.
+1289.78s - 1301.78s : And in Turkey, it doesn't have much of job opportunities.
+1301.78s - 1314.78s : But if you get into a manufacturing factory of embedded control systems, of course, it is still mandatory.
+1314.78s - 1321.78s : Application types. Batch processing systems.
+1321.78s - 1326.78s : These are business systems that are designed to process data in large batches.
+1326.78s - 1331.78s : They process large numbers of individual inputs to create corresponding batches.
+1331.78s - 1332.78s : And they also process data in large batches.
+1332.78s - 1333.78s : And they also process data in large batches.
+1333.78s - 1334.78s : Entertainment systems.
+1334.78s - 1345.78s : These are systems that are primarily for personal use and which are intended to entertain the user.
+1345.78s - 1349.78s : Systems for modeling and simulation.
+1349.78s - 1359.78s : These are systems that are developed by scientists and engineers to model physical processes or situations, which include many, separate, interacting objects.
+1359.78s - 1360.78s : Okay.
+1360.78s - 1361.78s : Some more.
+1361.78s - 1362.78s : More application types.
+1362.78s - 1366.78s : Data collection systems.
+1366.78s - 1374.78s : These are systems that collect data from their environment using a set of sensors and send that data to other systems for processing.
+1374.78s - 1377.78s : And systems of systems.
+1377.78s - 1382.78s : These are systems that are composed of a number of other software systems.
+1382.78s - 1385.78s : Okay. Software engineering fundamentals.
+1385.78s - 1389.78s : This is really important.
+1389.78s - 1390.78s : Some fundamental principles apply to all systems.
+1390.78s - 1392.78s : Examples apply to software programming technology.
+1392.78s - 1394.78s : This is basically a lucky rule of silence now.
+1394.78s - 1396.78s : The principles apply to software programming technology.
+1396.78s - 1400.78s : These systems are structures that release data using the system's system software capabilities.
+1400.78s - 1401.78s : This is basically an easy question to solve a child in the future.
+1401.78s - 1402.78s : And sounds difficult to answer.
+1402.78s - 1404.78s : Talk in your own language but there's nothing wrong with it.
+1404.78s - 1405.78s : It's not like school.
+1405.78s - 1406.78s : Myself might have a window to ugly aussieocks.
+1406.78s - 1407.78s : Am I slowly completing an online course if I'm contemplating myした jobções and trying to useCommonS�� evilrelations?
+1407.78s - 1408.78s : I really like playing League of Legends or something just like that.
+1408.78s - 1409.78s : Well then God.
+1409.78s - 1410.78s : Well I got rid of the whole stuff.
+1410.78s - 1413.78s : These are systems that Experience textures really just ludicrous use those confusing job only alright
+1413.78s - 1419.42s : technical support instance we've whileñor knew one look hereώνși
+1419.42s - 1420.78s : students compiler pending us.
+1420.78s - 1426.78s : Where appropriate, you should reuse software that has already been developed rather than write new software.
+1426.78s - 1435.78s : This is a core concept for being useful in software development.
+1435.78s - 1446.78s : You should reuse software, especially open source software that is checked and validated many times by many other users.
+1446.78s - 1451.78s : Not try to invent the wheel again and again.
+1451.78s - 1461.78s : This will make your software more dependable, better, more robust, more effective, more efficient, and will save you a lot of time.
+1461.78s - 1465.78s : Software Engineering and the Web
+1469.78s - 1475.78s : The web is now a platform for running application and organizations are increasingly developing web-based systems.
+1475.78s - 1476.78s : The web is now a platform for running application and organizations are increasingly developing web-based systems.
+1476.78s - 1478.78s : Rather than local systems.
+1478.78s - 1485.78s : Web services, discussed in chapter 19, allow application functionality to be accessed over the web.
+1485.78s - 1492.78s : Cloud computing is an approach to the provision of computer services where applications run remotely on the cloud.
+1492.78s - 1496.78s : Users do not buy software by pay according to use.
+1496.78s - 1501.78s : Yes, this is the most commonly used service type at the moment.
+1501.78s - 1505.78s : For example, for reading these text-to-speech I am using,
+1505.78s - 1509.4s : I am using premium service of Google Cloud.
+1509.4s - 1512.04s : Google Cloud text-to-speech API.
+1512.04s - 1513.92s : I have subscribed to them.
+1513.92s - 1517.54s : It is normally paid but they give you some free credits.
+1517.54s - 1519.92s : Currently, I am using free credits.
+1519.92s - 1527.3s : So this is the future of the software and development cloud computing.
+1527.3s - 1532.48s : Web services also very similar to cloud computing.
+1532.48s - 1536.16s : So we can say the future is the web.
+1536.16s - 1541.94s : Web software engineering we continue.
+1541.94s - 1546.38s : Software reuse is the dominant approach for constructing web-based systems.
+1546.38s - 1550.86s : When building these systems, you think about how you can assemble them from pre-existing
+1550.86s - 1553.24s : software components and systems.
+1553.24s - 1560.02s : Actually this is not the dominant approach for only web-based but all systems.
+1560.02s - 1562.46s : Because it is extremely hard to build.
+1562.46s - 1568.64s : In today's world, to build something from scratch.
+1568.64s - 1578.52s : In today's world, softwares are so advanced, so attractive, so complex so that it is very
+1578.52s - 1581.02s : very hard to develop from scratch.
+1581.02s - 1590.18s : They are usually composed from existing frameworks, existing libraries.
+1590.18s - 1592.18s : And...
+1592.18s - 1597.82s : Utilizing what is already there.
+1597.82s - 1606.3s : This is very important.
+1606.3s - 1610.04s : Web-based systems should be developed and delivered incrementally.
+1610.04s - 1614.72s : It is now generally recognized that it is impractical to specify all the requirements
+1614.72s - 1616.8s : for such systems in advance.
+1616.8s - 1621.36s : Yes, you constantly update your web service or web system.
+1621.36s - 1621.92s : Yes, you constantly update your web service or web system.
+1621.92s - 1626.02s : It is easy to update also.
+1626.02s - 1630.96s : User interfaces are constrained by the capabilities of web browsers.
+1630.96s - 1635.44s : Technologies such as Ajax allow rich interfaces to be created within a web browser but are
+1635.44s - 1637.92s : still difficult to use.
+1637.92s - 1641.08s : Web forms with local scripting are more commonly used.
+1641.08s - 1645.56s : Actually, this is pretty much changing with the recent advances in asynchronous programming.
+1645.56s - 1646.56s : It is not a new thing.
+1646.56s - 1647.56s : We are still working on it.
+1647.56s - 1648.56s : It is a new thing.
+1648.56s - 1649.56s : We are still working on it.
+1649.56s - 1650.56s : We are still working on it.
+1650.56s - 1651.56s : We are still working on it.
+1651.56s - 1652.62s : Web based software engineering...
+1652.62s - 1654.28s : Let me finish now.
+1654.28s - 1657.46s : We are going to complete the web based software engineering test.
+1657.46s - 1661.18s : We will continue.
+1661.18s - 1665.62s : Web based systems are complex distributed systems but the fundamental principles of
+1665.62s - 1669.8s : software engineering discussed previously are as applicable to them as they are to any
+1669.8s - 1671.7s : other types of system.
+1671.7s - 1676.92s : The fundamental ideas of software engineering discussed in the previous section apply to
+1676.92s - 1678.94s : web based software in the same way that they apply to other types of software systems.
+1678.94s - 1679.94s : For example, if we were to build a system, we would need an automatic system for web
+1679.94s - 1680.94s : based software engineering.
+1680.94s - 1685.58s : Yeah, this is true. Key points. Okay.
+1710.94s - 1723.5s : Okay, all these key points are so true. Let's read them again.
+1740.94s - 1748.1s : The high-level activities of specification, development, validation and evolution are part of all software processes.
+1749.1s - 1755.0s : The fundamental notions of software engineering are universally applicable to all types of system development.
+1756.18s - 1758.04s : Okay, two more key points.
+1760.04s - 1767.46s : There are many different types of system and each requires appropriate software engineering tools and techniques for their development.
+1768.4s - 1770.86s : The fundamental ideas of software engineering.
+1770.94s - 1776.3s : Okay, let's read again.
+1776.3s - 1783.98s : There are many different types of system and each requires appropriate software engineering tools and techniques for their development.
+1784.9s - 1790.24s : The fundamental ideas of software engineering are applicable to all types of software system.
+1791.4s - 1795.26s : Okay, let's continue to lecture two.
+1799.42s - 1800.7s : Okay, so.
+1800.94s - 1807.84s : This is lecture two of the slides, but we are in still lecture one of our courses.
+1809.14s - 1809.8s : Our course.
+1810.46s - 1812.68s : Okay, software engineering ethics.
+1814.9s - 1816.9s : Software engineering ethics.
+1817.3s - 1818.54s : Let's read them.
+1820.3s - 1826.36s : Software engineering involves wider responsibilities than simply the application of technical skills.
+1826.86s - 1830.36s : Software engineers must behave in an honest and ethically responsible manner.
+1830.94s - 1832.04s : Software engineers must behave in an honest and ethically responsible manner.
+1832.04s - 1834.02s : Software engineers must behave in an honest and ethically responsible manner.
+1834.02s - 1834.32s : We should be responsible if they are to be respected as professionals.
+1834.32s - 1834.38s : We should be responsible if they are to be respected as professionals.
+1834.38s - 1841.06s : Ethical behavior is more than simply upholding the law but involves following a set of principles that are morally correct.
+1842.2s - 1845.34s : We already have to abide the law.
+1845.34s - 1852.64s : However, to be an ethical software developer, we have to follow the principles that are morally correct.
+1853.42s - 1857.02s : Okay, issues of professional responsibility.
+1857.82s - 1860.16s : First, confidentiality.
+1860.66s - 1860.76s : Okay.
+1860.94s - 1874.66s : Okay, competence.
+1886.06s - 1886.74s : Okay.
+1886.74s - 1886.9s : Okay.
+1889.9s - 1891.66s : Intellectual property rights.
+1893.86s - 1900.58s : Engineers should be aware of local laws governing the use of intellectual property such as patents, copyright, etc.
+1901.54s - 1906.96s : They should be careful to ensure that the intellectual property of employers and clients is protected.
+1908.08s - 1909.22s : Computer misuse.
+1912.22s - 1916.72s : Software engineers should not use their technical skills to misuse other people's software.
+1916.74s - 1927.06s : Computer misuse ranges from relatively trivial game playing on an employer's machine, say, to extremely serious dissemination of viruses.
+1928.44s - 1928.78s : Okay.
+1932.06s - 1940.42s : ACM, Association for Computing Machinery, IEEE Institute of Electrical and Electronics Engineers, Code of Ethics.
+1941.86s - 1942.86s : Okay.
+1942.86s - 1942.98s : Okay.
+1946.74s - 1973.64s : Let's see the Code of Ethics.
+1976.74s - 1977.32s : Code of Ethics.
+1981.34s - 1990.52s : Computers have a central and growing role in commerce, industry, government, medicine, education, entertainment and society at large.
+1991.32s - 2004.1s : Software engineers are those who contribute by direct participation or by teaching to the analysis, specification, design, development, certification, maintenance and testing of software systems.
+2006.74s - 2007.78s : Software engineers are those who contribute by direct participation or by teaching to the analysis, specification, design, development, certification and testing of software systems.
+2007.78s - 2021.66s : Because of their roles in developing software systems, software engineers have significant opportunities to do good or cause harm, to enable others to do good or cause harm, or to influence others to do good or cause harm.
+2021.66s - 2033.38s : To ensure, as much as possible, that their efforts will be used for good, software engineers must commit themselves to making software engineering a beneficial and respected profession.
+2034.22s - 2034.86s : Okay.
+2034.86s - 2035.0s : Okay.
+2036.74s - 2041.8s : The ACM-IEEE Code of Ethics
+2041.8s - 2046.78s : Software Engineering Code of Ethics and Professional Practice
+2046.78s - 2054.7s : ACM-IEEE CS Joint Task Force on Software Engineering Ethics and Professional Practices
+2066.74s - 2068.74s : Preamble
+2096.74s - 2124.74s : Preamble
+2126.74s - 2136.74s : Preamble
+2136.74s - 2138.74s : Preamble
+2138.74s - 2150.74s : Preamble
+2150.74s - 2154.74s : Preamble
+2154.74s - 2156.74s : Preamble
+2156.74s - 2166.74s : Preamble
+2166.74s - 2168.74s : Preamble
+2168.74s - 2174.74s : Preamble
+2174.74s - 2180.74s : Preamble
+2180.74s - 2184.74s : Preamble
+2184.74s - 2194.74s : Preamble
+2194.74s - 2200.74s : Preamble
+2200.74s - 2206.74s : Preamble
+2206.74s - 2212.74s : Preamble
+2212.74s - 2216.74s : Preamble
+2216.74s - 2222.74s : Preamble
+2222.74s - 2228.74s : Preamble
+2228.74s - 2234.74s : Preamble
+2234.74s - 2240.74s : Preamble
+2240.74s - 2250.74s : Preamble
+2250.74s - 2256.74s : Preamble
+2256.74s - 2262.74s : Preamble
+2262.74s - 2268.74s : Preamble
+2268.74s - 2276.74s : Preamble
+2276.74s - 2278.74s : Preamble
+2278.74s - 2280.74s : Preamble
+2280.74s - 2282.74s : Preamble
+2282.74s - 2284.74s : Preamble
+2284.74s - 2286.74s : Preamble
+2286.74s - 2288.74s : Preamble
+2288.74s - 2290.74s : Preamble
+2290.74s - 2292.74s : Preamble
+2292.74s - 2294.74s : Preamble
+2294.74s - 2296.74s : Preamble
+2296.74s - 2304.26s : Case studies of some system development.
+2304.48s - 2305.9s : A personal insulin pump.
+2307.28s - 2309.92s : We will see that with details in future.
+2309.92s - 2315.08s : An embedded system in an insulin pump used by diabetics to maintain blood glucose control.
+2316.54s - 2319.98s : A mental health case patient management system.
+2319.98s - 2328.54s : A system used to maintain records of people receiving care for mental health problems.
+2334.94s - 2337.32s : A wilderness weather station.
+2340.66s - 2346.22s : A data collection system that collects data about weather conditions in remote areas.
+2346.22s - 2349.22s : Okay, there are three rather different.
+2349.98s - 2352.94s : Systems and let's see about them.
+2352.94s - 2355.74s : Insulin pump control system.
+2360.62s - 2366.62s : Collects data from a blood sugar sensor and calculates the amount of insulin required to be injected.
+2366.62s - 2370.62s : Calculation based on the rate of change of blood sugar levels.
+2370.62s - 2375.62s : Send signals to a micro pump to deliver the correct dose of insulin.
+2375.62s - 2379.62s : Safety critical system as low blood sugars can lead to brain malfunction.
+2379.98s - 2381.98s : Coma and death.
+2381.98s - 2385.98s : High blood sugar levels have long-term consequences such as eye and kidney damage.
+2385.98s - 2389.98s : So this system is a critical safety system.
+2389.98s - 2391.98s : Safety critical system.
+2391.98s - 2398.98s : And the software engineer has to be extremely cautious with this system before releasing it.
+2398.98s - 2405.98s : As you can see, first, the description of the system is made and let's continue.
+2405.98s - 2407.98s : So the insulin pump hardware is.
+2407.98s - 2408.54s : It's a.
+2408.54s - 2408.98s : It's a.
+2408.98s - 2409.48s : It's a.
+2409.48s - 2409.98s : It's a.
+2409.98s - 2411.98s : Hardware architecture architecture is designed and planets.
+2411.98s - 2413.98s : There is insulin.
+2413.98s - 2415.98s : Reservoir.
+2415.98s - 2416.98s : Reservoir.
+2416.98s - 2417.98s : Needle assembly.
+2417.98s - 2418.98s : Sensor.
+2418.98s - 2419.98s : Palm controller.
+2419.98s - 2420.98s : Clock alarm.
+2420.98s - 2421.98s : And displays.
+2421.98s - 2426.98s : This is the basic architecture of the hardware.
+2426.98s - 2429.98s : Activity model of the insulin pump.
+2429.98s - 2436.98s : A software engineer prepares all of these before even starting to code.
+2436.98s - 2438.98s : This is what.
+2438.98s - 2445.58s : What makes what difference the software engineer from a simple programmer or a coder?
+2445.58s - 2450.18s : We will have more ideas about this in the future lessons future lectures.
+2450.18s - 2460.18s : Okay, so the activity model of the insulin pump blood sensor analyze sensor reading.
+2460.18s - 2468.48s : So analyze sensor gets the data from blood sensor and reads it then calculates blood sugar compute the
+2468.48s - 2481.08s : needed insulin amount and then decide the insulin dose and then set the dose to the compute pump commands pump data.
+2481.08s - 2495.28s : So the pumping command is sent to the control insulin pump insulin is pumped into the blood and what those is used and all other related data is logged.
+2495.28s - 2498.38s : Then it computes the insulin again.
+2498.38s - 2503.68s : To decide whether insulin was enough or not.
+2503.68s - 2507.78s : Okay, essential high-level requirements.
+2507.78s - 2522.78s : The system shall be available to deliver insulin when required the system shall perform reliably and deliver the correct amount of insulin to counteract the current level of blood sugar.
+2522.78s - 2528.18s : The system must therefore be designed and implemented to ensure that the system always meets the requirements.
+2528.38s - 2552.8s : He aí, work
+2552.8s - 2553.28s : Ok, let's see
+2553.28s - 2553.48s : a patient information system to support mental health care as a medical information system that maintains information about patients suffering from mental health problems and the treatments that they offer to this system.
+2553.48s - 2554.08s : Head endpoint
+2554.08s - 2555.28s : They had created your final stage of this mythical process,
+2555.28s - 2556.28s : So here,
+2556.28s - 2557.28s : see sessions
+2557.28s - 2558.28s : training
+2558.28s - 2564.2s : they have received. Most mental health patients do not require dedicated hospital treatment but need
+2564.2s - 2569.0s : to attend specialist clinics regularly where they can meet a doctor who has detailed knowledge of
+2569.0s - 2575.16s : their problems. To make it easier for patients to attend, these clinics are not just run in hospitals.
+2575.96s - 2580.2s : They may also be held in local medical practices or community centers.
+2580.2s - 2588.46s : Just now I have MHC-PMS. It is a mental health care patient management system.
+2588.46s - 2591.26s : MHC-PMS.
+2591.26s - 2593.88s : Berkcan Demirtas
+2593.88s - 2594.58s : Okay
+2597.82s - 2604.5s : The MHC-PMS, Mental Health Care Patient Management System, is an information system that is intended
+2604.5s - 2609.82s : for use in clinics. It makes use of a centralized database of patient information
+2609.82s - 2610.18s : but has mini-channels where the source of the information and cause of the disease can be scored.
+2610.18s - 2615.3s : has also been designed to run on a PC, so that it may be accessed and used from sites
+2615.3s - 2618.7s : that do not have secure network connectivity.
+2618.7s - 2623.4s : When the local systems have secure network access, they use patient information in the
+2623.4s - 2629.24s : database but they can download and use local copies of patient records when they are disconnected.
+2629.24s - 2635.18s : So this is kind of a mixed system that works both online and offline.
+2635.18s - 2641.8s : So what are the goals of this system?
+2641.8s - 2646.78s : To generate management information that allows health service managers to assess performance
+2646.78s - 2649.68s : against local and government targets.
+2649.68s - 2655.5s : To provide medical staff with timely information to support the treatment of patients.
+2655.5s - 2658.26s : So it has two main goals.
+2658.26s - 2663.34s : The organization of the MHC PMS.
+2663.34s - 2664.34s : It has a local system.
+2664.34s - 2665.16s : It has a local system.
+2665.16s - 2666.16s : It has databases.
+2666.16s - 2673.92s : As you can see, it has a main server and it has a patient database.
+2673.92s - 2678.6s : So you see they both exchange data between them.
+2678.6s - 2680.44s : This is the main organization.
+2680.44s - 2682.54s : Key features.
+2682.54s - 2687.92s : Individual care management.
+2687.92s - 2692.78s : Clinicians can create records for patients, edit the information in the system, view patient
+2692.78s - 2694.92s : history, etc.
+2694.92s - 2699.84s : The system supports data summaries so that doctors can quickly learn about the key problems
+2699.84s - 2702.92s : and treatments that have been prescribed.
+2702.92s - 2706.54s : Patient monitoring.
+2706.54s - 2710.78s : The system monitors the records of patients that are involved in treatment and issues
+2710.78s - 2713.92s : warnings if possible problems are detected.
+2713.92s - 2721.16s : And administrative reporting.
+2721.16s - 2721.92s : The system generates monthly management reports showing the number of patients that have been
+2721.92s - 2722.92s : diagnosed.
+2722.92s - 2723.92s : The system also generates monthly management reports showing the number of patients that
+2723.92s - 2724.92s : have been diagnosed.
+2724.92s - 2725.92s : The system also generates monthly management reports showing the number of patients treated
+2725.92s - 2730.2s : at each clinic, the number of patients who have entered and left the care system, number
+2730.2s - 2734.04s : of patients sectioned, the drugs prescribed and their costs, etc.
+2734.04s - 2741.3s : You see this administrative reporting is all about statistical data and it can tremendously
+2741.3s - 2748.04s : help administrators of the system to improve efficiency.
+2748.04s - 2752.32s : Okay, so what concerns there are?
+2752.32s - 2754.92s : This is not a safety critical system.
+2754.92s - 2758.36s : However, it still has some concerns.
+2758.36s - 2762.58s : First one is privacy.
+2762.58s - 2767.32s : It is essential that patient information is confidential and is never disclosed to anyone
+2767.32s - 2771.48s : apart from authorized medical staff and the patient themselves.
+2771.48s - 2775.38s : Usually this is the most common problem in such systems.
+2775.38s - 2780.3s : It's also it's also existing e-commerce systems or in other systems.
+2780.3s - 2782.92s : Privacy is not that much taken into the account.
+2782.92s - 2783.92s : Okay.
+2783.92s - 2784.92s : Okay.
+2784.92s - 2793.44s : So they'll never become a priority and they have become a priority.
+2793.44s - 2794.44s : That's it.
+2794.44s - 2795.44s : And safety?
+2795.44s - 2796.44s : Some mental illnesses cause patients to become suicidal or a danger to other people.
+2796.44s - 2801.1s : Wherever possible, the system should warn medical staff about potentially suicidal or
+2801.1s - 2803.08s : dangerous patients.
+2803.08s - 2808.46s : The system must be available when needed otherwise safety may be compromised and it may be impossible
+2808.46s - 2811.54s : to prescribe the correct medication to patients.
+2811.54s - 2812.54s : Okay.
+2812.54s - 2813.92s : And the third example system is wilderness care.
+2813.92s - 2826.92s : The government of a country with large areas of wilderness decides to deploy several hundred weather stations in remote areas.
+2826.92s - 2839.92s : Weather stations collect data from a set of instruments that measure temperature and pressure, sunshine, rainfall, wind speed and wind direction.
+2839.92s - 2852.92s : The weather station includes a number of instruments that measure weather parameters such as the wind speed and direction, the ground and air temperatures, the barometric pressure and the rainfall over a 24-hour period.
+2852.92s - 2861.92s : Each of these instruments is controlled by a software system that takes parameter readings periodically and manages the data collected from the instruments.
+2861.92s - 2867.92s : These instruments are also sensors of the station.
+2867.92s - 2868.92s : The weather stations and wind speed and direction.
+2868.92s - 2869.92s : These instruments are also sensors of the station.
+2869.92s - 2881.92s : According to the data collected every hour, weather stations are used within certain periods of time to measure weather conditions.
+2881.92s - 2888.92s : The system of weather stations is determined by the недне impatаци ник unlearned with a manual controller.
+2888.92s - 2894.92s : It can be recorded in the information system something or the weather莫sios system of the station with this sheet of information.
+2894.92s - 2895.92s : There is no need for an automatic control system of this device.
+2895.92s - 2896.92s : But it is adapted andinto a system of government sources.
+2896.92s - 2897.92s : All distance and time data are commentaires of weather stations with processes to measure information.
+2897.92s - 2898.92s : Naval systems test all agreements of weather systems and data generated by the system.
+2898.92s - 2900.92s : This is the system design.
+2903.08s - 2908.36s : This is responsible for collecting weather data, carrying out some initial data processing and
+2908.36s - 2913.8s : transmitting it to the data management system. The data management and archiving system.
+2914.76s - 2919.24s : So it is composed of three systems. This system collects the data from all of the wilderness
+2919.24s - 2924.52s : weather stations, carries out data processing and analysis and archives the data.
+2924.52s - 2927.88s : So the system maintenance system, the station maintenance system,
+2928.92s - 2933.32s : this system can communicate by satellite with all wilderness weather stations to
+2933.32s - 2936.92s : monitor the health of these systems and provide reports of problems.
+2936.92s - 2943.48s : And additional software functionality, functionality, functionality.
+2947.56s - 2948.76s : Okay, functionality.
+2951.04s - 2956.52s : Monitor the instruments, power and communication hardware and report faults to the management system.
+2957.08s - 2958.6s : Manage the system power,
+2958.6s - 2968.84s : ensuring that batteries are charged whenever the environmental conditions permit but also that generators are shut down in potentially damaging weather conditions, such as high wind.
+2969.68s - 2979.08s : Support dynamic reconfiguration where parts of the software are replaced with new versions and where backup instruments are switched into the system in the event of system failure.
+2979.72s - 2988.16s : So you see there are many other key issues that a software engineer has to take into consideration.
+2988.16s - 2996.28s : It is not just about starting and running a data collector station.
+2996.76s - 3008.16s : There are many other issues always in such projects, in big projects, and you have to consider all of them, plan all of them before even starting coding.
+3009.36s - 3012.46s : So key points so far.
+3014.78s - 3018.14s : Software engineers have responsibilities to the engineers.
+3018.16s - 3023.46s : They should not simply be concerned with technical issues.
+3023.94s - 3029.86s : Professional societies publish codes of conduct which set out the standards of behavior expected of their members.
+3030.78s - 3032.76s : Three case studies are used in the book.
+3033.14s - 3039.84s : An embedded insulin pump control system, a system for mental health care patient management, a wilderness weather station.
+3039.84s - 3048.04s : And we will have more detailed explanations or examples about these systems.
+3048.16s - 3049.94s : In the future lectures.
+3057.98s - 3060.48s : Okay, so I am finishing the first lecture here.
+3061.48s - 3065.34s : Let me upload them to our GitHub repository.
+3078.16s - 3105.96s : It will be useful for a upcoming session for besser
+3105.96s - 3106.74s : MP4 reading.
+3106.74s - 3107.54s : Yes, please.
+3107.54s - 3115.34s : use this code management system such as git bash. I am using git bash to upload or
+3115.34s - 3121.64s : synchronize my data with the remote repository. Definitely learn how to use
+3121.64s - 3128.12s : github and git bash. It will be extremely useful in your professional
+3128.12s - 3134.48s : job. Almost every professional company now uses as such code management
+3134.48s - 3147.32s : repository. Whatever you learn in this course will help you in your professional
+3147.32s - 3154.64s : life. This course is not about developing your skills in coding or programming.
+3154.64s - 3160.34s : This course is about improving your group working skills,
+3160.34s - 3163.92s : improving your professional
+3163.92s - 3164.46s : skills, improving your professional skills, and improving your professional
+3164.46s - 3176.96s : viewpoints, your professional life in future. Believe me, this is the truth.
+3176.96s - 3188.58s : Hopefully see you next week. Stay safe. Stay away from crowded places
+3188.58s - 3193.7s : until COVID-19 pandemic ends.
+3194.46s - 3199.7s : Alright. See you later hopefully.

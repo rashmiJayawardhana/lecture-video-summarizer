@@ -1,0 +1,1257 @@
+0.0s - 12.36s : .
+12.36s - 15.36s : Okay, so it's a pleasure to see all of you guys.
+15.36s - 16.56s : I'm Justin.
+16.56s - 20.72s : I'm your third instructor for 6.006.
+20.72s - 23.72s : This is my first time with this course, although of course this is material that
+23.72s - 27.76s : we all know and love in the computer science department.
+27.76s - 32.04s : I'll admit I find the prospect of teaching sorting to 400 people all at once
+32.04s - 36.08s : mildly, like kind of low key terrifying, but we're gonna give it a shot and
+36.08s - 38.8s : hopefully that'll subside as the lecture goes on today, all right?
+40.1s - 43.36s : So we're gonna pick up where we left off in our last lecture and
+43.36s - 46.48s : continue on with a similar theme that we're gonna see throughout our
+46.48s - 49.06s : algorithms class here in 6.006.
+49.06s - 53.28s : I think Jason and colleagues have done a really great job of kind of organizing
+53.28s - 56.08s : this class around some interesting themes.
+56.08s - 57.74s : And so I thought I'd start with just a tiny bit
+57.74s - 60.9s : of review of some key vocabulary words.
+60.9s - 65.68s : Incidentally, typically I teach the intro graphics class, the geometry course, and
+65.68s - 68.9s : last year I got feedback that said I have serial killer handwriting.
+68.9s - 71.62s : I'm not 100% sure what that means.
+71.62s - 75.06s : But we're gonna use the slides a tiny bit more than normal just to make sure you
+75.06s - 76.12s : guys can read.
+76.12s - 79.94s : And when I'm writing on the board at any point, if you can't tell what I wrote,
+79.94s - 83.46s : it's definitely me and not you, so just let me know.
+83.46s - 86.06s : But in any event, in 6.006, all the way back in our life, we're gonna be talking a
+86.06s - 86.2s : little bit about the idea of the word, and we're gonna be talking about the idea of
+86.2s - 86.38s : the word, and we're gonna be talking about the idea of the word, and we're gonna be
+86.38s - 86.46s : talking about the idea of the word, and we're gonna be talking about the idea of the word,
+86.46s - 89.76s : and we're gonna be talking about the idea of the word, and we'll cover start with
+89.76s - 96.24s : the idea of we're gonna start with start with how we preconceive our platforms with
+96.24s - 98.64s : how we define interfaces for more connected residency.
+98.64s - 103.8s : And what we're doing here is we're really representing PareceCenter as a
+103.8s - 108.02s : well-beingoons on that point, and then we're describing parts of our
+108.02s - 115.26s : life to the success stories kind of questionedェ, really more more of the
+115.26s - 115.7s : role we're playing in that, or we actually felt we wereißed.
+115.7s - 116.0s : And that's a really cool tool to use, definitely.
+116.0s - 116.42s : charts don't mean sh me cheese yet if you do.
+116.42s - 116.46s : But the key thing here is you don't know how long I've been in the studio, but whatever
+116.46s - 122.5s : it can affect the runtime and how efficient my set is, but the actual way that I interact
+122.5s - 127.54s : with it is the same, whether I use an unsorted array, a sorted array, or what have you.
+127.54s - 132.44s : On the other hand, what happens behind the scenes is something called a data structure,
+132.44s - 135.94s : which is a way to actually, in some sense, implement an interface.
+135.94s - 141.2s : So this is an object that on my computer is actually storing the information and implementing
+141.2s - 144.96s : the set of operations that I've laid out in my interface.
+144.96s - 149.42s : And so this sort of distinction, I think, is sort of a critical theme in this course,
+149.42s - 152.84s : because for instance, in the first couple weeks, we're going to talk about many different
+152.84s - 156.06s : ways to implement a set, and we're going to see that there's a bunch of trade-offs, right?
+156.06s - 160.32s : Some of them are really fast for certain operations and slow for others.
+160.32s - 164.54s : And so essentially, we have two different decisions to make when we choose an algorithm.
+164.54s - 168.72s : One is making sure that the interface is correct for the problem that we're concerned with,
+168.72s - 173.62s : and the other is choosing an appropriate data structure whose efficiency and memory usage
+173.62s - 174.62s : and so on.
+174.62s - 174.94s : Kind of a lot of the time, we're going to be using a set of operations that are really
+174.94s - 178.38s : aligned with the priorities that we have for the application we have in mind.
+178.38s - 182.32s : So hopefully this kind of high-level theme makes sense, and really kind of spiritually,
+182.32s - 186.62s : I think, is sort of the main message to get out of this course in the first couple weeks,
+186.62s - 191.3s : even though all these O's and Thetas and so on are kind of easy to lose the forest to
+191.3s - 192.82s : the trees.
+192.82s - 197.78s : In any event, today in our lecture, we're concerned with one particular interface, which
+197.78s - 199.6s : is called a set.
+199.6s - 200.6s : Set is exactly what it sounds like.
+200.6s - 203.4s : It's a big pile of things.
+203.4s - 204.6s : And so a set interface.
+204.6s - 209.38s : It's sort of like an object that just you can keep adding things to it and then querying
+209.38s - 212.02s : inside of my set, is this object here?
+212.02s - 213.02s : Can I find it?
+213.02s - 216.58s : And then maybe I associate with my objects in my set different information.
+216.58s - 222.82s : So for example, maybe I have a set which represents all the students in our classroom today.
+222.82s - 228.58s : And all of you guys are associated with your student ID, which I believe at MIT is a number,
+228.58s - 230.48s : which has a less than sign, which is convenient.
+230.48s - 232.48s : So we can sort all of you guys.
+232.48s - 233.94s : And that might be the key that's associated to every object.
+233.94s - 234.44s : So we're going to sort all of you guys.
+234.44s - 240.44s : And so when I'm searching for students, maybe I enter in the student number and then I want
+240.44s - 245.86s : to ask my set, does this number exist in the set of students that are in 6006?
+245.86s - 249.52s : And if it does, then I can pull that student back and then associated with that object
+249.52s - 252.04s : is a bunch of other information that I'm not using to search.
+252.04s - 256.14s : So for instance, your name, your, I don't know, your social security number, credit
+256.14s - 261.3s : card number, all the stuff that I need to have a more interesting profession.
+261.3s - 263.22s : So in any event, let's start.
+263.22s - 264.42s : All right.
+264.44s - 269.84s : Let's fill in the details of our set interface a little bit more.
+269.84s - 271.64s : Our set is a container.
+271.64s - 278.48s : It contains all of the students in this classroom, in some virtual sense at least.
+278.48s - 282.72s : To build up our set, of course, we need an operation that takes some iterable object
+282.72s - 284.78s : A and builds a set out of it.
+284.78s - 288.66s : In other words, I have all of the students in this classroom represented maybe in some
+288.66s - 292.12s : other fashion, and I have to insert them all into my set.
+292.12s - 294.62s : I can also ask my set for how much stuff is in it.
+294.62s - 299.18s : Personally, I would call that size, but length is cool too.
+299.18s - 302.78s : And then, of course, there are a lot of different ways that we can interact with our set.
+302.78s - 308.74s : For instance, we could say, is this student taking 6006?
+308.74s - 314.18s : In set language, one way to understand that is to say that the key, each person in this
+314.18s - 319.62s : classroom is associated with the key, does that key K exist in my set?
+319.62s - 321.88s : In which case, I'll call this find function.
+321.88s - 322.12s : Okay.
+322.12s - 327.36s : Which will give me back the item with key K, or maybe like null or something if it doesn't
+327.36s - 329.8s : exist.
+329.8s - 333.9s : Maybe I can delete an object from my set or insert it.
+333.9s - 337.9s : Notice that these are dynamic operations, meaning that they actually edit what's inside
+337.9s - 339.72s : of my set.
+339.72s - 343.54s : And then finally, there are all kinds of different sort of operations that I might want to do
+343.54s - 346.86s : to interact with my set beyond is this thing inside of it.
+346.86s - 351.88s : So for instance, maybe, okay, so for the student ID example, probably find.
+351.88s - 356.7s : Like the minimum ID number in a class isn't a terribly exciting exercise, but maybe I'm
+356.7s - 360.36s : trying to find the student who's been at MIT the longest, and so that would be a kind of
+360.36s - 361.36s : reasonable heuristic.
+361.36s - 365.36s : Actually, I have no idea whether MIT student IDs are assigned linearly or not.
+365.36s - 371.54s : But in any event, I could find the smallest key, the largest key, and so on in my set,
+371.54s - 376.94s : and these are all kind of reasonable operations to query where my object is just a thing that
+376.94s - 379.56s : stores a lot of different entities inside of it.
+379.56s - 380.56s : Now, is this description of the object a thing?
+380.56s - 381.56s : No.
+381.56s - 384.96s : So the description here, notice that I've labeled this as the set interface.
+384.96s - 388.36s : This is not a set data structure.
+388.36s - 392.88s : And the way to remember that is that I haven't told you how I've actually implemented this.
+392.88s - 397.52s : I haven't told you that I'm going to behind the scenes have an array of information and
+397.52s - 401.64s : look inside of it, and that's how I'm going to implement find min or find max with a for-loop
+401.64s - 402.64s : or whatever.
+402.64s - 406.48s : All I'm telling you is that a set is a thing that implements these operations, and behind
+406.48s - 409.18s : the scenes, my computer does what it does.
+409.18s - 411.04s : That might sound abstract, but it's more or less what you guys do when you write a set.
+411.04s - 411.08s : I'm not going to go into too much detail about that.
+411.08s - 411.12s : I'm going to go into a little bit more detail about that.
+411.12s - 411.16s : So I'm going to go ahead and start the session.
+411.16s - 411.2s : So I'm going to go ahead and start the session.
+411.2s - 411.68s : I'm going to go ahead and start the session.
+411.68s - 441.18s : So I'm going to go ahead and start the session.
+441.2s - 446.38s : our goal, which is to fill in, like, if I wanted to write code for a set, how could
+446.38s - 450.46s : I do it? Now, of course, our goal is to give different data structures that implement these
+450.46s - 454.82s : and then understand them in terms of their efficiency, data storage, correctness, all
+454.82s - 460.64s : that good stuff. So before we get into all these ugly details, let me pause for a second.
+460.64s - 466.08s : Are there any questions about this basic interface? Y'all should feel free to stop me any time
+466.08s - 469.32s : because this is going to be hella boring if you're not getting the first slide or two.
+469.32s - 470.32s : Yes?
+470.32s - 475.32s : Can you explain how insert works as in, like, you're replacing the key, and then, like,
+475.32s - 481.32s : you're adding this element next to the set, but what is it to be ?
+481.32s - 485.32s : That's a fabulous question. So the question was, what exactly is this insert operation
+485.32s - 489.66s : doing? So I think working in the analogy of the students in this classroom is kind of
+489.66s - 493.98s : a reasonable one. So I'm going to build up an object, which is a student, right? So in
+493.98s - 494.98s : this lecture notes, I think we've been considering a set of objects. And I'm going to build up
+494.98s - 495.98s : an object, which is a student, right? So in this lecture notes, I think we've been considering
+495.98s - 496.06s : an object, which is a student, right? So in this lecture notes, I think we've been considering
+496.06s - 497.3s : a set of objects. And I'm going to build up an object, which is a student, right? So
+497.3s - 498.58s : is this set of objects? Is this a student, right? SoWAg outside my set of objects? I
+498.58s - 499.4s : don't care. You're either going to add this document, it's a toy, or this one here's
+499.4s - 500.56s : a user-票لك object. And if I choose this represent, it's a migraination and I'm
+500.56s - 502.68s : going to take a set of objects and add those together, you know what I mean? I'm doing
+502.68s - 512.02s : this out of commands. I'm going to take the data and I'm going to imagerypar each type
+512.02s - 514.8s : of object всёốtי. That's the second aspect of this style. Do you guys want to have yourself
+514.8s - 515.8s : doing as ev 970?
+515.8s - 516.8s : Oh, that gets even more interesting.
+516.8s - 517.8s : All I can say is how interesting this is. We're just trying to make it look like a
+517.8s - 521.2s : stuff, and it inserts it into the set with the understanding
+521.2s - 524.2s : that when I search my set, I'm going to be searching by key.
+524.2s - 525.54s : So when I want to find a student,
+525.54s - 527.58s : I have to put in my ID number.
+527.58s - 529.66s : Does that make sense?
+529.66s - 530.2s : Cool.
+530.2s - 531.04s : Any other questions?
+531.04s - 533.34s : That's great.
+533.34s - 534.56s : Fabulous.
+534.56s - 537.78s : OK, so now let's talk about how to actually implement
+537.78s - 538.26s : this thing.
+538.26s - 541.44s : And thankfully, we're already equipped with at least
+541.44s - 544.38s : a very simple way that we could implement a set based
+544.38s - 546.48s : on what you've already seen in your previous programming
+546.48s - 549.72s : classes or even in just in the last two lectures, which
+549.72s - 552.96s : is one way to understand a set or to implement it rather
+552.96s - 558.12s : would be to just store a giant array of objects
+558.12s - 561.1s : that are in my set.
+561.1s - 563.76s : I suppose continuing with the theme of the last two
+563.76s - 565.8s : lectures, this is not a space in memory,
+565.8s - 570.26s : but rather a metaphorical array in a theoretical sense.
+570.26s - 571.38s : But it doesn't really matter.
+571.38s - 575.4s : And so one way to store my set would
+575.4s - 576.2s : be to just store.
+576.48s - 579.96s : A bunch of X's in no particular order.
+579.96s - 580.8s : Does that make sense?
+580.8s - 582.36s : So I have a big piece of memory.
+582.36s - 584.7s : Every piece of memory is associated
+584.7s - 586.06s : with a different object in my set.
+586.06s - 588.0s : Obviously, this is quite easy to build.
+588.0s - 591.24s : I just make a big array and dump everything in there.
+591.24s - 594.36s : And the question is, is this particularly efficient or useful
+594.36s - 597.42s : way to implement a set?
+597.42s - 600.64s : So for instance, let's say that I
+600.64s - 603.12s : have a set of all the students in this classroom.
+603.12s - 604.92s : There's some ridiculous number of you guys.
+604.92s - 606.12s : So actually, asymptotic.
+606.12s - 608.96s : Asymptotic efficiency maybe actually matters a little bit.
+608.96s - 613.64s : And I want to query, does this student exist in my class?
+613.64s - 616.3s : Is Eric Demaine taking 6006?
+616.3s - 618.4s : The answer is no, I think.
+618.4s - 620.62s : Teaching, taking, I don't know.
+620.62s - 623.32s : But in any event, how do I implement it
+623.32s - 626.32s : if my set is unordered?
+626.32s - 628.94s : We'll think about it for a second.
+628.94s - 629.44s : Yeah?
+629.44s - 631.68s : You can sort the set into some sort of order,
+631.68s - 635.24s : and then afterwards, we can query the set ..
+635.24s - 636.04s : It's actually an interesting question.
+636.04s - 638.04s : It's an interesting suggestion, which
+638.04s - 639.64s : is going to anticipate what's happening later
+639.64s - 642.68s : in this lecture, which was to sort the set and then binary
+642.68s - 643.84s : search.
+643.84s - 645.64s : But let's say that actually, I only have to do this once.
+645.64s - 646.96s : For some reason, I build up a whole set
+646.96s - 649.38s : of the people in this classroom, and I just want to know,
+649.38s - 651.02s : is Eric Demaine in this class?
+651.02s - 653.76s : So then that algorithm would take n log n time,
+653.76s - 655.58s : because I've got to sort everybody.
+655.58s - 657.58s : And then I have to do binary search, which
+657.58s - 659.32s : is maybe log n time.
+659.32s - 661.32s : But I claim that if the only thing I care about
+661.32s - 663.54s : is building up my entire set and searching it once,
+663.54s - 664.96s : there's actually a faster algorithm.
+664.96s - 666.54s : This is going to be needlessly confusing,
+666.54s - 668.5s : because we're going to see that this is really not
+668.5s - 671.46s : the right way to implement it in about 38 seconds.
+671.46s - 671.96s : Yes?
+671.96s - 673.18s : .
+673.18s - 673.68s : Yeah.
+673.68s - 675.96s : Just iterate from beginning to this array and say,
+675.96s - 677.14s : is this guy Eric?
+677.14s - 677.64s : No.
+677.64s - 678.44s : Is this guy Eric?
+678.44s - 678.94s : No.
+678.94s - 679.6s : Is this guy Eric?
+679.6s - 680.1s : Yes.
+680.1s - 681.32s : And then return it.
+681.32s - 682.56s : Right?
+682.56s - 686.26s : So in the worst case, how long will that algorithm take?
+686.26s - 689.0s : Well, in the worst case, I have really bad luck,
+689.0s - 692.52s : and your instructor is all the way at the end of the list.
+692.52s - 693.26s : Right?
+693.26s - 694.76s : So in this case, what is that going to do?
+694.76s - 695.84s : What is Eric going to mean?
+695.84s - 698.52s : That means that I have to walk along the entire array
+698.52s - 700.0s : before I find him.
+700.0s - 702.3s : So that algorithm takes order and time.
+702.3s - 703.76s : And so your colleague's intuition
+703.76s - 705.76s : that somehow this is quite inefficient
+705.76s - 707.0s : is absolutely correct.
+707.0s - 707.3s : Right?
+707.3s - 709.46s : If I know that I'm going to have to search my array many,
+709.46s - 711.64s : many times for different people, then probably it
+711.64s - 713.72s : makes sense to do a little bit of work ahead of time,
+713.72s - 715.26s : like sorting the list.
+715.26s - 718.84s : And then my query is much more efficient.
+718.84s - 721.06s : But this is all just to say that an unordered array is
+721.06s - 724.64s : a perfectly reasonable way to implement the set interface,
+724.64s - 727.1s : and that searching that array will take linear time
+727.1s - 728.82s : every single time I search.
+728.82s - 729.68s : Yeah?
+729.68s - 731.42s : And of course, if you go down your list
+731.42s - 732.8s : of all of the different operations
+732.8s - 735.12s : you might want to do on a set, you'll
+735.12s - 736.94s : see that they all take linear time.
+736.94s - 738.56s : So for instance, how do I build my set?
+738.56s - 742.4s : Well, I have to reserve n slots in memory.
+742.4s - 745.86s : And at least according to our kind of model of computation
+745.86s - 748.48s : in this class, that takes order n time.
+748.48s - 751.06s : Then I've got to copy everything into the set.
+751.06s - 753.24s : Similarly, if I want to insert or delete,
+753.24s - 754.06s : what do I have to do?
+754.06s - 754.56s : Well.
+754.64s - 757.66s : I have to reserve memory and stick something inside of there
+757.66s - 758.4s : in the worst case.
+758.4s - 760.96s : We saw this amortized argument before,
+760.96s - 763.46s : if your set is allowed to grow dynamically.
+763.46s - 766.34s : And finally, if I wanted to find the minimum student
+766.34s - 769.94s : ID in my classroom, the only algorithm
+769.94s - 773.32s : I can have if my list of students isn't sorted
+773.32s - 773.96s : is to what?
+773.96s - 776.44s : Just iterate over every single student in the class.
+776.44s - 779.12s : And if the guy that I'm looking at has a smaller ID than the one
+779.12s - 781.92s : that I found, replace it.
+781.92s - 783.3s : Does that make sense to everybody?
+783.3s - 784.54s : So basically, everything you can do
+784.54s - 786.08s : in a set you can implement.
+786.08s - 788.24s : And I think all of you guys are more than qualified
+788.24s - 790.32s : to implement as an unordered array.
+790.32s - 791.64s : It's just going to be slow.
+791.64s - 792.14s : Yes?
+792.14s - 793.1s : .
+797.52s - 798.34s : Yeah, that's right.
+798.34s - 801.84s : So I actually, I don't know in this class.
+801.84s - 803.34s : I guess the set interface and the way
+803.34s - 804.84s : that we've described it here is dynamic.
+804.84s - 806.98s : We can just keep adding stuff to it.
+806.98s - 809.04s : In that case, remember this amortized argument
+809.04s - 811.64s : from Eric's lecture says that on average, that
+811.64s - 812.7s : will take order n time.
+812.7s - 813.2s : .
+814.54s - 816.78s : What was that?
+816.78s - 818.5s : .
+818.5s - 819.3s : Oh, that's true.
+819.3s - 820.18s : That's an even better.
+820.18s - 820.9s : Sorry.
+820.9s - 823.58s : Even if it weren't dynamic.
+823.58s - 826.7s : If I wanted to replace an existing key,
+826.7s - 828.78s : like for some reason two students have the same ID,
+828.78s - 830.02s : this is a terrible analogy.
+830.02s - 831.1s : I'm sorry.
+831.1s - 834.54s : But in any event, if I wanted to replace an object
+834.54s - 836.38s : with a new one, well, what I have to do,
+836.38s - 838.54s : I'd have to search for that object first and then replace
+838.54s - 839.14s : it.
+839.14s - 841.06s : And that search is going to take order n time
+841.06s - 842.38s : from our argument before.
+842.38s - 843.02s : Thank you.
+843.02s - 843.52s : .
+843.52s - 844.02s : All right.
+844.02s - 844.4s : .
+844.4s - 844.9s : OK.
+844.9s - 846.16s : So right.
+846.16s - 847.2s : In some sense, we're done.
+847.2s - 847.7s : Right?
+847.7s - 849.36s : We've now implemented the set interface.
+849.36s - 850.84s : Life is good.
+850.84s - 853.78s : And of course, this is the difference between existence
+853.78s - 857.24s : and actually caring about the details inside of this thing.
+857.24s - 859.72s : We've shown that one can implement a set,
+859.72s - 861.14s : but it's not a terribly efficient way
+861.14s - 864.26s : to do it by just storing a big, hot mess, disorganized list
+864.26s - 866.06s : of numbers without any order.
+866.06s - 866.86s : Yeah?
+866.86s - 869.46s : So instead of that, conveniently,
+869.46s - 871.48s : our colleague in the front row here has already
+871.48s - 874.4s : suggested a different data structure, which is to store,
+874.4s - 877.54s : or set, not as just a disorganized array
+877.54s - 881.66s : in any arbitrary order, but rather to keep the items
+881.66s - 884.7s : in our set organized by key.
+884.7s - 887.0s : So in other words, if I have this array of all
+887.0s - 888.6s : of the students in our classroom,
+888.6s - 890.18s : then the very first element in my array
+890.18s - 892.7s : is going to be the student with the smallest ID number.
+892.7s - 894.96s : The second is the second smallest ID number,
+894.96s - 897.3s : all the way to the end of the array, which is a student
+897.3s - 899.16s : with the biggest ID number.
+899.16s - 902.8s : Now, does that mean I want to do arithmetic on student ID
+902.8s - 903.3s : numbers?
+903.3s - 904.08s : Absolutely not.
+904.08s - 906.92s : But it's just a way to sort of impose order on that list
+906.92s - 909.98s : so that I can search it very quickly later.
+909.98s - 913.68s : OK, so if I want to fill in the set interface,
+913.68s - 917.8s : and I have somehow a sorted array of students, right?
+917.8s - 920.96s : So again, they're organized by student ID number.
+920.96s - 924.6s : Then my runtime starts to get a little more interesting.
+924.6s - 925.1s : Yeah?
+925.1s - 927.32s : So now, insertion, deletion still
+927.32s - 928.6s : take the same amount of time.
+928.6s - 930.24s : But let's say that I want to find the student with the
+930.24s - 931.46s : minimum ID number, right?
+931.46s - 932.98s : This find min function.
+934.08s - 936.92s : Well, how could I do it in a sorted array?
+936.92s - 939.5s : Keyword is sorted here.
+939.5s - 941.3s : Where's the min element of an array?
+941.3s - 941.8s : Yes?
+944.72s - 947.08s : Yeah, in fact, I can give a moderately faster algorithm,
+947.08s - 949.16s : which is just look at the first one, right?
+949.16s - 952.04s : If I want the minimum element of an array,
+952.04s - 953.58s : and the array is in sorted order,
+953.58s - 955.76s : I know that's the first thing, right?
+955.76s - 958.28s : So that's order one time to answer that kind of a question.
+958.28s - 960.84s : And similarly, if I want the thing with the biggest ID
+960.84s - 962.56s : number, I look all the way at the end.
+962.56s - 962.96s : OK.
+962.96s - 963.46s : All right.
+963.46s - 966.08s : Now, in 6-00, what, 000?
+966.08s - 970.34s : This MIT student class numbers are super confusing to me.
+970.34s - 973.5s : In 6-0001, 6042, you guys already, I think,
+973.5s - 978.42s : learned about binary search and even may have implemented it.
+978.42s - 979.14s : So what do we know?
+979.14s - 981.34s : If my array is sorted, how long does it
+981.34s - 984.98s : take for me to search for any given element?
+984.98s - 985.98s : Yes?
+985.98s - 986.76s : Log n time.
+986.76s - 990.06s : That's absolutely right, because I can cut my array in half.
+990.06s - 991.98s : If my key is bigger or smaller, then I
+991.98s - 993.94s : look on the left or the right.
+993.94s - 998.36s : And so this is a much more efficient means
+998.36s - 999.64s : of searching a set.
+999.64s - 1000.82s : Yeah?
+1000.82s - 1004.86s : So in particular, 6-006 this year has 400 students.
+1004.86s - 1006.64s : Maybe next year it has 4,000.
+1006.64s - 1009.84s : Eventually, it's going to have billions, right?
+1009.84s - 1011.38s : Then what's going to happen?
+1011.38s - 1013.72s : Well, if I use my unordered array,
+1013.72s - 1016.98s : and I have a billion students in this class, it's going to happen.
+1016.98s - 1019.96s : Well, then it's going to take me roughly a billion computations
+1019.96s - 1021.6s : to find any one student in this course.
+1021.98s - 1025.3s : Whereas log of a billion is a heck of a lot faster.
+1025.3s - 1026.18s : Right?
+1026.18s - 1029.82s : On the other hand, I've kind of swept a detail under the rug
+1029.82s - 1034.36s : here, which is how do I actually get a sorted array to begin with.
+1034.36s - 1036.02s : And what we're going to see in today's lecture
+1036.02s - 1038.36s : is that that takes more time than building it
+1038.36s - 1040.06s : if I just have a disorganized list, right?
+1040.06s - 1041.94s : Building a disorganized list is an easy thing to do.
+1041.94s - 1044.06s : You probably all do it at home when you're cleaning house.
+1044.06s - 1045.12s : Yeah?
+1045.12s - 1047.16s : But, actually, sorting a list of numbers
+1047.16s - 1049.04s : requires a little bit more work.
+1049.04s - 1051.78s : And so this is a great example where there's at least a tiny amount of time.
+1051.78s - 1051.82s : All right. I'm going to go watch this.
+1051.98s - 1053.22s : of trade-off, right?
+1053.22s - 1056.22s : Where now building my sorted array to represent my set
+1056.22s - 1057.98s : is going to take a little more computation.
+1057.98s - 1059.86s : We're going to see it's n log n time.
+1059.86s - 1062.66s : But then once I've done that, sort of at step zero,
+1062.66s - 1064.76s : now a lot of these other operations
+1064.76s - 1066.26s : that I typically care about in a set,
+1066.26s - 1067.96s : like searching it for a given key,
+1067.96s - 1072.6s : are going to go a lot faster using binary search.
+1072.6s - 1073.3s : OK.
+1073.3s - 1076.7s : So this is our basic sort of motivator here.
+1076.7s - 1080.08s : And so now we've seen the set interface and two potential data
+1080.08s - 1080.94s : structures.
+1080.94s - 1082.6s : And our goal for the day is going
+1082.6s - 1086.04s : to be to kind of fill in the details of that second one.
+1086.04s - 1088.44s : And since you all have already seen binary search,
+1088.44s - 1090.42s : you've probably also already seen sorting.
+1090.42s - 1092.52s : But in any event, today we're going
+1092.52s - 1096.36s : to focus mostly on the sort of lower left square here, right?
+1096.36s - 1100.0s : On just how can I take a disorganized list of objects
+1100.0s - 1101.62s : and put it into sorted order so that I
+1101.62s - 1103.5s : can search for it later, right?
+1103.5s - 1107.82s : So in other words, our big problem for lecture today
+1107.82s - 1109.62s : is the second thing here, right?
+1109.62s - 1110.12s : Just sorting.
+1110.94s - 1112.86s : Incidentally, in the next couple of lectures,
+1112.86s - 1115.22s : we're going to see other data sets or data structures,
+1115.22s - 1115.72s : rather.
+1115.72s - 1116.76s : Sorry, data structures.
+1116.76s - 1119.64s : That was how I used to teach machine learning class.
+1119.64s - 1122.94s : And we'll see that they have different sort
+1122.94s - 1125.28s : of efficiency operations that we can fill in this table.
+1125.28s - 1126.18s : So we're not done yet.
+1126.18s - 1128.68s : But this is one step forward.
+1128.68s - 1129.5s : OK.
+1129.5s - 1131.82s : So hopefully, I have sort of ad nauseum
+1131.82s - 1134.46s : justified why one might want to sort things.
+1134.46s - 1136.42s : And indeed, there are a couple of vocabulary words
+1136.42s - 1137.46s : that are worth noting.
+1137.46s - 1140.78s : So one, so remember that your sorting algorithm,
+1140.78s - 1143.46s : it's pretty straightforward in terms of how you specify it,
+1143.46s - 1143.96s : right?
+1143.96s - 1155.56s : So in sorting, your input is an array of n numbers.
+1155.56s - 1158.16s : I suppose actually, really, we should think of them like keys.
+1158.16s - 1161.12s : It's not going to matter a whole lot, right?
+1161.12s - 1165.58s : And our output, I'm always very concerned
+1165.58s - 1167.12s : that if I write on the board on the back,
+1167.12s - 1168.9s : I can like I have to cover it up.
+1168.9s - 1169.58s : OK.
+1169.58s - 1170.7s : So I'm going to write it down.
+1170.7s - 1170.78s : OK.
+1170.78s - 1176.4s : So it's going to be out.
+1176.4s - 1181.88s : It's going to be sorted array, right?
+1181.88s - 1183.56s : And we'll call this guy b.
+1183.56s - 1187.62s : And we'll call this one a.
+1187.62s - 1190.5s : This classroom is not optimized for short people.
+1190.5s - 1191.88s : OK.
+1191.88s - 1194.14s : So there's a lot of variations on the basic sort of sorting
+1194.14s - 1196.78s : problem and the different algorithms that are out there.
+1196.78s - 1199.12s : Two vocabulary words I'm going to highlight really quick.
+1199.12s - 1200.7s : One is if your sort is destructive,
+1200.7s - 1204.82s : what that means is that rather than reserving some new memory
+1204.82s - 1208.92s : for my sorted array b and then putting a sorted version of a
+1208.92s - 1212.86s : into b, a destructive algorithm is one that just overwrites
+1212.86s - 1215.36s : a with a sorted version of a.
+1215.36s - 1219.08s : So a lot of like certainly the C++ interface does this.
+1219.08s - 1220.96s : I assume the Python one does too.
+1220.96s - 1225.34s : I always forget this detail.
+1225.34s - 1229.58s : In addition to destructive sorts, some sorts are in place.
+1229.58s - 1230.08s : OK.
+1230.08s - 1231.12s : You could Replacog.
+1231.12s - 1233.0s : But injunctive does this.
+1233.0s - 1235.2s : Meaning that not only are they destructive,
+1235.2s - 1236.96s : but they also don't use extra memory
+1236.96s - 1238.54s : in the process of sorting.
+1238.54s - 1240.54s : You could imagine a sorting algorithm
+1240.54s - 1242.38s : that has to reserve a bunch of like scratch space
+1242.38s - 1246.38s : to do its work and then put it back into a.
+1246.38s - 1249.14s : For instance, the world's dumbest destructive sort
+1249.14s - 1251.14s : might be to call your non-destructive sort
+1251.14s - 1255.08s : and then copy it back into a.
+1255.08s - 1257.72s : But that would require order and space to do.
+1257.72s - 1260.0s : So if my algorithm additionally has the property that it doesn't
+1260.0s - 1263.9s : to a constant, then we call that in place.
+1263.9s - 1265.78s : OK, so those are our basic vocabulary words.
+1265.78s - 1267.02s : And there are ways to kind of understand
+1267.02s - 1268.88s : the differences between different sorting algorithms.
+1268.88s - 1269.38s : Yes?
+1269.38s - 1272.76s : Why do they end up using extra O one space?
+1272.76s - 1274.86s : Why do they end up using extra O one space?
+1274.86s - 1275.56s : Oh, yeah, sure.
+1275.56s - 1278.9s : Any time I just make a temporary variable, like a loop counter,
+1278.9s - 1281.6s : that's going to count to that order one.
+1281.6s - 1283.82s : But the important thing is that the number of variables
+1283.82s - 1286.28s : I need doesn't scale in the length of the list.
+1286.28s - 1288.02s : Yeah.
+1288.02s - 1288.62s : OK.
+1288.62s - 1290.42s : So I present to you the beginning and end
+1290.42s - 1293.6s : of our sorting lecture, which is the world's simplest sorting
+1293.6s - 1294.74s : algorithm.
+1294.74s - 1296.6s : I call it permutation sort.
+1296.6s - 1298.42s : I think it's very easy to prove correctness
+1298.42s - 1300.76s : for this particular technique.
+1300.76s - 1303.26s : So in permutation sort, what can I do?
+1303.26s - 1307.92s : Well, I know that if I have an input that's a list of numbers,
+1307.92s - 1311.12s : there exists a permutation of that list of numbers
+1311.12s - 1313.0s : that is sorted.
+1313.0s - 1314.12s : Kind of by definition, right?
+1314.12s - 1317.2s : Because a sort is a permutation of your original list.
+1317.2s - 1318.0s : So what is the?
+1318.0s - 1319.6s : What's a very simple sorting algorithm?
+1319.6s - 1324.72s : Well, list every possible permutation,
+1324.72s - 1327.52s : and then just double check which one's in the right order.
+1327.52s - 1328.38s : Yeah.
+1328.38s - 1330.78s : So there's sort of two key pieces
+1330.78s - 1332.98s : to this particular technique if we want to analyze it.
+1332.98s - 1335.24s : I don't see a reason to belabor it too much.
+1335.24s - 1341.42s : But there's sort of one is that we have to enumerate
+1341.42s - 1342.54s : the permutations.
+1345.08s - 1347.7s : Now, if I have a list of n numbers, how many different
+1347.7s - 1350.2s : permutations of n numbers are there?
+1350.2s - 1351.2s : Yes.
+1351.2s - 1353.88s : n factorial, right?
+1353.88s - 1358.58s : So just by virtue of calling this permutation's function,
+1358.58s - 1362.2s : I know that I incur at least n factorial time.
+1362.2s - 1363.16s : It might be worse, right?
+1363.16s - 1365.36s : It might be that actually listing permutations
+1365.36s - 1366.82s : takes a lot of time for some reason.
+1366.82s - 1369.36s : Every permutation itself takes order n time.
+1369.36s - 1372.32s : But at the very least, each one of these things
+1372.32s - 1374.5s : looks like n factorial.
+1374.5s - 1376.5s : I warned you, my handwriting is terrible.
+1376.5s - 1377.0s : All right.
+1377.0s - 1380.92s : So that's what this omega thing is doing, if I recall properly.
+1380.92s - 1383.16s : And then secondarily, well, we've
+1383.16s - 1388.6s : got to check if that particular permutation is sorted.
+1396.72s - 1399.24s : How are we going to do that?
+1399.24s - 1401.5s : Well, there's a very easy way to check if a list is sorted,
+1401.5s - 1402.0s : right?
+1402.0s - 1406.5s : I'm going to do maybe 4i equals 1 to.
+1407.0s - 1408.8s : And minus 1.
+1408.8s - 1410.38s : Notice, not a Python coder.
+1410.38s - 1412.24s : It's going to look a little different, right?
+1412.24s - 1424.0s : Then check, is bi less than or equal to bi plus 1, right?
+1424.0s - 1427.92s : And so if this relationship is true for every single i,
+1427.92s - 1429.96s : that was supposed to be a question mark, right?
+1429.96s - 1432.42s : This is less than or equal to with a question mark over it.
+1432.42s - 1433.76s : It was my special notation.
+1433.76s - 1435.88s : So if I get all the way to the end of this for loop,
+1435.88s - 1436.92s : and this is true everywhere.
+1436.92s - 1441.8s : Then my list is sorted, and life is good.
+1441.8s - 1443.38s : So how long does this algorithm take?
+1443.38s - 1444.96s : Well, it's kind of staring you right in the face, right?
+1444.96s - 1447.36s : Because you have an algorithm which is looping from 1
+1447.36s - 1449.04s : to n minus 1.
+1449.04s - 1453.9s : So this step incurs order n time, because theta of n time,
+1453.9s - 1456.86s : because we've got to go all the way to the end of the list.
+1456.86s - 1460.04s : So when I put these things together, permutation sort,
+1460.04s - 1463.12s : well, remember that this check if sorted
+1463.12s - 1465.82s : happens for every single permutation.
+1465.82s - 1466.82s : So at the end of the day, I'm going
+1466.82s - 1474.92s : to say our algorithm takes at least n factorial times n time.
+1474.92s - 1477.84s : It's a great example of something that's even worse
+1477.84s - 1479.88s : than n factorial, which somehow in my head
+1479.88s - 1481.84s : is like the worst possible algorithm.
+1481.84s - 1483.5s : Yeah?
+1483.5s - 1486.38s : So do you think that Python implements permutation sort?
+1486.38s - 1488.4s : I certainly hope not.
+1488.4s - 1488.9s : Yes?
+1488.9s - 1491.58s : How long is it omega and not big O?
+1491.58s - 1492.08s : Right.
+1492.08s - 1494.54s : So the question was, why is it omega and not big O, which
+1494.54s - 1496.66s : is a fabulous question in this course.
+1496.66s - 1498.3s : So here's the basic issue.
+1498.3s - 1500.04s : I haven't given you an algorithm for how
+1500.04s - 1502.4s : to compute the set of permutations
+1502.4s - 1503.32s : for a list of numbers.
+1503.32s - 1506.32s : I just kind of call some magic function that I made up.
+1506.32s - 1509.5s : But I know that that algorithm takes at least n factorial time
+1509.5s - 1510.22s : in some sense.
+1510.22s - 1512.2s : Or if nothing else, the list of permutations
+1512.2s - 1514.56s : is n factorial big, because that's all the stuff
+1514.56s - 1516.22s : I have to compute.
+1516.22s - 1518.22s : So I haven't told you how to solve this problem,
+1518.22s - 1520.74s : but I'm convinced that at least this amount of time.
+1520.74s - 1523.34s : So remember that omega means lower bound.
+1523.34s - 1526.5s : So when I put it all together, in some sense, OK, I'm going to
+1526.5s - 1527.0s : do this.
+1527.0s - 1528.46s : OK, this isn't satisfying in the sense
+1528.46s - 1531.16s : that I didn't give you precisely the runtime of this algorithm,
+1531.16s - 1534.0s : but hopefully I've convinced you that it's super useless.
+1534.0s - 1535.12s : Yeah.
+1535.12s - 1539.08s : OK, any other questions about that?
+1539.08s - 1539.58s : But great.
+1539.58s - 1543.0s : So if we go back to our table for the set interface,
+1543.0s - 1544.62s : well, in some sense, if we implemented it
+1544.62s - 1548.08s : using this goofy algorithm, then the lower left entry
+1548.08s - 1550.26s : in our table would be n factorial times n,
+1550.26s - 1551.76s : which wouldn't be so hot.
+1551.76s - 1555.12s : But notice that actually all the rest of our operations
+1555.12s - 1556.26s : are now quite efficient.
+1556.26s - 1556.5s : Right?
+1556.5s - 1558.16s : So we're not doing any more of this.
+1558.16s - 1560.12s : We're just doing a little bit of a binary search.
+1560.12s - 1562.62s : I just obtained the algorithm that I, rather,
+1562.62s - 1566.5s : I obtained the sorted array in kind of a funny fashion.
+1566.5s - 1569.5s : OK, so let's fill in some more interesting algorithms.
+1569.5s - 1571.5s : As usual, I'm talking too much, and I'm
+1571.5s - 1572.5s : nervous about the time.
+1572.5s - 1575.0s : But we can skip one of them if we need to.
+1575.0s - 1580.0s : OK, so how many of us have seen selection sort before?
+1580.0s - 1583.0s : I see your hand, but we're going to defer for a little bit.
+1583.0s - 1583.5s : I'm sorry?
+1583.5s - 1585.5s : .
+1585.5s - 1586.26s : That's fabulous.
+1586.26s - 1587.5s : We'll do it then.
+1587.5s - 1590.18s : OK, so the first algorithm that we'll
+1590.18s - 1592.8s : talk about for sorting, which is somewhat sensible,
+1592.8s - 1594.88s : is something called selection sort.
+1594.88s - 1597.3s : Selection sort is exactly what it sounds like.
+1597.3s - 1600.18s : So let's say that we have a list of, oops,
+1600.18s - 1602.22s : my laptop and the screen are not green.
+1602.22s - 1606.5s : OK, let's say I have a list of numbers 8, 2, 4, 9, 3.
+1606.5s - 1608.38s : This is a message that Jason, I think,
+1608.38s - 1609.76s : is sending me in the course notes,
+1609.76s - 1612.42s : but I haven't figured it out.
+1612.42s - 1616.02s : But in any event, and I want to sort this list of numbers.
+1616.26s - 1618.5s : Here's a simple algorithm for how to do it,
+1618.5s - 1622.02s : which is I can find the biggest number in this whole list
+1622.02s - 1624.42s : and stick it at the end.
+1624.42s - 1626.5s : So in this case, what's the biggest number in this list,
+1626.5s - 1627.84s : everybody?
+1627.84s - 1628.5s : 9.
+1628.5s - 1629.0s : Good.
+1629.0s - 1630.6s : See, this is why you go to MIT.
+1630.6s - 1634.64s : OK, so I'm going to take that 9, find it, and then swap it out
+1634.64s - 1637.64s : with the 3, which is at the end.
+1637.64s - 1639.76s : And now what's my sort of inductive hypothesis?
+1639.76s - 1641.46s : Well, in some sense, it's that everything
+1641.46s - 1643.34s : to the right of this little red line that I've drawn here
+1643.34s - 1645.5s : is in sorted order, in this case because there's only one thing.
+1645.5s - 1646.0s : OK.
+1646.26s - 1648.42s : So now what am I going to do?
+1648.42s - 1650.26s : I'm going to look to the left of the red line,
+1650.26s - 1652.3s : find the next biggest thing.
+1652.3s - 1655.02s : What's that?
+1655.02s - 1657.02s : Come on.
+1657.02s - 1657.88s : There we go.
+1657.88s - 1658.92s : Yeah, yeah, wake up.
+1658.92s - 1659.92s : OK, so right.
+1659.92s - 1661.38s : So the next biggest one is the 8,
+1661.38s - 1664.68s : so we're going to swap it with the 3, put it at the end,
+1664.68s - 1665.18s : and so on.
+1665.18s - 1667.52s : I think you guys could all finish this off.
+1667.52s - 1669.22s : I suppose there should be one last line here
+1669.22s - 1671.22s : where everything is green and we're happy.
+1671.22s - 1674.62s : But in some sense, we're pretty sure that an array of one item
+1674.62s - 1675.5s : is in sorted order.
+1676.26s - 1678.6s : And so essentially, from a high level,
+1678.6s - 1680.38s : what did selection sort do?
+1680.38s - 1683.52s : Well, it just kept choosing the element, which was the biggest,
+1683.52s - 1687.08s : and swapping it into the back and then iterating.
+1687.08s - 1690.3s : Now, in 6.006, we're going to write selection sort in a way
+1690.3s - 1692.64s : that you might not be familiar with.
+1692.64s - 1694.44s : In some sense, this is not so hard
+1694.44s - 1695.78s : to implement with two for loops.
+1695.78s - 1697.08s : I think you guys could all do this at home.
+1697.08s - 1698.86s : In fact, you may have already.
+1698.86s - 1701.3s : But in this class, because we're concerned with proving
+1701.3s - 1704.34s : correctness, proving efficiency, all that good stuff,
+1704.34s - 1706.26s : we're going to write it in kind of a funny way.
+1706.26s - 1709.5s : And that's by using a method called recursive.
+1709.5s - 1711.5s : And I'm going to show you how to do that.
+1711.5s - 1713.94s : So we're going to take a selection sort algorithm,
+1713.94s - 1716.76s : which is recursive.
+1716.76s - 1721.02s : Now, I can't emphasize strongly enough how little you guys
+1721.02s - 1722.38s : should implement this at home.
+1722.38s - 1724.98s : This is mostly a theoretical version of selection sort
+1724.98s - 1726.48s : rather than one that you would actually
+1726.48s - 1728.44s : want to write in code, because there's obviously
+1728.44s - 1729.48s : a much better way to do it.
+1729.48s - 1731.48s : And you'll see that in your recitation this week,
+1731.48s - 1733.02s : I believe.
+1733.02s - 1735.42s : But in terms of analysis, there's a nice, easy way
+1735.42s - 1736.26s : to write it down.
+1736.26s - 1738.76s : And that's by using a method called recursive.
+1738.76s - 1740.5s : And I'm going to show you how to do that.
+1740.5s - 1743.76s : So the first thing I'm going to do is find me the biggest thing
+1743.76s - 1746.5s : in the first k elements of my array.
+1746.5s - 1748.14s : I shouldn't use k, because that means key.
+1748.14s - 1750.78s : The first i elements of my array.
+1750.78s - 1752.64s : And the next one is to swap it into place
+1752.64s - 1754.14s : and then sort everything to the left.
+1754.14s - 1755.48s : That's sort of the two pieces here.
+1755.48s - 1757.02s : So let's write that down.
+1757.02s - 1759.02s : Right.
+1759.02s - 1761.02s : So what did I do?
+1761.02s - 1766.02s : Well, in some sense, in step one here, I found the biggest,
+1766.26s - 1771.24s : with index less than or equal to i.
+1771.24s - 1772.74s : So i started at the end of the list
+1772.74s - 1775.86s : and then kind of moved backward.
+1775.86s - 1781.46s : And then step two was to swap that into place.
+1781.46s - 1782.42s : Notice when I say swap.
+1782.42s - 1784.34s : So for instance, when I put the 8 there,
+1784.34s - 1785.96s : well, I had to do something with that 3.
+1785.96s - 1788.74s : So I just put it where the 8 used to be.
+1788.74s - 1793.2s : And then finally, well, am I done?
+1793.2s - 1796.14s : No, I just put the biggest thing at the end of my array.
+1796.14s - 1800.38s : So now I have to sort from index 1 to i minus 1.
+1800.38s - 1803.28s : Because now I know that the last guy is in sorted order.
+1803.28s - 1803.78s : I see.
+1803.78s - 1805.7s : I'll return you in just a second.
+1805.7s - 1811.56s : So yes?
+1811.56s - 1813.76s : So index less than or equal to i.
+1813.76s - 1815.38s : You can't read the handwriting.
+1815.38s - 1817.0s : So index less than or equal to i.
+1817.0s - 1819.74s : This is index less than or equal to i.
+1819.74s - 1821.9s : Great question.
+1821.9s - 1823.94s : I warned you, it's going to be a problem.
+1823.94s - 1825.3s : OK.
+1825.3s - 1829.5s : So let's do step one first.
+1829.5s - 1831.4s : So I'm going to put code on the board.
+1831.4s - 1834.88s : And then we're going to fill in the details.
+1834.88s - 1836.88s : Eric is posting on Facebook.
+1836.88s - 1839.42s : I'm going to turn that feature off on my watch later.
+1839.42s - 1842.26s : OK, so right.
+1842.26s - 1845.92s : Let's implement this helper function here.
+1845.92s - 1848.44s : This is something we're going to call prefix max.
+1848.44s - 1851.74s : And this is going to find me the biggest element of array
+1851.74s - 1854.38s : between index 0 and index i.
+1854.38s - 1855.3s : Inclusive, I believe.
+1855.3s - 1857.7s : Yeah.
+1857.7s - 1861.74s : Well, here's an interesting observation, really a deep one,
+1861.74s - 1870.98s : which is that the biggest element from 0 to i,
+1870.98s - 1873.66s : that's an i, sorry.
+1873.66s - 1875.94s : There's sort of two cases, right?
+1875.94s - 1883.9s : Either it's at index i.
+1885.3s - 1888.74s : Meaning like I have the first 10 elements of my array.
+1888.74s - 1891.62s : Either it is element number 10.
+1891.62s - 1894.68s : Or what's the other case?
+1894.68s - 1895.62s : It ain't.
+1895.62s - 1896.22s : Yeah.
+1896.22s - 1907.14s : In other words, it has index less than i.
+1907.14s - 1908.46s : This is kind of a tautology, right?
+1908.46s - 1910.86s : Either the biggest thing is at this index or it's not.
+1910.86s - 1912.96s : In which case, it has to be to the left.
+1912.96s - 1914.74s : Does that make sense?
+1914.74s - 1917.18s : So this gives us a really simple algorithm
+1917.18s - 1920.94s : for finding the biggest element in the array between index 0
+1920.94s - 1923.82s : and index i, which is what I've shown you on the screen here.
+1923.82s - 1925.92s : I'd write it on the board, but I'm a slow writer
+1925.92s - 1927.98s : and already low on time.
+1927.98s - 1930.48s : And so essentially, what did I implement?
+1930.48s - 1935.78s : Well, I found the biggest element between index 0
+1935.78s - 1938.18s : and index i minus 1.
+1938.18s - 1942.98s : So if I have, let's say that I have an array,
+1942.98s - 1944.18s : I forget the sequence of numbers.
+1944.18s - 1947.54s : Like 8, 3, 5, 7, 9.
+1947.54s - 1948.68s : That'll do it.
+1948.68s - 1949.28s : Yeah.
+1949.28s - 1953.68s : And so I give a pointer here, which is i.
+1953.68s - 1955.68s : And the very first thing that I do
+1955.68s - 1957.72s : is I compute the biggest number all the way
+1957.72s - 1959.3s : to the left of this stuff.
+1959.3s - 1961.96s : In this case, that is 8.
+1961.96s - 1964.36s : There we go.
+1964.36s - 1968.82s : Now, I look at the very last element of my array, which is 9.
+1968.82s - 1970.3s : You're killing me today, guys.
+1970.3s - 1971.38s : OK.
+1971.38s - 1972.5s : And then what do I return?
+1972.5s - 1974.08s : Well, I want the biggest one between.
+1974.08s - 1974.18s : OK.
+1974.18s - 1975.18s : So I return the 9.
+1975.18s - 1975.84s : So I return the 9.
+1975.84s - 1977.32s : So I return the 9.
+1977.32s - 1979.58s : So in this case, I return the 9.
+1979.58s - 1981.78s : That make sense?
+1981.78s - 1984.68s : So there's this, I know Jerry Cain at Stanford
+1984.68s - 1988.22s : likes to talk about the recursive leap of faith
+1988.22s - 1989.26s : that happens.
+1989.26s - 1991.8s : Another term for this is induction.
+1991.8s - 1994.6s : So we want to prove that our algorithm works.
+1994.6s - 1995.76s : Well, what do we have to do?
+1995.76s - 1997.96s : We have to show that when I call this function,
+1997.96s - 2002.86s : it gives me the max of my array between index 0 and index i
+2002.86s - 2003.36s : for all i.
+2003.36s - 2003.86s : OK.
+2004.18s - 2007.28s : So let's maybe do this inductive proof a little bit carefully,
+2007.28s - 2009.8s : and then the rest will be sloppy about it.
+2009.8s - 2016.22s : So the base case is i equals 0.
+2016.22s - 2018.84s : Well, in this case, there's only one element in my array,
+2018.84s - 2020.42s : so it's pretty clear that it's the max.
+2020.42s - 2020.92s : Right?
+2025.32s - 2026.1s : OK.
+2026.1s - 2031.16s : And now, we have to do our inductive step, which
+2031.16s - 2032.18s : means that if I call prefix max with i minus i, i equals 0,
+2032.18s - 2032.86s : I get the max of my array.
+2032.86s - 2033.34s : So I get the max of my array.
+2033.34s - 2033.58s : So I get the max of my array.
+2033.58s - 2033.98s : So I get the max of my array.
+2033.98s - 2034.08s : So I get the max of my array.
+2034.08s - 2034.58s : So I get the max of my array.
+2034.58s - 2035.12s : So I get the max of my array.
+2035.12s - 2035.58s : So I get the max of my array.
+2035.58s - 2036.68s : So I get the max of my array between 0 and index i minus 1.
+2036.68s - 2040.36s : So I get the max of my array between 0 and index i minus 1.
+2040.36s - 2043.66s : And then really, I can just look at my proof,
+2043.66s - 2048.34s : my very deep statement, which is that either my object is
+2048.34s - 2049.88s : at the end of the array, or it's not.
+2052.54s - 2053.9s : And this is precisely what we need
+2053.9s - 2056.04s : to justify the inductive step.
+2056.04s - 2057.88s : Essentially, there are two cases.
+2057.88s - 2060.28s : Either the biggest element in my array is the last one,
+2060.28s - 2061.94s : or it's not.
+2061.94s - 2063.88s : We already, by our inductive hypothesis,
+2063.88s - 2069.96s : have argued that our code can find the biggest element between index 0 and index i minus 1.
+2071.16s - 2074.56s : So as long as we take the max of that and the very last guy, we're in good shape.
+2075.44s - 2078.72s : So this is our sort of very informal proof of correctness.
+2080.46s - 2083.94s : OK, so now we have to justify runtime for this algorithm.
+2084.1s - 2086.72s : And that's like actually not 100% obvious from the way I've written it here.
+2086.82s - 2087.54s : There's no for loop.
+2088.96s - 2089.98s : But what do I do?
+2089.98s - 2098.08s : Well, in some sense, if my runtime is a function s, well, for one thing, if my array has one element in it,
+2099.52s - 2102.42s : well, my runtime might be 7, it might be 23.
+2102.68s - 2104.84s : But at the end of the day, it only does one thing.
+2104.86s - 2106.12s : It just returns i, right?
+2106.84s - 2108.78s : So in other words, it's theta of 1.
+2111.08s - 2112.82s : This isn't terribly insightful.
+2112.96s - 2114.04s : But what else do we know?
+2114.16s - 2119.1s : Well, when I call my function, I call it recursively on one smaller index.
+2119.1s - 2119.9s : And then I do.
+2119.98s - 2121.42s : I do a constant amount of work.
+2121.42s - 2129.22s : So I know that s of n is equal to s of n minus 1 plus theta of 1, right?
+2129.22s - 2131.28s : I do a little bit of extra computation on top of that.
+2132.52s - 2134.54s : Anybody guess what this total runtime is going to be?
+2136.98s - 2137.48s : Yes.
+2138.62s - 2140.06s : Yeah, order n, right?
+2140.06s - 2142.62s : So let's say that we hypothesize that this takes n time.
+2142.62s - 2143.4s : You kind of see that, right?
+2143.4s - 2146.26s : Because like at step n, we call n minus 1.
+2146.26s - 2149.94s : We call n minus 2, and so on, all the way down to 1.
+2149.98s - 2151.1s : And then we can do this.
+2151.1s - 2151.9s : And then we can do this.
+2151.9s - 2152.82s : And then we can do this.
+2152.82s - 2154.06s : And then we can do this.
+2154.06s - 2156.74s : If we want to prove this, one of the ways that we, I think,
+2156.74s - 2158.66s : in theory, you guys have learned in the past
+2158.66s - 2160.9s : and you're going to cover in recitation
+2160.9s - 2162.78s : is a technique called substitution.
+2162.78s - 2165.38s : What we do is we're going to look at this relationship.
+2165.38s - 2169.86s : And we're going to hypothesize that we think s of n maybe
+2169.86s - 2171.7s : looks something like cn.
+2171.7s - 2174.32s : For some constant c, that doesn't depend on n.
+2174.32s - 2176.28s : Then all we have to do is double check
+2176.28s - 2179.32s : that that relationship is consistent with our inductive
+2179.32s - 2180.16s : function.
+2180.16s - 2183.22s : And if it is, then we're in good shape.
+2183.22s - 2186.28s : So in this case, well, what do I know?
+2186.28s - 2190.78s : I've guessed that s of n is theta of n.
+2190.78s - 2196.0s : So in particular, if I plug into this recursive relationship
+2196.0s - 2199.66s : here, on the left-hand side, I'm going to get cn.
+2199.66s - 2201.16s : On the right-hand side, I'm going
+2201.16s - 2207.44s : to get cn minus 1 plus theta of 1.
+2207.44s - 2209.02s : And we just have to make sure that this is, like,
+2209.02s - 2211.1s : an OK equal sign.
+2211.1s - 2211.78s : So what can I do?
+2211.78s - 2214.26s : I can subtract cn from both sides.
+2214.26s - 2216.58s : Maybe put that 1 on the other side here.
+2216.58s - 2220.2s : I'm going to get that c equals big O of 1.
+2220.2s - 2221.46s : c is, of course, a constant.
+2221.46s - 2222.38s : So we're in good shape.
+2225.24s - 2226.86s : My undergrad algorithms professor
+2226.86s - 2229.92s : told me never to write a victory mark at the end of a proof.
+2229.92s - 2231.82s : You have to do a little square.
+2231.82s - 2234.56s : But he's not here.
+2234.56s - 2236.36s : OK.
+2236.36s - 2238.86s : Right, so now I see you, but we're a little low on time.
+2238.86s - 2241.36s : So we'll save it for the end of lecture.
+2241.36s - 2244.9s : OK, so if we want to implement the selection sort algorithm,
+2244.9s - 2246.1s : well, what do we do?
+2246.1s - 2249.98s : Well, we're going to think of i as the index of that red line
+2249.98s - 2251.52s : that I was showing you before.
+2251.52s - 2255.24s : So everything beyond i is already sorted.
+2255.24s - 2257.56s : So in selection sort, the first thing I'm going to do
+2257.56s - 2260.78s : is find the max element between 0 and i.
+2260.78s - 2263.78s : And then I'm going to swap it into place.
+2263.78s - 2266.36s : So this is just a code version of the technique
+2266.36s - 2267.88s : we've already talked about.
+2267.88s - 2268.68s : Hopefully this makes sense.
+2268.68s - 2268.86s : OK.
+2268.86s - 2273.32s : So you find the biggest element between 0 and index i.
+2273.32s - 2275.82s : That's what we're going to call j here.
+2275.82s - 2278.4s : I swap that with the one at index i.
+2278.4s - 2280.46s : That's step 2.
+2280.46s - 2282.68s : And then step 3 is I still have to sort everything
+2282.68s - 2283.82s : to the left of index i.
+2283.82s - 2286.1s : And that's that recursive call.
+2286.1s - 2289.96s : OK, so if I want to justify the runtime
+2289.96s - 2293.1s : of this particular technique, well, now let's
+2293.1s - 2295.12s : call that t for time.
+2295.12s - 2295.62s : Yeah.
+2295.62s - 2299.38s : Well, what do I do?
+2299.38s - 2303.38s : Well, for one, I call selection sort with index i minus 1.
+2303.38s - 2307.42s : So that incurs time that looks like this.
+2307.42s - 2310.96s : But I also call that prefix max function.
+2310.96s - 2312.38s : And how much time does that take?
+2312.38s - 2313.98s : That takes order n time.
+2313.98s - 2315.32s : Yeah.
+2315.32s - 2320.24s : So at the end of the day, I have some relationship
+2320.24s - 2321.2s : that looks like this.
+2321.2s - 2323.2s : Does that make sense?
+2323.2s - 2325.62s : So by the way, notice that this order n kind of swallowed me.
+2325.62s - 2327.74s : I had to load up the order 1 computations
+2327.74s - 2331.8s : that I had to do to swap and so on.
+2331.8s - 2336.38s : OK, so remember, there's this nice relationship,
+2336.38s - 2338.86s : which you probably learned in your combinatorics class,
+2338.86s - 2342.24s : which is that 1 plus 2 plus dot dot dot plus n.
+2342.24s - 2344.0s : OK, I can never remember exactly the formula,
+2344.0s - 2347.12s : but I'm pretty sure that it looks like n squared.
+2347.12s - 2348.38s : Yeah.
+2348.38s - 2352.12s : So based on that and taking a look at this recursive thing,
+2352.12s - 2354.74s : which is essentially doing exactly that, n plus n minus 1
+2354.74s - 2355.38s : plus n minus 2.
+2355.38s - 2357.64s : So I'm going to take this and I'm going to put it in the order
+2357.64s - 2358.14s : 1.
+2358.14s - 2364.36s : I might hypothesize that this thing is really order n squared.
+2364.36s - 2366.18s : So if I'm going to do that, then again,
+2366.18s - 2368.64s : if I want to use the same technique for proof,
+2368.64s - 2371.22s : I have to plug this relationship in and then
+2371.22s - 2372.76s : double check that it's consistent.
+2372.76s - 2379.14s : So maybe I hypothesize that t of n equals cn squared,
+2379.14s - 2381.26s : in which case, I plug it in here.
+2384.26s - 2385.26s : I have cn squared.
+2385.26s - 2391.38s : So I have cn minus 1 squared plus big O or even theta of n
+2391.38s - 2393.06s : here.
+2393.06s - 2394.56s : So if I expand the square, notice
+2394.56s - 2397.16s : I'm going to get c times n squared
+2397.16s - 2398.94s : plus a bunch of linear stuff.
+2398.94s - 2399.5s : Right?
+2399.5s - 2404.2s : So this is really cn squared.
+2404.2s - 2405.9s : I should be careful with it.
+2405.9s - 2413.1s : Minus 2cn plus c plus theta of n.
+2413.1s - 2414.6s : Yeah.
+2414.6s - 2417.66s : Notice that there's a cn squared on both sides
+2417.66s - 2418.5s : of this equation.
+2418.5s - 2419.58s : They go away.
+2419.58s - 2423.42s : And what I'm left with is a nice consistent formula, right?
+2423.42s - 2432.3s : That theta of n equals 2cn plus minus c.
+2432.3s - 2434.36s : And indeed, this is an order n expression.
+2434.36s - 2435.54s : So there's order in the universe.
+2435.54s - 2436.38s : Life is good.
+2436.38s - 2437.88s : Yeah, this is the substitution method.
+2437.88s - 2441.08s : And again, I think you'll cover it more in your recitation.
+2441.08s - 2441.88s : So what have we done?
+2441.88s - 2443.84s : We have derived the selection sort.
+2443.84s - 2446.78s : We've checked that it runs in n squared time.
+2446.78s - 2449.82s : And by sort of this nice inductive strategy,
+2449.82s - 2452.08s : we know that it's correct.
+2452.08s - 2453.22s : So life is pretty good.
+2453.22s - 2455.22s : Unfortunately, I promised for you guys on the slides
+2455.22s - 2457.14s : that sorting really takes n log n time.
+2457.14s - 2459.08s : And this is an order n squared algorithm.
+2459.08s - 2461.28s : So we're not quite done yet.
+2461.28s - 2462.56s : I'm way over time.
+2462.56s - 2465.48s : So we're going to skip a different algorithm, which
+2465.48s - 2466.6s : is called insertion sort.
+2466.6s - 2469.7s : Also runs in n time.
+2469.7s - 2470.7s : OK.
+2470.7s - 2473.12s : Essentially, insertion sort kind of runs in the reverse order.
+2473.12s - 2473.24s : Right?
+2473.24s - 2473.54s : Right.
+2473.54s - 2475.42s : So I'm going to sort everything to the left
+2475.42s - 2476.66s : and then insert a new object.
+2476.66s - 2477.86s : Whereas in selection sort, I'm going
+2477.86s - 2479.54s : to choose the biggest object and then sort everything
+2479.54s - 2480.92s : to the left.
+2480.92s - 2482.92s : But I'll let you guys piece through that at home.
+2482.92s - 2484.66s : It's essentially the same argument.
+2484.66s - 2488.4s : And instead, we should jump to an algorithm that actually
+2488.4s - 2491.38s : matters, which is something called merge sort.
+2491.38s - 2494.3s : How many of you have encountered merge sort before?
+2494.3s - 2495.02s : Fabulous.
+2495.02s - 2495.52s : Good.
+2495.52s - 2496.76s : So then I'm done.
+2496.76s - 2497.26s : No.
+2497.26s - 2497.76s : OK.
+2497.76s - 2499.42s : So let's say that I have a list.
+2499.42s - 2501.04s : Now I'm sending a message back to Jason.
+2501.04s - 2502.64s : I made this one up last night.
+2502.64s - 2503.44s : So I have 7, 1, 5.
+2503.54s - 2505.84s : 6, 2, 4, 9, 3.
+2505.84s - 2507.98s : This is not in sorted order.
+2507.98s - 2510.12s : But I can make a very deep observation,
+2510.12s - 2511.84s : which is that every number by itself
+2511.84s - 2515.76s : is in sorted order if I think of it as an array of length 1.
+2515.76s - 2516.38s : Yeah?
+2516.38s - 2518.42s : This is really deep.
+2518.42s - 2520.34s : Like deep learning deep.
+2520.34s - 2520.84s : OK.
+2520.84s - 2522.28s : So now what can I do?
+2522.28s - 2524.34s : Well, I could take every pair of numbers,
+2524.34s - 2526.3s : draw a little red box.
+2526.3s - 2528.1s : Well, now they're not in sorted order anymore
+2528.1s - 2529.14s : inside of the red boxes.
+2529.14s - 2531.1s : So I'm going to sort inside of every box.
+2531.1s - 2533.26s : This case is not too exciting because it's just pairs.
+2533.54s - 2537.44s : And now they're in sorted order because I said they were.
+2537.44s - 2539.58s : Now I'm going to keep doubling the size of my boxes.
+2539.58s - 2542.68s : So now let's say I have box of length 4.
+2542.68s - 2544.78s : What do I know about the left and right hand
+2544.78s - 2548.36s : sides of the dotted lines here?
+2548.36s - 2550.8s : On the two sides of the dotted lines,
+2550.8s - 2552.38s : the array is in sorted order.
+2552.38s - 2553.98s : There's a 1 and then a 7.
+2553.98s - 2555.1s : Those are in sorted order.
+2555.1s - 2555.9s : 5 and a 6.
+2555.9s - 2559.7s : That's because in the previous step, I sorted every pair.
+2559.7s - 2563.34s : So when I merge these two sides together,
+2563.34s - 2566.4s : I have an additional useful piece of information,
+2566.4s - 2569.18s : namely that the two sides of the dotted line
+2569.18s - 2570.34s : are already in sorted order.
+2570.34s - 2574.18s : That's going to be our basic inductive step here.
+2574.18s - 2576.1s : So in this case, I merge the two sides.
+2576.1s - 2578.88s : I get 1, 5, 6, 7, and 2, 3, 4, 9.
+2578.88s - 2581.04s : Then finally, I put these two things together.
+2581.04s - 2586.14s : And I have to merge these two sorted lists.
+2586.14s - 2587.94s : But they're in sorted order.
+2587.94s - 2591.14s : And that's going to give me a big advantage because the oops,
+2591.14s - 2591.84s : I lost my truck.
+2593.34s - 2598.8s : I suppose I've got space on this board here.
+2598.8s - 2601.08s : Oh, no.
+2601.08s - 2609.88s : So if I want to merge 1, 5, 6, 7, and 2, 3, 4, 9,
+2609.88s - 2612.66s : there's a nice clever technique that we can do that's
+2612.66s - 2614.32s : going to take just linear time.
+2614.32s - 2616.2s : Jason tells me it's the two-finger algorithm.
+2616.2s - 2617.86s : I think that's kind of a cute analogy here.
+2617.86s - 2618.94s : So here are my two fingers.
+2618.94s - 2620.9s : They're going to point at the end of the list.
+2620.9s - 2622.9s : And I'm going to construct the merged array back.
+2623.34s - 2625.68s : So I'm going to put my fingers backwards.
+2625.68s - 2627.88s : So how many elements are in my merged array
+2627.88s - 2630.9s : if I'm merging two things of length 4?
+2630.9s - 2633.3s : I don't ask you guys hard questions.
+2633.3s - 2633.8s : It's 8.
+2633.8s - 2634.3s : Yeah?
+2634.3s - 2634.8s : 4 plus 4?
+2634.8s - 2635.3s : 8?
+2635.3s - 2635.8s : Yeah?
+2635.8s - 2636.3s : OK.
+2636.3s - 2637.3s : So what do I know?
+2637.3s - 2645.6s : I know that my merged array, ah, 5, 6, 7, has 8 elements.
+2645.6s - 2649.3s : And now I'm going to have two fingers at the end of my array.
+2649.3s - 2653.08s : Which one should I put at the end of the merged guy?
+2653.08s - 2655.58s : 9.
+2655.58s - 2656.7s : The 9.
+2656.7s - 2657.2s : Right.
+2657.2s - 2659.08s : Thank you.
+2659.08s - 2663.78s : So now I can move my lower finger to the left
+2663.78s - 2665.12s : because I've already added that.
+2665.12s - 2667.46s : Notice that I never need to look to the left of where my finger
+2667.46s - 2670.04s : is because they're already in sorted order.
+2670.04s - 2670.92s : Now what should I add?
+2670.92s - 2672.84s : The 4 or the 7?
+2672.84s - 2675.16s : The 7.
+2675.16s - 2675.84s : And so on.
+2675.84s - 2677.48s : Dot, dot, dot.
+2677.48s - 2677.98s : Yeah?
+2677.98s - 2680.14s : So that's going to be the basic idea of the merge sort.
+2680.14s - 2681.94s : I'm going to take two sorted lists.
+2681.94s - 2683.02s : And I'm going to make a new sorted
+2683.02s - 2686.52s : list, which is twice as long, by using two fingers,
+2686.52s - 2689.32s : moving from the end backward.
+2689.32s - 2691.78s : OK, so that's the basic intuition here.
+2691.78s - 2693.58s : Indeed, there's our sorted list.
+2693.58s - 2698.58s : Stressing me out that there's no 8, but I needed a power of 2.
+2698.58s - 2700.2s : So I think the merge sort we're going
+2700.2s - 2702.78s : to present in kind of a backward way from the previous one.
+2702.78s - 2704.68s : We're going to give you the high level algorithm.
+2704.68s - 2706.56s : And then actually the headache is that merging step,
+2706.56s - 2707.76s : which I have four minutes for.
+2707.76s - 2709.98s : And I apologize for it.
+2709.98s - 2711.36s : So what does the merge sort do?
+2711.36s - 2712.56s : Well, it computes an index C.
+2712.56s - 2716.5s : And it computes an index C, which is the middle of my array.
+2716.5s - 2718.06s : And it's going to make a recursive call,
+2718.06s - 2722.06s : which is sort the left, which is everything between index A
+2722.06s - 2724.8s : and index C. And then sort everything
+2724.8s - 2727.2s : on the right, which is everything from index C
+2727.2s - 2729.7s : to index B. I know this is confusing,
+2729.7s - 2732.0s : because usually letters appear in order.
+2732.0s - 2734.68s : But C, if you think of as standing for center,
+2734.68s - 2736.06s : then it kind of makes sense.
+2736.06s - 2737.26s : Here's my array.
+2739.62s - 2741.9s : I'm going to choose an index right in the middle.
+2741.9s - 2743.68s : And I can imagine all of my other lists
+2743.68s - 2746.58s : will call themselves a disservice by not using a power of two.
+2746.58s - 2747.76s : But that's OK.
+2747.76s - 2750.46s : I'm going to say, sort everything to the left
+2750.46s - 2751.94s : of the dotted line first.
+2751.94s - 2754.54s : Sort everything to the right of the dotted line second.
+2754.54s - 2756.84s : Now I have two sorted lists on the two
+2756.84s - 2757.88s : sides of the dotted line.
+2757.88s - 2760.88s : And then I'm going to use my two fingers to put them together.
+2760.88s - 2761.38s : OK.
+2761.38s - 2762.88s : So that's what this is implementing here.
+2762.88s - 2765.92s : See, there's two recursive calls, sort from A to C,
+2765.92s - 2768.76s : and then sort from C to B. Oops, I didn't actually label this.
+2768.76s - 2771.9s : So this is A, C, B. And then I got a call merge.
+2771.9s - 2776.12s : OK?
+2776.12s - 2778.88s : Now, our implementation of merge,
+2778.88s - 2781.44s : well, we can also do this in a recursive fashion.
+2781.44s - 2783.52s : But personally, I find this a little complicated,
+2783.52s - 2784.6s : I'm going to admit.
+2784.6s - 2788.68s : But here's the basic idea here, which I'm now rushing.
+2791.82s - 2795.82s : So I'm going to think of my upper finger as finger i
+2795.82s - 2798.48s : and my lower finger as finger j.
+2798.48s - 2799.98s : That make sense?
+2799.98s - 2803.86s : OK, so I have two sorted lists.
+2803.86s - 2809.36s : So maybe like that, I don't know, 1, 3, 5, 7.
+2809.36s - 2812.24s : And then I have a second sorted list here,
+2812.24s - 2818.98s : which is maybe 2, 4, 6, 72, as one does.
+2818.98s - 2823.9s : Then I'm going to have one pointer like this, which is i,
+2823.9s - 2826.98s : and a pointer down here, which is j.
+2826.98s - 2829.8s : And my goal is to construct an array
+2829.8s - 2835.84s : a with a bunch of elements in it.
+2835.84s - 2837.88s : And the way that I'm going to do it
+2837.88s - 2840.0s : is I'm going to use exactly the same kind
+2840.0s - 2843.26s : of recursive argument, that I can either
+2843.26s - 2844.98s : have the biggest element of my array
+2844.98s - 2847.04s : be the last element of the first guy
+2847.04s - 2850.12s : or be the last element of the second one.
+2850.12s - 2850.9s : Yeah?
+2850.9s - 2853.24s : So here's going to be our recursive call.
+2853.24s - 2854.96s : And in addition to that, for convenience,
+2854.96s - 2859.26s : we'll have a third index, which is b, which is pointing to this
+2859.26s - 2859.72s : sort of thing.
+2859.72s - 2861.72s : And I'm going to put this in the array
+2861.72s - 2865.1s : inside of my sorted array that I'm currently processing.
+2865.1s - 2865.6s : Yeah?
+2865.6s - 2867.66s : I'm going to start at a, go to b.
+2867.66s - 2868.16s : Yeah?
+2868.16s - 2869.62s : Incidentally, I see a lot of people
+2869.62s - 2870.76s : doing photos of the slides.
+2870.76s - 2873.92s : These are just copy-pasted from the course notes.
+2873.92s - 2874.42s : OK.
+2874.42s - 2877.98s : So in this case, what should I put in b?
+2877.98s - 2883.0s : For my two arrays, I have 1, 3, 5, 7, 2, 4, 6, 72.
+2883.0s - 2883.5s : 72.
+2883.5s - 2884.0s : Yeah?
+2886.64s - 2887.14s : Great.
+2887.14s - 2888.42s : So now what am I going to do?
+2888.42s - 2889.72s : I'm just going to call the merge function.
+2889.72s - 2891.26s : And I'm going to put in b.
+2891.26s - 2892.48s : And I'm going to put in b.
+2892.48s - 2893.48s : And I'm going to put in b.
+2893.48s - 2897.34s : But I'm going to decrement b, because now I'm
+2897.34s - 2898.94s : happy with that last element.
+2898.94s - 2902.78s : And in addition to that, I'm going to decrement j,
+2902.78s - 2905.6s : because I already used it up.
+2905.6s - 2907.64s : And so that's our recursive call here.
+2907.64s - 2908.14s : Right?
+2908.14s - 2910.14s : It's saying, if j is less than or equal to 0,
+2910.14s - 2913.18s : so in other words, I have an element to use in one
+2913.18s - 2917.32s : of the lists or the other, and that maybe the left one is
+2917.32s - 2918.6s : bigger than the right one.
+2918.6s - 2919.1s : Right?
+2919.1s - 2921.98s : Well, then I should make the last element of a
+2921.98s - 2926.28s : from the first list and then recurse with one fewer element
+2926.28s - 2927.22s : i.
+2927.22s - 2930.22s : And similarly, the reverse case for j.
+2930.22s - 2930.72s : OK.
+2930.72s - 2933.74s : So if we do our runtime in two minutes or less,
+2933.74s - 2936.18s : bear with me, guys.
+2936.18s - 2939.6s : Well, what is this merge function going to do?
+2939.6s - 2942.7s : Well, in some sense, there's two branches.
+2942.7s - 2944.4s : There's an if statement with two pieces.
+2944.4s - 2948.98s : But both of those pieces call merge with one fewer piece in it.
+2949.1s - 2949.6s : Right?
+2949.6s - 2955.22s : So in some sense, we have s of n equals s n minus 1 plus theta
+2955.22s - 2959.22s : of 1, which we already know from our previous proof,
+2959.22s - 2966.22s : means that s of n is equal to theta of n.
+2966.22s - 2969.22s : So in other words, it takes linear time to merge.
+2969.22s - 2971.22s : That kind of makes sense intuitively, right?
+2971.22s - 2973.22s : Because essentially, you're touching every one
+2973.22s - 2977.22s : of these things once with your two fingers.
+2977.22s - 2978.22s : And now, we're going to do this.
+2978.22s - 2978.72s : OK.
+2978.72s - 2979.02s : OK.
+2979.02s - 2981.32s : So now, probably the hardest part of the lecture, which
+2981.32s - 2984.22s : I left zero time for, is deriving the runtime
+2984.22s - 2987.3s : for the actual merge sort algorithm.
+2987.3s - 2988.66s : And what does that look like?
+2988.66s - 2991.7s : Well, that one's a little bit trickier, right?
+2991.7s - 2995.74s : Because of course, I call the merge sort algorithm twice
+2995.74s - 2998.34s : each time on a list that's half the size.
+2998.34s - 2999.84s : In this class, we're going to assume
+2999.84s - 3002.48s : that our list is always a power of 2 in its length.
+3002.48s - 3007.2s : Otherwise, this analysis is a itty bitty bit more of a headache.
+3007.2s - 3008.64s : So first of all, how long is this?
+3008.64s - 3011.8s : How long does it take to sort an array of length 1?
+3011.8s - 3014.64s : I legit am not going to ask hard questions.
+3014.64s - 3016.74s : Everybody?
+3016.74s - 3019.04s : Yeah, just like 1, right?
+3019.04s - 3020.8s : Because there's nothing to do.
+3020.8s - 3023.64s : An array of length 1 has one element, and it's sorted.
+3023.64s - 3027.48s : It's also the biggest element and the smallest element.
+3027.48s - 3028.56s : OK.
+3028.56s - 3031.0s : And now, what does our algorithm do?
+3031.0s - 3033.36s : Well, it makes two recursive calls
+3033.36s - 3034.78s : on lists that are half the length.
+3038.64s - 3039.64s : Yeah.
+3039.64s - 3041.46s : And then it calls that merge function.
+3041.46s - 3046.76s : And we know that the merge function takes theta of n time.
+3046.76s - 3049.5s : That make sense?
+3049.5s - 3052.6s : So one thing we might do, because we have some intuition
+3052.6s - 3061.34s : from your 6042 course, is that we think that this thing is
+3061.34s - 3065.4s : order n log n, right?
+3065.4s - 3067.36s : Because it makes that two recursive calls,
+3067.36s - 3068.52s : and then it puts them together.
+3068.52s - 3070.82s : And let's double check that that's true really quick
+3070.82s - 3072.68s : using the substitution method.
+3072.68s - 3074.98s : So in particular, on the left-hand side here,
+3074.98s - 3079.0s : maybe I have c n log n.
+3079.0s - 3081.42s : Now I have 2c.
+3081.42s - 3089.24s : Well, I have to put in n over 2 log n over 2 plus theta of n.
+3089.24s - 3092.76s : And I want to double check that this expression is consistent.
+3092.76s - 3095.26s : I've got about a foot to do it in.
+3095.26s - 3096.32s : OK.
+3096.32s - 3097.92s : So remember, let's see.
+3097.92s - 3102.68s : If we use our favorite identities from high school
+3102.68s - 3104.72s : class that you probably forgot, remember
+3104.72s - 3106.8s : that log of two things divided by each other
+3106.8s - 3108.72s : is the difference of the logs, right?
+3108.72s - 3111.0s : So this is really 2.
+3111.0s - 3113.3s : OK, 2 divided by 2 is 1.
+3113.3s - 3123.36s : So this is c times n times log n minus log of 2, yeah,
+3123.36s - 3126.28s : plus theta of n.
+3126.28s - 3127.28s : I'm already out of time.
+3127.28s - 3132.28s : But notice that there's a c n log n on the right-hand side.
+3132.28s - 3135.34s : There's a c n log n on the left-hand side.
+3135.34s - 3137.64s : So those two things go away.
+3137.64s - 3139.4s : And what am I going to be left with?
+3139.4s - 3149.62s : I'm going to be left with theta of n equals c n log of 2.
+3149.62s - 3152.46s : Notice that c and log 2 are both constants.
+3152.46s - 3154.28s : We have a theta of n on the left-hand side.
+3154.28s - 3157.28s : So there's order on the universe, and we've derived our runtime.
+3157.28s - 3159.28s : So I know I rushed a little bit through merge sort.
+3159.28s - 3161.28s : I'm sure that Eric and Jason can review this a little bit
+3161.28s - 3162.28s : next time.
+3162.28s - 3167.28s : But with that, we'll see you, what, Thursday and Friday.
+3167.28s - 3170.28s : And it's been a pleasure to talk to you all.

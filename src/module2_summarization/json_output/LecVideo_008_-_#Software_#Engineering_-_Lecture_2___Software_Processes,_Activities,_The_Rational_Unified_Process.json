@@ -1,0 +1,6239 @@
+[
+  {
+    "sentence": "Merhaba değerli öğrencilerim, Software Engineering course'un 2. lektürüye hoş geldiniz.",
+    "timestamp_start": 0.0,
+    "timestamp_end": 5.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bugünki konu Software Procesi.",
+    "timestamp_start": 6.08,
+    "timestamp_end": 8.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Part 1. Başlayalım.",
+    "timestamp_start": 8.9,
+    "timestamp_end": 10.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bugünki konular",
+    "timestamp_start": 11.46,
+    "timestamp_end": 13.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Proces Models",
+    "timestamp_start": 13.32,
+    "timestamp_end": 18.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Proces Aktivites",
+    "timestamp_start": 18.14,
+    "timestamp_end": 20.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Change Coping",
+    "timestamp_start": 20.5,
+    "timestamp_end": 25.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Rational Unified Process",
+    "timestamp_start": 25.28,
+    "timestamp_end": 29.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "R",
+    "timestamp_start": 30.0,
+    "timestamp_end": 42.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Jedi",
+    "timestamp_start": 42.26,
+    "timestamp_end": 55.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Anima",
+    "timestamp_start": 55.0,
+    "timestamp_end": 55.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "R",
+    "timestamp_start": 55.3,
+    "timestamp_end": 59.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bir sistem geliştirmeyi sağlamak için kullanılıyor.",
+    "timestamp_start": 59.98,
+    "timestamp_end": 61.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Herhangi bir sistem geliştirme sürecinin birçok farklı sürecinin bir araya çıkması ama hepsi birleşik.",
+    "timestamp_start": 63.98,
+    "timestamp_end": 67.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Spekifikasyon, sistemin ne yapacağını, tasarım ve uygulamayı, sistemin organizasyonunu",
+    "timestamp_start": 70.98,
+    "timestamp_end": 76.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve uygulamayı, validasyon, müşterinin ne istediklerini, evolüsyon,",
+    "timestamp_start": 76.98,
+    "timestamp_end": 82.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "müşterinin ihtiyaçlarını değiştirmek için bir sistem değiştirmeyi sağlamak.",
+    "timestamp_start": 82.98,
+    "timestamp_end": 87.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani, sistem geliştirme sürecinin tüm bu dört ana etkilerden birbirine sahip oluyor.",
+    "timestamp_start": 87.98,
+    "timestamp_end": 99.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistem geliştirme modeli bir geliştirme yapısının bir kısımdan bir özellik olarak bir kısımdan bir açıklamasıdır.",
+    "timestamp_start": 107.98,
+    "timestamp_end": 116.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Beklentileriz UY段ả Shirap",
+    "timestamp_start": 117.98,
+    "timestamp_end": 125.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Özel dersler",
+    "timestamp_start": 126.98,
+    "timestamp_end": 130.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "finelyşirsteşileeee",
+    "timestamp_start": 131.98,
+    "timestamp_end": 138.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "위해",
+    "timestamp_start": 139.98,
+    "timestamp_end": 143.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "faktör ve",
+    "timestamp_start": 143.98,
+    "timestamp_end": 144.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Proces descriptions may also include",
+    "timestamp_start": 147.98,
+    "timestamp_end": 154.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Products, which are the outcomes of a process activity, roles, which reflect the responsibilities of the people involved in the process, pre and post conditions, which are statements that are true before and after a process activity has been enacted or a product produced",
+    "timestamp_start": 157.86,
+    "timestamp_end": 173.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Plan Driven and Agile Processes",
+    "timestamp_start": 177.98,
+    "timestamp_end": 179.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Plan Driven Processes are processes where all of the process activities are planned in advance and progress is measured against this plan.",
+    "timestamp_start": 179.98,
+    "timestamp_end": 190.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In Agile Processes, planning is incremental and it is easier to change the process to reflect changing customer requirements.",
+    "timestamp_start": 193.42,
+    "timestamp_end": 201.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In practice, most practical processes include elements of both plan driven and agile approaches.",
+    "timestamp_start": 201.04,
+    "timestamp_end": 210.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are no right or wrong software processes.",
+    "timestamp_start": 211.54,
+    "timestamp_end": 214.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can either follow plan driven processes or agile processes.",
+    "timestamp_start": 214.88,
+    "timestamp_end": 219.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is up to you.",
+    "timestamp_start": 220.18,
+    "timestamp_end": 221.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Based on what you need to achieve, what you need to program or code or construct.",
+    "timestamp_start": 221.92,
+    "timestamp_end": 230.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Process Models",
+    "timestamp_start": 231.04,
+    "timestamp_end": 235.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The Waterfall Model",
+    "timestamp_start": 235.1,
+    "timestamp_end": 241.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Plan Driven Model",
+    "timestamp_start": 241.66,
+    "timestamp_end": 244.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Separate and distinct phases of specification and development.",
+    "timestamp_start": 244.84,
+    "timestamp_end": 248.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Incremental Development",
+    "timestamp_start": 251.16,
+    "timestamp_end": 252.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Specification, development and validation are interleaved.",
+    "timestamp_start": 252.38,
+    "timestamp_end": 259.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe plan driven.",
+    "timestamp_start": 259.82,
+    "timestamp_end": 260.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Reuse Oriented Software Engineering",
+    "timestamp_start": 261.04,
+    "timestamp_end": 267.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system is assembled from existing components.",
+    "timestamp_start": 267.2,
+    "timestamp_end": 272.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe plan driven or agile.",
+    "timestamp_start": 273.34,
+    "timestamp_end": 274.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In practice, most large systems are developed using a process that incorporates elements from all of these models.",
+    "timestamp_start": 281.98,
+    "timestamp_end": 288.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's check out the Waterfall Model.",
+    "timestamp_start": 291.04,
+    "timestamp_end": 294.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements Definition",
+    "timestamp_start": 294.34,
+    "timestamp_end": 297.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "System and Software Design",
+    "timestamp_start": 297.8,
+    "timestamp_end": 299.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Implementation and Unit Testing",
+    "timestamp_start": 299.9,
+    "timestamp_end": 301.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Integration and System Testing",
+    "timestamp_start": 301.78,
+    "timestamp_end": 304.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Operation and Maintenance",
+    "timestamp_start": 304.08,
+    "timestamp_end": 305.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You see, it's a very planned model and each one can feedback the previous stages and therefore the changes may be made according to the use feedback.",
+    "timestamp_start": 305.32,
+    "timestamp_end": 320.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "oring",
+    "timestamp_start": 321.04,
+    "timestamp_end": 322.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then, waterfall model",
+    "timestamp_start": 343.92,
+    "timestamp_end": 345.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "phases, etc.",
+    "timestamp_start": 345.14,
+    "timestamp_end": 346.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are separate identified phases in the waterfall model.",
+    "timestamp_start": 346.3,
+    "timestamp_end": 347.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are separate identified phases in the waterfall model.",
+    "timestamp_start": 347.5,
+    "timestamp_end": 348.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Req, analysis and definition system and system design",
+    "timestamp_start": 348.88,
+    "timestamp_end": 349.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "etc...",
+    "timestamp_start": 349.0,
+    "timestamp_end": 349.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Still no sufficient accuracy or evidence, the channel boundary needs to be also offered a consultation.",
+    "timestamp_start": 349.48,
+    "timestamp_end": 349.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you for watching this video.",
+    "timestamp_start": 349.9,
+    "timestamp_end": 350.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It will be a pleasure to talk about foi",
+    "timestamp_start": 350.44,
+    "timestamp_end": 350.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "talk aboutγ",
+    "timestamp_start": 350.84,
+    "timestamp_end": 351.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Design Implementation and Unit Testing Integration and System Testing Operation and Maintenance.",
+    "timestamp_start": 351.04,
+    "timestamp_end": 357.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's read one by one.",
+    "timestamp_start": 358.3,
+    "timestamp_end": 360.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements Analysis and Definition.",
+    "timestamp_start": 360.68,
+    "timestamp_end": 362.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "System and Software Design.",
+    "timestamp_start": 364.78,
+    "timestamp_end": 367.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Implementation and Unit Testing.",
+    "timestamp_start": 373.3,
+    "timestamp_end": 375.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Integration and System Testing.",
+    "timestamp_start": 377.42,
+    "timestamp_end": 379.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Operation and Maintenance.",
+    "timestamp_start": 381.04,
+    "timestamp_end": 383.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The main drawback of the waterfall model is the difficulty of accommodating change after the process is underway.",
+    "timestamp_start": 386.5,
+    "timestamp_end": 393.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In principle, a phase has to be complete before moving on to the next phase.",
+    "timestamp_start": 394.18,
+    "timestamp_end": 398.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is not very agile for waterfall model because you plan and design everything before starting.",
+    "timestamp_start": 400.22,
+    "timestamp_end": 411.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Waterfall Model Problems.",
+    "timestamp_start": 411.04,
+    "timestamp_end": 421.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Waterfall Model Problems.",
+    "timestamp_start": 421.04,
+    "timestamp_end": 421.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Inflexible partitioning of the project into distinct stages makes it difficult to respond to changing customer requirements.",
+    "timestamp_start": 423.54,
+    "timestamp_end": 430.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Therefore, this model is only appropriate when the requirements are well understood and changes will be fairly likely.",
+    "timestamp_start": 434.42,
+    "timestamp_end": 441.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "3. Regülasyon Sprint sociale WiederausgUM.",
+    "timestamp_start": 441.22,
+    "timestamp_end": 443.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A checkpoint physician",
+    "timestamp_start": 443.74,
+    "timestamp_end": 444.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The mandatory or final program is a regular genteinment program which will proceed throughout the workflow within the first 5 years of the project development process and will not interfere with the complete work view schedule.",
+    "timestamp_start": 444.84,
+    "timestamp_end": 452.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Waterfall model external bugs.",
+    "timestamp_start": 453.0,
+    "timestamp_end": 454.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Agility and word security,",
+    "timestamp_start": 455.02,
+    "timestamp_end": 456.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "route to share the work,",
+    "timestamp_start": 456.54,
+    "timestamp_end": 457.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the graphical certailectualization,",
+    "timestamp_start": 457.46,
+    "timestamp_end": 460.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the",
+    "timestamp_start": 460.8,
+    "timestamp_end": 470.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "synchronization.",
+    "timestamp_start": 470.14,
+    "timestamp_end": 470.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Belki NASA projesi böyle olabilir. Çünkü büyük projeler var.",
+    "timestamp_start": 471.04,
+    "timestamp_end": 478.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Böyle projelerde çalışan büyük bir sayıda inşanlar var.",
+    "timestamp_start": 478.48,
+    "timestamp_end": 482.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Büyük bir hizmet var.",
+    "timestamp_start": 482.0,
+    "timestamp_end": 483.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani her şey planlandırılabilir ve projeyi başlamadan önce tasarlanabilir.",
+    "timestamp_start": 483.52,
+    "timestamp_end": 490.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve belki birkaç sitesle ayrılabilir.",
+    "timestamp_start": 490.16,
+    "timestamp_end": 493.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani belki nasıl çalışıyorlar bilmiyorum ama NASA projesi böyle olabilir.",
+    "timestamp_start": 493.52,
+    "timestamp_end": 501.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Mesela Mars'a bir misyon böyle olabilir.",
+    "timestamp_start": 501.84,
+    "timestamp_end": 504.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Deskripsiyonu açıklayın.",
+    "timestamp_start": 514.64,
+    "timestamp_end": 516.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Öncelikle bir deskripsiyonu açıklayın ve sonra başlayın.",
+    "timestamp_start": 516.08,
+    "timestamp_end": 522.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve...",
+    "timestamp_start": 522.0,
+    "timestamp_end": 523.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...diskripsiyonu arttırın.",
+    "timestamp_start": 523.2,
+    "timestamp_end": 527.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Konkurrent işlemleri...",
+    "timestamp_start": 527.76,
+    "timestamp_end": 529.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...dikkat, geliştirme ve valiz yapma sürecleri aynı zamanda gerçekleşiyor.",
+    "timestamp_start": 530.16,
+    "timestamp_end": 534.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu üçüncü.",
+    "timestamp_start": 534.56,
+    "timestamp_end": 535.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Birbirine her ikiyi kontinuously feedback.",
+    "timestamp_start": 536.24,
+    "timestamp_end": 538.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve sonra...",
+    "timestamp_start": 538.96,
+    "timestamp_end": 539.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...yakınlaştığınızda...",
+    "timestamp_start": 544.08,
+    "timestamp_end": 545.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...initial version'ı paylaşabilirsiniz.",
+    "timestamp_start": 546.96,
+    "timestamp_end": 548.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İndiak versiyonu paylaşabilirsiniz.",
+    "timestamp_start": 548.88,
+    "timestamp_end": 551.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve...",
+    "timestamp_start": 551.2,
+    "timestamp_end": 551.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...sonra...",
+    "timestamp_start": 552.32,
+    "timestamp_end": 552.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...validasyonu ve son versiyonu paylaşabilirsiniz.",
+    "timestamp_start": 552.8,
+    "timestamp_end": 556.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu iki 사람� cognitive practices's geliştiricileri de görüyorsunuz.",
+    "timestamp_start": 556.8,
+    "timestamp_end": 561.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Onları ve bu da ve bu da son versiyon.",
+    "timestamp_start": 562.4,
+    "timestamp_end": 564.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 566.16,
+    "timestamp_end": 566.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Incremental Development Benefits",
+    "timestamp_start": 566.88,
+    "timestamp_end": 573.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Anlaşılabildiği ve değişik Tercih Re blows français sonuçlarında daha az barış riskétique giverir.",
+    "timestamp_start": 576.48,
+    "timestamp_end": 578.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İşçiler için değişken mü caves gönüllerine bir udan veutir Kendall hayırlaşım cศuster requirement uneller is reduced.",
+    "timestamp_start": 578.4,
+    "timestamp_end": 579.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "IVF veride onları belirlemes6",
+    "timestamp_start": 579.44,
+    "timestamp_end": 580.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "En sprinklor gibi bir nesnelerrep neler olduğunu ani",
+    "timestamp_start": 580.32,
+    "timestamp_end": 607.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "arama ile bir başka işte,",
+    "timestamp_start": 607.76,
+    "timestamp_end": 609.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "test device. Let's say you are coding the software of the airspace craft navigation system",
+    "timestamp_start": 609.0,
+    "timestamp_end": 623.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and it can be only tested when it is actually going to the Mars. You can test it on the",
+    "timestamp_start": 623.76,
+    "timestamp_end": 633.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Earth. Of course they are probably developing artificial simulation platforms and simulations.",
+    "timestamp_start": 633.64,
+    "timestamp_end": 657.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "However, the real test and the real feedback can only be get when",
+    "timestamp_start": 657.5,
+    "timestamp_end": 663.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve Avrupa Avrupa'nın Mars'a yolculuğu ile ilerliyor.",
+    "timestamp_start": 663.62,
+    "timestamp_end": 668.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu yüzden, ilerleyici gelişim ve yüzey gelişimi farkı görüyorsunuz.",
+    "timestamp_start": 668.62,
+    "timestamp_end": 675.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 675.62,
+    "timestamp_end": 677.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Örneğin, bunu bir e-commerce sitemize uygulayabilirsiniz.",
+    "timestamp_start": 695.62,
+    "timestamp_end": 701.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk versiyonu paylaşabilirsiniz,",
+    "timestamp_start": 701.62,
+    "timestamp_end": 703.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "müşteriler bunu kullanmaya başlayacak",
+    "timestamp_start": 703.62,
+    "timestamp_end": 705.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve müşterilerin kaynaklarını görürse,",
+    "timestamp_start": 705.62,
+    "timestamp_end": 709.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sizleri tepki verip onları artırabilirsiniz.",
+    "timestamp_start": 709.62,
+    "timestamp_end": 712.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu nedenle, bu strateji,",
+    "timestamp_start": 712.62,
+    "timestamp_end": 715.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tüm sistemlere ihtiyaç duyamayabilirsiniz.",
+    "timestamp_start": 715.62,
+    "timestamp_end": 719.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Mesela, bir MR ve MIR alanı satın alıyorsunuz ve",
+    "timestamp_start": 719.62,
+    "timestamp_end": 725.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sadece tüm sistemleri kullanamıyorsunuz.",
+    "timestamp_start": 728.62,
+    "timestamp_end": 734.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, insanları öldürür, insanları kötü bir şekilde acı çekebilir.",
+    "timestamp_start": 735.62,
+    "timestamp_end": 744.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu yüzden, her iş için farklı bir sosyal gelişimler kullanabilirsiniz.",
+    "timestamp_start": 744.62,
+    "timestamp_end": 751.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk versiyonu ve son versiyonu bir oyunla paylaşabilirsiniz.",
+    "timestamp_start": 751.62,
+    "timestamp_end": 755.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çünkü bu, birisi acı çekemez,",
+    "timestamp_start": 755.62,
+    "timestamp_end": 758.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bu durumda sorunlar veya şanslar veya problemler olamaz.",
+    "timestamp_start": 758.62,
+    "timestamp_end": 761.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 761.62,
+    "timestamp_end": 762.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Birçok başlangıç projesi var,",
+    "timestamp_start": 762.62,
+    "timestamp_end": 764.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bu işler agil gelişim kullanıyor,",
+    "timestamp_start": 764.62,
+    "timestamp_end": 766.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "iklim gelişim kullanıyor.",
+    "timestamp_start": 766.62,
+    "timestamp_end": 767.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk beta paylaştılar ve sonra",
+    "timestamp_start": 767.62,
+    "timestamp_end": 770.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bir parayı yaratmaya başladılar ve",
+    "timestamp_start": 770.62,
+    "timestamp_end": 772.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "oyunları devam ederek geliştiriyorlar.",
+    "timestamp_start": 772.62,
+    "timestamp_end": 775.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İklim gelişim sorunları",
+    "timestamp_start": 781.62,
+    "timestamp_end": 783.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Proses yok.",
+    "timestamp_start": 787.62,
+    "timestamp_end": 789.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Manajörler, süreçte gelişimleri ölçmek için",
+    "timestamp_start": 789.62,
+    "timestamp_end": 792.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "süreç belirlenmesi gerekiyor.",
+    "timestamp_start": 792.62,
+    "timestamp_end": 793.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistemin gelişimleri hızlı geliştirilip,",
+    "timestamp_start": 793.62,
+    "timestamp_end": 795.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "her versiyonun sistemin her birini",
+    "timestamp_start": 795.62,
+    "timestamp_end": 797.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "gösterdiği dokümanları üretmek için",
+    "timestamp_start": 797.62,
+    "timestamp_end": 799.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bu işlemler de ucuz olamaz.",
+    "timestamp_start": 799.62,
+    "timestamp_end": 801.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistemin kuralları değişiklikte,",
+    "timestamp_start": 803.62,
+    "timestamp_end": 805.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yeni aşamalar eklenir.",
+    "timestamp_start": 805.62,
+    "timestamp_end": 807.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ürünleri iyileştirmek için",
+    "timestamp_start": 807.62,
+    "timestamp_end": 809.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "zaman ve para ödeyerek",
+    "timestamp_start": 809.62,
+    "timestamp_end": 811.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ucuz olmalı.",
+    "timestamp_start": 811.62,
+    "timestamp_end": 813.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, süreçlerden daha fazla",
+    "timestamp_start": 813.62,
+    "timestamp_end": 815.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kurallar eklemek için",
+    "timestamp_start": 815.62,
+    "timestamp_end": 817.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "süreçlerden daha fazla",
+    "timestamp_start": 817.62,
+    "timestamp_end": 819.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "korumak.",
+    "timestamp_start": 819.62,
+    "timestamp_end": 821.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çünkü",
+    "timestamp_start": 821.62,
+    "timestamp_end": 823.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "gelişim ve tasarım süresinde",
+    "timestamp_start": 823.62,
+    "timestamp_end": 825.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "plan ve tasarım",
+    "timestamp_start": 825.62,
+    "timestamp_end": 827.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yaparken",
+    "timestamp_start": 827.62,
+    "timestamp_end": 829.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "birkaç büyük değişim",
+    "timestamp_start": 829.62,
+    "timestamp_end": 831.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapabilirsiniz.",
+    "timestamp_start": 831.62,
+    "timestamp_end": 833.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk gelişimlerine",
+    "timestamp_start": 833.62,
+    "timestamp_end": 835.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim yapabilirsiniz.",
+    "timestamp_start": 835.62,
+    "timestamp_end": 837.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk gelişimlerine",
+    "timestamp_start": 837.62,
+    "timestamp_end": 839.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim yapabilirsiniz.",
+    "timestamp_start": 839.62,
+    "timestamp_end": 841.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, gelişimlerinin",
+    "timestamp_start": 841.62,
+    "timestamp_end": 843.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "negatif tarafından",
+    "timestamp_start": 843.62,
+    "timestamp_end": 845.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "görülüyor.",
+    "timestamp_start": 845.62,
+    "timestamp_end": 847.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Öğrenimli",
+    "timestamp_start": 851.62,
+    "timestamp_end": 853.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "teknoloji",
+    "timestamp_start": 853.62,
+    "timestamp_end": 855.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "teknolojisi",
+    "timestamp_start": 855.62,
+    "timestamp_end": 857.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistemin",
+    "timestamp_start": 857.62,
+    "timestamp_end": 859.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kuralları",
+    "timestamp_start": 859.62,
+    "timestamp_end": 861.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişiklikte",
+    "timestamp_start": 861.62,
+    "timestamp_end": 863.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ucuz olmalı.",
+    "timestamp_start": 863.62,
+    "timestamp_end": 865.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk gelişimlerine",
+    "timestamp_start": 865.62,
+    "timestamp_end": 867.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim",
+    "timestamp_start": 867.62,
+    "timestamp_end": 869.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapabilirsiniz.",
+    "timestamp_start": 869.62,
+    "timestamp_end": 871.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk gelişimlerine",
+    "timestamp_start": 871.62,
+    "timestamp_end": 873.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim",
+    "timestamp_start": 873.62,
+    "timestamp_end": 875.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tarafından",
+    "timestamp_start": 875.62,
+    "timestamp_end": 877.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "görülüyor.",
+    "timestamp_start": 877.62,
+    "timestamp_end": 879.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk gelişimlerine",
+    "timestamp_start": 881.62,
+    "timestamp_end": 883.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim yapabilirsiniz.",
+    "timestamp_start": 883.62,
+    "timestamp_end": 885.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistemin kuralları",
+    "timestamp_start": 885.62,
+    "timestamp_end": 887.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişiklikte",
+    "timestamp_start": 887.62,
+    "timestamp_end": 889.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ucuz olmalı.",
+    "timestamp_start": 889.62,
+    "timestamp_end": 891.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu,",
+    "timestamp_start": 891.62,
+    "timestamp_end": 893.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "birkaç büyük",
+    "timestamp_start": 893.62,
+    "timestamp_end": 895.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim",
+    "timestamp_start": 895.62,
+    "timestamp_end": 897.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapabilirsiniz.",
+    "timestamp_start": 897.62,
+    "timestamp_end": 899.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk gelişimlerine",
+    "timestamp_start": 899.62,
+    "timestamp_end": 901.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim",
+    "timestamp_start": 901.62,
+    "timestamp_end": 903.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapabilirsiniz.",
+    "timestamp_start": 903.62,
+    "timestamp_end": 905.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk gelişimlerine",
+    "timestamp_start": 905.62,
+    "timestamp_end": 907.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişim",
+    "timestamp_start": 907.62,
+    "timestamp_end": 909.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Reuse Oriented Software Engineering",
+    "timestamp_start": 909.62,
+    "timestamp_end": 920.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Types of Software Component",
+    "timestamp_start": 920.42,
+    "timestamp_end": 936.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web Services",
+    "timestamp_start": 936.3,
+    "timestamp_end": 939.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Web Services",
+    "timestamp_start": 939.6,
+    "timestamp_end": 961.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Process Activities",
+    "timestamp_start": 961.5,
+    "timestamp_end": 962.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Process Activities",
+    "timestamp_start": 962.2,
+    "timestamp_end": 962.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Real Software Processes are interleaved sequences of technical, collaborative and managerial activities with the overall goal of specifying, designing, implementing and testing a software system.",
+    "timestamp_start": 966.3,
+    "timestamp_end": 980.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The four basic process activities of specification, development, validation and evolution are organized differently in different development processes.",
+    "timestamp_start": 980.18,
+    "timestamp_end": 988.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the waterfall model, they are organized in sequence, whereas in incremental development they are interleaved.",
+    "timestamp_start": 989.9,
+    "timestamp_end": 995.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, software specification.",
+    "timestamp_start": 996.3,
+    "timestamp_end": 999.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The process of establishing what services are required and the constraints on the system's operation and development.",
+    "timestamp_start": 1003.5,
+    "timestamp_end": 1010.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, requirements engineering process.",
+    "timestamp_start": 1011.86,
+    "timestamp_end": 1014.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Feasibility study.",
+    "timestamp_start": 1018.54,
+    "timestamp_end": 1020.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is it technically and financially feasible to build the system?",
+    "timestamp_start": 1020.08,
+    "timestamp_end": 1024.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is so important.",
+    "timestamp_start": 1025.1,
+    "timestamp_end": 1026.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You shouldn't try to build systems that are unfeasible.",
+    "timestamp_start": 1026.3,
+    "timestamp_end": 1032.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They are not just possible or financially and economically they are impossible to achieve.",
+    "timestamp_start": 1033.08,
+    "timestamp_end": 1041.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements elicitation and analysis.",
+    "timestamp_start": 1044.46,
+    "timestamp_end": 1046.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What do the system stakeholders require or expect from the system?",
+    "timestamp_start": 1048.54,
+    "timestamp_end": 1053.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements specification.",
+    "timestamp_start": 1053.5,
+    "timestamp_end": 1055.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Defining the requirements in detail.",
+    "timestamp_start": 1055.32,
+    "timestamp_end": 1057.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements validation.",
+    "timestamp_start": 1058.5,
+    "timestamp_end": 1059.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Checking the validity of the requirements.",
+    "timestamp_start": 1059.88,
+    "timestamp_end": 1061.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, you see this is named as requirements engineering process.",
+    "timestamp_start": 1061.46,
+    "timestamp_end": 1066.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You are not just a coder.",
+    "timestamp_start": 1067.3,
+    "timestamp_end": 1069.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You are not just a programmer.",
+    "timestamp_start": 1069.38,
+    "timestamp_end": 1070.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you want to be a software engineer, you need to have an idea, have a plan and have habits of an engineer.",
+    "timestamp_start": 1070.82,
+    "timestamp_end": 1081.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, just for requirements.",
+    "timestamp_start": 1082.36,
+    "timestamp_end": 1084.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You need.",
+    "timestamp_start": 1084.56,
+    "timestamp_end": 1085.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To do every necessity check like this one.",
+    "timestamp_start": 1085.32,
+    "timestamp_end": 1090.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Feasibility study requirements elicitation and analysis.",
+    "timestamp_start": 1090.82,
+    "timestamp_end": 1093.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements specification, requirements validation and such.",
+    "timestamp_start": 1094.38,
+    "timestamp_end": 1097.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1097.28,
+    "timestamp_end": 1097.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This will separate you from the regular coders, programmers, freelancers.",
+    "timestamp_start": 1098.2,
+    "timestamp_end": 1103.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, as a software engineer.",
+    "timestamp_start": 1103.58,
+    "timestamp_end": 1105.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The requirements engineering process.",
+    "timestamp_start": 1112.52,
+    "timestamp_end": 1114.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1115.32,
+    "timestamp_end": 1115.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Feasbility study.",
+    "timestamp_start": 1115.76,
+    "timestamp_end": 1116.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "From feasibility study, you generate feasibility reports.",
+    "timestamp_start": 1117.42,
+    "timestamp_end": 1120.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements elicitation and analysis.",
+    "timestamp_start": 1120.66,
+    "timestamp_end": 1123.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Based on that you...",
+    "timestamp_start": 1123.7,
+    "timestamp_end": 1126.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Start requirements specification and system models.",
+    "timestamp_start": 1127.02,
+    "timestamp_end": 1130.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "From requirements specification, you can feed back your requirements elicitation and analysis.",
+    "timestamp_start": 1130.26,
+    "timestamp_end": 1135.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can move to the next stage.",
+    "timestamp_start": 1136.24,
+    "timestamp_end": 1138.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User and System requirements and from system models and user system requirements.",
+    "timestamp_start": 1138.4,
+    "timestamp_end": 1143.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can compose requirements documents.",
+    "timestamp_start": 1143.28,
+    "timestamp_end": 1145.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve hizmet şifresi olarak hizmet valizasyonunu yapabilirsiniz.",
+    "timestamp_start": 1145.18,
+    "timestamp_end": 1150.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve bu hizmet şifresini ve hizmet arasızlığı analizini değiştirebilirsiniz.",
+    "timestamp_start": 1150.18,
+    "timestamp_end": 1155.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Gördüğünüz gibi, bu hizmet şifresinin daha fazla süreçten sonra hizmet şifresini yapabilirsiniz.",
+    "timestamp_start": 1155.18,
+    "timestamp_end": 1163.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve sonrasında hizmet şifresini yapmanızı tamamlıyorsunuz.",
+    "timestamp_start": 1163.18,
+    "timestamp_end": 1168.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Design and Implementation",
+    "timestamp_start": 1168.18,
+    "timestamp_end": 1176.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The process of converting the system specification into an executable system.",
+    "timestamp_start": 1176.18,
+    "timestamp_end": 1184.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Design",
+    "timestamp_start": 1184.18,
+    "timestamp_end": 1186.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Design a software structure that realizes the specification.",
+    "timestamp_start": 1186.18,
+    "timestamp_end": 1192.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Implementation",
+    "timestamp_start": 1192.18,
+    "timestamp_end": 1194.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Translate this structure into an executable system.",
+    "timestamp_start": 1194.18,
+    "timestamp_end": 1197.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Structure into an executable program.",
+    "timestamp_start": 1197.18,
+    "timestamp_end": 1202.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The activities of design and implementation are closely related and may be interleaved.",
+    "timestamp_start": 1202.18,
+    "timestamp_end": 1209.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So after you have done the requirements engineering process you move to the software design and implementation process.",
+    "timestamp_start": 1209.18,
+    "timestamp_end": 1217.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In this one there are the process of software design implementation and",
+    "timestamp_start": 1217.18,
+    "timestamp_end": 1225.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 1225.18,
+    "timestamp_end": 1226.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You",
+    "timestamp_start": 1227.18,
+    "timestamp_end": 1229.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You",
+    "timestamp_start": 1229.18,
+    "timestamp_end": 1231.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You",
+    "timestamp_start": 1231.18,
+    "timestamp_end": 1233.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You",
+    "timestamp_start": 1233.18,
+    "timestamp_end": 1235.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You execute the both processes at the same time in many cases.",
+    "timestamp_start": 1235.18,
+    "timestamp_end": 1241.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1241.18,
+    "timestamp_end": 1242.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Interleaved.",
+    "timestamp_start": 1242.18,
+    "timestamp_end": 1244.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A general model of the software design process.",
+    "timestamp_start": 1244.18,
+    "timestamp_end": 1248.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are design inputs which are platform information, requirements specification, data description.",
+    "timestamp_start": 1248.18,
+    "timestamp_end": 1253.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And there are design activities.",
+    "timestamp_start": 1253.18,
+    "timestamp_end": 1255.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This architectural design, interface design, component design.",
+    "timestamp_start": 1255.18,
+    "timestamp_end": 1260.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And they move to the, they both connect to the database design.",
+    "timestamp_start": 1260.18,
+    "timestamp_end": 1264.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And there is design outputs.",
+    "timestamp_start": 1264.18,
+    "timestamp_end": 1266.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "System architectures, database specification, interface specification, component specification.",
+    "timestamp_start": 1266.18,
+    "timestamp_end": 1272.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1272.18,
+    "timestamp_end": 1273.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So design activities.",
+    "timestamp_start": 1273.18,
+    "timestamp_end": 1275.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's read them carefully.",
+    "timestamp_start": 1275.18,
+    "timestamp_end": 1279.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Architectural design.",
+    "timestamp_start": 1279.18,
+    "timestamp_end": 1281.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where you identify the overall structure.",
+    "timestamp_start": 1281.18,
+    "timestamp_end": 1283.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where you identify the overall structure of the system.",
+    "timestamp_start": 1283.18,
+    "timestamp_end": 1286.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The principal components.",
+    "timestamp_start": 1286.18,
+    "timestamp_end": 1287.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sometimes called sub systems or modules.",
+    "timestamp_start": 1287.18,
+    "timestamp_end": 1290.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Their relationships and how they are distributed.",
+    "timestamp_start": 1290.18,
+    "timestamp_end": 1293.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Interface design.",
+    "timestamp_start": 1293.18,
+    "timestamp_end": 1294.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where you define the interfaces between system components.",
+    "timestamp_start": 1294.18,
+    "timestamp_end": 1298.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Component design.",
+    "timestamp_start": 1298.18,
+    "timestamp_end": 1299.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where you take each system component and design how it will operate.",
+    "timestamp_start": 1299.18,
+    "timestamp_end": 1303.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Database design.",
+    "timestamp_start": 1303.18,
+    "timestamp_end": 1305.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where you design the system data structures and how these are to be represented in a database.",
+    "timestamp_start": 1305.18,
+    "timestamp_end": 1310.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You see design has many different components.",
+    "timestamp_start": 1310.18,
+    "timestamp_end": 1311.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And you need to follow these code of practice to be a good software engineer.",
+    "timestamp_start": 1311.18,
+    "timestamp_end": 1318.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And there is software validation.",
+    "timestamp_start": 1318.18,
+    "timestamp_end": 1330.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Verification and validation, V&V, is intended to show that a system conforms to its specification and meets the requirements of the system customer.",
+    "timestamp_start": 1330.18,
+    "timestamp_end": 1338.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Involves checking and reviewing the system.",
+    "timestamp_start": 1338.18,
+    "timestamp_end": 1340.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Involves checking and review processes and system testing.",
+    "timestamp_start": 1340.18,
+    "timestamp_end": 1343.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "System testing involves executing the system with test cases that are derived from the specification of the real data to be processed by the system.",
+    "timestamp_start": 1343.18,
+    "timestamp_end": 1352.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Testing is the most commonly used V&V activity.",
+    "timestamp_start": 1352.18,
+    "timestamp_end": 1356.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For testing there are usually companies and engineers, programs and other codes, another software.",
+    "timestamp_start": 1356.18,
+    "timestamp_end": 1367.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there are being tested.",
+    "timestamp_start": 1367.18,
+    "timestamp_end": 1370.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Which provides inputs and expects some output.",
+    "timestamp_start": 1370.18,
+    "timestamp_end": 1374.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So whenever you make changes to your main software, you retest your main software with these testing procedures.",
+    "timestamp_start": 1374.18,
+    "timestamp_end": 1386.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And see if there are any errors, if an unexpected error happened or not.",
+    "timestamp_start": 1386.18,
+    "timestamp_end": 1391.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Stages of testing, component testing, system testing, acceptance testing.",
+    "timestamp_start": 1391.18,
+    "timestamp_end": 1398.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If acceptance is not achieved, you go back to the component testing and system testing and acceptance testing again.",
+    "timestamp_start": 1398.18,
+    "timestamp_end": 1408.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, testing stages.",
+    "timestamp_start": 1408.18,
+    "timestamp_end": 1414.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Development or component testing.",
+    "timestamp_start": 1414.18,
+    "timestamp_end": 1419.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Individual components are tested independently.",
+    "timestamp_start": 1419.18,
+    "timestamp_end": 1422.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Components may be functions or objects or coherent groupings of these entities.",
+    "timestamp_start": 1422.18,
+    "timestamp_end": 1426.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "System testing.",
+    "timestamp_start": 1426.18,
+    "timestamp_end": 1427.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Testing of the system as a whole.",
+    "timestamp_start": 1427.18,
+    "timestamp_end": 1433.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Testing of emergent properties is particularly important.",
+    "timestamp_start": 1433.18,
+    "timestamp_end": 1439.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, acceptance testing.",
+    "timestamp_start": 1439.18,
+    "timestamp_end": 1443.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Testing with customer data to check that the system meets the customer's need.",
+    "timestamp_start": 1443.18,
+    "timestamp_end": 1448.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Testing phase is a plan-driven software process.",
+    "timestamp_start": 1448.18,
+    "timestamp_end": 1452.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You see it is getting expanded.",
+    "timestamp_start": 1452.18,
+    "timestamp_end": 1455.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements specifications, system specifications, system design, detailed design, model and unit code and test.",
+    "timestamp_start": 1455.18,
+    "timestamp_end": 1464.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There is acceptance test plan, system integration test plan, sub-system integration test plan.",
+    "timestamp_start": 1464.18,
+    "timestamp_end": 1471.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There is sub-system integration test, sub-system integration test, acceptance test and service.",
+    "timestamp_start": 1471.18,
+    "timestamp_end": 1476.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "However, if you follow this plan-driven software process, you can much easily achieve.",
+    "timestamp_start": 1476.18,
+    "timestamp_end": 1483.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can much easily put very large software systems.",
+    "timestamp_start": 1483.18,
+    "timestamp_end": 1491.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1491.18,
+    "timestamp_end": 1493.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software evaluation.",
+    "timestamp_start": 1493.18,
+    "timestamp_end": 1495.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software is inherently flexible and can change.",
+    "timestamp_start": 1495.18,
+    "timestamp_end": 1503.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As requirements change through changing business circumstances, the software that supports the business must also evolve and change.",
+    "timestamp_start": 1503.18,
+    "timestamp_end": 1511.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Although there has been a demarcation between development and evolution, maintenance, this is increasingly irrelevant as fewer and fewer systems are completely new.",
+    "timestamp_start": 1511.18,
+    "timestamp_end": 1521.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, system evaluation.",
+    "timestamp_start": 1521.18,
+    "timestamp_end": 1529.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, define system requirements, assess existing systems.",
+    "timestamp_start": 1529.18,
+    "timestamp_end": 1534.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Proposed system changes, modified systems.",
+    "timestamp_start": 1534.18,
+    "timestamp_end": 1539.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Composed new system.",
+    "timestamp_start": 1539.18,
+    "timestamp_end": 1540.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "From there you check whether you assess again the existing.",
+    "timestamp_start": 1540.18,
+    "timestamp_end": 1548.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so key points of the part one of software processes.",
+    "timestamp_start": 1548.18,
+    "timestamp_end": 1555.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here, which are the key points.",
+    "timestamp_start": 1555.18,
+    "timestamp_end": 1559.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let's read one by one.",
+    "timestamp_start": 1559.18,
+    "timestamp_end": 1562.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software processes are the activities involved in producing a software system.",
+    "timestamp_start": 1562.18,
+    "timestamp_end": 1568.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software process models are abstract representations of these processes.",
+    "timestamp_start": 1568.18,
+    "timestamp_end": 1575.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "General process models describe the organization of software processes.",
+    "timestamp_start": 1575.18,
+    "timestamp_end": 1584.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Examples of these general models include the waterfall model, incremental development, and reuse-oriented development.",
+    "timestamp_start": 1584.18,
+    "timestamp_end": 1592.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "More key points.",
+    "timestamp_start": 1592.18,
+    "timestamp_end": 1596.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements engineering is the process of developing a software specification.",
+    "timestamp_start": 1598.18,
+    "timestamp_end": 1604.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Design and implementation processes are concerned with transforming a requirements specification into an executable software system.",
+    "timestamp_start": 1604.18,
+    "timestamp_end": 1612.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software validation is the process of checking that the system conforms to its specification and that it meets the real needs of the users of the system.",
+    "timestamp_start": 1612.18,
+    "timestamp_end": 1620.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software evolution takes place when you change existing software systems to meet new requirements.",
+    "timestamp_start": 1620.18,
+    "timestamp_end": 1626.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The software is the process of developing a software specification.",
+    "timestamp_start": 1626.18,
+    "timestamp_end": 1627.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The software must evolve to remain useful.",
+    "timestamp_start": 1627.18,
+    "timestamp_end": 1630.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you don't make any updates to your existing software, eventually it will become obsolete and left by the customers and clients.",
+    "timestamp_start": 1630.18,
+    "timestamp_end": 1641.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So lecture two software processes part two coping with the change.",
+    "timestamp_start": 1641.18,
+    "timestamp_end": 1648.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay coping with change.",
+    "timestamp_start": 1648.18,
+    "timestamp_end": 1653.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All right.",
+    "timestamp_start": 1653.18,
+    "timestamp_end": 1656.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Change is inevitable in all large software projects.",
+    "timestamp_start": 1657.18,
+    "timestamp_end": 1663.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Business changes lead to new and changed system requirements.",
+    "timestamp_start": 1663.18,
+    "timestamp_end": 1667.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "New technologies open up new possibilities for improving implementations.",
+    "timestamp_start": 1667.18,
+    "timestamp_end": 1671.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Changing platforms require application changes.",
+    "timestamp_start": 1671.18,
+    "timestamp_end": 1678.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Change leads to rework.",
+    "timestamp_start": 1678.18,
+    "timestamp_end": 1680.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the costs of change include both rework e.g. reanalyzing requirements as well as the costs of implementing new functions.",
+    "timestamp_start": 1680.18,
+    "timestamp_end": 1685.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Change leads to rework.",
+    "timestamp_start": 1685.18,
+    "timestamp_end": 1686.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the costs of change include both rework e.g. reanalyzing requirements as well as the costs of implementing new functions.",
+    "timestamp_start": 1686.18,
+    "timestamp_end": 1692.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Reducing the costs of rework.",
+    "timestamp_start": 1692.18,
+    "timestamp_end": 1697.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Change avoidance where the software process includes activities that can anticipate possible changes before significant rework is required.",
+    "timestamp_start": 1697.18,
+    "timestamp_end": 1707.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For example, a prototype system may be developed to show some key features of the system to customers.",
+    "timestamp_start": 1707.18,
+    "timestamp_end": 1714.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Change tolerance where the process is designed so that changes can be accommodated at relatively low cost.",
+    "timestamp_start": 1714.18,
+    "timestamp_end": 1721.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This normally involves some form of incremental development.",
+    "timestamp_start": 1721.18,
+    "timestamp_end": 1725.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Proposed changes may be implemented in increments that have not yet been developed.",
+    "timestamp_start": 1725.18,
+    "timestamp_end": 1730.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If this is impossible, then only a single increment, a small part of the system, may have be altered to incorporate the change.",
+    "timestamp_start": 1730.18,
+    "timestamp_end": 1737.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software prototyping.",
+    "timestamp_start": 1737.18,
+    "timestamp_end": 1742.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Soyun Friends is what we call software prototyping.",
+    "timestamp_start": 1742.18,
+    "timestamp_end": 1748.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A prototype is an initial version of a system used to demonstrate concepts and try out design options.",
+    "timestamp_start": 1748.18,
+    "timestamp_end": 1754.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A prototype can be used in the requirements engineering process to help with requirements elicitation and validation.",
+    "timestamp_start": 1754.18,
+    "timestamp_end": 1760.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In design processes to explore options and develop a UI design.",
+    "timestamp_start": 1760.18,
+    "timestamp_end": 1765.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the testing process to run back-to-back tests.",
+    "timestamp_start": 1765.68,
+    "timestamp_end": 1769.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototyping'in faydaları",
+    "timestamp_start": 1772.18,
+    "timestamp_end": 1775.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistem kullanımının arttığı, kullanıcıların gerçek ihtiyaçlarına yakın bir uyarı,",
+    "timestamp_start": 1775.18,
+    "timestamp_end": 1782.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tasarım kalitesi arttığı, sürdürülebilirlik arttığı, gelişim çalışması arttığı.",
+    "timestamp_start": 1782.18,
+    "timestamp_end": 1787.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototyping gelişiminin süreci",
+    "timestamp_start": 1791.18,
+    "timestamp_end": 1794.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototyping objektiflerini kurmak, planı prototyp yapmak,",
+    "timestamp_start": 1794.18,
+    "timestamp_end": 1798.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "prototip, prototip funksiyonları, kısım, definisyon,",
+    "timestamp_start": 1798.18,
+    "timestamp_end": 1802.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "prototip gelişimini geliştirme, prototip, prototip gelişimini geliştirme,",
+    "timestamp_start": 1802.18,
+    "timestamp_end": 1806.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "prototip gelişimini geliştirme, evaluasyon, rapor.",
+    "timestamp_start": 1806.18,
+    "timestamp_end": 1809.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototip gelişimini",
+    "timestamp_start": 1809.18,
+    "timestamp_end": 1811.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "raporla veya araçla veya araçla yapmak için.",
+    "timestamp_start": 1815.18,
+    "timestamp_end": 1819.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Farklı bir şekilde,",
+    "timestamp_start": 1821.18,
+    "timestamp_end": 1824.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototip,",
+    "timestamp_start": 1824.18,
+    "timestamp_end": 1827.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototip,",
+    "timestamp_start": 1828.18,
+    "timestamp_end": 1846.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototip,",
+    "timestamp_start": 1847.18,
+    "timestamp_end": 1849.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototip,",
+    "timestamp_start": 1852.18,
+    "timestamp_end": 1853.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çeşitli çalışmaların geliştirilmesi için iyi bir basın için de ayrılmalıdır.",
+    "timestamp_start": 1853.18,
+    "timestamp_end": 1857.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çeşitli çalışmaların geliştirilmesi için de ayrılmalıdır.",
+    "timestamp_start": 1857.64,
+    "timestamp_end": 1862.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototipler normalde indokumentedir.",
+    "timestamp_start": 1862.06,
+    "timestamp_end": 1864.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototip stüktürü her zaman hızlı değişimden dolayı değiştirilir.",
+    "timestamp_start": 1864.52,
+    "timestamp_end": 1868.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototip her zaman normal organizasyonel kalite standartlarına ulaşmayacaktır.",
+    "timestamp_start": 1868.28,
+    "timestamp_end": 1872.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çekimli geliştirme",
+    "timestamp_start": 1872.9,
+    "timestamp_end": 1877.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sadece bir geliştirme olarak sistemleri geliştirmeye karşı, geliştirme ve geliştirme, her geliştirme için gerekli bir parçalardan birine ayrılmakta.",
+    "timestamp_start": 1883.18,
+    "timestamp_end": 1898.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Önce geliştirme",
+    "timestamp_start": 1898.42,
+    "timestamp_end": 1905.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Önce geliştirme",
+    "timestamp_start": 1905.42,
+    "timestamp_end": 1909.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Önce geliştirme",
+    "timestamp_start": 1909.42,
+    "timestamp_end": 1912.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Önce geliştirme",
+    "timestamp_start": 1912.42,
+    "timestamp_end": 1912.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kur freeze",
+    "timestamp_start": 1912.92,
+    "timestamp_end": 1916.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "eksizede türkleden Which trade systems?",
+    "timestamp_start": 1916.66,
+    "timestamp_end": 1921.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Son hızlı geliştirme",
+    "timestamp_start": 1921.58,
+    "timestamp_end": 1924.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Erconos",
+    "timestamp_start": 1924.68,
+    "timestamp_end": 1925.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Erconos",
+    "timestamp_start": 1925.82,
+    "timestamp_end": 1927.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Merzlendirme",
+    "timestamp_start": 1927.1,
+    "timestamp_end": 1929.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kullanılardaki geliştirme ve",
+    "timestamp_start": 1929.0,
+    "timestamp_end": 1929.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kullanılardaki geliştirme",
+    "timestamp_start": 1929.92,
+    "timestamp_end": 1931.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kullanılardaki geliştirme",
+    "timestamp_start": 1931.28,
+    "timestamp_end": 1933.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A jail",
+    "timestamp_start": 1933.58,
+    "timestamp_end": 1935.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Trival",
+    "timestamp_start": 1935.84,
+    "timestamp_end": 1937.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Uash",
+    "timestamp_start": 1937.52,
+    "timestamp_end": 1938.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Jurme",
+    "timestamp_start": 1938.8,
+    "timestamp_end": 1938.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Akos",
+    "timestamp_start": 1938.86,
+    "timestamp_end": 1940.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Endüstri",
+    "timestamp_start": 1940.06,
+    "timestamp_end": 1941.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "viable",
+    "timestamp_start": 1941.08,
+    "timestamp_end": 1942.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "�ne",
+    "timestamp_start": 1942.62,
+    "timestamp_end": 1942.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "diamant",
+    "timestamp_start": 1942.78,
+    "timestamp_end": 1942.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ekos",
+    "timestamp_start": 1942.84,
+    "timestamp_end": 1942.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Deploy an increment for use by end users, more realistic evaluation about practical use of software, difficult to implement for replacement systems as increments have less functionality than the system being replaced.",
+    "timestamp_start": 1942.88,
+    "timestamp_end": 1958.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you are going to replace a whole working system, incremental delivery may not be appropriate for it. Because with incremental delivery, you are adding functionality of the system by one way.",
+    "timestamp_start": 1958.28,
+    "timestamp_end": 1975.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "However, if you are replacing an existing system, a working system, it may cause serious problems of the working system. It may cause damage of profit.",
+    "timestamp_start": 1975.22,
+    "timestamp_end": 1987.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So incremental delivery and incremental development may not suit very well to every kind of application.",
+    "timestamp_start": 1988.28,
+    "timestamp_end": 1998.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In software engineering, the methods you choose have to be appropriate to the software you are developing.",
+    "timestamp_start": 1998.8,
+    "timestamp_end": 2009.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, incremental delivery.",
+    "timestamp_start": 2009.8,
+    "timestamp_end": 2014.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We found outline requirements.",
+    "timestamp_start": 2014.3,
+    "timestamp_end": 2016.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Assign requirements to increments.",
+    "timestamp_start": 2018.28,
+    "timestamp_end": 2020.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Design system architecture.",
+    "timestamp_start": 2020.72,
+    "timestamp_end": 2022.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Develop system increment.",
+    "timestamp_start": 2022.62,
+    "timestamp_end": 2024.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Update increment.",
+    "timestamp_start": 2024.88,
+    "timestamp_end": 2026.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Integrate increment.",
+    "timestamp_start": 2026.42,
+    "timestamp_end": 2028.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Validate system.",
+    "timestamp_start": 2028.66,
+    "timestamp_end": 2029.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Deploy increment.",
+    "timestamp_start": 2029.76,
+    "timestamp_end": 2030.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If system incomplete, continue develop system increment.",
+    "timestamp_start": 2030.86,
+    "timestamp_end": 2035.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If system is incomplete, develop system increment.",
+    "timestamp_start": 2035.34,
+    "timestamp_end": 2042.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If system is complete, final system.",
+    "timestamp_start": 2042.44,
+    "timestamp_end": 2045.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Incremental delivery advantages.",
+    "timestamp_start": 2048.28,
+    "timestamp_end": 2052.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Customer value can be delivered with each increment so system functionality is available earlier.",
+    "timestamp_start": 2052.72,
+    "timestamp_end": 2059.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Early increments act as a prototype to help elicit requirements for later increments.",
+    "timestamp_start": 2059.32,
+    "timestamp_end": 2065.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Lower risk of overall project failure.",
+    "timestamp_start": 2065.46,
+    "timestamp_end": 2068.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The highest priority system services tend to receive the most testing.",
+    "timestamp_start": 2068.66,
+    "timestamp_end": 2074.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What problems there are?",
+    "timestamp_start": 2074.44,
+    "timestamp_end": 2075.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What problems there are?",
+    "timestamp_start": 2075.72,
+    "timestamp_end": 2076.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What problems there are?",
+    "timestamp_start": 2076.72,
+    "timestamp_end": 2077.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Incremental delivery problems.",
+    "timestamp_start": 2077.76,
+    "timestamp_end": 2078.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Incremental delivery problems.",
+    "timestamp_start": 2078.76,
+    "timestamp_end": 2079.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Most systems require a set of basic facilities that are used by different parts of the system.",
+    "timestamp_start": 2084.76,
+    "timestamp_end": 2089.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As requirements are not defined in detail until an increment is to be implemented.",
+    "timestamp_start": 2089.94,
+    "timestamp_end": 2099.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It can be hard to identify common facilities that are needed by all increments.",
+    "timestamp_start": 2099.4,
+    "timestamp_end": 2100.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The essence of iterative processes is that the specification is developed in conjunction with the software.",
+    "timestamp_start": 2100.94,
+    "timestamp_end": 2105.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Based on very simple logicяч göbeceğiniz açıklık 400'te, вами...",
+    "timestamp_start": 2105.56,
+    "timestamp_end": 2106.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ta Crossword buy provider lı recruiting process account is established.",
+    "timestamp_start": 2106.02,
+    "timestamp_end": 2106.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It allows you to design the software system by going to site to its repository.",
+    "timestamp_start": 2106.46,
+    "timestamp_end": 2106.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Jare,t Ezy\",st irmalingaumoiki tercih etmek un Joanna sådan işe làmat.",
+    "timestamp_start": 2106.66,
+    "timestamp_end": 2106.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can anti interpretatörah\".Ar pratik olarak eksik riches ve Europe private banks who operate within your Future chuyenküsir.",
+    "timestamp_start": 2106.96,
+    "timestamp_end": 2107.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu konflik, birçok organizasyonun hizmet modeli ile ilgili.",
+    "timestamp_start": 2107.32,
+    "timestamp_end": 2112.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bütün sistem temelinin sistem gelişim kontraktının bir kısmı.",
+    "timestamp_start": 2112.32,
+    "timestamp_end": 2117.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bir başka model.",
+    "timestamp_start": 2128.32,
+    "timestamp_end": 2130.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "BOEM Spiral Model.",
+    "timestamp_start": 2131.32,
+    "timestamp_end": 2133.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Procesin bir spiral olarak tanımlanır, birçok aktiviteyle baktırma yaparak tanımlanır.",
+    "timestamp_start": 2133.32,
+    "timestamp_end": 2141.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Her sürücün spiral'de bir süreç olarak tanımlanır.",
+    "timestamp_start": 2142.32,
+    "timestamp_end": 2147.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bir tasarım veya tasarım, sürücün spiral'de sürücünler seçilir, neye ihtiyaç duyduklarına göre.",
+    "timestamp_start": 2148.32,
+    "timestamp_end": 2156.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Riskeler süreçlerinde açıkça belirledik ve anlaşılıyor.",
+    "timestamp_start": 2157.32,
+    "timestamp_end": 2162.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "BOEM Spiral Model'in bir software süresi.",
+    "timestamp_start": 2163.32,
+    "timestamp_end": 2168.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Peki, nereye başlıyor?",
+    "timestamp_start": 2169.32,
+    "timestamp_end": 2171.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Buradan başlıyor.",
+    "timestamp_start": 2172.32,
+    "timestamp_end": 2174.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ancak bu bir spiral.",
+    "timestamp_start": 2174.32,
+    "timestamp_end": 2176.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Service.",
+    "timestamp_start": 2176.32,
+    "timestamp_end": 2178.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Açıklama testi.",
+    "timestamp_start": 2181.32,
+    "timestamp_end": 2183.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İntegrasyon testi.",
+    "timestamp_start": 2183.32,
+    "timestamp_end": 2184.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Devam et, bir başka nesil veri ver.",
+    "timestamp_start": 2184.32,
+    "timestamp_end": 2186.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ünit testi.",
+    "timestamp_start": 2186.32,
+    "timestamp_end": 2187.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kod.",
+    "timestamp_start": 2187.32,
+    "timestamp_end": 2188.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Detaylı tasarım.",
+    "timestamp_start": 2188.32,
+    "timestamp_end": 2189.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Operasyon prototip.",
+    "timestamp_start": 2190.32,
+    "timestamp_end": 2191.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Görüyorsunuz.",
+    "timestamp_start": 2191.32,
+    "timestamp_end": 2192.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Spiral modelinde, bir süreç yok.",
+    "timestamp_start": 2193.32,
+    "timestamp_end": 2200.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Spiral'de seçilen süreçte birçok sıra var.",
+    "timestamp_start": 2201.32,
+    "timestamp_end": 2203.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Neye ihtiyaç duyduklarına göre.",
+    "timestamp_start": 2203.32,
+    "timestamp_end": 2205.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani, ilk başlığınızda, neye ihtiyaç duyduğunuzu, neye ihtiyaç duyduğunuzu,",
+    "timestamp_start": 2205.32,
+    "timestamp_end": 2216.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "olaylarınızda,",
+    "timestamp_start": 2217.32,
+    "timestamp_end": 2219.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "geliştirmeniz,",
+    "timestamp_start": 2219.32,
+    "timestamp_end": 2221.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "veya",
+    "timestamp_start": 2221.32,
+    "timestamp_end": 2222.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "objektleri, alternatifleri ve konstraktları seçeneklerine göre.",
+    "timestamp_start": 2222.32,
+    "timestamp_end": 2225.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 2225.32,
+    "timestamp_end": 2226.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani,",
+    "timestamp_start": 2226.32,
+    "timestamp_end": 2227.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bir süreç için neyi seçiyorsunuz?",
+    "timestamp_start": 2227.32,
+    "timestamp_end": 2230.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bunu yapıyorsunuz.",
+    "timestamp_start": 2230.32,
+    "timestamp_end": 2233.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bir süreç için neyi seçiyorsunuz? Bunu yapıyorsunuz.",
+    "timestamp_start": 2233.32,
+    "timestamp_end": 2236.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve neyi seçiyorsanız devam edin.",
+    "timestamp_start": 2236.32,
+    "timestamp_end": 2239.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Neye ihtiyaç duyduğuna göre.",
+    "timestamp_start": 2240.32,
+    "timestamp_end": 2242.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 2242.32,
+    "timestamp_end": 2243.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, spiral modeli.",
+    "timestamp_start": 2243.32,
+    "timestamp_end": 2246.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bir kere bir kere görelim.",
+    "timestamp_start": 2246.32,
+    "timestamp_end": 2248.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Spiral modeli sektörleri.",
+    "timestamp_start": 2249.32,
+    "timestamp_end": 2253.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Objektif seçenekleri.",
+    "timestamp_start": 2253.32,
+    "timestamp_end": 2256.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu kere,",
+    "timestamp_start": 2256.32,
+    "timestamp_end": 2259.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "objektif seçenekleri.",
+    "timestamp_start": 2259.32,
+    "timestamp_end": 2262.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani, bu.",
+    "timestamp_start": 2262.32,
+    "timestamp_end": 2264.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Objektif, alternatif ve konstrakt.",
+    "timestamp_start": 2264.32,
+    "timestamp_end": 2267.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 2267.32,
+    "timestamp_end": 2268.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu kere, objektif, alternatif ve konstrakt.",
+    "timestamp_start": 2268.32,
+    "timestamp_end": 2272.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 2272.32,
+    "timestamp_end": 2273.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu kere, objektif, alternatif ve konstrakt.",
+    "timestamp_start": 2273.32,
+    "timestamp_end": 2276.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 2276.32,
+    "timestamp_end": 2277.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Spiral modeli ayarlar ve kesileşir branşı.",
+    "timestamp_start": 2279.32,
+    "timestamp_end": 2281.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani önemli şiddeti sağlayan çalışmalar ve işlemleri.",
+    "timestamp_start": 2281.32,
+    "timestamp_end": 2284.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Onlar,",
+    "timestamp_start": 2284.32,
+    "timestamp_end": 2285.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ekip öncesinde führ Bahn ile saygıwupl census,",
+    "timestamp_start": 2285.28,
+    "timestamp_end": 2290.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kombinasyon vegrade Lily ülke falan necessitàrabilir,",
+    "timestamp_start": 2290.32,
+    "timestamp_end": 2293.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bölün mekaniz gefunden al verder bilin.",
+    "timestamp_start": 2293.32,
+    "timestamp_end": 2296.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Oh",
+    "timestamp_start": 2296.32,
+    "timestamp_end": 2297.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "rivers",
+    "timestamp_start": 2297.26,
+    "timestamp_end": 2299.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Daha ilk",
+    "timestamp_start": 2299.34,
+    "timestamp_end": 2300.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Asset",
+    "timestamp_start": 2300.32,
+    "timestamp_end": 2302.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çünkü",
+    "timestamp_start": 2302.1,
+    "timestamp_end": 2304.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I",
+    "timestamp_start": 2304.22,
+    "timestamp_end": 2306.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Alt",
+    "timestamp_start": 2306.32,
+    "timestamp_end": 2307.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A development model for the system is chosen which can be any of the generic models.",
+    "timestamp_start": 2307.32,
+    "timestamp_end": 2312.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it can be any of the development model.",
+    "timestamp_start": 2313.1,
+    "timestamp_end": 2315.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Planning.",
+    "timestamp_start": 2315.46,
+    "timestamp_end": 2316.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The project is reviewed and the next phase of the spiral is planned.",
+    "timestamp_start": 2320.94,
+    "timestamp_end": 2325.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Spiral model usage.",
+    "timestamp_start": 2334.74,
+    "timestamp_end": 2336.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Spiral model has been very influential in helping people think about iteration in software processes and introducing the risk-driven approach to development.",
+    "timestamp_start": 2337.32,
+    "timestamp_end": 2347.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is a risk-driven approach.",
+    "timestamp_start": 2348.44,
+    "timestamp_end": 2350.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Based on the risk and evaluation you pick the next phase.",
+    "timestamp_start": 2350.32,
+    "timestamp_end": 2353.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In practice, however, the model is rarely used as published for practical software development.",
+    "timestamp_start": 2355.72,
+    "timestamp_end": 2361.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in practice it is not very practical as it is on the...",
+    "timestamp_start": 2361.28,
+    "timestamp_end": 2367.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...paper.",
+    "timestamp_start": 2367.32,
+    "timestamp_end": 2367.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One second.",
+    "timestamp_start": 2369.64,
+    "timestamp_end": 2370.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 2372.9,
+    "timestamp_end": 2373.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The rationally unified process.",
+    "timestamp_start": 2374.32,
+    "timestamp_end": 2376.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A modern generic process derived from the work on the UML and associated process.",
+    "timestamp_start": 2380.58,
+    "timestamp_end": 2386.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Brings together aspects of the three generic process models discussed previously.",
+    "timestamp_start": 2388.86,
+    "timestamp_end": 2394.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Normally described.",
+    "timestamp_start": 2396.28,
+    "timestamp_end": 2397.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Described from three perspectives.",
+    "timestamp_start": 2397.32,
+    "timestamp_end": 2399.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A dynamic perspective that shows phases over time.",
+    "timestamp_start": 2399.32,
+    "timestamp_end": 2404.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A static perspective that shows process activities.",
+    "timestamp_start": 2404.36,
+    "timestamp_end": 2407.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A practive perspective that suggests good practice.",
+    "timestamp_start": 2407.66,
+    "timestamp_end": 2410.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So.",
+    "timestamp_start": 2410.66,
+    "timestamp_end": 2413.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Phases in the rational unified process.",
+    "timestamp_start": 2413.66,
+    "timestamp_end": 2418.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There is inception phase.",
+    "timestamp_start": 2418.08,
+    "timestamp_end": 2420.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Elaboration phase.",
+    "timestamp_start": 2420.18,
+    "timestamp_end": 2421.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Construction phase and transition phase.",
+    "timestamp_start": 2421.4,
+    "timestamp_end": 2424.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is phase iteration.",
+    "timestamp_start": 2424.4,
+    "timestamp_end": 2426.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ok.",
+    "timestamp_start": 2426.44,
+    "timestamp_end": 2428.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, Rational Unified Phases.",
+    "timestamp_start": 2429.14,
+    "timestamp_end": 2431.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Inception.",
+    "timestamp_start": 2432.56,
+    "timestamp_end": 2433.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Establish the business case for the system.",
+    "timestamp_start": 2436.14,
+    "timestamp_end": 2440.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Elaboration.",
+    "timestamp_start": 2441.66,
+    "timestamp_end": 2442.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Develop an understanding of the problem domain",
+    "timestamp_start": 2444.9,
+    "timestamp_end": 2447.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the system architecture.",
+    "timestamp_start": 2447.68,
+    "timestamp_end": 2449.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Construction.",
+    "timestamp_start": 2449.98,
+    "timestamp_end": 2450.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "System design, programming and testing.",
+    "timestamp_start": 2452.94,
+    "timestamp_end": 2455.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, we continue.",
+    "timestamp_start": 2455.28,
+    "timestamp_end": 2467.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "R.U.P. iteration.",
+    "timestamp_start": 2473.58,
+    "timestamp_end": 2475.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In phase iteration.",
+    "timestamp_start": 2476.7,
+    "timestamp_end": 2477.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Each phase is iterative with results developed incrementally.",
+    "timestamp_start": 2479.72,
+    "timestamp_end": 2482.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Cross-phase iteration.",
+    "timestamp_start": 2482.94,
+    "timestamp_end": 2485.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As shown by the loop in the R.U.P. model, the whole set of phases may be enacted incrementally.",
+    "timestamp_start": 2488.32,
+    "timestamp_end": 2495.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "OK.",
+    "timestamp_start": 2496.94,
+    "timestamp_end": 2497.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Static workflows in the rational unified process.",
+    "timestamp_start": 2502.76,
+    "timestamp_end": 2506.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Business modeling.",
+    "timestamp_start": 2510.14,
+    "timestamp_end": 2511.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İş sürecinin açıklaması.",
+    "timestamp_start": 2512.94,
+    "timestamp_end": 2514.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İş sürecinin açıklaması.",
+    "timestamp_start": 2514.94,
+    "timestamp_end": 2518.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Reqler.",
+    "timestamp_start": 2518.94,
+    "timestamp_end": 2520.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Analiz ve tasarım.",
+    "timestamp_start": 2530.94,
+    "timestamp_end": 2532.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İmplementasyon.",
+    "timestamp_start": 2542.94,
+    "timestamp_end": 2544.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam, devam ediyoruz.",
+    "timestamp_start": 2562.94,
+    "timestamp_end": 2564.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Test.",
+    "timestamp_start": 2570.94,
+    "timestamp_end": 2571.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Test.",
+    "timestamp_start": 2572.94,
+    "timestamp_end": 2574.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Deployment.",
+    "timestamp_start": 2581.94,
+    "timestamp_end": 2583.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Konfigürasyon ve değişim yönetimi.",
+    "timestamp_start": 2590.94,
+    "timestamp_end": 2592.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Projektör.",
+    "timestamp_start": 2600.94,
+    "timestamp_end": 2602.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İş sürecinin yönetimi.",
+    "timestamp_start": 2602.94,
+    "timestamp_end": 2604.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu destekli çalışma sistem gelişimini yönetiyor.",
+    "timestamp_start": 2606.94,
+    "timestamp_end": 2609.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bir çevre.",
+    "timestamp_start": 2609.94,
+    "timestamp_end": 2611.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu çalışma,",
+    "timestamp_start": 2618.94,
+    "timestamp_end": 2620.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software gelişimleri için",
+    "timestamp_start": 2620.94,
+    "timestamp_end": 2622.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "mümkün olan araştırma araçları",
+    "timestamp_start": 2622.94,
+    "timestamp_end": 2624.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "için.",
+    "timestamp_start": 2624.94,
+    "timestamp_end": 2626.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam, bu yüzden.",
+    "timestamp_start": 2626.94,
+    "timestamp_end": 2628.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "R.U.P. iyi bir pratik.",
+    "timestamp_start": 2628.94,
+    "timestamp_end": 2630.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software gelişimini iteratif olarak geliştirin.",
+    "timestamp_start": 2630.94,
+    "timestamp_end": 2632.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kullanma önceliklerini kutlamalarına göre",
+    "timestamp_start": 2634.94,
+    "timestamp_end": 2636.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kutlamaların önceliklerini en yüksek önceliklere",
+    "timestamp_start": 2636.94,
+    "timestamp_end": 2638.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "verin.",
+    "timestamp_start": 2638.94,
+    "timestamp_end": 2640.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, durumlarınızda",
+    "timestamp_start": 2640.94,
+    "timestamp_end": 2642.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "çok faydalı olabilir.",
+    "timestamp_start": 2642.94,
+    "timestamp_end": 2644.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Diyelim ki siz",
+    "timestamp_start": 2644.94,
+    "timestamp_end": 2646.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bir e-commerce",
+    "timestamp_start": 2646.94,
+    "timestamp_end": 2648.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sitemizi kuruyorsunuz.",
+    "timestamp_start": 2648.94,
+    "timestamp_end": 2650.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "En yüksek öncelikler ne olur?",
+    "timestamp_start": 2650.94,
+    "timestamp_end": 2652.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çatı sistemi,",
+    "timestamp_start": 2652.94,
+    "timestamp_end": 2654.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "iş payı sistemi.",
+    "timestamp_start": 2654.94,
+    "timestamp_end": 2656.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk olarak onları",
+    "timestamp_start": 2656.94,
+    "timestamp_end": 2658.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "verirseniz,",
+    "timestamp_start": 2658.94,
+    "timestamp_end": 2660.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve sonra",
+    "timestamp_start": 2660.94,
+    "timestamp_end": 2662.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kutlamalar değişimlerini veya",
+    "timestamp_start": 2662.94,
+    "timestamp_end": 2664.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "işsizlik arttırmalarını yapabilirsiniz.",
+    "timestamp_start": 2664.94,
+    "timestamp_end": 2666.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "En yüksek önceliklerle",
+    "timestamp_start": 2666.94,
+    "timestamp_end": 2668.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bu şekilde",
+    "timestamp_start": 2668.94,
+    "timestamp_end": 2670.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software gelişimini geliştirebilirsiniz.",
+    "timestamp_start": 2670.94,
+    "timestamp_end": 2672.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Manage requirement.",
+    "timestamp_start": 2672.94,
+    "timestamp_end": 2674.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kullanma önceliklerini",
+    "timestamp_start": 2676.94,
+    "timestamp_end": 2678.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve bu önceliklere",
+    "timestamp_start": 2678.94,
+    "timestamp_end": 2680.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişimleri takip et.",
+    "timestamp_start": 2680.94,
+    "timestamp_end": 2682.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kullanma önceliklerini",
+    "timestamp_start": 2682.94,
+    "timestamp_end": 2684.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve bu önceliklere",
+    "timestamp_start": 2684.94,
+    "timestamp_end": 2686.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "takip et.",
+    "timestamp_start": 2686.94,
+    "timestamp_end": 2688.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Mekanik modeli",
+    "timestamp_start": 2688.94,
+    "timestamp_end": 2690.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve sistem arketekştiri",
+    "timestamp_start": 2690.94,
+    "timestamp_end": 2692.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve kullanımlı",
+    "timestamp_start": 2692.94,
+    "timestamp_end": 2695.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kılavuzlar bir seti.",
+    "timestamp_start": 2695.94,
+    "timestamp_end": 2697.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "RUP iyi bir",
+    "timestamp_start": 2697.94,
+    "timestamp_end": 2698.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yargı.",
+    "timestamp_start": 2698.94,
+    "timestamp_end": 2700.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu RUP'nin",
+    "timestamp_start": 2700.94,
+    "timestamp_end": 2702.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "iyi bir yargı.",
+    "timestamp_start": 2702.94,
+    "timestamp_end": 2704.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bunu takip etmelisiniz.",
+    "timestamp_start": 2704.94,
+    "timestamp_end": 2706.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Vizual model",
+    "timestamp_start": 2706.94,
+    "timestamp_end": 2708.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software.",
+    "timestamp_start": 2708.94,
+    "timestamp_end": 2710.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Grafik UML modeli",
+    "timestamp_start": 2710.94,
+    "timestamp_end": 2712.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software'ın",
+    "timestamp_start": 2712.94,
+    "timestamp_end": 2714.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "statik ve dinamik",
+    "timestamp_start": 2714.94,
+    "timestamp_end": 2716.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kalite,",
+    "timestamp_start": 2716.94,
+    "timestamp_end": 2718.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software'ın organizasyonel kalite standartlarına karşı karşılaşılması,",
+    "timestamp_start": 2718.94,
+    "timestamp_end": 2722.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software'a değişimleri kontrol etmeleri,",
+    "timestamp_start": 2726.94,
+    "timestamp_end": 2729.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software değişimlerini değişim yönetim sistem ve konfigürasyon yönetim araçlarıyla yönetilir.",
+    "timestamp_start": 2731.94,
+    "timestamp_end": 2737.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Peki, 2. bölümün, 2. dersin,",
+    "timestamp_start": 2738.94,
+    "timestamp_end": 2745.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Procesler değişimle karşılaşılması için yapılan işlemleri de bulunmalıdır. Bu, proje değişimlerine karşı karşılaşılması ve tasarımlarına karşı karşılaşılması için zorluklu bir karar vermek için yardımcı olabilen bir bölümdür.",
+    "timestamp_start": 2746.94,
+    "timestamp_end": 2757.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani, bir software, yeni requerimleri, yeni trendleri karşılaşır, değişimleri karşılaşır, yeni tasarımları karşılaşır, böyle bir şekilde planlanmalı.",
+    "timestamp_start": 2758.94,
+    "timestamp_end": 2773.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Statik olmalı,",
+    "timestamp_start": 2774.94,
+    "timestamp_end": 2775.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İBSCRI Zach Coca'nın At tea",
+    "timestamp_start": 2776.94,
+    "timestamp_end": 2778.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bir konferansı var ve",
+    "timestamp_start": 2780.94,
+    "timestamp_end": 2788.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "deneyimi mutlu etmek için çok daha çok has dizisinin for Nine'i",
+    "timestamp_start": 2790.94,
+    "timestamp_end": 2792.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ツabini",
+    "timestamp_start": 2792.94,
+    "timestamp_end": 2805.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu çok eski. Bu da çok önemli. Çünkü, diyelim ki, müşteriniz size çok büyük bir sistem",
+    "timestamp_start": 2806.94,
+    "timestamp_end": 2816.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "geliştirmek istediler. Bu sistem, diyelim ki, yaklaşık 5 yıl geliştirecek. Ama 5 yıl içinde",
+    "timestamp_start": 2816.94,
+    "timestamp_end": 2830.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "müşteriniz hiç para yapmadan gitmeyecek. Yani, müşterinizin iteratif geliştirme ve",
+    "timestamp_start": 2830.94,
+    "timestamp_end": 2842.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "hücresi için kuruluşlarınızın bir şekilde kuruluşu ve hücresi için kuruluşlarınızın bir şekilde kuruluşu",
+    "timestamp_start": 2842.94,
+    "timestamp_end": 2847.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapabilmek için yapılan işlerinizi planlayabilirsiniz. Yani, müşteriniz, uygulama ve para yapmaya başlayacak.",
+    "timestamp_start": 2847.94,
+    "timestamp_end": 2853.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve size, diyelim ki, ayda para ödeyebilecek. Bu arada, müşteriniz de,",
+    "timestamp_start": 2853.94,
+    "timestamp_end": 2859.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "hücresi için para yapmaya başlayacak. Yani sonunda, müşteriniz hala hücresi alıyor ve",
+    "timestamp_start": 2859.94,
+    "timestamp_end": 2867.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "her ay para alıyorsunuz ve müşteriniz de biraz para yaratıyor. Bu, en çok yapılan sistemlerin",
+    "timestamp_start": 2867.94,
+    "timestamp_end": 2876.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "en çok yapılan sistemlerin en çok yapılan sistemlerin birçok parayı kaybedebilir ve",
+    "timestamp_start": 2876.94,
+    "timestamp_end": 2883.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "müşterinizin çok büyük bir sistem değilse, daha çok para kaybedebilir ve",
+    "timestamp_start": 2883.94,
+    "timestamp_end": 2888.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bana ulaşmak için para lustrayıp, daha çok para yaptığı için bewletme alabilirsiniz.",
+    "timestamp_start": 2888.94,
+    "timestamp_end": 2895.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Peki, bu teori hakkında ne kaydediydi?",
+    "timestamp_start": 2895.94,
+    "timestamp_end": 2901.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "列 rozsuz şifre tarifin şeytinde gelişme ve değişme ücretiyle ilgili daha çok şifre",
+    "timestamp_start": 2901.92,
+    "timestamp_end": 2902.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "parlé fracture categora söyle desarrollo ve bu menget, chick слыш imposing отлич Oops'u",
+    "timestamp_start": 2902.94,
+    "timestamp_end": 2903.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "An Люб birda da yine bir aynı yanda düşündü mi tulacıkçı niye",
+    "timestamp_start": 2903.94,
+    "timestamp_end": 2905.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ikincisi ise, rakamın geçe Trainer'ın vorchselidedrail.",
+    "timestamp_start": 2905.94,
+    "timestamp_end": 2908.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani aile-beşli Kanal healeraced, diğer arทeltkası",
+    "timestamp_start": 2908.94,
+    "timestamp_end": 2911.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ulis blackfield middle ic province y sudden yuhman City-daki Yxö an",
+    "timestamp_start": 2911.86,
+    "timestamp_end": 2914.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "gönep-reale.-",
+    "timestamp_start": 2914.94,
+    "timestamp_end": 2917.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "также y�re leer deep, gowrland gowrland, gowrland, yuhman D scattered Dorthos yuhman",
+    "timestamp_start": 2917.9,
+    "timestamp_end": 2918.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu modern bir genel süreç ve olaylarla birlikte kullanılıyor.",
+    "timestamp_start": 2918.94,
+    "timestamp_end": 2922.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İnternette de paylaşalım.",
+    "timestamp_start": 2922.94,
+    "timestamp_end": 2925.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Wikipedia'dan da okuyalım.",
+    "timestamp_start": 2925.94,
+    "timestamp_end": 2929.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ok, bir hikaye var.",
+    "timestamp_start": 2948.94,
+    "timestamp_end": 2968.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ok, birkaç bünyelik blok okuyalim.",
+    "timestamp_start": 2968.94,
+    "timestamp_end": 2973.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Nasıl bir JCB kelimesini okuduklarımızın tekrarına da uyguladığı bir next-generation elde BJT estil analizi konusu.",
+    "timestamp_start": 2978.94,
+    "timestamp_end": 2983.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu kısımlar, şunuажı Bismillahirrahmanirrahim hemen vale油 enthusiast Bakan mahkemesi kısımlarından anlay succeeded Соş Imaginski Crow duyalım.",
+    "timestamp_start": 2983.94,
+    "timestamp_end": 2988.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sadece nuestras sanoği finger",
+    "timestamp_start": 2988.94,
+    "timestamp_end": 3001.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "en ünlü kese Hawitt genelsel yönetim konusunda değişik harflersey.",
+    "timestamp_start": 3001.94,
+    "timestamp_end": 3007.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu işlemi, tüm dokümanları ve modelleri, çalışma sürecinde çalışanlarla ilgili bir iş.",
+    "timestamp_start": 3007.94,
+    "timestamp_end": 3013.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İşler, bir iş, bir iş ürünü, bir rol ile alınan bir iş.",
+    "timestamp_start": 3013.94,
+    "timestamp_end": 3020.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Her iterasyonun içinde, işler 9 disipline kategorize edilir.",
+    "timestamp_start": 3020.94,
+    "timestamp_end": 3026.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "6. Disipline, iş modelleri, analiz ve tasarım, işaret, test, işaret.",
+    "timestamp_start": 3026.94,
+    "timestamp_end": 3034.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "3. Disipline, konfigürasyon ve değişim yönetimi, proje yönetimi, çevre.",
+    "timestamp_start": 3037.94,
+    "timestamp_end": 3046.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "4. Proje, hayat sürecinin fazlası.",
+    "timestamp_start": 3046.94,
+    "timestamp_end": 3051.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "R.U.P. proje hayat sürecini 4 fazlasıyla seçti.",
+    "timestamp_start": 3051.94,
+    "timestamp_end": 3056.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu fazlası, proje, yukarıdaki bir yönde gösterilebilir.",
+    "timestamp_start": 3056.94,
+    "timestamp_end": 3061.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, bir yönde gösterilebilir.",
+    "timestamp_start": 3061.94,
+    "timestamp_end": 3065.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu yönde, bir yönde gösterilebilir.",
+    "timestamp_start": 3065.94,
+    "timestamp_end": 3066.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "6. Ruzuk",
+    "timestamp_start": 3066.94,
+    "timestamp_end": 3069.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Söz,, yapısını cesavet etmek için serve yönetimロ.",
+    "timestamp_start": 3069.3,
+    "timestamp_end": 3071.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "6, bir yö nouptes只 müşteri olan modelin bahsedildiği back-up kiddedibilmiş,",
+    "timestamp_start": 3071.3,
+    "timestamp_end": 3074.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "göstermez ve geçirilerek uncle file ile broader öğretil roboticрачların şeklini rozum stimuli",
+    "timestamp_start": 3074.94,
+    "timestamp_end": 3077.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sıTo cezada diktir�, correlated splitting ve",
+    "timestamp_start": 3077.94,
+    "timestamp_end": 3085.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "そう fly s whiskey modelinin akşam uçak verisinden at believes",
+    "timestamp_start": 3085.1,
+    "timestamp_end": 3091.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": ",",
+    "timestamp_start": 3091.74,
+    "timestamp_end": 3094.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in ciptağın Ya-tab",
+    "timestamp_start": 3094.36,
+    "timestamp_end": 3095.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "8. Hayat sıça vivası",
+    "timestamp_start": 3095.04,
+    "timestamp_end": 3095.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "7. İlginç çeşpoints",
+    "timestamp_start": 3095.14,
+    "timestamp_end": 3096.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Öncelikli olarak sistemin başlangıcı ve ödeme ve hizmeti verilmesi için adetli bir basınç olarak skop yapmak.",
+    "timestamp_start": 3096.38,
+    "timestamp_end": 3103.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu bölümde işçilik, iş kontekstini, başarı faktörlerini, beklenen ücreti, marka tanımını, vs. ve finansal bekletimi oluşturmak.",
+    "timestamp_start": 3103.38,
+    "timestamp_end": 3114.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İşçilik konusunda, basit bir kullanım modeli, proje planı, başlangıç risk ayarlaması ve proje açıklaması,",
+    "timestamp_start": 3114.38,
+    "timestamp_end": 3122.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "başlangıç proje requerimleri, zorunları ve önemli fiyatları oluşturmak.",
+    "timestamp_start": 3122.38,
+    "timestamp_end": 3127.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bunların tamamlanmasından sonra, proje bu kriterleri kontrol etmeye çalışılır.",
+    "timestamp_start": 3127.38,
+    "timestamp_end": 3132.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Skop definisyonu ve kuruldurma belirli bir şartı ve kuruldurma belirli bir şartı.",
+    "timestamp_start": 3134.38,
+    "timestamp_end": 3139.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Biliyemiz ve özelliklerine göre, işçilik kullanımlarının adetli bir kullanım olasılığı, kuruldurma belirli bir şartı,",
+    "timestamp_start": 3139.38,
+    "timestamp_end": 3145.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "risk ve gelişim süreci, ödeme ve hizmeti, etkili bir şartı, ve başlangıç ve uzmanlık süreci,",
+    "timestamp_start": 3145.38,
+    "timestamp_end": 3150.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kuruldurma belirli bir şartı, ve başlangıç ve uzmanlık süreci, özellik ve uzmanlık süreci,",
+    "timestamp_start": 3150.38,
+    "timestamp_end": 3151.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kemik %First rescue modeli ve ikinci aşırı olduğun şart.",
+    "timestamp_start": 3151.38,
+    "timestamp_end": 3160.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu westlake haceptile do",
+    "timestamp_start": 3161.38,
+    "timestamp_end": 3170.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "lemek Ahmad",
+    "timestamp_start": 3170.0,
+    "timestamp_end": 3172.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yarcore",
+    "timestamp_start": 3174.78,
+    "timestamp_end": 3177.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Önemli olan, analizden gelene kadar bu aşamadan dolayı bilinmeyen önemli risk alanlarını temsil etmek.",
+    "timestamp_start": 3181.38,
+    "timestamp_end": 3188.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu aşamadan dolayı proje başlıyor.",
+    "timestamp_start": 3188.38,
+    "timestamp_end": 3192.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu aşamada sorun domeni analiz yapılıyor ve proje arketörünün basit formunu alıyor.",
+    "timestamp_start": 3192.38,
+    "timestamp_end": 3199.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu aşamadan dolayı sonuçlar...",
+    "timestamp_start": 3199.38,
+    "timestamp_end": 3202.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...sizce, işsizlik ve risk alanlarına sahip olduğu, ve bu işsizlik alanlarına sahip olduğu bir işsizlik modeli oluşturuyor.",
+    "timestamp_start": 3202.38,
+    "timestamp_end": 3214.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İşsizlik modeli 80% tamamlanmalı.",
+    "timestamp_start": 3214.38,
+    "timestamp_end": 3217.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İşsizlik alanlarında, bir sistem gelişim prosesi içinde, araştırıcı bir araştırma, işsizlik alanlarında ve risk alanlarında...",
+    "timestamp_start": 3217.38,
+    "timestamp_end": 3226.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "...sizce, işsizlik ve risk alanlarında yapılan işsizlik modeli oluşturuyor.",
+    "timestamp_start": 3226.38,
+    "timestamp_end": 3231.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bütün projelerin gelişim planı.",
+    "timestamp_start": 3231.38,
+    "timestamp_end": 3234.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prototipler, her tanıdık teknik riskleri temsil etmek.",
+    "timestamp_start": 3234.38,
+    "timestamp_end": 3238.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Öncelikli kullanıcı manueli.",
+    "timestamp_start": 3238.38,
+    "timestamp_end": 3241.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu aşamada, bu soruları soranlarla ilgili, hayat sürecinin, arketörlü bir araya geçmek gerektiğini soruyor.",
+    "timestamp_start": 3243.38,
+    "timestamp_end": 3249.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Projelerin vizyonu, arketörlü bir araya geçiyor mu?",
+    "timestamp_start": 3250.38,
+    "timestamp_end": 3254.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İşsizlik alanlarında, önemli risk alanları, adres ve kesimlerle iletilmiş oluyor mu?",
+    "timestamp_start": 3254.38,
+    "timestamp_end": 3260.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "D Speak'da şu konuya yaklaşık detaylı ve doğru kullanım法ı var mı?",
+    "timestamp_start": 3260.38,
+    "timestamp_end": 3264.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Her soruittäklarla, yılan laHSF çalışmasının kon существu sürücüler için bebanhangi kullanımla protectürleri olebiliyor.",
+    "timestamp_start": 3264.38,
+    "timestamp_end": 3271.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ancak plan verenilos olmak ön undertapa anoş located mi?",
+    "timestamp_start": 3271.38,
+    "timestamp_end": 3275.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Eğer proje bu vizyonu t famavar geçirmezse, hala o romantikdeki beleni yalanlamaya ikynıla olsun.",
+    "timestamp_start": 3278.38,
+    "timestamp_end": 3284.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ancak, bu puan speak'ın sonunda programm оlek mugradlarında era geçiyor.",
+    "timestamp_start": 3284.38,
+    "timestamp_end": 3289.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "değişimler çok daha zor ve etkili.",
+    "timestamp_start": 3290.38,
+    "timestamp_end": 3293.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yönetim arketikleri olarak iletişim ve",
+    "timestamp_start": 3293.38,
+    "timestamp_end": 3297.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapım arketikleri olarak ana alan analiz edilir.",
+    "timestamp_start": 3297.38,
+    "timestamp_end": 3300.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yönetim Fazı",
+    "timestamp_start": 3300.38,
+    "timestamp_end": 3303.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Önemli olan, software sistemini",
+    "timestamp_start": 3303.38,
+    "timestamp_end": 3306.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "oluşturmak. Bu faza,",
+    "timestamp_start": 3306.38,
+    "timestamp_end": 3308.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "fonksiyonun ve sistemlerin diğer",
+    "timestamp_start": 3308.38,
+    "timestamp_end": 3311.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "özellikleriyle ilerleme konusunda",
+    "timestamp_start": 3311.38,
+    "timestamp_end": 3313.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "en çok konutlanmıştır. Bu faza,",
+    "timestamp_start": 3313.38,
+    "timestamp_end": 3315.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kodun çoğunluğunun yerine çıkması.",
+    "timestamp_start": 3315.38,
+    "timestamp_end": 3317.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Büyük projelerde, çoğunlukla",
+    "timestamp_start": 3317.38,
+    "timestamp_end": 3319.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapılan işlemler,",
+    "timestamp_start": 3319.38,
+    "timestamp_end": 3321.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kullanım durumlarını",
+    "timestamp_start": 3321.38,
+    "timestamp_end": 3323.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yönetilebilir segmentlerden",
+    "timestamp_start": 3323.38,
+    "timestamp_end": 3325.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kullanıcı prototiplerden",
+    "timestamp_start": 3325.38,
+    "timestamp_end": 3327.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "oluşturulabilir.",
+    "timestamp_start": 3327.38,
+    "timestamp_end": 3329.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kodun başladığında,",
+    "timestamp_start": 3329.38,
+    "timestamp_end": 3331.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "çok şeyin",
+    "timestamp_start": 3331.38,
+    "timestamp_end": 3334.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "başlaması gerektiğini görüyorsunuz.",
+    "timestamp_start": 3334.38,
+    "timestamp_end": 3338.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İlk olarak, incelemenin",
+    "timestamp_start": 3338.38,
+    "timestamp_end": 3341.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sonucunu tamamlıyorsunuz ve",
+    "timestamp_start": 3341.38,
+    "timestamp_end": 3343.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sonra, başlamalarını tamamlamalısınız.",
+    "timestamp_start": 3343.38,
+    "timestamp_end": 3346.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Planlarınızı tamamlıyorsunuz ve",
+    "timestamp_start": 3346.38,
+    "timestamp_end": 3348.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tüm dokumentasyonları tamamlıyorsunuz.",
+    "timestamp_start": 3348.38,
+    "timestamp_end": 3350.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Risk analizini tamamlıyorsunuz.",
+    "timestamp_start": 3350.38,
+    "timestamp_end": 3353.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve sonra, sadece",
+    "timestamp_start": 3353.38,
+    "timestamp_end": 3356.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tüm bu kuru fazaları",
+    "timestamp_start": 3356.38,
+    "timestamp_end": 3358.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "oluşturduğunuzda, kodun başlıyorsunuz.",
+    "timestamp_start": 3358.38,
+    "timestamp_end": 3360.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, software mühendisliğinin",
+    "timestamp_start": 3360.38,
+    "timestamp_end": 3362.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "hareketi. Software mühendisliği",
+    "timestamp_start": 3362.38,
+    "timestamp_end": 3364.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "hemen kodun başlamıyor ve",
+    "timestamp_start": 3364.38,
+    "timestamp_end": 3367.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sonra, kodun ve geliştirme",
+    "timestamp_start": 3367.38,
+    "timestamp_end": 3369.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sürecinin tüm değişimlerini",
+    "timestamp_start": 3369.38,
+    "timestamp_end": 3371.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "başlıyor.",
+    "timestamp_start": 3371.38,
+    "timestamp_end": 3373.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, kodun başlamaya",
+    "timestamp_start": 3373.38,
+    "timestamp_end": 3375.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "etkili olacaktır.",
+    "timestamp_start": 3375.38,
+    "timestamp_end": 3377.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistem, arktikültür ve",
+    "timestamp_start": 3378.38,
+    "timestamp_end": 3381.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve",
+    "timestamp_start": 3381.38,
+    "timestamp_end": 3383.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "diğer şeyler.",
+    "timestamp_start": 3383.38,
+    "timestamp_end": 3385.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu,",
+    "timestamp_start": 3385.38,
+    "timestamp_end": 3386.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software mühendisliğinin",
+    "timestamp_start": 3386.38,
+    "timestamp_end": 3388.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kalitesini arttıracaktır.",
+    "timestamp_start": 3388.38,
+    "timestamp_end": 3389.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, birkaç fase",
+    "timestamp_start": 3389.38,
+    "timestamp_end": 3390.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sonra devam etmektedir ve",
+    "timestamp_start": 3390.38,
+    "timestamp_end": 3392.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "her şeyi",
+    "timestamp_start": 3392.38,
+    "timestamp_end": 3394.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kodlamak zorundasınız.",
+    "timestamp_start": 3394.38,
+    "timestamp_end": 3396.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve böyle şeyler.",
+    "timestamp_start": 3396.38,
+    "timestamp_end": 3398.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani,",
+    "timestamp_start": 3398.38,
+    "timestamp_end": 3399.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "software mühendisliği",
+    "timestamp_start": 3399.38,
+    "timestamp_end": 3401.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "planla,",
+    "timestamp_start": 3401.38,
+    "timestamp_end": 3403.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tasarımla,",
+    "timestamp_start": 3403.38,
+    "timestamp_end": 3405.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sonra,",
+    "timestamp_start": 3405.38,
+    "timestamp_end": 3406.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "başlangıç fazları",
+    "timestamp_start": 3406.38,
+    "timestamp_end": 3408.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapıp,",
+    "timestamp_start": 3408.38,
+    "timestamp_end": 3410.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kodlamaya başlıyor.",
+    "timestamp_start": 3410.38,
+    "timestamp_end": 3412.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani,",
+    "timestamp_start": 3412.38,
+    "timestamp_end": 3414.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "her şey planlanmış olduğunda,",
+    "timestamp_start": 3414.38,
+    "timestamp_end": 3416.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kodlamak en kolay kodluyor.",
+    "timestamp_start": 3416.38,
+    "timestamp_end": 3418.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Değil mi?",
+    "timestamp_start": 3418.38,
+    "timestamp_end": 3420.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sistem,",
+    "timestamp_start": 3420.38,
+    "timestamp_end": 3422.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "geliştirme sürecinin",
+    "timestamp_start": 3422.38,
+    "timestamp_end": 3424.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tüm değişimlerini",
+    "timestamp_start": 3424.38,
+    "timestamp_end": 3426.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "başlıyor.",
+    "timestamp_start": 3426.38,
+    "timestamp_end": 3428.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu,",
+    "timestamp_start": 3428.38,
+    "timestamp_end": 3430.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kodlamak zorundadır.",
+    "timestamp_start": 3430.38,
+    "timestamp_end": 3432.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu,",
+    "timestamp_start": 3432.38,
+    "timestamp_end": 3434.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "şirketin,",
+    "timestamp_start": 3434.38,
+    "timestamp_end": 3436.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kodlamak için",
+    "timestamp_start": 3436.38,
+    "timestamp_end": 3438.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapılan,",
+    "timestamp_start": 3438.38,
+    "timestamp_end": 3440.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ve",
+    "timestamp_start": 3440.38,
+    "timestamp_end": 3442.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "işlemciye",
+    "timestamp_start": 3442.38,
+    "timestamp_end": 3444.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "anlaşılan,",
+    "timestamp_start": 3444.38,
+    "timestamp_end": 3446.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "süreçte",
+    "timestamp_start": 3446.38,
+    "timestamp_end": 3448.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kodlamak için",
+    "timestamp_start": 3448.38,
+    "timestamp_end": 3450.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapılan,",
+    "timestamp_start": 3450.38,
+    "timestamp_end": 3452.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "süreçte",
+    "timestamp_start": 3452.38,
+    "timestamp_end": 3454.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapılan,",
+    "timestamp_start": 3454.38,
+    "timestamp_end": 3456.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "işlemciye",
+    "timestamp_start": 3456.38,
+    "timestamp_end": 3458.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapılan,",
+    "timestamp_start": 3458.38,
+    "timestamp_end": 3460.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "süreçte",
+    "timestamp_start": 3460.38,
+    "timestamp_end": 3462.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "yapılan,",
+    "timestamp_start": 3462.38,
+    "timestamp_end": 3464.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "d witnesses",
+    "timestamp_start": 3464.38,
+    "timestamp_end": 3466.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "backyard",
+    "timestamp_start": 3466.38,
+    "timestamp_end": 3467.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ş Learning",
+    "timestamp_start": 3467.38,
+    "timestamp_end": 3468.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ş Near",
+    "timestamp_start": 3468.38,
+    "timestamp_end": 3469.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ej lol",
+    "timestamp_start": 3469.38,
+    "timestamp_end": 3470.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "te Pacific",
+    "timestamp_start": 3470.38,
+    "timestamp_end": 3471.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Watch",
+    "timestamp_start": 3471.88,
+    "timestamp_end": 3472.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "organlar",
+    "timestamp_start": 3472.38,
+    "timestamp_end": 3473.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kültür",
+    "timestamp_start": 3473.38,
+    "timestamp_end": 3474.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bu",
+    "timestamp_start": 3474.38,
+    "timestamp_end": 3476.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "şiir",
+    "timestamp_start": 3476.38,
+    "timestamp_end": 3477.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sist",
+    "timestamp_start": 3477.38,
+    "timestamp_end": 3478.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "formulate",
+    "timestamp_start": 3478.36,
+    "timestamp_end": 3479.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ing",
+    "timestamp_start": 3479.38,
+    "timestamp_end": 3480.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "krátones",
+    "timestamp_start": 3480.62,
+    "timestamp_end": 3481.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "art Similar",
+    "timestamp_start": 3481.38,
+    "timestamp_end": 3482.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sohbet",
+    "timestamp_start": 3482.38,
+    "timestamp_end": 3483.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Society",
+    "timestamp_start": 3483.38,
+    "timestamp_end": 3484.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Lot",
+    "timestamp_start": 3484.38,
+    "timestamp_end": 3491.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kayıt folklor anlamına girerkindir.",
+    "timestamp_start": 3492.38,
+    "timestamp_end": 3501.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ancak sıkkınlar sings Putin'e izlenWhereeni Bilgi olması eigenlijk büyük bir maliyet telefonunuacımı alır.",
+    "timestamp_start": 3502.62,
+    "timestamp_end": 3516.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bir ilerleyici proje yaratılması sadece önerilen değil, aslında önlemli.",
+    "timestamp_start": 3516.58,
+    "timestamp_end": 3521.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, birçok altyapıda birleştirilmeden önce birleştirilmeden önce birçok altyapıyı test etmek için yardımcı oluyor.",
+    "timestamp_start": 3521.58,
+    "timestamp_end": 3527.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ayrıca, kod kullanımının büyük bir faydası ve objektif programlamanın kullanımıyla kullanılabilmesi daha kolay.",
+    "timestamp_start": 3527.58,
+    "timestamp_end": 3535.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Model, bütün büyük altyapıları, kullanıcılar ve iletişimlerini etkilemeyi kullanmak için görülebilir.",
+    "timestamp_start": 3535.58,
+    "timestamp_end": 3541.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "UML, birleştirilme diline kastediyorum, bu işlemi daha uygun yapabilmek için kullanılabilir bir araç.",
+    "timestamp_start": 3541.58,
+    "timestamp_end": 3548.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Verify Quality her zaman projeyi en büyük kısımdan yapar.",
+    "timestamp_start": 3548.58,
+    "timestamp_end": 3554.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Projeyi test ediyorsanız, projeyin başarıları daha yüksek olacak ama her bir software üretimine bir süreç olmalıdır.",
+    "timestamp_start": 3554.58,
+    "timestamp_end": 3561.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kontrol değişimi",
+    "timestamp_start": 3561.58,
+    "timestamp_end": 3563.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Birçok projeyi birçok ekibin yaratıldığı zaman, farklı yerlerde, farklı platformlarda kullanılabilir.",
+    "timestamp_start": 3563.58,
+    "timestamp_end": 3570.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "E.g.",
+    "timestamp_start": 3570.58,
+    "timestamp_end": 3571.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Aslında, sistemine yaptığı değişimler sürekli sincronize ve verif edilmeyecek.",
+    "timestamp_start": 3571.58,
+    "timestamp_end": 3578.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kontinüist İntegrasyon",
+    "timestamp_start": 3578.58,
+    "timestamp_end": 3580.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software Engineering'da, kontinüist iletişim,",
+    "timestamp_start": 3594.58,
+    "timestamp_end": 3597.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Merkezlerle çalışanlarla birleştirilmesi,",
+    "timestamp_start": 3597.58,
+    "timestamp_end": 3600.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yine de, birçok gün birçok zaman bir araya ayrı bir başlangıç olarak çalışanlarla çalışanlarla birleştirilmesi,",
+    "timestamp_start": 3600.58,
+    "timestamp_end": 3604.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "1. Grady Butch ilk önce 1991'deki metodunda C'yi önerdi.",
+    "timestamp_start": 3604.58,
+    "timestamp_end": 3609.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "2. Ayrıca, birçok gün bir araya ayrı bir başlangıç olarak iletişim yapmadığını önerdi.",
+    "timestamp_start": 3609.58,
+    "timestamp_end": 3613.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "X-P, Extreme Programming'da, C'yi iletişim yapmak ve bir gün bir araya ayrı bir başlangıç olarak iletişim yapmak adresini kabul etti.",
+    "timestamp_start": 3613.58,
+    "timestamp_end": 3620.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Belki de birçok gün bir araya ayrı bir başlangıç olarak.",
+    "timestamp_start": 3620.58,
+    "timestamp_end": 3623.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam, o zaman,",
+    "timestamp_start": 3625.58,
+    "timestamp_end": 3626.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Eğer bir şeyin kesinlikle anlamayacağınız bir şey varsa,",
+    "timestamp_start": 3626.58,
+    "timestamp_end": 3631.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İnternette daha fazla bilgi için bakabilirsiniz.",
+    "timestamp_start": 3631.58,
+    "timestamp_end": 3636.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Her zaman daha fazla bilgi var.",
+    "timestamp_start": 3636.58,
+    "timestamp_end": 3638.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software İngilizcesi sadece değerinizi artıracak,",
+    "timestamp_start": 3638.58,
+    "timestamp_end": 3643.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "İyi bir iş almak için şansınızı artıracak, iyi bir para almak için şansınızı artıracak ve",
+    "timestamp_start": 3643.58,
+    "timestamp_end": 3649.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sizleri arayacak ve geliştiricilerden ayrılacak.",
+    "timestamp_start": 3649.58,
+    "timestamp_end": 3654.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 3654.58,
+    "timestamp_end": 3655.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "10-20 yıldan daha fazla kodlayıcı ve geliştiriciler var.",
+    "timestamp_start": 3656.58,
+    "timestamp_end": 3664.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çok yüksek bir kutu var.",
+    "timestamp_start": 3664.58,
+    "timestamp_end": 3666.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yani, programcılar, kodlayıcı, arayışçıları ile kendinizi ayrılmak için iyi bir software inisiyatörü olmak zorundasınız.",
+    "timestamp_start": 3666.58,
+    "timestamp_end": 3678.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu yüzden büyük kurumlar,",
+    "timestamp_start": 3678.58,
+    "timestamp_end": 3681.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sizin içinizde de varlık görür.",
+    "timestamp_start": 3681.58,
+    "timestamp_end": 3684.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Google gibi, Facebook gibi,",
+    "timestamp_start": 3684.58,
+    "timestamp_end": 3685.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Apple gibi, Amazon gibi ve böyle bir şirket.",
+    "timestamp_start": 3685.58,
+    "timestamp_end": 3691.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve sizleri arayacaklar.",
+    "timestamp_start": 3691.58,
+    "timestamp_end": 3695.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Çünkü,",
+    "timestamp_start": 3695.58,
+    "timestamp_end": 3696.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software inisiyatörü olarak, sizlere bir ekip olarak, büyük bir kurum olarak çalışabilmeniz, bir ekip olarak, bir parça olarak yardımcı olacağını verir.",
+    "timestamp_start": 3696.58,
+    "timestamp_end": 3706.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 3706.58,
+    "timestamp_end": 3708.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, bugün de bahsettiğimiz bir ders.",
+    "timestamp_start": 3708.58,
+    "timestamp_end": 3712.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Derslerimizi GitHub'da ekleyebiliriz.",
+    "timestamp_start": 3712.58,
+    "timestamp_end": 3716.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Software inisiyatörü olarak, öğrenmelisiniz.",
+    "timestamp_start": 3729.58,
+    "timestamp_end": 3732.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Aslında, nasıl GitHub gibi bir kod yönetimi sistemini kullanmak için öğrenmelisiniz.",
+    "timestamp_start": 3732.58,
+    "timestamp_end": 3738.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 3738.58,
+    "timestamp_end": 3739.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu, bu olmalı.",
+    "timestamp_start": 3739.58,
+    "timestamp_end": 3740.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu yüzden, bu sizin bir öneriniz.",
+    "timestamp_start": 3740.58,
+    "timestamp_end": 3745.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kod yönetimi sistemini kullanabilmek için.",
+    "timestamp_start": 3745.58,
+    "timestamp_end": 3749.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu kurs için bu semeste size bir proje vereceğim.",
+    "timestamp_start": 3749.58,
+    "timestamp_end": 3754.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve,",
+    "timestamp_start": 3754.58,
+    "timestamp_end": 3755.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kod yönetimi sistemini kullanmak için zorlanırsınız.",
+    "timestamp_start": 3755.58,
+    "timestamp_end": 3760.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "GitHub gibi, Bitbucket gibi veya böyle.",
+    "timestamp_start": 3760.58,
+    "timestamp_end": 3763.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 3763.58,
+    "timestamp_end": 3764.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kod yönetimi softveri ile ilgili.",
+    "timestamp_start": 3764.58,
+    "timestamp_end": 3767.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Git Bash gibi.",
+    "timestamp_start": 3767.58,
+    "timestamp_end": 3768.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu bir.",
+    "timestamp_start": 3768.58,
+    "timestamp_end": 3769.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bu git başı, kullanıyorum.",
+    "timestamp_start": 3769.58,
+    "timestamp_end": 3772.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Origin Master, benim kod adım.",
+    "timestamp_start": 3788.58,
+    "timestamp_end": 3792.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 3792.58,
+    "timestamp_end": 3793.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Burada kod olabilir.",
+    "timestamp_start": 3793.58,
+    "timestamp_end": 3794.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Iıı.",
+    "timestamp_start": 3794.58,
+    "timestamp_end": 3797.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Şu şekilde yapacağız.",
+    "timestamp_start": 3799.58,
+    "timestamp_end": 3800.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bakalım.",
+    "timestamp_start": 3800.58,
+    "timestamp_end": 3801.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam, şimdi uygundu.",
+    "timestamp_start": 3801.58,
+    "timestamp_end": 3802.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Kliklediğimde, derslerini görebiliyorum.",
+    "timestamp_start": 3802.58,
+    "timestamp_end": 3803.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Dersler, Dersler Drake.",
+    "timestamp_start": 3803.58,
+    "timestamp_end": 3804.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Dersler, 2 ders uygundu.",
+    "timestamp_start": 3804.58,
+    "timestamp_end": 3805.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Bunları burada görüyorsunuz.",
+    "timestamp_start": 3805.58,
+    "timestamp_end": 3806.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ve ilk dersleri de uygundum.",
+    "timestamp_start": 3806.58,
+    "timestamp_end": 3807.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam.",
+    "timestamp_start": 3807.58,
+    "timestamp_end": 3808.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Umarım yarın görüşürüz.",
+    "timestamp_start": 3808.58,
+    "timestamp_end": 3809.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Korona virüsünden kurtulun.",
+    "timestamp_start": 3809.58,
+    "timestamp_end": 3810.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam, görüşürüz.",
+    "timestamp_start": 3810.58,
+    "timestamp_end": 3811.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Artık,",
+    "timestamp_start": 3811.58,
+    "timestamp_end": 3824.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Tamam, görüşürüz.",
+    "timestamp_start": 3824.58,
+    "timestamp_end": 3827.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  }
+]

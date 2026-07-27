@@ -1,0 +1,1125 @@
+0.0s - 17.04s : We just started a new unit on graph theory, which is going to be sort of our focus for
+17.04s - 19.72s : the next couple lectures in 6.006.
+20.4s - 23.56s : And so I thought we'd give a little bit of review at the beginning of the lecture, because
+23.56s - 29.32s : as usual, I muddled together a lot of notions in our previous lecture, and then start with
+29.32s - 30.0s : some new ideas.
+30.12s - 33.74s : So basically, in our previous lecture, we talked about an algorithm called breadth-first
+33.74s - 34.16s : search.
+34.76s - 38.64s : And then almost always, you see that paired with a second algorithm called depth-first
+38.64s - 38.96s : search.
+39.3s - 45.18s : And following tradition and basically logic, we'll do the same thing in 006 today.
+46.0s - 49.08s : But in any event, for today, we'll stick to the technical material.
+49.96s - 54.08s : So as a little bit of review, I guess actually the one thing I didn't do on this slide was
+54.08s - 54.88s : actually draw a graph.
+54.96s - 56.52s : So we should probably start with that.
+56.52s - 63.9s : So if you recall, graph is a collection of nodes or vertices depending, I don't know,
+63.94s - 67.48s : is it like a European-American thing or something, and edges.
+68.5s - 72.84s : So here's an example, which as usual, I'm not managing to draw particularly clearly.
+73.46s - 75.74s : So this graph is kind of like a cycle.
+75.86s - 78.78s : So I have directed edges here, here, here, and here.
+79.44s - 82.34s : And of course, there are many kind of variations on the theme.
+82.34s - 82.86s : Right?
+82.96s - 86.34s : So our basic sort of definition of a graph is that we have some set.
+86.52s - 89.0s : V, which is like the set of vertices.
+91.82s - 95.28s : And then we have a set E, which is set of edges.
+98.72s - 101.18s : And this is a subset of V cross V.
+101.5s - 106.52s : And this is nothing more than fancy notation for saying that an edge is a pair of vertices.
+106.72s - 106.86s : Right?
+106.9s - 108.48s : Like a from and a to vertex.
+108.94s - 110.78s : Of course, there are many variations on this theme.
+110.78s - 114.08s : You could have a directed versus an undirected graph.
+114.18s - 115.14s : So this one is directed.
+115.5s - 116.5s : Meaning that the edges look like air.
+116.52s - 118.98s : If they didn't have arrowheads, they'd be undirected.
+120.24s - 124.38s : We define something called a simple graph, where you have essentially no repeated edges.
+124.86s - 128.54s : So for instance, you can't do something like this, where you have the same edge twice.
+130.2s - 132.9s : And then there are a couple of different definitions that were kind of useful.
+132.94s - 133.18s : Right?
+133.18s - 138.54s : So in particular, I'm going to erase this useless edge here.
+141.96s - 143.86s : Maybe make my graph slightly more interesting.
+143.86s - 146.46s : So add another edge.
+146.52s - 147.9s : Going in the reverse direction.
+147.9s - 151.5s : So maybe I have, I'm going to give my vertices labels.
+151.5s - 155.7s : X, Y, Z, and W.
+156.54s - 165.64s : Then we talked about the neighbors of a given vertex, which are the vertices that you can reach by following edges in or out of your vertex.
+165.64s - 165.8s : Right?
+165.8s - 172.86s : So in particular, the outgoing neighbors, which we sort of implicitly defined in our previous lecture, but didn't call it out.
+174.64s - 176.04s : We're going to notate with adj.
+176.04s - 177.2s : Adj plus.
+177.68s - 182.1s : And these are all of the things that you can reach by going out of a vertex into the next one.
+182.18s - 187.58s : So for example, adj plus of W is going to be the set of vertices.
+188.0s - 190.14s : Well, notice I can get from W to Y.
+190.6s - 191.84s : And also from W to Z.
+192.1s - 192.58s : Yep.
+192.9s - 193.04s : So.
+194.32s - 194.8s : Nope.
+196.32s - 197.54s : Y, Z.
+198.92s - 199.4s : Okay.
+200.82s - 203.76s : So to continue just our tiny amount of review for the day.
+204.38s - 205.54s : Remember that a graph.
+205.66s - 205.96s : There.
+206.04s - 207.7s : There are many different ways to represent a graph.
+208.38s - 211.1s : The sort of brain dead one will be just like a big long list of edges.
+211.1s - 217.42s : But of course, for our algorithms, that's not a particularly efficient way to check things like does this edge exist in my graph?
+218.18s - 227.9s : So the basic representation that I think we're mostly working from in this course is to think of a graph like a set of vertices, each of which maps to another set of vertices.
+227.9s - 232.38s : So roughly every vertex maybe stores its outgoing set of edges.
+233.04s - 233.3s : Right.
+233.3s - 235.58s : And so this is kind of nice because, of course.
+235.58s - 239.58s : Very quickly, we can answer questions like, is this edge inside of our graph?
+239.58s - 245.58s : Or we can iterate over the neighbors of a vertex and so on, which are the kind of typical things that we do in a lot of graph algorithms.
+245.58s - 250.58s : And then finally, in our previous lecture, we started talking about paths.
+250.58s - 251.08s : Right.
+251.08s - 257.58s : So a path is like a chain of vertices that can get me from one vertex to the other only following edges of my graph.
+257.58s - 263.58s : There is a term that I think I forgot to define last time because it didn't really matter a ton, which is a simple path.
+263.58s - 264.92s : Which is just like a simple path.
+264.92s - 265.42s : Right.
+265.42s - 267.66s : It's just a path that doesn't have the same vertex more than once.
+269.26s - 275.42s : And then, of course, there are many different questions you can ask about a graph that are basically different problems involving computing paths.
+275.42s - 275.92s : Right.
+275.92s - 281.18s : So for instance, the shortest path between two vertices is sort of our canonical one in graph theory.
+281.18s - 283.92s : Or you could ask questions about reachability and so on.
+283.92s - 286.92s : So there's our basic review from our previous lecture.
+287.72s - 291.84s : Do our, does our course staff have any questions about things so far?
+292.84s - 293.42s : Excellent.
+294.04s - 294.54s : OK.
+295.42s - 298.42s : So I have this additional piece of terminology that I fudged a little bit last time.
+298.42s - 302.42s : Or rather, my co-instructor suggested a bit of an attitude adjustment.
+302.42s - 305.42s : So I thought I better clarify really quick.
+305.42s - 310.42s : There's this interesting phrase, linear time, which we all know and love in computer science theory.
+310.42s - 316.42s : And the sort of implicit thing, especially in this course, is that when we say linear time, we mean in the size of the input.
+316.42s - 317.42s : Right.
+317.42s - 323.42s : And so if we have a linear time graph algorithm, well, how much space does it take to store a graph?
+323.42s - 324.42s : Well, we need a list of vertices and a list of edges.
+324.42s - 325.42s : And nothing else.
+325.42s - 332.42s : So a reasonable way to interpret this phrase, linear time, is that it's an algorithm that looks like what we've shown on the screen.
+332.42s - 333.42s : Right.
+333.42s - 337.42s : The time is proportional to maybe the sum of the number of vertices and the number of edges.
+337.42s - 343.42s : If that makes you uncomfortable, like it does for me, because one of these can kind of scale on the other, I think it's always fine to add more detail.
+343.42s - 344.42s : Right.
+344.42s - 349.42s : So if you want to say linear in the sum of the number of vertices and edges, that's perfectly fine.
+349.42s - 352.42s : But if you see this phrase, that's how you should interpret it.
+352.42s - 354.42s : Hopefully that's a fair way to put it.
+355.42s - 356.42s : Excellent.
+356.42s - 357.42s : OK.
+357.42s - 363.42s : So last time, we talked about an algorithm called breadth-first search, BFS, for those in the know.
+363.42s - 366.42s : Breadth-first search is an algorithm.
+366.42s - 376.42s : And the reason we use the word breadth is because it's kind of, remember, we talked about level sets last time because we talked about breadth-first search in the context of computing shortest paths.
+376.42s - 381.42s : And in particular, we have our source node all the way on the left-hand side.
+381.42s - 384.42s : And then breadth-first search constructed all the nodes that were distance one away.
+384.42s - 385.42s : Right.
+385.42s - 386.42s : So that's the first level set.
+386.42s - 388.42s : And then all the distance two away.
+388.42s - 389.42s : And then all the distance three away.
+389.42s - 390.42s : And so on.
+390.42s - 391.42s : Right.
+391.42s - 397.42s : So in particular, like the level set L3 isn't visited until we're completely done with level set L2.
+397.42s - 408.42s : Today, we're going to define another algorithm, which is called depth-first search, which doesn't do that, but rather starts with the source vertex and just starts walking all the way out until it can't do that anymore and then kind of backtracks.
+408.42s - 410.42s : It's one way to think about it.
+410.42s - 414.42s : And so somehow in breadth-first search, we're drawing concentric circles.
+414.42s - 415.42s : Right.
+415.42s - 416.42s : And depth-first search, we're doing the opposite.
+416.42s - 421.42s : We're like shooting outward until we reach the outer boundary and then exploring a graph that way.
+421.42s - 422.42s : OK.
+422.42s - 431.42s : And these are sort of the two extremes in terms of graph search kind of techniques that are typically used under the basic building blocks for algorithms and graph theory.
+431.42s - 439.42s : So in order to motivate and think about depth-first search, we're going to define a second problem, which is closely related to shortest path but not exactly the same.
+439.42s - 441.42s : And that's the reachability problem.
+441.42s - 444.42s : So here I have the world's simplest depth-first search.
+444.42s - 446.42s : And I've marked the first directed graph.
+446.42s - 451.42s : So the black things are the edges and the circles are the nodes or the vertices.
+451.42s - 454.42s : And I've marked one special node in blue.
+454.42s - 456.42s : And his name is the source node.
+456.42s - 466.42s : And now the question I want to ask is what are all of the other nodes in my graph that I can reach by following edges, directed edges, starting with the source?
+466.42s - 467.42s : Right.
+467.42s - 470.42s : So obviously, I can get to the node in the lower right, no problem.
+470.42s - 472.42s : And of course, once I get there, I can traverse an edge upward to the source.
+472.42s - 473.42s : Right.
+473.42s - 477.42s : And then I can traverse an edge upward to get to that second green vertex.
+477.42s - 484.42s : Notice that I was really sneaky and evil and I drew edges in this graph that might make you think that the red node is reachable.
+484.42s - 486.42s : The red one being on the upper left.
+486.42s - 489.42s : I'm realizing now that for colorblind people, this isn't a great slide.
+489.42s - 498.42s : But of course, because all the edges from the red vertex on the left here point out, I can't actually reach it from the blue source node.
+498.42s - 502.42s : So the reachability problem is just asking which nodes can I reach from a given source?
+503.42s - 505.42s : Pretty straightforward, I think.
+505.42s - 507.42s : Of course, there are many ways to solve this.
+507.42s - 508.42s : Right.
+508.42s - 511.42s : In fact, one way we could do it would be to use our previous lecture.
+511.42s - 512.42s : Right.
+512.42s - 515.42s : We could compute the shortest path distance from the source to all the other nodes.
+515.42s - 520.42s : And then what would the length of the shortest path from the source to an unreachable node be?
+520.42s - 522.42s : Any thoughts from our audience here?
+522.42s - 523.42s : Infinity.
+523.42s - 525.42s : Thank you, Professor Domain.
+525.42s - 526.42s : Right.
+526.42s - 532.42s : So in addition to this, of course, a totally reasonable question, thinking back to our shortest path line.
+532.42s - 536.42s : In our shortest path lecture, there are sort of two queries we might make.
+536.42s - 538.42s : One is just what is the length of the shortest path?
+538.42s - 543.42s : The other is like what is the actual shortest path from the source to a given vertex?
+543.42s - 545.42s : We could ask a very similar thing here, right?
+545.42s - 549.42s : Which is like, OK, you tell me that the green guy is reachable, but like how?
+549.42s - 554.42s : Like give me a path as evidence or a certificate if you want to be fancy about it.
+554.42s - 561.42s : So in order to do that, just like last time, remember we defined a particular data structure that was the shortest path tree.
+561.42s - 563.42s : So let's do something very similar here, right?
+563.42s - 568.42s : In particular, this is like the extent of my PowerPoint skill here.
+568.42s - 577.42s : If I have a reachability problem, I can additionally store, I can decorate every node in my graph with one other piece of information,
+577.42s - 584.42s : which is the previous node along some path from my source to that thing, right?
+584.42s - 590.42s : And just like last time, if I want to get an actual path from the source to W, what could I do?
+590.42s - 595.42s : I can start with W and then just keep following those parent relationships until I get back to the source.
+595.42s - 602.42s : Then if I flip the order of that list of vertices, I get a path from the source to the target that's valid.
+602.42s - 606.42s : So this object is called a path tree, just like we talk, or a parent tree rather.
+606.42s - 611.42s : Just like we talked about in our last lecture, there's no reason why this thing should ever have a cycle in it.
+611.42s - 614.42s : It's certainly a tree.
+614.42s - 618.42s : Right, so that's the basic reachability problem.
+618.42s - 620.42s : And in addition to that, we can compute this object P.
+620.42s - 624.42s : Which is going to give me sort of information about how any given node was reachable.
+624.42s - 631.42s : There's a slight difference between the parent tree that I've defined here and the shortest path tree, which I defined last time.
+631.42s - 640.42s : Which is I'm not going to require that the shortest path I get, or oh man, the path I get when I backtrack along my tree P is the shortest path.
+640.42s - 642.42s : It's just a path.
+642.42s - 644.42s : Right, because for the reachability problem, I actually don't care.
+644.42s - 650.42s : Right, like I could have a weird, circuitous, crazy long path and it still tells me that a node is reachable.
+650.42s - 655.42s : Right, so that's our basic setup and our data structure.
+655.42s - 659.42s : And now we can introduce a problem to solve reachability.
+659.42s - 663.42s : Again, we already have an algorithm for doing that, right, which is to compute shortest paths.
+663.42s - 668.42s : And remember that our shortest path algorithm from previous lecture took linear time in the size of the input, right?
+668.42s - 671.42s : It took V plus E time.
+671.42s - 673.42s : Now the question is, can we do a little better?
+673.42s - 676.42s : The answer obviously is yes, because I just asked it and I gave you this problem.
+676.42s - 678.42s : Okay.
+678.42s - 680.42s : And here's a technique for doing that.
+680.42s - 683.42s : Which unsurprisingly is a recursive algorithm.
+683.42s - 687.42s : I'm going to swap my notes for my handwritten notes.
+687.42s - 690.42s : And this algorithm is called death first search.
+690.42s - 693.42s : And here's the basic strategy.
+693.42s - 695.42s : I'm going to choose a source node.
+695.42s - 697.42s : I've labeled that node one here.
+697.42s - 700.42s : I suppose it actually would have made sense for me to actually zero index this.
+700.42s - 702.42s : Maybe in the slides I'll fix it later.
+702.42s - 706.42s : But in any event, I'm going to mark my source node.
+706.42s - 710.42s : And now I'm going to look at every node, every edge component.
+710.42s - 713.42s : And I'm going to start coming out of that node and I'm going to visit it recursively.
+713.42s - 717.42s : So that's our sort of for loop inside of this function visit.
+717.42s - 723.42s : And then for each neighboring node, if I haven't visited it before, in other words, I currently haven't given it a parent.
+723.42s - 725.42s : That's our if statement here.
+725.42s - 728.42s : Then I'm going to say, well, now they do have a parent and that parent is me.
+728.42s - 730.42s : And I'm going to recurse.
+730.42s - 732.42s : You guys see what this is doing?
+732.42s - 734.42s : It's kind of crawling outward inside of our graph.
+734.42s - 737.42s : So let's do the example on the screen.
+737.42s - 739.42s : And I purposefully designed this experiment.
+739.42s - 743.42s : Or this example to look a little bit different from breadth first search.
+743.42s - 746.42s : At least if you choose to do the ordering that I did.
+746.42s - 748.42s : So here's our graph.
+748.42s - 754.42s : One, two, five, three, four.
+754.42s - 755.42s : OK.
+755.42s - 759.42s : And let's think about the traversal order that the depth first search is going to do.
+759.42s - 763.42s : So here's our source.
+763.42s - 765.42s : And now what does the source do?
+765.42s - 767.42s : So let's think about our recursion tree.
+767.42s - 769.42s : So we have the source.
+769.42s - 771.42s : We have a number up in here.
+771.42s - 774.42s : And now he's going to start calling the visit function recursively.
+774.42s - 778.42s : So and I'll go ahead and number these.
+778.42s - 781.42s : The same as on the screen.
+781.42s - 786.42s : Well he has one outgoing neighbor and it hasn't been visited yet.
+786.42s - 789.42s : So of course the very first recursive call that I'll make is to that neighbor two.
+789.42s - 793.42s : Now the neighbor two also recurses.
+793.42s - 797.42s : Hopefully this kind of schematic picture makes some sense what I'm trying to draw here.
+797.42s - 798.42s : And again, that's just the recursive call.
+798.42s - 802.62s : And well, now the 2 has two neighbors, a 3 and a 5.
+802.62s - 804.06s : So let's say that we choose 3 first.
+807.02s - 808.84s : Well, the 3 now recurses.
+808.84s - 811.24s : He calls 4, and then the recursion tree is done.
+811.24s - 812.62s : So now it goes back out.
+812.62s - 818.8s : And then finally, well, now the 3, or oh boy,
+818.8s - 821.96s : yeah, the 2 looks at its next neighbor, which is the 5,
+821.96s - 823.82s : and visits that recursively.
+823.82s - 827.48s : Notice that this is not following the level sets.
+827.48s - 829.04s : The breadth-first search algorithm
+829.04s - 832.76s : got all the way to the end of my tree in the recursive calls,
+832.76s - 834.84s : and then kind of backed its way out to the 2
+834.84s - 836.24s : before calling the 5.
+836.24s - 837.6s : These are not the same technique.
+837.6s - 840.98s : One goes all the way to the end and then kind of backtracks.
+840.98s - 843.4s : Whereas when I say backtrack, what I mean is the recursion
+843.4s - 844.94s : is kind of unraveling.
+844.94s - 847.48s : Whereas in breadth-first search, I visit everything in one level
+847.48s - 849.2s : set before I work my way out.
+849.2s - 852.1s : Does that distinction make sense?
+852.1s - 854.84s : OK, so of course, we need to prove that this algorithm does
+854.84s - 856.42s : something useful.
+856.42s - 857.4s : So let's do that now.
+857.4s - 861.18s : So in particular, we need a correctness proof.
+861.18s - 868.82s : So our claim is going to be that, let's see here,
+868.82s - 877.16s : the depth-first search algorithm visits all, I guess,
+877.16s - 886.96s : reachable v and that it correctly sets the parent,
+886.96s - 904.22s : the
+904.24s - 906.9s : And in particular, what we're going to do
+906.9s - 910.4s : is do induction on the distance from the source.
+910.4s - 915.2s : So we're going to say that for all vertices in distance k
+915.2s - 916.54s : from the source.
+916.54s - 917.54s : This statement is true.
+917.54s - 920.62s : And then we're going to prove this inductively on k.
+920.62s - 926.78s : So we want to do induction on k, which
+926.78s - 932.92s : is the distance to the source vertex.
+932.92s - 935.42s : So as with all of our inductive proofs,
+935.42s - 938.48s : we have to do our base case and then our inductive step.
+938.48s - 942.5s : So in the base case, k equals 0.
+942.5s - 945.76s : This is a hella easy case because, of course, what is?
+945.76s - 950.0s : The thing that is distance 0 from the source?
+950.0s - 951.0s : It's the source.
+951.0s - 951.5s : Yeah?
+951.5s - 953.76s : And take a look at our strategy all the way
+953.76s - 955.02s : at the top of this slide.
+955.02s - 958.52s : We explicitly set the correct parent for the source
+958.52s - 960.68s : and, in some sense, visit it because the very first thing
+960.68s - 962.76s : we do is call visit of s.
+962.76s - 964.06s : So there's kind of nothing to say here.
+964.06s - 964.56s : Yeah?
+964.56s - 966.48s : Well, there's plenty to say if you write it on your homework,
+966.48s - 968.14s : but your lazy instructor is going
+968.14s - 970.34s : to write a check mark here.
+970.34s - 972.62s : OK.
+972.62s - 974.76s : So now we have to do our inductive step.
+975.76s - 983.1s : So what does that mean?
+983.1s - 986.3s : We're going to assume that our statement is true for all nodes
+986.3s - 987.98s : within a distance k, and then we're
+987.98s - 990.06s : going to prove that our statement is true for all nodes
+990.06s - 992.2s : within a distance k plus 1.
+992.2s - 993.38s : OK?
+993.38s - 995.12s : So let's do that.
+995.12s - 1003.28s : Let's consider a vertex v that's distance k plus 1 away.
+1003.28s - 1005.76s : So in other words, the distance from the source to v.
+1005.76s - 1007.76s : So we're going to assume that our statement is true for all
+1007.76s - 1008.76s : nodes within a distance k plus 1.
+1008.76s - 1009.64s : And what's our goal?
+1009.64s - 1012.78s : Our goal is to show that the parent of v is set correctly.
+1012.78s - 1013.28s : Yeah?
+1013.28s - 1015.72s : .
+1015.72s - 1016.22s : What was that?
+1016.22s - 1019.08s : The distance from s to v.
+1019.08s - 1019.9s : Oh, sorry.
+1019.9s - 1022.34s : I forgot that the distances in this class are ordered.
+1022.34s - 1023.16s : Yeah, that's absolutely right.
+1023.16s - 1025.18s : So it should be the distance from s to v.
+1025.18s - 1027.14s : Yeah.
+1027.14s - 1029.68s : Sorry, I'm really not used to thinking about directed graphs,
+1029.68s - 1032.72s : but that's a good fix.
+1032.72s - 1033.66s : OK.
+1033.66s - 1035.14s : So now what can we do?
+1035.14s - 1039.26s : Well, this number is distance here.
+1039.26s - 1042.8s : So in particular, there's some shortest path from s to v.
+1042.8s - 1044.92s : So remember our argument last time, right?
+1044.92s - 1047.0s : That essentially, when we look at shortest path
+1047.0s - 1049.9s : and we kind of truncate by 1, it's still a shortest path.
+1049.9s - 1051.64s : That property doesn't matter so much here,
+1051.64s - 1053.08s : but at least we know that there's
+1053.08s - 1056.86s : another vertex on the path, which is one distance,
+1056.86s - 1059.2s : one less away.
+1059.2s - 1064.7s : So let's take u, which is also a vertex.
+1065.14s - 1068.86s : And we can also take the distance from s to v.
+1068.86s - 1070.9s : And we can also take the distance from s to u,
+1070.9s - 1072.9s : which is the shortest path from s to v.
+1072.9s - 1074.9s : And we can also take the distance from s to u,
+1074.9s - 1076.9s : which is the shortest path from s to v.
+1076.9s - 1081.76s : And so in particular, we know that the distance from s to u
+1081.76s - 1082.66s : is equal to k.
+1082.66s - 1086.24s : And conveniently, of course, by our inductive hypothesis here,
+1086.24s - 1089.76s : we know that our property is true for this guy.
+1089.76s - 1090.6s : OK.
+1090.6s - 1093.44s : So now our algorithm, what do we know?
+1093.44s - 1095.02s : Well, because our property is true, we can't do anything.
+1095.02s - 1097.9s : So the visit function at some point in its life
+1097.9s - 1100.4s : is called on this vertex u.
+1100.4s - 1102.64s : That's sort of what our induction assumes.
+1102.64s - 1103.64s : So we have two cases.
+1106.58s - 1115.54s : So when we visit u, we know that when we call this visit
+1115.54s - 1119.94s : function, well, remember that v, kind of by definition,
+1119.94s - 1121.9s : is in Adj plus of u.
+1121.9s - 1124.94s : So in particular, DFS is going to consider
+1124.94s - 1133.56s : v when it gets called.
+1133.56s - 1135.38s : OK.
+1135.38s - 1136.7s : And now there's two cases.
+1136.7s - 1137.8s : Right?
+1137.8s - 1147.38s : So either when this happens, p of v does not equal none.
+1147.38s - 1148.1s : Right?
+1148.1s - 1149.22s : Well, what does that mean?
+1149.22s - 1152.34s : Well, it means that we already kind of found a suitable parent
+1152.34s - 1154.46s : for v, and we're in good shape.
+1154.94s - 1161.72s : Otherwise, p of v does equal none.
+1161.72s - 1163.9s : Well, in this case, the very next line of code
+1163.9s - 1166.5s : correctly sets the parent, and we're all set.
+1166.5s - 1167.0s : Right?
+1167.0s - 1169.2s : So in both of these two cases, we
+1169.2s - 1172.36s : show that the parent of u was set correctly,
+1172.36s - 1175.78s : either by that line of code right here or just previously.
+1175.78s - 1179.88s : And so in either case, our induction is done.
+1179.88s - 1180.84s : All right.
+1180.84s - 1182.94s : I guess given the feedback I received
+1182.94s - 1184.72s : from our previous lecture, we now can end.
+1184.72s - 1188.02s : And our LaTeX suitably.
+1188.02s - 1188.6s : OK.
+1188.6s - 1189.8s : So what did we just show?
+1189.8s - 1192.32s : We showed that the depth-first search algorithm
+1192.32s - 1194.48s : can dig around in a graph and tell me
+1194.48s - 1197.24s : all of the things that are searchable, or rather,
+1197.24s - 1199.52s : are reachable from a given source just basically
+1199.52s - 1202.76s : by calling visit on that source and then expanding outward
+1202.76s - 1204.28s : recursively.
+1204.28s - 1206.92s : OK, so I think this is certainly straightforward
+1206.92s - 1208.84s : from an intuitive perspective.
+1208.84s - 1212.04s : It's easy to get lost when you write these kind of formal
+1212.04s - 1214.66s : induction proofs because they always feel a tiny bit like
+1214.66s - 1215.16s : a strategy.
+1215.16s - 1217.32s : So you should go home and kind of convince yourself
+1217.32s - 1218.22s : that it's not.
+1218.22s - 1220.18s : OK, so of course, what do we do in this class?
+1220.18s - 1222.4s : We always follow the same kind of boring pattern.
+1222.4s - 1224.72s : The first thing we do, define an algorithm.
+1224.72s - 1227.18s : Second thing we do, make sure that it's the right algorithm.
+1227.18s - 1230.1s : What's the third thing we need to do?
+1230.1s - 1230.9s : Analyze it.
+1230.9s - 1231.42s : That's right.
+1231.42s - 1234.1s : In particular, make sure that it finishes before the heat
+1234.1s - 1235.7s : death of the universe.
+1235.7s - 1238.64s : And indeed, depth-first search doesn't really
+1238.64s - 1241.1s : take all that long, which is a good thing.
+1241.1s - 1241.98s : So let's think about this a bit.
+1241.98s - 1243.1s : So let's think about this a bit.
+1243.1s - 1243.82s : So let's think about this a bit.
+1243.82s - 1244.42s : So let's think about this a bit.
+1244.42s - 1244.66s : So let's think about this a bit.
+1244.66s - 1245.0s : So let's think about this a bit.
+1245.0s - 1248.42s : What's going to end up happening in depth-first search?
+1248.42s - 1251.84s : Well, we're going to visit every vertex at most once,
+1251.84s - 1254.14s : kind of by definition here.
+1254.14s - 1255.8s : And in each case, we're going to just
+1255.8s - 1258.08s : visit its neighboring edges.
+1258.08s - 1261.66s : Can we ever traverse an edge more than one time?
+1261.66s - 1263.72s : No, because the visit function only ever
+1263.72s - 1268.1s : gets called one time per vertex, and our edges are directed.
+1268.1s - 1271.24s : So kind of you think about the from of every edge,
+1271.24s - 1274.42s : the from vertex is only ever visited one time, and hence,
+1274.42s - 1277.3s : every edge is only visited one time.
+1277.3s - 1278.34s : Do we ever visit?
+1278.34s - 1278.84s : Yes?
+1278.84s - 1281.22s : Does DFS work for a directed graph?
+1281.22s - 1283.1s : An undirected graph, absolutely.
+1283.1s - 1285.82s : So there's sort of different ways to think about it.
+1285.82s - 1288.38s : One is to think of an undirected graph like a directed graph
+1288.38s - 1290.44s : with two edges pointed either way, which I think
+1290.44s - 1292.76s : is in this class how we actually kind of notated it
+1292.76s - 1293.72s : in the previous lecture.
+1296.22s - 1298.64s : Yeah, actually, that's probably a reasonable way to reduce it.
+1298.64s - 1301.0s : So we'll stick with that.
+1301.0s - 1304.38s : Right, now, does DFS ever visit a vertex that
+1304.38s - 1306.16s : is not reachable from the source?
+1308.74s - 1311.06s : Well, the answer is no, right, because all I ever do
+1311.06s - 1312.7s : is recursively call on my neighbors.
+1312.7s - 1315.48s : And so kind of by definition, if I'm not reachable,
+1315.48s - 1317.7s : DFS will never see it.
+1317.7s - 1319.36s : So if I think about my runtime carefully,
+1319.36s - 1322.0s : it's not quite the same as breadth-first search.
+1322.0s - 1325.88s : Remember that breadth-first search took v plus e time.
+1325.88s - 1329.18s : In depth-first search, it just takes order e time
+1329.18s - 1332.1s : because I'm expanding outward from the source vertex,
+1332.1s - 1334.3s : hitting every edge adjacent to every edge.
+1334.3s - 1336.42s : Every vertex that I've seen so far.
+1336.42s - 1340.98s : But I never reach a vertex that isn't reachable, right?
+1340.98s - 1344.18s : And so because this only ever touches every edge one time,
+1344.18s - 1346.06s : we're in good shape.
+1346.06s - 1347.1s : And I see a question here.
+1347.1s - 1347.6s : Yeah.
+1347.6s - 1351.72s : Does BFS reach vertices that are not reachable?
+1351.72s - 1356.48s : Does BFS reach vertices that are not reachable?
+1356.48s - 1358.1s : I guess not, now that you mention it.
+1358.1s - 1361.82s : But at least in my boring proof of order v time last time,
+1361.82s - 1362.7s : our very first step of BFS.
+1362.7s - 1363.2s : Reserved time.
+1363.2s - 1363.66s : Reserved time.
+1363.66s - 1367.08s : Reserved space proportional to v, which
+1367.08s - 1369.84s : is enough to already make that runtime correct.
+1369.84s - 1370.38s : Good question.
+1370.38s - 1370.56s : Yeah.
+1370.56s - 1372.16s : So I guess the way that we've talked about it,
+1372.16s - 1374.42s : where you construct one level set after a time,
+1374.42s - 1376.68s : if you think of that as reachability, then no.
+1376.68s - 1378.34s : It doesn't reach it in the for loop.
+1378.34s - 1380.82s : But just by construction when we started,
+1380.82s - 1384.18s : we already took the time that we're talking about here.
+1384.18s - 1386.22s : So notice these runtimes aren't exactly the same.
+1386.22s - 1389.42s : So for example, if my graph has no edges,
+1389.42s - 1392.56s : BFS still is going to take time.
+1392.56s - 1393.06s : Yeah?
+1393.06s - 1393.56s : Yeah.
+1393.66s - 1396.74s : Because it still has to take order v time, at least
+1396.74s - 1398.26s : the way in the sort of brain dead way
+1398.26s - 1399.76s : that we've implemented it last time.
+1399.76s - 1401.46s : Obviously, in that case, we could probably
+1401.46s - 1403.02s : do something better.
+1403.02s - 1406.08s : Whereas the way that we've defined the DFS algorithm,
+1406.08s - 1408.52s : it only takes edge time.
+1408.52s - 1410.46s : I see confusion on my instructor's face.
+1410.46s - 1410.96s : No.
+1410.96s - 1411.64s : OK.
+1411.64s - 1413.58s : Good.
+1413.58s - 1415.08s : The one thing to notice is that these
+1415.08s - 1418.2s : are algorithms for slightly different tasks in some sense.
+1418.2s - 1420.12s : The way that we wrote down breadth-first search
+1420.12s - 1423.06s : last time, conveniently, it gives us the shortest path.
+1423.06s - 1424.94s : There are breadth-first search algorithms that doesn't.
+1424.94s - 1427.32s : I think we're, in this class, we kind of think of breadth-first
+1427.32s - 1430.86s : search, we motivate it in terms of the shortest path problem.
+1430.86s - 1433.48s : But it's just kind of a strategy of working outwards
+1433.48s - 1435.9s : from a vertex.
+1435.9s - 1437.7s : Whereas here, the way we've written down
+1437.7s - 1440.52s : depth-first search, there's no reason why the path that we get
+1440.52s - 1441.72s : should be the shortest.
+1441.72s - 1445.44s : So to think of a really extreme example,
+1445.44s - 1447.04s : let's say that I have a cycle graph.
+1450.94s - 1451.44s : Right?
+1451.44s - 1452.18s : So I get a big loop.
+1453.06s - 1454.1s : Like this.
+1454.1s - 1456.98s : Let's say that I do depth-first search starting
+1456.98s - 1458.3s : from this vertex.
+1458.3s - 1459.94s : Well, what will happen?
+1459.94s - 1463.66s : Well, this guy will call its neighbor recursively,
+1463.66s - 1465.94s : who will then call its neighbor recursively,
+1465.94s - 1469.08s : will then call his neighbor recursively, and so on.
+1469.08s - 1472.26s : So of course, when I do depth-first search,
+1472.26s - 1474.82s : when I get to this vertex, there's a chain of one, two,
+1474.82s - 1477.44s : three, four vertices behind it.
+1477.44s - 1481.44s : Is that the shortest path from the source to the target here?
+1481.44s - 1482.24s : Well, clearly not.
+1482.24s - 1482.4s : Right?
+1482.4s - 1484.02s : I could have traversed that edge.
+1484.02s - 1486.26s : I just chose not to.
+1486.26s - 1487.94s : OK.
+1487.94s - 1489.6s : So that's the depth-first search algorithm.
+1489.6s - 1491.52s : It's just essentially a recursive strategy
+1491.52s - 1494.62s : where I traverse all my neighbors,
+1494.62s - 1496.94s : and each of my neighbors traverses their neighbors,
+1496.94s - 1499.1s : and so on.
+1499.1s - 1500.98s : OK, so why might we want to use this algorithm?
+1500.98s - 1503.9s : Well, we've already solved the reachability problem,
+1503.9s - 1506.02s : so let's solve a few more things using
+1506.02s - 1508.88s : the same basic strategy here.
+1508.88s - 1511.44s : So there's some notions that we've sort of, you know,
+1511.44s - 1512.4s : kind of, you know, we've sort of, you know, we've sort of,
+1512.4s - 1514.44s : actually in some sense already used in the lecture here,
+1514.44s - 1516.56s : but we might as well call them out for what they are,
+1516.56s - 1519.22s : which is this idea of connectivity.
+1519.22s - 1521.42s : So a graph is connected if there's
+1521.42s - 1525.48s : a path getting from every vertex to every other vertex.
+1525.48s - 1526.36s : Right?
+1526.36s - 1528.08s : Now, connectivity in a directed graph
+1528.08s - 1530.44s : is kind of a weird object, right?
+1530.44s - 1531.78s : Like it could be, like for instance,
+1531.78s - 1533.78s : think of a directed graph with just two edges,
+1533.78s - 1536.72s : and one edge goes from u to v. Right?
+1536.72s - 1539.76s : Then I can get from v to u, but not vice versa.
+1539.76s - 1541.36s : That's kind of a weird notion.
+1541.36s - 1541.86s : Right?
+1541.86s - 1546.48s : So here in 6.006, we'll mostly worry about connectivity only
+1546.48s - 1549.54s : for undirected graphs, because the vertices just basically
+1549.54s - 1552.18s : come in like big connected clumps.
+1552.18s - 1554.64s : Or the more technical term for a big connected clump
+1554.64s - 1556.36s : is a connected component.
+1556.36s - 1556.86s : Yeah?
+1556.86s - 1558.74s : So let's see an example.
+1558.74s - 1565.46s : So let's say that I have a graph which has an edge and then
+1565.46s - 1568.14s : a triangle.
+1568.14s - 1569.26s : This is one graph.
+1569.26s - 1569.94s : Do you see that?
+1569.94s - 1571.46s : There's a collection of vertices,
+1571.46s - 1573.74s : and there's a collection of edges.
+1573.74s - 1576.46s : But it has two connected components, right?
+1576.46s - 1579.46s : The guy on the right and the guy on the left,
+1579.46s - 1582.1s : meaning that each vertex here is reachable
+1582.1s - 1583.5s : from every other vertex here.
+1583.5s - 1585.78s : Each vertex here is reachable from every vertex here.
+1585.78s - 1588.06s : But there's no edge that goes from the triangle
+1588.06s - 1589.54s : to the line segment.
+1589.54s - 1590.24s : Yep?
+1590.24s - 1592.64s : And so in the connected components problem,
+1592.64s - 1595.4s : we're given a graph like this guy.
+1595.4s - 1597.58s : And initially, we don't, you know, OK,
+1597.58s - 1601.38s : when I draw it like this, it's pretty clear that my graph has
+1601.38s - 1602.62s : two connected components.
+1602.62s - 1605.06s : Maybe my graph embedding algorithm failed
+1605.06s - 1606.92s : and it drew an edge like that.
+1606.92s - 1609.38s : Well, then maybe, I don't know, it's still pretty obvious
+1609.38s - 1610.86s : that there's two connected components.
+1610.86s - 1613.02s : But you can imagine a universe where
+1613.02s - 1614.28s : you don't know that a priori.
+1614.28s - 1616.16s : And the problem you're trying to solve
+1616.16s - 1618.46s : is just to enumerate all these clumps of vertices
+1618.46s - 1622.3s : that are reachable from one another in an undirected graph.
+1622.3s - 1625.6s : And conveniently, we can use depth first search
+1625.6s - 1628.72s : to solve this problem pretty easily, right?
+1628.72s - 1630.34s : So how could we do it?
+1630.34s - 1630.84s : Well.
+1631.38s - 1634.64s : How could we find one connected component?
+1634.64s - 1639.08s : So let's say that I just choose a vertex in my graph.
+1639.08s - 1640.38s : Well, what do I know about everything
+1640.38s - 1643.32s : in its connected component?
+1643.32s - 1645.24s : Well, it's reachable from that vertex.
+1645.24s - 1647.32s : Remember, we just solved the reachability problem,
+1647.32s - 1650.1s : which says, if I have a vertex, I can now
+1650.1s - 1652.52s : tell you all the other vertices that are reachable from this
+1652.52s - 1653.44s : guy, right?
+1653.44s - 1657.38s : So I could call DFS on, well, any vertex in this cycle
+1657.38s - 1659.44s : here, call the reachability thing,
+1659.44s - 1660.8s : and I know that.
+1660.8s - 1663.38s : for every vertex, there's one of two things.
+1663.38s - 1666.74s : Either the vertex has a parent in that object p,
+1666.74s - 1668.42s : or it's the source.
+1668.42s - 1670.64s : So I can very easily find the connected component
+1670.64s - 1671.88s : corresponding to that vertex.
+1671.88s - 1673.92s : Does that make sense?
+1673.92s - 1676.46s : Have I found all the connected components?
+1676.46s - 1677.64s : No, I found one.
+1677.64s - 1680.04s : I found the one corresponding to the arbitrary vertex
+1680.04s - 1682.08s : that I just chose.
+1682.08s - 1684.56s : So how could I fix this?
+1684.56s - 1685.62s : Well, it's super simple.
+1685.62s - 1688.3s : I could put a for loop on the outside, which just loops
+1688.3s - 1690.38s : over all the vertices maybe.
+1690.38s - 1693.26s : And if that vertex is not part of a connected component yet,
+1693.26s - 1695.52s : then I need to make a new one.
+1695.52s - 1697.42s : So then I call DFS on that vertex.
+1697.42s - 1700.0s : I collect all the vertices that I got, and I iterate.
+1700.0s - 1702.82s : So this is the algorithm that in this class
+1702.82s - 1704.98s : we're going to call full DFS.
+1704.98s - 1706.6s : By the way, you could do the same thing
+1706.6s - 1707.86s : with full breadth-first search.
+1707.86s - 1712.38s : That's perfectly fine, just kind of by analogy here.
+1712.38s - 1716.46s : Right, so what is full D?
+1716.46s - 1718.88s : Ooh, this chalk is easier.
+1718.88s - 1720.26s : Well, I'm going to iterate over all
+1720.26s - 1724.46s : my vertices where I stands for for loop.
+1728.56s - 1735.62s : So if V is unvisited, then I'm going
+1735.62s - 1739.92s : to do DFS starting at V. I guess we
+1739.92s - 1742.56s : use visit to refer to this in the previous slide.
+1742.56s - 1744.76s : And that's going to kind of flood fill that whole connected
+1744.76s - 1746.08s : component.
+1746.08s - 1748.44s : And then I can collect that connected component
+1748.44s - 1749.0s : and continue.
+1749.0s - 1750.18s : I'll be a little bit careful.
+1750.18s - 1753.04s : Because of course, we don't want checking things,
+1753.04s - 1755.82s : something to be visited to somehow take a bunch of time
+1755.82s - 1757.94s : and make my algorithm slower than it needs to be.
+1757.94s - 1759.74s : But of course, we have a set data structure
+1759.74s - 1762.42s : that we know can do that in order one time,
+1762.42s - 1765.2s : at least in expectation.
+1765.2s - 1769.56s : OK, so this is the full DFS algorithm.
+1769.56s - 1770.52s : It's really simple.
+1770.52s - 1773.56s : Well, it's DFS because I call DFS on every vertex.
+1773.56s - 1776.86s : It's full because I looped over all the vertices.
+1776.86s - 1780.02s : Right, and so if we think about it, how much time does this
+1780.02s - 1780.06s : algorithm take?
+1780.06s - 1780.16s : How much time does this algorithm take?
+1780.18s - 1781.78s : How much time does this algorithm take?
+1781.78s - 1785.16s : It's a little bit sneaky because somehow I
+1785.16s - 1787.32s : have a for loop over all the vertices
+1787.32s - 1788.76s : that I could imagine a universe where
+1788.76s - 1791.66s : I get like vertices times some other number
+1791.66s - 1792.9s : because there's a for loop and there's
+1792.9s - 1793.78s : something inside of it.
+1793.78s - 1795.36s : I think that's how we're used to thinking
+1795.36s - 1798.44s : about runtime of for loops.
+1798.44s - 1800.6s : But in this case, that actually doesn't happen
+1800.6s - 1802.56s : because there's never a case where an edge gets
+1802.56s - 1804.16s : traversed more than one time.
+1804.16s - 1806.5s : Because if I'm in one connected component,
+1806.5s - 1810.06s : then by definition, I can't be in another connected component.
+1810.06s - 1812.52s : And so what happens is in some sense,
+1812.52s - 1815.1s : this innocent looking call to DFS,
+1815.1s - 1817.34s : I suppose if you were like a Lisp programmer,
+1817.34s - 1818.62s : you somehow wouldn't like this.
+1818.62s - 1820.6s : It has a side effect, which is that I
+1820.6s - 1822.84s : marked all the vertices in that connected component
+1822.84s - 1824.46s : as don't touch me again.
+1824.46s - 1826.56s : Right, and so implicitly, I kind of
+1826.56s - 1829.24s : removed edges in this process.
+1829.24s - 1830.86s : So if you think through it carefully,
+1830.86s - 1836.76s : the runtime of this full DFS algorithm is v plus e time
+1836.76s - 1839.22s : because every edge is touched no more than one time.
+1839.22s - 1839.94s : Right.
+1839.94s - 1844.38s : Kind of amortized over all the different calls to DFS here.
+1844.38s - 1846.04s : And there's this for loop over vertices.
+1846.04s - 1849.08s : So there's clearly an order v that you need here.
+1849.08s - 1851.24s : Does that argument make sense?
+1851.24s - 1854.34s : So again, we call that linear in the size of the input.
+1854.34s - 1857.28s : I'm going to say it many times to get it in my own head
+1857.28s - 1858.42s : correctly.
+1858.42s - 1859.94s : OK.
+1859.94s - 1862.24s : Right, so this is the basic problem.
+1862.24s - 1864.18s : This comes up all the time, by the way.
+1864.18s - 1867.96s : It seems like somehow a totally brain dead, weird algorithm.
+1867.96s - 1869.88s : Like somehow, why would you want an algorithm
+1869.88s - 1871.0s : that finds connected components?
+1871.0s - 1872.24s : Like why would you even have a graph that's
+1872.24s - 1874.08s : disconnected or something?
+1874.08s - 1875.54s : But of course, that can happen a lot.
+1875.54s - 1879.12s : So for instance, maybe you work at a social media company
+1879.12s - 1880.12s : and people have friends.
+1880.12s - 1882.38s : But like Eric and I are friends, and we're not
+1882.38s - 1884.12s : friends with anybody else.
+1884.12s - 1886.34s : There's like a blood oath kind of thing.
+1886.34s - 1890.04s : Then that might be not so easy to find in the graph
+1890.04s - 1891.78s : because, of course, we're just two
+1891.78s - 1895.86s : among a sea of students in this classroom, all of which
+1895.86s - 1898.88s : have different interconnections that are just enumerated based
+1898.88s - 1899.76s : on the list of edges.
+1899.76s - 1899.82s : Right.
+1899.82s - 1903.06s : And so even though pictorially, it's
+1903.06s - 1907.44s : kind of hard to draw a connected component algorithm in a way
+1907.44s - 1910.18s : that doesn't make it sound kind of like a useless technique
+1910.18s - 1912.42s : from the start because it's very clear there are two
+1912.42s - 1913.98s : connected components there.
+1913.98s - 1915.94s : Of course, we still have to be able to write code
+1915.94s - 1918.86s : to solve this sort of thing.
+1918.86s - 1922.62s : OK, so for once, I think I'm almost on time in lecture
+1922.62s - 1923.82s : today.
+1923.82s - 1928.2s : So we have one additional application of depth first
+1928.2s - 1929.7s : search in our class today.
+1929.7s - 1934.26s : Which is sort of on the opposite end of the spectrum.
+1934.26s - 1938.0s : So we just talked about graphs that are undirected
+1938.0s - 1940.2s : and thinking about cycles.
+1940.2s - 1943.92s : Now on the opposite end, we might think of a DAG.
+1943.92s - 1948.68s : So a DAG is a directed acyclic graph.
+1948.68s - 1950.56s : Can anybody think of a special case of a DAG?
+1950.56s - 1951.84s : I suppose I should define it first,
+1951.84s - 1953.98s : and then we'll come back to that question.
+1953.98s - 1956.08s : Which means exactly what it sounds like.
+1956.08s - 1959.5s : So it's a graph that has directed edges now and doesn't
+1959.5s - 1960.46s : have any cycles in it.
+1960.46s - 1964.02s : So actually the graph I gave you all the way
+1964.02s - 1966.74s : at the beginning of lecture, I think secretly
+1966.74s - 1968.76s : was an example of one of these.
+1968.76s - 1972.06s : So let's say that I have directed edges.
+1972.06s - 1974.0s : Maybe if I make the head a triangle,
+1974.0s - 1975.26s : that's a little easier to see.
+1977.76s - 1979.0s : I'm not so sure.
+1979.0s - 1981.94s : In any event, so I'm going to have an edge up and an edge
+1981.94s - 1983.96s : to the right, and similarly an edge down and an edge
+1983.96s - 1984.46s : to the right.
+1987.88s - 1989.26s : This graph looks like a cycle.
+1989.5s - 1993.4s : But it's not, because the only direction that I can move
+1993.4s - 1996.14s : is from the left-hand side to the right-hand side.
+1996.14s - 1997.46s : So this is a directed graph.
+1997.46s - 1998.96s : And it doesn't contain any cycles,
+1998.96s - 2000.58s : meaning there's no path that I can
+2000.58s - 2003.4s : take from a vertex that gets back to itself
+2003.4s - 2006.06s : along the directed edges.
+2006.06s - 2007.26s : DAGs show up all the time.
+2007.26s - 2008.96s : Now that I've defined what a DAG is,
+2008.96s - 2010.7s : can somebody give me an example of a DAG
+2010.7s - 2012.7s : that we've already seen in 6.006?
+2016.6s - 2017.32s : A tree.
+2017.32s - 2019.44s : At least if we orient all the edges kind of pointing down,
+2019.44s - 2020.58s : we're in the tree.
+2020.58s - 2022.26s : Yeah.
+2022.26s - 2024.3s : Otherwise, I guess it's kind of debatable
+2024.3s - 2026.46s : whether it's a DAG or not.
+2026.46s - 2028.3s : If there's no direction to the edges,
+2028.3s - 2031.98s : then somehow the definition just doesn't apply.
+2031.98s - 2032.48s : OK.
+2032.48s - 2036.68s : So in processing directed acyclic graphs,
+2036.68s - 2038.18s : there's a really useful thing that you
+2038.18s - 2041.1s : can do that's going to show up in this class apparently
+2041.1s - 2043.18s : quite a bit, which is kind of interesting to me.
+2043.18s - 2045.46s : I'm curious to see what that looks like, which
+2045.46s - 2049.12s : is to compute a topological order on the graph.
+2049.44s - 2050.7s : We're at topologies here.
+2050.7s - 2054.36s : So as a geometry professor in my day job, I get all excited.
+2054.36s - 2056.26s : But in this case, a topological order
+2056.26s - 2058.38s : is a fairly straightforward thing.
+2058.38s - 2059.84s : Actually, it's defined on the screen,
+2059.84s - 2061.14s : and I have bad handwriting anyway,
+2061.14s - 2062.46s : so let's just stick with that.
+2062.46s - 2065.62s : So topological ordering, so if we think of f as a function
+2065.62s - 2069.12s : that assigns maybe every node an index in array,
+2069.12s - 2070.88s : I guess I shouldn't use the word array here,
+2070.88s - 2072.66s : but just like an index in ordering.
+2072.66s - 2075.72s : So this is the first vertex, and this is the second vertex,
+2075.72s - 2077.06s : and so on.
+2077.06s - 2078.56s : Then a topological order.
+2078.56s - 2079.06s : OK.
+2079.06s - 2080.98s : It's one that has the property shown here,
+2080.98s - 2085.48s : which is that if I have a directed edge from u to v,
+2085.48s - 2091.64s : then f of u is less than f of v. So in other words,
+2091.64s - 2094.76s : if I look at the ordering that I get in my topological order,
+2094.76s - 2097.14s : u has to appear before v.
+2097.14s - 2099.06s : So let's look at our example again.
+2099.06s - 2101.74s : So let's give our nodes names.
+2101.74s - 2107.44s : So here's a, b, c, d.
+2107.44s - 2109.02s : Well, what clearly has to be the first
+2109.02s - 2111.52s : node in my topological order?
+2111.52s - 2112.02s : A, right?
+2112.02s - 2114.02s : Because it's all the way on the left-hand side.
+2114.02s - 2114.52s : Yeah?
+2114.52s - 2118.02s : Well, after that, it's a bit of a toss-up.
+2118.02s - 2118.68s : What do we know?
+2118.68s - 2121.78s : We know that b and c have to appear before d.
+2121.78s - 2125.02s : So maybe just to be annoying, I do a, c, b.
+2125.02s - 2126.02s : That's b.
+2126.02s - 2128.02s : And then d.
+2128.02s - 2129.64s : So it's a topological order.
+2129.64s - 2131.48s : Notice that things that are on the left
+2131.48s - 2134.36s : appear in my graph before things that are on the right,
+2134.36s - 2136.7s : where the word before here means that there's
+2136.7s - 2138.22s : an edge that points from one to the other.
+2139.02s - 2140.86s : OK.
+2140.86s - 2145.3s : By the way, are topological orderings unique?
+2145.3s - 2145.8s : No.
+2145.8s - 2147.8s : So if we look at our graph example here,
+2147.8s - 2153.64s : a, b, c, d is also a topological order.
+2153.64s - 2155.94s : And what that means is it's somehow very liberating, right?
+2155.94s - 2158.18s : It means that when we design an algorithm for finding
+2158.18s - 2160.9s : a topological order, there's some design decisions
+2160.9s - 2161.9s : that we can make.
+2161.9s - 2164.64s : And we just have to find one among many.
+2164.64s - 2168.86s : But in any event, we're going to define a slightly different,
+2168.86s - 2169.02s : OK?
+2169.02s - 2169.86s : Notion of order.
+2169.86s - 2170.64s : And then we're going to show that they're
+2170.64s - 2172.44s : closely linked to each other.
+2172.44s - 2175.46s : And that is the finishing order.
+2175.46s - 2178.68s : So in the finishing order, we're going to call full DFS
+2178.68s - 2179.34s : on our graph.
+2179.34s - 2181.26s : Remember, that means we iterate over all our nodes.
+2181.26s - 2184.5s : And if we haven't seen that node yet, we call DFS on it.
+2184.5s - 2188.42s : And now we're going to make an order in which
+2188.42s - 2191.58s : as soon as the call to a node in that visit function
+2191.58s - 2193.64s : is complete, meaning I've already
+2193.64s - 2196.46s : iterated over all my neighbors, then I
+2196.46s - 2198.86s : add my node to the ordering.
+2199.02s - 2200.06s : That makes sense?
+2200.06s - 2201.52s : It's like a little bit backward from what
+2201.52s - 2202.64s : we're used to thinking about.
+2202.64s - 2205.78s : So it's the order in which full DFS finishes
+2205.78s - 2208.02s : visiting each vertex.
+2208.02s - 2209.16s : Yeah?
+2209.16s - 2214.34s : And now here's the claim, is that if we have a reverse
+2214.34s - 2216.48s : finishing order, meaning that we take the finishing order
+2216.48s - 2218.3s : and then we flip it backward, that's
+2218.3s - 2221.22s : exactly going to give us a topological ordering
+2221.22s - 2224.34s : of the vertices in our graph.
+2224.34s - 2227.9s : Right, so let's do that really quickly.
+2227.9s - 2228.86s : So in other words, our claim.
+2228.86s - 2234.36s : So our claim here, I think I will, yeah, let's see,
+2234.36s - 2246.32s : is that if I have a directed graph, so G is a DAG, then
+2246.32s - 2251.58s : let's see here, then oops, my notes are backwards.
+2251.58s - 2254.1s : So I should switch to my adjacent notes, which
+2254.1s - 2255.14s : of course are correct.
+2258.86s - 2264.26s : Right, so if I have a graph that's a DAG,
+2264.26s - 2274.78s : then the reverse of the finishing order
+2274.78s - 2276.32s : is a topological order.
+2281.92s - 2284.04s : By the way, we're not going to prove the converse,
+2284.04s - 2286.84s : that if I have a topological order,
+2286.84s - 2288.82s : that somehow that thing is the reverse
+2288.82s - 2293.76s : of DFS, at least the way that maybe I coded it.
+2293.76s - 2295.72s : There's a slightly different statement, which is,
+2295.72s - 2298.78s : does there exist a DFS that has that ordering,
+2298.78s - 2301.58s : but that's one that we'll worry about another time,
+2301.58s - 2303.22s : or on Piazza, or whatever.
+2303.22s - 2307.54s : OK, so let's see here.
+2307.54s - 2308.96s : So we need to prove this thing.
+2308.96s - 2310.04s : So what are we going to do?
+2310.04s - 2312.62s : Well, what do we need to check is the topological order,
+2312.62s - 2314.74s : is that if I look at any edge in my graph,
+2314.74s - 2317.82s : it obeys the relationship that I have on the screen here.
+2317.82s - 2318.78s : So in particular, if I have a topological order, I'm going to have a topological order.
+2318.82s - 2324.48s : So in particular, we're going to take the uv inside of my set of edges.
+2324.48s - 2337.2s : And then what I need is that u is ordered before v,
+2337.2s - 2339.14s : using the reverse of the finishing order
+2339.14s - 2340.84s : that we've defined here.
+2340.84s - 2346.46s : OK, so let's think back to our call to the DFS algorithm.
+2346.46s - 2347.94s : Remember, we call this visit function.
+2348.82s - 2349.32s : Right?
+2349.32s - 2351.0s : So we have two cases.
+2351.0s - 2351.5s : Right?
+2351.5s - 2355.2s : Either u is visited before v, or it ain't.
+2355.2s - 2356.36s : Yeah?
+2356.36s - 2358.44s : So let's do those two cases.
+2361.74s - 2373.02s : So case number one is u is visited before v.
+2373.02s - 2373.52s : OK.
+2378.82s - 2382.56s : So what does that mean?
+2382.56s - 2384.52s : Well, remember that there's an edge.
+2384.52s - 2385.94s : Like, pictorially, what's going on?
+2385.94s - 2387.98s : Well, there's like all kinds of graph stuff going on.
+2387.98s - 2388.98s : And then there's u.
+2388.98s - 2393.24s : And we know that there's a directed edge from u to v.
+2393.24s - 2394.16s : That's our picture.
+2394.16s - 2394.66s : Right?
+2394.66s - 2397.84s : And maybe there's other stuff going on outside of v.
+2397.84s - 2400.8s : So in particular, well, just by the way
+2400.8s - 2403.28s : that we've defined that visit function, what do we know?
+2403.28s - 2407.42s : We know that when we call visit on u, your u is directed towards v.
+2407.42s - 2407.92s : Right?
+2407.92s - 2408.42s : Right?
+2408.42s - 2408.82s : Right?
+2408.82s - 2412.36s : Well, v is one of its outgoing neighbors.
+2412.36s - 2421.18s : So in particular, visit on u is going to call visit v.
+2421.18s - 2425.76s : And we know that because, well, u is visited before v.
+2425.76s - 2430.26s : So currently, v's parent is none when I get to u.
+2430.26s - 2432.76s : That make sense?
+2432.76s - 2434.94s : Now here's where reverse ordering,
+2434.94s - 2436.38s : we're going to have to keep it in our head.
+2436.38s - 2440.94s : Because now, well, visit of u called visit of v.
+2440.94s - 2445.56s : So notice that visit of v has to complete before visit of u.
+2452.0s - 2460.5s : v completes before visit of u.
+2460.5s - 2466.26s : Well, so in reverse sorting, in reverse finishing order
+2466.26s - 2468.22s : here, what does that mean?
+2468.22s - 2471.0s : Well, if this completes before the other guy,
+2471.0s - 2473.0s : then they get flipped backward in the list,
+2473.0s - 2475.46s : which is exactly what I want because there's an edge from u
+2475.46s - 2479.54s : to v. OK, so case one is done.
+2479.54s - 2486.54s : Now we have case two, which is that v is visited before u.
+2493.64s - 2495.16s : OK.
+2495.16s - 2495.84s : So now.
+2495.84s - 2498.9s : I'm going to make one additional observation.
+2498.9s - 2501.16s : OK, so now I'm going to go back to my other notes
+2501.16s - 2502.66s : because I like my schematic better.
+2505.74s - 2506.7s : Right.
+2506.7s - 2510.42s : So what's our basic picture here?
+2510.42s - 2511.7s : I don't know.
+2511.7s - 2512.58s : You know what it was?
+2512.58s - 2514.16s : I printed out another copy of this.
+2514.16s - 2514.66s : It's OK.
+2514.66s - 2516.04s : I can do it off the top of my head.
+2516.04s - 2518.2s : OK, so here's my source vertex.
+2518.2s - 2521.42s : His name is s.
+2521.42s - 2523.54s : Now there's a bunch of edges and whatever.
+2523.54s - 2525.68s : There's a long path.
+2525.68s - 2528.74s : And now, eventually, what happens?
+2528.74s - 2533.72s : Well, I have a node v. And somewhere out there
+2533.72s - 2536.62s : in the universe is another node u.
+2536.62s - 2537.42s : And what do I know?
+2537.42s - 2540.26s : I know that by assumption, I know that there's
+2540.26s - 2543.42s : an edge from u to v. Does that make sense?
+2543.42s - 2545.82s : So that's our sort of picture so far.
+2545.82s - 2548.36s : OK, so what do we know?
+2548.36s - 2550.86s : We know that our graph is acyclic.
+2550.86s - 2552.28s : Yeah, right, kind of by definition.
+2552.28s - 2553.58s : That's our assumption.
+2553.58s - 2554.58s : So can we read this?
+2554.58s - 2555.56s : Can we read this?
+2555.56s - 2555.58s : Can we read this?
+2555.58s - 2556.08s : We can read this.
+2556.08s - 2558.82s : Does it reach u from v?
+2558.82s - 2562.88s : In other words, does there exist a path from v to u?
+2562.88s - 2564.3s : Right, so that would look like this.
+2569.2s - 2570.78s : No, because our graph is acyclic.
+2570.78s - 2572.64s : And I just drew a cycle, right?
+2572.64s - 2574.42s : So this is a big x.
+2574.42s - 2576.0s : There's a frowny face here.
+2576.0s - 2577.4s : Can't do it.
+2577.4s - 2579.96s : He has hair, unlike your instructor.
+2579.96s - 2583.1s : OK, so right, so what does this mean?
+2583.1s - 2585.46s : Well, OK, so.
+2585.46s - 2590.62s : By this picture, I suppose, we know that u cannot be reached
+2590.62s - 2601.94s : from v. Yeah.
+2601.94s - 2603.22s : So what does that mean?
+2603.22s - 2607.32s : Well, it means that the visit to v is going to complete
+2607.32s - 2608.66s : and never see u, right?
+2608.66s - 2610.86s : Because remember that the visit to v only ever
+2610.86s - 2613.9s : calls things that are kind of descendants of v, right?
+2613.9s - 2625.14s : So in other words, visit of v completes without seeing u.
+2630.34s - 2631.86s : Well, that's exactly the same thing
+2631.86s - 2633.48s : that we showed in our first case, right?
+2633.48s - 2636.58s : So by the same reasoning, what does that mean?
+2636.58s - 2640.94s : In our reverse finishing order, the ordering from u to v
+2640.94s - 2642.7s : is preserved.
+2642.7s - 2643.2s : OK.
+2643.2s - 2643.88s : So that's sort of it.
+2643.88s - 2645.54s : So that sort of completes our proof here.
+2645.54s - 2648.72s : The reverse finishing order gives me a topological order,
+2648.72s - 2650.98s : which is kind of nice.
+2650.98s - 2652.64s : And so this is a nice convenient way
+2652.64s - 2656.76s : of taking all of the nodes in a directed acyclic graph
+2656.76s - 2659.08s : and ordering them in a way that respects the topology
+2659.08s - 2662.1s : or the connectivity of that graph.
+2662.1s - 2665.42s : So we're going to conclude with one final problem, which
+2665.42s - 2667.58s : I don't have a slide on, but that's OK.
+2667.58s - 2669.8s : And that's cycle detection.
+2669.8s - 2672.32s : So there's a bit of an exercise left to the reader, here.
+2672.32s - 2672.82s : OK.
+2672.82s - 2673.32s : All right.
+2673.32s - 2684.08s : So the problem that we're looking for now
+2684.08s - 2687.94s : is that we're given a directed graph.
+2692.44s - 2695.5s : There's a g in graph, in case you're wondering.
+2695.5s - 2698.48s : But now we don't know if it's a DAG or not.
+2698.48s - 2701.86s : And so the question that we're trying to ask is, does there
+2701.86s - 2702.36s : exist?
+2703.32s - 2709.04s : Is there a cycle in our directed acyclic graph?
+2709.04s - 2711.12s : So we're just given our graph, and we want to know,
+2711.12s - 2713.22s : can we do this?
+2713.22s - 2715.58s : Let's think through the logic of this a bit.
+2715.58s - 2716.38s : So what do we know?
+2716.38s - 2724.34s : We know that if our graph were a DAG, then I could call DFS,
+2724.34s - 2726.8s : get the ordering out, and then I guess flip its ordering
+2726.8s - 2727.3s : backwards.
+2727.3s - 2730.08s : So I could compute the reverse finishing order,
+2730.08s - 2732.44s : and it would give me a topological order of my graph.
+2733.32s - 2734.12s : Right?
+2734.12s - 2737.66s : So if I were a DAG, I would get a topological order
+2737.66s - 2740.7s : when I call DFS.
+2740.7s - 2743.98s : So let's say that I ran DFS.
+2743.98s - 2746.32s : I got whatever ordering I got.
+2746.32s - 2749.32s : And now I found an edge that points in the wrong direction.
+2749.32s - 2750.94s : I can just double check my list of edges,
+2750.94s - 2754.5s : and I find one that does not respect the relationship that I
+2754.5s - 2757.62s : see in the second bullet point, here.
+2757.62s - 2760.56s : Can my graph be a DAG?
+2760.56s - 2763.12s : No, because if my graph were a DAG, the algorithm would be a DAG.
+2763.12s - 2763.88s : The algorithm would have worked.
+2763.88s - 2764.82s : I just proved it to you.
+2764.82s - 2765.36s : Right?
+2765.36s - 2768.22s : So if my graph were a DAG, then I
+2768.22s - 2770.04s : could do a reverse finishing order.
+2770.04s - 2772.52s : And what I would get back is a topological order.
+2772.52s - 2775.36s : So if I found a certificate that my order wasn't topological,
+2775.36s - 2776.32s : something went wrong.
+2776.32s - 2777.82s : And the only thing that could go wrong
+2777.82s - 2779.86s : is that my graph isn't a DAG.
+2779.86s - 2781.48s : Yeah, isn't a DAG.
+2781.48s - 2784.24s : In fact, sort of an exercise left to the reader
+2784.24s - 2785.44s : and or to your section.
+2785.44s - 2786.56s : Do we still have section?
+2786.56s - 2789.06s : I think we do, as of now.
+2789.06s - 2792.92s : Is that this is an if and only if, meaning that the only thing
+2792.92s - 2795.68s : that you can do is to check the order of your graph.
+2795.68s - 2798.8s : And the only time that you even have a topological ordering
+2798.8s - 2802.64s : in your graph is if your graph is a DAG.
+2802.64s - 2805.1s : This is a really easy fact to sanity check, by the way.
+2805.1s - 2806.9s : This is not a particularly challenging problem.
+2806.9s - 2808.52s : But you should think through it, because it's
+2808.52s - 2811.4s : a good exercise to make sure you understand the definitions.
+2811.4s - 2814.1s : Which is to say that if you have a topological order,
+2814.1s - 2815.3s : your graph is a DAG.
+2815.3s - 2816.98s : If you don't have a topological order,
+2816.98s - 2818.92s : your graph isn't a DAG.
+2818.92s - 2821.04s : So in other words, we secretly gave you an algorithm
+2821.04s - 2822.92s : for checking if a graph is a DAG at all.
+2822.92s - 2825.26s : First finishing order, check if it
+2825.26s - 2827.3s : obeys the relationship on the second bullet point here
+2827.3s - 2828.42s : for every edge.
+2828.42s - 2830.12s : And if it does, then we're in good shape.
+2830.12s - 2831.56s : My graph is a DAG.
+2831.56s - 2833.06s : If it doesn't, something went wrong.
+2833.06s - 2834.9s : And the only thing that could have gone wrong
+2834.9s - 2836.6s : is not being a DAG.
+2836.6s - 2837.62s : OK.
+2837.62s - 2841.38s : So in other words, secretly, we just solved, well,
+2841.38s - 2843.26s : I guess the way that I've written it here,
+2843.26s - 2846.22s : we've solved the cycle detection problem here,
+2846.22s - 2850.4s : which is to say that, well, I have a cycle if and only if I
+2850.4s - 2852.92s : don't, I'm not a DAG, which I can check using
+2852.92s - 2853.72s : this technique.
+2853.72s - 2855.8s : Of course, the word detection here probably
+2855.8s - 2857.46s : means that I actually want to find that cycle,
+2857.46s - 2859.42s : and I haven't told you how to do that yet.
+2859.42s - 2861.7s : All we know how to do so far is say, like,
+2861.7s - 2863.66s : yeah, somewhere in this graph there's a cycle,
+2863.66s - 2865.62s : and that's not so good.
+2865.62s - 2867.9s : So we can do one additional piece of information
+2867.9s - 2869.9s : in the two minutes we have remaining
+2869.9s - 2871.88s : to sort of complete our story here, which
+2871.88s - 2875.52s : is to modify our algorithm ever so slightly to not only say,
+2875.52s - 2878.18s : like, thumbs up, thumbs down, is there a cycle in this graph,
+2878.18s - 2881.7s : but also to actually return the vertices as a cycle.
+2881.7s - 2882.76s : And here's the property.
+2882.76s - 2884.64s : There's a property that we're going to do that, which
+2884.64s - 2899.36s : is the following, which is that if G contains a cycle,
+2899.36s - 2911.54s : then a full DFS will traverse an edge from a vertex V
+2911.54s - 2912.24s : to some.
+2912.24s - 2912.74s : And.
+2912.74s - 2919.02s : Ancestor of V. I guess we haven't carefully defined
+2919.02s - 2920.52s : the term ancestor here.
+2920.52s - 2926.08s : Essentially, if you think of the sort of the running of the DFS
+2926.08s - 2927.88s : algorithm, then an ancestor is like something
+2927.88s - 2932.06s : that appears in the recursive call tree before I got to V.
+2932.06s - 2932.6s : OK.
+2932.6s - 2934.76s : So how could we prove that?
+2934.76s - 2938.72s : Well, let's take a cycle.
+2942.74s - 2944.5s : And we'll give it a name.
+2944.5s - 2950.3s : In particular, we'll say that it's a cycle from V0, V1 to Vk.
+2950.3s - 2952.82s : And then it's a cycle, so it goes back to V0.
+2952.82s - 2954.08s : OK.
+2954.08s - 2956.86s : And I can order this cycle any way I want.
+2956.86s - 2960.04s : Notice that if I permute the vertices in this list
+2960.04s - 2962.58s : in a cyclical way, meaning that I take the last few of them
+2962.58s - 2965.28s : and stick them at the beginning of the list, it's still a cycle.
+2965.28s - 2967.24s : It's a nice thing about cycles.
+2967.24s - 2970.54s : So in particular, without loss of generality,
+2970.54s - 2971.04s : OK.
+2972.74s - 2981.52s : We're going to assume that V0 is the first vertex visited
+2981.52s - 2982.98s : by DFS.
+2992.02s - 2992.92s : What does that mean?
+2992.92s - 2995.08s : That means like when I do my DFS algorithm,
+2995.08s - 2996.54s : making all these recursive calls,
+2996.54s - 2998.98s : the very first vertex to be touched by this technique
+2998.98s - 3000.7s : is V0.
+3000.7s - 3002.14s : OK.
+3002.14s - 3002.6s : Well.
+3002.6s - 3004.5s : Now what's going to end up happening?
+3004.5s - 3007.26s : Well, think about the recursive call tree starting at V0.
+3010.36s - 3013.38s : By the time that completes, anything
+3013.38s - 3016.66s : that's reachable from V0 is also going to be complete.
+3016.66s - 3018.36s : Do you see that?
+3018.36s - 3020.64s : So like, for instance, V0 somewhere in its call tree
+3020.64s - 3022.58s : might call V1.
+3022.58s - 3024.92s : And notice that V1 was not already visited, so in fact,
+3024.92s - 3025.82s : it will.
+3025.82s - 3028.84s : From V1, I've got to call V2 and so on.
+3028.84s - 3029.88s : And in particular, we're going to get all the way to V0.
+3029.88s - 3030.38s : OK.
+3030.38s - 3031.0s : So now, what's going to end up happening?
+3031.0s - 3031.96s : Well, think about the recursive call tree starting at V0.
+3031.96s - 3034.76s : We're going to get all the way to vertex k.
+3034.76s - 3036.2s : Right?
+3036.2s - 3043.1s : So in other words, we're going to visit vertex Vk.
+3046.14s - 3047.74s : And notice what's going to happen.
+3047.74s - 3049.2s : So remember our algorithm.
+3049.2s - 3051.5s : In fact, we should probably just put it up on the screen.
+3051.5s - 3054.34s : It would be easier than talking about it a bunch.
+3054.34s - 3058.84s : Well, Vk is now going to iterate over every one
+3058.84s - 3059.72s : of the neighbors of Vk.
+3059.72s - 3060.22s : OK.
+3060.22s - 3060.72s : OK.
+3060.72s - 3061.22s : OK.
+3061.22s - 3061.72s : OK.
+3061.72s - 3061.96s : OK.
+3061.96s - 3062.48s : OK.
+3062.48s - 3062.98s : OK.
+3062.98s - 3063.48s : OK.
+3063.48s - 3063.98s : Right?
+3063.98s - 3064.78s : Very interesting.
+3064.78s - 3067.06s : It's going to see vertex V0.
+3067.06s - 3068.48s : Right?
+3068.48s - 3073.82s : So we're going to see the edge from Vk
+3073.82s - 3078.12s : to V0, which is an edge by definition,
+3078.12s - 3081.14s : because we took this to be a cycle here.
+3081.14s - 3083.64s : But notice, that's exactly the thing we set out to prove.
+3083.64s - 3088.48s : Namely, the full DFS traverses an edge from a vertex
+3088.48s - 3090.08s : to one of its ancestors.
+3090.08s - 3091.18s : Here's the vertex k.
+3091.18s - 3092.26s : know that it's an ancestor?
+3092.26s - 3095.26s : Well, because V0 was called in our call tree
+3095.26s - 3098.38s : before any of these other guys.
+3098.38s - 3101.18s : So we wanted an algorithm that not only did cycle detection,
+3101.18s - 3102.94s : but also actually gave me the cycle.
+3102.94s - 3103.94s : What could I do?
+3103.94s - 3106.12s : Well, it's essentially a small modification
+3106.12s - 3107.3s : of what we already have.
+3107.3s - 3111.62s : So if I want to compute topological order or whatever,
+3111.62s - 3113.2s : I can just do DFS.
+3113.2s - 3115.96s : And that'll tell me, yay or nay, does there exist a cycle.
+3115.96s - 3119.2s : If I want to actually find that cycle, all I have to do
+3119.2s - 3123.04s : is check that topological order property at the same time
+3123.04s - 3125.32s : that I traverse the graph during DFS.
+3125.32s - 3130.24s : And the second that I find an edge that loops back, I'm done.
+3130.24s - 3132.32s : And so that's our basic algorithm here.
+3132.32s - 3134.42s : And this is a technique for actually defining
+3134.42s - 3136.86s : the cycle in a graph using the DFS algorithm.

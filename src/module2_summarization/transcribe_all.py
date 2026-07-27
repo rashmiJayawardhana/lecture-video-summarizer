@@ -6,7 +6,7 @@ import os
 VIDEOS_FOLDER      = "videos"
 TRANSCRIPTS_FOLDER = "src/module2_summarization/transcripts"
 JSON_FOLDER        = "src/module2_summarization/json_output"
-WHISPER_MODEL      = "base"  # use "large-v3" later for final run
+WHISPER_MODEL      = "large-v3" # use "large-v3" later for final run
 # ─────────────────────────────────────────────────────────────
 
 print("Loading Whisper model...")
