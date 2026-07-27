@@ -44,8 +44,8 @@
 404/404  LecVideo 043 - S2024 #18 - Databricks Photon  Spark SQL (CMU Advanced Database Systems) (complete)
 373/373  LecVideo 044 - S2024 #20 - DuckDB Embedded Database System (CMU Advanced Database Systems) (complete)
 289/289  LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework ✓_1080p60 (complete)
-0/504  LecVideo 046 - 1 - Cloud Fundamentals - Recording 01_IS 4630
-0/493  LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
+504/504  LecVideo 046 - 1 - Cloud Fundamentals - Recording 01_IS 4630 (complete)
+3/493  LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
 0/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
 359/359  LecVideo 049 - PMP 6th Edition Training Video  PMBOK 6th Edition  PMP Certification Training Video  Simplilearn (complete)
 414/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems) (complete)
@@ -60,16 +60,17 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 18297/23402 segments (78.2%) across 61 video(s), all annotators combined
+TOTAL: 18804/23402 segments (80.4%) across 61 video(s), all annotators combined
 
-VIDEOS: 48 complete | 3 partially annotated | 10 not started yet (of 61 total)
+VIDEOS: 49 complete | 4 partially annotated | 8 not started yet (of 61 total)
 
-Partially annotated (3):
+Partially annotated (4):
+  - 3/493  LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
   - 1/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
   - 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-Not started yet (10):
+Not started yet (8):
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
   - LecVideo 031 - CS162 Lecture 14 Memory 2 Virtual Memory (Con't), Caching and TLBs
   - LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction
@@ -77,8 +78,6 @@ Not started yet (10):
   - LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
   - LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
   - LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
-  - LecVideo 046 - 1 - Cloud Fundamentals - Recording 01_IS 4630
-  - LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
   - LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
 
-Updated: 2026-07-27T23:25:20
+Updated: 2026-07-28T00:48:15
