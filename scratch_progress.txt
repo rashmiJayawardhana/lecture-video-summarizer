@@ -12,7 +12,7 @@
 314/314  LecVideo 011 - 10. Depth-First Search - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
 345/345  LecVideo 012 - 11. Weighted Shortest Paths - MIT 6.006 Introduction to Algorithms, Spring 2020 (complete)
 354/354  LecVideo 013 - 19. Complexity - MIT Sping 2020 (complete)
-132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
+356/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020 (complete)
 465/465  LecVideo 015 - 19. Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees - MIT 6.046J, Spring 2015 (complete)
 359/359  LecVideo 016 - Lecture -3 TCP IP - Part-1 -  Internet Technology (complete)
 406/406  LecVideo 017 - L02 Sorting & Hashing  UC Berkeley CS 186, Spring 2015 (complete)
@@ -24,7 +24,7 @@
 459/459  LecVideo 023 - Lec 05 - Enterprise Application Development (complete)
 7/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
 0/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
-156/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
+277/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
 0/421  LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8
 398/398  LecVideo 028 - CMU CS251 - What is theoretical computer science (complete)
 498/498  LecVideo 029 - CS162 Lecture 1 What is an Operating System (complete)
@@ -60,15 +60,14 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 15210/23402 segments (65.0%) across 61 video(s), all annotators combined
+TOTAL: 15555/23402 segments (66.5%) across 61 video(s), all annotators combined
 
-VIDEOS: 39 complete | 7 partially annotated | 15 not started yet (of 61 total)
+VIDEOS: 40 complete | 6 partially annotated | 15 not started yet (of 61 total)
 
-Partially annotated (7):
-  - 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
+Partially annotated (6):
   - 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
   - 7/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
-  - 156/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
+  - 277/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
   - 3/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
   - 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
@@ -90,4 +89,4 @@ Not started yet (15):
   - LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
   - LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
 
-Updated: 2026-07-27T15:49:42
+Updated: 2026-07-27T18:56:35
