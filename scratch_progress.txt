@@ -24,7 +24,7 @@
 459/459  LecVideo 023 - Lec 05 - Enterprise Application Development (complete)
 7/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
 0/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
-0/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
+148/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
 0/421  LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8
 398/398  LecVideo 028 - CMU CS251 - What is theoretical computer science (complete)
 498/498  LecVideo 029 - CS162 Lecture 1 What is an Operating System (complete)
@@ -60,21 +60,21 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 15054/23402 segments (64.3%) across 61 video(s), all annotators combined
+TOTAL: 15202/23402 segments (65.0%) across 61 video(s), all annotators combined
 
-VIDEOS: 39 complete | 6 partially annotated | 16 not started yet (of 61 total)
+VIDEOS: 39 complete | 7 partially annotated | 15 not started yet (of 61 total)
 
-Partially annotated (6):
+Partially annotated (7):
   - 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
   - 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
   - 7/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
+  - 148/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
   - 3/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
   - 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-Not started yet (16):
+Not started yet (15):
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
-  - LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
   - LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8
   - LecVideo 031 - CS162 Lecture 14 Memory 2 Virtual Memory (Con't), Caching and TLBs
   - LecVideo 032 - AI Basics for Beginners
@@ -90,4 +90,4 @@ Not started yet (16):
   - LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
   - LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
 
-Updated: 2026-07-27T11:14:11
+Updated: 2026-07-27T15:33:08
