@@ -48,11 +48,11 @@
 0/493  LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
 0/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
 359/359  LecVideo 049 - PMP 6th Edition Training Video  PMBOK 6th Edition  PMP Certification Training Video  Simplilearn (complete)
-3/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
-0/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
+414/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems) (complete)
+3/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
 0/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
 0/477  LecVideo 053 - Lec 06 - Enterprise Application Development
-0/384  LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems)
+384/384  LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems) (complete)
 382/382  LecVideo 055 - #Software #Engineering - Lecture 2 _ Software Processes, Activities, The Rational Unified Process (complete)
 423/423  LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn (complete)
 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
@@ -60,19 +60,19 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-TOTAL: 13779/23402 segments (58.9%) across 61 video(s), all annotators combined
+TOTAL: 14577/23402 segments (62.3%) across 61 video(s), all annotators combined
 
-VIDEOS: 36 complete | 6 partially annotated | 19 not started yet (of 61 total)
+VIDEOS: 38 complete | 6 partially annotated | 17 not started yet (of 61 total)
 
 Partially annotated (6):
   - 132/356  LecVideo 014 - 21. Algorithms—Next Steps - MIT Spring 2020
   - 220/328  LecVideo 020 - Lecture 18_ Information Gathering (Part 2)
   - 7/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p
-  - 3/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems)
+  - 3/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
   - 1/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices
 
-Not started yet (19):
+Not started yet (17):
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
   - LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1
   - LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8
@@ -88,9 +88,7 @@ Not started yet (19):
   - LecVideo 046 - 1 - Cloud Fundamentals - Recording 01_IS 4630
   - LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts
   - LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
-  - LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18
   - LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
   - LecVideo 053 - Lec 06 - Enterprise Application Development
-  - LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems)
 
-Updated: 2026-07-27T04:22:29
+Updated: 2026-07-27T07:23:17
