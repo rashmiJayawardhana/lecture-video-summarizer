@@ -115,7 +115,7 @@ class LectureFeatureDataset(Dataset):
         return torch.tensor(segment_features, dtype=torch.float32), torch.tensor(score, dtype=torch.float32)
 
 
-def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=1e-4, augment=True):
+def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=3e-5, augment=True):
     """
     Main training loop for Module 1.
     """
