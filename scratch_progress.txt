@@ -32,8 +32,8 @@
 507/507  LecVideo 031 - CS162 Lecture 14 Memory 2 Virtual Memory (Con't), Caching and TLBs (complete)
 364/364  LecVideo 032 - AI Basics for Beginners (complete)
 0/263  LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction
-0/287  LecVideo 034 - ArgoCD Tutorial for Beginners _ GitOps CD for Kubernetes
-0/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
+287/287  LecVideo 034 - ArgoCD Tutorial for Beginners _ GitOps CD for Kubernetes (complete)
+11/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
 462/462  LecVideo 036 - CS50 Cybersecurity - Lecture 2 - Securing Systems (complete)
 369/369  LecVideo 037 - Networking Lecture 12 - Broadcast - 2020 (complete)
 0/364  LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
@@ -60,21 +60,20 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 507/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices (complete)
 
-TOTAL: 20308/23402 segments (86.8%) across 61 video(s), all annotators combined
+TOTAL: 20606/23402 segments (88.1%) across 61 video(s), all annotators combined
 
-VIDEOS: 52 complete | 3 partially annotated | 6 not started yet (of 61 total)
+VIDEOS: 53 complete | 4 partially annotated | 4 not started yet (of 61 total)
 
-Partially annotated (3):
+Partially annotated (4):
+  - 11/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
   - 1/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
   - 1/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
 
-Not started yet (6):
+Not started yet (4):
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
   - LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction
-  - LecVideo 034 - ArgoCD Tutorial for Beginners _ GitOps CD for Kubernetes
-  - LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
   - LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
   - LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
 
-Updated: 2026-07-28T08:50:19
+Updated: 2026-07-28T12:00:03
