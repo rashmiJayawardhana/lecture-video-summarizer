@@ -76,4 +76,4 @@ Not started yet (4):
   - LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
   - LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
 
-Updated: 2026-07-28T12:00:03
+Updated: 2026-07-28T15:51:07
