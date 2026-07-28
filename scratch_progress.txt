@@ -36,7 +36,7 @@
 11/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
 462/462  LecVideo 036 - CS50 Cybersecurity - Lecture 2 - Securing Systems (complete)
 369/369  LecVideo 037 - Networking Lecture 12 - Broadcast - 2020 (complete)
-0/364  LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
+170/364  LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
 287/287  LecVideo 039 - Lecture 23_ System Hacking (complete)
 354/354  LecVideo 040 - CMU CS251 - Encodings and Computational Problems (complete)
 335/335  LecVideo 041 - CS50x 2024 - Artificial Intelligence (complete)
@@ -60,20 +60,20 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 507/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices (complete)
 
-TOTAL: 20606/23402 segments (88.1%) across 61 video(s), all annotators combined
+TOTAL: 20776/23402 segments (88.8%) across 61 video(s), all annotators combined
 
-VIDEOS: 53 complete | 4 partially annotated | 4 not started yet (of 61 total)
+VIDEOS: 53 complete | 5 partially annotated | 3 not started yet (of 61 total)
 
-Partially annotated (4):
+Partially annotated (5):
   - 11/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
+  - 170/364  LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
   - 1/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
   - 1/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
   - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
 
-Not started yet (4):
+Not started yet (3):
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
   - LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction
-  - LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020
   - LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
 
-Updated: 2026-07-28T15:51:07
+Updated: 2026-07-28T16:22:43
