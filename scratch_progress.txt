@@ -23,7 +23,7 @@
 537/537  LecVideo 022 - 5 - Part 1 - Project Risk Management - Project Management (complete)
 459/459  LecVideo 023 - Lec 05 - Enterprise Application Development (complete)
 469/469  LecVideo 024 - CS50 Cybersecurity - Lecture 4 - Preserving Privacy_1080p (complete)
-0/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
+275/275  LecVideo 025 - CS50x 2023 - Cybersecurity_1080p (complete)
 472/472  LecVideo 026 - Stanford CS229 Machine Learning I Introduction I 2022 I Lecture 1 (complete)
 421/421  LecVideo 027 - Stanford CS229 Machine Learning I Neural Networks 1 I 2022 I Lecture 8 (complete)
 398/398  LecVideo 028 - CMU CS251 - What is theoretical computer science (complete)
@@ -31,16 +31,16 @@
 284/284  LecVideo 030 - CS162 Lecture 6.5 Concurrency and Mutual Exclusion (Supplemental) (complete)
 507/507  LecVideo 031 - CS162 Lecture 14 Memory 2 Virtual Memory (Con't), Caching and TLBs (complete)
 364/364  LecVideo 032 - AI Basics for Beginners (complete)
-0/263  LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction
+263/263  LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction (complete)
 287/287  LecVideo 034 - ArgoCD Tutorial for Beginners _ GitOps CD for Kubernetes (complete)
-11/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
+432/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW] (complete)
 462/462  LecVideo 036 - CS50 Cybersecurity - Lecture 2 - Securing Systems (complete)
 369/369  LecVideo 037 - Networking Lecture 12 - Broadcast - 2020 (complete)
 364/364  LecVideo 038 - Networking Lecture 18 - QUIC and Course Review - 2020 (complete)
 287/287  LecVideo 039 - Lecture 23_ System Hacking (complete)
 354/354  LecVideo 040 - CMU CS251 - Encodings and Computational Problems (complete)
 335/335  LecVideo 041 - CS50x 2024 - Artificial Intelligence (complete)
-0/418  LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
+418/418  LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems) (complete)
 404/404  LecVideo 043 - S2024 #18 - Databricks Photon  Spark SQL (CMU Advanced Database Systems) (complete)
 373/373  LecVideo 044 - S2024 #20 - DuckDB Embedded Database System (CMU Advanced Database Systems) (complete)
 289/289  LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework ✓_1080p60 (complete)
@@ -50,7 +50,7 @@
 359/359  LecVideo 049 - PMP 6th Edition Training Video  PMBOK 6th Edition  PMP Certification Training Video  Simplilearn (complete)
 414/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems) (complete)
 359/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18 (complete)
-81/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
+429/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker (complete)
 477/477  LecVideo 053 - Lec 06 - Enterprise Application Development (complete)
 384/384  LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems) (complete)
 382/382  LecVideo 055 - #Software #Engineering - Lecture 2 _ Software Processes, Activities, The Rational Unified Process (complete)
@@ -60,17 +60,8 @@
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 507/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices (complete)
 
-TOTAL: 21677/23402 segments (92.6%) across 61 video(s), all annotators combined
+TOTAL: 23402/23402 segments (100.0%) across 61 video(s), all annotators combined
 
-VIDEOS: 56 complete | 2 partially annotated | 3 not started yet (of 61 total)
+VIDEOS: 61 complete | 0 partially annotated | 0 not started yet (of 61 total)
 
-Partially annotated (2):
-  - 11/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
-  - 81/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
-
-Not started yet (3):
-  - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
-  - LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction
-  - LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
-
-Updated: 2026-07-28T23:44:18
+Updated: 2026-07-29T02:17:04
