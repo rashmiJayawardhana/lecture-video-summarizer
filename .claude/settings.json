@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m uvicorn src.module2_summarization.api.main:app --port 8123)",
+      "Bash(python -m uvicorn src.module2_summarization.api.main:app --port 8321)",
+      "Bash(curl -s http://127.0.0.1:8321/)",
+      "Bash(curl -s -X GET http://127.0.0.1:8321/status/does-not-exist -o /dev/null -w \"status endpoint 404 check: %{http_code}\\\\n\")",
+      "Bash(curl -s -o - -w \"\\\\nHTTP %{http_code}\\\\n\" http://127.0.0.1:8321/status/does-not-exist)",
+      "Bash(curl -s -X POST http://127.0.0.1:8321/classify -H 'Content-Type: application/json' -d '{\"sentences\":[{\"sentence\":\"A binary search tree is defined as a sorted structure.\",\"timestamp_start\":0.0,\"timestamp_end\":3.0},{\"sentence\":\"Let me take a sip of water.\",\"timestamp_start\":3.0,\"timestamp_end\":5.0}]}' -o - -w '\\\\nHTTP %{http_code}\\\\n')",
+      "Bash(curl -s -X POST http://127.0.0.1:8321/enrich -H 'Content-Type: application/json' -d '{\"segments\":[{\"segment_id\":\"seg_000\",\"timestamp_start\":0.0,\"timestamp_end\":10.0,\"importance_ratio_T\":0.8,\"sentences\":[{\"sentence\":\"A binary search tree is defined as a sorted structure.\",\"timestamp_start\":0.0,\"timestamp_end\":3.0,\"is_important\":true,\"confidence\":0.9,\"keyword_boost\":true,\"definition_match\":true,\"repetition_boost\":false}]}]}' -o - -w '\\\\nHTTP %{http_code}\\\\n')",
+      "Bash(curl -s http://127.0.0.1:8321/openapi.json)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(sorted\\(d['paths'].keys\\(\\)\\)\\)\")"
+    ]
+  }
+}

@@ -6599,5 +6599,2255 @@
     "timestamp_start": 1543.04,
     "timestamp_end": 1545.22,
     "is_important": 0
+  },
+  {
+    "sentence": "\ud83c\udfb5",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Alright, let's get started!",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Alright, give it up for DPH Cash again!",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Awesome.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Alright, so quick reminder, I'm going to be gone next week.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I'm going to London to see your boy, Patface Rick.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Oh, my man Patface Rick!",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So no class next week.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "In person, I'll record it while I'm remote, post it on YouTube, and I'll say hi to your friend, whatever.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So, alright, and then Project Zero, that went out on Monday.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "That'll be due on September 7th.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Homework 1 will be released later today, and that'll also be due on the same date.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So again, Project Zero.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Project Zero is the C++ project approved that you know is C++, and you can debug multi-threaded code.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So please go, you know, start that sooner rather than later, because you'll set up your dev environment and make sure everything's working.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Alright, so last class, we were a bit rushed, but we talked about how the relational model was the superior data model for databases.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And it pretty much is the fundamental way you would represent any major application database or data in a system.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then we also talked about how relational algebra is the building blocks.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So it's really about how you can create a system for us to manipulate and query data in a relational model database, in a relational database system.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so today's class is really about sort of, we won't go back and look at relational algebra again.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now we'll talk about SQL, which is in a higher form of a query language than what relational algebra is.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But then when we start actually talking about how to implement the system itself and actually execute the queries that we'll talk about today,",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "that's when relational algebra will come back and sort of fit in.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "See, okay, now you see how these are.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "These are the building blocks that are building the system.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Okay?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Alright, so let's go back to the 70s and the very beginning of SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So as I said, when Ted Codd wrote the original paper on the relational model in 1969, 1970, it was just the relational model and relational algebra.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "He didn't go into anything in details about the implementation of the system that could run a relational model.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And he didn't say anything about what the query language should be.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so the other people at IBM picked up the paper and said, hey, this is actually a really good idea.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Even though IBM was making a ton of early money on a non-relational model system called IMS.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so they decided to start building a prototype in England.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And the guys that invented SQL first developed a query language called Square.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And it's considered to be the first relational query language.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But nobody actually uses it because the syntax is pretty esoteric.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And there actually wasn't a lot of information about it.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So they just started building a prototype.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And they didn't even have a keyboard or any application to let you write code in it.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You write things in this vertical manner.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "This is the classic example of getting the average sales salary of employees in a department.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So again, so this was Square.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Nobody actually did this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "They threw it away.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then a bunch of the people that were working in England, they moved to San Jose in California at IBM Research.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And they started building the first prototype or the second prototype of IBM.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And it was a really cool idea.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It was a really cool idea for building a relational data system called System R.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's very influential.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "A lot of seminal work came out of this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "We'll see many times throughout the entire semester where I'll say, like, hey, this is a kind of cool idea.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And here's a bunch of new systems in the modern era that actually implemented it.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, it turns out IBM invented a bunch of that crap in the 1970s.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so they first developed a query language called SQL, spelled S-E-Q-U-E-L, in 1972.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And this was Chamberlain and Boyce.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And it originally stood for Structured English Query Language.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But then when IBM later then released a commercial product based on relational model and SQL in the 1980s, then they got sued because there was some other system or some other language out there was already using SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And they changed it to be SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So sometimes you'll see people refer to, like, MySQL as MySQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But a lot of the older guys back in the 70s, around the 80s, refer to it as SQL because that was the original name.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So IBM released the neighborhood name.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's called SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "They didn't release system R. They then later released other commercial systems like system 38.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "That's not really around anymore.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "SQL DS is around, but it's kind of in maintenance mode.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But DB2 in 1983 was the big one that IBM put out.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And that's still out today.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I guarantee if you run any transaction online to some website, some bank, you're running on changes are very likely some bank will be using DB2.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Right?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There was other commercial systems in the 1970s.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The first one was probably Oracle.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Which was founded by Larry Ellison.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "If you don't know him, he's the third richest person in the world.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "He owns a Hawaiian island.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "All paid for by databases.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Again, this is why this class is important.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So SQL was originally, again, this proposal from IBM.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But, again, IBM was the juggernaut of computing back in the 1960s, 70s, and 80s.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So whatever IBM did, that's what they said.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Everyone said, okay, that's the standard.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The Oracle guys lucked out.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "They basically copied what IBM was doing.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The Berkeley guys that built Ingress, they had their own query language called Quell.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But then when IBM put out DB2, SQL became the de facto standard.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It became an anti-standard in 1986 within the United States and then an international standard in 1987.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then they changed it to be the structured query language for SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So even though SQL is old, I just told you SQL was invented in 1972, 73.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's not a dead language.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's actively being used everywhere.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I keep telling you throughout the entire semester, knowing SQL and writing SQL is super important.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And they put out new versions of it all the time.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The latest one came out in March 2023.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "They added a bunch of new features like property graph queries and multidimensional arrays.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You ever heard of systems like Neo4j, Dgraph, there's a bunch of other graph databases.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now you can do all that SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So the great thing about SQL is it evolves over time.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And as applications change.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And what people want to do with data changes.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "SQL gets added.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "They add new features to SQL to adopt to the times.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And the challenge is going to be, and we'll see this throughout this lecture here, is that the SQL standard is going to say one thing.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But nobody is actually going to implement it exactly.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Every single data system is going to have their own quirks, their own little extra stuff they're going to sprinkle in.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Sometimes they're ahead of the standard and they try to get whatever their version of a feature is into the standard.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And sometimes the standard comes out and then they add it later on.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But they still take their own liberties, if you will, with it.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And we'll see what some of the biggest offenders are today in our demos.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So if you have a data system today and you say you're going to support SQL, the bare minimum you need to have, say I have a SQL database, is what was defined in the SQL92 standard.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So this is your select, insert, update, deletes.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Your create tables, create indexes, transactions.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The very basic you need to say, you know, SQL, that I have SQL is that you follow the SQL92 standard.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But today's class we'll go a little bit, talk about the newer stuff.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so people come along every ten years and say SQL is a terrible language.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's not great.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It certainly has its rough spots.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But every attempt to try to replace it in the last 50, 60 years has failed.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So right now we're in the phase where all the AI guys are saying, oh, yeah, SQL is going to die.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can use LLMs for everything, yada, yada, yada.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So this is the guy working on a system called Vespa.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "He's basically saying natural language would replace SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "This guy is going to say, hey, I'm going to replace SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "This guy is like a crypto bro and trying to sell some video demo or some video like code academy thing, right, where you can use chat dbt to replace everything with SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So I'm not here to say that SQL is not going to be replaced in my lifetime.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It may be, but it's very unlikely.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It was here before you were born.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It would be here after we die.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So it's not going to go away.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But the would you be when you sit down, are you going to immediately write SQL?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "In many cases, oftentimes no.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Right?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Yes?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": ".",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The question is what would replace SQL?",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I don't know.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So we actually did a seminar series last semester where we had all the people that are trying to replace SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Talk about how they're going to replace SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The closest one that I think could not replace SQL but extend it is actually Google's pipe SQL syntax.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And I can give a little demo of that in a second.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "What's that?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You were at Google?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Yeah.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So that thing's.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Yeah, I wrote it down.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Oh, you wrote it.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Okay.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Yes.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So there you go.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So that's probably the closest thing.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But it's still fundamentally it's an enhancement to SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "What's that?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The question is what keeps it going?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Going back to this, it evolves.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Right?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like here's all the different versions.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like say 15 years ago, what was the hot database?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "MongoDB.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Because of web 2.0, whatever the buzz word was at the time.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You were starting everything as JSON.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, the SQL standard now adds support for JSON.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "30 years ago, 20 years ago, XML was the hot thing.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, SQL supports XML.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The statement is the flexibility of the SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "SQL will provide you a basic building block that you can then add more advanced features and do just about things.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Right?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now, again, I mentioned like are they doing things?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Is it perfect?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "No.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "One of the biggest complaints is that the select clause comes before the from clause.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Right?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, in the original proposal from IBM in the 1970s, the from clause came first, then the select.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But then they did a user study at the Arizona State University.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And all the students, whatever they tested, said, oh, we like the select before the from.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And that's the way it's been for 50, 60 years because of those people.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Right?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, we'll see some data systems we can play around with and see how you can change things.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Sometimes you don't always have to have it in that order.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can do it in the general order you do.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So, again, I've said many, many public statements before that like SQL is the most important programming language you need to learn as a student.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Because, again, no matter whether you're actually building a database system or just using one, the rest of your life you're going to come across SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And maybe the LLMs can provide you a first draft of a query language.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Maybe it will end up being like assembly where there's the high level things we can write and then that gets transpiled down to SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Which is what a lot of replacements to SQL are trying to do.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But everybody has to learn SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's very, very important.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so to give you how an example of how serious I am about learning SQL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Audio up here.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There's no audio.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, this is my 5-year-old biological daughter.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And every morning we wake up at 7 a.m. and she has to write SQL before she can have breakfast.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Is that considered child abuse?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "No.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I don't know.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now is mommy going to love me more since I wrote SQL?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I tell her mom loves her more when she writes SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It works.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Okay.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So what does the relational language give it?",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "What is SQL going to give us?",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There will be sort of three basic components.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The DML, DDL, and DCL.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "DML is the data manipulation language.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "When you write a select statement or update, insert, update, delete, those are all going to be DMLs.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The DDL will be the definition of like a table, an index, or a view.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And the DCL is the definition of a table.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And the DCL will be like controls, like controlling who is allowed to see what data or what comps and so forth.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There's other things we'll cover later in the semester, like transactions, like how to call begin transaction and rollback and things like that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But we'll worry about that later.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "One important thing we got to understand also, too, is that although the relational model is based on sets, right, we looked at unions and intersections, that was basic set theory.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "SQL is going to be based on bags.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So sets are unordered collections of data.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "When you don't have duplicates, bags are unordered collections of data.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You do have duplicates.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Lists are lists would be an order collection that has a defined order.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Bags and sets do not.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So that means that if the in SQL, they're going to make this choice to allow duplicates because it requires extra work to remove the duplicates.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so if you really want to remove them, you have to add extra maybe, you know, keywords like distinct and other things to remove the things that you don't want to remove.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So by default, we'll have duplicates.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And most of the times, it's not a problem.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But if you do care about removing duplicates, there's SQL that will allow you to do this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So we're going to do a quick crash course on the basics of SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But I want to cover the things that are more modern in the spec.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And we'll look at some examples of how real systems actually run these things.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then for today, we actually have one of our first flash talks for the semester.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So the guys from dbt are going to come give a talk about their system.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Who here has ever heard of dbt or used dbt before?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "One.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It is one of the most widely used database tools in the world today.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's basically if you're a data scientist or doing any major data analysis, chances are they're running on dbt.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's pretty significant.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And guess what?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's just based on SQL.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's SQL with templates.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So he'll talk about what they're doing over there.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then they'll come, again, come give a pitch for recruiting later in the semester.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like one of our best students from 445 last year, she's there right now.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So today's class, the example database we're going to use will be just a really simple representation of a university.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There's a student table.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There's a course table.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then students take those courses and they get grades.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So we'll just use this as the running example throughout today's class.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So the very first thing we want to do is aggregations.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I'm assuming everyone here has seen SQL before.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So you know how to do basic selects, inserts, updates, deletes.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "We don't need to cover those things.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But now we want to start extrapolating new data, new information from the data we've already collected and put it into our database.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So aggregations are the basic formula of how to do this.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The idea is that you're going to take multiple tuples or multiple values across multiple tuples.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And we can coalesce them into a single scalar value.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And we can use a single scalar value that computes some aggregate function.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like an average, min, max, the count.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Other systems can support things like standard deviations or geometric means.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The basic idea is you're collapsing down multiple values and producing a single output.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So the aggregation function can pretty much be used only in the output list or projection list of our SQL query.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Not always the case because of nested queries.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But for now we can ignore that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So some really basic things.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like you can say count the number of students that have an at CS login.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then in our projection output list here we see we have an account function that's computing.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "For every student that matches that predicate, I think of the filter from last class.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "My projection output is going to maintain a running tally of the number of students that it counts.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Notice I have count with the login field in there.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Does that make any sense?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Does that sound right?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "What does it mean to be counting logins?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, it turns out for some functions like count, it doesn't actually matter what you put in there.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I can do count star, produce the same answer.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I can do count one, produce the same answer.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can put count one plus plus one.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like whatever.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Because at the end of the day all it's really doing is counting the number of tuples that get matched here.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So that's a basic aggregation.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "If we try to do things like have multiple attributes.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "In our projection list.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "In addition to an aggregation, we can have some problems.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So in this query here we're trying to get the average GPA of a student enrolled in each course.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And obviously now we want to include the course ID.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Because we want to know what course the average is being computed for.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But is this correct?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Shaking his head no.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Why?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, he says group by.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "That will be the answer.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "How to fix it.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But what does it mean to compute the average GPA of all the tuples.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But then spit out the average GPA.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But then spit out some kind of course ID.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There isn't a canonical one.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The statement is there isn't a canonical one that should be part of the output.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Correct.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Right.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So this is invalid.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Most database systems will throw an error and say you can't do this.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "SQLite will let you do this.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "MySQL used to let you do it.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Doesn't let you do it anymore.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And so the way to get around this would be you just put.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can put any value in there.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "This is something new that SQL added.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And it produces some output.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Is this correct?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But like from the database systems perspective, you told it what you wanted and it computed it for you.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So he brought up the way to solve this is to do group bys.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So group by is a way to partition or cluster the data as we're scanning along so that when we compute our aggregation, the aggregation is going to be the same as the aggregation.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So if I compute my aggregation, the aggregation will be derived from each group, each cluster.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So, again, the query is I want to get the average GPA for each course.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So I add my group by clause with the course ID and then say this is my original table.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now when I scan through, I can look at the course ID and basically keep track of where the boundaries of these are.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then when I compute my aggregation, I know to compute the average per group.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I didn't say it had an input.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I didn't say it had an input into this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The data system is doing this for us.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can either build a hash table.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can actually sort things first, then do the group by.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "We'll cover how to do that later in the semester.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But at this point in the class, I'm just trying to say, hey, look, I can group things up and the data system will figure out how to make sure I produce the right calculation.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can go even more sophisticated with group bys with what are called grouping sets.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There's also a thing called rollups and cubes.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "We don't have to worry about that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But say you want to do something like I want to compute multiple aggregations on my data, but I want to be able to do this in a single query.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now I can do the union operator that I saw last class.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I can add that to SQL and do a bunch of separate queries and mash things all together.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But if I can tell the data system that this is exactly what I want and kind of put everything together in a single package or a single query, then although we said it's just to be declarative and we don't have to tell the data system, we can do it.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And actually produce queries for it that it has a better time reasoning about and crunching one.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So you have group by and then you specify that you have a grouping set.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then now within my grouping set clause, I can specify the separate group bys that I want.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And each of these will be executed as if they were a separate query.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But really what's happening is it's scanning through the data once and computing this answer for you and sort of mashing everything together at the end.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So the first group by is a group everything by the course and the grade.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Then group everything by just the course name.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then give me the overall number for the total.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So this is trying to count the number of students in each course, by each course and by each grade, by each course, and by total across all students.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "What about what?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Sorry?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So again, just think of like these are like groups or clusters.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So here's the red one.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There's the blue one.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Here's the bottom.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then the overall total is at the top.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And then for the cases where the output doesn't have the column that's being grouped on, they'll put a null there.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's kind of funky.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But again, the one reoccurring theme we'll see with queries is that we want to reduce the amount of back and forth between we have the database server and the application.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So we can give as much information all in one single query.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Give it to the database system.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It can ideally do a better job at running this more efficiently than it would from multiple round trips.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Is this clear?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Let's say I want to do some additional filtering after I've done my aggregation with the group I.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Well, SQL supports that with the having clause.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And the basic idea is that I want to be able to filter things out based on whatever is being computed as part of the aggregation.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So in this case here, my where clause, I want to filter out all the students or all the courses where the average GPA is greater than or less than 3.9.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So I want to get the ones that are 3.9.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But what am I trying to do here?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I'm trying to reference average GPA.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But that's being produced as the output in my projection list for my select statement.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So at this point, again, think of like the database is actually executing this.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You're scanning through the data.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You're trying to apply some filter.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You don't have this average computed yet.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So how do you know whether to throw away a record or not?",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So you can't do this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Instead, you want to do this through a having clause.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "For now, I can put what my filter should be at the bottom.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now, in some database systems, they're really strict about what's down here in the having clause.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Again, I have an alias for the average GPA.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I'm calling average underscore GPA.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "AVG underscore GPA.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "In some systems, you can't do that either.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Because it doesn't know about what the alias is.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's pointing as it's scanning.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I sort of said SQL is not supposed to be about thinking about how things are actually going to be executed in like what order of the operations.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But in some cases, it actually is that case.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Or in some cases, it is that way.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So some systems won't let you do this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And instead, you have to repeat the actual average, the aggregation you want at the bottom here.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And Postgres requires this.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So the long way of logic is to include the .",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So you can't do that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can't do that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You can't do that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The statement is the from where clause is effectively a join.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Oh, sorry.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Yeah, sorry.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Yeah, so right here, I have from enrolled as E comma student as S.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Let's not teach product.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So in this syntax here, because I didn't explicitly say join.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "This is like the old way of writing it without explicit join.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Don't do what I did here.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "You should always include join.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But the will be smart enough to recognize that I have my E.SID equals S.SID.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So it would know, OK, well, this is from this table here.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "This is from that table there.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I got a join.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And it's an inner join.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It'll do that before the Cartesian product, ideally.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So this question is, I have the average aggregation in both the having and the select output.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Is the div system going to be stupid enough to run both of them?",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Hopefully no.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But there's no guarantee.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But ideally, yes.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like most systems will be smart enough to know not to do that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Just for whatever reason, some systems don't let you reference the alias things up above.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And it produces the output like this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So that's the basic for aggregations.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And again, with some slight nuances about what the have and close looks like and what",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "the grouping sets may look like.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "In general, most database systems will support all the things I just showed you here today.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Next, we'll talk about different things you can do to start different data types.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "We'll start with strings.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "That should be mostly the same across different data systems.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Some will come in a date and times.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "That's when it all falls apart.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And the although the first homework for you guys will be based on DuckDB, that's really",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "because it's a great system and it runs on every single laptop or every single machine",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "you have.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It still runs on the Android machines even though they're running on old version of Ubuntu",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "here.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There isn't another other than SQLite, there isn't another system we could give you that",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "could run everywhere.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "But I'm not trying to say like, okay, you're learning DuckDB SQL syntax.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's really I care about you understand what you can possibly do with SQL at a high level.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Because when you go out in the real world or use different data systems, again, all",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "these nuances that we'll talk about here, they're going to be every system will have",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "their own little quirks and be slightly different.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So if you understand the fundamentals of SQL, then you can take that and go understand how",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "to apply that knowledge to different data systems.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I would say it is easier to take a SQL dialect from one system and apply it to a different",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "system.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And apply it to another.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Now, it's not going to be a one-to-one.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "It's not going to be I'm not trying to say you can take the SQL and just like do search",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "from a place and it magically runs on the next system.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "There's a lot of people who spend a lot of money trying to convert from one system to",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "another.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "I'm just trying to say that it would not take you a lot of time to get up to speed pretty",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "quickly with a new system.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Like going from Python to Rust, that's a major lift.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Going from MySQL to Postgres, again, mentally less so.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So there's string data types, of course.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "The SQL standard says that any string you store in a database will be case sensitive.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And you can represent them or the constants of them as single quoted strings.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Most systems follow that.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "MySQL is going to be the dark horse here where they're going to be case insensitive for whatever",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "reason.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "And they're going to support both single and double.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So let's see what happens when you do this.",
+    "is_important": 0,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Can we all read that or should I make the screen \u2011\u2011 is that better?",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Let me log in with my laptop here.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "Because it's a pain to type on the surface here.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "So I said that strings were \u2011\u2011 sorry.",
+    "is_important": 1,
+    "source": "LecVideo_002"
+  },
+  {
+    "sentence": "In the code, I said that strings were \u2011\u2011 sorry.",
+    "is_important": 0,
+    "source": "LecVideo_002"
   }
 ]
