@@ -1,23 +1,19 @@
+import argparse
 import json
 import os
+from pathlib import Path
+
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification
 
 # ── Settings ──────────────────────────────────────────────
-BERT_MODEL_PATH  = "src/module2_summarization/bert_model"
-JSON_FOLDER      = "src/module2_summarization/json_output"
-OUTPUT_FOLDER    = "src/module2_summarization/final_output"
+DEFAULT_MODEL_PATH = "src/module2_summarization/bert_model_v2"
+JSON_FOLDER         = "src/module2_summarization/json_output"
+OUTPUT_FOLDER        = "src/module2_summarization/final_output"
 # ──────────────────────────────────────────────────────────
 
-# Create output folder
-os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-
-# ── Load BERT ──────────────────────────────────────────────
-print("Loading BERT model...")
-tokenizer = BertTokenizer.from_pretrained(BERT_MODEL_PATH)
-model     = BertForSequenceClassification.from_pretrained(BERT_MODEL_PATH)
-model.eval()
-print("✅ BERT loaded!")
+tokenizer = None
+model = None
 
 # ── Novel Feature 1 — IT Keyword Boosting ─────────────────
 IT_KEYWORDS = [
@@ -88,21 +84,34 @@ def classify_sentence(sentence):
 
     return is_important, round(confidence, 3)
 
-# ── Process All JSON Files ─────────────────────────────────
-json_files = [f for f in os.listdir(JSON_FOLDER) if f.endswith(".json")]
-print(f"\nFound {len(json_files)} transcript files to process\n")
 
-for json_file in json_files:
-    path = os.path.join(JSON_FOLDER, json_file)
-    with open(path, "r", encoding="utf-8") as f:
-        sentences = json.load(f)
+def load_bert(model_path: str) -> None:
+    """Load the BERT tokenizer/model into the module-level tokenizer/model globals."""
+    global tokenizer, model
 
-    print(f"Processing: {json_file}")
+    weights_path = Path(model_path) / "model.safetensors"
+    if not weights_path.exists():
+        raise FileNotFoundError(
+            f"Module 2 BERT checkpoint not found at {weights_path} — "
+            f"train the classifier and place model.safetensors there before running."
+        )
+
+    print(f"Loading BERT model from {model_path}...")
+    tokenizer = BertTokenizer.from_pretrained(model_path)
+    model = BertForSequenceClassification.from_pretrained(model_path)
+    model.eval()
+    print("✅ BERT loaded!")
+
+
+def classify_sentences(sentences: list) -> list:
+    """Classify an in-memory list of {sentence, timestamp_start, timestamp_end} records
+    and bucket them into 10s segments. Pure function, no file I/O -- reused by process_file()
+    and by the API's in-process /classify endpoint."""
     print(f"Total sentences: {len(sentences)}")
 
     # Build repetition map for this video
-    all_texts    = [s["sentence"] for s in sentences]
-    word_count   = build_repetition_map(all_texts)
+    all_texts  = [s["sentence"] for s in sentences]
+    word_count = build_repetition_map(all_texts)
 
     # Process each segment (10-second buckets)
     output       = []
@@ -174,16 +183,66 @@ for json_file in json_files:
             "sentences"        : seg_results
         })
 
-    # Save final output
-    out_name = json_file.replace(".json", "_module2_final.json")
-    out_path = os.path.join(OUTPUT_FOLDER, out_name)
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
-
     important_segs = sum(1 for s in output if s["importance_ratio_T"] > 0.5)
     print(f"✅ Done! Segments: {len(output)} | Important: {important_segs}")
+
+    return output
+
+
+def process_file(input_path: str, output_path: str) -> list:
+    """Classify every sentence in input_path and write the segmented result to output_path."""
+    with open(input_path, "r", encoding="utf-8") as f:
+        sentences = json.load(f)
+
+    print(f"Processing: {input_path}")
+    output = classify_sentences(sentences)
+
+    out_path = Path(output_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
     print(f"   Saved: {out_path}\n")
 
-print("=" * 50)
-print("ALL FILES PROCESSED!")
-print(f"Final JSON files in: {OUTPUT_FOLDER}")
+    return output
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Classify transcript sentences by importance using BERT + rule-based features."
+    )
+    parser.add_argument("--input_json", help="Single transcript JSON to classify (single-file mode).")
+    parser.add_argument("--output_json", help="Output path for the classified JSON (single-file mode).")
+    parser.add_argument(
+        "--model_path",
+        default=DEFAULT_MODEL_PATH,
+        help=f"Path to the BERT checkpoint directory (default: {DEFAULT_MODEL_PATH}).",
+    )
+    args = parser.parse_args()
+
+    load_bert(args.model_path)
+
+    if args.input_json and args.output_json:
+        # Single-file mode (used by the backend)
+        process_file(args.input_json, args.output_json)
+        return
+
+    # Batch mode (default): process every transcript in JSON_FOLDER -> OUTPUT_FOLDER
+    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
+    json_files = [f for f in os.listdir(JSON_FOLDER) if f.endswith(".json")]
+    print(f"\nFound {len(json_files)} transcript files to process\n")
+
+    for json_file in json_files:
+        path = os.path.join(JSON_FOLDER, json_file)
+        out_name = json_file.replace(".json", "_module2_final.json")
+        out_path = os.path.join(OUTPUT_FOLDER, out_name)
+        process_file(path, out_path)
+
+    print("=" * 50)
+    print("ALL FILES PROCESSED!")
+    print(f"Final JSON files in: {OUTPUT_FOLDER}")
+
+
+if __name__ == "__main__":
+    main()
