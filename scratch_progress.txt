@@ -46,33 +46,31 @@
 289/289  LecVideo 045 - Project Management Simplified_ Learn The Fundamentals of PMI s Framework ✓_1080p60 (complete)
 504/504  LecVideo 046 - 1 - Cloud Fundamentals - Recording 01_IS 4630 (complete)
 493/493  LecVideo 047 - CS162 Lecture 2 Four Fundamental OS Concepts (complete)
-1/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
+373/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020 (complete)
 359/359  LecVideo 049 - PMP 6th Edition Training Video  PMBOK 6th Edition  PMP Certification Training Video  Simplilearn (complete)
 414/414  LecVideo 050 - S2024 #01 - Modern OLAP Database Systems (CMU Advanced Database Systems) (complete)
 359/359  LecVideo 051 - Stanford CS229 I Societal impact of ML (Guest lecture by Prof. James Zou) I 2022 I Lecture 18 (complete)
-1/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
+81/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
 477/477  LecVideo 053 - Lec 06 - Enterprise Application Development (complete)
 384/384  LecVideo 054 - S2024 #22 - Amazon Redshift Data Warehouse System (CMU Advanced Database Systems) (complete)
 382/382  LecVideo 055 - #Software #Engineering - Lecture 2 _ Software Processes, Activities, The Rational Unified Process (complete)
 423/423  LecVideo 056 - PMP Training Videos  Lesson 8 Project Quality Management  Simplilearn (complete)
-24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
+279/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020 (complete)
 428/428  LecVideo 058 - Lesson 02 - Interactions - Human Computer Interaction (complete)
 322/322  LecVideo 059 - 5 - Part 2 - Project Risk Managment - Project Management (complete)
 507/507  LecVideo 060 - CS162 Lecture 17 Demand Paging (Finished), General IO, Storage Devices (complete)
 
-TOTAL: 20970/23402 segments (89.6%) across 61 video(s), all annotators combined
+TOTAL: 21677/23402 segments (92.6%) across 61 video(s), all annotators combined
 
-VIDEOS: 54 complete | 4 partially annotated | 3 not started yet (of 61 total)
+VIDEOS: 56 complete | 2 partially annotated | 3 not started yet (of 61 total)
 
-Partially annotated (4):
+Partially annotated (2):
   - 11/432  LecVideo 035 - Kubernetes Crash Course for Absolute Beginners [NEW]
-  - 1/373  LecVideo 048 - Networking Lecture 13 - Medium Access Control - 2020
-  - 1/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
-  - 24/279  LecVideo 057 - Networking Lecture 17 - Mobility - 2020
+  - 81/429  LecVideo 052 - Full NGINX Tutorial - Demo Project with Node.js, Docker
 
 Not started yet (3):
   - LecVideo 025 - CS50x 2023 - Cybersecurity_1080p
   - LecVideo 033 - Lesson 09 - HTA - Human Computer Interaction
   - LecVideo 042 - S2024 #10 - Multi-Way Join Algorithms  Worst-Case Optimal Joins (CMU Advanced Database Systems)
 
-Updated: 2026-07-28T20:54:23
+Updated: 2026-07-28T23:44:18
