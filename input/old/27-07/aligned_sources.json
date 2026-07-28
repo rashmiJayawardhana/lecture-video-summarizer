@@ -1,0 +1,289 @@
+{
+  "slides": [
+    {
+      "slide_number": 1,
+      "frame_time": 10.0,
+      "visual": {
+        "visual_topic": "Lecture Agenda",
+        "key_points": [
+          "Declaration and initialization of arrays",
+          "Indexing and accessing elements",
+          "Multidimensional arrays",
+          "Iteration, the Arrays utility class, and Arrays vs ArrayList"
+        ],
+        "slide_summary": "Title and agenda slide introducing Java arrays and outlining the topics covered in this lecture.",
+        "ocr_text": "JAVA ARRAYS Agenda Declaration & Initialization Indexing Multidimensional Arrays Iteration (for / for-each) Arrays Utility Class Arrays vs ArrayList",
+        "module4_usage": "This frame anchors the lecture structure and is useful for segmenting the video into chapters matching the agenda items."
+      },
+      "audio_blocks": [
+        {
+          "block_id": "block_002",
+          "timestamp_start": 40.0,
+          "timestamp_end": 75.0,
+          "topic": "Why Use Arrays",
+          "summary": "Arrays let you group related values instead of declaring separate variables, making code easier to manage and iterate over.",
+          "key_points": [
+            "Avoids declaring many separate variables",
+            "Enables looping over related data",
+            "Foundation for more complex data structures"
+          ]
+        },
+        {
+          "block_id": "block_003",
+          "timestamp_start": 75.0,
+          "timestamp_end": 130.0,
+          "topic": "Declaring and Creating Arrays",
+          "summary": "A Java array is declared with a type and square brackets, then created using the new keyword with a specified size.",
+          "key_points": [
+            "int[] numbers; declares an array reference",
+            "new int[5] allocates space for 5 elements",
+            "Array type and size are fixed at creation"
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "frame_time": 95.0,
+      "visual": {
+        "visual_topic": "Array Declaration and Initialization",
+        "key_points": [
+          "int[] numbers; declares a reference without allocating memory",
+          "new int[5] allocates a fixed-size array of 5 elements",
+          "Curly-brace initializers set values directly at declaration"
+        ],
+        "slide_summary": "Shows Java syntax for declaring, allocating, and initializing arrays including the shorthand curly-brace form.",
+        "ocr_text": "Declaring and Initializing Arrays int[] numbers; numbers = new int[5]; int[] nums = {1, 2, 3, 4, 5}; String[] names = new String[3];",
+        "module4_usage": "This code slide is essential for demonstrating exact Java array syntax and should be preserved verbatim in the summary."
+      },
+      "audio_blocks": [
+        {
+          "block_id": "block_004",
+          "timestamp_start": 130.0,
+          "timestamp_end": 170.0,
+          "topic": "Array Initialization Syntax",
+          "summary": "Arrays can be initialized inline with curly braces, assigning values directly at declaration time.",
+          "key_points": [
+            "int[] nums = {1, 2, 3, 4, 5}; is shorthand initializer syntax",
+            "Length is inferred from the number of values",
+            "Avoids a separate new int[] allocation step"
+          ]
+        },
+        {
+          "block_id": "block_005",
+          "timestamp_start": 170.0,
+          "timestamp_end": 225.0,
+          "topic": "Accessing Array Elements",
+          "summary": "Individual array elements are accessed using square bracket notation with a zero-based index.",
+          "key_points": [
+            "arr[0] refers to the first element",
+            "Index ranges from 0 to length-1",
+            "Elements can be read or reassigned using the index"
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "frame_time": 210.0,
+      "visual": {
+        "visual_topic": "Array Indexing Diagram",
+        "key_points": [
+          "Elements are numbered starting at index 0",
+          "Last valid index equals length minus 1",
+          "numbers.length reports the total element count"
+        ],
+        "slide_summary": "Visual diagram showing zero-based indexing across a 5-element array and its relation to the length property.",
+        "ocr_text": "Indexing numbers[0] numbers[1] numbers[2] numbers[3] numbers[4] Index: 0 1 2 3 4 numbers.length = 5",
+        "module4_usage": "This diagram visually reinforces zero-based indexing and should accompany the narration on accessing array elements."
+      },
+      "audio_blocks": [
+        {
+          "block_id": "block_006",
+          "timestamp_start": 225.0,
+          "timestamp_end": 260.0,
+          "topic": "Modifying Array Elements",
+          "summary": "Assigning a new value to an index updates that specific array element in place.",
+          "key_points": [
+            "arr[2] = 99; updates the third element",
+            "Arrays are mutable containers",
+            "The array reference itself stays the same"
+          ]
+        },
+        {
+          "block_id": "block_007",
+          "timestamp_start": 260.0,
+          "timestamp_end": 310.0,
+          "topic": "Array Length Property",
+          "summary": "The length field returns the number of elements an array can hold, which is fixed once the array is created.",
+          "key_points": [
+            "arr.length gives the array size",
+            "length is a field, not a method (no parentheses)",
+            "Commonly used as a loop bound"
+          ]
+        },
+        {
+          "block_id": "block_008",
+          "timestamp_start": 310.0,
+          "timestamp_end": 360.0,
+          "topic": "Default Values in Arrays",
+          "summary": "Newly created arrays are automatically initialized with default values based on their element type.",
+          "key_points": [
+            "Numeric arrays default to 0",
+            "Boolean arrays default to false",
+            "Object reference arrays default to null"
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "frame_time": 330.0,
+      "visual": {
+        "visual_topic": "2D Array Declaration and Access",
+        "key_points": [
+          "int[][] grid = new int[3][3] creates a 3x3 grid",
+          "Two indices are required: grid[row][col]",
+          "2D arrays are internally arrays whose elements are themselves arrays"
+        ],
+        "slide_summary": "Code example showing declaration and element access for a two-dimensional Java array.",
+        "ocr_text": "Multidimensional Arrays int[][] grid = new int[3][3]; grid[0][0] = 1; grid[1][2] = 9; System.out.println(grid[row][col]);",
+        "module4_usage": "Key code example for explaining multidimensional array syntax and should be shown alongside the 2D array narration."
+      },
+      "audio_blocks": [
+        {
+          "block_id": "block_009",
+          "timestamp_start": 360.0,
+          "timestamp_end": 420.0,
+          "topic": "Multidimensional Arrays",
+          "summary": "Java supports multidimensional arrays, most commonly two-dimensional arrays that represent rows and columns like a grid.",
+          "key_points": [
+            "int[][] grid = new int[3][3]; creates a 2D array",
+            "Accessed with two indices: grid[row][col]",
+            "Modeled internally as an array of arrays"
+          ]
+        },
+        {
+          "block_id": "block_010",
+          "timestamp_start": 420.0,
+          "timestamp_end": 460.0,
+          "topic": "Iterating with a For Loop",
+          "summary": "A standard for loop combined with the length property allows iteration over every array element by index.",
+          "key_points": [
+            "for (int i = 0; i < arr.length; i++) is the standard pattern",
+            "Index-based access inside the loop body",
+            "Useful when the index is needed for updates"
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "frame_time": 440.0,
+      "visual": {
+        "visual_topic": "For Loop vs For-Each Loop",
+        "key_points": [
+          "Indexed for loop uses arr.length as the bound",
+          "For-each loop reads each element without index bookkeeping",
+          "For-each is preferred when the index itself is not needed"
+        ],
+        "slide_summary": "Side-by-side comparison of indexed for loop and for-each loop syntax for iterating arrays.",
+        "ocr_text": "Iterating Arrays for (int i = 0; i < arr.length; i++) { System.out.println(arr[i]); } for (int n : arr) { System.out.println(n); }",
+        "module4_usage": "Useful side-by-side code comparison for explaining the two main array iteration styles."
+      },
+      "audio_blocks": [
+        {
+          "block_id": "block_011",
+          "timestamp_start": 460.0,
+          "timestamp_end": 495.0,
+          "topic": "Iterating with For-Each",
+          "summary": "The enhanced for-each loop simplifies iteration when the index itself is not needed.",
+          "key_points": [
+            "for (int n : arr) syntax reads each element in order",
+            "No manual index management required",
+            "Cleaner syntax for read-only traversal"
+          ]
+        },
+        {
+          "block_id": "block_012",
+          "timestamp_start": 495.0,
+          "timestamp_end": 540.0,
+          "topic": "ArrayIndexOutOfBoundsException",
+          "summary": "Accessing an index outside the valid range throws an ArrayIndexOutOfBoundsException at runtime.",
+          "key_points": [
+            "Valid indices run from 0 to length-1",
+            "Off-by-one errors are a common cause",
+            "The exception is thrown at runtime, not caught at compile time"
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "frame_time": 510.0,
+      "visual": {
+        "visual_topic": "Array Index Out of Bounds Error",
+        "key_points": [
+          "Valid indices for a length-5 array are 0 through 4",
+          "arr[5] is out of bounds and throws an exception",
+          "The error occurs at runtime, not compile time"
+        ],
+        "slide_summary": "Example runtime error triggered by accessing an array index equal to its length.",
+        "ocr_text": "ArrayIndexOutOfBoundsException int[] arr = new int[5]; arr[5] = 10; // Exception in thread main java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5",
+        "module4_usage": "Important cautionary example that should be paired with the narration on common array indexing mistakes."
+      },
+      "audio_blocks": [
+        {
+          "block_id": "block_013",
+          "timestamp_start": 540.0,
+          "timestamp_end": 580.0,
+          "topic": "The Arrays Utility Class",
+          "summary": "The java.util.Arrays class provides static helper methods such as sort, toString, and binarySearch.",
+          "key_points": [
+            "Arrays.sort(arr) sorts the array in place",
+            "Arrays.toString(arr) produces a readable string for printing",
+            "Arrays.binarySearch(arr, key) requires a pre-sorted array"
+          ]
+        }
+      ]
+    },
+    {
+      "slide_number": 7,
+      "frame_time": 575.0,
+      "visual": {
+        "visual_topic": "Arrays Utility Class and Arrays vs ArrayList",
+        "key_points": [
+          "Arrays.sort, Arrays.toString, and Arrays.binarySearch are common utility methods",
+          "Arrays are fixed-size and work directly with primitives",
+          "ArrayList is resizable and part of the Collections framework"
+        ],
+        "slide_summary": "Wrap-up slide covering the Arrays utility class methods and summarizing when to choose arrays versus ArrayList.",
+        "ocr_text": "Arrays Utility Class & Wrap-up Arrays.sort(arr); Arrays.toString(arr); Arrays.binarySearch(arr, key); Array: fixed size, primitives ArrayList: resizable, Collections framework",
+        "module4_usage": "Summary slide that ties together the Arrays utility methods and the array-vs-ArrayList decision, useful as a closing recap."
+      },
+      "audio_blocks": [
+        {
+          "block_id": "block_014",
+          "timestamp_start": 580.0,
+          "timestamp_end": 600.0,
+          "topic": "Arrays vs ArrayList Summary",
+          "summary": "Arrays are fixed-size and fast for simple data storage, while ArrayList offers dynamic resizing at the cost of some overhead, closing out the array fundamentals covered in this lecture.",
+          "key_points": [
+            "Arrays: fixed size, works directly with primitives",
+            "ArrayList: resizable, part of the Collections framework",
+            "Choice depends on whether the collection size needs to change"
+          ]
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_slides": 7,
+    "total_audio_blocks": 14,
+    "slides_with_audio": 7,
+    "slides_without_audio": 0,
+    "orphaned_audio_blocks": [
+      "block_001"
+    ]
+  }
+}

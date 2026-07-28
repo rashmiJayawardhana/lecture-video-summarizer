@@ -19,6 +19,12 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from src.module4_synthesis.slideshow_video import create_slideshow_video
 
+try:
+    from src.module4_synthesis.schema_repair import ensure_valid_input
+    SCHEMA_REPAIR_AVAILABLE = True
+except ImportError:
+    SCHEMA_REPAIR_AVAILABLE = False
+
 # ─────────────────────────────────────────────────────────────────────────────
 # EDIT THIS SECTION — provide your lecture summary here
 # ─────────────────────────────────────────────────────────────────────────────
@@ -213,6 +219,13 @@ if __name__ == "__main__":
     def progress(p):
         bar = int(p * 40)
         print(f"\r  Progress : [{'█' * bar}{'░' * (40 - bar)}] {int(p * 100):3d}%", end="", flush=True)
+
+    if SCHEMA_REPAIR_AVAILABLE:
+        # No-op (no model call) if the data already validates — only repairs
+        # actual structural problems. See src/module4_synthesis/schema_repair.py
+        overall_summary, fused_slides = ensure_valid_input(overall_summary, fused_slides)
+    else:
+        print("  [schema_repair unavailable — `pip install ollama` to enable it; skipping]")
 
     result = create_slideshow_video(
         fused_slides=fused_slides,

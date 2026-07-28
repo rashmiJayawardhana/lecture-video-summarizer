@@ -1,0 +1,226 @@
+[
+  {
+    "block_id": "block_001",
+    "timestamp_start": 0.0,
+    "timestamp_end": 40.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_001", "seg_002"],
+    "semantic_analysis": {
+      "topic": "Introduction to Arrays in Java",
+      "summary": "Arrays in Java are fixed-size, indexed collections used to store multiple values of the same type in a single variable.",
+      "key_points": [
+        "Arrays store multiple values of the same type",
+        "Fixed size once created",
+        "Elements accessed via zero-based index"
+      ]
+    }
+  },
+  {
+    "block_id": "block_002",
+    "timestamp_start": 40.0,
+    "timestamp_end": 75.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_003", "seg_004"],
+    "semantic_analysis": {
+      "topic": "Why Use Arrays",
+      "summary": "Arrays let you group related values instead of declaring separate variables, making code easier to manage and iterate over.",
+      "key_points": [
+        "Avoids declaring many separate variables",
+        "Enables looping over related data",
+        "Foundation for more complex data structures"
+      ]
+    }
+  },
+  {
+    "block_id": "block_003",
+    "timestamp_start": 75.0,
+    "timestamp_end": 130.0,
+    "segments_count": 3,
+    "segment_ids": ["seg_005", "seg_006", "seg_007"],
+    "semantic_analysis": {
+      "topic": "Declaring and Creating Arrays",
+      "summary": "A Java array is declared with a type and square brackets, then created using the new keyword with a specified size.",
+      "key_points": [
+        "int[] numbers; declares an array reference",
+        "new int[5] allocates space for 5 elements",
+        "Array type and size are fixed at creation"
+      ]
+    }
+  },
+  {
+    "block_id": "block_004",
+    "timestamp_start": 130.0,
+    "timestamp_end": 170.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_008", "seg_009"],
+    "semantic_analysis": {
+      "topic": "Array Initialization Syntax",
+      "summary": "Arrays can be initialized inline with curly braces, assigning values directly at declaration time.",
+      "key_points": [
+        "int[] nums = {1, 2, 3, 4, 5}; is shorthand initializer syntax",
+        "Length is inferred from the number of values",
+        "Avoids a separate new int[] allocation step"
+      ]
+    }
+  },
+  {
+    "block_id": "block_005",
+    "timestamp_start": 170.0,
+    "timestamp_end": 225.0,
+    "segments_count": 3,
+    "segment_ids": ["seg_010", "seg_011", "seg_012"],
+    "semantic_analysis": {
+      "topic": "Accessing Array Elements",
+      "summary": "Individual array elements are accessed using square bracket notation with a zero-based index.",
+      "key_points": [
+        "arr[0] refers to the first element",
+        "Index ranges from 0 to length-1",
+        "Elements can be read or reassigned using the index"
+      ]
+    }
+  },
+  {
+    "block_id": "block_006",
+    "timestamp_start": 225.0,
+    "timestamp_end": 260.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_013", "seg_014"],
+    "semantic_analysis": {
+      "topic": "Modifying Array Elements",
+      "summary": "Assigning a new value to an index updates that specific array element in place.",
+      "key_points": [
+        "arr[2] = 99; updates the third element",
+        "Arrays are mutable containers",
+        "The array reference itself stays the same"
+      ]
+    }
+  },
+  {
+    "block_id": "block_007",
+    "timestamp_start": 260.0,
+    "timestamp_end": 310.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_015", "seg_016"],
+    "semantic_analysis": {
+      "topic": "Array Length Property",
+      "summary": "The length field returns the number of elements an array can hold, which is fixed once the array is created.",
+      "key_points": [
+        "arr.length gives the array size",
+        "length is a field, not a method (no parentheses)",
+        "Commonly used as a loop bound"
+      ]
+    }
+  },
+  {
+    "block_id": "block_008",
+    "timestamp_start": 310.0,
+    "timestamp_end": 360.0,
+    "segments_count": 3,
+    "segment_ids": ["seg_017", "seg_018", "seg_019"],
+    "semantic_analysis": {
+      "topic": "Default Values in Arrays",
+      "summary": "Newly created arrays are automatically initialized with default values based on their element type.",
+      "key_points": [
+        "Numeric arrays default to 0",
+        "Boolean arrays default to false",
+        "Object reference arrays default to null"
+      ]
+    }
+  },
+  {
+    "block_id": "block_009",
+    "timestamp_start": 360.0,
+    "timestamp_end": 420.0,
+    "segments_count": 3,
+    "segment_ids": ["seg_020", "seg_021", "seg_022"],
+    "semantic_analysis": {
+      "topic": "Multidimensional Arrays",
+      "summary": "Java supports multidimensional arrays, most commonly two-dimensional arrays that represent rows and columns like a grid.",
+      "key_points": [
+        "int[][] grid = new int[3][3]; creates a 2D array",
+        "Accessed with two indices: grid[row][col]",
+        "Modeled internally as an array of arrays"
+      ]
+    }
+  },
+  {
+    "block_id": "block_010",
+    "timestamp_start": 420.0,
+    "timestamp_end": 460.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_023", "seg_024"],
+    "semantic_analysis": {
+      "topic": "Iterating with a For Loop",
+      "summary": "A standard for loop combined with the length property allows iteration over every array element by index.",
+      "key_points": [
+        "for (int i = 0; i < arr.length; i++) is the standard pattern",
+        "Index-based access inside the loop body",
+        "Useful when the index is needed for updates"
+      ]
+    }
+  },
+  {
+    "block_id": "block_011",
+    "timestamp_start": 460.0,
+    "timestamp_end": 495.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_025", "seg_026"],
+    "semantic_analysis": {
+      "topic": "Iterating with For-Each",
+      "summary": "The enhanced for-each loop simplifies iteration when the index itself is not needed.",
+      "key_points": [
+        "for (int n : arr) syntax reads each element in order",
+        "No manual index management required",
+        "Cleaner syntax for read-only traversal"
+      ]
+    }
+  },
+  {
+    "block_id": "block_012",
+    "timestamp_start": 495.0,
+    "timestamp_end": 540.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_027", "seg_028"],
+    "semantic_analysis": {
+      "topic": "ArrayIndexOutOfBoundsException",
+      "summary": "Accessing an index outside the valid range throws an ArrayIndexOutOfBoundsException at runtime.",
+      "key_points": [
+        "Valid indices run from 0 to length-1",
+        "Off-by-one errors are a common cause",
+        "The exception is thrown at runtime, not caught at compile time"
+      ]
+    }
+  },
+  {
+    "block_id": "block_013",
+    "timestamp_start": 540.0,
+    "timestamp_end": 580.0,
+    "segments_count": 3,
+    "segment_ids": ["seg_029", "seg_030", "seg_031"],
+    "semantic_analysis": {
+      "topic": "The Arrays Utility Class",
+      "summary": "The java.util.Arrays class provides static helper methods such as sort, toString, and binarySearch.",
+      "key_points": [
+        "Arrays.sort(arr) sorts the array in place",
+        "Arrays.toString(arr) produces a readable string for printing",
+        "Arrays.binarySearch(arr, key) requires a pre-sorted array"
+      ]
+    }
+  },
+  {
+    "block_id": "block_014",
+    "timestamp_start": 580.0,
+    "timestamp_end": 600.0,
+    "segments_count": 2,
+    "segment_ids": ["seg_032", "seg_033"],
+    "semantic_analysis": {
+      "topic": "Arrays vs ArrayList Summary",
+      "summary": "Arrays are fixed-size and fast for simple data storage, while ArrayList offers dynamic resizing at the cost of some overhead, closing out the array fundamentals covered in this lecture.",
+      "key_points": [
+        "Arrays: fixed size, works directly with primitives",
+        "ArrayList: resizable, part of the Collections framework",
+        "Choice depends on whether the collection size needs to change"
+      ]
+    }
+  }
+]

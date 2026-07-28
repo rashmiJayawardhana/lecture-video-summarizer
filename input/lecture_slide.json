@@ -1,0 +1,171 @@
+[
+    {
+        "lecture_id": "lecture_java_arrays",
+        "frame_time": 10.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.41,
+        "visual_type": "text_slide",
+        "analysis_source": "gemini",
+        "frame_path": "data/processed/module3/slides/lecture_java_arrays/lecture_java_arrays_frame_00000_00m10s.jpg",
+        "ocr_text": "JAVA ARRAYS Agenda Declaration & Initialization Indexing Multidimensional Arrays Iteration (for / for-each) Arrays Utility Class Arrays vs ArrayList",
+        "semantic_analysis": {
+            "semantic_visual_type": "text",
+            "visual_topic": "Lecture Agenda",
+            "visual_explanation": "This title and agenda slide introduces the lecture topic of Java arrays and lists the subtopics that will be covered in sequence.",
+            "key_points": [
+                "Declaration and initialization of arrays",
+                "Indexing and accessing elements",
+                "Multidimensional arrays",
+                "Iteration, the Arrays utility class, and Arrays vs ArrayList"
+            ],
+            "module4_usage": "This frame anchors the lecture structure and is useful for segmenting the video into chapters matching the agenda items.",
+            "confidence": 0.97
+        },
+        "slide_summary": "Title and agenda slide introducing Java arrays and outlining the topics covered in this lecture."
+    },
+    {
+        "lecture_id": "lecture_java_arrays",
+        "frame_time": 95.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.44,
+        "visual_type": "code_slide",
+        "analysis_source": "gemini",
+        "frame_path": "data/processed/module3/slides/lecture_java_arrays/lecture_java_arrays_frame_00003_01m35s.jpg",
+        "ocr_text": "Declaring and Initializing Arrays int[] numbers; numbers = new int[5]; int[] nums = {1, 2, 3, 4, 5}; String[] names = new String[3];",
+        "semantic_analysis": {
+            "semantic_visual_type": "code",
+            "visual_topic": "Array Declaration and Initialization",
+            "visual_explanation": "This slide shows the two common ways to create a Java array: declaring a reference and allocating it with new, or using an inline initializer with curly braces.",
+            "key_points": [
+                "int[] numbers; declares a reference without allocating memory",
+                "new int[5] allocates a fixed-size array of 5 elements",
+                "Curly-brace initializers set values directly at declaration"
+            ],
+            "module4_usage": "This code slide is essential for demonstrating exact Java array syntax and should be preserved verbatim in the summary.",
+            "confidence": 0.98
+        },
+        "slide_summary": "Shows Java syntax for declaring, allocating, and initializing arrays including the shorthand curly-brace form."
+    },
+    {
+        "lecture_id": "lecture_java_arrays",
+        "frame_time": 210.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.39,
+        "visual_type": "diagram_slide",
+        "analysis_source": "gemini",
+        "frame_path": "data/processed/module3/slides/lecture_java_arrays/lecture_java_arrays_frame_00007_03m30s.jpg",
+        "ocr_text": "Indexing numbers[0] numbers[1] numbers[2] numbers[3] numbers[4] Index: 0 1 2 3 4 numbers.length = 5",
+        "semantic_analysis": {
+            "semantic_visual_type": "diagram",
+            "visual_topic": "Array Indexing Diagram",
+            "visual_explanation": "The diagram maps each array element to its zero-based index position and shows how the length property relates to the valid index range.",
+            "key_points": [
+                "Elements are numbered starting at index 0",
+                "Last valid index equals length minus 1",
+                "numbers.length reports the total element count"
+            ],
+            "module4_usage": "This diagram visually reinforces zero-based indexing and should accompany the narration on accessing array elements.",
+            "confidence": 0.95
+        },
+        "slide_summary": "Visual diagram showing zero-based indexing across a 5-element array and its relation to the length property."
+    },
+    {
+        "lecture_id": "lecture_java_arrays",
+        "frame_time": 330.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.42,
+        "visual_type": "code_slide",
+        "analysis_source": "gemini",
+        "frame_path": "data/processed/module3/slides/lecture_java_arrays/lecture_java_arrays_frame_00011_05m30s.jpg",
+        "ocr_text": "Multidimensional Arrays int[][] grid = new int[3][3]; grid[0][0] = 1; grid[1][2] = 9; System.out.println(grid[row][col]);",
+        "semantic_analysis": {
+            "semantic_visual_type": "code",
+            "visual_topic": "2D Array Declaration and Access",
+            "visual_explanation": "The slide demonstrates creating a 2D array as an array of arrays and accessing elements using row and column indices.",
+            "key_points": [
+                "int[][] grid = new int[3][3] creates a 3x3 grid",
+                "Two indices are required: grid[row][col]",
+                "2D arrays are internally arrays whose elements are themselves arrays"
+            ],
+            "module4_usage": "Key code example for explaining multidimensional array syntax and should be shown alongside the 2D array narration.",
+            "confidence": 0.96
+        },
+        "slide_summary": "Code example showing declaration and element access for a two-dimensional Java array."
+    },
+    {
+        "lecture_id": "lecture_java_arrays",
+        "frame_time": 440.0,
+        "label": "Important",
+        "label_score": 0.8,
+        "confidence": 0.37,
+        "visual_type": "code_slide",
+        "analysis_source": "gemini",
+        "frame_path": "data/processed/module3/slides/lecture_java_arrays/lecture_java_arrays_frame_00014_07m20s.jpg",
+        "ocr_text": "Iterating Arrays for (int i = 0; i < arr.length; i++) { System.out.println(arr[i]); } for (int n : arr) { System.out.println(n); }",
+        "semantic_analysis": {
+            "semantic_visual_type": "code",
+            "visual_topic": "For Loop vs For-Each Loop",
+            "visual_explanation": "This slide compares the classic indexed for loop with the enhanced for-each loop for traversing array elements.",
+            "key_points": [
+                "Indexed for loop uses arr.length as the bound",
+                "For-each loop reads each element without index bookkeeping",
+                "For-each is preferred when the index itself is not needed"
+            ],
+            "module4_usage": "Useful side-by-side code comparison for explaining the two main array iteration styles.",
+            "confidence": 0.93
+        },
+        "slide_summary": "Side-by-side comparison of indexed for loop and for-each loop syntax for iterating arrays."
+    },
+    {
+        "lecture_id": "lecture_java_arrays",
+        "frame_time": 510.0,
+        "label": "Important",
+        "label_score": 0.8,
+        "confidence": 0.36,
+        "visual_type": "mixed_slide",
+        "analysis_source": "gemini",
+        "frame_path": "data/processed/module3/slides/lecture_java_arrays/lecture_java_arrays_frame_00017_08m30s.jpg",
+        "ocr_text": "ArrayIndexOutOfBoundsException int[] arr = new int[5]; arr[5] = 10; // Exception in thread main java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5",
+        "semantic_analysis": {
+            "semantic_visual_type": "mixed",
+            "visual_topic": "Array Index Out of Bounds Error",
+            "visual_explanation": "The slide shows a runtime exception that occurs when code attempts to access an index equal to or greater than the array length.",
+            "key_points": [
+                "Valid indices for a length-5 array are 0 through 4",
+                "arr[5] is out of bounds and throws an exception",
+                "The error occurs at runtime, not compile time"
+            ],
+            "module4_usage": "Important cautionary example that should be paired with the narration on common array indexing mistakes.",
+            "confidence": 0.94
+        },
+        "slide_summary": "Example runtime error triggered by accessing an array index equal to its length."
+    },
+    {
+        "lecture_id": "lecture_java_arrays",
+        "frame_time": 575.0,
+        "label": "Critical",
+        "label_score": 1.0,
+        "confidence": 0.43,
+        "visual_type": "mixed_slide",
+        "analysis_source": "gemini",
+        "frame_path": "data/processed/module3/slides/lecture_java_arrays/lecture_java_arrays_frame_00019_09m35s.jpg",
+        "ocr_text": "Arrays Utility Class & Wrap-up Arrays.sort(arr); Arrays.toString(arr); Arrays.binarySearch(arr, key); Array: fixed size, primitives ArrayList: resizable, Collections framework",
+        "semantic_analysis": {
+            "semantic_visual_type": "mixed",
+            "visual_topic": "Arrays Utility Class and Arrays vs ArrayList",
+            "visual_explanation": "The closing slide summarizes the java.util.Arrays helper methods and contrasts fixed-size arrays with the resizable ArrayList.",
+            "key_points": [
+                "Arrays.sort, Arrays.toString, and Arrays.binarySearch are common utility methods",
+                "Arrays are fixed-size and work directly with primitives",
+                "ArrayList is resizable and part of the Collections framework"
+            ],
+            "module4_usage": "Summary slide that ties together the Arrays utility methods and the array-vs-ArrayList decision, useful as a closing recap.",
+            "confidence": 0.97
+        },
+        "slide_summary": "Wrap-up slide covering the Arrays utility class methods and summarizing when to choose arrays versus ArrayList."
+    }
+]

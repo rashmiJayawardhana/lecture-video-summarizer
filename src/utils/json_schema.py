@@ -9,6 +9,7 @@ Schema Reference:
     Module 2 → { sentence, timestamp_start, timestamp_end, is_important, importance_ratio_T }
     Module 3 → { frame_time, label, ocr_text }
     Fusion   → S = w1·V + w2·T + w3·L
+    Module 4 → fused_slides: [{ slide_number, timestamp, summary }], overall_summary
 """
 
 import json
@@ -42,6 +43,118 @@ MODULE3_SCHEMA = {
 
 # Valid labels for Module 3
 MODULE3_VALID_LABELS = {"Critical", "Important", "Skip"}
+
+# ─── Module 4 JSON Schema (Video Synthesis input) ─────────────────────
+# Nested "summary" block inside each fused slide.
+SLIDE_SUMMARY_SCHEMA = {
+    "title": str,             # slide title
+    "summary": str,           # 1-3 sentence summary
+    "key_concepts": list,     # bullet points (list of str)
+    "code_example": str,      # code snippet, may be empty string
+    "voiceover_script": str,  # narration text read aloud by TTS
+}
+
+# Top-level fused slide entry
+FUSED_SLIDE_SCHEMA = {
+    "slide_number": int,
+    "timestamp": (int, float),  # seconds into the lecture
+    "summary": dict,            # validated separately against SLIDE_SUMMARY_SCHEMA
+}
+
+# overall_summary dict (intro + outro content)
+OVERALL_SUMMARY_SCHEMA = {
+    "lecture_title": str,
+    "main_topic": str,
+    "intro_voiceover": str,
+    "key_takeaways": list,   # list of str
+}
+
+
+def validate_slide_summary(summary: Dict[str, Any], prefix: str = "summary") -> List[str]:
+    """
+    Validate the nested 'summary' block of a single fused slide.
+
+    Args:
+        summary: The summary dict from a fused slide entry.
+        prefix: Label used in error messages.
+
+    Returns:
+        List of error messages. Empty list means valid.
+    """
+    errors = []
+    for key, expected_type in SLIDE_SUMMARY_SCHEMA.items():
+        if key not in summary:
+            errors.append(f"{prefix}: Missing required field '{key}'")
+        elif not isinstance(summary[key], expected_type):
+            errors.append(
+                f"{prefix}: Field '{key}' expected {expected_type.__name__}, "
+                f"got {type(summary[key]).__name__}"
+            )
+
+    if "key_concepts" in summary and isinstance(summary["key_concepts"], list):
+        for i, item in enumerate(summary["key_concepts"]):
+            if not isinstance(item, str):
+                errors.append(f"{prefix}: key_concepts[{i}] expected str, got {type(item).__name__}")
+
+    return errors
+
+
+def validate_fused_slides(data: List[Dict[str, Any]]) -> List[str]:
+    """
+    Validate the fused_slides list against the Module 4 schema.
+
+    Args:
+        data: List of fused slide dictionaries.
+
+    Returns:
+        List of error messages. Empty list means valid.
+    """
+    errors = []
+    for i, slide in enumerate(data):
+        prefix = f"Slide {i}"
+
+        for key, expected_type in FUSED_SLIDE_SCHEMA.items():
+            if key not in slide:
+                errors.append(f"{prefix}: Missing required field '{key}'")
+            elif not isinstance(slide[key], expected_type):
+                type_name = getattr(expected_type, "__name__", str(expected_type))
+                errors.append(
+                    f"{prefix}: Field '{key}' expected {type_name}, "
+                    f"got {type(slide[key]).__name__}"
+                )
+
+        if isinstance(slide.get("summary"), dict):
+            errors.extend(validate_slide_summary(slide["summary"], prefix=f"{prefix}.summary"))
+
+    return errors
+
+
+def validate_overall_summary(data: Dict[str, Any]) -> List[str]:
+    """
+    Validate the overall_summary dict against the Module 4 schema.
+
+    Args:
+        data: The overall_summary dictionary.
+
+    Returns:
+        List of error messages. Empty list means valid.
+    """
+    errors = []
+    for key, expected_type in OVERALL_SUMMARY_SCHEMA.items():
+        if key not in data:
+            errors.append(f"overall_summary: Missing required field '{key}'")
+        elif not isinstance(data[key], expected_type):
+            errors.append(
+                f"overall_summary: Field '{key}' expected {expected_type.__name__}, "
+                f"got {type(data[key]).__name__}"
+            )
+
+    if "key_takeaways" in data and isinstance(data["key_takeaways"], list):
+        for i, item in enumerate(data["key_takeaways"]):
+            if not isinstance(item, str):
+                errors.append(f"overall_summary: key_takeaways[{i}] expected str, got {type(item).__name__}")
+
+    return errors
 
 
 def validate_module1_output(data: List[Dict[str, Any]]) -> List[str]:
