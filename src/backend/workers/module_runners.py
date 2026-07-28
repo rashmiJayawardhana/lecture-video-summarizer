@@ -87,25 +87,97 @@ def run_module1(video_path: str, output_dir: str) -> str:
 
 
 def run_module2(video_path: str, output_dir: str) -> str:
-    time.sleep(7)
+    """
+    Real Module 2 backend runner.
 
-    output_path = Path(output_dir) / "module2_output.json"
+    Input:
+        video_path: uploaded lecture video path from backend job folder
+        output_dir: storage/jobs/{job_id}/outputs
 
-    data = {
-        "module": "module2",
-        "status": "completed",
-        "description": "Dummy Module 2 transcript/text summary output",
-        "video_path": video_path,
-        "transcript_summary": [
-            {
-                "start": 0,
-                "end": 30,
-                "summary": "This is a dummy transcript summary."
-            }
-        ]
-    }
+    Output:
+        storage/jobs/{job_id}/outputs/module2_output.json
+        Flat list of {sentence, timestamp_start, timestamp_end, is_important, importance_ratio_T}
+        (schema validated against src/utils/json_schema.py)
+    """
+    from src.utils.json_schema import validate_module2_output
 
-    return write_json(output_path, data)
+    project_root = Path(__file__).resolve().parents[3]
+
+    video_path = Path(video_path)
+    output_dir = Path(output_dir)
+    job_dir = output_dir.parent
+    video_id = video_path.stem
+
+    module2_temp_dir = job_dir / "temp" / "module2"
+    module2_temp_dir.mkdir(parents=True, exist_ok=True)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    raw_json = module2_temp_dir / f"{video_id}_transcript.json"
+    classified_json = module2_temp_dir / f"{video_id}_classified.json"
+    final_module2_json = output_dir / "module2_output.json"
+
+    bert_model_path = "src/module2_summarization/bert_model_v2"
+
+    def run_command(command: list[str]) -> None:
+        print("\nRunning command:")
+        print(" ".join(command))
+        subprocess.run(
+            command,
+            cwd=str(project_root),
+            check=True
+        )
+
+    print("========== REAL MODULE 2 START ==========")
+    print("Video path:", video_path)
+    print("Output dir:", output_dir)
+    print("Temp dir:", module2_temp_dir)
+    print("BERT checkpoint:", bert_model_path)
+    print("===========================================")
+
+    # 1. Transcribe the lecture video with Whisper
+    run_command([
+        sys.executable,
+        "src/module2_summarization/transcribe_video.py",
+        "--video", str(video_path),
+        "--output_json", str(raw_json)
+    ])
+
+    # 2. Classify sentence importance with BERT + rule-based feature boosting
+    run_command([
+        sys.executable,
+        "src/module2_summarization/classify_with_features.py",
+        "--input_json", str(raw_json),
+        "--output_json", str(classified_json),
+        "--model_path", bert_model_path
+    ])
+
+    # 3. Flatten segment-level detail into the frozen Module 2 schema
+    with classified_json.open("r", encoding="utf-8") as f:
+        segments = json.load(f)
+
+    flat_output = []
+    for segment in segments:
+        importance_ratio = segment["importance_ratio_T"]
+        for sent in segment["sentences"]:
+            flat_output.append({
+                "sentence": sent["sentence"],
+                "timestamp_start": sent["timestamp_start"],
+                "timestamp_end": sent["timestamp_end"],
+                "is_important": sent["is_important"],
+                "importance_ratio_T": importance_ratio
+            })
+
+    errors = validate_module2_output(flat_output)
+    if errors:
+        raise ValueError(f"Module 2 output failed schema validation: {'; '.join(errors)}")
+
+    write_json(final_module2_json, flat_output)
+
+    print("========== MODULE 2 COMPLETED ==========")
+    print("Saved:", final_module2_json)
+    print("=========================================")
+
+    return str(final_module2_json)
 
 
 def run_module3(video_path: str, output_dir: str) -> str:
