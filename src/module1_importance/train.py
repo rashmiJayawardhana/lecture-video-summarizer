@@ -135,10 +135,24 @@ def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=3e-5, a
     
     # Initialize Model, Loss, Optimizer
     model = VideoImportanceScorer().to(device)
-    
+
     # We use Mean Squared Error because we want to predict the exact score (regression)
     criterion = nn.MSELoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+
+    # High-importance segments (score close to 1) are much rarer in the training
+    # data than low/mid-importance ones. Plain MSE optimizes toward the average,
+    # which makes the model under-predict rare high-importance segments (this is
+    # exactly what we saw: good precision but collapsing recall at higher score
+    # thresholds on the held-out test set). Weighting each sample's contribution
+    # by (1 + 2 * target_score) makes the model pay 1x-3x more attention to
+    # getting high-importance segments right, directly counteracting that bias.
+    # Only used for the training gradient - validation loss stays plain MSE so
+    # it's still directly comparable across runs.
+    def weighted_mse_loss(predictions, targets):
+        weight = 1.0 + 2.0 * targets
+        return (weight * (predictions - targets) ** 2).mean()
+
+    optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=1e-5)
     
     best_val_loss = float('inf')
     
@@ -161,9 +175,9 @@ def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=3e-5, a
             # We want one score per segment, so we average the frame scores
             segment_predictions = predictions.mean(dim=1)
             
-            # Calculate loss
-            loss = criterion(segment_predictions, scores)
-            
+            # Calculate loss (weighted toward high-importance segments - see note above)
+            loss = weighted_mse_loss(segment_predictions, scores)
+
             # Backpropagate
             loss.backward()
             optimizer.step()
