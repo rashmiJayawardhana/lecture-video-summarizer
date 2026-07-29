@@ -9,8 +9,6 @@ Produces a fully synthetic narrated slideshow video:
     - Concatenates all slide clips and encodes as H.264 MP4
 
 No raw lecture footage is needed — fully AI-generated output.
-
-Owner: Lathisana (214116F)
 """
 
 import asyncio

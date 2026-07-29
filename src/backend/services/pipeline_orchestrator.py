@@ -68,6 +68,7 @@ def process_pipeline(job_id: str, video_path: str, output_dir: str) -> None:
         )
 
         final_video, final_json = run_module4(
+            video_path=video_path,
             module1_json=results["module1"],
             module2_json=results["module2"],
             module3_json=results["module3"],

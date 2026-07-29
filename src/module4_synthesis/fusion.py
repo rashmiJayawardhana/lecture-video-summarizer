@@ -9,8 +9,6 @@ Implements the fusion formula: S = w1·V + w2·T + w3·L
 Ranks all 10-second segments and selects top-scoring segments
 for video synthesis.
 
-Owner: Lathisana (214116F)
-
 === BEGINNER GUIDE ===
 What does this file do?
 

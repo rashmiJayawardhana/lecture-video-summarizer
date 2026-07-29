@@ -1,5 +1,4 @@
 import json
-import time
 import subprocess
 import sys
 from pathlib import Path
@@ -376,36 +375,87 @@ def run_module3(video_path: str, output_dir: str) -> str:
     return str(final_module3_json)
 
 def run_module4(
+    video_path: str,
     module1_json: str,
     module2_json: str,
     module3_json: str,
     output_dir: str
 ) -> tuple[str, str]:
-    time.sleep(5)
+    """
+    Real Module 4 backend runner (Pipeline A: real-footage highlight reel).
+
+    Fuses Module 1/2/3 outputs via ScoreFusion (S = w1*V + w2*T + w3*L),
+    selects the top segments within the target duration cap, and cuts +
+    concatenates those segments from the original uploaded video into a
+    single condensed MP4.
+
+    Output:
+        storage/jobs/{job_id}/outputs/module4_final_output.json
+        storage/jobs/{job_id}/outputs/summarized_video.mp4
+    """
+    from src.module4_synthesis.fusion import ScoreFusion
+    from src.module4_synthesis.pipeline_a import HighlightVideoGenerator
+
+    TARGET_SUMMARY_LENGTH = 600.0  # 10 minutes, matches .env.example's default
 
     output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     final_json_path = output_dir / "module4_final_output.json"
     final_video_path = output_dir / "summarized_video.mp4"
 
+    print("========== REAL MODULE 4 START ==========")
+    print("Video path:", video_path)
+    print("Output dir:", output_dir)
+    print("==========================================")
+
+    with open(module1_json, "r", encoding="utf-8") as f:
+        module1_data = json.load(f)
+    with open(module2_json, "r", encoding="utf-8") as f:
+        module2_data = json.load(f)
+    with open(module3_json, "r", encoding="utf-8") as f:
+        module3_data = json.load(f)
+
+    fusion = ScoreFusion()
+    fused_segments = fusion.fuse(module1_data, module2_data, module3_data)
+    selected_segments = fusion.select_segments(fused_segments, max_duration=TARGET_SUMMARY_LENGTH)
+
+    if not selected_segments:
+        raise ValueError(
+            "Module 4 fusion selected zero segments - check Module 1/2/3 outputs "
+            "and the min_score_threshold."
+        )
+
+    generator = HighlightVideoGenerator(max_duration=TARGET_SUMMARY_LENGTH)
+    generator.generate(
+        video_path=video_path,
+        segments=selected_segments,
+        output_path=str(final_video_path),
+    )
+
+    total_duration = sum(
+        seg["timestamp_end"] - seg["timestamp_start"] for seg in selected_segments
+    )
+
     final_data = {
         "module": "module4",
         "status": "completed",
-        "description": "Dummy Module 4 fusion output",
-        "inputs": {
-            "module1_json": module1_json,
-            "module2_json": module2_json,
-            "module3_json": module3_json
-        },
+        "description": "Real Module 4 fusion output (Pipeline A: real-footage highlight reel)",
+        "fusion_weights": {"w1_visual": fusion.w1, "w2_text": fusion.w2, "w3_slide": fusion.w3},
+        "total_segments_considered": len(fused_segments),
+        "segments_selected": len(selected_segments),
+        "selected_duration_seconds": round(total_duration, 2),
+        "selected_segments": selected_segments,
         "final_video": str(final_video_path),
-        "message": "Module 4 received Module 1, Module 2, and Module 3 outputs successfully."
     }
 
     write_json(final_json_path, final_data)
 
-    final_video_path.write_text(
-        "Dummy summarized video placeholder",
-        encoding="utf-8"
-    )
+    if not final_video_path.exists():
+        raise FileNotFoundError(f"Module 4 final video not found: {final_video_path}")
+
+    print("========== MODULE 4 COMPLETED ==========")
+    print("Saved:", final_video_path)
+    print("=========================================")
 
     return str(final_video_path), str(final_json_path)

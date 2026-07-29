@@ -2,6 +2,14 @@
    INTEGRA — Main Application Script
    ═══════════════════════════════════════════════════════════ */
 
+// Base URL for the backend API. Empty string = relative paths, which the
+// Vite dev proxy (vite.config.js) forwards to http://localhost:8000.
+// For a Colab-hosted backend, set VITE_API_URL in frontend/.env (e.g. an
+// ngrok/localtunnel URL) - no code changes needed.
+const API_BASE = import.meta.env.VITE_API_URL || '';
+
+const STATUS_POLL_INTERVAL_MS = 2000;
+
 // ── Theme Toggle ──
 function initTheme() {
   const toggle = document.getElementById('theme-toggle');
@@ -222,7 +230,7 @@ function initUpload() {
   startBtn?.addEventListener('click', () => {
     if (!selectedFile) return;
     startBtn.disabled = true;
-    runPipelineDemo();
+    runRealPipeline(selectedFile);
   });
 }
 
@@ -298,118 +306,151 @@ function initLog() {
   });
 }
 
-// ── Pipeline Demo (Simulated) ──
-function runPipelineDemo() {
+// ── Pipeline (Real Backend) ──
+const MODULE_STAGE_IDS = { module1: 1, module2: 2, module3: 3, module4: 4 };
+const MODULE_NAMES = {
+  module1: 'Keyframe Detection (ResNet-50 + BiLSTM)',
+  module2: 'Content Summarization (Whisper + BERT)',
+  module3: 'Visual Understanding (ViT + OCR)',
+  module4: 'Video Synthesis (Fusion + MoviePy)',
+};
+
+function setStageUI(moduleKey, moduleStatus) {
+  const id = MODULE_STAGE_IDS[moduleKey];
+  const stageEl = document.getElementById(`stage-${id}`);
+  const progressFill = document.getElementById(`progress-${id}`);
+  const pctEl = document.getElementById(`pct-${id}`);
+
+  const pct = moduleStatus === 'completed' ? 100 : moduleStatus === 'running' ? 50 : 0;
+  const domStatus = moduleStatus === 'completed' ? 'done'
+    : moduleStatus === 'failed' ? 'error'
+    : moduleStatus === 'running' ? 'running'
+    : 'waiting';
+
+  stageEl?.setAttribute('data-status', domStatus);
+  if (progressFill) progressFill.style.width = pct + '%';
+  if (pctEl) pctEl.textContent = pct + '%';
+}
+
+async function runRealPipeline(file) {
   const statusBadge = document.getElementById('status-indicator');
   const statusText = statusBadge?.querySelector('.status-text');
+  const startBtn = document.getElementById('start-pipeline-btn');
 
   statusBadge?.classList.remove('status-idle', 'status-done', 'status-error');
   statusBadge?.classList.add('status-running');
-  if (statusText) statusText.textContent = 'Running';
+  if (statusText) statusText.textContent = 'Uploading';
 
   addLog('═══ Pipeline started ═══', 'success');
-  addLog('Configuration loaded. Target duration: ' +
-    (document.getElementById('config-duration')?.value || 600) + 's', 'info');
+  addLog('Uploading ' + file.name + '…', 'info');
 
-  const stages = [
-    { id: 1, name: 'Keyframe Detection', model: 'ResNet-50 + BiLSTM', duration: 3000, messages: [
-      'Extracting frames at 1 FPS…',
-      'Running ResNet-50 feature extraction…',
-      'BiLSTM temporal scoring complete.',
-      'Generated importance scores for 360 segments.'
-    ]},
-    { id: 2, name: 'Content Summarization', model: 'Whisper + BERT', duration: 3500, messages: [
-      'Transcribing audio with Whisper large-v3…',
-      'Segmenting transcript into sentences…',
-      'Running BERT sentence classification…',
-      'Identified 47 important sentences.'
-    ]},
-    { id: 3, name: 'Visual Understanding', model: 'ViT + TrOCR', duration: 2500, messages: [
-      'Detecting slide transitions…',
-      'Classifying slides with ViT-base…',
-      'Extracting text with TrOCR…',
-      '18 Critical, 12 Important, 6 Skip slides.'
-    ]},
-    { id: 4, name: 'Video Synthesis', model: 'Fusion + MoviePy', duration: 4000, messages: [
-      'Computing fused scores: S = w₁·V + w₂·T + w₃·L',
-      'Selecting top segments above threshold…',
-      'Rendering Pipeline A — Highlight reel…',
-      'Rendering Pipeline B — AI slideshow…',
-      'Output videos generated successfully!'
-    ]},
-  ];
+  let jobId;
+  try {
+    const formData = new FormData();
+    formData.append('file', file);
 
-  let stageIndex = 0;
+    const uploadRes = await fetch(`${API_BASE}/api/upload`, { method: 'POST', body: formData });
+    if (!uploadRes.ok) throw new Error(`Upload failed: HTTP ${uploadRes.status}`);
+    const uploadData = await uploadRes.json();
+    jobId = uploadData.job_id;
+    addLog(`Upload accepted. Job ID: ${jobId}`, 'success');
+  } catch (err) {
+    addLog(`Upload error: ${err.message}`, 'error');
+    setPipelineError(err.message);
+    return;
+  }
 
-  function runStage() {
-    if (stageIndex >= stages.length) {
+  if (statusText) statusText.textContent = 'Running';
+  const seenModuleStatus = {};
+
+  const poll = setInterval(async () => {
+    let status;
+    try {
+      const res = await fetch(`${API_BASE}/api/jobs/${jobId}/status`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      status = await res.json();
+    } catch (err) {
+      addLog(`Status check failed: ${err.message}`, 'error');
+      return; // transient - keep polling
+    }
+
+    for (const moduleKey of Object.keys(MODULE_STAGE_IDS)) {
+      const moduleStatus = status[moduleKey];
+      if (moduleStatus && moduleStatus !== seenModuleStatus[moduleKey]) {
+        seenModuleStatus[moduleKey] = moduleStatus;
+        setStageUI(moduleKey, moduleStatus);
+        addLog(`▸ ${MODULE_NAMES[moduleKey]}: ${moduleStatus}`, moduleStatus === 'failed' ? 'error' : 'info');
+      }
+    }
+
+    if (status.status === 'completed') {
+      clearInterval(poll);
       addLog('═══ Pipeline completed successfully ═══', 'success');
       statusBadge?.classList.remove('status-running');
       statusBadge?.classList.add('status-done');
       if (statusText) statusText.textContent = 'Done';
-      populateDemoResults();
-      document.getElementById('start-pipeline-btn').disabled = false;
-      
-      // Auto-switch to Videos tab for user-friendly experience
+      await populateRealResults(jobId);
+      if (startBtn) startBtn.disabled = false;
+
       const videoTabBtn = document.querySelector('.tab-btn[data-tab="tab-video"]');
       if (videoTabBtn) videoTabBtn.click();
-      
-      return;
+    } else if (status.status === 'failed') {
+      clearInterval(poll);
+      addLog(`Pipeline failed: ${status.error || 'unknown error'}`, 'error');
+      setPipelineError(status.error);
     }
+  }, STATUS_POLL_INTERVAL_MS);
 
-    const stage = stages[stageIndex];
-    const stageEl = document.getElementById(`stage-${stage.id}`);
-    const progressFill = document.getElementById(`progress-${stage.id}`);
-    const pctEl = document.getElementById(`pct-${stage.id}`);
-
-    stageEl?.setAttribute('data-status', 'running');
-    addLog(`▸ Stage ${stage.id}: ${stage.name} (${stage.model})`, 'info');
-
-    let progress = 0;
-    const interval = stage.duration / 100;
-    let msgIdx = 0;
-
-    const progressTimer = setInterval(() => {
-      progress += 1;
-      if (progressFill) progressFill.style.width = progress + '%';
-      if (pctEl) pctEl.textContent = progress + '%';
-
-      if (msgIdx < stage.messages.length && progress >= ((msgIdx + 1) / stage.messages.length) * 100) {
-        addLog('  ' + stage.messages[msgIdx], 'info');
-        msgIdx++;
-      }
-
-      if (progress >= 100) {
-        clearInterval(progressTimer);
-        stageEl?.setAttribute('data-status', 'done');
-        addLog(`[Done] Stage ${stage.id} complete.`, 'success');
-        stageIndex++;
-        setTimeout(runStage, 400);
-      }
-    }, interval);
+  function setPipelineError(message) {
+    statusBadge?.classList.remove('status-running');
+    statusBadge?.classList.add('status-error');
+    if (statusText) statusText.textContent = 'Error';
+    if (startBtn) startBtn.disabled = false;
   }
-
-  runStage();
 }
 
-// ── Populate Demo Results ──
-function populateDemoResults() {
-  const metrics = {
-    'metric-rouge': '0.438',
-    'metric-precision': '0.812',
-    'metric-recall': '0.779',
-    'metric-wer': '11.2%',
-    'metric-f1': '0.743',
-    'metric-duration': '9:47'
-  };
-  Object.entries(metrics).forEach(([id, val]) => {
+// ── Populate Real Results ──
+function formatDuration(totalSeconds) {
+  const s = Math.round(totalSeconds || 0);
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+}
+
+async function populateRealResults(jobId) {
+  const video = document.getElementById('video-pipeline-a');
+  if (video) {
+    const source = video.querySelector('source') || video;
+    source.src = `${API_BASE}/api/jobs/${jobId}/download-video`;
+    video.load();
+  }
+
+  // metric-rouge/precision/recall/wer/f1 are research-evaluation metrics computed
+  // against held-out human annotations (see scripts/evaluate_trained_model.py) -
+  // they have no real-time equivalent for an arbitrary user-uploaded video with
+  // no ground truth, so they're marked as not applicable rather than faked.
+  const notApplicable = ['metric-rouge', 'metric-precision', 'metric-recall', 'metric-wer', 'metric-f1'];
+  notApplicable.forEach(id => {
     const el = document.getElementById(id);
-    if (el) {
-      el.textContent = val;
-      el.style.animation = 'fadeIn 0.5s ease';
-    }
+    if (el) el.textContent = 'N/A';
   });
 
+  try {
+    const res = await fetch(`${API_BASE}/api/jobs/${jobId}/download-json`);
+    if (res.ok) {
+      const finalData = await res.json();
+      const durationEl = document.getElementById('metric-duration');
+      if (durationEl) durationEl.textContent = formatDuration(finalData.selected_duration_seconds);
+      addLog(
+        `Selected ${finalData.segments_selected} of ${finalData.total_segments_considered} segments ` +
+        `(${formatDuration(finalData.selected_duration_seconds)} total).`,
+        'info'
+      );
+    }
+  } catch (err) {
+    addLog(`Could not load final results JSON: ${err.message}`, 'error');
+  }
+
+  // Illustrative-only visualizations (per-frame/per-sentence detail isn't exposed
+  // by any backend endpoint yet) - kept for visual completeness of the dashboard.
   drawHeatmap();
   populateTranscript();
   populateSlideGrid();

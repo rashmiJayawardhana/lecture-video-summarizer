@@ -65,11 +65,11 @@ def find_video_path(video_id, video_dir="videos"):
     return None
 
 
-def backfill(file_name, delay, limit=None):
+def backfill(file_name, delay, limit=None, videos=None):
     """Backfill missing AI scores in the specified annotation file."""
     # Load dotenv to load any API keys
     load_dotenv()
-    
+
     # Check for available API Keys
     anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
     openai_key = os.environ.get("OPENAI_API_KEY")
@@ -93,11 +93,22 @@ def backfill(file_name, delay, limit=None):
     annotations = load_annotations(str(ann_path))
     info(f"Loaded {len(annotations)} annotation segments from {file_name}.")
 
+    wanted_nums = None
+    if videos:
+        wanted_nums = {v.strip().zfill(3) for v in videos}
+        info(f"Restricting backfill to video number(s): {', '.join(sorted(wanted_nums))}")
+
     # Filter segments that need backfilling
     to_backfill = []
     for seg_id, rec in annotations.items():
         if rec.get("skipped", False):
             continue
+        if wanted_nums is not None:
+            vid = rec.get("video_id", "")
+            parts = vid.split()
+            num = parts[1] if len(parts) > 1 else None
+            if num not in wanted_nums:
+                continue
         if "ai_score" not in rec or rec.get("ai_score") is None:
             to_backfill.append(seg_id)
 
@@ -181,6 +192,8 @@ if __name__ == "__main__":
     parser.add_argument("--file", type=str, default="annotations_rashmi.json", help="Path to annotations JSON file")
     parser.add_argument("--delay", type=float, default=4.5, help="Delay in seconds between API calls to avoid rate limits")
     parser.add_argument("--limit", type=int, default=None, help="Limit the number of segments to process")
-    
+    parser.add_argument("--videos", type=str, default=None, help="Comma-separated video numbers to restrict backfill to, e.g. '057,059,051'")
+
     args = parser.parse_args()
-    backfill(file_name=args.file, delay=args.delay, limit=args.limit)
+    video_list = args.videos.split(",") if args.videos else None
+    backfill(file_name=args.file, delay=args.delay, limit=args.limit, videos=video_list)
