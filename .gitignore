@@ -275,3 +275,14 @@ __pycache__/
 *.pyc
 storage/jobs/
 storage/jobs/
+
+# INTEGRA generated files
+data/
+outputs/
+storage/
+models/module3/
+*.safetensors
+*.mp4
+*.avi
+*.mov
+*.mkv
