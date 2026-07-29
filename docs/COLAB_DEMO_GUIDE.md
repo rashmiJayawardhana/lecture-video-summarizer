@@ -18,7 +18,7 @@ drive.mount('/content/drive')
 
 ```bash
 # Cell 2 - Clone repo and checkout your branch
-!git clone https://github.com/<your-org>/lecture-video-summarizer.git
+!git clone https://github.com/rashmiJayawardhana/lecture-video-summarizer.git
 %cd lecture-video-summarizer
 !git checkout <your-branch>
 ```
@@ -110,16 +110,40 @@ Verify from a separate device/network (not just from within Colab) that the prin
 !curl -s <public_url>/
 ```
 
-## Part 6 — Point the local frontend at Colab
+## Part 6 — Point a frontend at Colab
 
-On your laptop, in `frontend/`:
+Two options — either works, pick based on what's more convenient on demo day.
+
+### Option A: run the frontend locally
 
 ```bash
+cd frontend
 echo "VITE_API_URL=<public_url from Part 5>" > .env
 npm run dev
 ```
 
-Open `http://localhost:3000`, and run through the real flow: drop a video in, click "Run Pipeline". The frontend now makes real `POST /api/upload` and polls real `GET /api/jobs/{id}/status` calls against the Colab-hosted backend (confirmed working the same way against a local backend this session — same code path, just a different `API_BASE`).
+Open `http://localhost:3000`. Since `VITE_API_URL` is read at `npm run dev` startup, changing the Colab tunnel URL just means editing `.env` and restarting `npm run dev` - no rebuild step.
+
+### Option B: use the already-deployed Vercel frontend
+
+The frontend supports overriding its backend URL at **runtime** via a query
+parameter, so the static Vercel deployment doesn't need to be rebuilt every
+time you get a new Colab tunnel URL:
+
+```
+https://<your-vercel-app>.vercel.app/?api=<public_url from Part 5>
+```
+
+The URL is saved to the browser's `localStorage` on first load, so subsequent
+page refreshes during the demo keep using it even without the query param.
+
+**One-time prerequisite**: the currently-deployed Vercel site is still running
+the old fake-simulation frontend from before this session's rewiring - it
+needs at least one redeploy (push to the branch Vercel is tracking, or trigger
+a manual redeploy) to pick up the real upload/polling/video code before Option
+B will work at all.
+
+Either way: the frontend makes real `POST /api/upload` and polls real `GET /api/jobs/{id}/status` calls against the Colab-hosted backend (confirmed working this session against a local backend - same code path, just a different resolved API base).
 
 **Test with `scripts_scratch_test_clip.mp4` first**, not a full 60-minute lecture, before doing this live in front of the panel. Even on Colab GPU, a full lecture still takes real time end-to-end (Whisper transcription + ResNet/ViT inference + video rendering), and you want to catch any Colab-specific path issue (missing checkpoint, wrong Drive path, tunnel drop) on a fast, low-stakes run first.
 

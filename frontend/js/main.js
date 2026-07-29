@@ -2,11 +2,22 @@
    INTEGRA — Main Application Script
    ═══════════════════════════════════════════════════════════ */
 
-// Base URL for the backend API. Empty string = relative paths, which the
-// Vite dev proxy (vite.config.js) forwards to http://localhost:8000.
-// For a Colab-hosted backend, set VITE_API_URL in frontend/.env (e.g. an
-// ngrok/localtunnel URL) - no code changes needed.
-const API_BASE = import.meta.env.VITE_API_URL || '';
+// Base URL for the backend API, resolved in priority order:
+//   1. ?api=<url> query param - lets a Vercel-deployed (static, build-time-baked)
+//      frontend point at a fresh Colab tunnel URL each demo session without a
+//      rebuild. Persisted to localStorage so it survives a page refresh.
+//   2. VITE_API_URL (baked in at build time via frontend/.env) - for local dev
+//      against a Colab backend without needing the query param every time.
+//   3. '' (relative paths) - the Vite dev proxy (vite.config.js) forwards these
+//      to http://localhost:8000 for local dev against a local backend.
+const API_BASE = (() => {
+  const fromQuery = new URLSearchParams(window.location.search).get('api');
+  if (fromQuery) {
+    localStorage.setItem('integra-api-base', fromQuery);
+    return fromQuery;
+  }
+  return localStorage.getItem('integra-api-base') || import.meta.env.VITE_API_URL || '';
+})();
 
 const STATUS_POLL_INTERVAL_MS = 2000;
 
