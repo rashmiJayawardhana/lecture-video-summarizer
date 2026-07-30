@@ -398,8 +398,8 @@
 .transcript-container { max-height: 400px; overflow-y: auto; font-size: var(--fs-sm); line-height: 1.9; }
 .slides-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-md); }
 
-/* ── Video Comparison ── */
-.video-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+/* ── Video Output ── */
+.video-comparison { display: grid; grid-template-columns: 1fr; max-width: 720px; margin: 0 auto; gap: var(--space-xl); }
 .video-card { padding: var(--space-lg); }
 .video-card h3 { font-size: var(--fs-lg); margin-bottom: var(--space-md); }
 .video-player-container {

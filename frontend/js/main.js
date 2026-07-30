@@ -427,7 +427,7 @@ function formatDuration(totalSeconds) {
 }
 
 async function populateRealResults(jobId) {
-  const video = document.getElementById('video-pipeline-a');
+  const video = document.getElementById('video-output');
   if (video) {
     const source = video.querySelector('source') || video;
     source.src = `${API_BASE}/api/jobs/${jobId}/download-video`;

@@ -104,7 +104,7 @@
           <div class="arch-node arch-module" data-module="3">
             <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
             <div class="arch-label">Module 3</div>
-            <div class="arch-detail">ViT + TrOCR</div>
+            <div class="arch-detail">ViT + EasyOCR</div>
           </div>
         </div>
         <div class="arch-connector"><div class="connector-line"></div></div>
@@ -117,13 +117,8 @@
         <div class="arch-outputs">
           <div class="arch-node arch-output">
             <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-            <div class="arch-label">Pipeline A</div>
-            <div class="arch-detail">Highlights</div>
-          </div>
-          <div class="arch-node arch-output">
-            <div class="arch-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M2 12h2M20 12h2M12 2v2M12 20v2"/></svg></div>
-            <div class="arch-label">Pipeline B</div>
-            <div class="arch-detail">Slideshow</div>
+            <div class="arch-label">Module 4 Output</div>
+            <div class="arch-detail">Condensed Video</div>
           </div>
         </div>
       </div>
@@ -418,22 +413,13 @@
     <div class="tab-panel" id="tab-video">
       <div class="video-comparison">
         <div class="video-card glass-card">
-          <h3>Pipeline A — Highlight Reel</h3>
+          <h3>Condensed Video Output</h3>
           <div class="video-player-container">
-            <video id="video-pipeline-a" controls class="result-video">
+            <video id="video-output" controls class="result-video">
               <source src="" type="video/mp4" />
             </video>
           </div>
-          <p class="video-desc">Real lecture segments with original audio, transitions, and subtitles.</p>
-        </div>
-        <div class="video-card glass-card">
-          <h3>Pipeline B — AI Slideshow</h3>
-          <div class="video-player-container">
-            <video id="video-pipeline-b" controls class="result-video">
-              <source src="" type="video/mp4" />
-            </video>
-          </div>
-          <p class="video-desc">Synthetic narrated slideshow with AI-rendered slides and TTS voiceover.</p>
+          <p class="video-desc">Top-scoring segments from the original lecture (real footage and audio), selected by weighted score fusion and assembled into a single condensed video.</p>
         </div>
       </div>
     </div>
