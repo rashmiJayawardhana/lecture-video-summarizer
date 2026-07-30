@@ -92,7 +92,7 @@ You should see `{"message":"INTEGRA backend is running"}`. If not, check `backen
 # ahead of time in case this is a last-minute blocker)
 !pip install pyngrok -q
 from pyngrok import ngrok
-ngrok.set_auth_token("<your ngrok authtoken>")
+ngrok.set_auth_token("<your ngrok authtoken>")    #3HCjYo92PDSKEBVv2XxSBQcOoUH_6XhxF2o7sJ54DusDArDmo
 public_url = ngrok.connect(8000, "http")
 print("Public backend URL:", public_url)
 ```
@@ -118,7 +118,7 @@ Two options — either works, pick based on what's more convenient on demo day.
 
 ```bash
 cd frontend
-echo "VITE_API_URL=<public_url from Part 5>" > .env
+echo "VITE_API_URL=https://console-husked-speak.ngrok-free.dev" > .env
 npm run dev
 ```
 
@@ -131,7 +131,7 @@ parameter, so the static Vercel deployment doesn't need to be rebuilt every
 time you get a new Colab tunnel URL:
 
 ```
-https://<your-vercel-app>.vercel.app/?api=<public_url from Part 5>
+https://lecture-video-summarizer-32.vercel.app//?api=https://console-husked-speak.ngrok-free.dev
 ```
 
 The URL is saved to the browser's `localStorage` on first load, so subsequent

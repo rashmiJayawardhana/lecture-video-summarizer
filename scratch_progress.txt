@@ -64,4 +64,4 @@ TOTAL: 23402/23402 segments (100.0%) across 61 video(s), all annotators combined
 
 VIDEOS: 61 complete | 0 partially annotated | 0 not started yet (of 61 total)
 
-Updated: 2026-07-29T13:44:57
+Updated: 2026-07-30T17:06:50
