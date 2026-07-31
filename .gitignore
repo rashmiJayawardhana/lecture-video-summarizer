@@ -226,6 +226,7 @@ models/module2/checkpoints/
 models/module3/best_model/
 models/module3/checkpoints/
 models/module4/
+.claude/
 
 # Output files
 outputs/summaries/

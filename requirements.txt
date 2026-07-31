@@ -65,6 +65,9 @@ jupyter>=1.0.0
 # ─── Video Download ───────────────────────────────────────
 yt-dlp>=2023.7.6               # Download lectures from YouTube/MIT OCW
 
+# ─── Module 4 UI ───────────────────────────────────────────
+streamlit>=1.35.0              # Dedicated UI for the video-generation pipeline
+
 # ─── GPU Installation Note ────────────────────────────────
 # Install PyTorch with CUDA separately:
 # pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118

@@ -23,7 +23,8 @@ INPUT_PATH = "video_input/video_json_input_checked.json"
 
 REPO_ROOT = os.path.join(os.path.dirname(__file__), "..")
 OUTPUT_DIR = os.path.join(REPO_ROOT, "output")
-OUTPUT_VIDEO = os.path.join(OUTPUT_DIR, "lecture_021_summary.mp4")
+OUTPUT_FILENAME = sys.argv[1] if len(sys.argv) > 1 else "lecture_021_summary.mp4"
+OUTPUT_VIDEO = os.path.join(OUTPUT_DIR, OUTPUT_FILENAME)
 TEMP_DIR = os.path.join(OUTPUT_DIR, "temp")
 
 if __name__ == "__main__":
