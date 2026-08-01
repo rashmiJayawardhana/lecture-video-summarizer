@@ -8,7 +8,7 @@ Produces a fully synthetic narrated slideshow video:
     - Holds each slide for max(audio_duration, 3 seconds)
     - Concatenates all slide clips and encodes as H.264 MP4
 
-No raw lecture footage is needed — fully AI-generated output.
+No raw lecture footage is needed — fully generated output.
 
 Owner: Lathisana (214116F)
 """

@@ -104,7 +104,7 @@ def create_intro_slide(overall_summary: dict, output_path: str) -> str:
 
     # "Summary Video" label
     label_font = get_font(28)
-    draw.text((40, HEIGHT - 55), "AI-Generated Summary", font=label_font, fill=SLIDE_NUM_COLOR)
+    draw.text((40, HEIGHT - 55), "Summary", font=label_font, fill=SLIDE_NUM_COLOR)
 
     img.save(output_path, "PNG")
     return output_path

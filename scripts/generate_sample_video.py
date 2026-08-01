@@ -33,7 +33,7 @@ overall_summary = {
     "lecture_title": "Introduction to Machine Learning",
     "main_topic": "Supervised Learning, Model Evaluation, and Neural Networks",
     "intro_voiceover": (
-        "Welcome to this AI-generated summary of Introduction to Machine Learning. "
+        "Welcome to this summary of Introduction to Machine Learning. "
         "In this video, we'll cover the core concepts of supervised learning, "
         "how to evaluate models, and the fundamentals of neural networks."
     ),
