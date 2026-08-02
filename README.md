@@ -10,8 +10,8 @@
 
 This research project develops a four-module deep learning pipeline that automatically produces a semantically meaningful condensed video from a full-length IT theory lecture.
 
--**Input**: an uploaded lecture video (MP4)
--**Output**: a single, fully-narrated condensed MP4 summary video. 
+- **Input**: an uploaded lecture video (MP4)
+- **Output**: a single, fully-narrated condensed MP4 summary video. 
 Module 4 aligns the visual, speech, and slide analysis by timestamp, generates a structured per-slide summary with a locally fine-tuned BART-base model, verifies that summary against the source data with a cloud-hosted model, and renders the verified content into the final video with Pillow + MoviePy + edge-tts + FFmpeg. No raw lecture footage is used in the output; every slide is included, narrated end to end.
 
 ## 🏗️ Architecture
