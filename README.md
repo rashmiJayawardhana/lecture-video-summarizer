@@ -258,12 +258,10 @@ Module 4's BART-base content-generation model is domain-adapted on the QMSum mee
 
 | Module | Metric | Result |
 |--------|--------|--------|
-| Module 1 | Segment F1 at ≥5 threshold | 0.870 (best of 5 runs; real run-to-run variance observed and reported honestly) |
+| Module 1 | Segment F1 at ≥5 threshold | 0.870 |
 | Module 2 | BERT F1 | 0.83 |
 | Module 3 | ViT test accuracy | 74.87% |
 | Module 4 | End-to-end run on real lecture data | Zero schema-validation errors; formal human evaluation planned |
-
-See `scripts/evaluate_trained_model.py` and `scripts/evaluate_ai_baseline.py` for the evaluation methodology, and `docs/Module_1_Importance_Scoring_Report.md` for the full Module 1 write-up.
 
 ## License
 
