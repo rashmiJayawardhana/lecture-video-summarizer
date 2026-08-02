@@ -1,4 +1,4 @@
-# INTEGRA — Automated Lecture Video Summarization with Condensed Video Output
+# INTEGRA - Automated Lecture Video Summarization with Condensed Video Output
 
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.11-red.svg)](https://pytorch.org/)
@@ -8,10 +8,11 @@
 
 ## 🎯 Project Overview
 
-This research project develops a four-module deep learning pipeline that automatically produces a duration-controlled, semantically meaningful condensed video from a full-length IT theory lecture.
+This research project develops a four-module deep learning pipeline that automatically produces a semantically meaningful condensed video from a full-length IT theory lecture.
 
-**Input**: an uploaded lecture video (MP4)
-**Output**: a single, fully-narrated condensed MP4 summary video. Module 4 aligns the visual, speech, and slide analysis by timestamp, generates a structured per-slide summary with a locally fine-tuned BART-base model, verifies that summary against the source data with a cloud-hosted model, and renders the verified content into the final video with Pillow + MoviePy + edge-tts + FFmpeg. No raw lecture footage is used in the output — every slide is included, narrated end to end.
+-**Input**: an uploaded lecture video (MP4)
+-**Output**: a single, fully-narrated condensed MP4 summary video. 
+Module 4 aligns the visual, speech, and slide analysis by timestamp, generates a structured per-slide summary with a locally fine-tuned BART-base model, verifies that summary against the source data with a cloud-hosted model, and renders the verified content into the final video with Pillow + MoviePy + edge-tts + FFmpeg. No raw lecture footage is used in the output; every slide is included, narrated end to end.
 
 ## 🏗️ Architecture
 
@@ -68,7 +69,7 @@ Input Video
 
 ### Module 4: Video Synthesis & Intelligent Editing
 - **Owner**: Lathisana T. (214116F)
-- **Pipeline**: Source Alignment (`align_source.py` joins Module 1/2/3 outputs by timestamp window) → Content Generation (a locally fine-tuned `facebook/bart-base` checkpoint, domain-adapted on QMSum, generates each slide's title, key concepts, code examples, and voiceover script — inference runs on CPU) → Content Verification (Ollama Cloud checks the generated content against the aligned source data and corrects false attribution or omissions, used strictly for verification, never generation) → Video Rendering (Pillow renders slide images, edge-tts synthesizes narration with the en-US-AriaNeural voice, MoviePy/FFmpeg assemble and encode the final MP4).
+- **Pipeline**: Source Alignment (`align_source.py` joins Module 1/2/3 outputs by timestamp window) → Content Generation (a locally fine-tuned `facebook/bart-base` checkpoint, domain-adapted on QMSum, generates each slide's title, key concepts, code examples, and voiceover script; inference runs on CPU) → Content Verification (Ollama Cloud checks the generated content against the aligned source data and corrects false attribution or omissions, used strictly for verification, never generation) → Video Rendering (Pillow renders slide images, edge-tts synthesizes narration with the en-US-AriaNeural voice, MoviePy/FFmpeg assemble and encode the final MP4).
 - **Status**: Stage 1 BART fine-tuning done; content verification done; full end-to-end run executes on real lecture data with zero schema-validation errors. Formal human evaluation of output quality is planned.
 - **Output**: a single narrated `summarized_video.mp4` (every slide included, no raw footage) + `module4_final_output.json`
 
@@ -176,7 +177,7 @@ lecture-video-summarizer/
 ### Prerequisites
 
 - Python 3.13, PyTorch 2.11 (CUDA build recommended)
-- **FFmpeg installed and on PATH** (required by both Module 2's Whisper audio decoding and Module 4's video rendering — verify with `ffmpeg -version`)
+- **FFmpeg installed and on PATH** (required by both Module 2's Whisper audio decoding and Module 4's video rendering; verify with `ffmpeg -version`)
 - Node.js 20+ (frontend)
 - A Supabase project (free tier) for job status tracking
 - A Gemini API key (free tier) for Module 3's Critical-frame analysis (Module 3 still runs without it via its OCR fallback, at lower quality)
@@ -200,7 +201,7 @@ copy .env.example .env
 python -c "import torch; print('CUDA available:', torch.cuda.is_available())"
 ```
 
-Place the trained checkpoints (not in git, distributed separately — see the team's shared storage):
+Place the trained checkpoints (not in git, distributed separately; see the team's shared storage):
 - `best_module1_model.pt` at the project root
 - `src/module2_summarization/bert_model_v2/model.safetensors`
 - `models/module3/vit_slide_classifier/model.safetensors`
@@ -249,7 +250,7 @@ python -m src.module1_importance.train
 python src/module3_visual/train.py --data_dir data/datasets/module3 --output_dir models/module3/vit_slide_classifier --epochs 3
 ```
 
-Module 2's BERT fine-tuning was run interactively via Google Colab notebook rather than a checked-in `train.py` script — see `notebooks/`.
+Module 2's BERT fine-tuning was run interactively via Google Colab notebook rather than a checked-in `train.py` script; see `notebooks/`.
 
 Module 4's BART-base content-generation model is domain-adapted on the QMSum meeting-summarization dataset via `notebooks/module4_stage1_qmsum_finetune.ipynb`, then targeted toward the aligned lecture data to produce the structured per-slide summary schema Module 4 renders from.
 
