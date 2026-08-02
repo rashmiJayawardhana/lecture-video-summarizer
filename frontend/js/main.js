@@ -360,7 +360,11 @@ async function runRealPipeline(file) {
     const formData = new FormData();
     formData.append('file', file);
 
-    const uploadRes = await fetch(`${API_BASE}/api/upload`, { method: 'POST', body: formData });
+    const uploadRes = await fetch(`${API_BASE}/api/upload`, {
+      method: 'POST',
+      body: formData,
+      headers: { 'ngrok-skip-browser-warning': 'true' },
+    });
     if (!uploadRes.ok) throw new Error(`Upload failed: HTTP ${uploadRes.status}`);
     const uploadData = await uploadRes.json();
     jobId = uploadData.job_id;
@@ -377,7 +381,9 @@ async function runRealPipeline(file) {
   const poll = setInterval(async () => {
     let status;
     try {
-      const res = await fetch(`${API_BASE}/api/jobs/${jobId}/status`);
+      const res = await fetch(`${API_BASE}/api/jobs/${jobId}/status`, {
+        headers: { 'ngrok-skip-browser-warning': 'true' },
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       status = await res.json();
     } catch (err) {
@@ -429,9 +435,23 @@ function formatDuration(totalSeconds) {
 async function populateRealResults(jobId) {
   const video = document.getElementById('video-output');
   if (video) {
-    const source = video.querySelector('source') || video;
-    source.src = `${API_BASE}/api/jobs/${jobId}/download-video`;
-    video.load();
+    // A native <video><source src="..."> request can't carry custom headers,
+    // so it can't send ngrok-skip-browser-warning and gets stuck on ngrok's
+    // free-tier interstitial page. Fetch the bytes ourselves (where we CAN
+    // set the header) and hand the browser a local blob URL instead.
+    try {
+      const videoRes = await fetch(`${API_BASE}/api/jobs/${jobId}/download-video`, {
+        headers: { 'ngrok-skip-browser-warning': 'true' },
+      });
+      if (!videoRes.ok) throw new Error(`HTTP ${videoRes.status}`);
+      const blob = await videoRes.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      const source = video.querySelector('source') || video;
+      source.src = blobUrl;
+      video.load();
+    } catch (err) {
+      addLog(`Video load failed: ${err.message}`, 'error');
+    }
   }
 
   // metric-rouge/precision/recall/wer/f1 are research-evaluation metrics computed
@@ -445,7 +465,9 @@ async function populateRealResults(jobId) {
   });
 
   try {
-    const res = await fetch(`${API_BASE}/api/jobs/${jobId}/download-json`);
+    const res = await fetch(`${API_BASE}/api/jobs/${jobId}/download-json`, {
+      headers: { 'ngrok-skip-browser-warning': 'true' },
+    });
     if (res.ok) {
       const finalData = await res.json();
       const durationEl = document.getElementById('metric-duration');

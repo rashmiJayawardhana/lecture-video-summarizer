@@ -97,8 +97,15 @@ def run_module2(video_path: str, output_dir: str) -> str:
         storage/jobs/{job_id}/outputs/module2_output.json
         Flat list of {sentence, timestamp_start, timestamp_end, is_important, importance_ratio_T}
         (schema validated against src/utils/json_schema.py)
+
+        storage/jobs/{job_id}/outputs/module2_enriched.json
+        Topic/summary/key_points blocks grouped from high-importance segments
+        (src/module2_summarization/gemini_enrich.py). Best-effort: if Gemini
+        is unavailable (missing/expired key), this file is skipped rather than
+        failing the whole module, matching Module 3's OCR-fallback pattern.
     """
     from src.utils.json_schema import validate_module2_output
+    from src.module2_summarization import gemini_enrich
 
     project_root = Path(__file__).resolve().parents[3]
 
@@ -171,6 +178,18 @@ def run_module2(video_path: str, output_dir: str) -> str:
         raise ValueError(f"Module 2 output failed schema validation: {'; '.join(errors)}")
 
     write_json(final_module2_json, flat_output)
+
+    # 4. Best-effort Gemini enrichment: group high-importance segments into
+    # topic/summary blocks. Never fails the module - if Gemini is unavailable
+    # (missing/expired key, rate limit, network), log it and move on, since
+    # module2_output.json above already satisfies the schema Module 4 needs.
+    enriched_json = output_dir / "module2_enriched.json"
+    try:
+        enriched_blocks = gemini_enrich.enrich_segments(segments)
+        write_json(enriched_json, enriched_blocks)
+        print(f"Gemini enrichment: {len(enriched_blocks)} topic blocks saved to {enriched_json}")
+    except Exception as e:
+        print(f"Gemini enrichment skipped (non-fatal): {e}")
 
     print("========== MODULE 2 COMPLETED ==========")
     print("Saved:", final_module2_json)
