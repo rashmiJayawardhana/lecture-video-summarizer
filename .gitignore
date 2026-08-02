@@ -288,6 +288,12 @@ data/processed/
 outputs/
 models/
 
+# INTEGRA generated files
+data/
+outputs/
+storage/
+models/module3/
+*.safetensors
 *.mp4
 *.avi
 *.mov
