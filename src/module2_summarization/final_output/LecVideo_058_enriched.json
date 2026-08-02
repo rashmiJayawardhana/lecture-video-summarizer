@@ -1,0 +1,424 @@
+[
+  {
+    "block_id": "block_001",
+    "timestamp_start": 0.0,
+    "timestamp_end": 30.0,
+    "segments_count": 2,
+    "segment_ids": [
+      "seg_000",
+      "seg_002"
+    ],
+    "semantic_analysis": {
+      "topic": "Introduction to Human-Computer Interaction",
+      "summary": "The lecture introduces the core concept of interaction between human users and computers.",
+      "key_points": [
+        "Focuses on the fundamental concept of interactions.",
+        "Identifies the two main entities in HCI: the human and the computer."
+      ]
+    }
+  },
+  {
+    "block_id": "block_002",
+    "timestamp_start": 110.0,
+    "timestamp_end": 210.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_011",
+      "seg_012",
+      "seg_016",
+      "seg_020"
+    ],
+    "semantic_analysis": {
+      "topic": "Interaction between humans, computers, and other entities",
+      "summary": "The lecture excerpt explores how interaction occurs between two or more parties, such as humans and computers, across different situations.",
+      "key_points": [
+        "Interaction takes place between two or more parties.",
+        "Entities involved can include humans, computers, or other parties.",
+        "Mutual understanding varies depending on the specific situation."
+      ]
+    }
+  },
+  {
+    "block_id": "block_003",
+    "timestamp_start": 250.0,
+    "timestamp_end": 360.0,
+    "segments_count": 6,
+    "segment_ids": [
+      "seg_025",
+      "seg_028",
+      "seg_029",
+      "seg_030",
+      "seg_034",
+      "seg_035"
+    ],
+    "semantic_analysis": {
+      "topic": "Fundamentals of Human Communication and Feedback",
+      "summary": "Effective human-to-human communication relies on feedback and encompasses both language and physical actions to ensure mutual understanding between parties.",
+      "key_points": [
+        "Communication requires feedback to achieve mutual understanding.",
+        "The process relies on two key components: language and actions.",
+        "Actions are physical motions that convey meaning between humans."
+      ]
+    }
+  },
+  {
+    "block_id": "block_004",
+    "timestamp_start": 440.0,
+    "timestamp_end": 550.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_044",
+      "seg_047",
+      "seg_051",
+      "seg_054"
+    ],
+    "semantic_analysis": {
+      "topic": "Emojis and Disclosure in Human-Machine Interaction",
+      "summary": "The excerpt explores how using emojis and personal disclosure relate to the broader goal of creating human-like machines.",
+      "key_points": [
+        "Emojis can be used as a communication tool to express information.",
+        "Communication clarity relies on what the user chooses to reveal or display.",
+        "Human-computer interaction is increasingly focusing on developing human-like machines capable of recognition."
+      ]
+    }
+  },
+  {
+    "block_id": "block_005",
+    "timestamp_start": 600.0,
+    "timestamp_end": 780.0,
+    "segments_count": 11,
+    "segment_ids": [
+      "seg_060",
+      "seg_061",
+      "seg_064",
+      "seg_065",
+      "seg_066",
+      "seg_069",
+      "seg_071",
+      "seg_072",
+      "seg_075",
+      "seg_076",
+      "seg_077"
+    ],
+    "semantic_analysis": {
+      "topic": "Communication and Language in Human-Computer Interaction",
+      "summary": "Successful human-computer interaction relies on mutual understanding established through natural language and actions between a user and a system.",
+      "key_points": [
+        "Effective interaction requires mutual understanding between all involved parties.",
+        "Communication is interpreted primarily through language and non-verbal actions.",
+        "HCI focuses on facilitating clear communication between a human user and a system."
+      ]
+    }
+  },
+  {
+    "block_id": "block_006",
+    "timestamp_start": 1130.0,
+    "timestamp_end": 1260.0,
+    "segments_count": 6,
+    "segment_ids": [
+      "seg_113",
+      "seg_116",
+      "seg_119",
+      "seg_121",
+      "seg_124",
+      "seg_125"
+    ],
+    "semantic_analysis": {
+      "topic": "Scope and Complexity of Human-Computer Interaction",
+      "summary": "Human-Computer Interaction extends beyond basic screen design to focus on improving human comfort despite the growing complexities introduced by natural language.",
+      "key_points": [
+        "HCI encompasses broader interactions beyond standard UI and web screen design.",
+        "A core objective for HCI practitioners is to make human lives more comfortable.",
+        "Interactions are becoming more complex due to the integration of natural language."
+      ]
+    }
+  },
+  {
+    "block_id": "block_007",
+    "timestamp_start": 1360.0,
+    "timestamp_end": 1370.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_136"
+    ],
+    "semantic_analysis": {
+      "topic": "Human Actions in Computer Interaction",
+      "summary": "Human-Computer Interaction encompasses the specific actions and inputs that humans perform when operating computer systems.",
+      "key_points": [
+        "HCI includes human-initiated actions directed at computers.",
+        "User interaction relies on actions performed by human operators."
+      ]
+    }
+  },
+  {
+    "block_id": "block_008",
+    "timestamp_start": 1450.0,
+    "timestamp_end": 1490.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_145",
+      "seg_146",
+      "seg_147",
+      "seg_148"
+    ],
+    "semantic_analysis": {
+      "topic": "Auditory and Visual System Feedback in HCI",
+      "summary": "The excerpt discusses how computers provide visual or auditory feedback, such as click sounds, to inform users when an action has been performed.",
+      "key_points": [
+        "Computer actions require feedback to help users understand system state changes.",
+        "Visual feedback may not always be sufficient or possible to display exact images.",
+        "Auditory cues, like click sounds, serve as effective alternatives or complements to visual feedback."
+      ]
+    }
+  },
+  {
+    "block_id": "block_009",
+    "timestamp_start": 1860.0,
+    "timestamp_end": 1880.0,
+    "segments_count": 2,
+    "segment_ids": [
+      "seg_186",
+      "seg_187"
+    ],
+    "semantic_analysis": {
+      "topic": "In-class student review activity",
+      "summary": "The instructor provides students with one minute to review the material and identify key elements or questions.",
+      "key_points": [
+        "A brief one-minute timeframe is given for individual review.",
+        "Students are prompted to identify specific items or observations."
+      ]
+    }
+  },
+  {
+    "block_id": "block_010",
+    "timestamp_start": 2260.0,
+    "timestamp_end": 2270.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_226"
+    ],
+    "semantic_analysis": {
+      "topic": "Simple User Interactions in Requirement Entry",
+      "summary": "The excerpt discusses how entering system requirements serves as an example of a seemingly straightforward user interaction.",
+      "key_points": [
+        "Entering requirements is presented as a simple form of user interaction.",
+        "Basic data entry tasks are analyzed as fundamental HCI interactions."
+      ]
+    }
+  },
+  {
+    "block_id": "block_011",
+    "timestamp_start": 2330.0,
+    "timestamp_end": 2340.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_233"
+    ],
+    "semantic_analysis": {
+      "topic": "User input parameters for specifying passenger count",
+      "summary": "Interfaces collecting passenger information must account for context parameters alongside the actual number of travelers.",
+      "key_points": [
+        "Additional parameters must be considered when inputting passenger numbers.",
+        "In most cases, the input value directly represents the true number of passengers."
+      ]
+    }
+  },
+  {
+    "block_id": "block_012",
+    "timestamp_start": 2380.0,
+    "timestamp_end": 2390.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_238"
+    ],
+    "semantic_analysis": {
+      "topic": "Cognitive Thought Processes in Interaction",
+      "summary": "The excerpt concludes an explanation detailing a specific cognitive thought process in human-computer interaction.",
+      "key_points": [
+        "Summarizes a preceding explanation of mental steps.",
+        "Highlights the underlying cognitive process involved in user interaction."
+      ]
+    }
+  },
+  {
+    "block_id": "block_013",
+    "timestamp_start": 2540.0,
+    "timestamp_end": 2600.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_254",
+      "seg_256",
+      "seg_258",
+      "seg_259"
+    ],
+    "semantic_analysis": {
+      "topic": "Overview of Donald Norman's HCI Model",
+      "summary": "The lecture excerpt transitions from acknowledging prominent HCI researchers to examining Donald Norman's interaction model.",
+      "key_points": [
+        "Mentions notable HCI researchers such as Gregory Abowd and Russell Beale.",
+        "Acknowledges key research initiatives that helped popularize HCI concepts.",
+        "Introduces Donald Norman's model as the primary topic for the next slide."
+      ]
+    }
+  },
+  {
+    "block_id": "block_014",
+    "timestamp_start": 2640.0,
+    "timestamp_end": 2710.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_264",
+      "seg_267",
+      "seg_268",
+      "seg_270"
+    ],
+    "semantic_analysis": {
+      "topic": "The HCI Model and System State Evaluation",
+      "summary": "The HCI model describes how users interact with a system to achieve a goal and evaluate the resulting outcome based on system state changes.",
+      "key_points": [
+        "Users interact with a system to accomplish a specific goal.",
+        "System execution produces an outcome that changes the system's state.",
+        "Evaluation involves assessing the new system state against the intended goal."
+      ]
+    }
+  },
+  {
+    "block_id": "block_015",
+    "timestamp_start": 2790.0,
+    "timestamp_end": 2830.0,
+    "segments_count": 2,
+    "segment_ids": [
+      "seg_279",
+      "seg_282"
+    ],
+    "semantic_analysis": {
+      "topic": "System State Changes and Interpretation in HCI",
+      "summary": "This excerpt describes how changes in a system's state are captured and subsequently interpreted during the interaction process.",
+      "key_points": [
+        "System state undergoes changes during interaction.",
+        "System actions or inputs are captured following state changes.",
+        "Captured information is processed through sequential interpretation."
+      ]
+    }
+  },
+  {
+    "block_id": "block_016",
+    "timestamp_start": 2880.0,
+    "timestamp_end": 2890.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_288"
+    ],
+    "semantic_analysis": {
+      "topic": "HCI Evaluation and the Concept of Gulfs",
+      "summary": "The lecture excerpt introduces the topic of evaluation in Human-Computer Interaction by asking for the definition of a gulf.",
+      "key_points": [
+        "Introduces the concept of evaluation within Human-Computer Interaction.",
+        "Questions the definition and role of a 'gulf' in user interaction."
+      ]
+    }
+  },
+  {
+    "block_id": "block_017",
+    "timestamp_start": 2930.0,
+    "timestamp_end": 2970.0,
+    "segments_count": 2,
+    "segment_ids": [
+      "seg_293",
+      "seg_296"
+    ],
+    "semantic_analysis": {
+      "topic": "The Gulf of Execution in User Interfaces",
+      "summary": "This lecture excerpt defines the gulf of execution as the disconnect between a user's intended goal and the actions permitted by the system interface.",
+      "key_points": [
+        "The gulf of execution represents the gap between user intentions and system functionality.",
+        "Interface obstacles, such as an unclickable navigation bar, illustrate where execution gaps occur.",
+        "Understanding this concept helps designers minimize friction in human-computer interaction."
+      ]
+    }
+  },
+  {
+    "block_id": "block_018",
+    "timestamp_start": 3040.0,
+    "timestamp_end": 3050.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_304"
+    ],
+    "semantic_analysis": {
+      "topic": "Gulfs of Execution and Evaluation in HCI",
+      "summary": "The excerpt introduces two fundamental concepts in user interface design: the gulf of execution and the gulf of evaluation.",
+      "key_points": [
+        "The Gulf of Execution represents the gap between a user's goal and the actions required to achieve it.",
+        "The Gulf of Evaluation represents the gap between a system's state and the user's perception of that state."
+      ]
+    }
+  },
+  {
+    "block_id": "block_019",
+    "timestamp_start": 3810.0,
+    "timestamp_end": 3820.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_381"
+    ],
+    "semantic_analysis": {
+      "topic": "Unknown",
+      "summary": "Error",
+      "key_points": []
+    }
+  },
+  {
+    "block_id": "block_020",
+    "timestamp_start": 3940.0,
+    "timestamp_end": 3950.0,
+    "segments_count": 1,
+    "segment_ids": [
+      "seg_394"
+    ],
+    "semantic_analysis": {
+      "topic": "The Execution Cycle in HCI",
+      "summary": "This lecture excerpt introduces the concept of the execution cycle within human-computer interaction models.",
+      "key_points": [
+        "Identifies the execution cycle as a core component of HCI interaction models.",
+        "Refers to the phase where users translate intentions into physical actions on a system."
+      ]
+    }
+  },
+  {
+    "block_id": "block_021",
+    "timestamp_start": 4030.0,
+    "timestamp_end": 4060.0,
+    "segments_count": 2,
+    "segment_ids": [
+      "seg_403",
+      "seg_405"
+    ],
+    "semantic_analysis": {
+      "topic": "Evaluation Cycle and User-System Interactions",
+      "summary": "This lecture excerpt introduces the evaluation cycle in HCI, focusing on how user goals translate into system interactions.",
+      "key_points": [
+        "Sections five through seven cover the evaluation cycle.",
+        "The material emphasizes evaluating the transition from user goals to system actions.",
+        "Analysis centers on the relationship between user intent and system behavior."
+      ]
+    }
+  },
+  {
+    "block_id": "block_022",
+    "timestamp_start": 4220.0,
+    "timestamp_end": 4270.0,
+    "segments_count": 4,
+    "segment_ids": [
+      "seg_422",
+      "seg_423",
+      "seg_424",
+      "seg_426"
+    ],
+    "semantic_analysis": {
+      "topic": "Failed",
+      "summary": "Max retries",
+      "key_points": []
+    }
+  }
+]

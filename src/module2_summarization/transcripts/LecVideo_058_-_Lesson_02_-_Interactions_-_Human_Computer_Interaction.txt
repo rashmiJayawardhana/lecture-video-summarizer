@@ -1,0 +1,860 @@
+0.0s - 6.44s : Okay, so the today's lesson is about interactions.
+6.9s - 13.06s : Last week we discussed what human-computer interaction is all about
+13.06s - 17.38s : and what are the different areas that we could touch and look for.
+17.94s - 24.98s : So now we are going to discuss about the main components in this HCI.
+25.58s - 28.9s : So you will be having a human, you will be having a computer
+28.9s - 31.6s : and then in between them you have interactions.
+32.84s - 37.86s : Last time we also discussed in which different forms
+37.86s - 41.02s : the computers are coming into appearance these days.
+41.76s - 47.04s : It may not directly be a big computer which we can normally visualize.
+47.8s - 52.74s : It can be a chip, it can be a small programmable unit
+52.74s - 58.22s : in a remote controller, in a car or maybe in your headsets.
+58.9s - 62.68s : So therefore when you are talking about the interactions
+62.68s - 68.88s : you need to think in a big variation.
+69.66s - 74.22s : So it's not a simple interaction that we talk about
+74.22s - 80.56s : like which happens in between a normal laptop or a normal PC and a computer.
+81.1s - 84.12s : They are obviously being included, they are being included
+84.12s - 87.92s : but when you talk about the interactions
+87.92s - 88.88s : I want you to think in a big variation.
+88.88s - 94.12s : I want you to have an open mind and think with the big picture
+94.12s - 100.2s : so that the interactions may come in many different forms and shapes.
+105.2s - 106.92s : Just the basics.
+107.7s - 110.7s : So an interaction definitely is a communication
+110.7s - 116.04s : which happens between two parties, two or more obviously.
+116.04s - 118.0s : So it can happen.
+118.88s - 120.82s : Between humans and humans.
+120.82s - 125.18s : It can also happen between computers or humans
+125.18s - 128.96s : or any other two parties that you can even think about.
+130.36s - 133.72s : So for the interaction to be successful
+133.72s - 140.0s : you need to make sure the parties involved in that interaction
+140.0s - 141.74s : understand each other.
+144.08s - 148.86s : So now there is an interaction happening in between you and me.
+148.88s - 157.12s : So in order to make sure that the interaction is successful
+157.12s - 164.12s : there has to be an indication that you understood me
+164.12s - 167.12s : and I understood you
+167.12s - 177.48s : in the form of what is being communicated to back and forth.
+178.88s - 182.88s : Now take this as an example,
+182.88s - 190.98s : and think what is missing in our interaction in that sense.
+190.98s - 198.72s : So this is one particular reason
+198.72s - 207.74s : why this online teaching as an interaction is not quite comfortable.
+207.74s - 208.36s : In most of the situations.
+208.36s - 208.84s : In one of the situations.
+208.84s - 217.58s : because our setup does not pass that back and forth information.
+218.62s - 221.22s : Even though we call this an interaction,
+221.9s - 226.9s : this is more or less a broadcasting, the way that we do it.
+229.3s - 232.16s : So for the successful interaction,
+232.16s - 240.76s : you need to make sure both the parties involved understand what is communicated.
+242.74s - 245.98s : Now that I try to deliver you some message,
+247.16s - 254.0s : for me to make sure that I have successfully communicated that message to you,
+254.8s - 256.36s : I need to get a feedback.
+260.36s - 262.14s : Or some form of communication.
+262.16s - 265.46s : Some form of interpretation that you understood me.
+267.3s - 269.54s : So that is lacking in here,
+269.9s - 274.56s : just because of the setting that we have here today.
+277.18s - 284.84s : And to make you understand about an interaction which takes place,
+285.52s - 289.0s : you need to understand the communication
+289.62s - 291.82s : using two different forms.
+292.04s - 292.14s : The first is the communication.
+292.14s - 292.16s : The second is the communication.
+292.16s - 293.4s : The first one is the language.
+294.16s - 295.7s : And the second one is actions.
+297.78s - 301.22s : The language can be written or verbal.
+302.34s - 307.28s : And the actions obviously are motions that we do.
+309.94s - 314.02s : So now we are doing a verbal communication.
+315.08s - 317.56s : But you don't see my actions.
+318.72s - 321.1s : And I don't see your feedback.
+322.16s - 330.32s : So we are talking about interactions.
+331.12s - 336.12s : But we are, what would say,
+336.32s - 341.1s : grossly violating the basic principle of interaction
+341.1s - 345.38s : in making it understood by both the parties.
+348.84s - 350.56s : Think in that line.
+352.16s - 354.68s : So it's about human to human.
+356.22s - 362.62s : So this is why there's a lot of research happening these days.
+362.62s - 366.38s : It has been coming on for a decade, more than a decade now,
+366.72s - 374.18s : to understand people in the other end when you cannot see them.
+377.24s - 382.04s : Now perhaps I'm giving you some indication about
+382.04s - 385.26s : how I feel in addition to the facts that I deliver,
+386.08s - 387.5s : just using my voice.
+390.22s - 394.1s : So you can gain a little bit of an understanding
+394.1s - 395.96s : about my feelings.
+396.16s - 396.8s : You might.
+398.16s - 401.02s : Not always, yes, but there is a possibility.
+402.66s - 405.64s : And if I have been typing you the message,
+406.42s - 410.04s : maybe there is a possibility to recognize
+410.04s - 412.02s : that I am not a person.
+412.04s - 416.02s : How I feel using the typing speed
+416.02s - 419.3s : or some other keyboard dynamics
+419.3s - 423.08s : or maybe using the words I use.
+435.08s - 438.84s : And it's good that like there had been one interaction
+438.84s - 440.48s : already initiated.
+440.48s - 441.68s : But someone responded,
+441.68s - 441.72s : someone responded,
+441.72s - 441.76s : someone responded,
+441.76s - 442.02s : someone responded,
+442.04s - 444.34s : someone responded to me that you could use an emoji.
+444.9s - 445.5s : Yes.
+446.02s - 451.22s : But sending an emoji is deliberate.
+452.22s - 455.46s : Unless I wish to, I will not reveal it.
+457.66s - 460.14s : It's not always spontaneous.
+461.66s - 463.2s : That is one way, yes.
+463.52s - 469.08s : Sending emojis is actually one way of recognizing the other party.
+469.08s - 471.54s : So that recognition,
+471.54s - 478.36s : is dependent on how much the other party wants to reveal and display.
+478.36s - 486.54s : And the other party here is a human that we think about.
+486.54s - 490.8s : Or maybe a chatbot who is a humanoid.
+491.44s - 494.3s : So like they will give you emojis
+494.3s - 499.96s : as one form of appreciation
+499.96s - 501.18s : or an indication of a person's love.
+501.18s - 501.26s : So that's one way.
+501.26s - 502.6s : And the other way is an indication of understanding.
+504.6s - 512.4s : But the research orientation goes beyond that.
+513.66s - 516.78s : Like we now try to recognize
+516.78s - 522.92s : the understanding or the feeling
+522.92s - 525.36s : or the feedback of the other party
+525.36s - 527.82s : which are not visible,
+528.6s - 529.84s : which are inbuilt,
+529.84s - 531.08s : which are inherent,
+531.08s - 533.46s : which are relevant to something
+533.46s - 535.04s : and which is guarded.
+535.04s - 538.96s : So those are some good areas to embark into
+538.96s - 542.12s : through your final year projects.
+542.12s - 546.44s : Because we all now talk about
+546.44s - 549.8s : human-like machines.
+549.8s - 552.44s : We talk about cognitive systems.
+552.44s - 557.36s : But nobody tries to understand
+557.36s - 560.94s : that it's coming through a branch of HCI.
+561.08s - 566.96s : So if someone embark on some such research,
+566.96s - 571.08s : it's simply because they are fond of the technology.
+571.08s - 579.08s : I have not seen much students embarking on such research
+579.08s - 585.32s : just because you understand the lack in this interaction.
+585.32s - 591.06s : What you understand or what you try to embark on,
+591.08s - 594.0s : is the usage of technology,
+594.0s - 598.96s : which is at the moment the most lubricant.
+598.96s - 605.46s : But I want you to see the world in the other way.
+605.46s - 609.8s : I want you to think in the actual problem
+609.8s - 613.58s : and then try to identify which technology
+613.58s - 615.96s : will solve that problem the best.
+618.28s - 620.5s : The moment you start thinking in that,
+620.5s - 620.52s : the moment you start thinking in that,
+620.52s - 625.52s : you will definitely see a lot of more potential
+625.52s - 627.52s : to research and develop.
+627.52s - 633.52s : So I actually went a long way to tell you
+633.52s - 635.52s : like what it is about.
+635.52s - 640.52s : But the basic is mainly a communication happens
+640.52s - 642.52s : between two or more parties.
+642.52s - 645.52s : To make a successful communication,
+645.52s - 648.52s : you need to make each party involved understood
+648.52s - 649.44s : by each other.
+649.44s - 650.44s : So that's the basic.
+650.44s - 655.44s : And in order to make the communication understandable,
+655.44s - 658.44s : you will use your language and actions.
+660.44s - 664.44s : So if you are learning and if you are interpreting interactions,
+664.44s - 669.44s : it will be mainly through the language and actions.
+669.44s - 673.44s : Pressing a key can be an action.
+673.44s - 677.44s : Clicking a mouse can be an action.
+677.44s - 679.44s : Nodding your head can be an action.
+679.44s - 682.44s : Talking to the screen can be an action.
+682.44s - 689.44s : Touching the screen can also be an action.
+689.44s - 692.44s : So there are a lot of different actions.
+692.44s - 696.44s : These are quite a few examples to indicate
+696.44s - 701.44s : what actions will reveal the understanding
+701.44s - 703.44s : of the ongoing communication.
+703.44s - 706.44s : So when you talk about the communication,
+706.44s - 707.44s : you need to understand the context.
+707.44s - 711.44s : So when you talk about the human to human communication,
+711.44s - 716.44s : you use natural languages just in the way that we use it.
+716.44s - 719.44s : In addition to the natural languages,
+719.44s - 722.44s : you will be using non-verbal cues.
+722.44s - 728.44s : The things which are not verbally interpreted,
+728.44s - 733.44s : but communicated through some other form,
+733.44s - 735.44s : body language.
+735.44s - 740.44s : And there can also be other reactions and actions.
+740.44s - 744.44s : So everything together
+744.44s - 749.44s : make a human to human communication successful.
+751.44s - 755.44s : But in human-computer interaction,
+755.44s - 759.44s : we mainly focus on the communication
+759.44s - 764.44s : which takes place between a user and a system.
+765.44s - 768.44s : User will be a human user.
+768.44s - 772.44s : The system can be anything which uses
+772.44s - 779.44s : The system can be anything which uses
+779.44s - 785.44s : a computation or computing technology.
+795.44s - 801.44s : Building an integrated infrastructure system
+801.44s - 802.44s : allows for digital transformation
+802.44s - 804.44s : and transferability of data,
+804.44s - 805.44s : which enables user to operate in a computer puede
+805.44s - 822.28s : даже � innych 점�
+825.44s - 848.68s : So, as we were talking, the system can be anything which involves in computation in
+848.68s - 849.68s : any form.
+849.68s - 858.88s : So, we will, as we are taking the initiative, we will try to now understand what these systems
+858.88s - 859.28s : are.
+860.08s - 870.82s : Can each of you post me, because I think starting to talk is going to be kind of a little difficult
+870.82s - 871.3s : today.
+871.3s - 879.38s : So, can you all post in the chat about one such system that a human user will interact
+879.38s - 879.66s : with?
+879.68s - 883.06s : Just post in the chat.
+891.92s - 893.78s : I'll give you one minute.
+909.68s - 939.66s : Thank you.
+939.68s - 969.66s : Thank you.
+969.68s - 999.66s : Thank you.
+999.68s - 1006.96s : Thank you, everyone.
+1006.96s - 1012.98s : Yeah, I have been getting responses.
+1012.98s - 1027.68s : Most of them are related to ATM, mobile phones, PCs and normal computer systems, operating
+1027.68s - 1027.76s : systems.
+1027.76s - 1028.0s : And some went onto the smart home and VR systems.
+1028.0s - 1028.18s : Voice assistants.
+1028.18s - 1028.8s : And with this you will be able to understand whenever they are trying to target user experiences
+1028.82s - 1029.08s : for you.
+1029.08s - 1029.28s : And this is because some systems also face a big problem ofbatting off issue as like an
+1029.28s - 1029.36s : employee who doesn't understand, restaurants being the occupation, working with these
+1029.36s - 1029.38s : devices.
+1029.38s - 1029.58s : Yeah, it has been a really tough time for some 동바nessим but don't forget to question
+1029.58s - 1029.66s : what I'm saying.
+1029.68s - 1034.56s : and taking a phone call through telecommunication network.
+1036.4s - 1039.86s : And some came into chatbots, LMS.
+1041.08s - 1050.04s : So now can you basically see a skewness in your imagination?
+1050.04s - 1055.54s : Like it's skewed towards something which is so familiar.
+1055.54s - 1064.34s : Only a few indicated about voice assistants and smart home systems.
+1065.16s - 1072.52s : Nobody came up with the idea of digital thermometers.
+1074.5s - 1081.66s : Nobody indicated the digital glucometer.
+1082.22s - 1084.66s : Nobody thought about...
+1085.54s - 1087.68s : surveillance systems.
+1088.52s - 1095.28s : No one reported to me about automatic attendance marking.
+1096.48s - 1104.28s : No one reported to me about smart smoke detectors or the heat detectors.
+1108.92s - 1113.3s : So this is what I really want to change through this lesson.
+1114.16s - 1115.28s : You need to...
+1115.54s - 1117.44s : see the big pictures.
+1118.64s - 1126.98s : You need to step out from the comfort zone or your limited imaginative box.
+1127.52s - 1131.68s : Please come out of the box and see the world around.
+1134.26s - 1138.04s : There are many different other interactions taking place.
+1140.82s - 1144.22s : So this is what you need to attend to.
+1145.54s - 1147.48s : I repeat.
+1147.96s - 1152.42s : HCI is not about designing interfaces only.
+1152.88s - 1155.22s : Designing computer web pages.
+1155.72s - 1156.2s : No.
+1156.64s - 1158.64s : It is just a simple part.
+1158.64s - 1159.78s : It's UI.
+1160.18s - 1163.64s : Like UI in the normal form about web design.
+1164.9s - 1169.74s : The screen design is just a simple unique part.
+1170.88s - 1175.2s : But UI is going far beyond that.
+1175.54s - 1181.3s : And taking the UX into the equation, it makes it even more complicated.
+1181.3s - 1188.44s : I will repeatedly say this throughout until I am convinced you have got the message right.
+1190.58s - 1195.8s : Because if you want to become HCI practitioners or researchers,
+1196.52s - 1200.96s : you need to think a little bit more differently.
+1205.54s - 1211.68s : You need to go and seek what other areas need development.
+1213.48s - 1218.3s : How can we make the human's lives comfortable?
+1220.42s - 1227.6s : How can we make somebody happy while achieving the accuracy and precision?
+1228.56s - 1231.48s : So these are the things that you need to think about.
+1232.22s - 1233.96s : So we will move on.
+1233.96s - 1234.46s : And...
+1234.46s - 1234.96s : uh...
+1234.96s - 1235.46s : through...
+1235.46s - 1235.52s : uh...
+1235.54s - 1241.68s : throughout, we will be coming back and forth in order to give you the understanding.
+1246.04s - 1249.88s : So when it comes to human-computer interaction as we indicated,
+1250.8s - 1257.84s : now it's getting a little bit more complicated because humans use natural languages.
+1257.84s - 1260.76s : Computers use computer languages.
+1262.4s - 1263.36s : No matter what.
+1263.36s - 1272.86s : No matter how many new developments cognitively aware systems are coming up,
+1273.86s - 1281.42s : all what a computer, the pure computer could do is to understand ones and zeros.
+1281.42s - 1283.5s : Not even ones and zeros.
+1283.5s - 1288.54s : They will understand the passing of an electric shock or not.
+1289.06s - 1293.2s : Or a presence of the magnetic field or the circuit.
+1293.36s - 1294.86s : And not.
+1294.86s - 1297.36s : So that's all they will understand.
+1297.36s - 1301.36s : It's a digital system which works on one zero.
+1303.36s - 1306.36s : And the natural languages are analog.
+1306.36s - 1309.36s : Our thinking patterns are analog.
+1309.36s - 1313.36s : Don't even try to convert it into digital.
+1313.36s - 1315.86s : The moment you try to do that,
+1315.86s - 1319.86s : the main human quality, the ability,
+1319.86s - 1322.86s : and all the things are going to get degraded.
+1323.36s - 1330.36s : All what you need to do is to make a matchmaking between the natural languages and computer languages.
+1330.36s - 1333.36s : Not to convert one to the other.
+1333.36s - 1339.36s : So now in order to facilitate the human-computer interaction,
+1339.36s - 1345.36s : you should be able to convert the natural language to the computer language and vice versa.
+1349.36s - 1352.36s : So this we even learned on the very first lesson,
+1352.36s - 1355.36s : when we started our computing careers.
+1355.36s - 1360.36s : To matchmake between the input and output.
+1360.36s - 1368.36s : And also it involves the actions performed by humans on the computers.
+1368.36s - 1370.36s : It may be a keyboard entry.
+1370.36s - 1373.36s : It can be a mouse click.
+1373.36s - 1379.36s : It can also be blinking your eyes in front of the camera.
+1379.36s - 1381.36s : Making a face.
+1381.36s - 1384.36s : Making a face to the webcam.
+1384.36s - 1391.36s : Waving your hand in order to open up a window.
+1391.36s - 1394.36s : So it can be anything.
+1396.36s - 1399.36s : And the responses from the computer,
+1399.36s - 1402.36s : on the other hand, will be the output.
+1402.36s - 1404.36s : What it does.
+1404.36s - 1406.36s : Now imagine,
+1406.36s - 1409.36s : when you want to take a photo,
+1409.36s - 1411.36s : using the webcam,
+1411.36s - 1414.36s : I will open the camera,
+1414.36s - 1419.36s : and I will press the take photo button.
+1419.36s - 1422.36s : Now I have done some input.
+1422.36s - 1426.36s : So perhaps it worked.
+1426.36s - 1429.36s : And it took a picture of me.
+1429.36s - 1431.36s : But,
+1431.36s - 1436.36s : unless I got some indication that a picture of mine is recorded in the camera,
+1436.36s - 1438.36s : in the camera or the computer,
+1438.36s - 1440.36s : I'm not convinced.
+1440.36s - 1445.36s : So that I need a response from the computer.
+1445.36s - 1447.36s : So which is the output.
+1447.36s - 1450.36s : So now,
+1450.36s - 1455.36s : this gives you an understanding.
+1455.36s - 1459.36s : When some action is performed on a computer,
+1459.36s - 1463.36s : computer needs to give an output in form of the feedback.
+1463.36s - 1467.36s : If you cannot give the exact picture,
+1467.36s - 1474.36s : you can make sure that the user got the message that the action has been done.
+1474.36s - 1477.36s : Maybe a click sound.
+1477.36s - 1480.36s : Will work.
+1484.36s - 1487.36s : And now we try to
+1487.36s - 1490.36s : do the real matchmaking process.
+1490.36s - 1493.36s : So we know there are different types of computer.
+1493.36s - 1498.36s : And then the people are different.
+1498.36s - 1501.36s : The preferences, skills, knowledge and attitudes are different.
+1501.36s - 1504.36s : I think we discussed it even last time.
+1504.36s - 1507.36s : And like, not only that,
+1507.36s - 1510.36s : people, the same person,
+1510.36s - 1514.36s : behave differently in different times.
+1514.36s - 1518.36s : So there is no consistency.
+1518.36s - 1521.36s : You cannot always ensure the consistency
+1521.36s - 1524.36s : in people's behavior.
+1524.36s - 1528.36s : And in addition to that,
+1528.36s - 1532.36s : you have numerous interaction technologies.
+1532.36s - 1535.36s : We have sensor technologies,
+1535.36s - 1537.36s : different types of sensors.
+1537.36s - 1540.36s : And we have augmented reality.
+1540.36s - 1542.36s : We have virtual reality.
+1542.36s - 1548.36s : And also we have touchless sensors.
+1548.36s - 1550.36s : We talk about,
+1550.36s - 1555.36s : we talk about augmented interfaces.
+1555.36s - 1559.36s : So there are a lot of technologies
+1559.36s - 1562.36s : being invented.
+1562.36s - 1564.36s : So,
+1564.36s - 1565.36s : so that
+1565.36s - 1568.36s : different types of computers are presented
+1568.36s - 1571.36s : with different interaction technologies.
+1571.36s - 1574.36s : So now it actually
+1574.36s - 1576.36s : affects
+1576.36s - 1579.36s : to the magnitude of the complication.
+1580.36s - 1583.36s : And in addition to that,
+1583.36s - 1586.36s : the wide variety of contexts.
+1586.36s - 1588.36s : Maybe
+1588.36s - 1592.36s : the technology that you have used
+1592.36s - 1595.36s : to record attendance
+1595.36s - 1597.36s : in a university
+1597.36s - 1599.36s : may not appropriate,
+1599.36s - 1601.36s : may not be appropriate
+1601.36s - 1605.36s : to record the attendance in a garment factory.
+1605.36s - 1608.36s : It may not be
+1608.36s - 1609.36s : suitable
+1609.36s - 1612.36s : to record the attendance
+1612.36s - 1616.36s : in a high security zone.
+1616.36s - 1618.36s : So there may be
+1618.36s - 1619.36s : different contexts,
+1619.36s - 1621.36s : the same requirement,
+1621.36s - 1623.36s : different contexts.
+1623.36s - 1625.36s : So in each of these contexts,
+1625.36s - 1629.36s : the way the requirement has been catered for
+1629.36s - 1630.36s : might vary.
+1639.36s - 1643.36s : So that
+1643.36s - 1645.36s : we need to pay attention to
+1645.36s - 1647.36s : different interaction models
+1647.36s - 1649.36s : and ergonomics.
+1649.36s - 1651.36s : This is something very important.
+1651.36s - 1653.36s : Ergonomics is not
+1653.36s - 1656.36s : very much discussed with software interfaces.
+1656.36s - 1659.36s : It is discussed with engineering
+1659.36s - 1661.36s : and hardware related things
+1661.36s - 1663.36s : because there's a physical characteristic
+1663.36s - 1665.36s : of something.
+1665.36s - 1667.36s : But one fine thing that
+1667.36s - 1670.36s : ergonomics have been
+1670.36s - 1672.36s : very nicely used
+1672.36s - 1674.36s : is the computer mouse.
+1674.36s - 1676.36s : The normal computer mouse.
+1676.36s - 1681.36s : If you remember,
+1681.36s - 1684.36s : like the computer mouse
+1684.36s - 1686.36s : always had this shape.
+1686.36s - 1688.36s : The shape of
+1688.36s - 1691.36s : like there's a little bulge in the middle
+1691.36s - 1693.36s : and like from the corners
+1693.36s - 1696.36s : it's a little low.
+1696.36s - 1697.36s : So,
+1697.36s - 1698.36s : it's not a big deal.
+1698.36s - 1700.36s : And in some,
+1700.36s - 1702.36s : you have only buttons
+1702.36s - 1703.36s : and in some others
+1703.36s - 1706.36s : you have the rolling wheel.
+1708.36s - 1710.36s : So when you take this,
+1710.36s - 1712.36s : like we have seen
+1712.36s - 1714.36s : many different types of
+1714.36s - 1716.36s : mice being introduced
+1716.36s - 1718.36s : with different shapes.
+1718.36s - 1720.36s : But,
+1720.36s - 1722.36s : this is the only shape
+1722.36s - 1724.36s : which persisted throughout.
+1724.36s - 1726.36s : And there had been a period
+1726.36s - 1728.36s : where the size of the mouse
+1728.36s - 1729.36s : is small,
+1729.36s - 1731.36s : is made smaller.
+1731.36s - 1734.36s : Like we called as minimise.
+1734.36s - 1735.36s : So,
+1735.36s - 1737.36s : when you take this
+1737.36s - 1739.36s : small sized mouse,
+1739.36s - 1741.36s : it was very difficult
+1741.36s - 1743.36s : to manage.
+1743.36s - 1745.36s : Because,
+1745.36s - 1747.36s : it's not fitting your palm properly.
+1750.36s - 1751.36s : So therefore,
+1751.36s - 1753.36s : physical characteristic
+1753.36s - 1755.36s : of managing the mouse
+1755.36s - 1756.36s : is not satisfied
+1756.36s - 1758.36s : with that mini mouse concept.
+1760.36s - 1762.36s : So therefore,
+1762.36s - 1763.36s : ergonomically,
+1763.36s - 1765.36s : the available mouse designs,
+1765.36s - 1768.36s : the ones that we use these days,
+1768.36s - 1770.36s : are the best.
+1770.36s - 1772.36s : So then you have
+1772.36s - 1774.36s : interaction styles
+1774.36s - 1777.36s : and also the context.
+1781.36s - 1783.36s : So when you try to plan
+1783.36s - 1785.36s : and design interactions,
+1785.36s - 1787.36s : you need to have
+1787.36s - 1789.36s : a very good understanding
+1789.36s - 1791.36s : about the domain
+1791.36s - 1793.36s : to which you are going to do
+1793.36s - 1795.36s : these designs.
+1797.36s - 1798.36s : And also,
+1798.36s - 1800.36s : what you really need to achieve
+1800.36s - 1802.36s : through that design
+1802.36s - 1804.36s : and the tasks
+1804.36s - 1806.36s : are the steps that you will follow
+1806.36s - 1809.36s : in order to achieve the goals.
+1809.36s - 1812.36s : So the planning and designing
+1812.36s - 1814.36s : involve the domain goal
+1814.36s - 1816.36s : and the respective tasks.
+1822.36s - 1823.36s : Right.
+1823.36s - 1827.36s : I want you to look through this example.
+1827.36s - 1829.36s : The domain is
+1829.36s - 1831.36s : online vehicle hiring system
+1831.36s - 1833.36s : or a service.
+1833.36s - 1837.36s : The goal is to hire a vehicle online.
+1837.36s - 1839.36s : So what are the tasks
+1839.36s - 1841.36s : that you need to perform
+1841.36s - 1843.36s : in order to hire a vehicle online?
+1844.36s - 1847.36s : So can you please go through this?
+1847.36s - 1849.36s : I'll give you one minute
+1849.36s - 1850.36s : and try to understand
+1850.36s - 1852.36s : what's happening.
+1852.36s - 1856.36s : If you have anything to verify
+1856.36s - 1857.36s : or clarify,
+1857.36s - 1862.36s : please communicate that to me via chat.
+1862.36s - 1866.36s : I'll give you one minute to go through.
+1874.36s - 1878.36s : And if you have anything to identify
+1878.36s - 1900.36s : I can help you register
+1904.36s - 1904.98s : you
+1934.36s - 1934.98s : you
+1964.36s - 1964.98s : you
+1994.36s - 1994.98s : you
+2024.36s - 2024.98s : you
+2054.36s - 2061.46s : you
+2061.46s - 2065.26s : you
+2076.98s - 2077.78s : you
+2077.78s - 2081.34s : I'm still awaiting your responses.
+2082.28s - 2083.16s : Did you
+2083.16s - 2084.34s : understand it?
+2084.36s - 2085.54s : or do you have any issue?
+2098.26s - 2101.98s : Okay, so now to discuss it,
+2103.06s - 2105.98s : here you are going to hire a vehicle online
+2105.98s - 2108.3s : and in order to do that,
+2108.44s - 2110.4s : you don't know exactly where it is.
+2110.4s - 2112.52s : So it can be through the application
+2112.52s - 2114.08s : or through the website.
+2115.34s - 2118.04s : So you will enter the requirement
+2118.04s - 2126.66s : and then like once the requirements have been entered,
+2128.84s - 2130.84s : now I want you to understand
+2130.84s - 2133.34s : like there's a little hidden part here.
+2133.78s - 2136.8s : So some hidden component in between these two,
+2136.8s - 2137.6s : the task.
+2137.88s - 2139.68s : So you do this first task.
+2140.76s - 2144.22s : So what has to happen from the system side?
+2144.36s - 2148.18s : So you have to show the form,
+2148.38s - 2148.78s : whatever.
+2156.14s - 2159.84s : And then once the requirements are entered,
+2160.76s - 2164.54s : you have to show available options.
+2164.54s - 2164.96s : And then once the requirements are entered,
+2164.96s - 2164.98s : you have to show available options.
+2164.98s - 2171.88s : So the first one is pager and then show the optionいる.
+2171.88s - 2174.2s : You need to fill in the details of the public直接 inbox Go
+2174.2s - 2178.2s : And then you are going to choose from the too much.
+2178.2s - 2178.3s : Go to have an idea about this type of online marketing project tax
+2178.3s - 2179.3s : available options or look for marketing plan choices.
+2179.3s - 2181.5s : You don't have to do everything just to check in the every day market.
+2181.5s - 2181.58s : We will look at the same strategies that we might have,
+2181.58s - 2181.68s : super, superвигgable any sort of marketing plan.
+2181.68s - 2181.72s : So that training video,
+2181.72s - 2184.08s : bob Hoekamus
+2184.08s - 2186.18s : Now we're going to see the Rainier CC
+2186.18s - 2190.38s : but we feel I shouldn't tend to hang seamal
+2190.38s - 2191.26s : at recessions and I should keep back this basic people.
+2191.26s - 2193.1s : Look at you.
+2193.1s - 2194.0s : I believe that you know people like me,
+2194.0s - 2194.2s : but I need to change this.
+2194.98s - 2199.08s : You will be given instructions to proceed.
+2208.7s - 2215.72s : And then you get the confirmation or the rejection and final message.
+2215.72s - 2225.02s : And final message can be the confirmation ID or the rejection message.
+2225.66s - 2234.9s : So when you perform the tasks, I want you to understand that after each task, some response has to be there.
+2236.22s - 2242.6s : Otherwise, you are not so sure whether this task has been successfully happened or not.
+2245.72s - 2259.04s : So now what you need to understand here is a little bit more complicated concept.
+2260.04s - 2269.76s : Your simple interaction, like this seems to be a very simple interaction entering the requirements and all that.
+2270.44s - 2275.04s : But have you ever thought about the job?
+2275.72s - 2282.04s : And journey your mind goes in identifying what you really need to do.
+2289.32s - 2295.72s : The start and the destination may be somewhat definite if you have fixed your mind on it.
+2296.44s - 2299.56s : And the number of passengers might be fixed.
+2300.04s - 2304.76s : Because perhaps there is only two passengers to go.
+2305.72s - 2308.38s : But like when you indicate two,
+2311.06s - 2318.54s : like you might again decide like what to include because the vehicle doesn't,
+2319.54s - 2325.96s : like whoever the vehicle owner doesn't mind even if only one person travels in it,
+2326.22s - 2328.66s : if his or her hire is paid.
+2328.66s - 2335.66s : So you will have some other parameters to consider when you are indicating the number.
+2335.72s - 2336.72s : So you will have some other parameters to consider when you are indicating the number of passengers.
+2336.72s - 2339.78s : In majority of the cases, it will be the true number.
+2339.92s - 2343.3s : But in some other cases, there can be some other numbers indicated.
+2344.22s - 2350.64s : The required time, when you take this required time, in most of the situations,
+2351.04s - 2355.32s : we always order a cab ahead of the required time.
+2356.1s - 2356.54s : Why?
+2359.12s - 2360.12s : Why so?
+2360.12s - 2360.14s : Why so?
+2363.1s - 2363.82s : Why so?
+2363.82s - 2365.12s : Because our past experience,
+2365.72s - 2369.56s : our past experiences indicate the cab might get late.
+2370.86s - 2375.58s : So if we want to depart at 10 o'clock,
+2376.1s - 2380.96s : we might order it to be here indicating the required time 9.45.
+2381.9s - 2386.0s : So that's the thought process which happens.
+2387.0s - 2392.34s : Because like we recall the previous experiences that we have had.
+2394.64s - 2395.7s : And these,
+2395.72s - 2400.4s : this amount of time is also determined 여러 times.
+2400.4s - 2400.78s : Yes.
+2400.78s - 2401.06s : Yes.
+2401.06s - 2401.1s : Yes.
+2401.66s - 2407.98s : That you can easily identify a cab,
+2407.98s - 2410.52s : but how do you 不是
+2410.52s - 2413.2s : anyone is aware of it?
+2413.3s - 2416.76s : You cannot know the number of passengers.
+2416.76s - 2417.1s : Ya.
+2417.1s - 2420.3s : So we cannot possibly have such an idea throughout the online details.
+2420.3s - 2423.0s : You can know the number of passengers
+2423.0s - 2423.66s : and study the JIC system.
+2423.66s - 2424.8s : So in most cases these connoisseurs do not have enough knowledge to know what it is.
+2424.8s - 2428.24s : cases take time to sit back and think exactly how happens.
+2434.96s - 2441.76s : And when you want to design and facilitate user-friendly interactions,
+2442.4s - 2448.56s : one thing is very important that is your awareness about the context and the requirements.
+2448.56s - 2456.0s : So that is why we say know-how is essential. You should know how the things happen in that context.
+2456.96s - 2464.16s : Now you cannot always force the user to accept what you have delivered
+2466.08s - 2470.96s : because it might fit into another context not the client's context.
+2472.0s - 2477.28s : So always make sure you understand the know-how to deliver what the client wants.
+2478.56s - 2482.24s : Don't forget if you don później missions, is not a goal problem.
+2483.36s - 2487.04s : Because in any game, the team story kaum fungo must not fall underoning.
+2488.72s - 2496.74s : However if you make the element time small involving
+2500.04s - 2502.06s : quick and easy execute that.
+2502.98s - 2506.12s : With much time I also try to don't get the client excited.
+2506.96s - 2507.86s : Whatever you do,
+2507.86s - 2508.3s : that's been our approach for this closed session.
+2508.3s - 2508.32s : Okay..
+2508.32s - 2508.54s : Thank you and see you in next session теп transmired..
+2508.56s - 2516.8s : about two interaction models which are well known. Don Norman's model is one and
+2516.8s - 2525.9s : Aboud and Bale framework is the other. The Don Norman or the Donald Norman is
+2525.9s - 2534.06s : also a well-known HCI researcher who had come up with many principles and
+2534.06s - 2541.5s : models related to human-computer interaction and until recently this
+2541.5s - 2549.92s : Aboud is a Gregory Aboud and Russell Bale and there had been two other authors
+2549.92s - 2555.9s : who who wrote a book on human-computer interaction which had been considered
+2555.9s - 2563.04s : the HCI Bible until very recently. It's no longer going to be very recent because
+2563.04s - 2564.04s : they did not have the HCI model.
+2564.04s - 2571.36s : It was not published in a latest edition so that now it's obsolete but it had been a book
+2571.36s - 2580.9s : which is which had been used by many. So both these sorry all these scientists and the
+2580.9s - 2588.7s : researchers are well known and have taken great initiatives towards the popularization
+2588.7s - 2592.04s : and standardization of human-computer interaction as a subject.
+2592.98s - 2594.02s : So we will take a look at the next slide.
+2594.04s - 2597.08s : So let's check the Donald Norman's model first.
+2607.08s - 2614.7s : The pictures are missing here like let me check what has happened to the pictures.
+2624.04s - 2641.96s : So this is the Donald Norman's model which looks a quite simple model where you have a goal and a system.
+2641.96s - 2649.08s : So you have a system you through the system you want to achieve a goal. So once the goal is achieved you are going to evaluate the goal.
+2649.08s - 2653.08s : So once the goal is achieved you are going to evaluate the goal.
+2653.08s - 2655.08s : So once the goal is achieved you are going to evaluate the system.
+2655.08s - 2657.08s : So you initiate from here.
+2657.08s - 2659.08s : You have a goal.
+2659.08s - 2669.08s : And in order to achieve your goal there are some actions you need to execute.
+2669.08s - 2673.08s : These actions will be performed on the system.
+2673.08s - 2678.12s : So as a result the system will give you some outcome.
+2678.12s - 2679.12s : So as a result the system will give you some outcome.
+2679.12s - 2680.12s : We basically call it the HCI model.
+2680.12s - 2681.12s : So this is the HCI model.
+2681.12s - 2682.12s : So this is the HCI model.
+2682.12s - 2686.12s : We basically call this system state changes.
+2686.12s - 2696.12s : So when you perform some actions on the system the system state will change from one state to another.
+2696.12s - 2706.12s : So now change state you need to look at it carefully and see whether your goal has been achieved through that.
+2706.12s - 2708.12s : So that's the evaluation
+2708.12s - 2710.12s : So you can see different values.
+2710.12s - 2712.12s : So you can also have the option to choose between three.
+2712.12s - 2728.72s : illustrate it further like this. The user establishes a goal. Establishing the goal
+2728.72s - 2737.0s : is like you identify what you're supposed to do. And then to perform that, you need
+2737.0s - 2744.56s : to formulate your intention like you want to achieve this, but you try to understand
+2744.56s - 2753.2s : how you are going to carry it forward. That's the formulating the intention. And then you
+2753.2s - 2763.76s : will specify what you need to do in order to get your work done and then really do that.
+2763.76s - 2771.84s : You initially conceptualize your intention and then you try to understand what to do
+2771.84s - 2785.82s : in order to perform it and perform it. Plan, decide, and do.
+2790.18s - 2793.74s : So, then the system state changes.
+2793.76s - 2803.42s : So, now when the system state changes, so normally the system state has to be given
+2803.42s - 2812.88s : as an output. So, the very first thing is you perceive it. Perceiving it is you notice
+2812.88s - 2821.8s : and capture that the system state has changed. Then you interpret it. Once you noticed and
+2821.8s - 2823.74s : capture, then you're going to interpret it. And then you're going to interpret it. And
+2823.74s - 2836.62s : understand what really has happened. Then you compare whether the state change which
+2836.62s - 2850.16s : occurred has been the real one you expected. Notice, understand, and evaluate. So, this
+2850.16s - 2853.56s : is how this the balance between the goal and the system state is. So, that's what we're
+2853.56s - 2853.72s : talking about. And then you interpret and understand what really has happened. Then you
+2853.72s - 2857.72s : is maintained in between the user and the system changes.
+2857.72s - 2861.72s : So this looks a little
+2861.72s - 2865.72s : simple at first, but theoretically it
+2865.72s - 2869.72s : has a solid background.
+2869.72s - 2873.72s : So now
+2873.72s - 2877.72s : these two are very very important.
+2877.72s - 2881.72s : Gulf of execution and gulf of
+2881.72s - 2885.72s : evaluation. What is a gulf?
+2889.72s - 2893.72s : Gulf is a gap.
+2897.72s - 2901.72s : Gulf is a gap.
+2901.72s - 2905.72s : So when you take this gulf, gulf of execution
+2905.72s - 2909.72s : is
+2909.72s - 2913.72s : uses formulation of action, that means how
+2913.72s - 2917.72s : user wants to do things are not
+2917.72s - 2921.72s : matching with the actions allowed by the system.
+2921.72s - 2925.72s : Maybe perhaps
+2925.72s - 2929.72s : you think in order to go to the next page you are going to
+2929.72s - 2933.72s : press the space bar, but by pressing the space
+2933.72s - 2937.72s : bar you cannot go to the next page. So it's
+2937.72s - 2941.72s : path situação. That's why this gulf is
+2941.72s - 2945.72s : set. The gulf of execution
+2945.72s - 2949.72s : between when the user is allowed to
+2949.72s - 2953.72s : execute and the system is trying
+2953.72s - 2957.72s : to execute and what is allowed to execute.
+2957.72s - 2961.72s : There a gap between user planning and what is allowed.
+2961.72s - 2965.72s : That's the gap in execution which happens
+2965.72s - 2969.7s : wants to do. So that is why we call it the gulf of execution.
+2971.46s - 2974.36s : Similarly, you have the gulf of evaluation.
+2975.32s - 2977.72s : Gulf of evaluation indicate
+2977.72s - 2981.68s : the gap between the user's expectation
+2981.68s - 2985.74s : of the changed system state of the actual presentation
+2985.74s - 2989.3s : of the state. There's a gap.
+2990.34s - 2990.94s : Once I
+2990.94s - 2992.28s : once I
+2992.28s - 2996.56s : confirm the bank transfer,
+2997.78s - 3001.96s : I expect another screen
+3001.96s - 3005.06s : to confirm that this transfer has been successful.
+3006.2s - 3010.1s : But if the system, without giving any message,
+3010.68s - 3014.28s : closes the window, then the actual presentation
+3014.28s - 3018.74s : of the completed transaction by the system
+3018.74s - 3020.44s : is not what the user expects.
+3020.94s - 3025.88s : So therefore, you identify a gap.
+3026.9s - 3030.28s : So that's the gulf of evaluation.
+3031.54s - 3033.68s : Now in most of the situations,
+3034.84s - 3039.04s : why the computer systems
+3039.04s - 3041.86s : do fail is because of this.
+3042.74s - 3046.82s : There are gulfs of execution and there are gulfs of evaluation.
+3050.78s - 3050.88s : So,
+3050.88s - 3050.92s : there are gulfs of evaluation.
+3050.94s - 3051.38s : So,
+3051.7s - 3054.38s : I want you to
+3054.38s - 3065.62s : I want you to work on this exercise.
+3074.2s - 3075.24s : So,
+3075.9s - 3079.12s : go through this exercise first.
+3080.94s - 3083.28s : I think you justation is a brief history of Several
+3083.78s - 3084.5s : Yeah,
+3084.5s - 3085.52s : it's easy to use.
+3085.52s - 3086.3s : It's easy to use
+3086.3s - 3086.98s : a common technique.
+3087.78s - 3089.28s : You could see this is roughly two pages for ,
+3089.28s - 3090.76s : let's say,
+3090.76s - 3091.72s : five or six pages,
+3091.72s - 3092.92s : because you've got days like other ones.
+3092.92s - 3093.52s : Basically,
+3093.52s - 3095.62s : So these are not as per exact
+3095.62s - 3106.76s : natural
+3106.76s - 3108.48s : or still
+3108.48s - 3109.28s : human
+3109.28s - 3110.62s : healthy
+3110.94s - 3140.92s : Thank you.
+3140.94s - 3170.92s : Thank you.
+3170.94s - 3200.92s : Thank you.
+3200.94s - 3230.92s : Thank you.
+3230.94s - 3260.92s : Thank you.
+3260.94s - 3290.92s : Thank you.
+3290.94s - 3320.92s : Thank you.
+3320.94s - 3350.92s : Thank you.
+3350.94s - 3380.92s : Thank you.
+3380.94s - 3410.92s : Thank you.
+3410.94s - 3440.92s : Thank you.
+3440.94s - 3470.92s : Thank you.
+3470.94s - 3500.92s : Thank you.
+3500.94s - 3530.92s : Thank you.
+3530.94s - 3560.92s : Thank you.
+3560.94s - 3589.9s : Thank you.
+3590.94s - 3620.92s : Thank you.
+3620.94s - 3622.94s : Thank you.
+3650.94s - 3680.92s : Thank you.
+3680.94s - 3710.92s : Thank you.
+3710.94s - 3740.92s : Thank you.
+3740.94s - 3743.9s : Do you have any questions so far?
+3743.9s - 3747.92s : Any questions so far?
+3770.94s - 3790.94s : It's pretty uncomfortable here because we are talking about interactions and nobody
+3790.94s - 3809.12s : responds us.
+3809.12s - 3811.92s : And now about and build framework.
+3811.92s - 3818.32s : So the second one, they also talk about the system and user and they talk about the input
+3818.32s - 3820.82s : and output.
+3820.94s - 3835.44s : So what they say is user will pass its requirement or the intention through the input to the
+3835.44s - 3836.44s : system.
+3836.44s - 3842.36s : System will interpret it and give the output and output will be then interpreted by the
+3842.36s - 3844.6s : user.
+3844.6s - 3849.0s : To illustrate it further.
+3849.0s - 3850.92s : You have the user to interpret the input.
+3850.92s - 3854.22s : And then the system will give the task.
+3854.22s - 3858.66s : And the system is a core here.
+3858.66s - 3866.42s : User wants to articulate its intention through the input.
+3866.42s - 3872.68s : And then input will be taken.
+3872.68s - 3880.42s : And system will be given how to perform.
+3880.42s - 3889.92s : And based on the performance system will present some ideas or some present the output.
+3889.92s - 3895.92s : So it will be more converted into the presentation or the presentable component.
+3895.92s - 3897.92s : And it will be given as the output.
+3897.92s - 3909.92s : So the output will be observed and interpreted by the user.
+3910.42s - 3915.92s : So this is illustrated.
+3915.92s - 3925.92s : So here when you take this.
+3925.92s - 3931.42s : If we take the upper part as B.
+3931.42s - 3936.42s : The bottom part as A and upper part as B.
+3936.42s - 3939.92s : A is using the input.
+3939.92s - 3943.92s : User giving the system what he or she wants to do.
+3943.92s - 3946.42s : So this is execution cycle.
+3946.42s - 3954.92s : This bottom part is execution.
+3954.92s - 3961.22s : Upper part is system gives the output and which will then be observed or the perceived
+3961.22s - 3966.92s : and interpreted is the evaluation.
+3966.92s - 3968.92s : So in the.
+3968.92s - 3969.92s : In the.
+3969.92s - 3973.92s : Donald Norman's framework.
+3973.92s - 3980.42s : In Donald Norman's model we discussed about evaluation and execution cycles.
+3980.42s - 3984.42s : Here also you have evaluation and execution cycle.
+3984.42s - 3988.92s : The same thing is presented in two different ways.
+3988.92s - 3993.92s : There they talk about seven stages of actions.
+3993.92s - 3997.42s : We will go back and see what the seven stages are.
+3999.92s - 4003.92s : Establishing the goal.
+4003.92s - 4004.92s : Establishing the goal.
+4004.92s - 4005.92s : One.
+4005.92s - 4007.92s : Formulating the action two.
+4007.92s - 4011.92s : Specifying three and executing four.
+4011.92s - 4013.92s : Perceiving five.
+4013.92s - 4019.92s : Interpreting six and evaluation seven.
+4019.92s - 4023.92s : So one, two, three, four.
+4023.92s - 4025.92s : Of the Norman's actions.
+4025.92s - 4027.92s : Will be covered here in the bottom.
+4027.92s - 4028.92s : So.
+4028.92s - 4032.92s : Here in the bottom part execution cycle.
+4032.92s - 4038.92s : Five six and seven will be covered in the evaluation cycle.
+4038.92s - 4042.92s : So here it is given.
+4042.92s - 4045.92s : Like this.
+4045.92s - 4050.92s : This is a and this is b.
+4050.92s - 4054.92s : The goal to system there you consider user to system.
+4054.92s - 4056.92s : The goal to system there you consider user to system.
+4056.92s - 4062.92s : Here you get the user and the system.
+4062.92s - 4065.92s : The goal also is interpreted.
+4065.92s - 4067.92s : And entered by the user.
+4067.92s - 4070.92s : So the above and below framework.
+4070.92s - 4076.92s : Gives the prominence to the user.
+4076.92s - 4078.92s : Where.
+4078.92s - 4080.92s : In the Donald Norman's model.
+4080.92s - 4084.92s : Gives prominence to the goal interpreted by the user.
+4084.92s - 4086.92s : So that's a difference.
+4086.92s - 4088.92s : But.
+4088.92s - 4090.92s : Both of these.
+4090.92s - 4092.92s : Both of these.
+4092.92s - 4098.92s : Talk about the same thing.
+4098.92s - 4102.92s : And the ergonomics I really don't want to pay a lot of attention to.
+4102.92s - 4111.92s : We just discussed.
+4111.92s - 4114.92s : I will now post a question.
+4114.92s - 4115.92s : On.
+4115.92s - 4116.92s : The.
+4116.92s - 4117.92s : Model.
+4117.92s - 4118.92s : So.
+4118.92s - 4119.92s : Best 20 students.
+4119.92s - 4125.92s : Do you have access to a model.
+4125.92s - 4126.92s : Then.
+4126.92s - 4127.92s : There's.
+4127.92s - 4130.92s : Then it's not possible.
+4130.92s - 4131.92s : Why?
+4131.92s - 4132.92s : Like one says yes.
+4132.92s - 4133.92s : And the other one say no.
+4133.92s - 4134.92s : Because.
+4134.92s - 4135.92s : Perhaps the one who said no.
+4135.92s - 4136.92s : Is.
+4136.92s - 4137.92s : Not.
+4137.92s - 4138.92s : A.
+4138.92s - 4139.92s : User.
+4139.92s - 4140.92s : And.
+4140.92s - 4141.92s : The.
+4141.92s - 4142.92s : User.
+4142.92s - 4143.92s : Is.
+4143.92s - 4144.92s : The.
+4144.92s - 4145.92s : User.
+4145.92s - 4146.92s : And.
+4146.92s - 4147.92s : User.
+4147.92s - 4148.92s : Is.
+4148.92s - 4149.92s : The.
+4149.92s - 4150.92s : User.
+4150.92s - 4151.92s : Is.
+4151.92s - 4152.92s : A.
+4152.92s - 4153.92s : User.
+4153.92s - 4154.92s : It's not.
+4154.92s - 4155.92s : A.
+4155.92s - 4156.92s : User.
+4156.92s - 4157.92s : That.
+4157.92s - 4158.92s : Is.
+4158.92s - 4159.92s : A.
+4159.92s - 4160.92s : User.
+4160.92s - 4161.92s : Is.
+4161.92s - 4162.92s : A.
+4162.92s - 4163.92s : User.
+4163.92s - 4164.92s : But.
+4164.92s - 4165.92s : So.
+4165.92s - 4166.92s : We.
+4166.92s - 4167.92s : Have.
+4167.92s - 4168.92s : The.
+4168.92s - 4169.92s : Model.
+4169.92s - 4170.92s : Of.
+4170.92s - 4171.92s : The.
+4171.92s - 4172.92s : Model.
+4172.92s - 4173.92s : That.
+4173.92s - 4178.0s : because it's very difficult to get into a discussion now
+4178.0s - 4182.4s : because I normally conduct the lecture,
+4182.72s - 4184.96s : opening up a lot of discussion forums
+4184.96s - 4187.32s : and collecting your views,
+4187.82s - 4190.04s : but I'm unable to do it yet
+4190.04s - 4192.72s : because some of you are not yet registered
+4192.72s - 4194.56s : and have access to Moodle.
+4203.92s - 4223.28s : All right.
+4223.36s - 4226.18s : I want you to look at this direct manipulation
+4226.18s - 4227.76s : and indirect manipulation.
+4229.98s - 4232.26s : There are two examples given,
+4232.26s - 4233.46s : direct manipulation
+4233.46s - 4233.9s : and indirect manipulation.
+4233.92s - 4238.48s : Indirect manipulation is where
+4238.48s - 4241.46s : the user directly connects with the system environment.
+4242.82s - 4245.5s : And the indirect manipulation is
+4245.5s - 4250.74s : you connect with a simulated computer interface,
+4251.1s - 4254.06s : but the actual effect is somewhere else.
+4256.58s - 4259.86s : So now two examples have been given.
+4259.86s - 4262.86s : I want you each to post
+4262.86s - 4263.9s : a video of you connecting with a computer interface
+4263.92s - 4264.42s : and then I want you to share it with me.
+4264.42s - 4268.24s : Different examples to showcase the direct manipulation
+4268.24s - 4269.98s : and indirect manipulation.
+4272.54s - 4273.8s : Take your time.
+4274.3s - 4276.74s : I'll give you five minutes this time
+4276.74s - 4278.0s : in order to take this.

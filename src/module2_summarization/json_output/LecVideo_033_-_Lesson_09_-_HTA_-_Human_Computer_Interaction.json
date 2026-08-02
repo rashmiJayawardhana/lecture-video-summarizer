@@ -1,0 +1,3474 @@
+[
+  {
+    "sentence": "In the last lecture we discussed about mental models and the importance of having mental",
+    "timestamp_start": 0.0,
+    "timestamp_end": 9.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "models in identifying exactly how the user thinks in completing a task.",
+    "timestamp_start": 9.6,
+    "timestamp_end": 16.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there we also mentioned that it is important to see different ways the different users",
+    "timestamp_start": 16.32,
+    "timestamp_end": 25.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "look at the same problem in designing interfaces and interactions because we cannot expect",
+    "timestamp_start": 25.48,
+    "timestamp_end": 34.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "everybody to look at the same thing in the same way.",
+    "timestamp_start": 34.18,
+    "timestamp_end": 38.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there may be different perspectives of different users and if your design does not",
+    "timestamp_start": 38.24,
+    "timestamp_end": 45.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "cater for at least for the majority of these thinking processes, your design may not be",
+    "timestamp_start": 45.32,
+    "timestamp_end": 52.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "successful.",
+    "timestamp_start": 52.86,
+    "timestamp_end": 55.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because the design is not successful.",
+    "timestamp_start": 55.3,
+    "timestamp_end": 55.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We can't always keep only a single stereotypical design.",
+    "timestamp_start": 55.48,
+    "timestamp_end": 60.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Instead, you need to have multiple ways to do the same thing when you consider multiple",
+    "timestamp_start": 60.6,
+    "timestamp_end": 67.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "users connecting to your interface.",
+    "timestamp_start": 67.92,
+    "timestamp_end": 70.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in order to see what the user thinks and in order to design in a way which caters for",
+    "timestamp_start": 71.6,
+    "timestamp_end": 84.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the users' different thinking.",
+    "timestamp_start": 84.0,
+    "timestamp_end": 85.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You need to have a proper way to identify how the user thinks.",
+    "timestamp_start": 85.48,
+    "timestamp_end": 90.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there are many different models available.",
+    "timestamp_start": 90.6,
+    "timestamp_end": 93.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We call them cognitive models or the mental model.",
+    "timestamp_start": 93.8,
+    "timestamp_end": 101.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And two commonly used models are the GOMS, goals, operations, methods and selection.",
+    "timestamp_start": 101.6,
+    "timestamp_end": 107.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we will be discussing about GOMS later.",
+    "timestamp_start": 107.6,
+    "timestamp_end": 108.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the first one is the mental model.",
+    "timestamp_start": 108.6,
+    "timestamp_end": 109.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The second one is the cognitive model.",
+    "timestamp_start": 109.6,
+    "timestamp_end": 110.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The third one is the cognitive model.",
+    "timestamp_start": 110.6,
+    "timestamp_end": 111.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The fourth one is the mental model.",
+    "timestamp_start": 111.6,
+    "timestamp_end": 112.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the last one is the cognitive model.",
+    "timestamp_start": 112.6,
+    "timestamp_end": 113.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the cognitive model is the mental model.",
+    "timestamp_start": 113.6,
+    "timestamp_end": 114.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the last one is the visual model.",
+    "timestamp_start": 114.6,
+    "timestamp_end": 115.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the cognitive model is the vision model.",
+    "timestamp_start": 115.6,
+    "timestamp_end": 116.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The third one is the visual model.",
+    "timestamp_start": 116.6,
+    "timestamp_end": 117.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The guardian model is a specific visual model.",
+    "timestamp_start": 117.6,
+    "timestamp_end": 118.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This one is the visual model.",
+    "timestamp_start": 118.6,
+    "timestamp_end": 119.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the fourth one is the visual model.",
+    "timestamp_start": 119.6,
+    "timestamp_end": 120.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the fifth one is the visual model.",
+    "timestamp_start": 120.6,
+    "timestamp_end": 121.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then this is the visual model.",
+    "timestamp_start": 121.6,
+    "timestamp_end": 122.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are the visual models.",
+    "timestamp_start": 122.6,
+    "timestamp_end": 123.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we will discuss about them in a few points later.",
+    "timestamp_start": 123.6,
+    "timestamp_end": 124.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the next one is this hierarchical task analysis where the task will be considered",
+    "timestamp_start": 125.6,
+    "timestamp_end": 126.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in a manner that you can divide and convert it.",
+    "timestamp_start": 126.6,
+    "timestamp_end": 127.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we will initially look at the hierarchical task analysis.",
+    "timestamp_start": 127.6,
+    "timestamp_end": 130.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And later on, we will be moving on to the GOMS model in the next lecture.",
+    "timestamp_start": 130.92,
+    "timestamp_end": 137.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you talk about a performance model, I will not say that GOMS does not work or",
+    "timestamp_start": 137.92,
+    "timestamp_end": 143.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you talk about cognitive models the cognitive models are going to model some aspects of user",
+    "timestamp_start": 143.72,
+    "timestamp_end": 150.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "why are we modeling these aspects of user because we are going to do a design which is acceptable",
+    "timestamp_start": 152.84,
+    "timestamp_end": 160.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by many users so in order for your design to be accepted by many users as you when user you need",
+    "timestamp_start": 160.84,
+    "timestamp_end": 171.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to see different aspects of different users so that you understand the user better plus you get",
+    "timestamp_start": 171.72,
+    "timestamp_end": 179.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what the user wants so therefore the aspects of user that you need to consider most will be the",
+    "timestamp_start": 179.8,
+    "timestamp_end": 188.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "understanding how the user understands about a task and the knowledge what the user already knows",
+    "timestamp_start": 188.6,
+    "timestamp_end": 199.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the intentions",
+    "timestamp_start": 200.12,
+    "timestamp_end": 201.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "imply what the user wants to do or plans to do and the processing is how the user gets about in",
+    "timestamp_start": 201.72,
+    "timestamp_end": 211.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "doing what he wants to do so those are the four aspects you need to consider when you are modeling",
+    "timestamp_start": 211.72,
+    "timestamp_end": 219.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for use so when you design cognitive models you take the mental process uh in a divide and",
+    "timestamp_start": 219.8,
+    "timestamp_end": 231.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "conquer approach that means you consider the entire thing you divide it into a small segment",
+    "timestamp_start": 231.72,
+    "timestamp_end": 237.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then you are going to consider small portions in order to understand the things better",
+    "timestamp_start": 238.04,
+    "timestamp_end": 243.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this human thinking and processing is a complicated task unless we pay a lot of attention to",
+    "timestamp_start": 244.92,
+    "timestamp_end": 253.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we do not realize exactly how we are thinking about doing something we just do that",
+    "timestamp_start": 254.36,
+    "timestamp_end": 261.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because our thinking is so fast the processing happens so fast you never notice the exact",
+    "timestamp_start": 261.72,
+    "timestamp_end": 269.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sequence of thinking that we do so now what we are trying to do",
+    "timestamp_start": 271.48,
+    "timestamp_end": 277.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is quite challenging now the things which are happening so fast uh we are going to",
+    "timestamp_start": 277.08,
+    "timestamp_end": 283.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now put it into the explicit level by modeling them using some sort of a normal Алеς model",
+    "timestamp_start": 285.8,
+    "timestamp_end": 291.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different approaches",
+    "timestamp_start": 291.72,
+    "timestamp_end": 294.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and mainly in cognitive modeling we talk about goal and task hierarchies now we",
+    "timestamp_start": 307.64,
+    "timestamp_end": 315.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we try to take it in the divide and conquer approach and there we talked",
+    "timestamp_start": 315.34,
+    "timestamp_end": 320.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about goal and task hierarchy the goals as we mentioned are the intention and",
+    "timestamp_start": 320.32,
+    "timestamp_end": 328.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "intention is what would you like to be true or what would you like to be",
+    "timestamp_start": 328.38,
+    "timestamp_end": 333.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "happening so that is what the intention is what are you planning to do so those",
+    "timestamp_start": 333.94,
+    "timestamp_end": 341.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are the intentions and the tasks are the actions that you perform in order to",
+    "timestamp_start": 341.38,
+    "timestamp_end": 348.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "achieve your goal or goal",
+    "timestamp_start": 348.36,
+    "timestamp_end": 350.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for the intention so you practice the intention through the action you",
+    "timestamp_start": 350.32,
+    "timestamp_end": 358.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "achieve the goal through the task so that is how we get it there are different",
+    "timestamp_start": 358.12,
+    "timestamp_end": 367.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "approaches as I mentioned the first one is gums goals operators methods and",
+    "timestamp_start": 367.14,
+    "timestamp_end": 373.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "selection and these goals are internal the things which are happening inside",
+    "timestamp_start": 373.94,
+    "timestamp_end": 380.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then the second one is the hierarchical task analysis so here you",
+    "timestamp_start": 380.32,
+    "timestamp_end": 387.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "consider external actions and the tasks are taken as abstraction so the goals",
+    "timestamp_start": 387.78,
+    "timestamp_end": 396.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are inherent and internal the task and the tasks and actions are explicit and external",
+    "timestamp_start": 396.44,
+    "timestamp_end": 408.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now when you consider the cognitive task analysis it is an approach that you",
+    "timestamp_start": 410.32,
+    "timestamp_end": 419.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "use to evaluate how people get about in doing their tasks",
+    "timestamp_start": 419.04,
+    "timestamp_end": 425.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and this might involve a number of different techniques and methods because",
+    "timestamp_start": 425.94,
+    "timestamp_end": 431.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the same person doesn't do the same task in the same manner all the time that is one thing",
+    "timestamp_start": 431.48,
+    "timestamp_end": 440.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the second thing is different users don't do the same task in the same manner at the",
+    "timestamp_start": 440.32,
+    "timestamp_end": 448.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "same time even and I want you to understand the difference here even in the same context",
+    "timestamp_start": 448.14,
+    "timestamp_end": 456.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "two different people will do the same task differently that's the first thing and when",
+    "timestamp_start": 456.94,
+    "timestamp_end": 465.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you take a single user the way he does the task is different and the way he does the task",
+    "timestamp_start": 465.56,
+    "timestamp_end": 470.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in one situation may be different from the way he does the same thing in a",
+    "timestamp_start": 470.32,
+    "timestamp_end": 477.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different situation so in the situation one his mental process was different to",
+    "timestamp_start": 477.48,
+    "timestamp_end": 485.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the situation two's mental processes so however using this cognitive task",
+    "timestamp_start": 485.64,
+    "timestamp_end": 492.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "analysis what you try to do is to understand the underlying thought process",
+    "timestamp_start": 492.94,
+    "timestamp_end": 498.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of a user when performing the task when doing the task you try to understand the underlying thought process of a user when",
+    "timestamp_start": 498.3,
+    "timestamp_end": 499.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "performing a task. Underlying thought process implies that it's internal. You are trying to",
+    "timestamp_start": 499.98,
+    "timestamp_end": 506.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "represent that underlying thinking process in a graphic in a different manner which is explicit",
+    "timestamp_start": 507.9,
+    "timestamp_end": 515.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that is what you try to do. And here in this activity or in this exercise we will pay more",
+    "timestamp_start": 515.58,
+    "timestamp_end": 524.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "attention to what we cannot see not what we can see. More attention should go to what we cannot see.",
+    "timestamp_start": 524.14,
+    "timestamp_end": 535.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I hope you now try to understand that.",
+    "timestamp_start": 539.5,
+    "timestamp_end": 541.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Imagine that you want to take a phone call.",
+    "timestamp_start": 548.38,
+    "timestamp_end": 550.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that is a goal. You want to take a call.",
+    "timestamp_start": 554.14,
+    "timestamp_end": 559.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When you want to take a call the first thing is you have to decide using which phone I am going",
+    "timestamp_start": 561.66,
+    "timestamp_end": 567.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to take it. Am I going to use my mobile or am I going to use the land phone?",
+    "timestamp_start": 567.1,
+    "timestamp_end": 573.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If it is the mobile that I use how I how will I type the",
+    "timestamp_start": 575.98,
+    "timestamp_end": 583.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "am I going to a key in or am I going to browse through the contact list or take",
+    "timestamp_start": 584.14,
+    "timestamp_end": 594.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the number",
+    "timestamp_start": 594.34,
+    "timestamp_end": 596.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so there are many things which are happening internally and then you have",
+    "timestamp_start": 597.08,
+    "timestamp_end": 604.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to see whether the number is available or not if the number is not available",
+    "timestamp_start": 604.32,
+    "timestamp_end": 608.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how are how am I going to take the number back in am I going to go to will",
+    "timestamp_start": 608.74,
+    "timestamp_end": 616.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "say go back to a room and find an address book which is physical and find",
+    "timestamp_start": 616.3,
+    "timestamp_end": 622.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the number from the order or are we going to a search through the internet",
+    "timestamp_start": 622.9,
+    "timestamp_end": 628.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to get the number copy and paste and dial it different thing so there are",
+    "timestamp_start": 628.26,
+    "timestamp_end": 634.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "many things which are happening inside when I",
+    "timestamp_start": 634.18,
+    "timestamp_end": 638.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when I am going to search through the internet I am going to search through the internet",
+    "timestamp_start": 638.42,
+    "timestamp_end": 638.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when all of these things are basically dictating all these things they look",
+    "timestamp_start": 638.72,
+    "timestamp_end": 643.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when all of these things are basically dictating all these things they look",
+    "timestamp_start": 643.56,
+    "timestamp_end": 643.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "very simple but in most of the time when we try to do things we actually miss out",
+    "timestamp_start": 643.58,
+    "timestamp_end": 656.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "most of the things which are happening as a sequel while we perform a",
+    "timestamp_start": 656.02,
+    "timestamp_end": 664.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "particular work so now all",
+    "timestamp_start": 664.48,
+    "timestamp_end": 668.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what we will remember is I'm going to take a call.",
+    "timestamp_start": 668.4,
+    "timestamp_end": 671.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So whatever which comes in between",
+    "timestamp_start": 671.82,
+    "timestamp_end": 674.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "may not be very noticeable.",
+    "timestamp_start": 674.3,
+    "timestamp_end": 676.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or the effect of that is not very noticeable.",
+    "timestamp_start": 677.92,
+    "timestamp_end": 680.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now that is also a somewhat generic example.",
+    "timestamp_start": 682.92,
+    "timestamp_end": 688.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now there may be many other complicated things",
+    "timestamp_start": 689.9,
+    "timestamp_end": 693.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like doing that internal mental debate",
+    "timestamp_start": 693.22,
+    "timestamp_end": 699.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as to which one to take.",
+    "timestamp_start": 699.56,
+    "timestamp_end": 701.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now imagine that I want to,",
+    "timestamp_start": 702.54,
+    "timestamp_end": 706.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I will say,",
+    "timestamp_start": 707.84,
+    "timestamp_end": 709.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "just imagine now you are riding in a bus",
+    "timestamp_start": 714.6,
+    "timestamp_end": 717.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and you want to get down at a given bus stop.",
+    "timestamp_start": 717.54,
+    "timestamp_end": 721.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what will you do?",
+    "timestamp_start": 721.76,
+    "timestamp_end": 724.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you are sitting in a seat,",
+    "timestamp_start": 725.18,
+    "timestamp_end": 727.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like when your destination is reaching,",
+    "timestamp_start": 728.6,
+    "timestamp_end": 732.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you will get up",
+    "timestamp_start": 732.72,
+    "timestamp_end": 734.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and maybe like then you will look for where the bell is.",
+    "timestamp_start": 734.12,
+    "timestamp_end": 738.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then you will look around",
+    "timestamp_start": 739.5,
+    "timestamp_end": 740.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "whether there are any other people",
+    "timestamp_start": 740.74,
+    "timestamp_end": 742.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "who are going to get down at the same stop as you.",
+    "timestamp_start": 742.38,
+    "timestamp_end": 745.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And maybe sometimes",
+    "timestamp_start": 746.76,
+    "timestamp_end": 748.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if you are in an uncomfortable,",
+    "timestamp_start": 748.44,
+    "timestamp_end": 751.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at an uncomfortable situation,",
+    "timestamp_start": 751.76,
+    "timestamp_end": 754.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you are going to get up,",
+    "timestamp_start": 754.26,
+    "timestamp_end": 755.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there might be someone who is going to ring the bell.",
+    "timestamp_start": 755.26,
+    "timestamp_end": 756.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So try to wait for somebody else at the same time",
+    "timestamp_start": 756.96,
+    "timestamp_end": 759.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and try to keep the situation to ring the bell.",
+    "timestamp_start": 759.48,
+    "timestamp_end": 761.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You might be simply waiting",
+    "timestamp_start": 761.64,
+    "timestamp_end": 763.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "until somebody else rings the bell.",
+    "timestamp_start": 763.08,
+    "timestamp_end": 765.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or if it is not the case,",
+    "timestamp_start": 766.06,
+    "timestamp_end": 768.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so what you're trying to do is,",
+    "timestamp_start": 768.26,
+    "timestamp_end": 769.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you will basically try ringing the bell by yourself.",
+    "timestamp_start": 769.92,
+    "timestamp_end": 774.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that is a different thought process.",
+    "timestamp_start": 775.18,
+    "timestamp_end": 779.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So likewise, there are many different things going on,",
+    "timestamp_start": 779.22,
+    "timestamp_end": 781.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "off a bus. So likewise there are many different things which are happening inside and many",
+    "timestamp_start": 781.18,
+    "timestamp_end": 787.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different tasks that you are invariantly be doing in achieving a goal. So that is what",
+    "timestamp_start": 787.68,
+    "timestamp_end": 797.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we are trying to do here. We are going to do that cognitive task analysis by considering",
+    "timestamp_start": 797.26,
+    "timestamp_end": 803.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "all these aspects and we try to model something which will be closer to the thought process",
+    "timestamp_start": 803.68,
+    "timestamp_end": 811.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of a human in achieving a goal. So there may be sequence of actions you need to follow",
+    "timestamp_start": 811.56,
+    "timestamp_end": 820.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in doing that. The first one is collect. In collect you collect some preliminary knowledge",
+    "timestamp_start": 820.48,
+    "timestamp_end": 829.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about the situation.",
+    "timestamp_start": 829.4,
+    "timestamp_end": 830.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So",
+    "timestamp_start": 833.12,
+    "timestamp_end": 833.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 833.64,
+    "timestamp_end": 833.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 833.66,
+    "timestamp_end": 833.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are going to analyze and verify the data files. And then you identify knowledge representations.",
+    "timestamp_start": 833.68,
+    "timestamp_end": 837.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "How it is represented is identified in your mind. And then what you try to do, you will",
+    "timestamp_start": 837.8,
+    "timestamp_end": 847.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "populate those knowledge representations. You will populate those knowledge representations",
+    "timestamp_start": 847.32,
+    "timestamp_end": 853.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with the current situation. And then what you try to do is to analyze and verify. You",
+    "timestamp_start": 853.04,
+    "timestamp_end": 863.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are going to identify the data files which are being populated considering the situation",
+    "timestamp_start": 863.66,
+    "timestamp_end": 865.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that you are currently in. So now the data which will be populated will be situational.",
+    "timestamp_start": 865.66,
+    "timestamp_end": 874.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And your analysis and the verification will be situational. But the collection of preliminary",
+    "timestamp_start": 874.82,
+    "timestamp_end": 880.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "knowledge and knowledge representations, identifying knowledge representations, they",
+    "timestamp_start": 880.88,
+    "timestamp_end": 886.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are somewhat generic. So these things are then going to be more detailed. So now you",
+    "timestamp_start": 886.94,
+    "timestamp_end": 892.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can look into that.",
+    "timestamp_start": 892.88,
+    "timestamp_end": 893.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "attached to the situation through the population and analysis and verification.",
+    "timestamp_start": 893.62,
+    "timestamp_end": 898.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And finally, when it comes to the formatting,",
+    "timestamp_start": 898.5,
+    "timestamp_end": 902.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now you have got some idea, so you are going to format the result",
+    "timestamp_start": 902.34,
+    "timestamp_end": 907.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for intended application, that means you are going to format it fully,",
+    "timestamp_start": 907.22,
+    "timestamp_end": 911.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you are going to model it to suit what you are planning to",
+    "timestamp_start": 911.78,
+    "timestamp_end": 915.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "deliver. So these are the sequence of actions,",
+    "timestamp_start": 915.62,
+    "timestamp_end": 919.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this is the sequence of actions that you need to follow",
+    "timestamp_start": 919.94,
+    "timestamp_end": 923.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in doing some task analysis.",
+    "timestamp_start": 923.3,
+    "timestamp_end": 927.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now this for like all the other actions in the sequence are important,",
+    "timestamp_start": 929.3,
+    "timestamp_end": 935.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we can because in the note provided you can",
+    "timestamp_start": 935.06,
+    "timestamp_end": 938.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have a more clearer idea, but when it comes to formatting results,",
+    "timestamp_start": 938.34,
+    "timestamp_end": 943.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we pay more great attention to that because",
+    "timestamp_start": 943.62,
+    "timestamp_end": 949.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you are going to format results in a way that it is useful for interaction",
+    "timestamp_start": 949.3,
+    "timestamp_end": 954.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "design. Because now all these exercises are",
+    "timestamp_start": 954.34,
+    "timestamp_end": 958.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "actually going towards making a good interaction design",
+    "timestamp_start": 958.74,
+    "timestamp_end": 964.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or making a good design which follows the interaction design rules",
+    "timestamp_start": 964.1,
+    "timestamp_end": 968.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or principles. So therefore you need to format results",
+    "timestamp_start": 968.98,
+    "timestamp_end": 973.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in a manner that is useful for making a good interaction design.",
+    "timestamp_start": 973.86,
+    "timestamp_end": 978.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is the first step, and the next one is quite challenging.",
+    "timestamp_start": 979.3,
+    "timestamp_end": 984.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The design should reflect what the user thinks",
+    "timestamp_start": 984.58,
+    "timestamp_end": 988.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and what the user feels or what he remembers.",
+    "timestamp_start": 988.5,
+    "timestamp_end": 992.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It should reflect what the user thinks, what the user feels or what the user",
+    "timestamp_start": 995.94,
+    "timestamp_end": 1002.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "remembers.",
+    "timestamp_start": 1002.18,
+    "timestamp_end": 1005.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the second step is to think about the situation.",
+    "timestamp_start": 1005.14,
+    "timestamp_end": 1010.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is the first step, and the next one is quite important.",
+    "timestamp_start": 1010.02,
+    "timestamp_end": 1014.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The feeling and remembering is somewhat easier to model,",
+    "timestamp_start": 1014.02,
+    "timestamp_end": 1018.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but thinking may be quite challenging.",
+    "timestamp_start": 1018.34,
+    "timestamp_end": 1023.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now there are many relationships available inside, that means your",
+    "timestamp_start": 1023.62,
+    "timestamp_end": 1031.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "thinking process is always going to analyze the different relationships, in the situation.",
+    "timestamp_start": 1031.06,
+    "timestamp_end": 1035.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the first step is to think about the situation that you are trying to present.",
+    "timestamp_start": 1035.06,
+    "timestamp_end": 1039.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the challenge here in formatting results is that you are going to make",
+    "timestamp_start": 1039.94,
+    "timestamp_end": 1045.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "these relationships and understanding visible exclusively via the design.",
+    "timestamp_start": 1045.94,
+    "timestamp_end": 1054.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you did not have a proper understanding about the situation",
+    "timestamp_start": 1054.74,
+    "timestamp_end": 1058.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or if you have not identifying the identified the relationships properly,",
+    "timestamp_start": 1058.82,
+    "timestamp_end": 1063.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "your design will not be successful because the design reflects what you have identified.",
+    "timestamp_start": 1065.06,
+    "timestamp_end": 1075.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Right, before moving on, I want you to take two minutes and think about this formatting results.",
+    "timestamp_start": 1075.94,
+    "timestamp_end": 1092.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Let me just box, and let me see if even I write a text or both.",
+    "timestamp_start": 1095.06,
+    "timestamp_end": 1105.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay so,",
+    "timestamp_start": 1121.22,
+    "timestamp_end": 1122.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "our suggestion is to maintain conventional formats such as",
+    "timestamp_start": 1122.74,
+    "timestamp_end": 1125.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "reflect the users thinking feeling and the amount of his remembering okay so I",
+    "timestamp_start": 1125.06,
+    "timestamp_end": 1132.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "want you to think a little bit about it",
+    "timestamp_start": 1132.74,
+    "timestamp_end": 1137.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then in the chat you need to send me some of your ideas about this formatting",
+    "timestamp_start": 1139.64,
+    "timestamp_end": 1154.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "results aspects for this stage",
+    "timestamp_start": 1154.44,
+    "timestamp_end": 1159.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the one of one",
+    "timestamp_start": 1181.28,
+    "timestamp_end": 1183.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to say",
+    "timestamp_start": 1183.9,
+    "timestamp_end": 1184.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the formatting results and all these things are important because you need to",
+    "timestamp_start": 1184.4,
+    "timestamp_end": 1190.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "design to make it understandable and the second second answer says formatting",
+    "timestamp_start": 1190.42,
+    "timestamp_end": 1199.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "results may be a way that makes the design more practical and user friendly",
+    "timestamp_start": 1199.82,
+    "timestamp_end": 1204.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the third one it says you should reflect the concept and then again",
+    "timestamp_start": 1204.5,
+    "timestamp_end": 1214.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "they should be accessible for the user to use and I will explain the process of such an example to you, I will explain all the steps to make the design more practical and user friendly and the third one is that you should reflect the concept and then again",
+    "timestamp_start": 1214.24,
+    "timestamp_end": 1214.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there's another answer indicating formatting results will attract the user",
+    "timestamp_start": 1214.4,
+    "timestamp_end": 1218.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "since it resembles their thoughts and feelings and",
+    "timestamp_start": 1218.72,
+    "timestamp_end": 1227.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then again",
+    "timestamp_start": 1232.52,
+    "timestamp_end": 1235.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 1235.64,
+    "timestamp_end": 1237.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now those are truly the valid points because here and the formatting is",
+    "timestamp_start": 1240.1,
+    "timestamp_end": 1248.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "indicated because this formatting is basically you are going to format what",
+    "timestamp_start": 1248.94,
+    "timestamp_end": 1255.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you have identified as the thought process into a very prominent way which",
+    "timestamp_start": 1255.1,
+    "timestamp_end": 1261.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "will later be resembled in the design so that is",
+    "timestamp_start": 1261.52,
+    "timestamp_end": 1265.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what you have identified as the thought process into a very prominent way which will later be resembled in the design so that is what",
+    "timestamp_start": 1265.16,
+    "timestamp_end": 1265.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we do so",
+    "timestamp_start": 1265.62,
+    "timestamp_end": 1269.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then a nice good at nice and good examples coming out so yes the",
+    "timestamp_start": 1276.6,
+    "timestamp_end": 1282.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "formatting result is important because you need to use these results to be",
+    "timestamp_start": 1282.78,
+    "timestamp_end": 1291.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "reflected in the actual interface design and",
+    "timestamp_start": 1291.72,
+    "timestamp_end": 1295.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Therefore, you need to be well aware of what is happening inside the user's head and how",
+    "timestamp_start": 1295.62,
+    "timestamp_end": 1304.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "he feels and how he remembers.",
+    "timestamp_start": 1304.96,
+    "timestamp_end": 1308.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Also you need to understand the relationships among internal aspects and the understanding",
+    "timestamp_start": 1308.5,
+    "timestamp_end": 1315.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about the situation and these relationships and understandings should be made explicit",
+    "timestamp_start": 1315.28,
+    "timestamp_end": 1324.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "through the design.",
+    "timestamp_start": 1324.14,
+    "timestamp_end": 1325.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So therefore this formatting is extremely important.",
+    "timestamp_start": 1325.74,
+    "timestamp_end": 1334.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In order to do this formatting, we use some notation.",
+    "timestamp_start": 1334.96,
+    "timestamp_end": 1342.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I believe you have done flowcharts, but have you heard about JSD structure chart or Jackson",
+    "timestamp_start": 1342.68,
+    "timestamp_end": 1353.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "structure diagram?",
+    "timestamp_start": 1353.24,
+    "timestamp_end": 1354.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's an old way of representing how the program execution should go.",
+    "timestamp_start": 1354.12,
+    "timestamp_end": 1363.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we are using a similar approach here, the divide and confer.",
+    "timestamp_start": 1363.18,
+    "timestamp_end": 1369.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is an example of the formatting of the entire thought process.",
+    "timestamp_start": 1369.56,
+    "timestamp_end": 1375.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is simply a very simple aspect.",
+    "timestamp_start": 1375.72,
+    "timestamp_end": 1379.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The example taken is.",
+    "timestamp_start": 1379.94,
+    "timestamp_end": 1383.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That a user needs to give a feedback to a service obtained.",
+    "timestamp_start": 1384.12,
+    "timestamp_end": 1390.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that feedback could be given in many different ways that we don't know exactly.",
+    "timestamp_start": 1390.9,
+    "timestamp_end": 1397.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe if you imagine about different things or the different ways that you could give",
+    "timestamp_start": 1397.46,
+    "timestamp_end": 1404.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the feedback, maybe sometimes you can give a feedback on their website where the customer",
+    "timestamp_start": 1404.62,
+    "timestamp_end": 1414.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "feedback is displayed.",
+    "timestamp_start": 1414.12,
+    "timestamp_end": 1415.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or you can send them an email.",
+    "timestamp_start": 1415.12,
+    "timestamp_end": 1416.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or there may be some applications where the feedback forms are available.",
+    "timestamp_start": 1416.12,
+    "timestamp_end": 1417.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can do that.",
+    "timestamp_start": 1417.12,
+    "timestamp_end": 1418.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Another way to give a feedback is you might have decided to give a telephone call to that",
+    "timestamp_start": 1418.12,
+    "timestamp_end": 1435.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "service center and give the feedback.",
+    "timestamp_start": 1435.12,
+    "timestamp_end": 1438.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like there may be many different feedback methods.",
+    "timestamp_start": 1438.8,
+    "timestamp_end": 1440.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can give a feedback.",
+    "timestamp_start": 1440.9,
+    "timestamp_end": 1442.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can give a feedback.",
+    "timestamp_start": 1442.82,
+    "timestamp_end": 1443.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you take the provide feedback, the very first thing which comes to your mind",
+    "timestamp_start": 1443.9,
+    "timestamp_end": 1453.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is like, how should I provide the feedback?",
+    "timestamp_start": 1453.58,
+    "timestamp_end": 1458.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in identifying how should I provide the feedback, then you come to the awareness of",
+    "timestamp_start": 1458.48,
+    "timestamp_end": 1467.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "many different methods available to give the feedback.",
+    "timestamp_start": 1467.22,
+    "timestamp_end": 1470.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So through that awareness, you can give the feedback.",
+    "timestamp_start": 1470.9,
+    "timestamp_end": 1471.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's the first thing.",
+    "timestamp_start": 1471.9,
+    "timestamp_end": 1472.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1472.9,
+    "timestamp_end": 1473.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you have a very good awareness, then you need to choose the feedback method that",
+    "timestamp_start": 1473.9,
+    "timestamp_end": 1478.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you prefer.",
+    "timestamp_start": 1478.02,
+    "timestamp_end": 1479.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Based on the feedback method you have chosen, you will mention the feedback.",
+    "timestamp_start": 1479.02,
+    "timestamp_end": 1488.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It may be writing it up or you mention it otherwise.",
+    "timestamp_start": 1488.42,
+    "timestamp_end": 1493.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Finally, you are going to submit it or confirm it.",
+    "timestamp_start": 1493.9,
+    "timestamp_end": 1500.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1500.58,
+    "timestamp_end": 1501.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1501.58,
+    "timestamp_end": 1502.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the first thing you need to do is to provide feedback.",
+    "timestamp_start": 1502.58,
+    "timestamp_end": 1503.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the first thing you need to do is to provide feedback is the overall task or the goal.",
+    "timestamp_start": 1503.58,
+    "timestamp_end": 1504.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there may be many different ways that goal could be achieved.",
+    "timestamp_start": 1504.58,
+    "timestamp_end": 1509.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you therefore identify different methods of providing feedback.",
+    "timestamp_start": 1509.58,
+    "timestamp_end": 1514.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And after identifying many different methods, you choose the way that you want or the choose",
+    "timestamp_start": 1514.58,
+    "timestamp_end": 1525.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the method that you would like to choose, use.",
+    "timestamp_start": 1525.02,
+    "timestamp_end": 1529.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And depending on the chosen method, you will be able to provide feedback.",
+    "timestamp_start": 1529.58,
+    "timestamp_end": 1530.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's the first thing.",
+    "timestamp_start": 1530.58,
+    "timestamp_end": 1531.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You will mention the feedback or write it up.",
+    "timestamp_start": 1531.58,
+    "timestamp_end": 1535.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And finally, you are confirming it or submitting the feedback.",
+    "timestamp_start": 1535.58,
+    "timestamp_end": 1539.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is a very abstract level observable task.",
+    "timestamp_start": 1539.58,
+    "timestamp_end": 1548.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can observe these things.",
+    "timestamp_start": 1548.34,
+    "timestamp_end": 1549.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When you are providing feedback, identifying many different feedback methods is somewhat",
+    "timestamp_start": 1549.34,
+    "timestamp_end": 1555.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "observable.",
+    "timestamp_start": 1555.58,
+    "timestamp_end": 1556.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Writing or mentioning the feedback is observable.",
+    "timestamp_start": 1556.58,
+    "timestamp_end": 1560.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1560.58,
+    "timestamp_end": 1561.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the fourth thing is you are submitting the feedback observable.",
+    "timestamp_start": 1561.58,
+    "timestamp_end": 1563.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And submitting the feedback observable, explicitly.",
+    "timestamp_start": 1563.58,
+    "timestamp_end": 1564.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is very abstract level.",
+    "timestamp_start": 1564.58,
+    "timestamp_end": 1565.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But there may be many internal things happening when you go to the sub levels of this.",
+    "timestamp_start": 1565.58,
+    "timestamp_end": 1566.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now, imagine you take the choosing the feedback method.",
+    "timestamp_start": 1566.58,
+    "timestamp_end": 1567.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now, okay, you might ask them, okay, what are the methods that I could use in this?",
+    "timestamp_start": 1567.58,
+    "timestamp_end": 1580.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there may be many internal things happening when you go to the sub levels of this.",
+    "timestamp_start": 1580.58,
+    "timestamp_end": 1589.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay.",
+    "timestamp_start": 1589.58,
+    "timestamp_end": 1590.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that I could use to give the feedback.",
+    "timestamp_start": 1590.58,
+    "timestamp_end": 1593.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you might be informed, you can use telephone,",
+    "timestamp_start": 1595.6,
+    "timestamp_end": 1599.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you can use email, or you can use the feedback form",
+    "timestamp_start": 1599.8,
+    "timestamp_end": 1604.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "available on our website.",
+    "timestamp_start": 1604.54,
+    "timestamp_end": 1606.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you have been given that information,",
+    "timestamp_start": 1608.24,
+    "timestamp_end": 1612.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how many different things are going on in your mind?",
+    "timestamp_start": 1612.38,
+    "timestamp_end": 1616.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Going on in your mind.",
+    "timestamp_start": 1617.3,
+    "timestamp_end": 1619.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You will internally do an assessment",
+    "timestamp_start": 1620.58,
+    "timestamp_end": 1625.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of all these three methods.",
+    "timestamp_start": 1625.58,
+    "timestamp_end": 1627.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If I do not have a computer at that particular time,",
+    "timestamp_start": 1629.94,
+    "timestamp_end": 1634.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I might decide to give a telephone call.",
+    "timestamp_start": 1635.2,
+    "timestamp_end": 1638.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in order to take the decision of giving a telephone call,",
+    "timestamp_start": 1641.64,
+    "timestamp_end": 1646.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like there are many other aspects coming out.",
+    "timestamp_start": 1647.68,
+    "timestamp_end": 1650.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I internally scrutinize the available facilities",
+    "timestamp_start": 1650.58,
+    "timestamp_end": 1655.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and see which one is most convenient for me to use",
+    "timestamp_start": 1657.2,
+    "timestamp_end": 1660.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at this time.",
+    "timestamp_start": 1660.52,
+    "timestamp_end": 1661.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And after choosing the method, maybe like later on",
+    "timestamp_start": 1664.4,
+    "timestamp_end": 1667.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you decide, okay, I don't want to spend a lot of time",
+    "timestamp_start": 1667.72,
+    "timestamp_end": 1671.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "on the telephone call, going into these waiting lines",
+    "timestamp_start": 1671.72,
+    "timestamp_end": 1675.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and all that, so I prefer just to give a telephone call.",
+    "timestamp_start": 1675.98,
+    "timestamp_end": 1678.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then I will simply find the email address",
+    "timestamp_start": 1680.58,
+    "timestamp_end": 1683.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and send it.",
+    "timestamp_start": 1683.72,
+    "timestamp_end": 1684.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So then I don't want to wait until the other person",
+    "timestamp_start": 1684.52,
+    "timestamp_end": 1687.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "from the other side connects to the call.",
+    "timestamp_start": 1687.52,
+    "timestamp_end": 1690.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I will simply find the email address and send it.",
+    "timestamp_start": 1690.52,
+    "timestamp_end": 1694.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or I might decide to go to that website, explore it a little,",
+    "timestamp_start": 1694.52,
+    "timestamp_end": 1700.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and find out where this feedback form is,",
+    "timestamp_start": 1700.52,
+    "timestamp_end": 1704.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "fill it up, and submit.",
+    "timestamp_start": 1704.52,
+    "timestamp_end": 1706.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this choice is very important for me.",
+    "timestamp_start": 1706.52,
+    "timestamp_end": 1709.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I will simply find the email address and send it.",
+    "timestamp_start": 1709.14,
+    "timestamp_end": 1710.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this choice is yours, and you will make the choice",
+    "timestamp_start": 1710.2,
+    "timestamp_end": 1713.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "based on many other factors, such as experience,",
+    "timestamp_start": 1713.54,
+    "timestamp_end": 1716.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "preference, the situation, and the condition.",
+    "timestamp_start": 1716.98,
+    "timestamp_end": 1719.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then you move on to the next level, next item,",
+    "timestamp_start": 1721.44,
+    "timestamp_end": 1726.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that's the, or the next stage,",
+    "timestamp_start": 1729.02,
+    "timestamp_end": 1732.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that is to mention the feedback.",
+    "timestamp_start": 1732.06,
+    "timestamp_end": 1734.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now when you do the mentioning of the feedback again,",
+    "timestamp_start": 1735.9,
+    "timestamp_end": 1739.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the things, the feedback, the feedback, the feedback,",
+    "timestamp_start": 1739.38,
+    "timestamp_end": 1740.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are happening inside.",
+    "timestamp_start": 1740.2,
+    "timestamp_end": 1741.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Things are happening internally to your head.",
+    "timestamp_start": 1741.74,
+    "timestamp_end": 1745.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you are mentioning the feedback,",
+    "timestamp_start": 1745.74,
+    "timestamp_end": 1747.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if you are giving that phone call,",
+    "timestamp_start": 1747.58,
+    "timestamp_end": 1752.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then you are internally, you are recording that experience.",
+    "timestamp_start": 1753.92,
+    "timestamp_end": 1757.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You are trying to remember, or you are trying to recall",
+    "timestamp_start": 1758.18,
+    "timestamp_end": 1762.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how you actually felt.",
+    "timestamp_start": 1762.16,
+    "timestamp_end": 1763.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then you are trying to think about",
+    "timestamp_start": 1765.88,
+    "timestamp_end": 1768.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the best way to tell that.",
+    "timestamp_start": 1768.2,
+    "timestamp_end": 1770.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you are trying to think about,",
+    "timestamp_start": 1770.2,
+    "timestamp_end": 1771.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how to reason it out.",
+    "timestamp_start": 1771.7,
+    "timestamp_end": 1772.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And you are trying to think about,",
+    "timestamp_start": 1773.54,
+    "timestamp_end": 1775.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how to reason it out.",
+    "timestamp_start": 1775.74,
+    "timestamp_end": 1777.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There may be some people who want to put it",
+    "timestamp_start": 1778.6,
+    "timestamp_end": 1781.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "just in point blank and white,",
+    "timestamp_start": 1781.2,
+    "timestamp_end": 1783.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like, you don't mind being rude.",
+    "timestamp_start": 1783.88,
+    "timestamp_end": 1786.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There may be another person who doesn't want to be rude.",
+    "timestamp_start": 1786.42,
+    "timestamp_end": 1789.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So he's trying to think about the best way",
+    "timestamp_start": 1789.78,
+    "timestamp_end": 1793.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to give this feedback.",
+    "timestamp_start": 1793.2,
+    "timestamp_end": 1795.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And another person, that person is so angry,",
+    "timestamp_start": 1797.42,
+    "timestamp_end": 1798.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "they are doesn't want to be rude.",
+    "timestamp_start": 1798.86,
+    "timestamp_end": 1800.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so he wants to let the other end know that you are so disappointed and angry",
+    "timestamp_start": 1800.08,
+    "timestamp_end": 1806.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that then the use of language and tone and everything is different so there are",
+    "timestamp_start": 1806.5,
+    "timestamp_end": 1813.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "many things going on",
+    "timestamp_start": 1813.28,
+    "timestamp_end": 1816.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then finally you can submit the feedback if it was actually a verbal",
+    "timestamp_start": 1817.46,
+    "timestamp_end": 1823.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "feedback or maybe like you can say that's what I need to say and that's it",
+    "timestamp_start": 1823.84,
+    "timestamp_end": 1829.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then otherwise if it is an email you send it if it is a form field you will",
+    "timestamp_start": 1830.08,
+    "timestamp_end": 1837.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "click the submit button so there may be many different way that you take it so",
+    "timestamp_start": 1837.0,
+    "timestamp_end": 1843.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if you try to mention the feed like mention how elaborately you can take",
+    "timestamp_start": 1843.08,
+    "timestamp_end": 1852.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "some of these steps so here you get an example if you consider the right and",
+    "timestamp_start": 1852.94,
+    "timestamp_end": 1859.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "right",
+    "timestamp_start": 1859.48,
+    "timestamp_end": 1859.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "example if you consider the right and right",
+    "timestamp_start": 1859.86,
+    "timestamp_end": 1859.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "example if you consider the right and right",
+    "timestamp_start": 1859.94,
+    "timestamp_end": 1860.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "mentioned feedback step in reality it involves a lot of cognitive tasks as we",
+    "timestamp_start": 1860.06,
+    "timestamp_end": 1868.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "discussed they are not observable because it purely happens inside your",
+    "timestamp_start": 1868.46,
+    "timestamp_end": 1876.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "head now if you look at the area which has been marked with this dashed line so",
+    "timestamp_start": 1876.56,
+    "timestamp_end": 1888.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it is a recurring process of recalling the service experience and you assess",
+    "timestamp_start": 1888.24,
+    "timestamp_end": 1895.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the service quality and mentally agree and organize what to mention",
+    "timestamp_start": 1895.82,
+    "timestamp_end": 1904.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you maintain you agree and organize what to mention that is important you again",
+    "timestamp_start": 1905.62,
+    "timestamp_end": 1911.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "recall the service experience you assess the quality and then you agree how to",
+    "timestamp_start": 1911.86,
+    "timestamp_end": 1917.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "mention that",
+    "timestamp_start": 1917.6,
+    "timestamp_end": 1918.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so this will be a recurrent process until you finalize your message right so",
+    "timestamp_start": 1918.24,
+    "timestamp_end": 1931.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this assessing the service quality is not an not a standalone approach or not",
+    "timestamp_start": 1931.36,
+    "timestamp_end": 1936.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a standalone activity is assessing the service quality implies that you compare",
+    "timestamp_start": 1936.46,
+    "timestamp_end": 1943.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it with your expectation",
+    "timestamp_start": 1943.78,
+    "timestamp_end": 1947.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "may be a recurrent process but you finalize your message and then you agree and organize what to mention that is important you again recall the service experience and then you agree how to mention that",
+    "timestamp_start": 1947.24,
+    "timestamp_end": 1948.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you compare it with a previous experience if you have had a better",
+    "timestamp_start": 1948.24,
+    "timestamp_end": 1955.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "experience earlier you will rate this below average but if we had a worse",
+    "timestamp_start": 1955.62,
+    "timestamp_end": 1964.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "experience earlier you will consider this service good so that is solely",
+    "timestamp_start": 1964.42,
+    "timestamp_end": 1972.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "dependent on your experience earlier",
+    "timestamp_start": 1972.6,
+    "timestamp_end": 1977.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so this is another – I guess I will call it a",
+    "timestamp_start": 1978.24,
+    "timestamp_end": 2000.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ila",
+    "timestamp_start": 2000.5,
+    "timestamp_end": 2002.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "see you soon",
+    "timestamp_start": 2002.4,
+    "timestamp_end": 2004.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "okay",
+    "timestamp_start": 2004.28,
+    "timestamp_end": 2007.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "okay",
+    "timestamp_start": 2007.18,
+    "timestamp_end": 2007.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the organization and agreeing on what to mention assume that you're talking to a person who is very",
+    "timestamp_start": 2007.7,
+    "timestamp_end": 2015.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "cooperative the way you mention even a negative point may not be so harsh because the other end",
+    "timestamp_start": 2015.94,
+    "timestamp_end": 2023.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the next other person is cooperative and understanding but if you are dealing with",
+    "timestamp_start": 2023.6,
+    "timestamp_end": 2030.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a person who is so reaching who is difficult to convince then the way you mention will also be",
+    "timestamp_start": 2030.86,
+    "timestamp_end": 2038.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "changed so now everything is mental process so it's a cognitive work you need to understand that",
+    "timestamp_start": 2038.78,
+    "timestamp_end": 2050.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 2056.66,
+    "timestamp_end": 2056.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "continue now when you take this we will try to convert this previous experience",
+    "timestamp_start": 2061.38,
+    "timestamp_end": 2072.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "into the textual hierarchical analysis that means the hierarchical task analysis HTA stands",
+    "timestamp_start": 2072.14,
+    "timestamp_end": 2083.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for hierarchical task analysis so it happens in two different were textual and diagrammatic",
+    "timestamp_start": 2083.94,
+    "timestamp_end": 2090.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "normally we do the textual first and then the then represented diagrammatically later so now",
+    "timestamp_start": 2090.5,
+    "timestamp_end": 2099.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when you take this there are different levels the root level is the provide feedback and then",
+    "timestamp_start": 2099.2,
+    "timestamp_end": 2108.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it comes to the next layer you have the choose feedback method the right-o mention the feedback",
+    "timestamp_start": 2108.68,
+    "timestamp_end": 2117.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and submit feedback when you take this we will let's imagine you take all the email and the",
+    "timestamp_start": 2117.12,
+    "timestamp_end": 2128.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "form fill method so then there may be many different aspects you can take under the",
+    "timestamp_start": 2128.46,
+    "timestamp_end": 2136.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "mentioning of the feedback when you are mentioning the feedback one action that you can perform is",
+    "timestamp_start": 2136.56,
+    "timestamp_end": 2142.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "opening email and then writing the email",
+    "timestamp_start": 2142.14,
+    "timestamp_end": 2146.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the next will be opening the form and filling out the form based on the method that you have chosen",
+    "timestamp_start": 2147.12,
+    "timestamp_end": 2156.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you will take two point one and two point two or two point three and two point four depending on",
+    "timestamp_start": 2156.54,
+    "timestamp_end": 2163.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which branch you take and then you are going to submit submission will be either sending",
+    "timestamp_start": 2163.92,
+    "timestamp_end": 2171.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "an email or submit the form that means you click on the send button",
+    "timestamp_start": 2171.2,
+    "timestamp_end": 2176.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "click on the submit button on the form so when you take this now you can",
+    "timestamp_start": 2177.12,
+    "timestamp_end": 2182.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "diagrammatically represent it like you get the root level provide feedback",
+    "timestamp_start": 2182.88,
+    "timestamp_end": 2192.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then choose the feedback method you have chosen it then you are going to get into",
+    "timestamp_start": 2192.4,
+    "timestamp_end": 2201.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the next branch so it's a rightention the feedback now there the",
+    "timestamp_start": 2201.78,
+    "timestamp_end": 2208.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "choice here if you have chosen one method you will do one set of action",
+    "timestamp_start": 2208.96,
+    "timestamp_end": 2216.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if you choose another method you will do another set of action so if the feedback",
+    "timestamp_start": 2216.06,
+    "timestamp_end": 2222.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "method is email do 2.1 and 2.2 in order you will do 2.1",
+    "timestamp_start": 2222.18,
+    "timestamp_end": 2231.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and two point two in order r trade mother j organization review the different",
+    "timestamp_start": 2231.16,
+    "timestamp_end": 2231.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "rolling and spreading the message in order and if you change the space type",
+    "timestamp_start": 2231.6,
+    "timestamp_end": 2231.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the data will pop out fixed the report will once organically and file can e-mail",
+    "timestamp_start": 2231.66,
+    "timestamp_end": 2231.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "point two in order if it is email else you are going to do two point three and two point four",
+    "timestamp_start": 2231.76,
+    "timestamp_end": 2240.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in order at a given time either two point one and two point two or two point three and two point four",
+    "timestamp_start": 2240.64,
+    "timestamp_end": 2249.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "will be taken and then once you finish this end then you are going to move again towards the next",
+    "timestamp_start": 2249.2,
+    "timestamp_end": 2259.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this is a submit so when you submit it will be either email sending or form fill submission",
+    "timestamp_start": 2259.6,
+    "timestamp_end": 2266.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then again you do a check if the feedback method is email then do 3.1",
+    "timestamp_start": 2267.92,
+    "timestamp_end": 2274.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "else do 3.2 so this is a very simple way of representing",
+    "timestamp_start": 2276.48,
+    "timestamp_end": 2284.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the task of providing",
+    "timestamp_start": 2286.96,
+    "timestamp_end": 2289.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a feedback okay so what you need to understand here is in this diagram you go from top to bottom",
+    "timestamp_start": 2289.6,
+    "timestamp_end": 2299.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "left to right approach so you will take top to bottom left to right approach",
+    "timestamp_start": 2299.04,
+    "timestamp_end": 2305.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it initially takes top to bottom",
+    "timestamp_start": 2316.16,
+    "timestamp_end": 2319.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then it goes from left to right",
+    "timestamp_start": 2319.6,
+    "timestamp_end": 2324.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now when it comes here there is something to go inside again top to bottom then goes from left to",
+    "timestamp_start": 2324.24,
+    "timestamp_end": 2332.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "right as there is a selection you need to take this the two sets separately like this now you",
+    "timestamp_start": 2332.72,
+    "timestamp_end": 2341.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "need to take this",
+    "timestamp_start": 2341.84,
+    "timestamp_end": 2344.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the two sets separately like this now one of these things are done then it will go back here",
+    "timestamp_start": 2344.96,
+    "timestamp_end": 2352.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then again come back there is an option either this or this",
+    "timestamp_start": 2352.24,
+    "timestamp_end": 2357.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and finally it will be over so you have to remember top to bottom left to right left to right",
+    "timestamp_start": 2357.04,
+    "timestamp_end": 2362.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and this is the same thing you have to take as a reference for the next time",
+    "timestamp_start": 2362.56,
+    "timestamp_end": 2368.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now you have to remember this is the same thing you have to do for this process",
+    "timestamp_start": 2368.4,
+    "timestamp_end": 2373.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "okay",
+    "timestamp_start": 2373.2,
+    "timestamp_end": 2373.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "left to right navigation, top to bottom, left to right.",
+    "timestamp_start": 2373.6,
+    "timestamp_end": 2377.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So all the time when you go to one step,",
+    "timestamp_start": 2378.38,
+    "timestamp_end": 2381.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you check whether there are sub-branches of it.",
+    "timestamp_start": 2381.44,
+    "timestamp_end": 2384.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If there are, all the sub-branches will be completed",
+    "timestamp_start": 2384.4,
+    "timestamp_end": 2387.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "before moving to the right.",
+    "timestamp_start": 2387.4,
+    "timestamp_end": 2388.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is what you do here.",
+    "timestamp_start": 2389.52,
+    "timestamp_end": 2391.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is how you travel through the diagrammatic HTA.",
+    "timestamp_start": 2391.46,
+    "timestamp_end": 2395.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is a very simple thing.",
+    "timestamp_start": 2396.74,
+    "timestamp_end": 2399.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can even have more elaborated aspects.",
+    "timestamp_start": 2399.06,
+    "timestamp_end": 2403.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is the first wave,",
+    "timestamp_start": 2404.42,
+    "timestamp_end": 2406.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and we are going to change the view here.",
+    "timestamp_start": 2406.24,
+    "timestamp_end": 2408.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Imagine somebody might have also thought about",
+    "timestamp_start": 2410.48,
+    "timestamp_end": 2414.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the same thing with only two steps.",
+    "timestamp_start": 2414.12,
+    "timestamp_end": 2418.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You need to provide feedback.",
+    "timestamp_start": 2419.18,
+    "timestamp_end": 2421.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are the two methods.",
+    "timestamp_start": 2422.86,
+    "timestamp_end": 2424.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Choose the feedback method and submit the feedback.",
+    "timestamp_start": 2425.0,
+    "timestamp_end": 2428.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You have not taken it down as the mentioning of the feedback.",
+    "timestamp_start": 2429.06,
+    "timestamp_end": 2434.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Instead, you have taken only two steps.",
+    "timestamp_start": 2435.64,
+    "timestamp_end": 2437.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the submit feedback step,",
+    "timestamp_start": 2438.92,
+    "timestamp_end": 2442.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there are sub-steps, 2.1, 2.2, and 2.3,",
+    "timestamp_start": 2442.44,
+    "timestamp_end": 2448.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to represent the emailing, open writing, and sending.",
+    "timestamp_start": 2448.82,
+    "timestamp_end": 2451.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And similarly, 2.4, 2.5, and 2.6 represent the form filling",
+    "timestamp_start": 2452.4,
+    "timestamp_end": 2457.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to open.",
+    "timestamp_start": 2457.76,
+    "timestamp_end": 2458.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can fill and submit.",
+    "timestamp_start": 2459.06,
+    "timestamp_end": 2460.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you do this, this is how you are modeling it.",
+    "timestamp_start": 2460.06,
+    "timestamp_end": 2466.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now you come from top to bottom, and here you go, and it is this.",
+    "timestamp_start": 2466.06,
+    "timestamp_end": 2473.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then you are going to take this, and you have a bunch of things together,",
+    "timestamp_start": 2473.06,
+    "timestamp_end": 2481.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and another bunch of things together.",
+    "timestamp_start": 2481.06,
+    "timestamp_end": 2484.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now imagine this is the same thing, but you have a different form.",
+    "timestamp_start": 2484.06,
+    "timestamp_end": 2487.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You have a different form.",
+    "timestamp_start": 2487.06,
+    "timestamp_end": 2488.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You have a different form.",
+    "timestamp_start": 2488.06,
+    "timestamp_end": 2488.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You have a different form.",
+    "timestamp_start": 2488.54,
+    "timestamp_end": 2489.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now imagine this is a simple example of providing a feedback.",
+    "timestamp_start": 2489.04,
+    "timestamp_end": 2494.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now imagine this is a simple example of providing a feedback.",
+    "timestamp_start": 2494.04,
+    "timestamp_end": 2496.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now in this, we have seen there are two different ways.",
+    "timestamp_start": 2496.04,
+    "timestamp_end": 2501.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Currently, we have discussed two different ways of representing the same thing.",
+    "timestamp_start": 2501.04,
+    "timestamp_end": 2508.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now when it comes to a very complicated task,",
+    "timestamp_start": 2508.04,
+    "timestamp_end": 2511.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can you imagine how many different representations that we need to reflect in our design?",
+    "timestamp_start": 2511.04,
+    "timestamp_end": 2518.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now imagine how many different representations that we need to reflect in our design?",
+    "timestamp_start": 2518.04,
+    "timestamp_end": 2519.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now imagine how many different representations that we need to reflect in our design?",
+    "timestamp_start": 2519.04,
+    "timestamp_end": 2521.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you try to do this HTA textually and diagrammatically,",
+    "timestamp_start": 2521.04,
+    "timestamp_end": 2527.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you will see many different avenues that the task can traverse through.",
+    "timestamp_start": 2527.04,
+    "timestamp_end": 2535.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Depending on that, you can give many designing options.",
+    "timestamp_start": 2535.04,
+    "timestamp_end": 2542.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is what we need to do this modeling for.",
+    "timestamp_start": 2542.04,
+    "timestamp_end": 2546.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is what we need to do this modeling for.",
+    "timestamp_start": 2546.04,
+    "timestamp_end": 2547.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is what we need to do this modeling for.",
+    "timestamp_start": 2547.04,
+    "timestamp_end": 2548.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now I want you to get into this exercise",
+    "timestamp_start": 2548.04,
+    "timestamp_end": 2556.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "right prepare textual HTA and diagrammatic HTA for searching",
+    "timestamp_start": 2556.1,
+    "timestamp_end": 2564.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "something in Google okay I will make available a link on model you do your",
+    "timestamp_start": 2564.0,
+    "timestamp_end": 2574.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "work and submit it there it is not an assignment but this will be taken for",
+    "timestamp_start": 2574.04,
+    "timestamp_end": 2581.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "discussion for completeness if you are in a position not to where you do not",
+    "timestamp_start": 2581.48,
+    "timestamp_end": 2589.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "have a computer but computer with you it's all fine all what you need to do is",
+    "timestamp_start": 2589.46,
+    "timestamp_end": 2598.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "do it on a paper take a photo and upload that's enough okay do it on paper",
+    "timestamp_start": 2598.08,
+    "timestamp_end": 2603.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "okay do it on paper take a photo and upload that's enough okay do it on paper",
+    "timestamp_start": 2603.8,
+    "timestamp_end": 2604.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "take a photo and upload I will make available the link I will give you I",
+    "timestamp_start": 2604.02,
+    "timestamp_end": 2613.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "will say 10 minutes or 15 minutes if you want finish it by 12 10 10 minutes past",
+    "timestamp_start": 2613.26,
+    "timestamp_end": 2628.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "12 so I will make the link available on mode",
+    "timestamp_start": 2628.64,
+    "timestamp_end": 2633.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so I will make the link available on mode",
+    "timestamp_start": 2633.78,
+    "timestamp_end": 2633.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so I will make the link available on mode",
+    "timestamp_start": 2633.8,
+    "timestamp_end": 2633.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so I will make the link available on mode",
+    "timestamp_start": 2634.02,
+    "timestamp_end": 2636.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  }
+]
