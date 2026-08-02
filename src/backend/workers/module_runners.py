@@ -420,10 +420,28 @@ def run_module4(
     fused_segments = fusion.fuse(module1_data, module2_data, module3_data)
     selected_segments = fusion.select_segments(fused_segments, max_duration=TARGET_SUMMARY_LENGTH)
 
+    if not selected_segments and fused_segments:
+        # Every segment fell under min_score_threshold (e.g. a quiet lecture
+        # opening with no important speech or slides yet). Rather than fail
+        # the whole job with no video at all, fall back to the highest-scoring
+        # segments regardless of threshold, up to the duration cap.
+        print("No segments met the fusion threshold - falling back to top-scoring segments regardless of threshold.")
+        fallback = []
+        total_duration = 0.0
+        for seg in fused_segments:  # already sorted by fused_score, best first
+            seg_duration = seg["timestamp_end"] - seg["timestamp_start"]
+            if total_duration + seg_duration > TARGET_SUMMARY_LENGTH:
+                continue
+            fallback.append(seg)
+            total_duration += seg_duration
+            if total_duration >= min(30.0, TARGET_SUMMARY_LENGTH):
+                break
+        selected_segments = sorted(fallback, key=lambda s: s["timestamp_start"])
+
     if not selected_segments:
         raise ValueError(
-            "Module 4 fusion selected zero segments - check Module 1/2/3 outputs "
-            "and the min_score_threshold."
+            "Module 4 fusion selected zero segments - check Module 1/2/3 outputs; "
+            "the input video may have no usable segments at all."
         )
 
     generator = HighlightVideoGenerator(max_duration=TARGET_SUMMARY_LENGTH)

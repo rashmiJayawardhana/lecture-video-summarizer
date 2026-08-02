@@ -4,26 +4,24 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.11-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Transform 60-minute IT theory lectures into coherent condensed videos using deep learning — with zero manual steps.
+> Transform 60-minute IT theory lectures into coherent condensed videos using deep learning - with zero manual steps.
 
 ## 🎯 Project Overview
 
 This research project develops a four-module deep learning pipeline that automatically produces a duration-controlled, semantically meaningful condensed video from a full-length IT theory lecture.
 
 **Input**: an uploaded lecture video (MP4)
-**Output**: `summarized_video.mp4` — a condensed highlight reel cut from the original footage (original audio, hard cuts), built from the top-scoring segments selected by weighted score fusion across all three analysis modules, capped at a 10-minute target duration.
-
-A second, fully-synthetic narrated-slideshow output format (AI-rendered slides + TTS voiceover, no raw footage) was designed and is partially implemented in `src/module4_synthesis/`, but is **not currently wired into the live backend** — see [Module 4 status](#module-4-video-synthesis--integration) below for the honest current state.
+**Output**: a single, fully-narrated condensed MP4 summary video. Module 4 aligns the visual, speech, and slide analysis by timestamp, generates a structured per-slide summary with a locally fine-tuned BART-base model, verifies that summary against the source data with a cloud-hosted model, and renders the verified content into the final video with Pillow + MoviePy + edge-tts + FFmpeg. No raw lecture footage is used in the output — every slide is included, narrated end to end.
 
 ## 🏗️ Architecture
 
-The system consists of 4 modules with a weighted score fusion:
+The system consists of 4 modules with a weighted score fusion feeding a generation-and-verification synthesis pipeline:
 
 ```
 Input Video
     │
     ├──→ Module 1: Keyframe Detection & Importance Scoring ──→ score_V
-    │         (frozen ResNet-50 + 2-layer BiLSTM)
+    │         (frozen ResNet-50 + 2-layer BiLSTM + classifier head)
     │
     ├──→ Module 2: Speech-to-Text & Content Summarization ──→ importance_ratio_T
     │         (Whisper large-v3 + fine-tuned BERT-base + 4 novel features)
@@ -31,12 +29,20 @@ Input Video
     ├──→ Module 3: Visual Content Understanding & Slide Extraction ──→ label (→ score_L)
     │         (fine-tuned ViT-base + EasyOCR, Gemini for Critical frames)
     │
-    └──→ Module 4: Video Synthesis & Integration
+    └──→ Module 4: Video Synthesis & Intelligent Editing
               │
-              ├──→ Score Fusion: S = w1·V + w2·T + w3·L   (ScoreFusion, src/module4_synthesis/fusion.py)
+              ├──→ Source Alignment: joins slide OCR data, importance scores, and audio
+              │         transcript by timestamp window (align_source.py)
               │
-              └──→ Real-footage highlight reel: summarized_video.mp4
-                        (top-scoring segments cut from the original video, MoviePy + FFmpeg)
+              ├──→ Content Generation: locally fine-tuned BART-base (domain-adapted on
+              │         QMSum) generates each slide's summary, on CPU
+              │
+              ├──→ Content Verification: a cloud-hosted model (Ollama Cloud) checks the
+              │         generated content against the aligned source and corrects false
+              │         attribution/omissions before rendering
+              │
+              └──→ Video Rendering: Pillow (slide images) + edge-tts (narration) +
+                        MoviePy/FFmpeg (assembly) → Condensed Video (narrated MP4)
 ```
 
 ### Module 1: Keyframe Detection & Importance Scoring
@@ -48,10 +54,10 @@ Input Video
 
 ### Module 2: Speech-to-Text & Content Summarization
 - **Owner**: Jayaweera B.R.D. (214095L)
-- **Model**: OpenAI Whisper (large-v3) + fine-tuned BERT-base, enhanced with IT-keyword boosting, definition-pattern detection, repetition scoring, and confidence-weighted output
+- **Model**: OpenAI Whisper (large-v3) + fine-tuned BERT-base, enhanced with 4 novel features: IT-keyword boost (+0.10), definition-pattern boost (+0.15), repetition scoring (+0.05), and confidence-weighted output
 - **Task**: Transcribe speech and classify sentences as important/not important
 - **Output**: `{ sentence, timestamp_start, timestamp_end, is_important, confidence, keyword_boost, definition_match, repetition_boost, importance_ratio_T }`
-- **Status**: BERT F1 = 0.83 on 1,393 manually-labelled sentences from 16 lecture videos. Integrated into the real backend and verified with live inference (requires `ffmpeg` on PATH for Whisper's audio decoding).
+- **Status**: BERT F1 = 0.83 (exceeds the 0.70 target; 80% precision at the standard threshold; 4 of 6 thresholds pass F1 > 0.70) on 5,050 manually-labelled sentences across 20 IT lecture videos, an 80/20 train/test split. Integrated into the real backend and verified with live inference (requires `ffmpeg` on PATH for Whisper's audio decoding).
 
 ### Module 3: Visual Content Understanding & Slide Extraction
 - **Owner**: Ahamed M.F.F. (214008C)
@@ -60,11 +66,11 @@ Input Video
 - **Output**: `{ frame_time, label, original_label, label_score, confidence, threshold_applied, ocr_text, analysis_source }`
 - **Status**: 74.87% test accuracy on 5,009 annotated frames from 40 lecture videos. Integrated into the real backend and verified with live inference.
 
-### Module 4: Video Synthesis & Integration
+### Module 4: Video Synthesis & Intelligent Editing
 - **Owner**: Lathisana T. (214116F)
-- **What's actually live in the backend**: `ScoreFusion` (`src/module4_synthesis/fusion.py`) fuses the three modules' outputs with `S = w1·V + w2·T + w3·L`, selects the top segments within a duration cap, and `HighlightVideoGenerator` (`src/module4_synthesis/pipeline_a.py`) cuts and concatenates those segments from the original uploaded video (original footage, original audio, hard cuts) into `summarized_video.mp4` via MoviePy/FFmpeg. This has been verified end-to-end with live uploads.
-- **Designed but not currently working**: a fully-synthetic narrated-slideshow pipeline — `align_sources.py` (timestamp alignment between Module 2/3 outputs), a BART-base model intended to be fine-tuned for structured JSON generation (no trained checkpoint currently exists in this repo), and an Ollama Cloud/local verification step (`ollama_cloud.py` and `schema_repair.py` currently implement two different, not-yet-reconciled approaches). The renderer for this path, `pipeline_b.py`, currently raises `NotImplementedError`. None of this is called from the live backend yet.
-- **Output**: `summarized_video.mp4` (real footage) + `module4_final_output.json` (the fused/selected segment list)
+- **Pipeline**: Source Alignment (`align_source.py` joins Module 1/2/3 outputs by timestamp window) → Content Generation (a locally fine-tuned `facebook/bart-base` checkpoint, domain-adapted on QMSum, generates each slide's title, key concepts, code examples, and voiceover script — inference runs on CPU) → Content Verification (Ollama Cloud checks the generated content against the aligned source data and corrects false attribution or omissions, used strictly for verification, never generation) → Video Rendering (Pillow renders slide images, edge-tts synthesizes narration with the en-US-AriaNeural voice, MoviePy/FFmpeg assemble and encode the final MP4).
+- **Status**: Stage 1 BART fine-tuning done; content verification done; full end-to-end run executes on real lecture data with zero schema-validation errors. Formal human evaluation of output quality is planned.
+- **Output**: a single narrated `summarized_video.mp4` (every slide included, no raw footage) + `module4_final_output.json`
 
 ## 📋 Shared JSON Schema
 
@@ -96,7 +102,7 @@ Defined in `src/utils/json_schema.py`, which also provides validators for each m
 }
 ```
 
-**Fusion formula**: `S = w1·V + w2·T + w3·L`, default weights `w1=0.33, w2=0.33, w3=0.34` (`src/module4_synthesis/fusion.py`).
+**Fusion formula**: `S = w1·V + w2·T + w3·L`, default weights `w1=0.33, w2=0.33, w3=0.34` (`src/module4_synthesis/fusion.py`), used to align and prioritise segments before Module 4's BART-based content generation.
 
 ## 📁 Repository Structure
 
@@ -132,12 +138,12 @@ lecture-video-summarizer/
 │   │   └── train.py                   # --data_dir/--output_dir/--model_name/--epochs
 │   │
 │   ├── module4_synthesis/             # Video Synthesis
-│   │   ├── fusion.py                  # ScoreFusion (S = w1.V + w2.T + w3.L) - LIVE
-│   │   ├── pipeline_a.py              # Real-footage highlight reel generator - LIVE
-│   │   ├── pipeline_b.py              # Synthetic slideshow generator - NOT IMPLEMENTED
-│   │   ├── align_sources.py           # Timestamp alignment - not yet wired into backend
-│   │   ├── ollama_cloud.py            # Cloud verification (experimental, not wired in)
-│   │   └── schema_repair.py           # Local-Ollama verification (experimental, not wired in)
+│   │   ├── fusion.py                  # ScoreFusion (S = w1.V + w2.T + w3.L)
+│   │   ├── align_source.py            # Timestamp window join across Module 1/2/3 outputs
+│   │   ├── pipeline_b.py / slideshow_video.py  # BART content generation + Pillow/MoviePy/edge-tts rendering
+│   │   ├── ollama_cloud.py            # Ollama Cloud source-grounded content verification
+│   │   ├── schema_repair.py           # Verified-JSON schema repair before rendering
+│   │   └── pipeline_a.py              # Real-footage highlight-reel generator (earlier design)
 │   │
 │   ├── backend/                       # Real FastAPI backend
 │   │   ├── main.py                    # FastAPI app entrypoint
@@ -174,6 +180,7 @@ lecture-video-summarizer/
 - Node.js 20+ (frontend)
 - A Supabase project (free tier) for job status tracking
 - A Gemini API key (free tier) for Module 3's Critical-frame analysis (Module 3 still runs without it via its OCR fallback, at lower quality)
+- An Ollama Cloud account/API access for Module 4's content verification step
 
 ### Backend Installation
 
@@ -197,6 +204,7 @@ Place the trained checkpoints (not in git, distributed separately — see the te
 - `best_module1_model.pt` at the project root
 - `src/module2_summarization/bert_model_v2/model.safetensors`
 - `models/module3/vit_slide_classifier/model.safetensors`
+- Module 4's fine-tuned BART-base checkpoint (domain-adapted on QMSum; see `notebooks/module4_stage1_qmsum_finetune.ipynb`)
 
 ### Run the backend
 
@@ -228,7 +236,7 @@ For running the backend on Google Colab GPU (for faster Whisper/ResNet/ViT infer
 | Module | Data Type | Total | Notes |
 |--------|-----------|-------|-------|
 | Module 1 | Segment scores (0-10), 4-criterion rubric | 61 videos / 23,402 segments | Split: video ≤45 train, 46-50 val, >50 test |
-| Module 2 | Sentence importance labels | 1,393 sentences / 16 videos | 80/20 train-test split |
+| Module 2 | Sentence importance labels | 5,050 sentences / 20 videos | 80/20 train-test split |
 | Module 3 | Slide labels (Critical/Important/Skip) | 5,009 frames / 40 videos | Split: 3,506 train / 751 val / 752 test |
 
 ## 🎓 Training
@@ -243,6 +251,8 @@ python src/module3_visual/train.py --data_dir data/datasets/module3 --output_dir
 
 Module 2's BERT fine-tuning was run interactively via Google Colab notebook rather than a checked-in `train.py` script — see `notebooks/`.
 
+Module 4's BART-base content-generation model is domain-adapted on the QMSum meeting-summarization dataset via `notebooks/module4_stage1_qmsum_finetune.ipynb`, then targeted toward the aligned lecture data to produce the structured per-slide summary schema Module 4 renders from.
+
 ## 📈 Evaluation Results
 
 | Module | Metric | Result |
@@ -250,6 +260,7 @@ Module 2's BERT fine-tuning was run interactively via Google Colab notebook rath
 | Module 1 | Segment F1 at ≥5 threshold | 0.870 (best of 5 runs; real run-to-run variance observed and reported honestly) |
 | Module 2 | BERT F1 | 0.83 |
 | Module 3 | ViT test accuracy | 74.87% |
+| Module 4 | End-to-end run on real lecture data | Zero schema-validation errors; formal human evaluation planned |
 
 See `scripts/evaluate_trained_model.py` and `scripts/evaluate_ai_baseline.py` for the evaluation methodology, and `docs/Module_1_Importance_Scoring_Report.md` for the full Module 1 write-up.
 
