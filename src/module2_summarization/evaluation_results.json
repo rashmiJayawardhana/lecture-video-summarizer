@@ -1,0 +1,16 @@
+{
+  "dataset_size": 3061,
+  "train_size": 2448,
+  "test_size": 613,
+  "cutoff_threshold": 0.5,
+  "precision": 0.7185,
+  "recall": 0.6287,
+  "f1_score": 0.6706,
+  "accuracy": 0.7259,
+  "true_positives": 171,
+  "true_negatives": 274,
+  "false_positives": 67,
+  "false_negatives": 101,
+  "target_f1": 0.7,
+  "target_met": false
+}

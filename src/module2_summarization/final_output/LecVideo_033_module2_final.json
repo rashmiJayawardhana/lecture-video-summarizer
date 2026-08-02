@@ -1,0 +1,3892 @@
+[
+  {
+    "segment_id": "seg_000",
+    "timestamp_start": 0.0,
+    "timestamp_end": 10.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "In the last lecture we discussed about mental models and the importance of having mental",
+        "timestamp_start": 0.0,
+        "timestamp_end": 9.6,
+        "is_important": true,
+        "confidence": 0.748,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_003",
+    "timestamp_start": 30.0,
+    "timestamp_end": 40.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "everybody to look at the same thing in the same way.",
+        "timestamp_start": 34.18,
+        "timestamp_end": 38.24,
+        "is_important": false,
+        "confidence": 0.189,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_005",
+    "timestamp_start": 50.0,
+    "timestamp_end": 60.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "successful.",
+        "timestamp_start": 52.86,
+        "timestamp_end": 55.3,
+        "is_important": false,
+        "confidence": 0.1,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "Because the design is not successful.",
+        "timestamp_start": 55.3,
+        "timestamp_end": 55.46,
+        "is_important": false,
+        "confidence": 0.373,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_006",
+    "timestamp_start": 60.0,
+    "timestamp_end": 70.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "Instead, you need to have multiple ways to do the same thing when you consider multiple",
+        "timestamp_start": 60.6,
+        "timestamp_end": 67.92,
+        "is_important": true,
+        "confidence": 0.674,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_008",
+    "timestamp_start": 80.0,
+    "timestamp_end": 90.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "the users' different thinking.",
+        "timestamp_start": 84.0,
+        "timestamp_end": 85.46,
+        "is_important": false,
+        "confidence": 0.39,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_009",
+    "timestamp_start": 90.0,
+    "timestamp_end": 100.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So there are many different models available.",
+        "timestamp_start": 90.6,
+        "timestamp_end": 93.8,
+        "is_important": false,
+        "confidence": 0.297,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_010",
+    "timestamp_start": 100.0,
+    "timestamp_end": 110.0,
+    "importance_ratio_T": 0.667,
+    "sentences": [
+      {
+        "sentence": "And two commonly used models are the GOMS, goals, operations, methods and selection.",
+        "timestamp_start": 101.6,
+        "timestamp_end": 107.6,
+        "is_important": true,
+        "confidence": 0.959,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So we will be discussing about GOMS later.",
+        "timestamp_start": 107.6,
+        "timestamp_end": 108.6,
+        "is_important": false,
+        "confidence": 0.134,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So the first one is the mental model.",
+        "timestamp_start": 108.6,
+        "timestamp_end": 109.6,
+        "is_important": true,
+        "confidence": 0.728,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_011",
+    "timestamp_start": 110.0,
+    "timestamp_end": 120.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "The third one is the cognitive model.",
+        "timestamp_start": 110.6,
+        "timestamp_end": 111.6,
+        "is_important": true,
+        "confidence": 0.888,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "The fourth one is the mental model.",
+        "timestamp_start": 111.6,
+        "timestamp_end": 112.6,
+        "is_important": true,
+        "confidence": 0.732,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And the last one is the cognitive model.",
+        "timestamp_start": 112.6,
+        "timestamp_end": 113.6,
+        "is_important": true,
+        "confidence": 0.864,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So the cognitive model is the mental model.",
+        "timestamp_start": 113.6,
+        "timestamp_end": 114.6,
+        "is_important": true,
+        "confidence": 0.88,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And the last one is the visual model.",
+        "timestamp_start": 114.6,
+        "timestamp_end": 115.6,
+        "is_important": true,
+        "confidence": 0.823,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So the cognitive model is the vision model.",
+        "timestamp_start": 115.6,
+        "timestamp_end": 116.6,
+        "is_important": true,
+        "confidence": 0.913,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "The third one is the visual model.",
+        "timestamp_start": 116.6,
+        "timestamp_end": 117.6,
+        "is_important": true,
+        "confidence": 0.828,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "The guardian model is a specific visual model.",
+        "timestamp_start": 117.6,
+        "timestamp_end": 118.6,
+        "is_important": true,
+        "confidence": 0.893,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "This one is the visual model.",
+        "timestamp_start": 118.6,
+        "timestamp_end": 119.6,
+        "is_important": true,
+        "confidence": 0.828,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_012",
+    "timestamp_start": 120.0,
+    "timestamp_end": 130.0,
+    "importance_ratio_T": 0.833,
+    "sentences": [
+      {
+        "sentence": "And the fifth one is the visual model.",
+        "timestamp_start": 120.6,
+        "timestamp_end": 121.6,
+        "is_important": true,
+        "confidence": 0.811,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And then this is the visual model.",
+        "timestamp_start": 121.6,
+        "timestamp_end": 122.6,
+        "is_important": true,
+        "confidence": 0.884,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "These are the visual models.",
+        "timestamp_start": 122.6,
+        "timestamp_end": 123.6,
+        "is_important": true,
+        "confidence": 0.738,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And we will discuss about them in a few points later.",
+        "timestamp_start": 123.6,
+        "timestamp_end": 124.6,
+        "is_important": false,
+        "confidence": 0.131,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "And the next one is this hierarchical task analysis where the task will be considered",
+        "timestamp_start": 125.6,
+        "timestamp_end": 126.6,
+        "is_important": true,
+        "confidence": 0.952,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "in a manner that you can divide and convert it.",
+        "timestamp_start": 126.6,
+        "timestamp_end": 127.6,
+        "is_important": true,
+        "confidence": 0.703,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_013",
+    "timestamp_start": 130.0,
+    "timestamp_end": 140.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "And later on, we will be moving on to the GOMS model in the next lecture.",
+        "timestamp_start": 130.92,
+        "timestamp_end": 137.92,
+        "is_important": true,
+        "confidence": 0.869,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_017",
+    "timestamp_start": 170.0,
+    "timestamp_end": 180.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "to see different aspects of different users so that you understand the user better plus you get",
+        "timestamp_start": 171.72,
+        "timestamp_end": 179.8,
+        "is_important": true,
+        "confidence": 0.682,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_020",
+    "timestamp_start": 200.0,
+    "timestamp_end": 210.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "and the intentions",
+        "timestamp_start": 200.12,
+        "timestamp_end": 201.24,
+        "is_important": false,
+        "confidence": 0.124,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_021",
+    "timestamp_start": 210.0,
+    "timestamp_end": 220.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "doing what he wants to do so those are the four aspects you need to consider when you are modeling",
+        "timestamp_start": 211.72,
+        "timestamp_end": 219.8,
+        "is_important": false,
+        "confidence": 0.474,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_023",
+    "timestamp_start": 230.0,
+    "timestamp_end": 240.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "conquer approach that means you consider the entire thing you divide it into a small segment",
+        "timestamp_start": 231.72,
+        "timestamp_end": 237.48,
+        "is_important": true,
+        "confidence": 0.75,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_026",
+    "timestamp_start": 260.0,
+    "timestamp_end": 270.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "because our thinking is so fast the processing happens so fast you never notice the exact",
+        "timestamp_start": 261.72,
+        "timestamp_end": 269.72,
+        "is_important": true,
+        "confidence": 0.83,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_027",
+    "timestamp_start": 270.0,
+    "timestamp_end": 280.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "sequence of thinking that we do so now what we are trying to do",
+        "timestamp_start": 271.48,
+        "timestamp_end": 277.08,
+        "is_important": false,
+        "confidence": 0.534,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_029",
+    "timestamp_start": 290.0,
+    "timestamp_end": 300.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "different approaches",
+        "timestamp_start": 291.72,
+        "timestamp_end": 294.8,
+        "is_important": false,
+        "confidence": 0.218,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_032",
+    "timestamp_start": 320.0,
+    "timestamp_end": 330.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "about goal and task hierarchy the goals as we mentioned are the intention and",
+        "timestamp_start": 320.32,
+        "timestamp_end": 328.38,
+        "is_important": true,
+        "confidence": 0.918,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_034",
+    "timestamp_start": 340.0,
+    "timestamp_end": 350.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "are the intentions and the tasks are the actions that you perform in order to",
+        "timestamp_start": 341.38,
+        "timestamp_end": 348.36,
+        "is_important": true,
+        "confidence": 0.853,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_035",
+    "timestamp_start": 350.0,
+    "timestamp_end": 360.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "for the intention so you practice the intention through the action you",
+        "timestamp_start": 350.32,
+        "timestamp_end": 358.12,
+        "is_important": false,
+        "confidence": 0.49,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_038",
+    "timestamp_start": 380.0,
+    "timestamp_end": 390.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "and then the second one is the hierarchical task analysis so here you",
+        "timestamp_start": 380.32,
+        "timestamp_end": 387.78,
+        "is_important": true,
+        "confidence": 0.932,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_041",
+    "timestamp_start": 410.0,
+    "timestamp_end": 420.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "now when you consider the cognitive task analysis it is an approach that you",
+        "timestamp_start": 410.32,
+        "timestamp_end": 419.04,
+        "is_important": true,
+        "confidence": 0.92,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_044",
+    "timestamp_start": 440.0,
+    "timestamp_end": 450.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "and the second thing is different users don't do the same task in the same manner at the",
+        "timestamp_start": 440.32,
+        "timestamp_end": 448.14,
+        "is_important": true,
+        "confidence": 0.844,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_047",
+    "timestamp_start": 470.0,
+    "timestamp_end": 480.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "in one situation may be different from the way he does the same thing in a",
+        "timestamp_start": 470.32,
+        "timestamp_end": 477.48,
+        "is_important": false,
+        "confidence": 0.383,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_049",
+    "timestamp_start": 490.0,
+    "timestamp_end": 500.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "analysis what you try to do is to understand the underlying thought process",
+        "timestamp_start": 492.94,
+        "timestamp_end": 498.3,
+        "is_important": true,
+        "confidence": 0.826,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "of a user when performing the task when doing the task you try to understand the underlying thought process of a user when",
+        "timestamp_start": 498.3,
+        "timestamp_end": 499.98,
+        "is_important": true,
+        "confidence": 0.881,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_055",
+    "timestamp_start": 550.0,
+    "timestamp_end": 560.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So that is a goal. You want to take a call.",
+        "timestamp_start": 554.14,
+        "timestamp_end": 559.58,
+        "is_important": false,
+        "confidence": 0.241,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_056",
+    "timestamp_start": 560.0,
+    "timestamp_end": 570.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "When you want to take a call the first thing is you have to decide using which phone I am going",
+        "timestamp_start": 561.66,
+        "timestamp_end": 567.1,
+        "is_important": false,
+        "confidence": 0.282,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_059",
+    "timestamp_start": 590.0,
+    "timestamp_end": 600.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "the number",
+        "timestamp_start": 594.34,
+        "timestamp_end": 596.92,
+        "is_important": false,
+        "confidence": 0.209,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_060",
+    "timestamp_start": 600.0,
+    "timestamp_end": 610.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "to see whether the number is available or not if the number is not available",
+        "timestamp_start": 604.32,
+        "timestamp_end": 608.74,
+        "is_important": true,
+        "confidence": 0.708,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_062",
+    "timestamp_start": 620.0,
+    "timestamp_end": 630.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "the number from the order or are we going to a search through the internet",
+        "timestamp_start": 622.9,
+        "timestamp_end": 628.26,
+        "is_important": false,
+        "confidence": 0.41,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_063",
+    "timestamp_start": 630.0,
+    "timestamp_end": 640.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "many things which are happening inside when I",
+        "timestamp_start": 634.18,
+        "timestamp_end": 638.42,
+        "is_important": false,
+        "confidence": 0.207,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "when I am going to search through the internet I am going to search through the internet",
+        "timestamp_start": 638.42,
+        "timestamp_end": 638.72,
+        "is_important": false,
+        "confidence": 0.516,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_064",
+    "timestamp_start": 640.0,
+    "timestamp_end": 650.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "when all of these things are basically dictating all these things they look",
+        "timestamp_start": 643.56,
+        "timestamp_end": 643.58,
+        "is_important": false,
+        "confidence": 0.54,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_066",
+    "timestamp_start": 660.0,
+    "timestamp_end": 670.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "particular work so now all",
+        "timestamp_start": 664.48,
+        "timestamp_end": 668.4,
+        "is_important": false,
+        "confidence": 0.147,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_067",
+    "timestamp_start": 670.0,
+    "timestamp_end": 680.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So whatever which comes in between",
+        "timestamp_start": 671.82,
+        "timestamp_end": 674.3,
+        "is_important": false,
+        "confidence": 0.162,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "may not be very noticeable.",
+        "timestamp_start": 674.3,
+        "timestamp_end": 676.32,
+        "is_important": false,
+        "confidence": 0.127,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_068",
+    "timestamp_start": 680.0,
+    "timestamp_end": 690.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "So now that is also a somewhat generic example.",
+        "timestamp_start": 682.92,
+        "timestamp_end": 688.64,
+        "is_important": true,
+        "confidence": 0.69,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_069",
+    "timestamp_start": 690.0,
+    "timestamp_end": 700.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "like doing that internal mental debate",
+        "timestamp_start": 693.22,
+        "timestamp_end": 699.56,
+        "is_important": false,
+        "confidence": 0.241,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_070",
+    "timestamp_start": 700.0,
+    "timestamp_end": 710.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "Now imagine that I want to,",
+        "timestamp_start": 702.54,
+        "timestamp_end": 706.22,
+        "is_important": false,
+        "confidence": 0.174,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "I will say,",
+        "timestamp_start": 707.84,
+        "timestamp_end": 709.42,
+        "is_important": false,
+        "confidence": 0.105,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_071",
+    "timestamp_start": 710.0,
+    "timestamp_end": 720.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "just imagine now you are riding in a bus",
+        "timestamp_start": 714.6,
+        "timestamp_end": 717.54,
+        "is_important": false,
+        "confidence": 0.228,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_072",
+    "timestamp_start": 720.0,
+    "timestamp_end": 730.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So what will you do?",
+        "timestamp_start": 721.76,
+        "timestamp_end": 724.18,
+        "is_important": false,
+        "confidence": 0.095,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So if you are sitting in a seat,",
+        "timestamp_start": 725.18,
+        "timestamp_end": 727.32,
+        "is_important": false,
+        "confidence": 0.138,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_073",
+    "timestamp_start": 730.0,
+    "timestamp_end": 740.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "you will get up",
+        "timestamp_start": 732.72,
+        "timestamp_end": 734.12,
+        "is_important": false,
+        "confidence": 0.154,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "and maybe like then you will look for where the bell is.",
+        "timestamp_start": 734.12,
+        "timestamp_end": 738.52,
+        "is_important": false,
+        "confidence": 0.208,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_074",
+    "timestamp_start": 740.0,
+    "timestamp_end": 750.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "whether there are any other people",
+        "timestamp_start": 740.74,
+        "timestamp_end": 742.38,
+        "is_important": false,
+        "confidence": 0.173,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "who are going to get down at the same stop as you.",
+        "timestamp_start": 742.38,
+        "timestamp_end": 745.82,
+        "is_important": false,
+        "confidence": 0.18,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "And maybe sometimes",
+        "timestamp_start": 746.76,
+        "timestamp_end": 748.44,
+        "is_important": false,
+        "confidence": 0.12,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_075",
+    "timestamp_start": 750.0,
+    "timestamp_end": 760.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "at an uncomfortable situation,",
+        "timestamp_start": 751.76,
+        "timestamp_end": 754.26,
+        "is_important": false,
+        "confidence": 0.124,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "you are going to get up,",
+        "timestamp_start": 754.26,
+        "timestamp_end": 755.26,
+        "is_important": false,
+        "confidence": 0.127,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "there might be someone who is going to ring the bell.",
+        "timestamp_start": 755.26,
+        "timestamp_end": 756.96,
+        "is_important": false,
+        "confidence": 0.162,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So try to wait for somebody else at the same time",
+        "timestamp_start": 756.96,
+        "timestamp_end": 759.48,
+        "is_important": false,
+        "confidence": 0.169,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_076",
+    "timestamp_start": 760.0,
+    "timestamp_end": 770.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "You might be simply waiting",
+        "timestamp_start": 761.64,
+        "timestamp_end": 763.08,
+        "is_important": false,
+        "confidence": 0.184,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "until somebody else rings the bell.",
+        "timestamp_start": 763.08,
+        "timestamp_end": 765.16,
+        "is_important": false,
+        "confidence": 0.143,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "Or if it is not the case,",
+        "timestamp_start": 766.06,
+        "timestamp_end": 768.26,
+        "is_important": false,
+        "confidence": 0.293,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "so what you're trying to do is,",
+        "timestamp_start": 768.26,
+        "timestamp_end": 769.92,
+        "is_important": false,
+        "confidence": 0.175,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_077",
+    "timestamp_start": 770.0,
+    "timestamp_end": 780.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So that is a different thought process.",
+        "timestamp_start": 775.18,
+        "timestamp_end": 779.22,
+        "is_important": false,
+        "confidence": 0.418,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_078",
+    "timestamp_start": 780.0,
+    "timestamp_end": 790.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "off a bus. So likewise there are many different things which are happening inside and many",
+        "timestamp_start": 781.18,
+        "timestamp_end": 787.68,
+        "is_important": false,
+        "confidence": 0.375,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_082",
+    "timestamp_start": 820.0,
+    "timestamp_end": 830.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "in doing that. The first one is collect. In collect you collect some preliminary knowledge",
+        "timestamp_start": 820.48,
+        "timestamp_end": 829.4,
+        "is_important": false,
+        "confidence": 0.463,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_083",
+    "timestamp_start": 830.0,
+    "timestamp_end": 840.0,
+    "importance_ratio_T": 0.25,
+    "sentences": [
+      {
+        "sentence": "So",
+        "timestamp_start": 833.12,
+        "timestamp_end": 833.64,
+        "is_important": false,
+        "confidence": 0.135,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "you",
+        "timestamp_start": 833.64,
+        "timestamp_end": 833.66,
+        "is_important": false,
+        "confidence": 0.128,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "you",
+        "timestamp_start": 833.66,
+        "timestamp_end": 833.68,
+        "is_important": false,
+        "confidence": 0.128,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "are going to analyze and verify the data files. And then you identify knowledge representations.",
+        "timestamp_start": 833.68,
+        "timestamp_end": 837.8,
+        "is_important": true,
+        "confidence": 0.929,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_086",
+    "timestamp_start": 860.0,
+    "timestamp_end": 870.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "are going to identify the data files which are being populated considering the situation",
+        "timestamp_start": 863.66,
+        "timestamp_end": 865.66,
+        "is_important": true,
+        "confidence": 0.896,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_088",
+    "timestamp_start": 880.0,
+    "timestamp_end": 890.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "knowledge and knowledge representations, identifying knowledge representations, they",
+        "timestamp_start": 880.88,
+        "timestamp_end": 886.94,
+        "is_important": true,
+        "confidence": 0.835,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_089",
+    "timestamp_start": 890.0,
+    "timestamp_end": 900.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "can look into that.",
+        "timestamp_start": 892.88,
+        "timestamp_end": 893.62,
+        "is_important": false,
+        "confidence": 0.11,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "attached to the situation through the population and analysis and verification.",
+        "timestamp_start": 893.62,
+        "timestamp_end": 898.5,
+        "is_important": true,
+        "confidence": 0.872,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_090",
+    "timestamp_start": 900.0,
+    "timestamp_end": 910.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "now you have got some idea, so you are going to format the result",
+        "timestamp_start": 902.34,
+        "timestamp_end": 907.22,
+        "is_important": false,
+        "confidence": 0.358,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_091",
+    "timestamp_start": 910.0,
+    "timestamp_end": 920.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "you are going to model it to suit what you are planning to",
+        "timestamp_start": 911.78,
+        "timestamp_end": 915.62,
+        "is_important": false,
+        "confidence": 0.34,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "deliver. So these are the sequence of actions,",
+        "timestamp_start": 915.62,
+        "timestamp_end": 919.94,
+        "is_important": true,
+        "confidence": 0.789,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_092",
+    "timestamp_start": 920.0,
+    "timestamp_end": 930.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "in doing some task analysis.",
+        "timestamp_start": 923.3,
+        "timestamp_end": 927.86,
+        "is_important": true,
+        "confidence": 0.826,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_093",
+    "timestamp_start": 930.0,
+    "timestamp_end": 940.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "we can because in the note provided you can",
+        "timestamp_start": 935.06,
+        "timestamp_end": 938.34,
+        "is_important": false,
+        "confidence": 0.519,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_094",
+    "timestamp_start": 940.0,
+    "timestamp_end": 950.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "we pay more great attention to that because",
+        "timestamp_start": 943.62,
+        "timestamp_end": 949.3,
+        "is_important": false,
+        "confidence": 0.219,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_095",
+    "timestamp_start": 950.0,
+    "timestamp_end": 960.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "design. Because now all these exercises are",
+        "timestamp_start": 954.34,
+        "timestamp_end": 958.74,
+        "is_important": false,
+        "confidence": 0.457,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_096",
+    "timestamp_start": 960.0,
+    "timestamp_end": 970.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "or making a good design which follows the interaction design rules",
+        "timestamp_start": 964.1,
+        "timestamp_end": 968.98,
+        "is_important": true,
+        "confidence": 0.927,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_097",
+    "timestamp_start": 970.0,
+    "timestamp_end": 980.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "in a manner that is useful for making a good interaction design.",
+        "timestamp_start": 973.86,
+        "timestamp_end": 978.74,
+        "is_important": true,
+        "confidence": 0.945,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_098",
+    "timestamp_start": 980.0,
+    "timestamp_end": 990.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "The design should reflect what the user thinks",
+        "timestamp_start": 984.58,
+        "timestamp_end": 988.5,
+        "is_important": true,
+        "confidence": 0.727,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_100",
+    "timestamp_start": 1000.0,
+    "timestamp_end": 1010.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "remembers.",
+        "timestamp_start": 1002.18,
+        "timestamp_end": 1005.14,
+        "is_important": false,
+        "confidence": 0.113,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_101",
+    "timestamp_start": 1010.0,
+    "timestamp_end": 1020.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "So this is the first step, and the next one is quite important.",
+        "timestamp_start": 1010.02,
+        "timestamp_end": 1014.02,
+        "is_important": false,
+        "confidence": 0.243,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "The feeling and remembering is somewhat easier to model,",
+        "timestamp_start": 1014.02,
+        "timestamp_end": 1018.34,
+        "is_important": true,
+        "confidence": 0.73,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_103",
+    "timestamp_start": 1030.0,
+    "timestamp_end": 1040.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "thinking process is always going to analyze the different relationships, in the situation.",
+        "timestamp_start": 1031.06,
+        "timestamp_end": 1035.06,
+        "is_important": true,
+        "confidence": 0.858,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So the first step is to think about the situation that you are trying to present.",
+        "timestamp_start": 1035.06,
+        "timestamp_end": 1039.94,
+        "is_important": false,
+        "confidence": 0.405,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_105",
+    "timestamp_start": 1050.0,
+    "timestamp_end": 1060.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "If you did not have a proper understanding about the situation",
+        "timestamp_start": 1054.74,
+        "timestamp_end": 1058.82,
+        "is_important": false,
+        "confidence": 0.232,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_112",
+    "timestamp_start": 1120.0,
+    "timestamp_end": 1130.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "Okay so,",
+        "timestamp_start": 1121.22,
+        "timestamp_end": 1122.74,
+        "is_important": false,
+        "confidence": 0.102,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "our suggestion is to maintain conventional formats such as",
+        "timestamp_start": 1122.74,
+        "timestamp_end": 1125.06,
+        "is_important": true,
+        "confidence": 0.571,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_113",
+    "timestamp_start": 1130.0,
+    "timestamp_end": 1140.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "want you to think a little bit about it",
+        "timestamp_start": 1132.74,
+        "timestamp_end": 1137.48,
+        "is_important": false,
+        "confidence": 0.135,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_115",
+    "timestamp_start": 1150.0,
+    "timestamp_end": 1160.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "results aspects for this stage",
+        "timestamp_start": 1154.44,
+        "timestamp_end": 1159.14,
+        "is_important": false,
+        "confidence": 0.307,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_118",
+    "timestamp_start": 1180.0,
+    "timestamp_end": 1190.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "the one of one",
+        "timestamp_start": 1181.28,
+        "timestamp_end": 1183.9,
+        "is_important": false,
+        "confidence": 0.134,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "to say",
+        "timestamp_start": 1183.9,
+        "timestamp_end": 1184.4,
+        "is_important": false,
+        "confidence": 0.151,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_119",
+    "timestamp_start": 1190.0,
+    "timestamp_end": 1200.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "design to make it understandable and the second second answer says formatting",
+        "timestamp_start": 1190.42,
+        "timestamp_end": 1199.82,
+        "is_important": true,
+        "confidence": 0.798,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_121",
+    "timestamp_start": 1210.0,
+    "timestamp_end": 1220.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "they should be accessible for the user to use and I will explain the process of such an example to you, I will explain all the steps to make the design more practical and user friendly and the third one is that you should reflect the concept and then again",
+        "timestamp_start": 1214.24,
+        "timestamp_end": 1214.4,
+        "is_important": true,
+        "confidence": 0.88,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "there's another answer indicating formatting results will attract the user",
+        "timestamp_start": 1214.4,
+        "timestamp_end": 1218.72,
+        "is_important": true,
+        "confidence": 0.768,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_123",
+    "timestamp_start": 1230.0,
+    "timestamp_end": 1240.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "and then again",
+        "timestamp_start": 1232.52,
+        "timestamp_end": 1235.64,
+        "is_important": false,
+        "confidence": 0.133,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "you",
+        "timestamp_start": 1235.64,
+        "timestamp_end": 1237.7,
+        "is_important": false,
+        "confidence": 0.128,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_124",
+    "timestamp_start": 1240.0,
+    "timestamp_end": 1250.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "now those are truly the valid points because here and the formatting is",
+        "timestamp_start": 1240.1,
+        "timestamp_end": 1248.94,
+        "is_important": true,
+        "confidence": 0.78,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_126",
+    "timestamp_start": 1260.0,
+    "timestamp_end": 1270.0,
+    "importance_ratio_T": 0.333,
+    "sentences": [
+      {
+        "sentence": "will later be resembled in the design so that is",
+        "timestamp_start": 1261.52,
+        "timestamp_end": 1265.16,
+        "is_important": false,
+        "confidence": 0.462,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "what you have identified as the thought process into a very prominent way which will later be resembled in the design so that is what",
+        "timestamp_start": 1265.16,
+        "timestamp_end": 1265.62,
+        "is_important": true,
+        "confidence": 0.776,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "we do so",
+        "timestamp_start": 1265.62,
+        "timestamp_end": 1269.26,
+        "is_important": false,
+        "confidence": 0.103,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_129",
+    "timestamp_start": 1290.0,
+    "timestamp_end": 1300.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "reflected in the actual interface design and",
+        "timestamp_start": 1291.72,
+        "timestamp_end": 1295.38,
+        "is_important": true,
+        "confidence": 0.911,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_130",
+    "timestamp_start": 1300.0,
+    "timestamp_end": 1310.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "he feels and how he remembers.",
+        "timestamp_start": 1304.96,
+        "timestamp_end": 1308.5,
+        "is_important": false,
+        "confidence": 0.129,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_132",
+    "timestamp_start": 1320.0,
+    "timestamp_end": 1330.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "through the design.",
+        "timestamp_start": 1324.14,
+        "timestamp_end": 1325.74,
+        "is_important": false,
+        "confidence": 0.284,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_135",
+    "timestamp_start": 1350.0,
+    "timestamp_end": 1360.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "structure diagram?",
+        "timestamp_start": 1353.24,
+        "timestamp_end": 1354.12,
+        "is_important": true,
+        "confidence": 0.703,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_136",
+    "timestamp_start": 1360.0,
+    "timestamp_end": 1370.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "So we are using a similar approach here, the divide and confer.",
+        "timestamp_start": 1363.18,
+        "timestamp_end": 1369.56,
+        "is_important": true,
+        "confidence": 0.801,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_137",
+    "timestamp_start": 1370.0,
+    "timestamp_end": 1380.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So this is simply a very simple aspect.",
+        "timestamp_start": 1375.72,
+        "timestamp_end": 1379.94,
+        "is_important": false,
+        "confidence": 0.341,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_139",
+    "timestamp_start": 1390.0,
+    "timestamp_end": 1400.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "So that feedback could be given in many different ways that we don't know exactly.",
+        "timestamp_start": 1390.9,
+        "timestamp_end": 1397.46,
+        "is_important": true,
+        "confidence": 0.798,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_141",
+    "timestamp_start": 1410.0,
+    "timestamp_end": 1420.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "feedback is displayed.",
+        "timestamp_start": 1414.12,
+        "timestamp_end": 1415.12,
+        "is_important": true,
+        "confidence": 0.672,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "Or you can send them an email.",
+        "timestamp_start": 1415.12,
+        "timestamp_end": 1416.12,
+        "is_important": false,
+        "confidence": 0.148,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "Or there may be some applications where the feedback forms are available.",
+        "timestamp_start": 1416.12,
+        "timestamp_end": 1417.12,
+        "is_important": true,
+        "confidence": 0.854,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So you can do that.",
+        "timestamp_start": 1417.12,
+        "timestamp_end": 1418.12,
+        "is_important": false,
+        "confidence": 0.097,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_143",
+    "timestamp_start": 1430.0,
+    "timestamp_end": 1440.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "service center and give the feedback.",
+        "timestamp_start": 1435.12,
+        "timestamp_end": 1438.8,
+        "is_important": false,
+        "confidence": 0.409,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_144",
+    "timestamp_start": 1440.0,
+    "timestamp_end": 1450.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So you can give a feedback.",
+        "timestamp_start": 1440.9,
+        "timestamp_end": 1442.82,
+        "is_important": false,
+        "confidence": 0.238,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So you can give a feedback.",
+        "timestamp_start": 1442.82,
+        "timestamp_end": 1443.9,
+        "is_important": false,
+        "confidence": 0.238,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_145",
+    "timestamp_start": 1450.0,
+    "timestamp_end": 1460.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "is like, how should I provide the feedback?",
+        "timestamp_start": 1453.58,
+        "timestamp_end": 1458.48,
+        "is_important": false,
+        "confidence": 0.487,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_147",
+    "timestamp_start": 1470.0,
+    "timestamp_end": 1480.0,
+    "importance_ratio_T": 0.2,
+    "sentences": [
+      {
+        "sentence": "So through that awareness, you can give the feedback.",
+        "timestamp_start": 1470.9,
+        "timestamp_end": 1471.9,
+        "is_important": false,
+        "confidence": 0.334,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So that's the first thing.",
+        "timestamp_start": 1471.9,
+        "timestamp_end": 1472.9,
+        "is_important": false,
+        "confidence": 0.156,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "Okay.",
+        "timestamp_start": 1472.9,
+        "timestamp_end": 1473.9,
+        "is_important": false,
+        "confidence": 0.096,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So if you have a very good awareness, then you need to choose the feedback method that",
+        "timestamp_start": 1473.9,
+        "timestamp_end": 1478.02,
+        "is_important": true,
+        "confidence": 0.897,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "you prefer.",
+        "timestamp_start": 1478.02,
+        "timestamp_end": 1479.02,
+        "is_important": false,
+        "confidence": 0.101,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_150",
+    "timestamp_start": 1500.0,
+    "timestamp_end": 1510.0,
+    "importance_ratio_T": 0.2,
+    "sentences": [
+      {
+        "sentence": "Okay.",
+        "timestamp_start": 1500.58,
+        "timestamp_end": 1501.58,
+        "is_important": false,
+        "confidence": 0.096,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "Okay.",
+        "timestamp_start": 1501.58,
+        "timestamp_end": 1502.58,
+        "is_important": false,
+        "confidence": 0.096,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So the first thing you need to do is to provide feedback.",
+        "timestamp_start": 1502.58,
+        "timestamp_end": 1503.58,
+        "is_important": false,
+        "confidence": 0.33,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So the first thing you need to do is to provide feedback is the overall task or the goal.",
+        "timestamp_start": 1503.58,
+        "timestamp_end": 1504.58,
+        "is_important": true,
+        "confidence": 0.867,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So there may be many different ways that goal could be achieved.",
+        "timestamp_start": 1504.58,
+        "timestamp_end": 1509.58,
+        "is_important": false,
+        "confidence": 0.565,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_152",
+    "timestamp_start": 1520.0,
+    "timestamp_end": 1530.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "the method that you would like to choose, use.",
+        "timestamp_start": 1525.02,
+        "timestamp_end": 1529.58,
+        "is_important": false,
+        "confidence": 0.559,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_153",
+    "timestamp_start": 1530.0,
+    "timestamp_end": 1540.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So that's the first thing.",
+        "timestamp_start": 1530.58,
+        "timestamp_end": 1531.58,
+        "is_important": false,
+        "confidence": 0.156,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "You will mention the feedback or write it up.",
+        "timestamp_start": 1531.58,
+        "timestamp_end": 1535.58,
+        "is_important": false,
+        "confidence": 0.409,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And finally, you are confirming it or submitting the feedback.",
+        "timestamp_start": 1535.58,
+        "timestamp_end": 1539.58,
+        "is_important": false,
+        "confidence": 0.468,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_154",
+    "timestamp_start": 1540.0,
+    "timestamp_end": 1550.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "You can observe these things.",
+        "timestamp_start": 1548.34,
+        "timestamp_end": 1549.34,
+        "is_important": false,
+        "confidence": 0.184,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_155",
+    "timestamp_start": 1550.0,
+    "timestamp_end": 1560.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "observable.",
+        "timestamp_start": 1555.58,
+        "timestamp_end": 1556.58,
+        "is_important": true,
+        "confidence": 0.535,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_156",
+    "timestamp_start": 1560.0,
+    "timestamp_end": 1570.0,
+    "importance_ratio_T": 0.667,
+    "sentences": [
+      {
+        "sentence": "Okay.",
+        "timestamp_start": 1560.58,
+        "timestamp_end": 1561.58,
+        "is_important": false,
+        "confidence": 0.096,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So the fourth thing is you are submitting the feedback observable.",
+        "timestamp_start": 1561.58,
+        "timestamp_end": 1563.58,
+        "is_important": true,
+        "confidence": 0.788,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And submitting the feedback observable, explicitly.",
+        "timestamp_start": 1563.58,
+        "timestamp_end": 1564.58,
+        "is_important": true,
+        "confidence": 0.824,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So this is very abstract level.",
+        "timestamp_start": 1564.58,
+        "timestamp_end": 1565.58,
+        "is_important": true,
+        "confidence": 0.517,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "But there may be many internal things happening when you go to the sub levels of this.",
+        "timestamp_start": 1565.58,
+        "timestamp_end": 1566.58,
+        "is_important": false,
+        "confidence": 0.451,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "Now, imagine you take the choosing the feedback method.",
+        "timestamp_start": 1566.58,
+        "timestamp_end": 1567.58,
+        "is_important": true,
+        "confidence": 0.858,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_158",
+    "timestamp_start": 1580.0,
+    "timestamp_end": 1590.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So there may be many internal things happening when you go to the sub levels of this.",
+        "timestamp_start": 1580.58,
+        "timestamp_end": 1589.58,
+        "is_important": false,
+        "confidence": 0.475,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_159",
+    "timestamp_start": 1590.0,
+    "timestamp_end": 1600.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "that I could use to give the feedback.",
+        "timestamp_start": 1590.58,
+        "timestamp_end": 1593.7,
+        "is_important": false,
+        "confidence": 0.216,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So you might be informed, you can use telephone,",
+        "timestamp_start": 1595.6,
+        "timestamp_end": 1599.8,
+        "is_important": false,
+        "confidence": 0.228,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_160",
+    "timestamp_start": 1600.0,
+    "timestamp_end": 1610.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "available on our website.",
+        "timestamp_start": 1604.54,
+        "timestamp_end": 1606.8,
+        "is_important": false,
+        "confidence": 0.185,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_161",
+    "timestamp_start": 1610.0,
+    "timestamp_end": 1620.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "how many different things are going on in your mind?",
+        "timestamp_start": 1612.38,
+        "timestamp_end": 1616.38,
+        "is_important": false,
+        "confidence": 0.187,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "Going on in your mind.",
+        "timestamp_start": 1617.3,
+        "timestamp_end": 1619.04,
+        "is_important": false,
+        "confidence": 0.138,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_162",
+    "timestamp_start": 1620.0,
+    "timestamp_end": 1630.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "You will internally do an assessment",
+        "timestamp_start": 1620.58,
+        "timestamp_end": 1625.58,
+        "is_important": false,
+        "confidence": 0.241,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "of all these three methods.",
+        "timestamp_start": 1625.58,
+        "timestamp_end": 1627.12,
+        "is_important": false,
+        "confidence": 0.291,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_163",
+    "timestamp_start": 1630.0,
+    "timestamp_end": 1640.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "I might decide to give a telephone call.",
+        "timestamp_start": 1635.2,
+        "timestamp_end": 1638.54,
+        "is_important": false,
+        "confidence": 0.195,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_164",
+    "timestamp_start": 1640.0,
+    "timestamp_end": 1650.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "So in order to take the decision of giving a telephone call,",
+        "timestamp_start": 1641.64,
+        "timestamp_end": 1646.64,
+        "is_important": true,
+        "confidence": 0.582,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_165",
+    "timestamp_start": 1650.0,
+    "timestamp_end": 1660.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So I internally scrutinize the available facilities",
+        "timestamp_start": 1650.58,
+        "timestamp_end": 1655.58,
+        "is_important": false,
+        "confidence": 0.511,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_166",
+    "timestamp_start": 1660.0,
+    "timestamp_end": 1670.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "at this time.",
+        "timestamp_start": 1660.52,
+        "timestamp_end": 1661.36,
+        "is_important": false,
+        "confidence": 0.119,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "And after choosing the method, maybe like later on",
+        "timestamp_start": 1664.4,
+        "timestamp_end": 1667.72,
+        "is_important": false,
+        "confidence": 0.447,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_167",
+    "timestamp_start": 1670.0,
+    "timestamp_end": 1680.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "on the telephone call, going into these waiting lines",
+        "timestamp_start": 1671.72,
+        "timestamp_end": 1675.98,
+        "is_important": false,
+        "confidence": 0.265,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "and all that, so I prefer just to give a telephone call.",
+        "timestamp_start": 1675.98,
+        "timestamp_end": 1678.98,
+        "is_important": false,
+        "confidence": 0.285,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_168",
+    "timestamp_start": 1680.0,
+    "timestamp_end": 1690.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "And then I will simply find the email address",
+        "timestamp_start": 1680.58,
+        "timestamp_end": 1683.72,
+        "is_important": false,
+        "confidence": 0.364,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "and send it.",
+        "timestamp_start": 1683.72,
+        "timestamp_end": 1684.52,
+        "is_important": false,
+        "confidence": 0.115,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So then I don't want to wait until the other person",
+        "timestamp_start": 1684.52,
+        "timestamp_end": 1687.52,
+        "is_important": false,
+        "confidence": 0.196,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_169",
+    "timestamp_start": 1690.0,
+    "timestamp_end": 1700.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So I will simply find the email address and send it.",
+        "timestamp_start": 1690.52,
+        "timestamp_end": 1694.52,
+        "is_important": false,
+        "confidence": 0.316,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_170",
+    "timestamp_start": 1700.0,
+    "timestamp_end": 1710.0,
+    "importance_ratio_T": 0.333,
+    "sentences": [
+      {
+        "sentence": "and find out where this feedback form is,",
+        "timestamp_start": 1700.52,
+        "timestamp_end": 1704.52,
+        "is_important": true,
+        "confidence": 0.843,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "fill it up, and submit.",
+        "timestamp_start": 1704.52,
+        "timestamp_end": 1706.52,
+        "is_important": false,
+        "confidence": 0.131,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "So this choice is very important for me.",
+        "timestamp_start": 1706.52,
+        "timestamp_end": 1709.14,
+        "is_important": false,
+        "confidence": 0.151,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_171",
+    "timestamp_start": 1710.0,
+    "timestamp_end": 1720.0,
+    "importance_ratio_T": 0.333,
+    "sentences": [
+      {
+        "sentence": "So this choice is yours, and you will make the choice",
+        "timestamp_start": 1710.2,
+        "timestamp_end": 1713.54,
+        "is_important": false,
+        "confidence": 0.237,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "based on many other factors, such as experience,",
+        "timestamp_start": 1713.54,
+        "timestamp_end": 1716.98,
+        "is_important": false,
+        "confidence": 0.449,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "preference, the situation, and the condition.",
+        "timestamp_start": 1716.98,
+        "timestamp_end": 1719.48,
+        "is_important": true,
+        "confidence": 0.694,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_172",
+    "timestamp_start": 1720.0,
+    "timestamp_end": 1730.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "And then you move on to the next level, next item,",
+        "timestamp_start": 1721.44,
+        "timestamp_end": 1726.44,
+        "is_important": false,
+        "confidence": 0.407,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_173",
+    "timestamp_start": 1730.0,
+    "timestamp_end": 1740.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "that is to mention the feedback.",
+        "timestamp_start": 1732.06,
+        "timestamp_end": 1734.12,
+        "is_important": false,
+        "confidence": 0.366,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So now when you do the mentioning of the feedback again,",
+        "timestamp_start": 1735.9,
+        "timestamp_end": 1739.38,
+        "is_important": false,
+        "confidence": 0.479,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_174",
+    "timestamp_start": 1740.0,
+    "timestamp_end": 1750.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "are happening inside.",
+        "timestamp_start": 1740.2,
+        "timestamp_end": 1741.74,
+        "is_important": false,
+        "confidence": 0.179,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "Things are happening internally to your head.",
+        "timestamp_start": 1741.74,
+        "timestamp_end": 1745.74,
+        "is_important": false,
+        "confidence": 0.227,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So when you are mentioning the feedback,",
+        "timestamp_start": 1745.74,
+        "timestamp_end": 1747.58,
+        "is_important": false,
+        "confidence": 0.411,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_175",
+    "timestamp_start": 1750.0,
+    "timestamp_end": 1760.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "then you are internally, you are recording that experience.",
+        "timestamp_start": 1753.92,
+        "timestamp_end": 1757.12,
+        "is_important": false,
+        "confidence": 0.311,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_176",
+    "timestamp_start": 1760.0,
+    "timestamp_end": 1770.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "how you actually felt.",
+        "timestamp_start": 1762.16,
+        "timestamp_end": 1763.66,
+        "is_important": false,
+        "confidence": 0.163,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And then you are trying to think about",
+        "timestamp_start": 1765.88,
+        "timestamp_end": 1768.2,
+        "is_important": false,
+        "confidence": 0.203,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "the best way to tell that.",
+        "timestamp_start": 1768.2,
+        "timestamp_end": 1770.0,
+        "is_important": false,
+        "confidence": 0.111,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_177",
+    "timestamp_start": 1770.0,
+    "timestamp_end": 1780.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So you are trying to think about,",
+        "timestamp_start": 1770.2,
+        "timestamp_end": 1771.7,
+        "is_important": false,
+        "confidence": 0.183,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "how to reason it out.",
+        "timestamp_start": 1771.7,
+        "timestamp_end": 1772.54,
+        "is_important": false,
+        "confidence": 0.128,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "And you are trying to think about,",
+        "timestamp_start": 1773.54,
+        "timestamp_end": 1775.74,
+        "is_important": false,
+        "confidence": 0.188,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "how to reason it out.",
+        "timestamp_start": 1775.74,
+        "timestamp_end": 1777.16,
+        "is_important": false,
+        "confidence": 0.128,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_178",
+    "timestamp_start": 1780.0,
+    "timestamp_end": 1790.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "just in point blank and white,",
+        "timestamp_start": 1781.2,
+        "timestamp_end": 1783.88,
+        "is_important": false,
+        "confidence": 0.136,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "like, you don't mind being rude.",
+        "timestamp_start": 1783.88,
+        "timestamp_end": 1786.42,
+        "is_important": false,
+        "confidence": 0.137,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "There may be another person who doesn't want to be rude.",
+        "timestamp_start": 1786.42,
+        "timestamp_end": 1789.78,
+        "is_important": false,
+        "confidence": 0.196,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_179",
+    "timestamp_start": 1790.0,
+    "timestamp_end": 1800.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "to give this feedback.",
+        "timestamp_start": 1793.2,
+        "timestamp_end": 1795.62,
+        "is_important": false,
+        "confidence": 0.184,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "And another person, that person is so angry,",
+        "timestamp_start": 1797.42,
+        "timestamp_end": 1798.86,
+        "is_important": false,
+        "confidence": 0.202,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_180",
+    "timestamp_start": 1800.0,
+    "timestamp_end": 1810.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "so he wants to let the other end know that you are so disappointed and angry",
+        "timestamp_start": 1800.08,
+        "timestamp_end": 1806.5,
+        "is_important": false,
+        "confidence": 0.221,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_181",
+    "timestamp_start": 1810.0,
+    "timestamp_end": 1820.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "many things going on",
+        "timestamp_start": 1813.28,
+        "timestamp_end": 1816.36,
+        "is_important": false,
+        "confidence": 0.188,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_182",
+    "timestamp_start": 1820.0,
+    "timestamp_end": 1830.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "feedback or maybe like you can say that's what I need to say and that's it",
+        "timestamp_start": 1823.84,
+        "timestamp_end": 1829.6,
+        "is_important": false,
+        "confidence": 0.38,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_183",
+    "timestamp_start": 1830.0,
+    "timestamp_end": 1840.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "and then otherwise if it is an email you send it if it is a form field you will",
+        "timestamp_start": 1830.08,
+        "timestamp_end": 1837.0,
+        "is_important": true,
+        "confidence": 0.692,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_185",
+    "timestamp_start": 1850.0,
+    "timestamp_end": 1860.0,
+    "importance_ratio_T": 0.667,
+    "sentences": [
+      {
+        "sentence": "some of these steps so here you get an example if you consider the right and",
+        "timestamp_start": 1852.94,
+        "timestamp_end": 1859.48,
+        "is_important": true,
+        "confidence": 0.726,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "right",
+        "timestamp_start": 1859.48,
+        "timestamp_end": 1859.86,
+        "is_important": false,
+        "confidence": 0.125,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "example if you consider the right and right",
+        "timestamp_start": 1859.86,
+        "timestamp_end": 1859.94,
+        "is_important": true,
+        "confidence": 0.603,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_186",
+    "timestamp_start": 1860.0,
+    "timestamp_end": 1870.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "mentioned feedback step in reality it involves a lot of cognitive tasks as we",
+        "timestamp_start": 1860.06,
+        "timestamp_end": 1868.46,
+        "is_important": true,
+        "confidence": 0.9,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_191",
+    "timestamp_start": 1910.0,
+    "timestamp_end": 1920.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "recall the service experience you assess the quality and then you agree how to",
+        "timestamp_start": 1911.86,
+        "timestamp_end": 1917.6,
+        "is_important": true,
+        "confidence": 0.793,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "mention that",
+        "timestamp_start": 1917.6,
+        "timestamp_end": 1918.22,
+        "is_important": false,
+        "confidence": 0.182,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_193",
+    "timestamp_start": 1930.0,
+    "timestamp_end": 1940.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "this assessing the service quality is not an not a standalone approach or not",
+        "timestamp_start": 1931.36,
+        "timestamp_end": 1936.46,
+        "is_important": true,
+        "confidence": 0.806,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_194",
+    "timestamp_start": 1940.0,
+    "timestamp_end": 1950.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "it with your expectation",
+        "timestamp_start": 1943.78,
+        "timestamp_end": 1947.24,
+        "is_important": false,
+        "confidence": 0.158,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "may be a recurrent process but you finalize your message and then you agree and organize what to mention that is important you again recall the service experience and then you agree how to mention that",
+        "timestamp_start": 1947.24,
+        "timestamp_end": 1948.22,
+        "is_important": true,
+        "confidence": 0.86,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_197",
+    "timestamp_start": 1970.0,
+    "timestamp_end": 1980.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "dependent on your experience earlier",
+        "timestamp_start": 1972.6,
+        "timestamp_end": 1977.92,
+        "is_important": false,
+        "confidence": 0.292,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_200",
+    "timestamp_start": 2000.0,
+    "timestamp_end": 2010.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "ila",
+        "timestamp_start": 2000.5,
+        "timestamp_end": 2002.4,
+        "is_important": false,
+        "confidence": 0.19,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "see you soon",
+        "timestamp_start": 2002.4,
+        "timestamp_end": 2004.28,
+        "is_important": false,
+        "confidence": 0.159,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "okay",
+        "timestamp_start": 2004.28,
+        "timestamp_end": 2007.18,
+        "is_important": false,
+        "confidence": 0.143,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "okay",
+        "timestamp_start": 2007.18,
+        "timestamp_end": 2007.7,
+        "is_important": false,
+        "confidence": 0.143,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_203",
+    "timestamp_start": 2030.0,
+    "timestamp_end": 2040.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "a person who is so reaching who is difficult to convince then the way you mention will also be",
+        "timestamp_start": 2030.86,
+        "timestamp_end": 2038.78,
+        "is_important": false,
+        "confidence": 0.341,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_205",
+    "timestamp_start": 2050.0,
+    "timestamp_end": 2060.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "you",
+        "timestamp_start": 2056.66,
+        "timestamp_end": 2056.72,
+        "is_important": false,
+        "confidence": 0.128,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_209",
+    "timestamp_start": 2090.0,
+    "timestamp_end": 2100.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "normally we do the textual first and then the then represented diagrammatically later so now",
+        "timestamp_start": 2090.5,
+        "timestamp_end": 2099.2,
+        "is_important": true,
+        "confidence": 0.78,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_214",
+    "timestamp_start": 2140.0,
+    "timestamp_end": 2150.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "opening email and then writing the email",
+        "timestamp_start": 2142.14,
+        "timestamp_end": 2146.58,
+        "is_important": false,
+        "confidence": 0.308,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_217",
+    "timestamp_start": 2170.0,
+    "timestamp_end": 2180.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "an email or submit the form that means you click on the send button",
+        "timestamp_start": 2171.2,
+        "timestamp_end": 2176.66,
+        "is_important": false,
+        "confidence": 0.442,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_220",
+    "timestamp_start": 2200.0,
+    "timestamp_end": 2210.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "the next branch so it's a rightention the feedback now there the",
+        "timestamp_start": 2201.78,
+        "timestamp_end": 2208.96,
+        "is_important": true,
+        "confidence": 0.777,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_223",
+    "timestamp_start": 2230.0,
+    "timestamp_end": 2240.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "and two point two in order r trade mother j organization review the different",
+        "timestamp_start": 2231.16,
+        "timestamp_end": 2231.6,
+        "is_important": true,
+        "confidence": 0.646,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "rolling and spreading the message in order and if you change the space type",
+        "timestamp_start": 2231.6,
+        "timestamp_end": 2231.66,
+        "is_important": true,
+        "confidence": 0.697,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "the data will pop out fixed the report will once organically and file can e-mail",
+        "timestamp_start": 2231.66,
+        "timestamp_end": 2231.76,
+        "is_important": true,
+        "confidence": 0.664,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_224",
+    "timestamp_start": 2240.0,
+    "timestamp_end": 2250.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "in order at a given time either two point one and two point two or two point three and two point four",
+        "timestamp_start": 2240.64,
+        "timestamp_end": 2249.2,
+        "is_important": true,
+        "confidence": 0.656,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_228",
+    "timestamp_start": 2280.0,
+    "timestamp_end": 2290.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "the task of providing",
+        "timestamp_start": 2286.96,
+        "timestamp_end": 2289.52,
+        "is_important": false,
+        "confidence": 0.354,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_231",
+    "timestamp_start": 2310.0,
+    "timestamp_end": 2320.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "it initially takes top to bottom",
+        "timestamp_start": 2316.16,
+        "timestamp_end": 2319.12,
+        "is_important": false,
+        "confidence": 0.255,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_234",
+    "timestamp_start": 2340.0,
+    "timestamp_end": 2350.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "need to take this",
+        "timestamp_start": 2341.84,
+        "timestamp_end": 2344.96,
+        "is_important": false,
+        "confidence": 0.147,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_235",
+    "timestamp_start": 2350.0,
+    "timestamp_end": 2360.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "and then again come back there is an option either this or this",
+        "timestamp_start": 2352.24,
+        "timestamp_end": 2357.04,
+        "is_important": false,
+        "confidence": 0.258,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_236",
+    "timestamp_start": 2360.0,
+    "timestamp_end": 2370.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "and this is the same thing you have to take as a reference for the next time",
+        "timestamp_start": 2362.56,
+        "timestamp_end": 2368.4,
+        "is_important": false,
+        "confidence": 0.275,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_237",
+    "timestamp_start": 2370.0,
+    "timestamp_end": 2380.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "okay",
+        "timestamp_start": 2373.2,
+        "timestamp_end": 2373.6,
+        "is_important": false,
+        "confidence": 0.143,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "left to right navigation, top to bottom, left to right.",
+        "timestamp_start": 2373.6,
+        "timestamp_end": 2377.64,
+        "is_important": false,
+        "confidence": 0.36,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_238",
+    "timestamp_start": 2380.0,
+    "timestamp_end": 2390.0,
+    "importance_ratio_T": 0.667,
+    "sentences": [
+      {
+        "sentence": "you check whether there are sub-branches of it.",
+        "timestamp_start": 2381.44,
+        "timestamp_end": 2384.08,
+        "is_important": true,
+        "confidence": 0.52,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "If there are, all the sub-branches will be completed",
+        "timestamp_start": 2384.4,
+        "timestamp_end": 2387.4,
+        "is_important": true,
+        "confidence": 0.7,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "before moving to the right.",
+        "timestamp_start": 2387.4,
+        "timestamp_end": 2388.84,
+        "is_important": false,
+        "confidence": 0.169,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_239",
+    "timestamp_start": 2390.0,
+    "timestamp_end": 2400.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "So this is how you travel through the diagrammatic HTA.",
+        "timestamp_start": 2391.46,
+        "timestamp_end": 2395.62,
+        "is_important": true,
+        "confidence": 0.766,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "So this is a very simple thing.",
+        "timestamp_start": 2396.74,
+        "timestamp_end": 2399.06,
+        "is_important": false,
+        "confidence": 0.155,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_240",
+    "timestamp_start": 2400.0,
+    "timestamp_end": 2410.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So this is the first wave,",
+        "timestamp_start": 2404.42,
+        "timestamp_end": 2406.0,
+        "is_important": false,
+        "confidence": 0.461,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "and we are going to change the view here.",
+        "timestamp_start": 2406.24,
+        "timestamp_end": 2408.46,
+        "is_important": false,
+        "confidence": 0.134,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_241",
+    "timestamp_start": 2410.0,
+    "timestamp_end": 2420.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "Imagine somebody might have also thought about",
+        "timestamp_start": 2410.48,
+        "timestamp_end": 2414.12,
+        "is_important": false,
+        "confidence": 0.203,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "the same thing with only two steps.",
+        "timestamp_start": 2414.12,
+        "timestamp_end": 2418.64,
+        "is_important": false,
+        "confidence": 0.135,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_242",
+    "timestamp_start": 2420.0,
+    "timestamp_end": 2430.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "There are the two methods.",
+        "timestamp_start": 2422.86,
+        "timestamp_end": 2424.76,
+        "is_important": false,
+        "confidence": 0.364,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      },
+      {
+        "sentence": "Choose the feedback method and submit the feedback.",
+        "timestamp_start": 2425.0,
+        "timestamp_end": 2428.04,
+        "is_important": true,
+        "confidence": 0.808,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_243",
+    "timestamp_start": 2430.0,
+    "timestamp_end": 2440.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "Instead, you have taken only two steps.",
+        "timestamp_start": 2435.64,
+        "timestamp_end": 2437.88,
+        "is_important": false,
+        "confidence": 0.133,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_244",
+    "timestamp_start": 2440.0,
+    "timestamp_end": 2450.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "there are sub-steps, 2.1, 2.2, and 2.3,",
+        "timestamp_start": 2442.44,
+        "timestamp_end": 2448.0,
+        "is_important": true,
+        "confidence": 0.736,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_245",
+    "timestamp_start": 2450.0,
+    "timestamp_end": 2460.0,
+    "importance_ratio_T": 0.5,
+    "sentences": [
+      {
+        "sentence": "And similarly, 2.4, 2.5, and 2.6 represent the form filling",
+        "timestamp_start": 2452.4,
+        "timestamp_end": 2457.76,
+        "is_important": true,
+        "confidence": 0.827,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "to open.",
+        "timestamp_start": 2457.76,
+        "timestamp_end": 2458.88,
+        "is_important": false,
+        "confidence": 0.129,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_246",
+    "timestamp_start": 2460.0,
+    "timestamp_end": 2470.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "So if you do this, this is how you are modeling it.",
+        "timestamp_start": 2460.06,
+        "timestamp_end": 2466.06,
+        "is_important": false,
+        "confidence": 0.474,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_248",
+    "timestamp_start": 2480.0,
+    "timestamp_end": 2490.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "and another bunch of things together.",
+        "timestamp_start": 2481.06,
+        "timestamp_end": 2484.06,
+        "is_important": false,
+        "confidence": 0.176,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "Now imagine this is the same thing, but you have a different form.",
+        "timestamp_start": 2484.06,
+        "timestamp_end": 2487.06,
+        "is_important": false,
+        "confidence": 0.31,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "You have a different form.",
+        "timestamp_start": 2487.06,
+        "timestamp_end": 2488.06,
+        "is_important": false,
+        "confidence": 0.179,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "You have a different form.",
+        "timestamp_start": 2488.06,
+        "timestamp_end": 2488.54,
+        "is_important": false,
+        "confidence": 0.179,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "You have a different form.",
+        "timestamp_start": 2488.54,
+        "timestamp_end": 2489.04,
+        "is_important": false,
+        "confidence": 0.179,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_249",
+    "timestamp_start": 2490.0,
+    "timestamp_end": 2500.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "Now imagine this is a simple example of providing a feedback.",
+        "timestamp_start": 2494.04,
+        "timestamp_end": 2496.04,
+        "is_important": true,
+        "confidence": 0.814,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_250",
+    "timestamp_start": 2500.0,
+    "timestamp_end": 2510.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "Currently, we have discussed two different ways of representing the same thing.",
+        "timestamp_start": 2501.04,
+        "timestamp_end": 2508.04,
+        "is_important": false,
+        "confidence": 0.492,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_251",
+    "timestamp_start": 2510.0,
+    "timestamp_end": 2520.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "can you imagine how many different representations that we need to reflect in our design?",
+        "timestamp_start": 2511.04,
+        "timestamp_end": 2518.04,
+        "is_important": true,
+        "confidence": 0.843,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "Now imagine how many different representations that we need to reflect in our design?",
+        "timestamp_start": 2518.04,
+        "timestamp_end": 2519.04,
+        "is_important": true,
+        "confidence": 0.874,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_252",
+    "timestamp_start": 2520.0,
+    "timestamp_end": 2530.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "So when you try to do this HTA textually and diagrammatically,",
+        "timestamp_start": 2521.04,
+        "timestamp_end": 2527.04,
+        "is_important": true,
+        "confidence": 0.854,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_254",
+    "timestamp_start": 2540.0,
+    "timestamp_end": 2550.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "That is what we need to do this modeling for.",
+        "timestamp_start": 2542.04,
+        "timestamp_end": 2546.04,
+        "is_important": true,
+        "confidence": 0.851,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "That is what we need to do this modeling for.",
+        "timestamp_start": 2546.04,
+        "timestamp_end": 2547.04,
+        "is_important": true,
+        "confidence": 0.851,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "That is what we need to do this modeling for.",
+        "timestamp_start": 2547.04,
+        "timestamp_end": 2548.04,
+        "is_important": true,
+        "confidence": 0.851,
+        "keyword_boost": true,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_258",
+    "timestamp_start": 2580.0,
+    "timestamp_end": 2590.0,
+    "importance_ratio_T": 1.0,
+    "sentences": [
+      {
+        "sentence": "discussion for completeness if you are in a position not to where you do not",
+        "timestamp_start": 2581.48,
+        "timestamp_end": 2589.46,
+        "is_important": true,
+        "confidence": 0.686,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": false
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_260",
+    "timestamp_start": 2600.0,
+    "timestamp_end": 2610.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "okay do it on paper take a photo and upload that's enough okay do it on paper",
+        "timestamp_start": 2603.8,
+        "timestamp_end": 2604.02,
+        "is_important": false,
+        "confidence": 0.297,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  },
+  {
+    "segment_id": "seg_263",
+    "timestamp_start": 2630.0,
+    "timestamp_end": 2640.0,
+    "importance_ratio_T": 0.0,
+    "sentences": [
+      {
+        "sentence": "so I will make the link available on mode",
+        "timestamp_start": 2633.78,
+        "timestamp_end": 2633.8,
+        "is_important": false,
+        "confidence": 0.379,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "so I will make the link available on mode",
+        "timestamp_start": 2633.8,
+        "timestamp_end": 2633.98,
+        "is_important": false,
+        "confidence": 0.379,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      },
+      {
+        "sentence": "so I will make the link available on mode",
+        "timestamp_start": 2634.02,
+        "timestamp_end": 2636.02,
+        "is_important": false,
+        "confidence": 0.379,
+        "keyword_boost": false,
+        "definition_match": false,
+        "repetition_boost": true
+      }
+    ]
+  }
+]

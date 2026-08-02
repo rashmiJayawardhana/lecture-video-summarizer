@@ -1,0 +1,496 @@
+0.0s - 9.6s : In the last lecture we discussed about mental models and the importance of having mental
+9.6s - 16.32s : models in identifying exactly how the user thinks in completing a task.
+16.32s - 25.48s : So there we also mentioned that it is important to see different ways the different users
+25.48s - 34.18s : look at the same problem in designing interfaces and interactions because we cannot expect
+34.18s - 38.24s : everybody to look at the same thing in the same way.
+38.24s - 45.32s : So there may be different perspectives of different users and if your design does not
+45.32s - 52.86s : cater for at least for the majority of these thinking processes, your design may not be
+52.86s - 55.3s : successful.
+55.3s - 55.46s : Because the design is not successful.
+55.48s - 60.04s : We can't always keep only a single stereotypical design.
+60.6s - 67.92s : Instead, you need to have multiple ways to do the same thing when you consider multiple
+67.92s - 70.22s : users connecting to your interface.
+71.6s - 84.0s : So in order to see what the user thinks and in order to design in a way which caters for
+84.0s - 85.46s : the users' different thinking.
+85.48s - 90.6s : You need to have a proper way to identify how the user thinks.
+90.6s - 93.8s : So there are many different models available.
+93.8s - 101.6s : We call them cognitive models or the mental model.
+101.6s - 107.6s : And two commonly used models are the GOMS, goals, operations, methods and selection.
+107.6s - 108.6s : So we will be discussing about GOMS later.
+108.6s - 109.6s : So the first one is the mental model.
+109.6s - 110.6s : The second one is the cognitive model.
+110.6s - 111.6s : The third one is the cognitive model.
+111.6s - 112.6s : The fourth one is the mental model.
+112.6s - 113.6s : And the last one is the cognitive model.
+113.6s - 114.6s : So the cognitive model is the mental model.
+114.6s - 115.6s : And the last one is the visual model.
+115.6s - 116.6s : So the cognitive model is the vision model.
+116.6s - 117.6s : The third one is the visual model.
+117.6s - 118.6s : The guardian model is a specific visual model.
+118.6s - 119.6s : This one is the visual model.
+119.6s - 120.6s : And the fourth one is the visual model.
+120.6s - 121.6s : And the fifth one is the visual model.
+121.6s - 122.6s : And then this is the visual model.
+122.6s - 123.6s : These are the visual models.
+123.6s - 124.6s : And we will discuss about them in a few points later.
+125.6s - 126.6s : And the next one is this hierarchical task analysis where the task will be considered
+126.6s - 127.6s : in a manner that you can divide and convert it.
+127.6s - 130.92s : So we will initially look at the hierarchical task analysis.
+130.92s - 137.92s : And later on, we will be moving on to the GOMS model in the next lecture.
+137.92s - 143.72s : So when you talk about a performance model, I will not say that GOMS does not work or
+143.72s - 150.76s : you talk about cognitive models the cognitive models are going to model some aspects of user
+152.84s - 160.84s : why are we modeling these aspects of user because we are going to do a design which is acceptable
+160.84s - 171.72s : by many users so in order for your design to be accepted by many users as you when user you need
+171.72s - 179.8s : to see different aspects of different users so that you understand the user better plus you get
+179.8s - 188.6s : what the user wants so therefore the aspects of user that you need to consider most will be the
+188.6s - 199.0s : understanding how the user understands about a task and the knowledge what the user already knows
+200.12s - 201.24s : and the intentions
+201.72s - 211.72s : imply what the user wants to do or plans to do and the processing is how the user gets about in
+211.72s - 219.8s : doing what he wants to do so those are the four aspects you need to consider when you are modeling
+219.8s - 231.64s : for use so when you design cognitive models you take the mental process uh in a divide and
+231.72s - 237.48s : conquer approach that means you consider the entire thing you divide it into a small segment
+238.04s - 243.16s : and then you are going to consider small portions in order to understand the things better
+244.92s - 253.64s : this human thinking and processing is a complicated task unless we pay a lot of attention to
+254.36s - 261.64s : we do not realize exactly how we are thinking about doing something we just do that
+261.72s - 269.72s : because our thinking is so fast the processing happens so fast you never notice the exact
+271.48s - 277.08s : sequence of thinking that we do so now what we are trying to do
+277.08s - 283.8s : is quite challenging now the things which are happening so fast uh we are going to
+285.8s - 291.24s : now put it into the explicit level by modeling them using some sort of a normal Алеς model
+291.72s - 294.8s : different approaches
+307.64s - 315.34s : and mainly in cognitive modeling we talk about goal and task hierarchies now we
+315.34s - 320.32s : we try to take it in the divide and conquer approach and there we talked
+320.32s - 328.38s : about goal and task hierarchy the goals as we mentioned are the intention and
+328.38s - 333.94s : intention is what would you like to be true or what would you like to be
+333.94s - 341.38s : happening so that is what the intention is what are you planning to do so those
+341.38s - 348.36s : are the intentions and the tasks are the actions that you perform in order to
+348.36s - 350.28s : achieve your goal or goal
+350.32s - 358.12s : for the intention so you practice the intention through the action you
+358.12s - 367.14s : achieve the goal through the task so that is how we get it there are different
+367.14s - 373.94s : approaches as I mentioned the first one is gums goals operators methods and
+373.94s - 380.32s : selection and these goals are internal the things which are happening inside
+380.32s - 387.78s : and then the second one is the hierarchical task analysis so here you
+387.78s - 396.44s : consider external actions and the tasks are taken as abstraction so the goals
+396.44s - 408.12s : are inherent and internal the task and the tasks and actions are explicit and external
+410.32s - 419.04s : now when you consider the cognitive task analysis it is an approach that you
+419.04s - 425.94s : use to evaluate how people get about in doing their tasks
+425.94s - 431.48s : and this might involve a number of different techniques and methods because
+431.48s - 440.16s : the same person doesn't do the same task in the same manner all the time that is one thing
+440.32s - 448.14s : and the second thing is different users don't do the same task in the same manner at the
+448.14s - 456.94s : same time even and I want you to understand the difference here even in the same context
+456.94s - 465.56s : two different people will do the same task differently that's the first thing and when
+465.56s - 470.32s : you take a single user the way he does the task is different and the way he does the task
+470.32s - 477.48s : in one situation may be different from the way he does the same thing in a
+477.48s - 485.64s : different situation so in the situation one his mental process was different to
+485.64s - 492.94s : the situation two's mental processes so however using this cognitive task
+492.94s - 498.3s : analysis what you try to do is to understand the underlying thought process
+498.3s - 499.98s : of a user when performing the task when doing the task you try to understand the underlying thought process of a user when
+499.98s - 506.22s : performing a task. Underlying thought process implies that it's internal. You are trying to
+507.9s - 515.58s : represent that underlying thinking process in a graphic in a different manner which is explicit
+515.58s - 524.14s : that is what you try to do. And here in this activity or in this exercise we will pay more
+524.14s - 535.5s : attention to what we cannot see not what we can see. More attention should go to what we cannot see.
+539.5s - 541.74s : I hope you now try to understand that.
+548.38s - 550.86s : Imagine that you want to take a phone call.
+554.14s - 559.58s : So that is a goal. You want to take a call.
+561.66s - 567.1s : When you want to take a call the first thing is you have to decide using which phone I am going
+567.1s - 573.42s : to take it. Am I going to use my mobile or am I going to use the land phone?
+575.98s - 583.42s : If it is the mobile that I use how I how will I type the
+584.14s - 594.34s : am I going to a key in or am I going to browse through the contact list or take
+594.34s - 596.92s : the number
+597.08s - 604.32s : so there are many things which are happening internally and then you have
+604.32s - 608.74s : to see whether the number is available or not if the number is not available
+608.74s - 616.3s : how are how am I going to take the number back in am I going to go to will
+616.3s - 622.9s : say go back to a room and find an address book which is physical and find
+622.9s - 628.26s : the number from the order or are we going to a search through the internet
+628.26s - 634.18s : to get the number copy and paste and dial it different thing so there are
+634.18s - 638.42s : many things which are happening inside when I
+638.42s - 638.72s : when I am going to search through the internet I am going to search through the internet
+638.72s - 643.56s : when all of these things are basically dictating all these things they look
+643.56s - 643.58s : when all of these things are basically dictating all these things they look
+643.58s - 656.02s : very simple but in most of the time when we try to do things we actually miss out
+656.02s - 664.48s : most of the things which are happening as a sequel while we perform a
+664.48s - 668.4s : particular work so now all
+668.4s - 671.0s : what we will remember is I'm going to take a call.
+671.82s - 674.3s : So whatever which comes in between
+674.3s - 676.32s : may not be very noticeable.
+677.92s - 680.68s : Or the effect of that is not very noticeable.
+682.92s - 688.64s : So now that is also a somewhat generic example.
+689.9s - 693.22s : Now there may be many other complicated things
+693.22s - 699.56s : like doing that internal mental debate
+699.56s - 701.2s : as to which one to take.
+702.54s - 706.22s : Now imagine that I want to,
+707.84s - 709.42s : I will say,
+714.6s - 717.54s : just imagine now you are riding in a bus
+717.54s - 721.76s : and you want to get down at a given bus stop.
+721.76s - 724.18s : So what will you do?
+725.18s - 727.32s : So if you are sitting in a seat,
+728.6s - 732.46s : like when your destination is reaching,
+732.72s - 734.12s : you will get up
+734.12s - 738.52s : and maybe like then you will look for where the bell is.
+739.5s - 740.74s : Then you will look around
+740.74s - 742.38s : whether there are any other people
+742.38s - 745.82s : who are going to get down at the same stop as you.
+746.76s - 748.44s : And maybe sometimes
+748.44s - 751.64s : if you are in an uncomfortable,
+751.76s - 754.26s : at an uncomfortable situation,
+754.26s - 755.26s : you are going to get up,
+755.26s - 756.96s : there might be someone who is going to ring the bell.
+756.96s - 759.48s : So try to wait for somebody else at the same time
+759.48s - 761.64s : and try to keep the situation to ring the bell.
+761.64s - 763.08s : You might be simply waiting
+763.08s - 765.16s : until somebody else rings the bell.
+766.06s - 768.26s : Or if it is not the case,
+768.26s - 769.92s : so what you're trying to do is,
+769.92s - 774.92s : you will basically try ringing the bell by yourself.
+775.18s - 779.22s : So that is a different thought process.
+779.22s - 781.18s : So likewise, there are many different things going on,
+781.18s - 787.68s : off a bus. So likewise there are many different things which are happening inside and many
+787.68s - 797.26s : different tasks that you are invariantly be doing in achieving a goal. So that is what
+797.26s - 803.68s : we are trying to do here. We are going to do that cognitive task analysis by considering
+803.68s - 811.56s : all these aspects and we try to model something which will be closer to the thought process
+811.56s - 820.48s : of a human in achieving a goal. So there may be sequence of actions you need to follow
+820.48s - 829.4s : in doing that. The first one is collect. In collect you collect some preliminary knowledge
+829.4s - 830.6s : about the situation.
+833.12s - 833.64s : So
+833.64s - 833.66s : you
+833.66s - 833.68s : you
+833.68s - 837.8s : are going to analyze and verify the data files. And then you identify knowledge representations.
+837.8s - 847.32s : How it is represented is identified in your mind. And then what you try to do, you will
+847.32s - 853.04s : populate those knowledge representations. You will populate those knowledge representations
+853.04s - 863.66s : with the current situation. And then what you try to do is to analyze and verify. You
+863.66s - 865.66s : are going to identify the data files which are being populated considering the situation
+865.66s - 874.82s : that you are currently in. So now the data which will be populated will be situational.
+874.82s - 880.88s : And your analysis and the verification will be situational. But the collection of preliminary
+880.88s - 886.94s : knowledge and knowledge representations, identifying knowledge representations, they
+886.94s - 892.88s : are somewhat generic. So these things are then going to be more detailed. So now you
+892.88s - 893.62s : can look into that.
+893.62s - 898.5s : attached to the situation through the population and analysis and verification.
+898.5s - 902.34s : And finally, when it comes to the formatting,
+902.34s - 907.22s : now you have got some idea, so you are going to format the result
+907.22s - 911.78s : for intended application, that means you are going to format it fully,
+911.78s - 915.62s : you are going to model it to suit what you are planning to
+915.62s - 919.94s : deliver. So these are the sequence of actions,
+919.94s - 923.3s : this is the sequence of actions that you need to follow
+923.3s - 927.86s : in doing some task analysis.
+929.3s - 935.06s : Now this for like all the other actions in the sequence are important,
+935.06s - 938.34s : we can because in the note provided you can
+938.34s - 943.62s : have a more clearer idea, but when it comes to formatting results,
+943.62s - 949.3s : we pay more great attention to that because
+949.3s - 954.34s : you are going to format results in a way that it is useful for interaction
+954.34s - 958.74s : design. Because now all these exercises are
+958.74s - 964.1s : actually going towards making a good interaction design
+964.1s - 968.98s : or making a good design which follows the interaction design rules
+968.98s - 973.86s : or principles. So therefore you need to format results
+973.86s - 978.74s : in a manner that is useful for making a good interaction design.
+979.3s - 984.58s : So this is the first step, and the next one is quite challenging.
+984.58s - 988.5s : The design should reflect what the user thinks
+988.5s - 992.42s : and what the user feels or what he remembers.
+995.94s - 1002.18s : It should reflect what the user thinks, what the user feels or what the user
+1002.18s - 1005.14s : remembers.
+1005.14s - 1010.02s : And the second step is to think about the situation.
+1010.02s - 1014.02s : So this is the first step, and the next one is quite important.
+1014.02s - 1018.34s : The feeling and remembering is somewhat easier to model,
+1018.34s - 1023.62s : but thinking may be quite challenging.
+1023.62s - 1031.06s : Now there are many relationships available inside, that means your
+1031.06s - 1035.06s : thinking process is always going to analyze the different relationships, in the situation.
+1035.06s - 1039.94s : So the first step is to think about the situation that you are trying to present.
+1039.94s - 1045.94s : So the challenge here in formatting results is that you are going to make
+1045.94s - 1054.74s : these relationships and understanding visible exclusively via the design.
+1054.74s - 1058.82s : If you did not have a proper understanding about the situation
+1058.82s - 1063.54s : or if you have not identifying the identified the relationships properly,
+1065.06s - 1075.94s : your design will not be successful because the design reflects what you have identified.
+1075.94s - 1092.26s : Right, before moving on, I want you to take two minutes and think about this formatting results.
+1095.06s - 1105.22s : Let me just box, and let me see if even I write a text or both.
+1121.22s - 1122.74s : Okay so,
+1122.74s - 1125.06s : our suggestion is to maintain conventional formats such as
+1125.06s - 1132.74s : reflect the users thinking feeling and the amount of his remembering okay so I
+1132.74s - 1137.48s : want you to think a little bit about it
+1139.64s - 1154.44s : and then in the chat you need to send me some of your ideas about this formatting
+1154.44s - 1159.14s : results aspects for this stage
+1181.28s - 1183.9s : the one of one
+1183.9s - 1184.4s : to say
+1184.4s - 1190.42s : the formatting results and all these things are important because you need to
+1190.42s - 1199.82s : design to make it understandable and the second second answer says formatting
+1199.82s - 1204.5s : results may be a way that makes the design more practical and user friendly
+1204.5s - 1214.24s : and the third one it says you should reflect the concept and then again
+1214.24s - 1214.4s : they should be accessible for the user to use and I will explain the process of such an example to you, I will explain all the steps to make the design more practical and user friendly and the third one is that you should reflect the concept and then again
+1214.4s - 1218.72s : there's another answer indicating formatting results will attract the user
+1218.72s - 1227.38s : since it resembles their thoughts and feelings and
+1232.52s - 1235.64s : and then again
+1235.64s - 1237.7s : you
+1240.1s - 1248.94s : now those are truly the valid points because here and the formatting is
+1248.94s - 1255.1s : indicated because this formatting is basically you are going to format what
+1255.1s - 1261.52s : you have identified as the thought process into a very prominent way which
+1261.52s - 1265.16s : will later be resembled in the design so that is
+1265.16s - 1265.62s : what you have identified as the thought process into a very prominent way which will later be resembled in the design so that is what
+1265.62s - 1269.26s : we do so
+1276.6s - 1282.78s : then a nice good at nice and good examples coming out so yes the
+1282.78s - 1291.72s : formatting result is important because you need to use these results to be
+1291.72s - 1295.38s : reflected in the actual interface design and
+1295.62s - 1304.96s : Therefore, you need to be well aware of what is happening inside the user's head and how
+1304.96s - 1308.5s : he feels and how he remembers.
+1308.5s - 1315.28s : Also you need to understand the relationships among internal aspects and the understanding
+1315.28s - 1324.14s : about the situation and these relationships and understandings should be made explicit
+1324.14s - 1325.74s : through the design.
+1325.74s - 1334.96s : So therefore this formatting is extremely important.
+1334.96s - 1342.68s : In order to do this formatting, we use some notation.
+1342.68s - 1353.24s : I believe you have done flowcharts, but have you heard about JSD structure chart or Jackson
+1353.24s - 1354.12s : structure diagram?
+1354.12s - 1363.18s : So it's an old way of representing how the program execution should go.
+1363.18s - 1369.56s : So we are using a similar approach here, the divide and confer.
+1369.56s - 1375.72s : So this is an example of the formatting of the entire thought process.
+1375.72s - 1379.94s : So this is simply a very simple aspect.
+1379.94s - 1383.52s : The example taken is.
+1384.12s - 1390.9s : That a user needs to give a feedback to a service obtained.
+1390.9s - 1397.46s : So that feedback could be given in many different ways that we don't know exactly.
+1397.46s - 1404.62s : Maybe if you imagine about different things or the different ways that you could give
+1404.62s - 1414.12s : the feedback, maybe sometimes you can give a feedback on their website where the customer
+1414.12s - 1415.12s : feedback is displayed.
+1415.12s - 1416.12s : Or you can send them an email.
+1416.12s - 1417.12s : Or there may be some applications where the feedback forms are available.
+1417.12s - 1418.12s : So you can do that.
+1418.12s - 1435.12s : Another way to give a feedback is you might have decided to give a telephone call to that
+1435.12s - 1438.8s : service center and give the feedback.
+1438.8s - 1440.9s : Like there may be many different feedback methods.
+1440.9s - 1442.82s : So you can give a feedback.
+1442.82s - 1443.9s : So you can give a feedback.
+1443.9s - 1453.58s : So when you take the provide feedback, the very first thing which comes to your mind
+1453.58s - 1458.48s : is like, how should I provide the feedback?
+1458.48s - 1467.22s : So in identifying how should I provide the feedback, then you come to the awareness of
+1467.22s - 1470.9s : many different methods available to give the feedback.
+1470.9s - 1471.9s : So through that awareness, you can give the feedback.
+1471.9s - 1472.9s : So that's the first thing.
+1472.9s - 1473.9s : Okay.
+1473.9s - 1478.02s : So if you have a very good awareness, then you need to choose the feedback method that
+1478.02s - 1479.02s : you prefer.
+1479.02s - 1488.42s : Based on the feedback method you have chosen, you will mention the feedback.
+1488.42s - 1493.9s : It may be writing it up or you mention it otherwise.
+1493.9s - 1500.58s : Finally, you are going to submit it or confirm it.
+1500.58s - 1501.58s : Okay.
+1501.58s - 1502.58s : Okay.
+1502.58s - 1503.58s : So the first thing you need to do is to provide feedback.
+1503.58s - 1504.58s : So the first thing you need to do is to provide feedback is the overall task or the goal.
+1504.58s - 1509.58s : So there may be many different ways that goal could be achieved.
+1509.58s - 1514.58s : So you therefore identify different methods of providing feedback.
+1514.58s - 1525.02s : And after identifying many different methods, you choose the way that you want or the choose
+1525.02s - 1529.58s : the method that you would like to choose, use.
+1529.58s - 1530.58s : And depending on the chosen method, you will be able to provide feedback.
+1530.58s - 1531.58s : So that's the first thing.
+1531.58s - 1535.58s : You will mention the feedback or write it up.
+1535.58s - 1539.58s : And finally, you are confirming it or submitting the feedback.
+1539.58s - 1548.34s : So this is a very abstract level observable task.
+1548.34s - 1549.34s : You can observe these things.
+1549.34s - 1555.58s : When you are providing feedback, identifying many different feedback methods is somewhat
+1555.58s - 1556.58s : observable.
+1556.58s - 1560.58s : Writing or mentioning the feedback is observable.
+1560.58s - 1561.58s : Okay.
+1561.58s - 1563.58s : So the fourth thing is you are submitting the feedback observable.
+1563.58s - 1564.58s : And submitting the feedback observable, explicitly.
+1564.58s - 1565.58s : So this is very abstract level.
+1565.58s - 1566.58s : But there may be many internal things happening when you go to the sub levels of this.
+1566.58s - 1567.58s : Now, imagine you take the choosing the feedback method.
+1567.58s - 1580.58s : Now, okay, you might ask them, okay, what are the methods that I could use in this?
+1580.58s - 1589.58s : So there may be many internal things happening when you go to the sub levels of this.
+1589.58s - 1590.58s : Okay.
+1590.58s - 1593.7s : that I could use to give the feedback.
+1595.6s - 1599.8s : So you might be informed, you can use telephone,
+1599.8s - 1604.54s : you can use email, or you can use the feedback form
+1604.54s - 1606.8s : available on our website.
+1608.24s - 1612.38s : So when you have been given that information,
+1612.38s - 1616.38s : how many different things are going on in your mind?
+1617.3s - 1619.04s : Going on in your mind.
+1620.58s - 1625.58s : You will internally do an assessment
+1625.58s - 1627.12s : of all these three methods.
+1629.94s - 1634.94s : If I do not have a computer at that particular time,
+1635.2s - 1638.54s : I might decide to give a telephone call.
+1641.64s - 1646.64s : So in order to take the decision of giving a telephone call,
+1647.68s - 1650.58s : like there are many other aspects coming out.
+1650.58s - 1655.58s : So I internally scrutinize the available facilities
+1657.2s - 1660.52s : and see which one is most convenient for me to use
+1660.52s - 1661.36s : at this time.
+1664.4s - 1667.72s : And after choosing the method, maybe like later on
+1667.72s - 1671.72s : you decide, okay, I don't want to spend a lot of time
+1671.72s - 1675.98s : on the telephone call, going into these waiting lines
+1675.98s - 1678.98s : and all that, so I prefer just to give a telephone call.
+1680.58s - 1683.72s : And then I will simply find the email address
+1683.72s - 1684.52s : and send it.
+1684.52s - 1687.52s : So then I don't want to wait until the other person
+1687.52s - 1690.52s : from the other side connects to the call.
+1690.52s - 1694.52s : So I will simply find the email address and send it.
+1694.52s - 1700.52s : Or I might decide to go to that website, explore it a little,
+1700.52s - 1704.52s : and find out where this feedback form is,
+1704.52s - 1706.52s : fill it up, and submit.
+1706.52s - 1709.14s : So this choice is very important for me.
+1709.14s - 1710.2s : So I will simply find the email address and send it.
+1710.2s - 1713.54s : So this choice is yours, and you will make the choice
+1713.54s - 1716.98s : based on many other factors, such as experience,
+1716.98s - 1719.48s : preference, the situation, and the condition.
+1721.44s - 1726.44s : And then you move on to the next level, next item,
+1729.02s - 1732.06s : that's the, or the next stage,
+1732.06s - 1734.12s : that is to mention the feedback.
+1735.9s - 1739.38s : So now when you do the mentioning of the feedback again,
+1739.38s - 1740.12s : the things, the feedback, the feedback, the feedback,
+1740.2s - 1741.74s : are happening inside.
+1741.74s - 1745.74s : Things are happening internally to your head.
+1745.74s - 1747.58s : So when you are mentioning the feedback,
+1747.58s - 1752.58s : if you are giving that phone call,
+1753.92s - 1757.12s : then you are internally, you are recording that experience.
+1758.18s - 1762.16s : You are trying to remember, or you are trying to recall
+1762.16s - 1763.66s : how you actually felt.
+1765.88s - 1768.2s : And then you are trying to think about
+1768.2s - 1770.0s : the best way to tell that.
+1770.2s - 1771.7s : So you are trying to think about,
+1771.7s - 1772.54s : how to reason it out.
+1773.54s - 1775.74s : And you are trying to think about,
+1775.74s - 1777.16s : how to reason it out.
+1778.6s - 1781.2s : There may be some people who want to put it
+1781.2s - 1783.88s : just in point blank and white,
+1783.88s - 1786.42s : like, you don't mind being rude.
+1786.42s - 1789.78s : There may be another person who doesn't want to be rude.
+1789.78s - 1793.2s : So he's trying to think about the best way
+1793.2s - 1795.62s : to give this feedback.
+1797.42s - 1798.86s : And another person, that person is so angry,
+1798.86s - 1800.08s : they are doesn't want to be rude.
+1800.08s - 1806.5s : so he wants to let the other end know that you are so disappointed and angry
+1806.5s - 1813.28s : that then the use of language and tone and everything is different so there are
+1813.28s - 1816.36s : many things going on
+1817.46s - 1823.84s : and then finally you can submit the feedback if it was actually a verbal
+1823.84s - 1829.6s : feedback or maybe like you can say that's what I need to say and that's it
+1830.08s - 1837.0s : and then otherwise if it is an email you send it if it is a form field you will
+1837.0s - 1843.08s : click the submit button so there may be many different way that you take it so
+1843.08s - 1852.94s : if you try to mention the feed like mention how elaborately you can take
+1852.94s - 1859.48s : some of these steps so here you get an example if you consider the right and
+1859.48s - 1859.86s : right
+1859.86s - 1859.94s : example if you consider the right and right
+1859.94s - 1860.06s : example if you consider the right and right
+1860.06s - 1868.46s : mentioned feedback step in reality it involves a lot of cognitive tasks as we
+1868.46s - 1876.56s : discussed they are not observable because it purely happens inside your
+1876.56s - 1888.24s : head now if you look at the area which has been marked with this dashed line so
+1888.24s - 1895.82s : it is a recurring process of recalling the service experience and you assess
+1895.82s - 1904.28s : the service quality and mentally agree and organize what to mention
+1905.62s - 1911.86s : you maintain you agree and organize what to mention that is important you again
+1911.86s - 1917.6s : recall the service experience you assess the quality and then you agree how to
+1917.6s - 1918.22s : mention that
+1918.24s - 1931.36s : so this will be a recurrent process until you finalize your message right so
+1931.36s - 1936.46s : this assessing the service quality is not an not a standalone approach or not
+1936.46s - 1943.78s : a standalone activity is assessing the service quality implies that you compare
+1943.78s - 1947.24s : it with your expectation
+1947.24s - 1948.22s : may be a recurrent process but you finalize your message and then you agree and organize what to mention that is important you again recall the service experience and then you agree how to mention that
+1948.24s - 1955.62s : you compare it with a previous experience if you have had a better
+1955.62s - 1964.42s : experience earlier you will rate this below average but if we had a worse
+1964.42s - 1972.6s : experience earlier you will consider this service good so that is solely
+1972.6s - 1977.92s : dependent on your experience earlier
+1978.24s - 2000.5s : so this is another – I guess I will call it a
+2000.5s - 2002.4s : ila
+2002.4s - 2004.28s : see you soon
+2004.28s - 2007.18s : okay
+2007.18s - 2007.7s : okay
+2007.7s - 2015.94s : the organization and agreeing on what to mention assume that you're talking to a person who is very
+2015.94s - 2023.6s : cooperative the way you mention even a negative point may not be so harsh because the other end
+2023.6s - 2030.86s : the next other person is cooperative and understanding but if you are dealing with
+2030.86s - 2038.78s : a person who is so reaching who is difficult to convince then the way you mention will also be
+2038.78s - 2050.0s : changed so now everything is mental process so it's a cognitive work you need to understand that
+2056.66s - 2056.72s : you
+2061.38s - 2072.14s : continue now when you take this we will try to convert this previous experience
+2072.14s - 2083.94s : into the textual hierarchical analysis that means the hierarchical task analysis HTA stands
+2083.94s - 2090.5s : for hierarchical task analysis so it happens in two different were textual and diagrammatic
+2090.5s - 2099.2s : normally we do the textual first and then the then represented diagrammatically later so now
+2099.2s - 2108.68s : when you take this there are different levels the root level is the provide feedback and then
+2108.68s - 2117.12s : it comes to the next layer you have the choose feedback method the right-o mention the feedback
+2117.12s - 2128.46s : and submit feedback when you take this we will let's imagine you take all the email and the
+2128.46s - 2136.56s : form fill method so then there may be many different aspects you can take under the
+2136.56s - 2142.14s : mentioning of the feedback when you are mentioning the feedback one action that you can perform is
+2142.14s - 2146.58s : opening email and then writing the email
+2147.12s - 2156.54s : the next will be opening the form and filling out the form based on the method that you have chosen
+2156.54s - 2163.92s : you will take two point one and two point two or two point three and two point four depending on
+2163.92s - 2171.2s : which branch you take and then you are going to submit submission will be either sending
+2171.2s - 2176.66s : an email or submit the form that means you click on the send button
+2177.12s - 2182.88s : click on the submit button on the form so when you take this now you can
+2182.88s - 2192.4s : diagrammatically represent it like you get the root level provide feedback
+2192.4s - 2201.78s : then choose the feedback method you have chosen it then you are going to get into
+2201.78s - 2208.96s : the next branch so it's a rightention the feedback now there the
+2208.96s - 2216.06s : choice here if you have chosen one method you will do one set of action
+2216.06s - 2222.18s : if you choose another method you will do another set of action so if the feedback
+2222.18s - 2231.16s : method is email do 2.1 and 2.2 in order you will do 2.1
+2231.16s - 2231.6s : and two point two in order r trade mother j organization review the different
+2231.6s - 2231.66s : rolling and spreading the message in order and if you change the space type
+2231.66s - 2231.76s : the data will pop out fixed the report will once organically and file can e-mail
+2231.76s - 2240.64s : point two in order if it is email else you are going to do two point three and two point four
+2240.64s - 2249.2s : in order at a given time either two point one and two point two or two point three and two point four
+2249.2s - 2259.6s : will be taken and then once you finish this end then you are going to move again towards the next
+2259.6s - 2266.88s : this is a submit so when you submit it will be either email sending or form fill submission
+2267.92s - 2274.64s : then again you do a check if the feedback method is email then do 3.1
+2276.48s - 2284.48s : else do 3.2 so this is a very simple way of representing
+2286.96s - 2289.52s : the task of providing
+2289.6s - 2299.04s : a feedback okay so what you need to understand here is in this diagram you go from top to bottom
+2299.04s - 2305.92s : left to right approach so you will take top to bottom left to right approach
+2316.16s - 2319.12s : it initially takes top to bottom
+2319.6s - 2324.24s : then it goes from left to right
+2324.24s - 2332.72s : now when it comes here there is something to go inside again top to bottom then goes from left to
+2332.72s - 2341.84s : right as there is a selection you need to take this the two sets separately like this now you
+2341.84s - 2344.96s : need to take this
+2344.96s - 2352.24s : the two sets separately like this now one of these things are done then it will go back here
+2352.24s - 2357.04s : and then again come back there is an option either this or this
+2357.04s - 2362.56s : and finally it will be over so you have to remember top to bottom left to right left to right
+2362.56s - 2368.4s : and this is the same thing you have to take as a reference for the next time
+2368.4s - 2373.2s : now you have to remember this is the same thing you have to do for this process
+2373.2s - 2373.6s : okay
+2373.6s - 2377.64s : left to right navigation, top to bottom, left to right.
+2378.38s - 2381.34s : So all the time when you go to one step,
+2381.44s - 2384.08s : you check whether there are sub-branches of it.
+2384.4s - 2387.4s : If there are, all the sub-branches will be completed
+2387.4s - 2388.84s : before moving to the right.
+2389.52s - 2391.46s : That is what you do here.
+2391.46s - 2395.62s : So this is how you travel through the diagrammatic HTA.
+2396.74s - 2399.06s : So this is a very simple thing.
+2399.06s - 2403.52s : So you can even have more elaborated aspects.
+2404.42s - 2406.0s : So this is the first wave,
+2406.24s - 2408.46s : and we are going to change the view here.
+2410.48s - 2414.12s : Imagine somebody might have also thought about
+2414.12s - 2418.64s : the same thing with only two steps.
+2419.18s - 2421.56s : You need to provide feedback.
+2422.86s - 2424.76s : There are the two methods.
+2425.0s - 2428.04s : Choose the feedback method and submit the feedback.
+2429.06s - 2434.26s : You have not taken it down as the mentioning of the feedback.
+2435.64s - 2437.88s : Instead, you have taken only two steps.
+2438.92s - 2442.44s : In the submit feedback step,
+2442.44s - 2448.0s : there are sub-steps, 2.1, 2.2, and 2.3,
+2448.82s - 2451.7s : to represent the emailing, open writing, and sending.
+2452.4s - 2457.76s : And similarly, 2.4, 2.5, and 2.6 represent the form filling
+2457.76s - 2458.88s : to open.
+2459.06s - 2460.06s : So you can fill and submit.
+2460.06s - 2466.06s : So if you do this, this is how you are modeling it.
+2466.06s - 2473.06s : Now you come from top to bottom, and here you go, and it is this.
+2473.06s - 2481.06s : Then you are going to take this, and you have a bunch of things together,
+2481.06s - 2484.06s : and another bunch of things together.
+2484.06s - 2487.06s : Now imagine this is the same thing, but you have a different form.
+2487.06s - 2488.06s : You have a different form.
+2488.06s - 2488.54s : You have a different form.
+2488.54s - 2489.04s : You have a different form.
+2489.04s - 2494.04s : Now imagine this is a simple example of providing a feedback.
+2494.04s - 2496.04s : Now imagine this is a simple example of providing a feedback.
+2496.04s - 2501.04s : Now in this, we have seen there are two different ways.
+2501.04s - 2508.04s : Currently, we have discussed two different ways of representing the same thing.
+2508.04s - 2511.04s : Now when it comes to a very complicated task,
+2511.04s - 2518.04s : can you imagine how many different representations that we need to reflect in our design?
+2518.04s - 2519.04s : Now imagine how many different representations that we need to reflect in our design?
+2519.04s - 2521.04s : Now imagine how many different representations that we need to reflect in our design?
+2521.04s - 2527.04s : So when you try to do this HTA textually and diagrammatically,
+2527.04s - 2535.04s : you will see many different avenues that the task can traverse through.
+2535.04s - 2542.04s : Depending on that, you can give many designing options.
+2542.04s - 2546.04s : That is what we need to do this modeling for.
+2546.04s - 2547.04s : That is what we need to do this modeling for.
+2547.04s - 2548.04s : That is what we need to do this modeling for.
+2548.04s - 2556.04s : now I want you to get into this exercise
+2556.1s - 2564.0s : right prepare textual HTA and diagrammatic HTA for searching
+2564.0s - 2574.04s : something in Google okay I will make available a link on model you do your
+2574.04s - 2581.48s : work and submit it there it is not an assignment but this will be taken for
+2581.48s - 2589.46s : discussion for completeness if you are in a position not to where you do not
+2589.46s - 2598.08s : have a computer but computer with you it's all fine all what you need to do is
+2598.08s - 2603.8s : do it on a paper take a photo and upload that's enough okay do it on paper
+2603.8s - 2604.02s : okay do it on paper take a photo and upload that's enough okay do it on paper
+2604.02s - 2613.26s : take a photo and upload I will make available the link I will give you I
+2613.26s - 2628.64s : will say 10 minutes or 15 minutes if you want finish it by 12 10 10 minutes past
+2628.64s - 2633.78s : 12 so I will make the link available on mode
+2633.78s - 2633.8s : so I will make the link available on mode
+2633.8s - 2633.98s : so I will make the link available on mode
+2634.02s - 2636.02s : so I will make the link available on mode

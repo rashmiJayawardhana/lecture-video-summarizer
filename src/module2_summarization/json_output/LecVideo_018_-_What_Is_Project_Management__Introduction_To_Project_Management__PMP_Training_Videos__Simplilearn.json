@@ -1,0 +1,4524 @@
+[
+  {
+    "sentence": "Hi welcome to project management tutorial from simplelearn. I am Chandra",
+    "timestamp_start": 0.0,
+    "timestamp_end": 12.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Aymar a professional consultant and coach in best practices related to",
+    "timestamp_start": 12.06,
+    "timestamp_end": 16.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project management and IT service management. Today as part of this",
+    "timestamp_start": 16.8,
+    "timestamp_end": 20.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "tutorial we are going to learn the basic understanding about the project",
+    "timestamp_start": 20.1,
+    "timestamp_end": 24.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "management and the required knowledge for a project manager to become",
+    "timestamp_start": 24.96,
+    "timestamp_end": 29.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "successful in managing projects. So as part of this tutorial we are going to",
+    "timestamp_start": 29.08,
+    "timestamp_end": 33.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "look at what is project management? what is project components of project",
+    "timestamp_start": 33.08,
+    "timestamp_end": 37.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "management? project lifecycle? key focus areas in project management? job roles in",
+    "timestamp_start": 37.84,
+    "timestamp_end": 43.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project management and project management certifications? So what is",
+    "timestamp_start": 43.0,
+    "timestamp_end": 47.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project management? Now as defined in PMI's PMBOK project management is",
+    "timestamp_start": 47.1,
+    "timestamp_end": 52.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "application of knowledge skills tools and techniques to project activities to",
+    "timestamp_start": 52.52,
+    "timestamp_end": 58.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "meet project goals and to meet the requirements to meet the project goals and to meet the",
+    "timestamp_start": 58.42,
+    "timestamp_end": 59.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "requirements so every project will have an objective to accomplish similarly",
+    "timestamp_start": 59.06,
+    "timestamp_end": 63.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the objective of project management is to make the final deliverables in a",
+    "timestamp_start": 63.38,
+    "timestamp_end": 67.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "finite time and budget this involves having clear understanding about the",
+    "timestamp_start": 67.22,
+    "timestamp_end": 71.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "deliverables of the project required resources for the project resource in",
+    "timestamp_start": 71.4,
+    "timestamp_end": 75.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "terms of human resources technical resources financial resources etc",
+    "timestamp_start": 75.5,
+    "timestamp_end": 79.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project managers should have a full picture of those aspects we can call it",
+    "timestamp_start": 79.84,
+    "timestamp_end": 84.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as constraints or aspects and manage those throughout the project lifecycle",
+    "timestamp_start": 84.08,
+    "timestamp_end": 88.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which a project manager should have a full view about a project and what is",
+    "timestamp_start": 89.06,
+    "timestamp_end": 94.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that this project has to accomplish that objective should be clear so as part of",
+    "timestamp_start": 94.16,
+    "timestamp_end": 99.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project management the six constraints which project managers should look at are",
+    "timestamp_start": 99.74,
+    "timestamp_end": 103.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "scope time quality cost risk and resources so each of these areas has",
+    "timestamp_start": 103.84,
+    "timestamp_end": 109.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "very important role to play in project management the clarity in scope the",
+    "timestamp_start": 109.88,
+    "timestamp_end": 114.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "clarity in terms of schedule within which the project has to be delivered",
+    "timestamp_start": 114.96,
+    "timestamp_end": 118.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the cost what it incurs to that particular project once it is",
+    "timestamp_start": 118.4,
+    "timestamp_end": 122.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "finalized one cannot vary when cannot change without any proper approvals",
+    "timestamp_start": 122.08,
+    "timestamp_end": 126.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "similar to that we have quality management which has to ensure the scope",
+    "timestamp_start": 126.82,
+    "timestamp_end": 131.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the specifications what are defined project output will be accordingly",
+    "timestamp_start": 131.16,
+    "timestamp_end": 135.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "achieved risk every project is taken up for a specific reason by organization",
+    "timestamp_start": 135.52,
+    "timestamp_end": 140.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so organization should assess the risk associated with the project and",
+    "timestamp_start": 140.22,
+    "timestamp_end": 144.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "similarly as projects progresses various different risks has to beываем a high",
+    "timestamp_start": 144.08,
+    "timestamp_end": 147.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "顧ная credit as a generaliso autoregulation so based on the current",
+    "timestamp_start": 147.5,
+    "timestamp_end": 148.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "be identified like risk related to project management risk related to technology area",
+    "timestamp_start": 148.4,
+    "timestamp_end": 153.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "risk related to resources risk related to financial things so broadly risk management",
+    "timestamp_start": 153.6,
+    "timestamp_end": 159.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "plays a very important role so there will be something called contingency reserve kept for a",
+    "timestamp_start": 159.76,
+    "timestamp_end": 164.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "identified risk above the cost what is estimated for various deliverables from the project so every",
+    "timestamp_start": 164.8,
+    "timestamp_end": 172.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "projects require resources resources may be in terms of human resources financial resources",
+    "timestamp_start": 172.0,
+    "timestamp_end": 177.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "technology resources environmental resources so all these resources are used to produce the",
+    "timestamp_start": 177.92,
+    "timestamp_end": 184.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "output of the project so these resources has to be managed with the sufficient optimization and",
+    "timestamp_start": 184.16,
+    "timestamp_end": 190.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "standardizations required now let us understand the definition of a project so what is a project",
+    "timestamp_start": 190.08,
+    "timestamp_end": 196.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "pmi defines a project as a temporary endeavor undertaken to create a unique product service",
+    "timestamp_start": 196.08,
+    "timestamp_end": 202.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or result the temporary nature of a project indicates that a project has a definite beginning",
+    "timestamp_start": 202.0,
+    "timestamp_end": 207.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and end so when i say product unique product it means every output it may be similar products you",
+    "timestamp_start": 207.92,
+    "timestamp_end": 214.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are producing with the same features and functionality but the output of every project",
+    "timestamp_start": 214.88,
+    "timestamp_end": 219.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is unique because it is unique in terms of all the six constraints what we just discussed now",
+    "timestamp_start": 219.44,
+    "timestamp_end": 224.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now when i say product it is very easy for us to visualize it may be a desktop it may be a laptop",
+    "timestamp_start": 224.96,
+    "timestamp_end": 230.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it may be a car it may be a machine etc but how do i visualize a service a project's output is a service",
+    "timestamp_start": 230.16,
+    "timestamp_end": 237.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or is it a service for me to visualize a service it's not a service but it is a service for me to",
+    "timestamp_start": 237.92,
+    "timestamp_end": 242.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "visualize a service as a project but when i say project i'm talking about building a capability",
+    "timestamp_start": 242.96,
+    "timestamp_end": 247.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a project by through a project a capability can be built to ensure services can be provided that's",
+    "timestamp_start": 247.76,
+    "timestamp_end": 253.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what the output of project is service for example if i think about a taxi services for providing a",
+    "timestamp_start": 253.68,
+    "timestamp_end": 259.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "taxi services i need a mobile app i need taxi i need a server i need a data center so all these are",
+    "timestamp_start": 259.28,
+    "timestamp_end": 266.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "various different products and services here service example can be internet service so a combination of all the services and products builds the capability of building a product",
+    "timestamp_start": 266.0,
+    "timestamp_end": 267.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for an organization who can provide the tax services. So building that capability we say",
+    "timestamp_start": 267.92,
+    "timestamp_end": 273.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it is an output of a particular project which is called service. Similarly results can be",
+    "timestamp_start": 273.96,
+    "timestamp_end": 279.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "improvement of something, improvement in customer satisfaction, increase in some specific objectives",
+    "timestamp_start": 279.12,
+    "timestamp_end": 285.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or specific results needs to be achieved in performance perspective. So output of every",
+    "timestamp_start": 285.86,
+    "timestamp_end": 290.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project will be unique product or a service or a result. This we need to clearly understand.",
+    "timestamp_start": 290.56,
+    "timestamp_end": 295.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when we say there is a definite beginning and end, every project starts at a certain point in",
+    "timestamp_start": 295.32,
+    "timestamp_end": 300.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "time and ends at certain point in time. So it has a definite beginning and end. That is the reason",
+    "timestamp_start": 300.48,
+    "timestamp_end": 305.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it is temporary in nature. It is not an ongoing business activity. So every project will have a",
+    "timestamp_start": 305.76,
+    "timestamp_end": 312.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "life cycle, a beginning and end. So when it starts till end, until the result or a service or a",
+    "timestamp_start": 312.6,
+    "timestamp_end": 320.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "product which comes as an output of a project, project life cycle is not ended. So interestingly",
+    "timestamp_start": 320.5,
+    "timestamp_end": 325.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in a product life cycle or in a service life cycle you come across many project life cycles. So one",
+    "timestamp_start": 325.32,
+    "timestamp_end": 332.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project life cycle means one project is initiated to introduce a product or services. Next project",
+    "timestamp_start": 332.68,
+    "timestamp_end": 338.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or initiated would be to enhance the capability of a service or a product. Next project initiated",
+    "timestamp_start": 338.38,
+    "timestamp_end": 344.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "after some time is to optimize something. Similarly at the end of the product life cycle, project is",
+    "timestamp_start": 344.26,
+    "timestamp_end": 349.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "initiated to retire that product or services. So in a given product life cycle there may be multiple",
+    "timestamp_start": 349.14,
+    "timestamp_end": 354.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "projects that are initiated. So what is involved in the project life cycle? It involves five areas,",
+    "timestamp_start": 355.32,
+    "timestamp_end": 359.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "five groups we can call it as. So initiation, planning, execution, monitoring and closure. So",
+    "timestamp_start": 359.28,
+    "timestamp_end": 365.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when I say initiation, it's all about understanding what is project, giving the basic understanding of",
+    "timestamp_start": 365.4,
+    "timestamp_end": 371.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the project, collating the details and having key stakeholders identified. Once that is done,",
+    "timestamp_start": 371.34,
+    "timestamp_end": 377.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "one will move towards planning. So here in the initiation it is very clearly one has to",
+    "timestamp_start": 377.8,
+    "timestamp_end": 384.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "understand is planning, planning, and closing. So what is involved in the project life cycle? It is",
+    "timestamp_start": 384.3,
+    "timestamp_end": 385.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to understand what is involved in the project life cycle. So one has to check the feasibility, one has to measure",
+    "timestamp_start": 385.32,
+    "timestamp_end": 391.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that particular investment is making sense and then confirm yes it makes sense to invest. Now next",
+    "timestamp_start": 391.08,
+    "timestamp_end": 397.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "planning. As we have a basic understanding of yes this project has to be done and a discussion with",
+    "timestamp_start": 397.44,
+    "timestamp_end": 403.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the key stakeholders have happened, now that moves towards planning. Now in planning one will",
+    "timestamp_start": 403.68,
+    "timestamp_end": 409.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "understand the project in entirety. If it is a waterfall approach, one has to have a clear",
+    "timestamp_start": 409.5,
+    "timestamp_end": 414.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "articulation of entire project, a comprehensive details, holistic approach. Now if you go, if you're",
+    "timestamp_start": 414.3,
+    "timestamp_end": 420.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "going in a project in an agile way of approach, now in this planning you may have a big skeleton.",
+    "timestamp_start": 420.3,
+    "timestamp_end": 425.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As you go in each of the iteration you may go deep dive into detailed planning if it is an agile",
+    "timestamp_start": 425.4,
+    "timestamp_end": 430.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "approach. So planning provides you the clear insight towards what needs to be done in this",
+    "timestamp_start": 430.24,
+    "timestamp_end": 435.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project, how it has to be done and what are the results which can be achieved",
+    "timestamp_start": 435.1,
+    "timestamp_end": 439.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "out of that particular project. So this involves making that a clear blueprint.",
+    "timestamp_start": 439.54,
+    "timestamp_end": 444.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of an project objectives what we are supposed to achieve.",
+    "timestamp_start": 444.3,
+    "timestamp_end": 447.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this will become a reference point throughout the project life cycle.",
+    "timestamp_start": 447.72,
+    "timestamp_end": 450.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then execution, as you have a blueprint of the project, as the direction of that project",
+    "timestamp_start": 450.98,
+    "timestamp_end": 455.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is set, detailing of the project has been made, one will go ahead and execute the project.",
+    "timestamp_start": 455.34,
+    "timestamp_end": 460.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Execute in the sense implementation, acquiring resources and implementing it.",
+    "timestamp_start": 460.42,
+    "timestamp_end": 464.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So execution phase involves the allocation of resources and making the deliverables as",
+    "timestamp_start": 464.96,
+    "timestamp_end": 470.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "required.",
+    "timestamp_start": 470.2,
+    "timestamp_end": 471.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You acquire resources, you configure a resource, you ensure right resources are acquired.",
+    "timestamp_start": 471.2,
+    "timestamp_end": 475.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If it is human resource, one has to educate that human resource with the project required",
+    "timestamp_start": 475.9,
+    "timestamp_end": 480.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "knowledge or details, or one has to provide that assignment in such a way that skills",
+    "timestamp_start": 480.52,
+    "timestamp_end": 486.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of that individuals, what they should have is acquired by those individuals so that deliverables",
+    "timestamp_start": 486.58,
+    "timestamp_end": 491.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can happen and they need to be managed.",
+    "timestamp_start": 491.46,
+    "timestamp_end": 494.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The entire team needs to be managed for that a clear structure has to be created.",
+    "timestamp_start": 494.3,
+    "timestamp_end": 498.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly, when you do technology resource perspective.",
+    "timestamp_start": 498.96,
+    "timestamp_end": 501.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Those components has to be tested, configured, then integrated, again tested for and check",
+    "timestamp_start": 501.18,
+    "timestamp_end": 506.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the performances.",
+    "timestamp_start": 506.86,
+    "timestamp_end": 508.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So collective action of this results in a deliverable during the execution.",
+    "timestamp_start": 508.28,
+    "timestamp_end": 512.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So as the deliverables are happening in the execution, it is quite obvious project manager",
+    "timestamp_start": 512.38,
+    "timestamp_end": 517.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "has to monitor, review, control that particular deliverable and also the processes, tools,",
+    "timestamp_start": 517.26,
+    "timestamp_end": 523.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "resources used during the project.",
+    "timestamp_start": 523.94,
+    "timestamp_end": 525.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Even those needs to be monitored so that they are complying to the defined processes.",
+    "timestamp_start": 525.86,
+    "timestamp_end": 529.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So during monitoring.",
+    "timestamp_start": 529.88,
+    "timestamp_end": 530.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There may be a deviation one can found during monitoring.",
+    "timestamp_start": 530.88,
+    "timestamp_end": 535.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There may be the project is running the way it is required.",
+    "timestamp_start": 535.72,
+    "timestamp_end": 538.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in this monitoring phase, it involves an action from project manager to monitor and",
+    "timestamp_start": 538.74,
+    "timestamp_end": 544.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "control the work of the project.",
+    "timestamp_start": 544.38,
+    "timestamp_end": 546.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So comparing with the blueprint of plan, what is accomplished, what is created during the",
+    "timestamp_start": 546.08,
+    "timestamp_end": 550.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "planning phase of this project.",
+    "timestamp_start": 550.88,
+    "timestamp_end": 553.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And as the execution happens, monitoring and control is monitoring it and checking is that",
+    "timestamp_start": 553.6,
+    "timestamp_end": 558.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "activities.",
+    "timestamp_start": 558.98,
+    "timestamp_end": 560.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is being done is according to the plan or not.",
+    "timestamp_start": 560.32,
+    "timestamp_end": 563.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly the deliverables which comes as an output of a project are tested thoroughly.",
+    "timestamp_start": 563.6,
+    "timestamp_end": 568.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Whether those have a specific features and functionality and are they functioning the",
+    "timestamp_start": 568.3,
+    "timestamp_end": 572.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "way it is required.",
+    "timestamp_start": 572.84,
+    "timestamp_end": 574.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now project has to be delivered to the scope what is defined.",
+    "timestamp_start": 574.04,
+    "timestamp_end": 577.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It should not go beyond that or below that.",
+    "timestamp_start": 577.36,
+    "timestamp_end": 579.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly the schedule what is made for the project within that schedule project deliverables",
+    "timestamp_start": 579.98,
+    "timestamp_end": 584.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "needs to be accomplished within the cost what is budgeted for the project.",
+    "timestamp_start": 584.04,
+    "timestamp_end": 588.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So during the project.",
+    "timestamp_start": 588.36,
+    "timestamp_end": 589.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You.",
+    "timestamp_start": 589.68,
+    "timestamp_end": 590.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Project manager may find there are certain deviations which are occurred.",
+    "timestamp_start": 590.32,
+    "timestamp_end": 595.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are additional challenges which has come in.",
+    "timestamp_start": 595.1,
+    "timestamp_end": 597.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for this reason one has to ensure continued monitoring as the execution happens and identify",
+    "timestamp_start": 597.4,
+    "timestamp_end": 603.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "those deviation and ensure whenever there is a deviation there is a correction.",
+    "timestamp_start": 603.66,
+    "timestamp_end": 608.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Whenever there is an additional things coming in that needs to be considered carefully whether",
+    "timestamp_start": 608.74,
+    "timestamp_end": 612.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that need to be involved as part of this deliverable or should be taken it separately.",
+    "timestamp_start": 612.7,
+    "timestamp_end": 617.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this requires a lot of conversation with all the stakeholders of the project.",
+    "timestamp_start": 617.2,
+    "timestamp_end": 619.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "During the entire project life cycle especially during planning execution monitoring and control.",
+    "timestamp_start": 619.68,
+    "timestamp_end": 625.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Since they are not the one which is happening in sequence.",
+    "timestamp_start": 625.68,
+    "timestamp_end": 628.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So planning can also come back again where there is something which you may require to",
+    "timestamp_start": 628.74,
+    "timestamp_end": 632.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "modify.",
+    "timestamp_start": 632.42,
+    "timestamp_end": 634.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So may require to have a change in the blueprint itself by adding that new change which is",
+    "timestamp_start": 634.08,
+    "timestamp_end": 638.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "coming in.",
+    "timestamp_start": 638.44,
+    "timestamp_end": 639.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you go back to planning.",
+    "timestamp_start": 639.44,
+    "timestamp_end": 640.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So planning execution monitoring and control are going hand in hand so that project deliverables",
+    "timestamp_start": 640.6,
+    "timestamp_end": 645.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are happening as needed.",
+    "timestamp_start": 645.56,
+    "timestamp_end": 647.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly all the process.",
+    "timestamp_start": 647.72,
+    "timestamp_end": 648.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Work in structure.",
+    "timestamp_start": 648.84,
+    "timestamp_end": 649.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All the instructions.",
+    "timestamp_start": 649.56,
+    "timestamp_end": 650.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All those templates what is given are used when is complying to those requirement.",
+    "timestamp_start": 650.56,
+    "timestamp_end": 655.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is very important and project is done within the scope schedule and time and the quality",
+    "timestamp_start": 655.26,
+    "timestamp_end": 661.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "metrics defined.",
+    "timestamp_start": 661.28,
+    "timestamp_end": 662.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then as the completion of the project happens as the monitoring and control says yes deliverable",
+    "timestamp_start": 662.46,
+    "timestamp_end": 667.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "has happened according to the requirement.",
+    "timestamp_start": 667.76,
+    "timestamp_end": 670.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then the project moves to the closure.",
+    "timestamp_start": 670.64,
+    "timestamp_end": 672.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The closure may be closure of a specific project phase a milestone deliverable or a phase deliverable",
+    "timestamp_start": 672.34,
+    "timestamp_end": 677.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or.",
+    "timestamp_start": 677.96,
+    "timestamp_end": 678.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It can be a deliverable at the end of the project which is the ultimate deliverable.",
+    "timestamp_start": 678.96,
+    "timestamp_end": 683.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So processes in closing has to be triggered whenever there is an end of the phase whenever",
+    "timestamp_start": 683.58,
+    "timestamp_end": 688.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there is a deliverable to conclude and also at the end of the project to conclude the",
+    "timestamp_start": 688.22,
+    "timestamp_end": 692.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "entire project.",
+    "timestamp_start": 692.18,
+    "timestamp_end": 693.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So during the closure one has to ensure capturing all the details in terms of what is accomplished",
+    "timestamp_start": 693.18,
+    "timestamp_end": 699.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "against what is defined.",
+    "timestamp_start": 699.34,
+    "timestamp_end": 700.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What went wrong.",
+    "timestamp_start": 700.82,
+    "timestamp_end": 701.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What went well.",
+    "timestamp_start": 701.82,
+    "timestamp_end": 702.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is the learning one has to take to the next level or to next phase or to the next",
+    "timestamp_start": 702.84,
+    "timestamp_end": 707.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project.",
+    "timestamp_start": 707.12,
+    "timestamp_end": 708.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "At the same time a sign off has to be obtained formally and everything should be summarized",
+    "timestamp_start": 708.12,
+    "timestamp_end": 713.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and have a good handshake with the project stakeholder mainly a business or customer",
+    "timestamp_start": 713.04,
+    "timestamp_end": 718.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and also disseminating of team means you will dismantle the entire team and send them back",
+    "timestamp_start": 718.4,
+    "timestamp_end": 723.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to their specific units or specialization and they may get assigned to new project or",
+    "timestamp_start": 723.36,
+    "timestamp_end": 727.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if it is a functional they can go back to their functions to do their functional activities.",
+    "timestamp_start": 727.84,
+    "timestamp_end": 731.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that was about entire project life cycle what happens.",
+    "timestamp_start": 731.76,
+    "timestamp_end": 734.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now while doing this I mentioned there are six constraints.",
+    "timestamp_start": 734.78,
+    "timestamp_end": 738.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is scope, schedule, cost, quality, risk and resources.",
+    "timestamp_start": 738.12,
+    "timestamp_end": 742.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So keeping these in mind one has to ensure project is successful in all aspects.",
+    "timestamp_start": 742.88,
+    "timestamp_end": 748.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So to become successful there are few key areas which has to be looked at.",
+    "timestamp_start": 748.86,
+    "timestamp_end": 753.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So first six key areas are scope, schedule, cost, quality, resources and stakeholders.",
+    "timestamp_start": 753.26,
+    "timestamp_end": 759.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now let us look at the scope.",
+    "timestamp_start": 759.88,
+    "timestamp_end": 761.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What does scope means?",
+    "timestamp_start": 761.5,
+    "timestamp_end": 763.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Scope is about what needs to be delivered.",
+    "timestamp_start": 763.0,
+    "timestamp_end": 765.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is in scope?",
+    "timestamp_start": 765.28,
+    "timestamp_end": 766.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is out of the scope?",
+    "timestamp_start": 766.4,
+    "timestamp_end": 767.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This refers to all those deliverable scope, all those activities scope.",
+    "timestamp_start": 768.12,
+    "timestamp_end": 773.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Basically we speak about two things.",
+    "timestamp_start": 773.0,
+    "timestamp_end": 774.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One is product scope and project scope.",
+    "timestamp_start": 774.8,
+    "timestamp_end": 777.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Product scope is all about ensuring the features, functionality of products are well defined",
+    "timestamp_start": 777.56,
+    "timestamp_end": 782.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and understood and signed off and while delivering that product that is tested against those",
+    "timestamp_start": 782.0,
+    "timestamp_end": 786.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "defined features and functionalities.",
+    "timestamp_start": 786.88,
+    "timestamp_end": 789.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Whereas project scope focus on all the activities needs to be done, all those templates which",
+    "timestamp_start": 789.12,
+    "timestamp_end": 793.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "has to be used, all the process which has to be complied with, all the skills which",
+    "timestamp_start": 793.4,
+    "timestamp_end": 796.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is required to be applied.",
+    "timestamp_start": 796.86,
+    "timestamp_end": 797.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So scope is all about what needs to be done.",
+    "timestamp_start": 797.86,
+    "timestamp_end": 797.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it is going as defined.",
+    "timestamp_start": 798.12,
+    "timestamp_end": 800.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So by doing this activities which is defined as part of project scope, the result, the",
+    "timestamp_start": 800.46,
+    "timestamp_end": 804.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "deliverable will come out which will be in line with the deliverables features and functionality",
+    "timestamp_start": 804.9,
+    "timestamp_end": 810.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is defined as part of product scope.",
+    "timestamp_start": 810.48,
+    "timestamp_end": 812.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is very important to ensure entire projects happens within this particular scope.",
+    "timestamp_start": 812.68,
+    "timestamp_end": 817.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There should not be any deviations from this.",
+    "timestamp_start": 817.8,
+    "timestamp_end": 819.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Schedule perspective for that specifications what we have defined for a product and project.",
+    "timestamp_start": 819.7,
+    "timestamp_end": 824.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So these needs to be done in a specific point in time.",
+    "timestamp_start": 824.0,
+    "timestamp_end": 826.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Means in a specific schedule.",
+    "timestamp_start": 826.96,
+    "timestamp_end": 827.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There will be start time and end time.",
+    "timestamp_start": 827.86,
+    "timestamp_end": 830.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So one has to plan how long a project would take and what are the deliverables should",
+    "timestamp_start": 830.66,
+    "timestamp_end": 835.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "happen in what sequence.",
+    "timestamp_start": 835.92,
+    "timestamp_end": 837.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What activities are required to accomplish this.",
+    "timestamp_start": 837.66,
+    "timestamp_end": 840.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So all these needs to be understood.",
+    "timestamp_start": 840.32,
+    "timestamp_end": 842.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So while performing the schedule management one has to look at a specific deliverable",
+    "timestamp_start": 842.82,
+    "timestamp_end": 849.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at a specific point in time by applying a specific set of activities required.",
+    "timestamp_start": 849.12,
+    "timestamp_end": 854.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this will tell you the duration of the project.",
+    "timestamp_start": 854.16,
+    "timestamp_end": 856.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This will provide you the sequences.",
+    "timestamp_start": 856.2,
+    "timestamp_end": 857.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this will tell you the duration of the project. This will provide you the sequences.",
+    "timestamp_start": 857.24,
+    "timestamp_end": 857.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This will provide you the sequence.",
+    "timestamp_start": 857.26,
+    "timestamp_end": 857.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this will provide you the sequence of the project.",
+    "timestamp_start": 857.8,
+    "timestamp_end": 858.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This will also help you to understand the dependency between one task to another task.",
+    "timestamp_start": 858.8,
+    "timestamp_end": 863.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This will also help you to understand how the deliverables happening in what sequence",
+    "timestamp_start": 863.72,
+    "timestamp_end": 868.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which helps in prioritizing your deliverables.",
+    "timestamp_start": 868.24,
+    "timestamp_end": 871.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Third is cost.",
+    "timestamp_start": 871.16,
+    "timestamp_end": 872.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So as we know to do any project it is very essential to ensure project happens within",
+    "timestamp_start": 872.66,
+    "timestamp_end": 878.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that budget.",
+    "timestamp_start": 878.26,
+    "timestamp_end": 879.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So project cost is estimated initially.",
+    "timestamp_start": 879.26,
+    "timestamp_end": 882.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then that estimated cost will be checked.",
+    "timestamp_start": 882.28,
+    "timestamp_end": 884.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Checked in terms of is the assumptions.",
+    "timestamp_start": 884.7,
+    "timestamp_end": 887.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is that the assumptions are right or wrong.",
+    "timestamp_start": 887.04,
+    "timestamp_end": 888.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is that really so much of monetary resources required for the project.",
+    "timestamp_start": 888.48,
+    "timestamp_end": 892.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then after understanding the justification and obtaining the clarity budget is I mean",
+    "timestamp_start": 892.68,
+    "timestamp_end": 897.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "monetary resources are allocated and confirmed approved.",
+    "timestamp_start": 897.4,
+    "timestamp_end": 901.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then it will become a budget.",
+    "timestamp_start": 901.4,
+    "timestamp_end": 903.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That will be a cost baseline.",
+    "timestamp_start": 903.26,
+    "timestamp_end": 904.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So these estimation allocation of budget once it happens that will become a base and any",
+    "timestamp_start": 904.56,
+    "timestamp_end": 910.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "deviations from that cannot happen so easily.",
+    "timestamp_start": 910.0,
+    "timestamp_end": 912.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So any deviations because of additional of scope.",
+    "timestamp_start": 912.98,
+    "timestamp_end": 915.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That can be handled through change management.",
+    "timestamp_start": 915.7,
+    "timestamp_end": 917.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But idealistic scenario the cost should not escalate or come down.",
+    "timestamp_start": 917.74,
+    "timestamp_end": 922.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Organization can also set certain tolerances at the project level considering various different",
+    "timestamp_start": 922.14,
+    "timestamp_end": 925.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "scenarios like scenario of risks, scenario of something which deviated from the deliverable.",
+    "timestamp_start": 925.74,
+    "timestamp_end": 931.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So to what extent it can deviate.",
+    "timestamp_start": 931.76,
+    "timestamp_end": 933.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That tolerance will also be set at the economic or monetary value perspective.",
+    "timestamp_start": 933.86,
+    "timestamp_end": 938.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is about cost.",
+    "timestamp_start": 938.68,
+    "timestamp_end": 940.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now quality.",
+    "timestamp_start": 940.28,
+    "timestamp_end": 941.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As we know quality is a very important area which ensures.",
+    "timestamp_start": 941.56,
+    "timestamp_end": 945.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The project is delivered in time with all the specifications defined by using all the methods.",
+    "timestamp_start": 945.7,
+    "timestamp_end": 952.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Means by following all the processes, work instructions, templates and delivering as",
+    "timestamp_start": 952.72,
+    "timestamp_end": 958.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "needed where it enables the project to monitor it easily.",
+    "timestamp_start": 958.08,
+    "timestamp_end": 962.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So basically the requirement of compliance and standardization and optimization is to",
+    "timestamp_start": 962.2,
+    "timestamp_end": 967.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ensure everyone follows the same steps to the activity.",
+    "timestamp_start": 967.56,
+    "timestamp_end": 971.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what quality management focus is to ensure the intended objectives of a project.",
+    "timestamp_start": 971.32,
+    "timestamp_end": 975.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All these",
+    "timestamp_start": 975.66,
+    "timestamp_end": 977.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Already there is a definition in terms of various different practices or processes to be followed.",
+    "timestamp_start": 977.68,
+    "timestamp_end": 980.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly specification of each of the products are defined.",
+    "timestamp_start": 980.06,
+    "timestamp_end": 982.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And from that there should not be any deviation.",
+    "timestamp_start": 982.9,
+    "timestamp_end": 985.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So quality management should focus on ensuring those activities are done as defined.",
+    "timestamp_start": 985.06,
+    "timestamp_end": 990.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Those deliverables are done according to the specifications and specifications defined.",
+    "timestamp_start": 990.78,
+    "timestamp_end": 995.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is very important that way.",
+    "timestamp_start": 995.62,
+    "timestamp_end": 996.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for that there is a layer of quality management.",
+    "timestamp_start": 996.62,
+    "timestamp_end": 998.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There should be a layer of quality management.",
+    "timestamp_start": 998.54,
+    "timestamp_end": 1000.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where auditing or control activities are initiated and the processes are done.",
+    "timestamp_start": 1000.32,
+    "timestamp_end": 1004.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To ensure quality.",
+    "timestamp_start": 1004.08,
+    "timestamp_end": 1004.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are initiated periodically so that any deviations can be seen easily and remember a project manager",
+    "timestamp_start": 1004.88,
+    "timestamp_end": 1012.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can become cannot become part of quality management like project manager cannot audit",
+    "timestamp_start": 1012.64,
+    "timestamp_end": 1016.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project manager should have an team or take the help of a team who can able to do mostly the one",
+    "timestamp_start": 1016.38,
+    "timestamp_end": 1022.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is who is not part of the project or is always better resources now as i mentioned earlier",
+    "timestamp_start": 1022.66,
+    "timestamp_end": 1027.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "every project need resources it may be human resources it may be technology resources it may",
+    "timestamp_start": 1027.8,
+    "timestamp_end": 1033.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "be any other resources which are required to do the project so organization acquires resources",
+    "timestamp_start": 1033.68,
+    "timestamp_end": 1038.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "configured and then deployed for example in a project you acquire a server you configure a",
+    "timestamp_start": 1038.96,
+    "timestamp_end": 1045.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "server you deploy a server technology resource human resources onboarded recruited project",
+    "timestamp_start": 1045.74,
+    "timestamp_end": 1051.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "induction is given then at the same time the skills and capabilities of individuals are according to",
+    "timestamp_start": 1051.4,
+    "timestamp_end": 1057.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the requirement of project that needs to be ensured and what needs to be delivered and how it has to",
+    "timestamp_start": 1057.42,
+    "timestamp_end": 1061.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "be delivered should be clear to the particular project manager so that the project manager can",
+    "timestamp_start": 1061.88,
+    "timestamp_end": 1063.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "manage the project well so this is the most important thing to look at in terms of human resources",
+    "timestamp_start": 1063.66,
+    "timestamp_end": 1066.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so looking at all the aspects of resources to acquire to build and manage it is very important",
+    "timestamp_start": 1066.78,
+    "timestamp_end": 1071.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to look at the resource management so this will help in carrying out a specific task in a project",
+    "timestamp_start": 1071.22,
+    "timestamp_end": 1076.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in the best possible manner so interestingly when as a human resource always there is a possibility",
+    "timestamp_start": 1076.32,
+    "timestamp_end": 1083.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that a conflict can occur so when I say conflict conflict of interest maybe in terms of what that",
+    "timestamp_start": 1083.52,
+    "timestamp_end": 1089.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "individuals has to do conflict in terms of the preferences in terms of solutions what",
+    "timestamp_start": 1089.66,
+    "timestamp_end": 1093.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "they're looking at conflict in terms of using resources different opinions different preferences",
+    "timestamp_start": 1093.66,
+    "timestamp_end": 1098.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "various reasons conflict to end come across so it is very important to project manager to understand",
+    "timestamp_start": 1098.58,
+    "timestamp_end": 1103.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this dynamics of human resources and manage those conflicts project manager cannot shy away from",
+    "timestamp_start": 1103.86,
+    "timestamp_end": 1110.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "handling conflicts project manager has to hone and resolve those conflicts in the favor of project",
+    "timestamp_start": 1110.22,
+    "timestamp_end": 1115.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "not in the favor of any individuals so there are various techniques to look at resolving conflicts",
+    "timestamp_start": 1115.84,
+    "timestamp_end": 1120.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so that is like compromising problem-solving",
+    "timestamp_start": 1120.76,
+    "timestamp_end": 1123.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "smoothening accommodating so whichever helps for that project scenario for the project objectives",
+    "timestamp_start": 1123.66,
+    "timestamp_end": 1130.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that needs to be applied that technique has to be taken up so here the resolution is not at the",
+    "timestamp_start": 1130.38,
+    "timestamp_end": 1136.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "specific individuals preference it is with the objective of whether projects has any impact what",
+    "timestamp_start": 1136.44,
+    "timestamp_end": 1142.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "kind of impact positive or negative if it is negative no that's not the direction the direction",
+    "timestamp_start": 1142.32,
+    "timestamp_end": 1147.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "should be ensuring project gets that value through this conflict resolution so project manager should",
+    "timestamp_start": 1147.24,
+    "timestamp_end": 1152.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "own it it's an accountability",
+    "timestamp_start": 1152.16,
+    "timestamp_end": 1153.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of a project manager then as the human resource are acquired there are five stages team dynamics",
+    "timestamp_start": 1153.66,
+    "timestamp_end": 1159.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are involved so one has to bring them then educate them about a project as of education on the project",
+    "timestamp_start": 1159.78,
+    "timestamp_end": 1166.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "happens one has to go and do the job on floor that needs to be observed means one has to manage by",
+    "timestamp_start": 1166.8,
+    "timestamp_end": 1173.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "looking at it and any corrections needs to be done that needs to be guided so it is very dynamic thing",
+    "timestamp_start": 1173.14,
+    "timestamp_end": 1178.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when it comes to human resources similarly in technology resources standardization",
+    "timestamp_start": 1178.74,
+    "timestamp_end": 1183.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there is no ambiguity as such but right resources with the right configurations should be acquired",
+    "timestamp_start": 1183.66,
+    "timestamp_end": 1188.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that is very important the next stakeholders so who can be stakeholders every project will have",
+    "timestamp_start": 1188.4,
+    "timestamp_end": 1193.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a stakeholder who are internal and external to the project so the internal stakeholders are those who",
+    "timestamp_start": 1193.94,
+    "timestamp_end": 1199.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are part of the project who are part of the organization who are part of the customer",
+    "timestamp_start": 1199.62,
+    "timestamp_end": 1205.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "organization or part of supplier organization a competition to my business means my organization's",
+    "timestamp_start": 1205.98,
+    "timestamp_end": 1211.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "business all this we can call it as a stakeholders",
+    "timestamp_start": 1211.32,
+    "timestamp_end": 1213.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now every stakeholders will have a specific interest a power and ability to influence now",
+    "timestamp_start": 1213.66,
+    "timestamp_end": 1219.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "through their position through their distance from the project they will get impacted at the",
+    "timestamp_start": 1219.36,
+    "timestamp_end": 1225.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "same time they will also impact the project similarly they influence and they get influenced",
+    "timestamp_start": 1225.84,
+    "timestamp_end": 1230.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because of the project so a project manager should identify all the stakeholders and understand this",
+    "timestamp_start": 1230.82,
+    "timestamp_end": 1236.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what is the kind of stakeholder is this in terms of power in terms of legitimacy in terms of",
+    "timestamp_start": 1236.54,
+    "timestamp_end": 1242.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "influence in terms of",
+    "timestamp_start": 1242.42,
+    "timestamp_end": 1243.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "impact after understanding that there should be a strategy for handling the stakeholders how am I",
+    "timestamp_start": 1243.66,
+    "timestamp_end": 1249.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "going to engage with these stakeholders it is very important and accordingly the engagement should",
+    "timestamp_start": 1249.0,
+    "timestamp_end": 1254.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "happen and then stakeholder engagement should resolve in the favor of projects again so if it",
+    "timestamp_start": 1254.1,
+    "timestamp_end": 1259.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is a customer customer should get that inputs required through review or periodic updates and",
+    "timestamp_start": 1259.08,
+    "timestamp_end": 1265.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the engagement required with the customer so that customer is having up-to-date information about",
+    "timestamp_start": 1265.68,
+    "timestamp_end": 1270.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the project if it is a team continued monitoring and control",
+    "timestamp_start": 1270.36,
+    "timestamp_end": 1273.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and ensuring team delivers the results what is required so focus of a stakeholder should be in such",
+    "timestamp_start": 1273.66,
+    "timestamp_end": 1278.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a way that your strategy should enable project to become successful and get a proper response from",
+    "timestamp_start": 1278.76,
+    "timestamp_end": 1284.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the stakeholder means a supporting engagement so next few key focus areas to mention is communication",
+    "timestamp_start": 1284.4,
+    "timestamp_end": 1290.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "risk procurement critical success factors deliverables and work breakdown so this list",
+    "timestamp_start": 1290.52,
+    "timestamp_end": 1297.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is not exhaustive as we deep dive into project I think you can just keep listing the key focus areas",
+    "timestamp_start": 1297.24,
+    "timestamp_end": 1303.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but whatever we have indicated are the minimum which needs to be looked at so when I say",
+    "timestamp_start": 1303.66,
+    "timestamp_end": 1308.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "communication communication is basically a conversation exchange of message which happens",
+    "timestamp_start": 1308.88,
+    "timestamp_end": 1314.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "between two entities now whenever we communicate it is necessary to understand that it has to happen",
+    "timestamp_start": 1314.76,
+    "timestamp_end": 1320.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with two individuals or two entities there should be sender there should be a receiver in the absence",
+    "timestamp_start": 1320.4,
+    "timestamp_end": 1326.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of receiver if sending is happening that communication doesn't make any sense there",
+    "timestamp_start": 1326.28,
+    "timestamp_end": 1330.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "should be a receiver and there should be an acknowledgement from the",
+    "timestamp_start": 1330.3,
+    "timestamp_end": 1333.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now this is one of the most ignored area in many of the projects even the communication happens more often more frequently",
+    "timestamp_start": 1333.66,
+    "timestamp_end": 1340.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But what people face?",
+    "timestamp_start": 1340.2,
+    "timestamp_end": 1342.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Difficulty in realizing that as they communicate generally",
+    "timestamp_start": 1342.78,
+    "timestamp_end": 1345.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Informally formally they just take those for granted now when you identify the stakeholder one has to understand",
+    "timestamp_start": 1346.5,
+    "timestamp_end": 1352.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is the communication requirement for those stakeholders? What is that communication? Why is that communication?",
+    "timestamp_start": 1352.58,
+    "timestamp_end": 1359.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is the content of that communication? How frequently we should do that interactions or communications intent of that particular communication?",
+    "timestamp_start": 1359.34,
+    "timestamp_end": 1367.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is the expected action or response from that communication?",
+    "timestamp_start": 1367.26,
+    "timestamp_end": 1371.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All this needs to be very very clear and this can be articulated it has to be articulated",
+    "timestamp_start": 1371.04,
+    "timestamp_end": 1376.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when it is articulated once there is a picture in terms of what kind of communication has to happen",
+    "timestamp_start": 1376.1,
+    "timestamp_end": 1381.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is quite obvious",
+    "timestamp_start": 1381.14,
+    "timestamp_end": 1382.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There should not be any deviation from the agreed communications requirements and whenever there is a need of change to the communication",
+    "timestamp_start": 1382.08,
+    "timestamp_end": 1389.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Requirements from the stakeholders that needs to be updated for this one has to have a stakeholders identified",
+    "timestamp_start": 1389.5,
+    "timestamp_end": 1394.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so stakeholder management and communication are very closely linked and associated a",
+    "timestamp_start": 1394.7,
+    "timestamp_end": 1399.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Engagement with the stakeholder will become successful with an effective communication approaches next is risk",
+    "timestamp_start": 1400.34,
+    "timestamp_end": 1405.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So every project which is undertaken by organization that will have certain amount of risk which organization will evaluate",
+    "timestamp_start": 1405.84,
+    "timestamp_end": 1412.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly within the project lifecycle lot of risk comes up which would have certain impact to the project",
+    "timestamp_start": 1412.82,
+    "timestamp_end": 1419.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now risk refers to by definition an",
+    "timestamp_start": 1419.34,
+    "timestamp_end": 1421.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Uncertain event it has an uncertainty an event which is uncertain and when it occurs it will have an impact on the project",
+    "timestamp_start": 1422.62,
+    "timestamp_end": 1430.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "positively or negatively now",
+    "timestamp_start": 1431.0,
+    "timestamp_end": 1433.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Current scenario in everywhere the projects what you observe closely people tend to look at the risk which are threats that is negative only",
+    "timestamp_start": 1433.54,
+    "timestamp_end": 1440.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But they fail to recognize the risks which are opportunities the positive risks",
+    "timestamp_start": 1440.88,
+    "timestamp_end": 1445.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So another gap which we see when do the risk management is that is",
+    "timestamp_start": 1445.52,
+    "timestamp_end": 1449.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "done in the initial phase of the project as the project is kicked off someone will do",
+    "timestamp_start": 1449.34,
+    "timestamp_end": 1453.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The risk assessment have a list of risk identified",
+    "timestamp_start": 1453.94,
+    "timestamp_end": 1456.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But unfortunately there is no categorizations for that risk and how is that going to impact the project that is not clear thirdly",
+    "timestamp_start": 1456.7,
+    "timestamp_end": 1463.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Risk management or list of risks are created only once it is not done repeatedly",
+    "timestamp_start": 1463.6,
+    "timestamp_end": 1469.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so risk identification and",
+    "timestamp_start": 1469.78,
+    "timestamp_end": 1471.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "analysis and assessment of that risk has to be done throughout the lifecycle of a project reason being the risk which looks as an",
+    "timestamp_start": 1472.46,
+    "timestamp_end": 1479.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "impact when project is initiated as the project progresses the impact levels will vary maybe in a middle of the project the impact may",
+    "timestamp_start": 1479.34,
+    "timestamp_end": 1487.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Be very high or low so likewise the impacts of the risk will vary throughout the project lifecycle",
+    "timestamp_start": 1487.16,
+    "timestamp_end": 1491.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It may be positive it may be negative so as you identify the stakeholder",
+    "timestamp_start": 1491.8,
+    "timestamp_end": 1495.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Throughout the project lifecycle as I said that is also a dynamic",
+    "timestamp_start": 1496.1,
+    "timestamp_end": 1499.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I cannot just have a list of stakeholders, and I keep it as it is I need to update that also regularly risk",
+    "timestamp_start": 1499.46,
+    "timestamp_end": 1505.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Identification assessment and analysis should also be done regularly",
+    "timestamp_start": 1505.66,
+    "timestamp_end": 1509.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Periodically so that one will have a clear understanding about is that risk still valid is that risk is there still or not?",
+    "timestamp_start": 1509.34,
+    "timestamp_end": 1516.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What is the level of variations in terms of impact of the risks so this clarity will be there so that necessary",
+    "timestamp_start": 1516.78,
+    "timestamp_end": 1522.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Organization or project manager can get ready to face those risks if it is a negative risk",
+    "timestamp_start": 1523.28,
+    "timestamp_end": 1527.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Definitely should have a mitigation or avoidance or acceptance",
+    "timestamp_start": 1528.16,
+    "timestamp_end": 1531.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Whatever the mitigation plan you have to eliminate the negative impact of the risk when it occurs if it is a project positive risk",
+    "timestamp_start": 1531.8,
+    "timestamp_end": 1539.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's quite obvious one has to take the advantage of that one has to enhance exploit share a positive risk so that",
+    "timestamp_start": 1539.34,
+    "timestamp_end": 1546.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Organization is benefited further procurement so whenever a project is initiated whenever a project is taken up the organization who is doing the project",
+    "timestamp_start": 1546.88,
+    "timestamp_end": 1554.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Cannot create everything cannot develop everything in that project lifecycle so organization would take a decision make a decision stating that",
+    "timestamp_start": 1555.3,
+    "timestamp_end": 1563.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "some of the",
+    "timestamp_start": 1563.68,
+    "timestamp_end": 1565.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Deliverables we make ourselves some of the products we make ourselves",
+    "timestamp_start": 1565.28,
+    "timestamp_end": 1568.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some of the products we purchase some of the services we purchase so to purchase that has to happen from a",
+    "timestamp_start": 1569.34,
+    "timestamp_end": 1575.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Specific supplier you cannot go with every supplier you should evaluate the suppliers qualify the suppliers and then select",
+    "timestamp_start": 1576.2,
+    "timestamp_end": 1582.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Onboard the supplier and then get the services or products supplied by that particular supplier",
+    "timestamp_start": 1583.46,
+    "timestamp_end": 1589.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So while doing this one has to understand what type of contracting they need to enter with so three types of contracts",
+    "timestamp_start": 1589.34,
+    "timestamp_end": 1596.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We speak basically one is about a cost",
+    "timestamp_start": 1596.3,
+    "timestamp_end": 1599.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Plus contract where cost is fully known to the project manager and to the organization so apart from known cost",
+    "timestamp_start": 1599.34,
+    "timestamp_end": 1606.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A fee will be paid to the supplier another one is fixed price where project manager or the organization who is awarding that",
+    "timestamp_start": 1606.08,
+    "timestamp_end": 1613.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Contract to a supplier will not know what is the cost instead it is a fixed price",
+    "timestamp_start": 1613.46,
+    "timestamp_end": 1617.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But important here is the scope of work needs to be clearly articulated and defined another type of contracting and with time and material where",
+    "timestamp_start": 1617.42,
+    "timestamp_end": 1624.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The billing will happen based on the amount of time one is spent on that",
+    "timestamp_start": 1625.1,
+    "timestamp_end": 1629.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Particular I hire a resource or onboard a resource on a time and material basis",
+    "timestamp_start": 1629.34,
+    "timestamp_end": 1633.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And what is that effort that resource has been put based on that billing will happen the three types of contracts depending on the different",
+    "timestamp_start": 1633.44,
+    "timestamp_end": 1639.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Scenarios of the project will be signed with the contractor however before doing that it is very essential to identify those suppliers",
+    "timestamp_start": 1639.88,
+    "timestamp_end": 1647.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sign off with them and monitor and manage them so if deliverables are not there. It is very essential to look at the",
+    "timestamp_start": 1647.36,
+    "timestamp_end": 1653.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "termination one has to terminate otherwise one has to ensure instead of",
+    "timestamp_start": 1654.54,
+    "timestamp_end": 1658.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Terminating should be able to put some effort to educate them also so that they come up to the mark so project is benefited",
+    "timestamp_start": 1658.2,
+    "timestamp_end": 1665.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So depending on what needs to be done that call has to be taken on a regular basis and critical success factor",
+    "timestamp_start": 1665.34,
+    "timestamp_end": 1671.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for every project there should be an articulation of critical success factor",
+    "timestamp_start": 1671.16,
+    "timestamp_end": 1676.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So based on that one can confirm",
+    "timestamp_start": 1676.24,
+    "timestamp_end": 1679.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes project has achieved his objectives or project has not achieved his objectives",
+    "timestamp_start": 1679.66,
+    "timestamp_end": 1684.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So key critical success factor should be supported through",
+    "timestamp_start": 1684.24,
+    "timestamp_end": 1687.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The matrix key performance indicators",
+    "timestamp_start": 1688.2,
+    "timestamp_end": 1690.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So key performance indicators provide those metrics to say critical success factor is achieved for example if I want to become successful in an exam",
+    "timestamp_start": 1690.1,
+    "timestamp_end": 1697.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Critical success factor is scoring or passing the examination or let me say to pass the examination key performance indicator is scoring",
+    "timestamp_start": 1697.98,
+    "timestamp_end": 1706.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "60% and above so critical success factor for me to get promoted is to pass in this particular exam",
+    "timestamp_start": 1707.02,
+    "timestamp_end": 1712.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So to pass in this exam minimum I should score is 60% that is KPI passing in the exam",
+    "timestamp_start": 1712.36,
+    "timestamp_end": 1717.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that is",
+    "timestamp_start": 1717.76,
+    "timestamp_end": 1718.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "critical success factor. So how will I measure that success factor is KPI. So every project",
+    "timestamp_start": 1718.2,
+    "timestamp_end": 1723.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which it produces a specific product or services by using a specific resources and each of these",
+    "timestamp_start": 1723.86,
+    "timestamp_end": 1730.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the resources, the processes, the templates, the deliverables all these needs to be measured on a",
+    "timestamp_start": 1730.7,
+    "timestamp_end": 1737.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "continual basis. So there are critical success factors defined and those are measured by defining",
+    "timestamp_start": 1737.48,
+    "timestamp_end": 1742.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "KPIs to that critical success factors. So basically critical success factor provides the insight",
+    "timestamp_start": 1742.88,
+    "timestamp_end": 1748.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "towards what needs to be measured and when you measure what should be the focus and to achieve",
+    "timestamp_start": 1748.24,
+    "timestamp_end": 1753.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "those critical success factors the indicator is key performance indicators. When you measure yes",
+    "timestamp_start": 1753.22,
+    "timestamp_end": 1758.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the moment you achieve that your CSF is achieved. Next deliverables. So deliverables are those which",
+    "timestamp_start": 1758.46,
+    "timestamp_end": 1764.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "comes as an output of the project right. It may be a product, it may be a service, it may be a result.",
+    "timestamp_start": 1764.26,
+    "timestamp_end": 1770.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this refers to the output within the",
+    "timestamp_start": 1770.28,
+    "timestamp_end": 1772.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "school.",
+    "timestamp_start": 1772.82,
+    "timestamp_end": 1772.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there can be one or more deliverables within a single project. So these deliverables may be the items that are to be sent externally to a customer or a stakeholder. So every deliverable will have a defined scope will have a defined specification. So those deliverables has to be measured, tested and one has to confirm yes this deliverable is performing as we are intended to have the performance. Accordingly the decision will happen should we accept this particular deliverable or not.",
+    "timestamp_start": 1772.88,
+    "timestamp_end": 1802.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If there any deviation that has to go back for correction. So that's the reason we have monitoring and control all the control processes like control quality focus on the product",
+    "timestamp_start": 1802.82,
+    "timestamp_end": 1811.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "straight whether it has achieved that results or not is that functional as needed or not. One has to",
+    "timestamp_start": 1811.34,
+    "timestamp_end": 1816.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ensure these deliverables has all those features and functionalities only then that can be handed",
+    "timestamp_start": 1816.2,
+    "timestamp_end": 1821.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "over to the respective stakeholder customer operation who over the stakeholder it is. Next",
+    "timestamp_start": 1821.76,
+    "timestamp_end": 1826.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is work breakdown structure. So when we say work breakdown structure when I look at a specific piece of product or service.",
+    "timestamp_start": 1826.46,
+    "timestamp_end": 1832.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and have a bigger picture. I cannot even visualize the various different components,",
+    "timestamp_start": 1832.82,
+    "timestamp_end": 1837.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "various different actions involved in achieving that bigger deliverable. So if I say a car,",
+    "timestamp_start": 1838.04,
+    "timestamp_end": 1844.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so I can think of a body external, I can think of a mirror on that body, I can think of a glass",
+    "timestamp_start": 1844.72,
+    "timestamp_end": 1850.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in the front side as well as the back side and also I can think of interiors like seat,",
+    "timestamp_start": 1850.58,
+    "timestamp_end": 1855.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "then accelerator, steering, dashboard, all this I can visualize. But since I am not a technology",
+    "timestamp_start": 1856.16,
+    "timestamp_end": 1861.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "expert relating to car, can I visualize all those parts which are working inside for car to move",
+    "timestamp_start": 1861.7,
+    "timestamp_end": 1867.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like engine, the battery assembly, I don't know what to say further. So all these can be visualized",
+    "timestamp_start": 1867.88,
+    "timestamp_end": 1872.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by an expert. So every product or services should be broken down into multiple pieces. I am not",
+    "timestamp_start": 1872.96,
+    "timestamp_end": 1879.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "saying go and break that product, I am saying that product will have multiple components which are",
+    "timestamp_start": 1879.28,
+    "timestamp_end": 1884.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "involved. Those needs to be segregated. For example, if I say cars exteriors, cars interior,",
+    "timestamp_start": 1884.56,
+    "timestamp_end": 1890.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so cars exterior,",
+    "timestamp_start": 1890.76,
+    "timestamp_end": 1891.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "exterior, external items you can see whatever you visualize, body, body structure, mirror,",
+    "timestamp_start": 1891.7,
+    "timestamp_end": 1896.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "mirror assembly, headlights, then tires. So likewise whatever I can visualize, I will make",
+    "timestamp_start": 1896.66,
+    "timestamp_end": 1903.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it as a line items under the exterior. So under for example, under a mirror, mirror I can speak",
+    "timestamp_start": 1903.0,
+    "timestamp_end": 1909.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about mirror glass, mirror cap, mirror pedestal and mirror assembly where it moves, where you can",
+    "timestamp_start": 1909.04,
+    "timestamp_end": 1914.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "move the mirror. So these are the various components involved in a mirror. So I need to ensure by",
+    "timestamp_start": 1914.92,
+    "timestamp_end": 1920.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "breaking down the interior, I can visualize the exterior, the exterior, the body, the body structure,",
+    "timestamp_start": 1920.58,
+    "timestamp_end": 1921.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "overall that if I do not know what I will be saying or what to say about the interior, the things",
+    "timestamp_start": 1921.7,
+    "timestamp_end": 1922.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I am about to tell in an interview, what is the major context.",
+    "timestamp_start": 1922.3,
+    "timestamp_end": 1923.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Branch 4- imaginar the interior, which is more technical than you may think.",
+    "timestamp_start": 1925.12,
+    "timestamp_end": 1926.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "AET, 30 långapo Sahjani study, CNN",
+    "timestamp_start": 1926.68,
+    "timestamp_end": 1927.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I studied in Indian Left Health facilities, J density than I have stored Univ in the",
+    "timestamp_start": 1927.74,
+    "timestamp_end": 1929.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "country of Central India, and how the ADHD candy that people feel installed in the center of many",
+    "timestamp_start": 1929.98,
+    "timestamp_end": 1933.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of the weiter provinces based on their physical body located around them next to the renovation",
+    "timestamp_start": 1933.1,
+    "timestamp_end": 1939.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and gadgets or after the closure of the wreckage museum and others. Here are the broken down",
+    "timestamp_start": 1939.98,
+    "timestamp_end": 1944.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "building, this project with theboth them. There many elements necessary for us to understand",
+    "timestamp_start": 1944.18,
+    "timestamp_end": 1948.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and traumatize the sports events abroad on only $20 per hour through our sun願 leider.",
+    "timestamp_start": 1948.1,
+    "timestamp_end": 1949.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thhre were few muito money needed to build the side and artists having your adult start",
+    "timestamp_start": 1949.58,
+    "timestamp_end": 1950.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Further, after creating a work breakdown structure, one will go and sequence the activity, look",
+    "timestamp_start": 1950.84,
+    "timestamp_end": 1955.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at, sequencing will happen based on in what priority deliverable should happen, what order",
+    "timestamp_start": 1955.34,
+    "timestamp_end": 1960.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "deliverable should happen.",
+    "timestamp_start": 1960.34,
+    "timestamp_end": 1961.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then once the sequencing is done, it will be checked to see whether anything can be",
+    "timestamp_start": 1961.62,
+    "timestamp_end": 1965.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "optimized, anything can be done in such a way that smooth flow of the project can happen.",
+    "timestamp_start": 1965.12,
+    "timestamp_end": 1970.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There is no dependencies which will make project to delay.",
+    "timestamp_start": 1970.34,
+    "timestamp_end": 1973.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like as the flow happens smoothly, so you would find the various techniques like critical",
+    "timestamp_start": 1973.84,
+    "timestamp_end": 1978.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "path method, network diagramming, critical chain method.",
+    "timestamp_start": 1978.84,
+    "timestamp_end": 1982.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So all these are used.",
+    "timestamp_start": 1982.08,
+    "timestamp_end": 1983.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The floats of an activities are checked.",
+    "timestamp_start": 1983.32,
+    "timestamp_end": 1985.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then leads and lags of the activities, the relationship between activities.",
+    "timestamp_start": 1985.26,
+    "timestamp_end": 1989.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So accordingly, full visualization in terms of how the project will flow and how, in what",
+    "timestamp_start": 1989.18,
+    "timestamp_end": 1994.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "order the deliverables are happening can be easily visualized.",
+    "timestamp_start": 1994.08,
+    "timestamp_end": 1997.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that is the reason first activity is to do the product breakdown which would result",
+    "timestamp_start": 1997.16,
+    "timestamp_end": 2000.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in work breakdown structure.",
+    "timestamp_start": 2000.32,
+    "timestamp_end": 2002.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So those are the points.",
+    "timestamp_start": 2002.36,
+    "timestamp_end": 2003.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Till now whatever I mentioned are the basic understanding one should have about",
+    "timestamp_start": 2003.84,
+    "timestamp_end": 2008.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "everything.",
+    "timestamp_start": 2008.76,
+    "timestamp_end": 2008.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that is the point.",
+    "timestamp_start": 2008.84,
+    "timestamp_end": 2009.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I will leave it for now.",
+    "timestamp_start": 2009.84,
+    "timestamp_end": 2010.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So let us move on to the next point.",
+    "timestamp_start": 2010.84,
+    "timestamp_end": 2011.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the next point is the best practices.",
+    "timestamp_start": 2011.84,
+    "timestamp_end": 2012.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the best practices are the best practices that you can adopt and adapt to your project.",
+    "timestamp_start": 2012.84,
+    "timestamp_end": 2013.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the best practices are the best practices that you can adopt and adapt to your project.",
+    "timestamp_start": 2013.84,
+    "timestamp_end": 2014.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So as you deep dive into various best practices like PMP by PMI, PRINCE2 by Axolos, Scrum Master,",
+    "timestamp_start": 2014.84,
+    "timestamp_end": 2019.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Agile Scrum Master, similarly you have Certified Scrum Master, so many agile practices.",
+    "timestamp_start": 2019.84,
+    "timestamp_end": 2024.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you look at any of the best practices, that will tell you, clearly articulate what",
+    "timestamp_start": 2024.34,
+    "timestamp_end": 2028.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "should be the practice for you to adopt and adapt that practices so that your project",
+    "timestamp_start": 2028.88,
+    "timestamp_end": 2034.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "can become successful.",
+    "timestamp_start": 2034.22,
+    "timestamp_end": 2035.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So any of those approach you touch upon, all those refer to the best practices.",
+    "timestamp_start": 2035.36,
+    "timestamp_end": 2038.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All those refers to these basic things.",
+    "timestamp_start": 2038.76,
+    "timestamp_end": 2041.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the absence of these basic things, none of those best practices discusses the project",
+    "timestamp_start": 2041.0,
+    "timestamp_end": 2045.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "management.",
+    "timestamp_start": 2045.64,
+    "timestamp_end": 2046.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now typically in the industry, there are lot of job roles to the project management which",
+    "timestamp_start": 2046.64,
+    "timestamp_end": 2051.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we have seen.",
+    "timestamp_start": 2051.36,
+    "timestamp_end": 2052.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So based on that, this information is captured here on various job roles in a project management.",
+    "timestamp_start": 2052.86,
+    "timestamp_end": 2058.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So some of them are like project manager, senior project manager, project lead, resource",
+    "timestamp_start": 2058.06,
+    "timestamp_end": 2063.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "manager, PMO that is project management office analyst, steering committee member.",
+    "timestamp_start": 2063.46,
+    "timestamp_end": 2068.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So not necessarily all the project management roles are limited to this.",
+    "timestamp_start": 2068.68,
+    "timestamp_end": 2073.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So these are the roles which commonly you see and we are trying to capture that to give",
+    "timestamp_start": 2073.0,
+    "timestamp_end": 2077.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the insight.",
+    "timestamp_start": 2077.8,
+    "timestamp_end": 2078.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When I say project manager, the project manager is the owner, one has to take an accountability",
+    "timestamp_start": 2078.8,
+    "timestamp_end": 2082.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for the project.",
+    "timestamp_start": 2082.98,
+    "timestamp_end": 2084.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Project manager takes the project according to the plan and plays a lead role in all the",
+    "timestamp_start": 2084.98,
+    "timestamp_end": 2089.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "steps of the project management.",
+    "timestamp_start": 2089.56,
+    "timestamp_end": 2091.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So responsibilities would be managing, reviewing and prioritizing the task wherever necessary.",
+    "timestamp_start": 2091.56,
+    "timestamp_end": 2096.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Looking after risk management, looking after the project management, looking after the",
+    "timestamp_start": 2096.56,
+    "timestamp_end": 2097.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project management, looking after the project management, looking after the project management,",
+    "timestamp_start": 2097.56,
+    "timestamp_end": 2098.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "stakeholder management and project communication management.",
+    "timestamp_start": 2098.56,
+    "timestamp_end": 2102.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some of the salary what we found while we were doing the survey.",
+    "timestamp_start": 2102.34,
+    "timestamp_end": 2106.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The success ratio of a project depends majorly on the project manager.",
+    "timestamp_start": 2106.88,
+    "timestamp_end": 2110.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the demand for project manager is rapidly increasing in the market.",
+    "timestamp_start": 2110.68,
+    "timestamp_end": 2113.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So accordingly 75,474 per year that is the USD.",
+    "timestamp_start": 2113.74,
+    "timestamp_end": 2119.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In INR it is 1500,000.",
+    "timestamp_start": 2119.82,
+    "timestamp_end": 2122.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is what the salary on an approximation what was found.",
+    "timestamp_start": 2122.5,
+    "timestamp_end": 2126.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Next role we look at senior project manager.",
+    "timestamp_start": 2126.08,
+    "timestamp_end": 2127.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where senior project manager is the head of the overall project management plan.",
+    "timestamp_start": 2127.88,
+    "timestamp_end": 2132.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The role demands in depth knowledge of all the project aspects.",
+    "timestamp_start": 2132.22,
+    "timestamp_end": 2136.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "On the specifics of the project.",
+    "timestamp_start": 2136.96,
+    "timestamp_end": 2138.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The responsibilities would be planning and coordinating complex projects, visiting project",
+    "timestamp_start": 2138.38,
+    "timestamp_end": 2142.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "sites to check progress and handle complex issues.",
+    "timestamp_start": 2142.94,
+    "timestamp_end": 2145.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So salary looks like 104,000 dollars per year.",
+    "timestamp_start": 2145.74,
+    "timestamp_end": 2150.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here 2092,000 INR per year.",
+    "timestamp_start": 2150.6,
+    "timestamp_end": 2154.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the role of senior project manager is one of the highest paying roles in the industry.",
+    "timestamp_start": 2154.42,
+    "timestamp_end": 2156.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the role of senior project manager is one of the highest paying roles in the industry.",
+    "timestamp_start": 2156.52,
+    "timestamp_end": 2157.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the role of senior project manager is one of the highest paying roles in the industry.",
+    "timestamp_start": 2157.52,
+    "timestamp_end": 2157.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "As we have seen having several allowances and bonuses because of the criticality involved",
+    "timestamp_start": 2157.88,
+    "timestamp_end": 2163.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in that project and the accountability level of that particular individuals in the organization.",
+    "timestamp_start": 2163.0,
+    "timestamp_end": 2168.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Next role project lead.",
+    "timestamp_start": 2168.0,
+    "timestamp_end": 2169.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So project leads are the one who leads the people throughout the project and provide",
+    "timestamp_start": 2169.64,
+    "timestamp_end": 2173.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "them with all the information required throughout.",
+    "timestamp_start": 2173.56,
+    "timestamp_end": 2176.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So responsibilities involve motivating the team beneath taking care of their needs and",
+    "timestamp_start": 2176.38,
+    "timestamp_end": 2180.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "paying attention to what they feel ordering or controlling the project team since the",
+    "timestamp_start": 2180.94,
+    "timestamp_end": 2185.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project lead has more freedom than the team.",
+    "timestamp_start": 2185.56,
+    "timestamp_end": 2187.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Next role project lead.",
+    "timestamp_start": 2187.52,
+    "timestamp_end": 2188.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So project lead is the one who gives the best possible outcome and is hence the demand for",
+    "timestamp_start": 2188.52,
+    "timestamp_end": 2194.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the project lead in the company never reduces.",
+    "timestamp_start": 2194.96,
+    "timestamp_end": 2197.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in USD 82,000 per year whereas in INR it is 1,269,000 per year.",
+    "timestamp_start": 2197.62,
+    "timestamp_end": 2204.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Next role we can look at on resource manager.",
+    "timestamp_start": 2204.86,
+    "timestamp_end": 2207.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So resource manager is the human resource needed to make the project success.",
+    "timestamp_start": 2207.68,
+    "timestamp_end": 2213.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So one has to manage those resources.",
+    "timestamp_start": 2213.48,
+    "timestamp_end": 2216.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Responsibility involved.",
+    "timestamp_start": 2216.16,
+    "timestamp_end": 2217.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Determining the right people to the right projects at the right time.",
+    "timestamp_start": 2217.16,
+    "timestamp_end": 2219.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Managing employees currently and determining hiring needs depending on the project's requirements.",
+    "timestamp_start": 2219.92,
+    "timestamp_end": 2224.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So salary would be around 64,000 USD which comes around 966,794 in INR.",
+    "timestamp_start": 2224.26,
+    "timestamp_end": 2231.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Project management office analyst.",
+    "timestamp_start": 2231.62,
+    "timestamp_end": 2233.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "For this role the project management office analyst works with PMO means project management",
+    "timestamp_start": 2233.22,
+    "timestamp_end": 2238.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "office and does not look at the project or manage the project directly.",
+    "timestamp_start": 2238.22,
+    "timestamp_end": 2242.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Instead does most of the data driven work which required.",
+    "timestamp_start": 2242.92,
+    "timestamp_end": 2247.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A project to have or project to get supported by that so that project managers will have",
+    "timestamp_start": 2247.16,
+    "timestamp_end": 2252.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "better insight.",
+    "timestamp_start": 2252.28,
+    "timestamp_end": 2253.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Analysing and interpreting the data concerning the project.",
+    "timestamp_start": 2253.28,
+    "timestamp_end": 2256.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Figuring out the future risks to the project.",
+    "timestamp_start": 2256.16,
+    "timestamp_end": 2258.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Finding new ways to advance the idea of the project management.",
+    "timestamp_start": 2258.54,
+    "timestamp_end": 2261.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So salary would be 106,253 per year in USD whereas 449,337 in INR per year.",
+    "timestamp_start": 2261.46,
+    "timestamp_end": 2270.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So steering committee member.",
+    "timestamp_start": 2270.52,
+    "timestamp_end": 2272.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the steering committee members are the members who do not work on the project themselves.",
+    "timestamp_start": 2272.32,
+    "timestamp_end": 2277.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They are there to help the project manager.",
+    "timestamp_start": 2277.16,
+    "timestamp_end": 2280.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like providing inputs during the development of a project.",
+    "timestamp_start": 2280.12,
+    "timestamp_end": 2283.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Advising on the budget and evaluating the project strategies.",
+    "timestamp_start": 2283.44,
+    "timestamp_end": 2286.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Taking regular feedbacks from the project managers and asking necessary questions.",
+    "timestamp_start": 2286.56,
+    "timestamp_end": 2291.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So salary would be around 68,497 USD per year.",
+    "timestamp_start": 2291.46,
+    "timestamp_end": 2296.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So those were the various roles and that list is not an exhaustive list.",
+    "timestamp_start": 2296.16,
+    "timestamp_end": 2301.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Various different roles we come across but these are the basic roles which is seen in",
+    "timestamp_start": 2301.2,
+    "timestamp_end": 2305.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the industry.",
+    "timestamp_start": 2305.12,
+    "timestamp_end": 2306.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These roles are being required.",
+    "timestamp_start": 2306.12,
+    "timestamp_end": 2307.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These roles are being recruited.",
+    "timestamp_start": 2307.16,
+    "timestamp_end": 2308.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now there are various project management certifications which are offered as I mentioned earlier.",
+    "timestamp_start": 2308.16,
+    "timestamp_end": 2312.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So those certifications are PMP that is project management professional from PMI.",
+    "timestamp_start": 2312.48,
+    "timestamp_end": 2317.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Agile certified practitioner that is PMI ACP again from PMI.",
+    "timestamp_start": 2317.22,
+    "timestamp_end": 2321.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then certified associate in project management.",
+    "timestamp_start": 2321.48,
+    "timestamp_end": 2323.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So difference between CAPM and PMP is like CAPM would act as a basic level of certification",
+    "timestamp_start": 2323.8,
+    "timestamp_end": 2329.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for those who does not have a sufficient project experience, project management experience.",
+    "timestamp_start": 2329.92,
+    "timestamp_end": 2334.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Whereas PMP is for those who has some project management experience.",
+    "timestamp_start": 2334.24,
+    "timestamp_end": 2336.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly PMI ACP is the one who is aspiring to look at agility in project management and",
+    "timestamp_start": 2336.12,
+    "timestamp_end": 2344.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "they can go for it.",
+    "timestamp_start": 2344.0,
+    "timestamp_end": 2345.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Certified scrum master.",
+    "timestamp_start": 2345.0,
+    "timestamp_end": 2346.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes it is a scrum master certificate which will explain the role of a scrum master in",
+    "timestamp_start": 2346.0,
+    "timestamp_end": 2350.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "detail.",
+    "timestamp_start": 2350.84,
+    "timestamp_end": 2351.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly PRINCE2 a certification from Axelos which also speak about all the aspects of",
+    "timestamp_start": 2351.84,
+    "timestamp_end": 2357.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the project what we discussed and provides the framework for project management.",
+    "timestamp_start": 2357.92,
+    "timestamp_end": 2362.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Axelos also provides PRINCE2 certification in Agile also.",
+    "timestamp_start": 2362.12,
+    "timestamp_end": 2363.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So these are the three main roles which we are going to discuss in this video.",
+    "timestamp_start": 2363.12,
+    "timestamp_end": 2364.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So let us start with the first one.",
+    "timestamp_start": 2364.12,
+    "timestamp_end": 2365.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we will look at each one of these certain details which are required for us to know.",
+    "timestamp_start": 2365.12,
+    "timestamp_end": 2372.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So project management professional as I mentioned is most acknowledged and value the certificate",
+    "timestamp_start": 2372.8,
+    "timestamp_end": 2379.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "value what it carries which has resulted to the certified professionals in landing up",
+    "timestamp_start": 2379.48,
+    "timestamp_end": 2384.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in highest paid jobs in the world.",
+    "timestamp_start": 2384.68,
+    "timestamp_end": 2387.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So certified managers gets 20% more salary than the average salary.",
+    "timestamp_start": 2387.32,
+    "timestamp_end": 2392.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So to take up an examination.",
+    "timestamp_start": 2392.16,
+    "timestamp_end": 2393.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One has to go through the formal training of 35 hours that is one of the prerequisites",
+    "timestamp_start": 2393.92,
+    "timestamp_end": 2399.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and there should be some experience of 4500 hours of project managing project by leading",
+    "timestamp_start": 2399.24,
+    "timestamp_end": 2404.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "various activities of a project and once the person becomes eligible with that prerequisites",
+    "timestamp_start": 2404.32,
+    "timestamp_end": 2409.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "person will become register in the PMI's website becomes member and then go for examination.",
+    "timestamp_start": 2409.98,
+    "timestamp_end": 2415.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So examination fee for PMP would be $405 for the members who are registered with PMI and",
+    "timestamp_start": 2415.88,
+    "timestamp_end": 2421.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for those who are not registered as a member with PMI.",
+    "timestamp_start": 2421.32,
+    "timestamp_end": 2423.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is $555.",
+    "timestamp_start": 2423.6,
+    "timestamp_end": 2425.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The duration of the examination is four hours and the number of questions will be 200 which",
+    "timestamp_start": 2425.6,
+    "timestamp_end": 2430.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are multiple choice questions.",
+    "timestamp_start": 2430.4,
+    "timestamp_end": 2432.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So each question carries one marks there is no negative score.",
+    "timestamp_start": 2432.76,
+    "timestamp_end": 2436.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now prerequisites one has to have 4500 hours directing and leading the projects that experience",
+    "timestamp_start": 2436.46,
+    "timestamp_end": 2443.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "has to be filled in while filling the application.",
+    "timestamp_start": 2443.48,
+    "timestamp_end": 2445.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If a person is a bachelor degree holder and along with that 35 contact hours of PMI PM",
+    "timestamp_start": 2445.74,
+    "timestamp_end": 2451.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "education.",
+    "timestamp_start": 2451.92,
+    "timestamp_end": 2452.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now.",
+    "timestamp_start": 2452.92,
+    "timestamp_end": 2453.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Pre-requisites for the one who is not a graduate who may be high school or diploma is 7500 hours",
+    "timestamp_start": 2453.6,
+    "timestamp_end": 2459.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of directing and leading project 35 hours of PMI education.",
+    "timestamp_start": 2459.32,
+    "timestamp_end": 2463.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So those are the prerequisites before one will go on appear for examination.",
+    "timestamp_start": 2463.36,
+    "timestamp_end": 2467.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So once an individual passes PMP examination that certificate is valid for three years.",
+    "timestamp_start": 2467.2,
+    "timestamp_end": 2473.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now after three years if the person aspires to keep the certificate continued they need",
+    "timestamp_start": 2473.06,
+    "timestamp_end": 2477.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to produce 60 PDUs professional development units which has to be acquired during those",
+    "timestamp_start": 2477.72,
+    "timestamp_end": 2483.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "three years.",
+    "timestamp_start": 2483.28,
+    "timestamp_end": 2483.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the additional learning has to be done to get the certificate of PMP.",
+    "timestamp_start": 2483.6,
+    "timestamp_end": 2485.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One has to go through additional learning one has to contribute towards project management",
+    "timestamp_start": 2485.24,
+    "timestamp_end": 2489.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "knowledge base.",
+    "timestamp_start": 2489.08,
+    "timestamp_end": 2490.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So those needs to be evidenced and then renewal fee has to be paid and certificate has to",
+    "timestamp_start": 2490.0,
+    "timestamp_end": 2494.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "be renewed.",
+    "timestamp_start": 2494.36,
+    "timestamp_end": 2495.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then agile certified practitioner as we saw for PMP.",
+    "timestamp_start": 2495.36,
+    "timestamp_end": 2499.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here agile certified practitioner demonstrates that one has relevant experience and education",
+    "timestamp_start": 2499.18,
+    "timestamp_end": 2504.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to handle and lead agile projects.",
+    "timestamp_start": 2504.64,
+    "timestamp_end": 2507.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The organization has started shifting towards agile as we know in today's industry which",
+    "timestamp_start": 2507.04,
+    "timestamp_end": 2512.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "makes this certification.",
+    "timestamp_start": 2512.1,
+    "timestamp_end": 2513.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "fast growing in the world so examination fee would be $435 for PMI members $495",
+    "timestamp_start": 2513.28,
+    "timestamp_end": 2519.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for non PMI members duration is 3 hours and multiple choice questions 120",
+    "timestamp_start": 2519.4,
+    "timestamp_end": 2525.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "questions prerequisites is 2,000 hours project management experience with",
+    "timestamp_start": 2525.06,
+    "timestamp_end": 2529.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "thousand 500 hours agile experience and 21 contact hours of agile practices so",
+    "timestamp_start": 2529.96,
+    "timestamp_end": 2535.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "maintenance 30 PDOs are required for every three years and after paying the",
+    "timestamp_start": 2535.72,
+    "timestamp_end": 2539.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "renewal fee that can be renewed now certified associate in project management",
+    "timestamp_start": 2539.98,
+    "timestamp_end": 2543.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so here this is an entry-level certificate of PMI especially for those",
+    "timestamp_start": 2543.88,
+    "timestamp_end": 2549.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "people who has less project experience it intends to demonstrate fundamental",
+    "timestamp_start": 2549.02,
+    "timestamp_end": 2554.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "knowledge terminologies and processes of effective project management so",
+    "timestamp_start": 2554.02,
+    "timestamp_end": 2557.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "examination fee would be $20 to 25 for PMI members whereas $300 for non members",
+    "timestamp_start": 2557.92,
+    "timestamp_end": 2564.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of PMI so duration of examination is three hours and examination will have",
+    "timestamp_start": 2564.16,
+    "timestamp_end": 2568.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "150 multiple choice questions and the cost of the project is $225 for PMI members",
+    "timestamp_start": 2568.84,
+    "timestamp_end": 2569.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so duration of examination is three hours and examination will have 150 multiple",
+    "timestamp_start": 2569.84,
+    "timestamp_end": 2569.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "choice questions so prerequisites someone who has secondary diploma with",
+    "timestamp_start": 2569.96,
+    "timestamp_end": 2574.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "23 contact hours of PMI education is enough there is no experience of doing",
+    "timestamp_start": 2574.52,
+    "timestamp_end": 2579.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the project is required as we saw in PMP so maintenance is again three years",
+    "timestamp_start": 2579.04,
+    "timestamp_end": 2584.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "someone who need to continue the certification has to retake the",
+    "timestamp_start": 2584.3,
+    "timestamp_end": 2588.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "examination every three years next certified scrum master so certified",
+    "timestamp_start": 2588.1,
+    "timestamp_end": 2592.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "scrum master is an entry-level certification that helps the",
+    "timestamp_start": 2592.22,
+    "timestamp_end": 2595.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "professionals to begin as the scrum practitioners is one of the most sought",
+    "timestamp_start": 2595.28,
+    "timestamp_end": 2599.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "after certifications as other after this one can get the designation of",
+    "timestamp_start": 2599.82,
+    "timestamp_end": 2604.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "certified scrum master which is offered by scrum alliance so examination fee",
+    "timestamp_start": 2604.14,
+    "timestamp_end": 2608.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which will change time to time which is not revealed so one has to approach the",
+    "timestamp_start": 2608.4,
+    "timestamp_end": 2612.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "training organization where they will get trained on certified scrum master so",
+    "timestamp_start": 2612.66,
+    "timestamp_end": 2616.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "duration of examination is 60 minutes and pattern would be 16 hours two days",
+    "timestamp_start": 2616.68,
+    "timestamp_end": 2621.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of training and 50 multiple choice questions after that particular two days",
+    "timestamp_start": 2621.84,
+    "timestamp_end": 2626.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of training then prerequisite is done for maintaining this",
+    "timestamp_start": 2626.52,
+    "timestamp_end": 2629.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "credentials so one has to ensure it has renewed every two years then projects in",
+    "timestamp_start": 2629.68,
+    "timestamp_end": 2634.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "controlled environment that is Prince two so Prince two is a method which is",
+    "timestamp_start": 2634.96,
+    "timestamp_end": 2639.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "effective mostly from the base of UK all the organizations who are from UK region",
+    "timestamp_start": 2639.5,
+    "timestamp_end": 2645.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "refers to our Prince to certification and it is as popular as any other",
+    "timestamp_start": 2645.5,
+    "timestamp_end": 2650.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "project management certifications like PMP so examination fee would vary from",
+    "timestamp_start": 2650.38,
+    "timestamp_end": 2654.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "$900 to $1000 depending on where exactly you're taking the examination and",
+    "timestamp_start": 2654.6,
+    "timestamp_end": 2659.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "certification will happen at two levels one is at foundation level and other one",
+    "timestamp_start": 2659.0,
+    "timestamp_end": 2663.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is practitioner so in foundation it is 60 questions multiple choice and in",
+    "timestamp_start": 2663.68,
+    "timestamp_end": 2669.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "practitioner it is 68 questions now 60 questions or 68 questions each carries",
+    "timestamp_start": 2669.62,
+    "timestamp_end": 2675.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "one marks for correct answer any wrong answer there will not be any negative",
+    "timestamp_start": 2675.44,
+    "timestamp_end": 2679.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "scoring one has to score 55% to clear the examination so prerequisites for",
+    "timestamp_start": 2679.24,
+    "timestamp_end": 2684.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Prince to foundation is none whereas Prince to foundation is a prerequisite for the examination.",
+    "timestamp_start": 2684.6,
+    "timestamp_end": 2688.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for Prince to practitioner examination so to maintain the certificate one has to",
+    "timestamp_start": 2689.0,
+    "timestamp_end": 2693.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "achieve 20 CPDs every continued professional development so with this we",
+    "timestamp_start": 2693.6,
+    "timestamp_end": 2699.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "conclude the understanding about what is project management what is project what",
+    "timestamp_start": 2699.5,
+    "timestamp_end": 2705.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are the various key focus areas of the project and various different",
+    "timestamp_start": 2705.46,
+    "timestamp_end": 2709.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "certifications offered and there in the industry for understanding the best",
+    "timestamp_start": 2709.04,
+    "timestamp_end": 2713.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "practice of project management various different roles what we went through so",
+    "timestamp_start": 2713.12,
+    "timestamp_end": 2716.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "before more you need to visit the",
+    "timestamp_start": 2716.9,
+    "timestamp_end": 2718.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "www.simplylearn.com and I wish all the success for your project management",
+    "timestamp_start": 2719.0,
+    "timestamp_end": 2724.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "practices journey keep learning keep growing all the best thank you",
+    "timestamp_start": 2724.58,
+    "timestamp_end": 2730.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "hi there if you liked this video subscribe to the simply learn YouTube",
+    "timestamp_start": 2732.32,
+    "timestamp_end": 2736.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "channel and click here to watch similar videos to nerd up and get certified",
+    "timestamp_start": 2736.66,
+    "timestamp_end": 2741.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "click here",
+    "timestamp_start": 2741.22,
+    "timestamp_end": 2744.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  }
+]

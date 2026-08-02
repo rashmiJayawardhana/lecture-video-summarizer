@@ -1,0 +1,1955 @@
+0.0s - 2.86s : All right, let's get started.
+3.1s - 6.18s : So, you know, Tuesday's lecture was, as I had said at the time,
+6.26s - 7.7s : kind of atmospheric, a little bit soft.
+7.8s - 9.88s : Today, I want to get into some of the details
+9.88s - 12.88s : of these out-of-core algorithms that I alluded to
+12.88s - 13.98s : at the end of the last lecture.
+14.54s - 16.84s : And the sort of two canonical techniques,
+16.96s - 18.48s : and we're going to see how they're related today,
+18.8s - 21.26s : are out-of-core sorting and out-of-core hashing.
+21.52s - 23.06s : And I will tell you that next week,
+23.1s - 25.18s : you'll get a chance to implement out-of-core hashing
+25.18s - 25.9s : as homework, too.
+25.9s - 28.44s : So, good day to pay attention
+28.44s - 29.7s : if you like to do well on your homework.
+30.0s - 31.44s : But we'll be reinforcing this.
+31.56s - 34.06s : You'll get your hands on these algorithms personally.
+35.14s - 36.7s : All right, so we'll start with sorting.
+37.28s - 39.54s : And, you know, sorting seems like such a basic thing,
+39.6s - 40.58s : but what are we going to use it for?
+40.68s - 42.34s : Why spend time learning about sorting?
+42.76s - 45.22s : Well, the first reason to do sorting
+45.22s - 47.5s : is because it brings similar things together.
+47.62s - 50.12s : It allows us to do this thing I was calling rendezvous last time,
+50.18s - 52.38s : getting multiple things together in the same place
+52.38s - 53.56s : at the same time.
+53.56s - 55.1s : And when I say at the same time,
+55.18s - 57.58s : I mean in RAM at the same time, typically.
+58.26s - 59.2s : Although for high performance,
+59.3s - 59.98s : you're also getting it,
+60.02s - 62.54s : in cache at the same time on the processor, right?
+62.6s - 64.28s : So really, we're trying to put together,
+64.38s - 65.2s : you're getting locality,
+65.56s - 67.38s : which is locality in space and time,
+67.6s - 68.82s : for multiple items.
+69.62s - 70.94s : And when do we want to do that?
+70.98s - 71.48s : Well, for instance,
+71.54s - 73.08s : if you're trying to eliminate duplicates,
+73.42s - 74.14s : you'll often sort,
+74.28s - 75.7s : and then you can go through the sorted list,
+75.74s - 77.24s : and the duplicates will be right next to each other.
+77.72s - 77.94s : Okay?
+78.34s - 80.12s : Or if you're summarizing groups of items,
+80.22s - 82.44s : suppose I want to find the average GPA
+82.44s - 83.82s : grouped by department at Berkeley.
+83.82s - 85.72s : I need to get all the computer science majors together,
+86.14s - 87.1s : compute the average for those,
+87.18s - 89.42s : and get all the cooking science students together,
+89.52s - 89.96s : and get the average.
+90.0s - 91.98s : And whatever's alphabetically after that.
+93.02s - 93.26s : Okay.
+93.96s - 96.52s : Sometimes people want to see the data in order,
+96.7s - 98.0s : and they ask it for it that way.
+98.12s - 99.54s : So you just gotta, right?
+99.66s - 101.34s : So sometimes the output's just gotta be ordered.
+101.7s - 103.36s : Typical example would be web search.
+103.82s - 105.84s : Please order these by decreasing likelihood
+105.84s - 106.9s : of I'm gonna click on it.
+107.52s - 107.74s : Right?
+107.8s - 109.38s : So you compute a probability distribution
+109.38s - 110.84s : of how likely you are to click on stuff,
+110.92s - 112.88s : and you might need to do some sorting along the way.
+113.1s - 113.28s : Okay?
+114.6s - 115.34s : And then,
+115.48s - 117.86s : sorting is fundamental to some upcoming things
+117.86s - 118.58s : we'll be talking about,
+118.58s - 119.98s : like the sort-merge-join algorithm,
+120.0s - 121.66s : which involves sorting.
+121.8s - 122.38s : Not surprising.
+123.46s - 125.36s : And as we start building indexes,
+125.42s - 126.76s : if you're gonna take a big set of data
+126.76s - 127.7s : and build an index on it,
+127.72s - 128.98s : you'll typically sort it first,
+129.14s - 132.26s : and then build a tree over that sorted set of data.
+132.4s - 134.04s : So that's another reason we do sorting,
+134.5s - 135.62s : and so on.
+135.7s - 136.58s : So the problem is,
+137.06s - 137.82s : simply, you know,
+137.86s - 138.88s : simple example of the problem.
+139.42s - 141.08s : I give you 100 gigabytes of data
+141.08s - 142.1s : and one gigabyte of RAM.
+142.22s - 143.62s : Or I give you 100 terabytes of data
+143.62s - 144.44s : and one terabyte of RAM.
+145.22s - 146.32s : How do you sort that data?
+146.88s - 147.72s : Well, you might say,
+147.8s - 149.0s : well, memory mapped that data
+149.0s - 149.84s : into virtual memory,
+149.84s - 151.18s : and then call quicksort.
+151.26s - 151.92s : What's wrong with that?
+153.98s - 154.34s : Anybody?
+157.28s - 158.88s : Anybody who took CS162?
+158.98s - 159.92s : What would be bad about,
+160.74s - 161.54s : in this scenario,
+161.88s - 164.98s : allocating a 100-gigabyte virtual memory file?
+167.82s - 168.18s : Yes?
+169.42s - 170.62s : Yeah, page fault,
+170.78s - 171.22s : and you're doing,
+171.42s - 172.56s : when you're doing quicksort,
+172.68s - 173.64s : if you think about it, right,
+173.88s - 174.7s : half the data goes here,
+174.76s - 175.54s : half the data goes there,
+175.62s - 176.04s : and then recurs,
+176.12s - 176.48s : half the data goes,
+176.78s - 178.0s : there's not a lot of locality.
+178.0s - 179.5s : So you're doing a lot of random access
+179.5s - 181.24s : into virtual memory,
+181.38s - 183.96s : which is resulting in a lot of page faults
+183.96s - 185.34s : to go get this virtual memory.
+185.7s - 186.86s : Typically, you're looking at, like,
+187.16s - 189.38s : one small little bit of a big disk page
+189.38s - 190.3s : and paying all the cost
+190.3s - 191.06s : of bringing it off disk,
+191.12s - 191.74s : looking in memory,
+191.86s - 193.68s : and then just looking at one memory address
+193.68s - 195.12s : and then dropping it again.
+195.42s - 197.12s : So you do a lot of I.O.,
+197.12s - 199.54s : and as anybody who's over-allocated memory
+199.54s - 200.32s : on your machine knows,
+200.42s - 201.46s : it's incredibly slow.
+201.6s - 203.2s : Things just become untenably slow
+203.2s - 205.08s : because orders of magnitude cost
+205.08s - 206.14s : to do those I.O.s, right?
+206.4s - 208.22s : So we're gonna need to be much more intelligent
+208.22s - 209.48s : about how to do that.
+209.48s - 211.02s : How we access data on disk
+211.02s - 213.18s : than randomly looking at memory cells
+213.18s - 215.42s : that may have been paged off the disk, right?
+215.62s - 217.26s : So the virtual memory abstraction,
+217.62s - 219.12s : while it's very nice for programmers,
+219.34s - 220.62s : is lousy for performance
+220.62s - 222.2s : when you're doing these large data tasks.
+222.62s - 224.36s : And instead, we'll be more, you know,
+224.46s - 226.48s : methodical about how we design our algorithms
+226.48s - 227.64s : to take into account
+227.64s - 229.1s : that some of our memory is slow,
+229.42s - 231.32s : that is to say disk drives or SSDs.
+231.56s - 233.52s : Some of our memory is relatively fast,
+233.64s - 234.28s : let's say RAM,
+234.54s - 236.04s : and we want to take advantage of that.
+236.32s - 237.54s : And when you microtune these things,
+237.58s - 238.38s : you might also worry about
+238.38s - 239.38s : some of my memory's
+239.38s - 239.96s : even faster,
+240.1s - 242.08s : like L1 cache or L2 cache and so on.
+242.92s - 243.1s : Okay.
+244.66s - 246.68s : Before I teach you a sorting algorithm,
+246.78s - 247.84s : it is a little bit useful
+247.84s - 250.14s : to know a few things about disks and disk drives
+250.14s - 251.8s : and where they are technologically today.
+251.92s - 252.94s : So I spent a little time
+252.94s - 253.86s : on the internet last night
+253.86s - 256.24s : looking up prices and speeds and things
+256.24s - 258.3s : for disk drives that you can buy today
+258.3s - 260.32s : so we get a snapshot in time
+260.32s - 261.3s : as to where these things are going.
+262.42s - 264.5s : So, you know, a lot of databases
+264.5s - 266.04s : actually still use magnetic disks.
+267.28s - 269.1s : And the crazy thing about magnetic disks
+269.1s - 269.36s : is that they don't have
+269.36s - 270.7s : they're mechanical devices, right?
+270.76s - 272.18s : They spin around physically
+272.18s - 273.32s : and they have these disk arms
+273.32s - 274.42s : that move back and forth.
+275.1s - 276.5s : They're really like, you know,
+276.58s - 277.98s : kind of 1950s technology
+277.98s - 279.46s : that's just been refined and refined
+279.46s - 280.44s : and refined and refined.
+281.3s - 282.98s : And the technology that gets better
+282.98s - 284.46s : is the magnetics and electronics
+284.46s - 285.2s : of the medium,
+285.54s - 287.12s : of the stuff they spray on the disk, right?
+287.28s - 289.32s : The stuff you're storing.
+289.8s - 291.54s : But the physics of spinning the disk
+291.54s - 292.52s : and moving the disk arm,
+293.08s - 295.02s : that's just what it was, you know,
+295.08s - 295.84s : a long time ago.
+296.24s - 297.8s : So they're really an anachronism.
+297.8s - 299.04s : If you're using magnetic disks,
+299.04s - 301.02s : you're using these physical world devices
+301.02s - 301.84s : and they're very slow.
+302.22s - 303.54s : So this has major implications.
+304.16s - 305.76s : There's no dereferencing pointers
+305.76s - 306.66s : like you do in memory.
+306.82s - 308.96s : There's not even an API on a disk drive,
+309.72s - 311.18s : whether it's an SSD or a disk,
+311.4s - 312.36s : or a magnetic disk.
+312.54s - 313.88s : There's no API to say,
+314.12s - 315.44s : I would like to allocate an object.
+316.3s - 317.04s : The API says,
+317.14s - 318.56s : I would like to read a block of bytes.
+319.62s - 321.38s : And that block of bytes is typically larger
+321.38s - 322.74s : than the kinds of variables
+322.74s - 324.26s : you have in your program, right?
+324.68s - 328.3s : So the API is read a fixed amount of data.
+328.3s - 328.92s : Usually it's,
+329.04s - 331.66s : it's a transfer unit from the disk drive manufacturer,
+331.66s - 334.66s : something like 8K or 64K of data.
+334.66s - 337.28s : You can read that from disk into RAM,
+337.28s - 339.8s : or you can write it from RAM back to the disk.
+339.8s - 340.92s : All right, that's your API.
+340.92s - 342.6s : So we're gonna have to work with that API
+342.6s - 343.6s : in our algorithms.
+343.6s - 345.6s : All right, we will not get to say,
+345.6s - 347.94s : allocate Java objects and never think about it again.
+347.94s - 348.86s : We will have to say,
+348.86s - 350.4s : put Java object into page,
+350.4s - 351.4s : write page to disk.
+351.4s - 353.1s : Read page from disk,
+353.1s - 354.9s : go get Java object back off.
+354.9s - 356.44s : And actually, let's hope we're not doing it in Java
+356.44s - 358.08s : because it's really not a very efficient language.
+359.04s - 362.8s : All right, those API calls are wildly expensive,
+362.8s - 364.24s : especially with magnetic disks.
+364.24s - 365.66s : And I'll show you what I mean by that
+365.66s - 367.82s : quantitatively in a slide or two.
+367.82s - 369.58s : So we're gonna wanna plan these IOs carefully.
+369.58s - 371.76s : You don't just wanna do them all the time.
+371.76s - 374.0s : And if you're gonna pay for an IO,
+374.0s - 375.78s : you better get some goodness out of that, all right?
+375.78s - 379.22s : You wanna get the most out of every IO that you do.
+379.22s - 383.26s : Now, this sounds like our hands are kinda tied, right?
+383.26s - 385.64s : It sure would be nice to have an abstract,
+385.64s - 387.42s : you know, data structure representation,
+387.42s - 388.84s : rather than think about blocks of bits.
+388.84s - 389.04s : All right.
+389.04s - 392.28s : But the truth is that sometimes having an explicit API
+392.28s - 393.28s : is a good thing.
+393.28s - 396.32s : And, you know, there's been a persistent desire,
+396.32s - 398.1s : persistent in two ways,
+398.1s - 400.14s : over the years to have programming languages
+400.14s - 402.34s : that store your objects on disk for you.
+402.34s - 405.16s : They're called persistent programming languages.
+405.16s - 407.26s : And this has been sort of a thread in language design
+407.26s - 409.66s : and system design for many years,
+409.66s - 410.66s : and it's never quite succeeded.
+410.66s - 412.96s : Why can't we just have persistent Java objects
+412.96s - 415.16s : or C++ objects or whatnot?
+415.16s - 416.28s : And part of the answer is
+416.28s - 418.84s : because it's hard to make that perform well.
+418.84s - 420.46s : And then part of the answer is, think about this.
+420.46s - 421.74s : You've got your data on disk.
+421.74s - 425.58s : It's gonna be there maybe for a day or a year or longer.
+425.58s - 426.96s : So any bugs that are in your program
+426.96s - 429.08s : are now being persisted forever.
+429.08s - 430.96s : One of the nice things about software is it runs
+430.96s - 432.84s : and then you turn it off and then you start it up again.
+432.84s - 435.34s : And anything you screwed up before, maybe nobody noticed.
+435.34s - 437.2s : Right, but when you put it down on disk
+437.2s - 438.86s : and you try to persist it,
+438.86s - 440.82s : all the kinds of programming errors that you get
+440.82s - 442.58s : will become persistent errors.
+442.58s - 445.98s : And so a lot of times, by having this block interface,
+445.98s - 446.88s : you're a little bit more careful about the stuff you put into these blocks.
+446.88s - 446.96s : So you're gonna have to be a little bit more careful about the stuff you put into these blocks.
+446.96s - 450.6s : and write to disk
+450.6s - 452.46s : than you are about the rest of your program.
+452.46s - 455.54s : And so there's a bit of a discipline
+455.54s - 456.66s : in getting the software right
+456.66s - 458.64s : that you're gonna pay the cost of doing the I.O.
+458.64s - 460.88s : You tend to get things a little more right
+460.88s - 463.84s : and you don't do it for data that isn't really important.
+463.84s - 466.42s : So I guess what I'm trying to say is
+466.42s - 468.48s : it's not all bad that we're dealing with this low-level interface
+468.48s - 470.78s : even from a software engineering perspective.
+470.78s - 471.78s : There's some good to it.
+471.78s - 474.98s : Okay, it's certainly good for performance.
+474.98s - 476.96s : So I went on the newag.com website last night
+476.96s - 478.46s : just to get some prices for,
+478.46s - 480.56s : what do you get for a thousand bucks at Newegg?
+480.56s - 484.5s : So you can get like an eighth a terabyte of RAM for a thousand bucks,
+484.5s - 487.14s : which is actually kind of crazy.
+487.14s - 490.04s : You can get 2.65 terabytes of solid state disk,
+490.04s - 491.88s : which is flash, okay.
+491.88s - 496.64s : Or you can get 26 and a half terabytes of magnetic disk.
+496.64s - 500.18s : So you can see there's like orders of magnitude here, right.
+500.18s - 503.58s : Magnetic disk is still an order of magnitude cheaper than flash.
+503.58s - 506.52s : That said,
+506.52s - 508.02s : a thousand bucks is very much money.
+508.02s - 509.92s : You get a lot of flash for a thousand bucks.
+509.92s - 511.52s : So from an absolute cost perspective,
+511.52s - 514.92s : a lot of problems will fit in flash or even in RAM,
+514.92s - 517.96s : and it's well worth solving many, many problems
+517.96s - 521.6s : over in this domain over here on the left, right.
+521.6s - 523.78s : And disk drives are really for very big problems these days,
+523.78s - 525.42s : or for long-term storage.
+525.42s - 528.08s : They're kind of the tape drives of our time to some degree.
+528.08s - 531.4s : So when we talk about disk drives, magnetic disks in this class,
+531.4s - 534.92s : it's mostly for these very, very large workloads that they'll matter.
+534.92s - 535.92s : And a lot of things
+535.92s - 538.72s : will be more interested in kind of performance on SSD,
+538.72s - 541.46s : which is good because SSDs are a little more predictable
+541.46s - 544.42s : than magnetic disk drives from a performance perspective.
+544.42s - 547.0s : We'll go through that next, okay.
+547.0s - 549.56s : But we will make you think about disk drives,
+549.56s - 552.0s : magnetic disk drives a little bit.
+552.0s - 554.2s : So you know, you probably have seen some version of this
+554.2s - 555.3s : in every class.
+555.3s - 557.74s : I actually wandered by Professor Demel's class this morning,
+557.74s - 559.24s : and he was talking about memory hierarchies,
+559.24s - 562.42s : I assume in a scientific computing course this morning.
+562.42s - 564.12s : And he was more refined than this actually,
+564.12s - 565.92s : because they're more interested in the top of the hierarchy,
+565.92s - 570.34s : but, you know, disks are slow, registers are fast,
+570.34s - 572.16s : disks are big, registers are small, right.
+572.16s - 574.22s : And you make tradeoffs when you write programs
+574.22s - 577.6s : and when you build architectures, moving data up and down this hierarchy.
+577.6s - 578.6s : Okay.
+578.6s - 579.88s : From our perspective in this class,
+579.88s - 583.8s : we're mostly gonna focus on whether things are in RAM or not.
+583.8s - 585.26s : And that's gonna be the level of the hierarchy
+585.26s - 588.3s : where we're gonna be most interested in this class.
+588.3s - 593.5s : However, some of the things that we talk about in this class
+593.5s - 595.76s : actually can be translated up the hierarchy.
+595.76s - 598.0s : So let's look at the list of things that we can do
+598.0s - 599.0s : to try and help this class.
+599.0s - 601.0s : First, let's go back to our test.
+601.0s - 602.0s : So this last one is a test.
+602.0s - 603.0s : It's called memory hierarchy.
+603.0s - 604.0s : And what it really does is it allows you to,
+604.0s - 605.0s : if you're a member of a group of people
+605.0s - 606.0s : that you're working with,
+606.0s - 607.0s : to put your data into finer grained implementations
+607.0s - 608.0s : where you're trying to put things into, say,
+608.0s - 609.0s : L2 cache from RAM and back.
+609.0s - 610.0s : Okay.
+610.0s - 611.0s : So some of these lessons about managing
+611.0s - 612.0s : these two levels of the memory hierarchy,
+612.0s - 613.0s : you can pop them up,
+613.0s - 614.0s : and I think as time goes on in the next five and ten years
+614.0s - 615.0s : of your career,
+615.0s - 616.0s : some of these database ideas will become increasingly prevalent
+616.0s - 617.0s : in memory algorithms in terms of managing cache.
+617.0s - 618.0s : Okay.
+618.0s - 622.0s : Typically, today you have a lot of RAM in a database server,
+622.0s - 623.82s : You want to avoid going to disk whenever you can
+623.82s - 625.6s : because it's very, very expensive, as we'll see.
+626.38s - 629.48s : Your disk is for the database, okay?
+629.62s - 631.74s : And the backups or logs of that database
+631.74s - 632.98s : if you use a logging technique.
+633.34s - 635.42s : So you can think of disks as secondary storage,
+635.54s - 637.66s : meaning, like, they're not memory, they're the database.
+637.76s - 639.12s : Or you can actually think of them as, like, backup,
+639.3s - 640.18s : as tertiary storage.
+640.6s - 642.9s : Used to be tertiary storage was a special word for tape.
+643.52s - 645.62s : But people don't use tapes at all anymore, essentially.
+645.72s - 646.66s : They just put things on disks.
+647.06s - 648.52s : So disks serve both those roles today.
+648.52s - 652.32s : And Flash, it varies how it gets used by deployment.
+652.46s - 655.52s : So some databases are deployed with Flash as the main database.
+656.06s - 658.66s : Sometimes it's sort of deployed as a caching tier
+658.66s - 661.14s : in between RAM and the database.
+661.68s - 663.94s : And there's sort of the economics of exactly
+663.94s - 666.06s : how to use SSD in the stack are evolving.
+666.54s - 667.86s : I'm pretty certain what's going to happen
+667.86s - 670.3s : is it will replace disks over the next five years.
+670.8s - 673.28s : But right now it's in kind of a funny spot
+673.28s - 674.62s : because it is still an order of magnitude
+674.62s - 675.82s : more expensive than disk drives.
+675.82s - 677.58s : And it's faster.
+677.78s - 678.5s : It's quite a bit faster.
+678.52s - 680.82s : But still, it's a little bit more expensive.
+681.82s - 682.14s : All right.
+682.66s - 684.78s : So this is a picture that was in a paper from, like, the 90s
+684.78s - 686.66s : by one of the founders of the database field, Jim Gray.
+686.7s - 687.54s : And it's still a good picture,
+687.6s - 688.9s : even though the numbers are probably wrong.
+688.98s - 691.2s : But this gives you sort of a sense of the orders of magnitude
+691.2s - 693.88s : between registers, on-chip cache, on-board cache,
+693.98s - 695.44s : memory, disk, tape robot, right?
+695.5s - 697.9s : So if you imagine that going to a register on chip
+697.9s - 700.08s : is like going to your head to look something up,
+700.42s - 701.76s : well, then going to the on-chip cache
+701.76s - 702.94s : is like it's somewhere in the room.
+703.06s - 705.08s : Going to the on-board cache, another order of magnitude,
+705.22s - 706.9s : is like it's somewhere in the Li Ka-Shing building.
+707.42s - 707.86s : Okay?
+707.86s - 707.98s : Okay.
+708.14s - 709.84s : Another order of magnitude to get to RAM.
+709.94s - 712.74s : That's like going to Sacramento in distance.
+712.84s - 715.08s : Well, that's, okay, that feels like a lot, right?
+715.08s - 717.3s : You wouldn't go to Sacramento very often to go get something.
+717.82s - 717.96s : Right?
+718.0s - 719.68s : And if you're going to, like, have a little piece of information
+719.68s - 720.38s : you want to remember,
+721.04s - 722.36s : you're unlikely to store it in Sacramento,
+722.64s - 724.36s : so you have to go back and forth every time to get it.
+724.4s - 726.22s : So you should think pretty hard before you go to Sacramento.
+726.64s - 728.22s : And my God, disk drives are like Pluto.
+728.84s - 729.12s : Okay?
+729.18s - 730.28s : Because it's four more zeros.
+731.38s - 732.02s : That's crazy.
+732.44s - 732.64s : Okay.
+732.72s - 734.48s : So magnetic disks are super slow.
+734.48s - 737.84s : And then things like, you know, only crazy sort of NSFs,
+737.86s - 741.38s : say, style data sets need to be on tape robots anymore.
+741.5s - 742.68s : But that's, you know, that's insanity.
+742.9s - 743.76s : That's like another galaxy.
+744.52s - 744.62s : All right?
+744.62s - 746.94s : But this really gives you a little bit of a more of a visceral sense
+746.94s - 749.0s : of what these order of magnitude performance differences mean.
+750.9s - 751.22s : Okay.
+751.64s - 752.78s : Here's a picture of a disk drive.
+752.92s - 753.82s : We're going to go through this quick
+753.82s - 755.16s : because it is kind of old technology.
+755.3s - 756.78s : Disk drives are like LPD players.
+756.9s - 757.36s : They spin.
+757.7s - 758.58s : For real, they spin.
+758.68s - 760.2s : Like, they're slow.
+761.26s - 765.14s : They spin at, like, 7,200, maybe 10,000 rotations per minute.
+765.14s - 767.14s : They still report it in RPMs, like turntables,
+767.86s - 769.54s : 33 and a third, right, for LPs.
+769.66s - 770.42s : These are 7,200.
+770.64s - 771.36s : It's not that much faster.
+772.12s - 772.36s : Okay.
+772.5s - 773.6s : It's faster, but still.
+775.68s - 778.88s : There's this arm assembly that kind of is usually on a pivot
+778.88s - 781.8s : and it moves in and out on the disk drive like a turntable tone arm.
+782.68s - 785.78s : And it has to position itself on one of these concentric tracks.
+786.6s - 787.14s : All right?
+787.36s - 788.22s : On the disk drive.
+788.28s - 789.78s : And actually, some disk drives, it's a spiral,
+789.98s - 791.26s : and some disk drives, they're concentric.
+791.32s - 792.84s : You might as well just think of them as being concentric.
+792.88s - 793.32s : That's fine.
+794.86s - 796.84s : And if there's multiple platters,
+797.86s - 799.76s : on the spindle, which in some disk drives,
+799.76s - 801.04s : there's still two or three platters,
+801.98s - 806.16s : then you can imagine that moving the disk arm gets a bunch of different disk heads
+806.16s - 808.84s : on top of a bunch of different tracks on different platters.
+808.84s - 812.12s : And all those tracks you get at the same time from a physical point of view.
+812.12s - 815.64s : The arm is now positioned over this track, this track, and this track.
+815.98s - 819.58s : So you can think of that almost as like a cylinder instead of just a circle.
+819.58s - 822.04s : So they call them cylinders, in fact, or cylinder groups.
+822.64s - 822.84s : Okay.
+822.84s - 825.82s : And those are all the tracks that are lined up that you don't need to seek between them.
+825.82s - 827.86s : You don't need to move the disk arm, which is called seeking.
+827.86s - 831.28s : In order to transfer from this track to this track.
+831.28s - 833.12s : It's just electronic to transfer between those.
+833.12s - 834.48s : You're reading from a different read head.
+835.68s - 835.88s : Okay.
+835.88s - 837.42s : So each one of these arms has a head.
+837.42s - 839.0s : The tracks under the heads make a cylinder.
+839.3s - 842.08s : Typically, only one of these heads is reading and writing at any one time.
+842.62s - 846.82s : And typically, they make the density of these tracks the same,
+846.82s - 849.36s : even though the ones on the inside are smaller than the ones on the outside.
+849.36s - 851.04s : They kind of spread out the data on the outside.
+851.22s - 854.62s : Not always true, but it's a nice, fine assumption, and it is on some devices true.
+855.4s - 857.74s : And so there's the fixed number of what are called,
+857.74s - 857.84s : the fixed number of the tracks.
+857.86s - 862.1s : There's a block called sectors, which are the little pizza slices on each of these tracks.
+862.44s - 865.44s : And then a block, which is the thing we're going to transfer to and from the disk,
+865.68s - 867.14s : is a fixed number of sectors.
+867.58s - 870.18s : And that's actually set by the operating system when you configure the drive.
+870.74s - 874.7s : So the important thing to remember is this disk arm thing, which is called seek movement.
+875.08s - 876.0s : There's going to be a cost for that.
+876.5s - 877.18s : There's rotation.
+877.78s - 878.96s : And then there's a block transfer.
+879.46s - 879.6s : Okay.
+879.76s - 881.26s : And we're going to go over that on the next slide.
+881.32s - 882.32s : But it's useful to see a picture.
+883.74s - 885.2s : These things used to be really big, right?
+885.2s - 887.32s : And now they're like, right, they fit in your little,
+887.32s - 889.2s : they could be really small.
+890.3s - 890.78s : All right.
+890.84s - 892.54s : So to access a disk page, here's what you do.
+892.62s - 896.18s : And here's some times that I got off recent benchmarks on the web last night.
+896.3s - 900.58s : So time to access a magnetic disk block on a typical desktop magnetic disk,
+900.62s - 901.64s : so cheap disk, right?
+901.68s - 904.7s : Not an enterprise-grade disk, sort of commodity disk.
+905.4s - 905.82s : Seek time.
+905.88s - 910.62s : So the time to move the disk arm to the right place is like two to four milliseconds on average.
+910.78s - 910.96s : All right.
+910.96s - 912.58s : And it depends how far you have to move it, right?
+912.58s - 915.7s : So if he's moving from the very outside to the very inside, that's the most.
+915.8s - 916.26s : That's like eight.
+916.66s - 917.2s : If he's moving it from the inside to the outside, that's like eight.
+917.2s - 917.3s : So that's the time to move it from the very outside to the very inside.
+917.3s - 919.82s : If he's moving it from, you know, just one track, it's very little,
+920.36s - 924.1s : and it scales up sublinearly, but it's not important.
+924.28s - 926.66s : It's two to four milliseconds on average to seek to another track.
+927.24s - 928.76s : And then once you've seeked to the other track,
+928.8s - 931.52s : you have to wait for the data to spin under the head, right?
+931.68s - 934.12s : And that, again, usually takes about two to four milliseconds.
+934.66s - 937.62s : So the cost of seeking and then the cost of rotational delay
+937.62s - 940.78s : both add up to the cost of a random I.O., all right?
+940.92s - 944.64s : And then there's the transfer time, which is a good order of magnitude less,
+944.64s - 947.18s : which is just get the data once the physical,
+947.18s - 950.26s : physical stuff's in position, just read the data off the medium, all right?
+950.28s - 951.56s : That's an order of magnitude faster.
+951.84s - 953.72s : But you can see that with magnetic disks,
+953.78s - 957.3s : you really care about getting these I.O.s that are all close to each other
+957.3s - 958.98s : and trying not to seek, all right,
+958.98s - 961.04s : and trying not to induce rotational delay.
+961.7s - 966.06s : So the key to lower I.O. cost is you try to come up with software solutions
+966.06s - 969.0s : that will reduce your seek and rotation delays.
+969.94s - 971.72s : Or you can come up with hardware solutions, too,
+971.78s - 974.22s : like get rid of magnetic disks and use Flash, right?
+974.22s - 976.1s : But that took a while.
+976.44s - 977.06s : So we now do...
+977.18s - 977.68s : We're gonna do that.
+977.68s - 981.68s : But our algorithms by now already know how to avoid these seek and rotation delays.
+981.68s - 984.94s : You're gonna learn algorithms, some of which do more random I.O.s than seek,
+984.94s - 986.24s : some of which do less, okay?
+986.24s - 987.94s : And we'll try to flag that as we go.
+987.94s - 991.68s : So the cost, the seek cost and the rotational delay cost of random I.O.s
+991.68s - 995.18s : will be something we may be a little sensitive to in this course.
+995.18s - 998.18s : Whereas sequential I.O.s, because the disk arm doesn't have to move,
+998.18s - 999.18s : are gonna go faster.
+1000.18s - 1001.18s : All right.
+1001.18s - 1003.68s : And to that end, we're gonna arrange pages on disk
+1003.68s - 1006.18s : with some logical notion of things being sequential,
+1006.18s - 1007.18s : of there being a next block,
+1007.18s - 1008.68s : after the current block.
+1008.68s - 1009.68s : So you can think about it.
+1009.68s - 1010.68s : The disk is spinning.
+1010.68s - 1011.68s : The head is here.
+1011.68s - 1013.18s : This is block number one.
+1013.18s - 1015.68s : As it rotates, the next block that'll come under the head,
+1015.68s - 1016.68s : think of that as block number two.
+1016.68s - 1017.18s : Okay?
+1017.18s - 1018.18s : So those things are very close.
+1018.18s - 1020.18s : If they're next to each other on the same track.
+1020.68s - 1023.18s : If they're next to each other but they're on different cylinders,
+1023.18s - 1025.68s : that's just an electronic switch between reading from this head
+1025.68s - 1027.68s : and reading from that head, right?
+1027.68s - 1028.68s : So that's fast, too.
+1028.68s - 1029.68s : So that's no problem.
+1029.68s - 1031.68s : Um, and if they're on adjacent cylinders,
+1031.68s - 1034.18s : you're gonna have to move the disk arm with a small seek.
+1034.18s - 1035.18s : Okay?
+1035.18s - 1036.18s : And so that's close...
+1036.18s - 1037.18s : That's, uh...
+1037.18s - 1038.18s : closer than a random I.O.,
+1038.18s - 1040.18s : but it's more expensive than the same cylinder.
+1040.18s - 1041.68s : So there's this notion of nextness
+1041.68s - 1044.18s : that comes from kind of this proximity metric, right?
+1044.18s - 1047.18s : And what we'd like to do is take a big file of data
+1047.18s - 1050.18s : and arrange it sequentially according to this notion of next
+1050.18s - 1052.18s : so that when you do a full scan of that data,
+1052.18s - 1054.18s : the disk arm kind of goes like that,
+1054.18s - 1056.18s : and the data's just rotating under the heads
+1056.18s - 1057.68s : as the disk arm moves, right?
+1057.68s - 1059.18s : The way you play an LP record, in fact.
+1059.18s - 1061.18s : That's what you want to do with your data.
+1061.18s - 1061.68s : Right?
+1061.68s - 1064.68s : You just want it to spin and feed data out as fast as it can.
+1064.68s - 1065.18s : Right?
+1065.18s - 1066.18s : Random I.O.s are gonna do this,
+1066.18s - 1066.68s : and remember,
+1066.68s - 1067.18s : there's no way to do this.
+1067.18s - 1068.18s : There's, like, four milliseconds
+1068.18s - 1069.18s : every time you move that disk arm,
+1069.18s - 1070.68s : and it makes that horrible noise.
+1070.68s - 1071.68s : All right.
+1071.68s - 1073.68s : The other thing you can do with sequential scan
+1073.68s - 1075.18s : is sometimes this thing is reading,
+1075.18s - 1076.68s : and the processor's too slow
+1076.68s - 1078.18s : because it's off computing something
+1078.18s - 1079.68s : about the data that it's getting.
+1079.68s - 1081.68s : So you might want something else.
+1081.68s - 1084.18s : Maybe it's a controller on the disk or something
+1084.18s - 1087.18s : to actually be reading ahead and buffering data
+1087.18s - 1089.18s : so that if the processor suddenly gets busy for a minute,
+1089.18s - 1090.68s : when it wakes up again and comes back,
+1090.68s - 1092.68s : it can grab the data that was read under the head.
+1092.68s - 1095.18s : What you hate to have happen is, you know,
+1095.18s - 1096.18s : you wanted to read some data
+1096.18s - 1097.18s : that was spinning under the head,
+1097.18s - 1099.18s : and the processor goes off to do something else,
+1099.18s - 1101.18s : and by the time it wakes up and wants the data,
+1101.18s - 1102.18s : you missed it,
+1102.18s - 1103.18s : and you have to wait for it
+1103.18s - 1104.18s : to come all the way back around.
+1104.18s - 1105.18s : Right?
+1105.18s - 1106.18s : So there's usually some kind of track cache
+1106.18s - 1108.18s : or something like that in the disk drive
+1108.18s - 1110.18s : to hold the contents of a full spin
+1110.18s - 1111.18s : so that the processor,
+1111.18s - 1113.18s : if it does a thread switch or whatever,
+1113.18s - 1114.18s : when it comes back,
+1114.18s - 1119.18s : will still get that full track.
+1119.18s - 1120.18s : Okay.
+1120.18s - 1121.68s : So, so much for magnetic disks.
+1121.68s - 1123.18s : I'm not gonna tell you a lot more.
+1123.18s - 1125.18s : That information's obviously in the book as well
+1125.18s - 1126.68s : with very old numbers.
+1126.68s - 1128.68s : So here's the numbers for SSD,
+1128.68s - 1130.68s : and we can flip back and forth.
+1130.68s - 1132.68s : SSD, actually, there's various different technologies.
+1132.68s - 1134.68s : There's NAND flash and NOR flash.
+1134.68s - 1136.68s : It can be packaged into, you know,
+1136.68s - 1137.68s : flash drives can be raw,
+1137.68s - 1139.68s : or they can be packaged into these SSD devices,
+1139.68s - 1141.68s : which emulate magnetic disks.
+1141.68s - 1142.68s : Right?
+1142.68s - 1143.68s : And there, there's a whole bunch of tradeoffs around this.
+1143.68s - 1144.68s : But what I'm telling you
+1144.68s - 1146.68s : is what's become pretty much commodity.
+1146.68s - 1148.68s : So this is, again, statistics about the stuff
+1148.68s - 1151.68s : you typically buy and plug into a computer these days.
+1151.68s - 1152.68s : But what I'll warn you is that
+1152.68s - 1154.68s : this changes, like, every year or two.
+1154.68s - 1155.68s : It's a very evolving technology,
+1155.68s - 1156.68s : and we're gonna have to keep
+1156.68s - 1157.68s : doing what I tell you today
+1157.68s - 1158.68s : may not be true, like, next year,
+1158.68s - 1160.68s : and you may need to rethink this.
+1160.68s - 1163.68s : What, the, the general trend is they're getting way better,
+1163.68s - 1164.68s : which is good.
+1164.68s - 1165.68s : All right.
+1165.68s - 1168.68s : Reads, um, tend to be smallish.
+1168.68s - 1171.68s : Uh, many of these devices do 4K reads.
+1171.68s - 1172.68s : All right.
+1172.68s - 1175.68s : Uh, some of them will do a 64K read, but not always.
+1175.68s - 1177.68s : Uh, but you can do small reads efficiently,
+1177.68s - 1179.68s : is the point, on a, on a flash drive.
+1179.68s - 1180.68s : So you can get down to 4K
+1180.68s - 1182.68s : on many of these flash drives efficiently.
+1182.68s - 1185.68s : And the access time is, like, .03 milliseconds.
+1185.68s - 1188.68s : So remind yourself what it took to do a seek.
+1188.68s - 1190.68s : Two to four milliseconds.
+1190.68s - 1192.68s : That's two orders of magnitude more
+1192.68s - 1194.68s : if you do a random I.O. on a magnetic disk.
+1194.68s - 1197.68s : It's 100 times slower than doing a random I.O.
+1197.68s - 1198.68s : on a flash drive.
+1198.68s - 1199.68s : So they're, they can be 100 times faster
+1199.68s - 1201.68s : for these random I.O. workloads,
+1201.68s - 1202.68s : which is a huge deal.
+1202.68s - 1206.68s : Um, and that gives you 4K random reads, uh, bandwidth.
+1206.68s - 1207.68s : And this is, again, coming from this, uh,
+1207.68s - 1209.68s : benchmarks I found on the web last night.
+1209.68s - 1210.68s : About 500 megabytes a second.
+1210.68s - 1211.68s : If you do sequential reads,
+1211.68s - 1213.68s : excuse me for my typo,
+1213.68s - 1214.68s : um, wow, it's really fast.
+1214.68s - 1215.68s : Uh, it's really fast.
+1215.68s - 1216.68s : It's really embarrassing.
+1216.68s - 1217.68s : It's right ne-
+1217.68s - 1218.68s : C and X are right next to each other
+1218.68s - 1220.68s : on the keyboard in my defense.
+1220.68s - 1222.68s : Um, and of course,
+1222.68s - 1223.68s : because my computer's not working,
+1223.68s - 1224.68s : I can't fix that.
+1224.68s - 1226.68s : So we're just gonna leave it up on the screen.
+1226.68s - 1228.68s : But we're all adults.
+1228.68s - 1231.68s : These things happen.
+1231.68s - 1234.68s : That's silly.
+1234.68s - 1236.68s : Okay.
+1236.68s - 1237.68s : That's pretty fun.
+1237.68s - 1238.68s : I think it was auto,
+1238.68s - 1240.68s : it was the Apple auto spell, right?
+1241.68s - 1243.68s : SEC is not a word.
+1243.68s - 1244.68s : All right, 500,
+1244.68s - 1245.68s : but you can see, sequential reads
+1245.68s - 1247.68s : are essentially no faster than random reads.
+1247.68s - 1248.68s : Or, to say it differently,
+1248.68s - 1250.68s : random reads are just as fast as sequential reads.
+1250.68s - 1251.68s : They're just as good.
+1251.68s - 1253.68s : All right, so there is no difference
+1253.68s - 1255.68s : on a, on a SSD these days for reads
+1255.68s - 1257.68s : between sequential and random.
+1257.68s - 1259.68s : However, writes,
+1259.68s - 1261.68s : so it used to be writes were slow on SSDs.
+1261.68s - 1263.68s : It was like reads were fast and writes weren't that fast.
+1263.68s - 1265.68s : It's like, oh man, now I gotta think about all my algorithms
+1265.68s - 1267.68s : and like worry about how write's more expensive than read.
+1267.68s - 1268.68s : Ah.
+1268.68s - 1270.68s : But then, three years later, that's not true anymore.
+1270.68s - 1272.68s : So now writes are about the same,
+1272.68s - 1273.68s : uh, to do a single write.
+1273.68s - 1274.68s : Random write bandwidth, though, look at that.
+1274.68s - 1278.68s : Is still about factor of three or four slower than reads.
+1278.68s - 1280.68s : So writes are still a little bit slower than reads.
+1280.68s - 1283.68s : Sequential writes, on the other hand, are fast.
+1283.68s - 1285.68s : And this has to do with all sorts of crazy things
+1285.68s - 1287.68s : about actually under the covers,
+1287.68s - 1288.68s : they're moving all your blocks around
+1288.68s - 1289.68s : because they don't want to overwrite
+1289.68s - 1292.68s : the same flash, uh, cell too many times
+1292.68s - 1293.68s : or it'll burn out.
+1293.68s - 1295.68s : So there's a little microcontroller that's saying,
+1295.68s - 1296.68s : okay, block number two isn't there anymore.
+1296.68s - 1297.68s : It's over there.
+1297.68s - 1299.68s : And they keep doing that under the covers for you
+1299.68s - 1300.68s : in, in an ASIC.
+1300.68s - 1302.68s : But what the, the net effect from,
+1302.68s - 1304.68s : from our perspective is just random writes.
+1304.68s - 1306.68s : So random writes are slower than sequential writes.
+1306.68s - 1309.68s : So there is still some worry about random versus sequential
+1309.68s - 1311.68s : even in SSD land.
+1311.68s - 1312.68s : Pain in the butt, right?
+1312.68s - 1314.68s : So, um, if you take a worst case kind of view,
+1314.68s - 1316.68s : you say, fine, SSDs are kind of like disk,
+1316.68s - 1317.68s : magnetic disks still.
+1317.68s - 1319.68s : There's still a cost for randomness.
+1319.68s - 1321.68s : And we'll, we'll try to remember to avoid being random
+1321.68s - 1322.68s : when we can.
+1322.68s - 1324.68s : Um, there is this concern about write endurance.
+1324.68s - 1326.68s : So you can't write the same flash cell
+1326.68s - 1328.68s : more than a few thousand times,
+1328.68s - 1331.68s : which is why those ASICs keep moving stuff around
+1331.68s - 1333.68s : to try to avoid hotspots on the disk.
+1333.68s - 1334.68s : Um,
+1334.68s - 1335.68s : and what it said, you know,
+1335.68s - 1337.68s : as I started reading some of the latest numbers
+1337.68s - 1340.68s : is that it's sort of considered in many organizations
+1340.68s - 1343.68s : reasonable to replace your SSDs every six to 12 months.
+1343.68s - 1345.68s : Which from a cost perspective means, you know,
+1345.68s - 1347.68s : your storage budget just went up a little bit more.
+1347.68s - 1349.68s : So SSDs are actually not only more expensive,
+1349.68s - 1351.68s : but they wear faster than magnetic disks.
+1351.68s - 1353.68s : So there's some expense involved.
+1353.68s - 1355.68s : Uh, and I will point out if you're Google
+1355.68s - 1357.68s : or a very big internet service,
+1357.68s - 1359.68s : um, the expense of maintenance,
+1359.68s - 1361.68s : uh, the human cost of maintenance,
+1361.68s - 1363.68s : uh, and downtime and all that is something
+1363.68s - 1364.68s : you have to account for as well.
+1364.68s - 1365.68s : You go in there, pull out the drive,
+1365.68s - 1366.68s : put in a new one,
+1366.68s - 1368.68s : the software has to auto-recover the drive,
+1368.68s - 1369.68s : et cetera, right?
+1369.68s - 1371.68s : So, um, all that's been optimized quite well
+1371.68s - 1372.68s : in these data centers these days.
+1372.68s - 1373.68s : It's all done, you know,
+1373.68s - 1375.68s : it's not like there's a guy in the back
+1375.68s - 1377.68s : who might trip over the power plug and screw it up.
+1377.68s - 1380.68s : But, uh, it's still, it's, it's just an expense.
+1380.68s - 1382.68s : All right. Um, so some pragmatics,
+1382.68s - 1384.68s : and I've been telling you this, but here's some numbers.
+1384.68s - 1387.68s : Many significant sources of data are really not that big.
+1387.68s - 1388.68s : The daily weather around the globe
+1388.68s - 1390.68s : over the course of 80 years?
+1390.68s - 1392.68s : 20 gigabytes.
+1392.68s - 1393.68s : Right?
+1393.68s - 1395.68s : The US Census, 200 gigabytes.
+1395.68s - 1398.68s : The English Wikipedia from 2009, 14 gigabytes.
+1398.68s - 1400.68s : All right. So a lot of problems where you're like,
+1400.68s - 1402.68s : I'm gonna build a knowledge base of all of mankind's knowledge.
+1402.68s - 1404.68s : It shall be like Wikipedia.
+1404.68s - 1406.68s : Like, you know, they fit on your phone.
+1406.68s - 1408.68s : All right. So a lot of data's not that big,
+1408.68s - 1410.68s : and when you have a data problem,
+1410.68s - 1412.68s : that doesn't mean you need to build
+1412.68s - 1414.68s : a giant MapReduce cluster, right?
+1414.68s - 1416.68s : And I think we should all be very pragmatic about that.
+1416.68s - 1418.68s : I'm gonna teach you a lot of things in this class
+1418.68s - 1420.68s : that are great for big problems and may be good
+1420.68s - 1422.68s : or may not be good for small problems.
+1422.68s - 1424.68s : But you should use it wisely when you're implementing things,
+1424.68s - 1426.68s : what tools to deploy.
+1426.68s - 1427.68s : All right?
+1427.68s - 1428.68s : Yeah.
+1428.68s - 1431.68s : That said, data is still growing faster than Moore's Law.
+1431.68s - 1433.68s : So if you're sort of in the industry
+1433.68s - 1435.68s : that's dealing with data streaming off of software logs,
+1435.68s - 1437.68s : streaming off of devices,
+1437.68s - 1439.68s : you may very well have problems that are sort of bigger
+1439.68s - 1441.68s : than your compute almost can handle.
+1441.68s - 1443.68s : Right? So these two things are happening at the same time,
+1443.68s - 1444.68s : so to speak.
+1444.68s - 1446.68s : Some data that's really interesting is kind of constant-sized,
+1446.68s - 1448.68s : and so it's just kind of getting swallowed up
+1448.68s - 1450.68s : by the hardware technology.
+1450.68s - 1452.68s : But the hardware technology is also generating data, right?
+1452.68s - 1455.68s : Which means that there's always gonna be these kind of big,
+1455.68s - 1457.68s : high-end problems, right, in computing.
+1457.68s - 1460.68s : And the funny thing when you think about it,
+1460.68s - 1462.68s : like, what would you do if I gave you
+1462.68s - 1464.68s : all the compute power in the universe?
+1464.68s - 1465.68s : If, like, I was God and I said,
+1465.68s - 1467.68s : you can compute as much as you want, it's free.
+1467.68s - 1469.68s : Or if I was like Jeff Bezos.
+1469.68s - 1471.68s : Right?
+1471.68s - 1473.68s : Like, what would you do with all those computers?
+1473.68s - 1475.68s : You'd be like, well, I gotta keep them busy.
+1475.68s - 1477.68s : I could search for extraterrestrial life.
+1477.68s - 1479.68s : I could compute number, you know, digits of pi.
+1479.68s - 1480.68s : Or I could get me a whole lot of data.
+1480.68s - 1481.68s : And, you know, that's what I'm gonna do.
+1481.68s - 1483.68s : And, you know, that's what I would use those computers for, right?
+1483.68s - 1487.68s : So if you believe there's cloud-scale computing problems,
+1487.68s - 1490.68s : you probably believe there's cloud-scale data problems.
+1490.68s - 1492.68s : Because it's the only way to keep those computers busy.
+1492.68s - 1494.68s : So if you're in the computer science business,
+1494.68s - 1496.68s : you're kind of in the big data business.
+1496.68s - 1498.68s : You can think about that.
+1498.68s - 1500.68s : But if you're in, like, the science business
+1500.68s - 1502.68s : and you have a really interesting data set,
+1502.68s - 1504.68s : it might fit on your laptop.
+1504.68s - 1505.68s : All right.
+1505.68s - 1508.68s : So the bottom line for now, very large databases.
+1508.68s - 1510.68s : Um...
+1510.68s - 1512.68s : Still deployed in a relatively traditional fashion.
+1512.68s - 1514.68s : Disk is still the best cost deal,
+1514.68s - 1516.68s : but SSDs improve not only performance
+1516.68s - 1518.68s : but the variance in performance.
+1518.68s - 1520.68s : So they're very predictable.
+1520.68s - 1522.68s : The reads and the writes aren't that different in cost.
+1522.68s - 1525.68s : Your algorithms don't have to think quite as hard about that.
+1525.68s - 1527.68s : And also in deployments,
+1527.68s - 1529.68s : and we've studied this, actually, in my research group
+1529.68s - 1531.68s : with workloads from LinkedIn.
+1531.68s - 1533.68s : Some of LinkedIn's servers were Flash-based and some weren't.
+1533.68s - 1535.68s : The ones when they weren't Flash-based
+1535.68s - 1537.68s : would do things like drop connections a lot.
+1537.68s - 1539.68s : Because every once in a while they'd do a random I.O.
+1539.68s - 1541.68s : and they'd get bad behaviors from their disk drives,
+1541.68s - 1542.68s : their magnetic disk drives,
+1542.68s - 1544.68s : and it would screw up their performance profiles.
+1544.68s - 1547.68s : And so they'd have to write code that would defend against failure,
+1547.68s - 1549.68s : where failure just meant we didn't respond to a message in time
+1549.68s - 1551.68s : because the disk was seeking.
+1551.68s - 1554.68s : Whereas on their SSDs, everything was very smooth and predictable,
+1554.68s - 1557.68s : and the software kind of usually did what you expected it to do.
+1557.68s - 1560.68s : And so a lot of the edge cases didn't get exercised nearly as much.
+1560.68s - 1561.68s : Um...
+1561.68s - 1563.68s : And it led to less crazy things
+1563.68s - 1565.68s : like data replicas are not in sync and stuff like that,
+1565.68s - 1567.68s : simply because performance on all the nodes
+1567.68s - 1569.68s : was kind of the same all the time.
+1569.68s - 1570.68s : So, you know,
+1570.68s - 1572.68s : the chance in performance when you get to really big systems
+1572.68s - 1573.68s : is a nice thing.
+1573.68s - 1576.68s : Okay, that's another good thing about SSDs to keep in mind.
+1576.68s - 1579.68s : As we said, the smaller database story is changing quickly
+1579.68s - 1583.68s : because Flash is not that expensive, absolute numbers.
+1583.68s - 1586.68s : Many interesting databases fit in RAM.
+1586.68s - 1587.68s : Uh...
+1587.68s - 1590.68s : This is gonna continue to evolve much faster than it used to.
+1590.68s - 1592.68s : Disk drives were kind of growing in a very predictable way
+1592.68s - 1594.68s : for, like, 40 years.
+1594.68s - 1596.68s : But now we're really in a time of flux,
+1596.68s - 1598.68s : so it's interesting.
+1598.68s - 1599.68s : Um...
+1599.68s - 1600.68s : We talked about this data.
+1600.68s - 1602.68s : It seems like it's huge, which it is.
+1602.68s - 1603.68s : There's a lot of data that's huge,
+1603.68s - 1605.68s : but a lot of really interesting data sets are small.
+1605.68s - 1606.68s : So we talked about that,
+1606.68s - 1608.68s : which is, like, kind of thought-provoking.
+1608.68s - 1610.68s : And I guess the bottom line is some people...
+1610.68s - 1612.68s : Well, I shouldn't say many people,
+1612.68s - 1615.68s : but many bytes will continue to be on magnetic disk for some time.
+1615.68s - 1617.68s : So if you want to work on a lot of the data,
+1617.68s - 1620.68s : a lot of the data will be on magnetic disk still.
+1620.68s - 1622.68s : It's just that that data may only be in the hands
+1622.68s - 1623.68s : of a small number of people
+1623.68s - 1625.68s : because who's got problems that big?
+1625.68s - 1626.68s : Right?
+1626.68s - 1627.68s : So you may just decide that, you know,
+1627.68s - 1628.68s : magnetic disks don't interest you
+1628.68s - 1629.68s : because you'll always work with SSDs,
+1629.68s - 1631.68s : and that, you know, maybe in a few years
+1631.68s - 1632.68s : is a good assumption.
+1632.68s - 1633.68s : Okay.
+1633.68s - 1636.68s : Meanwhile, back in the land of out-of-core algorithms.
+1636.68s - 1639.68s : With all that kind of hardware background,
+1639.68s - 1641.68s : remember this slide, right, from last time?
+1641.68s - 1643.68s : You were implementing this for your homework?
+1643.68s - 1644.68s : One.
+1644.68s - 1645.68s : Okay.
+1645.68s - 1647.68s : So this was the simple case of map, right?
+1647.68s - 1650.68s : We wanted to apply the function f to every x on the disk.
+1650.68s - 1652.68s : And so we were gonna read in, like, a page,
+1652.68s - 1655.68s : like, let's say, 64k page off the disk,
+1655.68s - 1657.68s : put it in a buffer in memory,
+1657.68s - 1660.68s : take a tuple off of that, apply f to that x,
+1660.68s - 1662.68s : put the output in this output buffer.
+1662.68s - 1664.68s : Whenever the input buffer is empty,
+1664.68s - 1666.68s : you read another one, another page load in.
+1666.68s - 1668.68s : Whenever the output buffer is full,
+1668.68s - 1669.68s : you write a page load to the output.
+1669.68s - 1670.68s : Right?
+1670.68s - 1672.68s : That's our streaming computation model.
+1672.68s - 1674.68s : We're gonna use this as a subroutine in everything.
+1674.68s - 1676.68s : Okay.
+1676.68s - 1678.68s : Here's a slightly better version of that.
+1678.68s - 1679.68s : It's called double buffering.
+1679.68s - 1681.68s : And it's worth knowing as a performance optimization.
+1681.68s - 1684.68s : I'm gonna mention it today and will never mention it again.
+1684.68s - 1685.68s : But if you're, like, a high-performance sort of person,
+1685.68s - 1687.68s : you want to do double and triple buffering.
+1687.68s - 1689.68s : The basic idea is you get two threads going.
+1689.68s - 1691.68s : Because I.O., when you issue an I.O.,
+1691.68s - 1693.68s : it takes a while for it to come back, even with an SSD.
+1693.68s - 1695.68s : And your processor's just sitting there.
+1695.68s - 1696.68s : Right?
+1696.68s - 1697.68s : So you want your processor to do something.
+1697.68s - 1699.68s : So what you do is you fire up two or more threads
+1699.68s - 1701.68s : to issue I.O.s.
+1701.68s - 1703.68s : One of them is doing what we described before.
+1703.68s - 1705.68s : It's filling that input buffer,
+1705.68s - 1707.68s : or it's draining that output buffer.
+1707.68s - 1710.68s : But one of them is reading the next input buffer in advance.
+1710.68s - 1712.68s : Or maybe if this guy's getting behind,
+1712.68s - 1714.68s : it's there to write an output buffer
+1714.68s - 1715.68s : that you're not using anymore.
+1715.68s - 1717.68s : So basically the way this works is the main thread
+1717.68s - 1719.68s : runs F of X on one pair of buffers.
+1719.68s - 1721.68s : And the second I.O. thread just fill in,
+1721.68s - 1723.68s : let's say those are the blue ones.
+1723.68s - 1724.68s : All right?
+1724.68s - 1726.68s : Right now F of X is being used on the blue buffers.
+1726.68s - 1729.68s : But there's another thread that's filling up that input buffer
+1729.68s - 1731.68s : and maybe draining that output buffer.
+1731.68s - 1734.68s : And then when the main thread is ready to, say,
+1734.68s - 1736.68s : read another block or write a block,
+1736.68s - 1738.68s : well, there's a block ready to go.
+1738.68s - 1741.68s : Because the other thread either filled it or drained it.
+1741.68s - 1742.68s : Okay?
+1742.68s - 1744.68s : And so you just swap the blues and the browns.
+1744.68s - 1747.68s : And you didn't have to wait for the disk drives.
+1747.68s - 1749.68s : That thread that's doing the computation
+1749.68s - 1750.68s : is kind of always computing.
+1750.68s - 1752.68s : And the other thread is doing the I.O. in the background.
+1752.68s - 1754.68s : Okay?
+1754.68s - 1756.68s : And so in any of these discussions that we have
+1756.68s - 1757.68s : for the rest of the semester
+1757.68s - 1759.68s : where we talk about that streaming model,
+1759.68s - 1761.68s : you should assume that it goes real fast.
+1761.68s - 1763.68s : And you might want to use a double buffering substrate
+1763.68s - 1765.68s : under your code with a couple of threads
+1765.68s - 1767.68s : to make that I.O. pipeline not stall.
+1767.68s - 1770.68s : Okay?
+1770.68s - 1772.68s : I'm not going to bring it up again.
+1772.68s - 1774.68s : And of course it costs you a little bit of RAM.
+1774.68s - 1776.68s : And in a lot of our analysis, they'll be like,
+1776.68s - 1777.68s : oh, there's B minus one buffers
+1777.68s - 1779.68s : because we used one buffer for output.
+1779.68s - 1781.68s : And, you know, in the back of your head,
+1781.68s - 1783.68s : well, it could be two buffers for output
+1783.68s - 1784.68s : if we do double buffering.
+1784.68s - 1786.68s : But I won't make you remember this from now on.
+1786.68s - 1788.68s : It's just a useful technique to keep in the back of your head.
+1788.68s - 1790.68s : All our analysis from now on,
+1790.68s - 1792.68s : we will not talk about double buffering.
+1792.68s - 1794.68s : But just so you know.
+1794.68s - 1796.68s : All right.
+1796.68s - 1798.68s : Last time I gave this lecture, I was like,
+1798.68s - 1799.68s : we're going to sort some stuff.
+1799.68s - 1800.68s : And then I gave the lecture,
+1800.68s - 1801.68s : and then afterwards people were like,
+1801.68s - 1803.68s : so what did you mean we're going to sort some stuff, really?
+1803.68s - 1805.68s : So let me write down really what I mean.
+1805.68s - 1806.68s : So you're given a file F.
+1806.68s - 1808.68s : F contains a multiset of records R.
+1808.68s - 1811.68s : Multiset meaning there could be replicated records,
+1811.68s - 1813.68s : and every one of them counts.
+1813.68s - 1815.68s : So there could be replicas in this set.
+1815.68s - 1818.68s : Let's say that that file R consumes N blocks of storage
+1818.68s - 1820.68s : where a block is a fixed unit of storage,
+1820.68s - 1822.68s : like 64 K bytes.
+1822.68s - 1825.68s : It's the unit of transfer from the disk.
+1825.68s - 1828.68s : I'm going to give you two disks to do this with.
+1828.68s - 1830.68s : Each of them has plenty of data,
+1830.68s - 1831.68s : plenty of storage on it.
+1831.68s - 1834.68s : It has greater than N free blocks on each of these things.
+1834.68s - 1835.68s : So we don't have to worry about
+1835.68s - 1836.68s : how much data fits on these two disks.
+1836.68s - 1839.68s : We've got two nice empty disks to work with.
+1839.68s - 1841.68s : And we're going to have a fixed amount of space in RAM,
+1841.68s - 1843.68s : which is going to be smaller than N.
+1843.68s - 1844.68s : Let's call it B.
+1844.68s - 1846.68s : It's going to be measured again in blocks.
+1846.68s - 1848.68s : So that is the unit of transfer from the disk.
+1848.68s - 1851.68s : 64 K is again a good number to keep in the back of your head
+1851.68s - 1852.68s : as the unit of transfer.
+1852.68s - 1854.68s : It's typical for today's disks.
+1854.68s - 1856.68s : So for sorting, here's our goal.
+1856.68s - 1858.68s : We're going to be given an input file F.
+1858.68s - 1861.68s : We're going to produce an output file, a new file, F S.
+1861.68s - 1864.68s : And this new file is going to have the contents R,
+1864.68s - 1866.68s : a set of records, sorted in some order,
+1866.68s - 1868.68s : where the order is some arbitrary sorting criterion
+1868.68s - 1871.68s : based on fields and records or something like that.
+1871.68s - 1874.68s : So we're going to generate a new output file.
+1874.68s - 1876.68s : For hashing, here's what we're going to do.
+1876.68s - 1878.68s : We're going to produce an output file called F sub H.
+1878.68s - 1881.68s : But here, the contents of R will all be there,
+1881.68s - 1883.68s : but they're going to be arranged in such a way
+1883.68s - 1886.68s : that if two things are the same, they're next to each other,
+1886.68s - 1888.68s : which is to say if two things are the same,
+1888.68s - 1891.68s : there's no thing that's different in between them.
+1891.68s - 1893.68s : Basically, matching records are always stored consecutively.
+1893.68s - 1897.68s : It doesn't matter what order the things are in.
+1897.68s - 1899.68s : It could be all the 2s and then all the 11s
+1899.68s - 1901.68s : and then all the 4s and then all the 100s,
+1901.68s - 1903.68s : but it'll be all the 4s.
+1903.68s - 1906.68s : There won't be an 11 with a 4 on either side of it.
+1906.68s - 1910.68s : Here we go. Let's do sorting.
+1910.68s - 1912.68s : We're going to do it kind of incrementally.
+1912.68s - 1914.68s : I'll teach you sort of a naive algorithm,
+1914.68s - 1917.68s : and then we'll generalize it until we get one we like.
+1917.68s - 1920.68s : So here's the naive out-of-course sorting algorithm.
+1920.68s - 1922.68s : It's called two-way sorting,
+1922.68s - 1924.68s : and it's going to be a not divide and conquer algorithm.
+1924.68s - 1926.68s : It's going to be the opposite.
+1926.68s - 1928.68s : It's going to be a conquer and merge algorithm,
+1928.68s - 1930.68s : and here's how it's going to work.
+1930.68s - 1932.68s : We're going to read in a page into our I.O. buffer.
+1932.68s - 1935.68s : I animated this so I have to stand at the keyboard.
+1935.68s - 1937.68s : We'll read in a page.
+1937.68s - 1939.68s : We will sort the page,
+1939.68s - 1942.68s : and then we will write the page.
+1942.68s - 1944.68s : And then we'll get the next page, and we'll do it again.
+1944.68s - 1946.68s : Okay? So that's past zero.
+1946.68s - 1948.68s : So we're going to conquer each page.
+1948.68s - 1950.68s : Each page will be a beautifully sorted little piece of data.
+1950.68s - 1952.68s : So there'll be some records,
+1952.68s - 1954.68s : some pieces from the file there,
+1954.68s - 1956.68s : and they will be sorted.
+1956.68s - 1958.68s : All right? So we've conquered little pieces of the problem.
+1958.68s - 1960.68s : Now what we need to do is merge these conquered pieces together,
+1960.68s - 1962.68s : which is like zipping them, essentially.
+1962.68s - 1965.68s : So passes one, and then there will be passes two, three, et cetera,
+1965.68s - 1968.68s : will be take two pages, each of which is sorted,
+1968.68s - 1970.68s : stream it through memory.
+1970.68s - 1972.68s : Right now it's only one block long,
+1972.68s - 1974.68s : so there's no streaming involved.
+1974.68s - 1976.68s : You just read one, you read the next,
+1976.68s - 1978.68s : and you stream the output, which will be two blocks long,
+1978.68s - 1980.68s : to the disk.
+1980.68s - 1982.68s : And you stream it, merging the records,
+1982.68s - 1984.68s : so at the end of this second pass,
+1984.68s - 1986.68s : we will have blocks that are,
+1986.68s - 1988.68s : we will, sorry, have runs of data that are two blocks long,
+1988.68s - 1990.68s : sorted.
+1990.68s - 1992.68s : Because we'll take the one block long sorted runs,
+1992.68s - 1994.68s : and try to write two blocks run sorted runs.
+1994.68s - 1996.68s : And then we will recurse back to the other disk.
+1996.68s - 1998.68s : We will take the two block sorted runs,
+1998.68s - 2000.68s : merge two of those together, streaming them through memory,
+2000.68s - 2002.68s : to get four block sorted runs.
+2002.68s - 2004.68s : And then we will take the four block sorted runs,
+2004.68s - 2006.68s : stream them through memory to get eight block sorted runs, et cetera.
+2006.68s - 2010.68s : And you can kind of imagine a diagram that looks like a tree.
+2010.68s - 2012.68s : You start out by sorting,
+2012.68s - 2014.68s : the individual blocks,
+2014.68s - 2016.68s : that's called pass zero.
+2016.68s - 2018.68s : And then the remaining passes one through n
+2018.68s - 2020.68s : are merging pairs of runs.
+2020.68s - 2022.68s : So here's an example of data that came in.
+2022.68s - 2024.68s : It's two values per block,
+2024.68s - 2026.68s : so it's teeny.
+2026.68s - 2028.68s : And you can see we sort it in pass zero
+2028.68s - 2030.68s : to get that second row of blocks.
+2030.68s - 2032.68s : In pass one, we're merging blocks of size one
+2032.68s - 2034.68s : into runs of size two.
+2034.68s - 2036.68s : Two, three, four, six,
+2036.68s - 2038.68s : four, seven, eight, nine, et cetera.
+2038.68s - 2040.68s : In pass two, we are merging runs of size two
+2040.68s - 2042.68s : into sorted runs of size two.
+2042.68s - 2044.68s : And then in pass three,
+2044.68s - 2046.68s : we get run of size four,
+2046.68s - 2048.68s : which, by the way, if you don't have an even number of pages,
+2048.68s - 2050.68s : they just carry around some empty stuff.
+2050.68s - 2052.68s : And then in pass three, we get one big run of size eight.
+2052.68s - 2054.68s : Right?
+2054.68s - 2056.68s : So we conquer these things, and then we start merging them.
+2056.68s - 2058.68s : And the merge is done in this recursive fashion
+2058.68s - 2060.68s : where they get doubly long each time.
+2060.68s - 2062.68s : All right, so let's think about the cost of this algorithm.
+2062.68s - 2064.68s : There's n pages in the file, right?
+2064.68s - 2066.68s : So the number of passes is what?
+2066.68s - 2070.68s : How many passes, as defined here on this slide,
+2070.68s - 2072.68s : will we take on this file?
+2074.68s - 2076.68s : Shout it out.
+2076.68s - 2078.68s : Log n, log base two.
+2078.68s - 2080.68s : Right?
+2080.68s - 2082.68s : This is just a tree that we're essentially building, right?
+2082.68s - 2084.68s : It's just that this tree of behavior
+2084.68s - 2086.68s : is every time you go a pass,
+2086.68s - 2088.68s : you take a full read of the whole data set,
+2088.68s - 2090.68s : and you write the whole data set.
+2090.68s - 2092.68s : Right? You appreciate that these passes are expensive.
+2092.68s - 2094.68s : They're full passes of the data,
+2094.68s - 2096.68s : and they're two, one for read, one for write.
+2096.68s - 2098.68s : And then you do it again.
+2098.68s - 2100.68s : One for read, one for write.
+2100.68s - 2102.68s : And then you do it again.
+2102.68s - 2104.68s : We'll do that log base two n times.
+2104.68s - 2106.68s : Okay?
+2106.68s - 2108.68s : So the total number of passes of the data
+2108.68s - 2110.68s : is log base two of n plus one
+2110.68s - 2112.68s : for pass zero.
+2112.68s - 2114.68s : All right, just to sort those initial runs.
+2114.68s - 2116.68s : You have to read the file.
+2116.68s - 2118.68s : So it's log base two of n plus one.
+2118.68s - 2120.68s : And the total cost of this is, well,
+2120.68s - 2122.68s : every pass is read n blocks and write n blocks.
+2122.68s - 2124.68s : So it's two n IOs,
+2124.68s - 2126.68s : if you're measuring this in IOs, of blocks,
+2126.68s - 2128.68s : times log base two of n plus one.
+2128.68s - 2130.68s : That's the total cost measured in disk transfers.
+2130.68s - 2132.68s : Right? We're not accounting for the fact
+2132.68s - 2134.68s : that maybe with double buffering reads and writes
+2134.68s - 2136.68s : are happening in parallel.
+2136.68s - 2138.68s : We're just measuring how many disk transfers we do.
+2138.68s - 2140.68s : That's gonna be a good coarse-grained measurement
+2140.68s - 2142.68s : of how expensive this thing is.
+2142.68s - 2144.68s : It's kind of an n log n algorithm.
+2144.68s - 2146.68s : Not surprising. It's sorting.
+2146.68s - 2148.68s : Okay? But we can actually do better here.
+2148.68s - 2150.68s : How can we do better?
+2150.68s - 2152.68s : Any intuition?
+2152.68s - 2154.68s : There's some...
+2154.68s - 2156.68s : Yeah?
+2156.68s - 2160.68s : Yeah. Surely we have more than 128k of RAM to work with, right?
+2160.68s - 2162.68s : So let's get some more buffers going in RAM.
+2162.68s - 2164.68s : Maybe we can sort bigger things
+2164.68s - 2166.68s : and merge more things.
+2166.68s - 2168.68s : So let's maximize that idea.
+2168.68s - 2170.68s : Let's actually... The slides do it stepwise.
+2170.68s - 2172.68s : So let's do it... No. We'll maximize it.
+2172.68s - 2174.68s : We'll do it right here.
+2174.68s - 2176.68s : So let's say you have more than three buffers,
+2176.68s - 2178.68s : which is typical.
+2178.68s - 2180.68s : Here's what we're gonna do.
+2180.68s - 2182.68s : One buffer is for output.
+2182.68s - 2184.68s : Oh, this is the merging phase. Sorry.
+2184.68s - 2186.68s : The picture's for the merging phase. But first we have to do pass zero.
+2186.68s - 2188.68s : So what we're gonna do is we're gonna fill up memory,
+2188.68s - 2190.68s : which is bbig.
+2190.68s - 2192.68s : We're gonna read in b blocks of our file.
+2192.68s - 2194.68s : We're gonna sort it in memory using quicksort
+2194.68s - 2196.68s : or whatever you like.
+2196.68s - 2198.68s : We're gonna write that run to disk.
+2198.68s - 2200.68s : Then we'll take the next b blocks of the file,
+2200.68s - 2202.68s : sort it in memory, and write it to disk.
+2202.68s - 2204.68s : It's just like pass zero, right?
+2204.68s - 2206.68s : But we're doing it on b blocks at a time.
+2206.68s - 2208.68s : And at the end of that, we will have n over b
+2208.68s - 2210.68s : sorted runs on disk, each of which is bbig.
+2210.68s - 2212.68s : Yup.
+2212.68s - 2214.68s : So that's pass zero.
+2214.68s - 2216.68s : And then the remaining passes are merging,
+2216.68s - 2218.68s : and we're gonna use this algorithm to merge the data,
+2218.68s - 2220.68s : because each one of these runs is b blocks big,
+2220.68s - 2222.68s : and we're only gonna have one input buffer per run.
+2222.68s - 2224.68s : So we have b...
+2224.68s - 2226.68s : Sorry, we have n over b sorted runs.
+2228.68s - 2230.68s : We have b minus one input buffers
+2230.68s - 2232.68s : and one output buffer.
+2232.68s - 2234.68s : And what we're gonna do is we're gonna take b minus one runs
+2234.68s - 2236.68s : and merge them together to make runs
+2236.68s - 2238.68s : that are b minus one times as long.
+2238.68s - 2240.68s : Right?
+2242.68s - 2244.68s : Okay.
+2244.68s - 2246.68s : So that's the general flavor.
+2246.68s - 2248.68s : And then we're gonna see what the specifics are
+2248.68s - 2250.68s : of how much this costs.
+2250.68s - 2252.68s : Okay?
+2252.68s - 2254.68s : So how many passes do we take on the data in this context?
+2254.68s - 2256.68s : We take one for pass zero.
+2256.68s - 2258.68s : And then how many passes do we take after that,
+2258.68s - 2260.68s : reading and writing?
+2260.68s - 2262.68s : Yeah?
+2262.68s - 2264.68s : Log base b of n.
+2264.68s - 2266.68s : Actually log base b minus one.
+2266.68s - 2268.68s : Okay, because there's only b minus one of those buffers.
+2268.68s - 2270.68s : But in big O notation, log base b would do just fine.
+2270.68s - 2272.68s : Okay.
+2272.68s - 2274.68s : So that's right.
+2274.68s - 2276.68s : And then we take the pass zero of n minus one of, ooh, n over b,
+2276.68s - 2278.68s : because the runs have already been broken down
+2278.68s - 2280.68s : in pass zero into there's only n over b runs.
+2280.68s - 2282.68s : Right?
+2282.68s - 2284.68s : So pass zero generated n over b runs to be merged.
+2284.68s - 2286.68s : And so we got a head start
+2286.68s - 2288.68s : where we only have n over b runs
+2288.68s - 2290.68s : to build that tree out of.
+2290.68s - 2292.68s : Make sense?
+2292.68s - 2294.68s : Okay.
+2294.68s - 2296.68s : So that's the number of passes.
+2296.68s - 2298.68s : The cost, as we know,
+2298.68s - 2300.68s : is read the whole file, write the whole file per pass.
+2300.68s - 2302.68s : So the cost is 2n times that.
+2302.68s - 2304.68s : So that stays the same.
+2304.68s - 2306.68s : And just to give you a concrete feel of this,
+2306.68s - 2308.68s : if you have five buffer pages and you have a 108-page file,
+2308.68s - 2310.68s : this is from the book.
+2310.68s - 2312.68s : I don't know why he picked these numbers.
+2312.68s - 2314.68s : But bottom line, you get this done in four passes,
+2314.68s - 2316.68s : including pass zero.
+2316.68s - 2318.68s : Okay, and we could go through the numbers.
+2318.68s - 2320.68s : I won't do this in class.
+2320.68s - 2322.68s : It might be useful to do it in your head or in section
+2322.68s - 2324.68s : just to make sure you're not missing something.
+2324.68s - 2326.68s : Figure out, wait, we're merging a this and a that
+2326.68s - 2328.68s : and we get a how many?
+2328.68s - 2330.68s : You know, it's worth working through.
+2330.68s - 2332.68s : Okay.
+2332.68s - 2334.68s : And you can check this.
+2334.68s - 2336.68s : The formula predicts the behavior
+2336.68s - 2338.68s : that we actually animate, so to speak.
+2338.68s - 2340.68s : All right.
+2340.68s - 2342.68s : This gives you a little better sense.
+2342.68s - 2344.68s : You know, if you have a sizable number of buffers,
+2344.68s - 2346.68s : even for a very big file,
+2346.68s - 2348.68s : you will have a small number of passes.
+2348.68s - 2350.68s : And the truth is,
+2350.68s - 2352.68s : for most workloads,
+2352.68s - 2354.68s : you can do it in two passes.
+2354.68s - 2356.68s : Pass zero and one merge.
+2356.68s - 2358.68s : All right.
+2358.68s - 2360.68s : And most workloads, that's true.
+2360.68s - 2362.68s : But we might ask, what do I mean by most workloads?
+2362.68s - 2364.68s : Okay.
+2364.68s - 2366.68s : What memory do we need
+2366.68s - 2368.68s : to sort stuff in two passes?
+2370.68s - 2372.68s : Well, we know
+2372.68s - 2374.68s : that after phase zero,
+2374.68s - 2376.68s : each sorted run, we read in b blocks,
+2376.68s - 2378.68s : we sort it, we write it to disk.
+2378.68s - 2380.68s : So after pass zero, each thing is b long, right?
+2380.68s - 2382.68s : And we know in pass one,
+2382.68s - 2384.68s : we're gonna merge b minus one things together.
+2384.68s - 2386.68s : So if we're gonna finish,
+2386.68s - 2388.68s : then the whole file could only have been
+2388.68s - 2390.68s : b minus one times b long
+2390.68s - 2392.68s : to do it in two passes.
+2392.68s - 2394.68s : Make sense?
+2394.68s - 2396.68s : All right.
+2396.68s - 2398.68s : Well, actually, that works out kind of handy,
+2398.68s - 2400.68s : because what are we saying?
+2400.68s - 2402.68s : We're saying that if you want to sort n pages of data,
+2402.68s - 2404.68s : you need about square root of n memory.
+2404.68s - 2406.68s : Square roots are good, okay?
+2406.68s - 2408.68s : Like, you can have a lot of data,
+2408.68s - 2410.68s : but a square root won't be that big.
+2410.68s - 2412.68s : A ratio of a square root between your storage
+2412.68s - 2414.68s : and your memory is pretty healthy.
+2414.68s - 2416.68s : And this is why, very often,
+2416.68s - 2418.68s : if you've got a reasonably well-provisioned system,
+2418.68s - 2420.68s : you can do sorting in two passes.
+2420.68s - 2422.68s : Pass zero, pass one.
+2422.68s - 2424.68s : Okay.
+2424.68s - 2426.68s : All right, one more little detail,
+2426.68s - 2428.68s : and this is always entertaining,
+2428.68s - 2430.68s : although it's a little bit into the arcana,
+2430.68s - 2432.68s : and you shouldn't...
+2432.68s - 2434.68s : Well, it's fun.
+2434.68s - 2436.68s : Your in-memory sorting algorithm actually matters a lot,
+2436.68s - 2438.68s : because you are gonna sort b blocks of data at once
+2438.68s - 2440.68s : that's probably, like, as much as you can fit in memory.
+2440.68s - 2442.68s : And so, actually, the compute cost for this darn thing
+2442.68s - 2444.68s : is actually pretty expensive.
+2444.68s - 2446.68s : You want to optimize your...
+2446.68s - 2448.68s : If you really want to be a sorting god,
+2448.68s - 2450.68s : which there are people who compete for this,
+2450.68s - 2452.68s : you can sort,
+2452.68s - 2454.68s : or how much can you sort with a small amount of energy
+2454.68s - 2456.68s : for, like, you know, mobile.
+2456.68s - 2458.68s : You gotta tune your in-memory sorting algorithm.
+2458.68s - 2460.68s : So here's a curious thing about in-memory sorting,
+2460.68s - 2462.68s : which you can go find out by reading, you know,
+2462.68s - 2464.68s : Knuth's sorting and searching book,
+2464.68s - 2466.68s : which is, like, that thick.
+2466.68s - 2468.68s : Quick sort has actually been measured
+2468.68s - 2470.68s : to be a really fast way to sort.
+2470.68s - 2472.68s : It's pretty good.
+2472.68s - 2474.68s : If you want to sort fast, quick sort's good.
+2474.68s - 2476.68s : But heap sort, sometimes called tournament sort,
+2476.68s - 2478.68s : has some interesting properties for our purposes
+2478.68s - 2480.68s : that are worth looking at.
+2480.68s - 2482.68s : Okay?
+2482.68s - 2484.68s : So how many people have done heap sort before
+2484.68s - 2486.68s : or know how to do heap sort?
+2486.68s - 2488.68s : Raise them high.
+2488.68s - 2490.68s : Do you do that in, like, CS61A or something?
+2490.68s - 2492.68s : CC1B. All right, good. All right.
+2492.68s - 2494.68s : So heap sort's kind of funny when you're doing it on a big file.
+2494.68s - 2496.68s : Let's watch how this works.
+2496.68s - 2498.68s : We're actually gonna have two heaps in memory.
+2498.68s - 2500.68s : The blue one, which we'll call H1,
+2500.68s - 2502.68s : and the brown one, which we'll call H2.
+2502.68s - 2504.68s : And what we're gonna do is we're gonna start
+2504.68s - 2506.68s : by reading in B-2 blocks
+2506.68s - 2508.68s : and inserting all the records into H1.
+2508.68s - 2510.68s : So we're gonna build a big old H1 heap
+2510.68s - 2512.68s : in memory, okay?
+2512.68s - 2514.68s : We're gonna have an input buffer and an output buffer,
+2514.68s - 2516.68s : which is why it's minus two.
+2516.68s - 2518.68s : But here's what's gonna happen.
+2518.68s - 2520.68s : We're gonna start, once memory is full,
+2520.68s - 2522.68s : we're gonna read in the last page.
+2522.68s - 2524.68s : We're gonna remove the minimum value from the heap,
+2524.68s - 2526.68s : which is the lowest value in the file so far.
+2526.68s - 2528.68s : Right?
+2528.68s - 2530.68s : We're gonna write it to disk.
+2530.68s - 2532.68s : And then we're gonna have room for something new
+2532.68s - 2534.68s : in memory, which is cool.
+2534.68s - 2536.68s : But if we get something new from the input buffer
+2536.68s - 2538.68s : and it's smaller than the thing we just wrote to disk,
+2538.68s - 2540.68s : and it's smaller than the thing we just wrote to disk,
+2540.68s - 2542.68s : it can't go in this run on the file.
+2542.68s - 2544.68s : Because it's smaller than the thing
+2544.68s - 2546.68s : that's the smallest thing in this run.
+2546.68s - 2548.68s : It's gotta go into the second run of the output.
+2548.68s - 2550.68s : Does that make sense?
+2550.68s - 2552.68s : So we just wrote this first remove min
+2552.68s - 2554.68s : to an output buffer.
+2554.68s - 2556.68s : It's gonna be the first thing,
+2556.68s - 2558.68s : it's gonna be the lowest thing on that run of disk.
+2558.68s - 2560.68s : If the next thing reads even lower than that,
+2560.68s - 2562.68s : it can't go into this blue heap because it's too low.
+2562.68s - 2564.68s : So anything that's smaller than stuff we already wrote out
+2564.68s - 2566.68s : is gonna go into the brown heap.
+2566.68s - 2568.68s : So as the blue heap shrinks,
+2568.68s - 2570.68s : it's gonna go into the blue heap.
+2570.68s - 2572.68s : And as the blue heap shrinks,
+2572.68s - 2574.68s : the brown heap will start to grow.
+2574.68s - 2576.68s : And this is a kind of stochastic thing.
+2576.68s - 2578.68s : So what are the odds that the thing you read in
+2578.68s - 2580.68s : are smaller than the things you've written out?
+2580.68s - 2582.68s : Well, it kind of depends on the arrival rates of the data.
+2582.68s - 2584.68s : But if it's all random,
+2584.68s - 2586.68s : you can do an analysis for it,
+2586.68s - 2588.68s : which I'll give you some intuition about in a minute.
+2588.68s - 2590.68s : But whenever something comes in that's smaller
+2590.68s - 2592.68s : than stuff you already wrote out,
+2592.68s - 2594.68s : it goes in the brown heap.
+2594.68s - 2596.68s : Eventually, the blue heap gets smaller and smaller
+2596.68s - 2598.68s : because most of the stuff you're reading
+2598.68s - 2600.68s : is smaller than the stuff you already wrote.
+2600.68s - 2602.68s : So you go into the blue heap,
+2602.68s - 2604.68s : you write it to disk, and it's empty.
+2604.68s - 2606.68s : And at that point, everything's brown.
+2606.68s - 2608.68s : And when everything's brown,
+2608.68s - 2610.68s : just pretend it's blue and start over again.
+2610.68s - 2612.68s : Okay?
+2612.68s - 2614.68s : So here's the interesting thing.
+2614.68s - 2616.68s : How long are the runs on expectation?
+2618.68s - 2620.68s : And how long are the runs in the best case?
+2620.68s - 2622.68s : And how long are the runs in the worst case?
+2622.68s - 2624.68s : So let's talk about the best case.
+2624.68s - 2626.68s : What's the best case for this algorithm?
+2626.68s - 2628.68s : How long of a run do you get?
+2628.68s - 2630.68s : Uh-huh?
+2630.68s - 2632.68s : Okay, if the data's already sorted,
+2632.68s - 2634.68s : that means the next thing you read
+2634.68s - 2636.68s : is always bigger than anything you've ever written out,
+2636.68s - 2638.68s : which means it always goes into the blue heap,
+2638.68s - 2640.68s : which means that the first run you write
+2640.68s - 2642.68s : is how long?
+2642.68s - 2644.68s : It's everything.
+2644.68s - 2646.68s : Right?
+2646.68s - 2648.68s : You win, you win, you win, you win, you win,
+2648.68s - 2650.68s : and you're done.
+2650.68s - 2652.68s : And it's all blue, and it's all just one run.
+2652.68s - 2654.68s : So if the data comes in already sorted,
+2654.68s - 2656.68s : you actually only take one pass.
+2656.68s - 2658.68s : That's cool. So that's a winner.
+2658.68s - 2660.68s : If you had a memory, we'd quicksort it.
+2660.68s - 2662.68s : We'd write it to a run. It would be size B.
+2662.68s - 2664.68s : That's it, period.
+2664.68s - 2666.68s : So quicksort can't win like that.
+2666.68s - 2668.68s : Heapsort can get lucky, or there's a case where it does well.
+2668.68s - 2670.68s : What's the worst case scenario for heapsort?
+2670.68s - 2672.68s : Louder?
+2672.68s - 2674.68s : Yeah.
+2674.68s - 2676.68s : If things are in reverse order,
+2676.68s - 2678.68s : then everything you read is smaller than something you wrote out.
+2678.68s - 2680.68s : Which means that
+2680.68s - 2682.68s : you fill up the blue thing, that's B minus 2 big.
+2682.68s - 2684.68s : That's as big as the thing's gonna be on the output.
+2684.68s - 2686.68s : So you keep getting runs of size B minus 2,
+2686.68s - 2688.68s : which is kind of the same as quicksort.
+2688.68s - 2690.68s : So in the worst case, you get runs about the length of quicksort.
+2690.68s - 2692.68s : But in the best case, you get runs
+2692.68s - 2694.68s : that are as big as the data file.
+2694.68s - 2696.68s : And on expectation, what do you get?
+2696.68s - 2698.68s : Well,
+2698.68s - 2700.68s : this is kind of fun.
+2700.68s - 2702.68s : So there's this thing in the Knuth book
+2702.68s - 2704.68s : which I will not explain in detail,
+2704.68s - 2706.68s : but it's quite interesting, called the snowplow analogy.
+2706.68s - 2708.68s : And the idea is, it's snowing,
+2708.68s - 2710.68s : and the snow is falling down randomly on this track.
+2710.68s - 2712.68s : And there's a Zamboni that's going around the track.
+2712.68s - 2714.68s : Right?
+2714.68s - 2716.68s : You could ask yourself,
+2716.68s - 2718.68s : how much snow does the Zamboni move in one pass of the track?
+2718.68s - 2720.68s : Right?
+2720.68s - 2722.68s : Well, in steady state, the amount of snow in front of the Zamboni
+2722.68s - 2724.68s : is whatever it is.
+2724.68s - 2726.68s : And it tapers linearly behind the Zamboni
+2726.68s - 2728.68s : in height.
+2728.68s - 2730.68s : Right? Right behind the Zamboni, it's at zero height.
+2730.68s - 2732.68s : And as you go around the track,
+2732.68s - 2734.68s : it tapers linearly to the height it is
+2734.68s - 2736.68s : right in front of the Zamboni.
+2736.68s - 2738.68s : So in steady state, the Zamboni is like on a ramp, essentially.
+2738.68s - 2740.68s : If you unwrap the track, it's like on a ramp.
+2740.68s - 2742.68s : And that ramp you can call size B.
+2742.68s - 2744.68s : And this is kind of why you get
+2744.68s - 2746.68s : 2B worth of snow moved in one pass of the track.
+2746.68s - 2748.68s : That's the idea.
+2748.68s - 2750.68s : That's kind of the analogy.
+2750.68s - 2752.68s : Because by the time the Zamboni is halfway through the track,
+2752.68s - 2754.68s : the thing's this high.
+2754.68s - 2756.68s : Right? It's always the same height right in front of the Zamboni.
+2756.68s - 2758.68s : So it kind of moves that whole rectangle,
+2758.68s - 2760.68s : even though behind it,
+2760.68s - 2762.68s : there's only a triangle.
+2762.68s - 2764.68s : That's the 2B-ish reasoning.
+2764.68s - 2766.68s : And then there's obviously a real proof.
+2766.68s - 2768.68s : But that's the intuition that Knuth gives,
+2768.68s - 2770.68s : which I always kind of liked.
+2770.68s - 2772.68s : So the fact is, the average length of a run,
+2772.68s - 2774.68s : which I didn't tell you, is 2B, or 2B minus 2.
+2774.68s - 2776.68s : So if you're randomly arriving data values,
+2776.68s - 2778.68s : the order is the permutation
+2778.68s - 2780.68s : is random of the data,
+2780.68s - 2782.68s : then your runs will be twice as long as they are with quicksort.
+2782.68s - 2784.68s : Which means you'll have half as many runs,
+2784.68s - 2786.68s : which means maybe, if you're lucky,
+2786.68s - 2788.68s : and the logs work out, you'll do one less pass
+2788.68s - 2790.68s : with keepsort
+2790.68s - 2792.68s : on average than you do with quicksort.
+2792.68s - 2794.68s : We talked about best case and worst case.
+2794.68s - 2796.68s : Quicksort has better cache locality,
+2796.68s - 2798.68s : it turns out,
+2798.68s - 2800.68s : because walking down those trees
+2800.68s - 2802.68s : blows away your L1 and L2 caches.
+2802.68s - 2804.68s : Those tournament trees are bad for cache locality.
+2804.68s - 2806.68s : So quicksort actually goes faster in memory,
+2806.68s - 2808.68s : but longer runs are better.
+2808.68s - 2810.68s : And runs could mean fewer passes.
+2810.68s - 2812.68s : So there's cases where keepsort will win.
+2812.68s - 2814.68s : That's all very entertaining,
+2814.68s - 2816.68s : but most people implement quicksort
+2816.68s - 2818.68s : or radix sort or something like that.
+2818.68s - 2820.68s : But this is always fun, and I feel like
+2820.68s - 2822.68s : it's worth throwing into lectures, so I do.
+2822.68s - 2824.68s : So there.
+2824.68s - 2826.68s : Why don't we take a stretch?
+2826.68s - 2828.68s : Everybody take a minute, get off your seat,
+2828.68s - 2830.68s : get on your feet, and we'll stretch for a minute,
+2830.68s - 2832.68s : and we'll move on to hashing.
+2838.68s - 2842.68s : .
+2868.68s - 2870.68s : .
+2870.68s - 2872.68s : .
+2872.68s - 2874.68s : .
+2874.68s - 2876.68s : .
+2876.68s - 2878.68s : .
+2878.68s - 2880.68s : .
+2880.68s - 2882.68s : .
+2882.68s - 2884.68s : .
+2884.68s - 2886.68s : .
+2886.68s - 2888.68s : .
+2888.68s - 2890.68s : .
+2890.68s - 2892.68s : .
+2892.68s - 2894.68s : .
+2894.68s - 2896.68s : .
+2896.68s - 2900.68s : .
+2900.68s - 2902.68s : .
+2902.68s - 2904.68s : .
+2904.68s - 2906.68s : .
+2906.68s - 2908.68s : .
+2908.68s - 2910.68s : .
+2910.68s - 2912.68s : .
+2912.68s - 2914.68s : .
+2914.68s - 2916.68s : .
+2916.68s - 2918.68s : .
+2918.68s - 2920.68s : .
+2920.68s - 2922.68s : .
+2922.68s - 2924.68s : .
+2924.68s - 2926.68s : .
+2926.68s - 2928.36s : all the CS students are together so we can
+2928.36s - 2931.24s : compute their average. We don't actually want the file
+2931.24s - 2933.0s : fully ordered. It seems like we're doing too much
+2933.0s - 2934.76s : work if we're really sorting the file. All we
+2934.76s - 2936.98s : want to do is bundle together the things that
+2936.98s - 2939.1s : go together, which is kind of what hashing does.
+2939.58s - 2941.0s : Because all we're trying to do is rendezvous up
+2941.0s - 2942.88s : the things that are the same, the things that match.
+2943.26s - 2945.36s : So for straight up rendezvous, for not, you don't
+2945.36s - 2948.1s : need ordering. We just need quality matching, which is
+2948.1s - 2950.68s : what hashing does. And maybe it's cheaper than sorting.
+2951.14s - 2953.86s : So we'll look at how expensive hashing is after
+2953.86s - 2955.66s : we're done with this, all right. At least in
+2955.66s - 2960.38s : terms of disk IOs. Hashing in memory is often
+2960.38s - 2961.82s : cheaper than sorting, although you have to be careful.
+2962.04s - 2964.76s : Like a naive Java hash package is often pretty slow.
+2965.48s - 2967.72s : So be careful. But how are we going to do
+2967.72s - 2970.72s : hashing at a core? Like, what does it mean to
+2970.72s - 2975.0s : build an on-disk hash table? It doesn't actually
+2975.0s - 2979.6s : sound easy at all. Well, here's the deal. We're
+2979.6s - 2981.1s : actually not going to build an on-disk hash table,
+2981.24s - 2983.04s : and that's how it's going to work. But I'll show
+2983.04s - 2983.58s : you how you do it.
+2985.16s - 2985.64s : It's a device that's going to be used to
+2985.64s - 2987.28s : divide and conquer algorithms. We're actually not going to
+2987.28s - 2989.32s : build hash tables on disk. We're just going to divide
+2989.32s - 2991.52s : the data and then we'll conquer it with one hash
+2991.52s - 2993.66s : table at a time on these partitions.
+2993.66s - 2995.32s : So what we're going to do is a streaming algorithm
+2995.32s - 2999.82s : to partition the data into super duper coarse grained partitioned hash
+2999.82s - 3000.4s : buckets.
+3000.4s - 3003.1s : So here's the idea. We'll use a hash function,
+3003.1s - 3006.44s : HP. So, P for partitioning, OK. So a record's going
+3006.44s - 3008.44s : to come in, and let's say it's like we're looking
+3008.44s - 3011.42s : at students, and major is the thing we want to
+3011.42s - 3013.1s : hash on. So we'll look at the major field in
+3013.1s - 3015.14s : every student record and we'll hash it with HP.
+3015.14s - 3018.2s : And HP is going to tell us a partition number
+3018.2s - 3019.64s : to put it in, and there's not going to be
+3019.64s - 3022.16s : that many partition numbers. All right. So it's very
+3022.16s - 3024.36s : coarse grained. It's going to be modulo sum, not
+3024.36s - 3025.56s : that big number.
+3025.56s - 3029.0s : Right. And all the things that HP, you know,
+3029.0s - 3032.26s : hash modulo that number matches are going to go
+3032.26s - 3034.26s : into a set in a partition on disk that's
+3034.26s - 3036.7s : going to be not ordered, not hashed, not anything.
+3036.7s - 3038.9s : It's just all the things where HP equals, say,
+3038.9s - 3042.0s : two will be stored together. It's a very coarse grained
+3042.0s - 3044.64s : hash function. All right. And we're going to use a
+3044.64s - 3046.4s : streaming algorithm. You're going to read in records and
+3046.4s - 3048.26s : write them out to the appropriate hash partition as they
+3048.26s - 3052.08s : stream in, in one pass of the file.
+3052.08s - 3055.3s : And we'll call these spill partitions, if you want.
+3055.3s - 3057.78s : And then in the second phase, we're going to read
+3057.78s - 3060.54s : one of those partitions in, and hopefully it's small
+3060.54s - 3062.18s : now and it fits in memory, and we'll build a
+3062.18s - 3065.2s : hash table on that, in memory, and then we're good.
+3065.2s - 3067.16s : And then we'll just walk the hash table and
+3067.16s - 3069.36s : pick up each hash bucket and look at all the
+3069.36s - 3070.66s : values that are the same in that hash bucket,
+3070.66s - 3072.26s : and off we go. OK? Makes sense? First partition we'll go
+3072.26s - 3073.32s : in and see what value we'll get from it.
+3073.32s - 3073.5s : That's the first partition that we'll get from the
+3073.5s - 3073.86s : hash table. And we'll check how much hash is in
+3073.86s - 3073.92s : the hash bucket. And that's what we'll do. It's
+3073.92s - 3078.7s : First partition, sorry, first phase we partition into things that we know.
+3078.7s - 3082.04s : We know the apples went this way, the oranges went that way, no problem.
+3082.04s - 3084.46s : But there may be strawberries with the apples, that's okay, that's cool.
+3084.46s - 3086.68s : But all the strawberries are with all the apples, right?
+3086.68s - 3091.2s : Then we pull the apples and strawberries into memory, we separate them in RAM, right?
+3091.2s - 3093.54s : The oranges are over here, all of them.
+3093.54s - 3094.54s : We good?
+3094.54s - 3098.04s : All right, we'll look at a picture of it.
+3098.04s - 3099.5s : So here's the first phase.
+3099.5s - 3104.62s : The original relation is, the original data set is some number of blocks in some order,
+3104.62s - 3105.82s : we don't know what.
+3105.82s - 3110.66s : We use one input buffer to read those blocks off the disk, 64K at a time.
+3110.66s - 3114.64s : For each tuple in that input buffer, we have a hash function which is doing that streaming
+3114.64s - 3115.64s : thing.
+3115.64s - 3120.8s : And for each tuple, it decides based on H sub P which of the B minus one output buffers,
+3120.8s - 3123.0s : all the rest of memory, it belongs to.
+3123.0s - 3127.8s : So we're gonna take it hash mod the amount of memory we have for this algorithm, minus
+3127.8s - 3128.8s : one, right?
+3128.8s - 3129.3s : One for the input buffer.
+3129.3s - 3129.4s : One for the output buffer.
+3129.4s - 3129.48s : One for the memory.
+3129.48s - 3130.48s : One for the output buffer.
+3130.48s - 3134.04s : And that's gonna generate B minus one partitions on disk.
+3134.04s - 3139.12s : And hey, if each one of those partitions is only B big, then we're done.
+3139.12s - 3143.8s : So in pass two, we'll read in the partitions one at a time and conquer them.
+3143.8s - 3147.56s : So we'll read in a partition and we'll run like an in-memory hash function, a fine-grained
+3147.56s - 3152.2s : hash function per record, call it H sub R. And we'll build an in-memory hash table which
+3152.2s - 3155.32s : is gonna be as big as memory we got which is B blocks.
+3155.32s - 3156.5s : But it's just an in-memory hash table.
+3156.5s - 3159.38s : It's your favorite hash map data structure, right?
+3159.38s - 3162.32s : And then you can walk that thing and all the apples will be in one hash bucket in memory
+3162.32s - 3163.32s : and you can do the apple thing.
+3163.32s - 3166.2s : And then all the strawberries will be in one bucket in memory and you can do the strawberry
+3166.2s - 3167.2s : thing.
+3167.2s - 3168.2s : OK?
+3168.2s - 3172.78s : And that's great if those hash partitions from phase one are smaller than B.
+3172.78s - 3176.92s : OK.
+3176.92s - 3177.92s : So what does this cost?
+3177.92s - 3181.42s : Well, a little schematic this time.
+3181.42s - 3184.88s : We're gonna read the file from disk and divide it into partitions.
+3184.88s - 3185.88s : All right?
+3185.88s - 3189.18s : So that's read N, write N. And then we're gonna read these things one at a time.
+3189.18s - 3195.54s : One at a time from disk into memory building hash tables, read N, write N. Right?
+3195.54s - 3196.96s : First phase is streaming partitioning.
+3196.96s - 3197.96s : That's like divide.
+3197.96s - 3202.0s : Second phase, you take a partition and you conquer it with an in-memory hash table.
+3202.0s - 3203.5s : Good?
+3203.5s - 3205.76s : OK.
+3205.76s - 3208.24s : So the cost is four NIOs, two passes.
+3208.24s - 3211.0s : Read write, read write.
+3211.0s - 3212.0s : OK.
+3212.0s - 3214.0s : What's the memory requirement?
+3214.0s - 3215.14s : Well, let's think about this.
+3215.14s - 3217.0s : How big of a table can we hash in two passes?
+3217.0s - 3218.0s : Anybody see it?
+3218.0s - 3219.0s : OK.
+3219.0s - 3226.4s : So, let's do this.
+3226.4s - 3228.76s : Each partition is how long?
+3228.76s - 3232.32s : In the first pass, we partition into B minus one buckets.
+3232.32s - 3235.86s : So each partition is?
+3235.86s - 3237.76s : There's N blocks to begin with.
+3237.76s - 3239.68s : We split it into B minus one pieces.
+3239.68s - 3242.78s : So it's N over B minus one long per partition.
+3242.78s - 3243.78s : Right?
+3243.78s - 3246.22s : And then we said in the second pass we'd like them to fit in memory.
+3246.22s - 3247.32s : So they can't be bigger than B.
+3247.32s - 3250.18s : So we have B minus one partitions.
+3250.18s - 3253.66s : Each one of which should be no more than B big so that in the second pass it fits in
+3253.66s - 3254.66s : memory.
+3254.66s - 3261.0s : So we can hash a table of about B times B minus one in two passes.
+3261.0s - 3265.36s : Partition it into things that are no bigger than B and then read in the B or smaller things
+3265.36s - 3267.78s : one at a time.
+3267.78s - 3271.78s : And again, that means that you can hash a table of size N in about square root of N
+3271.78s - 3273.32s : space, which sounds awfully familiar from sorting.
+3273.32s - 3274.32s : Right?
+3274.32s - 3275.32s : Right.
+3275.32s - 3276.32s : So the memory requirements of hashing in this context are pretty much the same.
+3276.32s - 3277.32s : Right?
+3277.32s - 3281.08s : So it's the same as the memory requirements of sorting.
+3281.08s - 3284.56s : This does assume that all the partitions are the same length.
+3284.56s - 3285.68s : All right?
+3285.68s - 3287.16s : So here's a bad case.
+3287.16s - 3288.36s : Suppose I give you a file.
+3288.36s - 3289.36s : It's hashed by gender.
+3289.36s - 3290.36s : All right?
+3290.36s - 3292.8s : And I say you're going to have B minus one output buffers.
+3292.8s - 3294.14s : But there's only two values.
+3294.14s - 3295.56s : There's male and there's female.
+3295.56s - 3297.72s : So one bucket is going to be half the data.
+3297.72s - 3300.58s : One bucket of partitions is going to be the other half of the data.
+3300.58s - 3303.32s : And in fact, it will never break down any smaller than that.
+3303.32s - 3304.66s : And hashing is just not going to work.
+3304.66s - 3305.66s : All right?
+3305.66s - 3306.66s : Or here's another one.
+3306.66s - 3311.94s : I've got a Twitter stream and I'm looking at mentions of people's names, like the Justin
+3311.94s - 3315.66s : Bieber bucket's going to be bigger, you know, than the Joe Hellerstein bucket.
+3315.66s - 3316.66s : Right?
+3316.66s - 3319.9s : And so you may just get skew in your data and your hash function can't do anything about
+3319.9s - 3323.94s : that because all the Justin Biebers go the same place.
+3323.94s - 3325.98s : And hashing won't tear them apart.
+3325.98s - 3326.98s : Okay.
+3326.98s - 3331.52s : So there is a big assumption being baked in here that your hash function is going to be
+3331.52s - 3335.02s : able to distribute your data evenly amongst your hash partitions.
+3335.02s - 3336.02s : Now.
+3336.02s - 3342.02s : If you have a partition that's too big, you can just recurse this algorithm actually.
+3342.02s - 3348.08s : So at the end of the divide phase, suppose that one of these rectangles in the middle
+3348.08s - 3354.42s : here is bigger than B. Pretend it's the whole table and start over.
+3354.42s - 3355.42s : And just do it again.
+3355.42s - 3356.42s : Okay?
+3356.42s - 3357.42s : Two things you have to keep in mind.
+3357.42s - 3359.02s : You have to use a different hash function this time.
+3359.02s - 3362.02s : Otherwise, it will just go all back in one partition again.
+3362.02s - 3363.02s : All right?
+3363.02s - 3365.02s : So the next time around, you have to generate a new hash function.
+3365.02s - 3366.02s : Oh.
+3366.02s - 3369.7s : And by the way, if it really is skew, if that entire rectangle is bigger than memory and
+3369.7s - 3373.02s : it's all Justin Bieber, you can hash until the cows come home and it won't tear them
+3373.02s - 3374.02s : apart.
+3374.02s - 3375.02s : Right?
+3375.02s - 3376.42s : But if it's too big just because there's a whole bunch of different values and it's
+3376.42s - 3380.1s : just too big, you just recurse on each one of those rectangles and run the algorithm
+3380.1s - 3382.02s : over again from the beginning.
+3382.02s - 3383.02s : Okay?
+3383.02s - 3385.42s : So that's called recursive partitioning.
+3385.42s - 3389.26s : You just keep partitioning until you get things size B. And then you can do the conquer part.
+3389.26s - 3393.22s : So you just need to keep dividing recursively until you get partitions that are of size
+3393.22s - 3395.02s : memory and then you can conquer them.
+3395.02s - 3396.02s : Okay.
+3396.02s - 3401.72s : So let's think about how this compares with sorting.
+3401.72s - 3402.72s : We saw hashing.
+3402.72s - 3403.72s : We saw sorting.
+3403.72s - 3405.72s : This is kind of cosmic.
+3405.72s - 3410.96s : And actually, I don't think this was well understood for a while.
+3410.96s - 3413.64s : Here's external hashing picture we just looked at.
+3413.64s - 3416.52s : We said it was four NIOs.
+3416.52s - 3417.52s : Two passes, right?
+3417.52s - 3418.52s : Read, write, read, write.
+3418.52s - 3420.52s : Well, sorting was two passes, too.
+3420.52s - 3423.02s : What's the cost of sorting look like in this picture?
+3423.02s - 3424.02s : Sorting actually looks like that.
+3424.02s - 3425.02s : Okay.
+3425.02s - 3429.32s : You read in B things, you sort them, you write them.
+3429.32s - 3433.52s : You read in B things, you sort them, you write them, and then you merge B minus one things
+3433.52s - 3435.34s : together and write them to the output.
+3435.34s - 3439.76s : Sorting and hashing from an I-O perspective are complete duels of each other.
+3439.76s - 3442.02s : One is divide and conquer, the other is conquer and merge.
+3442.02s - 3446.12s : And actually, if you think about the I-O behavior on a magnetic disk, they're duels in terms
+3446.12s - 3448.72s : of when you do sequential I-O and when you do random I-O.
+3448.72s - 3450.0s : Think about this.
+3450.0s - 3454.72s : In external hashing, you read in a block, you write it to a random, because it's a hash
+3454.72s - 3456.42s : function, to a random output buffer.
+3456.42s - 3458.42s : So which output buffer is written out first?
+3458.42s - 3461.72s : The one at the top, the one in the middle, or the one on the bottom?
+3461.72s - 3462.72s : I don't know.
+3462.72s - 3463.72s : It depends, right?
+3463.72s - 3464.72s : It depends on what values come in.
+3464.72s - 3469.42s : And in fact, the I-Os to these partitions will be random, because you can't control
+3469.42s - 3471.38s : which partition's gonna fill when.
+3471.38s - 3474.32s : So it's all random I-Os writing that thing.
+3474.32s - 3477.66s : It's all sequential I-Os reading that thing, because you read the entire partition into
+3477.66s - 3478.96s : memory and write it.
+3478.96s - 3482.44s : And of course, it's sequential I-Os at both of the ends.
+3482.44s - 3484.04s : So in the middle, it's random in, sequential out.
+3484.04s - 3484.54s : Okay.
+3484.54s - 3486.3s : Sequential out for external hashing.
+3486.3s - 3488.56s : Now let's look at sorting.
+3488.56s - 3495.32s : And as you might expect, because it's dual, read in B pages into memory, write out B pages
+3495.32s - 3496.32s : to disk sorted.
+3496.32s - 3498.68s : So that's all sequential I-O.
+3498.68s - 3501.2s : Read in B pages again, write out B pages sorted.
+3501.2s - 3502.2s : All sequential I-O.
+3502.2s - 3506.5s : So the first phase here is doing sequential writes, but when you merge, which one of these
+3506.5s - 3509.72s : input buffers do you drain first when you're zippering things together?
+3509.72s - 3511.16s : I don't know.
+3511.16s - 3512.16s : Right?
+3512.16s - 3513.16s : Could be any one of them.
+3513.16s - 3514.16s : It could be that the lowest value is in the middle.
+3514.16s - 3516.26s : It could be that the lowest value is in the second thing, or the lowest value is in the
+3516.26s - 3518.16s : third thing, or the lowest value is in the first thing.
+3518.16s - 3521.26s : You don't know which one of these is gonna drain first, so the I-Os to read it in are
+3521.26s - 3522.26s : random.
+3522.26s - 3523.26s : So it's totally dual.
+3523.26s - 3526.66s : Which is kind of cool.
+3526.66s - 3528.4s : So from an I-O perspective, they're kind of the same.
+3528.4s - 3532.8s : They just move around the costs of when you do random I-Os, when you do sequential I-Os,
+3532.8s - 3533.8s : and how many of them you do.
+3533.8s - 3534.8s : All right.
+3534.8s - 3536.94s : And so really the performance differences get into two things.
+3536.94s - 3539.04s : I think, is this on the slides?
+3539.04s - 3540.04s : Maybe not.
+3540.04s - 3542.04s : Hashing is sensitive to skew.
+3542.04s - 3544.0s : So you have to worry about that sometimes.
+3544.0s - 3545.0s : Right?
+3545.0s - 3547.4s : Some of your partitions might be longer than others.
+3547.4s - 3551.28s : They might not even do it in one pass, because some partitions are too long.
+3551.28s - 3553.4s : Sorting is not sensitive to skew.
+3553.4s - 3557.04s : Tournament sort actually has some benefits of skew, if you like, if you have a skewed
+3557.04s - 3560.2s : ordering or a bias in the ordering.
+3560.2s - 3564.3s : Tournament sort could do even better than expected, but it won't do worse.
+3564.3s - 3566.68s : Hashing could do worse than expected.
+3566.68s - 3569.34s : And then the other thing to keep in mind is the in-memory performance of your hash table
+3569.34s - 3570.84s : versus your sorting.
+3570.84s - 3571.84s : Okay?
+3571.84s - 3572.1s : And those are things that you could tune up in your system, depending.
+3574.0s - 3579.32s : Hashing has some other attractions, though, which we'll see in the homework.
+3579.32s - 3580.32s : Maybe we won't see it in the slides.
+3580.32s - 3581.32s : I can't remember if I tip you off in the slides.
+3581.32s - 3582.32s : We'll see.
+3582.32s - 3585.32s : I looked at them last night, but I forget.
+3585.32s - 3586.32s : Okay.
+3586.32s - 3588.32s : Parallelizing these things is a piece of cake.
+3588.32s - 3591.32s : So you want to run this on a thousand nodes in Hadoop.
+3591.32s - 3593.06s : It's really easy, actually.
+3593.06s - 3597.78s : Just get one more partitioning phase for hashing up front that decides which machine is responsible
+3597.78s - 3599.5s : for which partition of the data.
+3599.5s - 3602.0s : So we have super partitions per machine using some other hash function called H.
+3602.0s - 3603.0s : Okay.
+3603.0s - 3604.0s : All right.
+3604.0s - 3606.72s : So we have HN for node, let's say.
+3606.72s - 3611.04s : It's even coarser grained than HB, which was for, or HP, which was for the partitions.
+3611.04s - 3615.72s : So every node reads its data, decides which machine to send it to based on HP, and sends
+3615.72s - 3620.04s : the tuple streaming IO fashion over the network to the right machine.
+3620.04s - 3621.92s : So every machine is talking to every other machine.
+3621.92s - 3624.32s : It's called shuffle sometimes in the MapReduce literature.
+3624.32s - 3625.32s : Right?
+3625.32s - 3629.6s : And then once data arrives at a machine, you know that all the apples are on the same machine.
+3629.6s - 3631.58s : All the oranges are on some other machine.
+3631.58s - 3632.68s : All the grapes are on some machine.
+3632.68s - 3633.68s : So we're good.
+3633.68s - 3637.32s : Now we've got partitions of the problem we can solve on a single node, and we run the
+3637.32s - 3638.74s : algorithm we just learned.
+3638.74s - 3640.4s : So that's super easy.
+3640.4s - 3641.4s : Okay.
+3641.4s - 3645.16s : And in fact, if you're smart, you're pipelining your IOs here and your communication with
+3645.16s - 3646.16s : the beginning of this phase.
+3646.16s - 3649.64s : So as this data streams off the disk, it streams through the network, it streams into these
+3649.64s - 3651.48s : buffers and it streams onto here.
+3651.48s - 3654.44s : And that all happens without any staging of the data.
+3654.44s - 3657.82s : Unfortunately that's not what they teach you in MapReduce, which is a damn shame.
+3657.82s - 3660.68s : MapReduce is actually not engineered for performance.
+3660.68s - 3662.4s : It's engineered for fault tolerance, which is not important to be.
+3662.4s - 3663.4s : Okay.
+3663.4s - 3665.96s : It's not important to you unless you're like really big like Google.
+3665.96s - 3669.18s : But what MapReduce says is every time you shuffle, you have to store the output before
+3669.18s - 3670.18s : you read it.
+3670.18s - 3673.76s : So in MapReduce, there'd be a big write, there'd be a big disk in front of each one of these
+3673.76s - 3677.16s : boxes, which is just pointless.
+3677.16s - 3679.9s : So instead, you can just stream these things right through the memory of these things,
+3679.9s - 3683.4s : and the first writes that happen on the individual nodes are here.
+3683.4s - 3684.4s : Okay.
+3684.4s - 3688.7s : And unless you're running on nodes where you expect them to die in the middle of your hashing,
+3688.7s - 3690.4s : there's no point staging the things onto disk.
+3690.4s - 3691.4s : All right.
+3691.4s - 3692.4s : We'll talk about MapReduce more later in the semester.
+3692.4s - 3693.4s : But just to give you a little bit of a hint, if you're running on a machine, you're going
+3693.4s - 3694.4s : to have to sort the data.
+3694.4s - 3699.36s : I'll just point out there's no I.O. on receipt of the data in this picture.
+3699.36s - 3701.86s : Sorting, similarly easy.
+3701.86s - 3702.86s : Actually not.
+3702.86s - 3703.86s : So here's the deal.
+3703.86s - 3707.98s : We want to make sure that, like, we're going to stream data off everybody's disk and send
+3707.98s - 3710.82s : it to the right node, and that node's going to sort a subset of the data.
+3710.82s - 3713.6s : So we're going to partition in the first phase of this thing.
+3713.6s - 3719.44s : But we have to partition sort-wise, which means, like, zero through something, or negative
+3719.44s - 3722.0s : infinity through something goes to the first node.
+3722.0s - 3723.04s : Something to something plus more goes to the second node.
+3723.04s - 3723.08s : Okay.
+3723.4s - 3724.8s : Something to something plus more goes to the second node.
+3724.8s - 3727.04s : Something plus more plus more, right, et cetera.
+3727.04s - 3731.02s : So you have to partition the value domain of your values across nodes.
+3731.02s - 3732.62s : It's not hashing anymore.
+3732.62s - 3735.32s : And getting that partitioning right might be hard, because you don't actually know the
+3735.32s - 3737.58s : distribution of the data.
+3737.58s - 3741.96s : So if you think about it, suppose your data values, you know, these are the different
+3741.96s - 3744.0s : values your data can take on.
+3744.0s - 3747.56s : And there's, like, I don't know, there's a lot of data at that value, and then there's
+3747.56s - 3749.42s : a lot of data at that value.
+3749.42s - 3753.04s : And you haven't seen the data yet, but that happens to be where the records are.
+3753.04s - 3757.8s : There's, like, you know, a million records with this value, and there's only, you know,
+3757.8s - 3761.6s : a hundred records with that value, and there's 20 million records with that.
+3761.6s - 3762.6s : I don't know.
+3762.6s - 3763.6s : These numbers are wrong.
+3763.6s - 3765.6s : 20,000 records with that value.
+3765.6s - 3766.86s : Whatever.
+3766.86s - 3771.0s : The point is, you won't know how to split up the value domain to avoid skew.
+3771.0s - 3772.82s : Does that make sense?
+3772.82s - 3776.16s : We need to carve this thing up so that the volume under the curve per node, the area
+3776.16s - 3778.28s : under the curve per node is the same.
+3778.28s - 3781.24s : And that's pretty hard to do unless you actually know this distribution.
+3781.24s - 3782.24s : Right?
+3782.24s - 3785.62s : Because you want every node to get the same amount of records, which means it's the same
+3785.62s - 3789.54s : area under the curve per node, but we don't know what the curve is.
+3789.54s - 3794.36s : So usually what people do is they'll read a little bit of the data randomly, get a sample,
+3794.36s - 3798.28s : try to draw that curve based on the sample, and then carve up the curve based on the sample
+3798.28s - 3800.68s : of the data and build their partitioning that way.
+3800.68s - 3801.68s : Okay?
+3801.68s - 3804.68s : So you need some sort of master node to do some sampling and make some decisions about
+3804.68s - 3807.88s : where the bucket boundaries are before everybody gets to work.
+3807.88s - 3811.0s : And there you get skew because the sample might get the work wrong and then some nodes
+3811.0s - 3812.0s : will get more data than other nodes.
+3812.24s - 3813.0s : All right.
+3813.0s - 3819.74s : So actually parallel sorting is kind of a bummer in that respect.
+3819.74s - 3820.8s : Okay?
+3820.8s - 3824.74s : But the actual parallelization of it is just partitioning it by value range.
+3824.74s - 3826.26s : Okay.
+3826.26s - 3827.26s : So which is better?
+3827.26s - 3829.66s : Well, they're the same.
+3829.66s - 3831.24s : But let's keep a couple things in mind.
+3831.24s - 3832.56s : They're not totally the same.
+3832.56s - 3834.08s : So pros of sorting.
+3834.08s - 3837.78s : We saw with heap sort, if the data's already sorted, heap sort's a one-pass algorithm.
+3837.78s - 3841.24s : Neither hashing or quick sort based merge sort are.
+3841.24s - 3842.24s : So.
+3842.24s - 3846.3s : Another reason sorting might be good is because you had to sort it because someone told you
+3846.3s - 3847.3s : to.
+3847.3s - 3850.9s : You know, you wouldn't want your Google search items hashed.
+3850.9s - 3854.46s : You want the most likely thing at the top.
+3854.46s - 3860.28s : You don't want to have a random group of things that are equally likely at the top.
+3860.28s - 3863.64s : So if the data has to be sorted anyway, then you'll use sort for everything.
+3863.64s - 3867.32s : And as we said, sort, at least on a single node, is not sensitive to data skew or bad
+3867.32s - 3869.8s : hash functions or anything like that.
+3869.8s - 3870.8s : Hashing.
+3870.8s - 3871.8s : Here we go.
+3871.8s - 3873.36s : So you're going to see in your homework.
+3873.36s - 3875.06s : We're going to see in your homework, sometimes you have a big file.
+3875.06s - 3877.82s : Maybe you've got a terabyte of data.
+3877.82s - 3881.98s : But actually all you want to do is group it and while you're grouping it, say count it.
+3881.98s - 3884.98s : So let's suppose you have a terabyte of data, but you're just trying to count up the number
+3884.98s - 3887.82s : of males in this data and the number of females.
+3887.82s - 3890.18s : All you need are two counters in memory, one for males and one for females.
+3890.18s - 3892.18s : And as the data streams by you say, is it a male?
+3892.18s - 3893.18s : Bump that counter.
+3893.18s - 3894.18s : Is it a female?
+3894.18s - 3895.18s : Bump that counter.
+3895.18s - 3896.18s : Which is essentially a hash function.
+3896.18s - 3897.86s : One hash value for males, one hash value for females.
+3897.86s - 3898.86s : And you can do that with two hash cells for male and female.
+3898.86s - 3899.86s : And you can do that with two hash cells for male and female.
+3899.86s - 3902.76s : And you can do that with two hash cells for male and female.
+3902.76s - 3903.76s : And one pass of the data.
+3903.76s - 3905.76s : Even though the data is a terabyte big.
+3905.76s - 3907.76s : You don't actually have to spill it at all.
+3907.76s - 3913.74s : You just stream it in, partition it into however many distinct values there are and compute
+3913.74s - 3916.24s : that count, let's say, if that's what you're trying to do per partition.
+3916.24s - 3917.24s : And you're good.
+3917.24s - 3923.82s : So for certain tasks, like duplicate elimination or counting or what other things, caching
+3923.82s - 3928.06s : as we're going to see in our homework, hashing scales with the number of values, not the
+3928.06s - 3929.86s : number of rows or items.
+3929.86s - 3931.76s : Which can be a huge difference.
+3931.76s - 3934.62s : So that can be a big win.
+3934.62s - 3938.42s : And therefore you can simply conquer sometimes with hashing and you don't have to partition
+3938.42s - 3940.42s : or divide at all.
+3940.42s - 3941.42s : Okay?
+3941.42s - 3942.42s : All right.
+3942.42s - 3946.82s : We're going to finish a little early today, which is not a bad thing.
+3946.82s - 3950.28s : So summary, you should understand not just the sorting and hashing algorithms, but if
+3950.28s - 3953.5s : you really understand that duality and you can explain it, then you probably understand
+3953.5s - 3956.94s : the I.O. patterns, which means you really understand what's going on.
+3956.94s - 3959.76s : You should also be able to understand and generate those.
+3959.76s - 3966.12s : So, cost formulas and the memory requirement formulas for two pass, three pass, et cetera.
+3966.12s - 3967.12s : All right.
+3967.12s - 3973.52s : Point out, sorting is overkill for rendezvous, but sometimes it's faster than hashing anyway.
+3973.52s - 3974.66s : Okay?
+3974.66s - 3976.86s : Sorting is sensitive to your internal sort algorithm.
+3976.86s - 3978.68s : We looked at quick sort versus heap sort.
+3978.68s - 3983.54s : In practice, quick sort is fast enough that even though you get fewer runs out of heap
+3983.54s - 3985.82s : sort, it's probably not worth it.
+3985.82s - 3986.88s : Probably.
+3986.88s - 3989.28s : And then in general, keep in the back of your head this double buffering trick.
+3989.28s - 3989.32s : Okay?
+3989.32s - 3991.38s : Double buffering trick for streaming algorithms.
+3991.38s - 3994.76s : It's a, it's a very handy thing to make your I.O.s go faster.
+3994.76s - 3995.76s : All right.
+3995.76s - 3996.76s : That is it.
+3996.76s - 3999.2s : Let me make an administrative announcement before we go since we have a minute.
+3999.2s - 4001.06s : And maybe I can answer some questions too.
+4001.06s - 4002.24s : So everybody shh.
+4002.24s - 4006.56s : This actually is going to matter to you logistically, even if it doesn't matter to you intellectually.
+4006.56s - 4008.34s : All right.
+4008.34s - 4009.34s : So homework zero.
+4009.34s - 4010.34s : Derek, where did Derek go?
+4010.34s - 4011.34s : There he is.
+4011.34s - 4016.68s : You want to make an announcement about when homework zero is now officially due?
+4016.68s - 4017.68s : Yeah.
+4017.68s - 4018.68s : Homework zero.
+4018.68s - 4019.44s : Yeah.
+4019.44s - 4023.56s : Homework zero should be due one day later than it used to be.
+4023.56s - 4026.44s : So it used to be due today at midnight.
+4026.44s - 4028.72s : It is now due tomorrow at midnight.
+4028.72s - 4029.72s : So Friday midnight.
+4029.72s - 4031.44s : So you have an extra day to do it.
+4031.44s - 4032.44s : Yeah.
+4032.44s - 4036.12s : And homework zero is not hard, mind you, but because there was logistics errors.
+4036.12s - 4040.32s : However, here's the, here's the less good news.
+4040.32s - 4042.44s : Homework one is still due on Tuesday.
+4042.44s - 4043.44s : All right.
+4043.44s - 4044.44s : So that's the real work.
+4044.44s - 4046.68s : It, again, is not all that hard.
+4046.68s - 4047.6s : It's pretty straightforward.
+4047.6s - 4048.6s : But.
+4048.6s - 4051.16s : But, you got to kind of munch around in the data.
+4051.16s - 4052.16s : It takes some time.
+4052.16s - 4053.16s : You got to get used to the tool chain.
+4053.16s - 4054.16s : Get started on it.
+4054.16s - 4055.16s : Okay.
+4055.16s - 4056.16s : And that is due Tuesday at midnight, or 1159.
+4056.16s - 4060.36s : Do we have any other announcements?
+4060.36s - 4064.6s : Discussion sections are meeting tomorrow, or today and tomorrow.
+4064.6s - 4066.56s : If you want to go to discussion section, you can go.
+4066.56s - 4067.56s : Oh, are there more?
+4067.56s - 4068.56s : Yeah.
+4068.56s - 4069.56s : Yeah.
+4069.56s - 4070.56s : Yeah.
+4070.56s - 4071.56s : Yeah.
+4071.56s - 4072.56s : Yeah.
+4072.56s - 4073.56s : Yeah.
+4073.56s - 4074.56s : Yeah.
+4074.56s - 4075.56s : Yeah.
+4075.56s - 4076.56s : Yeah.
+4076.56s - 4077.56s : Yeah.
+4077.56s - 4078.56s : Yeah.

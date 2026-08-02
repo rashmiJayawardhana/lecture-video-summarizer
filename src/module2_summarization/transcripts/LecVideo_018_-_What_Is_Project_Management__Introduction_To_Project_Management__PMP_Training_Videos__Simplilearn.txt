@@ -1,0 +1,646 @@
+0.0s - 12.06s : Hi welcome to project management tutorial from simplelearn. I am Chandra
+12.06s - 16.8s : Aymar a professional consultant and coach in best practices related to
+16.8s - 20.1s : project management and IT service management. Today as part of this
+20.1s - 24.96s : tutorial we are going to learn the basic understanding about the project
+24.96s - 29.08s : management and the required knowledge for a project manager to become
+29.08s - 33.08s : successful in managing projects. So as part of this tutorial we are going to
+33.08s - 37.84s : look at what is project management? what is project components of project
+37.84s - 43.0s : management? project lifecycle? key focus areas in project management? job roles in
+43.0s - 47.1s : project management and project management certifications? So what is
+47.1s - 52.52s : project management? Now as defined in PMI's PMBOK project management is
+52.52s - 58.42s : application of knowledge skills tools and techniques to project activities to
+58.42s - 59.06s : meet project goals and to meet the requirements to meet the project goals and to meet the
+59.06s - 63.38s : requirements so every project will have an objective to accomplish similarly
+63.38s - 67.22s : the objective of project management is to make the final deliverables in a
+67.22s - 71.4s : finite time and budget this involves having clear understanding about the
+71.4s - 75.5s : deliverables of the project required resources for the project resource in
+75.5s - 79.84s : terms of human resources technical resources financial resources etc
+79.84s - 84.08s : project managers should have a full picture of those aspects we can call it
+84.08s - 88.34s : as constraints or aspects and manage those throughout the project lifecycle
+89.06s - 94.16s : which a project manager should have a full view about a project and what is
+94.16s - 99.74s : that this project has to accomplish that objective should be clear so as part of
+99.74s - 103.84s : project management the six constraints which project managers should look at are
+103.84s - 109.88s : scope time quality cost risk and resources so each of these areas has
+109.88s - 114.96s : very important role to play in project management the clarity in scope the
+114.96s - 118.4s : clarity in terms of schedule within which the project has to be delivered
+118.4s - 122.08s : the cost what it incurs to that particular project once it is
+122.08s - 126.82s : finalized one cannot vary when cannot change without any proper approvals
+126.82s - 131.16s : similar to that we have quality management which has to ensure the scope
+131.16s - 135.52s : the specifications what are defined project output will be accordingly
+135.52s - 140.22s : achieved risk every project is taken up for a specific reason by organization
+140.22s - 144.08s : so organization should assess the risk associated with the project and
+144.08s - 147.5s : similarly as projects progresses various different risks has to beываем a high
+147.5s - 148.4s : 顧ная credit as a generaliso autoregulation so based on the current
+148.4s - 153.6s : be identified like risk related to project management risk related to technology area
+153.6s - 159.76s : risk related to resources risk related to financial things so broadly risk management
+159.76s - 164.8s : plays a very important role so there will be something called contingency reserve kept for a
+164.8s - 172.0s : identified risk above the cost what is estimated for various deliverables from the project so every
+172.0s - 177.92s : projects require resources resources may be in terms of human resources financial resources
+177.92s - 184.16s : technology resources environmental resources so all these resources are used to produce the
+184.16s - 190.08s : output of the project so these resources has to be managed with the sufficient optimization and
+190.08s - 196.08s : standardizations required now let us understand the definition of a project so what is a project
+196.08s - 202.0s : pmi defines a project as a temporary endeavor undertaken to create a unique product service
+202.0s - 207.04s : or result the temporary nature of a project indicates that a project has a definite beginning
+207.92s - 214.88s : and end so when i say product unique product it means every output it may be similar products you
+214.88s - 219.44s : are producing with the same features and functionality but the output of every project
+219.44s - 224.96s : is unique because it is unique in terms of all the six constraints what we just discussed now
+224.96s - 230.16s : now when i say product it is very easy for us to visualize it may be a desktop it may be a laptop
+230.16s - 237.76s : it may be a car it may be a machine etc but how do i visualize a service a project's output is a service
+237.92s - 242.96s : or is it a service for me to visualize a service it's not a service but it is a service for me to
+242.96s - 247.76s : visualize a service as a project but when i say project i'm talking about building a capability
+247.76s - 253.68s : a project by through a project a capability can be built to ensure services can be provided that's
+253.68s - 259.28s : what the output of project is service for example if i think about a taxi services for providing a
+259.28s - 266.0s : taxi services i need a mobile app i need taxi i need a server i need a data center so all these are
+266.0s - 267.44s : various different products and services here service example can be internet service so a combination of all the services and products builds the capability of building a product
+267.92s - 273.96s : for an organization who can provide the tax services. So building that capability we say
+273.96s - 279.12s : it is an output of a particular project which is called service. Similarly results can be
+279.12s - 285.86s : improvement of something, improvement in customer satisfaction, increase in some specific objectives
+285.86s - 290.56s : or specific results needs to be achieved in performance perspective. So output of every
+290.56s - 295.32s : project will be unique product or a service or a result. This we need to clearly understand.
+295.32s - 300.48s : So when we say there is a definite beginning and end, every project starts at a certain point in
+300.48s - 305.76s : time and ends at certain point in time. So it has a definite beginning and end. That is the reason
+305.76s - 312.6s : it is temporary in nature. It is not an ongoing business activity. So every project will have a
+312.6s - 320.5s : life cycle, a beginning and end. So when it starts till end, until the result or a service or a
+320.5s - 325.3s : product which comes as an output of a project, project life cycle is not ended. So interestingly
+325.32s - 332.68s : in a product life cycle or in a service life cycle you come across many project life cycles. So one
+332.68s - 338.38s : project life cycle means one project is initiated to introduce a product or services. Next project
+338.38s - 344.26s : or initiated would be to enhance the capability of a service or a product. Next project initiated
+344.26s - 349.14s : after some time is to optimize something. Similarly at the end of the product life cycle, project is
+349.14s - 354.72s : initiated to retire that product or services. So in a given product life cycle there may be multiple
+355.32s - 359.28s : projects that are initiated. So what is involved in the project life cycle? It involves five areas,
+359.28s - 365.4s : five groups we can call it as. So initiation, planning, execution, monitoring and closure. So
+365.4s - 371.34s : when I say initiation, it's all about understanding what is project, giving the basic understanding of
+371.34s - 377.8s : the project, collating the details and having key stakeholders identified. Once that is done,
+377.8s - 384.3s : one will move towards planning. So here in the initiation it is very clearly one has to
+384.3s - 385.3s : understand is planning, planning, and closing. So what is involved in the project life cycle? It is
+385.32s - 391.08s : to understand what is involved in the project life cycle. So one has to check the feasibility, one has to measure
+391.08s - 397.44s : that particular investment is making sense and then confirm yes it makes sense to invest. Now next
+397.44s - 403.68s : planning. As we have a basic understanding of yes this project has to be done and a discussion with
+403.68s - 409.5s : the key stakeholders have happened, now that moves towards planning. Now in planning one will
+409.5s - 414.3s : understand the project in entirety. If it is a waterfall approach, one has to have a clear
+414.3s - 420.3s : articulation of entire project, a comprehensive details, holistic approach. Now if you go, if you're
+420.3s - 425.4s : going in a project in an agile way of approach, now in this planning you may have a big skeleton.
+425.4s - 430.24s : As you go in each of the iteration you may go deep dive into detailed planning if it is an agile
+430.24s - 435.1s : approach. So planning provides you the clear insight towards what needs to be done in this
+435.1s - 439.54s : project, how it has to be done and what are the results which can be achieved
+439.54s - 444.1s : out of that particular project. So this involves making that a clear blueprint.
+444.3s - 447.72s : of an project objectives what we are supposed to achieve.
+447.72s - 450.98s : So this will become a reference point throughout the project life cycle.
+450.98s - 455.34s : Then execution, as you have a blueprint of the project, as the direction of that project
+455.34s - 460.42s : is set, detailing of the project has been made, one will go ahead and execute the project.
+460.42s - 464.96s : Execute in the sense implementation, acquiring resources and implementing it.
+464.96s - 470.2s : So execution phase involves the allocation of resources and making the deliverables as
+470.2s - 471.2s : required.
+471.2s - 475.9s : You acquire resources, you configure a resource, you ensure right resources are acquired.
+475.9s - 480.52s : If it is human resource, one has to educate that human resource with the project required
+480.52s - 486.58s : knowledge or details, or one has to provide that assignment in such a way that skills
+486.58s - 491.46s : of that individuals, what they should have is acquired by those individuals so that deliverables
+491.46s - 494.3s : can happen and they need to be managed.
+494.3s - 498.96s : The entire team needs to be managed for that a clear structure has to be created.
+498.96s - 501.18s : Similarly, when you do technology resource perspective.
+501.18s - 506.86s : Those components has to be tested, configured, then integrated, again tested for and check
+506.86s - 508.28s : the performances.
+508.28s - 512.38s : So collective action of this results in a deliverable during the execution.
+512.38s - 517.26s : So as the deliverables are happening in the execution, it is quite obvious project manager
+517.26s - 523.94s : has to monitor, review, control that particular deliverable and also the processes, tools,
+523.94s - 525.86s : resources used during the project.
+525.86s - 529.88s : Even those needs to be monitored so that they are complying to the defined processes.
+529.88s - 530.88s : So during monitoring.
+530.88s - 535.72s : There may be a deviation one can found during monitoring.
+535.72s - 538.74s : There may be the project is running the way it is required.
+538.74s - 544.38s : So in this monitoring phase, it involves an action from project manager to monitor and
+544.38s - 546.08s : control the work of the project.
+546.08s - 550.88s : So comparing with the blueprint of plan, what is accomplished, what is created during the
+550.88s - 553.6s : planning phase of this project.
+553.6s - 558.98s : And as the execution happens, monitoring and control is monitoring it and checking is that
+558.98s - 560.32s : activities.
+560.32s - 563.6s : What is being done is according to the plan or not.
+563.6s - 568.3s : Similarly the deliverables which comes as an output of a project are tested thoroughly.
+568.3s - 572.84s : Whether those have a specific features and functionality and are they functioning the
+572.84s - 574.04s : way it is required.
+574.04s - 577.36s : Now project has to be delivered to the scope what is defined.
+577.36s - 579.98s : It should not go beyond that or below that.
+579.98s - 584.04s : Similarly the schedule what is made for the project within that schedule project deliverables
+584.04s - 588.36s : needs to be accomplished within the cost what is budgeted for the project.
+588.36s - 589.68s : So during the project.
+589.68s - 590.18s : You.
+590.32s - 595.1s : Project manager may find there are certain deviations which are occurred.
+595.1s - 597.4s : There are additional challenges which has come in.
+597.4s - 603.66s : So for this reason one has to ensure continued monitoring as the execution happens and identify
+603.66s - 608.74s : those deviation and ensure whenever there is a deviation there is a correction.
+608.74s - 612.7s : Whenever there is an additional things coming in that needs to be considered carefully whether
+612.7s - 617.2s : that need to be involved as part of this deliverable or should be taken it separately.
+617.2s - 619.68s : So this requires a lot of conversation with all the stakeholders of the project.
+619.68s - 625.68s : During the entire project life cycle especially during planning execution monitoring and control.
+625.68s - 628.74s : Since they are not the one which is happening in sequence.
+628.74s - 632.42s : So planning can also come back again where there is something which you may require to
+632.42s - 634.08s : modify.
+634.08s - 638.44s : So may require to have a change in the blueprint itself by adding that new change which is
+638.44s - 639.44s : coming in.
+639.44s - 640.6s : So you go back to planning.
+640.6s - 645.56s : So planning execution monitoring and control are going hand in hand so that project deliverables
+645.56s - 647.72s : are happening as needed.
+647.72s - 648.84s : Similarly all the process.
+648.84s - 649.56s : Work in structure.
+649.56s - 650.56s : All the instructions.
+650.56s - 655.26s : All those templates what is given are used when is complying to those requirement.
+655.26s - 661.28s : It is very important and project is done within the scope schedule and time and the quality
+661.28s - 662.46s : metrics defined.
+662.46s - 667.76s : Then as the completion of the project happens as the monitoring and control says yes deliverable
+667.76s - 670.64s : has happened according to the requirement.
+670.64s - 672.34s : Then the project moves to the closure.
+672.34s - 677.96s : The closure may be closure of a specific project phase a milestone deliverable or a phase deliverable
+677.96s - 678.96s : or.
+678.96s - 683.58s : It can be a deliverable at the end of the project which is the ultimate deliverable.
+683.58s - 688.22s : So processes in closing has to be triggered whenever there is an end of the phase whenever
+688.22s - 692.18s : there is a deliverable to conclude and also at the end of the project to conclude the
+692.18s - 693.18s : entire project.
+693.18s - 699.34s : So during the closure one has to ensure capturing all the details in terms of what is accomplished
+699.34s - 700.82s : against what is defined.
+700.82s - 701.82s : What went wrong.
+701.82s - 702.84s : What went well.
+702.84s - 707.12s : What is the learning one has to take to the next level or to next phase or to the next
+707.12s - 708.12s : project.
+708.12s - 713.04s : At the same time a sign off has to be obtained formally and everything should be summarized
+713.04s - 718.4s : and have a good handshake with the project stakeholder mainly a business or customer
+718.4s - 723.36s : and also disseminating of team means you will dismantle the entire team and send them back
+723.36s - 727.84s : to their specific units or specialization and they may get assigned to new project or
+727.84s - 731.76s : if it is a functional they can go back to their functions to do their functional activities.
+731.76s - 734.78s : So that was about entire project life cycle what happens.
+734.78s - 738.12s : Now while doing this I mentioned there are six constraints.
+738.12s - 742.88s : That is scope, schedule, cost, quality, risk and resources.
+742.88s - 748.86s : So keeping these in mind one has to ensure project is successful in all aspects.
+748.86s - 753.26s : So to become successful there are few key areas which has to be looked at.
+753.26s - 759.88s : So first six key areas are scope, schedule, cost, quality, resources and stakeholders.
+759.88s - 761.5s : Now let us look at the scope.
+761.5s - 763.0s : What does scope means?
+763.0s - 765.28s : Scope is about what needs to be delivered.
+765.28s - 766.4s : What is in scope?
+766.4s - 767.92s : What is out of the scope?
+768.12s - 773.0s : This refers to all those deliverable scope, all those activities scope.
+773.0s - 774.8s : Basically we speak about two things.
+774.8s - 777.56s : One is product scope and project scope.
+777.56s - 782.0s : Product scope is all about ensuring the features, functionality of products are well defined
+782.0s - 786.88s : and understood and signed off and while delivering that product that is tested against those
+786.88s - 789.12s : defined features and functionalities.
+789.12s - 793.4s : Whereas project scope focus on all the activities needs to be done, all those templates which
+793.4s - 796.86s : has to be used, all the process which has to be complied with, all the skills which
+796.86s - 797.86s : is required to be applied.
+797.86s - 797.96s : So scope is all about what needs to be done.
+798.12s - 800.46s : So it is going as defined.
+800.46s - 804.9s : So by doing this activities which is defined as part of project scope, the result, the
+804.9s - 810.48s : deliverable will come out which will be in line with the deliverables features and functionality
+810.48s - 812.68s : which is defined as part of product scope.
+812.68s - 817.8s : It is very important to ensure entire projects happens within this particular scope.
+817.8s - 819.7s : There should not be any deviations from this.
+819.7s - 824.0s : Schedule perspective for that specifications what we have defined for a product and project.
+824.0s - 826.96s : So these needs to be done in a specific point in time.
+826.96s - 827.86s : Means in a specific schedule.
+827.86s - 830.66s : There will be start time and end time.
+830.66s - 835.92s : So one has to plan how long a project would take and what are the deliverables should
+835.92s - 837.66s : happen in what sequence.
+837.66s - 840.32s : What activities are required to accomplish this.
+840.32s - 842.82s : So all these needs to be understood.
+842.82s - 849.12s : So while performing the schedule management one has to look at a specific deliverable
+849.12s - 854.16s : at a specific point in time by applying a specific set of activities required.
+854.16s - 856.2s : So this will tell you the duration of the project.
+856.2s - 857.24s : This will provide you the sequences.
+857.24s - 857.26s : So this will tell you the duration of the project. This will provide you the sequences.
+857.26s - 857.8s : This will provide you the sequence.
+857.8s - 858.8s : So this will provide you the sequence of the project.
+858.8s - 863.72s : This will also help you to understand the dependency between one task to another task.
+863.72s - 868.24s : This will also help you to understand how the deliverables happening in what sequence
+868.24s - 871.16s : which helps in prioritizing your deliverables.
+871.16s - 872.66s : Third is cost.
+872.66s - 878.26s : So as we know to do any project it is very essential to ensure project happens within
+878.26s - 879.26s : that budget.
+879.26s - 882.28s : So project cost is estimated initially.
+882.28s - 884.7s : Then that estimated cost will be checked.
+884.7s - 887.04s : Checked in terms of is the assumptions.
+887.04s - 888.48s : Is that the assumptions are right or wrong.
+888.48s - 892.68s : Is that really so much of monetary resources required for the project.
+892.68s - 897.4s : And then after understanding the justification and obtaining the clarity budget is I mean
+897.4s - 901.4s : monetary resources are allocated and confirmed approved.
+901.4s - 903.26s : Then it will become a budget.
+903.26s - 904.56s : That will be a cost baseline.
+904.56s - 910.0s : So these estimation allocation of budget once it happens that will become a base and any
+910.0s - 912.98s : deviations from that cannot happen so easily.
+912.98s - 915.7s : So any deviations because of additional of scope.
+915.7s - 917.74s : That can be handled through change management.
+917.74s - 922.14s : But idealistic scenario the cost should not escalate or come down.
+922.14s - 925.74s : Organization can also set certain tolerances at the project level considering various different
+925.74s - 931.76s : scenarios like scenario of risks, scenario of something which deviated from the deliverable.
+931.76s - 933.86s : So to what extent it can deviate.
+933.86s - 938.68s : That tolerance will also be set at the economic or monetary value perspective.
+938.68s - 940.28s : That is about cost.
+940.28s - 941.56s : Now quality.
+941.56s - 945.6s : As we know quality is a very important area which ensures.
+945.7s - 952.72s : The project is delivered in time with all the specifications defined by using all the methods.
+952.72s - 958.08s : Means by following all the processes, work instructions, templates and delivering as
+958.08s - 962.2s : needed where it enables the project to monitor it easily.
+962.2s - 967.56s : So basically the requirement of compliance and standardization and optimization is to
+967.56s - 971.32s : ensure everyone follows the same steps to the activity.
+971.32s - 975.66s : So what quality management focus is to ensure the intended objectives of a project.
+975.66s - 977.68s : All these
+977.68s - 980.06s : Already there is a definition in terms of various different practices or processes to be followed.
+980.06s - 982.9s : Similarly specification of each of the products are defined.
+982.9s - 985.06s : And from that there should not be any deviation.
+985.06s - 990.78s : So quality management should focus on ensuring those activities are done as defined.
+990.78s - 995.62s : Those deliverables are done according to the specifications and specifications defined.
+995.62s - 996.62s : It is very important that way.
+996.62s - 998.54s : So for that there is a layer of quality management.
+998.54s - 1000.32s : There should be a layer of quality management.
+1000.32s - 1004.08s : Where auditing or control activities are initiated and the processes are done.
+1004.08s - 1004.88s : To ensure quality.
+1004.88s - 1012.64s : are initiated periodically so that any deviations can be seen easily and remember a project manager
+1012.64s - 1016.38s : can become cannot become part of quality management like project manager cannot audit
+1016.38s - 1022.66s : project manager should have an team or take the help of a team who can able to do mostly the one
+1022.66s - 1027.8s : which is who is not part of the project or is always better resources now as i mentioned earlier
+1027.8s - 1033.68s : every project need resources it may be human resources it may be technology resources it may
+1033.68s - 1038.96s : be any other resources which are required to do the project so organization acquires resources
+1038.96s - 1045.74s : configured and then deployed for example in a project you acquire a server you configure a
+1045.74s - 1051.4s : server you deploy a server technology resource human resources onboarded recruited project
+1051.4s - 1057.42s : induction is given then at the same time the skills and capabilities of individuals are according to
+1057.42s - 1061.88s : the requirement of project that needs to be ensured and what needs to be delivered and how it has to
+1061.88s - 1063.66s : be delivered should be clear to the particular project manager so that the project manager can
+1063.66s - 1066.78s : manage the project well so this is the most important thing to look at in terms of human resources
+1066.78s - 1071.22s : so looking at all the aspects of resources to acquire to build and manage it is very important
+1071.22s - 1076.32s : to look at the resource management so this will help in carrying out a specific task in a project
+1076.32s - 1083.52s : in the best possible manner so interestingly when as a human resource always there is a possibility
+1083.52s - 1089.66s : that a conflict can occur so when I say conflict conflict of interest maybe in terms of what that
+1089.66s - 1093.54s : individuals has to do conflict in terms of the preferences in terms of solutions what
+1093.66s - 1098.58s : they're looking at conflict in terms of using resources different opinions different preferences
+1098.58s - 1103.86s : various reasons conflict to end come across so it is very important to project manager to understand
+1103.86s - 1110.22s : this dynamics of human resources and manage those conflicts project manager cannot shy away from
+1110.22s - 1115.84s : handling conflicts project manager has to hone and resolve those conflicts in the favor of project
+1115.84s - 1120.76s : not in the favor of any individuals so there are various techniques to look at resolving conflicts
+1120.76s - 1123.42s : so that is like compromising problem-solving
+1123.66s - 1130.38s : smoothening accommodating so whichever helps for that project scenario for the project objectives
+1130.38s - 1136.44s : that needs to be applied that technique has to be taken up so here the resolution is not at the
+1136.44s - 1142.32s : specific individuals preference it is with the objective of whether projects has any impact what
+1142.32s - 1147.24s : kind of impact positive or negative if it is negative no that's not the direction the direction
+1147.24s - 1152.16s : should be ensuring project gets that value through this conflict resolution so project manager should
+1152.16s - 1153.64s : own it it's an accountability
+1153.66s - 1159.78s : of a project manager then as the human resource are acquired there are five stages team dynamics
+1159.78s - 1166.8s : are involved so one has to bring them then educate them about a project as of education on the project
+1166.8s - 1173.14s : happens one has to go and do the job on floor that needs to be observed means one has to manage by
+1173.14s - 1178.74s : looking at it and any corrections needs to be done that needs to be guided so it is very dynamic thing
+1178.74s - 1183.5s : when it comes to human resources similarly in technology resources standardization
+1183.66s - 1188.4s : there is no ambiguity as such but right resources with the right configurations should be acquired
+1188.4s - 1193.94s : that is very important the next stakeholders so who can be stakeholders every project will have
+1193.94s - 1199.62s : a stakeholder who are internal and external to the project so the internal stakeholders are those who
+1199.62s - 1205.98s : are part of the project who are part of the organization who are part of the customer
+1205.98s - 1211.32s : organization or part of supplier organization a competition to my business means my organization's
+1211.32s - 1213.6s : business all this we can call it as a stakeholders
+1213.66s - 1219.36s : now every stakeholders will have a specific interest a power and ability to influence now
+1219.36s - 1225.84s : through their position through their distance from the project they will get impacted at the
+1225.84s - 1230.82s : same time they will also impact the project similarly they influence and they get influenced
+1230.82s - 1236.54s : because of the project so a project manager should identify all the stakeholders and understand this
+1236.54s - 1242.42s : what is the kind of stakeholder is this in terms of power in terms of legitimacy in terms of
+1242.42s - 1243.48s : influence in terms of
+1243.66s - 1249.0s : impact after understanding that there should be a strategy for handling the stakeholders how am I
+1249.0s - 1254.1s : going to engage with these stakeholders it is very important and accordingly the engagement should
+1254.1s - 1259.08s : happen and then stakeholder engagement should resolve in the favor of projects again so if it
+1259.08s - 1265.68s : is a customer customer should get that inputs required through review or periodic updates and
+1265.68s - 1270.36s : the engagement required with the customer so that customer is having up-to-date information about
+1270.36s - 1273.36s : the project if it is a team continued monitoring and control
+1273.66s - 1278.76s : and ensuring team delivers the results what is required so focus of a stakeholder should be in such
+1278.76s - 1284.4s : a way that your strategy should enable project to become successful and get a proper response from
+1284.4s - 1290.52s : the stakeholder means a supporting engagement so next few key focus areas to mention is communication
+1290.52s - 1297.24s : risk procurement critical success factors deliverables and work breakdown so this list
+1297.24s - 1303.42s : is not exhaustive as we deep dive into project I think you can just keep listing the key focus areas
+1303.66s - 1308.88s : but whatever we have indicated are the minimum which needs to be looked at so when I say
+1308.88s - 1314.76s : communication communication is basically a conversation exchange of message which happens
+1314.76s - 1320.4s : between two entities now whenever we communicate it is necessary to understand that it has to happen
+1320.4s - 1326.28s : with two individuals or two entities there should be sender there should be a receiver in the absence
+1326.28s - 1330.3s : of receiver if sending is happening that communication doesn't make any sense there
+1330.3s - 1333.3s : should be a receiver and there should be an acknowledgement from the
+1333.66s - 1340.16s : Now this is one of the most ignored area in many of the projects even the communication happens more often more frequently
+1340.2s - 1342.2s : But what people face?
+1342.78s - 1345.92s : Difficulty in realizing that as they communicate generally
+1346.5s - 1352.58s : Informally formally they just take those for granted now when you identify the stakeholder one has to understand
+1352.58s - 1359.34s : What is the communication requirement for those stakeholders? What is that communication? Why is that communication?
+1359.34s - 1367.26s : What is the content of that communication? How frequently we should do that interactions or communications intent of that particular communication?
+1367.26s - 1371.04s : What is the expected action or response from that communication?
+1371.04s - 1376.1s : All this needs to be very very clear and this can be articulated it has to be articulated
+1376.1s - 1381.14s : So when it is articulated once there is a picture in terms of what kind of communication has to happen
+1381.14s - 1382.08s : It is quite obvious
+1382.08s - 1389.04s : There should not be any deviation from the agreed communications requirements and whenever there is a need of change to the communication
+1389.5s - 1394.7s : Requirements from the stakeholders that needs to be updated for this one has to have a stakeholders identified
+1394.7s - 1399.86s : so stakeholder management and communication are very closely linked and associated a
+1400.34s - 1405.8s : Engagement with the stakeholder will become successful with an effective communication approaches next is risk
+1405.84s - 1412.46s : So every project which is undertaken by organization that will have certain amount of risk which organization will evaluate
+1412.82s - 1419.14s : Similarly within the project lifecycle lot of risk comes up which would have certain impact to the project
+1419.34s - 1421.66s : Now risk refers to by definition an
+1422.62s - 1430.52s : Uncertain event it has an uncertainty an event which is uncertain and when it occurs it will have an impact on the project
+1431.0s - 1433.0s : positively or negatively now
+1433.54s - 1440.84s : Current scenario in everywhere the projects what you observe closely people tend to look at the risk which are threats that is negative only
+1440.88s - 1445.52s : But they fail to recognize the risks which are opportunities the positive risks
+1445.52s - 1449.26s : So another gap which we see when do the risk management is that is
+1449.34s - 1453.54s : done in the initial phase of the project as the project is kicked off someone will do
+1453.94s - 1456.54s : The risk assessment have a list of risk identified
+1456.7s - 1463.34s : But unfortunately there is no categorizations for that risk and how is that going to impact the project that is not clear thirdly
+1463.6s - 1469.78s : Risk management or list of risks are created only once it is not done repeatedly
+1469.78s - 1471.78s : so risk identification and
+1472.46s - 1479.04s : analysis and assessment of that risk has to be done throughout the lifecycle of a project reason being the risk which looks as an
+1479.34s - 1487.16s : impact when project is initiated as the project progresses the impact levels will vary maybe in a middle of the project the impact may
+1487.16s - 1491.8s : Be very high or low so likewise the impacts of the risk will vary throughout the project lifecycle
+1491.8s - 1495.7s : It may be positive it may be negative so as you identify the stakeholder
+1496.1s - 1499.46s : Throughout the project lifecycle as I said that is also a dynamic
+1499.46s - 1505.12s : I cannot just have a list of stakeholders, and I keep it as it is I need to update that also regularly risk
+1505.66s - 1509.0s : Identification assessment and analysis should also be done regularly
+1509.34s - 1516.74s : Periodically so that one will have a clear understanding about is that risk still valid is that risk is there still or not?
+1516.78s - 1522.86s : What is the level of variations in terms of impact of the risks so this clarity will be there so that necessary
+1523.28s - 1527.9s : Organization or project manager can get ready to face those risks if it is a negative risk
+1528.16s - 1531.8s : Definitely should have a mitigation or avoidance or acceptance
+1531.8s - 1539.26s : Whatever the mitigation plan you have to eliminate the negative impact of the risk when it occurs if it is a project positive risk
+1539.34s - 1546.34s : It's quite obvious one has to take the advantage of that one has to enhance exploit share a positive risk so that
+1546.88s - 1554.86s : Organization is benefited further procurement so whenever a project is initiated whenever a project is taken up the organization who is doing the project
+1555.3s - 1563.4s : Cannot create everything cannot develop everything in that project lifecycle so organization would take a decision make a decision stating that
+1563.68s - 1565.28s : some of the
+1565.28s - 1568.62s : Deliverables we make ourselves some of the products we make ourselves
+1569.34s - 1575.32s : Some of the products we purchase some of the services we purchase so to purchase that has to happen from a
+1576.2s - 1582.96s : Specific supplier you cannot go with every supplier you should evaluate the suppliers qualify the suppliers and then select
+1583.46s - 1589.34s : Onboard the supplier and then get the services or products supplied by that particular supplier
+1589.34s - 1596.3s : So while doing this one has to understand what type of contracting they need to enter with so three types of contracts
+1596.3s - 1599.22s : We speak basically one is about a cost
+1599.34s - 1606.08s : Plus contract where cost is fully known to the project manager and to the organization so apart from known cost
+1606.08s - 1613.28s : A fee will be paid to the supplier another one is fixed price where project manager or the organization who is awarding that
+1613.46s - 1617.42s : Contract to a supplier will not know what is the cost instead it is a fixed price
+1617.42s - 1624.8s : But important here is the scope of work needs to be clearly articulated and defined another type of contracting and with time and material where
+1625.1s - 1629.3s : The billing will happen based on the amount of time one is spent on that
+1629.34s - 1633.44s : Particular I hire a resource or onboard a resource on a time and material basis
+1633.44s - 1639.88s : And what is that effort that resource has been put based on that billing will happen the three types of contracts depending on the different
+1639.88s - 1647.2s : Scenarios of the project will be signed with the contractor however before doing that it is very essential to identify those suppliers
+1647.36s - 1653.72s : Sign off with them and monitor and manage them so if deliverables are not there. It is very essential to look at the
+1654.54s - 1658.2s : termination one has to terminate otherwise one has to ensure instead of
+1658.2s - 1665.34s : Terminating should be able to put some effort to educate them also so that they come up to the mark so project is benefited
+1665.34s - 1671.16s : So depending on what needs to be done that call has to be taken on a regular basis and critical success factor
+1671.16s - 1676.14s : So for every project there should be an articulation of critical success factor
+1676.24s - 1679.26s : So based on that one can confirm
+1679.66s - 1684.24s : Yes project has achieved his objectives or project has not achieved his objectives
+1684.24s - 1687.72s : So key critical success factor should be supported through
+1688.2s - 1690.1s : The matrix key performance indicators
+1690.1s - 1697.64s : So key performance indicators provide those metrics to say critical success factor is achieved for example if I want to become successful in an exam
+1697.98s - 1706.36s : Critical success factor is scoring or passing the examination or let me say to pass the examination key performance indicator is scoring
+1707.02s - 1712.36s : 60% and above so critical success factor for me to get promoted is to pass in this particular exam
+1712.36s - 1717.76s : So to pass in this exam minimum I should score is 60% that is KPI passing in the exam
+1717.76s - 1718.2s : that is
+1718.2s - 1723.86s : critical success factor. So how will I measure that success factor is KPI. So every project
+1723.86s - 1730.7s : which it produces a specific product or services by using a specific resources and each of these
+1730.7s - 1737.48s : the resources, the processes, the templates, the deliverables all these needs to be measured on a
+1737.48s - 1742.88s : continual basis. So there are critical success factors defined and those are measured by defining
+1742.88s - 1748.24s : KPIs to that critical success factors. So basically critical success factor provides the insight
+1748.24s - 1753.22s : towards what needs to be measured and when you measure what should be the focus and to achieve
+1753.22s - 1758.46s : those critical success factors the indicator is key performance indicators. When you measure yes
+1758.46s - 1764.26s : the moment you achieve that your CSF is achieved. Next deliverables. So deliverables are those which
+1764.26s - 1770.28s : comes as an output of the project right. It may be a product, it may be a service, it may be a result.
+1770.28s - 1772.82s : So this refers to the output within the
+1772.82s - 1772.86s : school.
+1772.88s - 1802.82s : So there can be one or more deliverables within a single project. So these deliverables may be the items that are to be sent externally to a customer or a stakeholder. So every deliverable will have a defined scope will have a defined specification. So those deliverables has to be measured, tested and one has to confirm yes this deliverable is performing as we are intended to have the performance. Accordingly the decision will happen should we accept this particular deliverable or not.
+1802.82s - 1811.34s : If there any deviation that has to go back for correction. So that's the reason we have monitoring and control all the control processes like control quality focus on the product
+1811.34s - 1816.2s : straight whether it has achieved that results or not is that functional as needed or not. One has to
+1816.2s - 1821.76s : ensure these deliverables has all those features and functionalities only then that can be handed
+1821.76s - 1826.46s : over to the respective stakeholder customer operation who over the stakeholder it is. Next
+1826.46s - 1832.68s : is work breakdown structure. So when we say work breakdown structure when I look at a specific piece of product or service.
+1832.82s - 1837.68s : and have a bigger picture. I cannot even visualize the various different components,
+1838.04s - 1844.4s : various different actions involved in achieving that bigger deliverable. So if I say a car,
+1844.72s - 1850.58s : so I can think of a body external, I can think of a mirror on that body, I can think of a glass
+1850.58s - 1855.78s : in the front side as well as the back side and also I can think of interiors like seat,
+1856.16s - 1861.7s : then accelerator, steering, dashboard, all this I can visualize. But since I am not a technology
+1861.7s - 1867.88s : expert relating to car, can I visualize all those parts which are working inside for car to move
+1867.88s - 1872.96s : like engine, the battery assembly, I don't know what to say further. So all these can be visualized
+1872.96s - 1879.28s : by an expert. So every product or services should be broken down into multiple pieces. I am not
+1879.28s - 1884.56s : saying go and break that product, I am saying that product will have multiple components which are
+1884.56s - 1890.76s : involved. Those needs to be segregated. For example, if I say cars exteriors, cars interior,
+1890.76s - 1891.68s : so cars exterior,
+1891.7s - 1896.24s : exterior, external items you can see whatever you visualize, body, body structure, mirror,
+1896.66s - 1903.0s : mirror assembly, headlights, then tires. So likewise whatever I can visualize, I will make
+1903.0s - 1909.04s : it as a line items under the exterior. So under for example, under a mirror, mirror I can speak
+1909.04s - 1914.92s : about mirror glass, mirror cap, mirror pedestal and mirror assembly where it moves, where you can
+1914.92s - 1920.58s : move the mirror. So these are the various components involved in a mirror. So I need to ensure by
+1920.58s - 1921.68s : breaking down the interior, I can visualize the exterior, the exterior, the body, the body structure,
+1921.7s - 1922.3s : overall that if I do not know what I will be saying or what to say about the interior, the things
+1922.3s - 1923.68s : I am about to tell in an interview, what is the major context.
+1925.12s - 1926.68s : Branch 4- imaginar the interior, which is more technical than you may think.
+1926.68s - 1927.74s : AET, 30 långapo Sahjani study, CNN
+1927.74s - 1929.98s : I studied in Indian Left Health facilities, J density than I have stored Univ in the
+1929.98s - 1933.1s : country of Central India, and how the ADHD candy that people feel installed in the center of many
+1933.1s - 1939.98s : of the weiter provinces based on their physical body located around them next to the renovation
+1939.98s - 1944.18s : and gadgets or after the closure of the wreckage museum and others. Here are the broken down
+1944.18s - 1948.1s : building, this project with theboth them. There many elements necessary for us to understand
+1948.1s - 1949.58s : and traumatize the sports events abroad on only $20 per hour through our sun願 leider.
+1949.58s - 1950.84s : Thhre were few muito money needed to build the side and artists having your adult start
+1950.84s - 1955.34s : Further, after creating a work breakdown structure, one will go and sequence the activity, look
+1955.34s - 1960.34s : at, sequencing will happen based on in what priority deliverable should happen, what order
+1960.34s - 1961.62s : deliverable should happen.
+1961.62s - 1965.12s : Then once the sequencing is done, it will be checked to see whether anything can be
+1965.12s - 1970.34s : optimized, anything can be done in such a way that smooth flow of the project can happen.
+1970.34s - 1973.84s : There is no dependencies which will make project to delay.
+1973.84s - 1978.84s : Like as the flow happens smoothly, so you would find the various techniques like critical
+1978.84s - 1982.08s : path method, network diagramming, critical chain method.
+1982.08s - 1983.32s : So all these are used.
+1983.32s - 1985.26s : The floats of an activities are checked.
+1985.26s - 1989.18s : Then leads and lags of the activities, the relationship between activities.
+1989.18s - 1994.08s : So accordingly, full visualization in terms of how the project will flow and how, in what
+1994.08s - 1997.16s : order the deliverables are happening can be easily visualized.
+1997.16s - 2000.32s : So that is the reason first activity is to do the product breakdown which would result
+2000.32s - 2002.36s : in work breakdown structure.
+2002.36s - 2003.84s : So those are the points.
+2003.84s - 2008.76s : Till now whatever I mentioned are the basic understanding one should have about
+2008.76s - 2008.8s : everything.
+2008.84s - 2009.84s : So that is the point.
+2009.84s - 2010.84s : So I will leave it for now.
+2010.84s - 2011.84s : So let us move on to the next point.
+2011.84s - 2012.84s : So the next point is the best practices.
+2012.84s - 2013.84s : So the best practices are the best practices that you can adopt and adapt to your project.
+2013.84s - 2014.84s : So the best practices are the best practices that you can adopt and adapt to your project.
+2014.84s - 2019.84s : So as you deep dive into various best practices like PMP by PMI, PRINCE2 by Axolos, Scrum Master,
+2019.84s - 2024.34s : Agile Scrum Master, similarly you have Certified Scrum Master, so many agile practices.
+2024.34s - 2028.88s : So when you look at any of the best practices, that will tell you, clearly articulate what
+2028.88s - 2034.22s : should be the practice for you to adopt and adapt that practices so that your project
+2034.22s - 2035.36s : can become successful.
+2035.36s - 2038.76s : So any of those approach you touch upon, all those refer to the best practices.
+2038.76s - 2041.0s : All those refers to these basic things.
+2041.0s - 2045.64s : In the absence of these basic things, none of those best practices discusses the project
+2045.64s - 2046.64s : management.
+2046.64s - 2051.36s : Now typically in the industry, there are lot of job roles to the project management which
+2051.36s - 2052.86s : we have seen.
+2052.86s - 2058.06s : So based on that, this information is captured here on various job roles in a project management.
+2058.06s - 2063.46s : So some of them are like project manager, senior project manager, project lead, resource
+2063.46s - 2068.68s : manager, PMO that is project management office analyst, steering committee member.
+2068.68s - 2073.0s : So not necessarily all the project management roles are limited to this.
+2073.0s - 2077.8s : So these are the roles which commonly you see and we are trying to capture that to give
+2077.8s - 2078.8s : the insight.
+2078.8s - 2082.98s : When I say project manager, the project manager is the owner, one has to take an accountability
+2082.98s - 2084.98s : for the project.
+2084.98s - 2089.56s : Project manager takes the project according to the plan and plays a lead role in all the
+2089.56s - 2091.56s : steps of the project management.
+2091.56s - 2096.56s : So responsibilities would be managing, reviewing and prioritizing the task wherever necessary.
+2096.56s - 2097.56s : Looking after risk management, looking after the project management, looking after the
+2097.56s - 2098.56s : project management, looking after the project management, looking after the project management,
+2098.56s - 2102.34s : stakeholder management and project communication management.
+2102.34s - 2106.88s : Some of the salary what we found while we were doing the survey.
+2106.88s - 2110.68s : The success ratio of a project depends majorly on the project manager.
+2110.68s - 2113.74s : So the demand for project manager is rapidly increasing in the market.
+2113.74s - 2119.82s : So accordingly 75,474 per year that is the USD.
+2119.82s - 2122.5s : In INR it is 1500,000.
+2122.5s - 2126.08s : So this is what the salary on an approximation what was found.
+2126.08s - 2127.88s : Next role we look at senior project manager.
+2127.88s - 2132.22s : Where senior project manager is the head of the overall project management plan.
+2132.22s - 2136.96s : The role demands in depth knowledge of all the project aspects.
+2136.96s - 2138.38s : On the specifics of the project.
+2138.38s - 2142.94s : The responsibilities would be planning and coordinating complex projects, visiting project
+2142.94s - 2145.74s : sites to check progress and handle complex issues.
+2145.74s - 2150.6s : So salary looks like 104,000 dollars per year.
+2150.6s - 2154.42s : Here 2092,000 INR per year.
+2154.42s - 2156.52s : So the role of senior project manager is one of the highest paying roles in the industry.
+2156.52s - 2157.52s : So the role of senior project manager is one of the highest paying roles in the industry.
+2157.52s - 2157.86s : So the role of senior project manager is one of the highest paying roles in the industry.
+2157.88s - 2163.0s : As we have seen having several allowances and bonuses because of the criticality involved
+2163.0s - 2168.0s : in that project and the accountability level of that particular individuals in the organization.
+2168.0s - 2169.64s : Next role project lead.
+2169.64s - 2173.56s : So project leads are the one who leads the people throughout the project and provide
+2173.56s - 2176.38s : them with all the information required throughout.
+2176.38s - 2180.94s : So responsibilities involve motivating the team beneath taking care of their needs and
+2180.94s - 2185.56s : paying attention to what they feel ordering or controlling the project team since the
+2185.56s - 2187.52s : project lead has more freedom than the team.
+2187.52s - 2188.52s : Next role project lead.
+2188.52s - 2194.96s : So project lead is the one who gives the best possible outcome and is hence the demand for
+2194.96s - 2197.62s : the project lead in the company never reduces.
+2197.62s - 2204.86s : So in USD 82,000 per year whereas in INR it is 1,269,000 per year.
+2204.86s - 2207.68s : Next role we can look at on resource manager.
+2207.68s - 2213.48s : So resource manager is the human resource needed to make the project success.
+2213.48s - 2216.16s : So one has to manage those resources.
+2216.16s - 2217.16s : Responsibility involved.
+2217.16s - 2219.92s : Determining the right people to the right projects at the right time.
+2219.92s - 2224.26s : Managing employees currently and determining hiring needs depending on the project's requirements.
+2224.26s - 2231.62s : So salary would be around 64,000 USD which comes around 966,794 in INR.
+2231.62s - 2233.22s : Project management office analyst.
+2233.22s - 2238.22s : For this role the project management office analyst works with PMO means project management
+2238.22s - 2242.92s : office and does not look at the project or manage the project directly.
+2242.92s - 2247.16s : Instead does most of the data driven work which required.
+2247.16s - 2252.28s : A project to have or project to get supported by that so that project managers will have
+2252.28s - 2253.28s : better insight.
+2253.28s - 2256.16s : Analysing and interpreting the data concerning the project.
+2256.16s - 2258.54s : Figuring out the future risks to the project.
+2258.54s - 2261.46s : Finding new ways to advance the idea of the project management.
+2261.46s - 2270.52s : So salary would be 106,253 per year in USD whereas 449,337 in INR per year.
+2270.52s - 2272.32s : So steering committee member.
+2272.32s - 2277.16s : So the steering committee members are the members who do not work on the project themselves.
+2277.16s - 2280.12s : They are there to help the project manager.
+2280.12s - 2283.44s : Like providing inputs during the development of a project.
+2283.44s - 2286.56s : Advising on the budget and evaluating the project strategies.
+2286.56s - 2291.46s : Taking regular feedbacks from the project managers and asking necessary questions.
+2291.46s - 2296.16s : So salary would be around 68,497 USD per year.
+2296.16s - 2301.2s : So those were the various roles and that list is not an exhaustive list.
+2301.2s - 2305.12s : Various different roles we come across but these are the basic roles which is seen in
+2305.12s - 2306.12s : the industry.
+2306.12s - 2307.12s : These roles are being required.
+2307.16s - 2308.16s : These roles are being recruited.
+2308.16s - 2312.48s : Now there are various project management certifications which are offered as I mentioned earlier.
+2312.48s - 2317.22s : So those certifications are PMP that is project management professional from PMI.
+2317.22s - 2321.48s : Agile certified practitioner that is PMI ACP again from PMI.
+2321.48s - 2323.8s : Then certified associate in project management.
+2323.8s - 2329.92s : So difference between CAPM and PMP is like CAPM would act as a basic level of certification
+2329.92s - 2334.24s : for those who does not have a sufficient project experience, project management experience.
+2334.24s - 2336.12s : Whereas PMP is for those who has some project management experience.
+2336.12s - 2344.0s : Similarly PMI ACP is the one who is aspiring to look at agility in project management and
+2344.0s - 2345.0s : they can go for it.
+2345.0s - 2346.0s : Certified scrum master.
+2346.0s - 2350.84s : Yes it is a scrum master certificate which will explain the role of a scrum master in
+2350.84s - 2351.84s : detail.
+2351.84s - 2357.92s : Similarly PRINCE2 a certification from Axelos which also speak about all the aspects of
+2357.92s - 2362.12s : the project what we discussed and provides the framework for project management.
+2362.12s - 2363.12s : Axelos also provides PRINCE2 certification in Agile also.
+2363.12s - 2364.12s : So these are the three main roles which we are going to discuss in this video.
+2364.12s - 2365.12s : So let us start with the first one.
+2365.12s - 2372.8s : So we will look at each one of these certain details which are required for us to know.
+2372.8s - 2379.48s : So project management professional as I mentioned is most acknowledged and value the certificate
+2379.48s - 2384.68s : value what it carries which has resulted to the certified professionals in landing up
+2384.68s - 2387.32s : in highest paid jobs in the world.
+2387.32s - 2392.16s : So certified managers gets 20% more salary than the average salary.
+2392.16s - 2393.92s : So to take up an examination.
+2393.92s - 2399.24s : One has to go through the formal training of 35 hours that is one of the prerequisites
+2399.24s - 2404.32s : and there should be some experience of 4500 hours of project managing project by leading
+2404.32s - 2409.98s : various activities of a project and once the person becomes eligible with that prerequisites
+2409.98s - 2415.88s : person will become register in the PMI's website becomes member and then go for examination.
+2415.88s - 2421.32s : So examination fee for PMP would be $405 for the members who are registered with PMI and
+2421.32s - 2423.6s : for those who are not registered as a member with PMI.
+2423.6s - 2425.6s : It is $555.
+2425.6s - 2430.4s : The duration of the examination is four hours and the number of questions will be 200 which
+2430.4s - 2432.76s : are multiple choice questions.
+2432.76s - 2436.46s : So each question carries one marks there is no negative score.
+2436.46s - 2443.48s : Now prerequisites one has to have 4500 hours directing and leading the projects that experience
+2443.48s - 2445.74s : has to be filled in while filling the application.
+2445.74s - 2451.92s : If a person is a bachelor degree holder and along with that 35 contact hours of PMI PM
+2451.92s - 2452.92s : education.
+2452.92s - 2453.52s : Now.
+2453.6s - 2459.32s : Pre-requisites for the one who is not a graduate who may be high school or diploma is 7500 hours
+2459.32s - 2463.36s : of directing and leading project 35 hours of PMI education.
+2463.36s - 2467.2s : So those are the prerequisites before one will go on appear for examination.
+2467.2s - 2473.06s : So once an individual passes PMP examination that certificate is valid for three years.
+2473.06s - 2477.72s : So now after three years if the person aspires to keep the certificate continued they need
+2477.72s - 2483.28s : to produce 60 PDUs professional development units which has to be acquired during those
+2483.28s - 2483.6s : three years.
+2483.6s - 2485.24s : So the additional learning has to be done to get the certificate of PMP.
+2485.24s - 2489.08s : One has to go through additional learning one has to contribute towards project management
+2489.08s - 2490.0s : knowledge base.
+2490.0s - 2494.36s : So those needs to be evidenced and then renewal fee has to be paid and certificate has to
+2494.36s - 2495.36s : be renewed.
+2495.36s - 2499.18s : Then agile certified practitioner as we saw for PMP.
+2499.18s - 2504.64s : Here agile certified practitioner demonstrates that one has relevant experience and education
+2504.64s - 2507.04s : to handle and lead agile projects.
+2507.04s - 2512.1s : The organization has started shifting towards agile as we know in today's industry which
+2512.1s - 2513.28s : makes this certification.
+2513.28s - 2519.4s : fast growing in the world so examination fee would be $435 for PMI members $495
+2519.4s - 2525.06s : for non PMI members duration is 3 hours and multiple choice questions 120
+2525.06s - 2529.96s : questions prerequisites is 2,000 hours project management experience with
+2529.96s - 2535.72s : thousand 500 hours agile experience and 21 contact hours of agile practices so
+2535.72s - 2539.98s : maintenance 30 PDOs are required for every three years and after paying the
+2539.98s - 2543.88s : renewal fee that can be renewed now certified associate in project management
+2543.88s - 2549.02s : so here this is an entry-level certificate of PMI especially for those
+2549.02s - 2554.02s : people who has less project experience it intends to demonstrate fundamental
+2554.02s - 2557.92s : knowledge terminologies and processes of effective project management so
+2557.92s - 2564.16s : examination fee would be $20 to 25 for PMI members whereas $300 for non members
+2564.16s - 2568.84s : of PMI so duration of examination is three hours and examination will have
+2568.84s - 2569.84s : 150 multiple choice questions and the cost of the project is $225 for PMI members
+2569.84s - 2569.96s : so duration of examination is three hours and examination will have 150 multiple
+2569.96s - 2574.52s : choice questions so prerequisites someone who has secondary diploma with
+2574.52s - 2579.04s : 23 contact hours of PMI education is enough there is no experience of doing
+2579.04s - 2584.3s : the project is required as we saw in PMP so maintenance is again three years
+2584.3s - 2588.1s : someone who need to continue the certification has to retake the
+2588.1s - 2592.22s : examination every three years next certified scrum master so certified
+2592.22s - 2595.28s : scrum master is an entry-level certification that helps the
+2595.28s - 2599.82s : professionals to begin as the scrum practitioners is one of the most sought
+2599.82s - 2604.14s : after certifications as other after this one can get the designation of
+2604.14s - 2608.4s : certified scrum master which is offered by scrum alliance so examination fee
+2608.4s - 2612.66s : which will change time to time which is not revealed so one has to approach the
+2612.66s - 2616.68s : training organization where they will get trained on certified scrum master so
+2616.68s - 2621.84s : duration of examination is 60 minutes and pattern would be 16 hours two days
+2621.84s - 2626.52s : of training and 50 multiple choice questions after that particular two days
+2626.52s - 2629.68s : of training then prerequisite is done for maintaining this
+2629.68s - 2634.96s : credentials so one has to ensure it has renewed every two years then projects in
+2634.96s - 2639.5s : controlled environment that is Prince two so Prince two is a method which is
+2639.5s - 2645.5s : effective mostly from the base of UK all the organizations who are from UK region
+2645.5s - 2650.38s : refers to our Prince to certification and it is as popular as any other
+2650.38s - 2654.6s : project management certifications like PMP so examination fee would vary from
+2654.6s - 2659.0s : $900 to $1000 depending on where exactly you're taking the examination and
+2659.0s - 2663.68s : certification will happen at two levels one is at foundation level and other one
+2663.68s - 2669.62s : is practitioner so in foundation it is 60 questions multiple choice and in
+2669.62s - 2675.44s : practitioner it is 68 questions now 60 questions or 68 questions each carries
+2675.44s - 2679.24s : one marks for correct answer any wrong answer there will not be any negative
+2679.24s - 2684.6s : scoring one has to score 55% to clear the examination so prerequisites for
+2684.6s - 2688.82s : Prince to foundation is none whereas Prince to foundation is a prerequisite for the examination.
+2689.0s - 2693.6s : for Prince to practitioner examination so to maintain the certificate one has to
+2693.6s - 2699.5s : achieve 20 CPDs every continued professional development so with this we
+2699.5s - 2705.46s : conclude the understanding about what is project management what is project what
+2705.46s - 2709.04s : are the various key focus areas of the project and various different
+2709.04s - 2713.12s : certifications offered and there in the industry for understanding the best
+2713.12s - 2716.9s : practice of project management various different roles what we went through so
+2716.9s - 2718.82s : before more you need to visit the
+2719.0s - 2724.58s : www.simplylearn.com and I wish all the success for your project management
+2724.58s - 2730.46s : practices journey keep learning keep growing all the best thank you
+2732.32s - 2736.66s : hi there if you liked this video subscribe to the simply learn YouTube
+2736.66s - 2741.22s : channel and click here to watch similar videos to nerd up and get certified
+2741.22s - 2744.04s : click here

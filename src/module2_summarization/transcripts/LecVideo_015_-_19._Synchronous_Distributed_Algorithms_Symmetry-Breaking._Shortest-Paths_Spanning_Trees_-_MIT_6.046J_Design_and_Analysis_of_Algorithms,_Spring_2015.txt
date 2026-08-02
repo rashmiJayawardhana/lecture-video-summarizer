@@ -1,0 +1,1334 @@
+0.0s - 2.46s : The following content is provided under a Creative
+2.46s - 4.0s : Commons license.
+4.0s - 6.3s : Your support will help MIT OpenCourseWare
+6.3s - 10.68s : continue to offer high quality educational resources for free.
+10.68s - 13.28s : To make a donation or view additional materials
+13.28s - 17.24s : from hundreds of MIT courses, visit MIT OpenCourseWare
+17.24s - 18.24s : at ocw.mit.edu.
+26.56s - 29.44s : OK, so today you're going to see something new.
+29.44s - 30.82s : In fact, all this week you're going
+30.82s - 33.54s : to see something that's quite different from what you've
+33.54s - 36.98s : been studying in this course.
+36.98s - 38.44s : These are algorithms, but they're
+38.44s - 42.38s : for a completely different sort of model,
+42.38s - 43.78s : distributed algorithms.
+43.78s - 46.14s : OK, so what are they?
+46.14s - 48.22s : So now instead of having algorithms
+48.22s - 50.52s : that run on a typical computer, you're
+50.52s - 55.44s : going to have algorithms that run on a network of processors.
+55.44s - 58.5s : Or it could be on one machine that has multiple processors.
+59.44s - 61.44s : So these are multi processors that share memory.
+64.14s - 69.4s : So these are much of computing is distributed algorithms now.
+69.4s - 74.78s : They solve problems like communication on the internet,
+74.78s - 79.8s : data management over a network, allocating resources
+79.8s - 82.7s : in a network setting, synchronizing,
+82.7s - 87.56s : reaching agreement among different agents
+87.56s - 88.92s : at remote locations.
+88.92s - 89.12s : So these are all very, very important.
+89.12s - 89.22s : Thank you.
+89.22s - 91.5s : And these are all distributed problems, not things
+91.5s - 94.64s : that you just solve on one computer.
+94.64s - 97.46s : The kinds of algorithms you design for this setting,
+97.46s - 104.64s : these settings, have to work under extremely difficult
+104.64s - 108.36s : platforms, because what you have is concurrent activity that's
+108.36s - 111.74s : going on at many locations, many processors doing things
+111.74s - 113.26s : at the same time.
+113.26s - 115.52s : And you don't know exactly when everybody's
+115.52s - 117.92s : going to perform their activities.
+117.92s - 118.92s : You can have different types of algorithms.
+118.92s - 122.12s : You can have different sorts of timing uncertainty.
+122.12s - 125.04s : The order of events isn't clear.
+125.04s - 128.78s : There can be inputs that arrive at different locations.
+128.78s - 132.18s : And then you also have to deal with failure and recovery
+132.18s - 134.6s : of some of the processors or some of the channels
+134.6s - 136.54s : involved in the computation.
+136.54s - 138.04s : You don't think of any of this when
+138.04s - 140.3s : you're just trying to run an algorithm on one computer.
+142.98s - 146.14s : So distributed algorithms can be pretty complicated.
+146.14s - 148.26s : It's not easy to design them.
+148.26s - 150.68s : And after you design them, you still
+150.68s - 152.06s : have to make sure they're correct.
+152.06s - 154.3s : So there are issues involved in proving them correct
+154.3s - 156.08s : and analyzing them.
+156.08s - 157.58s : A little bit of history.
+157.58s - 162.04s : The field pretty much started around the late 60s.
+162.04s - 166.4s : Edsger Dijkstra was one of the earliest leaders of the field.
+166.4s - 169.88s : He won one of the first Turing Awards.
+169.88s - 172.78s : Leslie Lamport won the Turing Award last year,
+172.78s - 176.3s : although he actually started as a very young guy way back
+176.3s - 177.56s : in the early days of the field.
+178.26s - 181.08s : Though he won the Turing Award in winter поy by the 1960s.
+181.1s - 198.34s : Ed O'Hare, him and his 올해 Goethe
+198.34s - 203.72s : created the momentum analysis CryoCode,
+203.74s - 206.74s : which will be in a couple of minutes.
+206.78s - 208.26s : Excellent.
+208.26s - 212.52s : and just introduce a very few fundamental algorithms,
+212.76s - 215.88s : and you'll see along the way some techniques for modeling and analyzing them.
+216.98s - 220.22s : Okay, the two models here are synchronous distributed networks
+220.22s - 223.26s : and asynchronous distributed networks.
+224.32s - 228.22s : The problems I'll look at in the synchronous setting are a simple problem
+228.22s - 232.42s : with leader election, which is a symmetry-breaking problem, basically,
+233.1s - 235.68s : maximal independent set problem,
+235.68s - 240.06s : and then a couple of problems that should look familiar to you
+240.06s - 241.88s : from the settings of this class,
+242.42s - 245.82s : establishing structures like breadth-first spanning trees
+245.82s - 247.16s : and shortest paths trees.
+247.84s - 251.3s : In the asynchronous case, I'll revisit these last two problems,
+251.4s - 253.62s : setting up breadth-first and shortest paths trees.
+255.0s - 258.64s : Okay, so I mentioned something about modeling and proofs and analysis.
+259.4s - 262.06s : It turns out getting the formal models right
+262.06s - 265.06s : and getting real proofs
+265.06s - 265.66s : tends to be a little bit more difficult.
+265.66s - 267.64s : It's going to be pretty important for distributed algorithms
+267.64s - 270.58s : because with all the stuff going on, they're complicated,
+270.9s - 272.8s : and it's easy to make mistakes.
+273.8s - 277.56s : The kinds of models that we use are interacting state machines,
+278.14s - 279.22s : inputs and outputs.
+279.36s - 280.4s : They send each other messages.
+281.8s - 285.02s : But the kinds of proofs you do typically use invariance,
+285.06s - 287.58s : a technique that you're very familiar with from this class.
+287.68s - 290.26s : You can still use them in a distributed setting,
+290.6s - 293.06s : and you still prove them the same way by induction.
+293.7s - 295.36s : Something else that comes up a lot
+295.36s - 295.64s : in the distribution of the algorithms is the fact that they're not the same.
+295.92s - 297.26s : So, the way to do that,
+297.26s - 299.5s : when you're using a distributed setting,
+299.5s - 300.98s : is modeling and proofs using levels of abstraction.
+300.98s - 303.64s : You might want to give an abstract description of an algorithm
+303.64s - 305.04s : and prove that that works,
+305.04s - 306.78s : and then you have a very detailed, complicated,
+306.78s - 309.74s : lower-level description that you can prove
+309.74s - 311.9s : implements the higher-level description.
+311.9s - 314.14s : It's another popular technique.
+314.14s - 317.58s : You use different kinds of complexity measures.
+317.58s - 321.74s : For time complexity, you would measure rounds,
+321.74s - 323.58s : if it's a synchronous model,
+323.58s - 325.58s : or some approximation to time.
+325.64s - 331.16s : real time if it's the asynchronous model. You also count communication either the
+331.16s - 334.54s : number of messages you send or the total number of bits that you send in an
+334.54s - 341.64s : algorithm. Okay so throughout these two lectures we'll be looking at
+341.64s - 347.1s : distributed networks. So you start with a graph. Let's just look at undirected
+347.1s - 354.32s : graphs this week. We use N in this field for what you're calling V, the total
+354.32s - 362.2s : number of nodes in the network or yeah vertices in the graph. We use the
+362.2s - 367.46s : notation gamma of U to mean the neighbors of U in the graph. So every
+367.46s - 371.88s : vertex of the graph has set of immediate neighboring vertices, that's
+371.88s - 378.94s : gamma of U. And the degree of U is the size of the neighborhood, the
+378.94s - 384.16s : number of neighbors of a vertex. Okay so we start with the graph but
+384.16s - 384.3s : now we're going to look at the number of vertices in the graph. So we start with the graph but now
+384.3s - 389.7s : we're going to plunk down a process, some kind of active entity at each
+389.7s - 394.74s : vertex of the graph. So this is some kind of automaton. If you've taken automata
+394.74s - 399.42s : theory it's not really finite state machines, it's more like infinite state
+399.42s - 405.72s : automata that can interact with each other. So we usually talk about vertices
+405.72s - 410.46s : in a graph, processes at the vertices of a graph, but sometimes we get sloppy and
+410.46s - 414.14s : just say nodes and it could be we could mean either the vertex or the
+414.14s - 419.14s : active thing running at the vertex. Can't keep it straight all the time.
+419.14s - 424.54s : Okay and then with the edges of the graph we would put communication
+424.54s - 429.86s : channels, one in each direction, so that the processes can communicate over the
+429.86s - 434.78s : edges. This week I'm not going to talk about what happens when you introduce
+434.78s - 439.62s : failures because we just don't have time. A lot of distributed computing theory
+439.62s - 443.98s : deals with what happens when some of the components in your system fail.
+443.98s - 448.9s : How do you cope with that? Okay so we'll start right in with synchronous
+448.9s - 455.54s : distributed algorithms. A source for that if you're interested is the first
+455.54s - 460.8s : technical chapter in my book. Okay so you have processes at the nodes of a graph
+460.8s - 467.68s : like I just said. They communicate using messages. So think of each process as not
+467.68s - 472.12s : knowing who his neighbors are, not knowing anything about the graph. So what
+472.12s - 473.88s : do they have? They have ports.
+473.98s - 477.88s : You could say that they have output ports on which they could send a message
+477.88s - 484.04s : and then some input ports on which messages can come in. So in general the
+484.04s - 489.98s : process doesn't know who the ports are connected to. It just has local names for
+489.98s - 495.4s : the ports like one, two, three, up to the degree. If you have any questions just
+495.4s - 501.28s : stop me and ask if something's not clear. Otherwise I'll go pretty fast and I
+501.28s - 502.8s : know that none of this is familiar.
+503.98s - 511.24s : Okay so in general the processes don't have to be distinguishable at all. So they
+511.24s - 515.86s : don't have to have like special unique identifiers so you can tell the
+515.86s - 520.0s : processes apart. They could be completely identical. Well if they have different
+520.0s - 524.5s : numbers of ports they're not exactly identical. They certainly know how many
+524.5s - 527.5s : ports they have and at least the local names for the ports.
+529.18s - 533.92s : Okay good so these are processes sitting at the nodes of the graph.
+533.98s - 540.16s : What do they do? So they execute and we talk about an execution of this network.
+540.16s - 545.8s : It goes in synchronous rounds and every round every process looks at its state
+545.8s - 552.88s : and decides what messages it's going to send on all of the ports. Okay so could
+552.88s - 559.22s : send you know different messages on different ports. So then what happens is
+559.22s - 563.48s : all the messages that the processes decide to send get put onto the channels
+563.48s - 566.24s : and they get delivered to the process at the other end.
+566.24s - 571.7s : Okay so the process at the other end is in some state. All these messages come in.
+571.7s - 576.24s : It updates the state based on the arriving messages. So it changes state in
+576.24s - 579.24s : response to whatever comes in.
+579.24s - 587.18s : Okay and this is completely different from this semester so far. We're going to
+587.18s - 592.86s : completely ignore the costs of the local computation. So each node can compute
+592.86s - 596.82s : some complicated algorithm of the sort you've been studying in this class and we
+596.82s - 601.2s : usually don't consider that cost. We're more worried about the communication
+601.2s - 607.96s : costs. And so we'll be focusing on the number of rounds that it takes in the
+607.96s - 612.62s : synchronous case and the number of communication messages or bits.
+612.62s - 622.66s : Okay so far. Okay so let's start on the first problem. Here's a graph. The nodes
+622.66s - 626.86s : start out possibly identical but you want to somehow distinguish one of them
+626.86s - 634.42s : to be a leader. Alright so you have this arbitrary connected undirected graph and
+634.42s - 639.52s : exactly one process is supposed to elect itself the leader. That means it outputs
+639.52s - 646.16s : a special leader signal. Alright so exactly one should do that. So why do you
+646.16s - 652.66s : want a leader? Well in practice leaders can coordinate things. They can take
+652.66s - 656.82s : charge of communication and inform other nodes when they're allowed to send
+656.82s - 660.78s : messages. They can coordinate the processing of data. Basically it allows
+660.78s - 664.66s : you to centralize some of the computation. It can schedule the other
+664.66s - 669.28s : processes. It can allocate the resources. It could help to reach agreement among
+669.28s - 672.66s : the processes if they start out with different opinions about what's supposed
+672.66s - 678.66s : to happen. Alright so let's start out with a very simple case. You have a clique.
+678.66s - 682.46s : Here's a four clique where all the vertices are directly
+682.46s - 687.86s : connected to all the other vertices with two directional channels. Okay and
+687.86s - 693.68s : the processes are identical. Okay so I should have asked you instead of just
+693.68s - 700.24s : giving you the answer here but are they able to elect a leader? So this theorem
+700.24s - 705.02s : says that in general that's impossible or it's not possible in the most general
+705.02s - 710.28s : case. Okay if you have no matter what n is let's just say we have an n vertex
+710.28s - 711.28s : clique for some n.
+712.46s - 717.74s : It's not possible to have any algorithm that you can have all the
+717.74s - 723.08s : processes run. If it's deterministic and the processes start out all
+723.08s - 729.02s : indistinguishable there's no way that they can elect a single node as a leader.
+729.02s - 732.78s : So do you have an intuition for why that might be the case? Yeah?
+732.78s - 741.78s : Since they're all connected and you assume the communication in one round is equal.
+742.46s - 752.0s : It's deterministic. There's no likelihood here. And there's no nobody is doing any
+752.0s - 758.34s : selecting okay? You're talking as if there's somebody who's choosing a process to do something.
+758.34s - 763.78s : There isn't anyone in charge. So this is a really different way of thinking. Yeah?
+763.78s - 768.78s : So every node is essentially the exact same. So if it says okay let's assume I'm going
+768.78s - 770.74s : to be the leader. Everyone is going to assume they're going to be the leader and then they
+770.74s - 771.74s : communicate with each other. Or if it's just the same node. So if it's the same node. Then
+771.74s - 772.24s : they're going to be the leader. If it's the same node. Then they're going to be the leader.
+772.46s - 777.22s : That's exactly the right intuition. They can't distinguish themselves because they're
+777.22s - 782.28s : always going to do the same thing. Okay. Let's look at a very simple case. Suppose we have
+782.28s - 789.28s : just two nodes. Two node clique. Two nodes connected by channels. Okay. These are identical.
+789.6s - 794.12s : They're deterministic. What can they do? Well you could try to design algorithms for one
+794.12s - 799.66s : of them to elect itself as the leader. But you can show by using induction that the processes
+799.66s - 802.46s : are actually going to remain in the same state as each other.
+802.46s - 809.46s : Forever. However long. However many rounds you execute. So let's slow down. We can work
+810.58s - 816.88s : by contradiction. Suppose you have an algorithm that solves this problem. Okay. Both of the
+816.88s - 821.34s : processes are identical. They have. They start in the same start state. Let's say there's
+821.34s - 825.88s : a unique start state or. Unique start state.
+825.88s - 831.6s : Okay. So we can prove by induction on the number of rounds that after any number of
+831.6s - 838.6s : rounds, say R rounds, the processes are still in identical states. Okay. So the inductive
+838.68s - 842.36s : step is, all right, they're in identical states after some number of rounds. Let's look at
+842.36s - 848.38s : the next round. They're in the same state so they generate the same messages. Okay.
+848.38s - 852.96s : So they send each other the same messages. They receive the same message. And then they
+852.96s - 859.96s : make the same state change. So they stay in the same state. Okay. And you can tweak this
+861.6s - 863.6s : and say how this works for. Yeah. Question.
+863.6s - 867.6s : So in what ways is the proof .
+867.6s - 872.94s : Oh. Oh. I'm not finished. You're exactly right. We have to finish by using the requirements
+872.94s - 879.22s : of the problem. Since the algorithm has to solve the leader election problem, the requirements
+879.22s - 886.22s : say that eventually one of them has to output leader. Okay. And what happens when he does?
+889.72s - 890.72s : Anyone?
+890.72s - 891.6s : Okay.
+891.6s - 892.6s : Yeah.
+892.6s - 893.6s : The other node also outputs the leader signal.
+893.6s - 898.0s : Yeah. They would. The other one would also do the same thing. We're saying round by round.
+898.0s - 904.46s : They stay in the same state. So as someone said before, when one guy outputs leader at
+904.46s - 909.5s : the same round, the other guy will output leader as well. So that's a contradiction to
+909.5s - 913.56s : the problem requirements. Notice we didn't assume anything at all about exactly how the
+913.56s - 919.4s : algorithm works. We're just saying however it works, it can't solve this under the assumptions
+919.4s - 920.72s : that the nodes are indistinguishable and deterministic.
+920.72s - 930.94s : Okay. So as you can see, this will extend if you have larger cliques of size n. So now
+930.94s - 936.1s : the process has not just one output port. It has n minus 1 output ports to connect to
+936.1s - 943.84s : all the other nodes. Let's say they're numbered 1 through n minus 1. And one of the possibilities,
+943.84s - 948.1s : and one I'll use in this proof, is that the ports happen to be numbered consistently so
+948.1s - 948.72s : that if you have output ports that are not equal to the output ports, then you can't
+948.72s - 949.72s : do that. So you have to do the same thing. You have to do the same thing. You have to
+949.72s - 955.96s : have output port number k at one node. It's connected to input port number k at the other
+955.96s - 961.78s : end. Okay. So that's one way things can match up. All right. If that's the case, we can
+961.78s - 966.88s : do the same proof we just did. Show by induction that all the processes in the clique remain
+966.88s - 972.58s : in the same state forever. Okay. So same proof. Suppose you have an algorithm that solves
+972.58s - 976.36s : it. They all begin in the same state. You show by induction that they all remain in
+976.36s - 977.72s : the same state. Okay.
+977.72s - 978.72s : Okay.
+979.72s - 984.66s : Well, so now we slow down a little bit. For each process sends a possibly different message
+984.66s - 991.1s : on each port, but everybody sends the same message on port k because they're all indistinguishable.
+991.1s - 995.32s : And then because the way the ports match up, everybody receives the same message on port
+995.32s - 999.72s : k, and then they make the same state changes. Yeah?
+999.72s - 1006.72s : This proof implies that there's a kernel for simplifying the graph when you find a
+1006.72s - 1007.72s : .
+1007.72s - 1008.72s : Oh.
+1008.72s - 1009.72s : Okay.
+1009.72s - 1010.98s : Oh, and unfortunately, basically every last error on the tree can give you a different
+1010.98s - 1011.98s : string of cev.
+1011.98s - 1015.6s : No, because if you have a graph that consists of a clique and then, let's say, some other
+1015.6s - 1021.74s : stuff, maybe the leader could be somebody outside the clique. You can't just say, because
+1021.74s - 1025.76s : there's a clique, that you can't elect a leader, because you can break the symmetry of the
+1025.76s - 1028.02s : graph with other stuff in the graph.
+1029.04s - 1031.38s : Yeah?
+1031.38s - 1037.76s : Oh. Because everybody is going to send the same message on the same numbered port, because
+1037.76s - 1038.72s : they're identical?
+1038.72s - 1039.2s : . Yeah.
+1039.72s - 1047.72s : And one way the ports can be hooked up, and we have to tolerate all ways they could be hooked up, say an adversary hooks them up,
+1047.72s - 1056.72s : is that port K, somebody's output port, is the other end's input port, number K.
+1056.72s - 1060.72s : So then they all receive the same message on their port number K.
+1060.72s - 1068.72s : Is it actually possible to always hook up the ports that way? Is there like a graph with three vertices?
+1068.72s - 1072.72s : I'm just doing it for cliques. Yeah, it is.
+1072.72s - 1079.72s : Yeah, you can do it. I mean, you could have port one always going clockwise and port two going counterclockwise.
+1079.72s - 1085.72s : Yeah, I mean, there's always a way to do that in a clique. Yeah, I checked that.
+1085.72s - 1090.72s : Okay, so what you've just seen is one of the very basic problems for distributed algorithms,
+1090.72s - 1093.72s : which is breaking symmetry among identical processes.
+1093.72s - 1098.72s : And you see that deterministic, indistinguishable processes just can't do it.
+1098.72s - 1101.72s : So we have to have something more.
+1101.72s - 1104.72s : So what do you think we could add to make this problem solvable?
+1104.72s - 1108.72s : Stimulant processes.
+1108.72s - 1109.72s : Can't hear?
+1109.72s - 1110.72s : Probability.
+1110.72s - 1115.72s : Probability, okay. Anything else?
+1115.72s - 1118.72s : So we could have the processes actually distinguishable.
+1118.72s - 1123.72s : The common way in this area is to say that each process has an identifier.
+1123.72s - 1126.72s : Like, you know, you buy a chip and it's got some identifier burned in.
+1126.72s - 1127.72s : Okay.
+1127.72s - 1129.72s : So you have some kind of unique identifiers.
+1129.72s - 1132.72s : Or you can use randomness.
+1132.72s - 1141.72s : Okay, for unique identifiers, you assume everybody has some number or some identifier that it knows what it is.
+1141.72s - 1146.72s : It's built into its state, let's say, a special state variable.
+1146.72s - 1148.72s : They're totally ordered generally.
+1148.72s - 1154.72s : They could be integers or, you know, from some totally ordered set.
+1154.72s - 1155.72s : When you say unique identifiers, it means that, you know,
+1155.72s - 1166.72s : different identifiers could appear any place in the graph, but each identifier can appear at most once.
+1166.72s - 1174.72s : You could have a huge identifier space and a small graph, but you're just selecting some identifiers to put in the processes in the graph.
+1174.72s - 1175.72s : Okay.
+1175.72s - 1176.72s : So that's one set up.
+1176.72s - 1179.72s : And the other one, of course, is using randomness.
+1179.72s - 1180.72s : Okay.
+1180.72s - 1183.72s : So let's look at the unique identifiers first.
+1183.72s - 1185.72s : Now the problem becomes simple.
+1185.72s - 1186.72s : It becomes easy.
+1186.72s - 1188.72s : Let's look at the clique again.
+1188.72s - 1190.72s : Suppose there's an algorithm.
+1190.72s - 1197.72s : Well, let's construct an algorithm that consists of deterministic processes with unique identifiers.
+1197.72s - 1198.72s : Okay.
+1198.72s - 1202.72s : And we're going to guarantee to elect a leader in the graph.
+1202.72s - 1205.72s : And moreover, it's just going to take one round of communication.
+1205.72s - 1210.72s : And it's only going to use N squared messages.
+1210.72s - 1211.72s : How could that work?
+1215.72s - 1219.72s : Well, everybody in this clique has a unique identifier.
+1219.72s - 1221.72s : What would they do?
+1221.72s - 1223.72s : Send it out, right?
+1223.72s - 1225.72s : So you can just send it on all your ports.
+1225.72s - 1228.72s : Everybody would send its unique identifier on all its output ports.
+1228.72s - 1232.72s : And then they collect the unique identifiers from everyone else.
+1232.72s - 1236.72s : So everybody sees the same set of identifiers.
+1236.72s - 1242.72s : And so the process with the maximum unique identifier knows that it's the only one with that identifier.
+1242.72s - 1244.72s : And it's the biggest one.
+1244.72s - 1247.72s : It can elect itself the leader.
+1247.72s - 1248.72s : Okay.
+1248.72s - 1253.72s : So all you need is unique identifiers and the ability to exchange them reliably.
+1253.72s - 1257.72s : And you can elect somebody easily.
+1257.72s - 1258.72s : Okay.
+1258.72s - 1260.72s : Randomness.
+1260.72s - 1261.72s : Okay.
+1261.72s - 1263.72s : Well, various ways to do it.
+1263.72s - 1268.72s : But one idea is the processes could just choose identifiers randomly.
+1268.72s - 1272.72s : You take a sufficiently large set of possible identifiers.
+1272.72s - 1274.72s : And so if they just choose one,
+1274.72s - 1276.72s : and then you choose uniformly at random,
+1276.72s - 1279.72s : they're likely to choose all different identifiers.
+1279.72s - 1282.72s : Once you have these randomly chosen identifiers,
+1282.72s - 1286.72s : you could use them like the really unique identifiers.
+1286.72s - 1288.72s : The only thing is you might have,
+1288.72s - 1291.72s : there's a small chance that you'll have a duplicate,
+1291.72s - 1295.72s : in which case you want to be able to detect that and repeat this.
+1295.72s - 1296.72s : Okay.
+1296.72s - 1299.72s : So first of all, how big a set do you need?
+1299.72s - 1300.72s : Okay.
+1300.72s - 1302.72s : Well, here's an example.
+1302.72s - 1310.72s : Suppose that you have the end processes choosing at random independently from a space of size R.
+1310.72s - 1315.72s : So the identifiers are the numbers 1 through R.
+1315.72s - 1317.72s : Okay.
+1317.72s - 1320.72s : And R is going to depend on N.
+1320.72s - 1322.72s : It's going to be like N squared.
+1322.72s - 1324.72s : But it's also going to depend on epsilon,
+1324.72s - 1327.72s : which is the error probability that you're interested in.
+1327.72s - 1331.72s : It turns out that N squared over 2 epsilon is good enough.
+1331.72s - 1332.72s : Okay.
+1332.72s - 1335.72s : So you can have a probability space at least that large.
+1335.72s - 1340.72s : And then you can guarantee that with probability at least 1 minus epsilon,
+1340.72s - 1344.72s : all the numbers that everybody chooses are different.
+1344.72s - 1345.72s : It's very easy proof.
+1345.72s - 1348.72s : The probability, just look at two particular processes.
+1348.72s - 1351.72s : What's the probability that they choose the same number?
+1351.72s - 1353.72s : It's just 1 over R, right?
+1353.72s - 1354.72s : Because they're both choosing at random.
+1354.72s - 1356.72s : The first one chooses something.
+1356.72s - 1360.72s : The probability the second one chooses the same thing is just 1 over R.
+1360.72s - 1361.72s : Okay.
+1361.72s - 1369.72s : So if you take a union bound, just add up the probabilities of any pair choosing having a duplicate.
+1369.72s - 1372.72s : And so you have N squared around N squared over 2 pairs.
+1372.72s - 1380.72s : And so multiplying 1 over R by N squared over 2 still keeps your probability less than or equal to epsilon,
+1380.72s - 1382.72s : your error probability.
+1382.72s - 1383.72s : Okay.
+1383.72s - 1388.72s : So you can choose identifiers using randomness.
+1388.72s - 1390.72s : If it's a large enough space with very high probability,
+1390.72s - 1393.72s : you can get them to be all different.
+1393.72s - 1394.72s : Okay.
+1394.72s - 1397.72s : And now here's how the algorithm works.
+1397.72s - 1399.72s : Okay.
+1399.72s - 1405.72s : So you can get an algorithm that would finish in only one round with probability 1 minus epsilon.
+1405.72s - 1407.72s : But it will be correct.
+1407.72s - 1411.72s : And it will have repeated rounds in case the first round doesn't work.
+1411.72s - 1416.72s : But the expected time is just 1 over 1 minus epsilon.
+1416.72s - 1417.72s : Not very big.
+1417.72s - 1419.72s : What's the algorithm?
+1419.72s - 1420.72s : Okay.
+1420.72s - 1425.72s : So the process is just choose a random IDs from a big space like we just said.
+1425.72s - 1427.72s : They exchange their IDs.
+1427.72s - 1432.72s : And now everybody can see everyone's ID, but they also can tell if there's a duplicate,
+1432.72s - 1434.72s : if the maximum is not unique.
+1434.72s - 1436.72s : So if the maximum is unique, fine.
+1436.72s - 1439.72s : The maximum wins and everyone knows that.
+1439.72s - 1442.72s : Otherwise, you have a problem and you have to repeat.
+1442.72s - 1445.72s : And you just keep doing that until you succeed.
+1445.72s - 1446.72s : Okay.
+1446.72s - 1449.72s : So this can just continue, but it's likely to finish very fast
+1449.72s - 1453.72s : if you have a high likelihood of having no duplicates.
+1453.72s - 1455.72s : Okay.
+1455.72s - 1459.72s : Questions about the leader election?
+1459.72s - 1460.72s : Okay.
+1460.72s - 1467.72s : So the story was it's impossible without something to help you distinguish some processes.
+1467.72s - 1469.72s : You can do it with unique identifiers.
+1469.72s - 1471.72s : You can do it with randomness.
+1471.72s - 1473.72s : Okay.
+1473.72s - 1475.72s : All right.
+1475.72s - 1478.72s : Second problem is called maximal independence.
+1478.72s - 1485.72s : So you have a picture of a maximal independence set in a graph here.
+1485.72s - 1487.72s : Let's try this.
+1487.72s - 1488.72s : Cursor?
+1488.72s - 1489.72s : Yeah, cursor.
+1489.72s - 1490.72s : Okay.
+1490.72s - 1496.72s : So the maximal independence set in a graph is here, but this is something I'll come back to in a minute.
+1496.72s - 1503.72s : This is actually a use of a maximal independence set to model what happens in a certain kind of biological system.
+1503.72s - 1505.72s : Okay.
+1505.72s - 1507.72s : What's a maximal independence set?
+1507.72s - 1513.72s : So you start with a general undirected graph network.
+1513.72s - 1521.72s : And the problem is to choose a subset of the nodes so that they form what we call a maximal independence set.
+1521.72s - 1522.72s : Let's break that down.
+1522.72s - 1523.72s : What does this mean?
+1523.72s - 1529.72s : Independent means you don't have any two neighbors that are both in the set.
+1529.72s - 1530.72s : Okay.
+1530.72s - 1533.72s : So you don't want to get two neighbors in the set.
+1533.72s - 1537.72s : Maximal means that whatever set you choose,
+1537.72s - 1541.72s : you can't add any more nodes without violating independence.
+1541.72s - 1548.72s : So now this should look something like a couple of homework problems that you had from the beginning and recently.
+1548.72s - 1551.72s : But I'm not saying that it's maximum independence set.
+1551.72s - 1555.72s : I'm not saying you have to have the global largest number of nodes.
+1555.72s - 1564.72s : I'm just saying it has to be a local optimum in the sense that you can't add any more nodes to your set without violating the independence property.
+1564.72s - 1565.72s : Make sense?
+1565.72s - 1566.72s : There's two examples.
+1566.72s - 1568.72s : The same graph.
+1568.72s - 1571.72s : Two different maximal independence sets.
+1571.72s - 1574.72s : The green nodes here.
+1574.72s - 1579.72s : We have four green nodes that are independent.
+1579.72s - 1581.72s : They're not neighbors of each other.
+1581.72s - 1589.72s : And they're maximal in that I couldn't add any of the red nodes into the set without violating the independence property.
+1589.72s - 1594.72s : But then over here we have a second maximal independence set for the same graph.
+1594.72s - 1595.72s : Now we just have two.
+1595.72s - 1597.72s : Now we just have two nodes.
+1597.72s - 1603.72s : And you can't add any of the red nodes without violating the independence property.
+1603.72s - 1610.72s : In other words, every node is either in the MIS or has a neighbor in the MIS.
+1610.72s - 1615.72s : There's nothing else you can do to add nodes to the MIS.
+1615.72s - 1620.72s : So the notion of maximal independence set makes sense.
+1620.72s - 1623.72s : Okay.
+1623.72s - 1624.72s : All right.
+1624.72s - 1631.72s : So to make this a distributed problem, let's start out assuming we have no unique identifiers.
+1631.72s - 1634.72s : Actually, for this whole problem, we're not going to have unique identifiers.
+1634.72s - 1637.72s : They're all going to be identical.
+1637.72s - 1646.72s : The processes do need one piece of information, which is some approximation to N, the size of the network, the total number of vertices.
+1646.72s - 1647.72s : Okay.
+1647.72s - 1654.72s : So we would like to have these nodes somehow cooperate to compute an MIS of the entire network graph.
+1654.72s - 1660.72s : What that means is every process should find out whether it is in the MIS or not.
+1660.72s - 1662.72s : If it is, it should output in.
+1662.72s - 1665.72s : And if it's not, it'll just output out.
+1665.72s - 1668.72s : Okay.
+1668.72s - 1677.72s : So you don't have to actually compute this like you're used to solving problems like this where somebody has to gather all the information in one place.
+1677.72s - 1678.72s : Nobody gathers anything.
+1678.72s - 1682.72s : Everybody just has to know whether or not they're in the MIS.
+1682.72s - 1683.72s : Okay.
+1683.72s - 1697.72s : So as you can imagine, this is going to be unsolvable in certain graphs by deterministic algorithms by the same kind of symmetry-breaking problems that you saw for leader election.
+1697.72s - 1699.72s : Okay.
+1699.72s - 1703.72s : So we're going to move right to randomized algorithms for this problem.
+1703.72s - 1705.72s : Okay.
+1705.72s - 1711.72s : Some applications of distributed MIS, well, they come up in communication networks where you want to choose.
+1711.72s - 1713.72s : Let's say you have a very dense network.
+1713.72s - 1715.72s : You want to choose a very large network of processes.
+1715.72s - 1719.72s : You want to choose just a few nodes, which would be like an overlay network.
+1719.72s - 1725.72s : You would choose some nodes who could take charge of communication that you can communicate on this overlay network.
+1725.72s - 1730.72s : And then in the end, each node can take care of communicating with its many neighbors.
+1730.72s - 1733.72s : So that's a common sort of application.
+1733.72s - 1736.72s : But it also comes up in other places.
+1736.72s - 1741.72s : A great example is in developmental biology where a couple of years ago, there was a paper in Science by, I think,
+1741.72s - 1750.72s : there's like eight authors on that, but Ziv Bar-Josef was the lead author of this paper.
+1750.72s - 1764.72s : So the idea is you have a bunch of cells in a fruit fly, and during development, some of those cells are supposed to distinguish themselves as being what's called sensory organ precursor cells.
+1764.72s - 1769.72s : And the properties that you want is that actually you would like a maximal independent set of the cells to become a single cell.
+1769.72s - 1771.72s : Okay.
+1771.72s - 1773.72s : So they wrote a paper about it.
+1773.72s - 1775.72s : It got published in Science.
+1775.72s - 1783.72s : It basically designed a new distributed algorithm that closely mirrored what happened in the fruit fly during development.
+1783.72s - 1785.72s : Okay.
+1785.72s - 1793.72s : So what I'm going to show you is a very well-known algorithm, sort of a classical algorithm for MIS.
+1793.72s - 1795.72s : This is by Michael Luby.
+1795.72s - 1797.72s : Very simple algorithm.
+1797.72s - 1800.72s : It executes in phases.
+1800.72s - 1802.72s : Each phase has two rounds.
+1802.72s - 1804.72s : Okay.
+1804.72s - 1806.72s : So you start out with all the nodes being active.
+1806.72s - 1808.72s : They're all involved.
+1808.72s - 1810.72s : They don't know what they're going to end up with.
+1810.72s - 1817.72s : And at each phase, some of the active nodes are going to decide they're in the MIS.
+1817.72s - 1821.72s : Some others will decide they're out of the MIS.
+1821.72s - 1823.72s : And some others won't know yet.
+1823.72s - 1828.72s : So then you just continue to the next phase with all the remaining nodes and the edges between them.
+1828.72s - 1830.72s : Okay.
+1830.72s - 1837.72s : So you're basically going to settle what happens with some subset of the nodes and then reduce the graph and continue.
+1837.72s - 1839.72s : Okay.
+1839.72s - 1840.72s : So that's the algorithm.
+1840.72s - 1842.72s : So what do you do in each phase?
+1842.72s - 1845.72s : Here's what an active node does at a phase.
+1845.72s - 1847.72s : Two rounds.
+1847.72s - 1852.72s : The first round, it picks a random value in a large space.
+1852.72s - 1854.72s : Same kind of idea as before.
+1854.72s - 1857.72s : This time it's one up to n to the fifth.
+1857.72s - 1860.72s : Sends that random value to all its neighbors.
+1860.72s - 1865.72s : Receives the values from all its still active neighbors.
+1865.72s - 1872.72s : And then it just looks to see if its value is greater than all the values it received.
+1872.72s - 1874.72s : So then it's a local maximum.
+1874.72s - 1879.72s : It has chosen a value that's strictly greater than the values chosen by all its neighbors.
+1879.72s - 1881.72s : So then it decides to join the MIS.
+1881.72s - 1883.72s : And it outputs in.
+1883.72s - 1886.72s : But now you want to make sure none of its neighbors...
+1886.72s - 1890.72s : Well, you know that none of its neighbors are going to join the MIS at round one, right?
+1890.72s - 1896.72s : Because you know this guy's chosen value is larger, strictly larger than all of its neighbors.
+1896.72s - 1899.72s : But now you want to tell them that they should not join.
+1899.72s - 1900.72s : They should be out.
+1900.72s - 1903.72s : So if you join the MIS, you're going to announce...
+1903.72s - 1905.72s : Oops.
+1905.72s - 1914.72s : If you join the MIS, you're going to announce that by sending messages to all your neighbors.
+1914.72s - 1917.72s : And then anybody who receives...
+1917.72s - 1919.72s : Not like this cursor.
+1919.72s - 1925.72s : Anybody who receives an announcement can decide it's not going to be in the MIS and it outputs out.
+1925.72s - 1928.72s : Because it knows it has a neighbor that's in the MIS.
+1928.72s - 1929.72s : Okay.
+1929.72s - 1934.72s : So if you decided in or out at this phase, you're done.
+1934.72s - 1936.72s : You become inactive.
+1936.72s - 1939.72s : And only the remaining active guys continue to the next phase.
+1939.72s - 1942.72s : Make sense?
+1942.72s - 1943.72s : Okay.
+1943.72s - 1947.72s : Any questions about how the algorithm works?
+1947.72s - 1948.72s : Yeah?
+1948.72s - 1949.72s : No?
+1949.72s - 1950.72s : Okay.
+1950.72s - 1951.72s : Oh, okay.
+1951.72s - 1952.72s : An animation.
+1952.72s - 1953.72s : All right.
+1953.72s - 1956.72s : So all the nodes start out identical.
+1956.72s - 1958.72s : They all pick IDs.
+1958.72s - 1960.72s : So here's some numbers that they pick.
+1960.72s - 1964.72s : So which nodes are going to now join the MIS?
+1964.72s - 1968.72s : 16 and the one that chose 13.
+1968.72s - 1969.72s : Okay.
+1969.72s - 1970.72s : Good.
+1970.72s - 1971.72s : So they're in the MIS.
+1971.72s - 1978.72s : And then at the same phase, all of their neighbors, those four red nodes, are going to decide to be out.
+1978.72s - 1980.72s : Decide to be out of the MIS.
+1980.72s - 1984.72s : And now you're left with the remaining four nodes.
+1984.72s - 1986.72s : We don't keep going with the same IDs.
+1986.72s - 1987.72s : We start over.
+1987.72s - 1989.72s : We want the rounds to be independent.
+1989.72s - 1991.72s : So they choose again.
+1991.72s - 1993.72s : They get new IDs.
+1993.72s - 2001.72s : And now the guy with the 12 and the guy with the 18 are going to join the MIS at this phase.
+2001.72s - 2006.72s : And their neighbors will decide not to be in the MIS.
+2006.72s - 2009.72s : That leaves us with just one node, the guy who had four.
+2009.72s - 2012.72s : Next phase, he chooses another ID.
+2012.72s - 2014.72s : But he has no neighbors.
+2014.72s - 2017.72s : So by default, he's bigger than all of his neighbors.
+2017.72s - 2020.72s : So he just joins the MIS.
+2020.72s - 2021.72s : Okay.
+2021.72s - 2023.72s : So that's how this works.
+2023.72s - 2024.72s : Very simple algorithm.
+2024.72s - 2028.72s : And it actually works to find an MIS very quickly.
+2028.72s - 2029.72s : Okay.
+2029.72s - 2035.72s : So why does this give you independence?
+2036.72s - 2047.72s : How do we know that the if this ever terminates, if everybody decides, how do we know that we don't ever have two neighbors that decided to be in the MIS?
+2047.72s - 2048.72s : Yeah?
+2048.72s - 2053.72s : Because once a node joins the MIS, it broadcasts to its neighbor's side.
+2053.72s - 2055.72s : Right.
+2055.72s - 2061.72s : The only way you join the MIS is if you have the unique maximum value in your neighborhood.
+2061.72s - 2064.72s : And when you do, all your neighbors become inactive.
+2064.72s - 2066.72s : So you're certainly going to be inactive.
+2066.72s - 2068.72s : You're going to have independence.
+2068.72s - 2070.72s : Maximality.
+2070.72s - 2076.72s : If it terminates, the final set is not going to allow you to add any more nodes.
+2076.72s - 2078.72s : Why?
+2078.72s - 2085.72s : Because a node is only going to become inactive if it joins the MIS or a neighbor joins the MIS.
+2085.72s - 2090.72s : And we just continue this algorithm until all the nodes become inactive.
+2090.72s - 2091.72s : Okay.
+2091.72s - 2094.72s : So either the node is in the MIS or a neighbor is in the MIS.
+2094.72s - 2096.72s : So you can't possibly add any more.
+2096.72s - 2098.72s : Yes?
+2098.72s - 2099.72s : Okay.
+2099.72s - 2102.72s : So this has the basic correctness properties.
+2102.72s - 2107.72s : But what you're probably wondering is why is this efficient enough?
+2107.72s - 2109.72s : Why is it efficient?
+2109.72s - 2115.72s : Well, we can say that with high probability, with probability one, it will eventually terminate.
+2115.72s - 2124.72s : More quantitative, we can state this theorem that says with probability at least one,
+2124.72s - 2132.72s : with probability at least one minus one over N, all the nodes decide within four log N phases.
+2132.72s - 2139.72s : Since N is the number of nodes, this doesn't tell us that you get probability one of eventually terminating,
+2139.72s - 2147.72s : but we can repeat this and get the same sort of bound repeatedly for successive phases.
+2147.72s - 2152.72s : But let's just focus on getting probability at least one minus one over N,
+2152.72s - 2158.72s : and see how all nodes decide within about log N phases, these four log N phases.
+2158.72s - 2160.72s : Okay.
+2160.72s - 2162.72s : So see what this is saying.
+2162.72s - 2168.72s : You have this big complicated graph, and in one round, for this to be like log N behavior,
+2168.72s - 2173.72s : what has to happen at each phase?
+2173.72s - 2176.72s : You have to reduce it by some constant fraction.
+2176.72s - 2178.72s : The number of nodes, say, should go down.
+2178.72s - 2181.72s : So that's sort of how the proof will go.
+2182.72s - 2187.72s : So we start out with a lemma saying, okay, you're choosing these IDs at random.
+2187.72s - 2190.72s : You want a high probability that they're all different.
+2190.72s - 2194.72s : So we have a lemma like the one we had before that says with probability at least,
+2194.72s - 2197.72s : we use one minus one over N squared.
+2197.72s - 2204.72s : In each phase, all these phases up to four log N, everybody is choosing a different random value.
+2204.72s - 2207.72s : All the nodes choose different values at each phase.
+2207.72s - 2208.72s : Okay.
+2208.72s - 2212.72s : So this lets us ignore the possibility that you have repeat.
+2212.72s - 2215.72s : And we'll come back to that at the end.
+2215.72s - 2222.72s : So, all right, so we're going to pretend that in each phase, all the random numbers are different.
+2222.72s - 2224.72s : Okay.
+2224.72s - 2231.72s : So the key idea of this is to show that the graph has to shrink enough at each phase.
+2231.72s - 2238.72s : So the way we're going to say that is not in terms of the nodes, but in terms of the number of edges.
+2238.72s - 2241.72s : We're going to say at each phase,
+2241.72s - 2244.72s : the expected number of edges that are alive.
+2244.72s - 2246.72s : Why is that shaking?
+2249.72s - 2250.72s : Odd.
+2250.72s - 2251.72s : Okay.
+2251.72s - 2260.72s : The expected number of edges that are alive at the end of the phase is at most half the number that were alive at the beginning of the phase.
+2260.72s - 2261.72s : Okay.
+2261.72s - 2264.72s : So an edge is live if its endpoints are still live.
+2264.72s - 2269.72s : So instead of talking about reducing the number of nodes by a constant fraction,
+2269.72s - 2274.72s : I'm going to reduce the number of remaining edges by a constant fraction at each phase.
+2274.72s - 2276.72s : Okay.
+2276.72s - 2278.72s : So this is what I'm going to prove.
+2278.72s - 2284.72s : So now I've got the only three slides, but the only three slides today that have calculations on them.
+2284.72s - 2288.72s : So probably you have to pay attention if you want to follow the calculations online.
+2288.72s - 2290.72s : So let's see why.
+2290.72s - 2292.72s : But the goal is clear.
+2292.72s - 2297.72s : We have to reduce the number of edges that remain by a factor of two.
+2297.72s - 2298.72s : Okay.
+2298.72s - 2303.72s : So this is actually a new proof of this algorithm's performance.
+2303.72s - 2307.72s : The proof in the original papers was pretty complicated.
+2307.72s - 2311.72s : This is a very intuitive, neat proof.
+2311.72s - 2312.72s : Okay.
+2312.72s - 2322.72s : So the first line of the proof says if you have a node that has a neighbor that chooses a value that's bigger than all of its own neighbors,
+2322.72s - 2324.72s : so U has a neighbor W,
+2324.72s - 2327.72s : W chooses a value that's bigger than all of W's neighbors.
+2327.72s - 2329.72s : But let's say more.
+2329.72s - 2334.72s : Let's say it's also bigger than all of U's other neighbors besides W.
+2334.72s - 2335.72s : Okay.
+2335.72s - 2341.72s : So W is really big, bigger than all of W's neighbors, bigger than all of U's other neighbors.
+2341.72s - 2342.72s : Okay.
+2342.72s - 2347.72s : If that happens, then what happens to U?
+2347.72s - 2351.72s : Well, we know that W is going to decide to join the MIS,
+2351.72s - 2357.72s : and U is going to definitely die, is not going to join the MIS.
+2357.72s - 2359.72s : Right?
+2359.72s - 2360.72s : Okay.
+2360.72s - 2362.72s : I don't want to lose people on the first line.
+2362.72s - 2364.72s : Question?
+2364.72s - 2366.72s : There's a picture.
+2366.72s - 2368.72s : Here's U.
+2368.72s - 2373.72s : And it has a neighbor W.
+2373.72s - 2384.72s : And let's say W's chosen value is greater than all of W's neighbors, but also greater than all of U's other neighbors.
+2384.72s - 2385.72s : Yes?
+2385.72s - 2386.72s : Okay.
+2386.72s - 2392.72s : If W has that, W is going to join the MIS,
+2392.72s - 2395.72s : and U is going to definitely not join the MIS.
+2395.72s - 2398.72s : It's going to decide out in this phase.
+2398.72s - 2399.72s : Okay.
+2399.72s - 2400.72s : So far?
+2400.72s - 2406.72s : Why do you need W to have value greater than U's other neighbors?
+2406.72s - 2410.72s : Because if W is greater than all of its neighbors, then it's going to go into the MIS.
+2410.72s - 2414.72s : Be in the MIS, and you will not be in the MIS, and that seems like it ought to be enough.
+2414.72s - 2415.72s : Yeah.
+2415.72s - 2417.72s : But look at the next line.
+2417.72s - 2420.72s : So, oh, well, the line after this one.
+2420.72s - 2425.72s : First, what's the probability that W chooses a value like that?
+2425.72s - 2427.72s : Okay.
+2427.72s - 2434.72s : So if it's going to be bigger than all of U's neighbors and all of W's neighbors, and keeping in mind that they are each other's neighbors,
+2434.72s - 2441.72s : turns out that there's degree U, at most degree U plus degree W, nodes involved here.
+2441.72s - 2444.72s : W has to have the biggest of all of those.
+2444.72s - 2450.72s : So it's going to have probability one over the number of nodes of being the biggest one.
+2450.72s - 2452.72s : Okay.
+2452.72s - 2456.72s : So it's just one over the degree of U plus the degree of W.
+2456.72s - 2460.72s : The probability that W will choose a big enough value.
+2460.72s - 2463.72s : Okay?
+2463.72s - 2465.72s : Okay.
+2465.72s - 2468.72s : But you ask, why did I, this is pessimistic.
+2468.72s - 2472.72s : Why don't I just say that W is bigger than its own values?
+2472.72s - 2474.72s : It's because I want to do this for myself.
+2474.72s - 2475.72s : I want to do this next step.
+2475.72s - 2484.72s : I want to say the probability that node U gets killed by one of its neighbors, any one of its neighbors in this phase.
+2484.72s - 2488.72s : I can calculate that as the sum.
+2488.72s - 2489.72s : Okay.
+2489.72s - 2495.72s : The probability that node U is killed by a neighbor is at least the sum over all of its neighbors.
+2495.72s - 2502.72s : You look at all the vertices in the neighbor set and you add up this fraction.
+2502.72s - 2508.72s : So why did I need to make that additional assumption before?
+2508.72s - 2513.72s : That W is greater than all of U's neighbors as well as all of its own neighbors?
+2513.72s - 2514.72s : Yeah?
+2514.72s - 2516.72s : So you can't add up the probability.
+2516.72s - 2517.72s : Yeah.
+2517.72s - 2520.72s : Because otherwise these would be overlapping events.
+2520.72s - 2522.72s : But this way I know they're definitely disjoint events.
+2522.72s - 2530.72s : We can't have, if we have W and W prime, we can't have both of those holding because the requirement for W is saying that its ID is bigger than its own.
+2530.72s - 2531.72s : Okay.
+2531.72s - 2535.72s : Because you have these disjoint events, you can just add the probabilities.
+2535.72s - 2541.72s : And you know that the probability that U gets killed by some neighbor is at least this summation.
+2541.72s - 2542.72s : Okay so far?
+2542.72s - 2545.72s : So now I'm going to calculate.
+2545.72s - 2547.72s : But I wanted to focus on the edges.
+2547.72s - 2548.72s : So let's see.
+2548.72s - 2551.72s : This tells us a way that a node can get killed.
+2551.72s - 2555.72s : But let's look at what happens for an edge getting killed.
+2555.72s - 2558.72s : So let's say that node U gets killed by some neighbor.
+2558.72s - 2559.72s : And I want to calculate.
+2559.72s - 2560.72s : Okay.
+2560.72s - 2563.72s : So let's say that node U gets killed by some neighbor.
+2563.72s - 2564.72s : And I want to calculate.
+2564.72s - 2565.72s : Okay.
+2565.72s - 2568.72s : This is the probability that a node is killed.
+2568.72s - 2582.72s : So the probability that an edge dies at this phase is at least the maximum of the probability that its two endpoints die.
+2582.72s - 2584.72s : And let's just write it as the average.
+2584.72s - 2588.72s : The probability that an edge dies is at least the average of the probability that its two endpoints, or two nodes, die.
+2588.72s - 2589.72s : Okay.
+2589.72s - 2593.72s : So the probability that an edge dies is at least the average of the probability that its two endpoints are killed in this way.
+2593.72s - 2594.72s : Okay.
+2594.72s - 2599.72s : So for an edge, an edge is definitely going to die if one of its endpoints dies.
+2599.72s - 2605.72s : And the edge dies if it dies in this particular way.
+2605.72s - 2614.72s : So the probability an edge dies is at least the probability that one of the, a half the sum of the probabilities that the two endpoints die.
+2614.72s - 2615.72s : Yes?
+2615.72s - 2617.72s : It's the average probability.
+2617.72s - 2618.72s : Make sense?
+2618.72s - 2619.72s : Okay.
+2619.72s - 2621.72s : You might have to read this later.
+2621.72s - 2622.72s : Okay.
+2622.72s - 2627.72s : So now we can go from that to the expected number of edges that die.
+2627.72s - 2628.72s : What is that?
+2628.72s - 2632.72s : You just add up over all the edges the probability that the edge dies.
+2632.72s - 2633.72s : Okay.
+2633.72s - 2644.72s : The expected number of edges that die is at least the sum over all of the edges of the probability that the two endpoints die.
+2644.72s - 2646.72s : Okay.
+2646.72s - 2648.72s : So.
+2648.72s - 2651.72s : So you have the sum over all of the edges.
+2651.72s - 2659.72s : You add up for all the edges the probability that one endpoint dies is killed and the probability the other endpoint is killed.
+2659.72s - 2666.72s : So what we have is this great big summation involving now the kill probabilities for vertices.
+2666.72s - 2668.72s : So we have the kill probability for each vertex.
+2668.72s - 2671.72s : How many times does that occur?
+2671.72s - 2676.72s : If you have a vertex U, well, it appears once for every edge that U is killed.
+2676.72s - 2679.72s : It appears once for every edge that U is an endpoint of.
+2679.72s - 2682.72s : Okay.
+2682.72s - 2689.72s : So you have the kill probability for each node occurring exactly its degree number of times.
+2689.72s - 2690.72s : Okay.
+2690.72s - 2693.72s : So that lets me rewrite this in terms of vertices.
+2693.72s - 2702.72s : This sum is just one half the sum over all the nodes of the probability that the node gets killed times its degree.
+2702.72s - 2704.72s : Okay.
+2704.72s - 2712.72s : So I'm calculating by replacing the description in terms of edges by a description in terms of vertices.
+2712.72s - 2714.72s : More or less okay so far?
+2714.72s - 2716.72s : Okay.
+2716.72s - 2717.72s : So now what do I do?
+2717.72s - 2720.72s : Well, I know the probability that U is killed.
+2720.72s - 2723.72s : I have a bound for that up on the first line.
+2723.72s - 2726.72s : So I'm just going to plug that in.
+2726.72s - 2732.72s : So I get one half the sum over all the nodes, the degree of the node, times this sum.
+2732.72s - 2733.72s : Okay.
+2733.72s - 2738.72s : So I get this summation that gives me the kill probability for that node.
+2738.72s - 2740.72s : And now I play around with the sum.
+2740.72s - 2747.72s : I can move the degree inside the second summation, and I get this.
+2747.72s - 2748.72s : Okay.
+2748.72s - 2750.72s : So now let's stare at this again.
+2750.72s - 2757.72s : I have the sum over all nodes of the sum over all of its neighbors of some expression.
+2757.72s - 2762.72s : Oh, but if I'm considering a node, every node and every one of its neighbors,
+2762.72s - 2765.72s : it looks like considering all the directed edges.
+2765.72s - 2766.72s : Right?
+2766.72s - 2771.72s : I look at every U, and I look at every edge that connects U to something else.
+2771.72s - 2777.72s : So I can write it as the sum over all the directed edges of this expression.
+2777.72s - 2778.72s : Okay.
+2778.72s - 2783.72s : So I get half of the sum over all the directed edges of this expression.
+2783.72s - 2788.72s : But we were talking about undirected edges.
+2788.72s - 2791.72s : And the undirected edges are being counted twice here.
+2791.72s - 2793.72s : Once for each direction.
+2793.72s - 2799.72s : So I can change this sum to a sum over undirected edges,
+2799.72s - 2801.72s : but now I have the two endpoints to deal with.
+2801.72s - 2808.72s : So I get the degree of U and the degree of V in the numerator,
+2808.72s - 2812.72s : because I'm looking at it from the point of view of both of the endpoints of each edge.
+2812.72s - 2813.72s : Ah, okay.
+2813.72s - 2815.72s : Well, something drops out.
+2815.72s - 2820.72s : So I have one half, the sum over all the undirected edges of one.
+2820.72s - 2824.72s : So that's one half of the number of undirected edges.
+2824.72s - 2826.72s : Okay.
+2826.72s - 2828.72s : So I don't expect you to get every step of this,
+2828.72s - 2834.72s : but it's on three slides, so you can stare at this when you go home and make sure the steps work.
+2834.72s - 2839.72s : But remember, the point of this is to show that you reduce the number of edges by a factor of two.
+2839.72s - 2845.72s : And it's done in sort of a clever way by counting the kill probabilities of vertices.
+2845.72s - 2848.72s : Okay.
+2848.72s - 2850.72s : All right.
+2850.72s - 2853.72s : So we get this, reducing the number of edges.
+2853.72s - 2860.72s : And now we can just plug that back in to get our complexity bound for the entire algorithm.
+2860.72s - 2867.72s : Remember the original theorem we were trying to prove is a probability bound for deciding within log n phases.
+2867.72s - 2869.72s : Well, you should have a pretty good idea of why that works,
+2869.72s - 2874.72s : because if at each phase you're going to reduce the number of edges by around a factor of two,
+2874.72s - 2879.72s : then it's going to take something like log n phases to finish.
+2880.72s - 2884.72s : And this is, I just put a proof sketch.
+2884.72s - 2888.72s : The number of edges that are still alive after four log n phases,
+2888.72s - 2893.72s : well, you divide by two four log n times, so you get down to practically nothing.
+2893.72s - 2899.72s : The probability any edges are alive at the end is very small.
+2899.72s - 2906.72s : So you get a small probability the algorithm doesn't terminate within four log n phases.
+2906.72s - 2909.72s : There's an extra little term I threw in here.
+2909.72s - 2910.72s : You might have forgotten.
+2910.72s - 2915.72s : There was a term that I needed for the small probability that somebody chose duplicate IDs.
+2915.72s - 2919.72s : So I'm bringing them back in at the end in a kind of little union bound,
+2919.72s - 2923.72s : and we get our one over n probability this way.
+2923.72s - 2924.72s : Okay.
+2924.72s - 2928.72s : But the key idea is you reduce the number of edges by half at each stage.
+2928.72s - 2929.72s : Okay.
+2929.72s - 2932.72s : Enough for you to look at later, I guess, to figure this out,
+2932.72s - 2935.72s : or you have any questions about this.
+2935.72s - 2936.72s : Okay.
+2936.72s - 2939.72s : So that's the last equations and calculation.
+2939.72s - 2945.72s : We're going to go on to a new idea, more conceptual stuff.
+2945.72s - 2946.72s : Okay.
+2946.72s - 2947.72s : Familiar problem.
+2947.72s - 2953.72s : Breadth-first spanning trees, setting up breadth-first paths to every node.
+2953.72s - 2958.72s : But we're going to study it in our new setting.
+2958.72s - 2960.72s : You have a connected graph.
+2960.72s - 2965.72s : This time let's suppose that it has a distinguished vertex, like it already has a leader.
+2965.72s - 2968.72s : So it has a distinguished vertex in the graph that's going to be,
+2968.72s - 2974.72s : become the root of the BFS tree.
+2974.72s - 2981.72s : And the processes don't need any knowledge about the graph for this one.
+2981.72s - 2983.72s : Okay.
+2983.72s - 2988.72s : This, for the rest of the time today and Thursday,
+2988.72s - 2991.72s : we'll assume the processes have unique identifiers,
+2991.72s - 2993.72s : and I don't think we're using any probabilities.
+2993.72s - 2997.72s : So this is just going to be using the unique identifiers to solve our problems.
+2998.72s - 3001.72s : So everybody knows its own unique identifier.
+3001.72s - 3007.72s : The root has a distinguished, a generally known unique identifier, say I0.
+3007.72s - 3012.72s : And the process that has I0 knows, hey, I'm at the root of the graph.
+3012.72s - 3014.72s : So the setup makes sense?
+3014.72s - 3016.72s : Okay.
+3016.72s - 3021.72s : We might as well assume that everybody knows the unique identifiers of their neighbors
+3021.72s - 3025.72s : because they could easily exchange information now and match up, you know,
+3025.72s - 3028.72s : who's connected on which port by unique identifier.
+3028.72s - 3031.72s : Okay.
+3031.72s - 3033.72s : We'll just do deterministic.
+3033.72s - 3035.72s : There'll be a little bit of non-determinism here.
+3035.72s - 3036.72s : I'll say more about that.
+3036.72s - 3040.72s : But I'm not going to worry about probabilities for this.
+3040.72s - 3041.72s : Okay.
+3041.72s - 3044.72s : So, well, that tells you about the general setup.
+3044.72s - 3047.72s : What's the, what are the processes supposed to do?
+3047.72s - 3052.72s : Well, they're supposed to compute a breadth-first spanning tree rooted at vertex V0.
+3052.72s - 3057.72s : The branches are going to be directed paths in this undirected graph
+3057.72s - 3059.72s : coming from V0.
+3059.72s - 3062.72s : Spanning means they should reach all the vertices.
+3062.72s - 3067.72s : And breadth-first means that if a vertex is at a distance d from V0,
+3067.72s - 3071.72s : it will appear at distance, at depth d in this spanning tree.
+3071.72s - 3075.72s : So everybody should get a shortest path from the root.
+3075.72s - 3077.72s : Okay.
+3077.72s - 3080.72s : Now, how are we going to compute this in a distributed setting?
+3080.72s - 3085.72s : Well, now the output of a process is just going to be its parent in the tree.
+3085.72s - 3086.72s : So we're not actually going to compute this.
+3086.72s - 3090.72s : So we're not actually going to compute this tree anywhere as a whole.
+3090.72s - 3095.72s : Everybody is just going to know its parent in the tree.
+3095.72s - 3097.72s : Okay.
+3097.72s - 3098.72s : Questions?
+3098.72s - 3102.72s : The problem make sense?
+3102.72s - 3103.72s : Okay.
+3103.72s - 3107.72s : So this is just an example of a spanning tree.
+3107.72s - 3112.72s : Breadth-first spanning tree, this gives you shortest paths to all of the nodes,
+3112.72s - 3115.72s : shortest in terms of the number of hops.
+3116.72s - 3118.72s : Okay.
+3118.72s - 3121.72s : So we can have a very, very simple algorithm.
+3121.72s - 3127.72s : We're going to let the processes mark themselves as they get included in the tree.
+3127.72s - 3132.72s : Starts out only the first process, I0, is marked.
+3132.72s - 3136.72s : So do you want to give an idea maybe of how this might work?
+3136.72s - 3138.72s : Sketch out.
+3138.72s - 3139.72s : Yeah.
+3139.72s - 3141.72s : The root will send out to its neighbors,
+3141.72s - 3145.72s : and it will then mark themselves as the parent of whoever they're here from.
+3145.72s - 3146.72s : Yep.
+3146.72s - 3147.72s : This is all synchronous.
+3147.72s - 3148.72s : So that's great.
+3148.72s - 3150.72s : They'll be doing this in synchronous rounds,
+3150.72s - 3156.72s : so everybody at a certain distance is going to get the message at the right number of rounds
+3156.72s - 3158.72s : to mark their distance.
+3158.72s - 3159.72s : Okay.
+3159.72s - 3166.72s : So in round one, process I0 will send a special message, say search,
+3166.72s - 3169.72s : to all of its neighbors.
+3169.72s - 3173.72s : And anybody who receives a message in round one will mark itself.
+3173.72s - 3174.72s : Decide I0.
+3174.72s - 3176.72s : Decide I0 is its parent.
+3176.72s - 3181.72s : Could output that I0 is my parent, parent I0.
+3181.72s - 3187.72s : And then it can get ready for the next round when it's supposed to send to continue this.
+3187.72s - 3188.72s : Okay.
+3188.72s - 3192.72s : So at later rounds, well, if you decided you're going to send,
+3192.72s - 3195.72s : if you know you're supposed to send from the previous round,
+3195.72s - 3199.72s : then you send a search message to all of your neighbors.
+3199.72s - 3202.72s : Now, the process is sitting there,
+3202.72s - 3205.72s : and the student receives a search message.
+3205.72s - 3209.72s : If he's already marked, then he should just ignore the message.
+3209.72s - 3210.72s : Right?
+3210.72s - 3215.72s : Once you're included in the tree, you don't care if you get other messages,
+3215.72s - 3217.72s : search messages on other paths,
+3217.72s - 3221.72s : so you only do anything if you're not yet marked,
+3221.72s - 3223.72s : and you receive a message.
+3223.72s - 3226.72s : And in that case, then you mark yourself.
+3226.72s - 3227.72s : Okay.
+3227.72s - 3228.72s : Here.
+3228.72s - 3229.72s : Then you mark yourself.
+3229.72s - 3232.72s : And then you choose one of your neighbors
+3232.72s - 3237.72s : parent. Now because this is synchronous you have several nodes that could be sending at
+3237.72s - 3243.56s : the same time. So one node could be receiving search messages from several different neighbors
+3243.56s - 3248.66s : at once. Well it wants to choose one of them as its parent, doesn't matter which one it
+3248.66s - 3257.72s : chooses. So it can just choose non-deterministically, just arbitrarily, and then it decides that
+3257.72s - 3268.3s : it will send at the next round. Is the algorithm clear? Okay. Okay, so I mentioned there's a little
+3268.3s - 3273.24s : bit of non-determinism here only in that a process can choose arbitrarily among several
+3273.24s - 3280.38s : possible parents. And we could put in a default saying that it chooses the one with the smallest
+3280.38s - 3285.96s : ID if we really want to make it deterministic, but it's also okay to leave distributed algorithms
+3285.96s - 3286.96s : non-deterministic.
+3286.96s - 3287.46s : Okay.
+3287.72s - 3295.96s : And here I should make a remark that shows how differently non-determinism is regarded in the
+3295.96s - 3301.68s : distributed setting from the way it is for sequential algorithms. For distributed algorithms
+3301.68s - 3306.48s : there can be many options and maybe they're all okay, but the algorithm is supposed to work
+3306.48s - 3314.6s : correctly no matter how you resolve the non-deterministic choices. So think about like NP
+3314.6s - 3317.7s : and the other ways that you've seen non-determinism so far.
+3317.72s - 3324.08s : There you say you're lucky if there is a path to a choice. Here, when you make a non-deterministic choice,
+3324.08s - 3330.76s : or when the algorithm behaves non-deterministically, all the choices are supposed to work. It's like all the paths have to come up with correct answers.
+3330.76s - 3331.76s : Do you have a question?
+3331.76s - 3340.76s : Yes, whenever there's a, so the same whenever there's a race condition, so we locally assume that there wasn't a difference in the computation time,
+3340.76s - 3346.76s : but if there is, even in this light, if they would get a parent pointer before another one, it would still be a valid?
+3346.76s - 3357.8s : So the synchronous model is more abstract than that. You don't model the local computation time. You're moving more toward an asynchronous model where, you know, the steps can take different amounts of time.
+3357.8s - 3369.8s : Here we just assume you have an abstract model where everybody does stuff at once in each round. But you still have non-determinism because, you know, they can all arrive at the same round somewhere.
+3369.8s - 3373.8s : But it's okay. You can pick any one and it still works.
+3376.76s - 3387.76s : Okay, so it should be not hard to see that this does give you a BFS tree because you're creating all the branches synchronously and you're growing one hop at each round.
+3387.76s - 3394.76s : It reaches all the nodes eventually because the graph is connected and everybody sends messages.
+3394.76s - 3404.76s : Once a node gets marked, it sends messages to its neighbors. So eventually the markings are going to reach all the neighbors, all the nodes in the graph.
+3404.76s - 3405.76s : Okay.
+3405.76s - 3406.76s : So, I'm going to show you how to do this.
+3406.76s - 3412.76s : So here's how you get the example I showed before. Simple breadth-first search.
+3412.76s - 3422.76s : That's a search message sent by this guy. I put it to the right of the edge to indicate that it's kind of hard to distinguish.
+3422.76s - 3426.76s : But I put him on the right of the edge from the point of view of the sender.
+3426.76s - 3428.76s : So he sends a search message.
+3428.76s - 3435.76s : Okay, it gets there. This arrow just indicates that it reached the other end and this guy has chosen the sender,
+3435.76s - 3436.76s : which is the other direction.
+3436.76s - 3438.76s : So it's the other direction on the arrow as its parent.
+3438.76s - 3445.76s : Okay, now the recipient is going to send some search messages.
+3445.76s - 3447.76s : So he sends four of them.
+3447.76s - 3449.76s : And they all get to the other end.
+3449.76s - 3454.76s : And okay, so all these guys now get marked and they're included in the BFS tree.
+3454.76s - 3458.76s : And now at the next round, they all send some messages.
+3458.76s - 3465.76s : I'm not putting all, I'm not putting in the messages where somebody would send back to a guy who sent to him.
+3465.76s - 3467.76s : But I put in all the others.
+3467.76s - 3470.76s : Some of them are going to be ignored.
+3470.76s - 3473.76s : But you do get to a few new nodes this way.
+3473.76s - 3475.76s : That's round three.
+3475.76s - 3477.76s : Round four, everybody sends.
+3477.76s - 3482.76s : And now you have all the nodes included.
+3482.76s - 3490.76s : Okay, so this gives you the spanning tree that I showed at the beginning of this topic.
+3490.76s - 3494.76s : Okay, so this is not a very complicated algorithm.
+3494.76s - 3497.76s : But I think you can see that things can get worse.
+3497.76s - 3502.76s : And you want to argue about why the algorithms work correctly.
+3502.76s - 3509.76s : So as I said before, a popular method of reasoning about the algorithms is to state invariants.
+3509.76s - 3516.76s : So here, suppose I want to describe the state of the entire network after some number R of rounds.
+3516.76s - 3518.76s : Okay, what could you say about that?
+3518.76s - 3523.76s : What's the case after R rounds of this algorithm?
+3523.76s - 3529.76s : Yeah?
+3529.76s - 3534.76s : .
+3534.76s - 3538.76s : Okay, all the nodes at distance R from the root have been marked.
+3538.76s - 3540.76s : In fact, only those.
+3540.76s - 3545.76s : By round R, only the ones with distances up through R have been marked.
+3545.76s - 3551.76s : So to state the invariants, if you want to state invariants, I have to kind of say what's in the state of the processes.
+3551.76s - 3553.76s : So, all right, what can we say?
+3553.76s - 3559.76s : So the process has a Boolean that says whether or not it's marked.
+3559.76s - 3562.76s : It has a place to record a parent.
+3562.76s - 3572.76s : And it has some place where it puts information about whether it's supposed to send a message at the next round.
+3572.76s - 3577.76s : And it also should know its UID, so I'll put that in another state variable.
+3577.76s - 3581.76s : Okay, so here is something I can say in invariants.
+3581.76s - 3595.76s : At the end of R rounds, as you said, at the end of R rounds, exactly the processes at distance at most R from the source node, the root node, are marked.
+3595.76s - 3597.76s : Okay?
+3597.76s - 3599.76s : I can say a little more.
+3599.76s - 3603.76s : I can say a process has its parent defined if and only if it's marked.
+3603.76s - 3605.76s : Okay, so it doesn't just get marked.
+3605.76s - 3610.76s : It also computes a parent, and the parent gets computed at the point where it gets marked.
+3611.76s - 3613.76s : Okay.
+3613.76s - 3615.76s : And I should say that the parent is correct.
+3615.76s - 3627.76s : So for any process that's at distance d from the source, if the parent is defined, then it's in fact the UID of a process at distance d minus 1 from the source.
+3627.76s - 3633.76s : Okay, so that says it's actually getting a correct first tree.
+3633.76s - 3636.76s : It's getting the parent on a shortest path.
+3636.76s - 3637.76s : Yeah?
+3637.76s - 3639.76s : Do these invariants both provide there?
+3639.76s - 3641.76s : Um.
+3641.76s - 3644.76s : Distance 0 is marked.
+3644.76s - 3645.76s : Okay.
+3645.76s - 3649.76s : I0 doesn't ever, oh, I see what you're saying.
+3649.76s - 3650.76s : Yeah.
+3650.76s - 3651.76s : Right.
+3651.76s - 3653.76s : I0 doesn't have a parent.
+3653.76s - 3660.76s : So I guess that we should say for I not equal to I0 in this case.
+3660.76s - 3665.76s : So this would be a process other than I0 would have its parent defined if and only if it's marked.
+3665.76s - 3671.76s : Well, as I think you just noticed, the root node is marked, but it doesn't have a parent.
+3671.76s - 3673.76s : So that's an exception.
+3673.76s - 3674.76s : Okay.
+3674.76s - 3678.76s : But this should be, this doesn't involve I0.
+3678.76s - 3681.76s : So the second one I can fix that a bit.
+3681.76s - 3684.76s : Other comments, questions?
+3684.76s - 3686.76s : Okay.
+3686.76s - 3693.76s : So if somebody wanted to do a formal correctness proof of an algorithm like this one, you would use these invariants.
+3693.76s - 3695.76s : You would prove it by induction.
+3695.76s - 3699.76s : In fact, there's quite a few people who use interactive theorem provers to do that.
+3699.76s - 3709.76s : So you can use interactive theorem provers to do proofs like this because the algorithms can get pretty complicated with a lot of variables.
+3709.76s - 3712.76s : So, you know, you have to do some bookkeeping.
+3712.76s - 3717.76s : You keep track of all these invariants, and then you want to prove that they're all true by induction.
+3717.76s - 3719.76s : They all hold through an inductive step.
+3719.76s - 3724.76s : So you can use an interactive theorem prover to help you do the bookkeeping.
+3724.76s - 3725.76s : Okay.
+3725.76s - 3728.76s : But even a manual proof in a research paper would use invariants in this style.
+3728.76s - 3730.76s : Okay.
+3730.76s - 3731.76s : Okay.
+3731.76s - 3733.76s : Complexity.
+3733.76s - 3734.76s : Okay.
+3734.76s - 3743.76s : So the number of rounds until everybody outputs their parent would be the maximum distance of any node from V0.
+3743.76s - 3745.76s : So we can say that's at most the diameter of the graph.
+3745.76s - 3746.76s : It could be less.
+3746.76s - 3749.76s : It's just the maximum distance from this particular node.
+3749.76s - 3752.76s : Message complexity.
+3752.76s - 3756.76s : Well, how many messages are sent in this algorithm?
+3756.76s - 3758.76s : So everybody gets one.
+3758.76s - 3763.76s : Everybody is going to send messages only once on all of its edges.
+3763.76s - 3768.76s : So that means all the edges get a message sent in each direction just once.
+3768.76s - 3772.76s : So it's order of the number of edges.
+3772.76s - 3774.76s : Okay.
+3774.76s - 3775.76s : All right.
+3775.76s - 3778.76s : So, well, you can play around with this.
+3778.76s - 3786.76s : So this algorithm just tells everybody who its parent is, but maybe when you're finished, you'd like to know who your children are as well.
+3786.76s - 3787.76s : Okay.
+3787.76s - 3789.76s : So you can add a child pointer.
+3789.76s - 3795.76s : For many uses of these trees, you'd like to have a parent be able to talk to its children in the tree.
+3795.76s - 3797.76s : So how would I do that?
+3797.76s - 3806.76s : Well, you can add a child pointer because anybody who gets a search message and selects its parent could send back a message to that parent saying, hey, I'm your child.
+3806.76s - 3815.76s : And if you get a search message and you decide that that's not your parent, you can help that guy out by sending a message saying you're not my parent.
+3815.76s - 3820.76s : And you just know that if you didn't get a parent message, but things are going to get more complicated.
+3820.76s - 3826.76s : So we'll send parent or non-parent responses to the search messages.
+3826.76s - 3829.76s : Okay.
+3829.76s - 3833.76s : Suppose we want to compute the distances from V0, not just who the parents are.
+3833.76s - 3835.76s : Well, that's easy.
+3835.76s - 3841.76s : Everybody can just record its distance as well as its parent and the mark.
+3841.76s - 3843.76s : And then you just include your own distance value in your search message.
+3843.76s - 3844.76s : Okay.
+3844.76s - 3845.76s : All right.
+3845.76s - 3847.76s : So we can just add a parent to the search message.
+3847.76s - 3853.76s : And when somebody receives a search message, it sets its own distance to the received distance plus one.
+3853.76s - 3856.76s : So we can just keep track and add one to the distance.
+3856.76s - 3857.76s : Okay.
+3857.76s - 3862.76s : So it's easy to augment this algorithm to get this extra information.
+3862.76s - 3863.76s : Okay.
+3863.76s - 3864.76s : All right.
+3864.76s - 3869.76s : Now, how do the processes know when this is all finished?
+3869.76s - 3871.76s : So everybody was able to output parent.
+3871.76s - 3873.76s : I know who my parent is.
+3873.76s - 3874.76s : But how does anybody know when the entire process is finished?
+3874.76s - 3879.76s : Well, the entire tree has been produced.
+3879.76s - 3882.76s : Not so obvious.
+3882.76s - 3888.76s : So in some settings, you might know an upper bound on the depth of the tree.
+3888.76s - 3891.76s : And then you could just wait for that number of rounds.
+3891.76s - 3892.76s : But what if you don't know that?
+3892.76s - 3894.76s : You don't know anything about the graph.
+3894.76s - 3897.76s : Nobody knows.
+3897.76s - 3903.76s : So let's come up with an algorithm for process I0, the root, to know definitively that the
+3903.76s - 3906.76s : tree has been completely constructed.
+3906.76s - 3907.76s : Ideas?
+3907.76s - 3909.76s : You're creating this by search messages.
+3909.76s - 3916.76s : How is I0 going to know when it's done?
+3928.76s - 3929.76s : Yeah.
+3929.76s - 3931.76s : Every time you mark a node, the node can send a message back to its parent saying,
+3931.76s - 3932.76s : Hi, I've been marked.
+3932.76s - 3935.76s : and then the root can count the number of nodes.
+3935.76s - 3936.26s : Ah.
+3936.26s - 3936.76s : Actually, no.
+3936.76s - 3937.76s : The root doesn't know.
+3937.76s - 3939.46s : Root doesn't know the number of nodes.
+3939.46s - 3940.76s : So that's a good idea.
+3940.76s - 3941.26s : Sorry.
+3941.26s - 3944.56s : If you don't have a child, you can tell your parent
+3944.56s - 3946.66s : that you don't have a child.
+3946.66s - 3948.96s : And.
+3948.96s - 3950.06s : Yeah, that's a good start.
+3950.06s - 3951.22s : Is there another?
+3951.22s - 3951.72s : Yeah?
+3951.72s - 3953.76s : More generally, you just send a signal
+3953.76s - 3956.26s : when you know your subtree is done.
+3956.26s - 3958.0s : When you know your subtree is done.
+3958.0s - 3960.76s : So that means you're going to be communicating something
+3960.76s - 3962.16s : up the tree.
+3962.16s - 3962.66s : Right.
+3962.66s - 3965.36s : So that's the idea that you're working toward.
+3965.36s - 3965.86s : OK.
+3965.86s - 3969.66s : So a termination algorithm to inform I0 when the tree is
+3969.66s - 3971.4s : completely constructed.
+3971.4s - 3971.9s : OK.
+3971.9s - 3975.1s : So let's say that the search messages get their responses.
+3975.1s - 3979.44s : So everybody knows which neighbors are its children
+3979.44s - 3981.08s : and which are not.
+3981.08s - 3982.28s : OK.
+3982.28s - 3984.82s : So suppose a node has gotten responses
+3984.82s - 3990.46s : to all of its search messages, knows who all its children are.
+3990.46s - 3990.96s : OK.
+3990.96s - 3991.46s : Now.
+3991.46s - 3992.16s : The leaves in this.
+3992.16s - 3994.74s : This tree are going to know that they're leaves.
+3994.74s - 3997.66s : How do they know that?
+3997.66s - 4000.3s : You're propagating all these search messages.
+4000.3s - 4001.9s : And I'm a leaf.
+4001.9s - 4003.4s : How do I know I'm a leaf?
+4003.4s - 4003.9s : Yeah.
+4003.9s - 4004.98s : Can't have children.
+4004.98s - 4005.48s : Yeah.
+4005.48s - 4007.44s : Everybody, you send all these search messages
+4007.44s - 4009.48s : and everybody says, sorry, already.
+4009.48s - 4010.34s : Yeah.
+4010.34s - 4011.18s : You're not my parent.
+4011.18s - 4011.86s : OK.
+4011.86s - 4015.04s : So you know you have no children because of the kind of responses
+4015.04s - 4016.1s : you get.
+4016.1s - 4017.2s : OK.
+4017.2s - 4021.32s : So now we're going to use what we call a converge cast strategy.
+4021.32s - 4021.82s : Broadcast.
+4021.82s - 4023.48s : Converge cast is sending things out.
+4023.48s - 4026.64s : Converge cast is fanning in information back
+4026.64s - 4029.86s : to the top of the tree.
+4029.86s - 4030.36s : OK.
+4030.36s - 4032.44s : So the converge cast strategy would say, all right,
+4032.44s - 4035.58s : so the leaves would send a message to their parents
+4035.58s - 4038.4s : saying they're done.
+4038.4s - 4044.06s : Now, if I'm some node in the middle of the tree,
+4044.06s - 4045.24s : how do I know I'm done?
+4045.24s - 4048.88s : Well, it's what you said.
+4048.88s - 4051.12s : You know that you can figure out when you're done.
+4051.12s - 4054.02s : You can figure out when your entire subtree is done.
+4054.02s - 4057.8s : Well, first of all, you have to know who your children are.
+4057.8s - 4059.8s : It's kind of a two-stage process.
+4059.8s - 4062.64s : You have to know who your children are
+4062.64s - 4066.6s : by having received responses to all your search messages.
+4066.6s - 4069.0s : And you wait to receive done messages
+4069.0s - 4071.38s : from all of your actual children.
+4071.38s - 4073.1s : So if I'm sitting in the middle of the tree
+4073.1s - 4076.06s : and I've got done messages from all my children,
+4076.06s - 4077.9s : I know my whole subtree is done.
+4077.9s - 4079.84s : Then I can send a done message to my parent.
+4081.12s - 4084.2s : Got that?
+4084.2s - 4085.88s : That's how converge cast works.
+4085.88s - 4091.18s : And when it reaches the top, if I0 knows who its children are
+4091.18s - 4093.68s : and it receives done messages from all its children,
+4093.68s - 4095.54s : it knows the whole tree is done.
+4095.54s - 4100.12s : So it can output that the tree construction is complete.
+4100.12s - 4102.88s : And it could tell all the others by sending a message
+4102.88s - 4105.88s : down the tree so they all know as well.
+4105.88s - 4107.34s : Questions?
+4107.34s - 4107.84s : Yeah?
+4107.84s - 4110.24s : Wouldn't I0 be like the last one?
+4110.24s - 4110.74s : No?
+4111.12s - 4112.92s : Yeah.
+4112.92s - 4114.1s : He'd be the last one.
+4114.1s - 4114.6s : No.
+4114.6s - 4116.34s : No, he'd be the first one to know
+4116.34s - 4118.68s : that the whole tree is complete.
+4118.68s - 4121.46s : Everybody else knows when their subtree is complete.
+4121.46s - 4125.64s : So I0 still has to now send another message down the tree
+4125.64s - 4128.52s : to tell everyone else the entire tree is complete.
+4128.52s - 4130.8s : Is there another question?
+4130.8s - 4132.3s : OK.
+4132.3s - 4133.88s : All right, so this isn't showing much.
+4133.88s - 4136.28s : This is just showing done messages, which are actually
+4136.28s - 4138.56s : going in the opposite direction from these edges,
+4138.56s - 4139.4s : going up the tree.
+4139.4s - 4140.2s : But you can just see it.
+4140.2s - 4140.7s : OK.
+4140.7s - 4141.08s : OK.
+4141.08s - 4144.7s : See how they propagate up until the root says done.
+4144.7s - 4147.08s : No big deal.
+4147.08s - 4148.2s : OK.
+4148.2s - 4150.72s : Complexity for termination.
+4150.72s - 4153.6s : Well, it just takes, at most, diameter rounds and end
+4153.6s - 4155.4s : messages for this done information
+4155.4s - 4159.28s : to come up to the top once the tree actually is finished.
+4159.28s - 4161.2s : Because now you're just sending messages
+4161.2s - 4165.58s : on the pads in this tree, which are only, at most,
+4165.58s - 4168.88s : diameter in length.
+4168.88s - 4169.38s : OK.
+4169.38s - 4170.66s : And this is just the process.
+4170.66s - 4173.12s : And Process I0 can tell everybody else,
+4173.12s - 4175.62s : which doesn't take very long either.
+4175.62s - 4177.32s : OK.
+4177.32s - 4178.16s : Applications.
+4178.16s - 4181.18s : Well, suppose you construct a tree like this.
+4181.18s - 4184.5s : And Process I0 now wants to use it to communicate.
+4184.5s - 4186.46s : It wants to send a whole batch of messages
+4186.46s - 4187.86s : to all of the other nodes.
+4187.86s - 4190.0s : It can just send them now on the tree.
+4190.0s - 4193.56s : It's an easy way to make sure messages reach everybody else
+4193.56s - 4194.26s : in the network.
+4194.26s - 4197.34s : Just send them on the edges of the breadth-first spanning
+4197.34s - 4199.64s : tree.
+4199.64s - 4200.24s : So now.
+4200.24s - 4201.86s : Now the messages.
+4201.86s - 4205.56s : Each individual message takes, at most,
+4205.56s - 4209.0s : n message instances along the edges of the tree.
+4209.0s - 4211.58s : Because you only have to traverse the tree edges.
+4211.58s - 4215.98s : No more dependence on the total number of edges in the network.
+4215.98s - 4219.04s : And in fact, you can save time by pipelining
+4219.04s - 4220.4s : a series of messages.
+4220.4s - 4223.0s : So you can send them one round after the other.
+4228.04s - 4228.64s : The other way.
+4228.64s - 4230.24s : Suppose you want to compute something.
+4230.24s - 4231.86s : You want to compute something globally.
+4231.86s - 4234.92s : Suppose everybody starts with some initial value.
+4234.92s - 4238.64s : And Process I0 is going to try to determine
+4238.64s - 4242.7s : the value of some function of everybody's initial value,
+4242.7s - 4246.58s : like the minimum, or the maximum, or the sum, or anything.
+4246.58s - 4249.04s : Well, you can do this while converge casting
+4249.04s - 4252.96s : on an already built BFS tree.
+4252.96s - 4256.52s : So everybody can just send their information up the tree.
+4256.52s - 4258.32s : And I0 can collect it all.
+4258.32s - 4259.86s : And in general, you can accumulate.
+4259.86s - 4264.58s : You can do data aggregation as you go up the pads of the tree.
+4264.58s - 4269.88s : So the final answer, so message size doesn't blow up.
+4269.88s - 4273.48s : So if you want, for example, the sum of everybody's values,
+4273.48s - 4276.22s : everybody just sends their values up in a converge cast.
+4276.22s - 4278.86s : And each node computes the sum of all the values
+4278.86s - 4281.54s : in its subtree.
+4281.54s - 4284.08s : So this is pretty efficient.
+4284.08s - 4285.4s : Make sense?
+4285.4s - 4286.48s : OK.
+4286.48s - 4288.98s : And I'm going to skip this, but you can do leader election
+4288.98s - 4289.74s : in a general graph.
+4289.74s - 4292.5s : Or if you don't have a leader already,
+4292.5s - 4295.58s : I0 by having everybody run a breadth-first search
+4295.58s - 4296.2s : in parallel.
+4296.2s - 4297.52s : But we'll skip that.
+4297.52s - 4299.56s : Because I just wanted to have a couple of minutes
+4299.56s - 4300.94s : to start the last topic.
+4300.94s - 4303.92s : And we'll pick it up next time.
+4303.92s - 4307.12s : So it's the obvious extension.
+4307.12s - 4309.38s : Instead of just breadth-first search trees,
+4309.38s - 4311.86s : let's put weights on the edges and try
+4311.86s - 4315.9s : to compute shortest pads trees in terms
+4315.9s - 4317.92s : of the total weights of the path.
+4319.74s - 4321.62s : OK.
+4321.62s - 4324.34s : So we're going to add weights.
+4324.34s - 4325.5s : It's an undirected graph.
+4325.5s - 4329.42s : So it's just a weight for each undirected edge.
+4329.42s - 4331.62s : OK.
+4331.62s - 4339.2s : I'll still have a starting node, vertex V0 with process I0.
+4339.2s - 4342.16s : Still have unique identifiers.
+4342.16s - 4344.68s : And I'll assume the processes know who their neighbors are.
+4344.68s - 4347.94s : And they know the weights of the incident edges,
+4347.94s - 4349.02s : their adjacent edges.
+4349.74s - 4351.86s : But otherwise, they don't need to know anything else
+4351.86s - 4354.64s : about the graph.
+4354.64s - 4356.92s : So again, this is a familiar problem.
+4356.92s - 4358.98s : But we're looking at it in a very different way
+4358.98s - 4361.52s : by distributing it.
+4361.52s - 4363.4s : OK.
+4363.4s - 4366.7s : So the processes are supposed to compute a shortest paths
+4366.7s - 4370.0s : tree in the sense that everybody should
+4370.0s - 4372.08s : output its parent in the tree.
+4372.08s - 4375.48s : And let's say they output the distance as well,
+4375.48s - 4378.5s : the weighted distance from the root node.
+4378.5s - 4379.0s : OK.
+4379.0s - 4379.54s : OK.
+4379.54s - 4387.4s : So this is called Bellman-Ford's algorithm again.
+4387.4s - 4391.98s : It's got the same name in the distributed setting.
+4391.98s - 4396.58s : The Bellman-Ford shortest paths algorithm.
+4396.58s - 4397.26s : Well, OK.
+4397.26s - 4401.3s : So everybody is keeping track of their current best distance
+4401.3s - 4403.68s : that they know and their parent.
+4403.68s - 4407.3s : And they know their unique identifier.
+4407.3s - 4409.04s : And here's how the algorithm works.
+4409.04s - 4412.62s : This will look familiar from when you had Bellman-Ford
+4412.62s - 4414.16s : earlier.
+4414.16s - 4419.4s : At every round, everybody is going to send its distance
+4419.4s - 4420.88s : to its neighbors.
+4420.88s - 4422.5s : Instead of just sending a search message,
+4422.5s - 4426.48s : now it will send its actual distance information.
+4426.48s - 4430.74s : And you receive the messages from your neighbors.
+4430.74s - 4435.3s : And now you do a relaxation step, as you've seen before.
+4435.3s - 4438.54s : You look at the current distance you have, and you see if you've
+4438.54s - 4440.76s : gotten a new distance from a neighbor,
+4440.76s - 4444.24s : such that if you add the new distance you received
+4444.24s - 4446.64s : to the weight of the edge between yourself
+4446.64s - 4448.68s : and that neighbor, you get something better
+4448.68s - 4450.3s : than what you had before.
+4450.3s - 4454.16s : If you get that, then you're going to improve your distance.
+4454.16s - 4456.22s : And if you improve your distance,
+4456.22s - 4459.08s : then you're going to reset your parent
+4459.08s - 4464.76s : to the sender of this new better distance information.
+4464.76s - 4466.54s : So does this algorithm make sense?
+4466.54s - 4468.3s : It's like what you saw before.
+4468.3s - 4472.48s : But there's no running through all the nodes.
+4472.48s - 4474.2s : Each node is doing its own thing.
+4474.2s - 4477.08s : It's waiting to get better distance information
+4477.08s - 4479.12s : and recomputing.
+4479.12s - 4481.76s : And then it's going to be sending out its better
+4481.76s - 4483.24s : information at the next round.
+4486.14s - 4486.74s : Question?
+4486.74s - 4489.62s : So this is kind of a jump in the way of thinking.
+4494.08s - 4497.02s : All right, so now I'm just going to end, basically,
+4497.02s - 4498.3s : with an animation that'll show you,
+4498.3s - 4501.94s : the kinds of things that happen here.
+4501.94s - 4507.12s : All right, so you start out with the initial node.
+4507.12s - 4508.66s : And what's recorded in the circle
+4508.66s - 4510.6s : is the best distance it knows.
+4510.6s - 4514.56s : The rest of these, the best distance they know is infinity.
+4514.56s - 4515.5s : So I didn't write that.
+4515.5s - 4517.14s : So this guy knows zero.
+4517.14s - 4523.48s : OK, after one round, OK, so he sent two messages.
+4523.48s - 4525.6s : The best distance each of these guys
+4525.6s - 4528.14s : knows is just the weight of the edge between these guys.
+4528.14s - 4532.16s : So the first one is going to be zero and itself.
+4532.16s - 4535.28s : So this guy is now estimating its distance at 16,
+4535.28s - 4537.26s : and this guy at 1.
+4537.26s - 4539.42s : 16 is not very good, because there's actually
+4539.42s - 4541.64s : very roundabout roots that can get there.
+4541.64s - 4546.62s : But it's going to take us some time to make that adjustment.
+4546.62s - 4550.16s : OK, after two rounds, so these guys,
+4550.16s - 4552.38s : everybody is sending their distance information.
+4552.38s - 4555.84s : But now we get a correction here.
+4555.84s - 4556.9s : This used to say 16.
+4556.9s - 4557.78s : But now we have a correction.
+4557.78s - 4562.2s : We have a two-hop path that gives you a better distance.
+4562.2s - 4563.92s : So you get the 1 plus the 14.
+4563.92s - 4568.88s : So he's going to hear about the distance of 15
+4568.88s - 4571.46s : as a result of what one sends.
+4571.46s - 4576.14s : And some new guys get their distances calculated.
+4576.14s - 4580.4s : OK, and then after three rounds, well, it
+4580.4s - 4581.78s : gets a little bit complicated.
+4581.78s - 4584.7s : So maybe I'm just going to flip through it quickly
+4584.7s - 4586.54s : and let you study it later.
+4586.54s - 4587.58s : But you see that you keep going.
+4587.58s - 4587.78s : OK.
+4587.78s - 4589.4s : So you keep getting improvements
+4589.4s - 4594.28s : as you perform relaxation steps, as information gets to somebody
+4594.28s - 4598.54s : by better paths that happen to have more hops.
+4598.54s - 4600.46s : They're going to be reducing their estimates.
+4600.46s - 4602.2s : So I'm going to flip.
+4602.2s - 4607.12s : And you see that this guy's estimate is going down.
+4607.12s - 4609.96s : And in the end, after eight rounds of this,
+4609.96s - 4612.74s : you end up with a very roundabout path that actually
+4612.74s - 4615.96s : gives this guy a much better estimate.
+4615.96s - 4616.46s : OK.
+4616.46s - 4617.58s : So you can see how that.
+4617.58s - 4620.2s : That works.
+4620.2s - 4621.12s : OK.
+4621.12s - 4623.7s : So the claim is that eventually every process
+4623.7s - 4628.14s : will have its distance being a correct minimum weight path,
+4628.14s - 4629.28s : weight of a path.
+4629.28s - 4632.72s : And its parent will be correct.
+4632.72s - 4634.76s : And I think maybe this is a good place to stop.
+4634.76s - 4637.84s : We'll pick up with this algorithm and its analysis.
+4637.84s - 4639.96s : Most of next time is going to be spent
+4639.96s - 4642.48s : on asynchronous algorithms, which
+4642.48s - 4645.58s : is a whole other level of complication.
+4645.58s - 4647.38s : So I'll see you on Thursday.
+4647.58s - 4648.08s : Thanks.

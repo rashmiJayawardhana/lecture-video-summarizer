@@ -1,0 +1,6022 @@
+[
+  {
+    "sentence": "Okay, so the today's lesson is about interactions.",
+    "timestamp_start": 0.0,
+    "timestamp_end": 6.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Last week we discussed what human-computer interaction is all about",
+    "timestamp_start": 6.9,
+    "timestamp_end": 13.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and what are the different areas that we could touch and look for.",
+    "timestamp_start": 13.06,
+    "timestamp_end": 17.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now we are going to discuss about the main components in this HCI.",
+    "timestamp_start": 17.94,
+    "timestamp_end": 24.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you will be having a human, you will be having a computer",
+    "timestamp_start": 25.58,
+    "timestamp_end": 28.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then in between them you have interactions.",
+    "timestamp_start": 28.9,
+    "timestamp_end": 31.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Last time we also discussed in which different forms",
+    "timestamp_start": 32.84,
+    "timestamp_end": 37.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the computers are coming into appearance these days.",
+    "timestamp_start": 37.86,
+    "timestamp_end": 41.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It may not directly be a big computer which we can normally visualize.",
+    "timestamp_start": 41.76,
+    "timestamp_end": 47.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It can be a chip, it can be a small programmable unit",
+    "timestamp_start": 47.8,
+    "timestamp_end": 52.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in a remote controller, in a car or maybe in your headsets.",
+    "timestamp_start": 52.74,
+    "timestamp_end": 58.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So therefore when you are talking about the interactions",
+    "timestamp_start": 58.9,
+    "timestamp_end": 62.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to think in a big variation.",
+    "timestamp_start": 62.68,
+    "timestamp_end": 68.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's not a simple interaction that we talk about",
+    "timestamp_start": 69.66,
+    "timestamp_end": 74.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like which happens in between a normal laptop or a normal PC and a computer.",
+    "timestamp_start": 74.22,
+    "timestamp_end": 80.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They are obviously being included, they are being included",
+    "timestamp_start": 81.1,
+    "timestamp_end": 84.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but when you talk about the interactions",
+    "timestamp_start": 84.12,
+    "timestamp_end": 87.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you to think in a big variation.",
+    "timestamp_start": 87.92,
+    "timestamp_end": 88.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you to have an open mind and think with the big picture",
+    "timestamp_start": 88.88,
+    "timestamp_end": 94.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so that the interactions may come in many different forms and shapes.",
+    "timestamp_start": 94.12,
+    "timestamp_end": 100.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Just the basics.",
+    "timestamp_start": 105.2,
+    "timestamp_end": 106.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So an interaction definitely is a communication",
+    "timestamp_start": 107.7,
+    "timestamp_end": 110.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which happens between two parties, two or more obviously.",
+    "timestamp_start": 110.7,
+    "timestamp_end": 116.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it can happen.",
+    "timestamp_start": 116.04,
+    "timestamp_end": 118.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Between humans and humans.",
+    "timestamp_start": 118.88,
+    "timestamp_end": 120.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It can also happen between computers or humans",
+    "timestamp_start": 120.82,
+    "timestamp_end": 125.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or any other two parties that you can even think about.",
+    "timestamp_start": 125.18,
+    "timestamp_end": 128.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for the interaction to be successful",
+    "timestamp_start": 130.36,
+    "timestamp_end": 133.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to make sure the parties involved in that interaction",
+    "timestamp_start": 133.72,
+    "timestamp_end": 140.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "understand each other.",
+    "timestamp_start": 140.0,
+    "timestamp_end": 141.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now there is an interaction happening in between you and me.",
+    "timestamp_start": 144.08,
+    "timestamp_end": 148.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in order to make sure that the interaction is successful",
+    "timestamp_start": 148.88,
+    "timestamp_end": 157.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there has to be an indication that you understood me",
+    "timestamp_start": 157.12,
+    "timestamp_end": 164.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and I understood you",
+    "timestamp_start": 164.12,
+    "timestamp_end": 167.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in the form of what is being communicated to back and forth.",
+    "timestamp_start": 167.12,
+    "timestamp_end": 177.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now take this as an example,",
+    "timestamp_start": 178.88,
+    "timestamp_end": 182.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and think what is missing in our interaction in that sense.",
+    "timestamp_start": 182.88,
+    "timestamp_end": 190.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is one particular reason",
+    "timestamp_start": 190.98,
+    "timestamp_end": 198.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "why this online teaching as an interaction is not quite comfortable.",
+    "timestamp_start": 198.72,
+    "timestamp_end": 207.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In most of the situations.",
+    "timestamp_start": 207.74,
+    "timestamp_end": 208.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In one of the situations.",
+    "timestamp_start": 208.36,
+    "timestamp_end": 208.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because our setup does not pass that back and forth information.",
+    "timestamp_start": 208.84,
+    "timestamp_end": 217.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Even though we call this an interaction,",
+    "timestamp_start": 218.62,
+    "timestamp_end": 221.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this is more or less a broadcasting, the way that we do it.",
+    "timestamp_start": 221.9,
+    "timestamp_end": 226.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So for the successful interaction,",
+    "timestamp_start": 229.3,
+    "timestamp_end": 232.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to make sure both the parties involved understand what is communicated.",
+    "timestamp_start": 232.16,
+    "timestamp_end": 240.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now that I try to deliver you some message,",
+    "timestamp_start": 242.74,
+    "timestamp_end": 245.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for me to make sure that I have successfully communicated that message to you,",
+    "timestamp_start": 247.16,
+    "timestamp_end": 254.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I need to get a feedback.",
+    "timestamp_start": 254.8,
+    "timestamp_end": 256.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or some form of communication.",
+    "timestamp_start": 260.36,
+    "timestamp_end": 262.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Some form of interpretation that you understood me.",
+    "timestamp_start": 262.16,
+    "timestamp_end": 265.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that is lacking in here,",
+    "timestamp_start": 267.3,
+    "timestamp_end": 269.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "just because of the setting that we have here today.",
+    "timestamp_start": 269.9,
+    "timestamp_end": 274.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And to make you understand about an interaction which takes place,",
+    "timestamp_start": 277.18,
+    "timestamp_end": 284.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to understand the communication",
+    "timestamp_start": 285.52,
+    "timestamp_end": 289.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "using two different forms.",
+    "timestamp_start": 289.62,
+    "timestamp_end": 291.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The first is the communication.",
+    "timestamp_start": 292.04,
+    "timestamp_end": 292.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The second is the communication.",
+    "timestamp_start": 292.14,
+    "timestamp_end": 292.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The first one is the language.",
+    "timestamp_start": 292.16,
+    "timestamp_end": 293.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the second one is actions.",
+    "timestamp_start": 294.16,
+    "timestamp_end": 295.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The language can be written or verbal.",
+    "timestamp_start": 297.78,
+    "timestamp_end": 301.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the actions obviously are motions that we do.",
+    "timestamp_start": 302.34,
+    "timestamp_end": 307.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now we are doing a verbal communication.",
+    "timestamp_start": 309.94,
+    "timestamp_end": 314.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But you don't see my actions.",
+    "timestamp_start": 315.08,
+    "timestamp_end": 317.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And I don't see your feedback.",
+    "timestamp_start": 318.72,
+    "timestamp_end": 321.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we are talking about interactions.",
+    "timestamp_start": 322.16,
+    "timestamp_end": 330.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But we are, what would say,",
+    "timestamp_start": 331.12,
+    "timestamp_end": 336.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "grossly violating the basic principle of interaction",
+    "timestamp_start": 336.32,
+    "timestamp_end": 341.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in making it understood by both the parties.",
+    "timestamp_start": 341.1,
+    "timestamp_end": 345.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Think in that line.",
+    "timestamp_start": 348.84,
+    "timestamp_end": 350.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it's about human to human.",
+    "timestamp_start": 352.16,
+    "timestamp_end": 354.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is why there's a lot of research happening these days.",
+    "timestamp_start": 356.22,
+    "timestamp_end": 362.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It has been coming on for a decade, more than a decade now,",
+    "timestamp_start": 362.62,
+    "timestamp_end": 366.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to understand people in the other end when you cannot see them.",
+    "timestamp_start": 366.72,
+    "timestamp_end": 374.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now perhaps I'm giving you some indication about",
+    "timestamp_start": 377.24,
+    "timestamp_end": 382.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how I feel in addition to the facts that I deliver,",
+    "timestamp_start": 382.04,
+    "timestamp_end": 385.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "just using my voice.",
+    "timestamp_start": 386.08,
+    "timestamp_end": 387.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can gain a little bit of an understanding",
+    "timestamp_start": 390.22,
+    "timestamp_end": 394.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about my feelings.",
+    "timestamp_start": 394.1,
+    "timestamp_end": 395.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You might.",
+    "timestamp_start": 396.16,
+    "timestamp_end": 396.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Not always, yes, but there is a possibility.",
+    "timestamp_start": 398.16,
+    "timestamp_end": 401.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if I have been typing you the message,",
+    "timestamp_start": 402.66,
+    "timestamp_end": 405.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "maybe there is a possibility to recognize",
+    "timestamp_start": 406.42,
+    "timestamp_end": 410.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that I am not a person.",
+    "timestamp_start": 410.04,
+    "timestamp_end": 412.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "How I feel using the typing speed",
+    "timestamp_start": 412.04,
+    "timestamp_end": 416.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or some other keyboard dynamics",
+    "timestamp_start": 416.02,
+    "timestamp_end": 419.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or maybe using the words I use.",
+    "timestamp_start": 419.3,
+    "timestamp_end": 423.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it's good that like there had been one interaction",
+    "timestamp_start": 435.08,
+    "timestamp_end": 438.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "already initiated.",
+    "timestamp_start": 438.84,
+    "timestamp_end": 440.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But someone responded,",
+    "timestamp_start": 440.48,
+    "timestamp_end": 441.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "someone responded,",
+    "timestamp_start": 441.68,
+    "timestamp_end": 441.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "someone responded,",
+    "timestamp_start": 441.72,
+    "timestamp_end": 441.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "someone responded,",
+    "timestamp_start": 441.76,
+    "timestamp_end": 442.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "someone responded to me that you could use an emoji.",
+    "timestamp_start": 442.04,
+    "timestamp_end": 444.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 444.9,
+    "timestamp_end": 445.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But sending an emoji is deliberate.",
+    "timestamp_start": 446.02,
+    "timestamp_end": 451.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Unless I wish to, I will not reveal it.",
+    "timestamp_start": 452.22,
+    "timestamp_end": 455.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's not always spontaneous.",
+    "timestamp_start": 457.66,
+    "timestamp_end": 460.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That is one way, yes.",
+    "timestamp_start": 461.66,
+    "timestamp_end": 463.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Sending emojis is actually one way of recognizing the other party.",
+    "timestamp_start": 463.52,
+    "timestamp_end": 469.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that recognition,",
+    "timestamp_start": 469.08,
+    "timestamp_end": 471.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is dependent on how much the other party wants to reveal and display.",
+    "timestamp_start": 471.54,
+    "timestamp_end": 478.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the other party here is a human that we think about.",
+    "timestamp_start": 478.36,
+    "timestamp_end": 486.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or maybe a chatbot who is a humanoid.",
+    "timestamp_start": 486.54,
+    "timestamp_end": 490.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So like they will give you emojis",
+    "timestamp_start": 491.44,
+    "timestamp_end": 494.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as one form of appreciation",
+    "timestamp_start": 494.3,
+    "timestamp_end": 499.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or an indication of a person's love.",
+    "timestamp_start": 499.96,
+    "timestamp_end": 501.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's one way.",
+    "timestamp_start": 501.18,
+    "timestamp_end": 501.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the other way is an indication of understanding.",
+    "timestamp_start": 501.26,
+    "timestamp_end": 502.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But the research orientation goes beyond that.",
+    "timestamp_start": 504.6,
+    "timestamp_end": 512.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like we now try to recognize",
+    "timestamp_start": 513.66,
+    "timestamp_end": 516.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the understanding or the feeling",
+    "timestamp_start": 516.78,
+    "timestamp_end": 522.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or the feedback of the other party",
+    "timestamp_start": 522.92,
+    "timestamp_end": 525.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which are not visible,",
+    "timestamp_start": 525.36,
+    "timestamp_end": 527.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which are inbuilt,",
+    "timestamp_start": 528.6,
+    "timestamp_end": 529.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which are inherent,",
+    "timestamp_start": 529.84,
+    "timestamp_end": 531.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which are relevant to something",
+    "timestamp_start": 531.08,
+    "timestamp_end": 533.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and which is guarded.",
+    "timestamp_start": 533.46,
+    "timestamp_end": 535.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So those are some good areas to embark into",
+    "timestamp_start": 535.04,
+    "timestamp_end": 538.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "through your final year projects.",
+    "timestamp_start": 538.96,
+    "timestamp_end": 542.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because we all now talk about",
+    "timestamp_start": 542.12,
+    "timestamp_end": 546.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "human-like machines.",
+    "timestamp_start": 546.44,
+    "timestamp_end": 549.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We talk about cognitive systems.",
+    "timestamp_start": 549.8,
+    "timestamp_end": 552.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But nobody tries to understand",
+    "timestamp_start": 552.44,
+    "timestamp_end": 557.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that it's coming through a branch of HCI.",
+    "timestamp_start": 557.36,
+    "timestamp_end": 560.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if someone embark on some such research,",
+    "timestamp_start": 561.08,
+    "timestamp_end": 566.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it's simply because they are fond of the technology.",
+    "timestamp_start": 566.96,
+    "timestamp_end": 571.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I have not seen much students embarking on such research",
+    "timestamp_start": 571.08,
+    "timestamp_end": 579.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "just because you understand the lack in this interaction.",
+    "timestamp_start": 579.08,
+    "timestamp_end": 585.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What you understand or what you try to embark on,",
+    "timestamp_start": 585.32,
+    "timestamp_end": 591.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is the usage of technology,",
+    "timestamp_start": 591.08,
+    "timestamp_end": 594.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is at the moment the most lubricant.",
+    "timestamp_start": 594.0,
+    "timestamp_end": 598.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But I want you to see the world in the other way.",
+    "timestamp_start": 598.96,
+    "timestamp_end": 605.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you to think in the actual problem",
+    "timestamp_start": 605.46,
+    "timestamp_end": 609.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then try to identify which technology",
+    "timestamp_start": 609.8,
+    "timestamp_end": 613.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "will solve that problem the best.",
+    "timestamp_start": 613.58,
+    "timestamp_end": 615.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The moment you start thinking in that,",
+    "timestamp_start": 618.28,
+    "timestamp_end": 620.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the moment you start thinking in that,",
+    "timestamp_start": 620.5,
+    "timestamp_end": 620.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you will definitely see a lot of more potential",
+    "timestamp_start": 620.52,
+    "timestamp_end": 625.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to research and develop.",
+    "timestamp_start": 625.52,
+    "timestamp_end": 627.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So I actually went a long way to tell you",
+    "timestamp_start": 627.52,
+    "timestamp_end": 633.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like what it is about.",
+    "timestamp_start": 633.52,
+    "timestamp_end": 635.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But the basic is mainly a communication happens",
+    "timestamp_start": 635.52,
+    "timestamp_end": 640.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "between two or more parties.",
+    "timestamp_start": 640.52,
+    "timestamp_end": 642.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To make a successful communication,",
+    "timestamp_start": 642.52,
+    "timestamp_end": 645.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to make each party involved understood",
+    "timestamp_start": 645.52,
+    "timestamp_end": 648.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "by each other.",
+    "timestamp_start": 648.52,
+    "timestamp_end": 649.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's the basic.",
+    "timestamp_start": 649.44,
+    "timestamp_end": 650.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in order to make the communication understandable,",
+    "timestamp_start": 650.44,
+    "timestamp_end": 655.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you will use your language and actions.",
+    "timestamp_start": 655.44,
+    "timestamp_end": 658.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if you are learning and if you are interpreting interactions,",
+    "timestamp_start": 660.44,
+    "timestamp_end": 664.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it will be mainly through the language and actions.",
+    "timestamp_start": 664.44,
+    "timestamp_end": 669.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Pressing a key can be an action.",
+    "timestamp_start": 669.44,
+    "timestamp_end": 673.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Clicking a mouse can be an action.",
+    "timestamp_start": 673.44,
+    "timestamp_end": 677.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Nodding your head can be an action.",
+    "timestamp_start": 677.44,
+    "timestamp_end": 679.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Talking to the screen can be an action.",
+    "timestamp_start": 679.44,
+    "timestamp_end": 682.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Touching the screen can also be an action.",
+    "timestamp_start": 682.44,
+    "timestamp_end": 689.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there are a lot of different actions.",
+    "timestamp_start": 689.44,
+    "timestamp_end": 692.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These are quite a few examples to indicate",
+    "timestamp_start": 692.44,
+    "timestamp_end": 696.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what actions will reveal the understanding",
+    "timestamp_start": 696.44,
+    "timestamp_end": 701.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of the ongoing communication.",
+    "timestamp_start": 701.44,
+    "timestamp_end": 703.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you talk about the communication,",
+    "timestamp_start": 703.44,
+    "timestamp_end": 706.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to understand the context.",
+    "timestamp_start": 706.44,
+    "timestamp_end": 707.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you talk about the human to human communication,",
+    "timestamp_start": 707.44,
+    "timestamp_end": 711.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you use natural languages just in the way that we use it.",
+    "timestamp_start": 711.44,
+    "timestamp_end": 716.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In addition to the natural languages,",
+    "timestamp_start": 716.44,
+    "timestamp_end": 719.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you will be using non-verbal cues.",
+    "timestamp_start": 719.44,
+    "timestamp_end": 722.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The things which are not verbally interpreted,",
+    "timestamp_start": 722.44,
+    "timestamp_end": 728.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but communicated through some other form,",
+    "timestamp_start": 728.44,
+    "timestamp_end": 733.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "body language.",
+    "timestamp_start": 733.44,
+    "timestamp_end": 735.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And there can also be other reactions and actions.",
+    "timestamp_start": 735.44,
+    "timestamp_end": 740.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So everything together",
+    "timestamp_start": 740.44,
+    "timestamp_end": 744.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "make a human to human communication successful.",
+    "timestamp_start": 744.44,
+    "timestamp_end": 749.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But in human-computer interaction,",
+    "timestamp_start": 751.44,
+    "timestamp_end": 755.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we mainly focus on the communication",
+    "timestamp_start": 755.44,
+    "timestamp_end": 759.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which takes place between a user and a system.",
+    "timestamp_start": 759.44,
+    "timestamp_end": 764.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User will be a human user.",
+    "timestamp_start": 765.44,
+    "timestamp_end": 768.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system can be anything which uses",
+    "timestamp_start": 768.44,
+    "timestamp_end": 772.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The system can be anything which uses",
+    "timestamp_start": 772.44,
+    "timestamp_end": 779.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a computation or computing technology.",
+    "timestamp_start": 779.44,
+    "timestamp_end": 785.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Building an integrated infrastructure system",
+    "timestamp_start": 795.44,
+    "timestamp_end": 801.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "allows for digital transformation",
+    "timestamp_start": 801.44,
+    "timestamp_end": 802.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and transferability of data,",
+    "timestamp_start": 802.44,
+    "timestamp_end": 804.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which enables user to operate in a computer puede",
+    "timestamp_start": 804.44,
+    "timestamp_end": 805.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "даже � innych 점�",
+    "timestamp_start": 805.44,
+    "timestamp_end": 822.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, as we were talking, the system can be anything which involves in computation in",
+    "timestamp_start": 825.44,
+    "timestamp_end": 848.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "any form.",
+    "timestamp_start": 848.68,
+    "timestamp_end": 849.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, we will, as we are taking the initiative, we will try to now understand what these systems",
+    "timestamp_start": 849.68,
+    "timestamp_end": 858.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are.",
+    "timestamp_start": 858.88,
+    "timestamp_end": 859.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Can each of you post me, because I think starting to talk is going to be kind of a little difficult",
+    "timestamp_start": 860.08,
+    "timestamp_end": 870.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "today.",
+    "timestamp_start": 870.82,
+    "timestamp_end": 871.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, can you all post in the chat about one such system that a human user will interact",
+    "timestamp_start": 871.3,
+    "timestamp_end": 879.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with?",
+    "timestamp_start": 879.38,
+    "timestamp_end": 879.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Just post in the chat.",
+    "timestamp_start": 879.68,
+    "timestamp_end": 883.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'll give you one minute.",
+    "timestamp_start": 891.92,
+    "timestamp_end": 893.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 909.68,
+    "timestamp_end": 939.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 939.68,
+    "timestamp_end": 969.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 969.68,
+    "timestamp_end": 999.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you, everyone.",
+    "timestamp_start": 999.68,
+    "timestamp_end": 1006.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, I have been getting responses.",
+    "timestamp_start": 1006.96,
+    "timestamp_end": 1012.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Most of them are related to ATM, mobile phones, PCs and normal computer systems, operating",
+    "timestamp_start": 1012.98,
+    "timestamp_end": 1027.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "systems.",
+    "timestamp_start": 1027.68,
+    "timestamp_end": 1027.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And some went onto the smart home and VR systems.",
+    "timestamp_start": 1027.76,
+    "timestamp_end": 1028.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Voice assistants.",
+    "timestamp_start": 1028.0,
+    "timestamp_end": 1028.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And with this you will be able to understand whenever they are trying to target user experiences",
+    "timestamp_start": 1028.18,
+    "timestamp_end": 1028.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "for you.",
+    "timestamp_start": 1028.82,
+    "timestamp_end": 1029.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And this is because some systems also face a big problem ofbatting off issue as like an",
+    "timestamp_start": 1029.08,
+    "timestamp_end": 1029.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "employee who doesn't understand, restaurants being the occupation, working with these",
+    "timestamp_start": 1029.28,
+    "timestamp_end": 1029.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "devices.",
+    "timestamp_start": 1029.36,
+    "timestamp_end": 1029.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah, it has been a really tough time for some 동바nessим but don't forget to question",
+    "timestamp_start": 1029.38,
+    "timestamp_end": 1029.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what I'm saying.",
+    "timestamp_start": 1029.58,
+    "timestamp_end": 1029.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and taking a phone call through telecommunication network.",
+    "timestamp_start": 1029.68,
+    "timestamp_end": 1034.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And some came into chatbots, LMS.",
+    "timestamp_start": 1036.4,
+    "timestamp_end": 1039.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now can you basically see a skewness in your imagination?",
+    "timestamp_start": 1041.08,
+    "timestamp_end": 1050.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like it's skewed towards something which is so familiar.",
+    "timestamp_start": 1050.04,
+    "timestamp_end": 1055.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Only a few indicated about voice assistants and smart home systems.",
+    "timestamp_start": 1055.54,
+    "timestamp_end": 1064.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Nobody came up with the idea of digital thermometers.",
+    "timestamp_start": 1065.16,
+    "timestamp_end": 1072.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Nobody indicated the digital glucometer.",
+    "timestamp_start": 1074.5,
+    "timestamp_end": 1081.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Nobody thought about...",
+    "timestamp_start": 1082.22,
+    "timestamp_end": 1084.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "surveillance systems.",
+    "timestamp_start": 1085.54,
+    "timestamp_end": 1087.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No one reported to me about automatic attendance marking.",
+    "timestamp_start": 1088.52,
+    "timestamp_end": 1095.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No one reported to me about smart smoke detectors or the heat detectors.",
+    "timestamp_start": 1096.48,
+    "timestamp_end": 1104.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is what I really want to change through this lesson.",
+    "timestamp_start": 1108.92,
+    "timestamp_end": 1113.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You need to...",
+    "timestamp_start": 1114.16,
+    "timestamp_end": 1115.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "see the big pictures.",
+    "timestamp_start": 1115.54,
+    "timestamp_end": 1117.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You need to step out from the comfort zone or your limited imaginative box.",
+    "timestamp_start": 1118.64,
+    "timestamp_end": 1126.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Please come out of the box and see the world around.",
+    "timestamp_start": 1127.52,
+    "timestamp_end": 1131.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are many different other interactions taking place.",
+    "timestamp_start": 1134.26,
+    "timestamp_end": 1138.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is what you need to attend to.",
+    "timestamp_start": 1140.82,
+    "timestamp_end": 1144.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I repeat.",
+    "timestamp_start": 1145.54,
+    "timestamp_end": 1147.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "HCI is not about designing interfaces only.",
+    "timestamp_start": 1147.96,
+    "timestamp_end": 1152.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Designing computer web pages.",
+    "timestamp_start": 1152.88,
+    "timestamp_end": 1155.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No.",
+    "timestamp_start": 1155.72,
+    "timestamp_end": 1156.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is just a simple part.",
+    "timestamp_start": 1156.64,
+    "timestamp_end": 1158.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's UI.",
+    "timestamp_start": 1158.64,
+    "timestamp_end": 1159.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like UI in the normal form about web design.",
+    "timestamp_start": 1160.18,
+    "timestamp_end": 1163.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The screen design is just a simple unique part.",
+    "timestamp_start": 1164.9,
+    "timestamp_end": 1169.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But UI is going far beyond that.",
+    "timestamp_start": 1170.88,
+    "timestamp_end": 1175.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And taking the UX into the equation, it makes it even more complicated.",
+    "timestamp_start": 1175.54,
+    "timestamp_end": 1181.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I will repeatedly say this throughout until I am convinced you have got the message right.",
+    "timestamp_start": 1181.3,
+    "timestamp_end": 1188.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because if you want to become HCI practitioners or researchers,",
+    "timestamp_start": 1190.58,
+    "timestamp_end": 1195.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to think a little bit more differently.",
+    "timestamp_start": 1196.52,
+    "timestamp_end": 1200.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You need to go and seek what other areas need development.",
+    "timestamp_start": 1205.54,
+    "timestamp_end": 1211.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "How can we make the human's lives comfortable?",
+    "timestamp_start": 1213.48,
+    "timestamp_end": 1218.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "How can we make somebody happy while achieving the accuracy and precision?",
+    "timestamp_start": 1220.42,
+    "timestamp_end": 1227.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So these are the things that you need to think about.",
+    "timestamp_start": 1228.56,
+    "timestamp_end": 1231.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we will move on.",
+    "timestamp_start": 1232.22,
+    "timestamp_end": 1233.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And...",
+    "timestamp_start": 1233.96,
+    "timestamp_end": 1234.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "uh...",
+    "timestamp_start": 1234.46,
+    "timestamp_end": 1234.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "through...",
+    "timestamp_start": 1234.96,
+    "timestamp_end": 1235.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "uh...",
+    "timestamp_start": 1235.46,
+    "timestamp_end": 1235.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "throughout, we will be coming back and forth in order to give you the understanding.",
+    "timestamp_start": 1235.54,
+    "timestamp_end": 1241.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when it comes to human-computer interaction as we indicated,",
+    "timestamp_start": 1246.04,
+    "timestamp_end": 1249.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now it's getting a little bit more complicated because humans use natural languages.",
+    "timestamp_start": 1250.8,
+    "timestamp_end": 1257.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Computers use computer languages.",
+    "timestamp_start": 1257.84,
+    "timestamp_end": 1260.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No matter what.",
+    "timestamp_start": 1262.4,
+    "timestamp_end": 1263.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "No matter how many new developments cognitively aware systems are coming up,",
+    "timestamp_start": 1263.36,
+    "timestamp_end": 1272.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "all what a computer, the pure computer could do is to understand ones and zeros.",
+    "timestamp_start": 1273.86,
+    "timestamp_end": 1281.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Not even ones and zeros.",
+    "timestamp_start": 1281.42,
+    "timestamp_end": 1283.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "They will understand the passing of an electric shock or not.",
+    "timestamp_start": 1283.5,
+    "timestamp_end": 1288.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Or a presence of the magnetic field or the circuit.",
+    "timestamp_start": 1289.06,
+    "timestamp_end": 1293.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And not.",
+    "timestamp_start": 1293.36,
+    "timestamp_end": 1294.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's all they will understand.",
+    "timestamp_start": 1294.86,
+    "timestamp_end": 1297.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's a digital system which works on one zero.",
+    "timestamp_start": 1297.36,
+    "timestamp_end": 1301.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the natural languages are analog.",
+    "timestamp_start": 1303.36,
+    "timestamp_end": 1306.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Our thinking patterns are analog.",
+    "timestamp_start": 1306.36,
+    "timestamp_end": 1309.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Don't even try to convert it into digital.",
+    "timestamp_start": 1309.36,
+    "timestamp_end": 1313.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The moment you try to do that,",
+    "timestamp_start": 1313.36,
+    "timestamp_end": 1315.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the main human quality, the ability,",
+    "timestamp_start": 1315.86,
+    "timestamp_end": 1319.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and all the things are going to get degraded.",
+    "timestamp_start": 1319.86,
+    "timestamp_end": 1322.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All what you need to do is to make a matchmaking between the natural languages and computer languages.",
+    "timestamp_start": 1323.36,
+    "timestamp_end": 1330.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Not to convert one to the other.",
+    "timestamp_start": 1330.36,
+    "timestamp_end": 1333.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now in order to facilitate the human-computer interaction,",
+    "timestamp_start": 1333.36,
+    "timestamp_end": 1339.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you should be able to convert the natural language to the computer language and vice versa.",
+    "timestamp_start": 1339.36,
+    "timestamp_end": 1345.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this we even learned on the very first lesson,",
+    "timestamp_start": 1349.36,
+    "timestamp_end": 1352.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when we started our computing careers.",
+    "timestamp_start": 1352.36,
+    "timestamp_end": 1355.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To matchmake between the input and output.",
+    "timestamp_start": 1355.36,
+    "timestamp_end": 1360.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also it involves the actions performed by humans on the computers.",
+    "timestamp_start": 1360.36,
+    "timestamp_end": 1368.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It may be a keyboard entry.",
+    "timestamp_start": 1368.36,
+    "timestamp_end": 1370.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It can be a mouse click.",
+    "timestamp_start": 1370.36,
+    "timestamp_end": 1373.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It can also be blinking your eyes in front of the camera.",
+    "timestamp_start": 1373.36,
+    "timestamp_end": 1379.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Making a face.",
+    "timestamp_start": 1379.36,
+    "timestamp_end": 1381.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Making a face to the webcam.",
+    "timestamp_start": 1381.36,
+    "timestamp_end": 1384.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Waving your hand in order to open up a window.",
+    "timestamp_start": 1384.36,
+    "timestamp_end": 1391.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it can be anything.",
+    "timestamp_start": 1391.36,
+    "timestamp_end": 1394.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the responses from the computer,",
+    "timestamp_start": 1396.36,
+    "timestamp_end": 1399.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "on the other hand, will be the output.",
+    "timestamp_start": 1399.36,
+    "timestamp_end": 1402.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "What it does.",
+    "timestamp_start": 1402.36,
+    "timestamp_end": 1404.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now imagine,",
+    "timestamp_start": 1404.36,
+    "timestamp_end": 1406.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when you want to take a photo,",
+    "timestamp_start": 1406.36,
+    "timestamp_end": 1409.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "using the webcam,",
+    "timestamp_start": 1409.36,
+    "timestamp_end": 1411.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I will open the camera,",
+    "timestamp_start": 1411.36,
+    "timestamp_end": 1414.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and I will press the take photo button.",
+    "timestamp_start": 1414.36,
+    "timestamp_end": 1419.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now I have done some input.",
+    "timestamp_start": 1419.36,
+    "timestamp_end": 1422.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So perhaps it worked.",
+    "timestamp_start": 1422.36,
+    "timestamp_end": 1426.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it took a picture of me.",
+    "timestamp_start": 1426.36,
+    "timestamp_end": 1429.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But,",
+    "timestamp_start": 1429.36,
+    "timestamp_end": 1431.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "unless I got some indication that a picture of mine is recorded in the camera,",
+    "timestamp_start": 1431.36,
+    "timestamp_end": 1436.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in the camera or the computer,",
+    "timestamp_start": 1436.36,
+    "timestamp_end": 1438.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'm not convinced.",
+    "timestamp_start": 1438.36,
+    "timestamp_end": 1440.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that I need a response from the computer.",
+    "timestamp_start": 1440.36,
+    "timestamp_end": 1445.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So which is the output.",
+    "timestamp_start": 1445.36,
+    "timestamp_end": 1447.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now,",
+    "timestamp_start": 1447.36,
+    "timestamp_end": 1450.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this gives you an understanding.",
+    "timestamp_start": 1450.36,
+    "timestamp_end": 1455.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "When some action is performed on a computer,",
+    "timestamp_start": 1455.36,
+    "timestamp_end": 1459.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "computer needs to give an output in form of the feedback.",
+    "timestamp_start": 1459.36,
+    "timestamp_end": 1463.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you cannot give the exact picture,",
+    "timestamp_start": 1463.36,
+    "timestamp_end": 1467.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you can make sure that the user got the message that the action has been done.",
+    "timestamp_start": 1467.36,
+    "timestamp_end": 1474.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe a click sound.",
+    "timestamp_start": 1474.36,
+    "timestamp_end": 1477.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Will work.",
+    "timestamp_start": 1477.36,
+    "timestamp_end": 1480.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And now we try to",
+    "timestamp_start": 1484.36,
+    "timestamp_end": 1487.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "do the real matchmaking process.",
+    "timestamp_start": 1487.36,
+    "timestamp_end": 1490.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we know there are different types of computer.",
+    "timestamp_start": 1490.36,
+    "timestamp_end": 1493.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then the people are different.",
+    "timestamp_start": 1493.36,
+    "timestamp_end": 1498.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The preferences, skills, knowledge and attitudes are different.",
+    "timestamp_start": 1498.36,
+    "timestamp_end": 1501.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I think we discussed it even last time.",
+    "timestamp_start": 1501.36,
+    "timestamp_end": 1504.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And like, not only that,",
+    "timestamp_start": 1504.36,
+    "timestamp_end": 1507.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "people, the same person,",
+    "timestamp_start": 1507.36,
+    "timestamp_end": 1510.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "behave differently in different times.",
+    "timestamp_start": 1510.36,
+    "timestamp_end": 1514.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there is no consistency.",
+    "timestamp_start": 1514.36,
+    "timestamp_end": 1518.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You cannot always ensure the consistency",
+    "timestamp_start": 1518.36,
+    "timestamp_end": 1521.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in people's behavior.",
+    "timestamp_start": 1521.36,
+    "timestamp_end": 1524.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in addition to that,",
+    "timestamp_start": 1524.36,
+    "timestamp_end": 1528.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you have numerous interaction technologies.",
+    "timestamp_start": 1528.36,
+    "timestamp_end": 1532.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We have sensor technologies,",
+    "timestamp_start": 1532.36,
+    "timestamp_end": 1535.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different types of sensors.",
+    "timestamp_start": 1535.36,
+    "timestamp_end": 1537.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And we have augmented reality.",
+    "timestamp_start": 1537.36,
+    "timestamp_end": 1540.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We have virtual reality.",
+    "timestamp_start": 1540.36,
+    "timestamp_end": 1542.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also we have touchless sensors.",
+    "timestamp_start": 1542.36,
+    "timestamp_end": 1548.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We talk about,",
+    "timestamp_start": 1548.36,
+    "timestamp_end": 1550.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we talk about augmented interfaces.",
+    "timestamp_start": 1550.36,
+    "timestamp_end": 1555.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there are a lot of technologies",
+    "timestamp_start": 1555.36,
+    "timestamp_end": 1559.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "being invented.",
+    "timestamp_start": 1559.36,
+    "timestamp_end": 1562.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So,",
+    "timestamp_start": 1562.36,
+    "timestamp_end": 1564.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "so that",
+    "timestamp_start": 1564.36,
+    "timestamp_end": 1565.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different types of computers are presented",
+    "timestamp_start": 1565.36,
+    "timestamp_end": 1568.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with different interaction technologies.",
+    "timestamp_start": 1568.36,
+    "timestamp_end": 1571.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now it actually",
+    "timestamp_start": 1571.36,
+    "timestamp_end": 1574.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "affects",
+    "timestamp_start": 1574.36,
+    "timestamp_end": 1576.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to the magnitude of the complication.",
+    "timestamp_start": 1576.36,
+    "timestamp_end": 1579.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in addition to that,",
+    "timestamp_start": 1580.36,
+    "timestamp_end": 1583.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the wide variety of contexts.",
+    "timestamp_start": 1583.36,
+    "timestamp_end": 1586.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe",
+    "timestamp_start": 1586.36,
+    "timestamp_end": 1588.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the technology that you have used",
+    "timestamp_start": 1588.36,
+    "timestamp_end": 1592.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to record attendance",
+    "timestamp_start": 1592.36,
+    "timestamp_end": 1595.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in a university",
+    "timestamp_start": 1595.36,
+    "timestamp_end": 1597.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "may not appropriate,",
+    "timestamp_start": 1597.36,
+    "timestamp_end": 1599.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "may not be appropriate",
+    "timestamp_start": 1599.36,
+    "timestamp_end": 1601.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to record the attendance in a garment factory.",
+    "timestamp_start": 1601.36,
+    "timestamp_end": 1605.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It may not be",
+    "timestamp_start": 1605.36,
+    "timestamp_end": 1608.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "suitable",
+    "timestamp_start": 1608.36,
+    "timestamp_end": 1609.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to record the attendance",
+    "timestamp_start": 1609.36,
+    "timestamp_end": 1612.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in a high security zone.",
+    "timestamp_start": 1612.36,
+    "timestamp_end": 1616.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So there may be",
+    "timestamp_start": 1616.36,
+    "timestamp_end": 1618.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different contexts,",
+    "timestamp_start": 1618.36,
+    "timestamp_end": 1619.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the same requirement,",
+    "timestamp_start": 1619.36,
+    "timestamp_end": 1621.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different contexts.",
+    "timestamp_start": 1621.36,
+    "timestamp_end": 1623.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in each of these contexts,",
+    "timestamp_start": 1623.36,
+    "timestamp_end": 1625.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the way the requirement has been catered for",
+    "timestamp_start": 1625.36,
+    "timestamp_end": 1629.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "might vary.",
+    "timestamp_start": 1629.36,
+    "timestamp_end": 1630.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that",
+    "timestamp_start": 1639.36,
+    "timestamp_end": 1643.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we need to pay attention to",
+    "timestamp_start": 1643.36,
+    "timestamp_end": 1645.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "different interaction models",
+    "timestamp_start": 1645.36,
+    "timestamp_end": 1647.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and ergonomics.",
+    "timestamp_start": 1647.36,
+    "timestamp_end": 1649.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is something very important.",
+    "timestamp_start": 1649.36,
+    "timestamp_end": 1651.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ergonomics is not",
+    "timestamp_start": 1651.36,
+    "timestamp_end": 1653.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "very much discussed with software interfaces.",
+    "timestamp_start": 1653.36,
+    "timestamp_end": 1656.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It is discussed with engineering",
+    "timestamp_start": 1656.36,
+    "timestamp_end": 1659.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and hardware related things",
+    "timestamp_start": 1659.36,
+    "timestamp_end": 1661.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because there's a physical characteristic",
+    "timestamp_start": 1661.36,
+    "timestamp_end": 1663.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of something.",
+    "timestamp_start": 1663.36,
+    "timestamp_end": 1665.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But one fine thing that",
+    "timestamp_start": 1665.36,
+    "timestamp_end": 1667.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ergonomics have been",
+    "timestamp_start": 1667.36,
+    "timestamp_end": 1670.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "very nicely used",
+    "timestamp_start": 1670.36,
+    "timestamp_end": 1672.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is the computer mouse.",
+    "timestamp_start": 1672.36,
+    "timestamp_end": 1674.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The normal computer mouse.",
+    "timestamp_start": 1674.36,
+    "timestamp_end": 1676.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you remember,",
+    "timestamp_start": 1676.36,
+    "timestamp_end": 1681.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like the computer mouse",
+    "timestamp_start": 1681.36,
+    "timestamp_end": 1684.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "always had this shape.",
+    "timestamp_start": 1684.36,
+    "timestamp_end": 1686.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The shape of",
+    "timestamp_start": 1686.36,
+    "timestamp_end": 1688.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like there's a little bulge in the middle",
+    "timestamp_start": 1688.36,
+    "timestamp_end": 1691.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and like from the corners",
+    "timestamp_start": 1691.36,
+    "timestamp_end": 1693.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it's a little low.",
+    "timestamp_start": 1693.36,
+    "timestamp_end": 1696.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So,",
+    "timestamp_start": 1696.36,
+    "timestamp_end": 1697.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it's not a big deal.",
+    "timestamp_start": 1697.36,
+    "timestamp_end": 1698.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in some,",
+    "timestamp_start": 1698.36,
+    "timestamp_end": 1700.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you have only buttons",
+    "timestamp_start": 1700.36,
+    "timestamp_end": 1702.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and in some others",
+    "timestamp_start": 1702.36,
+    "timestamp_end": 1703.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you have the rolling wheel.",
+    "timestamp_start": 1703.36,
+    "timestamp_end": 1706.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you take this,",
+    "timestamp_start": 1708.36,
+    "timestamp_end": 1710.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like we have seen",
+    "timestamp_start": 1710.36,
+    "timestamp_end": 1712.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "many different types of",
+    "timestamp_start": 1712.36,
+    "timestamp_end": 1714.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "mice being introduced",
+    "timestamp_start": 1714.36,
+    "timestamp_end": 1716.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with different shapes.",
+    "timestamp_start": 1716.36,
+    "timestamp_end": 1718.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But,",
+    "timestamp_start": 1718.36,
+    "timestamp_end": 1720.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this is the only shape",
+    "timestamp_start": 1720.36,
+    "timestamp_end": 1722.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which persisted throughout.",
+    "timestamp_start": 1722.36,
+    "timestamp_end": 1724.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And there had been a period",
+    "timestamp_start": 1724.36,
+    "timestamp_end": 1726.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "where the size of the mouse",
+    "timestamp_start": 1726.36,
+    "timestamp_end": 1728.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is small,",
+    "timestamp_start": 1728.36,
+    "timestamp_end": 1729.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is made smaller.",
+    "timestamp_start": 1729.36,
+    "timestamp_end": 1731.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like we called as minimise.",
+    "timestamp_start": 1731.36,
+    "timestamp_end": 1734.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So,",
+    "timestamp_start": 1734.36,
+    "timestamp_end": 1735.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "when you take this",
+    "timestamp_start": 1735.36,
+    "timestamp_end": 1737.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "small sized mouse,",
+    "timestamp_start": 1737.36,
+    "timestamp_end": 1739.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it was very difficult",
+    "timestamp_start": 1739.36,
+    "timestamp_end": 1741.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to manage.",
+    "timestamp_start": 1741.36,
+    "timestamp_end": 1743.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because,",
+    "timestamp_start": 1743.36,
+    "timestamp_end": 1745.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it's not fitting your palm properly.",
+    "timestamp_start": 1745.36,
+    "timestamp_end": 1747.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So therefore,",
+    "timestamp_start": 1750.36,
+    "timestamp_end": 1751.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "physical characteristic",
+    "timestamp_start": 1751.36,
+    "timestamp_end": 1753.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of managing the mouse",
+    "timestamp_start": 1753.36,
+    "timestamp_end": 1755.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is not satisfied",
+    "timestamp_start": 1755.36,
+    "timestamp_end": 1756.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "with that mini mouse concept.",
+    "timestamp_start": 1756.36,
+    "timestamp_end": 1758.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So therefore,",
+    "timestamp_start": 1760.36,
+    "timestamp_end": 1762.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "ergonomically,",
+    "timestamp_start": 1762.36,
+    "timestamp_end": 1763.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the available mouse designs,",
+    "timestamp_start": 1763.36,
+    "timestamp_end": 1765.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the ones that we use these days,",
+    "timestamp_start": 1765.36,
+    "timestamp_end": 1768.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are the best.",
+    "timestamp_start": 1768.36,
+    "timestamp_end": 1770.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So then you have",
+    "timestamp_start": 1770.36,
+    "timestamp_end": 1772.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "interaction styles",
+    "timestamp_start": 1772.36,
+    "timestamp_end": 1774.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and also the context.",
+    "timestamp_start": 1774.36,
+    "timestamp_end": 1777.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you try to plan",
+    "timestamp_start": 1781.36,
+    "timestamp_end": 1783.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and design interactions,",
+    "timestamp_start": 1783.36,
+    "timestamp_end": 1785.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you need to have",
+    "timestamp_start": 1785.36,
+    "timestamp_end": 1787.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a very good understanding",
+    "timestamp_start": 1787.36,
+    "timestamp_end": 1789.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about the domain",
+    "timestamp_start": 1789.36,
+    "timestamp_end": 1791.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to which you are going to do",
+    "timestamp_start": 1791.36,
+    "timestamp_end": 1793.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "these designs.",
+    "timestamp_start": 1793.36,
+    "timestamp_end": 1795.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And also,",
+    "timestamp_start": 1797.36,
+    "timestamp_end": 1798.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what you really need to achieve",
+    "timestamp_start": 1798.36,
+    "timestamp_end": 1800.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "through that design",
+    "timestamp_start": 1800.36,
+    "timestamp_end": 1802.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the tasks",
+    "timestamp_start": 1802.36,
+    "timestamp_end": 1804.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "are the steps that you will follow",
+    "timestamp_start": 1804.36,
+    "timestamp_end": 1806.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in order to achieve the goals.",
+    "timestamp_start": 1806.36,
+    "timestamp_end": 1809.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the planning and designing",
+    "timestamp_start": 1809.36,
+    "timestamp_end": 1812.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "involve the domain goal",
+    "timestamp_start": 1812.36,
+    "timestamp_end": 1814.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and the respective tasks.",
+    "timestamp_start": 1814.36,
+    "timestamp_end": 1816.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Right.",
+    "timestamp_start": 1822.36,
+    "timestamp_end": 1823.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you to look through this example.",
+    "timestamp_start": 1823.36,
+    "timestamp_end": 1827.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The domain is",
+    "timestamp_start": 1827.36,
+    "timestamp_end": 1829.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "online vehicle hiring system",
+    "timestamp_start": 1829.36,
+    "timestamp_end": 1831.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or a service.",
+    "timestamp_start": 1831.36,
+    "timestamp_end": 1833.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The goal is to hire a vehicle online.",
+    "timestamp_start": 1833.36,
+    "timestamp_end": 1837.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what are the tasks",
+    "timestamp_start": 1837.36,
+    "timestamp_end": 1839.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that you need to perform",
+    "timestamp_start": 1839.36,
+    "timestamp_end": 1841.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in order to hire a vehicle online?",
+    "timestamp_start": 1841.36,
+    "timestamp_end": 1843.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So can you please go through this?",
+    "timestamp_start": 1844.36,
+    "timestamp_end": 1847.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'll give you one minute",
+    "timestamp_start": 1847.36,
+    "timestamp_end": 1849.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and try to understand",
+    "timestamp_start": 1849.36,
+    "timestamp_end": 1850.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "what's happening.",
+    "timestamp_start": 1850.36,
+    "timestamp_end": 1852.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If you have anything to verify",
+    "timestamp_start": 1852.36,
+    "timestamp_end": 1856.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or clarify,",
+    "timestamp_start": 1856.36,
+    "timestamp_end": 1857.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "please communicate that to me via chat.",
+    "timestamp_start": 1857.36,
+    "timestamp_end": 1862.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'll give you one minute to go through.",
+    "timestamp_start": 1862.36,
+    "timestamp_end": 1866.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And if you have anything to identify",
+    "timestamp_start": 1874.36,
+    "timestamp_end": 1878.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I can help you register",
+    "timestamp_start": 1878.36,
+    "timestamp_end": 1900.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 1904.36,
+    "timestamp_end": 1904.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 1934.36,
+    "timestamp_end": 1934.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 1964.36,
+    "timestamp_end": 1964.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 1994.36,
+    "timestamp_end": 1994.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 2024.36,
+    "timestamp_end": 2024.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 2054.36,
+    "timestamp_end": 2061.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 2061.46,
+    "timestamp_end": 2065.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you",
+    "timestamp_start": 2076.98,
+    "timestamp_end": 2077.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'm still awaiting your responses.",
+    "timestamp_start": 2077.78,
+    "timestamp_end": 2081.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Did you",
+    "timestamp_start": 2082.28,
+    "timestamp_end": 2083.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "understand it?",
+    "timestamp_start": 2083.16,
+    "timestamp_end": 2084.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or do you have any issue?",
+    "timestamp_start": 2084.36,
+    "timestamp_end": 2085.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay, so now to discuss it,",
+    "timestamp_start": 2098.26,
+    "timestamp_end": 2101.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "here you are going to hire a vehicle online",
+    "timestamp_start": 2103.06,
+    "timestamp_end": 2105.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and in order to do that,",
+    "timestamp_start": 2105.98,
+    "timestamp_end": 2108.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you don't know exactly where it is.",
+    "timestamp_start": 2108.44,
+    "timestamp_end": 2110.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it can be through the application",
+    "timestamp_start": 2110.4,
+    "timestamp_end": 2112.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or through the website.",
+    "timestamp_start": 2112.52,
+    "timestamp_end": 2114.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you will enter the requirement",
+    "timestamp_start": 2115.34,
+    "timestamp_end": 2118.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then like once the requirements have been entered,",
+    "timestamp_start": 2118.04,
+    "timestamp_end": 2126.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "now I want you to understand",
+    "timestamp_start": 2128.84,
+    "timestamp_end": 2130.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like there's a little hidden part here.",
+    "timestamp_start": 2130.84,
+    "timestamp_end": 2133.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So some hidden component in between these two,",
+    "timestamp_start": 2133.78,
+    "timestamp_end": 2136.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the task.",
+    "timestamp_start": 2136.8,
+    "timestamp_end": 2137.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you do this first task.",
+    "timestamp_start": 2137.88,
+    "timestamp_end": 2139.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what has to happen from the system side?",
+    "timestamp_start": 2140.76,
+    "timestamp_end": 2144.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you have to show the form,",
+    "timestamp_start": 2144.36,
+    "timestamp_end": 2148.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "whatever.",
+    "timestamp_start": 2148.38,
+    "timestamp_end": 2148.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then once the requirements are entered,",
+    "timestamp_start": 2156.14,
+    "timestamp_end": 2159.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you have to show available options.",
+    "timestamp_start": 2160.76,
+    "timestamp_end": 2164.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then once the requirements are entered,",
+    "timestamp_start": 2164.54,
+    "timestamp_end": 2164.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you have to show available options.",
+    "timestamp_start": 2164.96,
+    "timestamp_end": 2164.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the first one is pager and then show the optionいる.",
+    "timestamp_start": 2164.98,
+    "timestamp_end": 2171.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You need to fill in the details of the public直接 inbox Go",
+    "timestamp_start": 2171.88,
+    "timestamp_end": 2174.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then you are going to choose from the too much.",
+    "timestamp_start": 2174.2,
+    "timestamp_end": 2178.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Go to have an idea about this type of online marketing project tax",
+    "timestamp_start": 2178.2,
+    "timestamp_end": 2178.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "available options or look for marketing plan choices.",
+    "timestamp_start": 2178.3,
+    "timestamp_end": 2179.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You don't have to do everything just to check in the every day market.",
+    "timestamp_start": 2179.3,
+    "timestamp_end": 2181.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We will look at the same strategies that we might have,",
+    "timestamp_start": 2181.5,
+    "timestamp_end": 2181.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "super, superвигgable any sort of marketing plan.",
+    "timestamp_start": 2181.58,
+    "timestamp_end": 2181.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that training video,",
+    "timestamp_start": 2181.68,
+    "timestamp_end": 2181.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bob Hoekamus",
+    "timestamp_start": 2181.72,
+    "timestamp_end": 2184.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now we're going to see the Rainier CC",
+    "timestamp_start": 2184.08,
+    "timestamp_end": 2186.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but we feel I shouldn't tend to hang seamal",
+    "timestamp_start": 2186.18,
+    "timestamp_end": 2190.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "at recessions and I should keep back this basic people.",
+    "timestamp_start": 2190.38,
+    "timestamp_end": 2191.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Look at you.",
+    "timestamp_start": 2191.26,
+    "timestamp_end": 2193.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I believe that you know people like me,",
+    "timestamp_start": 2193.1,
+    "timestamp_end": 2194.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but I need to change this.",
+    "timestamp_start": 2194.0,
+    "timestamp_end": 2194.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You will be given instructions to proceed.",
+    "timestamp_start": 2194.98,
+    "timestamp_end": 2199.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then you get the confirmation or the rejection and final message.",
+    "timestamp_start": 2208.7,
+    "timestamp_end": 2215.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And final message can be the confirmation ID or the rejection message.",
+    "timestamp_start": 2215.72,
+    "timestamp_end": 2225.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you perform the tasks, I want you to understand that after each task, some response has to be there.",
+    "timestamp_start": 2225.66,
+    "timestamp_end": 2234.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Otherwise, you are not so sure whether this task has been successfully happened or not.",
+    "timestamp_start": 2236.22,
+    "timestamp_end": 2242.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now what you need to understand here is a little bit more complicated concept.",
+    "timestamp_start": 2245.72,
+    "timestamp_end": 2259.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Your simple interaction, like this seems to be a very simple interaction entering the requirements and all that.",
+    "timestamp_start": 2260.04,
+    "timestamp_end": 2269.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But have you ever thought about the job?",
+    "timestamp_start": 2270.44,
+    "timestamp_end": 2275.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And journey your mind goes in identifying what you really need to do.",
+    "timestamp_start": 2275.72,
+    "timestamp_end": 2282.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The start and the destination may be somewhat definite if you have fixed your mind on it.",
+    "timestamp_start": 2289.32,
+    "timestamp_end": 2295.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the number of passengers might be fixed.",
+    "timestamp_start": 2296.44,
+    "timestamp_end": 2299.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because perhaps there is only two passengers to go.",
+    "timestamp_start": 2300.04,
+    "timestamp_end": 2304.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But like when you indicate two,",
+    "timestamp_start": 2305.72,
+    "timestamp_end": 2308.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like you might again decide like what to include because the vehicle doesn't,",
+    "timestamp_start": 2311.06,
+    "timestamp_end": 2318.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "like whoever the vehicle owner doesn't mind even if only one person travels in it,",
+    "timestamp_start": 2319.54,
+    "timestamp_end": 2325.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "if his or her hire is paid.",
+    "timestamp_start": 2326.22,
+    "timestamp_end": 2328.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you will have some other parameters to consider when you are indicating the number.",
+    "timestamp_start": 2328.66,
+    "timestamp_end": 2335.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you will have some other parameters to consider when you are indicating the number of passengers.",
+    "timestamp_start": 2335.72,
+    "timestamp_end": 2336.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In majority of the cases, it will be the true number.",
+    "timestamp_start": 2336.72,
+    "timestamp_end": 2339.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But in some other cases, there can be some other numbers indicated.",
+    "timestamp_start": 2339.92,
+    "timestamp_end": 2343.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The required time, when you take this required time, in most of the situations,",
+    "timestamp_start": 2344.22,
+    "timestamp_end": 2350.64,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we always order a cab ahead of the required time.",
+    "timestamp_start": 2351.04,
+    "timestamp_end": 2355.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Why?",
+    "timestamp_start": 2356.1,
+    "timestamp_end": 2356.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Why so?",
+    "timestamp_start": 2359.12,
+    "timestamp_end": 2360.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Why so?",
+    "timestamp_start": 2360.12,
+    "timestamp_end": 2360.14,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Why so?",
+    "timestamp_start": 2363.1,
+    "timestamp_end": 2363.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because our past experience,",
+    "timestamp_start": 2363.82,
+    "timestamp_end": 2365.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "our past experiences indicate the cab might get late.",
+    "timestamp_start": 2365.72,
+    "timestamp_end": 2369.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So if we want to depart at 10 o'clock,",
+    "timestamp_start": 2370.86,
+    "timestamp_end": 2375.58,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "we might order it to be here indicating the required time 9.45.",
+    "timestamp_start": 2376.1,
+    "timestamp_end": 2380.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's the thought process which happens.",
+    "timestamp_start": 2381.9,
+    "timestamp_end": 2386.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because like we recall the previous experiences that we have had.",
+    "timestamp_start": 2387.0,
+    "timestamp_end": 2392.34,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And these,",
+    "timestamp_start": 2394.64,
+    "timestamp_end": 2395.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "this amount of time is also determined 여러 times.",
+    "timestamp_start": 2395.72,
+    "timestamp_end": 2400.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 2400.4,
+    "timestamp_end": 2400.78,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 2400.78,
+    "timestamp_end": 2401.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yes.",
+    "timestamp_start": 2401.06,
+    "timestamp_end": 2401.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That you can easily identify a cab,",
+    "timestamp_start": 2401.66,
+    "timestamp_end": 2407.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but how do you 不是",
+    "timestamp_start": 2407.98,
+    "timestamp_end": 2410.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "anyone is aware of it?",
+    "timestamp_start": 2410.52,
+    "timestamp_end": 2413.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You cannot know the number of passengers.",
+    "timestamp_start": 2413.3,
+    "timestamp_end": 2416.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Ya.",
+    "timestamp_start": 2416.76,
+    "timestamp_end": 2417.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we cannot possibly have such an idea throughout the online details.",
+    "timestamp_start": 2417.1,
+    "timestamp_end": 2420.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You can know the number of passengers",
+    "timestamp_start": 2420.3,
+    "timestamp_end": 2423.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and study the JIC system.",
+    "timestamp_start": 2423.0,
+    "timestamp_end": 2423.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in most cases these connoisseurs do not have enough knowledge to know what it is.",
+    "timestamp_start": 2423.66,
+    "timestamp_end": 2424.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "cases take time to sit back and think exactly how happens.",
+    "timestamp_start": 2424.8,
+    "timestamp_end": 2428.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And when you want to design and facilitate user-friendly interactions,",
+    "timestamp_start": 2434.96,
+    "timestamp_end": 2441.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "one thing is very important that is your awareness about the context and the requirements.",
+    "timestamp_start": 2442.4,
+    "timestamp_end": 2448.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that is why we say know-how is essential. You should know how the things happen in that context.",
+    "timestamp_start": 2448.56,
+    "timestamp_end": 2456.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now you cannot always force the user to accept what you have delivered",
+    "timestamp_start": 2456.96,
+    "timestamp_end": 2464.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because it might fit into another context not the client's context.",
+    "timestamp_start": 2466.08,
+    "timestamp_end": 2470.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So always make sure you understand the know-how to deliver what the client wants.",
+    "timestamp_start": 2472.0,
+    "timestamp_end": 2477.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Don't forget if you don później missions, is not a goal problem.",
+    "timestamp_start": 2478.56,
+    "timestamp_end": 2482.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because in any game, the team story kaum fungo must not fall underoning.",
+    "timestamp_start": 2483.36,
+    "timestamp_end": 2487.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "However if you make the element time small involving",
+    "timestamp_start": 2488.72,
+    "timestamp_end": 2496.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "quick and easy execute that.",
+    "timestamp_start": 2500.04,
+    "timestamp_end": 2502.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "With much time I also try to don't get the client excited.",
+    "timestamp_start": 2502.98,
+    "timestamp_end": 2506.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Whatever you do,",
+    "timestamp_start": 2506.96,
+    "timestamp_end": 2507.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "that's been our approach for this closed session.",
+    "timestamp_start": 2507.86,
+    "timestamp_end": 2508.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Okay..",
+    "timestamp_start": 2508.3,
+    "timestamp_end": 2508.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you and see you in next session теп transmired..",
+    "timestamp_start": 2508.32,
+    "timestamp_end": 2508.54,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "about two interaction models which are well known. Don Norman's model is one and",
+    "timestamp_start": 2508.56,
+    "timestamp_end": 2516.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Aboud and Bale framework is the other. The Don Norman or the Donald Norman is",
+    "timestamp_start": 2516.8,
+    "timestamp_end": 2525.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "also a well-known HCI researcher who had come up with many principles and",
+    "timestamp_start": 2525.9,
+    "timestamp_end": 2534.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "models related to human-computer interaction and until recently this",
+    "timestamp_start": 2534.06,
+    "timestamp_end": 2541.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Aboud is a Gregory Aboud and Russell Bale and there had been two other authors",
+    "timestamp_start": 2541.5,
+    "timestamp_end": 2549.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "who who wrote a book on human-computer interaction which had been considered",
+    "timestamp_start": 2549.92,
+    "timestamp_end": 2555.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the HCI Bible until very recently. It's no longer going to be very recent because",
+    "timestamp_start": 2555.9,
+    "timestamp_end": 2563.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "they did not have the HCI model.",
+    "timestamp_start": 2563.04,
+    "timestamp_end": 2564.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It was not published in a latest edition so that now it's obsolete but it had been a book",
+    "timestamp_start": 2564.04,
+    "timestamp_end": 2571.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "which is which had been used by many. So both these sorry all these scientists and the",
+    "timestamp_start": 2571.36,
+    "timestamp_end": 2580.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "researchers are well known and have taken great initiatives towards the popularization",
+    "timestamp_start": 2580.9,
+    "timestamp_end": 2588.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and standardization of human-computer interaction as a subject.",
+    "timestamp_start": 2588.7,
+    "timestamp_end": 2592.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So we will take a look at the next slide.",
+    "timestamp_start": 2592.98,
+    "timestamp_end": 2594.02,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So let's check the Donald Norman's model first.",
+    "timestamp_start": 2594.04,
+    "timestamp_end": 2597.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The pictures are missing here like let me check what has happened to the pictures.",
+    "timestamp_start": 2607.08,
+    "timestamp_end": 2614.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is the Donald Norman's model which looks a quite simple model where you have a goal and a system.",
+    "timestamp_start": 2624.04,
+    "timestamp_end": 2641.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you have a system you through the system you want to achieve a goal. So once the goal is achieved you are going to evaluate the goal.",
+    "timestamp_start": 2641.96,
+    "timestamp_end": 2649.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So once the goal is achieved you are going to evaluate the goal.",
+    "timestamp_start": 2649.08,
+    "timestamp_end": 2653.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So once the goal is achieved you are going to evaluate the system.",
+    "timestamp_start": 2653.08,
+    "timestamp_end": 2655.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you initiate from here.",
+    "timestamp_start": 2655.08,
+    "timestamp_end": 2657.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You have a goal.",
+    "timestamp_start": 2657.08,
+    "timestamp_end": 2659.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And in order to achieve your goal there are some actions you need to execute.",
+    "timestamp_start": 2659.08,
+    "timestamp_end": 2669.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "These actions will be performed on the system.",
+    "timestamp_start": 2669.08,
+    "timestamp_end": 2673.08,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So as a result the system will give you some outcome.",
+    "timestamp_start": 2673.08,
+    "timestamp_end": 2678.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So as a result the system will give you some outcome.",
+    "timestamp_start": 2678.12,
+    "timestamp_end": 2679.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We basically call it the HCI model.",
+    "timestamp_start": 2679.12,
+    "timestamp_end": 2680.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is the HCI model.",
+    "timestamp_start": 2680.12,
+    "timestamp_end": 2681.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is the HCI model.",
+    "timestamp_start": 2681.12,
+    "timestamp_end": 2682.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We basically call this system state changes.",
+    "timestamp_start": 2682.12,
+    "timestamp_end": 2686.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you perform some actions on the system the system state will change from one state to another.",
+    "timestamp_start": 2686.12,
+    "timestamp_end": 2696.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now change state you need to look at it carefully and see whether your goal has been achieved through that.",
+    "timestamp_start": 2696.12,
+    "timestamp_end": 2706.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's the evaluation",
+    "timestamp_start": 2706.12,
+    "timestamp_end": 2708.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can see different values.",
+    "timestamp_start": 2708.12,
+    "timestamp_end": 2710.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So you can also have the option to choose between three.",
+    "timestamp_start": 2710.12,
+    "timestamp_end": 2712.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "illustrate it further like this. The user establishes a goal. Establishing the goal",
+    "timestamp_start": 2712.12,
+    "timestamp_end": 2728.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is like you identify what you're supposed to do. And then to perform that, you need",
+    "timestamp_start": 2728.72,
+    "timestamp_end": 2737.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to formulate your intention like you want to achieve this, but you try to understand",
+    "timestamp_start": 2737.0,
+    "timestamp_end": 2744.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "how you are going to carry it forward. That's the formulating the intention. And then you",
+    "timestamp_start": 2744.56,
+    "timestamp_end": 2753.2,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "will specify what you need to do in order to get your work done and then really do that.",
+    "timestamp_start": 2753.2,
+    "timestamp_end": 2763.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You initially conceptualize your intention and then you try to understand what to do",
+    "timestamp_start": 2763.76,
+    "timestamp_end": 2771.84,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in order to perform it and perform it. Plan, decide, and do.",
+    "timestamp_start": 2771.84,
+    "timestamp_end": 2785.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, then the system state changes.",
+    "timestamp_start": 2790.18,
+    "timestamp_end": 2793.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So, now when the system state changes, so normally the system state has to be given",
+    "timestamp_start": 2793.76,
+    "timestamp_end": 2803.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "as an output. So, the very first thing is you perceive it. Perceiving it is you notice",
+    "timestamp_start": 2803.42,
+    "timestamp_end": 2812.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and capture that the system state has changed. Then you interpret it. Once you noticed and",
+    "timestamp_start": 2812.88,
+    "timestamp_end": 2821.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "capture, then you're going to interpret it. And then you're going to interpret it. And",
+    "timestamp_start": 2821.8,
+    "timestamp_end": 2823.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "understand what really has happened. Then you compare whether the state change which",
+    "timestamp_start": 2823.74,
+    "timestamp_end": 2836.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "occurred has been the real one you expected. Notice, understand, and evaluate. So, this",
+    "timestamp_start": 2836.62,
+    "timestamp_end": 2850.16,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is how this the balance between the goal and the system state is. So, that's what we're",
+    "timestamp_start": 2850.16,
+    "timestamp_end": 2853.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "talking about. And then you interpret and understand what really has happened. Then you",
+    "timestamp_start": 2853.56,
+    "timestamp_end": 2853.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is maintained in between the user and the system changes.",
+    "timestamp_start": 2853.72,
+    "timestamp_end": 2857.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this looks a little",
+    "timestamp_start": 2857.72,
+    "timestamp_end": 2861.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "simple at first, but theoretically it",
+    "timestamp_start": 2861.72,
+    "timestamp_end": 2865.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "has a solid background.",
+    "timestamp_start": 2865.72,
+    "timestamp_end": 2869.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now",
+    "timestamp_start": 2869.72,
+    "timestamp_end": 2873.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "these two are very very important.",
+    "timestamp_start": 2873.72,
+    "timestamp_end": 2877.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Gulf of execution and gulf of",
+    "timestamp_start": 2877.72,
+    "timestamp_end": 2881.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "evaluation. What is a gulf?",
+    "timestamp_start": 2881.72,
+    "timestamp_end": 2885.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Gulf is a gap.",
+    "timestamp_start": 2889.72,
+    "timestamp_end": 2893.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Gulf is a gap.",
+    "timestamp_start": 2897.72,
+    "timestamp_end": 2901.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So when you take this gulf, gulf of execution",
+    "timestamp_start": 2901.72,
+    "timestamp_end": 2905.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is",
+    "timestamp_start": 2905.72,
+    "timestamp_end": 2909.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "uses formulation of action, that means how",
+    "timestamp_start": 2909.72,
+    "timestamp_end": 2913.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "user wants to do things are not",
+    "timestamp_start": 2913.72,
+    "timestamp_end": 2917.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "matching with the actions allowed by the system.",
+    "timestamp_start": 2917.72,
+    "timestamp_end": 2921.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Maybe perhaps",
+    "timestamp_start": 2921.72,
+    "timestamp_end": 2925.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you think in order to go to the next page you are going to",
+    "timestamp_start": 2925.72,
+    "timestamp_end": 2929.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "press the space bar, but by pressing the space",
+    "timestamp_start": 2929.72,
+    "timestamp_end": 2933.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "bar you cannot go to the next page. So it's",
+    "timestamp_start": 2933.72,
+    "timestamp_end": 2937.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "path situação. That's why this gulf is",
+    "timestamp_start": 2937.72,
+    "timestamp_end": 2941.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "set. The gulf of execution",
+    "timestamp_start": 2941.72,
+    "timestamp_end": 2945.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "between when the user is allowed to",
+    "timestamp_start": 2945.72,
+    "timestamp_end": 2949.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "execute and the system is trying",
+    "timestamp_start": 2949.72,
+    "timestamp_end": 2953.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to execute and what is allowed to execute.",
+    "timestamp_start": 2953.72,
+    "timestamp_end": 2957.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There a gap between user planning and what is allowed.",
+    "timestamp_start": 2957.72,
+    "timestamp_end": 2961.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That's the gap in execution which happens",
+    "timestamp_start": 2961.72,
+    "timestamp_end": 2965.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "wants to do. So that is why we call it the gulf of execution.",
+    "timestamp_start": 2965.72,
+    "timestamp_end": 2969.7,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Similarly, you have the gulf of evaluation.",
+    "timestamp_start": 2971.46,
+    "timestamp_end": 2974.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Gulf of evaluation indicate",
+    "timestamp_start": 2975.32,
+    "timestamp_end": 2977.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the gap between the user's expectation",
+    "timestamp_start": 2977.72,
+    "timestamp_end": 2981.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of the changed system state of the actual presentation",
+    "timestamp_start": 2981.68,
+    "timestamp_end": 2985.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of the state. There's a gap.",
+    "timestamp_start": 2985.74,
+    "timestamp_end": 2989.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Once I",
+    "timestamp_start": 2990.34,
+    "timestamp_end": 2990.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "once I",
+    "timestamp_start": 2990.94,
+    "timestamp_end": 2992.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "confirm the bank transfer,",
+    "timestamp_start": 2992.28,
+    "timestamp_end": 2996.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I expect another screen",
+    "timestamp_start": 2997.78,
+    "timestamp_end": 3001.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "to confirm that this transfer has been successful.",
+    "timestamp_start": 3001.96,
+    "timestamp_end": 3005.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But if the system, without giving any message,",
+    "timestamp_start": 3006.2,
+    "timestamp_end": 3010.1,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "closes the window, then the actual presentation",
+    "timestamp_start": 3010.68,
+    "timestamp_end": 3014.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "of the completed transaction by the system",
+    "timestamp_start": 3014.28,
+    "timestamp_end": 3018.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "is not what the user expects.",
+    "timestamp_start": 3018.74,
+    "timestamp_end": 3020.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So therefore, you identify a gap.",
+    "timestamp_start": 3020.94,
+    "timestamp_end": 3025.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's the gulf of evaluation.",
+    "timestamp_start": 3026.9,
+    "timestamp_end": 3030.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Now in most of the situations,",
+    "timestamp_start": 3031.54,
+    "timestamp_end": 3033.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "why the computer systems",
+    "timestamp_start": 3034.84,
+    "timestamp_end": 3039.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "do fail is because of this.",
+    "timestamp_start": 3039.04,
+    "timestamp_end": 3041.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are gulfs of execution and there are gulfs of evaluation.",
+    "timestamp_start": 3042.74,
+    "timestamp_end": 3046.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So,",
+    "timestamp_start": 3050.78,
+    "timestamp_end": 3050.88,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "there are gulfs of evaluation.",
+    "timestamp_start": 3050.88,
+    "timestamp_end": 3050.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So,",
+    "timestamp_start": 3050.94,
+    "timestamp_end": 3051.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you to",
+    "timestamp_start": 3051.7,
+    "timestamp_end": 3054.38,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you to work on this exercise.",
+    "timestamp_start": 3054.38,
+    "timestamp_end": 3065.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So,",
+    "timestamp_start": 3074.2,
+    "timestamp_end": 3075.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "go through this exercise first.",
+    "timestamp_start": 3075.9,
+    "timestamp_end": 3079.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I think you justation is a brief history of Several",
+    "timestamp_start": 3080.94,
+    "timestamp_end": 3083.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Yeah,",
+    "timestamp_start": 3083.78,
+    "timestamp_end": 3084.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "it's easy to use.",
+    "timestamp_start": 3084.5,
+    "timestamp_end": 3085.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's easy to use",
+    "timestamp_start": 3085.52,
+    "timestamp_end": 3086.3,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a common technique.",
+    "timestamp_start": 3086.3,
+    "timestamp_end": 3086.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You could see this is roughly two pages for ,",
+    "timestamp_start": 3087.78,
+    "timestamp_end": 3089.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "let's say,",
+    "timestamp_start": 3089.28,
+    "timestamp_end": 3090.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "five or six pages,",
+    "timestamp_start": 3090.76,
+    "timestamp_end": 3091.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because you've got days like other ones.",
+    "timestamp_start": 3091.72,
+    "timestamp_end": 3092.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Basically,",
+    "timestamp_start": 3092.92,
+    "timestamp_end": 3093.52,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So these are not as per exact",
+    "timestamp_start": 3093.52,
+    "timestamp_end": 3095.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "natural",
+    "timestamp_start": 3095.62,
+    "timestamp_end": 3106.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "or still",
+    "timestamp_start": 3106.76,
+    "timestamp_end": 3108.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "human",
+    "timestamp_start": 3108.48,
+    "timestamp_end": 3109.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "healthy",
+    "timestamp_start": 3109.28,
+    "timestamp_end": 3110.62,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3110.94,
+    "timestamp_end": 3140.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3140.94,
+    "timestamp_end": 3170.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3170.94,
+    "timestamp_end": 3200.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3200.94,
+    "timestamp_end": 3230.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3230.94,
+    "timestamp_end": 3260.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3260.94,
+    "timestamp_end": 3290.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3290.94,
+    "timestamp_end": 3320.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3320.94,
+    "timestamp_end": 3350.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3350.94,
+    "timestamp_end": 3380.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3380.94,
+    "timestamp_end": 3410.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3410.94,
+    "timestamp_end": 3440.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3440.94,
+    "timestamp_end": 3470.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3470.94,
+    "timestamp_end": 3500.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3500.94,
+    "timestamp_end": 3530.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3530.94,
+    "timestamp_end": 3560.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3560.94,
+    "timestamp_end": 3589.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3590.94,
+    "timestamp_end": 3620.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3620.94,
+    "timestamp_end": 3622.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3650.94,
+    "timestamp_end": 3680.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3680.94,
+    "timestamp_end": 3710.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Thank you.",
+    "timestamp_start": 3710.94,
+    "timestamp_end": 3740.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Do you have any questions so far?",
+    "timestamp_start": 3740.94,
+    "timestamp_end": 3743.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Any questions so far?",
+    "timestamp_start": 3743.9,
+    "timestamp_end": 3747.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's pretty uncomfortable here because we are talking about interactions and nobody",
+    "timestamp_start": 3770.94,
+    "timestamp_end": 3790.94,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "responds us.",
+    "timestamp_start": 3790.94,
+    "timestamp_end": 3809.12,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And now about and build framework.",
+    "timestamp_start": 3809.12,
+    "timestamp_end": 3811.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the second one, they also talk about the system and user and they talk about the input",
+    "timestamp_start": 3811.92,
+    "timestamp_end": 3818.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and output.",
+    "timestamp_start": 3818.32,
+    "timestamp_end": 3820.82,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So what they say is user will pass its requirement or the intention through the input to the",
+    "timestamp_start": 3820.94,
+    "timestamp_end": 3835.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "system.",
+    "timestamp_start": 3835.44,
+    "timestamp_end": 3836.44,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "System will interpret it and give the output and output will be then interpreted by the",
+    "timestamp_start": 3836.44,
+    "timestamp_end": 3842.36,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "user.",
+    "timestamp_start": 3842.36,
+    "timestamp_end": 3844.6,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "To illustrate it further.",
+    "timestamp_start": 3844.6,
+    "timestamp_end": 3849.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "You have the user to interpret the input.",
+    "timestamp_start": 3849.0,
+    "timestamp_end": 3850.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then the system will give the task.",
+    "timestamp_start": 3850.92,
+    "timestamp_end": 3854.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the system is a core here.",
+    "timestamp_start": 3854.22,
+    "timestamp_end": 3858.66,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User wants to articulate its intention through the input.",
+    "timestamp_start": 3858.66,
+    "timestamp_end": 3866.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And then input will be taken.",
+    "timestamp_start": 3866.42,
+    "timestamp_end": 3872.68,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And system will be given how to perform.",
+    "timestamp_start": 3872.68,
+    "timestamp_end": 3880.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And based on the performance system will present some ideas or some present the output.",
+    "timestamp_start": 3880.42,
+    "timestamp_end": 3889.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So it will be more converted into the presentation or the presentable component.",
+    "timestamp_start": 3889.92,
+    "timestamp_end": 3895.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And it will be given as the output.",
+    "timestamp_start": 3895.92,
+    "timestamp_end": 3897.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the output will be observed and interpreted by the user.",
+    "timestamp_start": 3897.92,
+    "timestamp_end": 3909.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is illustrated.",
+    "timestamp_start": 3910.42,
+    "timestamp_end": 3915.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here when you take this.",
+    "timestamp_start": 3915.92,
+    "timestamp_end": 3925.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "If we take the upper part as B.",
+    "timestamp_start": 3925.92,
+    "timestamp_end": 3931.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The bottom part as A and upper part as B.",
+    "timestamp_start": 3931.42,
+    "timestamp_end": 3936.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A is using the input.",
+    "timestamp_start": 3936.42,
+    "timestamp_end": 3939.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User giving the system what he or she wants to do.",
+    "timestamp_start": 3939.92,
+    "timestamp_end": 3943.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So this is execution cycle.",
+    "timestamp_start": 3943.92,
+    "timestamp_end": 3946.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This bottom part is execution.",
+    "timestamp_start": 3946.42,
+    "timestamp_end": 3954.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Upper part is system gives the output and which will then be observed or the perceived",
+    "timestamp_start": 3954.92,
+    "timestamp_end": 3961.22,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and interpreted is the evaluation.",
+    "timestamp_start": 3961.22,
+    "timestamp_end": 3966.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So in the.",
+    "timestamp_start": 3966.92,
+    "timestamp_end": 3968.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the.",
+    "timestamp_start": 3968.92,
+    "timestamp_end": 3969.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Donald Norman's framework.",
+    "timestamp_start": 3969.92,
+    "timestamp_end": 3973.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In Donald Norman's model we discussed about evaluation and execution cycles.",
+    "timestamp_start": 3973.92,
+    "timestamp_end": 3980.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here also you have evaluation and execution cycle.",
+    "timestamp_start": 3980.42,
+    "timestamp_end": 3984.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The same thing is presented in two different ways.",
+    "timestamp_start": 3984.42,
+    "timestamp_end": 3988.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There they talk about seven stages of actions.",
+    "timestamp_start": 3988.92,
+    "timestamp_end": 3993.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We will go back and see what the seven stages are.",
+    "timestamp_start": 3993.92,
+    "timestamp_end": 3997.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Establishing the goal.",
+    "timestamp_start": 3999.92,
+    "timestamp_end": 4003.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Establishing the goal.",
+    "timestamp_start": 4003.92,
+    "timestamp_end": 4004.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "One.",
+    "timestamp_start": 4004.92,
+    "timestamp_end": 4005.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Formulating the action two.",
+    "timestamp_start": 4005.92,
+    "timestamp_end": 4007.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Specifying three and executing four.",
+    "timestamp_start": 4007.92,
+    "timestamp_end": 4011.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Perceiving five.",
+    "timestamp_start": 4011.92,
+    "timestamp_end": 4013.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Interpreting six and evaluation seven.",
+    "timestamp_start": 4013.92,
+    "timestamp_end": 4019.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So one, two, three, four.",
+    "timestamp_start": 4019.92,
+    "timestamp_end": 4023.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Of the Norman's actions.",
+    "timestamp_start": 4023.92,
+    "timestamp_end": 4025.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Will be covered here in the bottom.",
+    "timestamp_start": 4025.92,
+    "timestamp_end": 4027.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So.",
+    "timestamp_start": 4027.92,
+    "timestamp_end": 4028.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here in the bottom part execution cycle.",
+    "timestamp_start": 4028.92,
+    "timestamp_end": 4032.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Five six and seven will be covered in the evaluation cycle.",
+    "timestamp_start": 4032.92,
+    "timestamp_end": 4038.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So here it is given.",
+    "timestamp_start": 4038.92,
+    "timestamp_end": 4042.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like this.",
+    "timestamp_start": 4042.92,
+    "timestamp_end": 4045.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "This is a and this is b.",
+    "timestamp_start": 4045.92,
+    "timestamp_end": 4050.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The goal to system there you consider user to system.",
+    "timestamp_start": 4050.92,
+    "timestamp_end": 4054.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The goal to system there you consider user to system.",
+    "timestamp_start": 4054.92,
+    "timestamp_end": 4056.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Here you get the user and the system.",
+    "timestamp_start": 4056.92,
+    "timestamp_end": 4062.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The goal also is interpreted.",
+    "timestamp_start": 4062.92,
+    "timestamp_end": 4065.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And entered by the user.",
+    "timestamp_start": 4065.92,
+    "timestamp_end": 4067.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So the above and below framework.",
+    "timestamp_start": 4067.92,
+    "timestamp_end": 4070.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Gives the prominence to the user.",
+    "timestamp_start": 4070.92,
+    "timestamp_end": 4076.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Where.",
+    "timestamp_start": 4076.92,
+    "timestamp_end": 4078.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "In the Donald Norman's model.",
+    "timestamp_start": 4078.92,
+    "timestamp_end": 4080.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Gives prominence to the goal interpreted by the user.",
+    "timestamp_start": 4080.92,
+    "timestamp_end": 4084.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So that's a difference.",
+    "timestamp_start": 4084.92,
+    "timestamp_end": 4086.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But.",
+    "timestamp_start": 4086.92,
+    "timestamp_end": 4088.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Both of these.",
+    "timestamp_start": 4088.92,
+    "timestamp_end": 4090.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Both of these.",
+    "timestamp_start": 4090.92,
+    "timestamp_end": 4092.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Talk about the same thing.",
+    "timestamp_start": 4092.92,
+    "timestamp_end": 4098.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the ergonomics I really don't want to pay a lot of attention to.",
+    "timestamp_start": 4098.92,
+    "timestamp_end": 4102.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We just discussed.",
+    "timestamp_start": 4102.92,
+    "timestamp_end": 4111.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I will now post a question.",
+    "timestamp_start": 4111.92,
+    "timestamp_end": 4114.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "On.",
+    "timestamp_start": 4114.92,
+    "timestamp_end": 4115.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The.",
+    "timestamp_start": 4115.92,
+    "timestamp_end": 4116.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Model.",
+    "timestamp_start": 4116.92,
+    "timestamp_end": 4117.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So.",
+    "timestamp_start": 4117.92,
+    "timestamp_end": 4118.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Best 20 students.",
+    "timestamp_start": 4118.92,
+    "timestamp_end": 4119.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Do you have access to a model.",
+    "timestamp_start": 4119.92,
+    "timestamp_end": 4125.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then.",
+    "timestamp_start": 4125.92,
+    "timestamp_end": 4126.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There's.",
+    "timestamp_start": 4126.92,
+    "timestamp_end": 4127.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Then it's not possible.",
+    "timestamp_start": 4127.92,
+    "timestamp_end": 4130.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Why?",
+    "timestamp_start": 4130.92,
+    "timestamp_end": 4131.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Like one says yes.",
+    "timestamp_start": 4131.92,
+    "timestamp_end": 4132.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the other one say no.",
+    "timestamp_start": 4132.92,
+    "timestamp_end": 4133.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Because.",
+    "timestamp_start": 4133.92,
+    "timestamp_end": 4134.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Perhaps the one who said no.",
+    "timestamp_start": 4134.92,
+    "timestamp_end": 4135.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is.",
+    "timestamp_start": 4135.92,
+    "timestamp_end": 4136.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Not.",
+    "timestamp_start": 4136.92,
+    "timestamp_end": 4137.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A.",
+    "timestamp_start": 4137.92,
+    "timestamp_end": 4138.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4138.92,
+    "timestamp_end": 4139.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And.",
+    "timestamp_start": 4139.92,
+    "timestamp_end": 4140.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The.",
+    "timestamp_start": 4140.92,
+    "timestamp_end": 4141.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4141.92,
+    "timestamp_end": 4142.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is.",
+    "timestamp_start": 4142.92,
+    "timestamp_end": 4143.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The.",
+    "timestamp_start": 4143.92,
+    "timestamp_end": 4144.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4144.92,
+    "timestamp_end": 4145.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And.",
+    "timestamp_start": 4145.92,
+    "timestamp_end": 4146.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4146.92,
+    "timestamp_end": 4147.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is.",
+    "timestamp_start": 4147.92,
+    "timestamp_end": 4148.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The.",
+    "timestamp_start": 4148.92,
+    "timestamp_end": 4149.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4149.92,
+    "timestamp_end": 4150.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is.",
+    "timestamp_start": 4150.92,
+    "timestamp_end": 4151.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A.",
+    "timestamp_start": 4151.92,
+    "timestamp_end": 4152.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4152.92,
+    "timestamp_end": 4153.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "It's not.",
+    "timestamp_start": 4153.92,
+    "timestamp_end": 4154.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A.",
+    "timestamp_start": 4154.92,
+    "timestamp_end": 4155.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4155.92,
+    "timestamp_end": 4156.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That.",
+    "timestamp_start": 4156.92,
+    "timestamp_end": 4157.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is.",
+    "timestamp_start": 4157.92,
+    "timestamp_end": 4158.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A.",
+    "timestamp_start": 4158.92,
+    "timestamp_end": 4159.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4159.92,
+    "timestamp_end": 4160.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Is.",
+    "timestamp_start": 4160.92,
+    "timestamp_end": 4161.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "A.",
+    "timestamp_start": 4161.92,
+    "timestamp_end": 4162.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "User.",
+    "timestamp_start": 4162.92,
+    "timestamp_end": 4163.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "But.",
+    "timestamp_start": 4163.92,
+    "timestamp_end": 4164.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So.",
+    "timestamp_start": 4164.92,
+    "timestamp_end": 4165.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "We.",
+    "timestamp_start": 4165.92,
+    "timestamp_end": 4166.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Have.",
+    "timestamp_start": 4166.92,
+    "timestamp_end": 4167.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The.",
+    "timestamp_start": 4167.92,
+    "timestamp_end": 4168.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Model.",
+    "timestamp_start": 4168.92,
+    "timestamp_end": 4169.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Of.",
+    "timestamp_start": 4169.92,
+    "timestamp_end": 4170.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "The.",
+    "timestamp_start": 4170.92,
+    "timestamp_end": 4171.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Model.",
+    "timestamp_start": 4171.92,
+    "timestamp_end": 4172.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "That.",
+    "timestamp_start": 4172.92,
+    "timestamp_end": 4173.92,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because it's very difficult to get into a discussion now",
+    "timestamp_start": 4173.92,
+    "timestamp_end": 4178.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because I normally conduct the lecture,",
+    "timestamp_start": 4178.0,
+    "timestamp_end": 4182.4,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "opening up a lot of discussion forums",
+    "timestamp_start": 4182.72,
+    "timestamp_end": 4184.96,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and collecting your views,",
+    "timestamp_start": 4184.96,
+    "timestamp_end": 4187.32,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but I'm unable to do it yet",
+    "timestamp_start": 4187.82,
+    "timestamp_end": 4190.04,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "because some of you are not yet registered",
+    "timestamp_start": 4190.04,
+    "timestamp_end": 4192.72,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and have access to Moodle.",
+    "timestamp_start": 4192.72,
+    "timestamp_end": 4194.56,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "All right.",
+    "timestamp_start": 4203.92,
+    "timestamp_end": 4223.28,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you to look at this direct manipulation",
+    "timestamp_start": 4223.36,
+    "timestamp_end": 4226.18,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and indirect manipulation.",
+    "timestamp_start": 4226.18,
+    "timestamp_end": 4227.76,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "There are two examples given,",
+    "timestamp_start": 4229.98,
+    "timestamp_end": 4232.26,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "direct manipulation",
+    "timestamp_start": 4232.26,
+    "timestamp_end": 4233.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and indirect manipulation.",
+    "timestamp_start": 4233.46,
+    "timestamp_end": 4233.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Indirect manipulation is where",
+    "timestamp_start": 4233.92,
+    "timestamp_end": 4238.48,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "the user directly connects with the system environment.",
+    "timestamp_start": 4238.48,
+    "timestamp_end": 4241.46,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "And the indirect manipulation is",
+    "timestamp_start": 4242.82,
+    "timestamp_end": 4245.5,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "you connect with a simulated computer interface,",
+    "timestamp_start": 4245.5,
+    "timestamp_end": 4250.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "but the actual effect is somewhere else.",
+    "timestamp_start": 4251.1,
+    "timestamp_end": 4254.06,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "So now two examples have been given.",
+    "timestamp_start": 4256.58,
+    "timestamp_end": 4259.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I want you each to post",
+    "timestamp_start": 4259.86,
+    "timestamp_end": 4262.86,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "a video of you connecting with a computer interface",
+    "timestamp_start": 4262.86,
+    "timestamp_end": 4263.9,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and then I want you to share it with me.",
+    "timestamp_start": 4263.92,
+    "timestamp_end": 4264.42,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Different examples to showcase the direct manipulation",
+    "timestamp_start": 4264.42,
+    "timestamp_end": 4268.24,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "and indirect manipulation.",
+    "timestamp_start": 4268.24,
+    "timestamp_end": 4269.98,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "Take your time.",
+    "timestamp_start": 4272.54,
+    "timestamp_end": 4273.8,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "I'll give you five minutes this time",
+    "timestamp_start": 4274.3,
+    "timestamp_end": 4276.74,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  },
+  {
+    "sentence": "in order to take this.",
+    "timestamp_start": 4276.74,
+    "timestamp_end": 4278.0,
+    "is_important": false,
+    "importance_ratio_T": 0.0
+  }
+]

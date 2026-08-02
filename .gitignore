@@ -301,3 +301,12 @@ models/module3/
 src/module2_summarization/bert_model/model.safetensors 
 src/module2_summarization/bert_model/model.safetensors 
 src/module2_summarization/bert_model_v2/model.safetensors 
+src/module2_summarization/bert_model_v4/model.safetensors 
+src/module2_summarization/bert_model_v5/model.safetensors 
+bert_temp_v4/ 
+src/module2_summarization/bert_model_v4/model.safetensors
+src/module2_summarization/bert_model_v5/model.safetensors
+bert_temp_v4/
+bert_temp_v5/
+
+
