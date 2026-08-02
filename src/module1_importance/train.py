@@ -1,5 +1,6 @@
 import os
 import json
+import random
 import numpy as np
 import torch
 import torch.nn as nn
@@ -8,6 +9,22 @@ from pathlib import Path
 from tqdm import tqdm
 
 from src.module1_importance.model import VideoImportanceScorer
+
+
+def set_seed(seed=42):
+    """
+    Fixes every source of randomness used in a training run: weight
+    initialisation, DataLoader shuffling, and the temporal jitter / frame
+    dropout augmentation (both np.random-based). Without this, identical
+    code and hyperparameters produce different results run to run - the
+    run-to-run variance documented in the report.
+    """
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 class LectureFeatureDataset(Dataset):
     """
@@ -115,13 +132,16 @@ class LectureFeatureDataset(Dataset):
         return torch.tensor(segment_features, dtype=torch.float32), torch.tensor(score, dtype=torch.float32)
 
 
-def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=3e-5, augment=True):
+def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=3e-5, augment=True, seed=42):
     """
     Main training loop for Module 1.
     """
+    set_seed(seed)
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
-    
+    print(f"Random seed: {seed} (fixed for reproducibility)")
+
     # Setup Datasets and DataLoaders
     train_dataset = LectureFeatureDataset(data_dir, annotations_path, split="train", augment=augment)
     val_dataset = LectureFeatureDataset(data_dir, annotations_path, split="val", augment=False)
