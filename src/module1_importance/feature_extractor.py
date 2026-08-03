@@ -67,19 +67,27 @@ class FrameFeatureExtractor:
         return features.squeeze().cpu().numpy()
     
     def extract_from_video(
-        self, 
-        video_path: str, 
+        self,
+        video_path: str,
         fps: int = 1,
-        max_frames: Optional[int] = None
+        max_frames: Optional[int] = None,
+        batch_size: int = 32,
     ) -> Tuple[np.ndarray, List[float]]:
         """
         Extract features from a video at the specified frame rate.
-        
+
         Args:
             video_path: Path to the input video file.
             fps: Frames per second to extract (default: 1 fps).
             max_frames: Maximum number of frames to extract.
-        
+            batch_size: Number of sampled frames to run through the model in a
+                single forward pass. ResNet-50 in eval mode has no cross-sample
+                interaction (batch norm uses fixed running stats), so batching
+                does not change the resulting feature vectors - it only avoids
+                one GPU kernel launch + CPU sync per single frame, which was
+                the actual bottleneck (thousands of tiny round-trips instead
+                of a few dozen large ones).
+
         Returns:
             Tuple of (features, timestamps):
                 features: np.ndarray of shape (num_frames, 2048)
@@ -88,39 +96,60 @@ class FrameFeatureExtractor:
         cap = cv2.VideoCapture(str(video_path))
         if not cap.isOpened():
             raise ValueError(f"Cannot open video: {video_path}")
-        
+
         video_fps = cap.get(cv2.CAP_PROP_FPS)
         frame_interval = int(video_fps / fps)
-        
+
         features_list = []
         timestamps = []
         frame_idx = 0
-        
+
+        pending_tensors = []
+        pending_timestamps = []
+
+        def flush_batch():
+            if not pending_tensors:
+                return
+            batch = torch.stack(pending_tensors).to(self.device)
+            with torch.no_grad():
+                batch_features = self.model(batch)
+            batch_features = batch_features.squeeze(-1).squeeze(-1).cpu().numpy()
+            for feat in batch_features:
+                features_list.append(feat)
+            timestamps.extend(pending_timestamps)
+            pending_tensors.clear()
+            pending_timestamps.clear()
+
         total_video_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
         expected_features = total_video_frames // frame_interval if total_video_frames > 0 else "?"
-        
+
         while True:
             ret, frame = cap.read()
             if not ret:
                 break
-            
+
             if frame_idx % frame_interval == 0:
-                feat = self.extract_from_frame(frame)
-                features_list.append(feat)
-                timestamps.append(frame_idx / video_fps)
-                
+                frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                pending_tensors.append(self.transform(frame_rgb))
+                pending_timestamps.append(frame_idx / video_fps)
+
+                if len(pending_tensors) >= batch_size:
+                    flush_batch()
+
                 # Print progress every 100 extracted frames
-                extracted_count = len(features_list)
+                extracted_count = len(features_list) + len(pending_tensors)
                 if extracted_count % 100 == 0:
                     print(f"    ... extracted {extracted_count}/{expected_features} features ({extracted_count/expected_features*100:.1f}%)")
-                
-                if max_frames and len(features_list) >= max_frames:
+
+                if max_frames and (len(features_list) + len(pending_tensors)) >= max_frames:
                     break
-            
+
             frame_idx += 1
-        
+
+        flush_batch()
+
         cap.release()
-        
+
         features = np.stack(features_list) if features_list else np.array([])
         return features, timestamps
 

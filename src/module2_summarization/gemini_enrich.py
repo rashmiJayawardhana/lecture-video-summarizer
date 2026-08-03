@@ -28,7 +28,14 @@ def group_segments(segs: list, gap_threshold: float = DEFAULT_GAP_THRESHOLD) -> 
     return blocks
 
 
-def analyze_block(client, model_name: str, block: list) -> dict:
+def analyze_block(clients: list, model_name: str, block: list) -> dict:
+    """
+    clients: list of (label, genai.Client) tuples, tried in order. Falls
+    through to the next client on any error (auth failure, quota, project
+    suspension, etc.) so a single bad/expired/blocked key doesn't turn into
+    an "Unknown / Error processing block" entry in the output as long as at
+    least one working key is provided.
+    """
     all_sentences = []
     for seg in block:
         for s in seg["sentences"]:
@@ -47,29 +54,61 @@ Lecture text:
 
 Return ONLY the JSON object, no markdown, no code blocks, no explanation."""
 
-    try:
-        response = client.models.generate_content(
-            model=model_name,
-            contents=prompt
+    last_error = None
+    for label, client in clients:
+        try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt
+            )
+            result_text = response.text.strip()
+
+            # Clean markdown if present
+            if result_text.startswith("```json"):
+                result_text = result_text[7:]
+            if result_text.startswith("```"):
+                result_text = result_text[3:]
+            if result_text.endswith("```"):
+                result_text = result_text[:-3]
+
+            return json.loads(result_text.strip())
+        except Exception as e:
+            print(f"Gemini key '{label}' failed for this block ({e}); trying next key if available.")
+            last_error = e
+            continue
+
+    return {
+        "topic": "Unknown",
+        "summary": "Error processing block",
+        "key_points": [],
+        "error": str(last_error)
+    }
+
+
+def _build_clients(api_key: str | None) -> list:
+    """
+    Builds an ordered list of (label, genai.Client) to try. Primary key comes
+    from the api_key argument or GEMINI_API_KEY. Additional fallback keys come
+    from GEMINI_API_KEY_FALLBACK, a comma-separated list of one or more extra
+    keys - used when the primary key's project gets rate-limited, revoked, or
+    (as seen this session) outright denied access (403 PERMISSION_DENIED).
+    """
+    primary = api_key or os.getenv("GEMINI_API_KEY")
+    fallback_raw = os.getenv("GEMINI_API_KEY_FALLBACK", "")
+    fallback_keys = [k.strip() for k in fallback_raw.split(",") if k.strip()]
+
+    all_keys = ([primary] if primary else []) + fallback_keys
+    if not all_keys:
+        raise RuntimeError(
+            "No Gemini API key found. Set GEMINI_API_KEY (and optionally "
+            "GEMINI_API_KEY_FALLBACK for one or more backup keys) in your .env file."
         )
-        result_text = response.text.strip()
 
-        # Clean markdown if present
-        if result_text.startswith("```json"):
-            result_text = result_text[7:]
-        if result_text.startswith("```"):
-            result_text = result_text[3:]
-        if result_text.endswith("```"):
-            result_text = result_text[:-3]
-
-        return json.loads(result_text.strip())
-    except Exception as e:
-        return {
-            "topic": "Unknown",
-            "summary": "Error processing block",
-            "key_points": [],
-            "error": str(e)
-        }
+    clients = []
+    for idx, key in enumerate(all_keys):
+        label = "primary" if idx == 0 else f"fallback_{idx}"
+        clients.append((label, genai.Client(api_key=key)))
+    return clients
 
 
 def enrich_segments(
@@ -85,11 +124,7 @@ def enrich_segments(
     Gemini-generated topic/summary/key_points. Called lazily by both the CLI
     and the API so importing this module never requires GEMINI_API_KEY to be set.
     """
-    api_key = api_key or os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise RuntimeError("GEMINI_API_KEY not found. Add it to your .env file.")
-
-    client = genai.Client(api_key=api_key)
+    clients = _build_clients(api_key)
 
     important_segments = [s for s in segments if s["importance_ratio_T"] >= min_ratio]
     blocks = group_segments(important_segments, gap_threshold)
@@ -99,7 +134,7 @@ def enrich_segments(
         block_start = block[0]["timestamp_start"]
         block_end   = block[-1]["timestamp_end"]
 
-        analysis = analyze_block(client, model_name, block)
+        analysis = analyze_block(clients, model_name, block)
 
         enriched.append({
             "block_id"        : f"block_{i+1:03d}",
