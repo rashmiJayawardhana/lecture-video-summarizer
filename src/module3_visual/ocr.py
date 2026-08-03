@@ -3,6 +3,7 @@ import json
 import argparse
 import cv2
 import easyocr
+import torch
 from tqdm import tqdm
 
 
@@ -65,7 +66,9 @@ def run_ocr_on_predictions(input_json, output_json, limit=None, confidence_thres
     print(f"Records to process: {len(data_to_process)}")
     print(f"OCR confidence threshold: {confidence_threshold}")
 
-    reader = easyocr.Reader(["en"], gpu=False)
+    use_gpu = torch.cuda.is_available()
+    print(f"EasyOCR device: {'cuda' if use_gpu else 'cpu'}")
+    reader = easyocr.Reader(["en"], gpu=use_gpu)
 
     debug_dir = "outputs/module3/ocr_debug"
     os.makedirs(debug_dir, exist_ok=True)
