@@ -44,12 +44,13 @@ def extract_frames(video_path, output_dir, interval_seconds=5):
     metadata = []
 
     while True:
-        ret, frame = cap.read()
-
-        if not ret:
-            break
-
         if frame_count % frame_interval == 0:
+            # This is a frame we actually want: grab() + retrieve() decodes it,
+            # same as read() would.
+            ret, frame = cap.read()
+            if not ret:
+                break
+
             timestamp_seconds = frame_count / fps
             time_text = seconds_to_time(timestamp_seconds)
 
@@ -65,6 +66,14 @@ def extract_frames(video_path, output_dir, interval_seconds=5):
             })
 
             saved_count += 1
+        else:
+            # Frames we're skipping don't need to be decoded at all - grab()
+            # advances the reader without doing the (expensive) decode step
+            # that read()/retrieve() does. Same frames get saved, same pixel
+            # data, this just skips decoding frames we were throwing away.
+            ret = cap.grab()
+            if not ret:
+                break
 
         frame_count += 1
 

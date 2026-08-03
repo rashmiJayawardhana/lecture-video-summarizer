@@ -4,6 +4,7 @@ import os
 import time
 from collections import Counter
 
+import gemini_visual_analyzer
 from gemini_visual_analyzer import analyze_visual_with_gemini
 from visual_type_detector import detect_visual_type
 
@@ -65,6 +66,16 @@ def is_gemini_failure(semantic):
 def process_file(input_json, output_json, limit=None, sleep_seconds=2.0):
     if not os.path.exists(input_json):
         raise FileNotFoundError(f"Input JSON not found: {input_json}")
+
+    # sleep_seconds is the intended per-key spacing. Calls round-robin across
+    # however many Gemini keys are configured (GEMINI_API_KEY_FALLBACK), so
+    # each individual key is still only hit once every sleep_seconds even
+    # though the loop itself moves proportionally faster with more keys.
+    num_keys = gemini_visual_analyzer.num_configured_keys()
+    effective_sleep = sleep_seconds / num_keys
+    if num_keys > 1:
+        print(f"{num_keys} Gemini keys configured; using {effective_sleep:.1f}s "
+              f"between calls (round-robined) instead of {sleep_seconds}s.")
 
     with open(input_json, "r", encoding="utf-8") as f:
         records = json.load(f)
@@ -141,7 +152,7 @@ def process_file(input_json, output_json, limit=None, sleep_seconds=2.0):
                     item["gemini_analysis_status"] = "success"
                     item["analysis_source"] = "gemini"
 
-                time.sleep(sleep_seconds)
+                time.sleep(effective_sleep)
 
             else:
                 print("Important frame detected. Gemini not used. OCR-only analysis applied.")

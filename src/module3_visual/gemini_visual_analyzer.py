@@ -1,3 +1,4 @@
+import itertools
 import json
 import mimetypes
 import os
@@ -8,13 +9,45 @@ from google.genai import types
 
 load_dotenv(".env", override=True)
 
-API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash")
 
-if not API_KEY:
-    raise RuntimeError("GEMINI_API_KEY not found. Add it to your .env file.")
 
-client = genai.Client(api_key=API_KEY)
+def _build_clients():
+    """
+    Ordered list of (label, genai.Client). Primary key from GEMINI_API_KEY,
+    plus any comma-separated backup keys from GEMINI_API_KEY_FALLBACK - same
+    convention as gemini_enrich.py's fallback support.
+    """
+    primary = os.getenv("GEMINI_API_KEY")
+    fallback_raw = os.getenv("GEMINI_API_KEY_FALLBACK", "")
+    fallback_keys = [k.strip() for k in fallback_raw.split(",") if k.strip()]
+
+    all_keys = ([primary] if primary else []) + fallback_keys
+    if not all_keys:
+        raise RuntimeError(
+            "No Gemini API key found. Set GEMINI_API_KEY (and optionally "
+            "GEMINI_API_KEY_FALLBACK for backup keys) in your .env file."
+        )
+
+    clients = []
+    for idx, key in enumerate(all_keys):
+        label = "primary" if idx == 0 else f"fallback_{idx}"
+        clients.append((label, genai.Client(api_key=key)))
+    return clients
+
+
+_CLIENTS = _build_clients()
+_round_robin = itertools.cycle(range(len(_CLIENTS)))
+
+
+def num_configured_keys() -> int:
+    """
+    Lets callers scale their rate-limit sleep down proportionally: with N
+    keys round-robined, each individual key is still only hit once every
+    (sleep_seconds) on average, so the effective per-call wait can safely
+    be sleep_seconds / N without increasing any single key's request rate.
+    """
+    return len(_CLIENTS)
 
 
 def get_mime_type(image_path):
@@ -97,18 +130,32 @@ Rules:
 - confidence must be between 0 and 1.
 """
 
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=[
-            prompt,
-            types.Part.from_bytes(data=image_bytes, mime_type=mime_type),
-        ],
-        config={
-            "response_mime_type": "application/json"
-        }
-    )
+    start = next(_round_robin)
+    ordered_clients = _CLIENTS[start:] + _CLIENTS[:start]
 
-    return safe_json_loads(response.text)
+    last_error = None
+    for label, client in ordered_clients:
+        try:
+            response = client.models.generate_content(
+                model=MODEL,
+                contents=[
+                    prompt,
+                    types.Part.from_bytes(data=image_bytes, mime_type=mime_type),
+                ],
+                config={
+                    "response_mime_type": "application/json"
+                }
+            )
+            return safe_json_loads(response.text)
+        except Exception as e:
+            print(f"Gemini key '{label}' failed for this frame ({e}); trying next key if available.")
+            last_error = e
+            continue
+
+    # All configured keys failed - raise so the caller's existing
+    # except-Exception -> OCR-fallback path in enhanced_gemini_extractor.py
+    # handles it exactly as it already does for a single-key failure.
+    raise last_error
 
 
 

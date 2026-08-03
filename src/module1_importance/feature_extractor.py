@@ -124,11 +124,12 @@ class FrameFeatureExtractor:
         expected_features = total_video_frames // frame_interval if total_video_frames > 0 else "?"
 
         while True:
-            ret, frame = cap.read()
-            if not ret:
-                break
-
             if frame_idx % frame_interval == 0:
+                # A frame we actually want: read() grabs + fully decodes it.
+                ret, frame = cap.read()
+                if not ret:
+                    break
+
                 frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 pending_tensors.append(self.transform(frame_rgb))
                 pending_timestamps.append(frame_idx / video_fps)
@@ -142,6 +143,13 @@ class FrameFeatureExtractor:
                     print(f"    ... extracted {extracted_count}/{expected_features} features ({extracted_count/expected_features*100:.1f}%)")
 
                 if max_frames and (len(features_list) + len(pending_tensors)) >= max_frames:
+                    break
+            else:
+                # Skipped frames don't need decoding at all - grab() advances
+                # the reader without the expensive decode step, since this
+                # frame's pixels are never used.
+                ret = cap.grab()
+                if not ret:
                     break
 
             frame_idx += 1
