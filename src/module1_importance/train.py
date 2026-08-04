@@ -16,8 +16,7 @@ def set_seed(seed=42):
     Fixes every source of randomness used in a training run: weight
     initialisation, DataLoader shuffling, and the temporal jitter / frame
     dropout augmentation (both np.random-based). Without this, identical
-    code and hyperparameters produce different results run to run - the
-    run-to-run variance documented in the report.
+    code and hyperparameters produce different results run to run.
     """
     random.seed(seed)
     np.random.seed(seed)

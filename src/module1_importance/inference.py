@@ -2,8 +2,6 @@
 Inference Script for Module 1 - Importance Scoring
 Loads a trained model and runs predictions on pre-extracted video features
 to produce the final segment importance scores (score_V) in the required JSON format.
-
-Owner: Rashmi (214093E)
 """
 
 import os

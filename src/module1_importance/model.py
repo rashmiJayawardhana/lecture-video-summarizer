@@ -7,9 +7,6 @@ Architecture (validated by Rahman et al. 2020, Zhang et al. 2016, Lin et al. 202
   - Bidirectional LSTM: models temporal context across 30-frame sequences
   - Linear classifier: predicts importance score (0-1) per segment
 
-Owner: Rashmi (214093E) — Module 1: Keyframe Detection & Importance Scoring
-
-=== BEGINNER GUIDE ===
 How this model works (step by step):
 
     1. You give it a batch of video clips. Each clip is 10 frames (10 seconds, at 1 FPS).
@@ -20,10 +17,9 @@ How this model works (step by step):
     4. A simple classifier takes the BiLSTM output and predicts: "How important is this
        segment?" as a number between 0 (not important) and 1 (very important).
 
-What you need to do next:
-    - Write train.py: Load annotated data, feed it through this model, compute loss, update weights
-    - Write inference.py: Load a trained model, feed in a new video, get importance scores
-======================
+next:
+    - train.py: Load annotated data, feed it through this model, compute loss, update weights
+    - inference.py: Load a trained model, feed in a new video, get importance scores
 """
 
 import torch
@@ -58,8 +54,8 @@ class VideoImportanceScorer(nn.Module):
         # the 2048-dim vectors directly into this model!
         
         # ─── Step 2: Temporal Modeling (Bidirectional LSTM) ─────────
-        # BEGINNER: LSTM reads frames one-by-one and "remembers" what it saw.
-        # "Bidirectional" means it reads FORWARD (frame 1→30) AND BACKWARD (30→1).
+        # LSTM reads frames one-by-one and "remembers" what it saw.
+        # "Bidirectional" means it reads FORWARD (frame 1→10) AND BACKWARD (10→1).
         # This helps because sometimes you need future context to understand
         # if the current frame is important.
         self.lstm = nn.LSTM(
@@ -72,7 +68,7 @@ class VideoImportanceScorer(nn.Module):
         )
         
         # ─── Step 3: Importance Score Predictor ─────────────────────
-        # BEGINNER: This is a simple neural network that takes the LSTM output
+        # This is a simple neural network that takes the LSTM output
         # and predicts a single number between 0 and 1.
         # hidden_size * 2 because BiLSTM outputs forward + backward = double size.
         # Sigmoid at the end squashes any number into the range [0, 1].

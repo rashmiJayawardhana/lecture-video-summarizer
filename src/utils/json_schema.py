@@ -2,7 +2,6 @@
 Shared JSON Schema Definitions & Validators
 
 These schemas define the inter-module communication format for INTEGRA.
-Agreed in Week 1, frozen after Week 5 integration meeting.
 
 Schema Reference:
     Module 1 → { segment_id, timestamp_start, timestamp_end, score_V }

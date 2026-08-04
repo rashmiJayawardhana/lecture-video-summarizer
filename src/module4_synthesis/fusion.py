@@ -9,7 +9,6 @@ Implements the fusion formula: S = w1·V + w2·T + w3·L
 Ranks all 10-second segments and selects top-scoring segments
 for video synthesis.
 
-=== BEGINNER GUIDE ===
 What does this file do?
 
     Imagine 3 judges rating a cooking show:
@@ -22,11 +21,11 @@ What does this file do?
 
     Then it picks the top-scoring segments that fit within 10 minutes.
 
-What you need to do:
-    - Week 2: Test this script with mock JSON (already has sample data)
-    - Week 3: Replace mock JSON with REAL JSON from Modules 1, 2, 3
-    - Week 4: Build the full ranked segment list for Pipeline A
-    - Week 7: Grid search weights (try different w1, w2, w3 values)
+Next :
+    - Test this script with mock JSON (already has sample data)
+    - Replace mock JSON with REAL JSON from Modules 1, 2, 3
+    - Build the full ranked segment list for Pipeline A
+    - Grid search weights (try different w1, w2, w3 values)
 ======================
 """
 

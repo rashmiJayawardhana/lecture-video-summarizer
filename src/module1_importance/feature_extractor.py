@@ -4,7 +4,6 @@ ResNet-50 Feature Extraction for Module 1
 Extracts 2048-dimensional visual features from video frames using
 a pre-trained ResNet-50 backbone (ImageNet weights).
 
-Owner: Rashmi (214093E)
 Reference: Rahman et al. 2020
 """
 

@@ -1,5 +1,5 @@
 """
-Module 1 Annotation Helper - Project Integra
+Module 1 Annotation Helper
 Automated Lecture Video Summarization
 
 Fast keyboard-driven annotation tool for scoring 10-second lecture
@@ -313,14 +313,14 @@ def fetch_ai_opinion_async(seg_id, start_f, mid_f, end_f, annotations_dict, outp
     threading.Thread(target=worker, daemon=True).start()
 
 # =====================================================================
-# CONFIGURATION  -  each group member edits the next TWO lines.
+# CONFIGURATION  
 # Leave VIDEO_DIR set to "videos".
 # =====================================================================
 VIDEO_DIR   = "videos"                      # folder containing your lecture videos
 ANNOTATOR   = "rashmi"                      # your name (goes into every record)
 OUTPUT_FILE = "annotations_rashmi.json"     # your personal output file
 
-# Fixed settings (do NOT change - keeps the whole team consistent)
+# Fixed settings 
 SEGMENT_LENGTH   = 10                       # seconds per segment
 MAX_SCORE        = 10                       # scale is 0 to 10
 VIDEO_EXTENSIONS = (".mp4", ".mkv", ".avi", ".mov", ".webm")
@@ -992,7 +992,7 @@ def merge_all():
     hr()
     ok(f"Wrote {len(combined)} records to module1_annotations.json")
 
-    # ─── Calculate Krippendorff's Alpha for Calibration (LecVideo 045) ───
+    # ─── Calculate Krippendorff's Alpha for Calibration ───
     calib_segments = set()
     annotator_scores = {}
     
