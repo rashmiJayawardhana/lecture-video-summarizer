@@ -4,7 +4,7 @@ Combines ResNet-50 for spatial features and BiLSTM for temporal modeling.
 
 Architecture (validated by Rahman et al. 2020, Zhang et al. 2016, Lin et al. 2022):
   - ResNet-50 backbone: extracts 2048-dim visual features per frame
-  - Bidirectional LSTM: models temporal context across 30-frame sequences
+  - Bidirectional LSTM: models temporal context across 10-frame sequences
   - Linear classifier: predicts importance score (0-1) per segment
 
 How this model works (step by step):
