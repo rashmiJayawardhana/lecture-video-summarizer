@@ -1,6 +1,5 @@
 """
 Module 2: Speech-to-Text & Content Summarization
-Owner: Ravindu (214095L)
 
 Transcribes lecture audio using OpenAI Whisper (large-v3) and classifies
 sentences as important/not-important using fine-tuned BERT-base.

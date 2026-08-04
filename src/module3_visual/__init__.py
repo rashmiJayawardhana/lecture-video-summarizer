@@ -1,6 +1,5 @@
 """
 Module 3: Visual Content Understanding & Slide Extraction
-Owner: Fazly (214008C)
 
 Classifies extracted slide frames as Critical/Important/Skip using ViT-base.
 Extracts on-screen text from Critical and Important frames using TrOCR.

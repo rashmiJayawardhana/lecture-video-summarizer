@@ -1,6 +1,5 @@
 """
 Module 1: Keyframe Detection & Importance Scoring
-Owner: Rashmi (214093E)
 
 Identifies important moments in IT lecture videos using ResNet-50 + BiLSTM.
 Outputs importance scores (score_V) for each 10-second video segment.

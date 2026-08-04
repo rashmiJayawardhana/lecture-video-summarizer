@@ -1,6 +1,5 @@
 """
 Module 4: Video Synthesis & Integration
-Owner: Lathisana (214116F)
 
 Engineering module (no trainable DL model). Consumes fusion scores from
 Modules 1, 2, 3 and produces two output videos:
