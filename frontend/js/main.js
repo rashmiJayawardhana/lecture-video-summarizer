@@ -405,12 +405,19 @@ async function runRealPipeline(file) {
       addLog('═══ Pipeline completed successfully ═══', 'success');
       statusBadge?.classList.remove('status-running');
       statusBadge?.classList.add('status-done');
-      if (statusText) statusText.textContent = 'Done';
-      await populateRealResults(jobId);
       if (startBtn) startBtn.disabled = false;
 
-      const videoTabBtn = document.querySelector('.tab-btn[data-tab="tab-video"]');
-      if (videoTabBtn) videoTabBtn.click();
+      if (status.module4 === 'skipped') {
+        // A partial run (e.g. ENABLED_MODULES=module2 for a module-by-module
+        // demo) - no fused video/JSON exists, so don't try to fetch one.
+        if (statusText) statusText.textContent = 'Done (partial run)';
+        addLog('Module 4 skipped - this was a partial run of only the enabled module(s).', 'info');
+      } else {
+        if (statusText) statusText.textContent = 'Done';
+        await populateRealResults(jobId);
+        const videoTabBtn = document.querySelector('.tab-btn[data-tab="tab-video"]');
+        if (videoTabBtn) videoTabBtn.click();
+      }
     } else if (status.status === 'failed') {
       clearInterval(poll);
       addLog(`Pipeline failed: ${status.error || 'unknown error'}`, 'error');
