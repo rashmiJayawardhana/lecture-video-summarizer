@@ -26,9 +26,9 @@ SETUP (run once)
 USAGE
   1. Put your assigned lecture videos in the folder named in VIDEO_DIR below.
   2. Change ANNOTATOR to your own name and OUTPUT_FILE to match.
-  3. Run:  python annotate_module1.py
+  3. Run: python scripts/annotate_module1.py
   4. To combine everyone's files at the end:
-            python annotate_module1.py --merge
+            python scripts/annotate_module1.py --merge
 
 The output is a JSON file of ground-truth labels used to train the
 ResNet-50 + BiLSTM model in Module 1.
@@ -119,7 +119,7 @@ def get_ai_score_and_reasoning(start_f, mid_f, end_f):
     if not start_b64 or not mid_b64 or not end_b64:
         return None, "Error encoding frames to base64."
 
-    system_prompt = """You are an expert AI annotator for university IT lecture videos.
+    system_prompt = """You are an expert annotator for university IT lecture videos.
 Your task is to assign a visual importance score (0 to 10) to a 10-second video segment.
 You are given 3 frames from the segment: the start frame, middle frame, and end frame.
 
