@@ -21,6 +21,11 @@ const API_BASE = (() => {
 
 const STATUS_POLL_INTERVAL_MS = 2000;
 
+// Tracks the most recent job so tab switches can redraw canvas-based charts
+// (their width depends on clientWidth, which is 0 while their tab panel is
+// hidden, so a chart drawn once while off-screen would otherwise stay blank).
+let currentJobId = null;
+
 // ── Theme Toggle ──
 function initTheme() {
   const toggle = document.getElementById('theme-toggle');
@@ -293,6 +298,13 @@ function initTabs() {
       btn.classList.add('active');
       const target = document.getElementById(btn.dataset.tab);
       target?.classList.add('active');
+
+      // Canvas charts size themselves from clientWidth, which is 0 while
+      // their panel is hidden - redraw with real dimensions now that this
+      // tab is actually visible.
+      if (!currentJobId) return;
+      if (btn.dataset.tab === 'tab-m1') renderModule1(currentJobId);
+      if (btn.dataset.tab === 'tab-fusion') renderFusion(currentJobId);
     });
   });
 }
@@ -368,6 +380,7 @@ async function runRealPipeline(file) {
     if (!uploadRes.ok) throw new Error(`Upload failed: HTTP ${uploadRes.status}`);
     const uploadData = await uploadRes.json();
     jobId = uploadData.job_id;
+    currentJobId = jobId;
     addLog(`Upload accepted. Job ID: ${jobId}`, 'success');
   } catch (err) {
     addLog(`Upload error: ${err.message}`, 'error');
@@ -409,9 +422,11 @@ async function runRealPipeline(file) {
 
       if (status.module4 === 'skipped') {
         // A partial run (e.g. ENABLED_MODULES=module2 for a module-by-module
-        // demo) - no fused video/JSON exists, so don't try to fetch one.
+        // demo) - no fused video/JSON exists, so don't try to fetch one, but
+        // still render real results for whichever module(s) did complete.
         if (statusText) statusText.textContent = 'Done (partial run)';
         addLog('Module 4 skipped - this was a partial run of only the enabled module(s).', 'info');
+        await renderAvailableModuleResults(jobId);
       } else {
         if (statusText) statusText.textContent = 'Done';
         await populateRealResults(jobId);
@@ -437,6 +452,27 @@ async function runRealPipeline(file) {
 function formatDuration(totalSeconds) {
   const s = Math.round(totalSeconds || 0);
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str ?? '';
+  return div.innerHTML;
+}
+
+// Fetches a single module's real output JSON for this job. Returns null
+// (not throwing) if that module hasn't produced output yet, so callers can
+// show an honest "not available" state instead of crashing.
+async function fetchModuleJSON(jobId, moduleName) {
+  try {
+    const res = await fetch(`${API_BASE}/api/jobs/${jobId}/module/${moduleName}`, {
+      headers: { 'ngrok-skip-browser-warning': 'true' },
+    });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (err) {
+    return null;
+  }
 }
 
 async function populateRealResults(jobId) {
@@ -489,12 +525,20 @@ async function populateRealResults(jobId) {
     addLog(`Could not load final results JSON: ${err.message}`, 'error');
   }
 
-  // Illustrative-only visualizations (per-frame/per-sentence detail isn't exposed
-  // by any backend endpoint yet) - kept for visual completeness of the dashboard.
-  drawHeatmap();
-  populateTranscript();
-  populateSlideGrid();
-  drawFusionChart();
+  await renderAvailableModuleResults(jobId);
+}
+
+// Renders whichever modules have actually produced output for this job -
+// each tab independently fetches its own module's real JSON and shows an
+// honest "not available" message if that module hasn't run/finished
+// (e.g. a partial ENABLED_MODULES demo run, or one module still in progress).
+async function renderAvailableModuleResults(jobId) {
+  await Promise.all([
+    renderModule1(jobId),
+    renderModule2(jobId),
+    renderModule3(jobId),
+    renderFusion(jobId),
+  ]);
 }
 
 function getChartColors() {
@@ -506,38 +550,48 @@ function getChartColors() {
   };
 }
 
-function drawHeatmap() {
+async function renderModule1(jobId) {
   const canvas = document.getElementById('heatmap-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  canvas.width = canvas.parentElement.clientWidth;
-  const w = canvas.width, h = canvas.height;
-  const segments = 36;
-  const barW = (w - 40) / segments;
-  const colors = getChartColors();
+  const tableContainer = document.getElementById('m1-table-container');
+  const data = await fetchModuleJSON(jobId, 'module1'); // [{segment_id, timestamp_start, timestamp_end, score_V}, ...]
 
-  ctx.clearRect(0, 0, w, h);
-
-  for (let i = 0; i < segments; i++) {
-    const score = Math.random() * 0.6 + 0.2;
-    const barH = score * (h - 40);
-    const x = 20 + i * barW, y = h - 20 - barH;
-    const r = colors.barBase[0] + Math.round(score * 80);
-    const g = colors.barBase[1] - Math.round(score * 40);
-    const b = colors.barBase[2] - Math.round(score * 100);
-    ctx.fillStyle = `rgba(${r}, ${g}, ${b}, 0.8)`;
-    ctx.beginPath();
-    ctx.roundRect(x + 1, y, barW - 2, barH, [3, 3, 0, 0]);
-    ctx.fill();
+  if (!data || !data.length) {
+    if (tableContainer) tableContainer.innerHTML = '<p class="placeholder-text">Module 1 output not available for this job.</p>';
+    if (canvas) canvas.getContext('2d')?.clearRect(0, 0, canvas.width, canvas.height);
+    return;
   }
 
-  ctx.fillStyle = colors.text;
-  ctx.font = '10px "JetBrains Mono", monospace';
-  ctx.fillText('score_V', 20, 14);
-  ctx.fillText('Segments →', w - 80, h - 4);
+  const segments = [...data].sort((a, b) => a.timestamp_start - b.timestamp_start);
 
-  const tableContainer = document.getElementById('m1-table-container');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.clientWidth;
+    const w = canvas.width, h = canvas.height;
+    const barW = (w - 40) / segments.length;
+    const colors = getChartColors();
+
+    ctx.clearRect(0, 0, w, h);
+    segments.forEach((seg, i) => {
+      const score = Math.max(0, Math.min(1, seg.score_V ?? 0));
+      const barH = score * (h - 40);
+      const x = 20 + i * barW, y = h - 20 - barH;
+      const r = colors.barBase[0] + Math.round(score * 80);
+      const g = colors.barBase[1] - Math.round(score * 40);
+      const b = colors.barBase[2] - Math.round(score * 100);
+      ctx.fillStyle = `rgba(${r}, ${g}, ${b}, 0.8)`;
+      ctx.beginPath();
+      ctx.roundRect(x + 1, y, Math.max(barW - 2, 1), barH, [3, 3, 0, 0]);
+      ctx.fill();
+    });
+
+    ctx.fillStyle = colors.text;
+    ctx.font = '10px "JetBrains Mono", monospace';
+    ctx.fillText('score_V', 20, 14);
+    ctx.fillText('Segments →', w - 80, h - 4);
+  }
+
   if (tableContainer) {
+    const rows = segments.slice(0, 20);
     tableContainer.innerHTML = `
       <table style="width:100%;border-collapse:collapse;font-size:0.75rem;font-family:var(--font-mono);">
         <tr style="color:var(--text-muted);border-bottom:1px solid var(--glass-border);">
@@ -545,113 +599,165 @@ function drawHeatmap() {
           <th style="padding:0.5rem;text-align:left;">Time</th>
           <th style="padding:0.5rem;text-align:right;">score_V</th>
         </tr>
-        ${Array.from({length: 8}, (_, i) => {
-          const score = (Math.random() * 0.5 + 0.45).toFixed(3);
-          return `<tr style="border-bottom:1px solid var(--glass-border);color:var(--text-secondary);">
-            <td style="padding:0.4rem 0.5rem;">seg_${String(i+1).padStart(3,'0')}</td>
-            <td style="padding:0.4rem 0.5rem;">${i*10}:00 – ${i*10+10}:00</td>
-            <td style="padding:0.4rem 0.5rem;text-align:right;color:var(--accent-blue);font-weight:600;">${score}</td>
-          </tr>`;
-        }).join('')}
-      </table>`;
+        ${rows.map(seg => `<tr style="border-bottom:1px solid var(--glass-border);color:var(--text-secondary);">
+            <td style="padding:0.4rem 0.5rem;">${escapeHtml(seg.segment_id)}</td>
+            <td style="padding:0.4rem 0.5rem;">${formatDuration(seg.timestamp_start)} – ${formatDuration(seg.timestamp_end)}</td>
+            <td style="padding:0.4rem 0.5rem;text-align:right;color:var(--accent-blue);font-weight:600;">${(seg.score_V ?? 0).toFixed(3)}</td>
+          </tr>`).join('')}
+      </table>
+      ${segments.length > rows.length ? `<p class="placeholder-text" style="margin-top:0.5rem;">Showing first ${rows.length} of ${segments.length} segments.</p>` : ''}
+    `;
   }
 }
 
-function populateTranscript() {
+async function renderModule2(jobId) {
   const container = document.getElementById('transcript-container');
   if (!container) return;
-  const sentences = [
-    { text: 'A binary search tree is a data structure that maintains sorted order for efficient lookup.', important: true, ratio: 0.89 },
-    { text: 'Today we will cover the fundamentals of tree-based structures.', important: false, ratio: 0.31 },
-    { text: 'The time complexity for search in a balanced BST is O(log n).', important: true, ratio: 0.92 },
-    { text: 'Let me show you this on the whiteboard here.', important: false, ratio: 0.12 },
-    { text: 'AVL trees perform rotations to maintain balance after insertions and deletions.', important: true, ratio: 0.85 },
-    { text: 'This is an important concept that comes up frequently in interviews.', important: false, ratio: 0.28 },
-    { text: 'Red-black trees provide guaranteed O(log n) worst-case performance.', important: true, ratio: 0.91 },
-    { text: 'The rotation operations preserve the binary search tree property.', important: true, ratio: 0.78 },
-  ];
+  const data = await fetchModuleJSON(jobId, 'module2'); // [{sentence, timestamp_start, timestamp_end, is_important, importance_ratio_T}, ...]
+
+  if (!data || !data.length) {
+    container.innerHTML = '<p class="placeholder-text">Module 2 output not available for this job.</p>';
+    return;
+  }
+
+  const sentences = [...data].sort((a, b) => a.timestamp_start - b.timestamp_start);
 
   container.innerHTML = sentences.map(s => `
-    <p style="padding:0.4rem 0.6rem;margin:0.2rem 0;border-radius:6px;border-left:3px solid ${s.important ? 'var(--accent-blue)' : 'transparent'};background:${s.important ? 'rgba(59,130,246,0.06)' : 'transparent'};cursor:default;" title="importance_ratio_T: ${s.ratio}">
-      <span style="font-weight:${s.important ? '600' : '400'};color:${s.important ? 'var(--text-primary)' : 'var(--text-secondary)'};">${s.text}</span>
-      <span style="font-family:var(--font-mono);font-size:0.7rem;color:${s.important ? 'var(--accent-blue)' : 'var(--text-muted)'};margin-left:0.5rem;">${s.ratio.toFixed(2)}</span>
+    <p style="padding:0.4rem 0.6rem;margin:0.2rem 0;border-radius:6px;border-left:3px solid ${s.is_important ? 'var(--accent-blue)' : 'transparent'};background:${s.is_important ? 'rgba(59,130,246,0.06)' : 'transparent'};cursor:default;" title="importance_ratio_T: ${s.importance_ratio_T}">
+      <span style="font-weight:${s.is_important ? '600' : '400'};color:${s.is_important ? 'var(--text-primary)' : 'var(--text-secondary)'};">${escapeHtml(s.sentence)}</span>
+      <span style="font-family:var(--font-mono);font-size:0.7rem;color:${s.is_important ? 'var(--accent-blue)' : 'var(--text-muted)'};margin-left:0.5rem;">${Number(s.importance_ratio_T ?? 0).toFixed(2)}</span>
     </p>
   `).join('');
 }
 
-function populateSlideGrid() {
+async function renderModule3(jobId) {
   const grid = document.getElementById('slides-grid');
   if (!grid) return;
-  const labels = ['Critical', 'Important', 'Critical', 'Skip', 'Important', 'Critical', 'Important', 'Skip', 'Critical'];
-  const colors = { Critical: '--accent-blue', Important: '--accent-violet', Skip: '--text-muted' };
-  const bgColors = { Critical: 'rgba(59,130,246,0.08)', Important: 'rgba(139,92,246,0.08)', Skip: 'rgba(100,116,139,0.05)' };
+  const data = await fetchModuleJSON(jobId, 'module3'); // [{frame_time, label, ocr_text, frame_path, semantic_analysis:{visual_topic,...}}, ...]
 
-  grid.innerHTML = labels.map((label, i) => `
-    <div style="background:${bgColors[label]};border:1px solid var(--glass-border);border-radius:10px;padding:1rem;text-align:center;">
-      <div style="width:100%;aspect-ratio:16/9;background:var(--bg-tertiary);border-radius:6px;margin-bottom:0.6rem;display:flex;align-items:center;justify-content:center;font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);">Slide ${i + 1}</div>
-      <span style="font-size:0.7rem;font-weight:600;font-family:var(--font-mono);color:var(${colors[label]});padding:0.15rem 0.5rem;border-radius:99px;background:${bgColors[label]};">${label}</span>
-    </div>
-  `).join('');
-}
-
-function drawFusionChart() {
-  const canvas = document.getElementById('fusion-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  canvas.width = canvas.parentElement.clientWidth;
-  const w = canvas.width, h = canvas.height;
-  const segments = 20;
-  const barGroupW = (w - 60) / segments;
-  const colors = getChartColors();
-
-  ctx.clearRect(0, 0, w, h);
-
-  // Threshold line
-  const threshold = 0.3;
-  const thresholdY = h - 30 - threshold * (h - 60);
-  ctx.setLineDash([4, 4]);
-  ctx.strokeStyle = 'rgba(244,63,94,0.4)';
-  ctx.beginPath();
-  ctx.moveTo(30, thresholdY);
-  ctx.lineTo(w - 20, thresholdY);
-  ctx.stroke();
-  ctx.setLineDash([]);
-  ctx.fillStyle = 'rgba(244,63,94,0.6)';
-  ctx.font = '9px "JetBrains Mono", monospace';
-  ctx.fillText('θ = 0.30', w - 65, thresholdY - 4);
-
-  const barColors = [
-    'rgba(59,130,246,0.7)',
-    'rgba(139,92,246,0.7)',
-    'rgba(6,182,212,0.7)',
-  ];
-
-  for (let i = 0; i < segments; i++) {
-    const subW = (barGroupW - 4) / 3;
-    for (let j = 0; j < 3; j++) {
-      const score = Math.random() * 0.7 + 0.15;
-      const barH = score * (h - 60);
-      const x = 30 + i * barGroupW + j * subW;
-      const y = h - 30 - barH;
-      ctx.fillStyle = barColors[j];
-      ctx.beginPath();
-      ctx.roundRect(x + 0.5, y, subW - 1, barH, [2, 2, 0, 0]);
-      ctx.fill();
-    }
+  if (!data || !data.length) {
+    grid.innerHTML = '<p class="placeholder-text">Module 3 output not available for this job.</p>';
+    return;
   }
 
-  // Legend
-  const legendY = 14;
-  const items = [['V (Visual)', barColors[0]], ['T (Text)', barColors[1]], ['L (Slide)', barColors[2]]];
-  let lx = 30;
-  items.forEach(([label, color]) => {
-    ctx.fillStyle = color;
-    ctx.fillRect(lx, legendY - 7, 10, 10);
-    ctx.fillStyle = colors.text;
-    ctx.font = '9px "JetBrains Mono", monospace';
-    ctx.fillText(label, lx + 14, legendY + 2);
-    lx += ctx.measureText(label).width + 28;
+  const colorVars = { Critical: '--accent-blue', Important: '--accent-violet', Skip: '--text-muted' };
+  const bgColors = { Critical: 'rgba(59,130,246,0.08)', Important: 'rgba(139,92,246,0.08)', Skip: 'rgba(100,116,139,0.05)' };
+  const sorted = [...data].sort((a, b) => a.frame_time - b.frame_time);
+
+  grid.innerHTML = sorted.map((item, i) => {
+    const label = item.label || 'Unknown';
+    const bg = bgColors[label] || bgColors.Skip;
+    const colorVar = colorVars[label] || colorVars.Skip;
+    const caption = (item.semantic_analysis && item.semantic_analysis.visual_topic) ||
+      (item.ocr_text ? item.ocr_text.slice(0, 60) : '');
+    return `
+    <div style="background:${bg};border:1px solid var(--glass-border);border-radius:10px;padding:1rem;text-align:center;">
+      <div id="m3-thumb-${i}" style="width:100%;aspect-ratio:16/9;background:var(--bg-tertiary);border-radius:6px;margin-bottom:0.6rem;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:0.7rem;color:var(--text-muted);font-family:var(--font-mono);">${formatDuration(item.frame_time)}</div>
+      <span style="font-size:0.7rem;font-weight:600;font-family:var(--font-mono);color:var(${colorVar});padding:0.15rem 0.5rem;border-radius:99px;background:${bg};">${escapeHtml(label)}</span>
+      ${caption ? `<p style="font-size:0.7rem;color:var(--text-muted);margin-top:0.4rem;word-break:break-word;">${escapeHtml(caption)}</p>` : ''}
+    </div>`;
+  }).join('');
+
+  // Real thumbnails, loaded separately as blob URLs: a plain <img src> can't
+  // send the ngrok-skip-browser-warning header, so we fetch each frame
+  // ourselves (where we can) and swap it in once it's ready. Falls back to
+  // the timestamp label already in place if a given frame can't be loaded.
+  sorted.forEach(async (item, i) => {
+    if (!item.frame_path) return;
+    const thumbEl = document.getElementById(`m3-thumb-${i}`);
+    if (!thumbEl) return;
+    try {
+      const res = await fetch(`${API_BASE}/api/jobs/${jobId}/frame?path=${encodeURIComponent(item.frame_path)}`, {
+        headers: { 'ngrok-skip-browser-warning': 'true' },
+      });
+      if (!res.ok) return;
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      thumbEl.innerHTML = `<img src="${url}" alt="Slide at ${formatDuration(item.frame_time)}" style="width:100%;height:100%;object-fit:cover;" />`;
+    } catch (err) {
+      // leave the timestamp placeholder in place on failure
+    }
   });
+}
+
+async function renderFusion(jobId) {
+  const canvas = document.getElementById('fusion-canvas');
+  const tableContainer = document.getElementById('fusion-table-container');
+  const data = await fetchModuleJSON(jobId, 'module4'); // module4_final_output.json
+
+  if (!data || !data.selected_segments || !data.selected_segments.length) {
+    if (tableContainer) tableContainer.innerHTML = '<p class="placeholder-text">Fusion output not available for this job.</p>';
+    if (canvas) canvas.getContext('2d')?.clearRect(0, 0, canvas.width, canvas.height);
+    return;
+  }
+
+  const segments = [...data.selected_segments].sort((a, b) => a.timestamp_start - b.timestamp_start);
+  const weights = data.fusion_weights || {};
+
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.clientWidth;
+    const w = canvas.width, h = canvas.height;
+    const barGroupW = (w - 60) / segments.length;
+    const colors = getChartColors();
+    const barColors = ['rgba(59,130,246,0.7)', 'rgba(139,92,246,0.7)', 'rgba(6,182,212,0.7)'];
+
+    ctx.clearRect(0, 0, w, h);
+
+    segments.forEach((seg, i) => {
+      const subW = (barGroupW - 4) / 3;
+      [seg.score_V, seg.score_T, seg.score_L].forEach((score, j) => {
+        const barH = Math.max(0, Math.min(1, score ?? 0)) * (h - 60);
+        const x = 30 + i * barGroupW + j * subW;
+        const y = h - 30 - barH;
+        ctx.fillStyle = barColors[j];
+        ctx.beginPath();
+        ctx.roundRect(x + 0.5, y, Math.max(subW - 1, 1), barH, [2, 2, 0, 0]);
+        ctx.fill();
+      });
+    });
+
+    // Legend
+    const legendY = 14;
+    const items = [['V (Visual)', barColors[0]], ['T (Text)', barColors[1]], ['L (Slide)', barColors[2]]];
+    let lx = 30;
+    items.forEach(([label, color]) => {
+      ctx.fillStyle = color;
+      ctx.fillRect(lx, legendY - 7, 10, 10);
+      ctx.fillStyle = colors.text;
+      ctx.font = '9px "JetBrains Mono", monospace';
+      ctx.fillText(label, lx + 14, legendY + 2);
+      lx += ctx.measureText(label).width + 28;
+    });
+  }
+
+  if (tableContainer) {
+    const rows = segments.slice(0, 20);
+    tableContainer.innerHTML = `
+      <p style="font-size:0.75rem;color:var(--text-muted);margin-bottom:0.5rem;">
+        Weights: w₁=${weights.w1_visual ?? '—'} w₂=${weights.w2_text ?? '—'} w₃=${weights.w3_slide ?? '—'} ·
+        ${data.segments_selected ?? segments.length}/${data.total_segments_considered ?? '—'} segments selected ·
+        ${formatDuration(data.selected_duration_seconds)} total
+      </p>
+      <table style="width:100%;border-collapse:collapse;font-size:0.75rem;font-family:var(--font-mono);">
+        <tr style="color:var(--text-muted);border-bottom:1px solid var(--glass-border);">
+          <th style="padding:0.5rem;text-align:left;">Segment</th>
+          <th style="padding:0.5rem;text-align:right;">V</th>
+          <th style="padding:0.5rem;text-align:right;">T</th>
+          <th style="padding:0.5rem;text-align:right;">L</th>
+          <th style="padding:0.5rem;text-align:right;">Fused S</th>
+        </tr>
+        ${rows.map(seg => `<tr style="border-bottom:1px solid var(--glass-border);color:var(--text-secondary);">
+            <td style="padding:0.4rem 0.5rem;">${escapeHtml(seg.segment_id)}</td>
+            <td style="padding:0.4rem 0.5rem;text-align:right;">${(seg.score_V ?? 0).toFixed(2)}</td>
+            <td style="padding:0.4rem 0.5rem;text-align:right;">${(seg.score_T ?? 0).toFixed(2)}</td>
+            <td style="padding:0.4rem 0.5rem;text-align:right;">${(seg.score_L ?? 0).toFixed(2)}</td>
+            <td style="padding:0.4rem 0.5rem;text-align:right;color:var(--accent-blue);font-weight:600;">${(seg.fused_score ?? 0).toFixed(3)}</td>
+          </tr>`).join('')}
+      </table>
+      ${segments.length > rows.length ? `<p class="placeholder-text" style="margin-top:0.5rem;">Showing first ${rows.length} of ${segments.length} selected segments.</p>` : ''}
+    `;
+  }
 }
 
 // ── Initialize Everything ──
