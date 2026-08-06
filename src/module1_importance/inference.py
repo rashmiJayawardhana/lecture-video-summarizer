@@ -39,6 +39,10 @@ def run_inference(
         model.load_state_dict(torch.load(model_path, map_location=device))
         print("Model weights loaded successfully.")
     else:
+        # Falls back to untrained (random) weights instead of raising, so the
+        # rest of the pipeline (schema validation, JSON output, Module 4
+        # handoff) can still be exercised end-to-end before a real checkpoint
+        # exists - useful for dry-run testing the backend integration.
         print(f"Warning: Model weights file {model_path} not found. Running with random weights (dry run).")
     
     model = model.to(device)
@@ -68,7 +72,10 @@ def run_inference(
         # Slice features
         seg_features = features[start_idx:end_idx]
         
-        # If segment is shorter than sequence_length, pad with zeros
+        # The last segment of a video is often shorter than 10 frames (video
+        # length isn't always an exact multiple of 10s) - pad with zero
+        # vectors rather than dropping it, so every video still gets a score
+        # for its final few seconds.
         if len(seg_features) < sequence_length:
             padding = np.zeros((sequence_length - len(seg_features), 2048), dtype=seg_features.dtype)
             seg_features = np.vstack([seg_features, padding])

@@ -1,4 +1,27 @@
-""" training loop """
+"""
+Training script for Module 1 (VideoImportanceScorer).
+
+Trains the BiLSTM + classifier head on pre-extracted ResNet-50 features
+against human-annotated segment scores (see module1_annotations.json).
+The ResNet-50 backbone itself is never touched here - it was already run
+once, offline, by extract_all_features.py - so this script only ever
+trains the much smaller BiLSTM + classifier (fast, no GPU strictly
+required, though CUDA is used automatically when available).
+
+Key design choices :
+  - Regression (MSELoss), not classification: annotators score each
+    segment 0-10, normalized to 0-1, so the target is a continuous value,
+    not a fixed set of classes.
+  - Split is by VIDEO number, not by segment: this guarantees no segment
+    from a validation/test video ever leaks into training, which would
+    silently inflate val/test scores.
+  - lr=3e-5: an earlier lr=1e-4 run showed clear overfitting (val loss
+    improved for one epoch then diverged while train loss kept dropping);
+    3e-5 fixed that and is the value used for every reported run.
+  - Best checkpoint is chosen by lowest VALIDATION loss, not train loss,
+    so the model saved to disk is the one that generalizes best, not
+    just the one that memorized the training segments hardest.
+"""
 
 import os
 import json
@@ -30,6 +53,11 @@ def set_seed(seed=42):
 class LectureFeatureDataset(Dataset):
     """
     Loads pre-extracted ResNet-50 features and their corresponding annotations.
+
+    Note the split boundaries are video-INCLUSIVE ranges parsed from the
+    filename ("LecVideo NNN..."): train = video number <= 45 (46 videos,
+    since video "000" also satisfies <= 45), val = 46-50 (5 videos),
+    test = video number > 50 (10 videos: 51-60). There is no video 61.
     """
     def __init__(self, features_dir, annotations_json, split="train", augment=False):
         """
@@ -97,7 +125,10 @@ class LectureFeatureDataset(Dataset):
         start_idx = int(data["timestamp_start"])
         end_idx = int(data["timestamp_end"])
         
-        # Apply temporal jitter augmentation during training
+        # Temporal jitter (train split only): shifts the segment window by up
+        # to +/-2s so the model doesn't learn "importance only happens at
+        # exactly this boundary" - real segment boundaries aren't ever this
+        # precise (e.g. a lecturer's gesture doesn't start/stop on a clean cut).
         if self.augment and self.split == "train":
             jitter = np.random.randint(-2, 3)  # shift by -2, -1, 0, 1, or 2 seconds
             start_idx = max(0, start_idx + jitter)
@@ -123,9 +154,10 @@ class LectureFeatureDataset(Dataset):
         # Keep exactly sequence_length frames (just in case)
         segment_features = segment_features[:self.sequence_length]
         
-        # Apply random frame dropping/zeroing augmentation during training
+        # Frame dropout (train split only): zeroes one random frame per
+        # segment so the model can't over-rely on any single frame always
+        # being clear/representative - it has to use the other 9 frames too.
         if self.augment and self.split == "train":
-            # Randomly zero out 1 frame in the sequence to simulate frame dropping
             drop_idx = np.random.randint(0, self.sequence_length)
             segment_features = segment_features.copy()  # avoid modifying cached features
             segment_features[drop_idx] = 0.0
@@ -157,7 +189,12 @@ def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=3e-5, a
     # Initialize Model, Loss, Optimizer
     model = VideoImportanceScorer().to(device)
 
-    # We use Mean Squared Error because we want to predict the exact score (regression)
+    # MSE because this is regression toward a continuous 0-1 score, not
+    # classification into fixed buckets. A weighted-MSE variant (weighting
+    # loss by the target score, to counter the natural scarcity of
+    # high-importance segments) was tried once and reverted - it made recall
+    # worse at every threshold, a genuine negative result reported honestly
+    # in the report rather than hidden.
     criterion = nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     
@@ -215,7 +252,9 @@ def train_model(data_dir, annotations_path, epochs=10, batch_size=32, lr=3e-5, a
             
         print(f"Epoch {epoch+1}/{epochs} | Train Loss (MSE): {train_loss:.4f} | Val Loss (MSE): {val_loss:.4f}")
         
-        # Save best model
+        # Save best model - checked against VAL loss, not train loss, so the
+        # kept checkpoint is the one that generalizes best rather than the
+        # one furthest along in memorizing the training segments.
         if val_loss < best_val_loss and len(val_loader.dataset) > 0:
             best_val_loss = val_loss
             save_path = "best_module1_model.pt"
