@@ -1,7 +1,7 @@
 # INTEGRA - Automated Lecture Video Summarization with Condensed Video Output
 
 [![Python 3.13](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.11-red.svg)](https://pytorch.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.5-red.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Transform 60-minute IT theory lectures into coherent condensed videos using deep learning - with zero manual steps.
@@ -16,7 +16,7 @@ Module 4 aligns the visual, speech, and slide analysis by timestamp, generates a
 
 ## 🏗️ Architecture
 
-The system consists of 4 modules with a weighted score fusion feeding a generation-and-verification synthesis pipeline:
+The system consists of 4 modules with a weighted score fusion feeding a generation-and-verification synthesis pipeline. Modules 1, 2, and 3 run in parallel via a thread pool; Module 4 runs after they complete. Which modules run is controlled by the `ENABLED_MODULES` environment variable (comma-separated, e.g. `ENABLED_MODULES=module1` or `module1,module3`), useful for demoing/testing a single module without waiting on the others; defaults to all three if unset.
 
 ```
 Input Video
@@ -116,7 +116,9 @@ lecture-video-summarizer/
 │
 ├── frontend/                          # Web interface (Vanilla JS + Vite, NOT React)
 │   ├── index.html
-│   ├── js/main.js                     # Real fetch()-based upload/status-poll/result display
+│   ├── js/main.js                     # Real fetch()-based upload/status-poll/result display;
+│   │                                   #   Results tabs (Module 1/2/3/Fusion) fetch real
+│   │                                   #   per-module JSON from the backend, not placeholder data
 │   ├── package.json
 │   └── vite.config.js                 # Dev proxy: /api -> http://localhost:8000
 │
@@ -149,6 +151,9 @@ lecture-video-summarizer/
 │   ├── backend/                       # Real FastAPI backend
 │   │   ├── main.py                    # FastAPI app entrypoint
 │   │   ├── api/                       # routes_upload.py, routes_jobs.py, routes_results.py
+│   │   │                              #   (results: /module/{name} for a single module's real
+│   │   │                              #   output JSON, /frame for a single real slide image,
+│   │   │                              #   /download-video, /download-json for the final output)
 │   │   ├── services/                  # pipeline_orchestrator.py, storage_service.py, job_service.py
 │   │   ├── workers/                   # module_runners.py - calls each module's real code
 │   │   └── core/                      # config.py, paths.py, supabase_client.py
@@ -176,7 +181,7 @@ lecture-video-summarizer/
 
 ### Prerequisites
 
-- Python 3.13, PyTorch 2.11 (CUDA build recommended)
+- Python 3.13, PyTorch 2.5 (CUDA build recommended; install with `--index-url https://download.pytorch.org/whl/cu121` for a matched torch/torchvision/torchaudio GPU build)
 - **FFmpeg installed and on PATH** (required by both Module 2's Whisper audio decoding and Module 4's video rendering; verify with `ffmpeg -version`)
 - Node.js 20+ (frontend)
 - A Supabase project (free tier) for job status tracking
